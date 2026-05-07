@@ -1,0 +1,6 @@
+```yml
+parameters:
+  nutzungsaenderung_meldefrist_tage:
+    value: 30
+    label: Meldefrist fuer Nutzungsaenderung (Tage)
+```

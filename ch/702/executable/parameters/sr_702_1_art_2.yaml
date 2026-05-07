@@ -1,0 +1,9 @@
+```yml
+parameters:
+  zweitwohnungsanteil_schwelle_prozent:
+    value: 20
+    label: Schwellenwert Zweitwohnungsanteil (Prozent)
+  zweitwohnungsanteil_feststellung_frist_monat:
+    value: 3
+    label: Frist fuer Feststellung (Monat Maerz)
+```

@@ -1,0 +1,6 @@
+```yml
+parameters:
+  fwv_plan_ueberpruefung_intervall_jahre:
+    value: 10
+    label: Intervall fuer Planpruefung (Jahre)
+```

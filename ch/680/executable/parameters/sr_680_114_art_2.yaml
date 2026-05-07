@@ -1,0 +1,6 @@
+```yml
+parameters:
+  ethanol_verlust_pauschale_prozent:
+    value: 2.0
+    label: Pauschale fuer Produktions- und Lagerverluste (Prozent)
+```

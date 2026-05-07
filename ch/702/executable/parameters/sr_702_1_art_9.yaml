@@ -1,0 +1,6 @@
+```yml
+parameters:
+  sistierung_art14b_max_dauer_jahre:
+    value: 2
+    label: Maximale Dauer Sistierung Art. 14 Abs. 1 lit. b (Jahre)
+```

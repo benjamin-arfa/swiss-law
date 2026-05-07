@@ -1,0 +1,43 @@
+description: "Parameters for SR 641.10 - StG (Stamp Duties Act)"
+metadata:
+  reference: "SR 641.10"
+
+emissionsabgabe_satz:
+  description: "Emission levy rate on participation rights"
+  reference: "SR 641.10 Art. 8 Abs. 1"
+  unit: rate
+  values:
+    1993-04-01:
+      value: 0.01
+
+abgabe_pro_gratisgenussschein:
+  description: "Levy per free-of-charge profit-sharing certificate (CHF)"
+  reference: "SR 641.10 Art. 9 Abs. 1 Bst. d"
+  unit: CHF
+  values:
+    1992-07-01:
+      value: 3
+
+befreiung_schwelle_gruendung:
+  description: "Exemption threshold for cooperative/company creation (total contributions CHF)"
+  reference: "SR 641.10 Art. 6 Abs. 1 Bst. b, h"
+  unit: CHF
+  values:
+    2009-01-01:
+      value: 1000000
+
+befreiung_schwelle_sanierung:
+  description: "Exemption threshold for restructuring contributions (CHF)"
+  reference: "SR 641.10 Art. 6 Abs. 1 Bst. k"
+  unit: CHF
+  values:
+    2009-01-01:
+      value: 10000000
+
+max_dividende_gemeinnuetzig:
+  description: "Maximum dividend rate for non-profit exemption"
+  reference: "SR 641.10 Art. 6 Abs. 1 Bst. a"
+  unit: rate
+  values:
+    1973-06-27:
+      value: 0.06

@@ -1,0 +1,19 @@
+description: "Parameters for SR 661.1 - WPEV (Military Service Substitute Levy Ordinance)"
+metadata:
+  reference: "SR 661.1"
+
+schutzdienst_ermaessigung_pro_tag:
+  description: "Reduction rate of substitute levy per day of civil protection service"
+  reference: "SR 661.1 Art. 5a Abs. 1"
+  unit: rate
+  values:
+    2021-01-01:
+      value: 0.04
+
+auslandjahr_monate:
+  description: "Number of consecutive months abroad to qualify as Auslandjahr"
+  reference: "SR 661.1 Art. 4"
+  unit: months
+  values:
+    2021-01-01:
+      value: 12

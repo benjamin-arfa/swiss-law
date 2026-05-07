@@ -1,0 +1,43 @@
+description: "Parameters for SR 519.1 - PVSPA (Personnel for Troop Deployment Abroad)"
+metadata:
+  reference: "SR 519.1"
+
+einsatzzulage_pro_tag:
+  description: "Daily deployment allowance (CHF), set by VBS, max 110"
+  reference: "SR 519.1 Art. 11 Abs. 1"
+  unit: CHF/day
+  values:
+    2014-08-01:
+      value: 110
+
+max_entschaedigung_sachschaden:
+  description: "Maximum compensation for personal property damage (CHF)"
+  reference: "SR 519.1 Art. 21"
+  unit: CHF
+  values:
+    2014-08-01:
+      value: 5000
+
+zusatzurlaub_tage:
+  description: "Additional paid leave days for deployment (max 1 before + 1 after)"
+  reference: "SR 519.1 Art. 16"
+  unit: days
+  values:
+    2014-08-01:
+      value: 2
+
+ferienanspruch_wochen_basis:
+  description: "Base vacation entitlement in weeks per year during deployment"
+  reference: "SR 519.1 Art. 15 Abs. 1"
+  unit: weeks
+  values:
+    2014-08-01:
+      value: 6
+
+ferienanspruch_zusatz_ab_50:
+  description: "Additional vacation week for personnel aged 50+"
+  reference: "SR 519.1 Art. 15 Abs. 1"
+  unit: weeks
+  values:
+    2014-08-01:
+      value: 1

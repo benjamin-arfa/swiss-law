@@ -1,0 +1,203 @@
+description: "Parameters for SR 642.11 - LIFD/DBG (Federal Direct Tax Act)"
+metadata:
+  reference: "SR 642.11"
+
+# Art. 35 - Social deductions
+deduction_child:
+  description: "Deduction per minor child or child in education/apprenticeship (CHF)"
+  reference: "SR 642.11 Art. 35 Abs. 1 Bst. a"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 6800
+    2024-01-01:
+      value: 6700
+    2023-01-01:
+      value: 6600
+
+deduction_dependent:
+  description: "Deduction per dependent person unable to work (CHF)"
+  reference: "SR 642.11 Art. 35 Abs. 1 Bst. b"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 6800
+    2024-01-01:
+      value: 6700
+    2023-01-01:
+      value: 6600
+
+deduction_married:
+  description: "Deduction for married couples living together (CHF)"
+  reference: "SR 642.11 Art. 35 Abs. 1 Bst. c"
+  unit: CHF
+  values:
+    2024-01-01:
+      value: 2800
+    2023-01-01:
+      value: 2700
+    2012-01-01:
+      value: 2600
+
+# Art. 36 Abs. 2bis - Reduction per child/dependent for family tariff
+reduction_per_child:
+  description: "Tax reduction per child/dependent for family tariff (CHF)"
+  reference: "SR 642.11 Art. 36 Abs. 2bis"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 263
+    2024-01-01:
+      value: 259
+    2023-01-01:
+      value: 251
+
+# Art. 33 Abs. 1 Bst. g - Insurance/savings deductions
+deduction_insurance_married:
+  description: "Max deduction for insurance premiums and savings interest - married (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 1 Bst. g"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 3700
+    2023-01-01:
+      value: 3600
+    2012-01-01:
+      value: 3500
+
+deduction_insurance_single:
+  description: "Max deduction for insurance premiums and savings interest - single (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 1 Bst. g"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 1800
+    2023-01-01:
+      value: 1700
+    2012-01-01:
+      value: 1700
+
+deduction_insurance_per_child:
+  description: "Additional insurance deduction per child/dependent (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 1bis Bst. b"
+  unit: CHF
+  values:
+    2012-01-01:
+      value: 700
+
+# Art. 33 Abs. 1 Bst. i - Political party donations
+deduction_political_max:
+  description: "Max deduction for political party donations (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 1 Bst. i"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 10600
+    2024-01-01:
+      value: 10400
+    2023-01-01:
+      value: 10300
+
+# Art. 33 Abs. 1 Bst. j - Professional training
+deduction_training_max:
+  description: "Max deduction for professional training/continuing education (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 1 Bst. j"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 13000
+    2024-01-01:
+      value: 12900
+    2016-01-01:
+      value: 12000
+
+# Art. 33 Abs. 2 - Dual-income deduction for married couples
+deduction_dual_income_min:
+  description: "Minimum dual-income deduction for married couples (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 2"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 8600
+    2024-01-01:
+      value: 8500
+    2023-01-01:
+      value: 8400
+
+deduction_dual_income_max:
+  description: "Maximum dual-income deduction for married couples (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 2"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 14100
+    2024-01-01:
+      value: 13900
+    2023-01-01:
+      value: 13700
+
+# Art. 33 Abs. 3 - Childcare deduction
+deduction_childcare_max:
+  description: "Max childcare deduction per child under 14 (CHF)"
+  reference: "SR 642.11 Art. 33 Abs. 3"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 25800
+    2024-01-01:
+      value: 25500
+    2023-01-01:
+      value: 25000
+
+# Art. 26 Abs. 1 Bst. a - Commuting deduction
+deduction_commuting_max:
+  description: "Max deduction for commuting costs (CHF)"
+  reference: "SR 642.11 Art. 26 Abs. 1 Bst. a"
+  unit: CHF
+  values:
+    2025-01-01:
+      value: 3300
+    2024-01-01:
+      value: 3200
+    2016-01-01:
+      value: 3000
+
+# Art. 33 Abs. 1 Bst. h - Medical expenses threshold
+medical_expenses_threshold:
+  description: "Medical expenses threshold (% of taxable income after deductions)"
+  reference: "SR 642.11 Art. 33 Abs. 1 Bst. h"
+  unit: rate
+  values:
+    2005-01-01:
+      value: 0.05
+
+# Art. 14 Abs. 3 Bst. a - Expenditure-based taxation minimum
+imposition_depense_minimum:
+  description: "Minimum amount for expenditure-based taxation (CHF/year)"
+  reference: "SR 642.11 Art. 14 Abs. 3 Bst. a"
+  unit: CHF
+  values:
+    2026-01-01:
+      value: 435000
+    2024-01-01:
+      value: 421700
+    2023-01-01:
+      value: 400000
+
+# Art. 36 Abs. 3 - Minimum tax threshold
+minimum_tax:
+  description: "Minimum tax amount below which no tax is collected (CHF)"
+  reference: "SR 642.11 Art. 36 Abs. 3"
+  unit: CHF
+  values:
+    2005-01-01:
+      value: 25
+
+# Art. 37a - Simplified procedure rate for small wages
+simplified_procedure_rate:
+  description: "Tax rate for simplified procedure on small wages"
+  reference: "SR 642.11 Art. 37a Abs. 1"
+  unit: rate
+  values:
+    2008-01-01:
+      value: 0.005

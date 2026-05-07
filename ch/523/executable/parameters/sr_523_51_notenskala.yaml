@@ -1,0 +1,19 @@
+# SR 523.51 Art. 6-7, Art. 10: Grading scale and pass thresholds
+description: Notenskala und Bestehensanforderungen fuer die Lehrpersonalausbildung
+reference: SR 523.51
+metadata:
+  law_group: "523"
+  sr_number: "523.51"
+values:
+  note_minimum: 1.0
+  note_maximum: 6.0
+  note_bestehen: 4.0
+  praktikum_bestehen: 4.0
+  note_unredlichkeit: 1.0
+  note_unbegruendet_versaeumt: 1.0
+  beschwerde_frist_tage: 30
+  aufbewahrungspflicht_jahre: 10
+  max_modulwiederholungen: 1
+  anmeldung_frist_kalenderwoche: 41
+  ausschreibung_frist_kalenderwoche: 32
+  durchfuehrungsentscheid_kalenderwoche: 44

@@ -1,0 +1,16 @@
+# SR 520.20 Art. 3, 11, 13: Requisition conditions and validity period
+description: Requisitionsvoraussetzungen und Geltungsdauer der VRSL
+reference: SR 520.20
+metadata:
+  law_group: "520"
+  sr_number: "520.20"
+  abbreviation: "VRSL"
+values:
+  inkrafttreten: "2016-04-01"
+  geltungsdauer_bis: "2025-12-31"
+  voraussetzungen:
+    notlage_im_asylbereich: true
+    keine_anderen_unterbringungsmoeglichkeiten: true
+    schutzdienstpflichtige_im_einsatz: true
+    nicht_fuer_zivilschutz_erforderlich: true
+    nicht_fuer_armee_erforderlich: true

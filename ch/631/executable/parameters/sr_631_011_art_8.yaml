@@ -1,0 +1,13 @@
+description: Parameter fuer Grenzweidegang-Voraussetzungen (Art. 8 ZV-EFD)
+metadata:
+  reference:
+    - title: "SR 631.011 Art. 8"
+      href: "https://www.fedlex.admin.ch/eli/cc/2007/249"
+values:
+  sr_631_011:
+    mindestaufenthalt_herkunftsland_tage:
+      description: Mindestaufenthalt der Tiere im Herkunftsland vor einem Grenzweidegang
+      unit: days
+      values:
+        2007-05-01:
+          value: 30

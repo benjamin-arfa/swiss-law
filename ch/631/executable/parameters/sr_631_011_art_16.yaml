@@ -1,0 +1,13 @@
+description: Parameter fuer Zahlungserleichterungen (Art. 16 ZV-EFD)
+metadata:
+  reference:
+    - title: "SR 631.011 Art. 16"
+      href: "https://www.fedlex.admin.ch/eli/cc/2007/249"
+values:
+  sr_631_011:
+    zaz_max_zahlungsfrist_tage:
+      description: Maximale Zahlungsfrist im Rahmen des ZAZ bei Barhinterlage
+      unit: days
+      values:
+        2007-05-01:
+          value: 60

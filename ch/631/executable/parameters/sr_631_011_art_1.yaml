@@ -1,0 +1,13 @@
+description: Parameter fuer Geschenksendungen (Art. 1 ZV-EFD)
+metadata:
+  reference:
+    - title: "SR 631.011 Art. 1"
+      href: "https://www.fedlex.admin.ch/eli/cc/2007/249"
+values:
+  sr_631_011:
+    geschenksendung_wertfreigrenze:
+      description: Wertfreigrenze fuer Geschenksendungen von Privatpersonen
+      unit: CHF
+      values:
+        2007-05-01:
+          value: 100

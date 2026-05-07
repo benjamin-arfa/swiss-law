@@ -1,0 +1,13 @@
+description: Parameter fuer Milch und Milchprodukte im Grenzweidegang (Art. 12 ZV-EFD)
+metadata:
+  reference:
+    - title: "SR 631.011 Art. 12"
+      href: "https://www.fedlex.admin.ch/eli/cc/2007/249"
+values:
+  sr_631_011:
+    milchprodukte_wiedereinfuhr_frist_tage:
+      description: Frist fuer die Verbringung von Milchprodukten inlaendischer Tiere nach Wiedereinfuhr
+      unit: days
+      values:
+        2007-05-01:
+          value: 30

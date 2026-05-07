@@ -1,0 +1,10 @@
+description: Resource equalization parameters under FiLaG
+reference: SR 613.2 Art. 3a
+metadata:
+  unit: percent
+values:
+  2020-01-01:
+    minimum_equalization_threshold: 0.70
+    target_equalization_ratio: 0.865
+    marginal_reduction_rate: 0.90
+    note: "Cantons below 70% equalized to 86.5%; at 70%, each additional unit reduces payment by 90%"

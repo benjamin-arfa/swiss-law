@@ -1,0 +1,10 @@
+description: Maximum stockpile release quantity for rabies vaccines
+reference: SR 531.211.36 Art. 2
+metadata:
+  unit: doses
+  note: "Difference between domestic demand and freely available market quantity"
+values:
+  2019-09-25:
+    value: null
+    metadata:
+      note: "Dynamic calculation based on market conditions"

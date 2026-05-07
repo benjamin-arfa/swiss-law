@@ -1,0 +1,15 @@
+description: Temporary cushioning measures for resource-weak cantons
+reference: SR 613.2 Art. 19c
+metadata:
+  unit: CHF
+values:
+  2021-01-01:
+    value: 80000000
+  2022-01-01:
+    value: 200000000
+  2023-01-01:
+    value: 160000000
+  2024-01-01:
+    value: 120000000
+  2025-01-01:
+    value: 80000000

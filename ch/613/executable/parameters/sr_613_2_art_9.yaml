@@ -1,0 +1,12 @@
+description: Burden equalization base amounts
+reference: SR 613.2 Art. 9
+metadata:
+  unit: CHF
+values:
+  2019-01-01:
+    geo_topographic_base: 361806484
+    sociodemographic_base: 361806484
+  2021-01-01:
+    sociodemographic_additional: 80000000
+  2022-01-01:
+    sociodemographic_additional: 140000000

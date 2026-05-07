@@ -1,0 +1,7 @@
+description: Appeal deadline for stockpile decisions (days)
+reference: SR 531.211.36 Art. 7
+metadata:
+  unit: days
+values:
+  2019-09-25:
+    value: 5

@@ -1,0 +1,8 @@
+description: Late payment interest rate for subsidies
+reference: SR 616.1 Art. 24
+metadata:
+  unit: percent
+values:
+  1991-04-01:
+    annual_interest_rate: 0.05
+    grace_period_days: 60

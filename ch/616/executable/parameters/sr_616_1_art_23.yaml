@@ -1,0 +1,7 @@
+description: Maximum advance subsidy payment ratio
+reference: SR 616.1 Art. 23 Abs. 2
+metadata:
+  unit: ratio
+values:
+  1991-04-01:
+    max_advance_ratio: 0.80

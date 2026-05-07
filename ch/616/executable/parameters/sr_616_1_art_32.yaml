@@ -1,0 +1,9 @@
+description: Limitation periods for subsidy claims
+reference: SR 616.1 Art. 32
+metadata:
+  unit: years
+values:
+  2020-01-01:
+    general_limitation: 5
+    refund_relative_limitation: 3
+    refund_absolute_limitation: 10

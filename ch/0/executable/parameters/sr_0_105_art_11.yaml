@@ -1,0 +1,20 @@
+description: Convention Against Torture (SR 0.105) requirements
+values:
+  2024-01-01:
+    value:
+      torturerate:
+        value_type: number
+        label: "Risk of torturer activity"
+        variable: torture_prevention_measures
+        definition_period: YEAR
+        unit: 1
+        value: 5
+  2021-01-01:
+    value:
+      torturerate:
+        value_type: number
+        label: "Risk of torturer activity"
+        variable: torture_prevention_measures
+        definition_period: YEAR
+        unit: 1
+        value: 7

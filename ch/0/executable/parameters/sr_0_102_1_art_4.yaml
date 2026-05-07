@@ -1,0 +1,12 @@
+description: Applicability of the SR 0.102.1 treaty 
+metadata:
+  reference:
+    - title: "SR 0.102.1 Art. 4"
+      href: http://www.admin.ch/opc/en/classified-compilation/20010442/20010442004.html#art_4
+social_security_department:
+  declaration_notification_to_council:
+    description: Date of the last notification of applicability territory to the Council of Europe
+    default: None
+  retraction_notification_to_council:
+    description: Date of the last retraction of applicability territory to the Council of Europe
+    default: None

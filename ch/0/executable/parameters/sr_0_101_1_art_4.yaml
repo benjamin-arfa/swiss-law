@@ -1,0 +1,27 @@
+```yml
+parameters:
+  previous_participation_allowed:  # indicator if individual allowed to participate 
+                                   # in legal proceeding
+    definition: 1 if person("allowed_to_participate", period - 1)
+    type: bool
+  previous_travel_allowed:  # indicator if individual allowed to travel by 
+                          # Commission or court
+    definition: 1 if person("allowed_to_travel", period - 1)
+    type: bool
+  national_safety_concerns:
+    definition: 1 if person(age > 16 or person("has_safety_expenses", period))
+    type: bool
+  public_order_imperative:
+    definition: 1 if person(school_attendance == "present" & person(
+    "was_school_truancy")
+    type: bool
+  crime_prevention:
+    definition: 1 if person(has_criminal_records == "yes")
+    type: bool
+  allowed_to_participate: 
+    definition: 0.5 / (some parameters as example)
+    type: float
+  national_safety_factors: 
+    definition: 10.5 / (some parameters as example)
+    type: float
+```

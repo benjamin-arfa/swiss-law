@@ -1,0 +1,23 @@
+entities:
+  description: List of national entities recognized by the OpenFisca code
+  values:
+    CH:
+    LI:
+nationality:
+  description: Nationality values for use as inputs to entity definitions
+  values:
+    CH:
+      label: Switzerland
+    LI:
+      label: Liechtenstein
+nationalities:
+  description: Entity labels to match with nationality codes
+  values:
+    CH:
+      values:
+        - CH
+        - LI
+    LI:
+      values:
+        - LI
+        - CH

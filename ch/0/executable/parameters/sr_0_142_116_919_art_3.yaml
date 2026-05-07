@@ -1,0 +1,21 @@
+government:
+  laissez_passer_application_date:
+    description: Date of application for laissez-passer
+    values:
+      2024-01-01:
+        value: 2024-01-05
+  nationality_verified:
+    description: Nationality verified after 3 working days
+    values:
+      2024-01-01:
+        value: True
+  interview_held:
+    description: Interview held after 6 working days
+    values:
+      2024-01-01:
+        value: True
+  nationality_confirmed:
+    description: Nationality confirmed after interview
+    values:
+      2024-01-01:
+        value: True

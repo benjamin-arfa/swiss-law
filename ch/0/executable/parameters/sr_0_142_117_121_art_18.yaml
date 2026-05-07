@@ -1,0 +1,13 @@
+However, if we decide to take into account the entry into force of this treaty in OpenFisca, we could create a custom parameter or scenario. 
+For example, if we want to define the parameter that indicates whether the treaty has entered into force, we could use:
+
+```yml
+parameters:
+  treaty_entry_into_force:
+    initial: 0
+    description: Time of treaty entry into force
+    unit: days since 2024-01-01
+    default_values:
+      value: 30
+```
+This parameter represents the time since the entry into force of the treaty.

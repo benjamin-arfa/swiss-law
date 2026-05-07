@@ -1,0 +1,7 @@
+```yml
+parameters:
+  46_difference:
+    value: 12
+    unit: Swiss_franc
+    display_value: "Difference to be added"
+```

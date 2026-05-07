@@ -1,0 +1,9 @@
+transportation_costs:
+  description: Costs for transporting third-country nationals and stateless individuals to the airport (SR 0.142.112.149 Art. 6)
+  values:
+    2024-01-01:
+      value: 200
+    2020-01-01:
+      value: 180
+    1997-01-01:
+      value: 150

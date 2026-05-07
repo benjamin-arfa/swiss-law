@@ -1,0 +1,8 @@
+description: "Conditions for AHV dispute resolution (Art. 9 SR 0.142.112.272)"
+metadata:
+  reference:
+    - title: "SR 0.142.112.272 Art. 9 Beilegung von Meinungsverschiedenheiten"
+      href: "https://www.admin.ch/opc/en/classified-compilation/19820194/20230206150428/142.112.272.pdf#page=9"
+values:
+  2024-01-01:
+    value: true

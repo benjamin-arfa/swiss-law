@@ -1,0 +1,7 @@
+```yml
+aboltion_of_artikel24:
+  unit: 1
+  label: Abolition of Artikel 24 of the Convention
+  value_type: bool
+```
+This YAML snippet defines a parameter for the abolishment logic.

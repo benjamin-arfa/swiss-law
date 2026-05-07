@@ -1,0 +1,42 @@
+parameters:
+  institution_identifiers:
+    description: Identifiers for institutions participating in the SR 0.142.117.587 Art. 9 agreement
+    values:
+      EJPD:
+        value: EJPD
+      BFM:
+        value: BFM
+      SEM:
+        value: SEM
+      Ministerium_für_Berufsbildung_und_Beschäftigung:
+        value: Ministerium für Berufsbildung und Beschäftigung
+      Büro_für_Einwanderung_und_ausländische_Arbeitskräfte:
+        value: Büro für Einwanderung und ausländische Arbeitskräfte
+      Ministerium_für_Soziales:
+        value: Ministerium für Soziales
+      Amt_für_Auslandtunesier:
+        value: Amt für Auslandtunesier
+  authorities:
+    description: Authorities designated by Switzerland and Tunisia for implementing the SR 0.142.117.587 Art. 9 agreement
+    values:
+      EJPD:
+        description: Eidgenössisches Justiz- und Polizeidepartement (EJPD) of Switzerland
+        value: yes
+      BFM:
+        description: Bundesamt für Migration (BFM) of Switzerland
+        value: no
+      SEM:
+        description: Staatssekretariat für Migration (SEM) of Switzerland
+        value: yes
+      Ministerium_für_Berufsbildung_und_Beschäftigung:
+        description: Ministerium für Berufsbildung und Beschäftigung of Tunisia
+        value: yes
+      Büro_für_Einwanderung_und_ausländische_Arbeitskräfte:
+        description: Büro für Einwanderung und ausländische Arbeitskräfte of Tunisia
+        value: yes
+      Ministerium_für_Soziales:
+        description: Ministerium für Soziales of Tunisia
+        value: yes
+      Amt_für_Auslandtunesier:
+        description: Amt für Auslandtunesier of Tunisia
+        value: yes

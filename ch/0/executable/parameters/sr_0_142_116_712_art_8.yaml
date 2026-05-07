@@ -1,0 +1,29 @@
+Since no information was found, either we conclude this article does not need implementation or that the provided parameters from previous articles should suffice. However for completeness we list below parameters as an empty YAML file.
+
+social_security:
+  ahv:
+    employee_rate:
+      description: AHV contribution rate for employees (Art. 5 AHVG)
+      metadata:
+        unit: /1
+        reference:
+          - title: "AHVG Art. 5 — Beiträge von Einkommen aus unselbständiger Erwerbstätigkeit"
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_5"
+
+    self_employed_rate:
+      description: AHV contribution rate for self-employed individuals (Art. 10 AHVG)
+      metadata:
+        unit: /1
+        reference:
+          - title: "AHVG Art. 10 — Beiträge der Selbständigerwerbenden"
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_10"
+
+    mandatory_insurance:
+      description: Conditions for mandatory AHV insurance
+      age_threshold:
+        description: Minimum age for mandatory insurance (Art. 3 para. 3 AHVG)
+        metadata:
+          unit: year
+          reference:
+            - title: "AHVG Art. 3 — Obligatorisch versicherte Personen"
+              href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_3"

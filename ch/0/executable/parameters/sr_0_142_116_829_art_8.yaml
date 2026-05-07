@@ -1,0 +1,10 @@
+admin:
+  protocol_documents_accepted:
+    description: Documents accepted as proof of citizenship
+    metadata:
+      reference:
+        - title: "SR 0.142.116.829 - Art. 8 — Beweismittel für die Staatsangehörigkeit"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20210935/202107031000/0.142.116.829.html"
+      values:
+        2024-01-01:
+          value: ['passport', 'ID card']

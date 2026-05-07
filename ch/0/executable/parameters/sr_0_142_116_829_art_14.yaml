@@ -1,0 +1,9 @@
+# This parameter is for illustration purposes only as the variable is currently just reference
+
+international_transfer:
+  description: Parameters for international transfer requests
+  label: International transfer request costs and data
+  values:
+    2024-01-01:
+      international_transfer_request_made: 0.5
+      international_transfer_process_time: 3

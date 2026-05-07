@@ -1,0 +1,9 @@
+description: Authority responsible for investigating allegations of torture
+metadata:
+  reference:
+    - title: "SR 0.105 Art. 12"
+      href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_12"
+  values:
+    2024-01-01:
+      value: "police_forced_investigation_unit"
+      label: Police Forged Investigation Unit

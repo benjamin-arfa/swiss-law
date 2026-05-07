@@ -1,0 +1,13 @@
+# List of international agreements referenced in Art. 19
+international_agreements:
+  description: List of international agreements referenced in Art. 19 of the agreement
+  values:
+    2024-01-01:
+      - Conventions:
+        - Refugee Convention (1951)
+        - Refugee Protocol (1967)
+        - European Convention on Human Rights (1950)
+        - Convention against Torture (1984)
+      - Other Agreements:
+        - International Convention on the Return of Refugees (no specific date mentioned)
+        - International Agreements on Extradition (no specific date mentioned)

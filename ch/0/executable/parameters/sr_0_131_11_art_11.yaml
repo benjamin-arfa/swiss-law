@@ -1,0 +1,10 @@
+protocol_threshold:
+  description: Minimum number of EU countries required for protocol entry into force
+  metadata:
+    unit: count
+    reference:
+      - title: "SR 0.131.11 Art. 11"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art11"
+  values:
+    2024-01-01:
+      value: 4

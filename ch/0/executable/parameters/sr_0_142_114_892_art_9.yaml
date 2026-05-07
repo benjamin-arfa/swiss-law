@@ -1,0 +1,4 @@
+last_notification_date:
+    label: Last Notification Date: Date (YYYY-MM-DD) which triggered the start date of the abovementioned agreement between the Swiss and another relevant nation.
+    variable:
+        type: DateVariable

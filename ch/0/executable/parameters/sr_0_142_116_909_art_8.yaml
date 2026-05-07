@@ -1,0 +1,11 @@
+asylum_transfer_countries:
+  description: Countries that can be the destination of an asylum transfer request under Art. 8 SR 0.142.116.909
+  metadata:
+    reference:
+      - title: "SR 0.142.116.909 Art. 8"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20070432/index.html#ch0_8"
+  values:
+    2024-01-01:
+      value: ["CHE"]
+    2010-01-01:
+      value: ["CHE", "CHE_DEU"]

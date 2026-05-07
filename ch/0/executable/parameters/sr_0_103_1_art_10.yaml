@@ -1,0 +1,19 @@
+description: Child worker eligibility
+metadata:
+  reference:
+    - title: "Social Security Act, Art. 10"
+      href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_10"
+demographics:
+  child_workers_eligibility:
+    description: Child labor laws and minimum employment age
+    min_labor_age:
+      description: Minimum employment age for children (Art. 10 para. 3)
+      metadata:
+        unit: years
+      values:
+        2024-01-01:
+          value: 16
+        2020-01-01:
+          value: 16
+        1997-01-01:
+          value: 16

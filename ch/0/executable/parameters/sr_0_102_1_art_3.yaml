@@ -1,0 +1,10 @@
+entities:
+  description: Eligible municipal or regional corporations under the Protocol (SR 0.102.1 Art. 3)
+  description_for_entity: Description of entities eligible for the Protocol
+  states:
+    CH:
+      description: Eligible entities in Switzerland
+      entities:
+        - Kantonsregierung
+        - Gemeinde
+        - Stadt

@@ -1,0 +1,9 @@
+description: Conditions for onward transportation permission for foreign nationals (Art. 15 SR 0.142.116.909)
+type: dictionary
+metadata:
+  reference:
+    - title: "SR 0.142.116.909 Art. 15 — Durchbeförderung"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20191121/index.html#art15"
+values:
+  commit_crime_threshold: "2 years"
+  already_prosecuted_threshold: 20

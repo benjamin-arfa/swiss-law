@@ -1,0 +1,31 @@
+general_settings:
+  description: Configuration of the general settings (SR 0.104 Art. 10)
+  business_board_election_period:
+    description: The duration of the election period for the business board (Art. 10 para. 2 SR 0.104)
+    metadata:
+      unit: years
+      reference:
+        - title: "SR 0.104 Art. 10"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20020621/20210101000000011.pdf#page=10"
+    values:
+      2024-01-01:
+        value: 2
+  secretariat_provision:
+    description: The arrangement for providing the committee secretariat (Art. 10 para. 3 SR 0.104)
+    metadata:
+      reference:
+        - title: "SR 0.104 Art. 10"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20020621/20210101000000011.pdf#page=10"
+    values:
+      2024-01-01:
+        value: "provided_by_UN"
+
+  meeting_location:
+    description: The location of the meetings of the business board (Art. 10 para. 4 SR 0.104)
+    metadata:
+      reference:
+        - title: "SR 0.104 Art. 10"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20020621/20210101000000011.pdf#page=10"
+    values:
+      2024-01-01:
+        value: "UN Headquarters"

@@ -1,0 +1,21 @@
+ahv_treaty_name:
+  description: Name of the treaty (e.g. Switzerland - International Agreement)
+  values:
+    :
+      value: Switzerland - International Agreement
+ahv_treaty_exceptions_conditions:
+  description: Conditions for which the AHV treaty exceptions apply
+  metadata:
+    reference:
+      - title: "SR 0.142.116.909 Art. 23"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_23"
+    unit: /1
+  values:
+    human_rights:
+      value: 1  # Human rights international agreements
+    international_assistance:
+      value: 1  # International assistance treaties, including extraditions
+    refugee_protection:
+      value: 1  # Treaties concerning refugee protection (Art. 2, 3)
+    migration:
+      value: 1  # Treaties related to migration (personal repatriation, transfers)

@@ -1,0 +1,9 @@
+description: Maximum duration of extension of a stagiairesbewilligung (Article 4, SR 0.142.116.657)
+metadata:
+  unit: months
+  reference:
+    - title: "SR 0.142.116.657 Art. 4"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20200325/de/#199.0"
+values:
+  2024-01-01:
+    value: 6

@@ -1,0 +1,24 @@
+switzerland:
+  statelessness:
+    description: Conditions surrounding statelessness of Switzerland
+    is_stateless_person:
+      description: Condition to be stateless according to SR 0.142.116.909, in accordance with New York Agreement
+      metadata:
+        unit: /1
+        reference:
+          - title: "SR 0.142.116.909 Art. 20 - Dritstaatsangehörige"
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_20"
+    special_status_recieved:
+      description: Has the person acquired special status?
+      metadata:
+        unit: /1
+        reference:
+          - title: "SR 0.142.116.909 Art. 20 - Dritstaatsangehörige"
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_20"
+    new_york_convention_citizenship:
+      description: Is the person a citizen according to the New York Convention?
+      metadata:
+        unit: /1
+        reference:
+          - title: "SR 0.142.116.909 Art. 20 - Dritstaatsangehörige"
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_20"

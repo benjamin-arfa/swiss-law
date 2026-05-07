@@ -1,0 +1,6 @@
+entities:
+  Government:
+    variables:
+        amendment_effective_date:
+          label: Date when amendments to the agreement come into effect
+          definition: Event(date, '2024-01-01')

@@ -1,0 +1,21 @@
+parameters:
+  asyl_return_req_deadline:
+    description: Time when a requesting state must complete an asylum return request
+    metadata:
+      unit: days
+      reference:
+        - title: "AsylVZG Art. 10 Fristen"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20191061/index.html#art10"
+    values:
+      2024-01-01:
+        value: 365
+  asylum_request_answ_deadline:
+    description: Time to answer asylum request
+    metadata:
+      unit: days
+      reference:
+        - title: "AsylVZG Art. 10 Fristen"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20191061/index.html#art10"
+    values:
+      2024-01-01:
+        value: 15

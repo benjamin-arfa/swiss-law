@@ -1,0 +1,28 @@
+social_security:
+  data_usage:
+    description: Data usage rules for missing person cases (Art. 19 SR 0.103.3)
+    missing_person_search:
+      description: Threshold for using personal data in search efforts
+      type: float
+
+    dignity_protection_threshold:
+      description: Threshold for violating human rights and freedoms
+      type: float
+
+  # possible values for missing_person_search and dignity_protection_threshold parameters
+values:
+  2024-01-01:
+    missing_person_search:
+      value: 1.0
+    dignity_protection_threshold:
+      value: 0.5
+  2020-01-01:
+    missing_person_search:
+      value: 1.0
+    dignity_protection_threshold:
+      value: 0.5
+  1997-01-01:
+    missing_person_search:
+      value: 1.0
+    dignity_protection_threshold:
+      value: 0.5

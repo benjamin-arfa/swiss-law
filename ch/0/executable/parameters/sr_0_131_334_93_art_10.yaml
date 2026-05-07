@@ -1,0 +1,13 @@
+description: Deadline for implementing and aligning healthcare agreements (Art. 10 SR 0.131.334.93)
+metadata:
+  unit: years
+  reference:
+    - title: "SR 0.131.334.93 Art. 10 — Übergangsbestimmungen"
+      href: "https://www.admin.ch/opc/de/classified-compilation/19930583/index.html#art10"
+values:
+  2024-01-01:
+    value: 2
+  2000-01-01:
+    value: 2
+  1995-01-01:
+    value: 2

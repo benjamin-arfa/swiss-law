@@ -1,0 +1,8 @@
+description: Timing for considering later articles to European Charter of Local Self-Government as binding
+unit: months
+reference:
+  - title: "SR 0.102 Art. 12 — Verpflichtungen"
+    href: "https://www.admin.ch/opc/en/classified-compilation/19930018/index.html#art12"
+values:
+  2024-01-01:
+    value: 3

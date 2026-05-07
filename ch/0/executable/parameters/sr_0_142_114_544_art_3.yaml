@@ -1,0 +1,17 @@
+market_regulations:
+  stagiairebewilligung:
+    description: Stagiairebewilligung regulations
+    max_duration:
+      description: Maximum duration of Stagiairebewilligung
+      metadata:
+        unit: months
+        reference:
+          - title: "SR 0.142.114.544 Art. 3"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20180555/index.html"
+      values:
+        2024-01-01:
+          value: 12
+        2020-01-01:
+          value: 12
+        1997-01-01:
+          value: 12

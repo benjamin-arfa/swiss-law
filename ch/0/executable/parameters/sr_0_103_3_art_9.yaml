@@ -1,0 +1,39 @@
+jurisdiction:
+  description: Jurisdiction conditions for Art. 9 of SR 0.103.3
+  is_offense_commit_in_territory:
+    description: True if offense was committed in Switzerland (SR 0.103.3 Art. 9 para. 1 lit. a)
+    values:
+      2024-01-01:
+        value: True
+      2023-01-01:
+        value: True
+      2018-01-01:
+        value: True
+  is_suspect_state_citizen:
+    description: True if suspect is a citizen of Switzerland (SR 0.103.3 Art. 9 para. 1 lit. b)
+    values:
+      2024-01-01:
+        value: True
+      2018-01-01:
+        value: False
+  is_concealed_person_state_citizen:
+    description: True if concealed person is a citizen of Switzerland (SR 0.103.3 Art. 9 para. 1 lit. c)
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: True
+  is_suspect_present_in_territory:
+    description: True if suspect is present in Switzerland's territory (SR 0.103.3 Art. 9 para. 2)
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: True
+  is_state_complying_with_international_obligations:
+    description: True if Switzerland is complying with international obligations regarding extradition (SR 0.103.3 Art. 9 para. 2)
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: True

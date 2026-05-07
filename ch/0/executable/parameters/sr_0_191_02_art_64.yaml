@@ -1,0 +1,10 @@
+consular_officer_protection:
+  description: Presence or existence of protection for honorary consular officer (SR 0.191.02 Art. 64)
+  metadata:
+    unit: boolean
+    reference:
+      - title: Konsularstrafgesetz (KstVG), Verordnung über das Konsulat (KONSG)
+        href: "https://www.fedlex.admin.ch/en/administered-jurisprudence/index/_html_2023010100000063.html#kstvg_64"
+  values:
+    2024-01-01:
+      value: true

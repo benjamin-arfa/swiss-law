@@ -1,0 +1,8 @@
+reservation_denied_articles:
+    label: Articles for which reservations are not allowed
+    value:
+        CH:
+          unit: '1'
+          type: string
+          string: "[Article 57 of the Convention]"
+          default: "Article 57 of the Convention"

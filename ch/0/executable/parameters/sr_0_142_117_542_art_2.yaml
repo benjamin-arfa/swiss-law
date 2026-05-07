@@ -1,0 +1,15 @@
+migration:
+  schengen:
+    visa_exemption:
+      description: Exemption from Schengen visa requirements for EU/Swiss citizens
+      metadata:
+        reference:
+          - title: "Schengen Association Agreement, Art. 2.1"
+          - title: "Schengen Association Agreement, Art. 2.2"
+      values:
+        2024-01-01:
+          value: False
+        2007-01-01:
+          value: True
+        1997-01-01:
+          value: True

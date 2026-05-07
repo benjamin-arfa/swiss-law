@@ -1,0 +1,22 @@
+description: Trainee permit duration (valid months before renewal)
+metadata:
+  unit: months
+  reference:
+    - title: "SR 0.142.116.907 Art. 2"
+      href: "https://www.admin.ch/opc/de/classified-compilation/20170120/index.html#2017_711_1"
+      section: "Art. 2 para. 1"
+values:
+  2024-01-01:
+    value: 12
+  2020-01-01:
+    value: 13
+  1997-01-01:
+    value: 14
+
+max_extension:
+  description: Maximum possible permit renewal in months
+  values:
+    2024-01-01:
+      value: 6
+    2020-01-01:
+      value: 6

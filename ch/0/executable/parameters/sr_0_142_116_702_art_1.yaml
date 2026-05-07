@@ -1,0 +1,19 @@
+has_valid_diplomatic_status:
+  description: Validates whether the person has diplomatic status.
+  values:
+    2024-01-01:
+      value: "diplomatic_passport | consular_passport | residency_diploma"
+
+family_status:
+  description: Status of the person in the household
+  values:
+    family_member:
+      value: "family_member"
+      description: "Member of a diplomatic family"
+      label: "Family Member"
+
+lives_with_diplomatic_member:
+  description: Indicates whether they live with a diplomatic staff member.
+  values:
+    True:
+      value: "lives_with_diplomatic_member is True"

@@ -1,0 +1,15 @@
+description: ECSR ART. 22
+metadata:
+  unit: /1
+  reference:
+    - title: "SR 0.103.3 Art. 22"
+      href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_22"
+values:
+  2024-01-01:
+    value:
+      ecsr_article_22_reporting_issue_a:
+        value: true
+      ecsr_article_22_reporting_issue_b:
+        value: true
+      ecsr_article_22_reporting_issue_c:
+        value: true

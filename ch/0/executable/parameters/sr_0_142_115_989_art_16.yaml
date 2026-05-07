@@ -1,0 +1,10 @@
+description: Parameters for assessing the eligibility of direct onward transport to Switzerland.
+
+# hardcoded for now
+has_conviction_risk:
+  description: A flag indicating whether the person is at risk to be convicted
+  values:
+    2024-01-01:
+      value: 0.1
+    1997-01-01:
+      value: 0.005

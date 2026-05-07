@@ -1,0 +1,10 @@
+agreements:
+  ahv_implementation_process:
+    description: Parameterization of internal procedures for AGV amendments
+    metadata:
+      reference:
+        - title: "SR 0.142.116.702 Art. 7"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170232/index.html#art_7"
+    values:
+      partner1_completed_on: 2020-01-01
+      partner2_completed_on: 2020-02-05

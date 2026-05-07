@@ -1,0 +1,9 @@
+```yaml
+parameters:
+    has_immunity__entities:
+        value_type: string
+    has_immunity__entities__filter: entity.represented_entity
+    reveal_statements_or_documents__entities:
+        value_type: string
+    reveal_statements_or_documents__entities__filter: entity.represented_entity
+```

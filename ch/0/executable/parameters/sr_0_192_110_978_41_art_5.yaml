@@ -1,0 +1,10 @@
+eutelsat:
+  allowed_status:
+    description: Allows EUTELSAT to receive, possess and manage financial instruments
+    metadata:
+      reference:
+        - title: "SR 0.192.110.978.41 Art. 5"
+          href: "https://www.admin.ch/opc/de/classified-compilation/1998234230/index.html:2021-04-22"
+    values:
+      2024-01-01:
+        value: True

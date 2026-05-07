@@ -1,0 +1,9 @@
+article_4_refusal_rate:
+  description: Rate at which entry is refused under Article 4
+  values:
+    2024-01-01:
+      value: 0.05
+    2020-01-01:
+      value: 0.03
+    1997-01-01:
+      value: 0.01

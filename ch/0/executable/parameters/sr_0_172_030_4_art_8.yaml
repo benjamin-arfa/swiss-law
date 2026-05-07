@@ -1,0 +1,19 @@
+convention:
+		reference:
+			- title: "SR 0.172.030.4"
+			  href: "https://search.ch/browsing/Ziff#art_8"
+		strengthened_requirements:
+			description: Condition if the agreement requires stricter formalities
+			type: str
+		use_convention:
+				description: Indicator if the modification applies
+				metadata:
+					condition:
+					payload:
+						type: str
+						metadata:
+								description: Formalities in AHV Art. 3 and 4
+								reference:
+									- title: "AHVG Art. 3/4."
+									type: url
+								reference:

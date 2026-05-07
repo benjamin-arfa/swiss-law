@@ -1,0 +1,10 @@
+description: Referee (as in Asylum Act) obligations
+metadata:
+    reference:
+        - title: "SR 0.142.30 Art. 2 — Allgemeine Verpflichtungen"
+          href: "https://www.admin.ch/opc/en/online-tables/bundesblatt/1948.pdf"
+values:
+  2024-01-01:
+    value: true
+  1948-01-01:
+    value: true

@@ -1,0 +1,6 @@
+financial_autonomy_index:
+  description: The ratio of income to total expenditure
+  unit: /
+  reference:
+    - title: "SR 0.102 Art. 9"
+      href: "https://www.admin.ch/opc/de/classified-compilation/19920142/index.html"

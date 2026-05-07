@@ -1,0 +1,11 @@
+description: Human rights protocol declaration conditions (Art. 4 SR 0.103.22)
+
+[[ ## parameter_yaml ##
+human_rights_declaring_states:
+  entity: Country
+  values:
+    CH:
+      made_protocol_declaration: true
+      made_contrariety_declaration: false
+      description: "protocol declaration status"
+  description: "A country's declaration status"

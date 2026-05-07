@@ -1,0 +1,12 @@
+contract_amendment:
+  description: Effective date of the social security contract amendment
+  metadata:
+    unit: year
+    reference:
+      - title: "SR 0.105 Art. 29"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_29"
+  values:
+    2022-01-01:
+      value: 2022-07-01
+    1990-01-01:
+      value: 1990-01-01

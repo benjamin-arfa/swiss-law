@@ -1,0 +1,13 @@
+```yml
+parameters :
+  treaty_in_force :
+    start : 2024-01-01
+    parameters:
+      five_member_states_2022 : 5
+      five_member_states_2023 : 5
+      five_member_states : 0
+      signing_date_2022 : 2022-01-01
+      signing_date_2023 : 2023-01-01
+      ratification_date_2022 : 2022-01-01
+      ratification_date_2023 : 2023-01-01
+```

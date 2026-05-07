@@ -1,0 +1,24 @@
+We can define a parameter that stores the treaty details.
+
+```python
+# we'll describe the structure of the period, so we can use the parameters as time-dependent values
+# and not just arbitrary time-agnostic values
+
+treaty_partners:
+  description: Treaty partners and associated details.
+  metadata:
+    reference:
+      - title: "SR 0.142.112.632.1"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20160173/"
+    values:
+      general_details:
+        value: "Art. 1 - This treaty is applicable for Swiss and Colombian citizens."
+      allowed_stay_duration:
+        value: 90
+      allowed_stay_duration_window:
+        value: 180
+      partner_countries:
+        value: ["CO", "CH"]
+```
+
+This would typically require additional modeling of how this legal regulation applies at a country level.  This structure of code applies to each given country separately.

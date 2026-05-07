@@ -1,0 +1,12 @@
+# No numerical values, only article reference for parameter documentation
+extradition_crimes:
+  description: Extradition crimes subject to Art. 8 SR 0.105
+  metadata:
+    reference:
+      - title: "SR 0.105 Art. 8"
+        href: "https://www.admin.ch/opc/en/classified-compilation/19880132/index.html"
+values:
+  2024-01-01:
+    value:
+      - crime_1
+      - crime_2

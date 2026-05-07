@@ -1,0 +1,30 @@
+is_schengen_state:
+  description: Is the country in Schengen?
+  metadata:
+   unit: boolean
+   reference:
+      - title: SR 0.142.113.212 Art. 2 Andere Reisegründe
+        href: ?? 
+
+  
+permitted_time_in_schengen_zone:
+  description: Days permitted in zone
+  metadata:
+    unit: days
+    reference:
+      - title: SR 0.142.113.212 Art. 2 Andere Reisegründe
+        href: ?? 
+  values:
+    default:
+      value: 90
+
+permitted_time_in_schengen_zone_interval:
+  description: Days permitted in a Schengen Zone interval.
+  metadata:
+    unit: days
+    reference:
+      - title: SR 0.142.113.212 Art. 2 Andere Reisegründe
+        href: ?? 
+  values:
+    default:
+      value: 180

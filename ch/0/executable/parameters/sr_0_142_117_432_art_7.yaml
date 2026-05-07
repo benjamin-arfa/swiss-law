@@ -1,0 +1,12 @@
+country:
+  description: Country of residence definitions
+  metadata:
+    reference:
+      - title: "SR 0.142.117.432"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20220141/20220116000000/0.142.117.432.en.pdf"
+  values:
+    values:
+      description: Countries for residence definitions
+      type: list
+      items:
+        type: string

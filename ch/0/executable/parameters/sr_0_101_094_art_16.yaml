@@ -1,0 +1,9 @@
+```yaml
+parameters:
+    sanction_amount:
+        value_type: decimal
+        unit: chf
+        min_rate: 0.0
+        max_rate: 1000.0
+        threshold: 0.5
+```

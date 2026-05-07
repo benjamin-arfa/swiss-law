@@ -1,0 +1,40 @@
+young_professional:
+  description: Conditions for being a young professional
+  min_age:
+    metadata:
+      unit: age years
+      reference:
+        - title: "SR 0.142.117.587 Art. 2"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20210935/index.html"
+    values:
+      2024-01-01:
+        value: 18
+  max_age:
+    metadata:
+      unit: age years
+      reference:
+        - title: "SR 0.142.117.587 Art. 2"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20210935/index.html"
+    values:
+      2024-01-01:
+        value: 35
+  vocational_training:
+    metadata:
+      unit: Period
+      description: Minimum duration of vocational training required to be a young professional
+      reference:
+        - title: "SR 0.142.117.587 Art. 2"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20210935/index.html"
+    values:
+      2024-01-01:
+        value: 2 years
+  university_degree:
+    metadata:
+      unit: null
+      description: Having university degree is optional
+      reference:
+        - title: "SR 0.142.117.587 Art. 2"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20210935/index.html"
+    values:
+      2024-01-01:
+        value: false

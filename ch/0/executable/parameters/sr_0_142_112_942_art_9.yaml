@@ -1,0 +1,10 @@
+description: Date change period in the agreement change notification
+metadata:
+  unit: day
+  reference:
+    - title: "Abkommen über die Vereinfachung der Verrechnung von Steuern auf Kapitalerträge zwischen der Schweiz und Deutschland, Artikel 9"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20180223.zh8.de.html#art.9"
+
+
+activation_period:
+  value: 30

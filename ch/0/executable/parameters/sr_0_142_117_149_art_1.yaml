@@ -1,0 +1,20 @@
+nationality:
+  list:
+    swiss:
+      description: A Swiss national
+      default: True
+    swedish:
+      description: A Swedish national
+      default: False
+  third-country-national:
+    description: A third-country national
+    default: True
+
+general:
+  entity:
+    definition:
+      Person:
+        attributes:
+          nationality:
+            foreign_key:
+              table: general.nationality

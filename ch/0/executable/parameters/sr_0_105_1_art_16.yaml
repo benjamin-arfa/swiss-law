@@ -1,0 +1,13 @@
+description: Subcommittee report publication parameter (Art. 16 SR 0.105.1)
+metadata:
+  unit: /
+  reference:
+    - title: "SR 0.105.1 Art. 16"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20060613/202001010000/01.105.101.html#art_16"
+values:
+  2024-01-01:
+    report_publishing: True
+  2020-01-01:
+    report_publishing: True
+  1948-01-01:
+    report_publishing: True

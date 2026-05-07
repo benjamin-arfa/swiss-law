@@ -1,0 +1,11 @@
+international_notification:
+  notification_list:
+    metadata:
+      description: List of countries to which international notifications are made
+    values:
+      2024-01-01:
+        value:
+          - { country_code: CH, notification_reason: "prosecution" }
+          - { country_code: DE, notification_reason: "extradition" }
+
+description: International notification settings for a country

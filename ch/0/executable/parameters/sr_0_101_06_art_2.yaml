@@ -1,0 +1,8 @@
+```yml
+parameters:
+  # Here we would include the description of parameters, if any, 
+  # like the 'War_Year'
+  War_Year: 2017
+  # However as it was mentioned we would return 0 if there was no string 'in' in the event series 
+  # So, we wont include any parameter for this case
+```

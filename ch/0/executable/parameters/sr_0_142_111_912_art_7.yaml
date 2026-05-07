@@ -1,0 +1,18 @@
+visa_application_processing:
+  description: Parameters for calculating Visa application processing time
+  days_range:
+    description: Range of days for standard processing time (para. 1) plus possible extension
+    unit: days
+    values:
+      min:
+        value: 10
+      max:
+        value: 30
+
+has_priority:
+  description: Expedited processing due to urgency
+  values:
+    True:
+      value: 1
+    False:
+      value: 0

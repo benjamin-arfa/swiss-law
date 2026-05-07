@@ -1,0 +1,57 @@
+# Data transfer rules parameters
+social_security:
+  data_transfer:
+    description: Description of the data transfer rules
+    rules:
+      agreed_purpose:
+        description: Agreed purpose of the data use
+        type: str
+        reference:
+          - title: Article 12 SR 0.142.117.439
+            href: https://www.fedlex.admin.ch/eli/cc/2023/1641_1641/de#art_12
+      notified_sender:
+        description: Whether the sender was notified
+        type: bool
+
+      agreed_purpose_changes:
+        description: Changes to the agreed purpose (if any)
+        type: str
+
+      notified_sender_reports:
+        description: Reports of data use changes from sender
+        type: bool
+
+      data_protection:
+        description: Protection mechanisms for the transferred data
+        type: bool
+
+      individual_notification_rights:
+        description: Whether individuals have the right to be notified
+        type: bool
+
+      data_retention_period:
+        description: Maximum retention period for the transferred data
+        unit: years
+        reference:
+          - title: Article 12 SR 0.142.117.439
+            href: https://www.fedlex.admin.ch/eli/cc/2023/1641_1641/de#art_12
+        values:
+          2024-01-01:
+            value: 2
+          2020-01-01:
+            value: 2
+          1997-01-01:
+            value: 1
+
+# Data retention period for historical reasons:
+data_retention_period:
+  type: int
+  unit: years
+  description: Data retention period
+  values:
+    2024-01-01:
+      value: 2
+    2020-01-01:
+      value: 2
+    1997-01-01:
+      value: 1

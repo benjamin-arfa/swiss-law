@@ -1,0 +1,46 @@
+description: Variables related to racial discrimination
+metadata:
+  reference:
+    - title: "SR 0.104"
+      href: "https://www.fedlex.admin.ch/eli/cc/0_104"
+values:
+  discriminatory_purpose:
+    description: Purpose of the policy or measure to discriminate
+    label: Purpose
+
+  discriminatory_effect:
+    description: Effect of the policy or measure to discriminate
+    label: Effect
+
+  exclusion:
+    description: Exclusion resulting from the policy or measure
+    label: Exclusion
+
+  restriction:
+    description: Restriction resulting from the policy or measure
+    label: Restriction
+
+  preference:
+    description: Preference in favor of a particular group or individual
+    label: Preference
+
+  legal_basis:
+    description: Legal basis for the policy or measure
+    label: Legal Basis
+
+  equality_of_treatment:
+    description: Equality of treatment in public life
+    label: Equality of Treatment
+
+
+  equality_before_law:
+    description: Equality before the law
+    label: Equality before Law
+
+  public_life_fields:
+    description: Fields of public life affected by the policy or measure
+    label: Public Life
+
+  non_targeting_sondermassnahmen:
+    description: Non-targeting special measures to protect a particular group or individual
+    label: None

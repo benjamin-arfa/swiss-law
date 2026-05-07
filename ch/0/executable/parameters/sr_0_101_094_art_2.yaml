@@ -1,0 +1,8 @@
+```yaml
+tax_benefit_system: |
+  ...
+  parameters:
+    ...
+    end_of_term_age: 70
+    term_of_office: 9
+```

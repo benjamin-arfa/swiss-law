@@ -1,0 +1,28 @@
+asylum:
+  description: Time constraints for taking charge of third-country nationals
+  maximum_transfer_deadline:
+    description: Maximum time in days to carry out the transfer (Art. 5 para. 2)
+    metadata:
+      unit: days
+      reference:
+        - title: "SR 0.142.111.639 Art. 5"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20190429/index.html#20190622_42_1_5_1"
+    value: 91
+  response_time:
+    description: Time allowed for the requested state to respond to the request (Art. 5 para. 2)
+    metadata:
+      unit: days
+      reference:
+        - title: "SR 0.142.111.639 Art. 5"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20190429/index.html#20190622_42_1_5_1"
+    value: 14
+  maximum_transfer_extension:
+    description: Maximum time to extend transfer deadlines due to unforeseen circumstances
+    metadata:
+      unit: days
+      reference:
+        - title: "SR 0.142.111.639 Art. 5"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20190429/index.html#20190622_42_1_5_1"
+    values:
+      2024-01-01:
+        value: 30

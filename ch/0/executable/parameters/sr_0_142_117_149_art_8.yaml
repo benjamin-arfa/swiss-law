@@ -1,0 +1,26 @@
+identification_data:
+  personal_identifiers:
+    description: Personal identifiers for data transmission
+    metadata:
+      unit: /1
+      reference:
+        - title: "SR 0.142.117.149 Art. 8 — Datenschutz"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20210261/index.html#art_8"
+    values:
+      2024-01-01:
+        value:
+          - name: Name
+          - surname: Vorname
+          - date_of_birth: Geburtsdatum
+          - gender: Geschlecht
+  identity_documents:
+    description: Identity documents
+    metadata:
+      reference:
+        - title: "SR 0.142.117.149 Art. 8 — Datenschutz"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20210261/index.html#art_8"
+    values:
+      2024-01-01:
+        value:
+          - name: Name
+            description: Reisepass

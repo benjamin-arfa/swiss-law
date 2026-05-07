@@ -1,0 +1,19 @@
+social_security:
+  food_threshold:
+    description: Threshold of household income below which an entitlement to a food basket becomes necessary (Art. 11 SR 0.103.1)
+    metadata:
+      unit: "CHF/year"
+      reference: 
+        - title: "SR 0.103.1, International Covenant on Economic, Social and Cultural Rights (Article 11, paragraph 2)"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19630482/1986/518.pdf"
+      values:
+        2024-01-01:
+          value: 20000
+        2010:
+          value: 17000
+
+    def formula(household, period, parameters):
+      child_pop=household("child_pop", period)
+      food_cost=household("food_cost", period)
+ 
+      return child_pop * food_threshold + food_cost

@@ -1,0 +1,14 @@
+description: Convention entry into force and countries' entry into force
+metadata:
+  reference:
+    - title: "SR 0.103.3 Art. 35"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/19930416/index.html#art_35"
+
+countries:
+  CH:
+    # Switzerland's date of signing (Apr 28) does matter but dates of entry into force of the
+    # Convention can be looked up as of 2024-01-01 and might need updates
+    became_party_on: 1993-09-18
+  ...
+convention:
+  entry_into_force: 1992-11-14

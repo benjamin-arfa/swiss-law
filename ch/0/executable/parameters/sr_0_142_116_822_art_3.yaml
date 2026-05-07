@@ -1,0 +1,29 @@
+description: Definition of terms in the Agreement
+has_authorization_to_reside:
+  description: Whether a person has authorization to reside
+  metadata:
+    reference:
+      - title: "SR 0.142.116.822 Art. 3 — Definitionen"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20020403/200209250000/de/de26000002.html"
+  values:
+    2024-01-01:
+      value: false
+permitted_stay:
+  description: Permitted stay in Switzerland
+  metadata:
+    unit: days
+    reference:
+      - title: "SR 0.142.116.822 Art. 3 — Definitionen"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20020403/200209250000/de/de26000002.html"
+  values:
+    2024-01-01:
+      value: 90
+is_schengen_country:
+  description: Whether a country is a Schengen country (Art. 3 SR 0.142.116.822)
+  metadata:
+    reference:
+      - title: "SR 0.142.116.822 Art. 3 — Definitionen"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20020403/200209250000/de/de26000002.html"
+  values:
+    2024-01-01:
+      value: false

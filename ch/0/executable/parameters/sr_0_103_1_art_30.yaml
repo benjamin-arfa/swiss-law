@@ -1,0 +1,12 @@
+international_relations:
+  notifications:
+    description: States and events notified to UNESCO
+    metadata:
+      reference:
+        - title: "SR 0.103.1 Art. 30"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19900211/202010160000/0.103.epie.1.html#art_30"
+    states:
+      - signatory_state: CH
+        event_type: signature
+      - signatory_state: FR
+        event_type: ratification

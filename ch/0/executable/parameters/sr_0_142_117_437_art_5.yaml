@@ -1,0 +1,11 @@
+trainee_status:
+  description: Status of a person being a trainee (Art. 5 SR 0.142.117.437)
+  values:
+    2024-01-01:
+      value: False
+
+allowed_employment_status:
+  description: Restrictions on trainees' employment activities (Art. 5 SR 0.142.117.437)
+  formula:
+    allowed:
+      from_variable: has_trainee_status

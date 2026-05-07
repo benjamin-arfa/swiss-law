@@ -1,0 +1,18 @@
+description: Variable to define institutions which support and engage in mechanisms of national mechanism
+metadata:
+  reference:
+    - title: "SR 0.105.1"
+      href: "https://about.bbag.admin.ch/en"
+values: {}
+  institution:
+
+    description: Facility has a preventative mechanism according to the national mechanism
+    institution_types:
+        - Facility
+
+    has_torture_prevention_mechanism:
+      description: A national preventative mechanism for torture and inhuman treatments (Art. 19 SR 0.105.1)
+      reference:
+        - title: "Art. 19 — Nationalmechanismus"
+          href: "https://www.bbag.admin.ch/EN/home/structure/swiss-national-prevention-mechanism.html"
+          url: "https://www.bbag.admin.ch/content/bbag/en/home/structure/swiss-national-prevention-mechanism.html"

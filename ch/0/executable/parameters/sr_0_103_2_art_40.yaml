@@ -1,0 +1,8 @@
+international_treaties:
+  description: International Treaties and Obligations
+  covenant_entry_year:
+    description: Year in which the international covenant came into effect.
+    unit: year
+    reference:
+      - title: "SR 0.103.2 Art. 40"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_40"

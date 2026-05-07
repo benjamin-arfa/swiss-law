@@ -1,0 +1,15 @@
+```yaml
+parameters:
+  previous_criminal_case_result:
+    label: Previous criminal case result
+    values:
+      Acquitted: 1
+      Convicted: 0
+    default: 0
+  new_information_threshold_date: 
+    label: Threshold date for considering new information
+    default: 1990
+  procedural_errors_threshold_date: 
+    label: Threshold date for considering previous procedural errors
+    default: 1990
+```

@@ -1,0 +1,2 @@
+There's no direct applicable YAML parameter file here.
+However, if OpenFisca code needs a way to store or reference notifications (e.g., in the form of events), the OpenFisca parameter or variables would have to be designed more conceptually aligned with that procedural or communicative framework.

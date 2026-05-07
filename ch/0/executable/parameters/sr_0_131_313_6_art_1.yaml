@@ -1,0 +1,9 @@
+disaster_relief:
+    description: Disasters or heavy accidents affected by SR 0.131.313.6 Art. 1
+    values:
+      2024-01-01:
+        value:
+          - description: Received disaster relief
+            parameter: disaster_relief
+          - description: Not received disaster relief
+            parameter: no_disaster_relief

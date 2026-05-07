@@ -1,0 +1,7 @@
+international_relations:
+  treaty_countries:
+    description: Countries bound by the marketing cost sharing treaty (Art. 7 SR 0.132.136.2)
+    values:
+      - CH
+      - DE
+      - FR

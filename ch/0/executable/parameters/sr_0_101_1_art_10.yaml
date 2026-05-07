@@ -1,0 +1,7 @@
+```yml
+parameters:
+  convention_withdrawal_individuals:
+    value: ["individual1", "individual2", "individual3"]
+  withdrawal_notification_delay:
+    value: 6  # months
+```

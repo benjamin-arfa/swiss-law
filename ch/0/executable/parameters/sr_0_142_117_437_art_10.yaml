@@ -1,0 +1,13 @@
+description: Entry into force and termination of the international agreement
+international_agreements:
+  description: Properties of international agreements
+  entry_into_force:
+    description: Entry into force date of the treaty (SR 0.142.117.437 Art. 10)
+    metadata:
+        unit: month
+        reference:
+        - title: "SR 0.142.117.437 Article 10"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20010432/index.html#20020608"
+values:
+  2021-05-29:
+    value: 2021-05-29

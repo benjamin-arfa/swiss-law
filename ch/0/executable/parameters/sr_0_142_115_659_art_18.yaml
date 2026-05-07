@@ -1,0 +1,5 @@
+international_agreements:
+  sr_0_142_115_659:
+    contracting_party1: CH  # Changed parameter names for clarity
+    contracting_party2: US
+   label: "Contracting parties for SR 0.142.115.659 Agreement"

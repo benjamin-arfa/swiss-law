@@ -1,0 +1,8 @@
+at_risk_of_persecution:
+    description: Eligibility criteria for persecution-based removal denial
+
+at_risk_of_prosecution:
+    description: Eligibility criteria for prosecution-based removal denial
+
+poses_threat_to_public_interest:
+    description: Eligibility criteria for public-order-based removal denial

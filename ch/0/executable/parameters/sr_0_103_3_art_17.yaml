@@ -1,0 +1,13 @@
+maintenance:
+  description: Ensure accurate records of detainees
+  detention_registry:
+    description: Update and maintain detention registry
+    metadata:
+      reference:
+        - title: "SR 0.103.3 Art. 17 — (1) Niemand darf geheim in Haft gehalten werden."
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20030432/201307270000/01.103.3/index.html#art_17_buchstabe_e_2"
+    values:
+      2024-01-01:
+        value: true
+      1948-01-01:
+        value: false

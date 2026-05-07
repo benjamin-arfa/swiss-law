@@ -1,0 +1,32 @@
+safe_third_country:
+  description: Eligible safe third country conditions (Art. 13 SR 0.142.116.829)
+  risky_torture:
+    description: Country whose authorities are known to practice torture
+    values:
+      risky_torture: true
+      safer_country: false
+  public_health:
+    description: Country where deportation might expose the asylum seeker to the risk of contagion for a serious disease
+    values:
+      risky_public_health: true
+      safer_country: false
+  prosecution:
+    description: Country whose authorities have criminalized the asylum seeker for political reasons
+    values:
+      risky_prosecution: true
+      safer_country: false
+  internal_security:
+    description: Country where deportation might put the asylum seeker in a position where he might risk physical or judicial persecution due to conflicts of internal security (such as civil war, conflict zones, etc.)
+    values:
+      risky_internal_security: true
+      safer_country: false
+  public_order:
+    description: Country in a state of war, civil war, military crisis, serious disturbances to public order etc.
+    values:
+      risky_public_order: true
+      safer_country: false
+  nationality_interest:
+    description: Country where deportation might violate the asylum seeker's private rights (such as inheritance rights, right to a trial, etc.)
+    values:
+      risky_national_interests: true
+      safer_country: false

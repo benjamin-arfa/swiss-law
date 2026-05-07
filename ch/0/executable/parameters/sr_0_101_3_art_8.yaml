@@ -1,0 +1,9 @@
+```yaml
+parameters:
+  n_member_states_required : 10
+
+protocol_11_start_date: 2020-06-01
+treaty_sign_date: 2020-01-20
+sign_date: 2020-01-20
+treaty_entry_date : 2020-06-01  # default for n=0
+```

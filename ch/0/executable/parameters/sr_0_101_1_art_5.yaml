@@ -1,0 +1,12 @@
+```yml
+parameters:
+  Immunitatsaufhebung:
+    definition: (Benefit description in multiple languages,
+        "immunitätsaufhebung_benefit")
+    calculation:
+      formula: (benefit_amount)
+      values:
+        article_5_1: 500 (base rate for cases where immunity is lifted according to article 5.1)
+        certificate_submit: 1000 (additional rate when certificate submitted)
+        immunity_lifted: 1500 (special case for national security breach)
+```

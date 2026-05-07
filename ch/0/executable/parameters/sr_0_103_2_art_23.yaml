@@ -1,0 +1,13 @@
+family:
+  child_support:
+    description: Average monthly child support per child
+    metadata:
+      unit: /month
+      reference:
+        - title: "Child support averages (art. 143 CO)"
+          href: "https://www.fedlex.admin.ch/eli/cc/63/837_843/de#art_143"
+    values:
+      2024-01-01:
+        value: 800
+      2020-01-01:
+        value: 750

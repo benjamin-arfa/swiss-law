@@ -1,0 +1,16 @@
+migration_management:
+  description: Migration management policy parameters
+  migrant_reintegration_program_budget:
+    description: Annual budget for migrant reintegration programs
+    metadata:
+      unit: CHF
+      reference:
+        - title: "SR 0.142.117.121 Art. 14 — Technische Zusammenarbeit und Unterstützung der Migrationssteuerung"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20210115/index.html#2021_143"
+    values:
+      2024-01-01:
+        value: 1000000
+      2020-01-01:
+        value: 900000
+      1997-01-01:
+        value: 800000

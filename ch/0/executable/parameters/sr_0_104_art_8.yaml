@@ -1,0 +1,11 @@
+global_committee_size:
+  value: 18
+global_committee_term_length:
+  description: Duration of global committee membership (SR 0.104 Art. 8 para. 5)
+  label: "Committee term"
+  values:
+    2024-01-01:
+      value: 4
+    2022-01-01:
+      label: "Early termination"
+      value: 2

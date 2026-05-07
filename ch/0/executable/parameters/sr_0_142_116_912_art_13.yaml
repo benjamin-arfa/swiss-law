@@ -1,0 +1,6 @@
+suspension_conditions:
+  description: Conditions for suspending AHV agreement (Art. 13 SR 0.142.116.912)
+  values:
+    suspend:
+      description: Reasons for suspension (public order, security, health)
+      type: list

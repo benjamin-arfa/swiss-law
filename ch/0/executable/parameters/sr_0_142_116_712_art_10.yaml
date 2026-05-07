@@ -1,0 +1,13 @@
+international_treaty_art_10:
+  description: Suspension grounds for Article 10 international treaty
+
+  suspension_grounds:
+    description: Possible suspension reasons (Art. 10 SR 0.142.116.712)
+    metadata:
+      unit: ''
+      reference:
+        - title: "SR 0.142.116.712 Art. 10 — Suspendierung"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20170122/index.html?uid=jor2022__100002"
+    values:
+      2022-01-01:
+        value: 'public_order|public_health|state_security|other_serious_reasons'

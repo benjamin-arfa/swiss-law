@@ -1,0 +1,22 @@
+# Entity definitions
+entities:
+  Country:
+    label: "Countries"
+
+# Variable definitions
+variables:
+  # Boolean variables based on entity-specific data (e.g. surveys, data collection)
+  scp_access:
+    definition_period: "YEAR"
+  information_provided_scp:
+    definition_period: "YEAR"
+  contacts_promoted_scp:
+    definition_period: "YEAR"
+  recommendations_reviewed_scp:
+    definition_period: "YEAR"
+  country_respect_duty_a:
+    value_type = bool
+    definition_period = "YEAR"
+    label = "Respect duty a) allowing the SCP into the country"
+
+# Parameters are not defined in this article (Art. 12), as it outlines duties and obligations rather than specifying exact implementation conditions.

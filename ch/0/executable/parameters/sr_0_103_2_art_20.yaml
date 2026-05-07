@@ -1,0 +1,16 @@
+description: Federal acts related to war propaganda bans
+metadata:
+  reference:
+    - title: "Bundesverfassung Art. 193 — Verhältnismässigkeit"
+      href: "https://www.bj.admin.ch/bj/en/constitution.html"
+    - title: "SR 0.103.2 (EGG) — Bundesgesetz über die Förderung der Erhaltung der biologischen Vielfalt"
+      href: "https://www.admin.ch/opc/en/classified-compilation/1992015936/index.html"
+description_policy: "War propaganda and hate speech ban"
+values:
+  2024-01-01:
+    description: N/A, as this is a criminal law topic
+    metadata:
+      description: Please review criminal law for current penalties and regulations
+      reference:
+        - title: "SR 0.103.2 (EGG) — Bundesgesetz über die Förderung der Erhaltung der biologischen Vielfalt"
+          href: "https://www.admin.ch/opc/en/classified-compilation/1992015936/index.html"

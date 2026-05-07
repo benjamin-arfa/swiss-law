@@ -1,0 +1,13 @@
+parameters:
+  consent_date:
+    value: 2020-01-01
+  entry_into_force_month_offset:
+    value: 3
+  # parameters for each contracting party
+  contracting_party_1:
+    consent_date:
+      value: 2020-02-01
+  contracting_party_2:
+    consent_date:
+      value: 2020-03-01
+  # add parameters for the remaining contracting parties...

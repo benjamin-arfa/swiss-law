@@ -1,0 +1,6 @@
+bilateral_agreement:
+  description: Bilateral agreement between Switzerland and the OPCW
+  parameters:
+    potentially_expellable_opcw_personal:
+      description: Determines if a person is OPCW personnel who may be impacted by Art. 8 rules.
+      type: boolean

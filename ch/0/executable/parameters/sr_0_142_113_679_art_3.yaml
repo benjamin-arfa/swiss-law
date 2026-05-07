@@ -1,0 +1,17 @@
+acceptance_document:
+  list:
+       description: List of valid document types (Art. 3 SR 0.142.113.679)
+       metadata:
+          reference:
+             - title: SR 0.142.113.679, Article 3
+               href: "https://www.admin.ch/opc/fr/classif/2021/42153.pdf"
+       values:
+          2024-01-01:
+            - Personalausweis
+            - Reisepass
+          2020-01-01:
+            - Reisepass
+            - Kindereisedokument
+          1997-01-01:
+            - Dienstkontrollbuch
+            - Militärpass

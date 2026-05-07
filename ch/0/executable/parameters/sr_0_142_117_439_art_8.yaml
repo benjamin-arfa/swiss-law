@@ -1,0 +1,39 @@
+foreign_policy:
+  transit:
+    air_transit:
+      description: The conditions met air transit
+      metadata:
+        unit: booleans
+        reference:
+          - title: "SR 0.142.117.439 Art. 8"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/2021062216/2021062315.pdf#page=3"
+    hosting_country_role:
+      description: Role of a hosting country officer during transit
+      metadata:
+        unit: booleans
+        reference:
+          - title: "SR 0.142.117.439 Art. 8"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/2021062216/2021062315.pdf#page=3"
+      values:
+        2024-01-01:
+          value: "chair"
+    requesting_country_role:
+      description:  Role of a requesting country officer during transit
+      metadata:
+        unit: booleans
+        reference:
+          - title: "SR 0.142.117.439 Art. 8"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/2021062216/2021062315.pdf#page=3"
+      values:
+        2024-01-01:
+          value: "chair"
+    land_transit:
+      description: The conditions met land transit
+      metadata:
+        unit: booleans
+        reference:
+          - title: "SR 0.142.117.439 Art. 8"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/2021062216/2021062315.pdf#page=3"
+      values:
+        2024-01-01:
+          value: True

@@ -1,0 +1,13 @@
+```yaml
+parameters:
+  recognizes_cjeu_jurisdiction:
+    default_value: False
+    label: Recognizes CJEU Jurisdiction
+    type: float
+
+  cjeu_jurisdiction_declaration:
+    default_value: None
+    label: CJEU Jurisdiction Declaration
+    type: float
+    rate: 2
+```

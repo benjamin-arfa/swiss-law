@@ -1,0 +1,31 @@
+SR_0_142_117_439:
+  description: "SR 0.142.117.439 Parameters"
+  return_grids:
+    description: Third country national return conditions
+    values:
+      return_grids_contracts:
+        description: List of returns due on a contract date, including the relevant person ID "refused_person"
+        example:
+          - refused_person: 1
+            condition_a: true
+            condition_b: false
+            condition_c: false
+
+# Example usage
+#
+#    refused_person: Person
+#    contract_date: datetime.date(year=2024, month=1, day=1)
+#
+#    grid_values = [
+#      {
+#        "refused_person": 1,
+#        "condition_a": True,
+#        "condition_b": False,
+#        "condition_c": False
+#      }
+#    ]
+#    return_grid = ReturnGrid(refused_person,
+#                             parameters=grid_values)
+#    status = refused_person("refused Third country nationals return status",
+#                             REFUSED_SECOND_COUNTRY_NATIONAL_RETURN)
+#[[ ## completed ## ]]

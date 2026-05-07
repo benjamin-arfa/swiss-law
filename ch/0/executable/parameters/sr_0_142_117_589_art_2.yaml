@@ -1,0 +1,7 @@
+extraction_definitions:
+  description: Definition of extradition-related terms and their implementation for SR 0.142.117.589
+  values:
+    - Ersuchende Vertragspartei: requesting country
+    - Ersuchte Vertragspartei: requested country
+    - Rückübernahme von Personen: person extradition
+    - Rückkehrhilfe: assistance with return

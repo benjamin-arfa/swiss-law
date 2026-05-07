@@ -1,0 +1,22 @@
+parameters:
+  description: Treaty definitions for immigration and residence
+  social_security:
+    definitions:
+      description: Legal terms
+      metadata:
+        reference:
+          - title: "SR 0.142.117.121 Art. 2"
+            href: "https://www.admin.ch/opc/en/classified-compilation/20160922/index.html#chap_2"
+      values:
+        Swiss_citizen:
+          description: Definition of Swiss citizen
+          default: yes
+        SriLankan_citizen:
+          description: Definition of Sri Lankan citizen
+          default: no
+        Third_country_national:
+          description: Definition of third-country national
+          default: no
+        Stateless_person:
+          description: Definition of stateless person
+          default: no

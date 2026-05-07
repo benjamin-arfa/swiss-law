@@ -1,0 +1,13 @@
+international_agreements:
+  treaty_entry_into_force:
+    description: Entry into force of the treaty (Art. 19 SR 0.104)
+    deposit_count:
+      description: Number of deposits required for global entry into force
+      values:
+        2024-01-01:
+          value: 27
+    date:
+      description: Date of deposit of the 27th country
+      reference:
+        - title: "SR 0.104 Art. 19"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19990153/index.html"

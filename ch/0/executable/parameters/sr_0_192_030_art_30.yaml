@@ -1,0 +1,13 @@
+institutional_settings:
+  beratende_versammlung:
+    vote_majority:
+      description: Required majority for voting decisions in the Board (Article 30 SR 0.192.030)
+      metadata:
+        unit: /
+      values:
+        2024-01-01:
+          value: 0.75  # A 3/4 majority is assumed based on the Swiss Direct Democracy system.
+        2020-01-01:
+          value: 0.75
+        1997-01-01:
+          value: 0.75

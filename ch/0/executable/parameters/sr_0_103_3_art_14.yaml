@@ -1,0 +1,12 @@
+international_cooperation:
+  description: Parameters for government cooperation in extradition procedures
+  cooperate_if_absent:
+    description: Require cooperation for disappear-related cases (Article 14 BGG)
+    metadata:
+      unit: /None/
+      reference:
+        - title: "BGG, Art. 14 — Rechtshilfe"
+          href: "https://www.fedlex.admin.ch/eli/cc/0/103.3/de#art_14"
+    values:
+      always:
+        value: True

@@ -1,0 +1,15 @@
+description: Legal entities or types of residence rights eligible for free residence
+metadata:
+  reference:
+    - title: "SR 0.142.116.912 Art. 5"
+      href: "https://www.fedlex.admin.ch/eli/cc/2022/732/de#art_5"
+  entities:
+    - type: SwissCitizen
+    - type: OtherStateCitizen
+entities:
+  SwissCitizen:
+    description: Swiss citizens
+  OtherStateCitizen:
+    description: Citizens of the other state
+  has_valid_residence_authorization:
+    description: Residents with valid residence permits or other corresponding rights

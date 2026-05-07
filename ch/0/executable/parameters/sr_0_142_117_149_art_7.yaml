@@ -1,0 +1,12 @@
+immigration:
+  expulsion_orders:
+    description: Data source for expulsion orders and corresponding individuals
+    values:
+      2024-01-01:
+        data_source: 'some_database'
+  transit:
+    description: Transit processes and information
+    transiting_to_destination:
+      description: Data source for transit to destination plans
+      exists_person:
+        description: Check existence of a transit plan

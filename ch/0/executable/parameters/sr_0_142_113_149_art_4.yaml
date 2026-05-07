@@ -1,0 +1,15 @@
+migration:
+  mistaken_transfer:
+    was_within_time_limit:
+      description: Whether person was mistakenly transferred within the deadline (Art. 4 SR 0.142.113.149)
+      metadata:
+        reference:
+          - title: "SR 0.142.113.149 Art. 4"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20170481/index.html"
+      values:
+        2024-01-01:
+          value: true
+        2020-01-01:
+          value: true
+        1997-01-01:
+          value: false

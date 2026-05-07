@@ -1,0 +1,15 @@
+international_treaty:
+  description: AHV and foreign travel agreement parameters
+  ahv_foreign_travel:
+    description: Parameters regarding foreign travel with AHV
+    accommodation_reimbursement:
+      description: Whether a reimbursement for accommodation is granted to foreign nationals
+      metadata:
+        unit: Boolean
+        reference:
+          - title: "SR 0.142.116.919 Art. 8"
+            href: "https://www.admin.ch/opc/en/classified-compilation/20190726/index.html#art_8"
+      values:
+        2024-01-01:
+          value: True
+      default: True

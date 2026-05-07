@@ -1,0 +1,5 @@
+```markdown
+parameters:
+  marriage_rights_equalization:
+    default_value: True
+```

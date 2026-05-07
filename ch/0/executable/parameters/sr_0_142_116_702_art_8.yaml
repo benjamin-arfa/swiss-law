@@ -1,0 +1,12 @@
+international_treaties:
+  description: Commitments to pre-existing international treaties by entities/entities (Art. 8 SR 0.142.116.702)
+  metadata:
+    unit: boolean
+    reference:
+      - title: "SR 0.142.116.702"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de"
+  values:
+    SR 0.191.01:  # Diplomatic Relations
+      value: True
+    SR 0.191.02:  # Consular Relations
+      value: True

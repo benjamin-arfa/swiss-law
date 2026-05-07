@@ -1,0 +1,22 @@
+trainee_quota:
+  description: Quota of trainees under bilateral agreements (Art. 7, SR 0.142.117.437)
+  quota_size:
+    description: Maximum number of trainees per year
+    metadata:
+      unit: 1
+      reference:
+        - title: "SR 0.142.117.437 Art. 7"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20170472/index.html"
+  values:
+    2024-01-01:
+      value: 100
+    2020-01-01:
+      value: 100
+    1997-01-01:
+      value: 100
+  default:
+    - 2024-01-01
+
+# To keep track of used trainee spots, it would be necessary to define another variable and
+# function which is not specified in the provided legal article.
+# In this simplified scenario, quota_beneficiary might be considered sufficient.

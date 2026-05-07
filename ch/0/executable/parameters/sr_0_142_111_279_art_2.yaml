@@ -1,0 +1,5 @@
+nationality_verification means:
+  description: Available means to verify nationality
+  values:
+  -  presented_documents
+  -  diplomatic_support

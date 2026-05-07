@@ -1,0 +1,13 @@
+counsel:
+  description: Data related to criminal law and its history in Switzerland
+  ofense_reference:
+    description: Information on one specific offense mentioned in Art. 15 sentence 1 CR
+
+  history_of_law:
+    description: Historical law changes in Switzerland
+    values:
+      2024-01-01:
+        description: Description or justification of historical law change
+        is_punishable:
+          description: Was the offense punishable at the time?
+          value: True

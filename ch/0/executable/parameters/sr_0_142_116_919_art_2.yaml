@@ -1,0 +1,18 @@
+country_responsibility:
+  description: Country responsibility to take in a person under SR 0.142.116.919 Art. 2
+  accepted_documents:
+    description: Documents used for accepted proof of citizenship
+    metadata:
+      reference:
+        - title: "SR 0.142.116.919 Art. 2"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20190109/index.html"
+    values:
+      value:
+        - list of accepted documents
+      documentation:
+        - information explaining what constitutes each document
+  credible_claim_description:
+    description: Description of what constitutes a credible claim of citizenship
+    value:
+      # description could include format for proof, time frame in which claims are credible
+      "claim with documentation"

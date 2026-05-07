@@ -1,0 +1,6 @@
+parameters:
+  assembly_right_restrictions:
+    description: Whether the right to freedom of assembly is restricted by law (Art. 21 SR 0.103.2)
+    values:
+      any:
+        value: True

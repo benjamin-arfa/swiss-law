@@ -1,0 +1,16 @@
+```yml
+# For example let's assume we have a condition for single_richter_decision
+parameters:
+  single_richter_decision: # variable to be calculated by single_judge_decision
+    default: False # default value assigned if conditions are not met
+    condition: {
+      period: '2022-01'
+      value: True
+    }
+  some_condition_in_period: # a condition that affects single_richter_decision
+    default: True
+    condition: {
+      period: '2022-01'
+      value: True
+    }
+```

@@ -1,0 +1,13 @@
+international_conventions:
+  description: Tracking matrix for international agreements (conventions)
+  impacts:
+    description: Matrix of impacts on OpenFisca definitions
+    values:
+      SR0_142_116_912_Art6:
+        description: Diplomatic protocol agreement
+        metadata:
+          reference:
+            - title: "SR 0.142.116.912 Art. 6"
+              href: "https://www.admin.ch/opc/en/classified-compilation/20060444/index.html#20161101"
+
+      # Add more entries for other international conventions...

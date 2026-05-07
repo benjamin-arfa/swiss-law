@@ -1,0 +1,7 @@
+socioeconomic:
+  non_ch_nationality:
+    description: List of country codes for valid nationalities in non-CH countries
+    values:
+      CH: "Switzerland"
+      USA: "United States"
+      ...

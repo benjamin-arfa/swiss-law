@@ -1,0 +1,11 @@
+description: Flag for protected rights
+metadata:
+  type: boolean
+  reference:
+    - title: "Art. 4 SR 0.103.1"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20020713/200212130000/103.1.html#art_4"
+values:
+  2024-01-01:
+    value: True
+  2020-01-01:
+    value: True

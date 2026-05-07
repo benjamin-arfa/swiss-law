@@ -1,0 +1,1 @@
+{"type": "object", "error": "This legal article does not appear to require the creation of a YAML parameter.", "detail": "Legal articles that only define geographic scope may not require specific parameters. However, in some cases, parameters may be used to extend the jurisdiction of the law to other countries or regions.", "status": 400, "reason": "Bad Request"}

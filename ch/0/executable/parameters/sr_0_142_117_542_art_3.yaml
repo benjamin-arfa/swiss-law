@@ -1,0 +1,13 @@
+residency_status_abroad:
+  description: Residency status within the foreign territory
+  metadata:
+    reference:
+        - title: "SR 0.142.117.542 Art. 3"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20210421/de/RG/142.117.542.html#art_3"
+  values:
+    compliant:
+    noncompliant:
+    no_agreement:
+    undocumented:
+    foreign_restriction_in_force:
+    local_restriction_in_force:

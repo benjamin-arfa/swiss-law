@@ -1,0 +1,4 @@
+```yml
+parameters:
+  contract_deposit: 10  # Replace with the actual value
+```

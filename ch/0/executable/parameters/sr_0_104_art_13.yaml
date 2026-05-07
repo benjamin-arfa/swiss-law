@@ -1,0 +1,14 @@
+mediation_deadline_period:
+  description: Deadline in months for mediation responses
+  metadata:
+    unit: months
+    reference:
+      - title: "SR 0.104 Art. 13"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20061032/index.html"
+  values:
+    2024-01-01:
+      value: 3
+    2020-01-01:
+      value: 3
+    1997-01-01:
+      value: 3

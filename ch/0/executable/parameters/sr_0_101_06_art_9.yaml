@@ -1,0 +1,9 @@
+```yml
+parameters:
+  _template: 'parameter.yaml'
+
+arguments:
+  notify_article_9_rate:
+    description: Rate at which officials are notified when article 9 is invoked
+    default: 1
+```

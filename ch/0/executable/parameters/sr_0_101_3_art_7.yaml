@@ -1,0 +1,31 @@
+```yml
+parameters:
+    ratification_rate: !ref parameters.ratification_rate_value
+    commitment_level:
+        max_of:
+            - signed
+```
+We also need to define `ratification_rate_value` and `signed` separately.
+
+For example:
+
+```yml
+parameters:
+    ratification_rate_value: 0.5
+    signed_threshold: 123456789
+labels:
+    ratification_rate:
+        en: Ratification rate
+        fr: Taux de ratification
+        it: Tasso di ratifica
+    commitment_level:
+        en: Commitment level
+        fr: Niveau de engagement
+        it: Livello di impegno
+```
+
+A function or a module would be needed to create these values, to update them and the like.
+
+These values should be calculated based on further information that isn't provided here.
+
+Note that the implementation might be more complex depending on the actual requirements of the legal article.

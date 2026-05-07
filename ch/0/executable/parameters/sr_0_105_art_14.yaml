@@ -1,0 +1,10 @@
+description: IPRG Article 14: Right to Rehabilitation and Compensation for Torture
+parameteryaml: |
+  entities:
+    Victim:
+      has_right_to_rehabilitation:
+        description: Victim or their dependents have a right to rehabilitation and compensation for torture
+        formula: |
+          if was_victim_of_torture and torture_lead_to_death
+            then True
+            else False

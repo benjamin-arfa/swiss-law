@@ -1,0 +1,6 @@
+valid_reasons:
+  description: Permitted reasons for the competent authority to approve a change of position (Article 4 SR 0.142.116.907)
+  values:
+    no_reason_needed:
+      description: The no-reasons-need-to-be-stated situation
+      value: True

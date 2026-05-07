@@ -1,0 +1,10 @@
+termination:
+  description: Information about termination events (Art. 31 SR 0.105)
+  institution_states:
+    description: Institution states with termination events recorded
+    metadata:
+      table_definition:
+        columns:
+          - date 
+          - termination_type  
+        description: Date of termination and type of termination event

@@ -1,0 +1,11 @@
+international:
+  description: International agreements and benefits
+  work_at_diplo_or_international_org:
+    description: Works at a diplomatic mission or international organization
+    metadata:
+      reference:
+        - title: "SR 0.142.116.912 Art. 4, Personen, deren Beengung oder Abwendung verhindert ist"
+          href: "https://fedlex.admin.ch/eli/cc/62/1050/de"
+    values:
+      2024-01-01:
+        value: True

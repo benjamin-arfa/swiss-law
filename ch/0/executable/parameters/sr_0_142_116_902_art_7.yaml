@@ -1,0 +1,8 @@
+Here is a simplified example of a parameter YAML for `home_state_id`:
+
+citizenship:
+  home_state_id:
+    description: Code or name of the home state for citizenship purposes
+    values:
+      Switzerland:
+        value: "CH"

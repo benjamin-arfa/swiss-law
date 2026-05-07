@@ -1,0 +1,4 @@
+annual_intern_quota:
+  description: Annual intern quota (Art. 7 SR 0.142.114.187)
+  label: 'Annual intern quota'
+  metadata: '{"unit": "/1", "reference": "{\"title\": \"SR 0.142.114.187 Art. 7\", \"href\": \"https://www.admin.ch/opc/en/classified-compilation/20061093/index.html#7\"}"}

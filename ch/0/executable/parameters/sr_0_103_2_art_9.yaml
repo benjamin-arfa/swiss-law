@@ -1,0 +1,17 @@
+compensation_for_unfair_detention:
+  description: Compensation support rate for individuals unfairly detained (Art. 9 of the Constitution)
+  rate:
+    description: Rate in CHF/day (artifical number)
+    metadata:
+      unit: CHF/day
+      reference:
+        - title: "SR 0.103.2 Art. 9 — Recht auf persönliche Freiheit und Sicherheit"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19995352/202007010000/510.12.pdf#page=9"
+        # Add an example case
+values:
+  2024-01-01:
+    value: 100
+  2020-01-01:
+    value: 50
+  1997-01-01:
+    value: 20

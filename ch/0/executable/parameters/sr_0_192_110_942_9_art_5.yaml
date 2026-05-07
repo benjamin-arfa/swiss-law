@@ -1,0 +1,9 @@
+description: Goods necessary for official activities (SR 0.192.110.942.9 Art. 5)
+metadata:
+  reference:
+    - title: "SR 0.192.110.942.9 Art. 5 — Die vom Zentrum ein- oder ausgeführten Waren [...]"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/192110.pdf#page=942&zoom=auto"
+values:
+  2024-01-01:
+    value: "list of goods identified as necessary for official activities"
+      # The value will be filled by the relevant authorities

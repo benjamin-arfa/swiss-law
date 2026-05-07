@@ -1,0 +1,43 @@
+rights:
+  description: Rights of accused persons
+  parameters:
+    fair_trial:
+      description: Right to a fair trial
+      metadata:
+        unit: boolean
+        reference:
+          - title: "Art. 14 ABGB"
+            href: "https://www.admin.ch/opc/en/classified-compilation/19920353/index.html#art_14"
+      values:
+        2024-01-01:
+          value: true
+        2020-01-01:
+          value: true
+    presumed_innocent:
+      description: Right to be presumed innocent
+      metadata:
+        unit: boolean
+        reference:
+          - title: "Art. 14 ABGB"
+            href: "https://www.admin.ch/opc/en/classified-compilation/19920353/index.html#art_14"
+      values:
+        2024-01-01:
+          value: true
+        2020-01-01:
+          value: true
+    informed_of_charges:
+      description: Right to be informed of charges
+      metadata:
+        unit: boolean
+        reference:
+          - title: "Art. 14 ABGB"
+            href: "https://www.admin.ch/opc/en/classified-compilation/19920353/index.html#art_14"
+      values:
+        2024-01-01:
+          value: true
+        2020-01-01:
+          value: true
+    reasonable_time:
+      description: Right to reasonable time to prepare defense
+      metadata:
+        unit: boolean

@@ -1,0 +1,8 @@
+convention_signature:
+  AHV_convention:
+    description: Status of signature for the AHV Convention (SR 0.107 Art. 46)
+    metadata:
+      unit: Boolean
+    values:
+      CH:
+        value: True

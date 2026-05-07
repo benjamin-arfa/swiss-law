@@ -1,0 +1,16 @@
+civic_recognition:
+  naturalisation:
+    description: Conditions for naturalisation and nationality recognition
+    documents:
+      - description: Swiss passport (Art. 1 para. 2)
+        metadata:
+          reference:
+            - title: "SR 0.142.117.439 Art. 1"
+              href: "https://www.admin.ch/opc/fr/classified-compilation/20170111/"
+    evidence:
+      description: Evidence for nationality without official documents (Art. 1 para. 2)
+      values:
+        - name: family ties
+          description: Proof of close family relationships with a Swiss citizen
+        - name: other_ties
+          description: Other evidence that provides strong reason to consider nationality

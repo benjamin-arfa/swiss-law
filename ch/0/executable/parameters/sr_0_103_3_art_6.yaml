@@ -1,0 +1,16 @@
+law:
+  disappearance_leaders:
+    category:
+      lead:
+        description: Leaders that ordered or started disappearance, knowing the consequences.
+
+      in_charge:
+        description: Leaders that have obligations to prevent disappearance but caused it nonetheless.
+
+      responsible:
+        description: Leaders that were aware of disappearance or could have prevented it.
+
+        metadata:
+          unit: boolean
+          reference:
+            - title: Article 6 SR 0.103.3

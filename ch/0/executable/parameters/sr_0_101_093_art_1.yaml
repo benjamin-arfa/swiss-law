@@ -1,0 +1,6 @@
+```yml
+parameters:
+  - variable: death_penalty_exists
+    value: 0
+    description: Flag indicating whether death penalty is allowed in the country
+```

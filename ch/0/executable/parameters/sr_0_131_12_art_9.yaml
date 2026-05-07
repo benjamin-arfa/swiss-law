@@ -1,0 +1,10 @@
+name: effective_year_of_protocol
+description: Effective Year of the European Social Charter protocol
+metadata:
+  unit: /1
+  reference:
+    - title: SR 0.131.12 Protokoll zur Einführung einer europäischen Alters- und Hinterlassenenversicherung
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20211244/index.html#art_9"
+values:
+  2023:
+    value: 1

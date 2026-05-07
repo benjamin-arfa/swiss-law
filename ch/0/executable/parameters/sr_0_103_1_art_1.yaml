@@ -1,0 +1,9 @@
+self_determination_status:
+  description: Self-determination status
+  metadata:
+    reference:
+      - title: Article 1 of the Swiss Federal Constitutional Act (SR 0.103.1)
+        href: https://www.admin.ch/opc/en/classified-compilation/19981137/index.html
+  values:
+    SR_0_103_1:
+      value: True

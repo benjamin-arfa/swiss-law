@@ -1,0 +1,18 @@
+social_convention:
+  european_entry_date:
+    description: Entry into force date of the European Convention on Social Security
+    metadata: 
+      reference:
+        - title: "SR 0.142.305 Art. 9
+          href: "https://admin.ch/opencms/DE/themen/vertraege/aehst/uebstaehl/schweizerische-internationale-beitreiebungen/schweizerische-aehst.html"
+      values:
+      2024-01-01:
+        value: 2022-05-01
+european_rated_on:
+    description: List the countries for which the European Convention was ratified
+    metadata: 
+      reference:
+        - title: \"European Council, Treaty on European Union - 2024
+            href: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12013EN%2FTXT"
+      type: Country
+      values:

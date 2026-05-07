@@ -1,0 +1,15 @@
+visa_fee_exemption:
+  conditions: - type: value
+    value: false
+    name: residence_in_ch
+  conditions: - type: person
+    person: citizen_of_republic_of_moldova
+    name: citizen_of_republic_of_moldova
+  conditions: - type: age
+    age: "17 +"
+    name: is_child_under_18
+  conditions: - type: age
+    age: "21 -"
+    name: is_dependent_child_under_21
+  conditions: - type: profession
+    profession: student

@@ -1,0 +1,10 @@
+description: Reasons for the immigration refusal
+metadata:
+  unit: boolean
+  reference:
+    - title: "SR 0.142.116.702 Art. 4 — Einreiseverweigerung"
+      href: "https://admin.ch/opc/en/services/rawdata/2021/02001/20210429.html"
+  values:
+    # This could have multiple values as parameters with different settings
+    general_public_policy_refusal:
+      value: True

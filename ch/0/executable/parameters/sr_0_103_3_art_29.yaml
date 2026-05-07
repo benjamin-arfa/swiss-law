@@ -1,0 +1,30 @@
+reporting_start_date:
+  description: The year after which countries start submitting an annual report
+  metadata:
+    reference:
+      - title: "SR 0.103.3 Art. 29"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/19990523/202105010000/de/index.html"
+      - title: "https://www.un.org/en/conf/internationalyouthday/2020/background-report"
+    values:
+      2024-01-01:
+        value: 1997
+      1997-01-01:
+        value: 1997
+
+      # Reporting deadline to fulfill by, e.g. 2 years are available; (trend = 2)
+      # Note trend must only be adjusted if Switzerland would exceed reporting deadline in future scenarios
+      reporting_deadline_trend:
+        description: Timeframe after which a country must have taken measures
+        metadata:
+          unit: years
+        values:
+          2024-01-01:
+            value: 2
+          1948-01-01:
+            value: 2
+      request_from_aus:
+        description: Whether requests from the AU have been sent
+        metadata:
+          values:
+            2024-01-01:
+              value: True

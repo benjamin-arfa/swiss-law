@@ -1,0 +1,12 @@
+mandatory_ratification:
+  description: Mandatory conditions to ratify the treaty (Art. 5 SR 0.105)
+values:
+  2024-01-01:
+    value:
+      can_exercise_jurisdiction_on_foreign_victims:
+        description: Whether CH can exercise jurisdiction if the victim is not a citizen
+        metadata:
+          reference:
+            - title: "SR 0.105 Art. 5"
+              href: "https://www.admin.ch/opc/en/classified-compilation/19511614/index.html#art_5"
+        value: true

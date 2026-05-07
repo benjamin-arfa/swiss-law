@@ -1,0 +1,29 @@
+valid_residence_permit:
+  description: Whether a valid permit for residence is present
+  metadata:
+    unit: /1
+    reference:
+      - title: "SR 0.142.117.439 Art. 4 — Rückübernahme"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/2021042617/index.html#2021.1143.1143"
+  values:
+    2024-01-01:
+      value: 1
+    2020-01-01:
+      value: 1
+    1997-01-01:
+      value: 0
+
+stays_duration:
+  description: Duration of a third state national's presence
+  metadata:
+    unit: days
+    reference:
+      - title: "SR 0.142.117.439 Art. 4 — Rückübernahme"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/2021042617/index.html#2021.1143.1143"
+  values:
+    2024-01-01:
+      value: 5
+    2023-01-01:
+      value: 6
+    1997-01-01:
+      value: 7

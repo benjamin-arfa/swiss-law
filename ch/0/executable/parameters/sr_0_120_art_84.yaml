@@ -1,0 +1,24 @@
+international_affairs:
+  sr_mandate_purpose:
+    description: SR mandate purpose
+    metadata:
+      reference:
+        - title: "SR 0.120 Art. 84"
+          href: "https://www.fedlex.admin.ch/eli/cc/15/102_102_102/de#art_84"
+    values:
+      2024-01-01:
+        value: "preserve_world_peace"
+      2020-01-01:
+        value: "general_mandate"
+
+  assistance_requested_from_tt:
+    description: Whether assistance has been requested from the Trust Territory
+    metadata:
+      reference:
+        - title: "SR 0.120 Art. 84"
+          href: "https://www.fedlex.admin.ch/eli/cc/15/102_102_102/de#art_84"
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: False

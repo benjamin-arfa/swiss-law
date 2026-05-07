@@ -1,0 +1,7 @@
+treaty_exchanged_originals:
+  description: Whether original copies of the SR 0.132.349.20 treaty have been exchanged
+  metadata:
+    unit: boolean
+    reference:
+      - title: "SR 0.132.349.20, Art. 5, Art. 5"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20190282/index.html"

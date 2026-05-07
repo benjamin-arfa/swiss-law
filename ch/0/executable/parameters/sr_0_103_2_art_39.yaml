@@ -1,0 +1,8 @@
+definition: SR 0.103.2 Art. 39 parameterization
+commission_operational: active
+    description: Is the commission operational?
+    values:
+        yes:
+          definition: The commission is operational according to Art. 39.
+          rule_description: 
+            - The commission is operational when there are at least 12 members present in an official meeting.

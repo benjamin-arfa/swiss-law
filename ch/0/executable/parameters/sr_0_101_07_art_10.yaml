@@ -1,0 +1,9 @@
+parameter_yaml: |-
+
+  # Hier fehlen die spezifischen Werte und Berechnungen
+  # Ein moglicher YAML-Parameter könnte wie folgt aussehen:
+  #   inkrafttretensdatum:
+  #     start: 19841122
+
+
+Falls man dennoch eine Variable definieren möchte, könnte diese etwa wie folgt aussehen:

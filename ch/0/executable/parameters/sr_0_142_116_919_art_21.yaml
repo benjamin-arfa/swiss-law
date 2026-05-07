@@ -1,0 +1,19 @@
+Here's an adapted YAML snippet for the variable's parameters, keeping in mind the hypothetical implementation:
+```yml
+return_protocol:
+  description: Related to the protocol on the implementation of the return agreement
+  protocol_notification_threshold:
+    description: Timeframe for next notification after the last protocol notification
+    metadata:
+      unit: days
+      reference:
+        - title: "SR 0.142.116.919 Art. 21"
+          href: https://www.admin.ch/opc/de/classified-compilation/20230723/index.html
+    values:
+      2024-01-01:
+        value: 30
+      2020-01-01:
+        value: 30
+      1997-01-01:
+        value: 30
+```

@@ -1,0 +1,23 @@
+```yml
+params:
+  unrestricted_correspondence:
+    label: Unrestricted Correspondence
+    definition: Person
+    formula: person('receiving_correspondence_without_delays', period) * (1 - person('disciplinary_measures_after_proper_communication', period)) * person('in_prison') + person('receiving_correspondence_without_delays', period) * 1 * (1 - person('in_prison'))
+    variables: ['receiving_correspondence_without_delays', 'disciplinary_measures_after_proper_communication', 'right_to_communicate_with_lawyer']
+  receiving_correspondence_without_delays:
+    label: Receiving Correspondence Without Delays
+    definition: Person
+    formula: 1
+  disciplinary_measures_after_proper_communication:
+    label: Disciplinary Measures After Proper Communication
+    definition: Person
+    formula: 0 # Define what triggers disciplinary measures
+  right_to_communicate_with_lawyer:
+    label: Right To Communicate With Lawyer
+    definition: Person
+    formula: person('right_to_communicate_with_lawyer', period)
+params_unrestricted_correspondence_receiving_correspondence_without_delays: 1
+params_unrestricted_correspondence_disciplinary_measures_after_proper_communication: 0
+params_unrestricted_correspondence_right_to_communicate_with_lawyer: 0
+```

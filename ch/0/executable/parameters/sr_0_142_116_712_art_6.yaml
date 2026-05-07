@@ -1,0 +1,11 @@
+parameters:
+  resolution_adjustment:
+    description: Parameter for adjustment value in negotiations
+    metadata:
+      unit: None (string based)
+      reference:
+        - title: "SR 0.142.116.712 Art. 6"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20191231/20191231000000020.pdf"
+    values:
+      2024-01-01:
+        value: None  # Placeholder since no context for string value

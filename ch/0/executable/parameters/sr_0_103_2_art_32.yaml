@@ -1,0 +1,29 @@
+election_details:
+  mandate_duration_long:
+    description: Duration of the long mandate in the election system (Art. 32 para. 1)
+    metadata:
+      unit: years
+      reference:
+        - title: "SR 0.103.2 Art. 32"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20061823/index.html"
+    values:
+      2024-01-01:
+        value: 4
+      2020-01-01:
+        value: 4
+      1997-01-01:
+        value: 4
+  mandate_duration_short:
+    description: Duration of the short mandate in the election system (Art. 32 para. 1)
+    metadata:
+      unit: years
+      reference:
+        - title: "SR 0.103.2 Art. 32"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20061823/index.html"
+    values:
+      2024-01-01:
+        value: 2
+      2020-01-01:
+        value: 2
+      1997-01-01:
+        value: 2

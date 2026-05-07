@@ -1,0 +1,10 @@
+```yml
+parameters:
+  has_ratifed_convention_date:
+    start_value: -1 # Set the initial value to zero (or some other suitable initial condition) where "zero" denotes a year preceding the protocol start-date
+  has_convention_ratified_by:
+    definition_period: P1Y # Define when the ratification date is considered
+  protocol_ratification_time:
+    start_value: 0 # Initial time considered as 'zero-time'
+```
+Please note that these snippets require the `openfisca` framework to function. The solution may need adaptation to accommodate the specifics of your framework.

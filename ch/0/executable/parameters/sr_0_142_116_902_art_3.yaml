@@ -1,0 +1,27 @@
+has_diplomatic_pass:
+  description: Flag variable for owning a valid diplomatic pass
+  unit: /1
+  reference:
+    - title: "SR 0.142.116.902, Art. 3"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20190112/start/#Art.03"
+values:
+  2024-01-01:
+    value: True
+on_diplomatic_mission:
+  description: Flag variable for being on diplomatic mission in the foreign state
+  unit: /1
+  reference:
+    - title: "SR 0.142.116.902, Art. 3"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20190112/start/#Art.03"
+values:
+  2024-01-01:
+    value: True
+resides_in_foreign_state:
+  description: Flag variable for residing in the foreign state
+  unit: /1
+  reference:
+    - title: "SR 0.142.116.902, Art. 3"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20190112/start/#Art.03"
+values:
+  2024-01-01:
+    value: True

@@ -1,0 +1,23 @@
+employment_contract_details:
+  definitions:
+    employment_contract_with_host_country:
+      description: Has a valid employment contract with the host country
+      metadata:
+        unit: None
+        reference:
+          - title: Art. 6 para. 2 AHVG
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_6_2"
+      values:
+        2024-01-01:
+          value: "yes"
+  definitions:
+    is_young_employed_permanent:
+      description: Permanent employment with a youth below 26
+      metadata:
+        unit: None
+        reference:
+          - title: Art. 6 para. 1 AHVG
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_6_1"
+      values:
+        2024-01-01:
+          value: "False"

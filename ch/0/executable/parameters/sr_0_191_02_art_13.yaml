@@ -1,0 +1,11 @@
+international_sector:
+  description: International cooperation sectors (Art. 13 SR 0.191.02)
+  metadata:
+    reference:
+      - title: "SR 0.191.02"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/19900195/index.html#ART_13#P1"
+      - title: "Swiss FDFA (Federal Department of Foreign Affairs)"
+        href: "https://www.eda.admin.ch/"
+  values:
+    Consular:
+      entity: Person

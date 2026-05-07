@@ -1,0 +1,51 @@
+public_health:
+  description: Risk categories related to public health concerns
+  public_health_concerns:
+    description: Person is a risk to public health (Art. 9 SR 0.142.117.439)
+    metadata:
+      unit: boolean
+      reference:
+        - title: "SR 0.142.117.439, Art. 9: Abs. 1 Buchst. c"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170639/index.html#art_9"
+    values:
+      2024-01-01:
+        value: true
+
+inner_security:
+  description: Risk categories related to internal security concerns
+  internal_security_concerns:
+    description: Person is a risk to internal security (Art. 9 SR 0.142.117.439)
+    metadata:
+      unit: boolean
+      reference:
+        - title: "SR 0.142.117.439, Art. 9: Abs. 1 Buchst. c"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170639/index.html#art_9"
+    values:
+      2024-01-01:
+        value: false
+
+public_order:
+  description: Risk categories related to public order concerns
+  public_order_concerns:
+    description: Person is a risk to public order (Art. 9 SR 0.142.117.439)
+    metadata:
+      unit: boolean
+      reference:
+        - title: "SR 0.142.117.439, Art. 9: Abs. 1 Buchst. c"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170639/index.html#art_9"
+    values:
+      2024-01-01:
+        value: false
+
+other_national_interests:
+  description: Other national interests related to transit denial
+  other_national_interests_concerns:
+    description:  Other national interests lead to risk of transit denial (Art. 9 SR 0.142.117.439)
+    metadata:
+      unit: boolean
+      reference:
+        - title: "SR 0.142.117.439, Art. 9: Abs. 1 Buchst. c"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170639/index.html#art_9"
+    values:
+      2024-01-01:
+        value: false

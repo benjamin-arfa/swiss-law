@@ -1,0 +1,8 @@
+territory_choice:
+  description: Territories for which the convention is applied
+  values:
+    CH:
+      - "CH-VD"
+      - "CH-NE"
+    FR:
+      - "FR-BFC"

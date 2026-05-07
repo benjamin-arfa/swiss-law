@@ -1,0 +1,8 @@
+description: International cooperation cost
+metadata:
+  unit: CHF
+  reference:
+    - title: "SR 0.142.116.659 Art. 17 — Rückübernahme-, Durchbeförderungs- und Befragungskosten"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20210129/index.html#ART17"
+# In this case, parameters would not provide specific values as this provision focuses
+# on the responsibilities and obligations rather than specific financial values.

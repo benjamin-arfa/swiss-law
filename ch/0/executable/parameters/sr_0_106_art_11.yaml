@@ -1,0 +1,36 @@
+safeguard:
+  description: Mechanisms to control data release
+  committee_report_publication:
+    description: Publication of the Committee's report
+    metadata:
+      reference:
+        - title: "SR 0.106 Art. 11 — Informationen der Ausschüsse"
+          href: "https://www.fedlex.admin.ch/eli/cc/0/106/de#art_11"
+    values:
+      2024-01-01:
+        value: True
+  explicit_consent_required:
+    description: Explicit consent requirement on personal data release
+    metadata:
+      reference:
+        - title: "SR 0.106 Art. 11 — Personenbezogene Daten"
+          href: "https://www.fedlex.admin.ch/eli/cc/0/106/de#art_11"
+    values:
+      2024-01-01:
+        value: True
+      1997-01-01:
+        value: False
+  report_published:
+    description: Report publication status
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: False
+  visit_report_published:
+    description: Visit report publication status
+    values:
+      2024-01-01:
+        value: False
+      1989-01-01:
+        value: True

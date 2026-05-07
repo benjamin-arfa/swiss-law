@@ -1,0 +1,18 @@
+legal:
+  constitution:
+    charta_selected_municipality_types:
+      description: Types of local government bodies selected for application of Chata (Art. 13)
+      metadata:
+        reference:
+          - title: "Charta (Constitution of Switzerland), Art. 13"
+            href: "https://www.admin.ch/opc/de/classified-compilation/19990037/index.html#20191227"
+      values:
+        2024-01-01:
+          value:
+            - "Federal municipality-type X"
+            - "Local government body A"
+            - "Municipality B"
+        2020-01-01:
+          value:
+            - "Federal municipality-type X"
+            - "Local government body C"

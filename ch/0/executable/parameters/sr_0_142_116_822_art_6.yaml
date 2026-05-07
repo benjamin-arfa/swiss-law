@@ -1,0 +1,13 @@
+sr:
+  description: Visumpflicht and processing fees according to the SR-Switzerland agreement
+  standard_fee:
+    description: Standard SR visa processing fee (Art. 6)
+    metadata:
+      unit: CHF
+      reference:
+        - title: "Bilaterales Abkommen zwischen der Schweiz und der Serbischen Republik"
+          href: "https://www.eda.admin.ch/content/dam/eda/en/documents/intl-relations/serbien/serbien-agreement-english.pdf"
+          id: Art-6
+    values:
+      2024-01-01:
+        value: 35

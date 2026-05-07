@@ -1,0 +1,40 @@
+valid_documents:
+  description: Valid documents for proving citizenship
+  metadata:
+    reference:
+      - title: "Art. 9 SR 0.142.116.659 — Nachweis der Staatsangehörigkeit"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20181205/index.html#art_9"
+  values:
+    2024-01-01:
+      value:
+        Annex 1:
+          - Identity Card
+          - Passport
+        Annex 2:
+          - Birth Certificate
+
+expired_documents:
+  description: Expired documents for proving citizenship
+  metadata:
+    reference:
+      - title: "Art. 9 SR 0.142.116.659 — Nachweis der Staatsangehörigkeit"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20181205/index.html#art_9"
+  values:
+    2024-01-01:
+      value:
+        Annex 1:
+          - Identity Card (expired)
+          - Passport (expired)
+        Annex 2:
+          - Birth Certificate (expired)
+
+annex_a:
+  description: Annex A documents for citizenship proof
+  metadata:
+    reference:
+      - title: "Art. 9 SR 0.142.116.659 — Nachweis der Staatsangehörigkeit"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20181205/index.html#art_9"
+  values:
+    2024-01-01:
+      value:
+        - Birth Certificate

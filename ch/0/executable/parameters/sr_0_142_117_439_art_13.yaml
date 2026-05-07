@@ -1,0 +1,11 @@
+cost_distribution_by_re_admission_action:
+  description: Re-admission actions where responsibility for costs lies with the requesting country
+  values:
+    re_admission_after_art_1:
+      default: true
+    re_admission_after_art_4:
+      default: true
+    initial_transfer_after_art_8:
+      default: true
+    return_transport_after_art_11:
+      default: true

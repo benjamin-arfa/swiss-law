@@ -1,0 +1,14 @@
+visa:
+  urgency_level:
+    description: Urgency level for visa processing (Art. 7 SR 0.142.116.652)
+    type: integer
+    reference:
+      - title: "SR 0.142.116.652"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20171245/index.html#art_7"
+    values:
+      2024-01-01:
+        value: 1
+      2020-01-01:
+        value: 1
+      --
+      3: "dringende Fälle"

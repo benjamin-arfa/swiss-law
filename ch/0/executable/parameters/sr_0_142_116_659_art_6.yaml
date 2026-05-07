@@ -1,0 +1,7 @@
+description: Conditions and parameters for requesting a residence return under Art. 6 (SR 0.142.116.659)
+mandatory_passport:
+  description: Possession of valid national passport
+  type: bool
+foreign_national_or_stateless:
+  description: Classification as a foreign national or stateless individual
+  type: bool

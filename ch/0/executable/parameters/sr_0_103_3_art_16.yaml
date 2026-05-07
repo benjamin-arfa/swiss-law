@@ -1,0 +1,34 @@
+social_security:
+  human_rights:
+    description: Evaluation of human rights risks in countries of residence
+    state_human_rights_risk_level:
+      description: Country-specific risk level assessment
+      metadata:
+        reference:
+          - title: "SR 0.103.3 Art. 16"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20060332/index.html#art16"
+      values:
+        DE:
+          value: 4
+        ES:
+          value: 3
+        UK:
+          value: 1
+          outdated: true
+    countries_under_intensive_monitoring:
+      description: List of countries with ongoing human rights scrutiny
+      metadata:
+        reference:
+          - title: "SR 0.103.3 Art. 16"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20060332/index.html#art16"
+      values:
+        - ES
+        - DE
+    systematic_human_rights_abuses:
+      description: Countries with reported systematic human rights abuses
+      metadata:
+        reference:
+          - title: "SR 0.103.3 Art. 16"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20060332/index.html#art16"
+      values:
+        - ES

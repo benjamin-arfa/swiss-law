@@ -1,0 +1,9 @@
+vocational_training_diploma:
+  description: Existence of diploma for completed vocational training
+  metadata:
+    unit: boolean
+
+years_of_vocational_training_completeness:
+  description: Years of completion of vocational training
+  metadata:
+    unit: years

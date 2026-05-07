@@ -1,0 +1,11 @@
+description: Timeframe for mistakenly taking back a person in deportation
+metadata:
+  unit: months
+  reference:
+    - title: "SR 0.142.115.739 Art. 12 Irrtümliche Rückübernahme"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20170629/20200304145900071.pdf"
+values:
+  2024-01-01:
+    value: 6
+  2019-01-01:
+    value: 6

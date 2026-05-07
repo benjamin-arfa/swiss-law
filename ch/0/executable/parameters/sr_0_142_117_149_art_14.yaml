@@ -1,0 +1,19 @@
+entry_into_force:
+  description: Date of actual entry into force
+  metadata:
+    reference:
+      - title: "SR 0.142.117.149, Art. 1"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20021042/index.html#Art_1"
+  values:
+    2002-01-10:
+      value: 2002-12-10
+
+notice_period_:
+  description: Notice period for the abrogation of treaties
+  metadata:
+    reference:
+      - title: "SR 0.142.117.149, Art. 3"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20021042/index.html#Art_3"
+  values:
+    2023-01-01:
+      value: 1

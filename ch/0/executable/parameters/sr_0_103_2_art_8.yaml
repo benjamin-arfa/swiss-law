@@ -1,0 +1,11 @@
+forced_labour_exclusions:
+  description: Exceptional cases where Art. 8 SR 0.103.2 applies
+  reference:
+    - title: "SR 0.103.2 Art. 8"
+      href: "https://www.admin.ch/opc/de/classified-compilation/19920784/index.html"
+
+# The following parameters are stored in their respective YAML files.
+    # prisoner: the duration an individual is imprisoned
+    # sentences are stored as 'sentence_duration' in another entity/module
+    # conscientious_objector: status indicating conscientious objection
+    # military service, civic duty, emergency response, and servitude: stored as 'is_military_service','is_civic_duty', etc.

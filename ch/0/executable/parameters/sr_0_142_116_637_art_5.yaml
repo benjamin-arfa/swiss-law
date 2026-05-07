@@ -1,0 +1,14 @@
+social_security:
+  training_programs:
+    stagiaire_ids:
+      description: Valid stagiaire IDs from the relevant authority
+      type: collection
+      metadata:
+        reference:
+          - title: "SR 0.142.116.637 Art. 5 Stagiaires"
+            href: "https://www.admin.ch/opc/de/classified-compilation/20220361/index.html#art__5"
+      values:
+        2024-01-01:
+          value: {}
+        2020-01-01:
+          value: {}

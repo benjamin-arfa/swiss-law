@@ -1,0 +1,12 @@
+international_agreements:
+  description: Parameters related to international agreements (SR 0.142.116.702)
+  notification:
+    description: Parameters related to notifications
+    notification_received:
+      description: Whether notification received
+      metadata:
+        type: bool
+      values:
+      # Example value for demonstration purposes, actual implementation will vary
+        2024-01-01:
+          value: True

@@ -1,0 +1,31 @@
+satisfies_statute_requirements:
+  description: Conditions described in Art. 7 (Statute for municipal representatives)
+  satisfies_freedom:
+    description: Does the statute guarantee free exercise of the office (Art. 7 para. 1)?
+    metadata:
+      unit: bool
+    values:
+      2024-01-01:
+        value: True
+      1997-01-01:
+        value: False
+
+  satisfies_compensation:
+    description: Does the statute provide for adequate compensation (Art. 7 para. 2)?
+    metadata:
+      unit: bool
+    values:
+      2024-01-01:
+        value: True
+      1997-01-01:
+        value: False
+
+  satisfies_wages:
+    description: Does the statute provide fair remuneration for work (Art. 7 para. 2)?
+    metadata:
+      unit: bool
+    values:
+      2024-01-01:
+        value: True
+      1997-01-01:
+        value: False

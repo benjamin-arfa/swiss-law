@@ -1,0 +1,16 @@
+diplomatic_passes:
+  description: Valid diplomatic passes (Art. 2, para. 1, SR 0.142.117.432)
+  metadata:
+    description:
+      An enumeration of valid pass types.
+  values:
+    - Diplomatenpass
+    - Dienstpass
+    - Sonderpass
+    
+required_passes:
+  description: Diplomatic passes required for exemption (Art. 2, SR 0.142.117.432)
+  values:
+    - Diplomatenpass
+    - Dienstpass
+    - Sonderpass

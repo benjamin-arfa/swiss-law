@@ -1,0 +1,6 @@
+mou_compliance:
+  description: Memorandum of Understanding (Art. 4 SR 0.142.113.252)
+  entity: Person
+  definition_period:
+    start: 2024-01-01
+    end: 2024-12-31

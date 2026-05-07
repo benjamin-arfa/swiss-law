@@ -1,0 +1,3 @@
+has_accepted_asas_amendment:
+  type: bool
+  description: States that have accepted the latest ASAS amendment.

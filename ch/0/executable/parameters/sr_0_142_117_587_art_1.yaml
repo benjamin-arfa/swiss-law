@@ -1,0 +1,22 @@
+younger_profession:
+    description: Definition of young professional
+    category: Youth_Program
+    default_value_period: year
+    default_value: True
+
+categories_and_jobs:
+  description: Categories and jobs with restrictions and permits
+  fields:
+  - name: restricted_jobs
+    description: Jobs that are limited or restricted for the purpose of this international agreement
+    default_value_period: year
+    default_value: []
+  - name: permitted_jobs
+    description: Jobs that require additional license or permits that must be acquired before applying under the international agreement
+    default_value_period: year
+    default_value: []
+restrictions:
+  description: Restrictions and permits for different jobs
+  fields:
+  - job: job name
+    category: specific job category

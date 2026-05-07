@@ -1,0 +1,7 @@
+```yml
+parameters:
+  # The period parameter for "initial_term" and "start_term" formula function
+  start_term_initial_term: 
+    value: 
+      CHF 
+```

@@ -1,0 +1,13 @@
+description: Agreement SR 0.142.116.912 implementation parameters
+metadata:
+  reference:
+    - title: "SR 0.142.116.912, Artikel 11"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20160258/index.html"
+      format: [html]
+parameters:
+- name: signed_date
+  description: Date of agreement signing
+  unit: date
+- name: shared_departments_date
+  description: Date when departments were shared internally
+  unit: date

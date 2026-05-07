@@ -1,0 +1,34 @@
+# Note: The parameters below are placeholders, actual values depend on the specific implementation and available data.
+
+social_security:
+  asylum_return_exceptions:
+    short_term_visitors:
+      description: Exemption for short-term visitors
+      entity: Household
+      metadata:
+        value_type: bool
+    temporary_visas:
+      description: Exemption for temporary visas 
+      entity: Household
+      metadata:
+        value_type: str
+    long_stay_permit_foreign_nationals:
+      description: Exemption for foreign nationals with valid long-stay permit from the requesting country 
+      entity: Household
+      metadata:
+        value_type: bool
+    geneva_convention_status:
+      description: Exemption for stateless individuals with international protection status 
+      entity: Household
+      metadata:
+        value_type: bool
+    asylum_return_procedure:
+      description: Exemption for individuals who have been forcibly returned to their country of origin 
+      entity: Household
+      metadata:
+        value_type: bool
+    id_documents_from_country:
+      description: Exemption for individuals who hold an identity document from their country of origin 
+      entity: Household
+      metadata:
+        value_type: bool

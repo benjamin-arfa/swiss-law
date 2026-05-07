@@ -1,0 +1,13 @@
+description: Duration of visa extension for Ukrainian citizens in extraordinary circumstances (Art. 10 SR 0.142.117.673)
+metadata:
+  unit: days
+  reference:
+    - title: "SR 0.142.117.673 Art. 10 — Visumverlängerung bei aussergewöhnlichen Umständen"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20171773/index.html#art10"
+values:
+  2024-01-01:
+    value: 30
+  2020-01-01:
+    value: 30
+  2020-03-01:
+    value: 60

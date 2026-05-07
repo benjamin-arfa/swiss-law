@@ -1,0 +1,5 @@
+```yaml
+parameters:
+  # Flag to decide whether being signed with reservation should count towards becoming bound
+  sign_signed_with_reservation: False
+```

@@ -1,0 +1,9 @@
+# Note: This parameter does not introduce any new value,
+# but rather outlines the relationship with the existing pact.
+
+additional_conditions:
+  description: Additional conditions for AHVG under the new protocol
+  relationship_with existing pact:
+    description: Relationship with the existing pact
+    values:
+      enforce_rights_under_article1: True

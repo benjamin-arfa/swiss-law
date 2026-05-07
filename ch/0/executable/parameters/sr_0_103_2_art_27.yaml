@@ -1,0 +1,20 @@
+cultural_minority_recognition:
+  languages:
+    description: Languages officially recognized as minority languages
+    values:
+      FR:
+        french: ["fr"]
+        arpitain: ["atp"]
+      DE:
+        alemannic: ["gsw"]
+        romanisch: ["roh"]
+      IT:
+        ticinese: ["lmo"]
+      EN: "no minority languages"
+  countries_with_minority_recognition:
+    description: Countries where cultural minority rights are recognized
+    values:
+      CH: "all cantons"
+      - FR: ["FR"]
+      - DE: ["GE", "AT", "LI"]
+      - IT: ["IT"]

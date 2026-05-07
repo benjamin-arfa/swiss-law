@@ -1,0 +1,6 @@
+```yaml
+parameters:
+  parameter:
+    value: False
+```
+Given the original variable doesn't define any threshold or rate to use in the formula, we assume there are thresholds in other variables that can be utilized, and our primary variable `decision_admissibility_Separately` will directly be affected by the value of `benefit_applies_articles_27_28`.

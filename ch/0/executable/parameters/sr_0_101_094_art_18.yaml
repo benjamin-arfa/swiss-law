@@ -1,0 +1,18 @@
+```yaml
+ratification_process:
+  type: int
+  label: Ratification process
+  parameter:
+    definition_period: ANY
+    default_value: 1
+    
+conditions:
+  Ratification_scenario_unconditionally:
+    label: 'Ratification scenario is unconditionally'
+    variable: Ratification_process_variable
+    value: signedUnconditionally
+  Ratification_scenario_conditionally:
+    label: 'Ratification scenario is conditionally'
+    variable: Ratification_process_variable
+    value: signedConditionally
+```

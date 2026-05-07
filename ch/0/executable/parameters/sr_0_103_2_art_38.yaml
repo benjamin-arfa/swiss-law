@@ -1,0 +1,10 @@
+committee_declaration:
+  description: Committee member declaration (SR 0.103.2 Art. 38)
+  metadata:
+    unit: string
+    reference:
+      - title: "SR 0.103.2 Art. 38 — Ausschussmitglied"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20010234/202007290000/de/index.html#art_38"
+  values:
+    no_value:
+      value: ''

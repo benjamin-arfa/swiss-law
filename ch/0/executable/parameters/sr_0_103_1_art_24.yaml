@@ -1,0 +1,9 @@
+sr_0_103_1:
+  description: Swiss International Law Treaty (SR 0.103.1 Art. 24)
+  values:
+    2024-01-01:
+      value:
+        description: Relevant parameter for SR 0.103.1 Art.24
+        value: 1.00
+metadata:
+  relevant: Yes

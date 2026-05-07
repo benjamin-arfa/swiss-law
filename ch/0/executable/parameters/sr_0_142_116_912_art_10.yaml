@@ -1,0 +1,14 @@
+intcivrc:
+  description: Time limits and rules for handling international parental child abduction cases
+  time_limit_foreign_party_response_months:
+    description: Time limit for responding to request for return of child (Art. 10 IntCivRC)
+    metadata:
+      unit: month
+      reference:
+        - title: "SR 0.142.116.912 Art. 10: Procedure for handling international parental child abduction"
+          href: "https://admin.ch/opc/nepa/data/100/100.021.002.052.pdf#page=13&view=Fit"
+    values:
+      2024-01-01:
+        value: 2
+      2020-01-01:
+        value: 2

@@ -1,0 +1,8 @@
+```yml
+paramters:
+    location:
+        description: An institution's physical location
+        values:
+            Geneva:
+                value: 1
+```

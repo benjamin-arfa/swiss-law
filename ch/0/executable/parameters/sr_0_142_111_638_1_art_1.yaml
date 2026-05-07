@@ -1,0 +1,6 @@
+temporary_stay_exceptions:
+  description: Exemption from residence permit for temporary stays (Art. 1 SR 0.142.111.638.1)
+  exemption_periods:
+    description: Length of temporary stays for exemption (Art. 1 SR 0.142.111.638.1)
+    values:
+      length: 3

@@ -1,0 +1,14 @@
+nationality:
+  description: List of nationalities (SR 0.142.116.829, Art. 2)
+  metadata:
+    unit: ""
+    reference:
+      - title: "SR 0.142.116.829 Art. 2 Rückübernahme eigener Staatsangehöriger"
+        href: "https://www.admin.ch/opc/en/classified Compilation/20190220/0.142.116.829.en.pdf"
+  values:
+    Serbian:
+      description: Serbian nationality
+    Other:
+      description: Other nationality
+    No Nationality:
+      description: No nationality

@@ -1,0 +1,5 @@
+```yml
+parameters:
+  parameter:
+    value: 1
+```

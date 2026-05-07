@@ -1,0 +1,8 @@
+international_affairs:
+  treaty_implementation:
+    description: Delay between bilateral treaty notifications and implementation (SR 0.142.117.542 Art. 7)
+    values:
+      2024-01-01:
+        value: timedelta(days=3)
+      2020-01-01:
+        value: timedelta(days=5)

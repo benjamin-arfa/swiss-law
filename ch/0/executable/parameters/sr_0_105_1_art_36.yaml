@@ -1,0 +1,27 @@
+members_conduct:
+  description: Conditions for Prevention Sub-Committee member conduct
+  local_laws_respected:
+    description: Whether Prevention Sub-Committee members respected local laws (Art. 36 para. a SR 0.105.1)
+    metadata:
+      unit: /1
+      reference:
+        - title: "SR 0.105.1 Prot. Art. 36 — Besuchen die Mitglieder des Unterausschusses für Prävention"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20030342/index.html#art_36_p1"
+    values:
+      2024-01-01:
+        value: True
+      2000-01-01:
+        value: False
+
+  no_improper_measure_taken:
+    description: Whether Prevention Sub-Committee members avoided actions incompatible with impartiality (Art. 36 para. b SR 0.105.1)
+    metadata:
+      unit: /1
+      reference:
+        - title: "SR 0.105.1 Prot. Art. 36 — Besuchen die Mitglieder des Unterausschusses für Prävention"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20030342/index.html#art_36_p1"
+    values:
+      2024-01-01:
+        value: True
+      2000-01-01:
+        value: False

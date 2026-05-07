@@ -1,0 +1,5 @@
+protocol:
+  num_signing_countries: # Default value to avoid breaking when this calculation is missing.
+    values:
+      2023-01-01:
+        value: 8

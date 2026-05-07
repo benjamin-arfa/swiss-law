@@ -1,0 +1,49 @@
+visa:
+  description: Visas
+  entries:
+    # add other entities 
+    # visa_types
+    # visa_countries
+  countries:
+    Russia:
+      modes:
+        entered_directly:
+          description: Entering directly from the country
+      conditions:
+        visa_required:
+          description: Visa required
+          default: True
+          values:
+            Switzerland:
+              countries:
+                Russia:
+                  modes:
+                    entered_directly:
+                      visa_required: False
+        visa_free:
+          description: Visa-free entry
+          default: False
+          values:
+             EU_members:
+              countries:
+                Switzerland:
+                  modes:
+                    entered_directly:
+                      visa_free: True
+
+country_entry:
+  description: Country of entry
+  entries:
+    modes:
+      entered_directly:
+        description: Entering directly from the country
+      enter_without_visa:
+        description: Entered without visa
+
+asylum_status:
+  description: Asylum status
+  entries:
+    countries:
+      Russia:
+        asylum_seeker:
+          description: Asylum seeker in the country

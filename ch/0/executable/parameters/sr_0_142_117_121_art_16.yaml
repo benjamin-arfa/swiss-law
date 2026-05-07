@@ -1,0 +1,17 @@
+accountability:
+  notification_for_corrections:
+    description: Status of notifications sent after correction of personnal data
+    metadata:
+      unit: /
+    values:
+      2024-01-01:
+        value: False
+
+confidentiality:
+  protection_against_unauthorized_access:
+    description: Protection of personal data against access, modification or disclosure
+    metadata:
+      unit: /
+    values:
+      2024-01-01:
+        value: True

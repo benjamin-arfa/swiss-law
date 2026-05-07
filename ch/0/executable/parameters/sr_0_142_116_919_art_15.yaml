@@ -1,0 +1,15 @@
+description: Documents related to transport regulations (SR 0.142.116.919) 
+official_documents:
+  description: Presence of official documents
+  metadata:
+    unit: /1
+values:
+  2024-01-01:
+    value: true
+transit_permit_document:
+  description: Presence of transit permit document
+  metadata:
+    unit: /1
+values:
+  2024-01-01:
+    value: true

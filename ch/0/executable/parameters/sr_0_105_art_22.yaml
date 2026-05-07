@@ -1,0 +1,12 @@
+has_suffered_human_rghts_violation:
+  description: Has suffered a human rights violation
+local_recourse_options_complete:
+  description: Completed local recourse options
+  values:
+    2024-01-01:
+      value: (true)
+                                                                 # assuming this value from some external factor or a more extensive model
+
+
+is_not_involved_in_another_international_proceeding:
+  description: Not involved in another international proceeding related to the same issue

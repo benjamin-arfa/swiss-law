@@ -1,0 +1,20 @@
+foreign_national_transferring:
+  description: Flag for whether a foreign national is being transferred (Art. 9 SR 0.142.116.909)
+  metadata:
+    unit: flag
+    reference:
+      - title: "SR 0.142.116.909 Art. 9"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20031132/index.html#art9"
+      values:
+        2024-01-01:
+          value: true
+        2020-01-01:
+          value: true
+
+is_police_escorting_foreign_national:
+  description: Flag for police escorting a foreign national (Art. 9 SR 0.142.116.909)
+  metadata:
+    unit: flag
+    reference:
+      - title: "SR 0.142.116.909 Art. 9"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20031132/index.html#art9"

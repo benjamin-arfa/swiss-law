@@ -1,0 +1,41 @@
+slovakia_stages_program:
+  description: Parameters for the Slovakian work exchange stages program
+  min_age:
+    description: Minimum age required for the stages program (Art. 1 para. 1)
+    metadata:
+      unit: years
+      reference:
+        - title: "SR 0.142.116.907 (Agreement between Switzerland and Slovakia)"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20011242/201706291000/142.116.907.pdf"
+    values:
+      2024-01-01:
+        value: 18
+      1948-01-01:
+        value: 16
+  max_age:
+    description: Maximum age allowed for the stages program (Art. 1 para. 1)
+    metadata:
+      unit: years
+      reference:
+        - title: "SR 0.142.116.907 (Agreement between Switzerland and Slovakia)"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20011242/201706291000/142.116.907.pdf"
+    values:
+      2024-01-01:
+        value: 35
+      1948-01-01:
+        value: 30
+  restricted_professions:
+    description: Professions with a nationality restriction in the agreement (Art. 1 para. 2)
+    metadata:
+      reference:
+        - title: "SR 0.142.116.907 (Agreement between Switzerland and Slovakia)"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20011242/201706291000/142.116.907.pdf"
+    values:
+      2024-01-01:
+        - "Doctor"
+        - "Lawyer"
+      1948-01-01:
+        - "Teacher"
+        - "Engineer"
+  need_special_permit:
+    description: Dictionary of professions with a required special permit (Art. 1 para. 2)

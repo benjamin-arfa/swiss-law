@@ -1,0 +1,16 @@
+definitions:
+  engagement_country:
+    description: Engagement Country defined in Art. 2 SR 0.131.351.4
+    default: "Einsatzstaat"
+  sending_country:
+    description: Sending Country defined in Art. 2 SR 0.131.351.4
+    default: "Entsendestaat"
+  equipment_items:
+    description: Equipment Items defined in Art. 2 SR 0.131.351.4
+    default: "Ausrüstungsgegenstände"
+  relief_goods:
+    description: Relief Goods defined in Art. 2 SR 0.131.351.4
+    default: "Hilfsgüter"
+  relief_teams:
+    description: Relief Teams defined in Art. 2 SR 0.131.351.4
+    default: "Hilfsmannschaften"

@@ -1,0 +1,9 @@
+description: Reporting progress for SR 0.105 Art. 19
+metadata:
+  unit: no unit
+  reference:
+    - title: "SR 0.105 Art. 19"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/19960421/202209120000/10.100/fr/2022/1707/20220912/"
+values:
+  2024-01-01:
+    value: ""

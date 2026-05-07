@@ -1,0 +1,86 @@
+convention_on_cybercrime:
+  description: States bound by the Convention on Cybercrime (Art. 15 SR 0.102)
+  signatories:
+    description: States that signed the Convention
+    metadata:
+      reference:
+        - title: "SR 0.102 Art. 15 Unterzeichnung, Ratifikation, Inkrafttreten"
+          href: "https://www.admin.ch/opc/de/classified-compilation/19920101/201811130000/#2018.1109"
+    values:
+      - 2008-01-01:
+        value:
+          - CH
+      - 2012-01-01:
+        value:
+          - AT DE LU
+      - 2013-01-01:
+        value:
+          - IE
+  ratified_states:
+    description: States that have ratified the Convention
+    values:
+      - 2008-12-01:
+        value:
+          - CH
+  ratified_states_count:
+    description: Number of states that have ratified the Convention
+    values:
+      - 2008-12-01:
+        value: 1
+      - 2009-07-01:
+        value: 2
+      - 2012-04-01:
+        value: 3
+  approving_states:
+    description: Names of states that must approve ratification
+    values:
+      - 2012-04-01:
+        value:
+          - DE LU
+  state_dates:
+    description: Ratification dates of states
+    type: dictionary
+    values:
+      - CH:
+        value: 2008-12-01
+      - AT:
+        value: 2009-09-01
+      - DE:
+        value: 2012-04-01
+      - LU:
+        value: 2012-05-01
+      - IE:
+        value: 2013-02-01
+      - FR:
+        value: 2011-06-01
+      - NL:
+        value: 2007-11-01
+      - UK:
+        value: 2008-11-01
+
+convention_on_cybercrime_signatures_count:
+  description: Number of signatures of states
+  metadata:
+    reference:
+      - title: "SR 0.102 Art. 15 Unterzeichnung, Ratifikation, Inkrafttreten"
+        href: "https://www.admin.ch/opc/de/classified-compilation/19920101/201811130000/#2018.1111"
+  values:
+    - 2010-01-01:
+      value: 1
+    - 2011-11-01:
+      value: 2
+    - 2012-08-01:
+      value: 3
+
+convention_on_cybercrime_approvers_count:
+  description: Number of states needed for approvers
+  values:
+    - 2007-12-01:
+      value: 4
+
+convention_on_cybercrime_approving_dates:
+  description: Date when signature takes effect (Art. 15 SR 0.102)
+  type: dictionary
+  values:
+    - CH:
+      value: date: 2009-03-01

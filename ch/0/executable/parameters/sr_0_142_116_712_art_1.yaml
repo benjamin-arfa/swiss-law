@@ -1,0 +1,10 @@
+globalisation:
+  eligible_country_for_diplomatic_residency:
+    description: Citizenship to be considered under SR 0.142.116.712 Article 1
+    values:
+      2024-01-01:
+        value: 'CH'
+        metadata:
+          reference:
+            - title: SR 0.142.116.712, Article 1
+              href: "https://www.admin.ch/opc/en/classified-compilation/20060553/202201010000/de/0.142.116.712/index.html#2018"

@@ -1,0 +1,15 @@
+social_security:
+  human_rights:
+    description: Human rights within the AHV
+    general_recommendations_comments:
+      description: AHV human rights principle parameter
+      submitted:
+        metadata:
+          description: States' and special organizations' comments to ECOSOCR regarding
+            human rights
+        reference:
+          - title: "Art. 20 SR 0.103.1"
+            href: "https://www.fedlex.admin.ch/eli/cc/0.103.1/en"
+      values:
+        Switzerland:
+          value: true

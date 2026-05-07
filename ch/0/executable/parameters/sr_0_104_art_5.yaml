@@ -1,0 +1,18 @@
+For these variables, there would likely be no parameters as the article does not discuss the specifics of tax or contribution rates.
+
+```yml
+rights_and_freedom:
+  description: Equality rights and freedoms (SR 0.104 Art. 5)
+rights_and_freedom:
+  employment_protection:
+    description: Protection against forced labor
+    label: Gegen die Zwangsarbeit geschützt
+rights_and_freedom:
+  access_to_education:
+    description: Right to access education
+    label: Zugang zu Bildung
+rights_and_freedom:
+  access_to_healthcare:
+    description: Right to access public health
+    label: Zugang zu öffentlicher Gesundheitsversorgung
+```

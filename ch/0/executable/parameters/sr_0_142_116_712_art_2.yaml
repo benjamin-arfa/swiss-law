@@ -1,0 +1,37 @@
+max_border_crossing_days:
+  description: Days one may stay outside schengen countries, in the 180 days period
+  metadata:
+    unit: days
+    reference:
+      - title: "SR 0.142.116.712 Art. 2 — 'Reisedokumente mit Einreiseberechtigung'"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20160427/index.html#art_2"
+  values:
+    mandatory:
+      value: 90
+
+max_border_crossing_period_days:
+  description: Days one may stay outside schengen and inside schengen, in the 180 days period
+  metadata:
+    unit: days
+    reference:
+      - title: "SR 0.142.116.712 Art. 2 — 'Reisedokumente mit Einreiseberechtigung'"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20160427/index.html#art_2"
+  values:
+    mandatory:
+      value: 180
+
+first_trip_start:
+  description: Trip period for 90 days of free eea staying
+  metadata:
+    unit: datetime
+    reference:
+      - title: "SR 0.142.116.712 Art. 2 — 'Reisedokumente mit Einreiseberechtigung'"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20160427/index.html#art_2"
+
+trip_end:
+  description: EEA/SHCNEN trip duration of 180 days period, in the case of 90 days entry
+  metadata:
+    unit: datetime
+    reference:
+      - title: "SR 0.142.116.712 Art. 2 — 'Reisedokumente mit Einreiseberechtigung'"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20160427/index.html#art_2"

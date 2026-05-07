@@ -1,0 +1,8 @@
+international_relations:
+    dispute_resolution:
+        description: Status indicating that the dispute resolution 
+            function used in OpenFisca (SR 0.104 Art. 12 (Federal Act of 20 March 1952 on 
+            International Private Law)) is activated
+        is_panel_activated:
+            description: The value below reflects the current status of dispute resolution, 
+                which is a function used in SR 0.104 Art. 12 (see openfisca_variable)

@@ -1,0 +1,8 @@
+description: "Through-transport boarding refusal resolution (Article 12 of SR 0.142.116.919)"
+metadata:
+    reference:
+        - title: "SR 0.142.116.919"
+          href: https://www.admin.ch/opc/en/classified-compilation/20061053/202202281000/0.142.116.919
+    values:
+        2024-01-01:
+            surveillance_time_limit: 24

@@ -1,0 +1,9 @@
+protocol_effect_date:
+  definition_period: year
+  value: 2024-01-01
+judge_term_length:
+  definition_period: year
+  value: 5
+case_completion_date:
+  definition_period: year
+  value: 2023-12-31

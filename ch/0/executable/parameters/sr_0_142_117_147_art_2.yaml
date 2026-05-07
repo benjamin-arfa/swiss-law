@@ -1,0 +1,10 @@
+stagiaire:
+  description: Age conditions for stagiaire (Art. 2 SR 0.142.117.147)
+  min_age:
+    description: Minimum age to be eligible as stagiaire (inclusive)
+    unit: years
+    value: 18
+  max_age:
+    description: Maximum age to be eligible as stagiaire (exclusive)
+    unit: years
+    value: 30

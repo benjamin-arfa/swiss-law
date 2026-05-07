@@ -1,0 +1,12 @@
+requested_country_nationality:
+  description: Nationality string to search for
+  values:
+    string: [your nationality string here]
+  user: yes
+
+reentry_date_calculation:
+  description: Calculation for thirty days since re-entry
+  variables:
+    calculation_variable: 30
+    default_value: "0"
+  user: yes

@@ -1,0 +1,10 @@
+country_optout_status:
+  description: Status of AHV signatory country opt-out declarations
+  values:
+    CH:
+      value: true
+    AT:
+      value: false
+    DE:
+      value: false
+  last_updated: "2021-01-01"

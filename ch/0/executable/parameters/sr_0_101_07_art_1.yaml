@@ -1,0 +1,10 @@
+```yml
+parameters:
+  has_legal_order: !float 1.0  # initial value: True
+  has_grund_vorzubringen: !float 0.0  # initial value: False
+  has_fall_prufen: !float 0.0  # initial value: False
+  has_sich_vertreten: !float 0.0  # initial value: False
+  public_interest: !float 0.0  # initial value: False
+  national_security: !float 0.0  # initial value: False
+```
+The YAML snippet defines the parameters of the OpenFisca simulation.

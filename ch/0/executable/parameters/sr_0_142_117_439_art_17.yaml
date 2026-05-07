@@ -1,0 +1,9 @@
+treaty_ratification_year:
+  description: Year of AHV/IV/EO treaty ratification
+  metadata:
+    reference:
+      - title: Article 17 of the relevant treaty
+        href: https://www.legisuisse.ch/en/a17sr0-142-117-439/
+  values:
+    default:
+      value: 1949

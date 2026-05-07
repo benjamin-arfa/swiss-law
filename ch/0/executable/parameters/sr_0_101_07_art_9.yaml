@@ -1,0 +1,9 @@
+```yml
+params:
+  entry_into_force_date:
+    formula: |
+      if seven_ratified_member_states_date and seven_ratified_member_states_date <= latest_ratification_date:
+          return seven_ratified_member_states_date + months(2)
+      else:
+          return seven_ratified_member_states_date or latest_ratification_date + months(2)
+```

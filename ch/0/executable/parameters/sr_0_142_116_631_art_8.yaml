@@ -1,0 +1,15 @@
+taxation:
+  dta_reduction:
+    description: Double Taxation Agreement (DTA) benefits (Art. 8, SR 0.142.116.631)
+    metadata:
+      unit: /1
+      reference:
+        - title: "SR 0.142.116.631. Art. 8"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20000142/index.html#article_8"
+    values:
+      2024-01-01:
+        value: 0.05
+      2020-01-01:
+        value: 0.04
+      1997-01-01:
+        value: 0.03

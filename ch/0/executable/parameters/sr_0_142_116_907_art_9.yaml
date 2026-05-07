@@ -1,0 +1,16 @@
+bilateral_treaty:
+  sr_0_142_116_907:
+    description: Bilateral Treaty between Switzerland and Slovakia
+    end_date:
+      description: Treaty termination date
+      metadata:
+        date: true
+      values:
+        2020-01-01:
+          value: 1999-12-31
+
+        1995-01-01:
+          value: 2020-01-01
+        reference:
+          - title: "SR 0.142.116.907 Art. 9"
+            href: "https://www.admin.ch/opc/de/classified-compilation/20051116/index.html#1995_1085_1088_1089.d1"

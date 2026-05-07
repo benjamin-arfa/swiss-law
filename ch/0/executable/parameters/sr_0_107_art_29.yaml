@@ -1,0 +1,42 @@
+crc_children_development:
+  description: CRC goals for the development of children (Art. 29 CRC)
+  respects_hre:
+    description: Score for respecting human rights and freedoms
+    range: [0, 1]
+    values:
+      defaults:
+        value: 0
+      2024-01-01:
+        value: 1
+  respects_parents:
+    description: Score for respecting parents, cultural identity, language, and values
+    range: [0, 1]
+    values:
+      defaults:
+        value: 0
+      2024-01-01:
+        value: 1
+  respects_culture:
+    description: Score for respecting cultural identity, language, and values
+    range: [0, 1]
+    values:
+      defaults:
+        value: 0
+      2024-01-01:
+        value: 1
+  respects_environment:
+    description: Score for respecting the natural environment
+    range: [0, 1]
+    values:
+      defaults:
+        value: 0
+      2024-01-01:
+        value: 1
+  life_society:
+    description: Score for preparation for responsible life in society
+    range: [0, 1]
+    values:
+      defaults:
+        value: 0
+      2024-01-01:
+        value: 1

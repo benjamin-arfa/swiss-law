@@ -1,0 +1,7 @@
+person_continues_to_be_involved_in_the_process:
+    description: Whether the person continues to be involved in the visit process
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: False

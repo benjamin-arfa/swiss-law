@@ -1,0 +1,4 @@
+externals:
+  committee_status:
+    description: SR 0.106 committee status and composition.
+    default: True

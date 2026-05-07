@@ -1,0 +1,9 @@
+apprenticeship_training_compensation:
+  description: Compensation for apprenticeship training per month (Art. 4 of apprenticeship act)
+  values:
+    2024-01-01:
+      value: 3800
+    2020-01-01:
+      value: 3600
+    1997-01-01:
+      value: 3200

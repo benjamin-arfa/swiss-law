@@ -1,0 +1,16 @@
+policies:
+  description: Variable to track policy interventions
+  punished_torture:
+    description: Tracker variable indicating if torture is punished
+    metadata:
+      unit: Bool
+      reference:
+        - title: "SR 0.105 Art. 4 — Art. 4"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19920613/index.html"
+    values:
+      2024-01-01:
+        value: true
+      2020-01-01:
+        value: true
+      1997-01-01:
+        value: true

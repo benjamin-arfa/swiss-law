@@ -1,0 +1,46 @@
+migration:
+  agreements:
+    russia_exclusions:
+      description: Nationalities excluded from transit (Article 3, paragraph 3)
+      values:
+        2024-01-01:
+          - nationality: CH-N
+          - nationality: RS-M
+    russia_countries_exclusions:
+      description: Countries excluded from transit (Article 3, paragraph 3)
+      values:
+        2024-01-01:
+          - iso3166: 'KP'
+      transit_consent:
+        description: Nationality consent to transit agreement (Article 3, paragraph 2)
+        values:
+          2024-01-01:
+            CH-N:
+              value: true
+            RS-M:
+              value: false
+
+  additional_info:
+    description: Ongoing legal proceedings (Article 3, paragraph 3b)
+    values:
+      2024-01-01:
+        ongoing_legal_proceedings: false
+
+  transit_eligibility_conditions:
+    description: Transit eligibility conditions according to public health (Article 3, para. 3c)
+    values:
+      2024-01-01:
+        public_health_risks: false
+    description: Eligibility for internal security reasons (Article 3, para. 3c)
+    values:
+      2024-01-01:
+        internal_security_risks: false
+    description: Eligibility for public order reasons (Article 3, para. 3c)
+    values:
+      2024-01-01:
+        public_order_risks: false
+
+    description: Readmission Provisions (Article 3, paragraph 4)
+    values:
+      2024-01-01:
+        readmission_provisions_met: true

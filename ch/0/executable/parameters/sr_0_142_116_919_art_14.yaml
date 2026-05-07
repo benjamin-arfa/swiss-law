@@ -1,0 +1,4 @@
+variables:
+  is_escort_personnel:
+    description: Indicator for escort personnel (Art. 14 SR 0.142.116.919)
+    label: "If True, the individual is identified as escort personnel"

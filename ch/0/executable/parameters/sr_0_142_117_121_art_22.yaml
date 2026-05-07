@@ -1,0 +1,9 @@
+# SR 0.142.117.121 does not specify the specific parameters, variables or dates for the agreement, or whether there are thresholds for duration it should apply for.
+# Below is the example of a very simplified scenario for demonstration.
+
+parameters:
+    suspended_agreement:
+        description: agreement suspension days threshold.
+        values:
+            2024-01-01:
+                value: 3

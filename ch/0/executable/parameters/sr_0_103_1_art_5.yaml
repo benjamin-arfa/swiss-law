@@ -1,0 +1,12 @@
+is_restricted:
+  description: Whether ahri rights are restricted by Art. 5
+  metadata:
+    unit: "yes/no"
+    reference:
+      - title: "SR 0.103.1 Art. 5"
+        href: "https://www.admin.ch/opc/ch/e/gov/a8/2010_1478.pdf"
+  values:
+    2024-01-01:
+      value: "no"
+    2020-01-01:
+      value: "no"

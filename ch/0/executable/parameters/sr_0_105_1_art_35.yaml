@@ -1,0 +1,7 @@
+definition_periods:
+  entities:
+    committee_or_mekanism_role:
+      domain: Institution
+      values:
+        label: Committee or mechanism member
+        description: role in the committee or mechanism

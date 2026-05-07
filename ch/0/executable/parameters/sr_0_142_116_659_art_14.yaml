@@ -1,0 +1,12 @@
+return_details:
+  description: Details of return process (Art. 14 SR 0.142.116.659)
+  metadata:
+    unit: None
+    reference:
+      - title: "SR 0.142.116.659 Art. 14"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20180731/de/2018073100000050020000.html#art.14"
+  values:
+    2024-01-01:
+      return_date: '2024-01-15'
+      return_place: Zurich Airport
+      escort_officers: 2

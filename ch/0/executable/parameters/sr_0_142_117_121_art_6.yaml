@@ -1,0 +1,25 @@
+transited_through_international_airport:
+  description: The individual has only held the requested state in an international airport and did not move into the requesting state.
+  reference:
+    - title: "SR 0.142.117.121 Art. 6"
+      href: "https://assetsadr.admin.ch/assets/legislations-srf/pdf/20/18/000_01_00_00_20_27_19/SRR_01_00_20_27_20_01.pdf#page=11"
+    metadata:
+      unit: boolean
+      values:
+        2015-01-01:
+          value: True
+    values:
+      2024-01-01:
+        value: false
+
+has_residence_permit_before_or_after_entry:
+  description: Whether the residence permit was obtained before or after entry in the requesting state
+  values:
+    2024-01-01:
+      value: False
+
+visa_or_residence_permit_from_requesting_state:
+  description: The individual is in possession of an active visa or residence permit in the requesting state
+  values:
+    2024-01-01:
+        value: True

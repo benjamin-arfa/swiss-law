@@ -1,0 +1,26 @@
+definition: Definition of deportation conditions, Art. 13 SR 0.103.2
+description: Metadata for deportation conditions variable
+values:
+  lawful_decree:  # lawful decree value here e.g. true or false (not shown in text snippet)
+    description: Legally valid decree from administrative authority (Art. 13, para. 1)
+    metadata:
+      unit: bool
+      reference:
+        - title: "SR 0.103.2 Art. 13"
+          href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_13"
+
+  opportunity_to_present_arguments:
+    description: Opportunity to present reasons against deportation (Art. 13, para. 2)
+    metadata:
+      unit: bool
+      reference:
+        - title: "SR 0.103.2 Art. 13"
+          href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_13"
+
+  zving_gründe_nationale_sicherheit:
+    description: Overriding security concerns counteract opportunity to present arguments (Art. 13, para. 2)
+    metadata:
+      unit: bool
+      reference:
+        - title: "SR 0.103.2 Art. 13"
+          href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_13"

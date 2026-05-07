@@ -1,0 +1,10 @@
+treaty:
+  description: Country participation in the Treaty (SR 0.105 Art. 26)
+  participates_in_treaty:
+    metadata:
+      description: The status of participation of a country into the Treaties (SR 0.105 Art. 26)
+      reference:
+        - title: "SR 0.105 Art. 26 — Allgemeine Bestimmungen"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19900032/index.html#200-n1"
+
+# Given the binary condition in Art. 26, the value_type parameter is omitted.

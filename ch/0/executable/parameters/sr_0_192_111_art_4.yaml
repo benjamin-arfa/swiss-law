@@ -1,0 +1,34 @@
+parameters:
+  description: Parameters for the NGO exclusion exception in Art. 4 SR 0.192.111
+  ngo_purpose:
+    description: Description of the NGO's purpose
+  ngo_activities:
+    description: Description of the NGO's activities
+  national_security_conflict:
+    description: Conflict flag for national or public security
+    metadata:
+      unit: bool
+      reference:
+        - title: "Art. 4 SR 0.192.111"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/192111/message-de-base-data.html"
+  societal_order_conflict:
+    description: Conflict flag for disorder or public morality
+    metadata:
+      unit: bool
+      reference:
+        - title: "Art. 4 SR 0.192.111"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/192111/message-de-base-data.html"
+  health_morality_conflict:
+    description: Conflict flag for health or morals
+    metadata:
+      unit: bool
+      reference:
+        - title: "Art. 4 SR 0.192.111"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/192111/message-de-base-data.html"
+  public_relation_conflict:
+    description: Conflict flag for public relation
+    metadata:
+      unit: bool
+      reference:
+        - title: "Art. 4 SR 0.192.111"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/192111/message-de-base-data.html"

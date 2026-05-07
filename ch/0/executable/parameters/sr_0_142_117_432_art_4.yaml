@@ -1,0 +1,10 @@
+eligibility_reasons:
+  description: Reasons that make a person inadmissible to entry
+  metadata:
+    unit: string
+    reference:
+      - title: "SR 0.142.117.432 Art. 4"
+        href: "Link to Art. 4"
+  values:
+    2024-01-01:
+      value: ["public_order_and_security", "illegal_residence"]

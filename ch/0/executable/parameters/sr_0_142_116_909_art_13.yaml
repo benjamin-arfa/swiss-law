@@ -1,0 +1,12 @@
+# Assuming the following parameters need to be configured:
+# - A user defined name for the variable
+# - A reference to the SR0 document this came from
+variable_parameters:
+    escort_identification_documents:
+        description: The escort can prove their identity, the nature of their duty assignment within this treaty.
+        metadata:
+            reference:
+                - title: SR 0.142.116.909 Transboundary Transport of Goods
+                  href: "https://www.fedlex.admin.ch/en/fedlex/data/0/1043.4.pdf#page=19&view=FitH"
+                - title: Article 13 Escort obligations for treaty partner assets.
+                - ref: "SR 0.142.116.909 Art. 13"

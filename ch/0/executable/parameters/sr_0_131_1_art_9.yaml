@@ -1,0 +1,15 @@
+social_security:
+  convention:
+    description: Information about the entry into force of the convention
+    ratifications:
+      description: Map of states with their ratification dates
+      values:
+        CH:
+          value: 2020-01-01
+        DE:
+          value: 2020-01-15
+        FR:
+          value: 2020-02-01
+    bordering_states:
+      description: List of countries that share a common border
+      value: ['DE', 'FR']

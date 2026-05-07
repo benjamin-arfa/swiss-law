@@ -1,0 +1,14 @@
+international_cooperation:
+  description: International cooperation agreement (SR 0.142.116.829)
+  cooperation_areas:
+    description: Areas of cooperation between Switzerland and Serbia (Art. 19 SR 0.142.116.829)
+    metadata:
+      reference:
+        - title: "SR 0.142.116.829 Art. 19 Operative Zusammenarbeit"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20190543/index.html#art_19"
+    values:
+      2024-01-01:
+        value:
+          - reintegration
+          - migration_management
+          - information_exchange

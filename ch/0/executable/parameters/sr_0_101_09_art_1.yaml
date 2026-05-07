@@ -1,0 +1,8 @@
+```yaml
+bisheriger_wortlaut:
+    start_year: 1
+    end_year: 9
+    base_amount: 0
+```
+
+Since there are no variables mentioned, the YAML parameter snippet is also empty.

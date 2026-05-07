@@ -1,0 +1,23 @@
+immigration:
+  description: Immigration-related parameters
+
+  annex_3_certificate:
+    description: Validity of certificate for proof of Annex 3 (see Art. 10 SR 0.142.116.659)
+    metadata:
+      reference:
+        - title: "SR 0.142.116.659 Art. 10 — Nachweis bei Drittstaatsangehörigen und Staatenlosen"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20170259/index.html"
+
+  annex_4_certificate:
+    description: Validity of certificate for indirect proof of Annex 4 (see Art. 10 SR 0.142.116.659)
+    metadata:
+      reference:
+        - title: "SR 0.142.116.659 Art. 10 — Nachweis bei Drittstaatsangehörigen und Staatenlosen"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20170259/index.html"
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: False
+      1997-01-01:
+        value: False

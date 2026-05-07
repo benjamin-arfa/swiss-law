@@ -1,0 +1,8 @@
+```yml
+# Default parameter YAML
+parameters:
+  base_rate:
+    description: "Base rate"
+  reference_year:
+    description: "Reference year"
+```

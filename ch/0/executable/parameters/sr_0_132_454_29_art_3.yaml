@@ -1,0 +1,18 @@
+social_security:
+  government:
+    description: Government related information (SR 0.132.454.29)
+    border_stone_construction:
+      shared_cost_ratio:
+        description: "Share of border stone construction costs from Switzerland (Art. 3 SR 0.132.454.29)"
+        metadata:
+          unit: /1
+          reference:
+            - title: "SR 0.132.454.29 Art. 3"
+              href: "https://www.admin.ch/opc/fr/classified-compilation/20020523/202007080000/0.132.454.29.pdf"
+        values:
+          2024-01-01:
+            value: 0.5
+          2020-01-01:
+            value: 0.5
+          1997-01-01:
+            value: 0.5

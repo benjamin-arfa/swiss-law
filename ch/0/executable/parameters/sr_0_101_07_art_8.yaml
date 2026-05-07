@@ -1,0 +1,7 @@
+```yml
+parameters:
+    konvention_ratifiziert_threshold: 1
+    konvention_ratifiziert_rate: 1
+```
+
+This YAML snippet defines an OpenFisca parameter for checking the Convention ratification status of a person.

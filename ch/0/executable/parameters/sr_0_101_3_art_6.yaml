@@ -1,0 +1,7 @@
+```yml
+obligations:
+  - party: Switzerland
+    obligation: 'To provide health insurance to all citizens'
+  - party: Other contracting party
+    obligation: 'To provide emergency medical assistance'
+```

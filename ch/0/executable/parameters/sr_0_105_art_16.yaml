@@ -1,0 +1,32 @@
+parameters:
+  # Entities
+  institution:
+    description: Institutions subject to human rights review
+    metadata:
+      reference:
+        - title: "SR 0.105 Art. 16 — Eriagungen"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19551011/index.html"
+    values:
+      definition_period: YEAR
+
+  # Definitions
+  entity_human_rights_state_actors:
+    description: Public servants or institutions acting in an official capacity
+    metadata:
+      reference:
+        - title: "SR 0.105 Art. 16 — Eriagungen"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19551011/index.html"
+      values:
+        2024-01-01:
+          # Value should be updated as the data source becomes available
+          value: '["Federal Authorities", "Local Authorities", "Public Servants", "Other",]'
+
+  # Parameters for computation
+  institution_human_rights_entity: 
+    description: The institution which was punished
+    metadata:
+      reference:
+        - title: "SR 0.105 Art. 16 — Eriagungen"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19551011/index.html"
+    values:
+      definition_period: YEAR

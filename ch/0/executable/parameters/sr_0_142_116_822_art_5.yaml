@@ -1,0 +1,23 @@
+multiple_entry_swiss_visas:
+  description: multiple entry visa categories in Swiss Confederation
+  type: entity
+  value_table:
+    sr:
+      description: "SR 0.142.116.822 Art. 5"
+      type: str
+      value_column: 'sr_visas_categories'
+values:
+  - value:
+    sr_visas_categories:
+      'Art. 5': |
+        1)	Offizielle Delegationen
+        2)	Arbeitnehmer
+        3)	Fahrgesellschaften
+        4)	Ehepartner_in/Kind/Eltern
+        5)	Schüler_In/Studenten
+        6)	Athlet_in
+        7)	Freiberufler_in
+        8)	Zivilgesellschaftliche Organisation_In
+        9)	Religiöse Gemeinschaften
+    name: all_visas
+    category: all_visas

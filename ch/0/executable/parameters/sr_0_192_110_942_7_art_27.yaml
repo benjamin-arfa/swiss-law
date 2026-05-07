@@ -1,0 +1,11 @@
+# Since this text refers to an agreement rather than a threshold or rate,
+# This parameter file section is more for documentation purposes.
+organisation_agreements:
+  description: SR 0.192.110.942.7 Art. 27: Organisation's agreements with Protocol contracting parties
+  metadata:
+    reference:
+      - title: "SR 0.192.110.942.7: Protokoll zur Änderung, Abänderung oder den Beitritt der Eidgenössischen Personalausweis-Ordnung"
+        href: "https://www.admin.ch/opc/de/classes/0/index.html"
+  values:
+    contract_info:
+      value: List of contracts, to be filled in

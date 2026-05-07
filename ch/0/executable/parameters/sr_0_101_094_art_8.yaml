@@ -1,0 +1,11 @@
+```yml
+parameters:
+  inadmissible_without_review_threshold:
+    description: "The percentage of complaints that can be declared inadmissible without review"
+    type: float
+    default: 0.0
+  established_jurisprudence_rate:
+    description: "The rate of decisions where the committee declares a complaint admissible and makes a judgment on its merits"
+    type: float
+    default: 0.0
+```

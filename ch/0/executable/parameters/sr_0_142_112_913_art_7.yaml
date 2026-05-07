@@ -1,0 +1,12 @@
+collaboration_indicators:
+  description: Flags for collaboration with Switzerland according to Art. 7 of the treaty
+  collaboration_with_switzerland_value:
+    description: Indicator for collaboration between Switzerland and [partner country]
+    metadata:
+      unit: /
+      reference:
+        - title: "SR 0.142.112.913 Art. 7"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20210271/index.html#art7"
+    values:
+      2024-01-01:
+        value: True

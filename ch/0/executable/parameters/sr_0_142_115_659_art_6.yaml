@@ -1,0 +1,17 @@
+social_security:
+  application_for_transfer:
+    description: "Reintigration application requirements"
+    require_documents:
+      description: "Exempt from documents requirements for certain nationals"
+      metadata:
+        type: bool
+      values:
+        Switzerland: false
+    document_validity_period:
+      description: "Time after birth when documents are considered still valid"
+      metadata:
+        type: time
+        unit: years
+      values:
+        2024-01-01:
+          value: 5

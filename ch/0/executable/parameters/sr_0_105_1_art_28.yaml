@@ -1,0 +1,19 @@
+treaties:
+  protocol_1051:
+    description: Dates for the entry into force of the 1051 protocol
+    metadata:
+      reference:
+        - title: 'SR 0.105.1 Art. 28'
+          href: 'https://www.admin.ch/opc/fr/classified-compilation/20061001/index.html#2006_1653_2006_1080_2006_1080_2006_1081_2006_1082.pdf#page=26&viewz=fit&zoom=100,100,0.0'
+  entry_into_force_date:
+    description: Date of entry into force of the protocol (Art. 28 SR 0.105.1)
+    metadata:
+      unit: date
+      reference:
+        - title: 'SR 0.105.1 Art. 28'
+          href: 'https://www.admin.ch/opc/fr/classified-compilation/20061001/index.html#2006_1653_2006_1080_2006_1080_2006_1081_2006_1082.pdf#page=26&viewz=fit&zoom=100,100,0.0'
+    values:
+      2024-01-01:
+        value: 2034-01-30  # (December 30 in the month following 30 days after 20th ratifying/signing)
+      2023-01-01:
+        value: 2033-01-30  # (December 30 in the month following 30 days after 20th ratifying/signing)

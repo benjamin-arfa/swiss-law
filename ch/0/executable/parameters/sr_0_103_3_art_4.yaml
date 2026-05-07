@@ -1,0 +1,4 @@
+no_evasion_tax_benefit:
+  description: Flag indicating whether tax evasion is punishable by law according to local legislation (Art. 4 SR 0.103.3)
+  values:
+    CH: true

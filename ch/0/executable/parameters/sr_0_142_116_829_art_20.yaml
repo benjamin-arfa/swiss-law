@@ -1,0 +1,2 @@
+This doesn't require a YAML parameter directly since the variable relies on others for input.
+However a YAML file could be created (in other languages) to track international agreements such as the ones outlined in this protocol - assuming the implementation of those agreements has an impact on available services and parameters.

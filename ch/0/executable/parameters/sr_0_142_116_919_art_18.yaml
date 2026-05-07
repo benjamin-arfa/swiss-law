@@ -1,0 +1,17 @@
+data_notification:
+  description: Timing and content of data transmission notifications (Art. 18 para 1 letter e SR 0.142.116.919)
+metadata:
+  title: Timeline of Data Notifications
+
+values:
+  2024-01-01:
+    value: 2024-01-15
+
+data_acknowledged:
+  description: Received confirmation of data exchange completion and validation (Art. 18 para 1 letter d SR 0.142.116.919)
+metadata:
+  title: Validation Status
+
+values:
+  2024-01-01:
+    value: True

@@ -1,0 +1,21 @@
+international_agreements:
+  passport_data_sharing:
+    new_features_introduction_date:
+      description: Date when new passport features will be introduced
+      metadata:
+        unit: 'date'
+        reference:
+          - title: "SR 0.142.116.702 Art. 5 — Notifikation der relevanten Aktien"
+            href: "https://admin.ch/opc/nrip/sr/0.142.116.702.html#art5"
+    agreement_signing_date:
+      description: Date when the passport agreement was signed
+      metadata:
+        unit: 'date'
+      value: 2020-01-01
+    passport_data_sharing_partners:
+      description: List of countries participating in the passport data sharing agreement
+      metadata:
+        unit: 'list of country name strings'
+        reference:
+          - title: "SR 0.142.116.702 Art. 5"
+            href: "https://admin.ch/opc/nrip/sr/0.142.116.702.html#art5"

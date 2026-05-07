@@ -1,0 +1,9 @@
+# This snippet focuses on defining a sample committee as an example.
+committees:
+  committee_a:
+    description: Members of the committee a.
+    metadata:
+      reference:
+        - title: "SR 0.105 Art. 23"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20060913/201910010000/0.105.en.pdf"
+  # Add other committees as needed

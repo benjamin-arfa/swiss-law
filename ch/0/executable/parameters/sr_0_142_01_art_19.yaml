@@ -1,0 +1,9 @@
+description: Specifies year when budget submission fact changes - year when budget report changes.
+
+OR96_budget_submission:
+  description: Budget submission year changes
+  values:
+    2021-01-01:
+      value: 1
+    before_2021-01-01:
+      value: 0

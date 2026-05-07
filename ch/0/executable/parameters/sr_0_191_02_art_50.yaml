@@ -1,0 +1,8 @@
+{
+  "customs_exemption": true,
+  "goods_for_customs_exemption": [
+    "goods_for_consular_post",
+    "personal_goods_for_consular_official",
+    "personal_goods_for_household_members"
+  ]
+}

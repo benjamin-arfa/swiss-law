@@ -1,0 +1,14 @@
+justice:
+  forced_disappearance:
+    penalty:
+      description: Penalty amount for forced disappearance
+      metadata:
+        unit: /1 year
+        reference:
+          - title: "SR 0.103.3 Art. 7"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20170532/index.html"
+      values:
+        2024-01-01:
+          value: 10000
+        2020-01-01:
+          value: 5000

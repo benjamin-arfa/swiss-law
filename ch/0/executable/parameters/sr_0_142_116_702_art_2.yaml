@@ -1,0 +1,11 @@
+foreign_nations:
+  description: List of other nations relevant to visa-free travel (Schengen countries)
+  values:
+    2024-01-01:
+      - EEA
+      - Schengen
+foreign_nation_visits:
+  description: Visit dates for foreign nations, one date per nation
+  value_type: date
+  unit: month
+  entity: Person

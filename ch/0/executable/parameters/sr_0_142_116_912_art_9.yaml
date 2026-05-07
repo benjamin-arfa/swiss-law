@@ -1,0 +1,54 @@
+nationality:
+  description: List of all countries and their corresponding nationalities
+  metadata:
+    reference:
+      - title: "SR 0.142.116.912 Art. 9"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20171116/index.html"
+  values:
+    2024-01-01:
+      country_nationality:
+        value: "CHL"
+        is_active: true
+
+requires_visitation:
+  description: List of countries with requirements to request a visit when in their territory
+  metadata:
+    reference:
+      - title: country with Visas restrictions
+        href: "https://www.google.info/"
+      
+      - title: country with permits restrictions
+        href: "https://www.google.info/"
+      
+      - 
+      - 
+      - 
+      - 
+
+residence_status:
+  description: List of all countries with valid or invalid residence permits
+  metadata:
+    reference:
+      - title: SR
+        href: "https://www.federalcouncil.ch"
+
+time_point_of_residency:
+  description: Time when the person arrived at a foreign country
+
+visa:
+    description:
+      List of all countries' Respective visas status - their valid or invalid visas
+
+country_of_origin_residence_visums:
+  description: foreign countries that allow foreigners to obtain visas (their Visa process)
+  metadata:
+    reference:
+      - title: SR
+        href: "https://www.federalcouncil.ch"
+        is_active: true
+
+dual_residence:
+  description: List of individuals with dual residence status, whether they have one or both Visum permit
+
+should_repatriate:
+  description: Function repatriating individuals who are not properly documented

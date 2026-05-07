@@ -1,0 +1,13 @@
+countries:
+  description: Agreement entities involved
+  values:
+    # Switzerland
+    CH:
+      - Eidgenössisches Volkswirtschaftsdepartement
+      # - Eidgenössisches Justiz- und Polizeidepartement  # commented, historically not responsible
+      - Bundesamt für Industrie, Gewerbe und Arbeit  # historically Bundesamt für Industrie, Gewerbe und Arbeit
+      - Staatssekretariat für Migration (SEM)
+    # Slovakia
+    SK:
+      - Ministerium für Arbeit, Soziales und Familie der Slowakischen Republik
+      # - Verwaltung des Beschäftigungsdienstes in Bratislava  # commented, historical information

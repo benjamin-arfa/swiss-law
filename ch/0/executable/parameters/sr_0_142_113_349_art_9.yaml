@@ -1,0 +1,8 @@
+# Define the date when the ratification occurred
+migrations:
+  ahv:
+    no_refugee_pact:
+      description: The date when refugees rights based on the 1951 Geneva Convention Protocol were last amended
+      metadata:
+        unit: date
+      default: "1967-01-31"

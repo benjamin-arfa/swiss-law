@@ -1,0 +1,12 @@
+un_notification:
+  description: Notification year about CCM ratifications and amendments for Switzerland
+  values:
+   2024-01-01:
+     ratification_year: 2024
+     amendment_year: 2013
+   2020-01-01:
+     ratification_year: 
+     amendment_year: 2011
+   
+   
+The above values are for demonstration and may not correspond to actual data.

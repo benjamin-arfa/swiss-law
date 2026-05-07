@@ -1,0 +1,17 @@
+```yml
+territory_bound_by_protocol:
+    input_variables
+
+protocol_territories:
+    value_type: string
+    default: {}
+    label: 'Territories to which the protocol applies'
+
+countries_protocols_status:
+    value_type: string
+    default: {}
+    label: 'Status of countries\' declarations'
+
+default_rollback_date: 2022-01-01
+default_status_duration: P12M
+```

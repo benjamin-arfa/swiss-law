@@ -1,0 +1,38 @@
+# added custom fields to individual parameters
+metadata:
+    # new custom fields
+      ImmigrationStatus:
+          description: Indicator for "Rückübernahme von Staatsangehörigen" status according to SR 0.142.117 Art. 2.
+          values:
+              2024-01-01:
+                  value: null
+
+      immigration_date:
+        description: Date of immigration.
+
+      nationality:
+        description: Claimed nationality
+        metadata:
+          unit: /1
+          reference:
+            - title: "SR 0.142.117.149 Art. 2 — Rückübernahme von Staatsangehörigen"
+              href: "https://www.admin.ch/opc/fr/classified-compilation/20060382/200611221000/142.117.149.pdf"
+
+{{ # immigration_status #
+  "immigration_status": {
+    "variables": [
+      {
+        "period_index": "specific_date",
+        "period_name": "period",
+        "parameter": "immigration_status",
+        "value_index": "specific_date"
+      },
+      {
+        "period_index": "specific_date",
+        "period_name": "period",
+        "parameter": "immigration_date",
+        "value_index": "specific_date"
+      }
+    ]
+  }
+}}

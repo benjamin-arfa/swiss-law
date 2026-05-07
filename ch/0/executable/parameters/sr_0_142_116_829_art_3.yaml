@@ -1,0 +1,8 @@
+#  Parameter for individuals passing over international airports of Serbia
+is_passed_through_int_airport_serbia:
+  description: Indicator for international airport transit  
+  metadata:
+      unit: '0/1'
+  values:
+    2024-01-01:
+      value: 1

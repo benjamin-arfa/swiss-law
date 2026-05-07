@@ -1,0 +1,16 @@
+labour_market:
+  description: Labour market regulations (SR 0.142.116.727)
+  young_worker_limit:
+    description: Maximum number of young workers allowed per year (Art. 3 SR 0.142.116.727)
+    metadata:
+      unit: number
+      reference:
+        - title: "SR 0.142.116.727 — AusländerFreiheits- und Einwanderungs Gesetz"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170313/index.html#art3"
+    values:
+      2024:
+        value: 20
+      2020:
+        value: 20
+      1995:
+        value: 5

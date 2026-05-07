@@ -1,0 +1,16 @@
+contribution_sources:
+  description: Sources contributing to SR 0.105.1 Art. 26
+  entities:
+    Government:
+      description: General government contributions
+      values:
+        free:
+          description: Free contributions
+          metadata:
+            unit: CHF
+            reference:
+              - title: SR 0.105.1 Art. 26
+                href: "https://www.admin.ch/opc/en/classified-compilation/20051013/201512310000/0105.1/index.html#art_26"
+          type: float
+          filter:
+            government: "is_general_government"

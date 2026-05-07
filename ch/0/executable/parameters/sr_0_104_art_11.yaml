@@ -1,0 +1,16 @@
+dispute_resolution:
+  description: Parameters for state dispute resolution under SR 0.104
+  process_timeout:
+    description: Time period within which a dispute must be resolved
+    metadata:
+      unit: months
+      reference:
+        - title: "SR 0.104 Art. 11"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19910219/20181030110000001.pdf#page=9"
+    values:
+      2024-01-01:
+        value: 6
+      2020-01-01:
+        value: 6
+      1997-01-01:
+        value: 6

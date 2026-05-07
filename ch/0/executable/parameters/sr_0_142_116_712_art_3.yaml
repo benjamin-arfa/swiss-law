@@ -1,0 +1,7 @@
+international_regulations:
+  description: International regulations governing residence, work, and stay
+  metadata:
+    reference:
+      - title: "SR 0.142.116.712 Art. 3 Einhaltung der innerstaatlichen Gesetzgebung"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20070522/index.html#Art.3"
+values:

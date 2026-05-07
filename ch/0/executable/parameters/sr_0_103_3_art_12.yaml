@@ -1,0 +1,13 @@
+investigation:
+  status:
+    description: Investigation status (SR 0.103.3 Art. 12)
+    values:
+      investigated: 1
+      not_investigated: 0
+
+protection_measures:
+  status:
+    description: Protection measures in place (SR 0.103.3 Art. 12)
+    values:
+      in_place: 1
+      not_in_place: 0

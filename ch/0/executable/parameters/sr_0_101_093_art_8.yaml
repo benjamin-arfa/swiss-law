@@ -1,0 +1,13 @@
+parameters:
+  has_signed_state:
+    start_year: 2002
+    end_year: 2050
+  has_deposited_ratification:
+    start_year: 2002
+    end_year: 2050
+  has_entry_into_force_date:
+    start_year: 2002
+    end_year: 2050    
+  has_other_communication: 
+    start_year: 2002
+    end_year: 2050

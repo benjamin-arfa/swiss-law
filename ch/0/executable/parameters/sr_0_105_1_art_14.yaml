@@ -1,0 +1,16 @@
+miscellaneous:
+   committee_for_prevention:
+     description: Government rights and obligations to allow committee for prevention
+     access_rights:
+       description: Rights and obligations for access to prisons granted by the government
+       metadata:
+         reference:
+           - title: SR 0.105.1 Art. 14 Paragraph 1, (b) to (e)
+             href: https://www.fedlex.admin.ch/eli/cc/195.11bis/date_2022_03/de
+       values:
+         unrestricted_access:
+           value: True
+         restricted_access:
+           value: False
+         no_access:
+           value: False

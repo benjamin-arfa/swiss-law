@@ -1,0 +1,18 @@
+passport_substitute:
+  description: Passport substitute issuance for nationality verification (Art. 2 SR 0.142.116.909)
+  nationality_verified_documents:
+    description: Documents required for nationality verification
+    metadata:
+      reference:
+        - title: "SR 0.142.116.909 Art. 2 — Passersatzpapier, Staatsangehörigkeit"
+          href: "https://assets.adam.admin.ch/assets/5f5c9b9cda/art2.html"
+      values:
+        value: True
+  nationality_verified_interview:
+    description: Mandatory interview for nationality verification
+    metadata:
+      reference:
+        - title: "SR 0.142.116.909 Art. 2 — Passersatzpapier, Staatsangehörigkeit"
+          href: "https://assets.adam.admin.ch/assets/5f5c9b9cda/art2.html"
+      values:
+        value: True

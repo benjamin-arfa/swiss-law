@@ -1,0 +1,28 @@
+definition: Parameters used in OpenFisca
+social_inclusion:
+  international_cooperation:
+    description: Measures for combating racial discrimination in international cooperation
+    metadata:
+      reference:
+        - title: SR 0.104
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19921022/index.html"
+      values:
+        2024-01-01:
+          value: True
+        2020-01-01:
+          value: True
+human_rights_promotion:
+  description: Variables used to track and promote human rights
+  data_source: UN declarations
+  values:
+    signed_human_rights_declaration:
+      description: Confirmation of signing the Universal Declaration of Human Rights
+      metadata:
+        reference:
+          - title: SR 0.104
+            href: "https://www.admin.ch/opc/fr/classified-compilation/19921022/index.html"
+      values:
+        2024-01-01:
+          value: True
+        2020-01-01:
+          value: True

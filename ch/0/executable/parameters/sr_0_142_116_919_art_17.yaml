@@ -1,0 +1,42 @@
+description: Risk levels for foreigners (Art. 17, SR 0.142.116.919)
+metadata:
+  reference:
+    - title: "SR 0.142.116.919 Art. 17"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20191229/index.html#20191229_b7_17-5"
+values:
+  race:
+    description: Risk level for racial persecution
+    values:
+      unknown: -1
+      low: 0
+      high: 1
+  religion:
+    description: Risk level for religious persecution
+    values:
+      unknown: -1
+      low: 0
+      high: 1
+  nationality:
+    description: Risk level for nationality-related persecution
+    values:
+      unknown: -1
+      low: 0
+      high: 1
+  social_group:
+    description: Risk level for persecution due to social group membership
+    values:
+      unknown: -1
+      low: 0
+      high: 1
+  political_views:
+    description: Risk level for persecution due to political views
+    values:
+      unknown: -1
+      low: 0
+      high: 1
+  past_crimes:
+    description: Risk level of past crimes that can lead to prosecution
+    values:
+      unknown: -1
+      low: 0
+      high: 1

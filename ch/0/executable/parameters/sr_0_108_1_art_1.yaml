@@ -1,0 +1,8 @@
+description: Flag indicating compliance with the discrimination convention
+metadata:
+  reference:
+    - title: "SR 0.108.1 Art. 1 — Zuständigkeit des Ausschusses für die Beseitigung der Diskriminierung der Frau"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20020553/20020515/510.01.html"
+values:
+  2024-01-01:
+    value: true

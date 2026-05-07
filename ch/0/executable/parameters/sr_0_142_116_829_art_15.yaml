@@ -1,0 +1,7 @@
+international_agreements:
+  SR_0_142_116_82X:
+    Art_15:
+      Transportation_cost_shares:
+        description: Shares of transportation costs to be borne by the requesting state (Art. 15 SR 0.142.116.82X)
+        values:
+          CH: 1.0

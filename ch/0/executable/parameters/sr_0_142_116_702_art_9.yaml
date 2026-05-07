@@ -1,0 +1,14 @@
+notification_last_dispatch_date_swiss:
+  description: Date of last notification about SR 0.142.116.702 agreement implementation in Switzerland (Art. 9)
+  metadata:
+    unit: Date
+    reference:
+      - title: "SR 0.142.116.702 Art. 9"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20190381/index.html"
+  values:
+    2023-09-01:
+      value: "2023-09-01"
+    2020-01-01:
+      value: "2020-01-01"
+    2019-01-01:
+      value: "2019-01-01"

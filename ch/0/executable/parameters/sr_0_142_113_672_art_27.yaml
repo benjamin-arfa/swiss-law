@@ -1,0 +1,16 @@
+european_regulations:
+  description: Rules for European social security regulations application to the individual 
+  current_regulations:
+    description: Rules for current European social regulation (EC) application
+    metadata:
+      unit: None
+      reference:
+        - title: "European Social Security Regulations"
+          href: "https://ec.europa.eu/social/main.jsp?catId=1241&langId=en"
+    values:
+      2024-01-01:
+        value: 5
+      2020-01-01:
+        value: 5
+  legacy_regulations:
+    description: Rules for old European social regulation (EG) application

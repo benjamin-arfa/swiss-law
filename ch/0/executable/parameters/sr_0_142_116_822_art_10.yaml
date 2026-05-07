@@ -1,0 +1,17 @@
+country:
+  regulamentation:
+    description: Schengen regulations
+    diplomatic_short_stay_maximum_days:
+      description: Maximum duration for non-EU diplomatic short-term stays within 180 days (Art. 10 SR 0.142.116.822)
+      metadata:
+        unit: days
+        reference:
+          - title: "SR 0.142.116.822 Art. 10"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20200412/201904301100/_1404_0.pdf#page=15"
+      values:
+        2024-01-01:
+          value: 90
+        2020-01-01:
+          value: 90
+        1997-01-01:
+          value: 90

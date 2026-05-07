@@ -1,0 +1,30 @@
+To implement the conditions mentioned in the legal text, you might need more variables and conditions. For example, we have a condition with "has_family_member" and "is_detainee". To keep the parameter snippet short, let's focus on these two related conditions.
+
+description: Flag to indicate if the person requesting information has a family member that is a detainee
+metadata:
+  unit: bool
+  reference:
+    - title: "SR 0.103.3 Art. 18 — Access to Detainee Information"
+      href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_18"
+values:
+  2024-01-01:
+    value: True
+  2020-01-01:
+    value: True
+  1997-01-01:
+    value: True
+
+flag_to_indicate_detainee_status:
+  description: Flag to indicate if the person is a detainee under investigation
+  metadata:
+    unit: bool
+    reference:
+      - title: "SR 0.103.3 Art. 18 — Access to Detainee Information"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de#art_18"
+  values:
+    2024-01-01:
+      value: True
+    2020-01-01:
+      value: True
+    1997-01-01:
+      value: True

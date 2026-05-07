@@ -1,0 +1,11 @@
+description: SRB visa categories
+metadata:
+  reference:
+    - title: SR 0.142.116.822 Art. 4
+      href: "https://www.admin.ch/opc/en/classified-compilation/20220934/index.html"
+values:
+  2024-01-01:
+    - OFFICIALS
+    - BUSINESSPEOPLE
+    - DRIVERS
+    # ... and so on

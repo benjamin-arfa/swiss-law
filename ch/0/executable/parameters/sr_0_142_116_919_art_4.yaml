@@ -1,0 +1,17 @@
+mandatory_insurance:
+  description:  Mandatory AHV insurance requirements 
+  maximum_days_in_switzerland: 
+    description: Maximum number of days in Switzerland
+    metadata: {description: 'Maximum number of days an individual can remain in Switzerland before obligatory AHV insurance applies', unit: days}
+    values:
+      2024-01-01:
+        value: 182
+social_security:
+  foreign_national_responsibility:
+    description: 'Conditions for taking responsibility for a foreign national (SR 0.142.116.919 Art. 4)'
+    visa_valid_before_leave:
+      description: 'Maximum days permitted for a foreign national having a valid visa to remain in Switzerland before treaty-partner takes responsibility'
+      metadata: {description: 'Maximum days permitted for a foreign national having a valid visa to remain in Switzerland before treaty-partner takes responsibility', unit: days}
+      values:
+        2024-01-01:
+          value: 90

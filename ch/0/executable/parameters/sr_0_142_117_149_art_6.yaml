@@ -1,0 +1,8 @@
+description: Duration in days of the period for requesting a transfer after detecting an unauthorized entry or residence (Art. 6 SR 0.142.117.149)
+metadata:
+  unit: /
+  reference:
+    - title: "SR 0.142.117.149 Art. 6 Fristen für das Ablaufen einer Rückübernahmeverpflichtung"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20151135/index.html#art_6"
+values:
+  value: 365

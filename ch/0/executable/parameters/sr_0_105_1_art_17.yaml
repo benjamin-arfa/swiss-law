@@ -1,0 +1,17 @@
+protocol_entry_into_force_date:  # Value should be set for Switzerland's protocol entry into force date
+  description: Date of this treaty's entry into force in Switzerland
+  metadata:
+    format: date
+    reference:
+      - title: Ratification of the Optional Protocol to the Convention Against Torture
+        href: https://www.ohchr.org/en/torture/complaints/Pages/protocol.aspx
+  values:
+    2024-01-01:
+      value: 2021-06-01  # This would be replaced with the actual entry date
+implementation_mechanism_established_date:
+  description: Date the national torture prevention mechanism was first established
+  metadata:
+    format: date
+    reference:
+      - title: "SR 0.105.1 Art. 17: Aufenthaltliche Kontrollmechanismen, SR 0.105 (Stand Am 01. August 2021) Art. 17"
+        href: https://www.admin.ch/opc/fr/classified-compilation/20210131/index.html

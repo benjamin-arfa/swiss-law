@@ -1,0 +1,9 @@
+international_agreement:
+  description: Eligibility criteria for international agreement on internships
+  metadata:
+    reference:
+      - title: "SR 0.142.117.437 Art. 3 — Stagiairesbewilligung"
+        href: "https://lexadmin.ch/nos/id/0.142.117.437.html#art3"
+  values:
+    2024-01-01:
+      value: {"Eligible": ["Country1", "Country2"]}

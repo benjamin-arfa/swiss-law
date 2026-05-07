@@ -1,0 +1,29 @@
+```yml
+parameters:
+  period:
+    start_date: 2020-01-01
+    duration_iso_weeks: 1
+    variable: "all_contracts_agreed"
+
+definition:
+  all_contracts_agreed: Formula('awg("2020-01-01", "P1Y", {})')
+
+protocol_entry_into_force:
+  conditions: ['protocol_entry_into_force']
+  rules:
+    [
+      {'conditions': '(all_contracts_agreed)', 'rule_value': 'protocol_entry_into_force'},
+      {'conditions': 'not(all_contracts_agreed)', 'rule_value': '-1'}
+    ]
+  parameter_yaml:
+    parameters:
+      protocol_entry_into_force:
+        conditions: ['protocol_entry_into_force']
+        rules:
+          [
+            {'conditions': '(all_contracts_agreed)', 'rule_value': 'protocol_entry_into_force'},
+            {'conditions': 'not(all_contracts_agreed)', 'rule_value': '-1'}
+          ]
+```
+
+However, given the nature of the question, it seems that a `all_contracts_agreed` variable isn't directly part of the provided legal article. As such, the initial reasoning provided would need some clarification. Assuming the contracts agreement variable is indeed part of the legal context and represented in the available legal articles or elsewhere, the `all_contracts_agreed` formula could be replaced.

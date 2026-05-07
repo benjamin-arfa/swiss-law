@@ -1,0 +1,26 @@
+migration:
+  visa_free_residence:
+    description: Duration for visa-free residence in another country
+    metadata:
+      unit: months
+      reference:
+        - title: SR 0.142.117.432, Art. 1
+          href: "https://www.admin.ch/opc/de/classified-compilation/20190319/index.html"
+    values:
+      2024-01-01:
+        value: 3
+      2020-01-01:
+        value: 3
+
+  visa_free_work:
+    description: Visa-free duration for work in another country or visa-free stay (Art. 1 para. 4)
+    metadata:
+      unit: months
+      reference:
+        - title: SR 0.142.117.432, Art. 1
+          href: "https://www.admin.ch/opc/de/classified-compilation/20190319/index.html"
+    values:
+      2024-01-01:
+        value: 0.0
+      2020-01-01:
+        value: 0.0

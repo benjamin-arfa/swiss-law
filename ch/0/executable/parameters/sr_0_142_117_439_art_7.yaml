@@ -1,0 +1,12 @@
+re_admission_time_frame:
+  description: Time frame for re-admitting an individual
+  metadata:
+    unit: days
+    reference:
+      - title: "SR 0.142.117.439 Art. 7"
+        href: "https://www.admin.ch/opc/de/classified-compilation/20210823/index.html"
+  values:
+    2022-01-01:
+      value: 30
+    2015-01-01:
+      value: 30

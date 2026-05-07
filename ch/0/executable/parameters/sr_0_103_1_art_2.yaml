@@ -1,0 +1,26 @@
+contract_states:
+  description: Countries that are Contracting States to the Charter
+  all:
+    description: List of Contracting States (Art. 2 Charter)
+    values:
+      2024-01-01:
+        value: ['Country A', 'Country B', 'Country C']
+      2020-01-01:
+        value: ['Country A', 'Country B']
+      1948-01-01:
+        value: []
+
+social_benefits:
+  description: Entitlement of non-nationals to social benefits, per Contracting State
+  values:
+    SR 0.103.1:
+      description: Non-nationals entitled to social benefits in Switzerland
+      all:
+        description: List of economic rights (Art. 2 para. 3 Charter)
+        values:
+          2024-01-01:
+            value: ['Right A', 'Right B']
+          2020-01-01:
+            value: ['Right A']
+          1948-01-01:
+            value: []

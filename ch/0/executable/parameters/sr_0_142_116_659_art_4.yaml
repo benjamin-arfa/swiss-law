@@ -1,0 +1,17 @@
+treaty_status:
+  description: Conditions for return requests by Russia (Art. 4 SR 0.142.116.659)
+  values:
+    2024-01-01:
+      description: |
+        Swiss Citizen State: Yes/No
+        Was Swiss before Russian residency: Yes/No
+      values:
+        abandoned_swiss_citizenship: 
+          default: False
+          description: Has abandoned Swiss citizenship before return request
+          values: { True: False, False: False }
+
+        was_swiss_citizen_before_russian_residency: 
+          default: True
+          description: Was Swiss citizen before Russian residency
+          values: { True: True, False: False }

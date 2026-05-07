@@ -1,0 +1,22 @@
+foreign_relations:
+  partner_countries:
+    description: Partner countries for diplomatic visa exemptions (Art. 1 SR 0.142.111.232)
+    metadata:
+      values:
+        2024-01-01:
+          value:
+            - CH
+            - FR
+        2020-01-01:
+          value:
+            - CH
+            - DE
+        1997-01-01:
+          value: []
+      example: "Country codes of Switzerland (CH) and France (FR)",
+      unit: none
+      reference:
+        - title: "SR 0.142.111.232 — Gesetz vom 29. November 2001 betreffend die Anerkennung von Diplomatenpässen
+          von Personen der Mitgliedstaaten der Europäischen Union"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20011223/index.html"
+      note: ""}

@@ -1,0 +1,28 @@
+enforced_disappearance:
+  description: Laws regarding enforced disappearance
+  banned_orders:
+    description: Are orders to carry out or condone enforced disappearance banned?
+    metadata:
+      type: bool
+      unit: None
+      reference:
+        - title: "SR 0.103.3 Art. 23"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170813/index.html#titre1s23"
+    values:
+      2024-01-01:
+        value: true
+      2020-01-01:
+        value: true
+  report_suspects:
+    description: Are suspect cases of enforced disappearance to be reported?
+    metadata:
+      type: bool
+      unit: None
+      reference:
+        - title: "SR 0.103.3 Art. 23"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170813/index.html#titre1s23"
+    values:
+      2024-01-01:
+        value: true
+      2020-01-01:
+        value: true

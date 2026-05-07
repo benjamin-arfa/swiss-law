@@ -1,0 +1,7 @@
+```yml
+parameters:
+    art_101094_1_threshold:
+        label: "Threshold below which the benefit is granted"
+        default_value:  10000.0
+        unit: CHF
+```

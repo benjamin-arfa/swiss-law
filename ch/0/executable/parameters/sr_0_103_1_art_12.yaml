@@ -1,0 +1,9 @@
+# In contrast, specific aspects of Art. 12 can be modeled through separate related variables
+health_standards:
+  description: Parameters influencing health standards (e.g., infant mortality, immunization rates)
+  values:
+    2024-01-01:
+      infant_mortality_rate:
+        value: 0.0012
+      vaccination_coverage:
+        value: 0.85

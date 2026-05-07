@@ -1,0 +1,5 @@
+withdrawal_status:
+  description: Withdrawal status for signatory countries
+  values:
+    CH:
+      withdrawal_start_date: 2020-01-01

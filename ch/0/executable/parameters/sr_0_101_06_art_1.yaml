@@ -1,0 +1,6 @@
+```yml
+parameters:
+  death_penalty_abolished:
+    value: 1
+    label: Death penalty abolished
+```

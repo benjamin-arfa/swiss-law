@@ -1,0 +1,8 @@
+description: "Period type classification of agreements based on Art. 21 SR 0.142.117.121"
+metadata:
+    reference:
+    - title: "SR 0.142.117.121 Art. 21 Beilegung von Meinungsverschiedenheiten"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20050114/index.html#art21"
+values:
+    agreement_type:
+      type: str

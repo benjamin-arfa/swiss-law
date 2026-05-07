@@ -1,0 +1,9 @@
+```yml
+openfisca_core:
+    parameters:
+      protocol_starting_areas:
+        type: list
+        default_value: ["area1", "area2", ...]
+      new_area_submitted_to_gsec: boolean
+      area_withdrawn_from_gsec: boolean
+```

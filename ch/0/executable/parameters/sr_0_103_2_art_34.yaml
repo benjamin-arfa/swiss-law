@@ -1,0 +1,18 @@
+election_historic_data:
+  description: Existence of election historic data
+  metadata:
+    unit: none
+    reference:
+      title: "SR 0.103.2 Art. 34"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20060913/Document/300320"
+  values:
+    2024-01-01:
+      value: true
+    2020-01-01:
+      value: false
+
+election_result:
+  description: Election result for vacant seat
+  entity: Person
+  value_type: bool
+  label: Election result

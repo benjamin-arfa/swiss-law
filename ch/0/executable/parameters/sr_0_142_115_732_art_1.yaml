@@ -1,0 +1,8 @@
+# OpenFisca parameters are used to configure the simplification
+parameters:
+  countries:
+    - name: Montenegro
+      english_name: Montenegro
+  visa_purposes:
+    - name: simplified_treaty_process
+      description: Simplified visa issuance for citizens of Montenegro

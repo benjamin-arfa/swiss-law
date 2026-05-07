@@ -1,0 +1,10 @@
+description: Indicator for adherence to human rights procedures (Art. 44 SR 0.103.2)
+metadata:
+  unit: boolean
+  reference:
+    - title: "SR 0.103.2 Art. 44"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20060932/index.html"
+
+values:
+  2024-01-01:
+    value: true

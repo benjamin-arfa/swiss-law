@@ -1,0 +1,12 @@
+contracting_authorities:
+  description: Competent authorities for the implementation of a bilateral agreement
+  metadata:
+    unit: 1
+    reference:
+      - title: "SR 0.142.116.727 Art. 9"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20170867/index.html#art_9"
+  values:
+    CH:
+      value: SEM (Staatssekretariat für Migration)
+    SM:
+      value: Departement für auswärtige Angelegenheiten

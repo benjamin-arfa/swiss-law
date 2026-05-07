@@ -1,0 +1,24 @@
+international_affairs:
+  # Art. 1 para.1: Protokolldokument nach Artikel 21
+  removed_individuals:
+    description: Removal of individuals without valid documents
+    metadata:
+      reference:
+        - title: "SR 0.142.116.909 Art. 1"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20190125.html#art1"
+    values:
+      CH:
+        value: 1950
+      DE:
+        value: 1951
+  # Art. 1 para. 1: Zeitraum für Wiederübernahme
+  removed_period:
+     description: Time period for the return of removed individuals.
+     values:
+       2024-01-01:
+         description: Years after removal of the individual.
+         values:
+           value: 10
+       1987-01-01:
+         description: Years after removal of the individual.
+         value: 5

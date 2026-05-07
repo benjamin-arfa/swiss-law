@@ -1,0 +1,17 @@
+competent_authorities:
+  description: Competent authorities for implementing international agreements
+  entities:
+    switzerland:
+      entities:
+        - eidgenoessisches_justiz_un_polizeidepartement
+        - bafm
+      references:
+        - title: "SR 0.142.117.437 Art. 9"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20040137/202001010000/
+    czech\_republic:
+      entities:
+        - ministerium_fuer Arbeit_und_sozialangelegenheiten
+        - verwaltung_der_beschäftigungsdienste_in_prag
+      references:
+        - title: "SR 0.142.117.437 Art. 9"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20040137/202001010000/

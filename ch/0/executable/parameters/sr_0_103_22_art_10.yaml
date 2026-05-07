@@ -1,0 +1,14 @@
+description: Notification message types for the UN General Secretary (Art. 10 SR 0.103.22)
+metadata:
+  reference:
+    - title: "SR 0.103.22 Art. 10"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/19990052/index.html"
+values:
+  reservation:
+    value: "a) Vorbehalten, Mitteilungen und Notifikationen nach Artikel 2 dieses Protokolls"
+  declaration:
+    value: "b) von Erklärungen nach Artikel 4 oder 5 dieses Protokolls"
+  accession:
+    value: "c) von Unterzeichnungen, Ratifikationen und Beitritten nach Artikel 7 dieses Protokolls"
+  entry_into_force:
+    value: "d) vom Zeitpunkt des Inkrafttretens dieses Protokolls nach seinem Artikel 8"

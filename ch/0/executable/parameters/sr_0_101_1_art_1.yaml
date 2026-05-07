@@ -1,0 +1,23 @@
+```yml
+parameters.yml
+person:
+  agent_of_contracting_party:
+    label: "Agent of contracting party"
+    rate: 1
+  agent_advisor_lawyer:
+    label: "Agent advisor lawyer"
+    rate: 1
+  person_participating_in_procedure:
+    label: "Person participating in procedure"
+    rate: 1
+  lawyer_professor:
+    label: "Lawyer professor"
+    rate: 1
+  commission_support_person:
+    label: "Commission support person"
+    rate: 1
+  witness_expert_other:
+    label: "Witness expert other"
+    rate: 1
+```
+Note that the `rate` property is set to 1 for each person parameter, which means that all persons with the corresponding characteristics will be counted.

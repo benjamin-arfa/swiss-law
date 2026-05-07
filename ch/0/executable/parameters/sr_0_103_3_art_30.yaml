@@ -1,0 +1,23 @@
+description: Conditions for submitting an urgent application (IAC Art. 30)
+
+condition_variables:
+  is_not_official: is the person not an official?
+    values:
+      2024-01-01:
+        value: True
+  no_abuse_of_rights: does the person not abuse the application rights?
+    values:
+      2024-01-01:
+        value: True
+  correctly_submitted: was the application correctly submitted?
+    values:
+      2024-01-01:
+        value: True
+  is_compliant_IAC: does the application comply with the IAC (Art. 30)?
+    values:
+      2024-01-01:
+        value: True
+  no_duplicate_case: is the case not a duplicate?
+    values:
+      2024-01-01:
+        value: True

@@ -1,0 +1,12 @@
+supplementary_note_date:
+  description: Supplementary note entry date for the agreement (Art. 13)
+metadata:
+  unit: year
+values:
+  1955-02-01:
+    value: 1955
+  2024-02-01:
+    value: 2024
+  1954-10-25:
+    value: 1954
+    note: Abkommen vom 25. Oktober 1954 zwischen dem Schweizerischen Bundesrat und der Regierung der Bundesrepublik Deutschland

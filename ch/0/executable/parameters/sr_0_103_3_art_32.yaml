@@ -1,0 +1,8 @@
+international_agreements:
+  s0_103_3:
+    description: Committee participation status (Art. 32 SR 0.103.3)
+    participating_states:
+      description: Member states participating in the Committee review process
+      values:
+        FR: true
+        DE: false

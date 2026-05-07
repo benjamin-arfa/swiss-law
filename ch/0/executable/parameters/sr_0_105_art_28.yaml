@@ -1,0 +1,13 @@
+description: State sovereignty opt-out option (Art. 28 SR 0.105)
+values:
+  2022-10-01:
+    value: True
+
+Opt Out Parameter (SR 0.105 Art 28:1 and 2):
+description: Option to opt-out from AHV sovereignity
+label: AHV Sovereignty opt-out
+values:
+  2022-01-01:
+    value: False
+  2022-06-01:
+    value: True

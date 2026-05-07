@@ -1,0 +1,6 @@
+Since there are no specific information or rates to implement, the YAML parameter file is empty:
+
+social_security:
+  employee_rate:
+    description: 
+    values:

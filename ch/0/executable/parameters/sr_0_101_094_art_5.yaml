@@ -1,0 +1,16 @@
+# Überschrift des neuen Buchstabens
+buchstabe_neu:
+  einträge:
+    # Anzahl der erforderlichen Anträge für das Überschreiten eines gegebenen Schwellenwerts
+    einträge_25:
+      start: 1
+      step: 1
+      rate_min: 1
+      rate_max: 1
+# Verweis auf den Plenumsausdruck in Buchstabe c
+buchstabe_c:
+  Eintragung:
+    # Ausdruck des Plenumsbegriffs
+    Eintragung_25:
+      # Startwerte des Ausdrucks (min=1)
+      min: 1

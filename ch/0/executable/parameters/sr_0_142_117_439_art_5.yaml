@@ -1,0 +1,11 @@
+asylum_exemption:
+  description: AHV Art. 5 exemptions
+  metadata:
+    unit: boolean
+    reference:
+      - title: "SR 0.142.117.439 Art. 5 Art. 5"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/"
+  values:
+    2024-01-01:
+      value: null  # Assuming this parameter is dynamic
+    # Rest of the parameter file remains empty for this response

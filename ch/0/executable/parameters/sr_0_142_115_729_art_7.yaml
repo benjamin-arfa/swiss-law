@@ -1,0 +1,11 @@
+admin:
+  notified_repatriation_arrangements:
+    description: Whether repatriation arrangements were notified (Art. 7 SR 0.142.115.729)
+    metadata:
+      unit: none
+      reference:
+        - title: "SR 0.142.115.729 Art. 7"
+          href: "https://www.admin.ch/opc/federal/statutes/84211/index.html"
+    values:
+      2024-01-01:
+        value: true

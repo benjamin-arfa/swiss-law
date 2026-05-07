@@ -1,0 +1,46 @@
+description: Details on annual review of implementation
+mandatory_review:
+  description: Always conduct a mandatory review (Art. 7.1 SR 0.142.113.367)
+  values:
+    2024-01-01:
+      value: True
+    2020-01-01:
+      value: True
+    1997-01-01:
+      value: True
+training_requirements:
+  description: Review training requirements for participation (Art. 7.1a SR 0.142.113.367)
+  values:
+    2024-01-01:
+      value: True
+    2020-01-01:
+      value: True
+    1997-01-01:
+      value: True
+participant_number_check:
+  description: Compare number of participants with previous year and current year (Art. 7.1b SR 0.142.113.367)
+  values:
+    2024-01-01:
+      value: True
+    2020-01-01:
+      value: True
+    1997-01-01:
+      value: True
+host_country_laws:
+  description: Expect participants to adhere to local laws of the host country (Art. 7.2 SR 0.142.113.367)
+  values:
+    2024-01-01:
+      value: True
+    2020-01-01:
+      value: True
+    1997-01-01:
+      value: True
+labour_agreements:
+  description: Sponsors and employers must follow local regulations regards labor agreements and minimum wages (Art. 7.3 SR 0.142.113.367)
+  values:
+    2024-01-01:
+      value: True
+    2020-01-01:
+      value: True
+    1997-01-01:
+      value: True

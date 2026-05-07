@@ -1,0 +1,59 @@
+rights:
+  description: Conditions for the exercise of the right to freedom of opinion and expression
+  has_right_to_free_opinion:
+    description: Everyone has the right to free opinion
+    metadata:
+      reference:
+        - title: "SR 0.103.2 Art. 19"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19921353/index.html#art_19"
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: True
+      1997-01-01:
+        value: True
+
+  has_right_to_access_and_share_information:
+    description: Everyone has the right to access and share information
+    metadata:
+      reference:
+        - title: "SR 0.103.2 Art. 19"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19921353/index.html#art_19"
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: True
+      1997-01-01:
+        value: True
+
+restrictions:
+  description: Conditions under which rights might be limited (Art. 19 SR 0.103.2)
+  has_right_pursuant_to_others:
+    description: Right of others
+    metadata:
+      reference:
+        - title: "SR 0.103.2 Art. 19"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19921353/index.html#art_19"
+    values:
+      2024-01-01:
+        value: False
+      2020-01-01:
+        value: False
+      1997-01-01:
+        value: False
+
+  has_right_for_national_security:
+    description: Right for national security
+    metadata:
+      reference:
+        - title: "SR 0.103.2 Art. 19"
+          href: "https://www.admin.ch/opc/en/classified-compilation/19921353/index.html#art_19"
+    values:
+      2024-01-01:
+        value: False
+      2020-01-01:
+        value: False
+      1997-01-01:
+        value: False

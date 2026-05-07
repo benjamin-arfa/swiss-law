@@ -1,0 +1,5 @@
+transportation_cost_burden:
+  description: Conditions for transportation cost burden (Art. 3 SR 0.142.113.729)
+  values:
+    2024-01-01:
+      case_art_1_3: true

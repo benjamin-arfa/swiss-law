@@ -1,0 +1,8 @@
+```yml
+parameters:
+  definitional_formula:
+    Notifikation_des_EU_Mitgliedstaates:
+      formula: |
+        // Ziffer ist aus den Artikel 8 und 9 ein bestimmter Zeitpunkt und nicht der Moment der Unterzeichnung
+        if(person("Zahl", period) == true, true, false)
+```

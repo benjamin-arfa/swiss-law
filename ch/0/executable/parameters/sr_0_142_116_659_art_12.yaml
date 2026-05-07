@@ -1,0 +1,33 @@
+enforcement_request:
+  description: Time limits for enforcement requests as per Art. 12 SR 0.142.116.659
+  response_period:
+    description: Standard response period for enforcement requests
+    metadata:
+      unit: days
+      reference:
+        - title: "SR 0.142.116.659 Art. 12 Fristen"
+          href: "https://www.admin.ch/opc/de/classified-compilation/20190845/index.html#art12"
+    values:
+      normal:
+        value: 25
+      extended:
+        value: 60
+repatriation_delay:
+  description: Time limit for repatriation as per Art. 12 SR 0.142.116.659
+  metadata:
+    unit: days
+    reference:
+      - title: "SR 0.142.116.659 Art. 12 Fristen"
+        href: "https://www.admin.ch/opc/de/classified-compilation/20190845/index.html#art12"
+  standard:
+    description: Standard time limit for repatriation
+    values:
+      normal:
+        value: 90
+      extended:
+        value: 180
+  extension:
+    description: Additional days needed to resolve procedural or technical issues
+    values:
+      extension_value:
+        value: 30

@@ -1,0 +1,15 @@
+economy:
+  agreements:
+    termination_condition:
+      description: Condition for agreement termination
+      metadata:
+        reference:
+          - title: "SR 0.142.116.712 Art. 11 Kündigung"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20131211/index.html#art_11"
+      default_value:
+        notification_days: 30
+      values:
+        2024-01-01:
+          value:
+            notification_time: 30
+          description: 30-day notification period

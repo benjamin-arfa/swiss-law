@@ -1,0 +1,6 @@
+consent_request_extension:
+  description: Additional extension for pickup deadline (Art. 5 para. 2 SR 0.142.117.149)
+  default: 0
+  values:
+    2024-01-01:
+      value: 30

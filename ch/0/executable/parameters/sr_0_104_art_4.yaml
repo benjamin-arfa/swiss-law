@@ -1,0 +1,13 @@
+# Again, this is not a traditional OpenFisca parameter, as it does not affect financial outcomes.
+# However, we can create a placeholder parameter to store the fact that this policy exists:
+social_policy:
+  description: Policies related to racial equality and non-discrimination
+  promotes_racial_discrimination:
+    description: Flag indicating whether this government entity promotes racial discrimination
+    metadata:
+      reference:
+        - title: "SR 0.104 Art. 4"
+          href: "https://www.fedlex.admin.ch/eli/cc/0/104/de#art_4"
+    values:
+      2024-01-01:
+        value: False

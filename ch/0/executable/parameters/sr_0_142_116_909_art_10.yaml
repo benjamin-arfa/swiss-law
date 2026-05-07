@@ -1,0 +1,6 @@
+extradition:
+  boarding_refusal:
+    description: Checks leading to boarding refusal (Art. 10 SR 0.142.116.909)
+    checks:
+      ensuing_step_count:
+        default: 0

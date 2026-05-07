@@ -1,0 +1,9 @@
+description: Agreement duration period (in years)
+metadata:
+  unit: years
+  reference:
+    - title: "SR 0.142.111.392 Art. 11 Dauer und Beendigung"
+      href: "https://www.fedlex.admin.ch/eli/cc/0/142/111/392/de#art_11"
+values:
+  2024-01-01:
+    value: 5

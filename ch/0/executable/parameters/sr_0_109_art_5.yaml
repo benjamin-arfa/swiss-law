@@ -1,0 +1,14 @@
+social_programmes:
+  description: Coverage rate for people with disabilities (SR 0.109, Art. 5)
+  covered_population_rate:
+    description: Intended percentage of the population with disabilities targeted by benefits
+    metadata:
+      unit: /1
+      reference:
+        - title: "SR 0.109, Art. 5 Gleichberechtigung und Nichtdiskriminierung"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20170721/index.html#chap2"
+    values:
+      2024-01-01:
+        value: 0.75
+      2020-01-01:
+        value: 0.7

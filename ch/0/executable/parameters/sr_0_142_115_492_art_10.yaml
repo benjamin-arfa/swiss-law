@@ -1,0 +1,17 @@
+notifications:
+  description: Notification periods and rules
+  suspension_notification_received:
+    description: When country A received notification of suspension of agreement from country B
+    metadata:
+      scope: LEGISLATION_IN_COUNTRY
+  suspension_applies:
+    description: Reasons under which agreement may be suspended (Art. 10)
+    metadata:
+      scope: ETERNITY
+      allows_multiple: True
+    values:
+      2024-01-01:
+        value:
+          public_order: yes
+          national_security: yes
+          public_health: yes

@@ -1,0 +1,9 @@
+agreements_signed:
+  description: Number of international agreements signed by government
+  values:
+    2024-01-01:
+      value: 0
+    2020-01-01:
+      value: 0
+    1965-12-21:
+      value: 1

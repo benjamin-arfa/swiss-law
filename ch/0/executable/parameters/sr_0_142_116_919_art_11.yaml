@@ -1,0 +1,10 @@
+time:
+    description: The time of arrival
+    metadata:
+      unit: seconds
+      reference:
+        - title: "SR 0.142.116.919 Art. 11 — Durchbeförderung"
+          href: https://www.fedlex.admin.ch/eli/cc/0/142.116.919/de#art_11
+    values:
+      2024-01-01:
+        value: 31536000

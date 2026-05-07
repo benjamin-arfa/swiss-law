@@ -1,0 +1,7 @@
+committee_for_prevention_action_status:
+  description: Status of a case involving a country in the Committee for Prevention
+  values:
+    - 'withdrawn'
+    - 'under_review'
+    - 'new_case_not_allowed'
+# The parameter 'new_case_not_allowed' will be automatically set to - when a country withdraws from the protocol.

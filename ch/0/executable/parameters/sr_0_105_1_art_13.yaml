@@ -1,0 +1,16 @@
+subcommittee_visit_schedule:
+  description: Schedule of Subcommittee visits to contracting states
+  metadata:
+    reference:
+      - title: "SR 0.105.1 Art. 13 — Besuche nach Abschluss des Vertrages"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20170132/index.html#20170132_30"
+  type: array
+  items:
+    type: object
+    properties:
+      date:
+        type: string
+        format: date
+        description: Date of the visit
+      type:
+        $ref: "#subcommittee_visit_type"

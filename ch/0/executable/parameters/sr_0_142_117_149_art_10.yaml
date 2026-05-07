@@ -1,0 +1,15 @@
+data_sources:
+  government_contacts:
+    description: Stores governmental contact information
+    values:
+      CH:
+        iso_code: CH
+        mail:
+          institution: Federal Office for Statistics BFS
+          mailbox: <bfs.contact@bfs.admin.ch
+
+      DE:
+        iso_code: DE
+        mail:
+          institution: Federal Statistical Office of Germany
+          mailbox: <<your_email@destatis.de>

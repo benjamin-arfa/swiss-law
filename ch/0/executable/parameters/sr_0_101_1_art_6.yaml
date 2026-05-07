@@ -1,0 +1,9 @@
+```yaml
+parameters:
+  parameter0:
+    value: True
+    description: Whether the person is bound by the convention.
+  parameter1:
+    value: 0
+    description: Not applicable in this case, as we're just setting a boolean value.
+```

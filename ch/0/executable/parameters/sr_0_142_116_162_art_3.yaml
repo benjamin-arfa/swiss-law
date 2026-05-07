@@ -1,0 +1,9 @@
+comply_with_host_law:
+  description: Compliance with host state in entry and residence matters (Art. 3 SR 0.142.116.162)
+  values:
+    default:
+      value: false
+    'CH':
+      value: true
+    'IT':
+      value: true

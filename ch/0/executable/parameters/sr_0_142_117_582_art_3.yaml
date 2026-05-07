@@ -1,0 +1,9 @@
+general:
+  description: General parameters
+  passport_validity:
+    description: Minimal duration for a valid passport (in months for a given period)
+    metadata:
+      unit: months
+      reference:
+        - title: SR 0.142.117.582 Art. 3
+          href: https://www.admin.ch/opc/fr/classified-compilation/202101/202101_0212_fr.pdf

@@ -1,0 +1,13 @@
+description: Labor law rights and compensation customs for young professional employment contracts 
+
+labour_law_rights:
+  description: Labour law rights for foreign workers based on Art. 6
+  values:
+    2024-01-01:
+        value: "yes"
+
+customary_compensation:
+  description: Customary compensation according to region and profession based on Art. 6
+  values:
+    2024-01-01:
+        value: "yes"

@@ -1,0 +1,15 @@
+contracting_agreements:
+  stagiaire_quota:
+    description: Annual stagiaire quota for the Swiss Higher Education Fund
+    metadata:
+      unit: count
+      reference:
+        - title: "SR 0.142.116.657 Art. 8"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20220441/index.html#art_8"
+    values:
+      2024-01-01:
+        minimum: 200
+        allocation: 200
+      2020-01-01:
+        minimum: 200
+        allocation: 200

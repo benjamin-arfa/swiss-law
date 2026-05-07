@@ -1,0 +1,8 @@
+Given the task's nature, any YAML parameters related to this article's article should be associated with reporting or compliance with this treaty.
+
+reporting_parameters:
+  economic_and_social_council_timeframe:
+    description: Timeframe within which the ECOSOC shall work on developing the report plan (Art. 17 para. 1 SR 0.103.1)
+    values:
+      2024-01-01:
+        value: 1 year

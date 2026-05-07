@@ -1,0 +1,15 @@
+description: Russian persons awaiting deportation under SR 0.142.116.659
+metadata:
+  reference:
+    - title: "SR 0.142.116.659 Art. 2 Rückübernahme von russischen Staatsangehörigen"
+      href: "https://www.admin.ch/opc/de/classified-compilation/20211218/index.html#Art.2"
+  values:
+    deportation_timeout:
+      value: 30
+    deportation_status_labels:
+      description: Labels for deportation status
+      values:
+        pending_deportation:
+          value: Pending deportation
+        unknown_status:
+          value: Unknown status

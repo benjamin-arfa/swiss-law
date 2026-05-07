@@ -1,0 +1,8 @@
+```yaml
+parameters:
+  minor_crime:
+    pattern: string.list(min_5)
+  # Example of minimal minor crimes list
+  - 'minor Crime A'
+  - 'minor Crime B'
+```

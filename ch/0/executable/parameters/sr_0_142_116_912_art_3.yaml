@@ -1,0 +1,11 @@
+description: Duration of stay prior to visa application (SR 0.142.116.912 Art. 3)
+metadata:
+  unit: months
+  reference:
+    - title: "SR 0.142.116.912 - Bundesgesetz vom 22. Mai 1982 über Auswärtige Angelegenheiten (AA-G)
+[Art. 3](https://www.admin.ch/opc/de/classified-compilation/19820091/index.html#art_3)"
+values:
+  2024-01-01:
+    value: 3
+  1997-01-01:
+    value: 3

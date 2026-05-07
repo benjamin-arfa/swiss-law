@@ -1,0 +1,12 @@
+art30_opt_out_status:
+  description: Countries exempt from Art. 30, Para. 1 arbitration procedure
+  metadata:
+    type: categorical
+  values:
+    CH: False
+    JP:
+      description: "Yes, on 1990-10-02 (note: treaty signed on 1990-09-26)"
+      value: True
+    FR:
+      description: "Yes, on 1990-08-24 (note: treaty signed on 1990-08-24)"
+      value: True

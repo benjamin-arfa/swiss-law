@@ -1,0 +1,37 @@
+free_trade_agreement:
+  organizations:
+    description: Organization types that qualify for customs duty exemptions.
+    label: Organizations
+    values:
+      - title: Government agencies
+      - title: International organizations
+      - title: Non-governmental organizations
+  govt:
+    description: Government types that qualify for customs duty exemptions.
+    label: Government
+    values:
+      - title: Swiss federal government
+      - title: Swiss cantonal government
+      - title: Swiss municipal government
+  individuals:
+    description: Individual types that qualify for customs duty exemptions.
+    label: Individuals
+    values:
+      - title: Diplomats
+      - title: Experts
+      - title: Visitors
+  custom_codes:
+    description: Custom codes that qualify for customs duty exemptions.
+    label: Custom codes
+    values:
+      - code: A10
+      - code: A50
+      - code: B20
+  reason_codes:
+    description: Reason codes for customs declarations that qualify for duty exemptions.
+    label: Reason codes
+    values:
+      - code: 01
+      - code: 02
+      - code: 03
+      - code: 04

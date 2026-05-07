@@ -1,0 +1,16 @@
+social_security:
+    official_notification:
+        description: Measures taken for official communication under the European Convention on Human Rights
+        description: Communication with other Contracting States on the declaration of emergency
+        metadata:
+            unit: string
+            reference:
+                - title: "SR 0.103.2 Art. 4 Article 4"
+                  href: "https://www.admin.ch/opc/en/classified-compilation/20030511/200307310000/de/index.html"
+        values:
+          2024-01-01:
+            value: yes
+          2020-01-01:
+            value: no
+          1997-01-01:
+            value: no

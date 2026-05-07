@@ -1,0 +1,13 @@
+CRC:
+  disappearance_fair_treatment:
+    description: Parameter describing principles of fair treatment for disappearance cases
+    metadata:
+      unit: boolean
+      reference:
+        - title: SR 0.103.3 Art. 11
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20180123/de/20210216000000001.pdf"
+    values:
+      2024-01-01:
+        value: true
+      1948-01-01:
+        value: unknown

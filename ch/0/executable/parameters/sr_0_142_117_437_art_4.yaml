@@ -1,0 +1,10 @@
+permit_regulations:
+  unaffected_by_foreign_country_labour_market:
+    description: True if permit not dependent on foreign country labour market status
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: True
+      1997-01-01:
+        value: True

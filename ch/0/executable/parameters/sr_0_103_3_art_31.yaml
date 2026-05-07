@@ -1,0 +1,23 @@
+international_treaties:
+  description: Parameters related to international treaties concerning human rights (e.g., Art. 31 SR 0.103.3)
+  received_communication:
+    description: Whether the state has accepted the committee's competence to receive communications
+    metadata:
+      unit: 1 or 0
+      reference:
+        - title: "SR 0.103.3 Art. 31"
+          href: "https://fedlex.admin.ch/eli/cc/199/129_129/en#art_31"
+  already_pending:
+    description: Whether the person's complaint is already pending in another similar procedure
+    metadata:
+      unit: 1 or 0
+      values:
+        2024-01-01: 0
+        1997-01-01: 0
+  remedies_exhausted:
+    description: Whether the person has exhausted all domestic remedies for the case in question
+    metadata:
+      unit: 1 or 0
+      reference:
+        - title: "SR 0.103.3 Art. 31"
+          href: "https://fedlex.admin.ch/eli/cc/199/129_129/en#art_31"

@@ -1,0 +1,22 @@
+description: Training period under the bi-lateral agreement (SR 0.142.112.457)
+values:
+  # Training duration, start and end months
+  training_period_exists:
+    description: Training period indicator
+    values:
+      2024-01-01:
+        value: 1
+      # Default value
+      2020-01-01:
+        value: 0
+  training_start_date:
+    description: Start date of the training period
+    reference:
+      - title: "SR 0.142.112.457"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20230741/index.html#art_1"
+    values:
+      2024-01-01:
+        value: 2024-01-01
+      # Default value
+      2020-01-01:
+        value: "N/A"

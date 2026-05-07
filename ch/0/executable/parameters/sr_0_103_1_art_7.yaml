@@ -1,0 +1,12 @@
+social_security:
+  description: Social security parameters
+  minimum_wage:
+    description: Guaranteed minimum monthly salary for workers (Art. 7a SR 0.103.1)
+    metadata:
+      unit: CHF
+      reference:
+        - title: "SR 0.103.1 — Schlussakte des internationalen Arbeitsamtes (1920)"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19210041/index.html"
+    values:
+      - value: 4200
+        period: 2024-01-01

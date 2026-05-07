@@ -1,0 +1,16 @@
+labour:
+  law:
+    minimum_monthly_wage:
+      description: Minimum monthly wage rate for internship working contracts
+      metadata:
+        unit: CHF
+        reference:
+          - title: "SR 0.142.116.657, Art. 6 – Art. 6"
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20141113/index.html#art_6"
+      values:
+        2024-01-01:
+          value: 4500
+        2020-01-01:
+          value: 4200
+        1997-01-01:
+          value: 3800

@@ -1,0 +1,20 @@
+description: Condition for human rights related to detention
+
+values:
+  2024-01-01:
+    detained:
+      description: Whether a person is detained (pre-trial, trial, post-trial)
+      metadata:
+        unit: /1
+      variable:
+        name: detained
+        label: "detained"
+        value_type: bool
+
+minor_age:
+  description: Age threshold below which a person is considered a minor
+  unit: years
+
+  values:
+    2024-01-01:
+      value: 18

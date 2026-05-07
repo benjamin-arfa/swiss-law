@@ -1,0 +1,9 @@
+country:
+    description: Country of residence
+    metadata:
+        unit: 
+        reference:
+            - title: Contract parties
+              href: https://www.efta.int/members/switzerland
+    values:
+      CH:

@@ -1,0 +1,9 @@
+```yml
+parameters:
+  has_right_to_written_communication_base_rate:
+    value: 100.0
+    unit: percent
+  incarceration_exemption_trigger_rate:
+    value: 0.5
+    unit: percent
+```

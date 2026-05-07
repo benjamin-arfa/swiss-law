@@ -1,0 +1,15 @@
+quota:
+  description: Swiss quota for work permits for young professionals (Art. 3 SR 0.142.117.587)
+  default_value: 150
+
+carry_over_quota:
+  description: Can unused quota units from one year be carried over to the next (Art. 3 SR 0.142.117.587)?
+  default_value: False
+
+full_utilization_allowed:
+  description: Can the quota be fully utilized regardless of previous year's permits (Art. 3 SR 0.142.117.587)?
+  default_value: True
+
+is_extension_not_new:
+  description: Does an extension under Article 4 para. 4 count as a new permit (Art. 3 SR 0.142.117.587)?
+  default_value: True

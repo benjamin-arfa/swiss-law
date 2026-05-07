@@ -1,0 +1,17 @@
+description: Requirements for sharing personal data between countries in agreement (SR 0.142.116.909 Art. 17)
+metadata:
+  unit: /
+  reference:
+    - title: "SR 0.142.116.909 Art. 17"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20191243/index.html#art17"
+    - title: "Legislative Information System of the Swiss Confederation"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20191243/index.html#art17"
+
+values:
+  # Example requirements
+  country_A: 
+    sharing_requirement: required
+    consent_required: yes
+  country_B: 
+    sharing_requirement: required
+    consent_required: yes

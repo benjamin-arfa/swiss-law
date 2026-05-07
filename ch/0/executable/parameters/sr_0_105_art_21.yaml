@@ -1,0 +1,13 @@
+This article does not directly relate to a YAML parameter file in OpenFisca. However, if we were to translate the timeframes and mechanisms into parameters for analysis, it might look something like the following:
+
+dispute_resolution:
+  description: Timeframes and mechanisms for dispute resolution under SR 0.105 Art. 21
+  timeframe:
+    initial_notification: 3 months
+    resolution_deadline: 6 months
+    committee_referral_deadline: 6 months
+    committee_report_deadline: 12 months
+  mechanisms:
+    committee_referral: true
+    comparative_commission: true
+    good_offices: true

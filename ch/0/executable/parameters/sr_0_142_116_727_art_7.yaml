@@ -1,0 +1,13 @@
+residence_permit_process:
+  description: Residence permit process status (Art. 7 SR 0.142.116.727)
+  process_status:
+    description: Status of the residence permit process
+    metadata:
+      unit: str
+      reference:
+        - title: "SR 0.142.116.727 Art. 7: Bewilligungsaufteilung"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20180115/20200101000000024.pdf"
+    values:
+      - value: "in_progress"
+      - value: "refused"
+      - value: "granted"

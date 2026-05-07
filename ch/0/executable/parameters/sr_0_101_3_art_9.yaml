@@ -1,0 +1,21 @@
+```yaml
+parameters:
+  agreement_termination_dates:
+    value:
+      CH:
+        - 2020-01-01
+      DE:
+        - 2020-02-15
+  waiting_period_lengths:
+    value:
+      CH:
+        - P1M
+      DE:
+        - P1M
+  territory_extensions:
+    value:
+      CH:
+        - "Swiss Confederation"
+      DE:
+        - "Federal Republic of Germany"
+```

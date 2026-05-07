@@ -1,0 +1,11 @@
+other_equivalent_grounds:
+  description: other equally weighted reasons to restrict rights
+  metadata:
+    reference:
+      - title: "SR 0.103.3 Art. 20 — Informationsrecht der in der Mündelhaft untergebrachten Person"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/19921301/index.html"
+        - title: "Article 1 (2) of Directive 2016/680"
+          href: "https://data.europa.eu/eli/dir/2016/680/oj"
+values:
+  2024-01-01:
+    value: [has_privacy_threat, has_security_threat, has_evidence_delay]

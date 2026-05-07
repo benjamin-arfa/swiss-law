@@ -1,0 +1,23 @@
+youth_work_contract:
+  description: Parameters for youth work contracts under Art. 4 of the SR 0.142.116.727
+  max_contract_duration:
+    description: Maximum duration of a youth work contract
+    metadata:
+      description: Maximum length of a work contract in months
+      reference:
+        - title: "SR 0.142.116.727, Art. 4"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20191237/index.html#sec43.2"
+    values:
+      2024-01-01:
+        value: 18
+      2019-01-01:
+        value: 15
+  host_country_labor_regulations:
+    description: Adherence to host country labor regulations
+    metadata:
+      description: Indicator for compliance with labor regulations in the host country
+    values:
+      2024-01-01:
+        value: True
+      2019-01-01:
+        value: True

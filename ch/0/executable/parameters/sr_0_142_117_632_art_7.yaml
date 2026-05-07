@@ -1,0 +1,12 @@
+name: taxation
+children:
+  rules:
+    apply_to_foreigners:
+      definition:
+        type: float
+        unit: ''
+      label: "Apply tax rules for foreigners according to Art. 7?"
+      description: Whether the current rules apply or do not apply to non-Swiss citizens
+      values:
+        2024-01-01:
+          value: true

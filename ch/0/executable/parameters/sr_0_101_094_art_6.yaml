@@ -1,0 +1,9 @@
+```yml
+parameters:
+  article_6_point_2:
+    description: Adjustment of judges per chamber to five
+    type: bool
+  article_6_point_2_effective_year:  # for example if adjustment is only effective in the future
+    description: The year since when article 6, item 2 will apply
+    type: int
+```

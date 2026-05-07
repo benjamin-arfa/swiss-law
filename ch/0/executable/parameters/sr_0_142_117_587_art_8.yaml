@@ -1,0 +1,10 @@
+eligibility:
+  young_professional:
+    description: Eligibility criteria for young professionals in Art. 8 SR 0.142.117.587
+    metadata:
+      reference:
+        - title: "SR 0.142.117.587 Art. 8"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20200405/index.html#_art_8"
+    values:
+      2024-01-01:
+        value: true

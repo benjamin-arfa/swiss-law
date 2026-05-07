@@ -1,0 +1,38 @@
+geography:
+  host_country:
+    reference:
+      - title: "SR 0.142.117.437 Art. 1"
+        href: "https://www.admin.ch/opc/de/classified-compilation/20191201/index.html#2019.120"
+
+laws:
+  foreign_worker_laws:
+    description: Country-specific laws regarding foreign worker employment
+    entity: Geography
+    values:
+      CH:
+        is_eligible_occupation:
+          description: Are foreign workers allowed in this occupation in Switzerland?
+          metadata:
+            unit:
+              description: "Is yes/no"
+            reference:
+              - title: "SR 0.142.117.437"
+                href: "https://www.admin.ch/opc/de/classified-compilation/20191201/index.html#2019.120"
+          values:
+            category:
+              description: Occupation allowed
+              value: "yes"
+
+      CZ:
+        is_eligible_occupation:
+          description: Are foreign workers allowed in this occupation in Czech Republic?
+          metadata:
+            unit:
+              description: "Is yes/no"
+            reference:
+              - title: "SR 0.142.117.437"
+                href: "https://www.admin.ch/opc/de/classified-compilation/20191201/index.html#2019.120"
+          values:
+            category:
+              description: Occupation allowed
+              value: "yes"

@@ -1,0 +1,6 @@
+protocol_delay:
+  description: Delay status and expiration date of protocol obligations (Art 24 SR 0.105.1 A 24)
+  end_date:
+    metadata:
+      unit: date
+      format: "%Y-%m-%d"

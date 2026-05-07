@@ -1,0 +1,4 @@
+```yaml
+base_income_threshold: 50000
+min_successful_negotiation_rate: 0.8
+```

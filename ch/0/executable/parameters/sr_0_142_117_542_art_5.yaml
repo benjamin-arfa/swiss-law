@@ -1,0 +1,10 @@
+can_send_notification: # AuthorityStatus
+  entity: Authority
+  description: Can send relevant documents
+  type: bool
+  label: Can send relevant documents
+
+parameter_entities:
+  Authority:
+    roles:
+      - can_send_notification: { description: "Can send notifications" }

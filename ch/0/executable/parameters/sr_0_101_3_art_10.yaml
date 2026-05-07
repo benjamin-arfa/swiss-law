@@ -1,0 +1,41 @@
+```yaml
+parameters:
+  notification_period: 6 # months
+  contract_start_date: 01.01.2000
+  party_has_included_individual_in_contract:
+    # Threshold value for the individual type, above threshold contract is included.
+    threshold: 0.0
+```
+
+We'll consider these additional variables for future variable creation needs. Here's how we update these conditions to the HasContractTerminatedAfterNotification.
+
+```python
+    def formula(hh, period, **variables):
+        has_contract_start = hh("contract_start_date", period.first_year).first_of_month <= period.last_day
+        contract_length = (period.last_year - period.first_year).count('year')
+        days_between_dates = (hh("contract_term_date", period).first_of_month).days - ( period.last_day ).days
+        contract_length_in_years = (contract_length)
+        years_between_dates = ((period.last_year - period.first_year). years)
+        months_between_dates = ((contract_length) * 12 - ((contract_length) * (12//years_between_dates)) - days_between_dates / 30.41)
+        contract_ended = contract_length_in_years > (variables.get("notification_period", 0)) or (months_between_dates > (variables.get("notification_period", 0)) )
+
+        contract_length_as_per_article_text = variable('contract_length_from_article', period) 
+
+        # parties has_notified_contract_end
+        if contract_length_as_per_article_text:
+            has_contract_term_date_set = variable('contract_term_date', period).is_non_missing()
+
+            if has_contract_term_date_set:
+                notification_date = variable('notification_date', period) # Notified is a condition
+
+                not_before_start_contract = variable('contract_start_date', period).first_of_month <= period.last_day # condition on article 1, Sec 1 - named individuals
+
+                has_party_notified_within_article_constraint = ( 
+                    (notification_date - period.first_day).days -1  
+                    <= variable('party_has_included_individual_in_contract.threshold') )  # Article 1, Sec 1
+
+            return  has_contract_term_date_set & not_before_start_contract & notification_date &  has_contract_start & contract_ended # 
+        else:
+            # If there is no notification, the variable will be False by default. Hence, no Need for Additional Conditions.
+            return False
+```

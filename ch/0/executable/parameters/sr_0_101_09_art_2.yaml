@@ -1,0 +1,29 @@
+Here is the YAML snippet defining the parameters mentioned in the variable defined above.
+
+```yml
+params:
+  1.title:
+    default: '...'
+    title: Titel Artikel 1 
+  2.title:
+    default: '...'
+    title: Titel Artikel 2 
+  3.title:
+    default: '...'
+    title: Titel Artikel 3 
+  4.title:
+    default: '... (Absatz 3)'
+    title: Titel Artikel 4 
+  5.title:
+    default: '... (Absatz 3), ... (Absatz 5)'
+    title: Titel Artikel 5 
+  6.title:
+    default: '...'
+    title: Titel Artikel 6 
+  7.title:
+    default: '... (Absatz 4), ... (Absatz 6)'
+    title: Titel Artikel 7 
+  8.title:
+    default: '...'
+    title: Titel Artikel 8 
+```

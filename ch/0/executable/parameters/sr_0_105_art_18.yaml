@@ -1,0 +1,11 @@
+costs:
+  description: Estimated meeting costs for the committee and UN support
+  metadata:
+    unit: CHF
+  values:
+    2024-01-01:
+      value: 100000
+    2020-01-01:
+      value: 60000
+    1997-01-01:
+      value: 40000

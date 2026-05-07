@@ -1,0 +1,30 @@
+visas:
+  standard_duration_days:
+    description: Standard duration for visa application processing (Art. 7 SR 0.142.111.642)
+    metadata:
+      unit: days
+      reference:
+        - title: "SR 0.142.111.642 Art. 7 Dauer der Bearbeitung von Visumanträgen"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20062053/index.html#art_7"
+    values:
+      2024-01-01:
+        value: 10
+      2020-01-01:
+        value: 10
+      1997-01-01:
+        value: 10
+
+  max_extension_days:
+    description: Maximum extension period for visa application processing (Art. 7 SR 0.142.111.642)
+    metadata:
+      unit: days
+      reference:
+        - title: "SR 0.142.111.642 Art. 7 Dauer der Bearbeitung von Visumanträgen"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20062053/index.html#art_7"
+    values:
+      2024-01-01:
+        value: 30
+      2020-01-01:
+        value: 30
+      1997-01-01:
+        value: 30

@@ -1,0 +1,15 @@
+administrative_rules:
+  description: Rules governing administrative oversight of municipal governments
+  proportionality:
+    description: Maximum proportionality of oversight measures to protected interests (Art. 8 SR 0.102)
+    metadata:
+      reference:
+        - title: "SR 0.102 Art. 8"
+          href: "https://www.admin.ch/opc/de/classified-compilation/19680763/index.html"
+    values:
+      2024-01-01:
+        value: 1.0
+      2023-01-01:
+        value: 0.9
+      2020-01-01:
+        value: 0.8

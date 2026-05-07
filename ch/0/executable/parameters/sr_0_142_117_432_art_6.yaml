@@ -1,0 +1,8 @@
+# This is a placeholder. To create this parameter,
+# we need an external way to track 'other_side_suspended_treaty'.
+
+# external_data.yaml
+external_data:
+  other_side_suspended_treaty:
+    description: Indicates if the other side has suspended the treaty
+    url: https://example.org/treaty/suspension-status

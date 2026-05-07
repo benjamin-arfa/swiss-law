@@ -1,0 +1,7 @@
+```
+max_compensation_threshold:
+  value: 10000
+
+compensation_rate:
+  value: 0.5
+```

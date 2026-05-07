@@ -1,0 +1,5 @@
+```yml
+consent_countries:
+  type: list
+  value: ['CH', 'DE', 'FR']
+```

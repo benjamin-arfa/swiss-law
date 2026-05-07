@@ -1,0 +1,9 @@
+description: Conditions for replacing subcommittee members (Art. 8 SR 0.105.1)
+metadata:
+  reference:
+    - title: "SR 0.105.1 — Artikel 8"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20062032/201710010000080002#art8"
+values:
+  2024-01-01:
+    no_majority_rejection_withinSixWeeks:
+      value: true

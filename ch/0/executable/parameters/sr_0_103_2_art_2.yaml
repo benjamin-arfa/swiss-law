@@ -1,0 +1,6 @@
+Similarly, we'll leave the parameter for now, but as with the variable, it does not align with any of the OpenFisca's core variables.
+```yaml
+iccpr_status:
+  description: Status of an individual's compliance with the International Covenant on Civil and Political Rights
+  default_value: False
+```

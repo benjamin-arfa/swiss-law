@@ -1,0 +1,14 @@
+# Note: This parameter is only for information purpose, OpenFisca does not actually store information for persons and institutions
+information_provided_to_preventive_subcommittee:
+  description: Has the person or institution provided information to the Preventive Subcommittee (Art. 15 SR 0.105.1)
+  metadata:
+    reference:
+      - title: "SR 0.105.1 Art. 15"
+        href: "https://www.fedlex.admin.ch/eli/cc/63/1015/de"
+  values:
+    2024-01-01:
+      value: true
+    2023-01-01:
+      value: true
+    1997-01-01:
+      value: true

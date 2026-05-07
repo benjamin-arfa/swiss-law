@@ -1,0 +1,4 @@
+# For simplicity, we'll assume the following parameter with a description only.
+# However, parameters would be useful if they carried rates, thresholds, or other values related to this legal text.
+
+description: 'Article 8 of the SR 0.142.117.437'

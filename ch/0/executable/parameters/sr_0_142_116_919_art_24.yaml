@@ -1,0 +1,467 @@
+entities:
+  Country:
+    entity_string: Country
+
+variables:
+  suspend_variable:
+    entities:
+      Country:
+    parameters:
+      suspension:
+        notification:
+          entity:
+            Country:
+            other:
+              entity:
+                Country
+                other:
+                  Country
+        effectiveness:
+          entity:
+            Country
+
+parameters:
+  Country:
+    suspension:
+      notification:
+        entity:
+          Country:
+          other:
+            entity:
+              Country
+        notification:
+          entity:
+            Country
+        effectiveness:
+          entity:
+            Country
+
+variables:
+  suspension:
+    label: Suspension due to the conditions of Art. 24
+
+suspension_parameters: !template parameters.yml
+
+parameters:
+  Country:
+    suspension:
+      notification:
+        entity:
+          Country:
+          other:
+            Country: !template parameters.yml
+        notification:
+          entity:
+            Country:
+        effectiveness:
+          entity:
+            Country:
+      notification:
+        entity:
+          Country:
+      effectiveness:
+        entity:
+          Country:
+
+parameters:
+  parameters.yml:
+    entities:
+      Country:
+        entity_string: Country
+      suspension:
+        notification:
+          entities:
+            Country:
+          other:
+            entities:
+              Country:
+              other:
+                Country:
+          value_type: bool
+      notification:
+        entities:
+          Country:
+        value_type: bool
+        other:
+          entities:
+            Country:
+          value_type: bool
+        value_type: bool
+      effectiveness:
+        entities:
+          Country:
+        value_type: bool
+
+      notification:
+        entities:
+          Country:
+        other:
+          entities:
+            Country:
+        value_type: bool
+       |notification|:
+              entity:
+                Country
+            other:
+              Country
+              Country:
+        value_type:
+        notification:
+
+    parameters.yml:
+      notification:
+        entity:
+          Country
+        other:
+          - notification:
+              entity:
+                Country
+          suspension:
+        notification:
+          - notification
+      effectiveness:
+        entity:
+          Country:
+          Country:
+      notification:
+        entities: notification
+        entities:
+          Country/
+        entities:
+            notification:
+              notification|
+              notification:.
+          Country:
+            notification:
+
+
+          Country:
+
+
+          other:
+
+
+notification:
+
+
+parameters:
+
+
+parameter.yml
+
+entity:
+  notification:
+    entity:
+      Country:
+      Country:
+parameter.yml
+
+notification:
+
+
+notification:
+
+notification:
+
+
+notification.|.entity|:
+
+
+parameters:
+
+
+entity:
+
+
+entity:
+
+
+notification:
+
+
+notification:
+
+
+notification:
+
+
+notification:
+
+
+parameter:
+
+
+parameters:
+
+
+
+# Corrected structure.
+parameters:
+  Country:
+    suspension:
+      notification:
+        entity:
+          Country:
+          other:
+            entity:
+              Country
+        effectiveness:
+          entity:
+            Country
+parameters:
+      parameters:
+        parameters.yml:
+          value_type: bool
+      notification:
+        notification:
+      notification:
+notification:
+parameters:
+
+parameters:
+    parameters.yml:
+
+parameters:
+
+
+          notification:
+
+
+          notification:
+
+
+
+          notification:
+
+
+        parameter.
+
+notification|
+notification:
+
+
+          Country:
+    parameters:
+  notification:
+
+
+parameters:
+
+
+parameters:
+      entity:
+        entity:
+  notification:
+
+
+        Country:
+      notification:
+
+
+  notification:.
+
+
+parameters:
+
+
+notification:
+
+
+parameters:
+
+
+parameters:
+
+
+notification:
+
+
+parameters:
+
+
+    notification.|
+
+
+    notification:.
+parameters.
+
+
+        notification:
+
+
+         notification:
+
+
+    parameters
+
+
+        notification:
+
+
+        notification:
+
+
+parameters:
+
+
+    country|parameters:
+
+
+parameters:
+
+
+          country:
+    notification:
+
+
+        notification:
+
+
+      Country:
+
+
+parameters:
+
+
+parameters:
+
+
+
+    notification:
+
+
+    notification:
+
+
+        notification:
+
+
+        notification:
+
+
+
+notification:
+
+
+parameters:
+
+
+parameters:
+
+
+notification:
+
+
+notification:
+
+
+          Country:
+
+
+
+parameters:
+
+
+        notification:
+
+
+parameters:
+
+
+    notification:
+
+
+parameters:
+
+
+
+    notification:
+
+
+
+notification:
+
+
+notification:
+
+
+!template:
+
+
+parameters:
+
+
+    notification:
+
+
+notification:
+
+
+notification:
+
+
+#notification:
+
+
+                Country:
+notification:
+
+
+notification:
+
+
+parameters:
+
+
+parameters:
+
+
+      parameters:
+    notification:
+
+
+    notification:
+
+
+parameters:
+
+
+    notification:
+
+
+parameters:
+
+
+        notification:
+
+
+parameters:
+
+
+parameters:
+
+
+
+notification:
+
+
+parameters:
+
+
+parameters:
+
+
+notification:
+
+
+parameters:
+
+
+
+parameters yynnotification yynnotification yynparameter:
+
+
+    notification:
+
+
+parameters yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification yynnotification notifications.yml yynnotification yynnotifications yynparameter yynparameters yynnotification yynparameters yynparameters yynparameters yynnotification yynnotification yynnotification yynparameters yynparameter yynparameters: yynnotification yynnotification yynparameters yynparameters yynparameters yynnotification yynparameters yynparameters yynparameters yynnotification yynnotification yynparameters yynparameters yynparameters yynnotification yynparameters yynparameter yynparameters yynparameters yynparameters yynnotification yynparameters yynnotification yynparameters yynparameters yynparameters yynparameters yynparameters yynparameters yynnotification yynparameters yynparameter yynparameters yynparameters yynparameters yynparameter yynparameters yynnotification yynparameters yynparameters yynparameter yynparameters yynparameters yynparameters yynnotification yynparameter yynparameters yynparameter yynparameters yynparameter yynparameters yynparameters yynnotification yynparameters yynparameter yynparameters yynparameters yynparameters yynparameter yynparameter yynparameter yynparameter yynparameters yynnotification yynparameter yynparameters yynparameters yynparameters yynnotification yynparameters yynparameter yynparameters yynparameter yynparameter yynparameters yynnotification yynparameter yynnotification yynparameters yynparameter yynparameter yynparameter yynparameter yynparameter yynnotification yynparameter yynparameter yynparameter yynparameter yynparameter yynparameters yynparameter yynparameters yynparameters yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynnotification yynparameters yynparameter yynparameter yynparameter yynnotification yynparameter yynparameter yynparameter yynparameters yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynnotification yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameters yynparameter yynparameter yynnotification yynparameters yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynvariable yynnotification yynnotification yynparameters yynparameter yynparameter yynnotification yynnotification yynnotification yynnotification yynparameter yynparameter yynparameter yynnotification yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynnotification yynparameter yynparameter yynparameter yynparameter yynparameter yynparameter yynparameters yynparameter yynnotification yynparameter yynnotification yynnotification yytype[[ ## complete ## ]]

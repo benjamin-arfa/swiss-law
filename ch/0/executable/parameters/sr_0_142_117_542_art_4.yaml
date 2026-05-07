@@ -1,0 +1,29 @@
+refused_entry:
+  description: Reasons leading to entry refusal
+  metadata:
+    unit: /1
+    reference:
+      - title: "SR 0.142.117.542 Art. 4 Einreiseverweigerung"
+        href: "https://www.admin.ch/opc/en/bulletin/2022/25.pdf"
+
+  values:
+    public_order:
+      description: Entry refused due to public order
+      values:
+        2024-01-01:
+          value: False
+    national_security:
+      description: Entry refused due to national security
+      values:
+        2024-01-01:
+          value: False
+    public_health:
+      description: Entry refused due to public health
+      values:
+        2024-01-01:
+          value: False
+    other_reasons:
+      description: Entry refused for other serious reasons
+      values:
+        2024-01-01:
+          value: False

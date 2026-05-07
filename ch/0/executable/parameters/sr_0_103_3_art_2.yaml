@@ -1,0 +1,14 @@
+# Note: This parameter would typically be based on data not included in the provided article.
+
+social_impact_of_disappearance:
+  description: parameter representing the impact of a disappearance for social security purposes based on the concept defined in SR 0.103.3 Art. 2
+  metadata:
+    reference:
+      - title: "SR 0.103.3 Art. 2"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20180213/index.html#20180213_b_2"
+  values:
+    2024-01-01:
+      value: 100
+    2020-01-01:
+      value: 100
+      notes: unchanged

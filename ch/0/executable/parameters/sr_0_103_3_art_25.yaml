@@ -1,0 +1,28 @@
+justice:
+  child_abduction_prevention_measures:
+    description: Implementation status of child abduction prevention measures
+    implemented:
+      description: Status of child abduction prevention measures (Art. 25 para 1)
+      metadata:
+        unit: bool
+        reference:
+          - title: SR 0.103.3 Art. 25
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20010451/index.html#art25"
+      values:
+        2024-01-01:
+          value: true
+        2019-01-01:
+          value: false
+  child_abduction_recovery:
+    child_reunification_assistance:
+      description: Status of child reunification assistance measures
+      metadata:
+        unit: bool
+        reference:
+          - title: SR 0.103.3 Art. 25
+            href: "https://www.admin.ch/opc/fr/classified-compilation/20010451/index.html#art25"
+      values:
+        2024-01-01:
+          value: true
+        2019-01-01:
+          value: false

@@ -1,0 +1,23 @@
+miscellaneous:
+  offenses:
+    description: Crime database
+    values:
+      category: str
+      legal_system_description: str
+      name: str
+      relevance_to_art_9: bool
+
+  treaties:
+    description: Database of treaties for mutual legal assistance
+    values:
+      name: str
+      status: str
+      signature_date: str
+      effectiveness_date: str
+      member_status: bool
+
+  document_accessibility:
+    description: Access restrictions on certain documents
+    values:
+      name: str
+      accessibility: bool

@@ -1,0 +1,18 @@
+countries:
+  description: Countries' ratification dates
+treaties:
+  country_ratification:
+    description: Dates when countries ratified the treaty
+    values:
+      2024-01-01:
+        value: ["1945-10-24", "1946-02-05", ...]  # list of dates in ISO 8601 format
+      1945-01-01:
+        value: ["1945-10-24"]
+
+  min_ratification_date:
+    description: Earliest date a country can ratify the treaty
+    values:
+      2024-01-01:
+        value: None
+      1945-01-01:
+        value: 1945-12-31

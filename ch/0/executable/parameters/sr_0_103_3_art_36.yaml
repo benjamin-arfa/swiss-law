@@ -1,0 +1,9 @@
+description: Committee reporting status
+metadata:
+  reference:
+    - title: "Committee Report Notification"
+      href: "https://www.humanrights.ch/en/treaties/ccpr/convention-on-the-rights-of-the-child-article-12/"
+values:
+  2024-01-01:
+    committee_report_status: published
+    committee_notification_status: sent

@@ -1,0 +1,57 @@
+parameter_yaml = """
+protokoll_status:
+  definition:
+    start: today()
+    end: today()+1year
+    label: Protokoll Status
+    description: Dies ist ein Verweisvariable über die EU-Notifikationen.
+  values:
+    - key: "Nicht erreicht"
+      label: Nicht erreicht
+      description: Die Person hat noch keine Notifikationen erhalten.
+    - key: "10-Notifikation erreicht"
+      label: 10 Notifikationen erreicht
+      description: Die Person hat innerhalb der Definitiondauer 10 Notifikationen erhalten.
+
+protokoll_status_count:
+  definition:
+    start: today()
+    end: today()+1year
+    label: Protokollstatus Zählung
+    description: Dies ist die Zählung über die EU-Notifikationen.
+  values:
+    - key: 0
+      label: 0
+      description: Die Person hat noch keine Notifikationen erhalten.
+    - key: 10
+      label: 10
+      description: Die Person hat innerhalb der Definitiondauer 10 Notifikationen erhalten.
+
+
+protokoll_status_check:
+  definition:
+    start: today()
+    end: today()+1year
+    label: Protokollstatus-Überprüfung
+    description: Dies ist eine Überprüfung, ob eine Person bestimmte Notifikationen erhalten hat.
+  values:
+    - key: False
+      label: Nicht erreicht
+      description: Die Person hat noch keine Notifikationen erhalten.
+    - key: True
+      label: 10 Notifikationen erreicht
+      description: Die Person hat innerhalb der Definitiondauer 10 Notifikationen erhalten.
+
+protokoll_status_achievements:
+  definition:
+    start: today()
+    end: today()+1year
+    label: Protokoll-Status-Erreichung
+    description: Dies ist eine Überprüfung, ob eine Person bestimmte Ziele erreicht hat.
+  values:
+    - key: ""
+      label: Leer
+      description: Die Person hat keine Ziele erreicht.
+    - key: "10-Notifikation"
+      label: 10-Notifikation
+      description: Die Person hat das Ziel der 10-Notifikation erreicht.

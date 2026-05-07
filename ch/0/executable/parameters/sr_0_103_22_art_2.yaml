@@ -1,0 +1,9 @@
+international_reservation:
+  description: Flag for international reservations
+  metadata:
+    reference:
+      - title: "SR 0.103.22 Art. 2"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20170413/index.html#art2"
+  values:
+    all_countries:
+      value: false

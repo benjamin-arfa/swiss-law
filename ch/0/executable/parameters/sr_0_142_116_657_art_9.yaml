@@ -1,0 +1,13 @@
+contract_details:
+  description: Contract details
+  termination_notice_period:
+    description: Termination notice period (Art. 9 SR 0.142.116.657)
+    metadata:
+      unit: calendar months
+      reference:
+        - title: "SR 0.142.116.657 Art. 9"
+    values:
+      2024-01-01:
+        value: 6
+      1993-01-01:
+        value: 6

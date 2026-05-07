@@ -1,0 +1,7 @@
+```yml
+parameters :
+    territories :
+      values :
+        de : [Zürich, Bern]
+        fr : [Zurich, Berne]
+```

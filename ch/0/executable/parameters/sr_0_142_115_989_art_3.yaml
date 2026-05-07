@@ -1,0 +1,15 @@
+miscellaneous:
+  extradition_transport_costs:
+    description: Costs for transporting persons during extradition (Art. 3 Protocol)
+    metadata:
+      unit: CHF
+      reference:
+        - title: "SR 0.142.115.989 Art. 3 — Art. 3"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20210221/index.html"
+    values:
+      2024-01-01:
+        value: 1000.0 # Example value in CHF
+      2020-01-01:
+        value: 1000.0
+      1997-01-01:
+        value: 1000.0

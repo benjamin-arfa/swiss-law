@@ -1,0 +1,9 @@
+```yaml
+parameters:
+  convention_threshold:
+      value: 100
+      unit: CZK
+  article_1_to_6_amount:
+      value: 0
+      unit: CZK
+```

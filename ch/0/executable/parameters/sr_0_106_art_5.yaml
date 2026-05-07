@@ -1,0 +1,38 @@
+election_rules:
+  committee_of_social_rights:
+    num_nominations:
+      description: Number of candidates nominated and elected for each position available
+      metadata:
+        value_type: int
+        reference:
+          - title: European Committee of Social Rights
+            href: https://www.coe.int/en/web/social-europe/committee
+      values:
+        2024-01-01:
+          value: 3
+        2002-01-01:
+          value: 3
+    fixed_term_length:
+      description: Default term length of a European Committee of Social Rights member
+      metadata:
+        value_type: int
+        reference:
+          - title: European Committee of Social Rights
+            href: https://www.coe.int/en/web/social-europe/committee
+      values:
+        2024-01-01:
+          value: 4
+        1993-11-04:
+          value: 3
+    flexible_term_length:
+      description: Lower and upper bounds for term lengths of a European Committee of Social Rights member
+      metadata:
+        value_type: tuple
+        reference:
+          - title: European Committee of Social Rights
+            href: https://www.coe.int/en/web/social-europe/committee
+      values:
+        2024-01-01:
+          value: [ 2, 6 ]
+        2002-01-01:
+          value: [ 2, 6 ]

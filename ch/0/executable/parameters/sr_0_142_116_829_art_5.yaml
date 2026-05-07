@@ -1,0 +1,16 @@
+variables_for_conditional_return:
+  description: Variable definitions related to conditional re-entry to Switzerland, as per the re-admission agreement SR 0.142.116.829
+  has_valid_swiss_visa:
+    description: Was a valid Swiss visa present at the point of entry?
+    metadata:
+      reference:
+        - title: "SR 0.142.116.829 Art. 5"
+          href: "https://admin.ch/opendata/dokumente/1437/5"
+    values:
+      2024-01-01:
+        value: True
+      2000-01-01:
+        value: False
+
+  has_valid_swiss_residence_permit:
+    # ... similar parameter definitions for each conditional scenario listed in Art 5 ...

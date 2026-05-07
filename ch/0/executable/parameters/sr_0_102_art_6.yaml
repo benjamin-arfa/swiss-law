@@ -1,0 +1,12 @@
+This legal article primarily deals with administrative and policy aspects of municipalities, which are not directly captured in OpenFisca parameters.
+However we can consider a parameter to track changes in policy for hiring staff in Swiss Municipalities.
+```yml
+municipal_hiring_policy:
+  description: Policy for hiring staff in Swiss Municipalities
+  changes:
+    2024-01-01:
+      description: Changed policy to recruit staff based on merit 
+      performance_based_recall:
+        description: Whether staff recall is based on performance
+        default: TRUE
+```

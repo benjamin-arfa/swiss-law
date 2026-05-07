@@ -1,0 +1,10 @@
+convention:
+  twentieth_ratification_date:
+    description: Date of twentieth ratification or accession
+    metadata:
+      reference:
+        - title: "SR 0.105 Art. 27"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20060941/200606140000/01.010.057b.105.en.pdf"
+      unit: date
+  # twentieth_ratifying_country:  # Needs to be a function that returns a Country
+  # twenty_ninth_ratifying_country:  # Needs to be a function that returns a Country

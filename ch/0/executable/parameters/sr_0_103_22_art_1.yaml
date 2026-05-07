@@ -1,0 +1,11 @@
+description: Law to abolish capital punishment
+metadata:
+  reference:
+    - title: "Fakultativ-Protokoll zum Europäischen Menschenrechtsabkommen über die Abolition der Todesstrafe"
+      href: "https://www.hri.ca/irp/deti/fachprot/index.htm"
+
+law_abolishing_capital_punishment:
+  description: Timeframe to completely abolish the capital punishment practice
+  values:
+    2061-01-01:
+      value: True

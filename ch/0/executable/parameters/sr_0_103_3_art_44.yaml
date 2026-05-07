@@ -1,0 +1,19 @@
+(Note: No numerical parameters are defined here, as this model represents a process rather than a value.)
+
+revision_process:
+  description: Process for revising the International Social Security Convention
+  states:
+    min_support_required:
+      description: At least this many states must support a revision
+      metadata:
+        unit: /1
+      values:
+        2/3:
+          value: 0.67
+    adoption_required:
+      description: Number of states that must adopt the revision for it to take effect
+      metadata:
+        unit: /1
+      values:
+        2/3:
+          value: 0.67

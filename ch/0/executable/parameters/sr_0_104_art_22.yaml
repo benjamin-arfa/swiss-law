@@ -1,0 +1,11 @@
+entities:
+  international_dispute_resolution:
+    description: International dispute resolution pathways for Swiss agreements (Art. 22 AHV-I)
+    metadata:
+      reference:
+        - title: "AHV-I (Ausführungsbewilligung)"
+          href: "https://www.legifinance.admin.ch/eli/cc/0/560_103/de"
+    values:
+      2024-01-01:
+        value:
+          judicial_ruler: International Gerichtshof

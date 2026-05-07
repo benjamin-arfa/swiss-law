@@ -1,0 +1,18 @@
+description: Notice periods and trigger date for terminating a treaty
+metadata:
+  unit: 
+  reference:
+    - title: "SR 0.142.311 Art. 19"
+      href: "https://www.admin.ch/opc/fr/classified-compilation/20031232/index.html#art_19"
+values:
+  six_month_notice_date: 6 / 12 / YEAR
+  one_year_notice_date: 1 / 12 / YEAR
+  notification_date_calculation:
+   description: Calculation to automatically fill the notification date
+   metadata:
+     reference:
+        - title: Calculation for notification date
+          href: https://github.com/openfisca/openfisca-switzerland/commit/#
+     values:
+       2024-01-01:
+         value: notification_date_calculation = notification_date + relativedelta(weekday=MO(+1))

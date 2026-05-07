@@ -1,0 +1,21 @@
+visa_exemption:
+  diplomatic_status:
+    description: Individual with diplomatic status
+    metadata:
+      values:
+        enabled: true
+  valid_residence_passport:
+    description: Individual holding a valid residence permit
+    metadata:
+      values:
+        enabled: true
+  notified_diplomatic_mission:
+    description: Notification of diplomatic mission
+    metadata:
+      values:
+        enabled: true
+  residence_permit_card:
+    description: Individual holding a residence permit card
+    metadata:
+      values:
+        enabled: true

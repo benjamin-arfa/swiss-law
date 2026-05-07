@@ -1,0 +1,15 @@
+education:
+  higher_education:
+    income_bracket_thresholds: 
+      description: Minimum annual income per household member required for attending higher education (Art. 13 (2) SR 0.103.1) 
+      metadata:
+        reference:
+          - title: "SR 0.103.1"
+            href: "https://www.fedlex.admin.ch/eli/cc/63/837_843/de#art_13"
+      values:
+        2024-01-01:
+          value:  32000
+        2020-01-01:
+          value: 30000
+        1997-01-01:
+          value: 24000

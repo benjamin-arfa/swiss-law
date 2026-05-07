@@ -1,0 +1,18 @@
+extradition:
+  request_reason_exemptions:
+    description: Request reasons that exempt an extradition request (Art. 13)
+    metadata:
+      unit: /1
+      reference:
+        - title: SR 0.103.3 Art. 13
+          href: "https://www.admin.ch/opc/fr/classified-compilation/19910012/202109280000/213.3.pdf"
+    values:
+      2024-01-01:
+        value:
+          - "gender"
+          - "race"
+          - "religion"
+          - "nationality"
+          - "ethnicity"
+          - "political beliefs"
+          - "social group membership"

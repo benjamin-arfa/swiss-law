@@ -1,0 +1,13 @@
+repatriation:
+  max_flight_capacity:
+    description: Maximum number of people allowed to fly per repatriation flight (Art. 11 SR 0.142.112.279)
+    metadata:
+      unit: persons
+      reference:
+        - title: 'SR 0.142.112.279 Art. 11 — Durchführung von Rückübernahmen'
+          href: https://www.admin.ch/opc/en/browsing/compilation/202106_1/de/RG_0.142.112.279.pdf
+    values:
+      2024-01-01:
+        value: 5
+      1948-01-01:
+        value: 3

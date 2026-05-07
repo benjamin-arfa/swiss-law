@@ -1,0 +1,7 @@
+protocols:
+  has_signed_protocol:
+    description: Tracking of states that have signed the protocol in SR 0.107.3 Art. 8
+    values:
+      2024: True
+      2020: False
+      1997: False

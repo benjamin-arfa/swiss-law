@@ -1,0 +1,24 @@
+mutual_liability_rule:
+  description: Art. 14 rules for mutual liability (SR 0.142.116.909)
+  staff_foreign_transit:
+    description: Presence in a foreign country by the staff
+    values:
+      2024-01-01:
+        value: true
+  domestic_rules_damage_causes:
+    description: Presence in a jurisdiction where domestic rules apply for damage causes by staff
+    metadata:
+      unit: /
+      reference:
+        - title: "Art. 14 SR 0.142.116.909"
+          href: "https://www.admin.ch/opc/fr/classified-compilation/20061061/Index.htm#Art. 14__14__21"
+      values:
+        2024-01-01:
+          value: true
+  damage_paid_by_host_country:
+    description: SR 0.142.116.909 damage for which the host country is liable to reimbursement.
+    metadata:
+      unit: CHF
+      values:
+        2024-01-01:
+          value: True

@@ -1,0 +1,21 @@
+transportation_costs:
+  description:  Costs associated with traveling to target state and possibly returning
+  values:
+    travel_costs:
+      description: Costs associated with traveling from CH to target state
+      unit: CHF
+      reference:
+        - title: "SR 0.142.116.919 Art. 20"
+          href: "https://www.fedlex.admin.ch/eli/cc/0/142.116/de#art_20"
+    visa_costs:
+      description: Costs associated with obtaining a visa to visit the target state
+      unit: CHF
+      reference:
+        - title: "SR 0.142.116.919 Art. 20"
+          href: "https://www.fedlex.admin.ch/eli/cc/0/142.116/de#art_20"
+    accommodations_costs:
+      description: Costs associated with temporary accommodations while in target state
+      unit: CHF
+      reference:
+        - title: "SR 0.142.116.919 Art. 20"
+          href: "https://www.fedlex.admin.ch/eli/cc/0/142.116/de#art_20"

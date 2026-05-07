@@ -1,0 +1,15 @@
+institutions:
+  confinement_facilities:
+    description: List of official confinement facilities in the country
+    metadata:
+      reference:
+        - title: List of official institutions in Switzerland
+          href: "https://www.admin.ch/gov/en/start.html"
+
+    values:
+      - Prisons
+      - Detention centers
+      - Mental health facilities
+      - 
+
+Note: The goal of this response is to point out that it is challenging to interpret this legal text as openfisca-compatible input and that this output reflects a simplified assumption about confinement being the key concept.

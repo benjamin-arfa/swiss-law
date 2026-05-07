@@ -1,0 +1,12 @@
+convention:
+  description: Conventions deposits dates
+  deposits:
+    description: Days difference between deposits
+    unit: "days"
+    values:
+      MIN:
+        value: -inf
+      MAX:
+        value: inf
+      MEAN:
+        value: 0

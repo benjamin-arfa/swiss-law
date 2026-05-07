@@ -1,0 +1,9 @@
+description: 
+entity: Agreement
+metadata:
+  unit: 
+  reference:
+    - title: "SR 0.111, Art. 26"
+      href: "https://www.admin.ch/opc/en/classified-compilation/20060495/index.html"
+
+values:

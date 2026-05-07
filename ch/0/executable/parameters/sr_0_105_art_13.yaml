@@ -1,0 +1,8 @@
+country_characteristics:
+  human_rights:
+    description: Country characteristics related to human rights
+    country_human_rights_characteristics:
+      description: Ensures the rights of complainants (Art. 13 SR 0.105)
+      type: str
+      values:
+        SUI: "Yes, Switzerland has the necessary mechanisms in place to protect these rights."

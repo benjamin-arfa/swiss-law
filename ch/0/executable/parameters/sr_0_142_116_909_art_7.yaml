@@ -1,0 +1,15 @@
+asylum_seeker_transfer_process:
+  description: Asylum seeker temporary transfer management process
+  process_status:
+    description: Possible transfer statuses (Art. 7 SR 0.142.116.909)
+    metadata:
+      reference:
+        - title: "SR 0.142.116.909 Art. 7"
+          href: "https://www.admin.ch/opc/en/classified-compilation/20160121/202201101000/de/142.116.909.html"
+    values:
+      accepted:
+        value: "accepted"
+      denied:
+        value: "denied"
+      pending:
+        value: "pending"

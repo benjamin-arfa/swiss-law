@@ -1,0 +1,19 @@
+committee_member_terms:
+  description: Committee member terms (SR 0.105, Art. 17)
+  values:
+    2024-01-01:
+      value: 4
+    2020-01-01:
+      value: 4
+    1997-01-01:
+      value: 4
+
+committee_member_replaced_terms:
+  description: Committee member terms (SR 0.105, Art. 17)
+  values:
+    2024-01-01:
+      value: 2
+    2020-01-01:
+      value: 2
+    1997-01-01:
+      value: 2

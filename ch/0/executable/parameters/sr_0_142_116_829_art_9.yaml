@@ -1,0 +1,1 @@
+Note that since there is no numeric value to parameterize based on the legislative text, the openfisca_variable and parameter_yaml snippet do not require modification to match the legislative text in question, although in general this file would need adjustment when dealing with legislation describing rules involving numerical parameters (rates, thresholds, caps)

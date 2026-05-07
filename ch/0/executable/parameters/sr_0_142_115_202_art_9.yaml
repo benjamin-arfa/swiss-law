@@ -1,0 +1,9 @@
+description: Can the agreement be suspended in accordance with Art. 9 SR 0.142.115.202
+metadata:
+  reference:
+    - title: "SR 0.142.115.202 Art. 9"
+      href: "https://www.fedlex.admin.ch/eli/cc/2022/142/115.en.de.pdf#toc_32"
+value_type: bool
+  values:
+    2024-01-01:
+      value: true

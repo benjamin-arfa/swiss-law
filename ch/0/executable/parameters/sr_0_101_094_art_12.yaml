@@ -1,0 +1,23 @@
+```yaml
+parameters:
+  # Parameters relating to compatibility with the convention
+  compatible_with_convention:
+    _description: "Whether the individual complaint is compatible with the convention."
+
+  # Parameters relating to clearly unfounded complaints
+  clearly_unfounded:
+    _description: "Whether the individual complaint is clearly unfounded."
+
+  # Parameters relating to abusive complaints
+  made_in_abusive_manner:
+    _description: "Whether the individual complaint was made in an abusive manner."
+
+  # Parameters relating to disadvantage
+  significant_disadvantage_applied:
+    _description: "Whether the individual complaint lacks a significant disadvantage for the applicant."
+  requires_examination_of_merits:
+    _description: "Whether the protection of human rights under the Convention and its protocols requires an examination of the merits of the complaint."
+  declining_to_examine_domestic_case:
+    _description: "Whether declining to examine a matter that has not been properly examined by a domestic court."
+
+```

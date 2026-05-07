@@ -1,0 +1,21 @@
+social_security:
+    ahv:
+        suspend_reason:
+            description: Reasons for suspension (Art. 10 SR 0.142.117.542)
+            metadata:
+              reference:
+                - title: 'SR 0.142.117.542'
+                  href: 'https://www.admin.ch/opc/fr/classified-compilation/20170721/'
+            values:
+              values:
+                - value: public_order
+                - value: public_health
+                - value: state_security
+                - value: other
+        suspend_notification_period:
+            description: timeframe within which notification should be made (Art. 10 SR 0.142.117.542)
+            metadata:
+                unit: D
+                reference:
+                    - title: 'SR 0.142.117.542'
+                      href: 'https://www.admin.ch/opc/fr/classified-compilation/20170721/'

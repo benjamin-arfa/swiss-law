@@ -1,0 +1,23 @@
+```yml
+parameters:
+  # Boolean parameters
+  is_participant:
+    value: True
+    description: This person participates in the procedure.
+
+  is_witness:
+    value: False
+    description: This person is a witness.
+
+  is_expert:
+    value: False
+    description: This person is an expert.
+
+  is_able_to_participate:
+    value: False
+    description: This person is able to participate (not explicitly defined in the text, but required for the logic to work).
+
+  has_been_requested_by_ministerkomitee:
+    value: False
+    description: This person has been requested by the Ministerkomitee to appear or submit written statements.
+```

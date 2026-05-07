@@ -1,0 +1,21 @@
+minimum_age:
+  description: Minimum age for stagiaire qualification (Art. 2 SR 0.142.117.437)
+  metadata:
+    unit: years
+    reference:
+      - title: "SR 0.142.117.437 Art. 2"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20210292/index.html#art_2"
+  values:
+    2024-01-01:
+      value: 18
+
+preferred_max_age:
+  description: Maximum age for stagiaire qualification (Art. 2 SR 0.142.117.437)
+  metadata:
+    unit: years
+    reference:
+      - title: "SR 0.142.117.437 Art. 2"
+        href: "https://www.admin.ch/opc/fr/classified-compilation/20210292/index.html#art_2"
+  values:
+    2024-01-01:
+      value: 35

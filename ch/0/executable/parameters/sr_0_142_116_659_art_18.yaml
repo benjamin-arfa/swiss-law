@@ -1,0 +1,52 @@
+social_security:
+  description: AHV/IV/EO exchange of data
+
+  data_collection_purpose:
+    description: Purpose of collecting additional data
+    metadata:
+      reference:
+        - title: "AHVG 18 Para. c SR 0.142.116.659"
+          href: "https://www.ratinfo.admin.ch/ratinfo/de/legislation/database/cantonal-legislation/Berichtigungen"
+    values:
+      2024-01-01:
+        value: ["Additional data"]
+      1948-01-01:
+        value: ["More additional data"]
+
+  data_exchange_parameters:
+    description: Parameters for the AHV exchange of data
+    metadata:
+      reference:
+        - title: "SR 0.142.116.659"
+          href: "https://www.admin.ch/opc/es/common/pdf/fr/20051234.pdf"
+    values:
+      2024-01-01:
+        value:
+          "data_collection_purpose": ["Art 18 Para c AHVG  SR 0.142.116.659"],
+          "personal_data_protection_agreement": ["True", "False"],
+          "data_processing_principle": ["True", "False"],
+          "data_confidentiality": ["True", "False"],
+          "dataAccuracy": ["True", "False"],
+          "dataMinimization": ["True", "False"],
+          "dataStoring": ["True", "False"],
+          "dataCorrection_sperration_Destruction": ["True", "False"],
+          "dataSharing": ["True", "False"],
+          "dataRecipient_Organization": ["True", "False"],
+          "relevant_data": ["relevant data for data collection purpose"],
+          "personal_data": ["personal data"],
+          "recording_of_data_exchange": ["True", "False"]
+      1948-01-01:
+        value:
+            "data_collection_purpose": ["Art 18 Para c AHVG  SR 0.142.116.659"],
+            "personal_data_protection_agreement": ["True", "False"],
+            "data_processing_principle": ["True", "False"],
+            "data_confidentiality": ["True", "False"],
+            "dataAccuracy": ["True", "False"],
+            "dataMinimization": ["True", "False"],
+            "dataStoring": ["True", "False"],
+            "dataCorrection_sperration_Destruction": ["True", "False"],
+            "dataSharing": ["True", "False"],
+            "dataRecipient_Organization": ["True", "False"],
+            "relevant_data": ["relevant data for data collection purpose"],
+            "personal_data": ["personal data"],
+            "recording_of_data_exchange": ["True", "False"]

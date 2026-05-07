@@ -1,0 +1,29 @@
+repatriation:
+  description: Repatriation eligibility parameters for lost or stolen identification (Art. 8 SR 0.142.116.822)
+  lost_or_stolen_id:
+    description: Eligibility condition for lost or stolen identification
+    metadata:
+      reference:
+        - title: "SR 0.142.116.822 Art. 8 Ausreise bei Verlust oder Diebstahl von Dokumenten"
+          href: "https://www.admin.ch/opc/fr/resource/static/data/comp/cst/2014/c_2014_0001.html#art.8"
+    values:
+      2024-01-01:
+        value: True
+      2012-01-01:
+        value: True
+
+  nationality:
+    description: Citizen eligible for repatriation under Art. 8
+    values:
+      2024-01-01:
+        value: [ "Switzerland", "Serbia" ]
+      2020-01-01:
+        value: [ "Switzerland", "Serbia" ]
+
+  substitute_id_valid:
+    description: Validity of substitute IDs for Art. 8 eligibility
+    values:
+      2024-01-01:
+        value: True
+      2020-01-01:
+        value: True

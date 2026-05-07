@@ -1,0 +1,12 @@
+contract_extension_threshold:
+  description: Threshold date after which contract extensions are considered (Art. 5 SR 0.142.116.147)
+  metadata:
+    unit: year
+    reference:
+      - title: "SR 0.142.116.147 Art. 5"
+        href: "https://www.admin.ch/opc/en/classified-compilation/20010312/20210613000000761.pdf"
+      values:
+        2024-01-01:
+          value: 2021-01-01
+        2010-01-01:
+          value: 1995-01-01

@@ -1,0 +1,10 @@
+intergovernmental:
+  communications:
+    ch:
+      competent_authority:
+        description: Generaldirektion der PTT-Betriebe (Article 14 para. 2 SR 0.131.313.6)
+        type: str
+      de:
+        competent_authority:
+          description: Bundesminister für das Post- und Fernmeldewesen (Article 14 para. 2 SR 0.131.313.6)
+          type: str

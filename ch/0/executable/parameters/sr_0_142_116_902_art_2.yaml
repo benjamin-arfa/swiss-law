@@ -1,0 +1,9 @@
+description: Parameters for state national visa requirements
+metadata:
+  reference:
+    - title: "SR 0.142.116.902 Art. 2"
+      href: "https://www.admin.ch/opc/en/classified-compilation/19960035/index.html"
+values:
+  resident_permit:
+    description: Presence of a valid resident permit for visa exemptions
+    default: False

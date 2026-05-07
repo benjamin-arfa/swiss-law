@@ -1,0 +1,12 @@
+formal_complaint:
+  definition: Formal complaint status and time limit
+  days_affecting:
+    description: Duration in days affecting formal complaint status
+    unit: days
+  notification_delay:
+    description: Delay for state notification regarding a reservation
+    unit: days
+parameters:
+  formal_complaint:
+    days_affecting: 90
+    notification_delay: 90

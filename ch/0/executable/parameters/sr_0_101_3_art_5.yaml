@@ -1,0 +1,7 @@
+```yml
+přípustnost_suspension:
+    variable: immunität
+    type: float
+    default_value: 1.0
+    description: The rate of suspending an individual's immunität
+```

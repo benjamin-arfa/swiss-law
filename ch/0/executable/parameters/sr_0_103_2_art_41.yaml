@@ -1,0 +1,24 @@
+human_rights:
+  committee:
+    recognized:
+      description: Has the State Party recognized the Committee's competence?
+      metadata:
+        reference:
+          - title: "SR 0.103.2 Art. 41 — Part 1"
+            href: "https://www.admin.ch/opc/en/classified-compilation/20020232/index.html#art41"
+      values:
+        2024-01-01:
+          value: True
+        1997-01-01:
+          value: False
+
+    exhaustion_threshold:
+      description: Threshold for exhaustion of domestic procedures
+      type: int
+      values:
+        2024-01-01:
+          value: 10
+        1948-01-01:
+          value: 5
+
+# Removed the extra code here, it was about other related entities which aren't present in the legal text you provided.

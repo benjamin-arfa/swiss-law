@@ -1,0 +1,25 @@
+sr_946_201:
+  maximale_busse_fahrlaessig:
+    description: "Maximale Busse bei fahrlaessiger Widerhandlung (Art. 7 Abs. 1 SR 946.201)"
+    values:
+      2023-07-01:
+        value: 100000
+    unit: "currency-CHF"
+  maximale_freiheitsstrafe_schwer:
+    description: "Maximale Freiheitsstrafe bei schwerer vorsaetzlicher Widerhandlung (Jahre)"
+    values:
+      2023-07-01:
+        value: 1
+    unit: "year"
+  maximale_freiheitsstrafe_ursprungsfaelschung:
+    description: "Maximale Freiheitsstrafe bei Faelschung von Ursprungserzeugnissen (Jahre)"
+    values:
+      2023-07-01:
+        value: 3
+    unit: "year"
+  verjaehrungsfrist:
+    description: "Verjaehrungsfrist fuer Strafverfolgung (Art. 7 Abs. 3)"
+    values:
+      2007-01-01:
+        value: 7
+    unit: "year"

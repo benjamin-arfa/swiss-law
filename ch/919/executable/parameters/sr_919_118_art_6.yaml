@@ -1,0 +1,7 @@
+sr_919_118:
+  vergleichseinkommen_zentralwert:
+    description: "Zentralwert (Median) der Loehne aller Angestellten im Sekundaer- und Tertiaersektor inkl. 13. Monatslohn (Art. 6 Abs. 2 SR 919.118)"
+    values:
+      2024-01-01:
+        value: 80184
+    unit: "currency-CHF"

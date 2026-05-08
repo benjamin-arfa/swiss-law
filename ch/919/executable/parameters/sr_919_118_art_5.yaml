@@ -1,0 +1,13 @@
+sr_919_118:
+  zinssatz_bundesobligationen:
+    description: "Mittlerer Zinssatz fuer Bundesobligationen (Art. 5 Abs. 2 SR 919.118)"
+    values:
+      2024-01-01:
+        value: 0.01
+    unit: "/1"
+  basis_arbeitstage:
+    description: "Basis-Arbeitstage fuer eine Vollzeit-Arbeitseinheit (Art. 5 Abs. 1)"
+    values:
+      1999-01-01:
+        value: 280
+    unit: "day"

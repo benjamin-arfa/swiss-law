@@ -1,0 +1,30 @@
+sr_919_118:
+  stickstoff_reduktion_mindestens:
+    description: "Mindest-Reduktionsziel fuer Stickstoffverluste bis 2030 (Art. 10a Bst. a)"
+    values:
+      2023-01-01:
+        value: 0.15
+    unit: "/1"
+  phosphor_reduktion_mindestens:
+    description: "Mindest-Reduktionsziel fuer Phosphorverluste bis 2030 (Art. 10a Bst. b)"
+    values:
+      2023-01-01:
+        value: 0.20
+    unit: "/1"
+  stickstoff_verlust_basis_2014_2016:
+    description: "Mittelwert der Stickstoffverluste 2014-2016 (Basiswert, Tonnen)"
+    values:
+      2023-01-01:
+        value: 0
+    unit: "t"
+  phosphor_verlust_basis_2014_2016:
+    description: "Mittelwert der Phosphorverluste 2014-2016 (Basiswert, Tonnen)"
+    values:
+      2023-01-01:
+        value: 0
+    unit: "t"
+  reduktionsziel_jahr:
+    description: "Zieljahr fuer Naehrstoffreduktion (Art. 10a)"
+    values:
+      2023-01-01:
+        value: 2030

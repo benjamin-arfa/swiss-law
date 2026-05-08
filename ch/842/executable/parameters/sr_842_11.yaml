@@ -1,0 +1,28 @@
+description: "Parameters for SR 842.11 - WFG Verordnung (Housing investment and property costs)"
+metadata:
+  reference: "SR 842.11"
+
+wfg:
+  mindestinvestition_erneuerung_pro_wohnung:
+    description: "Minimum investment per dwelling for renovations (CHF)"
+    reference: "SR 842.11 Art. 1"
+    unit: CHF
+    values:
+      2004-02-01:
+        value: 50000
+
+  unterhaltskostenpauschale_satz:
+    description: "Flat rate for maintenance costs as fraction of investment costs"
+    reference: "SR 842.11 Art. 2 Bst. a"
+    unit: rate
+    values:
+      2004-02-01:
+        value: 0.009
+
+  verwaltungskostenpauschale_satz:
+    description: "Flat rate for administration costs as fraction of non-subsidised net rent"
+    reference: "SR 842.11 Art. 2 Bst. b"
+    unit: rate
+    values:
+      2004-02-01:
+        value: 0.04

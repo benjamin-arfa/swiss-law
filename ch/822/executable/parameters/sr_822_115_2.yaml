@@ -1,0 +1,12 @@
+description: "Parameters for SR 822.115.2 - Dangerous work for young people"
+metadata:
+  reference: "SR 822.115.2"
+
+jarg:
+  anzahl_gefaehrliche_arbeitskategorien:
+    description: "Number of categories of dangerous work for young people"
+    reference: "SR 822.115.2 Art. 1"
+    unit: count
+    values:
+      2008-01-01:
+        value: 12

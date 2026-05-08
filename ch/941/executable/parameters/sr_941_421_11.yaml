@@ -1,0 +1,28 @@
+description: "Parameters for SR 941.421.11 - Precursor substance free quantities and concentrations"
+metadata:
+  reference: "SR 941.421.11"
+
+vvsg:
+  basis_freimenge_ml:
+    description: "Base free quantity for precursor substances at reference concentration (ml)"
+    reference: "SR 941.421.11 Art. 1 Abs. 1"
+    unit: ml
+    values:
+      2023-01-01:
+        value: 25
+
+  wasserstoffperoxid_max_konzentration:
+    description: "Maximum concentration for hydrogen peroxide without permit (%)"
+    reference: "SR 941.421.11 Art. 1 Abs. 1 Bst. a"
+    unit: percent
+    values:
+      2023-01-01:
+        value: 35
+
+  nitromethan_max_konzentration:
+    description: "Maximum concentration for nitromethane without permit (%)"
+    reference: "SR 941.421.11 Art. 1 Abs. 1 Bst. b"
+    unit: percent
+    values:
+      2023-01-01:
+        value: 100

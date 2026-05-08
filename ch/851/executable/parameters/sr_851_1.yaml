@@ -1,0 +1,52 @@
+description: "Parameters for SR 851.1 - ZUG (Federal Act on Jurisdiction for Support of Persons in Need)"
+metadata:
+  reference: "SR 851.1"
+
+zug:
+  fortbestand_wohnsitz_max_jahre:
+    description: "Maximum years support domicile persists after violation of deportation ban"
+    reference: "SR 851.1 Art. 10 Abs. 2"
+    unit: years
+    values:
+      1979-01-01:
+        value: 5
+
+  abrechnungsfrist_tage:
+    description: "Deadline for invoicing after end of quarter (days)"
+    reference: "SR 851.1 Art. 32 Abs. 1"
+    unit: days
+    values:
+      1979-01-01:
+        value: 60
+
+  zahlungsfrist_monate:
+    description: "Payment deadline for invoiced support costs (months)"
+    reference: "SR 851.1 Art. 32 Abs. 4"
+    unit: months
+    values:
+      1992-07-01:
+        value: 1
+
+  einsprachefrist_tage:
+    description: "Objection deadline for non-recognition of cost claim (days)"
+    reference: "SR 851.1 Art. 33 Abs. 1"
+    unit: days
+    values:
+      1979-01-01:
+        value: 30
+
+  beschwerdefrist_tage:
+    description: "Appeal deadline after rejection decision (days)"
+    reference: "SR 851.1 Art. 34 Abs. 2"
+    unit: days
+    values:
+      1979-01-01:
+        value: 30
+
+  richtigstellung_verjaehrung_jahre:
+    description: "Limitation period for rectification claims (years)"
+    reference: "SR 851.1 Art. 28 Abs. 3"
+    unit: years
+    values:
+      1979-01-01:
+        value: 5

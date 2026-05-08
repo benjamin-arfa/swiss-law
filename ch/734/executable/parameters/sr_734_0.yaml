@@ -1,0 +1,20 @@
+description: "Parameters for SR 734.0 - EleG (Federal Electricity Act)"
+metadata:
+  reference: "SR 734.0"
+
+eleg:
+  klassifikation_schwachstrom:
+    description: "Classification code for low-voltage (weak current) installations"
+    reference: "SR 734.0 Art. 2 Abs. 1"
+    unit: code
+    values:
+      1902-01-01:
+        value: 1
+
+  klassifikation_starkstrom:
+    description: "Classification code for high-voltage (strong current) installations"
+    reference: "SR 734.0 Art. 2 Abs. 2"
+    unit: code
+    values:
+      1902-01-01:
+        value: 2

@@ -1,0 +1,10 @@
+meldepflicht_gefahr:
+  description: Meldefrist bei Gefahren fuer die oeffentliche Gesundheit (EpV Art. 5)
+  values:
+    2016-01-01:
+      meldefrist: unverzueglich
+      gilt_fuer_kantonale_behoerden: true
+      gilt_fuer_schiffsfuehrer: true
+      gilt_fuer_luftfahrzeugfuehrer: true
+  metadata:
+    reference: SR 818.101.1 Art. 5

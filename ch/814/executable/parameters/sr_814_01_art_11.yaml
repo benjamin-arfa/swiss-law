@@ -1,0 +1,9 @@
+emissionsbegrenzung:
+  description: Grundsatz der Emissionsbegrenzung (USG Art. 11)
+  values:
+    1985-01-01:
+      grundsatz: begrenzung_bei_quelle
+      vorsorge: technisch_betrieblich_moeglich_wirtschaftlich_tragbar
+      verschaerfung: bei_schaedlichen_oder_laestigen_einwirkungen
+  metadata:
+    reference: SR 814.01 Art. 11

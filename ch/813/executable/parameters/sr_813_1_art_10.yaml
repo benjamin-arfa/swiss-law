@@ -1,0 +1,9 @@
+biozid_zulassung:
+  description: Parameter fuer die Zulassung von Biozidprodukten (ChemG Art. 10)
+  values:
+    2005-08-01:
+      wirksam_erforderlich: true
+      keine_nebenwirkungen_erforderlich: true
+  metadata:
+    reference: SR 813.1 Art. 10
+    unit: boolean

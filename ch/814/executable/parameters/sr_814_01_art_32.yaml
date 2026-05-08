@@ -1,0 +1,9 @@
+entsorgungskosten:
+  description: Kostentragung fuer Abfallentsorgung (USG Art. 32)
+  values:
+    1997-07-01:
+      grundsatz: inhaber_traegt_kosten
+      ausnahme_inhaber_nicht_ermittelbar: kanton_traegt_kosten
+      ausnahme_zahlungsunfaehig: kanton_traegt_kosten
+  metadata:
+    reference: SR 814.01 Art. 32

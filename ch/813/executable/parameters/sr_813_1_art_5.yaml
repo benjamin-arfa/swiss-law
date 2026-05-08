@@ -1,0 +1,11 @@
+selbstkontrolle:
+  description: Pflicht zur Selbstkontrolle fuer Herstellerinnen (ChemG Art. 5)
+  values:
+    2005-08-01:
+      beurteilung_erforderlich: true
+      einstufung_erforderlich: true
+      verpackung_erforderlich: true
+      kennzeichnung_erforderlich: true
+  metadata:
+    reference: SR 813.1 Art. 5
+    unit: boolean

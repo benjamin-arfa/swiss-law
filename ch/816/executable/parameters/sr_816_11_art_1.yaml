@@ -1,0 +1,11 @@
+vertraulichkeitsstufen:
+  description: Vertraulichkeitsstufen fuer das elektronische Patientendossier (EPDV Art. 1)
+  values:
+    2017-04-15:
+      normal_zugaenglich: 1
+      eingeschraenkt_zugaenglich: 2
+      geheim: 3
+      default_stufe: 1
+  metadata:
+    reference: SR 816.11 Art. 1
+    unit: enum

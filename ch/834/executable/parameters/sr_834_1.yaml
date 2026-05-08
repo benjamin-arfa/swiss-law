@@ -1,0 +1,204 @@
+sr834_1:
+  hoechstbetrag_gesamtentschaedigung:
+    description: "Hoechstbetrag der taeglichen Gesamtentschaedigung (CHF)"
+    reference: "SR 834.1 Art. 16a Abs. 1"
+    values:
+      1976-01-01:
+        value: 145.0
+      2005-07-01:
+        value: 196.0
+      2009-01-01:
+        value: 196.0
+      2016-01-01:
+        value: 196.0
+      2021-01-01:
+        value: 245.0
+      2023-01-01:
+        value: 245.0
+      2025-01-01:
+        value: 275.0
+
+  anteil_grundentschaedigung_rs:
+    description: "Anteil Grundentschaedigung waehrend RS (25%)"
+    reference: "SR 834.1 Art. 9 Abs. 1"
+    values:
+      2005-07-01:
+        value: 0.25
+
+  anteil_grundentschaedigung_andere_dienste:
+    description: "Anteil Grundentschaedigung waehrend anderer Dienste (80%)"
+    reference: "SR 834.1 Art. 10 Abs. 1"
+    values:
+      2005-07-01:
+        value: 0.80
+
+  max_grundentschaedigung_anteil:
+    description: "Max. Grundentschaedigung als Anteil des Hoechstbetrags (80%)"
+    reference: "SR 834.1 Art. 16 Abs. 4"
+    values:
+      2005-07-01:
+        value: 0.80
+
+  kinderzulage_anteil:
+    description: "Kinderzulage pro Kind als Anteil des Hoechstbetrags (8%)"
+    reference: "SR 834.1 Art. 13"
+    values:
+      2005-07-01:
+        value: 0.08
+
+  betriebszulage_anteil:
+    description: "Betriebszulage als Anteil des Hoechstbetrags (27%)"
+    reference: "SR 834.1 Art. 15"
+    values:
+      1976-01-01:
+        value: 0.27
+
+  # Art. 16 Abs. 1: Mindestbetraege Ausbildungsdienste laengerer Dauer
+  mindest_ausb_lang_ohne_kinder:
+    description: "Mindestbetrag Ausb. laengerer Dauer, ohne Kinder (45%)"
+    reference: "SR 834.1 Art. 16 Abs. 1 Bst. a"
+    values:
+      2005-07-01:
+        value: 0.45
+
+  mindest_ausb_lang_ein_kind:
+    description: "Mindestbetrag Ausb. laengerer Dauer, ein Kind (65%)"
+    reference: "SR 834.1 Art. 16 Abs. 1 Bst. b"
+    values:
+      2005-07-01:
+        value: 0.65
+
+  mindest_ausb_lang_zwei_kinder:
+    description: "Mindestbetrag Ausb. laengerer Dauer, >= 2 Kinder (70%)"
+    reference: "SR 834.1 Art. 16 Abs. 1 Bst. c"
+    values:
+      2005-07-01:
+        value: 0.70
+
+  # Art. 16 Abs. 2: Mindestbetraege Durchdiener
+  mindest_durchdiener_ohne_kinder:
+    description: "Mindestbetrag Durchdiener, ohne Kinder (37%)"
+    reference: "SR 834.1 Art. 16 Abs. 2 Bst. a"
+    values:
+      2005-07-01:
+        value: 0.37
+
+  mindest_durchdiener_ein_kind:
+    description: "Mindestbetrag Durchdiener, ein Kind (55%)"
+    reference: "SR 834.1 Art. 16 Abs. 2 Bst. b"
+    values:
+      2005-07-01:
+        value: 0.55
+
+  mindest_durchdiener_zwei_kinder:
+    description: "Mindestbetrag Durchdiener, >= 2 Kinder (62%)"
+    reference: "SR 834.1 Art. 16 Abs. 2 Bst. c"
+    values:
+      2005-07-01:
+        value: 0.62
+
+  # Art. 16 Abs. 3: Mindestbetraege andere Dienste
+  mindest_andere_ohne_kinder:
+    description: "Mindestbetrag andere Dienste, ohne Kinder (25%)"
+    reference: "SR 834.1 Art. 16 Abs. 3 Bst. a"
+    values:
+      2005-07-01:
+        value: 0.25
+
+  mindest_andere_ein_kind:
+    description: "Mindestbetrag andere Dienste, ein Kind (40%)"
+    reference: "SR 834.1 Art. 16 Abs. 3 Bst. b"
+    values:
+      2005-07-01:
+        value: 0.40
+
+  mindest_andere_zwei_kinder:
+    description: "Mindestbetrag andere Dienste, >= 2 Kinder (50%)"
+    reference: "SR 834.1 Art. 16 Abs. 3 Bst. c"
+    values:
+      2005-07-01:
+        value: 0.50
+
+  # Mutterschaftsentschaedigung
+  mutterschaft_dauer_tage:
+    description: "Dauer der Mutterschaftsentschaedigung in Tagen"
+    reference: "SR 834.1 Art. 16c Abs. 2"
+    values:
+      2005-07-01:
+        value: 98
+
+  mutterschaft_max_verlaengerung_tage:
+    description: "Max. Verlaengerung bei Hospitalisierung des Neugeborenen (Tage)"
+    reference: "SR 834.1 Art. 16c Abs. 3"
+    values:
+      2021-07-01:
+        value: 56
+
+  mutterschaft_taggeld_anteil:
+    description: "Mutterschaftsentschaedigung als Anteil des Einkommens (80%)"
+    reference: "SR 834.1 Art. 16e Abs. 2"
+    values:
+      2005-07-01:
+        value: 0.80
+
+  mutterschaft_hoechstbetrag:
+    description: "Hoechstbetrag Mutterschaftsentschaedigung pro Tag (CHF)"
+    reference: "SR 834.1 Art. 16f Abs. 1"
+    values:
+      2005-07-01:
+        value: 172.0
+      2009-01-01:
+        value: 172.0
+      2016-01-01:
+        value: 196.0
+      2021-01-01:
+        value: 196.0
+      2023-01-01:
+        value: 196.0
+      2025-01-01:
+        value: 220.0
+
+  # Entschaedigung anderer Elternteil
+  anderer_elternteil_rahmenfrist_monate:
+    description: "Rahmenfrist fuer Entschaedigung anderer Elternteil (Monate)"
+    reference: "SR 834.1 Art. 16j Abs. 1"
+    values:
+      2021-01-01:
+        value: 6
+
+  anderer_elternteil_max_taggelder:
+    description: "Maximale Taggelder anderer Elternteil"
+    reference: "SR 834.1 Art. 16k Abs. 2"
+    values:
+      2021-01-01:
+        value: 14
+
+  # Betreuungsentschaedigung
+  betreuung_rahmenfrist_monate:
+    description: "Rahmenfrist fuer Betreuungsentschaedigung (Monate)"
+    reference: "SR 834.1 Art. 16p Abs. 1"
+    values:
+      2021-07-01:
+        value: 18
+
+  betreuung_max_taggelder:
+    description: "Maximale Taggelder Betreuungsentschaedigung"
+    reference: "SR 834.1 Art. 16q Abs. 2"
+    values:
+      2021-07-01:
+        value: 98
+
+  # Adoptionsentschaedigung
+  adoption_rahmenfrist_monate:
+    description: "Rahmenfrist fuer Adoptionsentschaedigung (Monate)"
+    reference: "SR 834.1 Art. 16u Abs. 1"
+    values:
+      2023-01-01:
+        value: 12
+
+  adoption_max_taggelder:
+    description: "Maximale Taggelder Adoptionsentschaedigung"
+    reference: "SR 834.1 Art. 16v Abs. 2"
+    values:
+      2023-01-01:
+        value: 14

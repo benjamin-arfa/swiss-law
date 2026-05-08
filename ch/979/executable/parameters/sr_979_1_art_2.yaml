@@ -1,0 +1,6 @@
+```yml
+parameters:
+  bw_genehmigung_bundesversammlung_erforderlich:
+    value: 1
+    label: Genehmigung der Bundesversammlung fuer IWF-Kapitalerhoehungen erforderlich
+```

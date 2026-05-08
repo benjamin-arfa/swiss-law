@@ -1,0 +1,7 @@
+```yml
+parameters:
+  maschv_inverkehrbringen_voraussetzungen:
+    label: Voraussetzungen fuer das Inverkehrbringen von Maschinen
+    description: Sicherheit, Konformitaet und Wirtschaftsakteurpflichten
+    reference: SR 819.14 Art. 2
+```

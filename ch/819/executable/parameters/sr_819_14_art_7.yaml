@@ -1,0 +1,7 @@
+```yml
+parameters:
+  maschv_uebergangsfrist_befestigungsgeraete:
+    value: "2011-06-29"
+    label: Uebergangsfrist fuer tragbare Befestigungsgeraete mit Treibladungen
+    reference: SR 819.14 Art. 7
+```

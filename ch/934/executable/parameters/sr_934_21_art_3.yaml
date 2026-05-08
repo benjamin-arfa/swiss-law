@@ -1,0 +1,11 @@
+```yml
+parameters:
+  bgrb_strategische_ziele_periode_jahre:
+    value: 4
+    label: Dauer der strategischen Zielperiode in Jahren
+    reference: SR 934.21 Art. 3 Abs. 1bis
+  bgrb_zustimmung_bundesversammlung_erforderlich:
+    value: 1
+    label: Zustimmung der Bundesversammlung bei Abtretung der Kapital-/Stimmenmehrheit
+    reference: SR 934.21 Art. 3 Abs. 3
+```

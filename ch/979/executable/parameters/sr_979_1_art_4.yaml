@@ -1,0 +1,6 @@
+```yml
+parameters:
+  bw_einvernehmen_snb_erforderlich:
+    value: 1
+    label: Einvernehmen mit SNB fuer IWF-Vertretung erforderlich
+```

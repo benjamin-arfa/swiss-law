@@ -1,0 +1,6 @@
+```yml
+parameters:
+  bw_inkrafttreten:
+    value: "1992-05-29"
+    label: Datum des Inkrafttretens des Bretton-Woods-Gesetzes
+```

@@ -1,0 +1,6 @@
+```yml
+parameters:
+  bw_entwicklungspolitik_zu_beruecksichtigen:
+    value: 1
+    label: Grundsaetze der Entwicklungspolitik bei BW-Entscheiden zu Entwicklungslaendern
+```

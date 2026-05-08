@@ -1,0 +1,7 @@
+```yml
+parameters:
+  maschv_stelle_zugelassen:
+    label: Zulassung von Konformitaetsbewertungsstellen
+    description: Akkreditierung, internationale Anerkennung oder bundesrechtliche Ermaechtiung
+    reference: SR 819.14 Art. 4
+```

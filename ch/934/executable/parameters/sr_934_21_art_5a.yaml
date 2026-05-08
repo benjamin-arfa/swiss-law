@@ -1,0 +1,7 @@
+```yml
+parameters:
+  bgrb_rekapitalisierung:
+    label: Rekapitalisierung bei Ueberfuehrung in Aktiengesellschaften
+    description: Angemessene Eigenkapitalausstattung durch den Bund
+    reference: SR 934.21 Art. 5a
+```

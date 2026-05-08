@@ -1,0 +1,6 @@
+```yml
+parameters:
+  bw_geltungsbereich:
+    label: Geltungsbereich des Bretton-Woods-Gesetzes
+    description: Mitwirkung der Schweiz an IWF, IBRD, IDA und IFC
+```

@@ -1,0 +1,7 @@
+```yml
+parameters:
+  bgrb_inkrafttreten:
+    value: "1998-05-01"
+    label: Datum des Inkrafttretens des BGRB
+    reference: SR 934.21 Art. 8
+```

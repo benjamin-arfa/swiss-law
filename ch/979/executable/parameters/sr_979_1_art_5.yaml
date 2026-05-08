@@ -1,0 +1,12 @@
+```yml
+parameters:
+  bw_snb_hinterlegungsstelle:
+    value: 1
+    label: SNB ist Hinterlegungsstelle des IWF fuer Schweizerfrankbestaende
+  bw_snb_iwf_kredit:
+    value: 1
+    label: SNB uebernimmt IWF-Kredite fuer die Schweiz
+  bw_snb_szr_operationen:
+    value: 1
+    label: SNB wickelt Sonderziehungsrechte-Operationen ab
+```

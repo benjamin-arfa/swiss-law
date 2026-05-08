@@ -1,0 +1,9 @@
+```yml
+parameters:
+  bw_beitragsleistung_finanzierung:
+    label: Finanzierung der Beitragsleistungen an IBRD, IDA, IFC
+    reference: SR 974.0 Art. 9
+  bw_snb_finanzielle_leistung_iwf:
+    value: 1
+    label: SNB erbringt finanzielle Leistungen fuer IWF-Mitgliedschaft
+```

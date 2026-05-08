@@ -1,0 +1,11 @@
+sr_915_1:
+  aide_etude_preliminaire_taux:
+    description: "Maximum percentage of costs covered for preliminary study (Art. 10 al. 3)"
+    values:
+      2018-01-01:
+        value: 0.5
+  aide_etude_preliminaire_plafond:
+    description: "Maximum financial aid amount for preliminary study in CHF (Art. 10 al. 3)"
+    values:
+      2018-01-01:
+        value: 20000

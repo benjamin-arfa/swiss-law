@@ -1,0 +1,31 @@
+sr_852_12:
+  delai_destruction_aide_sociale_traitement:
+    description: "Years after last processing before social aid data must be destroyed (Art. 13 al. 1)"
+    values:
+      2021-08-01:
+        value: 10
+  delai_destruction_aide_sociale_dossier:
+    description: "Max years after dossier opening before social aid data must be destroyed (Art. 13 al. 1)"
+    values:
+      2021-08-01:
+        value: 30
+  delai_destruction_autres_modules:
+    description: "Years after last consultation before hotline/helpline/protection data must be destroyed (Art. 13 al. 2)"
+    values:
+      2021-08-01:
+        value: 5
+  delai_destruction_voyage_jours:
+    description: "Days after travel expiry before Travel Admin travel data must be destroyed (Art. 20 al. 1)"
+    values:
+      2021-08-01:
+        value: 90
+  delai_destruction_autres_annees:
+    description: "Years after last login before Travel Admin other data must be destroyed (Art. 20 al. 2)"
+    values:
+      2021-08-01:
+        value: 2
+  duree_conservation_journaux:
+    description: "Duration for which access logs must be kept in years (Art. 25 al. 2)"
+    values:
+      2021-08-01:
+        value: 1

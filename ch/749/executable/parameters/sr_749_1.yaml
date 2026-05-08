@@ -1,0 +1,36 @@
+sr_749_1:
+  seuil_majorite:
+    description: "Majority threshold for Swiss ownership and voting rights (Art. 3 al. 1)"
+    values:
+      2022-08-01:
+        value: 0.5
+  delai_avis_cantons_mois:
+    description: "Deadline for cantonal opinion in months (Art. 15 al. 1)"
+    values:
+      2022-08-01:
+        value: 3
+  duree_mise_enquete_jours:
+    description: "Duration of public inspection in days (Art. 15 al. 2)"
+    values:
+      2022-08-01:
+        value: 30
+  delai_caducite_approbation:
+    description: "Years after which plan approval lapses if construction not begun (Art. 19 al. 3)"
+    values:
+      2022-08-01:
+        value: 5
+  prolongation_max:
+    description: "Maximum extension of plan approval validity in years (Art. 19 al. 4)"
+    values:
+      2022-08-01:
+        value: 3
+  delai_designation_sites_elimination:
+    description: "Years for canton to designate material disposal sites (Art. 21 al. 2)"
+    values:
+      2022-08-01:
+        value: 5
+  peine_max_emprisonnement_ans:
+    description: "Maximum imprisonment for intentional plan approval violation in years (Art. 38 al. 1)"
+    values:
+      2022-08-01:
+        value: 3

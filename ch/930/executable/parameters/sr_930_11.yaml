@@ -1,0 +1,48 @@
+description: "Parameters for SR 930.11 - PrSG (Produktesicherheitsgesetz / Product Safety Act)"
+metadata:
+  reference: "SR 930.11"
+
+# Art. 16 Abs. 1 - Max imprisonment for intentional offense
+prsg_freiheitsstrafe_vorsaetzlich_max_monate:
+  description: "Maximale Freiheitsstrafe bei vorsätzlichem Vergehen (Monate)"
+  reference: "SR 930.11 Art. 16 Abs. 1"
+  unit: month
+  values:
+    2010-07-01:
+      value: 12
+
+# Art. 16 Abs. 2 - Max imprisonment for commercial offense
+prsg_freiheitsstrafe_gewerbsmaessig_max_monate:
+  description: "Maximale Freiheitsstrafe bei gewerbsmässigem Vergehen (Monate)"
+  reference: "SR 930.11 Art. 16 Abs. 2"
+  unit: month
+  values:
+    2010-07-01:
+      value: 36
+
+# Art. 16 Abs. 3 - Max daily rates for negligent offense
+prsg_tagessaetze_fahrlaessig_max:
+  description: "Maximale Tagessätze bei fahrlässiger Gefährdung"
+  reference: "SR 930.11 Art. 16 Abs. 3"
+  unit: count
+  values:
+    2010-07-01:
+      value: 180
+
+# Art. 17 Abs. 1 - Max fine for intentional misdemeanor
+prsg_busse_uebertretung_vorsaetzlich_max:
+  description: "Maximale Busse bei vorsätzlicher Übertretung (CHF)"
+  reference: "SR 930.11 Art. 17 Abs. 1"
+  unit: currency-CHF
+  values:
+    2010-07-01:
+      value: 40000
+
+# Art. 17 Abs. 2 - Max fine for negligent misdemeanor
+prsg_busse_uebertretung_fahrlaessig_max:
+  description: "Maximale Busse bei fahrlässiger Übertretung (CHF)"
+  reference: "SR 930.11 Art. 17 Abs. 2"
+  unit: currency-CHF
+  values:
+    2010-07-01:
+      value: 20000

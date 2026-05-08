@@ -1,0 +1,50 @@
+description: "Parameters for SR 833.11 - MVV (Verordnung über die Militärversicherung / Military Insurance Ordinance)"
+metadata:
+  reference: "SR 833.11"
+
+mvv:
+  # Art. 15 Abs. 1 - Maximum insured annual earnings
+  hoechstbetrag_jahresverdienst:
+    description: "Höchstbetrag des versicherten Jahresverdienstes (CHF)"
+    reference: "SR 833.11 Art. 15 Abs. 1"
+    unit: currency-CHF
+    values:
+      1994-01-01:
+        value: 126000
+      2000-01-01:
+        value: 126000
+      2008-01-01:
+        value: 148200
+      2016-01-01:
+        value: 148200
+      2023-01-01:
+        value: 148200
+      2025-01-01:
+        value: 163722
+
+  # Art. 8 Abs. 2 - Enrollment deadline after retirement (months)
+  freiwillige_grundversicherung_anmeldefrist_monate:
+    description: "Frist für Anmeldung zur freiwilligen Grundversicherung nach Pensionierung (Monate)"
+    reference: "SR 833.11 Art. 8 Abs. 2"
+    unit: month
+    values:
+      1994-01-01:
+        value: 2
+
+  # Art. 13c Abs. 3 - Inpatient treatment reimbursement rate
+  stationaere_behandlung_verguetung_prozent:
+    description: "Vergütungssatz für stationäre Behandlung (Prozent)"
+    reference: "SR 833.11 Art. 13c Abs. 3"
+    unit: /1
+    values:
+      2017-01-01:
+        value: 1.00
+
+  # Art. 13b Abs. 2 / Art. 13c Abs. 4 - Minimum contract termination notice (months)
+  kuendigungsfrist_tarifvertrag_monate:
+    description: "Mindestfrist zur Kündigung von Zusammenarbeits- und Tarifverträgen (Monate)"
+    reference: "SR 833.11 Art. 13b Abs. 2"
+    unit: month
+    values:
+      2017-01-01:
+        value: 6

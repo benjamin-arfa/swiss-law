@@ -1,0 +1,39 @@
+description: "Parameters for SR 923.0 - BGF (Bundesgesetz über die Fischerei / Fishing Act)"
+metadata:
+  reference: "SR 923.0"
+
+# Art. 12 Abs. 2 - Maximum federal financial aid percentage
+bgf_finanzhilfe_max_prozent:
+  description: "Maximaler Anteil der Finanzhilfe des Bundes an den Kosten"
+  reference: "SR 923.0 Art. 12 Abs. 2"
+  unit: /1
+  values:
+    1994-01-01:
+      value: 0.40
+
+# Art. 16 Abs. 2 - Maximum fine for negligent offenses
+bgf_busse_fahrlaessig_max:
+  description: "Maximale Busse bei fahrlässigem Vergehen (CHF)"
+  reference: "SR 923.0 Art. 16 Abs. 2"
+  unit: currency-CHF
+  values:
+    1994-01-01:
+      value: 20000
+
+# Art. 17 Abs. 1 - Maximum fine for misdemeanors
+bgf_busse_uebertretung_max:
+  description: "Maximale Busse bei Übertretung (CHF)"
+  reference: "SR 923.0 Art. 17 Abs. 1"
+  unit: currency-CHF
+  values:
+    1994-01-01:
+      value: 20000
+
+# Art. 19 Abs. 1 - Maximum fishing ban duration
+bgf_fischereiverbot_max_jahre:
+  description: "Maximale Dauer des Fischereiverbots (Jahre)"
+  reference: "SR 923.0 Art. 19 Abs. 1"
+  unit: year
+  values:
+    1994-01-01:
+      value: 5

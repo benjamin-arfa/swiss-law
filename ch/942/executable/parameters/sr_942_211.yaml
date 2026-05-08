@@ -1,0 +1,92 @@
+description: "Parameters for SR 942.211 - PBV (Preisbekanntgabeverordnung / Price Disclosure Ordinance)"
+metadata:
+  reference: "SR 942.211"
+
+# Art. 4 Abs. 1bis - VAT adaptation period
+pbv_mwst_anpassungsfrist_monate:
+  description: "Frist für Preisanpassung bei MwSt-Satzänderung (Monate)"
+  reference: "SR 942.211 Art. 4 Abs. 1bis"
+  unit: month
+  values:
+    1999-11-01:
+      value: 3
+
+# Art. 5 Abs. 3 Bst. g - Minimum price for base price exemption
+pbv_detailpreis_schwelle_grundpreis_befreiung:
+  description: "Detailpreis-Schwelle unter der keine Grundpreisangabe nötig ist (CHF)"
+  reference: "SR 942.211 Art. 5 Abs. 3 Bst. g"
+  unit: currency-CHF
+  values:
+    1988-03-01:
+      value: 2.0
+
+# Art. 5 Abs. 3 Bst. h - Base price threshold for food
+pbv_grundpreis_schwelle_lebensmittel:
+  description: "Grundpreis-Schwelle über der keine Grundpreisangabe nötig ist - Lebensmittel (CHF/kg)"
+  reference: "SR 942.211 Art. 5 Abs. 3 Bst. h"
+  unit: currency-CHF/kg
+  values:
+    1979-01-01:
+      value: 150.0
+
+# Art. 5 Abs. 3 Bst. h - Base price threshold for non-food
+pbv_grundpreis_schwelle_andere:
+  description: "Grundpreis-Schwelle über der keine Grundpreisangabe nötig ist - andere Waren (CHF/kg)"
+  reference: "SR 942.211 Art. 5 Abs. 3 Bst. h"
+  unit: currency-CHF/kg
+  values:
+    1979-01-01:
+      value: 750.0
+
+# Art. 7 Abs. 3 - High-value threshold for alternative price display
+pbv_hochpreisschwelle_alternative_anzeige:
+  description: "Preisschwelle über der Antiquitäten/Schmuck etc. alternativ ausgezeichnet werden dürfen (CHF)"
+  reference: "SR 942.211 Art. 7 Abs. 3"
+  unit: currency-CHF
+  values:
+    1988-03-01:
+      value: 5000.0
+
+# Art. 11a Abs. 1 - Telecom price threshold for verbal disclosure
+pbv_mehrwertdienst_preis_schwelle_muendlich:
+  description: "Preis-Schwelle über der mündliche Preisinformation nötig ist (CHF/Min)"
+  reference: "SR 942.211 Art. 11a Abs. 1"
+  unit: currency-CHF/min
+  values:
+    2015-07-01:
+      value: 2.0
+
+# Art. 11a Abs. 6 - Telecom confirmation threshold
+pbv_mehrwertdienst_bestaetigung_schwelle_fix:
+  description: "Fixgebühren-Schwelle über der ausdrückliche Bestätigung nötig ist (CHF)"
+  reference: "SR 942.211 Art. 11a Abs. 6"
+  unit: currency-CHF
+  values:
+    2015-07-01:
+      value: 10.0
+
+pbv_mehrwertdienst_bestaetigung_schwelle_min:
+  description: "Minutenpreis-Schwelle über der ausdrückliche Bestätigung nötig ist (CHF/Min)"
+  reference: "SR 942.211 Art. 11a Abs. 6"
+  unit: currency-CHF/min
+  values:
+    2015-07-01:
+      value: 5.0
+
+# Art. 16 Abs. 1 Bst. a Ziff. 2 - Minimum comparison price duration
+pbv_vergleichspreis_mindestdauer_tage:
+  description: "Mindestdauer für zeitlich unbegrenzten Vergleichspreis (Tage)"
+  reference: "SR 942.211 Art. 16 Abs. 1 Bst. a Ziff. 2"
+  unit: day
+  values:
+    2025-01-01:
+      value: 30
+
+# Art. 16 Abs. 3 - Maximum comparison price display duration
+pbv_vergleichspreis_max_monate:
+  description: "Maximale Dauer der Bekanntgabe eines Vergleichspreises (Monate)"
+  reference: "SR 942.211 Art. 16 Abs. 3"
+  unit: month
+  values:
+    1999-11-01:
+      value: 2

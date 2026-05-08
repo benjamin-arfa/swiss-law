@@ -1,0 +1,72 @@
+description: "Parameters for SR 922.0 - JSG (Jagdgesetz / Hunting Act)"
+metadata:
+  reference: "SR 922.0"
+
+# Art. 16 Abs. 1 - Minimum insurance coverage for hunters
+jsg_versicherung_min_deckungssumme:
+  description: "Minimale Deckungssumme der Haftpflichtversicherung für Jäger (CHF)"
+  reference: "SR 922.0 Art. 16 Abs. 1"
+  unit: currency-CHF
+  values:
+    1988-04-01:
+      value: 1000000
+
+# Art. 18 Abs. 1 - Maximum fine for misdemeanors
+jsg_uebertretung_max_busse:
+  description: "Maximale Busse bei Übertretung (CHF)"
+  reference: "SR 922.0 Art. 18 Abs. 1"
+  unit: currency-CHF
+  values:
+    1988-04-01:
+      value: 20000
+
+# Art. 20 Abs. 1 - Revocation duration of hunting authorization
+jsg_entzug_min_dauer_jahre:
+  description: "Minimale Dauer des Entzugs der Jagdberechtigung (Jahre)"
+  reference: "SR 922.0 Art. 20 Abs. 1"
+  unit: year
+  values:
+    1988-04-01:
+      value: 1
+
+jsg_entzug_max_dauer_jahre:
+  description: "Maximale Dauer des Entzugs der Jagdberechtigung (Jahre)"
+  reference: "SR 922.0 Art. 20 Abs. 1"
+  unit: year
+  values:
+    1988-04-01:
+      value: 10
+
+# Art. 7a - Ibex regulation period
+jsg_steinbock_regulierung_beginn_monat:
+  description: "Beginn des Zeitraums für Steinbock-Regulierung (Monat)"
+  reference: "SR 922.0 Art. 7a Abs. 1 Bst. a"
+  unit: month
+  values:
+    2023-12-01:
+      value: 8
+
+jsg_steinbock_regulierung_ende_monat:
+  description: "Ende des Zeitraums für Steinbock-Regulierung (Monat)"
+  reference: "SR 922.0 Art. 7a Abs. 1 Bst. a"
+  unit: month
+  values:
+    2023-12-01:
+      value: 11
+
+# Art. 7a - Wolf regulation period
+jsg_wolf_regulierung_beginn_monat:
+  description: "Beginn des Zeitraums für Wolf-Regulierung (Monat)"
+  reference: "SR 922.0 Art. 7a Abs. 1 Bst. b"
+  unit: month
+  values:
+    2023-12-01:
+      value: 9
+
+jsg_wolf_regulierung_ende_monat:
+  description: "Ende des Zeitraums für Wolf-Regulierung (Monat)"
+  reference: "SR 922.0 Art. 7a Abs. 1 Bst. b"
+  unit: month
+  values:
+    2023-12-01:
+      value: 1

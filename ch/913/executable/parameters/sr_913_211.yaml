@@ -1,0 +1,43 @@
+sr_913_211:
+  schwelle_hauptzone_anteil:
+    description: "Schwelle: wenn mehr als dieser Anteil der Nutzfläche in einer Zone liegt, gilt deren Ansatz"
+    reference: "SR 913.211 Art. 4 Abs. 1 Bst. a"
+    unit: ratio
+    values:
+      2004-01-01:
+        value: 0.6667
+  max_entfernung_betriebszentrum_km:
+    description: "Maximale Entfernung zum Betriebszentrum für Anrechnung der Fläche (km)"
+    reference: "SR 913.211 Art. 4 Abs. 2"
+    unit: km
+    values:
+      2014-01-01:
+        value: 15
+  mindestdauer_vertrag_bei_beitraegen_jahre:
+    description: "Mindestdauer des Zusammenarbeitsvertrags bei Unterstützung mit Beiträgen (Jahre)"
+    reference: "SR 913.211 Art. 7 Abs. 1 Bst. d"
+    unit: years
+    values:
+      2004-01-01:
+        value: 20
+  min_teilzahlung_chf:
+    description: "Minimaler Auszahlungsbetrag pro Teilzahlung in CHF"
+    reference: "SR 913.211 Art. 7b Abs. 1"
+    unit: CHF
+    values:
+      2014-01-01:
+        value: 10000
+  max_teilzahlung_anteil:
+    description: "Maximaler Anteil des Gesamtbeitrages für Teilzahlung"
+    reference: "SR 913.211 Art. 7b Abs. 1"
+    unit: ratio
+    values:
+      2014-01-01:
+        value: 0.80
+  max_frist_schlusszahlung_jahre:
+    description: "Maximale Frist für Einreichung des Schlusszahlungsgesuchs in Jahren"
+    reference: "SR 913.211 Art. 7b Abs. 3"
+    unit: years
+    values:
+      2014-01-01:
+        value: 3

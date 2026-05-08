@@ -1,0 +1,8 @@
+sr_811_212:
+  max_ueberpruefungsintervall_jahre:
+    description: "Maximales Intervall in Jahren für die periodische Überprüfung der berufsspezifischen Kompetenzen"
+    reference: "SR 811.212 Art. 9 Abs. 3"
+    unit: years
+    values:
+      2020-02-01:
+        value: 10

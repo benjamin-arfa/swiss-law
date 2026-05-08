@@ -1,0 +1,8 @@
+sr_957_1:
+  max_tage_lieferanspruch:
+    description: "Maximale Anzahl Tage für frei verfügbare Lieferansprüche als verfügbare Bucheffekten"
+    reference: "SR 957.1 Art. 11 Abs. 3 Bst. c"
+    unit: days
+    values:
+      2010-01-01:
+        value: 8

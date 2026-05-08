@@ -1,0 +1,40 @@
+sr_956_1:
+  min_verwaltungsratsmitglieder:
+    description: "Mindestanzahl Verwaltungsratsmitglieder der FINMA"
+    reference: "SR 956.1 Art. 9 Abs. 2"
+    values:
+      2009-01-01:
+        value: 7
+  max_verwaltungsratsmitglieder:
+    description: "Höchstanzahl Verwaltungsratsmitglieder der FINMA"
+    reference: "SR 956.1 Art. 9 Abs. 2"
+    values:
+      2009-01-01:
+        value: 9
+  amtsdauer_verwaltungsrat_jahre:
+    description: "Amtsdauer eines Verwaltungsratsmitglieds in Jahren"
+    reference: "SR 956.1 Art. 9 Abs. 2"
+    unit: years
+    values:
+      2009-01-01:
+        value: 4
+  max_wiederwahlen:
+    description: "Maximale Anzahl Wiederwahlen eines VR-Mitglieds"
+    reference: "SR 956.1 Art. 9 Abs. 2"
+    values:
+      2009-01-01:
+        value: 2
+  max_berufsverbot_jahre:
+    description: "Maximale Dauer des Berufsverbots in Jahren"
+    reference: "SR 956.1 Art. 33 Abs. 2"
+    unit: years
+    values:
+      2009-01-01:
+        value: 5
+  verjaehrungsfrist_einziehung_jahre:
+    description: "Verjährungsfrist für das Recht zur Einziehung in Jahren"
+    reference: "SR 956.1 Art. 35 Abs. 4"
+    unit: years
+    values:
+      2009-01-01:
+        value: 7

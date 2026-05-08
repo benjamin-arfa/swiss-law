@@ -1,0 +1,29 @@
+sr_784_104:
+  sperrfrist_neuzuteilung_monate:
+    description: "Minimale Sperrfrist in Monaten vor Neuzuteilung erloschener Adressierungselemente"
+    reference: "SR 784.104 Art. 7 Abs. 2"
+    unit: months
+    values:
+      1997-10-06:
+        value: 6
+  vorlaufzeit_nummerierungsplan_monate:
+    description: "Mindest-Vorlaufzeit in Monaten für Benachrichtigung bei wichtigen Änderungen der Nummerierungspläne"
+    reference: "SR 784.104 Art. 2 Abs. 3"
+    unit: months
+    values:
+      1997-10-06:
+        value: 24
+  vorlaufzeit_verwaltungsvorschrift_monate:
+    description: "Mindest-Vorlaufzeit in Monaten für Benachrichtigung bei wichtigen Änderungen der Verwaltungsvorschriften"
+    reference: "SR 784.104 Art. 2 Abs. 3"
+    unit: months
+    values:
+      1997-10-06:
+        value: 6
+  kunden_informationsfrist_monate:
+    description: "Mindest-Vorlaufzeit in Monaten für Information der Kunden durch Nummernblock-Inhaberinnen"
+    reference: "SR 784.104 Art. 2 Abs. 6"
+    unit: months
+    values:
+      2000-05-01:
+        value: 6

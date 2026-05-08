@@ -1,0 +1,7 @@
+sr832_208:
+  praemienzuschlag_nichtberufsunfall:
+    description: "Prämienzuschlag für Verhütung von Nichtberufsunfällen"
+    reference: "SR 832.208 Art. 2"
+    values:
+      1994-01-01:
+        value: 0.0075

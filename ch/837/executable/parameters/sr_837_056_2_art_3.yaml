@@ -1,0 +1,20 @@
+sr837_056_2:
+  reisekosten:
+    motorwagen:
+      description: "Kilometersatz für Motorwagen (CHF/km)"
+      reference: "SR 837.056.2 Art. 3 lit. a"
+      values:
+        2003-07-01:
+          value: 0.50
+    motorrad:
+      description: "Kilometersatz für Motorräder (CHF/km)"
+      reference: "SR 837.056.2 Art. 3 lit. b"
+      values:
+        2003-07-01:
+          value: 0.25
+    motorfahrrad:
+      description: "Kilometersatz für Motorfahrräder (CHF/km)"
+      reference: "SR 837.056.2 Art. 3 lit. c"
+      values:
+        2003-07-01:
+          value: 0.10

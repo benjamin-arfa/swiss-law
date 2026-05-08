@@ -1,0 +1,20 @@
+sr837_056_2:
+  verpflegung:
+    fruehstueck:
+      description: "Vergütung für auswärtiges Frühstück am Kursort (CHF)"
+      reference: "SR 837.056.2 Art. 1 Abs. 1 lit. a"
+      values:
+        2003-07-01:
+          value: 5.0
+    hauptmahlzeit:
+      description: "Vergütung für auswärtige Hauptmahlzeit am Kursort (CHF)"
+      reference: "SR 837.056.2 Art. 1 Abs. 1 lit. b"
+      values:
+        2003-07-01:
+          value: 15.0
+    hauptmahlzeit_kantine:
+      description: "Vergütung für Hauptmahlzeit bei verfügbarer Betriebskantine (CHF)"
+      reference: "SR 837.056.2 Art. 1 Abs. 2"
+      values:
+        2003-07-01:
+          value: 10.0

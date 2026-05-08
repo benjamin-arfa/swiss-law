@@ -1,0 +1,13 @@
+sr832_106:
+  max_differenz_region_1_2:
+    description: "Maximale Prämiendifferenz zwischen Region 1 und Region 2"
+    reference: "SR 832.106 Art. 2 lit. a"
+    values:
+      2016-01-01:
+        value: 0.15
+  max_differenz_region_2_3:
+    description: "Maximale Prämiendifferenz zwischen Region 2 und Region 3"
+    reference: "SR 832.106 Art. 2 lit. b"
+    values:
+      2016-01-01:
+        value: 0.10

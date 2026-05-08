@@ -1,0 +1,20 @@
+sr837_056_2:
+  unterkunft:
+    monatspauschale:
+      description: "Monatliche Vergütung für Unterkunft am Kursort (CHF)"
+      reference: "SR 837.056.2 Art. 2 Abs. 1"
+      values:
+        2003-07-01:
+          value: 300.0
+    hotel_kostenanteil:
+      description: "Anteil der nachgewiesenen Hotelkosten, der vergütet wird"
+      reference: "SR 837.056.2 Art. 2 Abs. 2"
+      values:
+        2003-07-01:
+          value: 0.80
+    hotel_max_pro_nacht:
+      description: "Höchstbetrag der Vergütung pro Hotelübernachtung (CHF)"
+      reference: "SR 837.056.2 Art. 2 Abs. 2"
+      values:
+        2003-07-01:
+          value: 80.0

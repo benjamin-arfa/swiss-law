@@ -1,0 +1,50 @@
+sr832_208:
+  praemienzuschlag_berufsunfall_basis:
+    description: "Prämienzuschlag für Verhütung von Berufsunfällen (Basissatz)"
+    reference: "SR 832.208 Art. 1 Abs. 1"
+    values:
+      1984-01-01:
+        value: 0.065
+  staffelung:
+    stufe_unter_10:
+      description: "Zuschlagssatz bei Anteil nicht unterstellter Lohnsumme < 10%"
+      reference: "SR 832.208 Art. 1 Abs. 2"
+      values:
+        1984-01-01:
+          value: 0.065
+    stufe_ab_10:
+      description: "Zuschlagssatz bei Anteil nicht unterstellter Lohnsumme ab 10%"
+      reference: "SR 832.208 Art. 1 Abs. 2"
+      values:
+        1984-01-01:
+          value: 0.060
+    stufe_ab_26:
+      description: "Zuschlagssatz bei Anteil nicht unterstellter Lohnsumme ab 26%"
+      reference: "SR 832.208 Art. 1 Abs. 2"
+      values:
+        1984-01-01:
+          value: 0.055
+    stufe_ab_42:
+      description: "Zuschlagssatz bei Anteil nicht unterstellter Lohnsumme ab 42%"
+      reference: "SR 832.208 Art. 1 Abs. 2"
+      values:
+        1984-01-01:
+          value: 0.050
+    stufe_ab_58:
+      description: "Zuschlagssatz bei Anteil nicht unterstellter Lohnsumme ab 58%"
+      reference: "SR 832.208 Art. 1 Abs. 2"
+      values:
+        1984-01-01:
+          value: 0.045
+    stufe_ab_74:
+      description: "Zuschlagssatz bei Anteil nicht unterstellter Lohnsumme ab 74%"
+      reference: "SR 832.208 Art. 1 Abs. 2"
+      values:
+        1984-01-01:
+          value: 0.040
+    stufe_ab_90:
+      description: "Zuschlagssatz bei Anteil nicht unterstellter Lohnsumme ab 90%"
+      reference: "SR 832.208 Art. 1 Abs. 2"
+      values:
+        1984-01-01:
+          value: 0.035

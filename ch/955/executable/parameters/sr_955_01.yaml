@@ -1,0 +1,77 @@
+sr955_01:
+  berufmaessigkeit_bruttoerloes_schwelle:
+    description: "Schwelle Bruttoerloes fuer berufmaessige Taetigkeit (CHF/Jahr)"
+    reference: "SR 955.01 Art. 7 Abs. 1 lit. a"
+    values:
+      2016-01-01:
+        value: 50000.0
+
+  berufmaessigkeit_beziehungen_schwelle:
+    description: "Schwelle Anzahl Geschaeftsbeziehungen pro Jahr"
+    reference: "SR 955.01 Art. 7 Abs. 1 lit. b"
+    values:
+      2016-01-01:
+        value: 20
+
+  berufmaessigkeit_verfuegungsmacht_schwelle:
+    description: "Schwelle Verfuegungsmacht fremde Vermoegenswerte (CHF)"
+    reference: "SR 955.01 Art. 7 Abs. 1 lit. c"
+    values:
+      2016-01-01:
+        value: 5000000.0
+
+  berufmaessigkeit_transaktionsvolumen_schwelle:
+    description: "Schwelle Transaktionsvolumen pro Jahr (CHF)"
+    reference: "SR 955.01 Art. 7 Abs. 1 lit. d"
+    values:
+      2016-01-01:
+        value: 2000000.0
+
+  kredit_berufmaessigkeit_erloes:
+    description: "Schwelle Bruttoerloes Kreditgeschaeft (CHF/Jahr)"
+    reference: "SR 955.01 Art. 8 Abs. 1 lit. a"
+    values:
+      2016-01-01:
+        value: 250000.0
+
+  kredit_berufmaessigkeit_volumen:
+    description: "Schwelle Kreditvolumen fuer Berufmaessigkeit (CHF)"
+    reference: "SR 955.01 Art. 8 Abs. 1 lit. b"
+    values:
+      2016-01-01:
+        value: 5000000.0
+
+  bo_beteiligung_schwelle:
+    description: "Schwelle fuer wirtschaftliche Berechtigung (Prozent)"
+    reference: "SR 955.01 Art. 18 Abs. 2 lit. b Ziff. 1"
+    values:
+      2016-01-01:
+        value: 25.0
+
+  sro_anschluss_frist_monate:
+    description: "Frist fuer SRO-Anschlussgesuch bei Wechsel/Austritt (Monate)"
+    reference: "SR 955.01 Art. 11 Abs. 1 lit. b / Art. 12 Abs. 1"
+    values:
+      2016-01-01:
+        value: 2
+
+  dokumentation_aufbewahrungsfrist_jahre:
+    description: "Aufbewahrungsfrist fuer Haendler-Dokumentation (Jahre)"
+    reference: "SR 955.01 Art. 21 Abs. 4"
+    values:
+      2016-01-01:
+        value: 10
+
+  meldestelle_mitteilung_frist:
+    description: "Frist fuer Mitteilung Meldestelle nach Meldung (Arbeitstage)"
+    reference: "SR 955.01 Art. 12b Abs. 1 lit. a"
+    values:
+      2023-01-01:
+        value: 40
+
+  strafverfolgung_verfuegung_frist:
+    description: "Frist fuer Verfuegung Strafverfolgungsbehoerde (Arbeitstage)"
+    reference: "SR 955.01 Art. 12b Abs. 1"
+    values:
+      2023-01-01:
+        value: 5

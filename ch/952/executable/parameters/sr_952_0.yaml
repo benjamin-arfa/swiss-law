@@ -1,0 +1,56 @@
+sr952_0:
+  publikumseinlagen_schwelle:
+    description: "Schwelle fuer Publikumseinlagen Bank/Innovationsfoerderung (CHF)"
+    reference: "SR 952.0 Art. 1a/1b"
+    values:
+      2019-01-01:
+        value: 100000000.0
+
+  meldung_frist_tage:
+    description: "Frist fuer Meldung an FINMA bei Schwellenueberschreitung (Tage)"
+    reference: "SR 952.0 Art. 1b Abs. 6"
+    values:
+      2019-01-01:
+        value: 10
+
+  bewilligungsgesuch_frist_tage:
+    description: "Frist fuer Bewilligungsgesuch bei Schwellenueberschreitung (Tage)"
+    reference: "SR 952.0 Art. 1b Abs. 6"
+    values:
+      2019-01-01:
+        value: 90
+
+  qualifizierte_beteiligung_schwelle:
+    description: "Schwelle fuer qualifizierte Beteiligung (Prozent)"
+    reference: "SR 952.0 Art. 3 Abs. 2 lit. cbis"
+    values:
+      1995-02-01:
+        value: 10.0
+
+  kantonalbank_min_beteiligung:
+    description: "Mindestbeteiligung des Kantons fuer Kantonalbank-Status (Prozent, >1/3)"
+    reference: "SR 952.0 Art. 3a"
+    values:
+      1999-10-01:
+        value: 33.33
+
+  max_beteiligung_einzeln:
+    description: "Max. Beteiligung an einzelnem Nicht-Finanzunternehmen (Anteil Eigenmittel)"
+    reference: "SR 952.0 Art. 4 Abs. 4"
+    values:
+      2005-01-01:
+        value: 0.15
+
+  max_beteiligungen_gesamt:
+    description: "Max. Gesamtbeteiligungen an Nicht-Finanzunternehmen (Anteil Eigenmittel)"
+    reference: "SR 952.0 Art. 4 Abs. 4"
+    values:
+      2005-01-01:
+        value: 0.60
+
+  privilegierte_einlage_max:
+    description: "Maximale privilegierte Einlage pro Einleger und Bank (CHF)"
+    reference: "SR 952.0 Art. 37a"
+    values:
+      2005-01-01:
+        value: 100000.0

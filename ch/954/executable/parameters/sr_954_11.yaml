@@ -1,0 +1,84 @@
+sr954_11:
+  vv_gewerbsmaessigkeit_ertrag:
+    description: "Schwelle Bruttoertrag fuer Gewerbsmaessigkeit VV/Trustee (CHF/Jahr)"
+    reference: "SR 954.11 Art. 19 Abs. 1 lit. a"
+    values:
+      2020-01-01:
+        value: 50000.0
+
+  vv_gewerbsmaessigkeit_beziehungen:
+    description: "Schwelle Anzahl Geschaeftsbeziehungen pro Jahr"
+    reference: "SR 954.11 Art. 19 Abs. 1 lit. b"
+    values:
+      2020-01-01:
+        value: 20
+
+  vv_gewerbsmaessigkeit_verfuegungsmacht:
+    description: "Schwelle Verfuegungsmacht fremde Vermoegenswerte (CHF)"
+    reference: "SR 954.11 Art. 19 Abs. 1 lit. c"
+    values:
+      2020-01-01:
+        value: 5000000.0
+
+  gf_min_berufserfahrung_jahre:
+    description: "Mindest-Berufserfahrung qualifizierter Geschaeftsfuehrer (Jahre)"
+    reference: "SR 954.11 Art. 25 Abs. 1 lit. a"
+    values:
+      2020-01-01:
+        value: 5
+
+  gf_min_ausbildung_stunden:
+    description: "Mindest-Ausbildung qualifizierter Geschaeftsfuehrer (Stunden)"
+    reference: "SR 954.11 Art. 25 Abs. 1 lit. b"
+    values:
+      2020-01-01:
+        value: 40
+
+  oberleitungsorgan_min_vollzeitstellen:
+    description: "Schwelle Vollzeitstellen fuer Oberleitungsorgan-Pflicht"
+    reference: "SR 954.11 Art. 23 Abs. 3"
+    values:
+      2020-01-01:
+        value: 10
+
+  oberleitungsorgan_min_ertrag:
+    description: "Schwelle Bruttoertrag fuer Oberleitungsorgan-Pflicht (CHF)"
+    reference: "SR 954.11 Art. 23 Abs. 3"
+    values:
+      2020-01-01:
+        value: 5000000.0
+
+  risiko_unabhaengigkeit_max_stellen:
+    description: "Max. Vollzeitstellen fuer Befreiung Risikomanagement-Unabhaengigkeit"
+    reference: "SR 954.11 Art. 26 Abs. 2 lit. a"
+    values:
+      2020-01-01:
+        value: 5
+
+  risiko_unabhaengigkeit_max_ertrag:
+    description: "Max. Bruttoertrag fuer Befreiung Risikomanagement-Unabhaengigkeit (CHF)"
+    reference: "SR 954.11 Art. 26 Abs. 2 lit. a"
+    values:
+      2020-01-01:
+        value: 2000000.0
+
+  interne_revision_min_ertrag:
+    description: "Schwelle Bruttoertrag fuer interne Revision (CHF)"
+    reference: "SR 954.11 Art. 26 Abs. 4"
+    values:
+      2020-01-01:
+        value: 10000000.0
+
+  qualifizierte_beteiligung_schwelle:
+    description: "Schwelle fuer qualifizierte Beteiligung (Prozent)"
+    reference: "SR 954.11 Art. 13 Abs. 5"
+    values:
+      2020-01-01:
+        value: 10.0
+
+  wph_meldepflicht_frist_tage:
+    description: "Frist Meldung qualifizierter Beteiligungen Wertpapierhaeuser (Tage)"
+    reference: "SR 954.11 Art. 13 Abs. 4"
+    values:
+      2020-01-01:
+        value: 60

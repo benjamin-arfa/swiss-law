@@ -1,0 +1,21 @@
+sr950_1:
+  opting_out_vermoegen_hoch:
+    description: "Vermoegensschwelle fuer Opting-out ohne Kenntnisnachweis (CHF)"
+    reference: "SR 950.1 Art. 5 Abs. 1"
+    values:
+      2020-01-01:
+        value: 2000000.0
+
+  opting_out_vermoegen_niedrig:
+    description: "Vermoegensschwelle fuer Opting-out mit Kenntnisnachweis (CHF)"
+    reference: "SR 950.1 Art. 5 Abs. 1"
+    values:
+      2020-01-01:
+        value: 500000.0
+
+  dokumentation_aufbewahrung_jahre:
+    description: "Aufbewahrungsfrist fuer Dokumentation nach Geschaeftsende (Jahre)"
+    reference: "SR 950.1 Art. 15"
+    values:
+      2020-01-01:
+        value: 10

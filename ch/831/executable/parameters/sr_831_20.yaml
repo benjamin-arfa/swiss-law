@@ -1,0 +1,92 @@
+description: "Parameters for SR 831.20 - IVG (Federal Disability Insurance Act)"
+metadata:
+  reference: "SR 831.20"
+
+iv:
+  beitragssatz_erwerbstaetige:
+    description: "IV contribution rate on employment income"
+    reference: "SR 831.20 Art. 3 Abs. 1"
+    unit: rate
+    values:
+      2011-01-01:
+        value: 0.014
+
+  mindestbeitrag_nichterwerbstaetige_obligatorisch:
+    description: "Minimum IV contribution for non-employed obligatorily insured (CHF/year)"
+    reference: "SR 831.20 Art. 3 Abs. 1bis"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 70
+
+  mindestbeitrag_nichterwerbstaetige_freiwillig:
+    description: "Minimum IV contribution for non-employed voluntarily insured (CHF/year)"
+    reference: "SR 831.20 Art. 3 Abs. 1bis"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 140
+
+  mindest_invaliditaetsgrad_rente:
+    description: "Minimum degree of disability for pension entitlement (%)"
+    reference: "SR 831.20 Art. 28 Abs. 1 Bst. c"
+    unit: percent
+    values:
+      2008-01-01:
+        value: 40
+
+  wartefrist_rente_monate:
+    description: "Waiting period before pension entitlement arises (months)"
+    reference: "SR 831.20 Art. 29 Abs. 1"
+    unit: months
+    values:
+      2008-01-01:
+        value: 6
+
+  mindest_alter_rente:
+    description: "Minimum age for pension entitlement (years)"
+    reference: "SR 831.20 Art. 29 Abs. 1"
+    unit: years
+    values:
+      2008-01-01:
+        value: 18
+
+  mindest_beitragsjahre_ordentliche_rente:
+    description: "Minimum contribution years for ordinary pension"
+    reference: "SR 831.20 Art. 36 Abs. 1"
+    unit: years
+    values:
+      2008-01-01:
+        value: 3
+
+  hilflosenentschaedigung_schwer:
+    description: "Helplessness allowance rate for severe helplessness (fraction of max AHV pension)"
+    reference: "SR 831.20 Art. 42ter Abs. 1"
+    unit: rate
+    values:
+      2004-01-01:
+        value: 0.80
+
+  hilflosenentschaedigung_mittel:
+    description: "Helplessness allowance rate for moderate helplessness"
+    reference: "SR 831.20 Art. 42ter Abs. 1"
+    unit: rate
+    values:
+      2004-01-01:
+        value: 0.50
+
+  hilflosenentschaedigung_leicht:
+    description: "Helplessness allowance rate for mild helplessness"
+    reference: "SR 831.20 Art. 42ter Abs. 1"
+    unit: rate
+    values:
+      2004-01-01:
+        value: 0.20
+
+  heim_reduktion_minderjaehrige:
+    description: "Reduction factor for minors in care institutions"
+    reference: "SR 831.20 Art. 42ter Abs. 2"
+    unit: rate
+    values:
+      2004-01-01:
+        value: 0.25

@@ -1,0 +1,60 @@
+description: "Parameters for SR 830.11 - ATSV (Social Insurance General Part Ordinance)"
+metadata:
+  reference: "SR 830.11"
+
+atsv:
+  verzugszins_satz:
+    description: "Default interest rate on social insurance benefits (per year)"
+    reference: "SR 830.11 Art. 7 Abs. 1"
+    unit: rate
+    values:
+      2003-01-01:
+        value: 0.05
+
+  zusaetzliche_ausgabe_alleinstehende:
+    description: "Additional expense allowance for single persons in hardship calculation (CHF)"
+    reference: "SR 830.11 Art. 5 Abs. 4 Bst. a"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 8000
+
+  zusaetzliche_ausgabe_ehepaare:
+    description: "Additional expense allowance for married couples in hardship calculation (CHF)"
+    reference: "SR 830.11 Art. 5 Abs. 4 Bst. b"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 12000
+
+  zusaetzliche_ausgabe_pro_kind:
+    description: "Additional expense allowance per eligible child in hardship calculation (CHF)"
+    reference: "SR 830.11 Art. 5 Abs. 4 Bst. c"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 4000
+
+  persoenliche_auslagen_heim:
+    description: "Annual personal expense allowance for persons in homes/hospitals (CHF)"
+    reference: "SR 830.11 Art. 5 Abs. 2 Bst. b"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 4800
+
+  vermoegensverzehr_heim:
+    description: "Property consumption rate for persons in homes/hospitals (fraction)"
+    reference: "SR 830.11 Art. 5 Abs. 3"
+    unit: rate
+    values:
+      2008-01-01:
+        value: 0.0667  # 1/15
+
+  vermoegensverzehr_altersrentner_heim:
+    description: "Property consumption rate for elderly pensioners in homes (fraction)"
+    reference: "SR 830.11 Art. 5 Abs. 3"
+    unit: rate
+    values:
+      2008-01-01:
+        value: 0.10  # 1/10

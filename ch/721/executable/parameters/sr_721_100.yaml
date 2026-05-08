@@ -1,0 +1,51 @@
+description: "Parameters for SR 721.100 - WBG (Wasserbaugesetz / Water Engineering Act)"
+metadata:
+  reference: "SR 721.100"
+
+abgeltung_grundlagen_satz:
+  description: "Federal contribution rate for data acquisition (Grundlagenbeschaffung)"
+  reference: "SR 721.100 Art. 6 Abs. 5"
+  unit: rate
+  values:
+    2025-08-01:
+      value: 0.50
+
+abgeltung_massnahmen_satz:
+  description: "Federal contribution rate for flood protection measures"
+  reference: "SR 721.100 Art. 6 Abs. 5"
+  unit: rate
+  values:
+    2025-08-01:
+      value: 0.35
+
+abgeltung_mehrleistung_zuschlag:
+  description: "Maximum additional contribution for extra performance (Mehrleistungen)"
+  reference: "SR 721.100 Art. 6 Abs. 6 Bst. a"
+  unit: rate
+  values:
+    2025-08-01:
+      value: 0.10
+
+abgeltung_ausserordentlich_zuschlag:
+  description: "Maximum additional contribution for extraordinary natural hazard burden"
+  reference: "SR 721.100 Art. 6 Abs. 6 Bst. b"
+  unit: rate
+  values:
+    2025-08-01:
+      value: 0.20
+
+finanzhilfe_max_satz:
+  description: "Maximum financial aid rate for training, research, and public information"
+  reference: "SR 721.100 Art. 7 Abs. 3"
+  unit: rate
+  values:
+    2025-08-01:
+      value: 0.45
+
+verpflichtungskredit_dauer_jahre:
+  description: "Duration of commitment credit cycle for regular promotion measures (years)"
+  reference: "SR 721.100 Art. 10 Abs. 1"
+  unit: years
+  values:
+    2008-01-01:
+      value: 4

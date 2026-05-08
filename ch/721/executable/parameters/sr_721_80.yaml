@@ -1,0 +1,109 @@
+description: "Parameters for SR 721.80 - WRG (Wasserrechtsgesetz / Water Rights Act)"
+metadata:
+  reference: "SR 721.80"
+
+steuerausfall_entschaedigung_pro_kw:
+  description: "Tax compensation per kW gross capacity for federal use of water power (CHF/kW/year)"
+  reference: "SR 721.80 Art. 14 Abs. 1"
+  unit: CHF
+  values:
+    1997-05-01:
+      value: 11
+
+wasserzins_maximum_pro_kw:
+  description: "Maximum water rate (Wasserzins) per kW gross capacity (CHF/kW/year)"
+  reference: "SR 721.80 Art. 49 Abs. 1"
+  unit: CHF
+  values:
+    1997-05-01:
+      value: 80
+    2015-01-01:
+      value: 110
+
+wasserzins_bundesanteil_pro_kw:
+  description: "Maximum federal share of Wasserzins for compensation fund (CHF/kW/year)"
+  reference: "SR 721.80 Art. 49 Abs. 1"
+  unit: CHF
+  values:
+    1997-05-01:
+      value: 1
+
+wasserzins_befreiung_schwelle_mw:
+  description: "Gross capacity threshold below which no Wasserzins is due (MW)"
+  reference: "SR 721.80 Art. 49 Abs. 4"
+  unit: MW
+  values:
+    1997-05-01:
+      value: 1
+
+wasserzins_linear_obergrenze_mw:
+  description: "Upper bound of linear ramp-up range for Wasserzins (MW)"
+  reference: "SR 721.80 Art. 49 Abs. 4"
+  unit: MW
+  values:
+    1997-05-01:
+      value: 2
+
+wasserzins_baufrist_ermaessigung_jahre:
+  description: "Years after construction during which reduced Wasserzins can be requested"
+  reference: "SR 721.80 Art. 50 Abs. 2"
+  unit: years
+  values:
+    1917-01-01:
+      value: 6
+
+wasserzins_baufrist_ermaessigung_faktor:
+  description: "Minimum factor of Wasserzins during ramp-up period (at least half)"
+  reference: "SR 721.80 Art. 50 Abs. 2"
+  unit: rate
+  values:
+    1917-01-01:
+      value: 0.5
+
+investitionsbeitrag_befreiung_neuanlage_jahre:
+  description: "Years of Wasserzins exemption for new plants with investment subsidy (from commissioning)"
+  reference: "SR 721.80 Art. 50a Abs. 1 Bst. a"
+  unit: years
+  values:
+    2020-01-01:
+      value: 10
+
+investitionsbeitrag_befreiung_erweiterung_jahre:
+  description: "Years of Wasserzins exemption on additional capacity for expanded/renewed plants with investment subsidy"
+  reference: "SR 721.80 Art. 50a Abs. 1 Bst. b"
+  unit: years
+  values:
+    2020-01-01:
+      value: 10
+
+konzession_maximaldauer_jahre:
+  description: "Maximum concession duration in years from start of operations"
+  reference: "SR 721.80 Art. 58"
+  unit: years
+  values:
+    1997-05-01:
+      value: 80
+
+konzession_erneuerung_gesuchsfrist_jahre:
+  description: "Years before concession expiry by which renewal must be requested"
+  reference: "SR 721.80 Art. 58a Abs. 2"
+  unit: years
+  values:
+    1997-05-01:
+      value: 15
+
+konzession_erneuerung_entscheid_frist_jahre:
+  description: "Years before concession expiry by which authorities must decide on renewal"
+  reference: "SR 721.80 Art. 58a Abs. 2"
+  unit: years
+  values:
+    1997-05-01:
+      value: 10
+
+restwasser_uebergangsfrist_jahre:
+  description: "Years after concession expiry for full residual water requirements to apply"
+  reference: "SR 721.80 Art. 58a Abs. 3"
+  unit: years
+  values:
+    1997-05-01:
+      value: 5

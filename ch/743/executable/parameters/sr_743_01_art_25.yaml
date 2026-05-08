@@ -1,0 +1,14 @@
+description: "SR 743.01 Art. 25 - Strafmasse fuer Vergehen"
+parameters:
+  seilbahn_vergehen_vorsaetzlich_max_freiheitsstrafe_jahre:
+    values:
+      2007-01-01:
+        value: 3
+    unit: years
+    label: "Hoechststrafe Freiheitsstrafe bei Vorsatz"
+  seilbahn_vergehen_fahrlaessig_max_tagessaetze:
+    values:
+      2007-01-01:
+        value: 180
+    unit: daily_fines
+    label: "Hoechststrafe Geldstrafe bei Fahrlaessigkeit"

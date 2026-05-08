@@ -1,0 +1,14 @@
+description: "SR 743.01 Art. 12 - Fristen fuer Anhoerung und Auflage"
+parameters:
+  seilbahn_kantonale_stellungnahmefrist_monate:
+    values:
+      2007-01-01:
+        value: 3
+    unit: months
+    label: "Frist fuer kantonale Stellungnahme"
+  seilbahn_oeffentliche_auflagefrist_tage:
+    values:
+      2007-01-01:
+        value: 30
+    unit: days
+    label: "Frist fuer oeffentliche Auflage"

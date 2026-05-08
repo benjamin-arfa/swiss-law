@@ -1,0 +1,14 @@
+description: "SR 743.01 Art. 15 - Vereinfachtes Verfahren"
+parameters:
+  seilbahn_temporaer_max_dauer_jahre:
+    values:
+      2007-01-01:
+        value: 3
+    unit: years
+    label: "Maximale Betriebsdauer fuer temporaere Seilbahnen im vereinfachten Verfahren"
+  seilbahn_einsprachefrist_vereinfacht_tage:
+    values:
+      2007-01-01:
+        value: 30
+    unit: days
+    label: "Einsprachefrist im vereinfachten Verfahren"

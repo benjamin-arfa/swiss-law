@@ -1,0 +1,6 @@
+```yml
+parameters:
+  ag_anwaltsmonopol:
+    description: "Parteivertretung im Monopolbereich nur fuer registrierte Anwaelte oder BGFA-Freizuegigkeit"
+    reference: "AG 290.100 § 2"
+```

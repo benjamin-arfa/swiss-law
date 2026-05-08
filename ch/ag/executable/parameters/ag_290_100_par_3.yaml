@@ -1,0 +1,6 @@
+```yml
+parameters:
+  ag_substitution:
+    description: "Substitution durch Anwaltskandidaten unter Verantwortung eines registrierten Anwalts"
+    reference: "AG 290.100 § 3"
+```

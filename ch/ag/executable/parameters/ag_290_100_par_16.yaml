@@ -1,0 +1,7 @@
+```yml
+parameters:
+  ag_anwaltspruefung_max_versuche:
+    value: 3
+    label: "Maximale Anzahl Pruefungsversuche"
+    reference: "AG 290.100 § 16 Abs. 3"
+```

@@ -1,0 +1,19 @@
+```yml
+parameters:
+  ag_anwaltskommission_amtsdauer_jahre:
+    value: 4
+    label: "Amtsdauer der Anwaltskommission in Jahren"
+    reference: "AG 290.100 § 6 Abs. 1bis"
+  ag_anwaltskommission_oberrichter:
+    value: 2
+    label: "Anzahl Oberrichter in der Anwaltskommission"
+    reference: "AG 290.100 § 6 Abs. 2"
+  ag_anwaltskommission_anwaelte:
+    value: 2
+    label: "Anzahl eingetragene Anwaelte in der Anwaltskommission"
+    reference: "AG 290.100 § 6 Abs. 2"
+  ag_anwaltskommission_weitere:
+    value: 1
+    label: "Weitere Personen mit Faehigkeitsausweis"
+    reference: "AG 290.100 § 6 Abs. 2"
+```

@@ -1,0 +1,7 @@
+```yml
+parameters:
+  ag_titelschutz_max_busse_chf:
+    value: 20000
+    label: "Maximalbusse fuer Titelschutzverletzung in CHF"
+    reference: "AG 290.100 § 17 Abs. 1"
+```

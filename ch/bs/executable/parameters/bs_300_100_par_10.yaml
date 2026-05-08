@@ -1,0 +1,11 @@
+```yml
+parameters:
+  bs_beitrag_pflege_zu_hause:
+    description: "Finanzielle Beitraege fuer dauernd pflegebeduertige Personen mit Wohnsitz BS, die durch Angehoerige oder Dritte gepflegt werden"
+    reference: "BS 300.100 § 10"
+    voraussetzungen:
+      - wohnsitz_bs
+      - dauernd_pflegebeduertig
+      - pflege_durch_angehoerige_oder_dritte
+      - bedeutender_pflege_und_betreuungsaufwand
+```

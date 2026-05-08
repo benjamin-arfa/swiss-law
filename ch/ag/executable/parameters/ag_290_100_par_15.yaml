@@ -1,0 +1,11 @@
+```yml
+parameters:
+  ag_zulassung_anwaltspruefung:
+    description: "Kumulative Voraussetzungen fuer Zulassung zur Anwaltspruefung"
+    reference: "AG 290.100 § 15"
+    voraussetzungen:
+      - handlungsfaehig
+      - keine_unvereinbare_strafregistereintraege
+      - rechtsstudium_abgeschlossen
+      - hinreichend_praktisch_taetig
+```

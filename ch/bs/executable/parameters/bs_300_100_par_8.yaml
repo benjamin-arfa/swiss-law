@@ -1,0 +1,6 @@
+```yml
+parameters:
+  bs_pflegeheim:
+    description: "Kantonale Beitraege an Pflegekosten und Aufnahmepflicht fuer Pflegeheime auf der Liste"
+    reference: "BS 300.100 § 8"
+```

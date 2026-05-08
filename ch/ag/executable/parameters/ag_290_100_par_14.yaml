@@ -1,0 +1,6 @@
+```yml
+parameters:
+  ag_disziplinar_kostentragung:
+    description: "Kostentragung im Disziplinarverfahren: anzeigende Person (mutwillig), Anwalt (bestraft/schuldhaft), oder Staat"
+    reference: "AG 290.100 § 14"
+```

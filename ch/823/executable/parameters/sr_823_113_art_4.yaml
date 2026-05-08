@@ -1,0 +1,50 @@
+sr_823_113:
+  provision_gruppen_cabaret:
+    description: "Provisionssatz für Gruppen, Orchester und Cabaret-Tänzerinnen"
+    reference: "SR 823.113 Art. 4 Abs. 1 Bst. a/b"
+    unit: /1
+    values:
+      1999-12-01:
+        value: 0.08
+  provision_solo_kuenstler:
+    description: "Provisionssatz für Alleinmusiker, Alleinunterhalter, Artisten, Schauspieler"
+    reference: "SR 823.113 Art. 4 Abs. 1 Bst. c"
+    unit: /1
+    values:
+      1999-12-01:
+        value: 0.10
+  provision_jahresgage_cap:
+    description: "Maximaler Anteil der Brutto-Gage des ersten Jahresengagements"
+    reference: "SR 823.113 Art. 4 Abs. 2"
+    unit: /1
+    values:
+      1999-12-01:
+        value: 0.05
+  kurzengagement_schwelle_tage:
+    description: "Schwelle in Arbeitstagen für Kurzengagement"
+    reference: "SR 823.113 Art. 4 Abs. 3"
+    unit: days
+    values:
+      1999-12-01:
+        value: 6
+  kurzengagement_zuschlag:
+    description: "Maximaler Zuschlag bei Kurzengagement (Viertel = 25%)"
+    reference: "SR 823.113 Art. 4 Abs. 3"
+    unit: /1
+    values:
+      1999-12-01:
+        value: 0.25
+  provision_minimum:
+    description: "Mindestprovision pro Vermittlung bei Kurzengagement"
+    reference: "SR 823.113 Art. 4 Abs. 3"
+    unit: CHF
+    values:
+      1999-12-01:
+        value: 80
+  ausland_zuschlag_max:
+    description: "Maximaler Zuschlag bei Auslandvermittlung"
+    reference: "SR 823.113 Art. 4 Abs. 4"
+    unit: /1
+    values:
+      1999-12-01:
+        value: 0.50

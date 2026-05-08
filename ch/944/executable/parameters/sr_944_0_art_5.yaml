@@ -1,0 +1,8 @@
+sr_944_0:
+  finanzhilfe_max_anteil:
+    description: "Maximaler Anteil der anrechenbaren Kosten als Finanzhilfe"
+    reference: "SR 944.0 Art. 5 Abs. 1"
+    unit: /1
+    values:
+      1992-05-01:
+        value: 0.50

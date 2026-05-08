@@ -1,0 +1,8 @@
+sr_823_113:
+  einschreibgebuehr_max:
+    description: "Maximale Einschreibgebühr für Stellensuchende"
+    reference: "SR 823.113 Art. 2 Abs. 1"
+    unit: CHF
+    values:
+      2014-01-01:
+        value: 45

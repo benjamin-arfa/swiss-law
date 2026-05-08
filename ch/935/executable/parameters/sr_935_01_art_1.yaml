@@ -1,0 +1,8 @@
+sr_935_01:
+  max_arbeitstage_pro_jahr:
+    description: "Maximale Anzahl Arbeitstage pro Kalenderjahr für Dienstleistungserbringer"
+    reference: "SR 935.01 Art. 1 Abs. 2 Bst. b"
+    unit: days
+    values:
+      2013-09-01:
+        value: 90

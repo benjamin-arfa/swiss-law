@@ -1,0 +1,22 @@
+sr_823_113:
+  modell_kurzeinsatz_schwelle:
+    description: "Schwelle in Arbeitstagen für Kurzeinsatz bei Fotomodellen/Mannequins"
+    reference: "SR 823.113 Art. 5"
+    unit: days
+    values:
+      1991-07-01:
+        value: 6
+  provision_modell_kurz:
+    description: "Provisionssatz bei Einsätzen unter 6 Arbeitstagen"
+    reference: "SR 823.113 Art. 5 Bst. a"
+    unit: /1
+    values:
+      1991-07-01:
+        value: 0.12
+  provision_modell_lang:
+    description: "Provisionssatz bei länger dauernden Einsätzen"
+    reference: "SR 823.113 Art. 5 Bst. b"
+    unit: /1
+    values:
+      1991-07-01:
+        value: 0.10

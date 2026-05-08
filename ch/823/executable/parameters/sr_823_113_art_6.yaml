@@ -1,0 +1,36 @@
+sr_823_113:
+  kaution_basis:
+    description: "Grundkaution pro Verleiher"
+    reference: "SR 823.113 Art. 6 Abs. 1"
+    unit: CHF
+    values:
+      1991-07-01:
+        value: 50000
+  kaution_stunden_schwelle:
+    description: "Schwelle der Einsatzstunden für erhöhte Kaution"
+    reference: "SR 823.113 Art. 6 Abs. 2"
+    unit: hours
+    values:
+      1991-07-01:
+        value: 60000
+  kaution_hoch:
+    description: "Erhöhte Kaution bei mehr als 60'000 Einsatzstunden"
+    reference: "SR 823.113 Art. 6 Abs. 2"
+    unit: CHF
+    values:
+      1991-07-01:
+        value: 100000
+  kaution_ausland_zuschlag:
+    description: "Zusätzliche Kaution bei Auslandsverleih"
+    reference: "SR 823.113 Art. 6 Abs. 3"
+    unit: CHF
+    values:
+      1991-07-01:
+        value: 50000
+  kaution_max:
+    description: "Höchstkaution für Hauptsitz inkl. Zweigniederlassungen"
+    reference: "SR 823.113 Art. 6 Abs. 4"
+    unit: CHF
+    values:
+      1991-07-01:
+        value: 1000000

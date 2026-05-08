@@ -1,0 +1,8 @@
+sr_944_0:
+  busse_fahrlaessig_max:
+    description: "Maximale Busse bei fahrlässigem Handeln"
+    reference: "SR 944.0 Art. 11 Abs. 2"
+    unit: CHF
+    values:
+      1992-05-01:
+        value: 2000

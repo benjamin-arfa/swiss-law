@@ -1,0 +1,29 @@
+sr_823_113:
+  bewilligungsgebuehr_min:
+    description: "Minimale Bewilligungsgebühr für Arbeitsvermittlungsstellen"
+    reference: "SR 823.113 Art. 1 Abs. 1"
+    unit: CHF
+    values:
+      2014-01-01:
+        value: 750
+  bewilligungsgebuehr_max:
+    description: "Maximale Bewilligungsgebühr für Arbeitsvermittlungsstellen"
+    reference: "SR 823.113 Art. 1 Abs. 1"
+    unit: CHF
+    values:
+      2014-01-01:
+        value: 1650
+  aenderungsgebuehr_min:
+    description: "Minimale Gebühr bei Änderungen der Bewilligung"
+    reference: "SR 823.113 Art. 1 Abs. 2"
+    unit: CHF
+    values:
+      2014-01-01:
+        value: 220
+  aenderungsgebuehr_max:
+    description: "Maximale Gebühr bei Änderungen der Bewilligung"
+    reference: "SR 823.113 Art. 1 Abs. 2"
+    unit: CHF
+    values:
+      2014-01-01:
+        value: 850

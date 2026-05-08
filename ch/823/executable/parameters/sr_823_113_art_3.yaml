@@ -1,0 +1,8 @@
+sr_823_113:
+  vermittlungsprovision_max_prozent:
+    description: "Maximaler Provisionssatz für Stellensuchende"
+    reference: "SR 823.113 Art. 3 Abs. 1"
+    unit: /1
+    values:
+      1999-12-01:
+        value: 0.05

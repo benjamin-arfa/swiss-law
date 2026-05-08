@@ -1,0 +1,6 @@
+description: Anforderungen an die Ernteversicherung (SR 918.1 Art. 4)
+values:
+  2025-01-01:
+    mindest_selbstbehalt_anteil: 0.15
+    versicherungszweig: B9
+reference: SR 918.1 Art. 4

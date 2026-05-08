@@ -1,0 +1,6 @@
+description: Gebuehren fuer Verwaltungskosten (SR 981.1 Art. 9)
+values:
+  1981-01-01:
+    mindestgebuehr_prozent: 0.01
+    hoechstgebuehr_prozent: 0.05
+reference: SR 981.1 Art. 9

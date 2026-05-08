@@ -1,0 +1,7 @@
+description: Auszahlung der Beitraege (SR 918.1 Art. 9)
+values:
+  2025-01-01:
+    akontozahlung_anteil: 0.75
+    akontozahlung_frist: "31. August"
+    restbetrag_frist: "30. November"
+reference: SR 918.1 Art. 9

@@ -1,0 +1,6 @@
+description: Verlagerungsziel fuer alpenquerenden Gueterschwerkehr (SR 740.1 Art. 3)
+values:
+  2010-01-01:
+    verlagerungsziel_fahrten_pro_jahr: 650000
+    zwischenziel_fahrten_pro_jahr: 1000000
+reference: SR 740.1 Art. 3

@@ -1,0 +1,9 @@
+description: Befristete Erhoehung der Gesamttransitabgabe (SR 740.1 Art. 5)
+values:
+  2010-01-01:
+    maximale_erhoehung_prozent: 0.125
+    schwelle_kapazitaetsauslastung: 0.66
+    mindestanzahl_wochen_unter_schwelle: 10
+    gueltigkeitsdauer_monate: 6
+    maximale_verlaengerung_monate: 6
+reference: SR 740.1 Art. 5

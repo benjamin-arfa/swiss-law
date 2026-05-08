@@ -1,0 +1,8 @@
+description: Beitragssatz fuer Praemienverbilligung Ernteversicherung (SR 918.1 Art. 2)
+values:
+  2025-01-01:
+    beitragssatz_praemienverbilligung: 0.30
+    risiken:
+      - trockenheit
+      - frost
+reference: SR 918.1 Art. 2

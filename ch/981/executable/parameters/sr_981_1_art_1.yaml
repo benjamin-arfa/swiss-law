@@ -1,0 +1,8 @@
+description: Zusammensetzung der Kommission fuer auslaendische Entschaedigungen (SR 981.1 Art. 1)
+values:
+  1981-01-01:
+    mindestanzahl_mitglieder: 5
+    hoechstanzahl_mitglieder: 15
+    amtsdauer_jahre: 4
+    mindestanwesende_beschlussfaehigkeit: 3
+reference: SR 981.1 Art. 1

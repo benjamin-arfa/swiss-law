@@ -1,0 +1,7 @@
+sr958_2:
+  max_vorlaeufige_bewilligung_monate:
+    description: "Maximum duration of provisional authorization in months"
+    reference: "SR 958.2 Art. 4 al. 1"
+    values:
+      2019-01-01:
+        value: 12

@@ -1,0 +1,43 @@
+description: "SR 961.011.1 OS-FINMA — FINMA Insurance Supervision Ordinance parameters"
+
+taux_supplement_vie:
+  description: "Tied assets supplement rate for life insurance"
+  reference: "SR 961.011.1 Art. 1 al. 1 let. a"
+  values:
+    2006-01-01:
+      value: 0.01
+
+taux_supplement_dommages:
+  description: "Tied assets supplement rate for non-life insurance"
+  reference: "SR 961.011.1 Art. 1 al. 1 let. b"
+  values:
+    2006-01-01:
+      value: 0.04
+
+minimum_supplement_dommages:
+  description: "Minimum tied assets supplement for non-life insurance (CHF)"
+  reference: "SR 961.011.1 Art. 1 al. 1 let. b"
+  values:
+    2006-01-01:
+      value: 100000.0
+
+taux_reserve_vie:
+  description: "Minimum attribution to legal reserves for life insurers (fraction of profit)"
+  reference: "SR 961.011.1 Art. 5"
+  values:
+    2006-01-01:
+      value: 0.10
+
+taux_reserve_autres:
+  description: "Minimum attribution to legal reserves for non-life insurers (fraction of profit)"
+  reference: "SR 961.011.1 Art. 5"
+  values:
+    2006-01-01:
+      value: 0.20
+
+seuil_reserve_capital:
+  description: "Reserve fund target as fraction of statutory capital"
+  reference: "SR 961.011.1 Art. 5"
+  values:
+    2006-01-01:
+      value: 0.50

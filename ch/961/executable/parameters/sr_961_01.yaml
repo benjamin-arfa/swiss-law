@@ -1,0 +1,43 @@
+description: "SR 961.01 LSA — Insurance Supervision Act parameters"
+
+seuil_primes_cooperative_exemptee:
+  description: "Seuil maximum de primes brutes annuelles pour l'exemption des coopératives (CHF)"
+  reference: "SR 961.01 Art. 2 al. 2 let. d ch. 3"
+  values:
+    1993-01-01:
+      value: 3000000.0
+
+capital_minimum_bas:
+  description: "Capital minimum inférieur (CHF)"
+  reference: "SR 961.01 Art. 8 al. 1"
+  values:
+    2006-01-01:
+      value: 3000000.0
+
+capital_minimum_haut:
+  description: "Capital minimum supérieur (CHF)"
+  reference: "SR 961.01 Art. 8 al. 1"
+  values:
+    2006-01-01:
+      value: 20000000.0
+
+taux_fonds_organisation_max:
+  description: "Taux maximal du fonds d'organisation par rapport au capital minimum"
+  reference: "SR 961.01 Art. 10 al. 1"
+  values:
+    2006-01-01:
+      value: 0.5
+
+delai_rapport_gestion_jour:
+  description: "Délai de remise du rapport de gestion (jour de l'année, 120 = 30 avril)"
+  reference: "SR 961.01 Art. 25 al. 3"
+  values:
+    2006-01-01:
+      value: 120
+
+seuils_participation:
+  description: "Seuils de notification FINMA pour participations (%)"
+  reference: "SR 961.01 Art. 21"
+  values:
+    2006-01-01:
+      value: [10, 20, 33, 50]

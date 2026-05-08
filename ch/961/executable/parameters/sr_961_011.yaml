@@ -1,0 +1,64 @@
+description: "SR 961.011 OS — Insurance Supervision Ordinance parameters"
+
+seuil_sst_allegement:
+  description: "Quotient SST minimum (3-year average, %) for small insurer relief"
+  reference: "SR 961.011 Art. 1c let. a"
+  values:
+    2024-01-01:
+      value: 250.0
+
+seuil_fortune_liee_allegement:
+  description: "Tied assets coverage minimum (%) for small insurer relief"
+  reference: "SR 961.011 Art. 1c let. b"
+  values:
+    2024-01-01:
+      value: 130.0
+
+seuil_capital_minimum_allegement:
+  description: "Supervisory minimum capital coverage (%) for small insurer relief"
+  reference: "SR 961.011 Art. 1c let. c"
+  values:
+    2024-01-01:
+      value: 150.0
+
+max_polices_exemption:
+  description: "Maximum number of policies for supervision exemption"
+  reference: "SR 961.011 Art. 1f let. e"
+  values:
+    2024-01-01:
+      value: 5000
+
+max_primes_exemption:
+  description: "Maximum total premium volume (CHF) for supervision exemption"
+  reference: "SR 961.011 Art. 1f let. e"
+  values:
+    2024-01-01:
+      value: 5000000.0
+
+seuil_prime_intermediaire:
+  description: "Annual premium threshold (CHF excl. tax) for intermediary exemption"
+  reference: "SR 961.011 Art. 1h al. 1 let. a"
+  values:
+    2024-01-01:
+      value: 600.0
+
+duree_grace_depassement_mois:
+  description: "Grace period after exceeding exemption limits (months)"
+  reference: "SR 961.011 Art. 1g al. 1"
+  values:
+    2024-01-01:
+      value: 12
+
+delai_demande_agrement_mois:
+  description: "Deadline to apply for authorization before grace period expiry (months)"
+  reference: "SR 961.011 Art. 1g al. 3"
+  values:
+    2024-01-01:
+      value: 6
+
+duree_max_allegement_nouvel_agrement_ans:
+  description: "Max years of relief for newly authorized category 5 insurers"
+  reference: "SR 961.011 Art. 1e"
+  values:
+    2024-01-01:
+      value: 3

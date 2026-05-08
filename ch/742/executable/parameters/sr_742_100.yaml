@@ -1,0 +1,11 @@
+description: "Parameters for SR 742.100 - RAIL 2000 federal law"
+metadata:
+  reference: "SR 742.100"
+
+pret_marche_max_pct:
+  description: "Maximum share of project cost that can be financed by market-rate loans (%)"
+  reference: "SR 742.100 Art. 3a Abs. 2"
+  unit: percent
+  values:
+    1999-01-01:
+      value: 25

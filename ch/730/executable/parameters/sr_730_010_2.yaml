@@ -1,0 +1,11 @@
+description: "Parameters for SR 730.010.2 - OGOC (Guarantee of origin for fuels)"
+metadata:
+  reference: "SR 730.010.2"
+
+validite_go_combustible_mois:
+  description: "Validity duration of fuel guarantee of origin (months from issuance)"
+  reference: "SR 730.010.2 Art. 2 Abs. 1"
+  unit: months
+  values:
+    2025-06-01:
+      value: 18

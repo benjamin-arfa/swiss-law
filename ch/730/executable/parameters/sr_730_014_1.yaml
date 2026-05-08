@@ -1,0 +1,27 @@
+description: "Parameters for SR 730.014.1 - Ocach (Hydroelectric remediation cost calculation)"
+metadata:
+  reference: "SR 730.014.1"
+
+duree_couts_imputables_ans:
+  description: "Maximum duration for imputable remediation costs from start of measures (years)"
+  reference: "SR 730.014.1 Art. 2 Abs. 2"
+  unit: years
+  values:
+    2016-04-01:
+      value: 40
+
+seuil_versement_annuel_chf:
+  description: "Threshold for annual cost reporting requirement (CHF)"
+  reference: "SR 730.014.1 Art. 6 Abs. 2"
+  unit: CHF
+  values:
+    2016-04-01:
+      value: 100000
+
+periode_recapitulatif_simplifie_ans:
+  description: "Cost summary period for simplified reporting below threshold (years)"
+  reference: "SR 730.014.1 Art. 6 Abs. 3"
+  unit: years
+  values:
+    2016-04-01:
+      value: 5

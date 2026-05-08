@@ -1,0 +1,59 @@
+description: "Parameters for SR 730.010.1 - OGOM (Guarantee of origin and electricity marking)"
+metadata:
+  reference: "SR 730.010.1"
+
+seuil_puissance_mensuelle_kva:
+  description: "AC power threshold above which monthly recording is mandatory (kVA)"
+  reference: "SR 730.010.1 Art. 1 Abs. 1"
+  unit: kVA
+  values:
+    2018-01-01:
+      value: 30
+
+seuil_fossile_raccordement_kva:
+  description: "Maximum connection power for fossil installation excess production exception (kVA)"
+  reference: "SR 730.010.1 Art. 1 Abs. 3"
+  unit: kVA
+  values:
+    2018-01-01:
+      value: 300
+
+seuil_fossile_autoconsommation_pct:
+  description: "Maximum self-consumption percentage for fossil installation excess production exception (%)"
+  reference: "SR 730.010.1 Art. 1 Abs. 3"
+  unit: percent
+  values:
+    2018-01-01:
+      value: 20
+
+validite_go_mois:
+  description: "Validity duration of guarantee of origin in months after production period end"
+  reference: "SR 730.010.1 Art. 1 Abs. 4"
+  unit: months
+  values:
+    2018-01-01:
+      value: 12
+
+seuil_enregistrement_pv_kw:
+  description: "Minimum power for photovoltaic installation registration (kW)"
+  reference: "SR 730.010.1 Art. 3 let. a"
+  unit: kW
+  values:
+    2018-01-01:
+      value: 2
+
+seuil_enregistrement_autres_kva:
+  description: "Minimum nominal AC power for non-PV installation registration (kVA)"
+  reference: "SR 730.010.1 Art. 3 let. b"
+  unit: kVA
+  values:
+    2018-01-01:
+      value: 2
+
+coefficient_efficacite_pompage:
+  description: "Default efficiency coefficient for pumped-storage deduction"
+  reference: "SR 730.010.1 Art. 6 Abs. 1"
+  unit: rate
+  values:
+    2018-01-01:
+      value: 0.83

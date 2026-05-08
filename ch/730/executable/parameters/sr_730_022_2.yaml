@@ -1,0 +1,216 @@
+description: "Parameters for SR 730.022.2 - OEE-VVT (Energy efficiency labeling for passenger vehicles)"
+metadata:
+  reference: "SR 730.022.2"
+
+# Art. 1 - Energy efficiency category thresholds (primary energy gasoline equivalents, l/100km)
+categorie_a_max:
+  description: "Upper limit for category A (l/100km primary energy gasoline equivalent)"
+  reference: "SR 730.022.2 Art. 1"
+  unit: l/100km
+  values:
+    2022-01-01:
+      value: 5.35
+
+categorie_b_max:
+  description: "Upper limit for category B"
+  reference: "SR 730.022.2 Art. 1"
+  unit: l/100km
+  values:
+    2022-01-01:
+      value: 6.10
+
+categorie_c_max:
+  description: "Upper limit for category C"
+  reference: "SR 730.022.2 Art. 1"
+  unit: l/100km
+  values:
+    2022-01-01:
+      value: 6.60
+
+categorie_d_max:
+  description: "Upper limit for category D"
+  reference: "SR 730.022.2 Art. 1"
+  unit: l/100km
+  values:
+    2022-01-01:
+      value: 7.30
+
+categorie_e_max:
+  description: "Upper limit for category E"
+  reference: "SR 730.022.2 Art. 1"
+  unit: l/100km
+  values:
+    2022-01-01:
+      value: 8.29
+
+categorie_f_max:
+  description: "Upper limit for category F"
+  reference: "SR 730.022.2 Art. 1"
+  unit: l/100km
+  values:
+    2022-01-01:
+      value: 10.14
+
+# Art. 2 - Average CO2 emissions reference
+moyenne_co2_g_km:
+  description: "Average CO2 emissions of newly registered passenger vehicles (g/km)"
+  reference: "SR 730.022.2 Art. 2"
+  unit: g/km
+  values:
+    2022-01-01:
+      value: 149
+
+# Art. 3 - Gasoline equivalent conversion factors
+facteur_diesel:
+  description: "Diesel to gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 3 let. a"
+  unit: l_essence/l_diesel
+  values:
+    2022-01-01:
+      value: 1.14
+
+facteur_gaz_naturel:
+  description: "Natural gas to gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 3 let. b"
+  unit: l_essence/m3_gas
+  values:
+    2022-01-01:
+      value: 1.03
+
+facteur_gpl:
+  description: "LPG to gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 3 let. c"
+  unit: l_essence/l_gpl
+  values:
+    2022-01-01:
+      value: 0.80
+
+facteur_e85:
+  description: "E85 to gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 3 let. d"
+  unit: l_essence/l_e85
+  values:
+    2022-01-01:
+      value: 0.72
+
+facteur_electricite:
+  description: "Electricity to gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 3 let. e"
+  unit: l_essence/kWh
+  values:
+    2022-01-01:
+      value: 0.11
+
+facteur_hydrogene:
+  description: "Hydrogen to gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 3 let. f"
+  unit: l_essence/m3_h2
+  values:
+    2022-01-01:
+      value: 0.34
+
+# Art. 4 - Primary energy gasoline equivalent conversion factors
+facteur_primaire_diesel:
+  description: "Diesel to primary energy gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 4 let. a"
+  unit: l_essence/l_diesel
+  values:
+    2022-01-01:
+      value: 1.09
+
+facteur_primaire_gaz_naturel:
+  description: "Natural gas to primary energy gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 4 let. b"
+  unit: l_essence/m3_gas
+  values:
+    2022-01-01:
+      value: 0.78
+
+facteur_primaire_gpl:
+  description: "LPG to primary energy gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 4 let. c"
+  unit: l_essence/l_gpl
+  values:
+    2022-01-01:
+      value: 0.78
+
+facteur_primaire_e85:
+  description: "E85 to primary energy gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 4 let. d"
+  unit: l_essence/l_e85
+  values:
+    2022-01-01:
+      value: 1.67
+
+facteur_primaire_electricite:
+  description: "Electricity to primary energy gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 4 let. e"
+  unit: l_essence/kWh
+  values:
+    2022-01-01:
+      value: 0.17
+
+facteur_primaire_hydrogene:
+  description: "Hydrogen to primary energy gasoline equivalent conversion factor"
+  reference: "SR 730.022.2 Art. 4 let. f"
+  unit: l_essence/m3_h2
+  values:
+    2022-01-01:
+      value: 0.61
+
+# Art. 5 - CO2 emission factors for fuel/electricity supply chain
+co2_essence_g_l:
+  description: "CO2 emissions from gasoline supply (g CO2/l)"
+  reference: "SR 730.022.2 Art. 5 let. a"
+  unit: g_CO2/l
+  values:
+    2022-01-01:
+      value: 506
+
+co2_diesel_g_l:
+  description: "CO2 emissions from diesel supply (g CO2/l)"
+  reference: "SR 730.022.2 Art. 5 let. b"
+  unit: g_CO2/l
+  values:
+    2022-01-01:
+      value: 484
+
+co2_gaz_naturel_g_m3:
+  description: "CO2 emissions from natural gas supply (g CO2/m3)"
+  reference: "SR 730.022.2 Art. 5 let. c"
+  unit: g_CO2/m3
+  values:
+    2022-01-01:
+      value: 273
+
+co2_gpl_g_l:
+  description: "CO2 emissions from LPG supply (g CO2/l)"
+  reference: "SR 730.022.2 Art. 5 let. d"
+  unit: g_CO2/l
+  values:
+    2022-01-01:
+      value: 390
+
+co2_e85_g_l:
+  description: "CO2 emissions from E85 supply (g CO2/l)"
+  reference: "SR 730.022.2 Art. 5 let. e"
+  unit: g_CO2/l
+  values:
+    2022-01-01:
+      value: 464
+
+co2_electricite_g_kwh:
+  description: "CO2 emissions from electricity supply (g CO2/kWh)"
+  reference: "SR 730.022.2 Art. 5 let. f"
+  unit: g_CO2/kWh
+  values:
+    2022-01-01:
+      value: 25
+
+co2_hydrogene_g_m3:
+  description: "CO2 emissions from hydrogen supply (g CO2/m3)"
+  reference: "SR 730.022.2 Art. 5 let. g"
+  unit: g_CO2/m3
+  values:
+    2022-01-01:
+      value: 68

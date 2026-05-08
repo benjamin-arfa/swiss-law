@@ -1,0 +1,35 @@
+description: "Parameters for SR 730.05 - Oemol-En (Fees and supervision taxes in energy domain)"
+metadata:
+  reference: "SR 730.05"
+
+tarif_horaire_min_chf:
+  description: "Minimum hourly rate for time-based fee calculation (CHF/hour)"
+  reference: "SR 730.05 Art. 3 Abs. 2"
+  unit: CHF
+  values:
+    2007-01-01:
+      value: 75
+
+tarif_horaire_max_chf:
+  description: "Maximum hourly rate for time-based fee calculation (CHF/hour)"
+  reference: "SR 730.05 Art. 3 Abs. 2"
+  unit: CHF
+  values:
+    2007-01-01:
+      value: 250
+
+supplement_max_pct:
+  description: "Maximum surcharge as percentage of base fee for urgency/exceptional effort (%)"
+  reference: "SR 730.05 Art. 5 Abs. 1"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 100
+
+supplement_administratif_tiers_pct:
+  description: "Administrative surcharge for outsourced work as percentage of base fee (%)"
+  reference: "SR 730.05 Art. 5 Abs. 2"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 20

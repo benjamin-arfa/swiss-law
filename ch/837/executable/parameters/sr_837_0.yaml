@@ -1,0 +1,252 @@
+description: "Parameters for SR 837.0 - AVIG (Federal Unemployment Insurance Act)"
+metadata:
+  reference: "SR 837.0"
+
+alv:
+  beitragssatz:
+    description: "Unemployment insurance contribution rate (employer + employee combined)"
+    reference: "SR 837.0 Art. 3 Abs. 2"
+    unit: rate
+    values:
+      2011-04-01:
+        value: 0.022
+
+  beitragssatz_arbeitnehmer:
+    description: "Employee share of unemployment insurance contribution"
+    reference: "SR 837.0 Art. 3 Abs. 3"
+    unit: rate
+    values:
+      2011-04-01:
+        value: 0.011
+
+  beitragssatz_arbeitgeber:
+    description: "Employer share of unemployment insurance contribution"
+    reference: "SR 837.0 Art. 3 Abs. 3"
+    unit: rate
+    values:
+      2011-04-01:
+        value: 0.011
+
+  rahmenfrist_leistungsbezug_monate:
+    description: "Framework period for benefit claims (months)"
+    reference: "SR 837.0 Art. 9 Abs. 1"
+    unit: months
+    values:
+      1984-01-01:
+        value: 24
+
+  rahmenfrist_beitragszeit_monate:
+    description: "Framework period for contribution time (months)"
+    reference: "SR 837.0 Art. 9 Abs. 1"
+    unit: months
+    values:
+      1984-01-01:
+        value: 24
+
+  mindest_beitragszeit_monate:
+    description: "Minimum contribution period for eligibility (months)"
+    reference: "SR 837.0 Art. 13 Abs. 1"
+    unit: months
+    values:
+      1984-01-01:
+        value: 12
+
+  wartezeit_allgemein_tage:
+    description: "General waiting period (days of controlled unemployment)"
+    reference: "SR 837.0 Art. 18 Abs. 1"
+    unit: days
+    values:
+      2011-04-01:
+        value: 5
+
+  wartezeit_stufe_1_min:
+    description: "Income threshold lower bound for 10-day waiting period (CHF/year)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. a"
+    unit: CHF
+    values:
+      2011-04-01:
+        value: 60001
+
+  wartezeit_stufe_1_max:
+    description: "Income threshold upper bound for 10-day waiting period (CHF/year)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. a"
+    unit: CHF
+    values:
+      2011-04-01:
+        value: 90000
+
+  wartezeit_stufe_1_tage:
+    description: "Waiting period for insured income 60'001-90'000 CHF (no child support obligations)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. a"
+    unit: days
+    values:
+      2011-04-01:
+        value: 10
+
+  wartezeit_stufe_2_min:
+    description: "Income threshold lower bound for 15-day waiting period (CHF/year)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. b"
+    unit: CHF
+    values:
+      2011-04-01:
+        value: 90001
+
+  wartezeit_stufe_2_max:
+    description: "Income threshold upper bound for 15-day waiting period (CHF/year)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. b"
+    unit: CHF
+    values:
+      2011-04-01:
+        value: 125000
+
+  wartezeit_stufe_2_tage:
+    description: "Waiting period for insured income 90'001-125'000 CHF (no child support obligations)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. b"
+    unit: days
+    values:
+      2011-04-01:
+        value: 15
+
+  wartezeit_stufe_3_min:
+    description: "Income threshold lower bound for 20-day waiting period (CHF/year)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2011-04-01:
+        value: 125001
+
+  wartezeit_stufe_3_tage:
+    description: "Waiting period for insured income over 125'000 CHF (no child support obligations)"
+    reference: "SR 837.0 Art. 18 Abs. 1 Bst. c"
+    unit: days
+    values:
+      2011-04-01:
+        value: 20
+
+  taggeld_satz_voll:
+    description: "Full daily allowance rate as percentage of insured income"
+    reference: "SR 837.0 Art. 22 Abs. 1"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.80
+
+  taggeld_satz_reduziert:
+    description: "Reduced daily allowance rate (no children, income > threshold)"
+    reference: "SR 837.0 Art. 22 Abs. 2"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.70
+
+  taggeld_schwelle_reduktion:
+    description: "Threshold for reduced rate: full daily allowance must exceed this (CHF)"
+    reference: "SR 837.0 Art. 22 Abs. 2 Bst. b"
+    unit: CHF
+    values:
+      2011-04-01:
+        value: 140
+
+  hoechstzahl_taggelder_12_monate:
+    description: "Maximum daily allowances for 12 months contribution"
+    reference: "SR 837.0 Art. 27 Abs. 2 Bst. a"
+    unit: days
+    values:
+      2011-04-01:
+        value: 260
+
+  hoechstzahl_taggelder_18_monate:
+    description: "Maximum daily allowances for 18 months contribution"
+    reference: "SR 837.0 Art. 27 Abs. 2 Bst. b"
+    unit: days
+    values:
+      2011-04-01:
+        value: 400
+
+  hoechstzahl_taggelder_22_monate:
+    description: "Maximum daily allowances for 22+ months contribution (55+ or 40%+ IV)"
+    reference: "SR 837.0 Art. 27 Abs. 2 Bst. c"
+    unit: days
+    values:
+      2011-04-01:
+        value: 520
+
+  hoechstzahl_taggelder_befreit:
+    description: "Maximum daily allowances for persons exempt from contribution requirement"
+    reference: "SR 837.0 Art. 27 Abs. 4"
+    unit: days
+    values:
+      2011-04-01:
+        value: 90
+
+  hoechstzahl_taggelder_iv_wegfall:
+    description: "Maximum daily allowances for persons after loss of IV pension"
+    reference: "SR 837.0 Art. 27 Abs. 5"
+    unit: days
+    values:
+      2026-01-01:
+        value: 180
+
+  hoechstzahl_taggelder_unter_25:
+    description: "Maximum daily allowances for persons under 25 without child support obligations"
+    reference: "SR 837.0 Art. 27 Abs. 5bis"
+    unit: days
+    values:
+      2011-04-01:
+        value: 200
+
+  alter_55_erhoehte_taggelder:
+    description: "Age threshold for extended daily allowances (520 days)"
+    reference: "SR 837.0 Art. 27 Abs. 2 Bst. c Ziff. 1"
+    unit: years
+    values:
+      2011-04-01:
+        value: 55
+
+  mindest_iv_grad_erhoehte_taggelder:
+    description: "Minimum IV degree for extended daily allowances (520 days)"
+    reference: "SR 837.0 Art. 27 Abs. 2 Bst. c Ziff. 2"
+    unit: percent
+    values:
+      2011-04-01:
+        value: 40
+
+  einstellung_max_tage:
+    description: "Maximum suspension days per reason"
+    reference: "SR 837.0 Art. 30 Abs. 3"
+    unit: days
+    values:
+      1984-01-01:
+        value: 60
+
+  taggeld_krankheit_max_tage:
+    description: "Maximum days of full daily allowance during temporary incapacity"
+    reference: "SR 837.0 Art. 28 Abs. 1"
+    unit: days
+    values:
+      2003-07-01:
+        value: 44
+
+  taggeld_krankheit_frist_tage:
+    description: "Duration limit per incapacity episode (days after onset)"
+    reference: "SR 837.0 Art. 28 Abs. 1"
+    unit: days
+    values:
+      2003-07-01:
+        value: 30
+
+  zumutbare_arbeit_mindestlohn_anteil:
+    description: "Minimum salary as fraction of insured income for work to be considered acceptable"
+    reference: "SR 837.0 Art. 16 Abs. 2 Bst. i"
+    unit: rate
+    values:
+      2026-01-01:
+        value: 0.70
+
+  taggelder_pro_woche:
+    description: "Number of daily allowances paid per week"
+    reference: "SR 837.0 Art. 21"
+    unit: days
+    values:
+      1984-01-01:
+        value: 5

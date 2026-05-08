@@ -1,0 +1,164 @@
+description: "Parameters for SR 832.20 - UVG (Federal Accident Insurance Act)"
+metadata:
+  reference: "SR 832.20"
+
+uvg:
+  taggeld_satz:
+    description: "Daily allowance rate at full incapacity (% of insured income)"
+    reference: "SR 832.20 Art. 17 Abs. 1"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.80
+
+  taggeld_beginn_tag:
+    description: "Day after accident on which daily allowance entitlement starts"
+    reference: "SR 832.20 Art. 16 Abs. 2"
+    unit: days
+    values:
+      1984-01-01:
+        value: 3
+
+  invalidenrente_satz:
+    description: "Disability pension rate at full disability (% of insured income)"
+    reference: "SR 832.20 Art. 20 Abs. 1"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.80
+
+  mindest_invaliditaetsgrad_rente:
+    description: "Minimum degree of disability for pension entitlement (%)"
+    reference: "SR 832.20 Art. 18 Abs. 1"
+    unit: percent
+    values:
+      1984-01-01:
+        value: 10
+
+  komplementaerrente_hoechstsatz:
+    description: "Maximum rate for complementary pension (% of insured income)"
+    reference: "SR 832.20 Art. 20 Abs. 2"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.90
+
+  hinterlassenenrente_witwe:
+    description: "Survivor pension rate for widows/widowers (% of insured income)"
+    reference: "SR 832.20 Art. 31 Abs. 1"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.40
+
+  hinterlassenenrente_halbwaise:
+    description: "Survivor pension rate for half-orphans (% of insured income)"
+    reference: "SR 832.20 Art. 31 Abs. 1"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.15
+
+  hinterlassenenrente_vollwaise:
+    description: "Survivor pension rate for full orphans (% of insured income)"
+    reference: "SR 832.20 Art. 31 Abs. 1"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.25
+
+  hinterlassenenrente_max:
+    description: "Maximum total survivor pension rate (% of insured income)"
+    reference: "SR 832.20 Art. 31 Abs. 1"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.70
+
+  hinterlassenenrente_geschieden:
+    description: "Survivor pension rate for divorced spouse (% of insured income)"
+    reference: "SR 832.20 Art. 31 Abs. 2"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.20
+
+  hinterlassenenrente_max_mit_geschieden:
+    description: "Maximum total survivor pensions including divorced spouse (% of insured income)"
+    reference: "SR 832.20 Art. 31 Abs. 3"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.90
+
+  kuerzung_alter_schwelle:
+    description: "Age above which pension reduction at reference age applies (per year over this)"
+    reference: "SR 832.20 Art. 20 Abs. 2ter"
+    unit: years
+    values:
+      2017-01-01:
+        value: 45
+
+  kuerzung_invaliditaet_40_prozentpunkte:
+    description: "Reduction per year over 45 at reference age, IV >= 40% (percentage points)"
+    reference: "SR 832.20 Art. 20 Abs. 2ter Bst. a"
+    unit: percent
+    values:
+      2017-01-01:
+        value: 2
+
+  kuerzung_invaliditaet_unter_40_prozentpunkte:
+    description: "Reduction per year over 45 at reference age, IV < 40% (percentage points)"
+    reference: "SR 832.20 Art. 20 Abs. 2ter Bst. b"
+    unit: percent
+    values:
+      2017-01-01:
+        value: 1
+
+  kuerzung_max_40_plus:
+    description: "Maximum reduction at reference age for IV >= 40% (percentage points)"
+    reference: "SR 832.20 Art. 20 Abs. 2ter Bst. a"
+    unit: percent
+    values:
+      2017-01-01:
+        value: 40
+
+  kuerzung_max_unter_40:
+    description: "Maximum reduction at reference age for IV < 40% (percentage points)"
+    reference: "SR 832.20 Art. 20 Abs. 2ter Bst. b"
+    unit: percent
+    values:
+      2017-01-01:
+        value: 20
+
+  hilflosenentschaedigung_min_faktor:
+    description: "Helplessness allowance minimum (multiple of max insured daily income)"
+    reference: "SR 832.20 Art. 27"
+    unit: factor
+    values:
+      1984-01-01:
+        value: 2
+
+  hilflosenentschaedigung_max_faktor:
+    description: "Helplessness allowance maximum (multiple of max insured daily income)"
+    reference: "SR 832.20 Art. 27"
+    unit: factor
+    values:
+      1984-01-01:
+        value: 6
+
+  bestattungskosten_faktor:
+    description: "Burial costs: maximum as multiple of max insured daily income"
+    reference: "SR 832.20 Art. 14 Abs. 2"
+    unit: factor
+    values:
+      1984-01-01:
+        value: 7
+
+  grobe_fahrlaessigkeit_max_kuerzung:
+    description: "Maximum reduction of daily allowances for gross negligence (first 2 years)"
+    reference: "SR 832.20 Art. 37 Abs. 2"
+    unit: rate
+    values:
+      1984-01-01:
+        value: 0.50

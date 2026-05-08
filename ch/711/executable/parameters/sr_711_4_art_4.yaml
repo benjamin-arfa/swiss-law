@@ -1,0 +1,8 @@
+description: Infrastrukturzuschlag fuer Schaetzungskommission (SR 711.4 Art. 4)
+reference: SR 711.4 Art. 4 Abs. 1
+values:
+  2021-01-01:
+    infrastrukturzuschlag_prozent: 0.60
+metadata:
+  unit: rate
+  note: 60% surcharge on hourly rate for presidency/secretary using own infrastructure

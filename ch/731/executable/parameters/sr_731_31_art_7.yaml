@@ -1,0 +1,11 @@
+description: Risikozuschlag-Saetze (SR 731.31 Art. 7)
+reference: SR 731.31 Art. 7 Abs. 3
+values:
+  2022-09-05:
+    risikozuschlag_min: 0.04
+    risikozuschlag_max: 0.08
+    risikozuschlag_verstoss_min: 0.05
+    risikozuschlag_verstoss_max: 0.10
+metadata:
+  unit: rate
+  note: Annual risk surcharge rates on drawn loan amounts

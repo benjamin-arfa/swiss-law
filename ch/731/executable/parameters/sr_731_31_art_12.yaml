@@ -1,0 +1,9 @@
+description: Risikozuschlag-Erhoehung bei Nachrangigkeit (SR 731.31 Art. 12)
+reference: SR 731.31 Art. 12 Abs. 2
+values:
+  2022-09-05:
+    erhoehung_mindestens: 0.01
+    maximum_satz: 0.10
+metadata:
+  unit: rate
+  note: Risk surcharge increased by at least 1pp when subordinated, maximum 10%

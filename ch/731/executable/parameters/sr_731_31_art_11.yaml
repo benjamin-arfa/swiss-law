@@ -1,0 +1,9 @@
+description: Risikozuschlag-Reduktion bei Sicherheiten (SR 731.31 Art. 11)
+reference: SR 731.31 Art. 11 Abs. 3
+values:
+  2022-09-05:
+    reduktion_mindestens: 0.01
+    minimum_satz: 0.04
+metadata:
+  unit: rate
+  note: Risk surcharge reduced by at least 1pp with adequate securities, minimum 4%

@@ -1,0 +1,11 @@
+description: Stundenansaetze fuer Schaetzungskommission (SR 711.4 Art. 3)
+reference: SR 711.4 Art. 3 Abs. 2
+values:
+  2021-01-01:
+    praesidium_stundensatz: 160.0
+    mitglied_stundensatz_min: 130.0
+    mitglied_stundensatz_max: 240.0
+    sekretaer_stundensatz: 130.0
+metadata:
+  unit: CHF
+  rate_type: hourly

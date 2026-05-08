@@ -1,0 +1,8 @@
+description: Systemkritikalitaets-Schwellenwerte (SR 731.31 Art. 2)
+reference: SR 731.31 Art. 2 Abs. 1
+values:
+  2022-09-05:
+    mindest_kraftwerksleistung_mw: 1200.0
+metadata:
+  unit: MW
+  note: Minimum installed power capacity in Switzerland for automatic classification

@@ -1,0 +1,10 @@
+description: Kantonsanteile an Verlusten und Risikozuschlaegen (SR 731.31 Art. 16)
+reference: SR 731.31 Art. 16
+values:
+  2022-09-05:
+    kantonsanteil_verlust: 0.50
+    kantonsanteil_risikozuschlag: 0.50
+    verteilung_basis_jahr: 2020
+metadata:
+  unit: rate
+  note: 50/50 split between Confederation and cantons, distributed by GDP share

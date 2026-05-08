@@ -1,0 +1,37 @@
+description: "Parameters for SR 747.11 - Bundesgesetz über das Schiffsregister"
+metadata:
+  reference: "SR 747.11"
+
+# Art. 4 - Obligatorische Registrierung
+mindest_tragfaehigkeit_obligatorisch:
+  description: "Mindest-Tragfähigkeit für obligatorische Registrierung (Tonnen)"
+  reference: "SR 747.11 Art. 4 Abs. 1 Bst. c"
+  unit: tonnes
+  values:
+    1923-01-01:
+      value: 20
+
+mindest_verdraengung_obligatorisch:
+  description: "Mindest-Wasserverdrängung für obligatorische Registrierung (m³)"
+  reference: "SR 747.11 Art. 4 Abs. 1 Bst. c"
+  unit: m3
+  values:
+    1923-01-01:
+      value: 10
+
+# Art. 5 - Fakultative Registrierung
+mindest_tragfaehigkeit_fakultativ:
+  description: "Mindest-Tragfähigkeit für fakultative Registrierung (Tonnen)"
+  reference: "SR 747.11 Art. 5 Abs. 1"
+  unit: tonnes
+  values:
+    1986-07-15:
+      value: 10
+
+mindest_verdraengung_fakultativ:
+  description: "Mindest-Wasserverdrängung für fakultative Registrierung (m³)"
+  reference: "SR 747.11 Art. 5 Abs. 1"
+  unit: m3
+  values:
+    1986-07-15:
+      value: 5

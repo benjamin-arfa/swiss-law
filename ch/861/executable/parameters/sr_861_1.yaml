@@ -1,0 +1,62 @@
+description: "Parameters for SR 861.1 - KBFHV (Finanzhilfen für familienergänzende Kinderbetreuung)"
+metadata:
+  reference: "SR 861.1"
+
+# Art. 4 - Kindertagesstätten
+kita_mindest_plaetze:
+  description: "Mindestanzahl Plätze für Beitragsberechtigung einer Kindertagesstätte"
+  reference: "SR 861.1 Art. 4 Abs. 2 Bst. a"
+  unit: places
+  values:
+    2003-02-01:
+      value: 10
+
+kita_mindest_stunden_pro_woche:
+  description: "Mindest-Öffnungsstunden pro Woche für Kindertagesstätten"
+  reference: "SR 861.1 Art. 4 Abs. 2 Bst. b"
+  unit: hours
+  values:
+    2003-02-01:
+      value: 25
+
+kita_mindest_wochen_pro_jahr:
+  description: "Mindest-Öffnungswochen pro Jahr für Kindertagesstätten"
+  reference: "SR 861.1 Art. 4 Abs. 2 Bst. b"
+  unit: weeks
+  values:
+    2003-02-01:
+      value: 45
+
+# Art. 7 - Schulergänzende Betreuung
+schulerg_mindest_plaetze:
+  description: "Mindestanzahl Plätze für schulergänzende Betreuungseinrichtungen"
+  reference: "SR 861.1 Art. 7 Abs. 2 Bst. a"
+  unit: places
+  values:
+    2003-02-01:
+      value: 10
+
+schulerg_mindest_tage_pro_woche:
+  description: "Mindest-Öffnungstage pro Woche für schulergänzende Betreuung"
+  reference: "SR 861.1 Art. 7 Abs. 2 Bst. b"
+  unit: days
+  values:
+    2003-02-01:
+      value: 4
+
+schulerg_mindest_schulwochen_pro_jahr:
+  description: "Mindest-Schulwochen pro Jahr für schulergänzende Betreuung"
+  reference: "SR 861.1 Art. 7 Abs. 2 Bst. b"
+  unit: weeks
+  values:
+    2003-02-01:
+      value: 36
+
+# Art. 11 - Tagesfamilien
+tagesfamilien_max_pro_familie:
+  description: "Maximaler Beitrag pro beschäftigte Tagesfamilie für Aus-/Weiterbildung (CHF)"
+  reference: "SR 861.1 Art. 11 Abs. 1"
+  unit: CHF
+  values:
+    2003-02-01:
+      value: 150

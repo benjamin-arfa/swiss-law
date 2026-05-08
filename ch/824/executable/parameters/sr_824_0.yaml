@@ -1,0 +1,29 @@
+description: "Parameters for SR 824.0 - ZDG (Zivildienstgesetz / Civilian Service Act)"
+metadata:
+  reference: "SR 824.0"
+
+# Art. 8 - Duration multipliers
+faktor_standard:
+  description: "Multiplikator für Zivildienstdauer (Standard)"
+  reference: "SR 824.0 Art. 8 Abs. 1"
+  unit: factor
+  values:
+    2004-01-01:
+      value: 1.5
+
+faktor_offizier:
+  description: "Multiplikator für Zivildienstdauer (höhere Unteroffiziere/Offiziere)"
+  reference: "SR 824.0 Art. 8 Abs. 1"
+  unit: factor
+  values:
+    2004-01-01:
+      value: 1.1
+
+# Art. 11 - End of obligation
+entlassungsfrist_nicht_armee_jahre:
+  description: "Entlassungsfrist für nicht in Armee eingeteilte Personen (Jahre nach Zulassungsjahr+1)"
+  reference: "SR 824.0 Art. 11 Abs. 2 Bst. a"
+  unit: years
+  values:
+    2018-01-01:
+      value: 12

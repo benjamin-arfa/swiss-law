@@ -1,0 +1,8 @@
+description: "SR 129 Art. 28 - Personalzusammensetzung der PIU"
+metadata:
+  reference: "SR 129 Art. 28 Abs. 1"
+  unit: ratio
+values:
+  2026-01-01:
+    piu_anteil_bund: 0.5
+    piu_anteil_kantone: 0.5

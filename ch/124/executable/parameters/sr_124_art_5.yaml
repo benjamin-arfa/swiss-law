@@ -1,0 +1,7 @@
+description: "SR 124 Art. 5 - Maximale Vertragsdauer bei Ausnahme von Ausbildungsanforderungen"
+metadata:
+  reference: "SR 124 Art. 5 Abs. 4"
+  unit: months
+values:
+  2015-09-01:
+    sicherheitspersonal_ausnahme_ausland_max_monate: 6

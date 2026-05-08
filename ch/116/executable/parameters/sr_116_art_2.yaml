@@ -1,0 +1,8 @@
+description: "SR 116 Art. 2 - Schwellenwerte fuer Kompensation bei Arbeit am Bundesfeiertag"
+metadata:
+  reference: "SR 116 Art. 2 Abs. 2"
+  unit: hours
+values:
+  1994-07-01:
+    bundesfeiertag_freizeitausgleich_schwelle_stunden: 5
+    description: "Arbeit bis 5h = Freizeit gleicher Dauer; ueber 5h = ganzer Ersatzruhetag"

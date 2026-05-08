@@ -1,0 +1,8 @@
+description: "SR 705 Art. 19 - Fristen fuer Erstellung und Umsetzung der Velowegnetzplaene"
+metadata:
+  reference: "SR 705 Art. 19 Abs. 1"
+  unit: years
+values:
+  2023-01-01:
+    velowegnetzplan_erstellungsfrist_jahre: 5
+    velowegnetzplan_umsetzungsfrist_jahre: 20

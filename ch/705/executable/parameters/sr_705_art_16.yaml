@@ -1,0 +1,7 @@
+description: "SR 705 Art. 16 - Mindestdauer ideelle Zwecke fuer Finanzhilfeberechtigung"
+metadata:
+  reference: "SR 705 Art. 16 Abs. 3 lit. b"
+  unit: years
+values:
+  2023-01-01:
+    organisation_ideelle_zwecke_mindestdauer_jahre: 3

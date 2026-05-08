@@ -1,0 +1,8 @@
+description: "SR 371 Art. 8 - Fristen fuer Rehabilitierungsgesuche"
+metadata:
+  reference: "SR 371 Art. 8"
+  unit: years
+values:
+  2004-01-01:
+    rehabilitierung_gesuchsfrist_jahre: 5
+    rehabilitierung_nachfrist_jahre: 8

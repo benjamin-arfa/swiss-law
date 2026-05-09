@@ -1,0 +1,10 @@
+zgb:
+  geschlechtseintrag:
+    mindestalter_ohne_zustimmung:
+      description: "Mindestalter fuer Aenderung des Geschlechtseintrags ohne Zustimmung (Art. 30b Abs. 4 ZGB)"
+      values:
+        2022-01-01:
+          value: 16
+      metadata:
+        reference: "SR 210 Art. 30b Abs. 4"
+        unit: year

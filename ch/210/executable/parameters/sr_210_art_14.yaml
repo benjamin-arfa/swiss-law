@@ -1,0 +1,9 @@
+zgb:
+  volljaehrigkeitsalter:
+    description: "Alter fuer die Volljaehrigkeit (Art. 14 ZGB)"
+    values:
+      1996-01-01:
+        value: 18
+    metadata:
+      reference: "SR 210 Art. 14"
+      unit: year

@@ -1,0 +1,10 @@
+or_vertragsrecht:
+  anfechtung:
+    genehmigungsfrist_monate:
+      description: "Frist in Monaten fuer die Genehmigung eines mangelhaften Vertrags (Art. 31 OR)"
+      values:
+        1912-01-01:
+          value: 12
+      metadata:
+        reference: "SR 220 Art. 31 Abs. 1"
+        unit: month

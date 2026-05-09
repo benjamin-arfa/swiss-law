@@ -1,0 +1,10 @@
+or_vertragsrecht:
+  uebervorteilung:
+    anfechtungsfrist_monate:
+      description: "Anfechtungsfrist bei Uebervorteilung in Monaten (Art. 21 Abs. 2 OR)"
+      values:
+        1912-01-01:
+          value: 12
+      metadata:
+        reference: "SR 220 Art. 21 Abs. 2"
+        unit: month

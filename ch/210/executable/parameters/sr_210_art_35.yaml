@@ -1,0 +1,18 @@
+zgb:
+  verschollenheit:
+    frist_todesgefahr_monate:
+      description: "Mindestfrist in Monaten seit Todesgefahr fuer Verschollenerklärung (Art. 36 Abs. 1 ZGB)"
+      values:
+        1912-01-01:
+          value: 12
+      metadata:
+        reference: "SR 210 Art. 36 Abs. 1"
+        unit: month
+    frist_nachrichtlos_monate:
+      description: "Mindestfrist in Monaten seit letzter Nachricht fuer Verschollenerklärung (Art. 36 Abs. 1 ZGB)"
+      values:
+        1912-01-01:
+          value: 60
+      metadata:
+        reference: "SR 210 Art. 36 Abs. 1"
+        unit: month

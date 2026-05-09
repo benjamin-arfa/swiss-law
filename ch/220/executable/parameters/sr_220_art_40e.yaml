@@ -1,0 +1,11 @@
+or_haustuergeschaeft:
+  widerrufsfrist_tage:
+    description: "Widerrufsfrist in Tagen bei Haustuergeschaeften (Art. 40e Abs. 2 OR)"
+    values:
+      1994-01-01:
+        value: 7
+      2016-01-01:
+        value: 14
+    metadata:
+      reference: "SR 220 Art. 40e Abs. 2"
+      unit: day

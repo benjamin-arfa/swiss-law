@@ -1,0 +1,9 @@
+or_haustuergeschaeft:
+  mindestbetrag:
+    description: "Mindestbetrag der Kundenleistung fuer Anwendbarkeit des Widerrufsrechts (Art. 40a Abs. 1 lit. b OR)"
+    values:
+      1991-07-01:
+        value: 100
+    metadata:
+      reference: "SR 220 Art. 40a Abs. 1 lit. b"
+      unit: currency-CHF

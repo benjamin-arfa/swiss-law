@@ -1,0 +1,13 @@
+description: "SR 810.211 Art. 10 - Abklaerung Freiwilligkeit und Unentgeltlichkeit"
+reference: "https://www.fedlex.admin.ch/eli/cc/2007/278/de"
+
+sr_810_211:
+  art_10:
+    aufbewahrungsfrist_abklaerung_jahre:
+      description: "Aufbewahrungsfrist fuer die Dokumentation der Abklaerung, getrennt von Krankengeschichte (Jahre)"
+      unit: "year"
+      values:
+        2007-07-01:
+          value: 10
+      metadata:
+        reference: "SR 810.211 Art. 10 Abs. 2"

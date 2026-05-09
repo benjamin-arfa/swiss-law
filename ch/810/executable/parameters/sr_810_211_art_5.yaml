@@ -1,0 +1,13 @@
+description: "SR 810.211 Art. 5 - Entscheid der naechsten Angehoerigen"
+reference: "https://www.fedlex.admin.ch/eli/cc/2007/278/de"
+
+sr_810_211:
+  art_5:
+    mindestalter_entscheid:
+      description: "Mindestalter fuer den Entscheid ueber Organspende (Jahre)"
+      unit: "year"
+      values:
+        2007-07-01:
+          value: 16
+      metadata:
+        reference: "SR 810.211 Art. 5 Abs. 1"

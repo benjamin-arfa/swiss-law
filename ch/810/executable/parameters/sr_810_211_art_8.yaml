@@ -1,0 +1,13 @@
+description: "SR 810.211 Art. 8 - Dauer der vorbereitenden medizinischen Massnahmen"
+reference: "https://www.fedlex.admin.ch/eli/cc/2007/278/de"
+
+sr_810_211:
+  art_8:
+    max_stunden_vorbereitende_massnahmen:
+      description: "Maximale Dauer der vorbereitenden medizinischen Massnahmen nach dem Tod (Stunden)"
+      unit: "hour"
+      values:
+        2017-11-15:
+          value: 72
+      metadata:
+        reference: "SR 810.211 Art. 8"

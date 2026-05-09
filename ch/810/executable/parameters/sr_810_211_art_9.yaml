@@ -1,0 +1,13 @@
+description: "SR 810.211 Art. 9 - Information der Lebendspenderin oder des Lebendspenders"
+reference: "https://www.fedlex.admin.ch/eli/cc/2007/278/de"
+
+sr_810_211:
+  art_9:
+    aufbewahrungsfrist_jahre:
+      description: "Aufbewahrungsfrist fuer die Dokumentation der Information (Jahre)"
+      unit: "year"
+      values:
+        2007-07-01:
+          value: 10
+      metadata:
+        reference: "SR 810.211 Art. 9 Abs. 4"

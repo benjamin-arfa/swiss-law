@@ -1,0 +1,21 @@
+description: "SR 810.211 Art. 15a - Meldung von Lebendspenden an das BAG"
+reference: "https://www.fedlex.admin.ch/eli/cc/2007/278/de"
+
+sr_810_211:
+  art_15a:
+    meldefrist_tage:
+      description: "Meldefrist fuer Lebendspenden an das BAG (Tage)"
+      unit: "day"
+      values:
+        2008-10-15:
+          value: 7
+      metadata:
+        reference: "SR 810.211 Art. 15a Abs. 2"
+    wohnsitz_schwelle_monate:
+      description: "Wohnsitzdauer-Schwelle fuer zusaetzliche Meldepflicht vorhergehendes Wohnsitzland (Monate)"
+      unit: "month"
+      values:
+        2023-08-01:
+          value: 3
+      metadata:
+        reference: "SR 810.211 Art. 15a Abs. 1 lit. b"

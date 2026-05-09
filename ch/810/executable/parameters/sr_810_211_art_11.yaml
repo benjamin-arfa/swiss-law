@@ -1,0 +1,29 @@
+description: "SR 810.211 Art. 11 - Versicherungsschutz fuer Lebendspender"
+reference: "https://www.fedlex.admin.ch/eli/cc/2007/278/de"
+
+sr_810_211:
+  art_11:
+    mindestdauer_versicherung_monate:
+      description: "Mindestdauer des Versicherungsvertrags ab Entnahme (Monate)"
+      unit: "month"
+      values:
+        2007-07-01:
+          value: 12
+      metadata:
+        reference: "SR 810.211 Art. 11 Abs. 1"
+    versicherungssumme_todesfall:
+      description: "Versicherungsleistung im Todesfall (CHF)"
+      unit: "CHF"
+      values:
+        2007-07-01:
+          value: 250000
+      metadata:
+        reference: "SR 810.211 Art. 11 Abs. 2"
+    versicherungssumme_invaliditaet:
+      description: "Versicherungssumme im Invaliditaetsfall (CHF)"
+      unit: "CHF"
+      values:
+        2007-07-01:
+          value: 250000
+      metadata:
+        reference: "SR 810.211 Art. 11 Abs. 3"

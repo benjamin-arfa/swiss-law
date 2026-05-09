@@ -1,0 +1,21 @@
+description: "SR 810.211 Art. 21 - Pflichten bei der Lagerung"
+reference: "https://www.fedlex.admin.ch/eli/cc/2007/278/de"
+
+sr_810_211:
+  art_21:
+    probenaufbewahrung_jahre:
+      description: "Dauer der Aufbewahrungspflicht fuer biologische Proben nach Transplantation (Jahre)"
+      unit: "year"
+      values:
+        2007-07-01:
+          value: 2
+      metadata:
+        reference: "SR 810.211 Art. 21 Abs. 1"
+    meldefrist_monat:
+      description: "Meldefrist fuer jaehrliche Meldung an BAG (Monat im Folgejahr)"
+      values:
+        2007-07-01:
+          value: 4
+      metadata:
+        reference: "SR 810.211 Art. 21 Abs. 2"
+        note: "Bis Ende April des Folgejahres"

@@ -1,0 +1,14 @@
+description: SR 641.81 Art. 20a - SVAG procedural violation penalties
+parameters:
+  svag_busse_verfahren_vorsaetzlich_max:
+    description: Maximum fine for intentional procedural violations
+    values:
+      2024-05-01:
+        value: 20000
+    unit: CHF
+  svag_busse_verfahren_fahrlaessig_max:
+    description: Maximum fine for negligent procedural violations
+    values:
+      2024-05-01:
+        value: 10000
+    unit: CHF

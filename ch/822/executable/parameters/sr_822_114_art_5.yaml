@@ -1,0 +1,26 @@
+description: SR 822.114 Art. 5 - ArGV 4 minimum room heights
+parameters:
+  argv4_raumhoehe_bis_100m2:
+    description: Minimum room height for floor area up to 100 m2
+    values:
+      1993-10-01:
+        value: 2.75
+    unit: m
+  argv4_raumhoehe_bis_250m2:
+    description: Minimum room height for floor area up to 250 m2
+    values:
+      1993-10-01:
+        value: 3.00
+    unit: m
+  argv4_raumhoehe_bis_400m2:
+    description: Minimum room height for floor area up to 400 m2
+    values:
+      1993-10-01:
+        value: 3.50
+    unit: m
+  argv4_raumhoehe_ueber_400m2:
+    description: Minimum room height for floor area over 400 m2
+    values:
+      1993-10-01:
+        value: 4.00
+    unit: m

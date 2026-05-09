@@ -1,0 +1,20 @@
+description: SR 822.114 Art. 8 - ArGV 4 escape route lengths
+parameters:
+  argv4_fluchtweg_einzelausgang_max:
+    description: Maximum escape route length with single exit
+    values:
+      2006-11-01:
+        value: 35
+    unit: m
+  argv4_fluchtweg_mehrfachausgang_max:
+    description: Maximum escape route length with multiple exits
+    values:
+      2006-11-01:
+        value: 50
+    unit: m
+  argv4_max_entfernung_raumausgang:
+    description: Maximum distance from any point to nearest room exit
+    values:
+      2015-05-01:
+        value: 35
+    unit: m

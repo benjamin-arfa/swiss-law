@@ -1,0 +1,26 @@
+description: SR 641.81 Art. 8 - SVAG tariff rates
+parameters:
+  svag_tarif_min_rappen:
+    description: Minimum tariff rate per km per tonne
+    values:
+      2001-01-01:
+        value: 0.6
+    unit: Rappen
+  svag_tarif_max_standard_rappen:
+    description: Maximum standard tariff rate per km per tonne
+    values:
+      2001-01-01:
+        value: 2.5
+    unit: Rappen
+  svag_tarif_max_40t_rappen:
+    description: Maximum tariff rate if general max weight raised to 40 tonnes
+    values:
+      2001-01-01:
+        value: 3.0
+    unit: Rappen
+  svag_reduktion_bis_28t_anteil:
+    description: Maximum reduction factor for vehicles up to 28 tonnes
+    values:
+      2001-01-01:
+        value: 0.2
+    unit: fraction

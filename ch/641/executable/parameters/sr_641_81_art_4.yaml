@@ -1,0 +1,8 @@
+description: SR 641.81 Art. 4 - SVAG exemptions and flat-rate passenger transport
+parameters:
+  svag_pauschale_personentransport_max:
+    description: Maximum flat-rate for passenger transport per year
+    values:
+      2001-01-01:
+        value: 5000
+    unit: CHF

@@ -1,0 +1,20 @@
+description: SR 641.81 Art. 19 - SVAG revenue distribution
+parameters:
+  svag_anteil_kantone:
+    description: Share of net revenue allocated to cantons
+    values:
+      2001-01-01:
+        value: 0.333333
+    unit: fraction
+  svag_anteil_bund:
+    description: Share of net revenue retained by the federal government
+    values:
+      2001-01-01:
+        value: 0.666667
+    unit: fraction
+  svag_bif_reserve_minimum:
+    description: Minimum reserve in rail infrastructure fund
+    values:
+      2025-03-01:
+        value: 300000000
+    unit: CHF

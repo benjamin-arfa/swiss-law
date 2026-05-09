@@ -1,0 +1,14 @@
+description: SR 641.81 Art. 20 - SVAG tax evasion penalties
+parameters:
+  svag_busse_multiplikator_vorsaetzlich:
+    description: Maximum fine multiplier for intentional tax evasion
+    values:
+      2024-05-01:
+        value: 5
+    unit: multiplier
+  svag_busse_multiplikator_fahrlaessig:
+    description: Maximum fine multiplier for negligent tax evasion
+    values:
+      2024-05-01:
+        value: 3
+    unit: multiplier

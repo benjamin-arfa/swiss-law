@@ -1,0 +1,20 @@
+description: SR 641.81 Art. 15 - SVAG limitation periods
+parameters:
+  svag_verjaehrungsfrist_jahre:
+    description: Regular limitation period for tax claims
+    values:
+      2001-01-01:
+        value: 5
+    unit: years
+  svag_absolute_verjaehrungsfrist_jahre:
+    description: Absolute limitation period for tax claims
+    values:
+      2001-01-01:
+        value: 15
+    unit: years
+  svag_rueckforderung_verjaehrungsfrist_jahre:
+    description: Limitation period for refund claims after payment
+    values:
+      2001-01-01:
+        value: 5
+    unit: years

@@ -1,0 +1,17 @@
+description: "SR 322.1 Art. 4 - Funktionen in der Militaerjustiz"
+metadata:
+  reference: "SR 322.1 Art. 4"
+  amended: "Fassung gemaess Anhang Ziff. 4 BG vom 18. Maerz 2016, in Kraft seit 1. Jan. 2018"
+values:
+  1979-01-01:
+    funktionen:
+      - oberauditor
+      - stellvertreter
+      - praesident_kassationsgericht
+      - praesident_appellationsgericht
+      - praesident_militaergericht
+      - auditor
+      - untersuchungsrichter
+      - gerichtsschreiber
+    voraussetzung_justizoffizier: true
+    description: "Justizoffizier ist Voraussetzung fuer alle aufgefuehrten Funktionen"

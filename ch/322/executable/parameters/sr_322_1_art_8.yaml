@@ -1,0 +1,13 @@
+description: "SR 322.1 Art. 8 - Zusammensetzung der Militaergerichte"
+metadata:
+  reference: "SR 322.1 Art. 8"
+values:
+  1979-01-01:
+    anzahl_praesidenten: 1
+    grad_praesident:
+      - oberst
+      - oberstleutnant
+    anzahl_richter: 4
+    anzahl_gerichtsschreiber: 1
+    total_mitglieder: 6
+    description: "Zusammensetzung aus Praesident, 4 Richtern und Gerichtsschreiber"

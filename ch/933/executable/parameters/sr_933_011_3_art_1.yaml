@@ -1,0 +1,14 @@
+description: "SR 933.011.3 Art. 1 - Technische Vorschriften fuer Bauprodukte"
+metadata:
+  reference: "SR 933.011.3 Art. 1"
+  source: "Verordnung des BBL vom 10. September 2014"
+  amended: "Fassung gemaess Ziff. I der V des BBL vom 24. Nov. 2014"
+values:
+  2014-10-01:
+    technische_vorschriften_gueltig: true
+    rechtsgrundlage_baupg: "SR 933.0"
+    description: "In Kraft seit 1. Oktober 2014"
+  2014-12-15:
+    technische_vorschriften_gueltig: true
+    rechtsgrundlage_baupg: "SR 933.0"
+    description: "Geaenderte Fassung seit 15. Dezember 2014"

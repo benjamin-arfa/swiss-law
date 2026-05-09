@@ -1,0 +1,13 @@
+description: "SR 322.1 Art. 2 - Einteilung in die Militaerjustiz"
+metadata:
+  reference: "SR 322.1 Art. 2"
+  amended: "Fassung gemaess Anhang Ziff. 4 BG vom 18. Maerz 2016, in Kraft seit 1. Jan. 2018"
+values:
+  1979-01-01:
+    juristische_qualifikation_erforderlich: true
+    description: "Urspruengliche Fassung"
+  2018-01-01:
+    juristische_qualifikation_erforderlich: true
+    lizentiat_oder_master: true
+    kantonales_anwaltspatent: true
+    description: "Geaenderte Fassung seit 1. Jan. 2018"

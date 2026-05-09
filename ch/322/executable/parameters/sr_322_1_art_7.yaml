@@ -1,0 +1,13 @@
+description: "SR 322.1 Art. 7 - Wahl der Richter"
+metadata:
+  reference: "SR 322.1 Art. 7"
+  amended: "Abs. 2 Fassung gemaess BG vom 3. Okt. 2008, in Kraft seit 1. Maerz 2009"
+values:
+  1979-01-01:
+    amtsdauer_jahre: 4
+    description: "Amtsdauer der Richter betraegt vier Jahre"
+  2009-03-01:
+    amtsdauer_jahre: 4
+    waehlbar_armee: true
+    waehlbar_grenzwachtkorps: true
+    description: "Armee und Grenzwachtkorps als Richter waehlbar"

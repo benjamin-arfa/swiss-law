@@ -1,0 +1,8 @@
+description: "SR 971.119 Art. 2 - Ermaechtigung des Bundesrates zum Vollzug des Beitritts"
+metadata:
+  reference: "SR 971.119 Art. 2"
+  source: "Bundesbeschluss vom 26. April 1951"
+values:
+  1951-04-26:
+    bundesrat_ermaechtigt: true
+    description: "Bundesrat ermaechtigt seit 26. April 1951"

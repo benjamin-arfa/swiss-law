@@ -1,0 +1,8 @@
+description: "SR 322.1 Art. 1 - Unabhaengigkeit der Militaerjustiz"
+metadata:
+  reference: "SR 322.1 Art. 1"
+  source: "Militaerstrafprozess vom 23. Maerz 1979"
+values:
+  1979-01-01:
+    unabhaengigkeit_gewaehrleistet: true
+    description: "Die Unabhaengigkeit der Militaerjustiz ist gewaehrleistet"

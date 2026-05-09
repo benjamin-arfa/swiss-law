@@ -1,0 +1,8 @@
+description: "SR 971.119 Art. 1 - Beitritt zum Internationalen konsultativen Baumwollkomitee"
+metadata:
+  reference: "SR 971.119 Art. 1"
+  source: "Bundesbeschluss vom 26. April 1951"
+values:
+  1951-04-26:
+    beitritt_genehmigt: true
+    description: "Beitritt genehmigt seit 26. April 1951"

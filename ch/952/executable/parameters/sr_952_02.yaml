@@ -1,0 +1,78 @@
+sr952_02:
+  schwelle_bilanzsumme:
+    description: "Schwelle Bilanzsumme fuer Kategorisierung (CHF, Kat. 4)"
+    reference: "SR 952.02 Art. 2 Abs. 2 lit. a / Anhang 3"
+    values:
+      2016-07-01:
+        value: 15000000000.0
+      2023-01-01:
+        value: 15000000000.0
+
+  schwelle_verwaltete_vermoegen:
+    description: "Schwelle verwaltete Vermoegen fuer Kategorisierung (CHF, Kat. 4)"
+    reference: "SR 952.02 Art. 2 Abs. 2 lit. b / Anhang 3"
+    values:
+      2016-07-01:
+        value: 20000000000.0
+      2023-01-01:
+        value: 20000000000.0
+
+  schwelle_privilegierte_einlagen:
+    description: "Schwelle privilegierte Einlagen fuer Kategorisierung (CHF, Kat. 4)"
+    reference: "SR 952.02 Art. 2 Abs. 2 lit. c / Anhang 3"
+    values:
+      2016-07-01:
+        value: 500000000.0
+      2023-01-01:
+        value: 500000000.0
+
+  schwelle_mindesteigenmittel:
+    description: "Schwelle Mindesteigenmittel fuer Kategorisierung (CHF, Kat. 4)"
+    reference: "SR 952.02 Art. 2 Abs. 2 lit. d / Anhang 3"
+    values:
+      2016-07-01:
+        value: 250000000.0
+      2023-01-01:
+        value: 250000000.0
+
+  verein_einlage_min_laufzeit_monate:
+    description: "Mindestlaufzeit fuer Einlagen bei Vereinen/Stiftungen/Genossenschaften (Monate)"
+    reference: "SR 952.02 Art. 5 Abs. 2 lit. f Ziff. 3"
+    values:
+      2014-01-01:
+        value: 6
+
+  gewerbsmaessig_schwelle_anzahl:
+    description: "Schwelle Anzahl Publikumseinlagen fuer Gewerbsmaessigkeit"
+    reference: "SR 952.02 Art. 6 Abs. 1 lit. a"
+    values:
+      2017-08-01:
+        value: 20
+
+  gewerbsmaessig_schwelle_betrag:
+    description: "Schwelle Gesamtbetrag fuer Nicht-Gewerbsmaessigkeit (CHF)"
+    reference: "SR 952.02 Art. 6 Abs. 2 lit. a"
+    values:
+      2017-08-01:
+        value: 1000000.0
+
+  meldepflicht_frist_tage:
+    description: "Frist fuer FINMA-Meldung bei Schwellenueberschreitung (Tage)"
+    reference: "SR 952.02 Art. 6 Abs. 4"
+    values:
+      2019-04-01:
+        value: 10
+
+  bewilligungsgesuch_frist_tage:
+    description: "Frist fuer Bewilligungsgesuch bei Schwellenueberschreitung (Tage)"
+    reference: "SR 952.02 Art. 6 Abs. 4"
+    values:
+      2019-04-01:
+        value: 30
+
+  habensaldi_abwicklung_frist_tage:
+    description: "Max. Abwicklungsfrist fuer Habensaldi auf Kundenkonti (Tage)"
+    reference: "SR 952.02 Art. 5 Abs. 3 lit. c Ziff. 1"
+    values:
+      2021-08-01:
+        value: 60

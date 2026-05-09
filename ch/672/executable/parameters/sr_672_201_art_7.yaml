@@ -1,0 +1,7 @@
+```yml
+parameters:
+  mindestbetrag_anrechnung_quellensteuer:
+    value: 100
+    label: Minimum amount of non-refundable foreign withholding taxes for credit eligibility (Art. 7)
+    unit: CHF
+```

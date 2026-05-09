@@ -1,0 +1,7 @@
+```yml
+parameters:
+  quellensteuer_grenzgaenger_at_max_satz:
+    value: 0.04
+    label: Maximum withholding tax rate on cross-border workers (Art. 15 Abs. 4 DBA CH-AT)
+    unit: rate
+```

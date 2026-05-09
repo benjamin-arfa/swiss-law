@@ -1,0 +1,29 @@
+"""OpenFisca variables for SR 232."""
+
+from .sr_232_11_art_10 import *  # noqa: F401,F403
+from .sr_232_11_art_12 import *  # noqa: F401,F403
+from .sr_232_11_art_31 import *  # noqa: F401,F403
+from .sr_232_11_art_41 import *  # noqa: F401,F403
+from .sr_232_11_art_7 import *  # noqa: F401,F403
+from .sr_232_119_art_1 import *  # noqa: F401,F403
+from .sr_232_119_art_1a import *  # noqa: F401,F403
+from .sr_232_119_art_2 import *  # noqa: F401,F403
+from .sr_232_119_art_2a import *  # noqa: F401,F403
+from .sr_232_119_art_3 import *  # noqa: F401,F403
+from .sr_232_119_art_4 import *  # noqa: F401,F403
+from .sr_232_14_art_1 import *  # noqa: F401,F403
+from .sr_232_14_art_2 import *  # noqa: F401,F403
+from .sr_232_14_art_7 import *  # noqa: F401,F403
+from .sr_232_14_art_7b import *  # noqa: F401,F403
+from .sr_232_16_art_14 import *  # noqa: F401,F403
+from .sr_232_16_art_48 import *  # noqa: F401,F403
+from .sr_232_16_art_5 import *  # noqa: F401,F403
+from .sr_232_16_art_6 import *  # noqa: F401,F403
+from .sr_232_16_art_7 import *  # noqa: F401,F403
+from .sr_232_16_art_8b import *  # noqa: F401,F403
+from .sr_232_21_art_1 import *  # noqa: F401,F403
+from .sr_232_21_art_14 import *  # noqa: F401,F403
+from .sr_232_21_art_28 import *  # noqa: F401,F403
+from .sr_232_21_art_35 import *  # noqa: F401,F403
+from .sr_232_21_art_8 import *  # noqa: F401,F403
+from .sr_232_21_art_9 import *  # noqa: F401,F403

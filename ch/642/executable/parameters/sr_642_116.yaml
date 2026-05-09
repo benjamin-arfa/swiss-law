@@ -1,0 +1,21 @@
+description: "Parameters for SR 642.116 - Liegenschaftskostenverordnung (Property Cost Deduction Ordinance)"
+metadata:
+  reference: "SR 642.116"
+
+# Art. 5 Abs. 2 Bst. a - Lump-sum rate for buildings up to 10 years old
+pauschalabzug_satz_bis_10_jahre:
+  description: "Pauschalabzugsatz fuer Gebaeude bis 10 Jahre alt"
+  reference: "SR 642.116 Art. 5 Abs. 2 Bst. a"
+  unit: rate
+  values:
+    2020-01-01:
+      value: 0.10
+
+# Art. 5 Abs. 2 Bst. b - Lump-sum rate for buildings over 10 years old
+pauschalabzug_satz_ueber_10_jahre:
+  description: "Pauschalabzugsatz fuer Gebaeude ueber 10 Jahre alt"
+  reference: "SR 642.116 Art. 5 Abs. 2 Bst. b"
+  unit: rate
+  values:
+    2020-01-01:
+      value: 0.20

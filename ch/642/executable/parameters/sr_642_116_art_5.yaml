@@ -1,0 +1,19 @@
+description: "Parameters for SR 642.116 Art. 5 - Lump-sum deduction rates"
+metadata:
+  reference: "SR 642.116 Art. 5"
+
+pauschalabzug_satz_bis_10_jahre:
+  description: "Lump-sum deduction rate for buildings up to 10 years old"
+  reference: "SR 642.116 Art. 5 Abs. 2 Bst. a"
+  unit: rate
+  values:
+    2020-01-01:
+      value: 0.10
+
+pauschalabzug_satz_ueber_10_jahre:
+  description: "Lump-sum deduction rate for buildings over 10 years old"
+  reference: "SR 642.116 Art. 5 Abs. 2 Bst. b"
+  unit: rate
+  values:
+    2020-01-01:
+      value: 0.20

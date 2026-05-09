@@ -1,0 +1,276 @@
+description: "Parameters for SR 831.30 - ELG (Federal Supplementary Benefits Act)"
+metadata:
+  reference: "SR 831.30"
+
+el:
+  lebensbedarf_alleinstehend:
+    description: "Annual general living expenses for single persons (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 1"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 20670
+      2021-01-01:
+        value: 19610
+
+  lebensbedarf_ehepaar:
+    description: "Annual general living expenses for couples (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 2"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 31005
+      2021-01-01:
+        value: 29415
+
+  lebensbedarf_kind_ab_11:
+    description: "Annual general living expenses for orphans/children aged 11+ (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 3"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 10815
+      2021-01-01:
+        value: 10260
+
+  lebensbedarf_kind_unter_11:
+    description: "Annual general living expenses for orphans/children under 11 (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 4"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 7590
+      2021-01-01:
+        value: 7200
+
+  mietzins_max_region_1_alleinstehend:
+    description: "Max recognized rent for single person in Region 1 (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. b Ziff. 1"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 18900
+
+  mietzins_max_region_2_alleinstehend:
+    description: "Max recognized rent for single person in Region 2 (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. b Ziff. 1"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 18300
+
+  mietzins_max_region_3_alleinstehend:
+    description: "Max recognized rent for single person in Region 3 (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. b Ziff. 1"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 16680
+
+  rollstuhl_zuschlag:
+    description: "Additional recognized rent for wheelchair-accessible housing (CHF/year)"
+    reference: "SR 831.30 Art. 10 Abs. 1 Bst. b Ziff. 3"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 6900
+
+  vermoegensschwelle_alleinstehend:
+    description: "Asset threshold for single persons (CHF)"
+    reference: "SR 831.30 Art. 9a Abs. 1 Bst. a"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 100000
+
+  vermoegensschwelle_ehepaar:
+    description: "Asset threshold for couples (CHF)"
+    reference: "SR 831.30 Art. 9a Abs. 1 Bst. b"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 200000
+
+  vermoegensschwelle_waise:
+    description: "Asset threshold for orphans/children (CHF)"
+    reference: "SR 831.30 Art. 9a Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 50000
+
+  freibetrag_vermoegen_alleinstehend:
+    description: "Asset exemption for income calculation - single persons (CHF)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 30000
+
+  freibetrag_vermoegen_ehepaar:
+    description: "Asset exemption for income calculation - couples (CHF)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 50000
+
+  freibetrag_vermoegen_waise:
+    description: "Asset exemption for income calculation - orphans/children (CHF)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 15000
+
+  liegenschaft_freibetrag:
+    description: "Owner-occupied property exemption amount (CHF)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 112500
+
+  liegenschaft_freibetrag_heim:
+    description: "Owner-occupied property exemption when spouse in home/hospital or helplessness (CHF)"
+    reference: "SR 831.30 Art. 11 Abs. 1bis"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 300000
+
+  erwerbseinkommen_freibetrag_alleinstehend:
+    description: "Employment income exemption for single persons (CHF/year)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. a"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 1300
+
+  erwerbseinkommen_freibetrag_ehepaar:
+    description: "Employment income exemption for couples/persons with children (CHF/year)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. a"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 1950
+
+  erwerbseinkommen_anrechnungssatz:
+    description: "Fraction of employment income counted (2/3)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. a"
+    unit: rate
+    values:
+      2021-01-01:
+        value: 0.6667
+
+  erwerbseinkommen_anrechnungssatz_ehegatte_ohne_el:
+    description: "Fraction of employment income counted for spouse without EL (80%)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. a"
+    unit: rate
+    values:
+      2021-01-01:
+        value: 0.80
+
+  vermoegensverzehr_altersrentner:
+    description: "Asset depletion rate for old-age pensioners (1/10)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. c"
+    unit: rate
+    values:
+      2021-01-01:
+        value: 0.10
+
+  vermoegensverzehr_andere:
+    description: "Asset depletion rate for non-old-age-pensioners (1/15)"
+    reference: "SR 831.30 Art. 11 Abs. 1 Bst. c"
+    unit: rate
+    values:
+      2021-01-01:
+        value: 0.0667
+
+  bundesanteil:
+    description: "Federal share of annual supplementary benefits (5/8)"
+    reference: "SR 831.30 Art. 13 Abs. 1"
+    unit: rate
+    values:
+      2008-01-01:
+        value: 0.625
+
+  kantonsanteil:
+    description: "Cantonal share of annual supplementary benefits (3/8)"
+    reference: "SR 831.30 Art. 13 Abs. 1"
+    unit: rate
+    values:
+      2008-01-01:
+        value: 0.375
+
+  krankheitskosten_max_alleinstehend_zuhause:
+    description: "Minimum annual cap for illness/disability costs - single at home (CHF)"
+    reference: "SR 831.30 Art. 14 Abs. 3 Bst. a Ziff. 1"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 25000
+
+  krankheitskosten_max_ehepaar_zuhause:
+    description: "Minimum annual cap for illness/disability costs - couple at home (CHF)"
+    reference: "SR 831.30 Art. 14 Abs. 3 Bst. a Ziff. 2"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 50000
+
+  krankheitskosten_max_waise_zuhause:
+    description: "Minimum annual cap for illness/disability costs - orphan at home (CHF)"
+    reference: "SR 831.30 Art. 14 Abs. 3 Bst. a Ziff. 3"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 10000
+
+  krankheitskosten_max_heim:
+    description: "Minimum annual cap for illness/disability costs - in home/hospital (CHF)"
+    reference: "SR 831.30 Art. 14 Abs. 3 Bst. b"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 6000
+
+  krankheitskosten_max_schwere_hilflosigkeit:
+    description: "Increased cap for severe helplessness at home (CHF)"
+    reference: "SR 831.30 Art. 14 Abs. 4"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 90000
+
+  rueckerstattung_freibetrag:
+    description: "Estate exemption for repayment of EL benefits after death (CHF)"
+    reference: "SR 831.30 Art. 16a Abs. 1"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 40000
+
+  karenzfrist_auslaender:
+    description: "Waiting period for foreign nationals (years)"
+    reference: "SR 831.30 Art. 5 Abs. 1"
+    unit: years
+    values:
+      2018-07-01:
+        value: 10
+
+  karenzfrist_fluechtlinge:
+    description: "Waiting period for refugees and stateless persons (years)"
+    reference: "SR 831.30 Art. 5 Abs. 2"
+    unit: years
+    values:
+      2008-01-01:
+        value: 5
+
+  mindestalter_hilflosenentschaedigung:
+    description: "Minimum age for EL with helplessness allowance"
+    reference: "SR 831.30 Art. 6"
+    unit: years
+    values:
+      2008-01-01:
+        value: 18

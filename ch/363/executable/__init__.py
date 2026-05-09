@@ -1,0 +1,36 @@
+"""OpenFisca variables for SR 363."""
+
+from .sr_363_1_art_1 import *  # noqa: F401,F403
+from .sr_363_1_art_10 import *  # noqa: F401,F403
+from .sr_363_1_art_10a import *  # noqa: F401,F403
+from .sr_363_1_art_11 import *  # noqa: F401,F403
+from .sr_363_1_art_12 import *  # noqa: F401,F403
+from .sr_363_1_art_13 import *  # noqa: F401,F403
+from .sr_363_1_art_14 import *  # noqa: F401,F403
+from .sr_363_1_art_15a import *  # noqa: F401,F403
+from .sr_363_1_art_16 import *  # noqa: F401,F403
+from .sr_363_1_art_17 import *  # noqa: F401,F403
+from .sr_363_1_art_18 import *  # noqa: F401,F403
+from .sr_363_1_art_18a import *  # noqa: F401,F403
+from .sr_363_1_art_19 import *  # noqa: F401,F403
+from .sr_363_1_art_2 import *  # noqa: F401,F403
+from .sr_363_1_art_20 import *  # noqa: F401,F403
+from .sr_363_1_art_21 import *  # noqa: F401,F403
+from .sr_363_1_art_22 import *  # noqa: F401,F403
+from .sr_363_1_art_22a import *  # noqa: F401,F403
+from .sr_363_1_art_23 import *  # noqa: F401,F403
+from .sr_363_1_art_2a import *  # noqa: F401,F403
+from .sr_363_1_art_3 import *  # noqa: F401,F403
+from .sr_363_1_art_3a import *  # noqa: F401,F403
+from .sr_363_1_art_4 import *  # noqa: F401,F403
+from .sr_363_1_art_4a import *  # noqa: F401,F403
+from .sr_363_1_art_5 import *  # noqa: F401,F403
+from .sr_363_1_art_5a import *  # noqa: F401,F403
+from .sr_363_1_art_6 import *  # noqa: F401,F403
+from .sr_363_1_art_6a import *  # noqa: F401,F403
+from .sr_363_1_art_7 import *  # noqa: F401,F403
+from .sr_363_1_art_8 import *  # noqa: F401,F403
+from .sr_363_1_art_9 import *  # noqa: F401,F403
+from .sr_363_1_art_9a import *  # noqa: F401,F403
+from .sr_363_1_art_9b import *  # noqa: F401,F403
+from .sr_363_1_art_9c import *  # noqa: F401,F403

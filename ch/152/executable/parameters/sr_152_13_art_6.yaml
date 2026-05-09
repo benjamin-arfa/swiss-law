@@ -1,0 +1,10 @@
+description: "SR 152.13 Art. 6 - Schutzfristen beim Bundesverwaltungsgericht"
+metadata:
+  reference: "SR 152.13 Art. 6"
+  unit: years
+values:
+  2011-05-01:
+    schutzfrist_allgemein_jahre: 30
+    schutzfrist_prozessakten_jahre: 50
+    schutzfrist_personendaten_jahre: 50
+    description: "Ordentliche und verlaengerte Schutzfristen nach Art. 9 und 11 BGA"

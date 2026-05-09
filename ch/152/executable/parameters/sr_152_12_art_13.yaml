@@ -1,0 +1,8 @@
+description: "SR 152.12 Art. 13 - Einsichtnahme waehrend Schutzfrist beim BStGer"
+metadata:
+  reference: "SR 152.12 Art. 13 Abs. 1 lit. b"
+  unit: years
+values:
+  2006-01-01:
+    mindestens_verstorben_seit_jahren: 3
+    description: "Betroffene Personen muessen seit mindestens 3 Jahren verstorben sein"

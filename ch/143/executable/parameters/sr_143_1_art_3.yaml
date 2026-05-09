@@ -1,0 +1,11 @@
+description: "SR 143.1 Art. 3 - Gueltigkeitsdauer von Ausweisen"
+metadata:
+  reference: "SR 143.1 Art. 3"
+  unit: years
+  note: "Gueltigkeitsdauer wird vom Bundesrat geregelt (Ausweisverordnung SR 143.11)"
+values:
+  2002-10-01:
+    pass_gueltigkeitsdauer_erwachsene_jahre: 10
+    pass_gueltigkeitsdauer_minderjaehrige_jahre: 5
+    identitaetskarte_gueltigkeitsdauer_erwachsene_jahre: 10
+    identitaetskarte_gueltigkeitsdauer_minderjaehrige_jahre: 5

@@ -1,0 +1,11 @@
+description: "SR 152.12 Art. 10 - Schutzfristen beim Bundesstrafgericht"
+metadata:
+  reference: "SR 152.12 Art. 10"
+  unit: years
+values:
+  2006-01-01:
+    schutzfrist_allgemein_jahre: 30
+    schutzfrist_verfahrensakten_jahre: 50
+    schutzfrist_sensible_personendaten_jahre: 50
+    schutzfrist_protokolle_jahre: 50
+    description: "Ordentliche und verlaengerte Schutzfristen nach Art. 9 und 11 BGA"

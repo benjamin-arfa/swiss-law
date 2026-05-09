@@ -1,0 +1,8 @@
+description: "SR 143.1 Art. 7 - Fristen bei Entzug von Ausweisen"
+metadata:
+  reference: "SR 143.1 Art. 7 Abs. 1ter"
+  unit: days
+values:
+  2018-01-01:
+    rueckgabefrist_entzogener_ausweis_tage: 30
+    description: "Entzogene Ausweise muessen innert 30 Tagen zurueckgegeben werden"

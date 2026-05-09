@@ -1,0 +1,8 @@
+description: "SR 152.13 Art. 9 - Einsichtnahme waehrend Schutzfrist beim BVGer"
+metadata:
+  reference: "SR 152.13 Art. 9 Abs. 1 lit. b"
+  unit: years
+values:
+  2011-05-01:
+    mindestens_verstorben_seit_jahren: 3
+    description: "Betroffene Personen muessen seit mindestens 3 Jahren verstorben sein"

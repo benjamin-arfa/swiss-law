@@ -1,0 +1,29 @@
+"""OpenFisca variables for SR 837 - Arbeitslosenversicherung / Ueberbrueckungsleistungen."""
+
+from .sr_837_0_art_3 import *  # noqa: F401,F403
+from .sr_837_0_art_8 import *  # noqa: F401,F403
+from .sr_837_0_art_9 import *  # noqa: F401,F403
+from .sr_837_0_art_10 import *  # noqa: F401,F403
+from .sr_837_0_art_13 import *  # noqa: F401,F403
+from .sr_837_0_art_14 import *  # noqa: F401,F403
+from .sr_837_0_art_18 import *  # noqa: F401,F403
+from .sr_837_0_art_22 import *  # noqa: F401,F403
+from .sr_837_0_art_24 import *  # noqa: F401,F403
+from .sr_837_0_art_27 import *  # noqa: F401,F403
+from .sr_837_0_art_28 import *  # noqa: F401,F403
+from .sr_837_0_art_30 import *  # noqa: F401,F403
+from .sr_837_0_art_31 import *  # noqa: F401,F403
+from .sr_837_056_2_art_1 import *  # noqa: F401,F403
+from .sr_837_056_2_art_2 import *  # noqa: F401,F403
+from .sr_837_056_2_art_3 import *  # noqa: F401,F403
+from .sr_837_174_art_1 import *  # noqa: F401,F403
+from .sr_837_174_art_3 import *  # noqa: F401,F403
+from .sr_837_174_art_4 import *  # noqa: F401,F403
+from .sr_837_174_art_8 import *  # noqa: F401,F403
+from .sr_837_174_art_9 import *  # noqa: F401,F403
+from .sr_837_21_art_4 import *  # noqa: F401,F403
+from .sr_837_21_art_6 import *  # noqa: F401,F403
+from .sr_837_21_art_11 import *  # noqa: F401,F403
+from .sr_837_21_art_12 import *  # noqa: F401,F403
+from .sr_837_21_art_17 import *  # noqa: F401,F403
+from .sr_837_21_art_21 import *  # noqa: F401,F403

@@ -1,0 +1,30 @@
+description: "Parameters for SR 837.21 - UeLV (Ueberbrueckungsleistungen fuer aeltere Arbeitslose)"
+metadata:
+  reference: "SR 837.21"
+
+uelv:
+  nebenkosten_pauschale:
+    description: "Annual flat rate for ancillary costs for owner-occupied property (CHF)"
+    reference: "SR 837.21 Art. 11 Abs. 3"
+    unit: CHF
+    values:
+      2025-01-01:
+        value: 3480
+      2021-01-01:
+        value: 3060
+
+  heizkosten_faktor:
+    description: "Heating costs as fraction of ancillary costs flat rate"
+    reference: "SR 837.21 Art. 12"
+    unit: rate
+    values:
+      2021-01-01:
+        value: 0.5
+
+  vorsorgeguthaben_multiplikator:
+    description: "Multiplier of general living expenses for BVG pension asset exemption"
+    reference: "SR 837.21 Art. 4"
+    unit: multiplier
+    values:
+      2021-01-01:
+        value: 26

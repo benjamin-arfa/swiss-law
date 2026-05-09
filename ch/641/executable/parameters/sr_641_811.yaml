@@ -1,0 +1,158 @@
+description: "Parameters for SR 641.811 - SVAV (Schwerverkehrsabgabeverordnung)"
+metadata:
+  reference: "SR 641.811"
+
+svav:
+  pauschale_personentransport:
+    description: "Flat-rate annual fee for heavy passenger transport vehicles >3.5t (CHF)"
+    reference: "SR 641.811 Art. 4 Abs. 1 Bst. a"
+    unit: CHF
+    values:
+      2005-01-01:
+        value: 650
+
+  pauschale_gesellschaftswagen_bis_8_5t:
+    description: "Flat-rate annual fee for coaches >3.5-8.5t (CHF)"
+    reference: "SR 641.811 Art. 4 Abs. 1 Bst. b"
+    unit: CHF
+    values:
+      2005-01-01:
+        value: 2200
+
+  pauschale_gesellschaftswagen_bis_19_5t:
+    description: "Flat-rate annual fee for coaches >8.5-19.5t (CHF)"
+    reference: "SR 641.811 Art. 4 Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2017-05-07:
+        value: 3300
+
+  pauschale_gesellschaftswagen_bis_26t:
+    description: "Flat-rate annual fee for coaches >19.5-26t (CHF)"
+    reference: "SR 641.811 Art. 4 Abs. 1 Bst. d"
+    unit: CHF
+    values:
+      2017-05-07:
+        value: 4400
+
+  pauschale_gesellschaftswagen_ueber_26t:
+    description: "Flat-rate annual fee for coaches >26t (CHF)"
+    reference: "SR 641.811 Art. 4 Abs. 1 Bst. e"
+    unit: CHF
+    values:
+      2005-01-01:
+        value: 5000
+
+  pauschale_langsam_pro_100kg:
+    description: "Flat-rate annual fee for slow vehicles per 100kg (CHF)"
+    reference: "SR 641.811 Art. 4 Abs. 1 Bst. f"
+    unit: CHF
+    values:
+      2005-01-01:
+        value: 11
+
+  pauschale_schausteller_pro_100kg:
+    description: "Flat-rate annual fee for showman/circus vehicles per 100kg (CHF)"
+    reference: "SR 641.811 Art. 4 Abs. 1 Bst. g"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 8
+
+  tarif_kategorie_1:
+    description: "Distance-based rate category 1 in Rappen per km per tonne"
+    reference: "SR 641.811 Art. 14 Abs. 1 Bst. a"
+    unit: Rappen
+    values:
+      2025-01-01:
+        value: 3.26
+      2012-07-01:
+        value: 3.10
+      2008-01-01:
+        value: 2.88
+      2005-01-01:
+        value: 2.44
+
+  tarif_kategorie_2:
+    description: "Distance-based rate category 2 in Rappen per km per tonne"
+    reference: "SR 641.811 Art. 14 Abs. 1 Bst. b"
+    unit: Rappen
+    values:
+      2025-01-01:
+        value: 2.82
+      2012-07-01:
+        value: 2.69
+      2008-01-01:
+        value: 2.52
+      2005-01-01:
+        value: 2.15
+
+  tarif_kategorie_3:
+    description: "Distance-based rate category 3 in Rappen per km per tonne"
+    reference: "SR 641.811 Art. 14 Abs. 1 Bst. c"
+    unit: Rappen
+    values:
+      2025-01-01:
+        value: 2.39
+      2012-07-01:
+        value: 2.28
+      2008-01-01:
+        value: 2.15
+      2005-01-01:
+        value: 1.85
+
+  ukv_rueckerstattung_4_8_bis_5_5m:
+    description: "UKV refund per transfer for containers 4.8-5.5m (CHF)"
+    reference: "SR 641.811 Art. 8 Abs. 2 Bst. a"
+    unit: CHF
+    values:
+      2017-01-01:
+        value: 15
+
+  ukv_rueckerstattung_5_5_bis_6_1m:
+    description: "UKV refund per transfer for containers >5.5-6.1m (CHF)"
+    reference: "SR 641.811 Art. 8 Abs. 2 Bst. b"
+    unit: CHF
+    values:
+      2017-01-01:
+        value: 22
+
+  ukv_rueckerstattung_ueber_6_1m:
+    description: "UKV refund per transfer for containers >6.1m (CHF)"
+    reference: "SR 641.811 Art. 8 Abs. 2 Bst. c"
+    unit: CHF
+    values:
+      2017-01-01:
+        value: 33
+
+  rohholz_rueckerstattung_pro_m3:
+    description: "Refund per m3 of timber transported (CHF)"
+    reference: "SR 641.811 Art. 11 Abs. 2"
+    unit: CHF
+    values:
+      2021-07-01:
+        value: 2.10
+
+  rohholz_ermaessigung_faktor:
+    description: "Reduction factor for exclusive timber transport (75%)"
+    reference: "SR 641.811 Art. 11 Abs. 1"
+    unit: rate
+    values:
+      2021-07-01:
+        value: 0.75
+
+  massgebendes_gewicht_maximum_kg:
+    description: "Maximum relevant weight in kg"
+    reference: "SR 641.811 Art. 13 Abs. 8"
+    unit: kg
+    values:
+      2016-03-01:
+        value: 40000
+
+  abgabepflicht_mindestgewicht_kg:
+    description: "Minimum gross weight for tax obligation (kg)"
+    reference: "SR 641.811 Art. 2 Abs. 1"
+    unit: kg
+    values:
+      2000-01-01:
+        value: 3500

@@ -1,0 +1,27 @@
+description: "Parameters for SR 641.51 - AStG (Automobile Tax Act)"
+metadata:
+  reference: "SR 641.51"
+
+steuersatz:
+  description: "Automobile tax rate (4%)"
+  reference: "SR 641.51 Art. 13"
+  unit: rate
+  values:
+    1996-06-21:
+      value: 0.04
+
+max_stueckgewicht_kg:
+  description: "Maximum unit weight for taxable vehicles (kg)"
+  reference: "SR 641.51 Art. 2 Abs. 1 Bst. a, c"
+  unit: kg
+  values:
+    1996-06-21:
+      value: 1600
+
+elektroautomobil_befreit:
+  description: "Whether electric vehicles are exempt from tax"
+  reference: "SR 641.51 Art. 12 Abs. 2"
+  unit: boolean
+  values:
+    1996-06-21:
+      value: true

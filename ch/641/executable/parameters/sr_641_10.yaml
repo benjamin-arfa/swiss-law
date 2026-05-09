@@ -41,3 +41,59 @@ max_dividende_gemeinnuetzig:
   values:
     1973-06-27:
       value: 0.06
+
+faelligkeitsfrist_tage:
+  description: "Due date: number of days after relevant event"
+  reference: "SR 641.10 Art. 11, 20, 26"
+  unit: days
+  values:
+    1973-06-27:
+      value: 30
+
+umsatzabgabe_satz_inland:
+  description: "Turnover levy rate for domestic securities (1.5 per mille)"
+  reference: "SR 641.10 Art. 16 Abs. 1 Bst. a"
+  unit: rate
+  values:
+    1978-04-01:
+      value: 0.0015
+
+umsatzabgabe_satz_ausland:
+  description: "Turnover levy rate for foreign securities (3 per mille)"
+  reference: "SR 641.10 Art. 16 Abs. 1 Bst. b"
+  unit: rate
+  values:
+    1978-04-01:
+      value: 0.003
+
+praemienabgabe_satz_allgemein:
+  description: "Insurance premium levy rate general (5%)"
+  reference: "SR 641.10 Art. 24 Abs. 1"
+  unit: rate
+  values:
+    1973-06-27:
+      value: 0.05
+
+praemienabgabe_satz_leben:
+  description: "Insurance premium levy rate for life insurance (2.5%)"
+  reference: "SR 641.10 Art. 24 Abs. 1"
+  unit: rate
+  values:
+    1998-04-01:
+      value: 0.025
+
+verjaehrungsfrist_jahre:
+  description: "Prescription period for levy claims (years)"
+  reference: "SR 641.10 Art. 30 Abs. 1"
+  unit: years
+  values:
+    1973-06-27:
+      value: 5
+
+effektenhaendler_aktiven_schwelle:
+  description: "Asset threshold for securities dealer classification (CHF)"
+  reference: "SR 641.10 Art. 13 Abs. 3 Bst. d"
+  unit: CHF
+  values:
+    2006-01-01:
+      value: 10000000

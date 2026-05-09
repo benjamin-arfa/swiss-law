@@ -1,0 +1,83 @@
+description: "Parameters for SR 414.110.21 - VETHBK (ETH Complaints Commission Ordinance)"
+metadata:
+  reference: "SR 414.110.21"
+
+altersgrenze:
+  description: "Maximum age for eligibility as commission member"
+  reference: "SR 414.110.21 Art. 4 Abs. 1"
+  unit: years
+  values:
+    2023-06-01:
+      value: 65
+
+amtsdauer_jahre:
+  description: "Term of office in years"
+  reference: "SR 414.110.21 Art. 6 Abs. 1"
+  unit: years
+  values:
+    2022-01-01:
+      value: 4
+
+max_amtsperioden:
+  description: "Maximum number of terms (initial + one re-election)"
+  reference: "SR 414.110.21 Art. 6 Abs. 2"
+  unit: count
+  values:
+    2022-01-01:
+      value: 2
+
+pauschale_praesident:
+  description: "Annual lump-sum compensation for the president (CHF)"
+  reference: "SR 414.110.21 Art. 7 Abs. 2"
+  unit: CHF
+  values:
+    2022-01-01:
+      value: 18000
+
+pauschale_vizepraesident:
+  description: "Annual lump-sum compensation for the vice-president (CHF)"
+  reference: "SR 414.110.21 Art. 7 Abs. 2"
+  unit: CHF
+  values:
+    2022-01-01:
+      value: 6000
+
+taggeld_sitzung:
+  description: "Per-session daily allowance for other members (CHF)"
+  reference: "SR 414.110.21 Art. 7 Abs. 4"
+  unit: CHF
+  values:
+    2022-01-01:
+      value: 500
+
+aktenstudium_zuschlag:
+  description: "Additional compensation for preparatory file study per session (CHF)"
+  reference: "SR 414.110.21 Art. 7 Abs. 4"
+  unit: CHF
+  values:
+    2022-01-01:
+      value: 250
+
+zirkular_pauschale:
+  description: "Flat-rate compensation per circular procedure (CHF)"
+  reference: "SR 414.110.21 Art. 7 Abs. 4"
+  unit: CHF
+  values:
+    2022-01-01:
+      value: 500
+
+quorum:
+  description: "Minimum number of members present for quorum"
+  reference: "SR 414.110.21 Art. 19 Abs. 1"
+  unit: count
+  values:
+    2022-01-01:
+      value: 4
+
+total_mitglieder:
+  description: "Total number of commission members"
+  reference: "SR 414.110.21 Art. 2 Abs. 1"
+  unit: count
+  values:
+    2022-01-01:
+      value: 7

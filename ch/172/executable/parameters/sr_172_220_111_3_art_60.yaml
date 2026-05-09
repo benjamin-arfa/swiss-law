@@ -1,0 +1,18 @@
+description: "SR 172.220.111.3 Art. 60 - Conge maternite pour le personnel federal"
+metadata:
+  reference: "SR 172.220.111.3 Art. 60"
+  unit: days
+values:
+  2005-07-01:
+    conge_maternite_mois: 4
+    conge_maternite_jours_calendaires: 122
+    conge_maternite_max_hospitalisation_jours: 154
+    anticipation_max_semaines: 2
+    description: "4 mois payes, max 154 jours si hospitalisation du nouveau-ne"
+  2022-01-01:
+    conge_maternite_mois: 4
+    conge_maternite_jours_calendaires: 122
+    conge_maternite_max_hospitalisation_jours: 154
+    anticipation_max_semaines: 2
+    jours_supplementaires_deces_parent: 20
+    description: "Ajout de 20 jours ouvres supplementaires si deces de l'autre parent"

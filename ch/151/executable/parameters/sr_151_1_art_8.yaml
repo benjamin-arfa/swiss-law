@@ -1,0 +1,9 @@
+description: "SR 151.1 Art. 8 - Delai pour action en cas de discrimination a l'embauche"
+metadata:
+  reference: "SR 151.1 Art. 8 al. 2"
+  unit: months
+values:
+  1996-03-01:
+    delai_action_embauche_mois: 3
+    delai_action_embauche_jours_approx: 90
+    description: "Delai peremptoire de 3 mois des la communication du refus d'embauche"

@@ -1,0 +1,15 @@
+description: "SR 172.220.111.3 Art. 60b - Conge paternite et conge du partenaire enregistre"
+metadata:
+  reference: "SR 172.220.111.3 Art. 60b"
+  unit: working_days
+values:
+  2022-01-01:
+    conge_paternite_jours_ouvres: 20
+    delai_utilisation_mois: 6
+    description: "20 jours ouvres dans les 6 mois suivant la naissance"
+  2024-01-01:
+    conge_paternite_jours_ouvres: 20
+    delai_utilisation_mois: 6
+    conge_supplementaire_deces_mere_mois: 4
+    delai_deces_mere_jours: 97
+    description: "Ajout de 4 mois supplementaires si deces de la mere dans les 97 jours"

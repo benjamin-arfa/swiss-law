@@ -1,0 +1,8 @@
+description: "SR 172.220.111.3 Art. 62 - Versement du salaire en cas de deces"
+metadata:
+  reference: "SR 172.220.111.3 Art. 62 al. 1"
+  unit: fraction
+values:
+  2002-01-01:
+    fraction_salaire_annuel_survivants: 0.166667
+    description: "Les survivants recoivent un sixieme du salaire annuel"

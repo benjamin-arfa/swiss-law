@@ -1,0 +1,9 @@
+description: "SR 172.220.111.3 Art. 60c - Conge pour prise en charge d'enfants gravement malades"
+metadata:
+  reference: "SR 172.220.111.3 Art. 60c"
+  unit: weeks
+values:
+  2021-07-01:
+    conge_prise_charge_semaines_max: 14
+    delai_cadre_mois: 18
+    description: "Maximum 14 semaines dans un delai-cadre de 18 mois"

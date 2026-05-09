@@ -1,0 +1,9 @@
+description: "SR 172.220.111.3 Art. 67a - Reduction des vacances"
+metadata:
+  reference: "SR 172.220.111.3 Art. 67a"
+  unit: working_days
+values:
+  2015-08-01:
+    seuil_maladie_accident_jours: 66
+    seuil_conge_non_paye_jours: 22
+    description: "Reduction proportionnelle au-dela de 66 jours maladie ou 22 jours non payes"

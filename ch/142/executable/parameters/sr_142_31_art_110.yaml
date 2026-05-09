@@ -1,0 +1,13 @@
+description: "SR 142.31 Art. 110 - Delais de procedure en matiere d'asile"
+metadata:
+  reference: "SR 142.31 Art. 110"
+  unit: days
+values:
+  2019-03-01:
+    delai_regularisation_general_jours: 7
+    delai_regularisation_non_entree_jours: 3
+    delai_preuves_suisse_jours: 7
+    delai_preuves_etranger_jours: 30
+    delai_expertise_jours: 30
+    delai_aeroport_jours_ouvres: 2
+    description: "Delais differencies selon le type de decision et la localisation des preuves"

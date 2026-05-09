@@ -1,0 +1,17 @@
+description: "SR 172.220.111.3 Art. 60a - Modification du taux d'occupation apres naissance/adoption"
+metadata:
+  reference: "SR 172.220.111.3 Art. 60a"
+  unit: percent
+values:
+  2013-07-01:
+    reduction_max_pourcent: 20
+    taux_minimum_pourcent: 60
+    delai_exercice_mois: 12
+    description: "Reduction max 20%, plancher 60%, dans les 12 mois"
+  2023-01-01:
+    reduction_max_pourcent: 20
+    taux_minimum_pourcent: 60
+    delai_exercice_mois: 12
+    delai_augmentation_annees: 3
+    preavis_augmentation_mois: 3
+    description: "Ajout du droit a l'augmentation dans les 3 ans"

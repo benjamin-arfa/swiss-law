@@ -1,87 +1,60 @@
-"""SR 151.1 Art. 5
+"""SR 151.1 Art. 5 - Droits des travailleurs (Workers' Rights / Indemnity Caps)
 
-Generated from: ch/151/de/151.1.md
+Generated from: ch/151/fr/151.1.md
 
-Rechtsansprueche bei Diskriminierung: Entschaedigungsberechnung und
-Hoechstgrenzen.
+Indemnity caps for gender discrimination under the Gender Equality Act:
+- Hiring refusal: max 3 months' salary (per person AND total for same position)
+- Termination or sexual harassment: max 6 months' salary
+- Damages and moral tort claims are reserved (no cap)
 """
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 
 
-class monatslohn(Variable):
+class leg_discrimination_type(Variable):
+    value_type = int
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Type de discrimination LEg: 0=aucune, 1=embauche, 2=resiliation, 3=harcelement_sexuel"
+    reference = "SR 151.1 Art. 5"
+
+
+class leg_salaire_mensuel(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = MONTH
-    label = "Voraussichtlicher oder tatsaechlicher Monatslohn"
-    reference = "SR 151.1 Art. 5 Abs. 2"
+    label = "Salaire mensuel de reference pour le calcul de l'indemnite LEg"
+    reference = "SR 151.1 Art. 5 al. 2"
 
 
-class schweizerischer_durchschnittslohn(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = MONTH
-    label = "Schweizerischer Durchschnittslohn (Basis fuer Entschaedigung bei sexueller Belaestigung)"
-    reference = "SR 151.1 Art. 5 Abs. 3"
-
-
-class diskriminierung_bei_anstellung(Variable):
-    value_type = bool
+class leg_indemnite_max_mois(Variable):
+    value_type = int
     entity_key = 'person'
     definition_period = YEAR
-    label = "Ob die Diskriminierung in der Ablehnung einer Anstellung liegt"
-    reference = "SR 151.1 Art. 5 Abs. 2"
-
-
-class diskriminierung_bei_kuendigung(Variable):
-    value_type = bool
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Ob die Diskriminierung in der Kuendigung liegt"
-    reference = "SR 151.1 Art. 5 Abs. 2"
-
-
-class arbeitgeber_massnahmen_gegen_belaestigung(Variable):
-    value_type = bool
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Ob der Arbeitgeber beweist, angemessene Massnahmen gegen sexuelle Belaestigung getroffen zu haben"
-    reference = "SR 151.1 Art. 5 Abs. 3"
-
-
-class max_entschaedigung_ablehnung_anstellung(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = MONTH
-    label = "Maximale Entschaedigung bei diskriminierender Ablehnung einer Anstellung (3 Monatsloehne)"
-    reference = "SR 151.1 Art. 5 Abs. 4"
+    label = "Nombre maximum de mois de salaire pour l'indemnite selon le type de discrimination"
+    reference = "SR 151.1 Art. 5 al. 2-4"
 
     def formula(person, period, parameters):
-        lohn = person('monatslohn', period)
-        return lohn * 3
+        discrimination = person('leg_discrimination_type', period)
+
+        # Art. 5 al. 4: refus d'embauche -> max 3 mois
+        # Art. 5 al. 4: resiliation ou harcelement -> max 6 mois
+        plafond = select(
+            [discrimination == 0, discrimination == 1, discrimination == 2, discrimination == 3],
+            [0, 3, 6, 6]
+        )
+        return plafond
 
 
-class max_entschaedigung_kuendigung(Variable):
+class leg_indemnite_max_montant(Variable):
     value_type = float
     entity_key = 'person'
-    definition_period = MONTH
-    label = "Maximale Entschaedigung bei diskriminierender Kuendigung oder sexueller Belaestigung (6 Monatsloehne)"
-    reference = "SR 151.1 Art. 5 Abs. 4"
-
-    def formula(person, period, parameters):
-        lohn = person('monatslohn', period)
-        return lohn * 6
-
-
-class entschaedigung_sexuelle_belaestigung_moeglich(Variable):
-    value_type = bool
-    entity_key = 'person'
     definition_period = YEAR
-    label = "Ob eine Entschaedigung wegen sexueller Belaestigung moeglich ist"
-    reference = "SR 151.1 Art. 5 Abs. 3"
+    label = "Montant maximum de l'indemnite LEg en francs"
+    reference = "SR 151.1 Art. 5 al. 2-4"
 
     def formula(person, period, parameters):
-        belaestigung = person('sexuelle_belaestigung_am_arbeitsplatz', period)
-        massnahmen = person('arbeitgeber_massnahmen_gegen_belaestigung', period)
-        return belaestigung * (1 - massnahmen)
+        salaire = person('leg_salaire_mensuel', period.first_month)
+        mois_max = person('leg_indemnite_max_mois', period)
+        return salaire * mois_max

@@ -1,0 +1,10 @@
+description: "SR 142.31 Art. 8 - Obligation de collaborer et consequences du manquement"
+metadata:
+  reference: "SR 142.31 Art. 8 al. 3bis"
+  unit: days
+values:
+  2019-03-01:
+    seuil_absence_general_jours: 20
+    seuil_absence_centre_federal_jours: 5
+    delai_nouvelle_demande_annees: 3
+    description: "Classement si absence > 20 jours (general) ou > 5 jours (centre); nouvelle demande apres 3 ans"

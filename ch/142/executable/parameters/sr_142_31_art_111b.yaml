@@ -1,0 +1,8 @@
+description: "SR 142.31 Art. 111b - Delai de demande de reexamen"
+metadata:
+  reference: "SR 142.31 Art. 111b al. 1"
+  unit: days
+values:
+  2014-02-01:
+    delai_demande_reexamen_jours: 30
+    description: "Demande de reexamen dans les 30 jours suivant la decouverte du motif"

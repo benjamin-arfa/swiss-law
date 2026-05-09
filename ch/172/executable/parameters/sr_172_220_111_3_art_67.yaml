@@ -1,0 +1,11 @@
+description: "SR 172.220.111.3 Art. 67 - Droit aux vacances selon l'age"
+metadata:
+  reference: "SR 172.220.111.3 Art. 67 al. 1"
+  unit: weeks
+values:
+  2014-01-01:
+    vacances_semaines_jusqu_a_20_ans: 6
+    vacances_semaines_21_a_49_ans: 5
+    vacances_semaines_50_a_59_ans: 6
+    vacances_semaines_des_60_ans: 7
+    description: "Echelonnement: 6/5/6/7 semaines selon l'age"

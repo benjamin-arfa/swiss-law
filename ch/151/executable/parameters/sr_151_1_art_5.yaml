@@ -1,0 +1,10 @@
+description: "SR 151.1 Art. 5 - Plafonds d'indemnites pour discrimination selon la LEg"
+metadata:
+  reference: "SR 151.1 Art. 5 al. 2-4"
+  unit: months_of_salary
+values:
+  1996-03-01:
+    plafond_indemnite_embauche_mois: 3
+    plafond_indemnite_resiliation_mois: 6
+    plafond_indemnite_harcelement_mois: 6
+    description: "En vigueur depuis le 1er mars 1996"

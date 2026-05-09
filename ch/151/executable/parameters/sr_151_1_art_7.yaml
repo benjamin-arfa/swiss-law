@@ -1,0 +1,8 @@
+description: "SR 151.1 Art. 7 - Conditions de qualite pour agir des organisations"
+metadata:
+  reference: "SR 151.1 Art. 7 al. 1"
+  unit: years
+values:
+  1996-03-01:
+    duree_minimale_existence_organisation_annees: 2
+    description: "Organisation constituee depuis au moins 2 ans"

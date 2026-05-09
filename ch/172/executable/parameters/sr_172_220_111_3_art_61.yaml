@@ -1,0 +1,8 @@
+description: "SR 172.220.111.3 Art. 61 - Versement du salaire en cas d'adoption"
+metadata:
+  reference: "SR 172.220.111.3 Art. 61"
+  unit: months
+values:
+  2013-07-01:
+    conge_adoption_mois: 2
+    description: "2 mois de conge paye pour adoption (un seul parent si les deux sont dans l'administration)"

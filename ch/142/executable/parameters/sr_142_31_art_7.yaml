@@ -1,0 +1,13 @@
+description: "SR 142.31 Art. 7 - Standard de preuve pour la qualite de refugie"
+metadata:
+  reference: "SR 142.31 Art. 7"
+  unit: qualitative
+values:
+  1999-10-01:
+    standard_preuve: "vraisemblance (haute probabilite)"
+    criteres_negatifs:
+      - "allegations insuffisamment fondees sur points essentiels"
+      - "allegations contradictoires"
+      - "allegations non conformes aux faits"
+      - "preuves fausses ou falsifiees"
+    description: "Le requerant doit prouver ou rendre vraisemblable sa qualite de refugie"

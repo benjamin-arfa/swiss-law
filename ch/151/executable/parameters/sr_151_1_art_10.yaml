@@ -1,0 +1,8 @@
+description: "SR 151.1 Art. 10 - Protection contre le conge"
+metadata:
+  reference: "SR 151.1 Art. 10 al. 2"
+  unit: months
+values:
+  1996-03-01:
+    duree_protection_post_procedure_mois: 6
+    description: "Protection pendant la procedure et durant les 6 mois suivant la cloture"

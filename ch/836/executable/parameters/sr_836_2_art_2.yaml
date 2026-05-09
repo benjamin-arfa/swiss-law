@@ -1,0 +1,6 @@
+```yml
+parameters:
+  ist_familienzulage:
+    value: true
+    label: Whether a benefit qualifies as a family allowance (Art. 2 FamZG)
+```

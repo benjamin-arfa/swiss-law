@@ -1,0 +1,9 @@
+```yml
+parameters:
+  gemischter_betrieb_vorwiegend_landw:
+    value: true
+    label: In mixed operations, worker must predominantly perform agricultural work (Art. 1 par. 1 FLV)
+  ehegatte_nicht_arbeitnehmer:
+    value: true
+    label: Spouse of farm owner is not considered agricultural employee (Art. 1 par. 2 FLV)
+```

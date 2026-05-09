@@ -1,0 +1,6 @@
+```yml
+parameters:
+  beitrag_basis:
+    value: ahv_pflichtiges_einkommen
+    label: Contributions are calculated as percentage of AHV-liable income (Art. 16 par. 2)
+```

@@ -1,0 +1,15 @@
+```yml
+parameters:
+  unterstellung_arbeitgeber_ahvg:
+    value: true
+    label: AHV-liable employers are subject to the act (Art. 11 par. 1 let. a)
+  unterstellung_arbeitnehmer_art6:
+    value: true
+    label: Employees of non-liable employers per Art. 6 AHVG are subject (Art. 11 par. 1 let. b)
+  unterstellung_selbstaendige:
+    value: true
+    label: Self-employed persons are subject since 1.1.2013 (Art. 11 par. 1 let. c)
+  ausschluss_landwirtschaft:
+    value: true
+    label: Agricultural employers and employees are excluded (Art. 11 par. 2)
+```

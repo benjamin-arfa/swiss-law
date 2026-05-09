@@ -1,0 +1,6 @@
+```yml
+parameters:
+  familienzulage_zusaetzlich_zu_unterhalt:
+    value: true
+    label: Family allowances must be paid in addition to maintenance payments (Art. 8)
+```

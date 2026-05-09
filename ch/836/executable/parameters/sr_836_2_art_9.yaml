@@ -1,0 +1,9 @@
+```yml
+parameters:
+  drittauszahlung_moeglich:
+    value: true
+    label: Third-party payment possible if allowance not used for beneficiary (Art. 9 par. 1)
+  direktauszahlung_muendiges_kind:
+    value: true
+    label: Direct payment to adult child in education possible on request (Art. 9 par. 2)
+```

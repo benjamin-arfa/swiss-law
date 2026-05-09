@@ -1,0 +1,18 @@
+```yml
+parameters:
+  kindesverhaeltnis_zgb:
+    value: true
+    label: Child relationship per ZGB qualifies for family allowance (Art. 4 par. 1 let. a)
+  stiefkind:
+    value: true
+    label: Stepchildren qualify for family allowance (Art. 4 par. 1 let. b)
+  pflegekind:
+    value: true
+    label: Foster children qualify for family allowance (Art. 4 par. 1 let. c)
+  geschwister_enkelkind_ueberwiegender_unterhalt:
+    value: true
+    label: Siblings/grandchildren qualify if predominantly maintained (Art. 4 par. 1 let. d)
+  kind_ausland_nur_mit_vereinbarung:
+    value: true
+    label: Children abroad only entitled if interstate agreement exists (Art. 4 par. 3)
+```

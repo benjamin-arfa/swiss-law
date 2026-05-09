@@ -1,0 +1,12 @@
+```yml
+parameters:
+  anspruch_nichterwerbstaetige:
+    value: true
+    label: Non-employed persons insured under AHV are entitled (Art. 19 par. 1)
+  unter_mindestlohn_gilt_nichterwerbstaetig:
+    value: true
+    label: Employed persons below minimum salary threshold are treated as non-employed (Art. 19 par. 1bis)
+  ausschluss_rente_taggeld:
+    value: true
+    label: Persons receiving a pension or daily allowance are excluded (Art. 19 par. 2)
+```

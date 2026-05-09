@@ -1,0 +1,9 @@
+```yml
+parameters:
+  mindest_betriebseinkommen_nebenberuflich:
+    value: 2000
+    label: Minimum annual farm income for part-time farmer status (CHF, Art. 3 par. 3 FLV)
+  mindest_monate_aelpler:
+    value: 2
+    label: Minimum months of continuous alpine farming for Aelpler status (Art. 3 par. 4 FLV)
+```

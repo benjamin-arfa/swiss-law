@@ -1,0 +1,9 @@
+```yml
+parameters:
+  mindest_sprachregionen:
+    value: 3
+    label: Minimum language regions covered for nationwide status (out of 4, Art. 4 FOrgV)
+  total_sprachregionen:
+    value: 4
+    label: Total number of language regions in Switzerland (DE, FR, IT, RM)
+```

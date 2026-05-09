@@ -1,0 +1,9 @@
+```yml
+parameters:
+  mindestlohn_familienzulage_jahr:
+    value: 7350
+    label: Annual minimum salary for employee entitlement (CHF, as of 2025, Art. 13 par. 1bis)
+  mindestlohn_familienzulage_monat:
+    value: 612.50
+    label: Monthly minimum salary for employee entitlement (CHF, as of 2025, Art. 13 par. 1bis)
+```

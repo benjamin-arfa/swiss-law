@@ -1,0 +1,13 @@
+description: "SR 901.022 Art. 3 - Zone d'application"
+reference: "https://www.fedlex.admin.ch/eli/cc/2016/357/fr"
+
+sr_901_022:
+  art_3:
+    population_zone_max_pct:
+      description: "Part maximale de la population suisse dans les zones d'application (%)"
+      unit: "/1"
+      values:
+        2016-07-01:
+          value: 0.10
+      metadata:
+        reference: "SR 901.022 Art. 3 al. 2"

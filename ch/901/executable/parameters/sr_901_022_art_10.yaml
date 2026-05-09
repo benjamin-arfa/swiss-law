@@ -1,0 +1,13 @@
+description: "SR 901.022 Art. 10 - Debut et duree de l'allegement fiscal"
+reference: "https://www.fedlex.admin.ch/eli/cc/2016/357/fr"
+
+sr_901_022:
+  art_10:
+    duree_max_allegement:
+      description: "Duree maximale de l'allegement fiscal federal (annees civiles)"
+      unit: "year"
+      values:
+        2016-07-01:
+          value: 10
+      metadata:
+        reference: "SR 901.022 Art. 10 al. 1"

@@ -1,0 +1,13 @@
+description: "SR 842 Art. 19 - Duree de l'aide federale logements locatifs"
+reference: "https://www.fedlex.admin.ch/eli/cc/2003/531/fr"
+
+sr_842:
+  art_19:
+    duree_max_aide_locatif:
+      description: "Duree maximale de l'aide federale pour logements locatifs (annees)"
+      unit: "year"
+      values:
+        2003-10-01:
+          value: 25
+      metadata:
+        reference: "SR 842 Art. 19 al. 1"

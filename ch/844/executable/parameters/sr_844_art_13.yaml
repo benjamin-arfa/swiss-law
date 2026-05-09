@@ -1,0 +1,13 @@
+description: "SR 844 Art. 13 - Remboursement et delai de protection"
+reference: "https://www.fedlex.admin.ch/eli/cc/1971/106_106_106/fr"
+
+sr_844:
+  art_13:
+    delai_protection_ans:
+      description: "Delai de protection pour remboursement (annees)"
+      unit: "year"
+      values:
+        1971-01-01:
+          value: 20
+      metadata:
+        reference: "SR 844 Art. 13 al. 2 et 4"

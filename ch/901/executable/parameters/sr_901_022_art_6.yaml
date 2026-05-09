@@ -1,0 +1,13 @@
+description: "SR 901.022 Art. 6 - Conditions d'octroi de l'allegement fiscal"
+reference: "https://www.fedlex.admin.ch/eli/cc/2016/357/fr"
+
+sr_901_022:
+  art_6:
+    emplois_min_services:
+      description: "Nombre minimum d'emplois a creer pour entreprise de services"
+      unit: "job"
+      values:
+        2016-07-01:
+          value: 10
+      metadata:
+        reference: "SR 901.022 Art. 6 al. 2"

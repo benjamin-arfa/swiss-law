@@ -1,0 +1,13 @@
+description: "SR 844 Art. 9 - Imputation des prestations de tiers"
+reference: "https://www.fedlex.admin.ch/eli/cc/1971/106_106_106/fr"
+
+sr_844:
+  art_9:
+    ratio_max_tiers:
+      description: "Part maximale des prestations de tiers dans la contribution cantonale (4/5)"
+      unit: "/1"
+      values:
+        1981-02-15:
+          value: 0.80
+      metadata:
+        reference: "SR 844 Art. 9 al. 1"

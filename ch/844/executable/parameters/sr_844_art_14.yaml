@@ -1,0 +1,29 @@
+description: "SR 844 Art. 14 - Prescription du droit au remboursement"
+reference: "https://www.fedlex.admin.ch/eli/cc/1971/106_106_106/fr"
+
+sr_844:
+  art_14:
+    delai_prescription_relatif:
+      description: "Delai relatif de prescription (des connaissance, annees)"
+      unit: "year"
+      values:
+        2020-01-01:
+          value: 3
+      metadata:
+        reference: "SR 844 Art. 14 al. 1"
+    delai_prescription_absolu:
+      description: "Delai absolu de prescription (des naissance du droit, annees)"
+      unit: "year"
+      values:
+        2020-01-01:
+          value: 10
+      metadata:
+        reference: "SR 844 Art. 14 al. 1"
+    delai_prescription_jugement:
+      description: "Delai de prescription apres notification du jugement (annees)"
+      unit: "year"
+      values:
+        2020-01-01:
+          value: 3
+      metadata:
+        reference: "SR 844 Art. 14 al. 2"

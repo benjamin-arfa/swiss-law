@@ -1,0 +1,13 @@
+description: "SR 901.022 Art. 13 - Proposition du canton"
+reference: "https://www.fedlex.admin.ch/eli/cc/2016/357/fr"
+
+sr_901_022:
+  art_13:
+    delai_depot_jours:
+      description: "Delai de depot de la proposition du canton (jours civils)"
+      unit: "day"
+      values:
+        2016-07-01:
+          value: 270
+      metadata:
+        reference: "SR 901.022 Art. 13 al. 3"

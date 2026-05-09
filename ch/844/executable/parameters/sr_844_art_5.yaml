@@ -1,0 +1,21 @@
+description: "SR 844 Art. 5 - Aide financiere pour l'amelioration du logement en montagne"
+reference: "https://www.fedlex.admin.ch/eli/cc/1971/106_106_106/fr"
+
+sr_844:
+  art_5:
+    taux_aide_min:
+      description: "Taux minimum d'aide financiere (10%)"
+      unit: "/1"
+      values:
+        1971-01-01:
+          value: 0.10
+      metadata:
+        reference: "SR 844 Art. 5 al. 1"
+    taux_aide_max:
+      description: "Taux maximum d'aide financiere (30%)"
+      unit: "/1"
+      values:
+        1971-01-01:
+          value: 0.30
+      metadata:
+        reference: "SR 844 Art. 5 al. 1"

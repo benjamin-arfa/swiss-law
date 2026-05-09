@@ -1,0 +1,21 @@
+description: "SR 844 Art. 6 - Majoration de l'aide en cas de charge excessive"
+reference: "https://www.fedlex.admin.ch/eli/cc/1971/106_106_106/fr"
+
+sr_844:
+  art_6:
+    taux_majoration_min:
+      description: "Taux minimum de majoration (5%)"
+      unit: "/1"
+      values:
+        1991-02-01:
+          value: 0.05
+      metadata:
+        reference: "SR 844 Art. 6"
+    taux_majoration_max:
+      description: "Taux maximum de majoration (15%)"
+      unit: "/1"
+      values:
+        1991-02-01:
+          value: 0.15
+      metadata:
+        reference: "SR 844 Art. 6"

@@ -1,0 +1,13 @@
+description: "SR 901.022 Art. 23 - Dispositions transitoires cautionnements"
+reference: "https://www.fedlex.admin.ch/eli/cc/2016/357/fr"
+
+sr_901_022:
+  art_23:
+    prolongation_max_cautionnement:
+      description: "Duree maximale de prolongation des cautionnements (annees)"
+      unit: "year"
+      values:
+        2016-07-01:
+          value: 8
+      metadata:
+        reference: "SR 901.022 Art. 23 al. 2"

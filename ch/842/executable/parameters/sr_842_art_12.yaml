@@ -1,0 +1,32 @@
+description: "SR 842 Art. 12 - Prets pour logements locatifs"
+reference: "https://www.fedlex.admin.ch/eli/cc/2003/531/fr"
+
+sr_842:
+  art_12:
+    capital_propre_min:
+      description: "Montant minimum de capital propre du proprietaire (CHF, fixe par CF)"
+      unit: "currency-CHF"
+      values:
+        2003-10-01:
+          value: 0
+      metadata:
+        reference: "SR 842 Art. 12 al. 1 let. a / al. 3 let. a"
+        note: "Le montant exact est fixe par le Conseil federal"
+    revenu_locataire_max:
+      description: "Limite de revenu du locataire pour reduction d'interets (CHF)"
+      unit: "currency-CHF"
+      values:
+        2003-10-01:
+          value: 0
+      metadata:
+        reference: "SR 842 Art. 12 al. 2 let. a / al. 3 let. c"
+        note: "Le montant exact est fixe par le Conseil federal"
+    fortune_locataire_max:
+      description: "Limite de fortune du locataire pour reduction d'interets (CHF)"
+      unit: "currency-CHF"
+      values:
+        2003-10-01:
+          value: 0
+      metadata:
+        reference: "SR 842 Art. 12 al. 2 let. a / al. 3 let. c"
+        note: "Le montant exact est fixe par le Conseil federal"

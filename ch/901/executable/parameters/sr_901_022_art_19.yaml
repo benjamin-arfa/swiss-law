@@ -1,0 +1,13 @@
+description: "SR 901.022 Art. 19 - Revocation de l'allegement fiscal"
+reference: "https://www.fedlex.admin.ch/eli/cc/2016/357/fr"
+
+sr_901_022:
+  art_19:
+    facteur_delai_revocation:
+      description: "Facteur pour le delai de revocation (duree + moitie = 1.5x)"
+      unit: "/1"
+      values:
+        2016-07-01:
+          value: 1.5
+      metadata:
+        reference: "SR 901.022 Art. 19 al. 4"

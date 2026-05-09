@@ -1,0 +1,21 @@
+description: "SR 844 Art. 8 - Prestation du canton"
+reference: "https://www.fedlex.admin.ch/eli/cc/1971/106_106_106/fr"
+
+sr_844:
+  art_8:
+    taux_couverture_normal:
+      description: "Taux de couverture requis cas normal (aide + canton, 50%)"
+      unit: "/1"
+      values:
+        1981-02-15:
+          value: 0.50
+      metadata:
+        reference: "SR 844 Art. 8 al. 1"
+    taux_couverture_excessif:
+      description: "Taux de couverture requis cas charge excessive (aide + canton, 75%)"
+      unit: "/1"
+      values:
+        1981-02-15:
+          value: 0.75
+      metadata:
+        reference: "SR 844 Art. 8 al. 1"

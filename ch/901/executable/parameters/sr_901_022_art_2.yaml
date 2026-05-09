@@ -1,0 +1,69 @@
+description: "SR 901.022 Art. 2 - Definitions des types de centres"
+reference: "https://www.fedlex.admin.ch/eli/cc/2016/357/fr"
+
+sr_901_022:
+  art_2:
+    centre_rural_habitants_min:
+      description: "Nombre minimum d'habitants pour un centre rural"
+      unit: "person"
+      values:
+        2016-07-01:
+          value: 2000
+      metadata:
+        reference: "SR 901.022 Art. 2 let. a ch. 3"
+    centre_rural_habitants_max:
+      description: "Nombre maximum d'habitants pour un centre rural"
+      unit: "person"
+      values:
+        2016-07-01:
+          value: 10000
+      metadata:
+        reference: "SR 901.022 Art. 2 let. a ch. 3"
+    petit_centre_habitants_min:
+      description: "Nombre minimum d'habitants pour un petit centre urbain"
+      unit: "person"
+      values:
+        2016-07-01:
+          value: 8500
+      metadata:
+        reference: "SR 901.022 Art. 2 let. b ch. 3"
+    petit_centre_actives_min:
+      description: "Nombre minimum de personnes actives pour un petit centre urbain"
+      unit: "person"
+      values:
+        2016-07-01:
+          value: 3500
+      metadata:
+        reference: "SR 901.022 Art. 2 let. b ch. 3"
+    distance_min_centre_km:
+      description: "Distance minimale a un centre plus important (km)"
+      unit: "km"
+      values:
+        2016-07-01:
+          value: 10
+      metadata:
+        reference: "SR 901.022 Art. 2 let. b ch. 2"
+    centre_moyen_habitants_actives_min:
+      description: "Seuil habitants ou personnes actives pour centre urbain moyen"
+      unit: "person"
+      values:
+        2016-07-01:
+          value: 40000
+      metadata:
+        reference: "SR 901.022 Art. 2 let. c ch. 3"
+    grand_centre_habitants_actives_min:
+      description: "Seuil habitants ou personnes actives pour grand centre urbain"
+      unit: "person"
+      values:
+        2016-07-01:
+          value: 70000
+      metadata:
+        reference: "SR 901.022 Art. 2 let. e"
+    centre_metropolitain_habitants_actives_min:
+      description: "Seuil habitants ou personnes actives pour centre metropolitain"
+      unit: "person"
+      values:
+        2016-07-01:
+          value: 200000
+      metadata:
+        reference: "SR 901.022 Art. 2 let. f"

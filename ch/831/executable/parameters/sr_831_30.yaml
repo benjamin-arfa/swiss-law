@@ -274,3 +274,51 @@ el:
     values:
       2008-01-01:
         value: 18
+
+  verguetungsfrist_krankheitskosten:
+    description: "Deadline to claim health/disability cost reimbursement (months after invoicing)"
+    reference: "SR 831.30 Art. 15 Bst. a"
+    unit: months
+    values:
+      2008-01-01:
+        value: 15
+
+  rueckforderung_relative_frist:
+    description: "Relative prescription period for restitution claim (months after awareness)"
+    reference: "SR 831.30 Art. 16b"
+    unit: months
+    values:
+      2021-01-01:
+        value: 12
+
+  rueckforderung_absolute_frist:
+    description: "Absolute prescription period for restitution claim (years after payment)"
+    reference: "SR 831.30 Art. 16b"
+    unit: years
+    values:
+      2021-01-01:
+        value: 10
+
+  beitrag_max_pro_senectute:
+    description: "Maximum annual federal contribution to Pro Senectute (CHF)"
+    reference: "SR 831.30 Art. 17 Abs. 1 Bst. a"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 16500000
+
+  beitrag_max_pro_infirmis:
+    description: "Maximum annual federal contribution to Pro Infirmis (CHF)"
+    reference: "SR 831.30 Art. 17 Abs. 1 Bst. b"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 14500000
+
+  beitrag_max_pro_juventute:
+    description: "Maximum annual federal contribution to Pro Juventute (CHF)"
+    reference: "SR 831.30 Art. 17 Abs. 1 Bst. c"
+    unit: CHF
+    values:
+      2008-01-01:
+        value: 2700000

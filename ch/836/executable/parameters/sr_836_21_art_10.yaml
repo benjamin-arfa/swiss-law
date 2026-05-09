@@ -1,0 +1,39 @@
+```yml
+parameters:
+  nachlauf_monate_arbeitsverhinderung:
+    value: 4
+    label: Months of continued entitlement after inability to work (current + 3 following) (Art. 10 par. 1)
+  nachlauf_monate_unbezahlter_urlaub:
+    value: 4
+    label: Months of continued entitlement during unpaid leave (current + 3 following) (Art. 10 par. 1bis)
+  max_wochen_mutterschaftsurlaub:
+    value: 16
+    label: Max weeks maternity leave with family allowance (Art. 10 par. 2 let. a)
+  max_wochen_mutterschaft_spital:
+    value: 22
+    label: Max weeks maternity leave with hospitalized newborn (Art. 10 par. 2 let. b)
+  max_wochen_mutterschaft_tod_elternteil:
+    value: 16
+    label: Max weeks maternity leave on death of other parent (Art. 10 par. 2 let. bbis)
+  max_wochen_mutterschaft_kombiniert:
+    value: 24
+    label: Max weeks maternity leave combined extension (Art. 10 par. 2 let. bter)
+  max_wochen_urlaub_anderer_elternteil:
+    value: 2
+    label: Max weeks other parent's leave (Art. 10 par. 2 let. c)
+  max_wochen_urlaub_tod_mutter:
+    value: 16
+    label: Max weeks other parent's leave on death of mother (Art. 10 par. 2 let. cbis)
+  max_wochen_urlaub_tod_mutter_spital:
+    value: 24
+    label: Max weeks other parent's leave combined extension (Art. 10 par. 2 let. cter)
+  max_wochen_betreuungsurlaub:
+    value: 14
+    label: Max weeks care leave for seriously ill child (Art. 10 par. 2 let. d)
+  wochen_adoptionsurlaub:
+    value: 2
+    label: Weeks of adoption leave (Art. 10 par. 2 let. e)
+  nachlauf_monate_tod:
+    value: 4
+    label: Months of continued entitlement after death (current + 3 following) (Art. 10 par. 3)
+```

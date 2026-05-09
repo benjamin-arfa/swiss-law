@@ -1,0 +1,7 @@
+```yml
+parameters:
+  maximale_volle_waisenrente_ahv:
+    value: 980
+    label: Maximum full AHV orphan's pension per month (Art. 6 FamZV)
+    unit: CHF/month
+```

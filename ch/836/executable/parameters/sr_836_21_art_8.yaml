@@ -1,0 +1,18 @@
+```yml
+parameters:
+  kaufkraft_schwelle_hoch:
+    value: 0.6667
+    label: PPP threshold above which 100% of minimum is paid (Art. 8 par. 1 let. a)
+  kaufkraft_schwelle_mittel:
+    value: 0.3333
+    label: PPP threshold above which 2/3 of minimum is paid (Art. 8 par. 1 let. b)
+  anteil_hoch:
+    value: 1.0
+    label: Percentage of statutory minimum for high-PPP countries (Art. 8 par. 1 let. a)
+  anteil_mittel:
+    value: 0.6667
+    label: Percentage of statutory minimum for medium-PPP countries (Art. 8 par. 1 let. b)
+  anteil_niedrig:
+    value: 0.3333
+    label: Percentage of statutory minimum for low-PPP countries (Art. 8 par. 1 let. c)
+```

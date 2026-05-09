@@ -1,0 +1,6 @@
+```yml
+parameters:
+  mutter_wohnsitz_dauer_monate:
+    value: 9
+    label: Required months of mother's domicile in CH before birth (Art. 2 par. 3 let. b)
+```

@@ -1,0 +1,9 @@
+```yml
+parameters:
+  max_jahre_ausbildung_ausland:
+    value: 5
+    label: Maximum years of education abroad with presumed CH domicile (Art. 7 par. 1bis)
+  mindestalter_fristbeginn:
+    value: 15
+    label: Minimum age for the 5-year period to start (Art. 7 par. 1bis)
+```

@@ -1,0 +1,9 @@
+```yml
+parameters:
+  schwankungsreserve_min_anteil:
+    value: 0.20
+    label: Minimum fluctuation reserve as share of avg annual expenditure (Art. 13 par. 2)
+  schwankungsreserve_max_anteil:
+    value: 1.00
+    label: Maximum fluctuation reserve as share of avg annual expenditure (Art. 13 par. 2)
+```

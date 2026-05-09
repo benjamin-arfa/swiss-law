@@ -1,0 +1,6 @@
+```yml
+parameters:
+  moutier_kantonswechsel_inkrafttreten:
+    value: "2026-01-01"
+    label: Datum des Inkrafttretens des Kantonswechsels Moutier
+```

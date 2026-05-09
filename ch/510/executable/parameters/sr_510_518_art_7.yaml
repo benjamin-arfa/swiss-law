@@ -1,0 +1,6 @@
+```yml
+parameters:
+  max_freiheitsstrafe_jahre_schutz_mil_anlagen:
+    value: 3
+    label: Maximale Freiheitsstrafe in Jahren bei Verstoss gegen das BG ueber den Schutz militaerischer Anlagen
+```

@@ -1,0 +1,6 @@
+```yml
+parameters:
+  verweilverbot_beschwerdefrist_tage:
+    value: 30
+    label: Beschwerdefrist gegen Verfuegungen des VBS betreffend Verweilverbot (in Tagen)
+```

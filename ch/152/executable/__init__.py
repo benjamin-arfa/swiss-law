@@ -1,0 +1,33 @@
+"""OpenFisca variables for SR 152 - Oeffentlichkeit und Archivierung."""
+
+from .sr_152_11_art_4 import *  # noqa: F401,F403
+from .sr_152_12_art_10 import *  # noqa: F401,F403
+from .sr_152_12_art_11 import *  # noqa: F401,F403
+from .sr_152_12_art_12 import *  # noqa: F401,F403
+from .sr_152_12_art_13 import *  # noqa: F401,F403
+from .sr_152_12_art_14 import *  # noqa: F401,F403
+from .sr_152_13_art_6 import *  # noqa: F401,F403
+from .sr_152_13_art_7 import *  # noqa: F401,F403
+from .sr_152_13_art_8 import *  # noqa: F401,F403
+from .sr_152_13_art_9 import *  # noqa: F401,F403
+from .sr_152_13_art_10 import *  # noqa: F401,F403
+from .sr_152_1_art_9 import *  # noqa: F401,F403
+from .sr_152_1_art_11 import *  # noqa: F401,F403
+from .sr_152_1_art_23 import *  # noqa: F401,F403
+from .sr_152_3_art_6 import *  # noqa: F401,F403
+from .sr_152_3_art_12 import *  # noqa: F401,F403
+from .sr_152_3_art_17 import *  # noqa: F401,F403
+from .sr_152_21_art_6 import *  # noqa: F401,F403
+from .sr_152_21_art_7 import *  # noqa: F401,F403
+from .sr_152_21_art_8 import *  # noqa: F401,F403
+from .sr_152_21_art_9 import *  # noqa: F401,F403
+from .sr_152_21_art_15 import *  # noqa: F401,F403
+from .sr_152_31_art_1 import *  # noqa: F401,F403
+from .sr_152_31_art_2 import *  # noqa: F401,F403
+from .sr_152_31_art_6 import *  # noqa: F401,F403
+from .sr_152_31_art_7 import *  # noqa: F401,F403
+from .sr_152_31_art_9 import *  # noqa: F401,F403
+from .sr_152_31_art_10 import *  # noqa: F401,F403
+from .sr_152_31_art_14 import *  # noqa: F401,F403
+from .sr_152_31_art_15 import *  # noqa: F401,F403
+from .sr_152_31_art_16 import *  # noqa: F401,F403

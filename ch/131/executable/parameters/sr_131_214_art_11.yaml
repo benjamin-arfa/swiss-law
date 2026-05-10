@@ -1,0 +1,14 @@
+parameters:
+  grundrechte_uri:
+    rechtsgleichheit_schutz:
+      value: 1
+      label: Verfassungsrechtlicher Schutz der Rechtsgleichheit (Kanton Uri)
+      reference: SR 131.214 Art. 11 Abs. 1
+      start_date: 1984-10-28
+      description: "Alle Menschen sind vor dem Gesetze gleich"
+    diskriminierungsverbot:
+      value: 1
+      label: Verfassungsrechtliches Diskriminierungsverbot (Kanton Uri)
+      reference: SR 131.214 Art. 11 Abs. 2
+      start_date: 1984-10-28
+      description: "Verbot der Benachteiligung wegen Herkunft, Geschlecht, Rasse, Sprache, sozialer Stellung, Weltanschauung oder Religion"

@@ -1,0 +1,8 @@
+parameters:
+  buergerpflichten_uri:
+    demokratische_teilnahme:
+      value: 1
+      label: Bürgerpflicht zur Teilnahme an demokratischen Prozessen (Kanton Uri)
+      reference: SR 131.214 Art. 20
+      start_date: 1984-10-28
+      description: "Die Teilnahme an den Abstimmungen und Wahlen und an den Gemeindeversammlungen ist Bürgerpflicht"

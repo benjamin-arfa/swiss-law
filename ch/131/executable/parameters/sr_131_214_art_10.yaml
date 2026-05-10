@@ -1,0 +1,8 @@
+parameters:
+  grundrechte_uri:
+    menschenwuerde_schutz:
+      value: 1
+      label: Verfassungsrechtlicher Schutz der Menschenwürde (Kanton Uri)
+      reference: SR 131.214 Art. 10
+      start_date: 1984-10-28
+      description: "Die Würde des Menschen ist unantastbar gemäß Artikel 10 der Kantonsverfassung Uri"

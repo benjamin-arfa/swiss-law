@@ -7,6 +7,7 @@ When partial expropriation indemnity for depreciation of remaining part exceeds
 1/3 of that part's value, the expropriator can request total expropriation.
 Renunciation deadline: 20 days from final indemnity determination.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

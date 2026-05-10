@@ -4,12 +4,12 @@ Generated from: ch/211/de/211.111.1.md
 
 Sterilisation von Personen unter 18 Jahren: Verboten (Art. 7 vorbehalten).
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class alter(Variable):
     value_type = int

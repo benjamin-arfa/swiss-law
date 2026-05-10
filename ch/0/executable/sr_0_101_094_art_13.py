@@ -3,14 +3,16 @@
 Generated from: ch/0/de/0.101.094.md
 """
 
-import numpy as np
-from openfisca_core import periods
-from openfisca_core.variables import Variable
+from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class participation_commissioner_in_chamber_hearings(Variable):
     value_type = bool
     label = French('Partipation du commissaire des droits de l\'homme dans les audiences de la chambre')
-    definition_period = periods.year
+    definition_period = YEAR
     reference = 'SR 0.101.094 Art. 13'
     
     def formula_2010_01_01(engagements, period, variables):

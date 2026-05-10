@@ -10,8 +10,10 @@ Art. 15: Noise/vibration limits - must not significantly disturb well-being.
 """
 
 from openfisca_core.model_api import *
-from openfisca_core.periods import MONTH
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class usg_immissionswert_luft_aktuell(Variable):
     value_type = float

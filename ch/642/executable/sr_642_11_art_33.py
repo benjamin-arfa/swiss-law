@@ -20,7 +20,9 @@ Art. 33 Abs. 3: Childcare costs up to CHF 25,800 per child under 14
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 # --- Art. 33 Abs. 1 Bst. g: Insurance premiums and savings ---
 

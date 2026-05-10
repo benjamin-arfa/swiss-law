@@ -12,8 +12,9 @@ Art. 12: Finanzhilfen - Financial aid:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
-import numpy as np
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class bgf_massnahme_lebensraum_verbesserung(Variable):
     value_type = bool

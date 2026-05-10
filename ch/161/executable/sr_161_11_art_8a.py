@@ -9,7 +9,9 @@ by March 1 of election year. Cantons with only 1 National Council seat
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class odp_nombre_sieges_conseil_national_canton(Variable):
     value_type = int

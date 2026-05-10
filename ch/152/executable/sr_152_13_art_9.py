@@ -12,7 +12,9 @@ Access can be limited to parts of the files; files may be anonymized.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class einverstaendnis_betroffener_bvger(Variable):
     value_type = bool

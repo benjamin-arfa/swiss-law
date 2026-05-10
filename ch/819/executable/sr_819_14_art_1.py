@@ -13,7 +13,9 @@ Art. 1 Gegenstand, Geltungsbereich, Begriffe und anwendbares Recht:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class maschv_maschine_im_geltungsbereich(Variable):
     value_type = bool

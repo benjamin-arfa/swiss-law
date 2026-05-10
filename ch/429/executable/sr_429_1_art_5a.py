@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 # Art. 5a - Beitraege fuer Beteiligungen an internationalen Programmen
 # Der Bund kann Beitraege gewaehren fuer die Beteiligung an internationalen Programmen.
 

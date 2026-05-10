@@ -3,10 +3,11 @@
 Generated from: ch/0/de/0.101.094.md
 """
 
-from openfisca_core.variables import Variable
-from openfisca_core.periods import ETERNITY
-from openfisca_core.indexed_enums import new_enum
-from openfisca_core import parameters as parameters_module
+from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class art_101094_1(Variable):
     value_type = bool

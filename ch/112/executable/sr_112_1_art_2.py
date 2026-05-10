@@ -8,7 +8,9 @@ Verpflichtungen fuer den Bundessitz fuer alle Zukunft enthoben.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class bern_vertragliche_leistungen_erfuellt(Variable):
     value_type = bool

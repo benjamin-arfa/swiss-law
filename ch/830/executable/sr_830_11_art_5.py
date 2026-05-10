@@ -16,7 +16,9 @@ Property consumption for persons in homes/hospitals: 1/15 of property
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class atsv_el_anerkannte_ausgaben(Variable):
     value_type = float

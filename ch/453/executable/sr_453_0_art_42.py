@@ -3,12 +3,12 @@
 Generated from: ch/453/de/453.0.md
 Fachgremium - hoechstens 9 Mitglieder.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class anzahl_mitglieder_cites_kommission(Variable):
     value_type = int

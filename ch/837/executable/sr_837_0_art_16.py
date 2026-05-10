@@ -14,7 +14,9 @@ Abs. 3bis: Art. 2 Bst. b does not apply to persons under 30.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class alv_alter(Variable):
     value_type = int

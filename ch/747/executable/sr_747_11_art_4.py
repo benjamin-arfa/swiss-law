@@ -11,7 +11,9 @@ c. carrying capacity >= 20t, or water displacement >= 10m³ (non-cargo)
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class schiffsreg_eigentumsanteil_schweiz(Variable):
     value_type = float

@@ -23,7 +23,9 @@ Innovation promotion (Art. 1b - FinTech license):
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 SEUIL_DEPOTS_BANQUE = 100000000  # CHF 100 millions
 DELAI_ANNONCE_JOURS = 10

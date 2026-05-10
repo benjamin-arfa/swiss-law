@@ -12,7 +12,9 @@ Liquidation of dormant assets (Art. 37m):
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 DELAI_LIQUIDATION_ANNEES = 50
 SEUIL_PUBLICATION_PREALABLE = 500  # CHF

@@ -11,7 +11,9 @@ Organizations can bring gender discrimination claims in their own name if:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class leg_organisation_annees_existence(Variable):
     value_type = int

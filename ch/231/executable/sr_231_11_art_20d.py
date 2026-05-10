@@ -8,7 +8,9 @@ hoechstens 5 Jahre nach Ablauf des Antrags aufbewahrt werden.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class antrag_geltungsdauer_abgelaufen(Variable):
     value_type = bool

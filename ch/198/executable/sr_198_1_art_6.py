@@ -2,12 +2,12 @@
 
 Generated from: ch/198/de/198.1.md
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class max_freiheitsstrafe_antarktis_vorsatz_jahre(Variable):
     value_type = int

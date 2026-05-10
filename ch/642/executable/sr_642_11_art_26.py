@@ -15,7 +15,9 @@ for (c) the taxpayer may justify higher actual costs.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class ifd_frais_deplacement_effectifs(Variable):
     value_type = float

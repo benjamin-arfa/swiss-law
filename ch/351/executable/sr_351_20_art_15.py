@@ -3,12 +3,12 @@
 Generated from: ch/351/de/351.20.md
 Cost rules for detention and transfer to international courts.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class haftkosten_ueberstellung_chf(Variable):
     value_type = float

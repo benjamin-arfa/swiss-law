@@ -13,7 +13,9 @@ by allowing all deductions specified in Articles 26 through 33a.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class gesamte_steuerbare_einkuenfte(Variable):
     value_type = float

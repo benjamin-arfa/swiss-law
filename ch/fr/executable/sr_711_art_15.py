@@ -8,6 +8,7 @@ Actes preparatoires (Preparatory acts) and notification deadlines:
 - Opposition period: 10 days
 - Damage from preparatory acts: full compensation
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

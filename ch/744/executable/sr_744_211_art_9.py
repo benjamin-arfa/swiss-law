@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class sr_744_211_art_9_elektrische_einrichtungen_eisenbahnverordnung_anwendbar(Variable):
     value_type = bool
     entity = Person

@@ -13,7 +13,9 @@ Art. 29: Beginn des Anspruchs und Auszahlung der Rente
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class iv_leistungsanspruch_geltendgemacht_seit_monaten(Variable):
     value_type = int

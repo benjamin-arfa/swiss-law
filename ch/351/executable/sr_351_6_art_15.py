@@ -3,12 +3,12 @@
 Generated from: ch/351/de/351.6.md
 Compensation rules for proceedings requested by the ICC.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class verfolgte_hat_haft_verursacht(Variable):
     value_type = bool

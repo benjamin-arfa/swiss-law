@@ -7,6 +7,7 @@ Expropriation temporaire (Temporary expropriation):
 - Period runs from taking possession, ends 3 months after completion at latest
 - If temporary expropriation destroys essential value, owner can demand permanent expropriation
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

@@ -13,7 +13,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class skb_konto_pro_person(Variable):
     value_type = int
     entity = Person

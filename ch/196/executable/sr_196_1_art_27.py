@@ -5,12 +5,12 @@ Generated from: ch/196/de/196.1.md
 Widerhandlungen in Geschaeftsbetrieben: Der Geschaeftsbetrieb kann anstelle
 der strafbaren Personen verurteilt werden.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class ermittlung_strafbarer_personen_unverhaeltnismaessig(Variable):
     value_type = bool

@@ -3,15 +3,17 @@
 Generated from: ch/0/de/0.101.07.md
 """
 
-from openfisca_core import periods, agents
-from openfisca_core.parameters import parameter_definition_from_array
-from openfisca_core.variables import Variable
+from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class convention_article_1_to_6(Variable):
     value_type = float
     entity = agents.Individual
     label = "Conventions for Articles 1 to 6 of the protocol"
-    definition_period = periods.year
+    definition_period = YEAR
 
     # This is a hypothetical implementation based on the provided legal article,
     # and might not accurately reflect the required logic if more context or

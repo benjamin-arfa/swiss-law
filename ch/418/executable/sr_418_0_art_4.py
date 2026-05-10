@@ -11,7 +11,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class sekundarstufe_ii_genuegend_schueler(Variable):
     value_type = bool
     entity = Person

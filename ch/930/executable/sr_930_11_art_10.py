@@ -16,7 +16,9 @@ Art. 10: Kontrolle und Verwaltungsmassnahmen - Controls and administrative measu
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class prsg_kontrolle_durchgefuehrt(Variable):
     value_type = bool

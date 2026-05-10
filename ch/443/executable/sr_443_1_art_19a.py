@@ -8,7 +8,9 @@ Suisse hinterlegt. Nach 5 Jahren koennen sie oeffentlich zugaenglich gemacht wer
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class jahre_seit_veroeffentlichung_film(Variable):
     value_type = int

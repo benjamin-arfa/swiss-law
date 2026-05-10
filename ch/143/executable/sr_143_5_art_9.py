@@ -11,7 +11,9 @@ Family members defined: parents, grandparents, siblings, spouse, children, grand
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class odv_maladie_grave_ou_deces_famille(Variable):
     value_type = bool

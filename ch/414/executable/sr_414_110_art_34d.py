@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class ist_schweizer_studierender(Variable):
     """Ob die Person Schweizer Staatsangehoerigkeit hat"""
     value_type = bool

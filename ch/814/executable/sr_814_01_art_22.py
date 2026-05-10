@@ -10,8 +10,10 @@ Art. 22: Permis de construire dans les zones affectees par le bruit
 """
 
 from openfisca_core.model_api import *
-from openfisca_core.periods import MONTH
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class usg_baugesuch_fuer_wohnnutzung(Variable):
     value_type = bool

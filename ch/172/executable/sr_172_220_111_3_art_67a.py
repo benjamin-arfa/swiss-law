@@ -13,7 +13,9 @@ days in the year. Hourly employees get reduced vacation pay, not reduced days.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class opers_jours_absence_maladie_accident(Variable):
     value_type = int

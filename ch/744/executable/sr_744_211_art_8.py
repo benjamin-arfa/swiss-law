@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class fahrzeug_bau_verkehrsanforderungen_erfuellt(Variable):
     value_type = bool
     entity = Person

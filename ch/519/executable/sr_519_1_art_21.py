@@ -10,7 +10,9 @@ no military insurance, private insurance, or liable third party covers the damag
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class pvspa_sachschaden_ohne_verschulden(Variable):
     value_type = bool

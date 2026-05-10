@@ -4,6 +4,11 @@ Generated from: ch/0/de/0.104.md
 """
 
 from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
+
 def response_status(participating_countries):
     for country in participating_countries:
         response_status = country.get("response_status")

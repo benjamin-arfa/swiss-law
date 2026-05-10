@@ -10,7 +10,9 @@ Art. 2 - Imputable costs for hydroelectric remediation measures:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class ocach_debut_assainissement_annee(Variable):
     value_type = int

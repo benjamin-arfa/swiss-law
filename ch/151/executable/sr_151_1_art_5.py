@@ -10,7 +10,9 @@ Indemnity caps for gender discrimination under the Gender Equality Act:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class leg_discrimination_type(Variable):
     value_type = int

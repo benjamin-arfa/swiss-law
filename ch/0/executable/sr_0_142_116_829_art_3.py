@@ -3,9 +3,15 @@
 Generated from: ch/0/de/0.142.116.829.md
 """
 
-from enum import Enum
 from openfisca_core.model_api import *
-from openfisca_core.periods import ETERNITY
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
+
+from enum import Enum
+
+
 
 
 class individual_type(str, Enum):

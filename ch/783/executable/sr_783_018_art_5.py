@@ -9,7 +9,9 @@ Gebuehrenpflichtige Leistungen der Schlichtungsstelle:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 BEHANDLUNGSGEBUEHR_SCHLICHTUNG = 20.0
 GEBUEHRENANSATZ_SCHLICHTUNG_PRO_STUNDE = 250.0

@@ -6,6 +6,7 @@ Verzugszinse (Late payment interest): When WBG pays late on interest or
 amortization, a default interest of 1% above the PUBLICA max rate (Art. 11 Abs. 1)
 is charged from the due date.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

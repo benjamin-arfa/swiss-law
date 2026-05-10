@@ -8,7 +8,9 @@ military service with their conscience perform civilian service on request.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class zdg_ist_militaerdienstpflichtig(Variable):
     value_type = bool

@@ -13,7 +13,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class bar_und_naturallohn_ahv_pflichtig(Variable):
     value_type = float
     entity = Person

@@ -10,7 +10,9 @@ No federal vote on dates c/d during National Council renewal year.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class odp_annee_renouvellement_conseil_national(Variable):
     value_type = bool

@@ -4,12 +4,12 @@ Generated from: ch/195/de/195.1.md
 
 Notdarlehen: Zinslose Darlehen fuer in Not geratene Personen im Ausland.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class ist_in_not_geraten(Variable):
     value_type = bool

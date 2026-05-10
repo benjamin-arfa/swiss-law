@@ -8,7 +8,9 @@ or support of a banned organisation fall under federal jurisdiction.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class beteiligung_an_verbotener_organisation(Variable):
     value_type = bool

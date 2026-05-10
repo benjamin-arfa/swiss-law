@@ -8,7 +8,9 @@ Bei mehr als 5 Jahren wird fuer jedes zusaetzliche Jahr bis zu 10% aufgeschlagen
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class dauer_wettbewerbsverstoss_jahre(Variable):
     value_type = float

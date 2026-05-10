@@ -21,7 +21,9 @@ l. Sortieren von Altmaterial, ungereinigter Waesche, Haaren/Borsten/Fellen
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class jarg_arbeit_uebersteigt_leistungsfaehigkeit(Variable):
     value_type = bool

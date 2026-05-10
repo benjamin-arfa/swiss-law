@@ -9,7 +9,9 @@ angenommen hat und von den Angaben nach Art. 40d Kenntnis erhalten hat.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class tage_seit_vertragsschluss_und_kenntnis(Variable):
     value_type = int

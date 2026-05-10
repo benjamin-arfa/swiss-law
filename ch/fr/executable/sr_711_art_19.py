@@ -7,6 +7,7 @@ Components: (a) full market value of expropriated right, (abis) for agricultural
 under LDFR: 3x max price per Art. 66(1) LDFR, (b) depreciation of remaining part
 in partial expropriation, (c) all other foreseeable damages.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

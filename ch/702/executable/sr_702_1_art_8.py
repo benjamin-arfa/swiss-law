@@ -8,7 +8,9 @@ Suspension of use restriction for max 2 years, exceptionally extendable by 2 mor
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class sistierung_art14a_dauer_jahre(Variable):
     value_type = int

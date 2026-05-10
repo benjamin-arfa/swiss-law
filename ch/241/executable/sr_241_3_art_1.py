@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 # Input variables
 
 class verfahren_auf_grundlage_art_10_abs_3_uwg(Variable):

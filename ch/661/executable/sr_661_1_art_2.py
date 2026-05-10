@@ -11,7 +11,9 @@ Art. 2 Ersatzbefreiung wegen Gesundheitsschädigung durch Militär- oder Zivildi
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class wpev_gesundheitsschaedigung_durch_dienst(Variable):
     value_type = bool

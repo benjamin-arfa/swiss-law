@@ -8,7 +8,9 @@ Bestaetigung der Vollstaendigkeit: Das Sekretariat bestaetigt innert
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class meldung_eingang_datum(Variable):
     value_type = date

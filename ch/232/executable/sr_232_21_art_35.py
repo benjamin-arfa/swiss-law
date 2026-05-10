@@ -8,7 +8,9 @@ Art. 35 regulates the transitional right to continue using coats of arms
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class wappen_gebrauch_nach_bisherigem_recht(Variable):
     value_type = bool

@@ -7,7 +7,9 @@ Eintritt der Anbietepflicht: spaetestens 5 Jahre nach letztem Aktenzuwachs.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class jahr_letzter_aktenzuwachs(Variable):
     value_type = int

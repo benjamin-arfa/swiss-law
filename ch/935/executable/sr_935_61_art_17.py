@@ -15,8 +15,9 @@ Art. 17: Disziplinarmassnahmen
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
-import numpy as np
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class DisziplinarmassnahmeEnum(Enum):
     keine = "Keine Massnahme"
@@ -28,7 +29,7 @@ class DisziplinarmassnahmeEnum(Enum):
 
 
 class anwalt_disziplinarmassnahme(Variable):
-    value_type = Enum
+    value_type = bool
     possible_values = DisziplinarmassnahmeEnum
     default_value = DisziplinarmassnahmeEnum.keine
     entity_key = 'person'

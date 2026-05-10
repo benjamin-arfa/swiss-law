@@ -5,12 +5,12 @@ Generated from: ch/211/de/211.111.1.md
 Gerichtliche Beurteilung des Entscheids der Erwachsenenschutzbehoerde:
 Anfechtung innerhalb von 30 Tagen.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class tage_seit_eroeffnung_entscheid(Variable):
     value_type = int

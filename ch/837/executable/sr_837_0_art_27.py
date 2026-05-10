@@ -16,7 +16,9 @@ Art. 27: Hoechstzahl der Taggelder (Maximum number of daily allowances)
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class alv_alter(Variable):
     value_type = int

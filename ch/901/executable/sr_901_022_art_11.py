@@ -12,7 +12,9 @@ Abs. 2: Ne peut depasser le plafond fixe par la Confederation.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class rpol_abattement_cantonal_communal(Variable):
     value_type = float

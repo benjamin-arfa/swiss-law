@@ -10,7 +10,9 @@ Art. 8 Abs. 1: Exempt from withholding tax on insurance benefits:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class vstg_versicherung_kapitalleistung(Variable):
     value_type = float

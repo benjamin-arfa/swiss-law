@@ -8,7 +8,9 @@ Kantonale Stellungnahme: 3 Monate. Oeffentliche Auflage: 30 Tage.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class seilbahn_kantonale_stellungnahmefrist_monate(Variable):
     value_type = int

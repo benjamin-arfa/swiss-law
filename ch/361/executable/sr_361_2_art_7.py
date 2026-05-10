@@ -7,7 +7,9 @@ Weitergabe von Daten: Amtshilfe aus dem IPAS an andere Behoerden.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class ipas_empfaenger_ist_berechtigte_behoerde(Variable):
     value_type = bool

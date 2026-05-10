@@ -5,12 +5,12 @@ Generated from: ch/195/de/195.1.md
 Streichung des Eintrags und Vernichtung der Daten: Gruende fuer die
 Streichung aus dem Auslandschweizerregister.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class hat_wohnsitz_in_schweiz_begruendet(Variable):
     value_type = bool

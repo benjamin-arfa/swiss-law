@@ -9,7 +9,9 @@ CHF pro Jahr und Fernsehprogramm. Subventionen sind abzuziehen.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class aufwendungen_bewerbung_vermittlung(Variable):
     value_type = float

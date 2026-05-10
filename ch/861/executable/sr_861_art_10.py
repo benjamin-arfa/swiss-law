@@ -9,7 +9,9 @@ most recently to 31 December 2026.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class kbfhg_fakultatives_referendum(Variable):
     value_type = bool

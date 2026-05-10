@@ -12,7 +12,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class bvg_beitragssatz_arbeitslose(Variable):
     value_type = float
     entity = Person

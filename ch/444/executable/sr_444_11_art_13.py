@@ -8,7 +8,9 @@ und internationale Organisationen. Vertragsstaat muss eigene Leistung erbringen.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class ist_staatliche_behoerde_oder_int_org(Variable):
     value_type = bool

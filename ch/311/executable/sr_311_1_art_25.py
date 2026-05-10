@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class strafdrohung_freiheitsstrafe_min_jahre(Variable):
     value_type = int
     entity = Person

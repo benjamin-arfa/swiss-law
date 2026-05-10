@@ -3,11 +3,11 @@
 Generated from: ch/0/de/0.103.2.md
 """
 
-import openfisca_core.model_api
-from openfisca_core.periods import YEAR
-from openfisca_core.variables import Variable
-from openfisca_core.priors import Prior
+from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class has_accepted_asas_amendment(Variable):
     value_type = bool

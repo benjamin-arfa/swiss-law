@@ -7,7 +7,9 @@ Gebuehren im Zusammenhang mit der Anerkennung von Labors.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class labor_verfuegung_typ(Variable):
     value_type = str

@@ -8,7 +8,9 @@ Similar structure to Art. 14 but for all personal data by federal organs.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class dsg_bundesorgan_beschafft_daten(Variable):
     value_type = bool

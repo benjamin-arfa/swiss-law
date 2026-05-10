@@ -16,7 +16,9 @@ Art. 20: Hoehe (Disability pension amount)
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class uvg_iv_oder_ahv_rente(Variable):
     value_type = float

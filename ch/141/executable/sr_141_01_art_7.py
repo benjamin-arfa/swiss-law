@@ -9,7 +9,9 @@ in Aus-/Weiterbildung. Kein Sozialhilfebezug in den letzten 3 Jahren.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class deckt_lebenshaltungskosten(Variable):
     value_type = bool

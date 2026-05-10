@@ -15,7 +15,9 @@ Abs. 5: Waiting period restarts if abroad > 3 months continuously or
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class el_ist_schweizer_staatsangehoeriger(Variable):
     value_type = bool

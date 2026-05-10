@@ -7,7 +7,9 @@ Stellungnahme der Behoerde: Fristen von 20 Tagen, Verlaengerung um 20 Tage.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class gesuch_betrifft_umfangreiche_dokumente(Variable):
     value_type = bool

@@ -24,7 +24,9 @@ Art. 13 Haftung und Mithaftung fuer die Steuer (Tax liability and joint liabilit
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class ifd_solidarhaftung_ehegatten(Variable):
     value_type = bool

@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class umsetzung_internationalen_rechts_obliegt_kantonen(Variable):
     value_type = bool
     entity = Person

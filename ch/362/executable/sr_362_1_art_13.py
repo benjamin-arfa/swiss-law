@@ -3,12 +3,12 @@
 Generated from: ch/362/de/362.1.md
 Termination rules for the Schengen/Dublin agreement.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class kuendigungsfrist_monate(Variable):
     value_type = int

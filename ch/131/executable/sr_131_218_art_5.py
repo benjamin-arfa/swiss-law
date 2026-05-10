@@ -8,7 +8,9 @@ The canton promotes the realization of actual equality between men and women.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class zuger_buerger(Variable):
     value_type = bool
@@ -19,7 +21,7 @@ class zuger_buerger(Variable):
 
 
 class geschlecht(Variable):
-    value_type = Enum
+    value_type = bool
     possible_values = ['mann', 'frau', 'divers']
     default_value = 'divers'
     entity_key = 'person'

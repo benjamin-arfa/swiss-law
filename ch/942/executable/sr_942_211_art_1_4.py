@@ -20,7 +20,9 @@ Art. 4: Public charges, copyright fees, disposal fees must be included in the de
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class pbv_ist_konsument(Variable):
     value_type = bool

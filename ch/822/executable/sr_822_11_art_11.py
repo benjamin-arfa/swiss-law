@@ -10,6 +10,9 @@ but compensation per worker may not exceed 2 hours per day (including overtime).
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class arg_ausgleich_stunden_tag(Variable):
     value_type = float

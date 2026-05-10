@@ -7,7 +7,9 @@ Art. 4 defines when a watch case qualifies as Swiss.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class gehaeuse_wesentlicher_fabrikationsvorgang_in_schweiz(Variable):
     value_type = bool

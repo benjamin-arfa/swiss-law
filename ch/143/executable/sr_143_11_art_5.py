@@ -9,6 +9,7 @@ Gueltigkeitsdauer (Validity period) for Swiss identity documents:
 - 3+ losses within 5 years: validity reduced to 2 years
 - Medical temporary fingerprint issues: passport validity 1 year
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

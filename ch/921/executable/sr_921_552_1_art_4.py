@@ -11,7 +11,9 @@ Abs. 3: Eigener Wald: Eigenbedarf am Ort der Herkunft erlaubt.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class vermehrungsgut_standortgerecht_anerkannt(Variable):
     value_type = bool

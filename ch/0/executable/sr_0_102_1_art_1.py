@@ -18,7 +18,7 @@ class right_to_participate(Enum):
     RUN_AS_CANDIDATE = 2
 
 class right_to_participate(Variable):
-    value_type = Enum
+    value_type = bool
     entity = Person
     definition_period = YEAR
     label = "Right to participate in local governance (SR 0.102.1 Art. 1)"

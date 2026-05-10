@@ -7,12 +7,12 @@ Verzinsung und Amortisation der Darlehen: Interest rate rules for WBG loans.
 - Federal loans: max rate = PUBLICA rate minus up to 1 percentage point
 - Interest and amortization payable semi-annually
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class referenzzinssatz_hypotheken_art11_pct(Variable):
     value_type = float

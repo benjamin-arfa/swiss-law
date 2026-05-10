@@ -8,7 +8,9 @@ can be added to the list of complaint-authorized organizations.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class organisation_erfuellt_art9_ifeg(Variable):
     value_type = bool

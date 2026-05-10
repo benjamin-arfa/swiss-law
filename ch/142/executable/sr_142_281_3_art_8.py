@@ -11,7 +11,9 @@ Berechnungsformel fuer die Platzkostenpauschale bei Umbauten:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class eingriffs_und_veraenderungsgrad(Variable):
     value_type = float

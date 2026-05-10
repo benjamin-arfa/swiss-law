@@ -9,7 +9,9 @@ is 149 g/km for the year 2022.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class oee_vvt_moyenne_co2_reference_g_km(Variable):
     value_type = float

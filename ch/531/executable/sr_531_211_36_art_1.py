@@ -5,8 +5,10 @@ Scope: This ordinance applies to rabies vaccines (ATC code J07BG).
 """
 
 from openfisca_core.model_api import *
-from openfisca_core.periods import MONTH
+from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 Person = build_entity(
     key='person', plural='persons',

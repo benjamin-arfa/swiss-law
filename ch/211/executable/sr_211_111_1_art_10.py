@@ -5,12 +5,12 @@ Generated from: ch/211/de/211.111.1.md
 Berichterstattung: Meldepflichten nach Eingriffen an urteilsunfaehigen
 Personen und Personen unter Beistandschaft.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class hat_heileingriff_an_urteilsunfaehiger_durchgefuehrt(Variable):
     value_type = bool

@@ -8,7 +8,9 @@ Access must take place on the premises of the Federal Administrative Court.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class einsichtnahme_nach_schutzfrist_bvger(Variable):
     value_type = bool

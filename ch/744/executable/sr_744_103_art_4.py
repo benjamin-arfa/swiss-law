@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class VerkehrsSparte(Enum):
     __order__ = 'KEINE_BESCHRAENKUNG GUETERVERKEHR PERSONENVERKEHR'
     KEINE_BESCHRAENKUNG = 'keine_beschraenkung'
@@ -91,7 +90,7 @@ class fachausweis_nur_personenverkehr(Variable):
 
 
 class zulassung_beschraenkung_sparte(Variable):
-    value_type = Enum
+    value_type = bool
     possible_values = VerkehrsSparte
     default_value = VerkehrsSparte.KEINE_BESCHRAENKUNG
     entity = Person

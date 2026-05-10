@@ -15,7 +15,9 @@ insurance (UVG maximum = CHF 148,200 as of 2024).
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class alv_freiwillige_leistungen_arbeitgeber(Variable):
     value_type = float

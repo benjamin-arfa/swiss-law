@@ -10,7 +10,9 @@ an mindestens 30 aufeinanderfolgenden Tagen voll arbeitsfaehig war.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class iv_aufeinanderfolgende_tage_voll_arbeitsfaehig(Variable):
     value_type = int

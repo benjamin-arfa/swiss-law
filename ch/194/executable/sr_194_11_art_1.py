@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 # Input variables
 
 class eda_unterstuetzt_interessenwahrung_im_ausland(Variable):

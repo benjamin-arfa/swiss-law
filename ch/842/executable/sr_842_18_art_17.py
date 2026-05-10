@@ -7,6 +7,7 @@ Revisionspflicht (Audit obligation): WBG audit requirements based on size.
 - BWO can require limited audit (eingeschraenkte Revision) for WBG that opted out under OR 727a
 - Simplified review allowed if WBG has <= 30 federally subsidized apartments
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

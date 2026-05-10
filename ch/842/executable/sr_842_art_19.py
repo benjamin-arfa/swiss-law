@@ -9,7 +9,9 @@ Abs. 1: L'aide federale est accordee pour 25 ans au maximum.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class log_annee_debut_aide_locatif(Variable):
     value_type = int

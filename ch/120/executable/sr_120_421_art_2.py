@@ -8,7 +8,9 @@ or within 6 months of changes to PSPV Annex 1.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class pspv_bk_anhang_aktualisierung_intervall_jahre(Variable):
     value_type = int

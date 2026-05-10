@@ -9,7 +9,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class hat_eidg_maturitaetsausweis(Variable):
     """Besitz eines eidg. oder eidg. anerkannten Maturitaetsausweises"""
     value_type = bool

@@ -8,7 +8,9 @@ Art. 2a defines the criteria for a watch component to qualify as
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class bestandteil_in_schweiz_kontrolliert(Variable):
     value_type = bool

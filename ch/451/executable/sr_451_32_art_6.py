@@ -3,12 +3,12 @@
 Generated from: ch/451/de/451.32.md
 Hochmoorverordnung - Fristen: 3 Jahre, bzw. 6 Jahre fuer belastete Kantone.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class ist_finanzschwacher_kanton_hochmoor(Variable):
     value_type = bool

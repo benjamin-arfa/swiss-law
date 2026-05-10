@@ -3,12 +3,12 @@
 Generated from: ch/362/de/362.2.md
 Grounds for refusal of information exchange.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 # Fakultative Verweigerungsgruende (Abs. 1 - "kann verweigert werden")
 

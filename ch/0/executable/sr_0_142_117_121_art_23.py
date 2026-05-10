@@ -3,6 +3,12 @@
 Generated from: ch/0/de/0.142.117.121.md
 """
 
+from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
+
 # This is a non-standard use-case for OpenFisca.
 
 # Note about Art. 23:
@@ -15,8 +21,8 @@ Generated from: ch/0/de/0.142.117.121.md
 
 # This formula is purely illustrative since the given use case does not map perfectly to OpenFisca usage and cannot be applied directly to the variable below:
 
-from openfisca_core.model_api import *
-from openfisca_core.survey import AbstractIndividualSurvey
+
+
 
 
 class any_abkommen_kündigung(Variable):

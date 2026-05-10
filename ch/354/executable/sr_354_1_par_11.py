@@ -3,12 +3,12 @@
 Generated from: ch/354/de/354.1.md
 Cost distribution for intermediate care during transports.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class zwischenverpflegungskosten(Variable):
     value_type = float

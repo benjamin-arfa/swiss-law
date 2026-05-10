@@ -4,6 +4,11 @@ Generated from: ch/0/de/0.142.116.919.md
 """
 
 from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
+
 from openfisca_entities import Entity
 from openfisca_entity_combinations import AllPeople
 
@@ -28,7 +33,7 @@ class AHV_Suspended(Entity):
         super(AHV_Suspended, self).__init__(*other_parameters)
         self.entity_string = self.entity_string.replace("Country", "Switzerland")
 
-    suspend_variable = suspend_convention(entity="Country", period="Monthly", parameters="Parameters",
+    suspend_variable = suspend_convention(entity = Person, period="Monthly", parameters="Parameters",
                                           label="Suspension of the convention applied by the Country")
 
     entity_combinations = AllPeople(suspended_variable=suspend_variable, entity_combinations=[])

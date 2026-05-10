@@ -15,7 +15,9 @@ Art. 5b Nachtraegliche Erhoehung des Deckungskapitals:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class bgrb_deckungskapital_erhoeht(Variable):
     value_type = bool

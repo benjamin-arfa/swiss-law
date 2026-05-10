@@ -24,7 +24,9 @@ Abs. 2: For persons living in a home/hospital:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class el_lebt_im_heim(Variable):
     value_type = bool

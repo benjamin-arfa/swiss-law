@@ -18,9 +18,10 @@ different cantonal schemes.
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
-from numpy import select as np_select
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
+
+from numpy import select as np_select
 
 
 class ist_erwerbstaetig(Variable):

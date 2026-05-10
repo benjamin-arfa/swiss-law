@@ -3,12 +3,18 @@
 Generated from: ch/0/de/0.104.md
 """
 
-# Import necessary modules from OpenFisca
 from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
+
+# Import necessary modules from OpenFisca
+
 
 # Define an entity for the variable
-from openfisca_core.model_api import *
-from openfisca_switzerland.entities import Country
+
+
 
 # Define a new variable
 class international_cooperation(Variable):

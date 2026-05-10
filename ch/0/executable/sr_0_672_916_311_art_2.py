@@ -10,9 +10,10 @@ Generated from: ch/0/fr/0.672.916.311.md
 """
 
 from openfisca_core.model_api import *
-from openfisca_core.periods import YEAR
-from openfisca_switzerland.entities import Person
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class reside_dans_autre_etat_contractant(Variable):
     value_type = bool

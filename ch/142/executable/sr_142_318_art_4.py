@@ -9,7 +9,9 @@ im gleichen Raum, ausnahmsweise getrennt mit technischen Hilfsmitteln.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class befragung_bag_vorgaben_eingehalten(Variable):
     value_type = bool

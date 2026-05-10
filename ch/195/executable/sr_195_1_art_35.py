@@ -5,12 +5,12 @@ Generated from: ch/195/de/195.1.md
 Rueckerstattungspflicht: Sozialhilfeempfaenger muessen Leistungen
 zurueckerstatten wenn sie nicht mehr beduertig sind.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class ist_nicht_mehr_beduertig(Variable):
     value_type = bool

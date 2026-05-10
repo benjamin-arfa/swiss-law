@@ -10,7 +10,6 @@ from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
-
 class ist_mitglied_kommission_schkg(Variable):
     value_type = bool
     entity = Person

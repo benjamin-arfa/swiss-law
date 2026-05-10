@@ -5,12 +5,12 @@ Generated from: ch/195/de/195.1.md
 Ausschluss vom Stimmrecht: Auslandschweizer die wegen dauernder
 Urteilsunfaehigkeit unter umfassender Beistandschaft stehen.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class unter_umfassender_beistandschaft_wegen_urteilsunfaehigkeit(Variable):
     value_type = bool

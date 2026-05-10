@@ -9,7 +9,9 @@ Canton transmits final copy within 24 hours after list finalization deadline.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class odp_delai_envoi_listes_chancellerie_jours(Variable):
     value_type = int

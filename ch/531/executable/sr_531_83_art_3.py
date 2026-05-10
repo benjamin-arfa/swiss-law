@@ -7,10 +7,8 @@ Generated from: ch/de/531/531.83.md
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
-import numpy as np
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class verordnung_531_83_in_kraft(Variable):
     value_type = bool

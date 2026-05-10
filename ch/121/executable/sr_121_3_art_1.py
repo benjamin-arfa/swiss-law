@@ -9,7 +9,9 @@ minimum requirements for cantonal oversight, and cooperation among oversight bod
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class vand_regelt_ab_nd_zuordnung(Variable):
     value_type = bool

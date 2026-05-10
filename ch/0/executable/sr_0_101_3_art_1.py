@@ -3,7 +3,11 @@
 Generated from: ch/0/de/0.101.3.md
 """
 
-from openfisca_core import variables
+from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 def legal_article_1_participants(var):
     # Implementation of the logic based on paragraphs (1), (2), and (3)
@@ -24,7 +28,7 @@ def legal_article_1_participants(var):
 class LegalArticle1Participants(variables.IntegerVariable):
     value_type = bool
     label = "Participants of the legal article 1"
-    entity = "Person"
+    entity = Person
     definition_period = "D"
 
     def formula(var, state, params):

@@ -8,7 +8,9 @@ The specific amendments can be consulted under AS 2008 447.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class bundesgesetze_schengen_dublin_geaendert(Variable):
     value_type = bool

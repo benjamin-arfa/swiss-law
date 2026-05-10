@@ -12,7 +12,9 @@ Art. 13: Data destruction timelines for EDAssist+:
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class edassist_module_aide_sociale(Variable):
     value_type = bool

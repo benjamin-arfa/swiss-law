@@ -10,8 +10,10 @@ Art. 42: Sursis a l'execution de la peine (Bedingter Strafvollzug)
 """
 
 from openfisca_core.model_api import *
-from openfisca_core.periods import MONTH
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class stgb_strafe_ist_geldstrafe(Variable):
     value_type = bool

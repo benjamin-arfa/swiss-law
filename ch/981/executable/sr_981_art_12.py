@@ -9,7 +9,9 @@ of the 1957 federal decree on wartime aid.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class bundesbeschluss_1950_aufgehoben(Variable):
     value_type = bool

@@ -5,12 +5,12 @@ Generated from: ch/196/de/196.1.md
 Rechte Dritter: Vermoegenswerte koennen nicht eingezogen werden, wenn
 bestimmte Rechte Dritter bestehen.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class schweizerische_behoerde_macht_rechte_geltend(Variable):
     value_type = bool

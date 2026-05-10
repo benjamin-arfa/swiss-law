@@ -13,7 +13,9 @@ e) permanent (prior d or 16b.2.e in 5 years)
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class schwere_widerhandlung_svg(Variable):
     value_type = bool

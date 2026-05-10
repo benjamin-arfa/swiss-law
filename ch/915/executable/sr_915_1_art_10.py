@@ -10,7 +10,9 @@ development in agriculture.
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class vulg_couts_etude_preliminaire(Variable):
     value_type = float

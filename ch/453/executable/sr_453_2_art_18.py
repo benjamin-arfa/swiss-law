@@ -3,12 +3,12 @@
 Generated from: ch/453/de/453.2.md
 Gebuehren - 60 Franken pro Sendung fuer Pruefung vorangemeldeter Sendungen.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity
 
 Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-
 
 class anzahl_vorangemeldete_sendungen(Variable):
     value_type = int

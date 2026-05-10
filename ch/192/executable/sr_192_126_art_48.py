@@ -2,6 +2,7 @@
 
 Generated from: ch/192/de/192.126.md
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

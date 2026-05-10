@@ -6,6 +6,7 @@ Austausch von Zusatzinformationen: SIRENE bureau must exchange supplementary
 information within 12 hours. Immediate action required for terrorism-related
 alerts, arrest warrants, vulnerable persons, and urgent alerts.
 """
+
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 from openfisca_core.entities import build_entity

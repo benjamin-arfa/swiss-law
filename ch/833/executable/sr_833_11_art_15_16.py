@@ -18,8 +18,9 @@ Art. 16: Versicherter Verdienst beim Taggeld - Insured earnings for daily allowa
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
-import numpy as np
+from openfisca_core.entities import build_entity
 
+Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
 
 class mvv_jahresverdienst_brutto(Variable):
     value_type = float

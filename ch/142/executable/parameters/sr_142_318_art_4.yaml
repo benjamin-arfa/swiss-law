@@ -1,0 +1,6 @@
+befragung_personen_beschraenkung:
+  description: "Beschraenkung der anwesenden Personen bei Befragungen gemaess BAG-Vorgaben"
+  reference: "SR 142.318 Art. 4 Abs. 1"
+  values:
+    2020-04-06:
+      value: 1

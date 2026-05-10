@@ -1,0 +1,10 @@
+pruefstufe_personensicherheitspruefung:
+  description: "Pruefstufen fuer VBS- und Armee-Funktionen nach PSPV-VBS"
+  reference: "SR 120.423 Art. 1"
+  metadata:
+    unit: level
+  values:
+    2012-04-01:
+      value: null
+      metadata:
+        comment: "Konkrete Stufen in Anhaengen 1 und 2 der PSPV-VBS festgelegt"

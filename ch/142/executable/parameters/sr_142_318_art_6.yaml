@@ -1,0 +1,6 @@
+befragung_ohne_vertretung_rechtswirkung:
+  description: "Rechtswirkung der Befragung auch ohne Rechtsvertretung oder Hilfswerkvertretung"
+  reference: "SR 142.318 Art. 6"
+  values:
+    2020-04-06:
+      value: 1

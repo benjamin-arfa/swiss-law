@@ -1,0 +1,13 @@
+beschwerdefrist_entscheid_tage:
+  description: "Beschwerdefrist in Tagen gegen Entscheid nach Art. 31a Abs. 4 AsylG im beschleunigten Verfahren"
+  reference: "SR 142.318 Art. 10"
+  values:
+    2020-04-02:
+      value: 30
+
+beschwerdefrist_zwischenverfuegung_tage:
+  description: "Beschwerdefrist in Tagen gegen Zwischenverfuegungen im beschleunigten Verfahren"
+  reference: "SR 142.318 Art. 10"
+  values:
+    2020-04-02:
+      value: 10

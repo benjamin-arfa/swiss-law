@@ -1,0 +1,8 @@
+ees_begriffe:
+  description: "Begriffsdefinitionen der EESV"
+  reference: "SR 142.206 Art. 2"
+  values:
+    2022-05-01:
+      value: null
+      metadata:
+        comment: "Definitionen verweisen auf EU-Verordnung 2017/2226 und N-SIS-Verordnung SR 362.0"

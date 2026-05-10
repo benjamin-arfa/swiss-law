@@ -1,0 +1,6 @@
+uebergangsbestimmung_befragung:
+  description: "Uebergangsbestimmung: Art. 4-6 nicht anwendbar auf bereits angesetzte Befragungen"
+  reference: "SR 142.318 Art. 11 Abs. 1"
+  values:
+    2020-04-06:
+      value: 1

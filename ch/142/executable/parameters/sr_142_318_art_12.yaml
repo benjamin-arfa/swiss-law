@@ -1,0 +1,22 @@
+covid19_verordnung_asyl_inkrafttreten:
+  description: "Inkrafttreten der Covid-19-Verordnung Asyl"
+  reference: "SR 142.318 Art. 12 Abs. 1"
+  values:
+    2020-04-02:
+      value: 1
+
+covid19_verordnung_art4_6_inkrafttreten:
+  description: "Inkrafttreten der Artikel 4-6"
+  reference: "SR 142.318 Art. 12 Abs. 2"
+  values:
+    2020-04-06:
+      value: 1
+
+covid19_verordnung_geltungsdauer_ende:
+  description: "Ende der Geltungsdauer (mehrfach verlaengert)"
+  reference: "SR 142.318 Art. 12 Abs. 3-9"
+  values:
+    2020-04-02:
+      value: null
+      metadata:
+        comment: "Urspruenglich bis 6. Juli 2020, zuletzt verlaengert bis 30. Juni 2024"

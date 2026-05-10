@@ -1,0 +1,8 @@
+ees_datenerhalt_voraussetzungen:
+  description: "Kumulative Voraussetzungen fuer den Erhalt von EES-Daten: Erforderlichkeit, Verhaeltnismaessigkeit, hinreichende Gruende"
+  reference: "SR 142.206 Art. 12 Abs. 1"
+  values:
+    2022-05-01:
+      value: 3
+      metadata:
+        unit: "kumulative Voraussetzungen"

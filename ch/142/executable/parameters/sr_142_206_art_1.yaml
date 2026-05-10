@@ -1,0 +1,6 @@
+ees_verordnung_inkrafttreten:
+  description: "Inkrafttreten der EESV"
+  reference: "SR 142.206 Art. 24"
+  values:
+    2022-05-01:
+      value: 1

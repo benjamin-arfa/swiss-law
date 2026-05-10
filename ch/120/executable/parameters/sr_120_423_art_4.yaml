@@ -1,0 +1,6 @@
+pspv_vbs_inkrafttreten:
+  description: "Datum des Inkrafttretens der PSPV-VBS"
+  reference: "SR 120.423 Art. 4"
+  values:
+    2012-04-01:
+      value: 1

@@ -1,0 +1,6 @@
+einleitungsfrist_neue_pruefung_monate:
+  description: "Frist in Monaten zur Einleitung der neu vorgeschriebenen Personensicherheitspruefung nach Inkrafttreten"
+  reference: "SR 120.423 Art. 3"
+  values:
+    2012-04-01:
+      value: 1

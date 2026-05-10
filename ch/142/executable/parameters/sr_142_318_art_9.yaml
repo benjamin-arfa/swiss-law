@@ -1,0 +1,13 @@
+ausreisefrist_beschleunigt_min_tage:
+  description: "Minimale Ausreisefrist im beschleunigten Verfahren in Tagen"
+  reference: "SR 142.318 Art. 9 Abs. 1"
+  values:
+    2020-04-02:
+      value: 7
+
+ausreisefrist_max_tage:
+  description: "Maximale Ausreisefrist in Tagen (beschleunigtes und Dublin-Verfahren)"
+  reference: "SR 142.318 Art. 9 Abs. 1-2"
+  values:
+    2020-04-02:
+      value: 30

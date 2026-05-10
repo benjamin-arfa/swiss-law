@@ -1,0 +1,6 @@
+ees_informationsmechanismus_korrektur:
+  description: "Berichtigung, Ergaenzung oder Loeschung von Daten des Informationsmechanismus auf Gesuch"
+  reference: "SR 142.206 Art. 17"
+  values:
+    2022-05-01:
+      value: 1

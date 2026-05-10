@@ -1,0 +1,8 @@
+ees_datenkategorien_visumabfrage:
+  description: "Zugang zu Datenkategorien I-VI bei Visumabfrage mit Treffer"
+  reference: "SR 142.206 Art. 4 Abs. 2"
+  values:
+    2022-05-01:
+      value: 6
+      metadata:
+        unit: "Kategorien (I-VI)"

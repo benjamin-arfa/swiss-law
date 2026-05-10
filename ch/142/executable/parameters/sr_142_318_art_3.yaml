@@ -1,0 +1,6 @@
+vorlage_ejpd_frist_tage:
+  description: "Mindestfrist in Tagen vor Arbeitsbeginn fuer Vorlage von Zweifelsfaellen beim EJPD"
+  reference: "SR 142.318 Art. 3 Abs. 2"
+  values:
+    2020-04-02:
+      value: 2

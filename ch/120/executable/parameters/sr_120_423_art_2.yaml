@@ -1,0 +1,13 @@
+aktualisierungsintervall_anhaenge:
+  description: "Mindestintervall in Jahren fuer die Aktualisierung der Anhaenge 1 und 2"
+  reference: "SR 120.423 Art. 2 Abs. 1-2"
+  values:
+    2012-04-01:
+      value: 5
+
+aenderungsfrist_anhang_monate:
+  description: "Frist in Monaten fuer Anpassung nach Aenderung des PSPV-Anhangs"
+  reference: "SR 120.423 Art. 2 Abs. 3-4"
+  values:
+    2012-04-01:
+      value: 6

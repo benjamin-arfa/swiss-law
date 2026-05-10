@@ -1,0 +1,6 @@
+ees_dringende_faelle:
+  description: "Dringende Faelle mit unverzueglicher Bearbeitung und nachtraeglicher Ueberpruefung"
+  reference: "SR 142.206 Art. 13"
+  values:
+    2022-05-01:
+      value: 1

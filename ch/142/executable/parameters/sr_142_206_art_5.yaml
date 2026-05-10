@@ -1,0 +1,8 @@
+ees_kontrolle_datenkategorien:
+  description: "Zugang zu Datenkategorien I-VI bei Grenzkontrolle mit biometrischer Uebereinstimmung"
+  reference: "SR 142.206 Art. 5 Abs. 3"
+  values:
+    2022-05-01:
+      value: 6
+      metadata:
+        unit: "Kategorien (I-VI)"

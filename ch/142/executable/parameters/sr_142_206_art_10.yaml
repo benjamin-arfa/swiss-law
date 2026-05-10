@@ -1,0 +1,6 @@
+ees_zugangsberechtigte_stellen_gefahrenabwehr:
+  description: "Zugangsberechtigte Stellen fuer EES-Daten zur Gefahrenabwehr und Strafverfolgung"
+  reference: "SR 142.206 Art. 10"
+  values:
+    2022-05-01:
+      value: 1

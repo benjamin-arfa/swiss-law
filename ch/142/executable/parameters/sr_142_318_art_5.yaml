@@ -1,0 +1,6 @@
+weitere_personen_teilnahme:
+  description: "Teilnahme weiterer Personen nach Art. 29 Abs. 2 AsylG bei Einhaltung der BAG-Vorgaben"
+  reference: "SR 142.318 Art. 5"
+  values:
+    2020-04-06:
+      value: 1

@@ -1,0 +1,8 @@
+ees_berechnungssystem_kategorie:
+  description: "Datenkategorie die das automatisierte Berechnungssystem liefert"
+  reference: "SR 142.206 Art. 8 Abs. 2"
+  values:
+    2022-05-01:
+      value: 6
+      metadata:
+        unit: "Kategorie VI"

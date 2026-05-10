@@ -1,0 +1,6 @@
+anzeigefrist_militaerische_bauten_tage:
+  description: "Verkuerzte Anzeigefrist in Tagen fuer erneute Nutzung militaerischer Bauten (statt ordentliche Frist nach Art. 24c Abs. 4 AsylG)"
+  reference: "SR 142.318 Art. 2 Abs. 2"
+  values:
+    2020-04-02:
+      value: 5

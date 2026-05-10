@@ -1,0 +1,10 @@
+ees_auskunftsrecht:
+  description: "Auskunftsrecht nach Datenschutzgesetz, Bearbeitung durch SEM"
+  reference: "SR 142.206 Art. 18"
+  values:
+    2022-05-01:
+      value: 1
+    2023-09-01:
+      value: 1
+      metadata:
+        comment: "Rechtsgrundlage aktualisiert auf Datenschutzgesetz vom 25. September 2020 (SR 235.1)"

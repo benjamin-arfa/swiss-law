@@ -1,0 +1,8 @@
+ees_daten_loeschung:
+  description: "Loeschung von EES-Daten wenn Person nicht mehr dem EES untersteht"
+  reference: "SR 142.206 Art. 16"
+  values:
+    2022-05-01:
+      value: 1
+      metadata:
+        comment: "Loeschung durch SEM bei Asylgesuch, laengerfristigem Visum, Aufenthaltsbewilligung oder Einbuergerung"

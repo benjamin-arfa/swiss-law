@@ -90,3 +90,75 @@ iv:
     values:
       2004-01-01:
         value: 0.25
+
+  grundentschaedigung_satz:
+    description: "Basic compensation rate for daily allowance (fraction of last income)"
+    reference: "SR 831.20 Art. 23 Abs. 1"
+    unit: rate
+    values:
+      2004-01-01:
+        value: 0.80
+
+  kindergeld_taggeld_satz:
+    description: "Child allowance rate per child as fraction of max daily allowance"
+    reference: "SR 831.20 Art. 23bis"
+    unit: rate
+    values:
+      2004-01-01:
+        value: 0.02
+
+  kinderrente_satz:
+    description: "Child pension rate as fraction of disability pension"
+    reference: "SR 831.20 Art. 38 Abs. 1"
+    unit: rate
+    values:
+      1980-01-01:
+        value: 0.40
+
+  kinderrente_plafond_beide_eltern:
+    description: "Cap on combined child pensions when both parents entitled (fraction of max IV pension)"
+    reference: "SR 831.20 Art. 38 Abs. 1"
+    unit: rate
+    values:
+      1997-01-01:
+        value: 0.60
+
+  ueberversicherung_schwelle:
+    description: "Over-insurance threshold: child pensions + parent pension may not exceed this fraction of relevant income"
+    reference: "SR 831.20 Art. 38bis Abs. 1"
+    unit: rate
+    values:
+      2008-01-01:
+        value: 0.90
+
+  jung_invalide_minimum_satz:
+    description: "Minimum pension rate for persons disabled before age 25 with full contribution record (fraction of minimum full pension)"
+    reference: "SR 831.20 Art. 37 Abs. 2"
+    unit: rate
+    values:
+      1980-01-01:
+        value: 1.3333
+
+  mindest_arbeitsunfaehigkeit_taggeld:
+    description: "Minimum incapacity for work to qualify for daily allowance (%)"
+    reference: "SR 831.20 Art. 22 Abs. 1 Bst. b"
+    unit: percent
+    values:
+      2022-01-01:
+        value: 50
+
+  auslaender_mindest_beitragsjahre:
+    description: "Minimum contribution years for foreign nationals at onset of disability"
+    reference: "SR 831.20 Art. 6 Abs. 2"
+    unit: years
+    values:
+      2003-01-01:
+        value: 1
+
+  auslaender_mindest_aufenthaltsjahre:
+    description: "Minimum continuous residence years for foreign nationals"
+    reference: "SR 831.20 Art. 6 Abs. 2"
+    unit: years
+    values:
+      2003-01-01:
+        value: 10

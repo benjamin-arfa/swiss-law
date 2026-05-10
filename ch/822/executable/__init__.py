@@ -18,3 +18,4 @@ from .sr_822_114_art_10 import *  # noqa: F401,F403
 from .sr_822_114_art_13 import *  # noqa: F401,F403
 from .sr_822_114_art_16 import *  # noqa: F401,F403
 from .sr_822_114_art_17 import *  # noqa: F401,F403
+from .sr_822_112_1_art_1 import *  # noqa: F401,F403

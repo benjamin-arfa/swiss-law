@@ -1,0 +1,8 @@
+description: Steuerliche Abzugsberechtigung Saeule 3a (SR 831.461.3 Art. 7)
+reference: SR 831.461.3 Art. 7
+values:
+  2025-01-01:
+    anteil_mit_2_saeule: 0.08
+    anteil_ohne_2_saeule_einkommen: 0.20
+    anteil_ohne_2_saeule_max: 0.40
+    oberer_grenzbetrag_bvg: 88200

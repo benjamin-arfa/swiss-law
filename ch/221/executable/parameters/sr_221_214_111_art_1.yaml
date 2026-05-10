@@ -1,0 +1,6 @@
+description: Hoechstzinssaetze fuer Konsumkredite (SR 221.214.111 Art. 1)
+reference: SR 221.214.111 Art. 1
+values:
+  2026-01-01:
+    hoechstzinssatz_barkredit: 0.10
+    hoechstzinssatz_ueberziehungskredit: 0.12

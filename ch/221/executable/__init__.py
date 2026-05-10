@@ -1,0 +1,30 @@
+"""OpenFisca variables for SR 221."""
+
+from .sr_221_213_15_art_1 import *  # noqa: F401,F403
+from .sr_221_213_15_art_14 import *  # noqa: F401,F403
+from .sr_221_213_15_art_2 import *  # noqa: F401,F403
+from .sr_221_213_15_art_3 import *  # noqa: F401,F403
+from .sr_221_213_15_art_5 import *  # noqa: F401,F403
+from .sr_221_213_15_art_6 import *  # noqa: F401,F403
+from .sr_221_213_15_art_7 import *  # noqa: F401,F403
+from .sr_221_213_15_art_9 import *  # noqa: F401,F403
+from .sr_221_213_221_art_12 import *  # noqa: F401,F403
+from .sr_221_213_221_art_13 import *  # noqa: F401,F403
+from .sr_221_213_221_art_2 import *  # noqa: F401,F403
+from .sr_221_213_221_art_3 import *  # noqa: F401,F403
+from .sr_221_213_221_art_4 import *  # noqa: F401,F403
+from .sr_221_213_221_art_7 import *  # noqa: F401,F403
+from .sr_221_213_221_art_8 import *  # noqa: F401,F403
+from .sr_221_213_2_art_1 import *  # noqa: F401,F403
+from .sr_221_213_2_art_16 import *  # noqa: F401,F403
+from .sr_221_213_2_art_17 import *  # noqa: F401,F403
+from .sr_221_213_2_art_2 import *  # noqa: F401,F403
+from .sr_221_213_2_art_21 import *  # noqa: F401,F403
+from .sr_221_213_2_art_27 import *  # noqa: F401,F403
+from .sr_221_213_2_art_30 import *  # noqa: F401,F403
+from .sr_221_213_2_art_38 import *  # noqa: F401,F403
+from .sr_221_213_2_art_41 import *  # noqa: F401,F403
+from .sr_221_213_2_art_45 import *  # noqa: F401,F403
+from .sr_221_213_2_art_7 import *  # noqa: F401,F403
+from .sr_221_213_2_art_8 import *  # noqa: F401,F403
+from .sr_221_214_111_art_1 import *  # noqa: F401,F403

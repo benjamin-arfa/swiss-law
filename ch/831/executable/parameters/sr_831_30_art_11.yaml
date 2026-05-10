@@ -1,0 +1,66 @@
+# SR 831.30 Art. 11 - Anrechenbare Einnahmen (Countable income)
+# Values as of 2025
+description: Parameter fuer die Berechnung der anrechenbaren Einnahmen
+reference: SR 831.30 Art. 11 Abs. 1
+metadata:
+  unit: currency-CHF
+  rate_unit: /year
+values:
+  erwerbseinkommen_franchise:
+    alleinstehend:
+      description: Freibetrag Erwerbseinkommen alleinstehende Person
+      values:
+        2025-01-01:
+          value: 1300
+    ehepaar_familie:
+      description: Freibetrag Erwerbseinkommen Ehepaar/Familie
+      values:
+        2025-01-01:
+          value: 1950
+  erwerbseinkommen_anrechnungsquote:
+    standard:
+      description: Anrechnungsquote Erwerbseinkommen (2/3)
+      values:
+        2021-01-01:
+          value: 0.6667
+    ehegatte_ohne_el:
+      description: Anrechnungsquote Ehegatte ohne EL-Anspruch (80%)
+      values:
+        2021-01-01:
+          value: 0.80
+    iv_taggeld:
+      description: Anrechnungsquote bei IV-Taggeld (100%)
+      values:
+        2021-01-01:
+          value: 1.00
+  vermoegensverzehr:
+    rate_allgemein:
+      description: Vermoegensverzehr allgemein (1/15)
+      values:
+        2021-01-01:
+          value: 0.0667
+    rate_altersrentner:
+      description: Vermoegensverzehr Altersrentner (1/10)
+      values:
+        2021-01-01:
+          value: 0.10
+    freibetrag_alleinstehend:
+      description: Freibetrag Reinvermoegen alleinstehend
+      values:
+        2021-01-01:
+          value: 30000
+    freibetrag_ehepaar:
+      description: Freibetrag Reinvermoegen Ehepaar
+      values:
+        2021-01-01:
+          value: 50000
+    freibetrag_kind:
+      description: Freibetrag Reinvermoegen Kind/Waise
+      values:
+        2021-01-01:
+          value: 15000
+    liegenschaft_freibetrag:
+      description: Freibetrag selbstbewohnte Liegenschaft
+      values:
+        2021-01-01:
+          value: 112500

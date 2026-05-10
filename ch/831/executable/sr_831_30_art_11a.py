@@ -2,65 +2,82 @@
 
 Generated from: ch/831/de/831.30.md
 
-Art. 11a: Verzicht auf Einkuenfte und Vermoegenswerte - Renunciation of
-income and assets (EL Reform 2021):
+Art. 11a: Verzicht auf Einkuenfte und Vermoegenswerte
+(Relinquishment of income and assets)
 
-Abs. 1: Voluntary renunciation of reasonable employment -> hypothetical
-income is counted.
-Abs. 2: Other income/assets renounced without legal obligation and without
-equivalent consideration are counted as if never renounced.
-Abs. 3: Excessive asset depletion (>10% per year from entitlement to
-survivor/IV pension, or >CHF 10,000 for assets up to CHF 100,000)
-is treated as asset renunciation.
-Abs. 4: For old-age pension recipients, Abs. 3 also applies to the 10
-years before pension entitlement began.
+Abs. 1: If a person voluntarily forgoes reasonable employment, a hypothetical
+earned income is counted.
+
+Abs. 3: Asset relinquishment exists if more than 10% of wealth is consumed
+per year from the date of entitlement to AHV survivor's pension or IV pension,
+without good reason. For wealth up to CHF 100,000 the limit is CHF 10,000/year.
+
+Abs. 4: For old-age pensioners, Abs. 3 also applies to the 10 years before
+the start of pension entitlement.
 """
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 
 
+class el_verzichtet_auf_erwerbstaetigkeit(Variable):
+    value_type = bool
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Person verzichtet freiwillig auf zumutbare Erwerbstaetigkeit"
+    reference = "SR 831.30 Art. 11a Abs. 1"
+
+
 class el_hypothetisches_erwerbseinkommen(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Hypothetisches Erwerbseinkommen bei Verzicht auf zumutbare Erwerbstaetigkeit (Art. 11a Abs. 1 ELG)"
+    label = "Hypothetisches Erwerbseinkommen bei Verzicht (Art. 11a Abs. 1)"
     reference = "SR 831.30 Art. 11a Abs. 1"
 
 
-class el_verzichtetes_vermoegen(Variable):
+class el_vermoegen_bei_rentenanspruch(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Verzichtete Vermoegenswerte (Art. 11a Abs. 2 ELG)"
-    reference = "SR 831.30 Art. 11a Abs. 2"
-
-
-class el_vermoegen_vorjahr(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Vermoegen im Vorjahr"
+    label = "Vermoegen bei Entstehung des Rentenanspruchs"
     reference = "SR 831.30 Art. 11a Abs. 3"
 
 
-class el_vermoegensverzicht_uebermass(Variable):
+class el_jaehrlicher_vermoegensverbrauch(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Uebermassiger Vermoegensverzehr als anrechenbarer Verzicht (Art. 11a Abs. 3 ELG)"
+    label = "Jaehrlicher Vermoegensverbrauch seit Rentenanspruch"
+    reference = "SR 831.30 Art. 11a Abs. 3"
+
+
+class el_wichtiger_grund_vermoegensverbrauch(Variable):
+    value_type = bool
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Wichtiger Grund fuer erhoehten Vermoegensverbrauch liegt vor"
+    reference = "SR 831.30 Art. 11a Abs. 3"
+
+
+class el_vermoegensverzicht_vorhanden(Variable):
+    value_type = bool
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Vermoegensverzicht liegt vor (Art. 11a Abs. 3 ELG)"
     reference = "SR 831.30 Art. 11a Abs. 3"
 
     def formula(person, period, parameters):
-        vermoegen_aktuell = person('el_reinvermoegen', period)
-        vermoegen_vorjahr = person('el_vermoegen_vorjahr', period)
+        import numpy as np
+        vermoegen_start = person('el_vermoegen_bei_rentenanspruch', period)
+        verbrauch = person('el_jaehrlicher_vermoegensverbrauch', period)
+        wichtiger_grund = person('el_wichtiger_grund_vermoegensverbrauch', period)
 
-        verbrauch = max_(vermoegen_vorjahr - vermoegen_aktuell, 0)
+        # Threshold: 10% of wealth, but for wealth <= 100,000 the limit is 10,000/year
+        grenze_prozent = vermoegen_start * 0.10
+        grenze_absolut = 10000.0
+        grenze = np.where(vermoegen_start <= 100000.0, grenze_absolut, grenze_prozent)
 
-        # Allowed depletion: 10% of prior year assets, but at least CHF 10,000
-        # for assets up to CHF 100,000
-        grenze_prozent = vermoegen_vorjahr * 0.10
-        grenze = where(vermoegen_vorjahr <= 100000, max_(grenze_prozent, 10000), grenze_prozent)
-
-        # Excess depletion counted as renounced assets
-        return max_(verbrauch - grenze, 0)
+        # Relinquishment if consumption exceeds limit AND no good reason
+        ueberschreitung = verbrauch > grenze
+        return ueberschreitung * not_(wichtiger_grund)

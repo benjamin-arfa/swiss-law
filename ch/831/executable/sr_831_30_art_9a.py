@@ -2,80 +2,92 @@
 
 Generated from: ch/831/de/831.30.md
 
-Art. 9a: Voraussetzungen hinsichtlich des Vermoegens - Asset thresholds
-for EL eligibility (introduced by EL Reform 2021):
-a. Single persons: net assets below CHF 100,000
-b. Couples: net assets below CHF 200,000
-c. Pension-entitled orphans/children: net assets below CHF 50,000
+Art. 9a: Voraussetzungen hinsichtlich des Vermoegens (Wealth requirements)
 
-Abs. 2: Owner-occupied property is excluded from net assets.
-Abs. 3: Assets voluntarily renounced (Art. 11a) count towards net assets.
+Abs. 1: Entitlement to supplementary benefits requires net wealth below:
+  a. Single persons: CHF 100,000
+  b. Married couples: CHF 200,000
+  c. Entitled orphans / children with AHV/IV child pension: CHF 50,000
+
+Abs. 2: Owner-occupied property is excluded from net wealth calculation.
+Abs. 3: Voluntarily relinquished assets (Art. 11a) count toward net wealth.
 """
 
 from openfisca_core.model_api import *
 from openfisca_core.periods import MONTH, YEAR
 
 
+class el_ist_verheiratet(Variable):
+    value_type = bool
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Person ist verheiratet"
+    reference = "SR 831.30 Art. 9a"
+
+
+class el_ist_waise_oder_kind_mit_kinderrente(Variable):
+    value_type = bool
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Person ist rentenberechtigte Waise oder Kind mit Kinderrente AHV/IV"
+    reference = "SR 831.30 Art. 9a Abs. 1 Bst. c"
+
+
 class el_reinvermoegen(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Reinvermoegen der Person (Art. 9a ELG)"
-    reference = "SR 831.30 Art. 9a Abs. 1"
+    label = "Reinvermoegen (ohne selbstbewohnte Liegenschaft, inkl. Vermoegensverzicht)"
+    reference = "SR 831.30 Art. 9a"
 
 
-class el_ist_alleinstehend(Variable):
+class el_bewohnt_eigene_liegenschaft(Variable):
     value_type = bool
     entity_key = 'person'
-    definition_period = MONTH
-    label = "Person ist alleinstehend (nicht verheiratet)"
-    reference = "SR 831.30 Art. 9a Abs. 1 Bst. a"
+    definition_period = YEAR
+    label = "Person bewohnt eine Liegenschaft im Eigentum"
+    reference = "SR 831.30 Art. 9a Abs. 2"
 
 
-class el_ist_ehepaar(Variable):
-    value_type = bool
+class el_verzichtvermoegen(Variable):
+    value_type = float
     entity_key = 'person'
-    definition_period = MONTH
-    label = "Person ist Teil eines Ehepaares"
-    reference = "SR 831.30 Art. 9a Abs. 1 Bst. b"
-
-
-class el_ist_waise_oder_kind(Variable):
-    value_type = bool
-    entity_key = 'person'
-    definition_period = MONTH
-    label = "Person ist rentenberechtigte Waise oder Kind mit Kinderrentenanspruch"
-    reference = "SR 831.30 Art. 9a Abs. 1 Bst. c"
+    definition_period = YEAR
+    label = "Vermoegen auf das verzichtet wurde (Art. 11a ELG)"
+    reference = "SR 831.30 Art. 9a Abs. 3"
 
 
 class el_vermoegensschwelle(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Vermoegensschwelle fuer EL-Anspruch (Art. 9a ELG)"
+    label = "Anwendbare Vermoegensschwelle in CHF (Art. 9a ELG)"
     reference = "SR 831.30 Art. 9a Abs. 1"
 
     def formula(person, period, parameters):
-        alleinstehend = person('el_ist_alleinstehend', period.first_month)
-        ehepaar = person('el_ist_ehepaar', period.first_month)
-        waise = person('el_ist_waise_oder_kind', period.first_month)
+        import numpy as np
+        ist_verheiratet = person('el_ist_verheiratet', period)
+        ist_waise = person('el_ist_waise_oder_kind_mit_kinderrente', period)
 
-        schwelle = select(
-            [waise, ehepaar, alleinstehend],
-            [50000, 200000, 100000],
-            default=100000,
+        # a. Single: 100,000; b. Couple: 200,000; c. Orphan/child: 50,000
+        return np.where(
+            ist_waise, 50000.0,
+            np.where(ist_verheiratet, 200000.0, 100000.0)
         )
-        return schwelle
 
 
-class el_vermoegen_unter_schwelle(Variable):
+class el_vermoegensvoraussetzung_erfuellt(Variable):
     value_type = bool
     entity_key = 'person'
     definition_period = YEAR
-    label = "Reinvermoegen liegt unter Vermoegensschwelle (Art. 9a ELG)"
+    label = "Vermoegensschwelle fuer EL-Anspruch nicht ueberschritten (Art. 9a ELG)"
     reference = "SR 831.30 Art. 9a"
 
     def formula(person, period, parameters):
-        vermoegen = person('el_reinvermoegen', period)
+        reinvermoegen = person('el_reinvermoegen', period)
+        verzicht = person('el_verzichtvermoegen', period)
         schwelle = person('el_vermoegensschwelle', period)
-        return vermoegen < schwelle
+
+        # Net wealth including relinquished assets must be below threshold
+        gesamtvermoegen = reinvermoegen + verzicht
+        return gesamtvermoegen < schwelle

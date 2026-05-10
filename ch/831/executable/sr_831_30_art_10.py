@@ -2,32 +2,24 @@
 
 Generated from: ch/831/de/831.30.md
 
-Art. 10: Anerkannte Ausgaben - Recognized expenses for EL calculation.
+Art. 10: Anerkannte Ausgaben (Recognized expenses)
 
 Abs. 1: For persons living at home:
-a. General living expenses per year (2025 amounts):
-   1. Single persons: CHF 20,670
-   2. Couples: CHF 31,005
-   3. Orphans/children age 11+: CHF 10,815
-      (first 2 full, next 2 at 2/3, rest at 1/3)
-   4. Orphans/children under 11: CHF 7,590
-      (first child full, each subsequent reduced by 1/6)
-b. Rent (max amounts by region, 2025):
-   Region 1 single: CHF 18,900; Region 2: CHF 18,300; Region 3: CHF 16,680
-   Additional persons: varying supplements
-   Wheelchair-accessible: +CHF 6,900
+  a. General living costs per year (2025 values):
+     1. Single persons: CHF 20,670
+     2. Married couples: CHF 31,005
+     3. Children >= 11 years: CHF 10,815 (first 2 full, next 2 at 2/3, rest at 1/3)
+     4. Children < 11 years: CHF 7,590 (first full, each next reduced by 1/6)
+  b. Maximum recognized rent per year by region:
+     1. Single person: Region 1: 18,900 / Region 2: 18,300 / Region 3: 16,680
+     2. Additional for 2nd person: R1: 3,420 / R2: 3,420 / R3: 3,480
+        Additional for 3rd person: R1: 2,460 / R2: 2,040 / R3: 2,040
+        Additional for 4th person: R1: 2,280 / R2: 2,160 / R3: 1,800
+     3. Wheelchair-accessible housing supplement: CHF 6,900
 
-Abs. 2: For persons in homes/hospitals:
-a. Daily rate charged by institution (cantons may cap)
-b. Canton-determined amount for personal expenses
-
-Abs. 3: For all persons:
-a. Income acquisition costs up to gross employment income
-b. Building maintenance costs and mortgage interest up to gross property income
-c. Social insurance contributions (excl. health insurance premiums)
-d. Mandatory health insurance premium (cantonal/regional average, max actual premium)
-e. Maintenance obligations paid
-f. Net childcare costs for children under 11
+Abs. 2: For persons living in a home/hospital:
+  a. Daily rate charged by the institution
+  b. A cantonal amount for personal expenses
 """
 
 from openfisca_core.model_api import *
@@ -37,20 +29,36 @@ from openfisca_core.periods import MONTH, YEAR
 class el_lebt_im_heim(Variable):
     value_type = bool
     entity_key = 'person'
-    definition_period = MONTH
+    definition_period = YEAR
     label = "Person lebt dauernd oder laenger als 3 Monate in einem Heim oder Spital"
     reference = "SR 831.30 Art. 10 Abs. 2"
 
 
-class el_region(Variable):
+class el_anzahl_kinder_ab_11(Variable):
     value_type = int
     entity_key = 'person'
     definition_period = YEAR
-    label = "Mietregion der Wohngemeinde (1, 2 oder 3)"
-    reference = "SR 831.30 Art. 10 Abs. 1 Bst. b"
+    label = "Anzahl rentenberechtigter Kinder ab 11 Jahren"
+    reference = "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 3"
 
 
-class el_anzahl_personen_haushalt(Variable):
+class el_anzahl_kinder_unter_11(Variable):
+    value_type = int
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Anzahl rentenberechtigter Kinder unter 11 Jahren"
+    reference = "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 4"
+
+
+class el_mietregion(Variable):
+    value_type = int
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Mietregion (1, 2 oder 3) nach Art. 10 Abs. 1quater ELG"
+    reference = "SR 831.30 Art. 10 Abs. 1quater"
+
+
+class el_anzahl_personen_im_haushalt(Variable):
     value_type = int
     entity_key = 'person'
     definition_period = YEAR
@@ -62,124 +70,131 @@ class el_rollstuhlgaengige_wohnung(Variable):
     value_type = bool
     entity_key = 'person'
     definition_period = YEAR
-    label = "Notwendigkeit einer rollstuhlgaengigen Wohnung"
+    label = "Notwendige Miete einer rollstuhlgaengigen Wohnung"
     reference = "SR 831.30 Art. 10 Abs. 1 Bst. b Ziff. 3"
 
 
-class el_lebensbedarf(Variable):
+class el_allgemeiner_lebensbedarf(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Betrag fuer allgemeinen Lebensbedarf (Art. 10 Abs. 1 Bst. a ELG)"
+    label = "Betrag fuer den allgemeinen Lebensbedarf pro Jahr (Art. 10 Abs. 1 Bst. a ELG)"
     reference = "SR 831.30 Art. 10 Abs. 1 Bst. a"
 
     def formula(person, period, parameters):
-        alleinstehend = person('el_ist_alleinstehend', period.first_month)
-        ehepaar = person('el_ist_ehepaar', period.first_month)
+        import numpy as np
+        ist_verheiratet = person('el_ist_verheiratet', period)
 
-        bedarf = select(
-            [ehepaar, alleinstehend],
-            [31005, 20670],
-            default=20670,
-        )
-        return bedarf
+        # Base amounts (2025 values)
+        betrag_alleinstehend = 20670.0
+        betrag_ehepaar = 31005.0
+
+        return np.where(ist_verheiratet, betrag_ehepaar, betrag_alleinstehend)
 
 
-class el_mietzins_max(Variable):
+class el_kinderbedarf_ab_11(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Hoechstbetrag anerkannter Mietzins (Art. 10 Abs. 1 Bst. b ELG)"
+    label = "Lebensbedarf fuer Kinder ab 11 Jahren (Art. 10 Abs. 1 Bst. a Ziff. 3)"
+    reference = "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 3"
+
+    def formula(person, period, parameters):
+        import numpy as np
+        anzahl = person('el_anzahl_kinder_ab_11', period)
+        betrag_voll = 10815.0
+
+        # First 2 children: full amount each
+        # Next 2 children: 2/3 each
+        # Remaining: 1/3 each
+        erste_zwei = np.minimum(anzahl, 2) * betrag_voll
+        naechste_zwei = np.minimum(np.maximum(anzahl - 2, 0), 2) * betrag_voll * (2.0 / 3.0)
+        weitere = np.maximum(anzahl - 4, 0) * betrag_voll * (1.0 / 3.0)
+
+        return erste_zwei + naechste_zwei + weitere
+
+
+class el_kinderbedarf_unter_11(Variable):
+    value_type = float
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Lebensbedarf fuer Kinder unter 11 Jahren (Art. 10 Abs. 1 Bst. a Ziff. 4)"
+    reference = "SR 831.30 Art. 10 Abs. 1 Bst. a Ziff. 4"
+
+    def formula(person, period, parameters):
+        import numpy as np
+        anzahl = person('el_anzahl_kinder_unter_11', period)
+        betrag_erstes = 7590.0
+
+        # First child: full amount
+        # Each subsequent: reduced by 1/6 of previous
+        # Child 1: 7590, Child 2: 7590*5/6=6325, Child 3: 6325*5/6=5271
+        # Child 4: 5271*5/6=4392, Child 5+: 4392*5/6=3660
+        betraege = np.array([7590.0, 6325.0, 5271.0, 4392.0, 3660.0])
+
+        total = np.zeros_like(anzahl, dtype=float)
+        for i in range(5):
+            total = total + np.where(anzahl > i, betraege[i], 0.0)
+        # Children beyond 5th get same as 5th
+        total = total + np.maximum(anzahl - 5, 0) * betraege[4]
+
+        return total
+
+
+class el_maximale_mietkosten(Variable):
+    value_type = float
+    entity_key = 'person'
+    definition_period = YEAR
+    label = "Hoechstbetrag der anerkannten Mietkosten pro Jahr (Art. 10 Abs. 1 Bst. b ELG)"
     reference = "SR 831.30 Art. 10 Abs. 1 Bst. b"
 
     def formula(person, period, parameters):
-        region = person('el_region', period)
+        import numpy as np
+        region = person('el_mietregion', period)
+        n_personen = person('el_anzahl_personen_im_haushalt', period)
         rollstuhl = person('el_rollstuhlgaengige_wohnung', period)
 
-        # Base amounts for single person (2025)
-        basis = select(
-            [region == 1, region == 2, region == 3],
-            [18900, 18300, 16680],
-            default=16680,
-        )
+        # Base amount for single person by region
+        basis_r1 = 18900.0
+        basis_r2 = 18300.0
+        basis_r3 = 16680.0
 
-        # Additional for wheelchair-accessible housing
-        rollstuhl_zuschlag = where(rollstuhl, 6900, 0)
+        basis = np.where(region == 1, basis_r1, np.where(region == 2, basis_r2, basis_r3))
 
-        return basis + rollstuhl_zuschlag
+        # Additional for 2nd person
+        zusatz_2_r1, zusatz_2_r2, zusatz_2_r3 = 3420.0, 3420.0, 3480.0
+        zusatz_2 = np.where(region == 1, zusatz_2_r1, np.where(region == 2, zusatz_2_r2, zusatz_2_r3))
+
+        # Additional for 3rd person
+        zusatz_3_r1, zusatz_3_r2, zusatz_3_r3 = 2460.0, 2040.0, 2040.0
+        zusatz_3 = np.where(region == 1, zusatz_3_r1, np.where(region == 2, zusatz_3_r2, zusatz_3_r3))
+
+        # Additional for 4th person
+        zusatz_4_r1, zusatz_4_r2, zusatz_4_r3 = 2280.0, 2160.0, 1800.0
+        zusatz_4 = np.where(region == 1, zusatz_4_r1, np.where(region == 2, zusatz_4_r2, zusatz_4_r3))
+
+        miete = basis
+        miete = miete + np.where(n_personen >= 2, zusatz_2, 0.0)
+        miete = miete + np.where(n_personen >= 3, zusatz_3, 0.0)
+        miete = miete + np.where(n_personen >= 4, zusatz_4, 0.0)
+
+        # Wheelchair supplement
+        miete = miete + np.where(rollstuhl, 6900.0, 0.0)
+
+        return miete
 
 
-class el_mietzins_effektiv(Variable):
+class el_anerkannte_ausgaben(Variable):
     value_type = float
     entity_key = 'person'
     definition_period = YEAR
-    label = "Effektiver Mietzins inkl. Nebenkosten"
-    reference = "SR 831.30 Art. 10 Abs. 1 Bst. b"
-
-
-class el_tagestaxe_heim(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Tagestaxe des Heims oder Spitals (Art. 10 Abs. 2 Bst. a ELG)"
-    reference = "SR 831.30 Art. 10 Abs. 2 Bst. a"
-
-
-class el_persoenliche_auslagen_heim(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Betrag fuer persoenliche Auslagen im Heim (Art. 10 Abs. 2 Bst. b ELG)"
-    reference = "SR 831.30 Art. 10 Abs. 2 Bst. b"
-
-
-class el_sozialversicherungsbeitraege(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Beitraege an Sozialversicherungen des Bundes ohne KV-Praemien (Art. 10 Abs. 3 Bst. c ELG)"
-    reference = "SR 831.30 Art. 10 Abs. 3 Bst. c"
-
-
-class el_unterhaltsbeitraege_geleistet(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Geleistete familienrechtliche Unterhaltsbeitraege (Art. 10 Abs. 3 Bst. e ELG)"
-    reference = "SR 831.30 Art. 10 Abs. 3 Bst. e"
-
-
-class el_ausgaben_zuhause(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Anerkannte Ausgaben fuer zu Hause lebende Personen (Art. 10 Abs. 1 ELG)"
+    label = "Total anerkannte Ausgaben fuer zu Hause lebende Personen (Art. 10 Abs. 1 ELG)"
     reference = "SR 831.30 Art. 10 Abs. 1"
 
     def formula(person, period, parameters):
-        lebensbedarf = person('el_lebensbedarf', period)
-        mietzins_max = person('el_mietzins_max', period)
-        mietzins_eff = person('el_mietzins_effektiv', period)
-        mietzins = min_(mietzins_max, mietzins_eff)
-        sv_beitraege = person('el_sozialversicherungsbeitraege', period)
-        kv_pauschale = person('el_pauschale_krankenpflege', period)
-        unterhalt = person('el_unterhaltsbeitraege_geleistet', period)
+        lebensbedarf = person('el_allgemeiner_lebensbedarf', period)
+        kinder_ab_11 = person('el_kinderbedarf_ab_11', period)
+        kinder_unter_11 = person('el_kinderbedarf_unter_11', period)
+        miete = person('el_maximale_mietkosten', period)
 
-        return lebensbedarf + mietzins + sv_beitraege + kv_pauschale + unterhalt
-
-
-class el_ausgaben_heim(Variable):
-    value_type = float
-    entity_key = 'person'
-    definition_period = YEAR
-    label = "Anerkannte Ausgaben fuer in Heimen/Spitaelern lebende Personen (Art. 10 Abs. 2 ELG)"
-    reference = "SR 831.30 Art. 10 Abs. 2"
-
-    def formula(person, period, parameters):
-        tagestaxe = person('el_tagestaxe_heim', period)
-        persoenlich = person('el_persoenliche_auslagen_heim', period)
-        sv_beitraege = person('el_sozialversicherungsbeitraege', period)
-        kv_pauschale = person('el_pauschale_krankenpflege', period)
-        unterhalt = person('el_unterhaltsbeitraege_geleistet', period)
-
-        return tagestaxe + persoenlich + sv_beitraege + kv_pauschale + unterhalt
+        return lebensbedarf + kinder_ab_11 + kinder_unter_11 + miete

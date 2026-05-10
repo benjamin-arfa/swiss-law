@@ -1,0 +1,23 @@
+# SR 831.30 Art. 9a - Vermoegensschwellen (Wealth thresholds)
+# Values as of 2021 (EL-Reform)
+description: Vermoegensschwellen fuer EL-Anspruch nach Art. 9a ELG
+reference: SR 831.30 Art. 9a Abs. 1
+metadata:
+  unit: currency-CHF
+  rate_unit: /1
+values:
+  alleinstehend:
+    description: Vermoegensschwelle fuer alleinstehende Personen
+    values:
+      2021-01-01:
+        value: 100000
+  ehepaar:
+    description: Vermoegensschwelle fuer Ehepaare
+    values:
+      2021-01-01:
+        value: 200000
+  kind_waise:
+    description: Vermoegensschwelle fuer rentenberechtigte Waisen / Kinder
+    values:
+      2021-01-01:
+        value: 50000

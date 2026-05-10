@@ -1,0 +1,98 @@
+# SR 831.30 Art. 10 - Anerkannte Ausgaben (Recognized expenses)
+# Values as of 2025 (adjusted per V vom 28. Aug. 2024)
+description: Anerkannte Ausgaben fuer den allgemeinen Lebensbedarf und Mietkosten
+reference: SR 831.30 Art. 10 Abs. 1
+metadata:
+  unit: currency-CHF
+  rate_unit: /year
+values:
+  lebensbedarf:
+    alleinstehend:
+      description: Allgemeiner Lebensbedarf alleinstehende Person
+      values:
+        2025-01-01:
+          value: 20670
+    ehepaar:
+      description: Allgemeiner Lebensbedarf Ehepaar
+      values:
+        2025-01-01:
+          value: 31005
+    kind_ab_11:
+      description: Lebensbedarf Kind ab 11 Jahren (voller Betrag)
+      values:
+        2025-01-01:
+          value: 10815
+    kind_unter_11:
+      description: Lebensbedarf Kind unter 11 Jahren (voller Betrag erstes Kind)
+      values:
+        2025-01-01:
+          value: 7590
+  mietzins_maximum:
+    region_1:
+      alleinstehend:
+        description: Max. Mietzins Region 1 alleinstehend
+        values:
+          2025-01-01:
+            value: 18900
+      zusatz_2_person:
+        description: Zusatzbetrag 2. Person Region 1
+        values:
+          2025-01-01:
+            value: 3420
+      zusatz_3_person:
+        description: Zusatzbetrag 3. Person Region 1
+        values:
+          2025-01-01:
+            value: 2460
+      zusatz_4_person:
+        description: Zusatzbetrag 4. Person Region 1
+        values:
+          2025-01-01:
+            value: 2280
+    region_2:
+      alleinstehend:
+        description: Max. Mietzins Region 2 alleinstehend
+        values:
+          2025-01-01:
+            value: 18300
+      zusatz_2_person:
+        description: Zusatzbetrag 2. Person Region 2
+        values:
+          2025-01-01:
+            value: 3420
+      zusatz_3_person:
+        description: Zusatzbetrag 3. Person Region 2
+        values:
+          2025-01-01:
+            value: 2040
+      zusatz_4_person:
+        description: Zusatzbetrag 4. Person Region 2
+        values:
+          2025-01-01:
+            value: 2160
+    region_3:
+      alleinstehend:
+        description: Max. Mietzins Region 3 alleinstehend
+        values:
+          2025-01-01:
+            value: 16680
+      zusatz_2_person:
+        description: Zusatzbetrag 2. Person Region 3
+        values:
+          2025-01-01:
+            value: 3480
+      zusatz_3_person:
+        description: Zusatzbetrag 3. Person Region 3
+        values:
+          2025-01-01:
+            value: 2040
+      zusatz_4_person:
+        description: Zusatzbetrag 4. Person Region 3
+        values:
+          2025-01-01:
+            value: 1800
+    rollstuhl_zuschlag:
+      description: Zuschlag rollstuhlgaengige Wohnung
+      values:
+        2025-01-01:
+          value: 6900

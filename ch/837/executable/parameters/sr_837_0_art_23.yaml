@@ -1,0 +1,17 @@
+# SR 837.0 Art. 23 - Versicherter Verdienst
+description: Parameter fuer den versicherten Verdienst der Arbeitslosenversicherung
+reference: SR 837.0 Art. 23
+metadata:
+  unit: currency-CHF
+  rate_unit: /year
+values:
+  hoechstbetrag:
+    description: Hoechstbetrag des versicherten Verdienstes (= UVG-Maximum)
+    values:
+      2024-01-01:
+        value: 148200
+  mindestgrenze:
+    description: Mindestgrenze des versicherten Verdienstes (jaehrlich)
+    values:
+      2024-01-01:
+        value: 6000

@@ -38,3 +38,12 @@ from .sr_642_118_2_art_9 import *  # noqa: F401,F403
 from .sr_642_118_2_art_14 import *  # noqa: F401,F403
 from .sr_642_118_2_art_16 import *  # noqa: F401,F403
 from .sr_642_118_2_art_19 import *  # noqa: F401,F403
+from .sr_642_21_art_1 import *  # noqa: F401,F403
+from .sr_642_21_art_2 import *  # noqa: F401,F403
+from .sr_642_21_art_5 import *  # noqa: F401,F403
+from .sr_642_21_art_8 import *  # noqa: F401,F403
+from .sr_642_21_art_13 import *  # noqa: F401,F403
+from .sr_642_21_art_17 import *  # noqa: F401,F403
+from .sr_642_21_art_22 import *  # noqa: F401,F403
+from .sr_642_21_art_27 import *  # noqa: F401,F403
+from .sr_642_21_art_32 import *  # noqa: F401,F403

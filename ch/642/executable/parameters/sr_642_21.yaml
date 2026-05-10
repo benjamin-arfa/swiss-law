@@ -1,0 +1,93 @@
+description: "Parameters for SR 642.21 - VStG (Withholding Tax Act / Verrechnungssteuergesetz)"
+metadata:
+  reference: "SR 642.21"
+
+# Art. 2 - Cantonal share of net yield
+kantonsanteil_rate:
+  description: "Share of cantons in annual net yield of withholding tax"
+  reference: "SR 642.21 Art. 2 Abs. 1"
+  unit: rate
+  values:
+    2008-01-01:
+      value: 0.10
+
+# Art. 5 Abs. 1 Bst. c - Interest exemption threshold
+zinsen_freigrenze:
+  description: "Threshold for tax-exempt interest on customer deposits (CHF/year)"
+  reference: "SR 642.21 Art. 5 Abs. 1 Bst. c"
+  unit: CHF
+  values:
+    2010-01-01:
+      value: 200
+
+# Art. 8 Abs. 1 Bst. a - Capital benefit exemption threshold
+kapitalleistung_freigrenze:
+  description: "Threshold for tax-exempt capital benefits from same insurance (CHF)"
+  reference: "SR 642.21 Art. 8 Abs. 1 Bst. a"
+  unit: CHF
+  values:
+    1966-01-01:
+      value: 5000
+
+# Art. 8 Abs. 1 Bst. b - Annuity/pension exemption threshold
+rente_freigrenze:
+  description: "Threshold for tax-exempt annuities/pensions incl. supplements (CHF/year)"
+  reference: "SR 642.21 Art. 8 Abs. 1 Bst. b"
+  unit: CHF
+  values:
+    1966-01-01:
+      value: 500
+
+# Art. 13 Abs. 1 Bst. a - Tax rate on capital income and gambling winnings
+steuersatz_kapitalertrag:
+  description: "Withholding tax rate on capital income and gambling/lottery winnings"
+  reference: "SR 642.21 Art. 13 Abs. 1 Bst. a"
+  unit: rate
+  values:
+    1976-01-01:
+      value: 0.35
+
+# Art. 13 Abs. 1 Bst. b - Tax rate on annuities and pensions
+steuersatz_leibrenten:
+  description: "Withholding tax rate on annuities (Leibrenten) and pensions"
+  reference: "SR 642.21 Art. 13 Abs. 1 Bst. b"
+  unit: rate
+  values:
+    1966-01-01:
+      value: 0.15
+
+# Art. 13 Abs. 1 Bst. c - Tax rate on other insurance benefits
+steuersatz_versicherung_sonstige:
+  description: "Withholding tax rate on other insurance benefits"
+  reference: "SR 642.21 Art. 13 Abs. 1 Bst. c"
+  unit: rate
+  values:
+    1966-01-01:
+      value: 0.08
+
+# Art. 17 - Statute of limitations
+verjaehrungsfrist_jahre:
+  description: "Statute of limitations for withholding tax claims (years)"
+  reference: "SR 642.21 Art. 17 Abs. 1"
+  unit: year
+  values:
+    1966-01-01:
+      value: 5
+
+# Art. 27 - Threshold for foreign source income (collective investment schemes)
+auslaendische_quellen_schwelle:
+  description: "Min share of foreign-source income for refund to foreign unit holders"
+  reference: "SR 642.21 Art. 27"
+  unit: rate
+  values:
+    2007-01-01:
+      value: 0.80
+
+# Art. 32 - Refund application deadline
+rueckerstattungsfrist_jahre:
+  description: "Deadline for refund application after end of calendar year of maturity (years)"
+  reference: "SR 642.21 Art. 32 Abs. 1"
+  unit: year
+  values:
+    1966-01-01:
+      value: 3

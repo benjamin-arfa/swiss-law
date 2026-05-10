@@ -1,0 +1,51 @@
+description: "Parameters for SR 946.101 - SERV-Verordnung"
+metadata:
+  reference: "SR 946.101"
+
+mindest_wertschoepfungsanteil_pct:
+  description: "Mindestanteil der schweizerischen Wertschoepfung am Auftragswert (Art. 3 Abs. 2)"
+  reference: "SR 946.101 Art. 3 Abs. 2"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 20
+
+max_deckungssatz_allgemein_pct:
+  description: "Maximaler allgemeiner Deckungssatz (Art. 4 Abs. 1)"
+  reference: "SR 946.101 Art. 4 Abs. 1"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 95
+
+max_deckungssatz_fabrikationskredit_pct:
+  description: "Maximaler Deckungssatz fuer Fabrikationskreditversicherung (Art. 4 Abs. 2)"
+  reference: "SR 946.101 Art. 4 Abs. 2"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 80
+
+max_deckungssatz_fabrikationskredit_ausnahme_pct:
+  description: "Maximaler Deckungssatz fuer Fabrikationskreditversicherung in Ausnahmefaellen (Art. 4 Abs. 2)"
+  reference: "SR 946.101 Art. 4 Abs. 2"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 95
+
+max_deckungssatz_bondgarantie_pct:
+  description: "Maximaler Deckungssatz fuer Bondgarantie (Art. 4 Abs. 3)"
+  reference: "SR 946.101 Art. 4 Abs. 3"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 90
+
+max_deckungssatz_bondgarantie_ausnahme_pct:
+  description: "Maximaler Deckungssatz fuer Bondgarantie in Ausnahmefaellen - voller Garantiebetrag (Art. 4 Abs. 3)"
+  reference: "SR 946.101 Art. 4 Abs. 3"
+  unit: percent
+  values:
+    2007-01-01:
+      value: 100

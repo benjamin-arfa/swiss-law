@@ -1,0 +1,19 @@
+description: "Parameters for SR 817.0 - Lebensmittelgesetz (LMG)"
+metadata:
+  reference: "SR 817.0"
+
+mindestalter_abgabe_alkohol:
+  description: "Mindestalter fuer die Abgabe alkoholischer Getraenke (Art. 14 Abs. 1)"
+  reference: "SR 817.0 Art. 14 Abs. 1"
+  unit: year
+  values:
+    2017-05-01:
+      value: 16
+
+altersgrenze_werbung_alkohol:
+  description: "Altersgrenze unter der Werbung fuer alkoholische Getraenke eingeschraenkt werden kann (Art. 14 Abs. 2)"
+  reference: "SR 817.0 Art. 14 Abs. 2"
+  unit: year
+  values:
+    2017-05-01:
+      value: 18

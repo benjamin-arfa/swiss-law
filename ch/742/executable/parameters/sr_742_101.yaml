@@ -1,0 +1,19 @@
+description: "Parameters for SR 742.101 - Eisenbahngesetz (EBG)"
+metadata:
+  reference: "SR 742.101"
+
+konzession_max_dauer_jahre:
+  description: "Maximale Dauer der Infrastrukturkonzession (Art. 6 Abs. 5)"
+  reference: "SR 742.101 Art. 6 Abs. 5"
+  unit: year
+  values:
+    2000-10-01:
+      value: 50
+
+sicherheitsgenehmigung_max_dauer_jahre:
+  description: "Maximale Dauer der Sicherheitsgenehmigung (Art. 8a Abs. 2)"
+  reference: "SR 742.101 Art. 8a Abs. 2"
+  unit: year
+  values:
+    2013-07-01:
+      value: 5

@@ -1,0 +1,6 @@
+```yml
+parameters:
+  innovationsprojekte_maxanteil:
+    value: 0.15
+    label: Max share of commitment credit for innovation projects (15%)
+```

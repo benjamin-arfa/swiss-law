@@ -1,0 +1,6 @@
+```yml
+parameters:
+  finanzierung_mindestdauer_jahre:
+    value: 6
+    label: Minimum duration of secured financing in years
+```

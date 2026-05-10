@@ -1,0 +1,13 @@
+```yml
+parameters:
+  klimaschutz_pflicht_gl:
+    value: 1
+    label: Pflicht zur Begrenzung der Klimaveränderung (Kanton Glarus)
+    reference: SR 131.217 Art. 22a
+    start_date: 2022-07-01
+  finanzielle_anreize_klimaschutz_gl:
+    value: 1
+    label: Finanzielle Anreize zur Erreichung der Klimaziele
+    reference: SR 131.217 Art. 22a Abs. 3
+    start_date: 2022-07-01
+```

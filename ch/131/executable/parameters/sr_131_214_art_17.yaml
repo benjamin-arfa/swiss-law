@@ -1,0 +1,7 @@
+```yml
+parameters:
+  stimmrechtsalter_uri:
+    value: 18
+    label: Mindestalter für das Stimmrecht im Kanton Uri
+    reference: SR 131.214 Art. 17 Abs. 1
+```

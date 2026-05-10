@@ -1,0 +1,7 @@
+```yml
+parameters:
+  kanton_uri_souveraen:
+    value: 1
+    label: Kanton Uri ist souveräner Stand der Eidgenossenschaft
+    reference: SR 131.214 Art. 1
+```

@@ -1,0 +1,52 @@
+description: "Parameters for SR 642.118.2 - Quellensteuerverordnung (QStV)"
+metadata:
+  reference: "SR 642.118.2"
+
+quellensteuer:
+  obligatorische_veranlagung_mindestbetrag:
+    description: "Mindestbetrag Bruttoeinkommen fuer obligatorische nachtraegliche ordentliche Veranlagung (CHF/Jahr)"
+    reference: "SR 642.118.2 Art. 9 Abs. 1"
+    unit: CHF
+    values:
+      2021-01-01:
+        value: 120000
+
+  quasi_ansaessigkeit_schwelle:
+    description: "Mindestanteil der weltweiten Bruttoeinkuenfte in der Schweiz fuer Quasi-Ansaessigkeit"
+    reference: "SR 642.118.2 Art. 14 Abs. 1"
+    unit: rate
+    values:
+      2021-01-01:
+        value: 0.90
+
+  bundessteueranteil_grenzgaenger_de:
+    description: "Anteil der direkten Bundessteuer bei Grenzgaengern aus Deutschland"
+    reference: "SR 642.118.2 Art. 8"
+    unit: rate
+    values:
+      2021-01-01:
+        value: 0.10
+
+  grenzgaenger_it_reduktion:
+    description: "Reduktionsfaktor Quellensteuer fuer italienische Grenzgaenger nach Art. 3 Abs. 1 Grenzgaengerabkommen CH-IT"
+    reference: "SR 642.118.2 Art. 1 Abs. 3"
+    unit: rate
+    values:
+      2024-01-01:
+        value: 0.80
+
+  kapitalleistung_rueckerstattungsfrist_jahre:
+    description: "Frist fuer Antrag auf Rueckerstattung der Quellensteuer auf Kapitalleistungen (Jahre)"
+    reference: "SR 642.118.2 Art. 19 Abs. 2 Bst. a"
+    unit: years
+    values:
+      2021-01-01:
+        value: 3
+
+  meldepflicht_frist_tage:
+    description: "Frist fuer Meldung der Beschaeftigung quellensteuerpflichtiger Personen (Tage ab Stellenantritt)"
+    reference: "SR 642.118.2 Art. 5 Abs. 1"
+    unit: days
+    values:
+      2021-01-01:
+        value: 8

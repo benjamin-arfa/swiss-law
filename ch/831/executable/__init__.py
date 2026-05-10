@@ -13,6 +13,7 @@ from .sr_831_135_1_art_2 import *  # noqa: F401,F403
 from .sr_831_135_1_art_3 import *  # noqa: F401,F403
 from .sr_831_201_art_1bis import *  # noqa: F401,F403
 from .sr_831_201_art_1octies import *  # noqa: F401,F403
+from .sr_831_201_art_4octies import *  # noqa: F401,F403
 from .sr_831_201_art_26bis import *  # noqa: F401,F403
 from .sr_831_201_art_27bis import *  # noqa: F401,F403
 from .sr_831_201_art_29ter import *  # noqa: F401,F403

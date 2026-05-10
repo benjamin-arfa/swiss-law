@@ -1,0 +1,29 @@
+sr_935_61:
+  min_praktikum_monate:
+    description: "Minimale Dauer des Anwaltspraktikums in Monaten"
+    reference: "SR 935.61 Art. 7 Abs. 1 Bst. b"
+    unit: months
+    values:
+      2002-06-01:
+        value: 12
+  max_busse_chf:
+    description: "Maximale Busse bei Disziplinarmassnahme"
+    reference: "SR 935.61 Art. 17 Abs. 1 Bst. c"
+    unit: currency-CHF
+    values:
+      2002-06-01:
+        value: 20000
+  max_berufsverbot_monate:
+    description: "Maximale Dauer des befristeten Berufsausübungsverbots in Monaten"
+    reference: "SR 935.61 Art. 17 Abs. 1 Bst. d"
+    unit: months
+    values:
+      2002-06-01:
+        value: 24
+  min_haftpflicht_versicherungssumme:
+    description: "Minimale Versicherungssumme der Berufshaftpflichtversicherung pro Jahr"
+    reference: "SR 935.61 Art. 12 Bst. f"
+    unit: currency-CHF
+    values:
+      2002-06-01:
+        value: 1000000

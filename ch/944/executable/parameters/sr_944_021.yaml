@@ -1,0 +1,8 @@
+sr_944_021:
+  kontroll_stundenansatz:
+    description: "Stundenansatz fuer Kontrollgebuehren bei Deklarationsverletzung"
+    reference: "SR 944.021 Art. 8 Abs. 3"
+    unit: CHF/h
+    values:
+      2010-10-01:
+        value: 200

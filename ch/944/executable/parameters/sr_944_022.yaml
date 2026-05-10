@@ -1,0 +1,8 @@
+sr_944_022:
+  kontroll_stundenansatz:
+    description: "Stundenansatz fuer Kontrollgebuehren bei Pelzdeklarationsverletzung"
+    reference: "SR 944.022 Art. 11 Abs. 3"
+    unit: CHF/h
+    values:
+      2013-03-01:
+        value: 200

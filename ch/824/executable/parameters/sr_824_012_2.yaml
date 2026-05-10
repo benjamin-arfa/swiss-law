@@ -1,0 +1,136 @@
+description: "Parameters for SR 824.012.2 - ZDV-WBF (Civilian Service Ordinance WBF)"
+metadata:
+  reference: "SR 824.012.2"
+
+# Art. 1 - Diensttage Biodiversitaetsfoerderflaechen
+diensttage_extensiv_wiesen:
+  description: "Diensttage pro Hektare extensiv genutzte Wiesen"
+  reference: "SR 824.012.2 Art. 1 Abs. 1 Bst. a"
+  unit: days/ha
+  values:
+    2025-01-01:
+      value: 7
+
+diensttage_wenig_intensiv_wiesen:
+  description: "Diensttage pro Hektare wenig intensiv genutzte Wiesen"
+  reference: "SR 824.012.2 Art. 1 Abs. 1 Bst. b"
+  unit: days/ha
+  values:
+    2025-01-01:
+      value: 7
+
+diensttage_extensiv_weiden:
+  description: "Diensttage pro Hektare extensiv genutzte Weiden"
+  reference: "SR 824.012.2 Art. 1 Abs. 1 Bst. c"
+  unit: days/ha
+  values:
+    2025-01-01:
+      value: 10
+
+diensttage_waldweiden:
+  description: "Diensttage pro Hektare Waldweiden"
+  reference: "SR 824.012.2 Art. 1 Abs. 1 Bst. d"
+  unit: days/ha
+  values:
+    2025-01-01:
+      value: 14
+
+diensttage_streueflaechen:
+  description: "Diensttage pro Hektare Streueflaechen"
+  reference: "SR 824.012.2 Art. 1 Abs. 1 Bst. e"
+  unit: days/ha
+  values:
+    2025-01-01:
+      value: 14
+
+diensttage_hecken:
+  description: "Diensttage pro Hektare Hecken, Feld- und Ufergehoelze"
+  reference: "SR 824.012.2 Art. 1 Abs. 1 Bst. f"
+  unit: days/ha
+  values:
+    2025-01-01:
+      value: 42
+
+diensttage_pro_baum:
+  description: "Diensttage pro Hochstamm-Feldobstbaum"
+  reference: "SR 824.012.2 Art. 1 Abs. 2 Bst. a"
+  unit: days/tree
+  values:
+    2025-01-01:
+      value: 0.21
+
+# Art. 2 - Diensttage Hang- und Steillagen
+diensttage_hang_18_35:
+  description: "Diensttage pro Hektare Hangflaeche 18-35% Neigung"
+  reference: "SR 824.012.2 Art. 2 Bst. a"
+  unit: days/ha
+  values:
+    2018-01-01:
+      value: 3.5
+
+diensttage_hang_35_50:
+  description: "Diensttage pro Hektare Hangflaeche 35-50% Neigung"
+  reference: "SR 824.012.2 Art. 2 Bst. b"
+  unit: days/ha
+  values:
+    2018-01-01:
+      value: 7
+
+diensttage_hang_ueber_50:
+  description: "Diensttage pro Hektare Hangflaeche ueber 50% Neigung"
+  reference: "SR 824.012.2 Art. 2 Bst. c"
+  unit: days/ha
+  values:
+    2018-01-01:
+      value: 10.5
+
+# Art. 9 - Arbeitskleider
+arbeitskleider_betrag_pro_26_tage:
+  description: "Verguetung fuer Arbeitskleider pro 26 anrechenbare Tage"
+  reference: "SR 824.012.2 Art. 9"
+  unit: CHF
+  values:
+    2018-01-01:
+      value: 60
+
+arbeitskleider_max_pro_einsatz:
+  description: "Maximale Verguetung fuer Arbeitskleider pro Einsatz"
+  reference: "SR 824.012.2 Art. 9"
+  unit: CHF
+  values:
+    2018-01-01:
+      value: 240
+
+# Art. 10 - Verpflegung
+verpflegung_morgenessen:
+  description: "Entschaedigung Morgenessen pro Tag"
+  reference: "SR 824.012.2 Art. 10 Abs. 1 Bst. a"
+  unit: CHF
+  values:
+    2018-01-01:
+      value: 4
+
+verpflegung_mittagessen:
+  description: "Entschaedigung Mittagessen pro Tag"
+  reference: "SR 824.012.2 Art. 10 Abs. 1 Bst. b"
+  unit: CHF
+  values:
+    2018-01-01:
+      value: 9
+
+verpflegung_nachtessen:
+  description: "Entschaedigung Nachtessen pro Tag"
+  reference: "SR 824.012.2 Art. 10 Abs. 1 Bst. c"
+  unit: CHF
+  values:
+    2018-01-01:
+      value: 7
+
+# Art. 11 - Kilometerentschaedigung
+kilometerentschaedigung_ansatz:
+  description: "Kilometerentschaedigung fuer Privatfahrzeug"
+  reference: "SR 824.012.2 Art. 11"
+  unit: CHF/km
+  values:
+    2018-01-01:
+      value: 0.65

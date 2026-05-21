@@ -1,6 +1,6 @@
 # Index of Swiss Law (Systematische Rechtssammlung)
 
-Total: **8963** federal laws, **2** cantonal laws indexed
+Total: **8966** federal laws, **2** cantonal laws indexed
 
 ---
 
@@ -3283,7 +3283,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [0.946.292.911](ch/0/de/0.946.292.911.md) | Abkommen vom 12. März 1999 über Handel und wirtschaftliche Zusammenarbeit zwischen |
 | [0.946.292.941](ch/0/de/0.946.292.941.md) | Handelsabkommen vom 30. März 1954 zwischen der Schweizerischen Eidgenossenschaft |
 | [0.946.293.141](ch/0/de/0.946.293.141.md) | Zusatzprotokoll vom 28. August 1991 zum Freundschafts-, Handels- und Niederlassungsvertrag |
-| [0.946.293.142](ch/0/de/0.946.293.142.md) | Abkommen vom 15. September 1951 über den Warenaustausch zwischen der Schweiz |
+| [0.946.293.142](ch/0/de/0.946.293.142.md) | Abkommen vom 12. Januar 1994 zwischen der Schweizerischen Regierung einerseits |
 | [0.946.293.145](ch/0/de/0.946.293.145.md) | Vereinbarung vom 21. Dezember 1959 über die Einfuhr dänischer Agrarprodukte |
 | [0.946.293.145.1](ch/0/de/0.946.293.145.1.md) | Zusatzabkommen vom 11. Mai 1963 zur Vereinbarung vom 21. Dezember 1959 über |
 | [0.946.293.211](ch/0/de/0.946.293.211.md) | Provisorisches Handelsabkommen vom 19. April 1930 zwischen der Schweiz und |
@@ -3821,7 +3821,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [141.01](ch/141/de/141.01.md) | Verordnung vom 17. Juni 2016 über das Schweizer Bürgerrecht (Bürgerrechtsverordnung, |
 | [141.21](ch/141/de/141.21.md) | Verordnung vom 23. November 2005 über die Gebühren zum Bürgerrechtsgesetz (GebV-BüG) |
 | [142.11](ch/142/de/142.11.md) | Bundesgesetz vom 10. Dezember 1849 über die Dauer und die Kosten der Niederlassungsbewilligung  |
-| [142.20](ch/142/de/142.20.md) | Bundesgesetz vom 26. März 1931 über Aufenthalt und Niederlassung der Ausländer |
+| [142.20](ch/142/de/142.20.md) | Bundesgesetz vom 16. Dezember 2005 über die Ausländerinnen und Ausländer und |
 | [142.31](ch/142/de/142.31.md) | Asylgesetz vom 26. Juni 1998 (AsylG) |
 | [142.35](ch/142/de/142.35.md) | Bundesbeschluss vom 20. Dezember 1985 über den Delegierten für das Flüchtlingswesen |
 | [142.51](ch/142/de/142.51.md) | Bundesgesetz vom 20. Juni 2003 über das Informationssystem für den Ausländer- |
@@ -3846,8 +3846,8 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [142.291](ch/142/de/142.291.md) | Bundesbeschluss vom 15. Juni 1909 betreffend die Übernahme der Kosten der Ausschaffung |
 | [142.298](ch/142/de/142.298.md) | Verordnung vom 18. November 2009 über ein Ein- und Durchreiseverbot für bestimmte |
 | [142.310](ch/142/de/142.310.md) | Verordnung vom 25. August 1999 über ein befristetes Arbeitsverbot für Asylsuchende |
-| [142.311](ch/142/de/142.311.md) | Asylverordnung 1 vom 22. Mai 1991 über Verfahrensfragen (Asylverordnung 1) |
-| [142.311.23](ch/142/de/142.311.23.md) | Verordnung des EJPD vom 14. März 2001 zum Betrieb von Empfangsstellen |
+| [142.311](ch/142/de/142.311.md) | Asylverordnung 1 vom 11. August 1999 über Verfahrensfragen (Asylverordnung |
+| [142.311.23](ch/142/de/142.311.23.md) | Verordnung des EJPD vom 4. Dezember 2018 über den Betrieb von Zentren des Bundes |
 | [142.312](ch/142/de/142.312.md) | Asylverordnung 2 vom 22. Mai 1991 über Finanzierungsfragen (Asylverordnung |
 | [142.313](ch/142/de/142.313.md) | Verordnung vom 3. April 1996 über die Gewährung von Rückkehrhilfe für Staatsangehörige |
 | [142.314](ch/142/de/142.314.md) | Asylverordnung 3 vom 11. August 1999 über die Bearbeitung von Personendaten |
@@ -4377,7 +4377,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 
 ## 2 – Privatrecht – Zivilrechtspflege – Vollstreckung
 
-*211 laws*
+*212 laws*
 
 | SR Number | Title |
 |-----------|-------|
@@ -4535,7 +4535,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [232.211](ch/232/de/232.211.md) | Vollziehungsverordnung vom 5. Januar 1932 für das Bundesgesetz vom 5. Juni |
 | [232.221](ch/232/de/232.221.md) | Reglement vom 18. November 2015 betreffend die Verwendung und den Schutz des |
 | [235.1](ch/235/de/235.1.md) | Bundesgesetz vom 19. Juni 1992 über den Datenschutz (DSG) |
-| [235.2](ch/235/de/235.2.md) | Bundesgesetz über die Bearbeitung von Personendaten durch das Eidgenössische |
+| [235.2](ch/235/de/235.2.md) | Bundesgesetz vom 18. Dezember 2020 über die Bearbeitung von Personendaten durch |
 | [235.3](ch/235/de/235.3.md) | Bundesgesetz vom 28. September 2018 über den Datenschutz im Rahmen der Anwendung |
 | [235.11](ch/235/de/235.11.md) | Verordnung vom 14. Juni 1993 zum Bundesgesetz über den Datenschutz (VDSG) |
 | [235.12](ch/235/de/235.12.md) | Verordnung vom 22. November 2006 über den Pilotbetrieb des Nationalen Polizeiindexes |
@@ -4587,6 +4587,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [283.418.1](ch/283/de/283.418.1.md) | Verordnung vom 30. Dezember 1952 zu Artikel 15 des Abkommens zwischen der Schweizerischen |
 | [283.663.1](ch/283/de/283.663.1.md) | Verordnung vom 30. Dezember 1952 zu Artikel12 des Abkommens zwischen der Schweizerischen |
 | [284.1](ch/284/de/284.1.md) | Bundesgesetz betreffend die öffentlich-rechtlichen Folgen der fruchtlosen |
+| [291](ch/291/de/291.md) | Bundesgesetz vom 18. Dezember 1987 über das Internationale Privatrecht (IPRG) |
 | [292.021.11](ch/292/de/292.021.11.md) | Bundesbeschluss vom 4. März 1976 betreffend das internationale Haager Übereinkommen |
 | [292.021.12](ch/292/de/292.021.12.md) | Bundesbeschluss vom 1. Oktober 1964 betreffend die Genehmigung der internationalen |
 | [292.349](ch/292/de/292.349.md) | Bundesbeschluss betreffend die Zusatzakte zum Vertrag mit Frankreich über |
@@ -4595,7 +4596,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 
 ## 3 – Strafrecht – Strafrechtspflege – Strafvollzug
 
-*84 laws*
+*85 laws*
 
 | SR Number | Title |
 |-----------|-------|
@@ -4669,6 +4670,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [360.2](ch/360/de/360.2.md) | Verordnung vom 15. Oktober 2008 über das Nationale Ermittlungssystem (NES-Verordnung) |
 | [360.3](ch/360/de/360.3.md) | Verordnung vom 28. September 1998 über das Datenverarbeitungssystem zur Bekämpfung |
 | [360.4](ch/360/de/360.4.md) | Vereinbarung vom 2. April 2014 über den nationalen Betrieb gemeinsamer Polizei- |
+| [361](ch/361/de/361.md) | Bundesgesetz vom 13. Juni 2008 über die polizeilichen Informationssysteme des |
 | [361.0](ch/361/de/361.0.md) | Verordnung vom 15. Oktober 2008 über das automatisierte Polizeifahndungssystem |
 | [361.1](ch/361/de/361.1.md) | Verordnung vom 31. Mai 2000 über das DNA-Profil-Informationssystem (EDNA-Verordnung) |
 | [361.2](ch/361/de/361.2.md) | Verordnung vom 15. Oktober 2008 über das informatisierte Personennachweis, |
@@ -5133,7 +5135,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [414.715](ch/414/de/414.715.md) | Verordnung vom 11. September 1996 über die Zulassung zu Fachhochschulstudien |
 | [414.718.1](ch/414/de/414.718.1.md) | Interkantonales Konkordat vom 9. Januar 1997 zur Schaffung einer Fachhochschule |
 | [415.0](ch/415/de/415.0.md) | Bundesgesetz vom 17. Juni 2011 über die Förderung von Sport und Bewegung (Sportförderungsgesetz, |
-| [415.01](ch/415/de/415.01.md) | Verordnung vom 26. Juni 1972 zum Bundesgesetz über die Förderung von Turnen |
+| [415.01](ch/415/de/415.01.md) | Verordnung vom 23. Mai 2012 über die Förderung von Sport und Bewegung (Sportförderungsverordnung, |
 | [415.1](ch/415/de/415.1.md) | Bundesgesetz vom 17. Juni 2011 über die Informationssysteme des Bundes im Bereich |
 | [415.011](ch/415/de/415.011.md) | Verordnung des VBS vom 25. Mai 2012 über Sportförderungsprogramme und -projekte |
 | [415.11](ch/415/de/415.11.md) | Verordnung vom 5. September 2012 über die Informationssysteme des Bundes im |
@@ -5165,7 +5167,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [416.0](ch/416/de/416.0.md) | Bundesgesetz vom 6. Oktober 2006 über Beiträge an die Aufwendungen der Kantone |
 | [416.01](ch/416/de/416.01.md) | Verordnung vom 9. Juli 1965 über die Gewährung von Beiträgen an die Aufwendungen |
 | [416.2](ch/416/de/416.2.md) | Bundesbeschluss vom 19. Dezember 1980 über die Stipendien an ausländische Studierende |
-| [416.21](ch/416/de/416.21.md) | Verordnung vom 3. Oktber 1983 über die Anpassung der Stipendien an ausländische |
+| [416.21](ch/416/de/416.21.md) | Verordnung vom 30. Januar 2013 über Stipendien für ausländische Studierende |
 | [416.211](ch/416/de/416.211.md) | Verordnung des WBF vom 11. Februar 2013 über die Vergabe von Stipendien an |
 | [418.0](ch/418/de/418.0.md) | Bundesgesetz vom 21. März 2014 über die Vermittlung schweizerischer Bildung |
 | [418.01](ch/418/de/418.01.md) | Verordnung vom 2. September 1981 über die Unterstützung von Schweizerschulen |
@@ -5336,7 +5338,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [443.12](ch/443/de/443.12.md) | Vollziehungsverordnung II vom 28. Dezember 1962 zum Bundesgesetz über das Filmwesen |
 | [443.13](ch/443/de/443.13.md) | Vollziehungsverordnung III vom 28. Dezember 1962 zum Bundesgesetz über das |
 | [443.14](ch/443/de/443.14.md) | Verordnung vom 6. September 2023 über die Quote für europäische Filme und Investitionen |
-| [443.113](ch/443/de/443.113.md) | Verordnung des EDI vom 20. Dezember 2002 über die Filmförderung (FiFV) |
+| [443.113](ch/443/de/443.113.md) | Verordnung des EDI vom 21. April 2016 über die Filmförderung (FiFV) |
 | [443.113.11](ch/443/de/443.113.11.md) | Reglement des EDI vom 13. Dezember 1996 zur selektiven Filmförderung  |
 | [443.113.12](ch/443/de/443.113.12.md) | Reglement des EDI vom 13. Dezember 1996 zur Durchführung der erfolgsabhängigen |
 | [443.114](ch/443/de/443.114.md) | Verordnung vom 14. Dezember 1992 über die Meldepflichten für den Filmverleih |
@@ -5363,7 +5365,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [449.1](ch/449/de/449.1.md) | Reglement vom 26. Oktober 1956 betreffend die Verwendung der Kredite für die |
 | [451.1](ch/451/de/451.1.md) | Verordnung vom 16. Januar 1991 über den Natur- und Heimatschutz (NHV) |
 | [451.11](ch/451/de/451.11.md) | Verordnung vom 10. August 1977 über das Bundesinventar der Landschaften und |
-| [451.12](ch/451/de/451.12.md) | Verordnung vom 9. September 1981 über das Bundesinventar der schützenswerten |
+| [451.12](ch/451/de/451.12.md) | Verordnung vom 13. November 2019 über das Bundesinventar der schützenswerten |
 | [451.13](ch/451/de/451.13.md) | Verordnung vom 14. April 2010 über das Bundesinventar der historischen Verkehrswege |
 | [451.31](ch/451/de/451.31.md) | Verordnung vom 28. Oktober 1992 über den Schutz der Auengebiete von nationaler |
 | [451.32](ch/451/de/451.32.md) | Verordnung vom 21. Januar 1991 über den Schutz der Hoch- und Übergangsmoore |
@@ -5407,7 +5409,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [501.7](ch/501/de/501.7.md) | Verordnung vom 3. Mai 1978 über die Koordination des Veterinärdienstes im Rahmen |
 | [501.31](ch/501/de/501.31.md) | Verordnung vom 27. April 2005 über den Koordinierten Sanitätsdienst (VKSD) |
 | [501.32](ch/501/de/501.32.md) | Verordnung vom 18. Juni 1984 über das Eidgenössische sanitätsdienstliche Koordinationsorgan |
-| [510.10](ch/510/de/510.10.md) | Bundesgesetz über die Militärorganisation (Militärorganisation [MO])  |
+| [510.10](ch/510/de/510.10.md) | Bundesgesetz vom 3. Februar 1995 über die Armee und die Militärverwaltung (Militärgesetz, |
 | [510.21](ch/510/de/510.21.md) | Verordnung vom 31. Januar 1968 über die Obliegenheiten des Eidenössischen Militärdepartements, |
 | [510.22](ch/510/de/510.22.md) | Verordnung vom 21. November 1961 über die Rechtsstellung der Mitglieder der |
 | [510.23](ch/510/de/510.23.md) | Verordnung vom 23. Mai 1990 über die Kommandoführung und Entschädigung der |
@@ -5481,7 +5483,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [510.514](ch/510/de/510.514.md) | Verordnung vom 22. November 2017 über die Waffen-, Schiess- und Übungsplätze |
 | [510.514.1](ch/510/de/510.514.1.md) | Verordnung des VBS vom 26. Juni 1996 über die Waffen-, Schiess- und Übungsplätze |
 | [510.518](ch/510/de/510.518.md) | Bundesgesetz vom 23. Juni 1950 über den Schutz militärischer Anlagen |
-| [510.518.1](ch/510/de/510.518.1.md) | Bundesratsbeschluss vom 28. Dezember 1950 über den Schutz militärischer Anlagen |
+| [510.518.1](ch/510/de/510.518.1.md) | Verordnung vom 2. Mai 1990 über den Schutz militärischer Anlagen (Anlageschutzverordnung) |
 | [510.518.11](ch/510/de/510.518.11.md) | Verfügung de sEidgenössischen Militärdepartements vom 30. Dezember 1950 über |
 | [510.519](ch/510/de/510.519.md) | Verfügung des VBS vom 5. Juli 1945 betreffend Aufhebungen militärischer Inanspruchnahme |
 | [510.521](ch/510/de/510.521.md) | Verordnung vom 24. Oktober 1990 über das Bundesamt für Rüstungsbetriebe |
@@ -5533,7 +5535,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [511.223](ch/511/de/511.223.md) | Verordnung vom 24. April 1989 über die Bekanntgabe von Daten an Angehörigen |
 | [512.11](ch/512/de/512.11.md) | Verordnung über die Förderung von Turnen und Sport  |
 | [512.15](ch/512/de/512.15.md) | Verordnung vom 29. März 1960 über die militärtechnische Vorbildung |
-| [512.21](ch/512/de/512.21.md) | Verordnung vom 19. November 2003 über die Militärdienstpflicht (MDV) |
+| [512.21](ch/512/de/512.21.md) | Verordnung vom 22. November 2017 über die Militärdienstpflicht (VMDP) |
 | [512.22](ch/512/de/512.22.md) | Bundesratsbeschluss vom 2. Dezember 1963 über die Wiederholungskurse, Ergänzungskurse |
 | [512.24](ch/512/de/512.24.md) | Bundesbeschluss vom 2. Oktober 1962 über die Ausbildung der Offiziere |
 | [512.26](ch/512/de/512.26.md) | Verordnung vom 14. April 1999 über die Ausbildung der Truppe bei polizeilichen |
@@ -5560,7 +5562,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [512.243](ch/512/de/512.243.md) | Verordnung vom 27. Februar 1985 über einen Einführungskurs für das Artillerie-Feuerleitsystem |
 | [512.251](ch/512/de/512.251.md) | Verordnung vom 20. Dezember 1989 über die Gebirgskurse (VGK) |
 | [512.251.5](ch/512/de/512.251.5.md) | Verordnung vom 15. Dezember 1989 über die Lehrkräfte für die Gebirgsausbildung |
-| [512.271](ch/512/de/512.271.md) | Flugdienstordnung vom 27. Dezember 1967 |
+| [512.271](ch/512/de/512.271.md) | Verordnung vom 18. März 2022 über den militärischen Flugdienst (Militärflugdienstverordnung, |
 | [512.271.1](ch/512/de/512.271.1.md) | Verordnung des VBS vom 21. März 2022 über die Angehörigen des militärischen |
 | [512.271.2](ch/512/de/512.271.2.md) | Verordnung vom 8. Dezember 1994 über die Bordoperateure sowie die Berufsbordfotografen |
 | [512.271.3](ch/512/de/512.271.3.md) | Verordnung vom 20. November 1986 über die Fernspäher (Fernspäherverordnung) |
@@ -5578,7 +5580,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [512.412](ch/512/de/512.412.md) | Verordnung vom 20. Dezember 1996 über die Anstellung und Ausbildung der Instruktoren |
 | [512.413](ch/512/de/512.413.md) | Verordnung des VBS vom 23. Juni 2005 über die Berufsunteroffiziersschule der |
 | [512.421](ch/512/de/512.421.md) | Verordnung des VBS vom 30. November 1995 über die Instruktorenwagen (VIW-VBS) |
-| [513.1](ch/513/de/513.1.md) | Bundesbeschluss vom 20. Dezember 1960 über die Truppenordnung (Truppenordnung, |
+| [513.1](ch/513/de/513.1.md) | Verordnung der Bundesversammlung vom 18. März 2016 über die Organisation der |
 | [513.11](ch/513/de/513.11.md) | Verordnung vom 26. November 2003 über die Organisation der Armee (VOA)  |
 | [513.12](ch/513/de/513.12.md) | Verordnung vom 21. Mai 2008 über den Stab Bundesrat Nationale Alarmzentrale |
 | [513.13](ch/513/de/513.13.md) | Verordnung vom 26. September 2025 über den Stab Einsatzunterstützung Landesregierung |
@@ -5609,7 +5611,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [513.511](ch/513/de/513.511.md) | Bundesbeschluss vom 19. Dezember 1913 betreffend die Unterstützung des schweizerischen |
 | [513.711](ch/513/de/513.711.md) | Verordnung des EMD vom 3. Oktober 1985 über den Militärischen Frauendienst |
 | [514.01](ch/514/de/514.01.md) | Verordnung vom 5. Mai 1959 über die Offiziersausrüstung |
-| [514.10](ch/514/de/514.10.md) | Verordnung vom 3. Januar 1967 über die Mannschaftsausrüstung |
+| [514.10](ch/514/de/514.10.md) | Verordnung vom 21. November 2018 über die persönliche Ausrüstung der Armeeangehörigen |
 | [514.13](ch/514/de/514.13.md) | Verordnung vom 19. November 1969 über die gemeindeweisen Waffen- und Ausrüstungsinspektionen |
 | [514.20](ch/514/de/514.20.md) | Verordnung des VBS vom 6. Dezember 2007 über das Armeematerial (Armeematerialverordnung, |
 | [514.21](ch/514/de/514.21.md) | Verordnung vom 25. Oktober 1995 über die Ausrüstung der Armee (VAA) |
@@ -5646,7 +5648,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [514.511](ch/514/de/514.511.md) | Verordnung vom 10. Januar 1973 über das Kriegsmaterial |
 | [514.511.1](ch/514/de/514.511.1.md) | Verordnung vom 29. Mai 1987 über die Bezeichnung bewilligungspflichtiger chemischer |
 | [514.511.2](ch/514/de/514.511.2.md) | Verordnung vom 28. Juni 1993 über die bewilligungspflichtigen Agenzien |
-| [514.541](ch/514/de/514.541.md) | Verordnung vom 21. September 1998 über Waffen, Waffenzubehör und Munition (Waffenverordnung, |
+| [514.541](ch/514/de/514.541.md) | Verordnung vom 2. Juli 2008 über Waffen, Waffenzubehör und Munition (Waffenverordnung, |
 | [514.541.1](ch/514/de/514.541.1.md) | Verordnung des EJPD vom 1. Februar 2002 über verbotene Munition |
 | [514.542](ch/514/de/514.542.md) | Konkordat vom 27. März 1969 über den Handel mit Waffen und Munition |
 | [514.544](ch/514/de/514.544.md) | Verordnung vom 30. Juni 1993 über den Erwerb und das Tragen von Schusswaffen |
@@ -5676,10 +5678,10 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [519.21](ch/519/de/519.21.md) | Verfügung des Eidgenössischen Militärdepartements vom 10. September 1951 über |
 | [519.31](ch/519/de/519.31.md) | Bundesratsbeschluss vom 26. Dezember 1961 über die Einrückungspflicht der im |
 | [519.71](ch/519/de/519.71.md) | Verordnung vom 24. Juni 1968 über Requisitionsentschädigungen und Höchstschatzungssummen |
-| [520.1](ch/520/de/520.1.md) | Bundesgesetz vom 4. Oktober 2002 über den Bevölkerungsschutz und den Zivilschutz |
+| [520.1](ch/520/de/520.1.md) | Bundesgesetz vom 20. Dezember 2019 über den Bevölkerungsschutz und den Zivilschutz |
 | [520.2](ch/520/de/520.2.md) | Bundesgesetz vom 4. Oktober 1963 über die baulichen Massnahmen im Zivilschutz |
 | [520.3](ch/520/de/520.3.md) | Bundesgesetz vom 20. Juni 2014 über den Schutz der Kulturgüter bei bewaffneten |
-| [520.11](ch/520/de/520.11.md) | Verordnung vom 5. Dezember 2003 über den Zivilschutz (Zivilschutzverordnung, |
+| [520.11](ch/520/de/520.11.md) | Verordnung vom 11. November 2020 über den Zivilschutz (Zivilschutzverordnung, |
 | [520.12](ch/520/de/520.12.md) | Verordnung vom 18. August 2010 über die Warnung, Alarmierung und das Sicherheitsfunknetz |
 | [520.13](ch/520/de/520.13.md) | Verordnung vom 21. August 2013 über die Koordination des Wetterdienstes |
 | [520.14](ch/520/de/520.14.md) | Verordnung vom 5. Dezember 2003 über Einsätze des Zivilschutzes zu Gunsten |
@@ -5826,7 +5828,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 |-----------|-------|
 | [610.2](ch/610/de/610.2.md) | Bundesbeschluss vom 31. Januar 1975 über die Herabsetzung von Anteilen der |
 | [610.21](ch/610/de/610.21.md) | Verordnung vom 25. Januar 1978 über die Herabsetzung der Anteile der Kantone |
-| [611.0](ch/611/de/611.0.md) | Bundesgesetz vom 18. Dezember 1968 über den eidgenössischen Finanzhaushalt |
+| [611.0](ch/611/de/611.0.md) | Bundesgesetz vom 7. Oktober 2005 über den eidgenössischen Finanzhaushalt (Finanzhaushaltgesetz, |
 | [611.01](ch/611/de/611.01.md) | Finanzhaushaltverordnung vom 5. April 2006 (FHV) |
 | [611.1](ch/611/de/611.1.md) | Bundesgesetz vom 13. Dezember 2002 über die Sperrung und die Freigabe von Krediten |
 | [611.02](ch/611/de/611.02.md) | Bundesgesetz vom 14. Dezember 1984 über die Sparmassnahmen 1984 (Anschlussprogramm) |
@@ -6126,7 +6128,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [641.105](ch/641/de/641.105.md) | Vollziehungsverordnung zu den Bundesgesetzen über die Stempelabgaben  |
 | [641.131](ch/641/de/641.131.md) | Verordnung vom 15. März 1993 über die Aufhebung der Umsatzabgabe auf der Emission |
 | [641.153](ch/641/de/641.153.md) | Verordnung vom 29. November 1996 über die Verzinsung ausstehender Stempelabgaben |
-| [641.201](ch/641/de/641.201.md) | Verordnung vom 22. Juni 1994 über die Mehrwertsteuer (MWSTV) |
+| [641.201](ch/641/de/641.201.md) | Mehrwertsteuerverordnung vom 27. November 2009 (MWSTV) |
 | [641.201.1](ch/641/de/641.201.1.md) | Verordnung des EFD vom 30. Januar 2002 über elektronische Daten und Informationen |
 | [641.201.11](ch/641/de/641.201.11.md) | Verordnung der ESTV vom 12. Oktober 2007 über Zertifizierungsdienste im Bereich |
 | [641.201.31](ch/641/de/641.201.31.md) | Verordnung des EFD vom 20. Juni 2000 über die steuerbefreite Einfuhr von Gegenständen |
@@ -6354,12 +6356,13 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 
 ## 7 – Öffentliche Werke – Energie – Verkehr
 
-*655 laws*
+*656 laws*
 
 | SR Number | Title |
 |-----------|-------|
+| [700](ch/700/de/700.md) | Bundesgesetz vom 22. Juni 1979 über die Raumplanung (Raumplanungsgesetz, RPG) |
 | [700.0](ch/700/de/700.0.md) | Bundesbeschluss vom 8. Oktober 1976 über die befristete Verlängerung von Massnahmen |
-| [700.1](ch/700/de/700.1.md) | Verordnung vom 2. Oktober 1989 über die Raumplanung (RPV) |
+| [700.1](ch/700/de/700.1.md) | Raumplanungsverordnung vom 28. Juni 2000 (RPV) |
 | [700.2](ch/700/de/700.2.md) | Verordnung vom 11. August 1975 über Beiträge an die Kosten der Raumplanung |
 | [700.4](ch/700/de/700.4.md) | Verordnung vom 13. August 1980 über Beiträge an die Kosten der Richtpläne |
 | [702.1](ch/702/de/702.1.md) | Zweitwohnungsverordnung vom 4. Dezember 2015 (ZWV) |
@@ -6420,7 +6423,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [725.12](ch/725/de/725.12.md) | Bundesbeschluss vom 21. Februar 1964 über Beiträge an die Aufhebung oder Sicherung |
 | [725.13](ch/725/de/725.13.md) | Bundesgesetz vom 6. Oktober 2006 über den Infrastrukturfonds für den Agglomerationsverkehr, |
 | [725.14](ch/725/de/725.14.md) | Bundesgesetz vom 17. Juni 1994 über den Strassentransitverkehr im Alpengebiet |
-| [725.111](ch/725/de/725.111.md) | Verordnung vom 18. Dezember 1995 über die Nationalstrassen (NSV) |
+| [725.111](ch/725/de/725.111.md) | Nationalstrassenverordnung vom 7. November 2007 (NSV) |
 | [725.111.31](ch/725/de/725.111.31.md) | Verordnung des UVEK vom 4. Dezember 2007 über den Landerwerb bei der Fertigstellung |
 | [725.112.1](ch/725/de/725.112.1.md) | Bundesbeschluss vom 21. Juni 2019 über den Ausbauschritt 2019 für die Nationalstrassen |
 | [725.113.11](ch/725/de/725.113.11.md) | Bundesbeschluss vom 21. Juni 1960 über das Nationalstrassennetz |
@@ -6510,7 +6513,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [734.6](ch/734/de/734.6.md) | Verordnung vom 2. März 1998 über Geräte und Schutzsysteme zur Verwendung in |
 | [734.7](ch/734/de/734.7.md) | Bundesgesetz vom 23. März 2007 über die Stromversorgung (Stromversorgungsgesetz, |
 | [734.24](ch/734/de/734.24.md) | Verordnung vom 24. Oktober 1967 über das Eidgenössische Starkstrominspektorat |
-| [734.25](ch/734/de/734.25.md) | Verordnung vom 26. Mai 1939 über die Vorlagen für elektrische Starkstromanlagen  |
+| [734.25](ch/734/de/734.25.md) | Verordnung vom 2. Februar 2000 über das Plangenehmigungsverfahren für elektrische |
 | [734.26](ch/734/de/734.26.md) | Verordnung vom 7. Dezember 1992 über elektrische Niederspannungserzeugnisse |
 | [734.27](ch/734/de/734.27.md) | Verordnung vom 7. November 2001 über elektrische Niederspannungsinstallationen |
 | [734.31](ch/734/de/734.31.md) | Verordnung vom 30. März 1994 über elektrische Leitungen (Leitungsverordnung, |
@@ -6550,7 +6553,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [741.21](ch/741/de/741.21.md) | Signalisationsverordnung vom 5. September 1979 (SSV) |
 | [741.031](ch/741/de/741.031.md) | Verordnung vom 22. März 1972 über Ordnungsbussen im Strassenverkehr (OBV) |
 | [741.31](ch/741/de/741.31.md) | Verkehrsversicherungsverordnung vom 20. November 1959 (VVV) |
-| [741.41](ch/741/de/741.41.md) | Verordnung vom 27. August 1969 über Bau und Ausrüstung der Strassenfahrzeuge |
+| [741.41](ch/741/de/741.41.md) | Verordnung vom 19. Juni 1995 über die technischen Anforderungen an Strassenfahrzeuge |
 | [741.51](ch/741/de/741.51.md) | Verordnung vom 27. Oktober 1976 über die Zulassung von Personen und Fahrzeugen |
 | [741.53](ch/741/de/741.53.md) | Verordnung vom 23. August 2000 über das Fahrberechtigungsregister |
 | [741.55](ch/741/de/741.55.md) | Verordnung vom 18. Oktober 2000 über das automatisierte Administrativmassnahmen-Register |
@@ -6658,7 +6661,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [742.140.3](ch/742/de/742.140.3.md) | Bundesgesetz vom 18. März 2005 über den Anschluss der Ost- und der Westschweiz |
 | [742.140.4](ch/742/de/742.140.4.md) | Bundesgesetz vom 13. Dezember 2013 über den Bau und die Finanzierung eines |
 | [742.140.5](ch/742/de/742.140.5.md) | Bundesbeschluss vom 21. Juni 2019 über den Ausbauschritt 2035 für die Eisenbahninfrastruktur |
-| [742.141.1](ch/742/de/742.141.1.md) | Verordnung betreffend die Einführung der durchgehenden Güterzugbremse im Bereiche |
+| [742.141.1](ch/742/de/742.141.1.md) | Verordnung vom 23. November 1983 über Bau und Betrieb der Eisenbahnen (Eisenbahnverordnung, |
 | [742.141.2](ch/742/de/742.141.2.md) | Verordnung vom 4. November 2009 über die sicherheitsrelevanten Tätigkeiten |
 | [742.141.3](ch/742/de/742.141.3.md) | Verordnung vom 16. Dezember 1938 betreffend die Technische Einheit im Eisenbahnwesen |
 | [742.141.4](ch/742/de/742.141.4.md) | Verordnung über Bau und Betrieb der schweizerischen Nebenbahnen  |
@@ -6668,7 +6671,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [742.141.22](ch/742/de/742.141.22.md) | Verordnung des UVEK vom 18. Dezember 2013 über die Zulassung zu sicherheitsrelevanten |
 | [742.141.51](ch/742/de/742.141.51.md) | Verordnung vom 23. April 1986 über Beiträge an private Anschlussgeleise (Anschlussgeleise-Beitragsverordnung) |
 | [742.141.142.1](ch/742/de/742.141.142.1.md) | Verordnung des UVEK vom 30. Oktober 2003 über die Zulassung von Triebfahrzeugführenden |
-| [742.142.1](ch/742/de/742.142.1.md) | Verordnung vom 23. Dezember 1932 über die Planvorlagen für Eisenbahnbauten  |
+| [742.142.1](ch/742/de/742.142.1.md) | Verordnung vom 2. Februar 2000 über das Plangenehmigungsverfahren für Eisenbahnanlagen |
 | [742.143.1](ch/742/de/742.143.1.md) | Verordnung betreffend den Unterhalt des Rollmaterials der schweizerischen Hauptbahnen |
 | [742.143.2](ch/742/de/742.143.2.md) | Verordnung betreffend Festsetzung der höchsten Fahrgeschwindigkeiten auf den |
 | [742.143.6](ch/742/de/742.143.6.md) | Verordnung vom 7. August 1974 über die Kontrolle der Kessel von Dampflokomotiven |
@@ -6753,7 +6756,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [746.1](ch/746/de/746.1.md) | Bundesgesetz vom 4. Oktober 1963 über Rohrleitungsanlagen zur Beförderung flüssiger |
 | [746.2](ch/746/de/746.2.md) | Verordnung vom 20. April 1983 über Sicherheitsvorschriften für Rohrleitungsanlagen |
 | [746.5](ch/746/de/746.5.md) | Bundesratsbeschluss vom 11. September 1968 betreffend die technische Aufsicht |
-| [746.11](ch/746/de/746.11.md) | Rohrleitungsverordnung vom 11. September 1968 |
+| [746.11](ch/746/de/746.11.md) | Verordnung vom 26. Juni 2019 über Rohrleitungsanlagen zur Beförderung flüssiger |
 | [746.12](ch/746/de/746.12.md) | Verordnung vom 4. April 2007 über Sicherheitsvorschriften für Rohrleitungsanlagen |
 | [746.21](ch/746/de/746.21.md) | Verfügung des EVED vom 2. Juli 1966 betreffend Anerkennung von Richtlinien |
 | [747.11](ch/747/de/747.11.md) | Bundesgesetz vom 28. September 1923 über das Schiffsregister |
@@ -6966,7 +6969,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [783.024](ch/783/de/783.024.md) | Geschäftsreglement der Postkommission vom 11. Oktober 2012 |
 | [783.111](ch/783/de/783.111.md) | Verordnung vom 19. Februar 1975 über die Ausgabe von Sonderpostmarken durch |
 | [783.501](ch/783/de/783.501.md) | Verordnung vom 5. November 1975 über die Taxen im internationalen Postverkehr |
-| [784.10](ch/784/de/784.10.md) | Bundesgesetz betreffend den Telegrafen- und Telefonverkehr (Telegrafen- und |
+| [784.10](ch/784/de/784.10.md) | Fernmeldegesetz vom 30. April 1997 (FMG) |
 | [784.11](ch/784/de/784.11.md) | Bundesgesetz vom 30. April 1997 über die Organisation der Telekommunikationsunternehmung |
 | [784.40](ch/784/de/784.40.md) | Bundesgesetz vom 21. Juni 1991 über Radio und Fernsehen (RTVG) |
 | [784.41](ch/784/de/784.41.md) | Bundesgesetz über die pauschale Vergütung der Mehrwertsteuer auf den Empfangsgebühren |
@@ -7143,7 +7146,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [812.212.5](ch/812/de/812.212.5.md) | Verordnung vom 17. Oktober 2001 über die Arzneimittelwerbung (Arzneimittel-Werbeverordnung, |
 | [812.212.21](ch/812/de/812.212.21.md) | Verordnung vom 17. Oktober 2001 über die Arzneimittel (Arzneimittelverordnung, |
 | [812.212.22](ch/812/de/812.212.22.md) | Verordnung des Schweizerischen Heilmittelinstituts vom 9. November 2001 über |
-| [812.212.23](ch/812/de/812.212.23.md) | Verordnung des Schweizerischen Heilmittelinstituts vom 9. November 2001 über |
+| [812.212.23](ch/812/de/812.212.23.md) | Verordnung des Schweizerischen Heilmittelinstituts vom 22. Juni 2006 über |
 | [812.212.24](ch/812/de/812.212.24.md) | Verordnung des Schweizerischen Heilmittelinstituts vom 22. Juni 2006 über die |
 | [812.212.27](ch/812/de/812.212.27.md) | Verordnung vom 18. August 2004 über die Tierarzneimittel (Tierarzneimittelverordnung, |
 | [812.213](ch/812/de/812.213.md) | Medizinprodukteverordnung vom 1. Juli 2020 (MepV) |
@@ -7232,7 +7235,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [814.82](ch/814/de/814.82.md) | Verordnung vom 10. November 2004 zum Rotterdamer Übereinkommen über das Verfahren |
 | [814.88](ch/814/de/814.88.md) | Verordnung vom 16. November 2022 über das Register der Fachbewilligungen für |
 | [814.91](ch/814/de/814.91.md) | Bundesgesetz vom 21. März 2003 über die Gentechnik im Ausserhumanbereich (Gentechnikgesetz, |
-| [814.201](ch/814/de/814.201.md) | Allgemeine Gewässerschutzverordnung vom 19. Juni 1972 |
+| [814.201](ch/814/de/814.201.md) | Gewässerschutzverordnung vom 28. Oktober 1998 (GSchV) |
 | [814.201.81](ch/814/de/814.201.81.md) | Verordnung des UVEK vom 10. Januar 2000 über die Genehmigung internationaler |
 | [814.201.231](ch/814/de/814.201.231.md) | Verordnung des UVEK vom 3. November 2016 zur Überprüfung des Reinigungseffekts |
 | [814.202](ch/814/de/814.202.md) | Verordnung vom 1. Juli 1998 über den Schutz der Gewässer vor wassergefährdenden |
@@ -7261,7 +7264,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [814.501.1](ch/814/de/814.501.1.md) | Verordnung des EDI vom 31. Oktober 2001 über die Eidgenössische Kommission |
 | [814.501.3](ch/814/de/814.501.3.md) | Reglement vom 9. Dezember 1996 der Eidgenössischen Kommission zur Überwachung |
 | [814.501.33](ch/814/de/814.501.33.md) | Verordnung des EDI vom 18. Februar 2008 über die Fachkommission für Radiopharmazeutika |
-| [814.501.43](ch/814/de/814.501.43.md) | Verordnung des EDI vom 26. April 2017 über die Personen- und Umgebungsdosimetrie |
+| [814.501.43](ch/814/de/814.501.43.md) | Verordnung des EDI vom 29. Januar 2026 über die Personen- oder Umgebungsdosimetrie |
 | [814.501.51](ch/814/de/814.501.51.md) | Verordnung vom 31. Januar 2001 über den Strahlenschutz bei nichtmedizinischen |
 | [814.501.261](ch/814/de/814.501.261.md) | Verordnung des EDI vom 26. April 2017 über die Aus- und Fortbildungen und die |
 | [814.501.512](ch/814/de/814.501.512.md) | Verordnung vom 15. November 2001 über den Umgang mit geschlossenen radioaktiven |
@@ -7304,8 +7307,8 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [814.812.31](ch/814/de/814.812.31.md) | Verordnung des EDI vom 28. November 2025 über die Fachbewilligung für die Desinfektion |
 | [814.812.32](ch/814/de/814.812.32.md) | Verordnung des EDI vom 28. November 2025 über die Fachbewilligung für die allgemeine |
 | [814.812.33](ch/814/de/814.812.33.md) | Verordnung des EDI vom 28. Juni 2005 über die Fachbewilligung für die Schädlingsbekämpfung |
-| [814.812.34](ch/814/de/814.812.34.md) | Verordnung des UVEK vom 28. Juni 2005 über die Fachbewilligung für die Verwendung |
-| [814.812.35](ch/814/de/814.812.35.md) | Verordnung des UVEK vom 28. Juni 2005 über die Fachbewilligung für die Verwendung |
+| [814.812.34](ch/814/de/814.812.34.md) | Verordnung des UVEK vom 24. November 2022 über die Fachbewilligung für die |
+| [814.812.35](ch/814/de/814.812.35.md) | Verordnung des UVEK vom 24. November 2022 über die Fachbewilligung für die |
 | [814.812.36](ch/814/de/814.812.36.md) | Verordnung des UVEK vom 24. November 2022 über die Fachbewilligung für die |
 | [814.812.37](ch/814/de/814.812.37.md) | Verordnung des UVEK vom 28. Juni 2005 über die Fachbewilligung für die Verwendung |
 | [814.812.38](ch/814/de/814.812.38.md) | Verordnung des UVEK vom 28. Juni 2005 über die Fachbewilligung für den Umgang |
@@ -7541,7 +7544,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [822.114](ch/822/de/822.114.md) | Verordnung 4 vom 18. August 1993 zum Arbeitsgesetz (ArGV 4) (Industrielle Betriebe, |
 | [822.115](ch/822/de/822.115.md) | Verordnung 5 vom 28. September 2007 zum Arbeitsgesetz (Jugendarbeitsschutzverordnung, |
 | [822.115.2](ch/822/de/822.115.2.md) | Verordnung des WBF vom 4. Dezember 2007 über gefährliche Arbeiten für Jugendliche |
-| [822.115.4](ch/822/de/822.115.4.md) | Verordnung des EVD vom 29. Mai 2008 über die Ausnahmen vom Verbot von Nacht- |
+| [822.115.4](ch/822/de/822.115.4.md) | Verordnung des WBF vom 21. April 2011 über die Ausnahmen vom Verbot von Nacht- |
 | [822.116](ch/822/de/822.116.md) | Verordnung vom 25. November 1996 über die Eignung der Spezialistinnen und Spezialisten |
 | [822.117](ch/822/de/822.117.md) | Verordnung vom 16. Juni 2006 über die Gebühren für die Erteilung von Arbeitszeitbewilligungen |
 | [822.121](ch/822/de/822.121.md) | Bundesbeschluss vom 8. März 1971 über die Änderungen des Bundesbeschlusses |
@@ -7828,7 +7831,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [834.1](ch/834/de/834.1.md) | Bundesgesetz vom 25. September 1952 über den Erwerbsersatz (Erwerbsersatzgesetz, |
 | [834.2](ch/834/de/834.2.md) | Bundesbeschluss vom 24. März 1947 über die Errichtung von besonderen Fonds |
 | [834.3](ch/834/de/834.3.md) | Bundesbeschluss vom 10. Oktober 1997 betreffend die Überweisung von Mitteln |
-| [834.11](ch/834/de/834.11.md) | Verordnung vom 24. Dezember 1959 zur Erwerbsersatzordnung (EOV) |
+| [834.11](ch/834/de/834.11.md) | Erwerbsersatzverordnung vom 24. November 2004 (EOV) |
 | [834.12](ch/834/de/834.12.md) | Verordnung 84 vom 6. Juli 1983 über die Anpassung der Erwerbsersatzordnung |
 | [834.13](ch/834/de/834.13.md) | Verordnung vom 13. Januar 1976 über den Vollzug der Erwerbsersatzordnung bei |
 | [834.14](ch/834/de/834.14.md) | Verordnung vom 31. Juli 1972 über die Erwerbsausfallentschädigung an Teilnehmer |
@@ -7945,7 +7948,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [910.2](ch/910/de/910.2.md) | Bundesgesetz vom 14. Dezember 1979 über Bewirtschaftungsbeiträge an die Landwirtschaft  mit |
 | [910.11](ch/910/de/910.11.md) | Verordnung vom 18. Oktober 2000 über Gebühren des Bundesamtes für Landwirtschaft |
 | [910.12](ch/910/de/910.12.md) | Verordnung  vom 28. Mai 1997 über den Schutz von Ursprungsbezeichnungen und |
-| [910.13](ch/910/de/910.13.md) | Verordnung vom 7. Dezember 1998 über die Direktzahlungen an die Landwirtschaft |
+| [910.13](ch/910/de/910.13.md) | Verordnung vom 23. Oktober 2013 über die Direktzahlungen an die Landwirtschaft |
 | [910.14](ch/910/de/910.14.md) | Verordnung vom 4. April 2001 über die regionale Förderung der Qualität und |
 | [910.15](ch/910/de/910.15.md) | Verordnung vom 14. November 2007 über die Koordination der Inspektionen auf |
 | [910.16](ch/910/de/910.16.md) | Verordnung vom 23. Oktober 2013 über die Förderung von Qualität und Nachhaltigkeit |
@@ -7953,7 +7956,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [910.18](ch/910/de/910.18.md) | Verordnung vom 22. September 1997 über die biologische Landwirtschaft und die |
 | [910.19](ch/910/de/910.19.md) | Verordnung vom 8. November 2006 über die Kennzeichnungen «Berg» und «Alp» für |
 | [910.21](ch/910/de/910.21.md) | Verordnung vom 16. Juni 1980 über Bewirtschaftungsbeiträge an die Landwirtschaft |
-| [910.91](ch/910/de/910.91.md) | Verordnung vom 1. November 1989 über landwirtschaftliche Begriffe |
+| [910.91](ch/910/de/910.91.md) | Verordnung vom 7. Dezember 1998 über landwirtschaftliche Begriffe und die Anerkennung |
 | [910.124](ch/910/de/910.124.md) | Verordnung des WBF vom 11. Juni 1999 über die Mindestanforderungen an die Kontrolle |
 | [910.131](ch/910/de/910.131.md) | Verordnung vom 26. April 1993 über ergänzende Direktzahlungen in der Landwirtschaft |
 | [910.132](ch/910/de/910.132.md) | Verordnung vom 24. Januar 1996 über Beiträge für besondere Leistungen im Bereiche |
@@ -7984,7 +7987,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [915.17](ch/915/de/915.17.md) | Bundesbeschluss vom 17. Dezember 1971 über die Errichtung des landwirtschaftlichen |
 | [915.21](ch/915/de/915.21.md) | Verordnung vom 23. Oktober 1992 über das Programm der Ausbildungskurse und |
 | [916..071.1](ch/916/de/916..071.1.md) | Bundesratsbeschluss vom 13. März 1964 betreffend die Einzelanschaffung landwirtschaftlicher |
-| [916.01](ch/916/de/916.01.md) | Verordnung vom 21. Dezember 1953 über wirtschaftliche Bestimmungen des Landwirtschaftsgesetzes |
+| [916.01](ch/916/de/916.01.md) | Verordnung vom 26. Oktober 2011 über die Einfuhr von landwirtschaftlichen Erzeugnissen |
 | [916.010](ch/916/de/916.010.md) | Verordnung vom 9. Juni 2006 über die Unterstützung der Absatzförderung für |
 | [916.010.2](ch/916/de/916.010.2.md) | Verordnung des WBF vom 23. August 2007 über das gemeinsame Erscheinungsbild |
 | [916.011](ch/916/de/916.011.md) | Verordnung vom 17. Mai 1995 über die Festsetzung der Zollansätze und der Zollkontingente |
@@ -8154,7 +8157,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [916.151.4](ch/916/de/916.151.4.md) | Verordnung des BLW vom 13. Juli 2011 über ein Verbot der Einfuhr, des Inverkehrbringens |
 | [916.151.6](ch/916/de/916.151.6.md) | Verordnung des Bundesamtes für Landwirtschaft vom 26. Februar 1998 über den |
 | [916.151.7](ch/916/de/916.151.7.md) | Verordnung des BLW vom 17. Januar 2007 über die Liste von Rebsorten zur Anerkennung |
-| [916.161](ch/916/de/916.161.md) | Verordnung vom 26. Januar 1994 über das Inverkehrbringen von Pflanzenbehandlungsmitteln |
+| [916.161](ch/916/de/916.161.md) | Pflanzenschutzmittelverordnung vom 20. August 2025 (PSMV) |
 | [916.171](ch/916/de/916.171.md) | Verordnung vom 1. November 2023 über das Inverkehrbringen von Düngern (Düngerverordnung, |
 | [916.171.1](ch/916/de/916.171.1.md) | Verordnung des WBF vom 16. November 2007 über das Inverkehrbringen von Düngern |
 | [916.171.6](ch/916/de/916.171.6.md) | Verordnung des BLW und des BAG vom 1. März 2001 über die Liste der einführbaren |
@@ -8175,7 +8178,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [916.301.11](ch/916/de/916.301.11.md) | Verordnung vom 24. Juni 1992 über Beiträge an Ausmerzaktionen |
 | [916.302.1](ch/916/de/916.302.1.md) | Verordnung vom 17. Mai 1995 über die Einfuhr von Zucht- und Nutztieren und |
 | [916.307](ch/916/de/916.307.md) | Verordnung vom 26. Januar 1994 über die Produktion und das Inverkehrbringen |
-| [916.307.1](ch/916/de/916.307.1.md) | Verordnung des EVD vom 10. Juni 1999 über die Produktion und das Inverkehrbringen |
+| [916.307.1](ch/916/de/916.307.1.md) | Verordnung des WBF vom 26. Oktober 2011 über die Produktion und das Inverkehrbringen |
 | [916.307.11](ch/916/de/916.307.11.md) | Verordnung des BLW vom 1. Februar 2005 über die GVO-Futtermittellisten |
 | [916.310](ch/916/de/916.310.md) | Verordnung vom 7. Dezember 1998 über die Tierzucht |
 | [916.310.31](ch/916/de/916.310.31.md) | Verordnung des BLW vom 7. Dezember 1998 über die Gewährung von Beiträgen in |
@@ -8326,7 +8329,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [916.371.51](ch/916/de/916.371.51.md) | Verordnung des BLW vom 7. Dezember 1998 über die Umstellungs- sowie die Sammel- |
 | [916.372](ch/916/de/916.372.md) | Bundesratsbeschluss vom 18. März 1960 über die Einfuhr von Eiern |
 | [916.372.1](ch/916/de/916.372.1.md) | Verfügung des Eidgenössischen Volkswirtschaftsdepartements vom 13. Dezember |
-| [916.401](ch/916/de/916.401.md) | Tierseuchenverordnung vom 15. Dezember 1967 |
+| [916.401](ch/916/de/916.401.md) | Tierseuchenverordnung vom 27. Juni 1995 (TSV) |
 | [916.401.311](ch/916/de/916.401.311.md) | Verordnung vom 30. Januar 1978 über die allgemeine Schutzimpfung des Rindviehbestandes |
 | [916.401.327.1](ch/916/de/916.401.327.1.md) | Verordnung des BLV vom 22. Januar 2021 über Massnahmen zur Verhinderung der |
 | [916.401.347](ch/916/de/916.401.347.md) | Verordnung des BLV vom 15. April 2021 über Massnahmen zur Verhinderung der |
@@ -8337,7 +8340,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [916.403.2](ch/916/de/916.403.2.md) | Verordnung vom 23. Mai 2012 über die Unterstützung des Bienengesundheitsdienstes |
 | [916.403.11](ch/916/de/916.403.11.md) | Verordnung des BVET (2/07) vom 28. September 2007 über die Festlegung der Gebiete |
 | [916.404](ch/916/de/916.404.md) | Verordnung vom 18. August 1999 über die Tierverkehr-Datenbank |
-| [916.404.1](ch/916/de/916.404.1.md) | Verordnung vom 26. Oktober 2011 über die Tierverkehrsdatenbank (TVD-Verordnung) |
+| [916.404.1](ch/916/de/916.404.1.md) | Verordnung vom 3. November 2021 über die Identitas AG und die Tierverkehrsdatenbank |
 | [916.404.2](ch/916/de/916.404.2.md) | Verordnung vom 28. März 2001 über die Gebühren für den Tierverkehr |
 | [916.405.4](ch/916/de/916.405.4.md) | Verordnung vom 13. Januar 1999 über die Unterstützung des Beratungs- und Gesundheitsdienstes |
 | [916.406](ch/916/de/916.406.md) | Verordnung vom 20. November 2002 über die Ausrichtung von Beiträgen an die |
@@ -8415,7 +8418,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [916.443.109](ch/916/de/916.443.109.md) | Verordnung des BLV vom 3. Juli 2017 über Massnahmen zur Verhinderung der Einschleppung |
 | [916.443.110](ch/916/de/916.443.110.md) | Verordnung des BLV vom 9. April 2021 über Massnahmen zum Schutz der Hausgeflügelpopulation |
 | [916.443.111](ch/916/de/916.443.111.md) | Verordnung des EDI vom 18. November 2015 über die Ein-, Durch- und Ausfuhr |
-| [916.443.112](ch/916/de/916.443.112.md) | Verordnung des BLV vom 20. Juli 2016 über Massnahmen zur Verhinderung der Einschleppung |
+| [916.443.112](ch/916/de/916.443.112.md) | Verordnung des BLV vom 17. Juli 2025 über Massnahmen im Zusammenhang mit der |
 | [916.443.112.349](ch/916/de/916.443.112.349.md) | Verordnung des BLV vom 5. Januar 2016 über Massnahmen zur Verhinderung der |
 | [916.443.113](ch/916/de/916.443.113.md) | Verordnung des BLV vom 4. November 2016 über Massnahmen zur Verhinderung der |
 | [916.443.114](ch/916/de/916.443.114.md) | Verordnung des BLV vom 8. August 2017 über Massnahmen zur Verhinderung der |
@@ -8659,7 +8662,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [941.421](ch/941/de/941.421.md) | Verordnung vom 25. Mai 2022 über Vorläuferstoffe für explosionsfähige Stoffe |
 | [941.421.11](ch/941/de/941.421.11.md) | Verordnung vom 15. September 2022 über die Freimengen und Konzentrationen bei |
 | [942.10](ch/942/de/942.10.md) | Bundesgesetz vom 21. Dezember 1960 über die Kontrolle der landwirtschaftlichen |
-| [942.20](ch/942/de/942.20.md) | Bundesbeschluss vom 19. Dezember 1975 über die Preisüberwachung |
+| [942.20](ch/942/de/942.20.md) | Preisüberwachungsgesetz vom 20. Dezember 1985 (PüG) |
 | [942.22](ch/942/de/942.22.md) | Bundesbeschluss vom 5. Oktober 1990 über die Unterstellung der Hypothekarzinsen |
 | [942.23](ch/942/de/942.23.md) | Bundesbeschluss vom 20. März 1953 über den Aufschub von Umzugsterminen |
 | [942.30](ch/942/de/942.30.md) | Bundesgesetz vom 21. Dezember 1960 über geschützte Warenpreise und die Preisausgleichskasse |
@@ -8912,7 +8915,7 @@ Total: **8963** federal laws, **2** cantonal laws indexed
 | [952.001](ch/952/de/952.001.md) | Bundesratsbeschluss vom 24. Juni 1971 über die Inkraftsetzung des revidierten |
 | [952.02](ch/952/de/952.02.md) | Verordnung vom 30. April 2014 über die Banken und Sparkassen (Bankenverordnung, |
 | [952.2](ch/952/de/952.2.md) | Bundesbeschluss vom 17. Dezember 2010 über die Auferlegung der Kosten für die |
-| [952.03](ch/952/de/952.03.md) | Verordnung vom 29. September 2006 über die Eigenmittel und Risikoverteilung |
+| [952.03](ch/952/de/952.03.md) | Verordnung vom 1. Juni 2012 über die Eigenmittel und Risikoverteilung der Banken |
 | [952.3](ch/952/de/952.3.md) | Verordnung vom 16. März 2023 über zusätzliche Liquiditätshilfe-Darlehen und |
 | [952.05](ch/952/de/952.05.md) | Verordnung der FINMA vom 20. August 2025 über das Insolvenzverfahren bei Finanzmarktinstituten |
 | [952.06](ch/952/de/952.06.md) | Verordnung vom 30. November 2012 über die Liquidität der Banken und Wertpapierhäuser |

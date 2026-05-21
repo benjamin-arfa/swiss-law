@@ -239,6 +239,66 @@ class TestCantonalFetcher:
             mock_lf.assert_called_once_with("ti", "100.1", "12345", "de")
 
 
+# ─── LexFind catalog tests ───────────────────────────────────────────────────
+
+
+class TestLexFindCatalog:
+    """Verify the LexFind /api/fe/ catalog enumeration."""
+
+    def test_entity_id_resolution_and_cache(self):
+        fetcher = CantonalFetcher(rate_limit=0)
+        entities = [
+            {"id": 1, "abbreviation": "AG", "name": "Aargau"},
+            {"id": 27, "abbreviation": "CH", "name": "Bund"},
+        ]
+        with patch.object(CantonalFetcher, "_get_json", return_value=entities) as mock_json:
+            assert fetcher._lexfind_entity_id("ag") == 1
+            assert fetcher._lexfind_entity_id("AG") == 1  # case-insensitive
+            assert fetcher._lexfind_entity_id("zz") is None  # unknown canton
+            mock_json.assert_called_once()  # entities fetched once, then cached
+
+    def test_lexfind_entry_parsing(self):
+        item = {
+            "id": 1738,
+            "systematic_number": "423.123",
+            "is_active": True,
+            "matches": [
+                {"title": "Verordnung über die Mittelschule",
+                 "version_active_since": "01.08.2025"},
+            ],
+        }
+        entry = CantonalFetcher._lexfind_entry("ag", item)
+        assert entry is not None
+        assert entry.systematic_number == "423.123"
+        assert entry.title == "Verordnung über die Mittelschule"
+        assert entry.lexfind_id == "1738"
+        assert entry.enactment_date == date(2025, 8, 1)
+        assert entry.is_active is True
+
+    def test_lexfind_entry_skips_rows_without_number(self):
+        assert CantonalFetcher._lexfind_entry("ag", {"id": 1, "matches": []}) is None
+
+    def test_fetch_catalog_paginates_and_deduplicates(self):
+        fetcher = CantonalFetcher(rate_limit=0)
+        row = lambda tid, nr: {  # noqa: E731
+            "id": tid, "systematic_number": nr, "is_active": True,
+            "matches": [{"title": f"Law {nr}"}],
+        }
+        page1 = {"number_of_pages": 2, "texts_of_law_with_matches": [row(1, "1.1"), row(2, "1.2")]}
+        page2 = {"number_of_pages": 2, "texts_of_law_with_matches": [row(2, "1.2"), row(3, "1.3")]}
+        with patch.object(fetcher, "_lexfind_entity_id", return_value=1), \
+             patch.object(fetcher, "_post_json", return_value={"id": 9, "session_id": "s"}), \
+             patch.object(fetcher, "_get_json", side_effect=[page1, page2]):
+            catalog = fetcher.fetch_lexfind_catalog("ag", "de")
+        # 4 rows across 2 pages, but tol id 2 appears twice → 3 unique laws
+        assert sorted(e.systematic_number for e in catalog) == ["1.1", "1.2", "1.3"]
+
+    def test_fetch_catalog_empty_when_canton_unknown(self):
+        fetcher = CantonalFetcher(rate_limit=0)
+        with patch.object(fetcher, "_lexfind_entity_id", return_value=None):
+            assert fetcher.fetch_lexfind_catalog("zz", "de") == []
+
+
 # ─── Model tests ─────────────────────────────────────────────────────────────
 
 

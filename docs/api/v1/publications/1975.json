@@ -3060,7 +3060,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/691.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/691.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/691.1.md",
+      "systematic_category": "69 Salz",
+      "global_category": "6.30.30 Salzregal",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1975-04-16",
@@ -5280,7 +5283,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/682.2-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/682.2-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/682.2-1.md",
+      "systematic_category": "682 Salzregal",
+      "global_category": "6.30.30 Salzregal",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1975-10-01",
@@ -5420,7 +5426,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/780.110.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/780.110.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/780.110.md",
+      "systematic_category": "78 Salzregal",
+      "global_category": "6.30.30 Salzregal",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "1975-10-01",

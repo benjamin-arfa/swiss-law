@@ -760,7 +760,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.117.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.117.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.117.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1987-01-01",
@@ -780,7 +783,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.118.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.118.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.118.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1987-01-01",
@@ -2640,7 +2646,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/141.221.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/141.221.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/141.221.md",
+      "systematic_category": "141 Wahlen und Abstimmungen",
+      "global_category": "1.10.90.20.10 Wahlen und Abstimmungen",
+      "category_type": "Anderes"
     },
     {
       "date": "1987-09-01",

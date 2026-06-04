@@ -2690,7 +2690,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/817.104.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/817.104.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/817.104.md",
+      "systematic_category": "817 Lebensmittel, Trinkwasser",
+      "global_category": "8.10.130.10.10 Lebensmittelaufsicht",
+      "category_type": "Anderes"
     },
     {
       "date": "1978-03-15",

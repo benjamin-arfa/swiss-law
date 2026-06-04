@@ -1630,7 +1630,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.341.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.341.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.341.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2000-02-07",
@@ -2200,7 +2203,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/642.101.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.101.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.101.md",
+      "systematic_category": "64 Steuern",
+      "global_category": "1.20.70.10.60 Kantonale Rekurskommissionen",
+      "category_type": "Reglement"
     },
     {
       "date": "2000-04-01",
@@ -3190,7 +3196,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/935.400.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/935.400.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/935.400.md",
+      "systematic_category": "935 Gewerbepolizei",
+      "global_category": "4.180.10.10 Film, Theater, Unterhaltung",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "2000-06-08",
@@ -3730,7 +3739,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.342.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.342.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.342.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2000-08-01",
@@ -4220,7 +4232,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.102.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "6.10.30 Staatsbeiträge, Subventionen",
+      "category_type": "Verordnung"
     },
     {
       "date": "2000-10-01",
@@ -4760,7 +4775,9 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/801.150.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/801.150.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/801.150.md",
+      "systematic_category": "801 Planung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2000-12-01",

@@ -450,7 +450,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/411.232.12-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/411.232.12-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/411.232.12-1.md",
+      "systematic_category": "411.2 Evangelisch-reformierte",
+      "global_category": "1.40.30 Evangelisch-Reformierte Kirche",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1959-02-25",
@@ -630,7 +633,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.314.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.314.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.314.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.30 Pflanzenschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1959-03-23",
@@ -680,7 +686,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.113.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.113.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.113.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.50 Naturschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1959-04-07",
@@ -770,7 +779,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/671.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/671.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/671.1.md",
+      "systematic_category": "67 Steuerabkommen",
+      "global_category": "6.20.110 Ausschluss von Steuerabkommen",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1959-05-15",
@@ -1120,7 +1132,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.320.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.320.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.320.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.50 Naturschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1959-06-13",

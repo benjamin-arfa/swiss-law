@@ -150,7 +150,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/113.31.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/113.31.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/113.31.md",
+      "systematic_category": "113 Wappen",
+      "global_category": "1.10.20 Wappen",
+      "category_type": "Anderes"
     }
   ]
 }

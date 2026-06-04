@@ -1580,7 +1580,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/635.1.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/635.1.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/635.1.11.md",
+      "systematic_category": "635.1 Handänderungs- und Grundpfandrechtssteuern",
+      "global_category": "6.20.20 Handänderungssteuern",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-01-01",
@@ -1660,7 +1663,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/642.110.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.110.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.110.md",
+      "systematic_category": "64 Steuern",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-01-01",
@@ -2490,7 +2495,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/931.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/931.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/931.1.md",
+      "systematic_category": "93 Gewerbe",
+      "global_category": "6.30.20 Bergwerk",
+      "category_type": "Gesetz"
     },
     {
       "date": "1997-01-01",
@@ -2870,7 +2878,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.329.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.329.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.329.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-01-21",
@@ -3450,7 +3461,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/412.113.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/412.113.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/412.113.md",
+      "systematic_category": "412 Berufsbildung",
+      "category_type": "Reglement"
     },
     {
       "date": "1997-03-01",
@@ -4540,7 +4553,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.330.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.330.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.330.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-05-17",
@@ -4670,7 +4686,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.331.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.331.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.331.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-06-01",
@@ -5420,7 +5439,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/741.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.102.md",
+      "systematic_category": "741 Strassenverkehr",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-07-01",
@@ -5850,7 +5871,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.332.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.332.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.332.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-07-15",
@@ -5870,7 +5894,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/142.400.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/142.400.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/142.400.md",
+      "systematic_category": "14 Bürgerrecht. Niederlassung. Aufenthalt",
+      "global_category": "1.10.70.20.20 Zwangsmassnahmen",
+      "category_type": "Verordnung"
     },
     {
       "date": "1997-08-01",
@@ -6010,7 +6037,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/425.135.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.135.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.135.md",
+      "systematic_category": "425 Mittelschule",
+      "global_category": "4.20.20 Fachmittelschulen, Diplommittelschulen",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-08-01",
@@ -6550,7 +6580,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.333.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.333.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.333.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1997-09-27",
@@ -7600,7 +7633,9 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/544.050.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/544.050.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/544.050.md",
+      "systematic_category": "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung",
+      "category_type": "Reglement"
     },
     {
       "date": "1997-12-02",

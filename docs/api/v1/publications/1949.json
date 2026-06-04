@@ -50,7 +50,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/284.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/284.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/284.11.md",
+      "systematic_category": "284 Besondere Verfahren",
+      "category_type": "Verordnung"
     },
     {
       "date": "1949-01-01",
@@ -250,7 +252,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/669.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/669.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/669.11.md",
+      "systematic_category": "669.1 Steuerabkommen mit Steuerpflichtigen",
+      "global_category": "6.20.110 Ausschluss von Steuerabkommen",
+      "category_type": "Anderes"
     },
     {
       "date": "1949-03-14",
@@ -700,7 +705,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/782.5.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/782.5.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/782.5.md",
+      "systematic_category": "782 Eisenbahnen",
+      "global_category": "7.50.10.20 Eisenbahn",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "1949-11-30",

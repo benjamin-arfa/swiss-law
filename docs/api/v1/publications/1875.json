@@ -140,7 +140,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/129.1.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/129.1.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/129.1.2.md",
+      "systematic_category": "129.1 Eid",
+      "global_category": "1.20.20.40.20 Eid",
+      "category_type": "Gesetz"
     }
   ]
 }

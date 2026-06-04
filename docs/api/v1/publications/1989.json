@@ -570,7 +570,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/823.33.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/823.33.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/823.33.md",
+      "systematic_category": "82 Arbeit",
+      "global_category": "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven",
+      "category_type": "Gesetz"
     },
     {
       "date": "1989-01-01",
@@ -860,7 +863,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/862.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/862.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/862.2.md",
+      "systematic_category": "862 Kollektive Arbeitsstreitigkeiten",
+      "global_category": "8.20.30 Einigungsämter",
+      "category_type": "Gesetz"
     },
     {
       "date": "1989-02-14",
@@ -1720,7 +1726,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.119.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.119.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.119.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1989-06-27",
@@ -2870,7 +2879,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/411.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/411.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/411.102.md",
+      "systematic_category": "411 Obligatorische Schule",
+      "global_category": "4.120.100 Schulbehörden",
+      "category_type": "Reglement"
     },
     {
       "date": "1989-10-17",
@@ -3160,7 +3172,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/823.330.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/823.330.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/823.330.md",
+      "systematic_category": "82 Arbeit",
+      "global_category": "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven",
+      "category_type": "Reglement"
     },
     {
       "date": "1989-11-30",

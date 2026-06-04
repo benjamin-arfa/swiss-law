@@ -140,7 +140,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/105.33.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/105.33.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/105.33.md",
+      "systematic_category": "105.3 Amtsbezirke",
+      "global_category": "1.10.20 Wappen",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-01-01",
@@ -250,7 +253,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/154.216.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/154.216.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/154.216.md",
+      "systematic_category": "154.2 Gebühren der Kantonsverwaltung",
+      "global_category": "1.20.20.30.20 Direktionen und Ämter",
+      "category_type": "Verordnung"
     },
     {
       "date": "1994-01-01",
@@ -340,7 +346,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/212.225.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/212.225.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/212.225.11.md",
+      "systematic_category": "212.2 Juristische Personen",
+      "global_category": "2.10.30 Erbrecht",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "1994-01-01",
@@ -390,7 +399,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/411.324.12.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/411.324.12.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/411.324.12.md",
+      "systematic_category": "411.3 Römisch-katholische",
+      "global_category": "1.40.10 Römisch-Katholische Kirche",
+      "category_type": "Verordnung"
     },
     {
       "date": "1994-01-01",
@@ -540,7 +552,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/415.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/415.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/415.2.md",
+      "systematic_category": "415 Kirchensteuer",
+      "global_category": "1.40.30 Evangelisch-Reformierte Kirche",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "1994-01-01",
@@ -680,7 +695,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/701.52.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/701.52.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/701.52.md",
+      "systematic_category": "701 Grundlagen",
+      "category_type": "Verordnung"
     },
     {
       "date": "1994-01-01",
@@ -780,7 +797,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/751.112-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/751.112-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/751.112-1.md",
+      "systematic_category": "751.1 Unterhalt und Korrektion der Gewässer",
+      "global_category": "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1994-01-01",
@@ -990,7 +1010,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/842.1.4.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/842.1.4.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/842.1.4.md",
+      "systematic_category": "842.1 Krankenversicherung",
+      "global_category": "4.120.120 Schulversicherung",
+      "category_type": "Gesetz"
     },
     {
       "date": "1994-01-01",
@@ -1010,7 +1033,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/850.601.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.601.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.601.md",
+      "systematic_category": "85 Unterstützung",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-01-01",
@@ -1950,7 +1975,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/850.600.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.600.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.600.md",
+      "systematic_category": "85 Unterstützung",
+      "category_type": "Reglement"
     },
     {
       "date": "1994-02-14",
@@ -2150,7 +2177,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/122.72.23.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.72.23.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.72.23.md",
+      "systematic_category": "122.72 Besoldungen",
+      "global_category": "1.20.20.40.40 Löhne, Entschädigungen",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-03-01",
@@ -2790,7 +2820,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/725.101.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/725.101.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/725.101.md",
+      "systematic_category": "725 Strassen",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-04-01",
@@ -5570,7 +5602,9 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/219.400.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/219.400.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/219.400.md",
+      "systematic_category": "219 Weitere Ausführungen zum Zivilgesetzbuch und zum Obligationenrecht",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-10-01",
@@ -5850,7 +5884,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.315.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.315.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.315.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.30 Pflanzenschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-10-22",
@@ -6040,7 +6077,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/821.12.46.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.12.46.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.12.46.md",
+      "systematic_category": "821.12 Pflegepersonal",
+      "global_category": "4.100.20 Schulgelder",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-11-01",
@@ -6060,7 +6100,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/821.12.47.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.12.47.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.12.47.md",
+      "systematic_category": "821.12 Pflegepersonal",
+      "global_category": "4.100.20 Schulgelder",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-11-01",
@@ -6290,7 +6333,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/143.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/143.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/143.102.md",
+      "systematic_category": "14 Bürgerrecht. Niederlassung. Aufenthalt",
+      "global_category": "1.10.80 Ausweise",
+      "category_type": "Anderes"
     },
     {
       "date": "1994-12-02",

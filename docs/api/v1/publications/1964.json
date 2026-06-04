@@ -230,7 +230,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/531.110.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/531.110.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/531.110.md",
+      "systematic_category": "53 Kriegswirtschaft",
+      "global_category": "5.20.20 Landesversorgung",
+      "category_type": "Anderes"
     },
     {
       "date": "1964-01-15",
@@ -980,7 +983,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/814.206.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.206.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.206.md",
+      "systematic_category": "814 Umweltschutz",
+      "global_category": "7.60.20 Gewässerschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1964-06-01",

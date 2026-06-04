@@ -1780,7 +1780,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/746.10.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/746.10.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/746.10.md",
+      "systematic_category": "746 Rohrleitungsanlagen",
+      "global_category": "7.50.40 Rohrleitungen",
+      "category_type": "Anderes"
     },
     {
       "date": "1988-01-01",
@@ -3440,7 +3443,10 @@
       "language": "de",
       "canton": "GL",
       "path": "ch/gl/de/VIII A/61/1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gl/de/VIII A/61/1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gl/de/VIII A/61/1.md",
+      "systematic_category": "VIII A/61 Epidemien",
+      "global_category": "8.10.100.10 Epidemien, Pandemien",
+      "category_type": "Verordnung"
     },
     {
       "date": "1988-01-01",
@@ -3890,7 +3896,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/500.700.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/500.700.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/500.700.md",
+      "systematic_category": "500 Allgemeine Bestimmungen, Krankheitsbekämpfung",
+      "global_category": "6.10.30 Staatsbeiträge, Subventionen",
+      "category_type": "Anderes"
     },
     {
       "date": "1988-03-15",
@@ -4270,7 +4279,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/491.350.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/491.350.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/491.350.md",
+      "systematic_category": "491 Museen",
+      "global_category": "4.170.40 Museen",
+      "category_type": "Anderes"
     },
     {
       "date": "1988-04-01",
@@ -4540,7 +4552,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/520.300.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/520.300.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/520.300.md",
+      "systematic_category": "52 Zivilschutz",
+      "global_category": "5.20.10.30 Kulturgüterschutz im Kriegsfall",
+      "category_type": "Anderes"
     },
     {
       "date": "1988-05-01",
@@ -5650,7 +5665,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/741.62.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/741.62.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/741.62.md",
+      "systematic_category": "741 Strassen",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "1988-10-14",

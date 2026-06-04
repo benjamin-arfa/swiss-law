@@ -1870,7 +1870,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/842.1.18.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/842.1.18.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/842.1.18.md",
+      "systematic_category": "842.1 Krankenversicherung",
+      "global_category": "8.10.30.10 Ärzte",
+      "category_type": "Anderes"
     },
     {
       "date": "1998-01-01",
@@ -2540,7 +2543,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.120.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.120.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.120.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1998-01-11",
@@ -3980,7 +3986,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.334.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.334.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.334.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1998-05-01",
@@ -4310,7 +4319,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/916.761.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/916.761.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/916.761.md",
+      "systematic_category": "916.7 Viehhandel",
+      "global_category": "9.20.90.20 Viehhandel",
+      "category_type": "Verordnung"
     },
     {
       "date": "1998-06-02",
@@ -4390,7 +4402,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.335.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.335.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.335.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1998-06-11",
@@ -4480,7 +4495,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.336.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.336.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.336.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1998-06-21",
@@ -4640,7 +4658,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/170.360.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/170.360.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/170.360.md",
+      "systematic_category": "170 Politische Behörden und Mitarbeitende",
+      "global_category": "1.20.20.20.30 Staatskanzlei",
+      "category_type": "Verordnung"
     },
     {
       "date": "1998-07-01",
@@ -6330,7 +6351,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/550.103.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.103.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.103.md",
+      "systematic_category": "55 Kantonspolizei",
+      "category_type": "Reglement"
     },
     {
       "date": "1998-10-01",
@@ -7120,7 +7143,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/433.150.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/433.150.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/433.150.md",
+      "systematic_category": "433 Fortbildung Jugendlicher und Erwachsener",
+      "global_category": "4.70.10 Erwachsenenbildung",
+      "category_type": "Verordnung"
     },
     {
       "date": "1998-12-01",
@@ -7140,7 +7166,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/507.210.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/507.210.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/507.210.md",
+      "systematic_category": "507 Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht",
+      "global_category": "8.10.130.30 Badeanstalten",
+      "category_type": "Verordnung"
     },
     {
       "date": "1998-12-01",
@@ -7160,7 +7189,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/545.265.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/545.265.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/545.265.md",
+      "systematic_category": "545 Arbeitslosenversicherung, Arbeitsvermittlung",
+      "global_category": "8.30.110 Arbeitslosenversicherung",
+      "category_type": "Reglement"
     },
     {
       "date": "1998-12-01",
@@ -7180,7 +7212,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/546.210.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/546.210.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/546.210.md",
+      "systematic_category": "546 Öffentliche Sozialhilfe",
+      "global_category": "8.70.10 Sozialhilfe",
+      "category_type": "Anderes"
     },
     {
       "date": "1998-12-01",
@@ -7200,7 +7235,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/548.210.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/548.210.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/548.210.md",
+      "systematic_category": "548 Familienschutz",
+      "global_category": "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge",
+      "category_type": "Anderes"
     },
     {
       "date": "1998-12-01",

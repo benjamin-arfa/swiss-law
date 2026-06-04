@@ -1210,7 +1210,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/822.2.12.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/822.2.12.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/822.2.12.md",
+      "systematic_category": "822.2 Netz für die Pflege im Bereich psychische Gesundheit",
+      "global_category": "8.10.20.20 Psychiatrische Kliniken",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-01-01",
@@ -1780,7 +1783,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/122.26.3.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.26.3.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.26.3.md",
+      "systematic_category": "122.26 Direktion für Gesundheit und Soziales",
+      "global_category": "1.10.90.10 Gleichstellung von Mann und Frau",
+      "category_type": "Gesetz"
     },
     {
       "date": "2004-02-01",
@@ -1800,7 +1806,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/312.100.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/312.100.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/312.100.md",
+      "systematic_category": "31 Strafrechtspflege - Strafvollzug",
+      "category_type": "Reglement"
     },
     {
       "date": "2004-02-01",
@@ -4270,7 +4278,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/122.97.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.97.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.97.11.md",
+      "systematic_category": "122.97 Geschäftsführung der Restaurants des Staates",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-07-01",
@@ -4330,7 +4340,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/221.21.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/221.21.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/221.21.md",
+      "systematic_category": "22 Vollstreckung des Obligationenrecht",
+      "global_category": "9.50.10.90 Konsumkredit",
+      "category_type": "Gesetz"
     },
     {
       "date": "2004-07-01",
@@ -4350,7 +4363,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/221.210.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/221.210.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/221.210.md",
+      "systematic_category": "22 Vollstreckung des Obligationenrecht",
+      "global_category": "9.50.10.90 Konsumkredit",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-07-01",
@@ -4370,7 +4386,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/412.112.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/412.112.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/412.112.md",
+      "systematic_category": "412 Berufsbildung",
+      "category_type": "Reglement"
     },
     {
       "date": "2004-07-01",
@@ -4460,7 +4478,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/490.100.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/490.100.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/490.100.md",
+      "systematic_category": "490 Staatsarchiv, Kantonsbibliothek",
+      "global_category": "4.170.20 Archive",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-07-01",
@@ -4480,7 +4501,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/490.150.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/490.150.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/490.150.md",
+      "systematic_category": "490 Staatsarchiv, Kantonsbibliothek",
+      "global_category": "4.170.20 Archive",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-07-01",
@@ -4520,7 +4544,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/803.310.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/803.310.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/803.310.md",
+      "systematic_category": "803 Enteignungen, Perimeter, Beschaffungen",
+      "global_category": "7.30.40 Submission",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-07-01",
@@ -4950,7 +4977,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/425.120.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.120.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.120.md",
+      "systematic_category": "425 Mittelschule",
+      "global_category": "4.100.20 Schulgelder",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-08-01",
@@ -5090,7 +5120,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/419.106.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/419.106.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/419.106.md",
+      "systematic_category": "419 Pädagogische Hochschule",
+      "global_category": "4.50.10 Pädagogik",
+      "category_type": "Reglement"
     },
     {
       "date": "2004-08-02",
@@ -5110,7 +5143,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/705.104.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/705.104.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/705.104.md",
+      "systematic_category": "70 Raumplanung, Bauwesen",
+      "global_category": "7.10.50 Verfahren",
+      "category_type": "Anderes"
     },
     {
       "date": "2004-08-02",
@@ -5130,7 +5166,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/705.105.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/705.105.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/705.105.md",
+      "systematic_category": "70 Raumplanung, Bauwesen",
+      "global_category": "7.10.50 Verfahren",
+      "category_type": "Anderes"
     },
     {
       "date": "2004-08-06",
@@ -5410,7 +5449,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/912.4.21.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/912.4.21.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/912.4.21.md",
+      "systematic_category": "912.4 Rebbau",
+      "global_category": "9.20.80.10 Rebbau",
+      "category_type": "Verordnung"
     },
     {
       "date": "2004-09-01",

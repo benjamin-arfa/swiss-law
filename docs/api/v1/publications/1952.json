@@ -590,7 +590,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/743.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/743.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/743.2.md",
+      "systematic_category": "743 Seilbahnen und Skilifte",
+      "global_category": "7.50.30 Seilbahnen, Skilifte",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1952-07-01",
@@ -1000,7 +1003,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/175.500.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/175.500.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/175.500.md",
+      "systematic_category": "175 Regionen und Gemeinden",
+      "global_category": "1.10.20 Wappen",
+      "category_type": "Anderes"
     },
     {
       "date": "1952-11-20",

@@ -5570,5 +5570,1256 @@
       "VS": 90,
       "ZG": 34
     }
+  },
+  "category_type_by_canton": {
+    "AR": {
+      "Anderes": 1
+    },
+    "BE": {
+      "Verfassung": 1,
+      "Verordnung": 379,
+      "Gesetz": 136,
+      "Reglement": 53,
+      "Interkantonale Vereinbarung": 85,
+      "Anderes": 61,
+      "Verordnung des Parlaments (Dekret)": 25,
+      "Staatsvertrag": 3
+    },
+    "BL": {
+      "Verordnung": 1
+    },
+    "FR": {
+      "Verordnung": 374,
+      "Verfassung": 1,
+      "Gesetz": 184,
+      "Interkantonale Vereinbarung": 2,
+      "Anderes": 144,
+      "Reglement": 131,
+      "Verordnung des Parlaments (Dekret)": 11
+    },
+    "GL": {
+      "Verordnung": 2
+    },
+    "GR": {
+      "Verfassung": 1,
+      "Gesetz": 110,
+      "Verordnung": 180,
+      "Anderes": 79,
+      "Reglement": 18,
+      "Verordnung des Parlaments (Dekret)": 33
+    },
+    "LU": {
+      "Anderes": 2,
+      "Interkantonale Vereinbarung": 2
+    },
+    "SG": {
+      "Interkantonale Vereinbarung": 1
+    },
+    "VS": {
+      "Reglement": 184,
+      "Verfassung": 1,
+      "Verordnung des Parlaments (Dekret)": 12,
+      "Gesetz": 169,
+      "Staatsvertrag": 3,
+      "Verordnung": 164,
+      "Anderes": 154,
+      "Interkantonale Vereinbarung": 51
+    },
+    "ZG": {
+      "Anderes": 1,
+      "Verordnung": 1
+    }
+  },
+  "category_type_by_canton_by_year": {
+    "1802": {
+      "VS": {
+        "Gesetz": 1
+      }
+    },
+    "1828": {
+      "BE": {
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    "1837": {
+      "BE": {
+        "Gesetz": 1
+      }
+    },
+    "1850": {
+      "VS": {
+        "Gesetz": 1
+      }
+    },
+    "1851": {
+      "BE": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1855": {
+      "VS": {
+        "Gesetz": 1
+      }
+    },
+    "1864": {
+      "BE": {
+        "Staatsvertrag": 1
+      }
+    },
+    "1874": {
+      "FR": {
+        "Anderes": 1
+      }
+    },
+    "1875": {
+      "FR": {
+        "Gesetz": 1
+      }
+    },
+    "1877": {
+      "BE": {
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    "1879": {
+      "FR": {
+        "Anderes": 1
+      }
+    },
+    "1882": {
+      "VS": {
+        "Gesetz": 1
+      }
+    },
+    "1889": {
+      "BE": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1891": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1909": {
+      "GL": {
+        "Verordnung": 1
+      }
+    },
+    "1914": {
+      "FR": {
+        "Gesetz": 1
+      }
+    },
+    "1924": {
+      "FR": {
+        "Gesetz": 1,
+        "Anderes": 1
+      },
+      "VS": {
+        "Anderes": 1,
+        "Gesetz": 1
+      }
+    },
+    "1929": {
+      "FR": {
+        "Anderes": 1
+      }
+    },
+    "1930": {
+      "FR": {
+        "Anderes": 1
+      }
+    },
+    "1933": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1937": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1938": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1942": {
+      "BE": {
+        "Reglement": 1
+      }
+    },
+    "1943": {
+      "FR": {
+        "Anderes": 1
+      }
+    },
+    "1944": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1947": {
+      "GR": {
+        "Anderes": 1
+      }
+    },
+    "1949": {
+      "BE": {
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "FR": {
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    "1950": {
+      "BE": {
+        "Anderes": 1
+      },
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1951": {
+      "VS": {
+        "Reglement": 1
+      }
+    },
+    "1952": {
+      "GR": {
+        "Anderes": 1
+      },
+      "VS": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1953": {
+      "FR": {
+        "Gesetz": 1
+      }
+    },
+    "1956": {
+      "GR": {
+        "Anderes": 1
+      }
+    },
+    "1959": {
+      "BE": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "VS": {
+        "Anderes": 3,
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1960": {
+      "BE": {
+        "Reglement": 1
+      }
+    },
+    "1961": {
+      "VS": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1963": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1964": {
+      "VS": {
+        "Anderes": 2
+      }
+    },
+    "1965": {
+      "VS": {
+        "Reglement": 1,
+        "Anderes": 1
+      }
+    },
+    "1966": {
+      "VS": {
+        "Anderes": 1,
+        "Reglement": 1
+      }
+    },
+    "1967": {
+      "BE": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1970": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1971": {
+      "BE": {
+        "Anderes": 1
+      },
+      "GR": {
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    "1972": {
+      "BE": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "GR": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "VS": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1973": {
+      "VS": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1974": {
+      "BE": {
+        "Gesetz": 1
+      }
+    },
+    "1975": {
+      "BE": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "GR": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "VS": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1976": {
+      "GR": {
+        "Anderes": 1
+      },
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1977": {
+      "SG": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "1978": {
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1980": {
+      "BE": {
+        "Anderes": 1
+      }
+    },
+    "1981": {
+      "BE": {
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 2
+      },
+      "VS": {
+        "Anderes": 1
+      }
+    },
+    "1982": {
+      "BE": {
+        "Verordnung": 1
+      },
+      "VS": {
+        "Reglement": 1,
+        "Anderes": 2,
+        "Gesetz": 1
+      }
+    },
+    "1983": {
+      "GR": {
+        "Anderes": 1
+      }
+    },
+    "1985": {
+      "VS": {
+        "Anderes": 3
+      }
+    },
+    "1986": {
+      "BE": {
+        "Anderes": 2
+      },
+      "VS": {
+        "Staatsvertrag": 1
+      }
+    },
+    "1987": {
+      "BE": {
+        "Anderes": 1
+      },
+      "VS": {
+        "Anderes": 2
+      }
+    },
+    "1988": {
+      "FR": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "GL": {
+        "Verordnung": 1
+      },
+      "GR": {
+        "Anderes": 2
+      },
+      "VS": {
+        "Anderes": 2
+      }
+    },
+    "1989": {
+      "FR": {
+        "Gesetz": 1
+      },
+      "VS": {
+        "Reglement": 2,
+        "Anderes": 1,
+        "Gesetz": 1
+      }
+    },
+    "1990": {
+      "BE": {
+        "Verordnung": 1
+      },
+      "VS": {
+        "Reglement": 4
+      },
+      "ZG": {
+        "Verordnung": 1
+      }
+    },
+    "1991": {
+      "VS": {
+        "Anderes": 5
+      }
+    },
+    "1992": {
+      "FR": {
+        "Anderes": 3,
+        "Reglement": 1
+      },
+      "VS": {
+        "Gesetz": 1
+      }
+    },
+    "1993": {
+      "BE": {
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 2,
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "VS": {
+        "Anderes": 3
+      }
+    },
+    "1994": {
+      "BE": {
+        "Anderes": 1,
+        "Verordnung": 3,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Interkantonale Vereinbarung": 1
+      },
+      "FR": {
+        "Anderes": 3,
+        "Gesetz": 1
+      },
+      "GR": {
+        "Anderes": 1
+      },
+      "VS": {
+        "Anderes": 4,
+        "Reglement": 1
+      }
+    },
+    "1995": {
+      "BE": {
+        "Gesetz": 1,
+        "Verordnung": 2
+      },
+      "GR": {
+        "Verordnung": 1,
+        "Reglement": 1
+      },
+      "VS": {
+        "Anderes": 3
+      }
+    },
+    "1996": {
+      "BE": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "FR": {
+        "Anderes": 1
+      },
+      "GR": {
+        "Anderes": 1
+      },
+      "VS": {
+        "Gesetz": 7,
+        "Anderes": 4,
+        "Reglement": 1,
+        "Verordnung": 2
+      }
+    },
+    "1997": {
+      "FR": {
+        "Anderes": 1
+      },
+      "GR": {
+        "Anderes": 1,
+        "Reglement": 1
+      },
+      "VS": {
+        "Verordnung": 1,
+        "Reglement": 1,
+        "Anderes": 7,
+        "Gesetz": 1
+      }
+    },
+    "1998": {
+      "BE": {
+        "Verordnung": 1
+      },
+      "FR": {
+        "Anderes": 1
+      },
+      "GR": {
+        "Verordnung": 3,
+        "Reglement": 1,
+        "Anderes": 2
+      },
+      "VS": {
+        "Anderes": 4,
+        "Reglement": 1
+      }
+    },
+    "1999": {
+      "BE": {
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
+      },
+      "FR": {
+        "Anderes": 2
+      },
+      "VS": {
+        "Reglement": 3,
+        "Anderes": 4,
+        "Gesetz": 1,
+        "Verordnung": 2
+      }
+    },
+    "2000": {
+      "GR": {
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "VS": {
+        "Verordnung": 1,
+        "Anderes": 2,
+        "Reglement": 1
+      }
+    },
+    "2001": {
+      "BE": {
+        "Verordnung": 4,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "FR": {
+        "Anderes": 2
+      },
+      "GR": {
+        "Verordnung": 1
+      },
+      "VS": {
+        "Verordnung": 2,
+        "Reglement": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 2
+      }
+    },
+    "2002": {
+      "FR": {
+        "Anderes": 1,
+        "Verordnung": 1,
+        "Gesetz": 2
+      },
+      "VS": {
+        "Reglement": 4,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1,
+        "Anderes": 1
+      }
+    },
+    "2003": {
+      "BE": {
+        "Gesetz": 2,
+        "Verordnung": 3,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "FR": {
+        "Verordnung": 4,
+        "Gesetz": 4,
+        "Reglement": 7,
+        "Anderes": 14,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "GR": {
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "VS": {
+        "Interkantonale Vereinbarung": 2,
+        "Reglement": 1,
+        "Verordnung": 1,
+        "Gesetz": 1
+      }
+    },
+    "2004": {
+      "FR": {
+        "Gesetz": 1,
+        "Verordnung": 3
+      },
+      "GR": {
+        "Verordnung": 4
+      },
+      "VS": {
+        "Gesetz": 1,
+        "Verordnung": 1,
+        "Reglement": 3,
+        "Anderes": 2
+      }
+    },
+    "2005": {
+      "BE": {
+        "Interkantonale Vereinbarung": 3,
+        "Staatsvertrag": 2,
+        "Anderes": 2,
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "FR": {
+        "Anderes": 1,
+        "Verordnung": 2
+      },
+      "GR": {
+        "Verordnung": 2,
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "VS": {
+        "Staatsvertrag": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 5,
+        "Gesetz": 1,
+        "Reglement": 1
+      }
+    },
+    "2006": {
+      "BE": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "FR": {
+        "Verordnung": 4,
+        "Gesetz": 1
+      },
+      "GR": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "LU": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "VS": {
+        "Reglement": 2,
+        "Anderes": 3,
+        "Gesetz": 2,
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "2007": {
+      "BE": {
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1,
+        "Gesetz": 1
+      },
+      "FR": {
+        "Verordnung": 4,
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "GR": {
+        "Anderes": 5,
+        "Verordnung": 3,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Gesetz": 1
+      },
+      "VS": {
+        "Anderes": 4,
+        "Gesetz": 2,
+        "Interkantonale Vereinbarung": 3,
+        "Reglement": 3,
+        "Verordnung": 2
+      }
+    },
+    "2008": {
+      "BE": {
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 2,
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "FR": {
+        "Verordnung": 6,
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Anderes": 3,
+        "Gesetz": 5
+      },
+      "GR": {
+        "Verordnung": 3,
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "VS": {
+        "Reglement": 2,
+        "Anderes": 3,
+        "Gesetz": 1,
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 2
+      }
+    },
+    "2009": {
+      "BE": {
+        "Interkantonale Vereinbarung": 3,
+        "Anderes": 3,
+        "Verordnung": 2
+      },
+      "FR": {
+        "Verordnung": 2,
+        "Anderes": 3,
+        "Reglement": 2,
+        "Gesetz": 1
+      },
+      "GR": {
+        "Reglement": 2,
+        "Verordnung": 3,
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Anderes": 2
+      },
+      "VS": {
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 3,
+        "Anderes": 4,
+        "Reglement": 2
+      }
+    },
+    "2010": {
+      "BE": {
+        "Verordnung": 5,
+        "Interkantonale Vereinbarung": 3,
+        "Anderes": 2,
+        "Gesetz": 1
+      },
+      "FR": {
+        "Anderes": 1,
+        "Verordnung": 4,
+        "Reglement": 1
+      },
+      "GR": {
+        "Verordnung": 1,
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "VS": {
+        "Verordnung": 3,
+        "Reglement": 3,
+        "Staatsvertrag": 1,
+        "Gesetz": 2
+      }
+    },
+    "2011": {
+      "BE": {
+        "Verordnung": 16,
+        "Reglement": 7,
+        "Anderes": 1,
+        "Gesetz": 3
+      },
+      "FR": {
+        "Gesetz": 6,
+        "Reglement": 3,
+        "Anderes": 6,
+        "Verordnung": 3
+      },
+      "GR": {
+        "Verordnung des Parlaments (Dekret)": 7,
+        "Anderes": 3,
+        "Verordnung": 7,
+        "Gesetz": 7
+      },
+      "VS": {
+        "Gesetz": 6,
+        "Interkantonale Vereinbarung": 4,
+        "Reglement": 5,
+        "Anderes": 6,
+        "Verordnung": 1
+      }
+    },
+    "2012": {
+      "BE": {
+        "Verordnung": 5,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 3
+      },
+      "FR": {
+        "Verordnung": 15,
+        "Anderes": 5,
+        "Reglement": 2,
+        "Gesetz": 2
+      },
+      "GR": {
+        "Verordnung": 8,
+        "Gesetz": 2,
+        "Reglement": 1,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Anderes": 1
+      },
+      "VS": {
+        "Gesetz": 6,
+        "Verordnung": 4,
+        "Anderes": 1,
+        "Reglement": 6
+      }
+    },
+    "2013": {
+      "BE": {
+        "Gesetz": 1,
+        "Verordnung": 7,
+        "Reglement": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "FR": {
+        "Verordnung": 11,
+        "Anderes": 4,
+        "Gesetz": 4
+      },
+      "GR": {
+        "Verordnung": 2,
+        "Gesetz": 2,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Anderes": 4
+      },
+      "LU": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "VS": {
+        "Gesetz": 4,
+        "Verordnung": 6,
+        "Anderes": 5,
+        "Reglement": 4,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    "2014": {
+      "BE": {
+        "Interkantonale Vereinbarung": 3,
+        "Verordnung": 3,
+        "Gesetz": 2,
+        "Anderes": 1
+      },
+      "FR": {
+        "Verordnung": 9,
+        "Reglement": 2,
+        "Gesetz": 3,
+        "Anderes": 3
+      },
+      "GR": {
+        "Verordnung": 3,
+        "Gesetz": 2
+      },
+      "VS": {
+        "Gesetz": 3,
+        "Verordnung": 4,
+        "Reglement": 3,
+        "Interkantonale Vereinbarung": 5,
+        "Anderes": 5,
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    "2015": {
+      "BE": {
+        "Reglement": 4,
+        "Verordnung": 10,
+        "Anderes": 4,
+        "Interkantonale Vereinbarung": 1
+      },
+      "FR": {
+        "Gesetz": 8,
+        "Verordnung": 6,
+        "Reglement": 3,
+        "Anderes": 3
+      },
+      "GR": {
+        "Verordnung": 3,
+        "Gesetz": 2,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "VS": {
+        "Verordnung": 8,
+        "Reglement": 6,
+        "Anderes": 5,
+        "Gesetz": 5,
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "2016": {
+      "BE": {
+        "Gesetz": 2,
+        "Verordnung": 4
+      },
+      "FR": {
+        "Gesetz": 9,
+        "Anderes": 7,
+        "Verordnung": 10,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1
+      },
+      "GR": {
+        "Gesetz": 11,
+        "Verordnung": 6,
+        "Reglement": 1,
+        "Verordnung des Parlaments (Dekret)": 4
+      },
+      "VS": {
+        "Gesetz": 7,
+        "Verordnung": 9,
+        "Reglement": 5,
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
+      }
+    },
+    "2017": {
+      "BE": {
+        "Verordnung": 2,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "FR": {
+        "Anderes": 1,
+        "Gesetz": 3,
+        "Verordnung": 6,
+        "Reglement": 2
+      },
+      "GR": {
+        "Gesetz": 3,
+        "Anderes": 2,
+        "Verordnung": 7,
+        "Reglement": 1
+      },
+      "VS": {
+        "Reglement": 8,
+        "Verordnung": 9,
+        "Anderes": 3,
+        "Gesetz": 1
+      }
+    },
+    "2018": {
+      "BE": {
+        "Gesetz": 2,
+        "Verordnung": 12,
+        "Reglement": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "FR": {
+        "Gesetz": 6,
+        "Verordnung": 6,
+        "Reglement": 1,
+        "Anderes": 2
+      },
+      "GR": {
+        "Verordnung": 6,
+        "Gesetz": 2,
+        "Reglement": 3,
+        "Anderes": 1
+      },
+      "VS": {
+        "Gesetz": 8,
+        "Reglement": 8,
+        "Verordnung": 10,
+        "Interkantonale Vereinbarung": 5,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 2
+      }
+    },
+    "2019": {
+      "BE": {
+        "Verordnung": 10,
+        "Reglement": 1
+      },
+      "FR": {
+        "Verordnung": 25,
+        "Gesetz": 6,
+        "Reglement": 10,
+        "Anderes": 5
+      },
+      "GR": {
+        "Verordnung": 7,
+        "Gesetz": 2,
+        "Anderes": 2
+      },
+      "VS": {
+        "Reglement": 5,
+        "Verordnung": 6,
+        "Gesetz": 3,
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "2020": {
+      "BE": {
+        "Verordnung": 41,
+        "Gesetz": 19,
+        "Anderes": 10,
+        "Verordnung des Parlaments (Dekret)": 4,
+        "Interkantonale Vereinbarung": 2
+      },
+      "FR": {
+        "Anderes": 2,
+        "Verordnung": 28,
+        "Gesetz": 11,
+        "Reglement": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "GR": {
+        "Anderes": 5,
+        "Verordnung": 5,
+        "Reglement": 1
+      },
+      "VS": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 7,
+        "Reglement": 11,
+        "Anderes": 3,
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    "2021": {
+      "BE": {
+        "Gesetz": 29,
+        "Verordnung": 52,
+        "Anderes": 5,
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 3,
+        "Verordnung des Parlaments (Dekret)": 5
+      },
+      "FR": {
+        "Verordnung": 17,
+        "Reglement": 1,
+        "Gesetz": 7,
+        "Anderes": 3
+      },
+      "GR": {
+        "Verordnung": 10,
+        "Gesetz": 6,
+        "Anderes": 3
+      },
+      "VS": {
+        "Reglement": 13,
+        "Verordnung": 13,
+        "Gesetz": 7,
+        "Interkantonale Vereinbarung": 4,
+        "Anderes": 2
+      }
+    },
+    "2022": {
+      "BE": {
+        "Reglement": 2,
+        "Interkantonale Vereinbarung": 4,
+        "Anderes": 3,
+        "Verordnung": 33,
+        "Gesetz": 12
+      },
+      "FR": {
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 22,
+        "Verordnung": 84,
+        "Reglement": 42,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Anderes": 36
+      },
+      "GR": {
+        "Reglement": 1,
+        "Verordnung": 10,
+        "Anderes": 2,
+        "Gesetz": 5
+      },
+      "VS": {
+        "Verordnung": 16,
+        "Reglement": 9,
+        "Gesetz": 10,
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 3
+      }
+    },
+    "2023": {
+      "BE": {
+        "Reglement": 2,
+        "Verordnung": 37,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 12,
+        "Verordnung des Parlaments (Dekret)": 2
+      },
+      "FR": {
+        "Gesetz": 25,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 10,
+        "Reglement": 11,
+        "Verordnung": 21
+      },
+      "GR": {
+        "Verordnung": 16,
+        "Anderes": 3,
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "VS": {
+        "Verfassung": 1,
+        "Gesetz": 14,
+        "Reglement": 10,
+        "Verordnung": 13,
+        "Anderes": 5,
+        "Verordnung des Parlaments (Dekret)": 2
+      }
+    },
+    "2024": {
+      "BE": {
+        "Verordnung": 36,
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 15,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Reglement": 22,
+        "Anderes": 2
+      },
+      "FR": {
+        "Verordnung": 24,
+        "Gesetz": 28,
+        "Reglement": 12,
+        "Anderes": 3
+      },
+      "GR": {
+        "Verordnung": 13,
+        "Gesetz": 5,
+        "Reglement": 1
+      },
+      "VS": {
+        "Verordnung": 12,
+        "Gesetz": 15,
+        "Reglement": 26,
+        "Anderes": 6,
+        "Interkantonale Vereinbarung": 3,
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    "2025": {
+      "BE": {
+        "Gesetz": 11,
+        "Interkantonale Vereinbarung": 16,
+        "Verordnung": 40,
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Reglement": 5,
+        "Anderes": 2
+      },
+      "FR": {
+        "Verordnung": 35,
+        "Verfassung": 1,
+        "Gesetz": 12,
+        "Reglement": 14,
+        "Anderes": 6
+      },
+      "GR": {
+        "Verfassung": 1,
+        "Verordnung": 34,
+        "Gesetz": 43,
+        "Anderes": 26,
+        "Reglement": 1,
+        "Verordnung des Parlaments (Dekret)": 4
+      },
+      "VS": {
+        "Gesetz": 24,
+        "Verordnung": 21,
+        "Verordnung des Parlaments (Dekret)": 4,
+        "Reglement": 15,
+        "Anderes": 9,
+        "Interkantonale Vereinbarung": 2
+      }
+    },
+    "2026": {
+      "AR": {
+        "Anderes": 1
+      },
+      "BE": {
+        "Verfassung": 1,
+        "Verordnung": 42,
+        "Interkantonale Vereinbarung": 22,
+        "Anderes": 3,
+        "Gesetz": 18,
+        "Reglement": 3,
+        "Verordnung des Parlaments (Dekret)": 2
+      },
+      "BL": {
+        "Verordnung": 1
+      },
+      "FR": {
+        "Verordnung": 44,
+        "Reglement": 14,
+        "Gesetz": 11,
+        "Anderes": 5
+      },
+      "GR": {
+        "Gesetz": 15,
+        "Verordnung": 19,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Anderes": 5
+      },
+      "LU": {
+        "Anderes": 2
+      },
+      "VS": {
+        "Reglement": 9,
+        "Gesetz": 19,
+        "Verordnung": 10,
+        "Anderes": 8
+      },
+      "ZG": {
+        "Anderes": 1
+      }
+    }
   }
 }

@@ -1670,7 +1670,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/741.106.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.106.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.106.md",
+      "systematic_category": "741 Strassenverkehr",
+      "global_category": "5.30.20.20 Gemeingebrauch",
+      "category_type": "Anderes"
     },
     {
       "date": "1965-09-01",
@@ -2060,7 +2063,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/400.106.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.106.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.106.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "4.20.10 Mittelschule",
+      "category_type": "Reglement"
     },
     {
       "date": "1965-11-17",

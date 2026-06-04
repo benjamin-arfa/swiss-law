@@ -290,7 +290,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/841.151.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/841.151.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/841.151.md",
+      "systematic_category": "841.1 Alters- und Hinterlassenenversicherung",
+      "global_category": "8.30.10 Ausgleichskassen",
+      "category_type": "Anderes"
     },
     {
       "date": "1950-04-01",
@@ -460,7 +463,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/930.106.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/930.106.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/930.106.md",
+      "systematic_category": "93 Gewerbe",
+      "category_type": "Anderes"
     }
   ]
 }

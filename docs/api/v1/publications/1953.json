@@ -670,7 +670,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/126.3.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/126.3.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/126.3.md",
+      "systematic_category": "126 Gebühren",
+      "global_category": "1.20.20.10.10 Delegation",
+      "category_type": "Gesetz"
     },
     {
       "date": "1953-06-01",

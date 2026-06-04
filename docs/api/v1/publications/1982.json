@@ -160,7 +160,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/153.421.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/153.421.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/153.421.md",
+      "systematic_category": "153.4 Pensionskasse",
+      "global_category": "1.20.20.40.50 Renten, Versicherungsansprüche",
+      "category_type": "Verordnung"
     },
     {
       "date": "1982-01-01",
@@ -3060,7 +3063,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/730.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/730.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/730.102.md",
+      "systematic_category": "73 Energie",
+      "global_category": "7.30.20.20 Gewässernutzung",
+      "category_type": "Anderes"
     },
     {
       "date": "1982-08-07",
@@ -3410,7 +3416,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/620.310.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/620.310.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/620.310.md",
+      "systematic_category": "62 Kantonalbank",
+      "global_category": "9.50.10.80.10 Banken, Börsen",
+      "category_type": "Anderes"
     },
     {
       "date": "1982-09-17",
@@ -3430,7 +3439,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/747.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/747.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/747.2.md",
+      "systematic_category": "747 Schifffahrt",
+      "category_type": "Gesetz"
     },
     {
       "date": "1982-09-20",
@@ -4560,7 +4571,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/440.106.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/440.106.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/440.106.md",
+      "systematic_category": "44 Kulturförderung",
+      "global_category": "4.170.20 Archive",
+      "category_type": "Reglement"
     },
     {
       "date": "1982-12-06",

@@ -2460,7 +2460,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/211.613.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/211.613.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/211.613.md",
+      "systematic_category": "21 Vollstreckung des Zivilrechts",
+      "category_type": "Anderes"
     },
     {
       "date": "1966-11-01",
@@ -2680,7 +2682,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/822.200.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/822.200.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/822.200.md",
+      "systematic_category": "82 Arbeit",
+      "global_category": "8.20.10.30 Sonn- und Feiertage",
+      "category_type": "Reglement"
     },
     {
       "date": "1966-12-08",

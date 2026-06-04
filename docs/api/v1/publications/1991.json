@@ -270,7 +270,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/440.108.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/440.108.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/440.108.md",
+      "systematic_category": "44 Kulturförderung",
+      "global_category": "4.170.20 Archive",
+      "category_type": "Anderes"
     },
     {
       "date": "1991-01-01",
@@ -1760,7 +1763,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/741.108.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.108.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.108.md",
+      "systematic_category": "741 Strassenverkehr",
+      "category_type": "Anderes"
     },
     {
       "date": "1991-04-01",
@@ -3500,7 +3505,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/413.114.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/413.114.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/413.114.md",
+      "systematic_category": "413 Mittelschule",
+      "global_category": "4.100.30 Schulgebühren",
+      "category_type": "Anderes"
     },
     {
       "date": "1991-07-12",
@@ -3520,7 +3528,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/642.107.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.107.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.107.md",
+      "systematic_category": "64 Steuern",
+      "global_category": "1.20.20.60 Verwaltungsgebühren",
+      "category_type": "Anderes"
     },
     {
       "date": "1991-07-18",
@@ -4070,7 +4081,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.323.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.323.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.323.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1991-09-22",

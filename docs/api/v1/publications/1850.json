@@ -50,7 +50,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/172.16.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.16.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.16.md",
+      "systematic_category": "172 Staatsrat und Verwaltung",
+      "global_category": "1.20.20.20.40 Regierungsstatthalter, Oberamtmann",
+      "category_type": "Gesetz"
     }
   ]
 }

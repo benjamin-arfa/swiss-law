@@ -4620,7 +4620,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/682.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/682.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/682.2.md",
+      "systematic_category": "682 Salzregal",
+      "global_category": "6.30.30 Salzregal",
+      "category_type": "Gesetz"
     }
   ]
 }

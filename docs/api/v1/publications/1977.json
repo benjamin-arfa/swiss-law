@@ -2310,7 +2310,10 @@
       "language": "de",
       "canton": "SG",
       "path": "ch/sg/de/752.519.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/sg/de/752.519.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/sg/de/752.519.md",
+      "systematic_category": "752 Gewässerschutz",
+      "global_category": "7.60.20 Gewässerschutz",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1977-07-19",

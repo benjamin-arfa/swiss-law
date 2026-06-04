@@ -920,7 +920,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/152.191.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/152.191.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/152.191.md",
+      "systematic_category": "152.1 Regierungsrat",
+      "global_category": "1.10.40 Interkantonale Zusammenarbeit",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1972-01-21",
@@ -940,7 +943,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/152.191.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/152.191.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/152.191.1.md",
+      "systematic_category": "152.1 Regierungsrat",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1972-01-24",
@@ -1500,7 +1505,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/400.9.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.9.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.9.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "4.120.10 Schulkoordination",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1972-05-01",
@@ -1960,7 +1968,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/496.150.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/496.150.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/496.150.md",
+      "systematic_category": "496 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "1972-06-06",

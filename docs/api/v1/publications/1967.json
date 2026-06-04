@@ -1320,7 +1320,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/725.111.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/725.111.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/725.111.md",
+      "systematic_category": "725 Strassen",
+      "global_category": "5.30.20.20 Gemeingebrauch",
+      "category_type": "Anderes"
     },
     {
       "date": "1967-05-01",
@@ -1500,7 +1503,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/916.71-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/916.71-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/916.71-1.md",
+      "systematic_category": "916.7 Viehhandel",
+      "global_category": "9.20.90.20 Viehhandel",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1967-06-01",

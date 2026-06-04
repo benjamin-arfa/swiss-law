@@ -1200,7 +1200,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/772.1.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/772.1.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/772.1.1.md",
+      "systematic_category": "772.1 Freiburgische Elektrizitätswerke",
+      "global_category": "7.40.40 Elektrizität",
+      "category_type": "Gesetz"
     },
     {
       "date": "2002-01-01",
@@ -1500,7 +1503,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/946.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/946.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/946.2.md",
+      "systematic_category": "946 Spielapparate und Spielbanken",
+      "global_category": "9.50.10.60.30 Spielbanken",
+      "category_type": "Gesetz"
     },
     {
       "date": "2002-01-01",
@@ -1700,7 +1706,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/173.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/173.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/173.102.md",
+      "systematic_category": "173 Richterliche Behörden",
+      "global_category": "4.170.20 Archive",
+      "category_type": "Reglement"
     },
     {
       "date": "2002-02-01",
@@ -1720,7 +1729,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/173.400.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/173.400.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/173.400.md",
+      "systematic_category": "173 Richterliche Behörden",
+      "global_category": "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+      "category_type": "Reglement"
     },
     {
       "date": "2002-02-04",
@@ -2410,7 +2422,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/420.100.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/420.100.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/420.100.md",
+      "systematic_category": "42 Forschung",
+      "global_category": "4.160 Wissenschaft, Forschung",
+      "category_type": "Reglement"
     },
     {
       "date": "2002-05-01",
@@ -3350,7 +3365,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/420.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/420.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/420.102.md",
+      "systematic_category": "42 Forschung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2002-07-01",
@@ -3400,7 +3417,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/150.421.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/150.421.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/150.421.md",
+      "systematic_category": "150 Allgemeine Bestimmungen",
+      "global_category": "4.170.20 Archive",
+      "category_type": "Anderes"
     },
     {
       "date": "2002-07-01",
@@ -3490,7 +3510,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/631.14.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/631.14.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/631.14.md",
+      "systematic_category": "631 Kantonssteuern",
+      "category_type": "Verordnung"
     },
     {
       "date": "2002-07-01",
@@ -4800,7 +4822,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/414.30.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/414.30.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/414.30.md",
+      "systematic_category": "414 Höhere Ausbildung",
+      "global_category": "4.60 Tertiärstufe: Höhere Fachschulen",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2002-10-25",
@@ -4830,7 +4855,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/417.401.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/417.401.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/417.401.md",
+      "systematic_category": "417 Tertiärstufe und Weiterbildung",
+      "category_type": "Reglement"
     },
     {
       "date": "2002-11-01",
@@ -5220,7 +5247,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/721.805.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/721.805.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/721.805.md",
+      "systematic_category": "721 Wasserbau",
+      "category_type": "Anderes"
     },
     {
       "date": "2002-12-24",

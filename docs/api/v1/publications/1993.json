@@ -460,7 +460,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/642.105.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.105.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.105.md",
+      "systematic_category": "64 Steuern",
+      "global_category": "6.20.10.40 Pauschale Steueranrechnung",
+      "category_type": "Anderes"
     },
     {
       "date": "1993-01-01",
@@ -810,7 +813,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/812.561.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/812.561.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/812.561.1.md",
+      "systematic_category": "812.56 Pflegetaxen",
+      "global_category": "8.10.20.20 Psychiatrische Kliniken",
+      "category_type": "Verordnung"
     },
     {
       "date": "1993-01-01",
@@ -830,7 +836,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/821.21.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/821.21.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/821.21.md",
+      "systematic_category": "821 Gewässerschutz, Kanalisation, Abfallbeseitigung",
+      "global_category": "7.60.20 Gewässerschutz",
+      "category_type": "Reglement"
     },
     {
       "date": "1993-01-01",
@@ -1210,7 +1219,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/916.71.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/916.71.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/916.71.md",
+      "systematic_category": "916.7 Viehhandel",
+      "global_category": "9.20.90.20 Viehhandel",
+      "category_type": "Anderes"
     },
     {
       "date": "1993-01-01",
@@ -1230,7 +1242,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/931.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/931.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/931.11.md",
+      "systematic_category": "931 Bergbau",
+      "global_category": "6.30.20 Bergwerk",
+      "category_type": "Verordnung"
     },
     {
       "date": "1993-01-01",
@@ -6390,7 +6405,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/841.104.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/841.104.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/841.104.md",
+      "systematic_category": "84 Wohnungswesen",
+      "global_category": "8.40.10 Eigentums- und Wohnungsbauförderung",
+      "category_type": "Anderes"
     },
     {
       "date": "1993-11-03",
@@ -6710,7 +6728,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/152.192.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/152.192.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/152.192.md",
+      "systematic_category": "152.1 Regierungsrat",
+      "global_category": "1.10.40 Interkantonale Zusammenarbeit",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1993-12-10",
@@ -6860,7 +6881,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/701.106.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/701.106.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/701.106.md",
+      "systematic_category": "70 Raumplanung, Bauwesen",
+      "category_type": "Anderes"
     }
   ]
 }

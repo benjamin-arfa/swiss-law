@@ -290,7 +290,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/410.291.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/410.291.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/410.291.md",
+      "systematic_category": "410.2 Evangelisch-reformierte Landeskirche",
+      "global_category": "1.40.30 Evangelisch-Reformierte Kirche",
+      "category_type": "Anderes"
     },
     {
       "date": "1981-01-01",
@@ -310,7 +313,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/410.291-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/410.291-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/410.291-1.md",
+      "systematic_category": "410.2 Evangelisch-reformierte Landeskirche",
+      "global_category": "1.40.30 Evangelisch-Reformierte Kirche",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1981-01-01",
@@ -390,7 +396,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/521.91.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/521.91.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/521.91.md",
+      "systematic_category": "521 Bevölkerungsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1981-01-01",
@@ -410,7 +418,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/521.91-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/521.91-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/521.91-1.md",
+      "systematic_category": "521 Bevölkerungsschutz",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1981-01-01",
@@ -970,7 +980,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/814.201.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.201.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.201.md",
+      "systematic_category": "814 Umweltschutz",
+      "global_category": "7.60.20 Gewässerschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1981-02-01",

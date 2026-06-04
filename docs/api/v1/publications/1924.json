@@ -80,7 +80,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/612.81.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/612.81.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/612.81.md",
+      "systematic_category": "612 Staatsrechnung",
+      "global_category": "6.10.10 Budget und Rechnung",
+      "category_type": "Anderes"
     },
     {
       "date": "1924-02-27",
@@ -130,7 +133,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/126.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/126.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/126.2.md",
+      "systematic_category": "126 Gebühren",
+      "global_category": "1.20.20.20.30 Staatskanzlei",
+      "category_type": "Gesetz"
     },
     {
       "date": "1924-04-01",
@@ -430,7 +436,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/721.802.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/721.802.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/721.802.md",
+      "systematic_category": "721 Wasserbau",
+      "global_category": "7.30.20.20 Gewässernutzung",
+      "category_type": "Anderes"
     },
     {
       "date": "1924-11-19",
@@ -450,7 +459,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/747.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/747.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/747.1.md",
+      "systematic_category": "747 Schifffahrt",
+      "category_type": "Gesetz"
     },
     {
       "date": "1924-11-22",

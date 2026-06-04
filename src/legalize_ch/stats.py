@@ -120,6 +120,25 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     language_by_year = _yearly_breakdown("language")
     canton_by_year = _yearly_breakdown("canton", "cantonal")
 
+    # Canton × category_type cross-tab
+    category_type_by_canton: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    for e in cantonal:
+        c = e.get("canton", "")
+        ct = e.get("category_type", "")
+        if c and ct:
+            category_type_by_canton[c][ct] += 1
+
+    # Year × canton × category_type 3-way cross-tab
+    cat_by_canton_by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int))
+    )
+    for e in cantonal:
+        vd = str(e.get("version_date", ""))
+        c = e.get("canton", "")
+        ct = e.get("category_type", "")
+        if len(vd) >= 4 and c and ct:
+            cat_by_canton_by_year[vd[:4]][c][ct] += 1
+
     return {
         "total_laws": total,
         "federal_laws": len(federal),
@@ -137,6 +156,11 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         "category_type_by_year": category_type_by_year,
         "language_by_year": language_by_year,
         "canton_by_year": canton_by_year,
+        "category_type_by_canton": {c: dict(v) for c, v in sorted(category_type_by_canton.items())},
+        "category_type_by_canton_by_year": {
+            y: {c: dict(v) for c, v in sorted(cantons.items())}
+            for y, cantons in sorted(cat_by_canton_by_year.items())
+        },
     }
 
 
@@ -319,7 +343,7 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
             prefix = sr.split(".")[0]
             path = f"ch/{prefix}/{lang}/{sr}.md"
 
-        by_year[year].append({
+        rec = {
             "date": vd,
             "sr_number": sr,
             "title": e.get("title", ""),
@@ -328,7 +352,14 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
             "canton": canton,
             "path": path,
             "url_main": f"https://raw.githubusercontent.com/{repo_name}/main/{path}",
-        })
+        }
+        if e.get("systematic_category"):
+            rec["systematic_category"] = e["systematic_category"]
+        if e.get("global_category"):
+            rec["global_category"] = e["global_category"]
+        if e.get("category_type"):
+            rec["category_type"] = e["category_type"]
+        by_year[year].append(rec)
 
     result = {}
     for year in sorted(by_year):

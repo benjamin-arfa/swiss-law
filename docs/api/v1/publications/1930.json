@@ -350,7 +350,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/865.51.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/865.51.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/865.51.md",
+      "systematic_category": "865 Feiertage",
+      "global_category": "8.20.10.30 Sonn- und Feiertage",
+      "category_type": "Anderes"
     },
     {
       "date": "1930-09-15",

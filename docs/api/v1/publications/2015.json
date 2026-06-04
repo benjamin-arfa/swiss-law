@@ -110,7 +110,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/132.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/132.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/132.11.md",
+      "systematic_category": "132 Staatsanwaltschaft",
+      "global_category": "1.20.70.10.10.20 Staatsanwaltschaft",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-01-01",
@@ -140,7 +143,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/150.300.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/150.300.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/150.300.md",
+      "systematic_category": "15 Politische Rechte",
+      "global_category": "1.10.90.20.10 Wahlen und Abstimmungen",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -200,7 +206,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/172.130.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.130.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.130.md",
+      "systematic_category": "172 Staatsrat und Verwaltung",
+      "global_category": "8.30.50 BVG",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -220,7 +229,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/172.132.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.132.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.132.md",
+      "systematic_category": "172 Staatsrat und Verwaltung",
+      "global_category": "1.20.20.20.20 Renten",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-01-01",
@@ -290,7 +302,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/213.231.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/213.231.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/213.231.1.md",
+      "systematic_category": "213.2 Verwandtschaft",
+      "global_category": "8.70.20 Jugendschutz, Jugendhilfe",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -310,7 +325,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/272.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/272.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/272.1.md",
+      "systematic_category": "272 Verbote",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -730,7 +747,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/412.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/412.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/412.11.md",
+      "systematic_category": "412 Pfarrstellen",
+      "global_category": "1.40.10 Römisch-Katholische Kirche",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-01-01",
@@ -750,7 +770,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/414.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/414.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/414.2.md",
+      "systematic_category": "414 Höhere Ausbildung",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2015-01-01",
@@ -910,7 +932,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/417.030.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/417.030.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/417.030.md",
+      "systematic_category": "417 Tertiärstufe und Weiterbildung",
+      "global_category": "4.90.20 Löhne, Entschädigungen",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1190,7 +1215,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/544.000.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/544.000.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/544.000.md",
+      "systematic_category": "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung",
+      "global_category": "8.30.30 AHV / IV",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-01-01",
@@ -1210,7 +1238,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/544.010.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/544.010.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/544.010.md",
+      "systematic_category": "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung",
+      "global_category": "8.30.30 AHV / IV",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "2015-01-01",
@@ -1290,7 +1321,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/631.15.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/631.15.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/631.15.md",
+      "systematic_category": "631 Kantonssteuern",
+      "global_category": "6.20.10.10 Bundessteuern",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1340,7 +1374,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/701.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/701.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/701.102.md",
+      "systematic_category": "70 Raumplanung, Bauwesen",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-01-01",
@@ -1360,7 +1396,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/725.108.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/725.108.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/725.108.md",
+      "systematic_category": "725 Strassen",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-01-01",
@@ -1380,7 +1418,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/731.3.26.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/731.3.26.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/731.3.26.md",
+      "systematic_category": "731.3 Brandbekämpfung",
+      "global_category": "5.20.30.10 Feuerwehr",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1420,7 +1461,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/764.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/764.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/764.2.md",
+      "systematic_category": "764 Personentransporte",
+      "global_category": "7.50.20.40 Personenbeförderung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1480,7 +1524,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/805.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/805.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/805.1.md",
+      "systematic_category": "80 Gesundheitswesen",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-01-01",
@@ -1500,7 +1546,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/810.41.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/810.41.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/810.41.md",
+      "systematic_category": "810 Krankenanstalten, Rettungswesen",
+      "global_category": "4.170.10 Statistik",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1520,7 +1569,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/810.46.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/810.46.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/810.46.md",
+      "systematic_category": "810 Allgemeine Bestimmungen",
+      "global_category": "7.60.90 Schadenbekämpfung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1640,7 +1692,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/813.10.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/813.10.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/813.10.md",
+      "systematic_category": "813 Chemikalien, interkantonales Spital, Veterinärwesen",
+      "global_category": "7.60.70 Gifte, Chemikalien",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-01-01",
@@ -1680,7 +1735,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/815.350.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/815.350.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/815.350.md",
+      "systematic_category": "815 Gewässerschutz, Abfallbeseitigung",
+      "global_category": "7.60.20 Gewässerschutz",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1700,7 +1758,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/821.41.12.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.41.12.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.41.12.md",
+      "systematic_category": "821.41 Übertragbare Krankheiten",
+      "global_category": "8.10.40 Medizinische Labors",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-01-01",
@@ -1820,7 +1881,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/835.51.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/835.51.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/835.51.md",
+      "systematic_category": "835 Betreuung von Kindern im Vorschulalter und Jugendschutz",
+      "global_category": "8.70.20 Jugendschutz, Jugendhilfe",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-01-01",
@@ -1920,7 +1984,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/866.12.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/866.12.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/866.12.md",
+      "systematic_category": "866.1 Zuschussdekret",
+      "global_category": "8.70.10 Sozialhilfe",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -1960,7 +2027,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/935.100.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.100.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.100.md",
+      "systematic_category": "93 Gewerbe",
+      "global_category": "9.50.10.20 Tourismus",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-01-01",
@@ -2310,7 +2380,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/122.70.17.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.70.17.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/122.70.17.md",
+      "systematic_category": "122.70 Allgemeine Bestimmungen",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-02-01",
@@ -2570,7 +2642,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/921.151.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/921.151.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/921.151.md",
+      "systematic_category": "921 Wald",
+      "global_category": "1.20.20.30.20 Direktionen und Ämter",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-02-26",
@@ -2730,7 +2805,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/171.210.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/171.210.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/171.210.md",
+      "systematic_category": "171 Öffentlichkeitsprinzip, Datenschutz und Register",
+      "global_category": "1.10.70.10.10 Einwohnerkontrolle",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-03-01",
@@ -3140,7 +3218,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/412.111.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/412.111.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/412.111.md",
+      "systematic_category": "412 Pfarrstellen",
+      "global_category": "1.40.30 Evangelisch-Reformierte Kirche",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-04-01",
@@ -3160,7 +3241,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/412.112.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/412.112.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/412.112.md",
+      "systematic_category": "412 Pfarrstellen",
+      "global_category": "1.40.10 Römisch-Katholische Kirche",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-04-01",
@@ -3180,7 +3264,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/550.5.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.5.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.5.md",
+      "systematic_category": "55 Kantonspolizei",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-04-01",
@@ -3200,7 +3286,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/550.500.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.500.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.500.md",
+      "systematic_category": "55 Kantonspolizei",
+      "global_category": "4.180.30 Sport",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-04-01",
@@ -3670,7 +3759,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/721.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/721.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/721.2.md",
+      "systematic_category": "72 Bauwesen",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-05-01",
@@ -3690,7 +3781,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/721.2-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/721.2-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/721.2-1.md",
+      "systematic_category": "72 Bauwesen",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2015-05-01",
@@ -4220,7 +4313,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/734.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/734.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/734.1.md",
+      "systematic_category": "73 Energie",
+      "global_category": "7.40.10 Energieversorgung",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-06-01",
@@ -4530,7 +4626,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/10.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/10.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/10.2.md",
+      "systematic_category": "10 VERFASSUNG",
+      "global_category": "4.180.20 Kulturförderung",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -4550,7 +4649,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/115.611.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/115.611.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/115.611.md",
+      "systematic_category": "115 Politische Rechte",
+      "global_category": "1.10.90.20.10 Wahlen und Abstimmungen",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-07-01",
@@ -4580,7 +4682,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/137.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/137.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/137.1.md",
+      "systematic_category": "137 Anwälte",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -4600,7 +4704,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/150.12.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/150.12.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/150.12.md",
+      "systematic_category": "150 Allgemeine Bestimmungen",
+      "global_category": "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-07-01",
@@ -4620,7 +4727,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/222.3.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/222.3.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/222.3.1.md",
+      "systematic_category": "222.3 Miete",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -4670,7 +4779,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/460.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/460.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/460.1.md",
+      "systematic_category": "460 Allgemeine Bestimmungen",
+      "global_category": "4.150 Schulsport",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -4700,7 +4812,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/482.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/482.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/482.1.md",
+      "systematic_category": "482 Kulturgüterschutz",
+      "global_category": "7.70.70 Denkmalschutz, Kulturgüterschutz",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -5140,7 +5255,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/821.44.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.44.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.44.1.md",
+      "systematic_category": "821.44 Alkoholismus und andere Suchtmittelabhängigkeiten",
+      "global_category": "8.10.120.10 Alkoholismus",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -5160,7 +5278,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/821.44.4.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.44.4.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/821.44.4.md",
+      "systematic_category": "821.44 Alkoholismus und andere Suchtmittelabhängigkeiten",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -5240,7 +5360,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/940.2.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/940.2.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/940.2.md",
+      "systematic_category": "940 Allgemeine Bestimmungen",
+      "global_category": "9.50.10.70 Prostitution",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-07-01",
@@ -5770,7 +5893,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/400.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.102.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "4.150 Schulsport",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-08-01",
@@ -5790,7 +5916,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/400.103.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.103.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.103.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "4.10.20 Kindergarten",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-08-01",
@@ -5810,7 +5939,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/400.107.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.107.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.107.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "4.120.30 Schulaufsicht",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-08-01",
@@ -5830,7 +5962,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/400.90.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.90.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.90.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "4.120.10 Schulkoordination",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-08-01",
@@ -5850,7 +5985,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/405.20.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/405.20.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/405.20.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "1.20.20.30.20 Direktionen und Ämter",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-08-01",
@@ -5870,7 +6008,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/411.0.17.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/411.0.17.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/411.0.17.md",
+      "systematic_category": "411.0 Allgemeine Bestimmungen",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-08-01",
@@ -5890,7 +6030,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/411.106.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/411.106.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/411.106.md",
+      "systematic_category": "411 Obligatorische Schule",
+      "global_category": "4.10.30 Volksschule, Primarschule, Sekundarschule I",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-08-01",
@@ -5920,7 +6063,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/414.122.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/414.122.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/414.122.md",
+      "systematic_category": "414.1 Ausbildung",
+      "global_category": "1.40.30 Evangelisch-Reformierte Kirche",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-08-01",
@@ -5940,7 +6086,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/414.142.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/414.142.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/414.142.md",
+      "systematic_category": "414.1 Ausbildung",
+      "global_category": "1.40.20 Christkatholische Kirche",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-08-01",
@@ -5960,7 +6109,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/414.312.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/414.312.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/414.312.md",
+      "systematic_category": "414.3 Dienstverhältnis",
+      "global_category": "1.40.30 Evangelisch-Reformierte Kirche",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-08-01",
@@ -6070,7 +6222,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/470.000.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/470.000.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/470.000.md",
+      "systematic_category": "47 Turnen und Sport",
+      "global_category": "4.180.30 Sport",
+      "category_type": "Gesetz"
     },
     {
       "date": "2015-08-01",
@@ -6400,7 +6555,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/281.100.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/281.100.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/281.100.md",
+      "systematic_category": "28 Schuldbetreibung und Konkurs",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-09-01",
@@ -6430,7 +6587,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/432.12.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/432.12.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/432.12.11.md",
+      "systematic_category": "432.12 Fachhochschule Westschweiz//Freiburg (HES-SO//FRG)",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-09-01",
@@ -6490,7 +6649,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/814.200.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.200.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.200.md",
+      "systematic_category": "814 Umweltschutz",
+      "global_category": "7.60.20 Gewässerschutz",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-09-13",
@@ -6680,7 +6842,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/812.10.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/812.10.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/812.10.md",
+      "systematic_category": "812 Heilmittel",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-10-01",
@@ -7260,7 +7424,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/430.210.141.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/430.210.141.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/430.210.141.1.md",
+      "systematic_category": "430.210.141 Pädagogische Hochschule Bern, Jura, Neuenburg",
+      "global_category": "4.50.10 Pädagogik",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-11-01",
@@ -7280,7 +7447,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/436.811.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/436.811.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/436.811.1.md",
+      "systematic_category": "436.8 Fachhochschulen",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-11-01",
@@ -7300,7 +7469,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/436.812.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/436.812.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/436.812.1.md",
+      "systematic_category": "436.8 Fachhochschulen",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-11-01",
@@ -7320,7 +7491,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/436.911.0.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/436.911.0.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/436.911.0.md",
+      "systematic_category": "436.9 Pädagogische Hochschulen",
+      "global_category": "4.50.10 Pädagogik",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-11-01",
@@ -7420,7 +7594,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/850.404.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.404.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.404.md",
+      "systematic_category": "85 Unterstützung",
+      "global_category": "8.70.20 Jugendschutz, Jugendhilfe",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-11-06",
@@ -7730,7 +7907,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/153.411.101.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/153.411.101.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/153.411.101.md",
+      "systematic_category": "153.4 Pensionskasse",
+      "global_category": "1.20.20.40.50 Renten, Versicherungsansprüche",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-12-01",
@@ -7790,7 +7970,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/215.129.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/215.129.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/215.129.1.md",
+      "systematic_category": "215.129 Amtliche Schätzung von Grundstücken",
+      "global_category": "2.10.40.10 Schätzung von Grundstücken",
+      "category_type": "Verordnung"
     },
     {
       "date": "2015-12-01",
@@ -7880,7 +8063,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/430.261.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/430.261.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/430.261.11.md",
+      "systematic_category": "430.26 Versicherung",
+      "global_category": "4.90.40 Personalvorsorge, Pensionskassen",
+      "category_type": "Reglement"
     },
     {
       "date": "2015-12-01",
@@ -8080,7 +8266,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/210.113.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/210.113.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/210.113.md",
+      "systematic_category": "210 Allgemeine Ausführungsbestimmungen zum Schweizerischen Zivilgesetzbuch",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-12-02",
@@ -8260,7 +8448,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.352.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.352.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.352.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.50 Naturschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2015-12-19",

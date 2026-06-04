@@ -3530,7 +3530,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/433.170.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/433.170.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/433.170.md",
+      "systematic_category": "433 Fortbildung Jugendlicher und Erwachsener",
+      "global_category": "4.70.10 Erwachsenenbildung",
+      "category_type": "Anderes"
     },
     {
       "date": "1976-07-01",
@@ -4320,7 +4323,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/814.204.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.204.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/814.204.md",
+      "systematic_category": "814 Umweltschutz",
+      "global_category": "7.60.10 Abfälle",
+      "category_type": "Anderes"
     },
     {
       "date": "1976-09-27",

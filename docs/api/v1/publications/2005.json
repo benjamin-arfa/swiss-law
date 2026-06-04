@@ -280,7 +280,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/414.71.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/414.71.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/414.71.md",
+      "systematic_category": "414 Höhere Ausbildung",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2005-01-01",
@@ -510,7 +512,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/559.12.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.12.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.12.md",
+      "systematic_category": "559 Interkantonale Vereinbarungen",
+      "global_category": "5.30.10.30 Personal",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-01-01",
@@ -530,7 +535,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/559.12-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.12-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.12-1.md",
+      "systematic_category": "559 Interkantonale Vereinbarungen",
+      "global_category": "5.30.10.30 Personal",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2005-01-01",
@@ -550,7 +558,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/612.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/612.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/612.1.md",
+      "systematic_category": "61 Finanzhaushalt",
+      "category_type": "Gesetz"
     },
     {
       "date": "2005-01-01",
@@ -690,7 +700,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/761.612.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/761.612.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/761.612.1.md",
+      "systematic_category": "761.6 Steuern und Abgaben",
+      "global_category": "7.10.70 Parkplätze",
+      "category_type": "Verordnung"
     },
     {
       "date": "2005-01-01",
@@ -720,7 +733,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/815.500.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/815.500.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/815.500.md",
+      "systematic_category": "815 Gewässerschutz, Abfallbeseitigung",
+      "global_category": "7.60.90 Schadenbekämpfung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2005-01-01",
@@ -960,7 +976,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/850.200.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.200.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/850.200.md",
+      "systematic_category": "85 Unterstützung",
+      "global_category": "8.70.10 Sozialhilfe",
+      "category_type": "Reglement"
     },
     {
       "date": "2005-01-01",
@@ -1670,7 +1689,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/425.040.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.040.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.040.md",
+      "systematic_category": "425 Mittelschule",
+      "global_category": "4.120.30 Schulaufsicht",
+      "category_type": "Verordnung"
     },
     {
       "date": "2005-03-01",
@@ -2000,7 +2022,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/945.5.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.5.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.5.md",
+      "systematic_category": "945 Interkantonale Vereinbarungen",
+      "global_category": "9.20.80.10 Rebbau",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-03-23",
@@ -2020,7 +2045,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/945.51-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.51-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.51-1.md",
+      "systematic_category": "945 Interkantonale Vereinbarungen",
+      "global_category": "9.20.80.10 Rebbau",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2005-03-29",
@@ -2130,7 +2158,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/111.21.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/111.21.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/111.21.md",
+      "systematic_category": "11 Grundlagen",
+      "category_type": "Staatsvertrag"
     },
     {
       "date": "2005-04-01",
@@ -2190,7 +2220,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/87.23.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/87.23.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/87.23.md",
+      "systematic_category": "87 WOHNVERHÄLTNISSE",
+      "global_category": "8.40.10 Eigentums- und Wohnungsbauförderung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2005-04-11",
@@ -2800,7 +2833,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/151.43-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/151.43-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/151.43-1.md",
+      "systematic_category": "151.4 Zusammenarbeit mit anderen Kantonen",
+      "global_category": "1.10.40 Interkantonale Zusammenarbeit",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2005-06-14",
@@ -2960,7 +2996,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/261.162.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/261.162.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/261.162.md",
+      "systematic_category": "261 Notariat",
+      "global_category": "1.50.20.20 Gebühren, Tarife",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-07-01",
@@ -2990,7 +3029,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/433.41.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/433.41.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/433.41.md",
+      "systematic_category": "433 Pädagogische Hochschule",
+      "global_category": "4.50.10 Pädagogik",
+      "category_type": "Verordnung"
     },
     {
       "date": "2005-07-01",
@@ -3010,7 +3052,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.343.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.343.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.343.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.50 Naturschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-07-01",
@@ -3990,7 +4035,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/938.220.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/938.220.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/938.220.md",
+      "systematic_category": "938 Banken, Sparkassen",
+      "global_category": "6.40.10 Kantonalbanken",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-08-01",
@@ -4190,7 +4238,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/425.450.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.450.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/425.450.md",
+      "systematic_category": "425 Mittelschule",
+      "global_category": "4.20.10 Mittelschule",
+      "category_type": "Reglement"
     },
     {
       "date": "2005-09-01",
@@ -4470,7 +4521,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.322.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.322.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.322.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-09-24",
@@ -4530,7 +4584,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/173.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/173.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/173.11.md",
+      "systematic_category": "173 Internationale Zusammenarbeit",
+      "category_type": "Staatsvertrag"
     },
     {
       "date": "2005-10-01",
@@ -4550,7 +4606,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/173.11-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/173.11-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/173.11-1.md",
+      "systematic_category": "173 Internationale Zusammenarbeit",
+      "category_type": "Staatsvertrag"
     },
     {
       "date": "2005-10-01",
@@ -5100,7 +5158,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/901.41.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/901.41.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/901.41.md",
+      "systematic_category": "901 Im Allgemeinen",
+      "global_category": "9.10 Wirtschaftsförderung",
+      "category_type": "Gesetz"
     },
     {
       "date": "2005-12-02",
@@ -5150,7 +5211,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.344.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.344.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.344.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-12-02",
@@ -5170,7 +5234,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.345.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.345.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.345.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-12-02",
@@ -5190,7 +5257,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.346.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.346.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.346.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "2005-12-06",

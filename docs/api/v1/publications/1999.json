@@ -60,7 +60,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/162.112.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/162.112.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/162.112.md",
+      "systematic_category": "162.1 Obergericht",
+      "global_category": "1.20.70.10.20 Obere Gerichte, Bundesgerichte",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-01-01",
@@ -240,7 +243,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/400.105.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.105.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/400.105.md",
+      "systematic_category": "40 Allgemeine Bestimmungen",
+      "global_category": "4.120.100 Schulbehörden",
+      "category_type": "Reglement"
     },
     {
       "date": "1999-01-01",
@@ -1990,7 +1996,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/914.10.65.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/914.10.65.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/914.10.65.md",
+      "systematic_category": "914.10 Allgemeine Bestimmungen",
+      "global_category": "8.10.130.50 Tierkörperentsorgung",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-01-01",
@@ -3150,7 +3159,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.337.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.337.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.337.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-04-01",
@@ -3170,7 +3182,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/559.11.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.11.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.11.md",
+      "systematic_category": "559 Interkantonale Vereinbarungen",
+      "global_category": "5.30.10.50 Polizeiliche Zusammenarbeit",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-04-01",
@@ -3190,7 +3205,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/559.11-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.11-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/559.11-1.md",
+      "systematic_category": "559 Interkantonale Vereinbarungen",
+      "global_category": "5.30.10.50 Polizeiliche Zusammenarbeit",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1999-04-01",
@@ -3870,7 +3888,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/743.20.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/743.20.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/743.20.md",
+      "systematic_category": "743 Seilbahnen und Skilifte",
+      "global_category": "7.50.30 Seilbahnen, Skilifte",
+      "category_type": "Verordnung"
     },
     {
       "date": "1999-06-08",
@@ -4430,7 +4451,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/741.110.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.110.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/741.110.md",
+      "systematic_category": "741 Strassenverkehr",
+      "category_type": "Reglement"
     },
     {
       "date": "1999-07-01",
@@ -5450,7 +5473,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.121.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.121.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.121.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-08-16",
@@ -5620,7 +5646,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/916.148.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/916.148.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/916.148.md",
+      "systematic_category": "91 Landwirtschaft",
+      "global_category": "9.20.80.10 Rebbau",
+      "category_type": "Verordnung"
     },
     {
       "date": "1999-09-09",
@@ -5870,7 +5899,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/550.300.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.300.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/550.300.md",
+      "systematic_category": "55 Kantonspolizei",
+      "global_category": "5.30.60 Sicherheitsunternehmen",
+      "category_type": "Reglement"
     },
     {
       "date": "1999-10-01",
@@ -6070,7 +6102,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/214.12.13.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/214.12.13.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/214.12.13.md",
+      "systematic_category": "214.12 Erwerb von Grundstücken durch Personen im Ausland",
+      "global_category": "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-10-14",
@@ -6130,7 +6165,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/502.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/502.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/502.1.md",
+      "systematic_category": "50 Katastrophenschutz, Militärwesen",
+      "global_category": "5.30.30 Waffen und Munition",
+      "category_type": "Gesetz"
     },
     {
       "date": "1999-11-01",
@@ -6640,7 +6678,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.339.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.339.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.339.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-12-17",
@@ -6660,7 +6701,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.340.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.340.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.340.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1999-12-18",

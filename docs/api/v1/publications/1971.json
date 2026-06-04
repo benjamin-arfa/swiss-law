@@ -1190,7 +1190,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/520.200.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/520.200.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/520.200.md",
+      "systematic_category": "52 Ruhetage",
+      "global_category": "8.20.10.30 Sonn- und Feiertage",
+      "category_type": "Verordnung des Parlaments (Dekret)"
     },
     {
       "date": "1971-03-02",
@@ -3850,7 +3853,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/752.511.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/752.511.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/752.511.md",
+      "systematic_category": "752.5 Hydrologie",
+      "global_category": "7.60.20 Gewässerschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1971-09-22",

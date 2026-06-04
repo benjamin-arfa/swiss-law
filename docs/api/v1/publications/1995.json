@@ -110,7 +110,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/154.62.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/154.62.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/154.62.md",
+      "systematic_category": "154.6 Bezug und Verrechnung",
+      "category_type": "Verordnung"
     },
     {
       "date": "1995-01-01",
@@ -220,7 +222,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/410.141.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/410.141.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/410.141.md",
+      "systematic_category": "410.1 Allgemeines",
+      "global_category": "1.40.10 Römisch-Katholische Kirche",
+      "category_type": "Verordnung"
     },
     {
       "date": "1995-01-01",
@@ -1120,7 +1125,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/630.150.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/630.150.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/630.150.md",
+      "systematic_category": "63 Bevölkerungsschutz",
+      "global_category": "5.20.10.20 Baubestimmungen Zivilschutz",
+      "category_type": "Verordnung"
     },
     {
       "date": "1995-01-01",
@@ -2430,7 +2438,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.324.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.324.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.324.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1995-03-01",
@@ -2680,7 +2691,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/105.232.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/105.232.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/105.232.md",
+      "systematic_category": "105.2 Berner Jura",
+      "global_category": "1.10.50.10 Gebietseinteilung, Bezirke",
+      "category_type": "Gesetz"
     },
     {
       "date": "1995-03-15",
@@ -2770,7 +2784,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.325.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.325.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.325.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1995-04-01",
@@ -4240,7 +4257,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/810.120.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/810.120.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/810.120.md",
+      "systematic_category": "810 Wasserwirtschaft",
+      "global_category": "7.30.20.20 Gewässernutzung",
+      "category_type": "Reglement"
     },
     {
       "date": "1995-07-01",
@@ -6030,7 +6050,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.326.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.326.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.326.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1995-10-25",

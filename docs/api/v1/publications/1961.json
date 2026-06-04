@@ -140,7 +140,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/620.3.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/620.3.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/620.3.md",
+      "systematic_category": "62 Kantonalbank",
+      "global_category": "2.20.10.30 Leihe / Darlehen",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "1961-01-01",
@@ -550,7 +553,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/451.114.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.114.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/451.114.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.10 Landschaftsschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1961-04-01",

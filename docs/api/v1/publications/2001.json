@@ -1010,7 +1010,9 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/631.36.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/631.36.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/631.36.md",
+      "systematic_category": "631 Kantonssteuern",
+      "category_type": "Anderes"
     },
     {
       "date": "2001-01-01",
@@ -1210,7 +1212,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/642.108.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.108.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/642.108.md",
+      "systematic_category": "64 Steuern",
+      "global_category": "6.20.30 Liegenschaftssteuern",
+      "category_type": "Verordnung"
     },
     {
       "date": "2001-01-01",
@@ -1240,7 +1245,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/661.312.58.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/661.312.58.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/661.312.58.md",
+      "systematic_category": "661.3 Einzelne Steuern",
+      "category_type": "Verordnung"
     },
     {
       "date": "2001-01-01",
@@ -1260,7 +1267,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/661.312.60.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/661.312.60.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/661.312.60.md",
+      "systematic_category": "661.3 Einzelne Steuern",
+      "global_category": "6.20.30 Liegenschaftssteuern",
+      "category_type": "Verordnung"
     },
     {
       "date": "2001-01-01",
@@ -1280,7 +1290,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/668.21.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/668.21.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/668.21.md",
+      "systematic_category": "668.2 Verrechnungssteuer",
+      "global_category": "6.20.60 Verrechnungssteuer",
+      "category_type": "Verordnung"
     },
     {
       "date": "2001-01-01",
@@ -1300,7 +1313,9 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/669.791.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/669.791.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/669.791.md",
+      "systematic_category": "669.7 Doppelbesteuerung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2001-01-01",
@@ -1940,7 +1955,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/900.101.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/900.101.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/900.101.md",
+      "systematic_category": "90 Wirtschaftspolitik",
+      "global_category": "9.10 Wirtschaftsförderung",
+      "category_type": "Verordnung"
     },
     {
       "date": "2001-01-01",
@@ -2080,7 +2098,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/923.9.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/923.9.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/923.9.md",
+      "systematic_category": "923 Fischerei",
+      "global_category": "6.30.60.20 Reviere",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2001-01-01",
@@ -2100,7 +2121,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/923.900.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/923.900.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/923.900.md",
+      "systematic_category": "923 Fischerei",
+      "global_category": "6.30.60.20 Reviere",
+      "category_type": "Reglement"
     },
     {
       "date": "2001-01-01",
@@ -2930,7 +2954,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/935.52.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.52.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.52.md",
+      "systematic_category": "93 Gewerbe",
+      "global_category": "9.50.10.60.30 Spielbanken",
+      "category_type": "Gesetz"
     },
     {
       "date": "2001-04-01",
@@ -3510,7 +3537,10 @@
       "language": "it",
       "canton": "GR",
       "path": "ch/gr/it/180.200.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/180.200.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/gr/it/180.200.md",
+      "systematic_category": "18 Publikation der Erlasse",
+      "global_category": "1.10.90.20.10 Wahlen und Abstimmungen",
+      "category_type": "Verordnung"
     },
     {
       "date": "2001-07-01",
@@ -3540,7 +3570,10 @@
       "language": "fr",
       "canton": "FR",
       "path": "ch/fr/fr/823.16.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/823.16.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/fr/fr/823.16.md",
+      "systematic_category": "823 Spitalexterne Krankenpflege",
+      "global_category": "8.10.60 Spitalexterne Krankenpflege",
+      "category_type": "Anderes"
     },
     {
       "date": "2001-07-01",
@@ -3620,7 +3653,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/935.5.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.5.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.5.md",
+      "systematic_category": "93 Gewerbe",
+      "category_type": "Gesetz"
     },
     {
       "date": "2001-07-08",
@@ -4280,7 +4315,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/857.100.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/857.100.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/857.100.md",
+      "systematic_category": "85 Unterstützung",
+      "global_category": "8.70.80 Schwangerschaftsberatung",
+      "category_type": "Reglement"
     },
     {
       "date": "2001-10-04",
@@ -4580,7 +4618,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/945.1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.1.md",
+      "systematic_category": "945 Interkantonale Vereinbarungen",
+      "global_category": "9.60.50 Binnenmarkt, Handelshemmnisse",
+      "category_type": "Anderes"
     },
     {
       "date": "2001-11-05",
@@ -4600,7 +4641,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/945.1-1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.1-1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/945.1-1.md",
+      "systematic_category": "945 Interkantonale Vereinbarungen",
+      "global_category": "9.60.50 Binnenmarkt, Handelshemmnisse",
+      "category_type": "Interkantonale Vereinbarung"
     },
     {
       "date": "2001-11-06",

@@ -1370,7 +1370,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/411.108.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/411.108.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/411.108.md",
+      "systematic_category": "411 Obligatorische Schule",
+      "category_type": "Anderes"
     },
     {
       "date": "1985-03-01",
@@ -1670,7 +1672,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/452.102.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/452.102.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/452.102.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.20 Tierschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1985-04-12",
@@ -2250,7 +2255,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/452.100.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/452.100.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/452.100.md",
+      "systematic_category": "45 Natur- und Heimatschutz",
+      "global_category": "7.70.20 Tierschutz",
+      "category_type": "Anderes"
     },
     {
       "date": "1985-07-05",

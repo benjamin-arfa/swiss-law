@@ -100,7 +100,10 @@
       "language": "fr",
       "canton": "BE",
       "path": "ch/be/fr/153.471.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/153.471.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/fr/153.471.md",
+      "systematic_category": "153.4 Pensionskasse",
+      "global_category": "1.20.20.40.50 Renten, Versicherungsansprüche",
+      "category_type": "Verordnung"
     },
     {
       "date": "1990-01-01",
@@ -170,7 +173,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/172.415.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.415.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/172.415.md",
+      "systematic_category": "172 Staatsrat und Verwaltung",
+      "global_category": "1.20.20.40.40 Löhne, Entschädigungen",
+      "category_type": "Reglement"
     },
     {
       "date": "1990-01-01",
@@ -1170,7 +1176,10 @@
       "language": "de",
       "canton": "ZG",
       "path": "ch/zg/de/925.11-A1.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/zg/de/925.11-A1.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/zg/de/925.11-A1.md",
+      "systematic_category": "925 Tierzucht, Tierseuchen, Viehhandel",
+      "global_category": "9.20.120 Tierseuchen",
+      "category_type": "Verordnung"
     },
     {
       "date": "1990-01-01",
@@ -3100,7 +3109,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/747.201.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/747.201.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/747.201.md",
+      "systematic_category": "747 Schifffahrt",
+      "category_type": "Reglement"
     },
     {
       "date": "1990-07-31",
@@ -3460,7 +3471,9 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/935.500.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.500.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/935.500.md",
+      "systematic_category": "93 Gewerbe",
+      "category_type": "Reglement"
     },
     {
       "date": "1990-08-29",
@@ -4350,7 +4363,10 @@
       "language": "fr",
       "canton": "VS",
       "path": "ch/vs/fr/721.801.md",
-      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/721.801.md"
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/vs/fr/721.801.md",
+      "systematic_category": "721 Wasserbau",
+      "global_category": "7.30.20.20 Gewässernutzung",
+      "category_type": "Reglement"
     },
     {
       "date": "1990-11-26",

@@ -158,8 +158,8 @@
         renderBarChart('lang-chart', stats.by_language || {}, '#16a34a');
         renderBarChart('canton-chart', stats.by_canton || {}, '#ea580c');
         renderBarChart('source-chart', stats.by_source || {});
-        renderBarChart('sys-cat-chart', stats.by_systematic_category_top20 || {}, '#7c3aed');
-        renderBarChart('global-cat-chart', stats.by_global_category_top20 || {}, '#0891b2');
+        renderBarChart('sys-cat-chart', stats.by_systematic_category || {}, '#7c3aed');
+        renderBarChart('global-cat-chart', stats.by_global_category || {}, '#0891b2');
 
         // Timeline
         let timelineMode = 'all';

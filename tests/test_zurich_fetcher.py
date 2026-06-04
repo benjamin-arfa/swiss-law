@@ -395,14 +395,14 @@ class TestCantonalFetcherZhIntegration:
 
     @patch("legalize_ch.zurich_fetcher.ZurichFetcher")
     def test_fetch_catalog_delegates_to_zh(self, MockZH):
-        """CantonalFetcher.fetch_lexwork_catalog('zh', ...) uses ZurichFetcher."""
+        """CantonalFetcher.fetch_catalog('zh', ...) uses ZurichFetcher."""
         mock_instance = MockZH.return_value
         mock_instance.fetch_catalog.return_value = [
             CantonalLawEntry(canton="zh", systematic_number="131.1",
                              title="KV")
         ]
         fetcher = CantonalFetcher(rate_limit=0)
-        entries = fetcher.fetch_lexwork_catalog("zh", "de")
+        entries = fetcher.fetch_catalog("zh", "de")
 
         assert len(entries) == 1
         mock_instance.fetch_catalog.assert_called_once_with("de")
@@ -426,6 +426,6 @@ class TestZhMarkdownOutput:
         md = cantonal_law_to_markdown(text)
         assert "---" in md
         assert "canton: ZH" in md
-        assert "source: ZHLex" in md
+        assert "source: LexFind+ZHLex" in md
         assert "Verfassung des Kantons Zürich" in md
         assert "abbreviation: KV" in md

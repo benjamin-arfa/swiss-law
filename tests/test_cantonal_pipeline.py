@@ -52,7 +52,7 @@ class TestCantonalPipeline:
     def test_run_empty_catalog(self, mock_fetcher_cls, tmp_repo):
         """Pipeline handles empty catalog gracefully."""
         mock_fetcher = MagicMock()
-        mock_fetcher.fetch_lexwork_catalog.return_value = []
+        mock_fetcher.fetch_catalog.return_value = []
         mock_fetcher_cls.return_value = mock_fetcher
 
         pipeline = CantonalPipeline(repo_path=tmp_repo)
@@ -64,7 +64,7 @@ class TestCantonalPipeline:
     def test_run_single_canton(self, mock_fetcher_cls, tmp_repo):
         """Pipeline processes a single canton with one law."""
         mock_fetcher = MagicMock()
-        mock_fetcher.fetch_lexwork_catalog.return_value = [
+        mock_fetcher.fetch_catalog.return_value = [
             CantonalLawEntry(
                 canton="bs",
                 systematic_number="100.100",
@@ -96,7 +96,7 @@ class TestCantonalPipeline:
     def test_update_skips_processed(self, mock_fetcher_cls, tmp_repo):
         """Update skips laws already in state."""
         mock_fetcher = MagicMock()
-        mock_fetcher.fetch_lexwork_catalog.return_value = [
+        mock_fetcher.fetch_catalog.return_value = [
             CantonalLawEntry(
                 canton="bs",
                 systematic_number="100.100",

@@ -197,12 +197,9 @@ def cantonal(repo: str, canton: str, number: str | None, lang: str, rate_limit: 
     else:
         # Fetch catalog and process all laws
         click.echo(f"Fetching catalog for {canton.upper()}...")
-        if canton in LEXWORK_CANTONS:
-            click.echo(f"  Source: LexWork ({LEXWORK_CANTONS[canton]})")
-        else:
-            click.echo(f"  Source: LexFind (fallback)")
+        click.echo(f"  Source: LexFind (systematics)")
 
-        catalog = fetcher.fetch_lexwork_catalog(canton, lang)
+        catalog = fetcher.fetch_catalog(canton, lang)
         if not catalog:
             click.echo("No laws found in catalog. Try --number for specific law.")
             raise SystemExit(1)
@@ -212,7 +209,7 @@ def cantonal(repo: str, canton: str, number: str | None, lang: str, rate_limit: 
             text = fetcher.fetch_law_text(canton, entry.systematic_number, lang,
                                           lexfind_id=entry.lexfind_id)
             if text:
-                md = cantonal_law_to_markdown(text)
+                md = cantonal_law_to_markdown(text, entry=entry)
                 rel_path = canton_to_path(canton, entry.systematic_number, lang)
                 abs_path = repo_path / rel_path
                 abs_path.parent.mkdir(parents=True, exist_ok=True)
@@ -457,6 +454,48 @@ def health_check(repo: str, days: int, always_notify: bool):
                 raise SystemExit(1)
     else:
         click.echo("No alert needed.")
+
+
+@main.command("stats")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--no-trees", is_flag=True, help="Skip fetching category trees from LexFind API")
+@click.option("--rate-limit", type=float, default=0.5, help="Seconds between API requests")
+def stats(repo: str, no_trees: bool, rate_limit: float):
+    """Generate statistics, tags, and category trees.
+
+    Scans all law files, aggregates frontmatter metadata, and writes:
+      docs/stats.json    Aggregate statistics by field, year, month
+      docs/tags.json     Per-law tag index with all category fields
+      docs/trees/*.json  LexFind category trees (global + per-canton)
+    """
+    from pathlib import Path
+    from .stats import (
+        collect_all_frontmatter, generate_stats, generate_tags,
+        write_stats_json, write_tags_json, fetch_and_write_trees,
+    )
+
+    repo_path = Path(repo).resolve()
+
+    click.echo("Scanning frontmatter...")
+    entries = collect_all_frontmatter(repo_path)
+    click.echo(f"  {len(entries)} law files found")
+
+    click.echo("Generating stats...")
+    s = generate_stats(repo_path)
+    write_stats_json(s, repo_path / "docs" / "stats.json")
+    click.echo(f"  stats.json: {s['total_laws']} laws ({s['federal_laws']} federal, {s['cantonal_laws']} cantonal)")
+
+    click.echo("Generating tags...")
+    tags = generate_tags(entries)
+    write_tags_json(tags, repo_path / "docs" / "tags.json")
+    click.echo(f"  tags.json: {tags['total']} entries")
+
+    if not no_trees:
+        click.echo("Fetching category trees from LexFind...")
+        fetch_and_write_trees(repo_path / "docs" / "trees", rate_limit=rate_limit)
+        click.echo("  Trees written to docs/trees/")
+
+    click.echo("Done.")
 
 
 @main.command("export")

@@ -116,7 +116,7 @@ class TestCantonalLawToMarkdown:
         assert "Gemeindegesetz" in md
         assert "version_date: '2024-01-01'" in md or "version_date: 2024-01-01" in md
         assert "abbreviation: GemG" in md
-        assert "source: LexWork" in md  # BS is a LexWork canton
+        assert "source: LexFind+LexWork" in md  # BS is a LexWork canton, metadata from LexFind
 
     def test_zhlex_source(self):
         text = CantonalLawText(
@@ -127,7 +127,7 @@ class TestCantonalLawToMarkdown:
             language="de",
         )
         md = cantonal_law_to_markdown(text)
-        assert "source: ZHLex" in md  # ZH uses dedicated ZHLex fetcher
+        assert "source: LexFind+ZHLex" in md  # ZH uses ZHLex for text, LexFind for metadata
 
     def test_no_content_placeholder(self):
         text = CantonalLawText(
@@ -257,46 +257,40 @@ class TestLexFindCatalog:
             assert fetcher._lexfind_entity_id("zz") is None  # unknown canton
             mock_json.assert_called_once()  # entities fetched once, then cached
 
-    def test_lexfind_entry_parsing(self):
-        item = {
-            "id": 1738,
-            "systematic_number": "423.123",
-            "is_active": True,
-            "matches": [
-                {"title": "Verordnung über die Mittelschule",
-                 "version_active_since": "01.08.2025"},
-            ],
-        }
-        entry = CantonalFetcher._lexfind_entry("ag", item)
-        assert entry is not None
-        assert entry.systematic_number == "423.123"
-        assert entry.title == "Verordnung über die Mittelschule"
-        assert entry.lexfind_id == "1738"
-        assert entry.enactment_date == date(2025, 8, 1)
-        assert entry.is_active is True
-
-    def test_lexfind_entry_skips_rows_without_number(self):
-        assert CantonalFetcher._lexfind_entry("ag", {"id": 1, "matches": []}) is None
-
-    def test_fetch_catalog_paginates_and_deduplicates(self):
+    def test_fetch_catalog_by_systematics_deduplicates(self):
         fetcher = CantonalFetcher(rate_limit=0)
-        row = lambda tid, nr: {  # noqa: E731
-            "id": tid, "systematic_number": nr, "is_active": True,
-            "matches": [{"title": f"Law {nr}"}],
+        tree = {
+            "": {"children": [1]},
+            "1": {"identifier": "1", "title": "Cat 1", "parent": None, "children": [2, 3], "tols": []},
+            "2": {"identifier": "11", "title": "SubA", "parent": 1, "children": [], "tols": []},
+            "3": {"identifier": "12", "title": "SubB", "parent": 1, "children": [], "tols": []},
         }
-        page1 = {"number_of_pages": 2, "texts_of_law_with_matches": [row(1, "1.1"), row(2, "1.2")]}
-        page2 = {"number_of_pages": 2, "texts_of_law_with_matches": [row(2, "1.2"), row(3, "1.3")]}
+        tree_with_tols = {
+            "": {"children": [1]},
+            "1": {"identifier": "1", "title": "Cat 1", "parent": None, "children": [2, 3], "tols": []},
+            "2": {"identifier": "11", "title": "SubA", "parent": 1, "children": [], "tols": [
+                {"id": 10, "title": "Law A", "systematic_number": "1.1", "is_active": True, "category_id": 4},
+                {"id": 20, "title": "Law B", "systematic_number": "1.2", "is_active": True, "category_id": 6},
+            ]},
+            "3": {"identifier": "12", "title": "SubB", "parent": 1, "children": [], "tols": [
+                {"id": 20, "title": "Law B", "systematic_number": "1.2", "is_active": True, "category_id": 6},
+                {"id": 30, "title": "Law C", "systematic_number": "1.3", "is_active": True, "category_id": 4},
+            ]},
+        }
         with patch.object(fetcher, "_lexfind_entity_id", return_value=1), \
-             patch.object(fetcher, "_post_json", return_value={"id": 9, "session_id": "s"}), \
-             patch.object(fetcher, "_get_json", side_effect=[page1, page2]):
-            catalog = fetcher.fetch_lexfind_catalog("ag", "de")
-        # 4 rows across 2 pages, but tol id 2 appears twice → 3 unique laws
+             patch.object(fetcher, "_get_json", side_effect=[tree, tree_with_tols]), \
+             patch.object(fetcher, "_fetch_global_category_map", return_value={}), \
+             patch.object(fetcher, "_fetch_categories", return_value={4: "Gesetz", 6: "Verordnung"}):
+            catalog = fetcher.fetch_catalog("ag", "de")
         assert sorted(e.systematic_number for e in catalog) == ["1.1", "1.2", "1.3"]
+        by_nr = {e.systematic_number: e for e in catalog}
+        assert by_nr["1.1"].systematic_category == "11 SubA"
+        assert by_nr["1.1"].category_type == "Gesetz"
 
     def test_fetch_catalog_empty_when_canton_unknown(self):
         fetcher = CantonalFetcher(rate_limit=0)
         with patch.object(fetcher, "_lexfind_entity_id", return_value=None):
-            assert fetcher.fetch_lexfind_catalog("zz", "de") == []
+            assert fetcher.fetch_catalog("zz", "de") == []
 
 
 # ─── Model tests ─────────────────────────────────────────────────────────────

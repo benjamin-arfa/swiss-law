@@ -468,7 +468,7 @@ class TestCantonalLawToMarkdownIntegration:
             version_date=date(2024, 1, 1),
         )
         md = cantonal_law_to_markdown(text)
-        assert "source: ZHLex" in md
+        assert "source: LexFind+ZHLex" in md
         assert "Verfassung des Kantons Zürich" in md
 
     def test_lexfind_canton_uses_lexfind_transformer(self):
@@ -496,8 +496,8 @@ class TestCantonalLawToMarkdownIntegration:
         assert "No text content available" in md
 
     def test_source_label_capitalization(self):
-        """LexWork source should be 'LexWork', ZHLex stays 'ZHLex'."""
-        for canton, expected_source in [("bs", "LexWork"), ("zh", "ZHLex"), ("ti", "LexFind")]:
+        """Source labels reflect LexFind as primary + text fallback."""
+        for canton, expected_source in [("bs", "LexFind+LexWork"), ("zh", "LexFind+ZHLex"), ("ti", "LexFind")]:
             text = CantonalLawText(
                 canton=canton,
                 systematic_number="100.1",

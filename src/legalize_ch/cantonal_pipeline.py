@@ -12,6 +12,7 @@ from .cantonal import (
     CantonalLawEntry,
     CantonalLawText,
     ALL_CANTONS,
+    CANTON_LANGUAGES,
     LEXWORK_CANTONS,
     LEXFIND_ONLY_CANTONS,
     DEDICATED_FETCHER_CANTONS,
@@ -151,7 +152,11 @@ class CantonalPipeline:
         self, canton: str, languages: list[str], limit: int | None
     ) -> int:
         """Fetch and commit all laws for a single canton."""
-        catalog = self.fetcher.fetch_lexwork_catalog(canton, languages[0])
+        official = CANTON_LANGUAGES.get(canton, ["de"])
+        canton_langs = [l for l in languages if l in official] if languages else official
+        if not canton_langs:
+            canton_langs = official
+        catalog = self.fetcher.fetch_catalog(canton, canton_langs[0])
         if not catalog:
             logger.info("Canton %s: empty catalog, skipping", canton.upper())
             return 0
@@ -160,11 +165,11 @@ class CantonalPipeline:
             catalog = catalog[:limit]
 
         logger.info("Canton %s: processing %d laws in %s",
-                     canton.upper(), len(catalog), languages)
+                     canton.upper(), len(catalog), canton_langs)
 
         commits = 0
         for i, entry in enumerate(catalog):
-            for lang in languages:
+            for lang in canton_langs:
                 if self._is_processed(canton, entry.systematic_number, lang):
                     continue
 
@@ -175,13 +180,12 @@ class CantonalPipeline:
                 if not text:
                     continue
 
-                md = cantonal_law_to_markdown(text)
+                md = cantonal_law_to_markdown(text, entry=entry)
                 rel_path = canton_to_path(canton, entry.systematic_number, lang)
                 abs_path = self.repo_path / rel_path
                 abs_path.parent.mkdir(parents=True, exist_ok=True)
                 abs_path.write_text(md, encoding="utf-8")
 
-                # Commit with the version date if available, else today
                 commit_date = text.version_date or date.today()
                 title = text.title or entry.title or entry.systematic_number
                 revision = LawRevision(
@@ -190,14 +194,13 @@ class CantonalPipeline:
                     title_de=title if lang == "de" else "",
                     title_fr=title if lang == "fr" else "",
                     title_it=title if lang == "it" else "",
-                    texts={},  # We handle file writing ourselves
+                    texts={},
                     message=(
                         f"{canton.upper()} {entry.systematic_number}: "
                         f"{title} ({commit_date.isoformat()})"
                     ),
                 )
 
-                # Stage and commit the file directly
                 self.committer._run_git("add", rel_path)
                 status = self.committer._run_git("diff", "--cached", "--quiet")
                 if status.returncode != 0:

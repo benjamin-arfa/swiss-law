@@ -369,6 +369,24 @@ def _build_router():
 
         return Response(content=xml, media_type=content_type)
 
+    @router.get("/stats")
+    async def get_stats():
+        """Serve pre-generated statistics (from docs/stats.json)."""
+        stats_path = _REPO_PATH / "docs" / "stats.json"
+        if not stats_path.exists():
+            raise HTTPException(status_code=404, detail="Stats not generated. Run: legalize-ch stats")
+        import json
+        return json.loads(stats_path.read_text(encoding="utf-8"))
+
+    @router.get("/tags")
+    async def get_tags():
+        """Serve pre-generated tag index (from docs/tags.json)."""
+        tags_path = _REPO_PATH / "docs" / "tags.json"
+        if not tags_path.exists():
+            raise HTTPException(status_code=404, detail="Tags not generated. Run: legalize-ch stats")
+        import json
+        return json.loads(tags_path.read_text(encoding="utf-8"))
+
     @router.get("/health")
     async def health():
         """Health check endpoint."""

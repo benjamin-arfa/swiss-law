@@ -1,15 +1,14 @@
-"""Fetch cantonal law from LexWork (direct) with LexFind fallback."""
+"""Fetch cantonal law: LexFind (primary) with LexWork/ZHLex text fallback."""
 from __future__ import annotations
 
 import logging
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import date
 
 import requests
 
 from .cantonal_transformer import transform_cantonal_html
-from .transformer import html_to_markdown, build_frontmatter
 
 logger = logging.getLogger(__name__)
 
@@ -19,20 +18,17 @@ INITIAL_BACKOFF = 2.0
 BACKOFF_FACTOR = 2.0
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 
-# ─── LexFind API (new Angular backend, live as of 2026-05) ──────────────────────
+# ─── LexFind API (primary source for catalog + metadata) ─────────────────────
 #
-# The legacy ``/fe/api/search`` endpoint is dead (returns the SPA shell). LexFind
-# now exposes a JSON API under ``/api/fe/{lang}/`` which we use as the *catalog*
-# source for every canton — it enumerates law systematic numbers. The actual law
-# *text* still comes from each canton's LexWork portal (clean XHTML).
+# LexFind exposes a JSON API under ``/api/fe/{lang}/``.  The systematic category
+# tree (``/entities/{id}/systematics``) is used to enumerate every canton's laws,
+# replacing the old stopword-based fulltext search.  LexFind is authoritative for
+# metadata (categories, is_active, dates).  Structured text still comes from
+# LexWork / ZHLex as a fallback (LexFind serves PDFs only).
 LEXFIND_API = "https://www.lexfind.ch/api/fe"
 
-# Catalogs are enumerated by a content full-text search for a near-universal
-# stopword, filtered to one canton (entity). One stopword per content language.
-CATALOG_STOPWORDS = {"de": "der", "fr": "de", "it": "di", "rm": "e"}
-
-# Page size for paginating LexFind search results.
-LEXFIND_PAGE_SIZE = 100
+# Max leaf-node IDs per request for global systematics (URL length limit).
+_GLOBAL_SYSTEMATICS_BATCH = 100
 
 # ─── Canton Registry ───────────────────────────────────────────────────────────
 
@@ -64,6 +60,19 @@ ALL_CANTONS = sorted(
     list(LEXWORK_CANTONS.keys()) + LEXFIND_ONLY_CANTONS + DEDICATED_FETCHER_CANTONS
 )
 
+# Official languages per canton.  Cantons not listed default to ["de"].
+CANTON_LANGUAGES: dict[str, list[str]] = {
+    "be": ["de", "fr"],
+    "fr": ["de", "fr"],
+    "vs": ["de", "fr"],
+    "gr": ["de", "it", "rm"],
+    "ge": ["fr"],
+    "vd": ["fr"],
+    "ne": ["fr"],
+    "ju": ["fr"],
+    "ti": ["it"],
+}
+
 
 # ─── Models ────────────────────────────────────────────────────────────────────
 
@@ -76,7 +85,12 @@ class CantonalLawEntry:
     abbreviation: str = ""
     enactment_date: date | None = None
     is_active: bool = True
-    lexfind_id: str = ""  # LexFind TOL ID for fallback
+    lexfind_id: str = ""
+    systematic_category: str = ""
+    systematic_category_id: str = ""
+    global_category: str = ""
+    global_category_id: str = ""
+    category_type: str = ""
 
 
 @dataclass
@@ -105,15 +119,16 @@ class CantonalLawText:
 # ─── Fetcher ───────────────────────────────────────────────────────────────────
 
 class CantonalFetcher:
-    """Fetches cantonal law from LexWork portals with LexFind fallback."""
+    """Fetches cantonal law — LexFind primary, LexWork/ZHLex text fallback."""
 
     def __init__(self, rate_limit: float = 1.0):
         self.rate_limit = rate_limit
         self._last_request = 0.0
         self.session = requests.Session()
         self.session.headers["User-Agent"] = "legalize-ch/0.1 (swiss-law pipeline)"
-        # canton abbreviation -> LexFind entity id, populated lazily per language
         self._entity_ids: dict[str, dict[str, int]] = {}
+        self._categories: dict[str, dict[int, str]] = {}
+        self._global_leaves: list[int] | None = None
 
     def _throttle(self):
         elapsed = time.time() - self._last_request
@@ -219,27 +234,19 @@ class CantonalFetcher:
         url = f"{base}/{lang}/texts_of_law/{number}/versions/{version_id}"
         return self._get_json(url)
 
-    def fetch_lexwork_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
-        """Fetch full catalog from a canton via its best available source."""
-        # Zürich: dedicated ZHLex API
+    def fetch_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
+        """Fetch full catalog for a canton from LexFind systematics."""
         if canton == "zh":
             from .zurich_fetcher import ZurichFetcher
             zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
             return zh_fetcher.fetch_catalog(lang)
 
-        # LexWork doesn't have a clean catalog API, but we can paginate through search
-        # For now, use LexFind as the catalog source even for LexWork cantons
-        return self.fetch_lexfind_catalog(canton, lang)
+        return self._fetch_lexfind_catalog_by_systematics(canton, lang)
 
-    # ─── LexFind API (catalog source for every canton) ─────────────────────────
+    # ─── LexFind API (primary catalog + metadata source) ──────────────────────
 
     def _lexfind_entity_id(self, canton: str, lang: str = "de") -> int | None:
-        """Resolve a canton abbreviation to its LexFind entity id.
-
-        LexFind keys laws by numeric "entity" ids (cantons + the Confederation +
-        communes). ``/api/fe/{lang}/entities`` maps abbreviations to ids; the
-        result is cached per language for the lifetime of the fetcher.
-        """
+        """Resolve canton abbreviation → LexFind entity id (cached)."""
         if lang not in self._entity_ids:
             url = f"{LEXFIND_API}/{lang}/entities"
             data = self._get_json(url)
@@ -254,90 +261,154 @@ class CantonalFetcher:
                 logger.warning("LexFind entities returned no mapping for lang=%s", lang)
         return self._entity_ids[lang].get(canton.lower())
 
-    def fetch_lexfind_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
-        """Enumerate a canton's laws via the LexFind full-text search API.
+    def _fetch_categories(self, lang: str = "de") -> dict[int, str]:
+        """Fetch instrument types (Gesetz, Verordnung, etc.) — cached."""
+        if lang not in self._categories:
+            url = f"{LEXFIND_API}/{lang}/categories"
+            data = self._get_json(url)
+            mapping: dict[int, str] = {}
+            if isinstance(data, list):
+                for cat in data:
+                    if isinstance(cat.get("id"), int) and cat.get("name"):
+                        mapping[cat["id"]] = cat["name"]
+            self._categories[lang] = mapping
+        return self._categories[lang]
 
-        LexFind has no plain "list every law" endpoint, but a content search for
-        a near-universal stopword (e.g. "der") scoped to one canton returns the
-        whole corpus. We create a search resource, then page through its results.
+    def _fetch_global_leaves(self, lang: str = "de") -> list[int]:
+        """Get all leaf node IDs from the global systematics tree — cached."""
+        if self._global_leaves is None:
+            url = f"{LEXFIND_API}/{lang}/global/systematics"
+            data = self._get_json(url)
+            if not isinstance(data, dict):
+                self._global_leaves = []
+                return self._global_leaves
+            self._global_leaves = sorted(
+                int(k) for k, v in data.items()
+                if k and not v.get("children")
+            )
+        return self._global_leaves
+
+    def _fetch_global_category_map(
+        self, entity_id: int, lang: str = "de",
+    ) -> dict[int, tuple[str, str]]:
+        """Build tol_id → (global_category_id, global_category_title) map.
+
+        Fetches the global systematics ("domaine juridique") filtered to one
+        canton, batching leaf node IDs to stay within URL length limits.
+        """
+        leaves = self._fetch_global_leaves(lang)
+        if not leaves:
+            return {}
+
+        result: dict[int, tuple[str, str]] = {}
+        for i in range(0, len(leaves), _GLOBAL_SYSTEMATICS_BATCH):
+            batch = leaves[i:i + _GLOBAL_SYSTEMATICS_BATCH]
+            params = "&".join(f"tols_for_systematics[]={lid}" for lid in batch)
+            url = (
+                f"{LEXFIND_API}/{lang}/global/systematics"
+                f"?active_only=false&entity_filter[]={entity_id}&{params}"
+            )
+            data = self._get_json(url)
+            if not isinstance(data, dict):
+                continue
+            for k, v in data.items():
+                if not k:
+                    continue
+                for tol in v.get("tols", []):
+                    tol_id = tol.get("id")
+                    if tol_id is not None and tol_id not in result:
+                        result[tol_id] = (
+                            str(v.get("identifier", "")),
+                            str(v.get("title", "")),
+                        )
+        return result
+
+    def _fetch_lexfind_catalog_by_systematics(
+        self, canton: str, lang: str = "de",
+    ) -> list[CantonalLawEntry]:
+        """Enumerate a canton's laws via the LexFind systematics tree.
+
+        Walks the per-canton category tree, fetches all leaf-level texts of law
+        in a single request, then enriches each entry with the global "domaine
+        juridique" classification and instrument type.
         """
         entity_id = self._lexfind_entity_id(canton, lang)
         if entity_id is None:
             logger.warning("Canton %s has no LexFind entity for lang=%s", canton.upper(), lang)
             return []
 
-        stopword = CATALOG_STOPWORDS.get(lang, CATALOG_STOPWORDS["de"])
-        body = {
-            "search_text": stopword,
-            "active_only": False,
-            "search_in_systematic_number": False,
-            "search_in_title": False,
-            "search_in_keywords": False,
-            "search_in_content": True,
-            "use_global_systematics": False,
-            "entity_filter": [entity_id],
-            "systematic_filter": [],
-            "category_filter": [],
-            "direct_search": False,
-        }
-        created = self._post_json(f"{LEXFIND_API}/{lang}/fulltext-search", body)
-        if not isinstance(created, dict) or "id" not in created:
-            logger.warning("LexFind search creation failed for %s: %r", canton.upper(), created)
+        # 1. Fetch per-canton systematics tree (without tols) to find leaf nodes
+        tree_url = f"{LEXFIND_API}/{lang}/entities/{entity_id}/systematics"
+        tree = self._get_json(tree_url)
+        if not isinstance(tree, dict):
+            logger.warning("LexFind systematics tree unavailable for %s", canton.upper())
             return []
 
-        search_id = created["id"]
-        session_id = created.get("session_id", "")
-        entries: dict[str, CantonalLawEntry] = {}  # keyed by tol id, deduplicated
-        page = 1
-        while True:
-            url = (
-                f"{LEXFIND_API}/{lang}/fulltext-search/{search_id}"
-                f"?session_id={session_id}&page_no={page}&results_per_page={LEXFIND_PAGE_SIZE}"
-            )
-            data = self._get_json(url)
-            if not isinstance(data, dict):
-                break
-            matches = data.get("texts_of_law_with_matches", [])
-            for item in matches:
-                entry = self._lexfind_entry(canton, item)
-                if entry:
-                    entries.setdefault(entry.lexfind_id or entry.systematic_number, entry)
-            total_pages = data.get("number_of_pages", 0) or 0
-            if page >= total_pages or not matches:
-                break
-            page += 1
-
-        logger.info("LexFind catalog for %s: %d laws", canton.upper(), len(entries))
-        return list(entries.values())
-
-    @staticmethod
-    def _lexfind_entry(canton: str, item: dict) -> CantonalLawEntry | None:
-        """Build a CantonalLawEntry from a LexFind search-result row."""
-        sr = str(item.get("systematic_number", "")).strip()
-        if not sr:
-            return None
-        tol_id = str(item.get("id", ""))
-        # The newest version's metadata sits in the first `matches` element.
-        match = (item.get("matches") or [{}])[0]
-        title = str(match.get("title", "")).strip()
-        enactment = None
-        for key in ("version_active_since", "family_active_since"):
-            raw = match.get(key)
-            if raw:
-                try:
-                    d, m, y = raw.split(".")
-                    enactment = date(int(y), int(m), int(d))
-                    break
-                except (ValueError, AttributeError):
-                    pass
-        return CantonalLawEntry(
-            canton=canton,
-            systematic_number=sr,
-            title=title,
-            enactment_date=enactment,
-            is_active=bool(item.get("is_active", True)),
-            lexfind_id=tol_id,
+        leaf_ids = sorted(
+            int(k) for k, v in tree.items()
+            if k and not v.get("children")
         )
+        if not leaf_ids:
+            logger.warning("No leaf categories for %s", canton.upper())
+            return []
+
+        # 2. Re-fetch with tols_for_systematics[] for all leaves (batched)
+        all_tols: dict[str, dict] = {}  # node_key → node data (merged across batches)
+        for i in range(0, len(leaf_ids), _GLOBAL_SYSTEMATICS_BATCH):
+            batch = leaf_ids[i:i + _GLOBAL_SYSTEMATICS_BATCH]
+            params = "&".join(f"tols_for_systematics[]={lid}" for lid in batch)
+            batch_url = f"{tree_url}?active_only=false&{params}"
+            batch_data = self._get_json(batch_url)
+            if not isinstance(batch_data, dict):
+                continue
+            for k, v in batch_data.items():
+                if k and v.get("tols"):
+                    all_tols[k] = v
+
+        # Build tol_id → canton category mapping
+        tol_canton_cat: dict[int, tuple[str, str]] = {}
+        for k, v in all_tols.items():
+            cat_id = str(v.get("identifier", ""))
+            cat_title = str(v.get("title", ""))
+            for tol in v.get("tols", []):
+                tid = tol.get("id")
+                if tid is not None:
+                    tol_canton_cat[tid] = (cat_id, cat_title)
+
+        # 3. Fetch global "domaine juridique" mapping
+        tol_global_cat = self._fetch_global_category_map(entity_id, lang)
+
+        # 4. Fetch instrument type names
+        cat_types = self._fetch_categories(lang)
+
+        # 5. Build entries, dedup by systematic_number
+        entries: dict[str, CantonalLawEntry] = {}
+        for k, v in all_tols.items():
+            for tol in v.get("tols", []):
+                sr = str(tol.get("systematic_number", "")).strip()
+                if not sr or sr in entries:
+                    continue
+                tol_id = tol.get("id")
+                canton_cat = tol_canton_cat.get(tol_id, ("", ""))
+                global_cat = tol_global_cat.get(tol_id, ("", ""))
+                cat_type_id = tol.get("category_id")
+                entries[sr] = CantonalLawEntry(
+                    canton=canton,
+                    systematic_number=sr,
+                    title=str(tol.get("title", "")).strip(),
+                    abbreviation=str(tol.get("keywords", "") or ""),
+                    is_active=bool(tol.get("is_active", True)),
+                    lexfind_id=str(tol_id) if tol_id is not None else "",
+                    systematic_category=f"{canton_cat[0]} {canton_cat[1]}".strip(),
+                    systematic_category_id=canton_cat[0],
+                    global_category=f"{global_cat[0]} {global_cat[1]}".strip(),
+                    global_category_id=global_cat[0],
+                    category_type=cat_types.get(cat_type_id, "") if cat_type_id else "",
+                )
+
+        logger.info("LexFind catalog for %s: %d laws (%d categories)",
+                     canton.upper(), len(entries), len(leaf_ids))
+        return list(entries.values())
 
     # ─── Unified fetch methods ─────────────────────────────────────────────────
 
@@ -555,7 +626,10 @@ def canton_to_path(canton: str, systematic_number: str, language: str) -> str:
     return f"ch/{canton}/{language}/{systematic_number}.md"
 
 
-def cantonal_law_to_markdown(text: CantonalLawText) -> str:
+def cantonal_law_to_markdown(
+    text: CantonalLawText,
+    entry: CantonalLawEntry | None = None,
+) -> str:
     """Convert cantonal law text to Markdown with frontmatter.
 
     Uses the cantonal transformer which handles source-specific HTML formats:
@@ -563,31 +637,41 @@ def cantonal_law_to_markdown(text: CantonalLawText) -> str:
     - LexFind HTML: extracts body from full-page HTML, strips navigation
     - ZHLex HTML: handles Zürich's semantic HTML structure
     """
-    source = (
+    text_source = (
         "zhlex" if text.canton == "zh"
         else "lexwork" if text.canton in LEXWORK_CANTONS
         else "lexfind"
     )
-    meta = {
+    if text.canton == "zh":
+        source_label = "LexFind+ZHLex"
+    elif text.canton in LEXWORK_CANTONS:
+        source_label = "LexFind+LexWork"
+    else:
+        source_label = "LexFind"
+
+    meta: dict[str, object] = {
         "canton": text.canton.upper(),
         "systematic_number": text.systematic_number,
         "title": text.title,
         "language": text.language,
-        "source": (
-            "ZHLex" if source == "zhlex"
-            else "LexWork" if source == "lexwork"
-            else "LexFind"
-        ),
+        "source": source_label,
     }
     if text.version_date:
         meta["version_date"] = text.version_date.isoformat()
     if text.abbreviation:
         meta["abbreviation"] = text.abbreviation
+    if entry:
+        if entry.systematic_category:
+            meta["systematic_category"] = entry.systematic_category
+        if entry.global_category:
+            meta["global_category"] = entry.global_category
+        if entry.category_type:
+            meta["category_type"] = entry.category_type
 
     import yaml
     frontmatter = "---\n" + yaml.dump(meta, allow_unicode=True, default_flow_style=False).strip() + "\n---"
 
-    body = transform_cantonal_html(text.html_content, source=source) if text.html_content else ""
+    body = transform_cantonal_html(text.html_content, source=text_source) if text.html_content else ""
     if not body:
         body = f"# {text.title}\n\n*No text content available.*"
 

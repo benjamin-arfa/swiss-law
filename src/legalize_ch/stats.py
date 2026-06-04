@@ -77,25 +77,18 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         for e in cantonal if e.get("global_category")
     )
 
-    # Federal SR top-level categories
-    sr_categories = {
-        "0": "Völkerrecht",
-        "1": "Staat – Volk – Behörden",
-        "2": "Privatrecht – Zivilrechtspflege – Vollstreckung",
-        "3": "Strafrecht – Strafrechtspflege – Strafvollzug",
-        "4": "Schule – Wissenschaft – Kultur",
-        "5": "Landesverteidigung",
-        "6": "Finanzen",
-        "7": "Öffentliche Werke – Energie – Verkehr",
-        "8": "Gesundheit – Arbeit – Soziale Sicherheit",
-        "9": "Wirtschaft – Technische Zusammenarbeit",
-    }
+    # Federal SR categories — use the full CH tree from LexFind if available,
+    # otherwise fall back to SR number prefix matching
+    ch_tree_path = Path(repo_path) / "docs" / "trees" / "ch.json"
+    sr_cat_map = _build_sr_category_map(ch_tree_path)
     by_sr_category: Counter[str] = Counter()
     for e in federal:
         sr = str(e.get("sr_number", ""))
-        prefix = sr.split(".")[0][:1] if sr else ""
-        label = f"{prefix} – {sr_categories[prefix]}" if prefix in sr_categories else prefix
-        by_sr_category[label] += 1
+        label = sr_cat_map.get(sr, "")
+        if not label:
+            label = _match_sr_to_tree(sr, sr_cat_map)
+        if label:
+            by_sr_category[label] += 1
 
     # ─── Time breakdowns (version_date) ─────────────────────────────────
     by_year: Counter[str] = Counter()
@@ -184,6 +177,64 @@ def generate_tags(entries: list[dict]) -> dict:
     }
 
 
+def _build_sr_category_map(ch_tree_path: Path) -> dict[str, str]:
+    """Build SR number prefix → category label map from the CH tree JSON.
+
+    Walks the tree and maps each node's identifier to its full label
+    (e.g., "1.1" → "1.1 Bund und Kantone"). Returns empty dict if
+    the tree file doesn't exist yet (first run before trees are fetched).
+    """
+    if not ch_tree_path.exists():
+        return {}
+    try:
+        tree = json.loads(ch_tree_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+    result: dict[str, str] = {}
+
+    def _walk(nodes: list[dict]):
+        for node in nodes:
+            ident = node.get("identifier", "")
+            title = node.get("title", "")
+            if ident:
+                result[ident] = f"{ident} {title}"
+            for child in node.get("children", []):
+                _walk([child])
+
+    _walk(tree)
+    return result
+
+
+def _match_sr_to_tree(sr: str, cat_map: dict[str, str]) -> str:
+    """Find the deepest matching category for an SR number.
+
+    SR numbers like ``172.010.1`` need to match tree identifiers like ``172``.
+    International law like ``0.142.113.672`` needs to match ``0.142``.
+    Tries progressively shorter prefixes by removing segments and digits.
+    """
+    if not cat_map:
+        return ""
+    sr = sr.rstrip(".")
+    # Try full SR first, then shorten by removing rightmost segment
+    candidate = sr
+    while candidate:
+        if candidate in cat_map:
+            return cat_map[candidate]
+        # Remove trailing zeros from numeric segments (172.010 → 172.01 → 172.0)
+        stripped = candidate.rstrip("0").rstrip(".")
+        if stripped and stripped != candidate and stripped in cat_map:
+            return cat_map[stripped]
+        # Remove last segment
+        if "." in candidate:
+            candidate = candidate.rsplit(".", 1)[0]
+        elif len(candidate) > 1:
+            candidate = candidate[:-1]
+        else:
+            break
+    return ""
+
+
 def _sr_category_label(sr: str) -> str:
     cats = {
         "0": "Völkerrecht",
@@ -242,6 +293,79 @@ def _clean_tree(raw: dict) -> list[dict]:
     return [c for c in (_build(cid) for cid in root_children) if c]
 
 
+def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-source/swiss-law-as-source.github.io") -> dict[int, dict]:
+    """Generate per-year publication JSON files from frontmatter entries.
+
+    Groups laws by version_date year, producing the same shape as the old
+    static_export: ``{date_prefix, count, publications: [...]}``.
+    """
+    by_year: dict[int, list[dict]] = defaultdict(list)
+
+    for e in entries:
+        vd = str(e.get("version_date", ""))
+        if len(vd) < 4:
+            continue
+        year = int(vd[:4])
+        sr = str(e.get("sr_number") or e.get("systematic_number", ""))
+        if not sr:
+            continue
+        scope = e.get("_scope", "federal")
+        lang = e.get("language", "de")
+        canton = e.get("canton", "")
+
+        if scope == "cantonal" and canton:
+            path = f"ch/{canton.lower()}/{lang}/{sr}.md"
+        else:
+            prefix = sr.split(".")[0]
+            path = f"ch/{prefix}/{lang}/{sr}.md"
+
+        by_year[year].append({
+            "date": vd,
+            "sr_number": sr,
+            "title": e.get("title", ""),
+            "scope": scope,
+            "language": lang,
+            "canton": canton,
+            "path": path,
+            "url_main": f"https://raw.githubusercontent.com/{repo_name}/main/{path}",
+        })
+
+    result = {}
+    for year in sorted(by_year):
+        pubs = sorted(by_year[year], key=lambda p: (p["date"], p["sr_number"]))
+        result[year] = {
+            "date_prefix": str(year),
+            "count": len(pubs),
+            "publications": pubs,
+        }
+    return result
+
+
+def write_publications(pubs_by_year: dict[int, dict], output_dir: str | Path = "docs/api/v1/publications"):
+    """Write per-year publication JSON files + index."""
+    out = Path(output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    years = sorted(pubs_by_year.keys())
+    total = sum(p["count"] for p in pubs_by_year.values())
+
+    for year, payload in pubs_by_year.items():
+        (out / f"{year}.json").write_text(
+            json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+    index = {
+        "years": years,
+        "total_publications": total,
+        "earliest_year": years[0] if years else None,
+        "latest_year": years[-1] if years else None,
+    }
+    (out / "index.json").write_text(
+        json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    logger.info("Wrote %d year files (%d publications) to %s", len(years), total, out)
+
+
 def fetch_and_write_trees(output_dir: str | Path = "docs/trees", rate_limit: float = 0.5):
     """Fetch category trees from LexFind API and write as static JSON files."""
     from .cantonal import (
@@ -259,6 +383,16 @@ def fetch_and_write_trees(output_dir: str | Path = "docs/trees", rate_limit: flo
         tree = _clean_tree(global_raw)
         (out / "global.json").write_text(json.dumps(tree, indent=2, ensure_ascii=False))
         logger.info("Wrote global tree (%d top-level nodes)", len(tree))
+
+    # CH (federal) tree — entity 27
+    logger.info("Fetching CH (federal) systematics tree...")
+    ch_entity_id = fetcher._lexfind_entity_id("ch", "de")
+    if ch_entity_id:
+        ch_raw = fetcher._get_json(f"{LEXFIND_API}/de/entities/{ch_entity_id}/systematics")
+        if ch_raw:
+            tree = _clean_tree(ch_raw)
+            (out / "ch.json").write_text(json.dumps(tree, indent=2, ensure_ascii=False))
+            logger.info("Wrote CH (federal) tree (%d top-level nodes)", len(tree))
 
     # Per-canton trees
     for canton in ALL_CANTONS:

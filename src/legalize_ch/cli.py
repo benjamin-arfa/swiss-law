@@ -471,6 +471,7 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
     from pathlib import Path
     from .stats import (
         collect_all_frontmatter, generate_stats, generate_tags,
+        generate_publications, write_publications,
         write_stats_json, write_tags_json, fetch_and_write_trees,
     )
 
@@ -489,6 +490,11 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
     tags = generate_tags(entries)
     write_tags_json(tags, repo_path / "docs" / "tags.json")
     click.echo(f"  tags.json: {tags['total']} entries")
+
+    click.echo("Generating publications by year...")
+    pubs = generate_publications(entries)
+    write_publications(pubs, repo_path / "docs" / "api" / "v1" / "publications")
+    click.echo(f"  {len(pubs)} year files written")
 
     if not no_trees:
         click.echo("Fetching category trees from LexFind...")

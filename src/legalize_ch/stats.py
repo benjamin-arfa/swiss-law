@@ -372,6 +372,94 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
     return result
 
 
+def generate_yearly_canton_stats(entries: list[dict]) -> dict[str, dict[str, dict]]:
+    """Generate per-year per-canton/CH stats: topic split + type split.
+
+    Returns ``{year: {entity: stats_dict}}`` where entity is a canton code
+    or ``"CH"`` for federal. Each stats_dict contains topic and type counts.
+    """
+    data: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
+
+    for e in entries:
+        vd = str(e.get("version_date", ""))
+        if len(vd) < 4:
+            continue
+        year = vd[:4]
+        if e.get("_scope") == "cantonal" and e.get("canton"):
+            entity = str(e["canton"]).upper()
+        else:
+            entity = "CH"
+        data[year][entity].append(e)
+
+    result: dict[str, dict[str, dict]] = {}
+    for year in sorted(data):
+        result[year] = {}
+        for entity in sorted(data[year]):
+            laws = data[year][entity]
+            by_type: dict[str, int] = Counter()
+            by_topic: dict[str, int] = Counter()
+            by_global: dict[str, int] = Counter()
+            by_lang: dict[str, int] = Counter()
+
+            for e in laws:
+                ct = e.get("category_type", "")
+                if ct:
+                    by_type[ct] += 1
+                sc = e.get("systematic_category", "")
+                if sc:
+                    by_topic[sc] += 1
+                gc = e.get("global_category", "")
+                if gc:
+                    by_global[gc] += 1
+                by_lang[e.get("language", "unknown")] += 1
+
+            result[year][entity] = {
+                "year": year,
+                "entity": entity,
+                "total": len(laws),
+                "by_type": dict(Counter(by_type).most_common()),
+                "by_topic": dict(Counter(by_topic).most_common()),
+                "by_global_category": dict(Counter(by_global).most_common()),
+                "by_language": dict(Counter(by_lang).most_common()),
+            }
+
+    return result
+
+
+def write_yearly_canton_stats(
+    stats: dict[str, dict[str, dict]],
+    output_dir: str | Path = "docs/api/v1/stats",
+):
+    """Write per-year per-canton stats as ``{year}/{entity}.json``."""
+    out = Path(output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    all_years = sorted(stats.keys())
+    all_entities: set[str] = set()
+
+    for year, entities in stats.items():
+        year_dir = out / year
+        year_dir.mkdir(parents=True, exist_ok=True)
+        for entity, payload in entities.items():
+            all_entities.add(entity)
+            (year_dir / f"{entity}.json").write_text(
+                json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+            )
+
+    index = {
+        "years": all_years,
+        "entities": sorted(all_entities),
+        "total_files": sum(len(e) for e in stats.values()),
+    }
+    (out / "index.json").write_text(
+        json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    logger.info(
+        "Wrote %d year×entity stats files to %s",
+        index["total_files"], out,
+    )
+
+
 def write_publications(pubs_by_year: dict[int, dict], output_dir: str | Path = "docs/api/v1/publications"):
     """Write per-year publication JSON files + index."""
     out = Path(output_dir)

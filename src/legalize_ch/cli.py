@@ -472,6 +472,7 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
     from .stats import (
         collect_all_frontmatter, generate_stats, generate_tags,
         generate_publications, write_publications,
+        generate_yearly_canton_stats, write_yearly_canton_stats,
         write_stats_json, write_tags_json, fetch_and_write_trees,
     )
 
@@ -495,6 +496,11 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
     pubs = generate_publications(entries)
     write_publications(pubs, repo_path / "docs" / "api" / "v1" / "publications")
     click.echo(f"  {len(pubs)} year files written")
+
+    click.echo("Generating per-year per-canton stats...")
+    yc_stats = generate_yearly_canton_stats(entries)
+    write_yearly_canton_stats(yc_stats, repo_path / "docs" / "api" / "v1" / "stats")
+    click.echo(f"  {sum(len(e) for e in yc_stats.values())} files across {len(yc_stats)} years")
 
     if not no_trees:
         click.echo("Fetching category trees from LexFind...")

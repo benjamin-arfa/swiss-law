@@ -372,12 +372,81 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
     return result
 
 
-def generate_yearly_canton_stats(entries: list[dict]) -> dict[str, dict[str, dict]]:
-    """Generate per-year per-canton/CH stats: topic split + type split.
+def _extract_identifier(category_string: str) -> str:
+    return category_string.split(" ", 1)[0] if category_string else ""
+
+
+def _load_tree(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def _annotate_tree(
+    tree_nodes: list[dict],
+    identifier_to_laws: dict[str, list[dict]],
+) -> list[dict]:
+    """Annotate tree nodes with law counts and type breakdowns, prune empty."""
+    result = []
+    for node in tree_nodes:
+        ident = node.get("identifier", "")
+        own_laws = identifier_to_laws.get(ident, [])
+
+        children = _annotate_tree(
+            node.get("children", []), identifier_to_laws,
+        )
+
+        own_count = len(own_laws)
+        own_by_type: Counter[str] = Counter(
+            e.get("category_type", "") for e in own_laws
+        )
+
+        child_total = sum(c["total"] for c in children)
+        child_by_type: Counter[str] = Counter()
+        for c in children:
+            child_by_type.update(c["by_type"])
+
+        total = own_count + child_total
+        if total == 0:
+            continue
+
+        combined_by_type = dict((own_by_type + child_by_type).most_common())
+
+        annotated: dict = {
+            "identifier": ident,
+            "title": node.get("title", ""),
+            "total": total,
+            "own": own_count,
+            "by_type": combined_by_type,
+        }
+        if children:
+            annotated["children"] = children
+        result.append(annotated)
+
+    return result
+
+
+def generate_yearly_canton_stats(
+    entries: list[dict],
+    trees_dir: str | Path = "docs/trees",
+) -> dict[str, dict[str, dict]]:
+    """Generate per-year per-canton/CH stats with cross-tabs and tree structures.
 
     Returns ``{year: {entity: stats_dict}}`` where entity is a canton code
-    or ``"CH"`` for federal. Each stats_dict contains topic and type counts.
+    or ``"CH"`` for federal.
     """
+    trees_path = Path(trees_dir)
+    global_tree = _load_tree(trees_path / "global.json")
+    tree_cache: dict[str, list[dict]] = {}
+
+    def _get_canton_tree(entity: str) -> list[dict]:
+        if entity not in tree_cache:
+            tree_cache[entity] = _load_tree(trees_path / f"{entity.lower()}.json")
+        return tree_cache[entity]
+
     data: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
 
     for e in entries:
@@ -396,31 +465,65 @@ def generate_yearly_canton_stats(entries: list[dict]) -> dict[str, dict[str, dic
         result[year] = {}
         for entity in sorted(data[year]):
             laws = data[year][entity]
-            by_type: dict[str, int] = Counter()
-            by_topic: dict[str, int] = Counter()
-            by_global: dict[str, int] = Counter()
-            by_lang: dict[str, int] = Counter()
 
+            # --- by_type with cross-tabs ---
+            type_groups: dict[str, list[dict]] = defaultdict(list)
+            categorized = 0
             for e in laws:
                 ct = e.get("category_type", "")
                 if ct:
-                    by_type[ct] += 1
+                    type_groups[ct].append(e)
+                    categorized += 1
+
+            by_type: dict[str, dict] = {}
+            for type_name in sorted(type_groups, key=lambda t: -len(type_groups[t])):
+                type_laws = type_groups[type_name]
+                by_type[type_name] = {
+                    "total": len(type_laws),
+                    "by_topic": dict(Counter(
+                        e["systematic_category"] for e in type_laws
+                        if e.get("systematic_category")
+                    ).most_common()),
+                    "by_global_category": dict(Counter(
+                        e["global_category"] for e in type_laws
+                        if e.get("global_category")
+                    ).most_common()),
+                }
+
+            # --- by_topic_tree ---
+            topic_map: dict[str, list[dict]] = defaultdict(list)
+            for e in laws:
                 sc = e.get("systematic_category", "")
                 if sc:
-                    by_topic[sc] += 1
+                    topic_map[_extract_identifier(sc)].append(e)
+
+            canton_tree = _get_canton_tree(entity)
+            by_topic_tree = _annotate_tree(canton_tree, topic_map)
+
+            # --- by_global_category_tree ---
+            global_map: dict[str, list[dict]] = defaultdict(list)
+            for e in laws:
                 gc = e.get("global_category", "")
                 if gc:
-                    by_global[gc] += 1
-                by_lang[e.get("language", "unknown")] += 1
+                    global_map[_extract_identifier(gc)].append(e)
+
+            by_global_tree = _annotate_tree(global_tree, global_map)
+
+            # --- by_language ---
+            by_lang: Counter[str] = Counter(
+                e.get("language", "unknown") for e in laws
+            )
 
             result[year][entity] = {
                 "year": year,
                 "entity": entity,
                 "total": len(laws),
-                "by_type": dict(Counter(by_type).most_common()),
-                "by_topic": dict(Counter(by_topic).most_common()),
-                "by_global_category": dict(Counter(by_global).most_common()),
-                "by_language": dict(Counter(by_lang).most_common()),
+                "categorized": categorized,
+                "uncategorized": len(laws) - categorized,
+                "by_type": by_type,
+                "by_topic_tree": by_topic_tree,
+                "by_global_category_tree": by_global_tree,
+                "by_language": dict(by_lang.most_common()),
             }
 
     return result

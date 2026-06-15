@@ -32,7 +32,9 @@ class GitCommitter:
 
     def _date_env(self, d: date) -> dict:
         """Set GIT_AUTHOR_DATE and GIT_COMMITTER_DATE to a specific date."""
-        # Git requires timezone offset in ISO 8601 format
+        # Git can't handle dates before 1970; clamp to 1970-01-02
+        if d.year < 1970:
+            d = date(1970, 1, 2)
         dt = datetime(d.year, d.month, d.day, 12, 0, 0)
         iso = dt.strftime("%Y-%m-%dT%H:%M:%S+01:00")
         return {

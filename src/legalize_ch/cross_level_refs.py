@@ -624,18 +624,18 @@ def inject_cross_level_links(repo_path: str = ".") -> dict:
     }
 
 
-def write_cross_level_json(repo_path: str = ".") -> Path:
+def write_cross_level_json(repo_path: str = ".", output_dir: str | Path | None = None) -> Path:
     """Analyze cross-level references and write JSON output.
 
-    Writes to docs/cross_level_refs.json.
-
-    Returns:
-        Path to the written JSON file.
+    Args:
+        repo_path: Path to the law repo (source of .md files).
+        output_dir: Directory for output (default: {repo_path}/docs).
     """
     result = analyze_cross_level_refs(repo_path)
     data = result.to_dict()
 
-    out_path = Path(repo_path) / "docs" / "cross_level_refs.json"
+    base = Path(output_dir) if output_dir else Path(repo_path) / "docs"
+    out_path = base / "cross_level_refs.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
         json.dumps(data, ensure_ascii=False, indent=2),
@@ -645,12 +645,15 @@ def write_cross_level_json(repo_path: str = ".") -> Path:
     return out_path
 
 
-def write_cross_level_html(repo_path: str = ".") -> Path:
+def write_cross_level_html(repo_path: str = ".", output_dir: str | Path | None = None) -> Path:
     """Generate the cross-level references HTML viewer page.
 
-    Writes to docs/cross_level_refs.html.
+    Args:
+        repo_path: Path to the law repo (unused, kept for API compat).
+        output_dir: Directory for output (default: {repo_path}/docs).
     """
-    out_path = Path(repo_path) / "docs" / "cross_level_refs.html"
+    base = Path(output_dir) if output_dir else Path(repo_path) / "docs"
+    out_path = base / "cross_level_refs.html"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(_CROSS_LEVEL_HTML, encoding="utf-8")
     logger.info("Written: %s", out_path)

@@ -1,13 +1,8 @@
-"""Fetch Zürich cantonal law from the ZHLex API (zhlex.zh.ch).
+"""Fetch Zürich cantonal law from zh.ch (new API, replaces old zhlex.zh.ch).
 
-Zürich provides a structured REST API at zhlex.zh.ch for accessing its
-cantonal law collection (Zürcher Gesetzessammlung / Loseblattsammlung).
-
-This module implements a dedicated fetcher that:
-  1. Retrieves the full catalog of Zürich laws (Erlasse)
-  2. Fetches individual law texts (Erlasstexte) as HTML
-  3. Supports version history retrieval
-  4. Integrates with the cantonal pipeline via CantonalLawEntry/Text models
+The old ZHLex API at zhlex.zh.ch was decommissioned; the canton now serves
+its law collection at zh.ch with a JSON catalog endpoint and server-rendered
+HTML detail pages.
 """
 from __future__ import annotations
 
@@ -23,32 +18,22 @@ from .cantonal import CantonalLawEntry, CantonalLawText, CantonalLawVersion
 
 logger = logging.getLogger(__name__)
 
-# Retry configuration (mirrors cantonal.py)
 MAX_RETRIES = 4
 INITIAL_BACKOFF = 2.0
 BACKOFF_FACTOR = 2.0
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 
-# ZHLex API base
-ZHLEX_BASE = "https://www.zhlex.zh.ch"
-ZHLEX_API = f"{ZHLEX_BASE}/api/zhlex/v1"
-
-# Catalog endpoint — returns all Erlasse (enacted laws)
-CATALOG_URL = f"{ZHLEX_API}/erlasse"
-# Law text endpoint pattern — returns a specific Erlass with full text
-ERLASS_URL = ZHLEX_API + "/erlasstexte/{erlass_id}"
-# Versions endpoint pattern
-VERSIONS_URL = ZHLEX_API + "/erlasse/{erlass_id}/versionen"
+ZHCH_BASE = "https://www.zh.ch"
+CATALOG_URL = (
+    ZHCH_BASE
+    + "/de/politik-staat/gesetze-beschluesse/gesetzessammlung"
+    "/_jcr_content/main/lawcollectionsearch_312548694"
+    ".zhweb-zhlex-ls.zhweb-cache.json"
+)
 
 
 class ZurichFetcher:
-    """Fetches Zürich cantonal law from the ZHLex REST API.
-
-    The ZHLex API provides:
-      - /api/zhlex/v1/erlasse — catalog of all laws
-      - /api/zhlex/v1/erlasstexte/{id} — full text of a law
-      - /api/zhlex/v1/erlasse/{id}/versionen — version history
-    """
+    """Fetches Zürich cantonal law from zh.ch."""
 
     def __init__(self, rate_limit: float = 1.0):
         self.rate_limit = rate_limit
@@ -56,7 +41,6 @@ class ZurichFetcher:
         self.session = requests.Session()
         self.session.headers.update({
             "User-Agent": "legalize-ch/0.1 (swiss-law pipeline)",
-            "Accept": "application/json",
         })
 
     def _throttle(self):
@@ -65,20 +49,17 @@ class ZurichFetcher:
             time.sleep(self.rate_limit - elapsed)
         self._last_request = time.time()
 
-    def _get(self, url: str, params: dict | None = None) -> dict | list | None:
-        """HTTP GET with retry and exponential backoff."""
+    def _get_json(self, url: str, params: dict | None = None) -> dict | None:
         backoff = INITIAL_BACKOFF
         for attempt in range(1, MAX_RETRIES + 1):
             self._throttle()
             try:
-                resp = self.session.get(url, params=params, timeout=30)
+                resp = self.session.get(url, params=params, timeout=30,
+                                        headers={"Accept": "application/json"})
                 if resp.status_code == 404:
                     return None
                 if resp.status_code in RETRYABLE_HTTP_CODES and attempt < MAX_RETRIES:
-                    logger.warning(
-                        "HTTP %d from %s (attempt %d) — retrying in %.1fs",
-                        resp.status_code, url, attempt, backoff,
-                    )
+                    logger.warning("HTTP %d from %s (attempt %d)", resp.status_code, url, attempt)
                     time.sleep(backoff)
                     backoff *= BACKOFF_FACTOR
                     continue
@@ -86,7 +67,7 @@ class ZurichFetcher:
                 return resp.json()
             except requests.exceptions.RequestException as e:
                 if attempt < MAX_RETRIES:
-                    logger.warning("Failed %s (attempt %d): %s — retrying", url, attempt, e)
+                    logger.warning("Failed %s (attempt %d): %s", url, attempt, e)
                     time.sleep(backoff)
                     backoff *= BACKOFF_FACTOR
                 else:
@@ -94,15 +75,12 @@ class ZurichFetcher:
         return None
 
     def _get_html(self, url: str) -> str:
-        """Fetch HTML content with retry."""
         backoff = INITIAL_BACKOFF
         for attempt in range(1, MAX_RETRIES + 1):
             self._throttle()
             try:
-                resp = self.session.get(
-                    url, timeout=30,
-                    headers={**self.session.headers, "Accept": "text/html"},
-                )
+                resp = self.session.get(url, timeout=30,
+                                        headers={"Accept": "text/html"})
                 if resp.status_code in RETRYABLE_HTTP_CODES and attempt < MAX_RETRIES:
                     time.sleep(backoff)
                     backoff *= BACKOFF_FACTOR
@@ -120,27 +98,15 @@ class ZurichFetcher:
     # ─── Catalog ──────────────────────────────────────────────────────────────
 
     def fetch_catalog(self, lang: str = "de") -> list[CantonalLawEntry]:
-        """Fetch the full catalog of Zürich cantonal laws.
-
-        Returns a list of CantonalLawEntry objects with systematic numbers
-        (LS-Nummern), titles, and internal IDs for text retrieval.
-        """
         entries: list[CantonalLawEntry] = []
-        offset = 0
-        page_size = 100
+        page = 1
 
         while True:
-            params = {
-                "offset": offset,
-                "limit": page_size,
-                "language": lang,
-                "inForce": "true",
-            }
-            data = self._get(CATALOG_URL, params=params)
-            if not data:
+            data = self._get_json(CATALOG_URL, params={"page": page})
+            if not data or "data" not in data:
                 break
 
-            items = _extract_items(data)
+            items = data["data"]
             if not items:
                 break
 
@@ -149,16 +115,12 @@ class ZurichFetcher:
                 if entry:
                     entries.append(entry)
 
-            # Check if there are more pages
-            if isinstance(data, dict):
-                total = data.get("total", data.get("totalCount", 0))
-                if total and offset + page_size >= total:
-                    break
-            if len(items) < page_size:
+            total_pages = data.get("numberOfResultPages", 1)
+            if page >= total_pages:
                 break
-            offset += page_size
+            page += 1
 
-        logger.info("ZHLex catalog: fetched %d laws", len(entries))
+        logger.info("ZH catalog: fetched %d laws", len(entries))
         return entries
 
     # ─── Law text ─────────────────────────────────────────────────────────────
@@ -167,75 +129,64 @@ class ZurichFetcher:
         self, systematic_number: str, lang: str = "de",
         erlass_id: str = "",
     ) -> CantonalLawText | None:
-        """Fetch the current text of a Zürich law by systematic number.
-
-        Strategy:
-        1. If erlass_id is provided, fetch directly by ID
-        2. Otherwise, search the catalog for the systematic number
-        3. Fetch the full HTML text via the erlasstexte endpoint
-        """
-        # Resolve erlass_id if not provided
-        if not erlass_id:
-            erlass_id = self._resolve_erlass_id(systematic_number, lang)
-        if not erlass_id:
-            logger.debug("Could not resolve erlass_id for ZH/%s", systematic_number)
+        link = erlass_id  # erlass_id stores the relative URL from catalog
+        if not link:
+            link = self._resolve_link(systematic_number)
+        if not link:
             return None
 
-        # Fetch the law text
-        url = ERLASS_URL.format(erlass_id=erlass_id)
-        data = self._get(url)
-        if not data:
+        url = ZHCH_BASE + link if link.startswith("/") else link
+        html = self._get_html(url)
+        if not html:
             return None
 
-        return _parse_law_text(data, systematic_number, lang)
+        return _parse_law_html(html, systematic_number, lang)
 
-    def _resolve_erlass_id(self, systematic_number: str, lang: str = "de") -> str:
-        """Search catalog for a law's internal ID by systematic number."""
-        params = {
-            "lsNummer": systematic_number,
-            "language": lang,
-            "limit": 5,
-        }
-        data = self._get(CATALOG_URL, params=params)
-        if not data:
-            return ""
-
-        items = _extract_items(data)
-        for item in items:
-            item_nr = item.get("lsNummer", item.get("systematicNumber", ""))
-            if item_nr == systematic_number:
-                return str(item.get("id", item.get("erlassId", "")))
-
-        # Fallback: return first match
-        if items:
-            return str(items[0].get("id", items[0].get("erlassId", "")))
+    def _resolve_link(self, systematic_number: str) -> str:
+        catalog = self.fetch_catalog()
+        for entry in catalog:
+            if entry.systematic_number == systematic_number:
+                return entry.lexfind_id  # stores the link
         return ""
 
     # ─── Versions ─────────────────────────────────────────────────────────────
 
-    def fetch_versions(
-        self, systematic_number: str, erlass_id: str = "",
-    ) -> list[CantonalLawVersion]:
-        """Fetch all available versions of a Zürich law."""
-        if not erlass_id:
-            erlass_id = self._resolve_erlass_id(systematic_number)
-        if not erlass_id:
+    def fetch_versions(self, systematic_number: str, erlass_id: str = "") -> list[CantonalLawVersion]:
+        link = erlass_id or self._resolve_link(systematic_number)
+        if not link:
             return []
 
-        url = VERSIONS_URL.format(erlass_id=erlass_id)
-        data = self._get(url)
-        if not data:
+        url = ZHCH_BASE + link if link.startswith("/") else link
+        html = self._get_html(url)
+        if not html:
             return []
 
         versions: list[CantonalLawVersion] = []
-        items = data if isinstance(data, list) else data.get("versionen", data.get("items", []))
+        for m in re.finditer(
+            r'href="(/de/politik-staat/gesetze-beschluesse/gesetzessammlung/zhlex-ls/'
+            r'erlass-[^"]+)"',
+            html,
+        ):
+            v_link = m.group(1)
+            v_match = re.search(
+                r'erlass-([^-]+)-(\d{4})_(\d{2})_(\d{2})-(\d{4})_(\d{2})_(\d{2})',
+                v_link,
+            )
+            if v_match:
+                ref = v_match.group(1).replace("_", ".")
+                try:
+                    d = date(int(v_match.group(5)), int(v_match.group(6)), int(v_match.group(7)))
+                except ValueError:
+                    d = None
+                versions.append(CantonalLawVersion(
+                    canton="zh",
+                    systematic_number=ref,
+                    version_id=v_link,
+                    title="",
+                    date_in_force=d,
+                    abbreviation="",
+                ))
 
-        for item in items:
-            version = _parse_version(item, systematic_number)
-            if version:
-                versions.append(version)
-
-        # Sort by date ascending
         versions.sort(key=lambda v: v.date_in_force or date.min)
         return versions
 
@@ -243,183 +194,111 @@ class ZurichFetcher:
         self, systematic_number: str, version_id: int | str,
         lang: str = "de",
     ) -> CantonalLawText | None:
-        """Fetch a specific version's text."""
-        url = ERLASS_URL.format(erlass_id=version_id)
-        data = self._get(url)
-        if not data:
+        link = str(version_id)
+        url = ZHCH_BASE + link if link.startswith("/") else link
+        html = self._get_html(url)
+        if not html:
             return None
-
-        return _parse_law_text(data, systematic_number, lang)
+        return _parse_law_html(html, systematic_number, lang)
 
 
 # ─── Parsing helpers ──────────────────────────────────────────────────────────
 
 
-def _extract_items(data: dict | list) -> list[dict]:
-    """Extract the list of items from a ZHLex API response.
-
-    The API may return a bare list or a wrapper object with various key names.
-    """
-    if isinstance(data, list):
-        return data
-    for key in ("erlasse", "items", "results", "data", "content"):
-        if key in data and isinstance(data[key], list):
-            return data[key]
-    return []
-
-
 def _parse_catalog_entry(item: dict) -> CantonalLawEntry | None:
-    """Parse a single catalog item into a CantonalLawEntry."""
-    systematic_number = item.get("lsNummer", item.get("systematicNumber", ""))
-    if not systematic_number:
+    ref = item.get("referenceNumber", "")
+    if not ref:
         return None
 
-    title = (
-        item.get("titel", "")
-        or item.get("title", "")
-        or item.get("erpiTitle", "")
-    )
-    abbreviation = item.get("abkuerzung", item.get("abbreviation", ""))
-    erlass_id = str(item.get("id", item.get("erlassId", "")))
+    title = item.get("enactmentTitle", "").strip()
+    link = item.get("link", "")
+    enactment_date = _parse_swiss_date(item.get("enactmentDate", ""))
 
-    # Parse enactment date
-    enactment_date = _parse_date_field(
-        item.get("erlassDatum", item.get("enactmentDate", ""))
-    )
-
-    # Active status
-    is_active = item.get("inKraft", item.get("inForce", True))
+    is_active = not item.get("withdrawalDate", "")
 
     return CantonalLawEntry(
         canton="zh",
-        systematic_number=systematic_number,
+        systematic_number=ref,
         title=title,
-        abbreviation=abbreviation,
+        abbreviation="",
         enactment_date=enactment_date,
-        is_active=bool(is_active),
-        lexfind_id=erlass_id,  # store ZHLex ID in lexfind_id field for compat
+        is_active=is_active,
+        lexfind_id=link,
     )
 
 
-def _parse_law_text(data: dict, systematic_number: str, lang: str) -> CantonalLawText | None:
-    """Parse a law text API response into a CantonalLawText."""
-    # The response may have the text nested under various keys
-    text_data = data
-    if "erlasstext" in data:
-        text_data = data["erlasstext"]
-    elif "erlass" in data:
-        text_data = data["erlass"]
+def _parse_law_html(html: str, systematic_number: str, lang: str) -> CantonalLawText | None:
+    title = ""
+    m = re.search(r"<title[^>]*>([^<]+)</title>", html)
+    if m:
+        title = m.group(1).strip()
+        title = re.sub(r"\s*\|.*$", "", title)
 
-    # Extract HTML content
-    html_content = (
-        text_data.get("htmlContent", "")
-        or text_data.get("xhtml", "")
-        or text_data.get("text", "")
-        or text_data.get("inhalt", "")
-    )
-
-    title = (
-        text_data.get("titel", "")
-        or text_data.get("title", "")
-        or data.get("titel", "")
-        or data.get("title", "")
-    )
-
-    abbreviation = (
-        text_data.get("abkuerzung", "")
-        or text_data.get("abbreviation", "")
-        or data.get("abkuerzung", "")
-        or data.get("abbreviation", "")
-    )
-
-    # Parse version/effective date
-    version_date = _parse_date_field(
-        text_data.get("inkrafttretungsDatum", "")
-        or text_data.get("inForceSince", "")
-        or text_data.get("gueltigAb", "")
-        or data.get("inkrafttretungsDatum", "")
-        or data.get("inForceSince", "")
-    )
-
-    # Fallback: enactment date
-    if not version_date:
-        version_date = _parse_date_field(
-            text_data.get("erlassDatum", "")
-            or data.get("erlassDatum", "")
-            or data.get("enactmentDate", "")
-        )
-
-    if not html_content and not title:
+    content = _extract_content(html)
+    if not content:
         return None
+
+    version_date = None
+    date_m = re.search(
+        r'erlass-[^-]+-(\d{4})_(\d{2})_(\d{2})-(\d{4})_(\d{2})_(\d{2})',
+        html,
+    )
+    if date_m:
+        try:
+            version_date = date(int(date_m.group(4)), int(date_m.group(5)), int(date_m.group(6)))
+        except ValueError:
+            pass
 
     return CantonalLawText(
         canton="zh",
         systematic_number=systematic_number,
         title=title,
-        html_content=html_content,
+        html_content=content,
         language=lang,
         version_date=version_date,
-        abbreviation=abbreviation,
+        abbreviation="",
     )
 
 
-def _parse_version(item: dict, systematic_number: str) -> CantonalLawVersion | None:
-    """Parse a version history item into a CantonalLawVersion."""
-    version_id = item.get("id", item.get("versionId", ""))
-    if not version_id:
-        return None
+def _extract_content(html: str) -> str:
+    for pattern in [
+        r'<div[^>]*class="[^"]*mdl-richtext[^"]*"[^>]*>(.*?)</div>\s*</div>',
+        r'<article[^>]*>(.*?)</article>',
+        r'<main[^>]*>(.*?)</main>',
+    ]:
+        m = re.search(pattern, html, re.DOTALL)
+        if m:
+            block = m.group(1).strip()
+            if len(block) > 200:
+                return block
 
-    title = item.get("titel", item.get("title", ""))
-
-    date_in_force = _parse_date_field(
-        item.get("inkrafttretungsDatum", "")
-        or item.get("inForceSince", "")
-        or item.get("gueltigAb", "")
+    sections = re.findall(
+        r'(<(?:h[1-6]|p|div|table|ol|ul)[^>]*>.*?</(?:h[1-6]|p|div|table|ol|ul)>)',
+        html,
+        re.DOTALL,
     )
+    candidate = "\n".join(sections)
+    if len(candidate) > 500:
+        return candidate
 
-    abbreviation = item.get("abkuerzung", item.get("abbreviation", ""))
+    body_m = re.search(r"<body[^>]*>(.*?)</body>", html, re.DOTALL)
+    if body_m:
+        return body_m.group(1)
 
-    return CantonalLawVersion(
-        canton="zh",
-        systematic_number=systematic_number,
-        version_id=version_id,
-        title=title,
-        date_in_force=date_in_force,
-        abbreviation=abbreviation,
-    )
+    return html
 
 
-def _parse_date_field(value: Any) -> date | None:
-    """Parse a date from various ZHLex date formats."""
-    if not value:
-        return None
-    if isinstance(value, date):
-        return value
-    s = str(value).strip()
+def _parse_swiss_date(s: str) -> date | None:
     if not s:
         return None
-
-    # ISO format: 2024-01-01 or 2024-01-01T00:00:00
-    try:
-        return date.fromisoformat(s[:10])
-    except (ValueError, IndexError):
-        pass
-
-    # Swiss format: 01.01.2024
-    m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", s)
+    m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", s.strip())
     if m:
         try:
             return date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
         except ValueError:
             pass
-
-    # Unix timestamp in milliseconds
-    if s.isdigit() and len(s) >= 10:
-        try:
-            from datetime import datetime
-            ts = int(s) / 1000 if len(s) > 10 else int(s)
-            return datetime.fromtimestamp(ts).date()
-        except (ValueError, OSError):
-            pass
-
+    try:
+        return date.fromisoformat(s.strip()[:10])
+    except (ValueError, IndexError):
+        pass
     return None

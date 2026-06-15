@@ -1,92 +1,245 @@
-# Swiss Federal Law (SR) — Version-Controlled
+# Swiss Law — Version-Controlled
 
-Every Swiss federal law in Markdown, with a full git history of every amendment since inception.
+Every Swiss federal and cantonal law in Markdown, with a full git history of every amendment.
 
-## Stats
+## At a glance
 
-| | DE | FR | IT | Total |
-|---|---|---|---|---|
-| Laws | 9,035 | 9,035 | 9,034 | 27,104 |
-| Commits | — | — | — | 18,710 |
+| Scope | Laws | Languages |
+|-------|------|-----------|
+| Federal (SR) | 11,151 | DE, FR, IT |
+| Cantonal (26 cantons) | 26,507 | DE, FR, IT |
+| **Total** | **62,686** | |
+
+59,600+ git commits. Updated weekly.
 
 ## How it works
 
-1. Fetches the complete SR catalog from [Fedlex SPARQL](https://fedlex.data.admin.ch/sparqlendpoint)
-2. For each law, retrieves every consolidation version (historical snapshots)
-3. Converts AKN XML / HTML to clean Markdown with YAML frontmatter
-4. Commits each version with the correct author-date, so `git log` shows the legislative timeline
+```mermaid
+graph LR
+    subgraph Sources
+        FX[Fedlex SPARQL]
+        LW[LexWork API<br/>14 cantons]
+        LF[LexFind API + PDF<br/>9 cantons]
+        ZH[ZH / GE / NE<br/>dedicated scrapers]
+    end
+
+    subgraph Pipeline
+        FE[Fetch catalog]
+        TX[Transform to<br/>Markdown]
+        CM[Git commit<br/>with correct date]
+        EN[Enrich<br/>categories]
+    end
+
+    subgraph Output
+        MD[ch/**/*.md<br/>law files]
+        ST[stats.json<br/>tags.json]
+        API[API<br/>stats / publications]
+    end
+
+    FX --> FE
+    LW --> FE
+    LF --> FE
+    ZH --> FE
+    FE --> TX --> CM --> MD
+    MD --> EN --> MD
+    MD --> ST --> API
+```
+
+1. Fetches law catalogs from official Swiss sources
+2. Downloads law text (HTML, XML, or PDF) and converts to clean Markdown with YAML frontmatter
+3. Commits each version with the correct author-date, so `git log` shows the legislative timeline
+4. Enriches cantonal laws with LexFind category metadata (instrument type, topic, legal domain)
+5. Generates statistics, search index, and per-year per-canton breakdowns
+
+## Repository structure
+
+This project uses two repositories:
+
+| Repo | Purpose | Contents |
+|------|---------|----------|
+| **swiss-law** (this repo) | Law text + pipeline code | `ch/` (markdown files), `src/`, `scripts/`, `docs/tags.json`, `docs/trees/` |
+| **[swiss-law-as-source](https://github.com/swiss-law-as-source/swiss-law-as-source.github.io)** | Website + statistics API | `stats.json`, `laws.json`, `api/v1/`, HTML pages |
+
+```
+swiss-law/
+├── ch/
+│   ├── 0/de/0.101.md          # Federal: SR 0.xxx (international treaties)
+│   ├── 1/de/101.md            # Federal: SR 1xx (constitutional law)
+│   ├── ...                    # Federal: SR 2xx-9xx
+│   ├── ag/de/110.000.md       # Cantonal: Aargau
+│   ├── be/de/101.1.md         # Cantonal: Bern
+│   ├── ...                    # 26 cantons
+│   └── zh/de/101.md           # Cantonal: Zurich
+├── src/legalize_ch/           # Pipeline source code
+├── scripts/                   # Operational scripts
+├── data/                      # Pipeline state (not committed)
+└── docs/
+    ├── tags.json              # Complete law index with metadata
+    └── trees/                 # LexFind category taxonomies (28 JSON files)
+```
+
+## Frontmatter schema
+
+**Federal law** (`ch/{sr_prefix}/{lang}/{sr_number}.md`):
+
+```yaml
+---
+sr_number: '101'
+title: Bundesverfassung der Schweizerischen Eidgenossenschaft
+abbreviation: BV
+language: de
+version_date: '2024-03-03'
+source: https://fedlex.data.admin.ch
+---
+```
+
+**Cantonal law** (`ch/{canton}/{lang}/{systematic_number}.md`):
+
+```yaml
+---
+canton: BS
+systematic_number: '300.100'
+title: Gesundheitsgesetz
+abbreviation: GesG
+language: de
+category_type: Gesetz
+systematic_category: 30 Gesundheit
+global_category: 8.10.60 Spitalexterne Krankenpflege
+version_date: '2025-01-01'
+source: LexWork
+---
+```
+
+| Field | Scope | Description |
+|-------|-------|-------------|
+| `sr_number` | Federal | Systematic number in the SR classification |
+| `canton` | Cantonal | Two-letter canton code (e.g. BS, ZH) |
+| `systematic_number` | Cantonal | Canton-specific numbering |
+| `category_type` | Cantonal | Instrument type: Gesetz, Verordnung, Loi, Ordonnance, ... |
+| `systematic_category` | Cantonal | Canton topic tree node (e.g. "30 Gesundheit") |
+| `global_category` | Cantonal | Cross-canton legal domain (e.g. "8.10.60 Spitalexterne Krankenpflege") |
+| `version_date` | Both | Date of the current consolidated version |
+| `source` | Both | Data source identifier |
+
+## Data sources
+
+### Canton source map
+
+| Source | Cantons | Method | Languages |
+|--------|---------|--------|-----------|
+| **LexWork API** | AG, AR, BE, BL, BS, FR, GL, GR, LU, SG, SO, TG, VS, ZG | JSON REST API | de (+fr for BE/FR/VS, +it/rm for GR) |
+| **LexFind PDF** | AI, JU, NW, OW, SH, SZ, TI, UR, VD | PDF download + `pdftotext` extraction | de/fr/it per canton |
+| **ZH dedicated** | ZH | zh.ch JSON API | de |
+| **GE dedicated** | GE | silgeneve.ch HTML scraper | fr |
+| **NE dedicated** | NE | rsn.ne.ch HTML scraper | fr |
+| **Fedlex SPARQL** | (federal) | SPARQL endpoint + AKN XML/HTML | de, fr, it |
+
+All cantons get their **catalog and category metadata** from [LexFind](https://www.lexfind.ch/) regardless of text source.
+
+## Incremental updates
+
+```mermaid
+flowchart TD
+    A[Start update] --> B{Federal}
+    B -->|Fedlex SPARQL| C[Query laws modified<br/>since last_run]
+    C --> D[Fetch only new<br/>consolidation versions]
+    D --> E[Transform + commit]
+
+    A --> F{Cantonal<br/>26 cantons}
+    F -->|Per canton| G[Re-fetch catalog<br/>from source]
+    G --> H{For each law}
+    H -->|New law<br/>not in state| I[Fetch text + commit]
+    H -->|Known law| J[Fetch text,<br/>compare version_date]
+    J -->|Changed| K[Update file + commit]
+    J -->|Same| L[Skip]
+
+    E --> M[Enrich categories<br/>for new laws]
+    I --> M
+    K --> M
+    M --> N[Regenerate stats<br/>+ search index]
+    N --> O[Push both repos]
+```
+
+The pipeline tracks state in `data/pipeline_state.json` (federal) and `data/cantonal_pipeline_state.json` (cantonal). Each processed law is recorded so subsequent runs only fetch new or changed content.
 
 ## Usage
 
-**Browse a law's history:**
+### Browse law history
+
 ```bash
-git log --follow ch/de/142.20.md   # Immigration Act amendments
+git log --follow ch/de/142.20.md          # Federal: Immigration Act amendments
+git log --follow ch/bs/de/300.100.md      # Cantonal: Basel-Stadt health law
+git log --after="2024-01-01" --oneline    # All changes since 2024
 ```
 
-**See what changed on a specific date:**
-```bash
-git log --after="2020-01-01" --before="2020-12-31" --oneline
-```
+### Get a law at a point in time
 
-**Get the text of a law at a point in time:**
 ```bash
 git log --before="2015-06-01" -1 --format="%H" -- ch/de/220.md | xargs git show | head -50
 ```
 
-## File structure
-
-```
-ch/
-├── de/          # German texts (9,035 laws)
-│   ├── 101.md  # Federal Constitution
-│   ├── 210.md  # Civil Code
-│   └── ...
-├── fr/          # French texts
-└── it/          # Italian texts
-```
-
-Each file has YAML frontmatter:
-```yaml
----
-sr: "101"
-title: "Bundesverfassung der Schweizerischen Eidgenossenschaft"
-language: de
-source_url: https://fedlex.data.admin.ch/eli/cc/1999/404
----
-```
-
-## Commit chronology
-
-Each commit uses `--date` to set the author/committer date to the law's
-consolidation date, so `git log` shows the legislative timeline.
-
-**Note on historical commits (pre-2026-05-05):** The initial bulk import
-processed laws sequentially by SR number. Within each law, versions are in
-strict chronological order, but commits for *different* laws may interleave
-in time. For example, all versions of SR 172.221.104 (1971-1997) appear as a
-block, followed by all versions of the next law.
-
-**Going forward:** The pipeline now sorts all revisions globally by date
-before committing (`--chronological`, enabled by default), ensuring new runs
-produce a strictly chronological git history.
-
-To query the history for a specific law (recommended):
-```bash
-git log --follow ch/de/220.md   # Always chronological per file
-```
-
-## Running the pipeline
+### Run the pipeline
 
 ```bash
 pip install -e .
-legalize-ch bootstrap          # Full pipeline (fetches all laws, sorted by date)
-legalize-ch update             # Incremental update (since last run)
-legalize-ch bootstrap --sr 101 # Single law
+
+# Full bootstrap (initial fetch)
+legalize-ch bootstrap --scope all              # Federal + all 26 cantons
+legalize-ch bootstrap --scope cantonal -c zh   # Single canton
+
+# Incremental update
+legalize-ch update --scope all                 # Everything since last run
+legalize-ch update --scope cantonal -c bs      # Single canton
+
+# Enrich categories
+legalize-ch enrich-categories                  # Back-fill LexFind metadata
+
+# Generate statistics
+legalize-ch stats                              # stats.json, tags.json, API files
+legalize-ch index                              # laws.json search index
 ```
 
-## Data source
+### Automated weekly update
 
-All data is sourced from [Fedlex](https://www.fedlex.admin.ch/), the official publication platform of Swiss federal law, via their public SPARQL endpoint.
+```bash
+./scripts/update_all.sh              # Update all sources, no push
+./scripts/update_all.sh 0.5 --push   # Update + push both repos
+```
+
+The cron job (`scripts/weekly_update.sh`) runs every Monday at 03:43, updates everything, pushes to GitHub, and sends a Telegram notification.
+
+## CLI commands
+
+| Command | Description |
+|---------|-------------|
+| `bootstrap` | Full pipeline fetch and commit (federal and/or cantonal) |
+| `update` | Incremental update since last run |
+| `stats` | Generate statistics, tags, category trees |
+| `index` | Generate INDEX.md and laws.json |
+| `enrich-categories` | Back-fill LexFind category metadata into cantonal files |
+| `cantonal` | Fetch a single cantonal law |
+| `cantonal-list` | List all cantons and their data sources |
+| `export` | Export metadata as CSV or JSON-LD |
+| `feed` | Generate RSS/Atom feeds of law changes |
+| `serve` | Start REST API server |
+| `cross-level-refs` | Detect federal-cantonal cross-references |
+| `health-check` | Alert if repo hasn't been updated |
+
+## Statistics output
+
+The `stats` command generates:
+
+| Output | Location | Description |
+|--------|----------|-------------|
+| `stats.json` | site repo | Aggregate counts by language, canton, category, year |
+| `tags.json` | `docs/` | Complete index of all 62,686 laws with metadata |
+| `trees/*.json` | `docs/trees/` | LexFind category taxonomies (26 cantons + federal + global) |
+| `api/v1/stats/{year}/{entity}.json` | site repo | Per-year per-canton breakdowns with topic trees |
+| `api/v1/publications/{year}.json` | site repo | Laws published in each year |
+
+## Architecture
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed technical documentation including module map, state management, and data flow diagrams.
 
 ## License
 

@@ -105,12 +105,25 @@ sys.exit(0 if ok else 1)
 # Count commits before
 COMMITS_BEFORE=$(git rev-list --count HEAD)
 
-# Run the incremental update
-echo "[1/5] Running incremental update..."
-if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --rate-limit 1.5 2>&1; then
-    ERRORS="Pipeline update command failed"
-    echo "WARNING: Pipeline update encountered errors."
+# 1a. Federal update (Fedlex SPARQL — date-filtered, fast)
+echo "[1/5] Running federal incremental update..."
+if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --scope federal --rate-limit 1.5 2>&1; then
+    ERRORS="Federal update failed"
+    echo "WARNING: Federal update encountered errors."
 fi
+
+# 1b. Cantonal update (all 26 cantons, sequential to avoid git lock)
+echo "[1.5/5] Running cantonal incremental update..."
+for canton in ag ai ar be bl bs fr ge gl gr ju lu ne nw ow sg sh so sz tg ti ur vd vs zg zh; do
+    if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --scope cantonal -c "$canton" --rate-limit 1.0 2>&1; then
+        echo "WARNING: Canton ${canton^^} update failed, continuing..."
+        ERRORS="${ERRORS:+${ERRORS}|||}Canton ${canton^^} update failed"
+    fi
+done
+
+# 1c. Enrich categories for any newly added cantonal laws
+echo "[1.7/5] Enriching categories for new laws..."
+"${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.5 2>&1 || true
 
 # Count commits after
 COMMITS_AFTER=$(git rev-list --count HEAD)
@@ -141,6 +154,22 @@ if [ "$UNPUSHED" != "0" ] && [ "$UNPUSHED" != "unknown" ]; then
     fi
 else
     echo "[4/5] Remote is up to date — skipping push."
+fi
+
+# ─── Regenerate stats/website into the site repo ───
+SITE_DIR="${SWISS_LAW_SITE_REPO:-/home/ubuntu/swiss-law-as-source}"
+if [ -d "$SITE_DIR/.git" ]; then
+    echo "[4.5/5] Regenerating stats into site repo (${SITE_DIR})..."
+    "${VENV}/bin/legalize-ch" stats --repo "$REPO_DIR" --site-repo "$SITE_DIR" --no-trees 2>&1 || true
+    "${VENV}/bin/legalize-ch" index --repo "$REPO_DIR" --site-repo "$SITE_DIR" 2>&1 || true
+
+    echo "  Deploying site repo..."
+    "${REPO_DIR}/scripts/deploy_site.sh" "Update $(date +%Y-%m-%d): ${NEW_COMMITS} new law commits" 2>&1 || {
+        echo "WARNING: Site deploy failed."
+        ERRORS="${ERRORS:+${ERRORS}|||}Site deploy failed"
+    }
+else
+    echo "[4.5/5] Site repo not found at ${SITE_DIR} — skipping site update."
 fi
 
 # Send Telegram notification

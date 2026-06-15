@@ -5,17 +5,13 @@ import json
 import logging
 from datetime import date
 from pathlib import Path
-from typing import NamedTuple
+
+import yaml
 
 from .cantonal import (
     CantonalFetcher,
-    CantonalLawEntry,
-    CantonalLawText,
     ALL_CANTONS,
     CANTON_LANGUAGES,
-    LEXWORK_CANTONS,
-    LEXFIND_ONLY_CANTONS,
-    DEDICATED_FETCHER_CANTONS,
     canton_to_path,
     cantonal_law_to_markdown,
 )
@@ -25,15 +21,6 @@ from .models import LawRevision
 logger = logging.getLogger(__name__)
 
 CANTONAL_STATE_FILE = "data/cantonal_pipeline_state.json"
-
-
-class _PendingCantonalRevision(NamedTuple):
-    """A cantonal revision ready to be committed."""
-    canton: str
-    systematic_number: str
-    title: str
-    date_val: date
-    texts: dict[str, str]  # lang -> markdown
 
 
 class CantonalPipeline:
@@ -69,6 +56,26 @@ class CantonalPipeline:
     def _mark_processed(self, canton: str, number: str, lang: str):
         key = self._state_key(canton, number, lang)
         self.state.setdefault("processed", {})[key] = True
+
+    def _stored_version_date(self, canton: str, number: str, lang: str) -> str | None:
+        """Read version_date from an existing .md file's frontmatter."""
+        rel_path = canton_to_path(canton, number, lang)
+        abs_path = self.repo_path / rel_path
+        if not abs_path.exists():
+            return None
+        try:
+            text = abs_path.read_text(encoding="utf-8")
+            if not text.startswith("---"):
+                return None
+            end = text.find("\n---", 3)
+            if end == -1:
+                return None
+            fm = yaml.safe_load(text[4:end])
+            if isinstance(fm, dict):
+                return str(fm.get("version_date", ""))
+        except Exception:
+            pass
+        return None
 
     def run(
         self,
@@ -112,10 +119,13 @@ class CantonalPipeline:
         languages: list[str] | None = None,
         limit: int | None = None,
     ) -> int:
-        """Incremental cantonal update — re-fetch catalogs, skip already-processed laws.
+        """Incremental cantonal update — fetch catalogs, update new or changed laws.
 
-        For cantonal laws we don't have date-based incremental detection (unlike
-        Fedlex SPARQL), so we re-scan the catalog and skip entries already in state.
+        For each canton:
+        1. Re-fetch catalog from the source (LexFind / LexWork / dedicated)
+        2. For new laws (not in state): fetch text and commit
+        3. For known laws: fetch text, compare version_date with stored file,
+           only overwrite + commit if the version changed
 
         Args:
             cantons: Canton abbreviations (default: all 26).
@@ -136,10 +146,10 @@ class CantonalPipeline:
                 continue
 
             logger.info("=== Updating canton %s ===", canton.upper())
-            commits = self._process_canton(canton, languages, limit)
+            commits = self._update_canton(canton, languages, limit)
             total_commits += commits
             if commits:
-                logger.info("Canton %s: %d new commits", canton.upper(), commits)
+                logger.info("Canton %s: %d new/updated commits", canton.upper(), commits)
             else:
                 logger.debug("Canton %s: up to date", canton.upper())
 
@@ -147,6 +157,108 @@ class CantonalPipeline:
         self._save_state()
         logger.info("Cantonal update complete. Total new commits: %d", total_commits)
         return total_commits
+
+    def _update_canton(
+        self, canton: str, languages: list[str], limit: int | None
+    ) -> int:
+        """Incremental update for a single canton.
+
+        Fetches the catalog, then for each law:
+        - New (no file): fetch text, write, commit
+        - Existing: fetch text, compare version_date, update only if changed
+        """
+        official = CANTON_LANGUAGES.get(canton, ["de"])
+        canton_langs = [l for l in languages if l in official] if languages else official
+        if not canton_langs:
+            canton_langs = official
+        catalog = self.fetcher.fetch_catalog(canton, canton_langs[0])
+        if not catalog:
+            logger.info("Canton %s: empty catalog, skipping", canton.upper())
+            return 0
+
+        if limit:
+            catalog = catalog[:limit]
+
+        logger.info("Canton %s: checking %d laws for updates in %s",
+                     canton.upper(), len(catalog), canton_langs)
+
+        commits = 0
+        checked = 0
+        skipped = 0
+        for i, entry in enumerate(catalog):
+            for lang in canton_langs:
+                is_known = self._is_processed(canton, entry.systematic_number, lang)
+                stored_date = self._stored_version_date(canton, entry.systematic_number, lang) if is_known else None
+
+                if is_known and stored_date:
+                    # Known law with a file — only re-fetch to check for updates
+                    text = self.fetcher.fetch_law_text(
+                        canton, entry.systematic_number, lang,
+                        lexfind_id=entry.lexfind_id,
+                    )
+                    if not text:
+                        skipped += 1
+                        continue
+
+                    new_date = text.version_date.isoformat() if text.version_date else ""
+                    if new_date == stored_date:
+                        skipped += 1
+                        continue
+                    # Version changed — update the file
+                    logger.info("Updated: %s %s (%s → %s)",
+                                canton.upper(), entry.systematic_number, stored_date, new_date)
+                elif is_known:
+                    skipped += 1
+                    continue
+                else:
+                    # New law — fetch text
+                    text = self.fetcher.fetch_law_text(
+                        canton, entry.systematic_number, lang,
+                        lexfind_id=entry.lexfind_id,
+                    )
+                    if not text:
+                        continue
+
+                checked += 1
+                md = cantonal_law_to_markdown(text, entry=entry)
+                rel_path = canton_to_path(canton, entry.systematic_number, lang)
+                abs_path = self.repo_path / rel_path
+                abs_path.parent.mkdir(parents=True, exist_ok=True)
+                abs_path.write_text(md, encoding="utf-8")
+
+                commit_date = text.version_date or date.today()
+                title = text.title or entry.title or entry.systematic_number
+                action = "Update" if is_known else "Add"
+                message = (
+                    f"{canton.upper()} {entry.systematic_number}: "
+                    f"{title} ({commit_date.isoformat()})"
+                )
+
+                self.committer._run_git("add", rel_path)
+                status = self.committer._run_git("diff", "--cached", "--quiet")
+                if status.returncode != 0:
+                    env = self.committer._date_env(commit_date)
+                    env["GIT_AUTHOR_NAME"] = self.committer.author_name
+                    env["GIT_AUTHOR_EMAIL"] = self.committer.author_email
+                    env["GIT_COMMITTER_NAME"] = self.committer.author_name
+                    env["GIT_COMMITTER_EMAIL"] = self.committer.author_email
+                    result = self.committer._run_git("commit", "-m", message, env=env)
+                    if result.returncode == 0:
+                        commits += 1
+                        logger.info("Committed (%s): %s", action.lower(), message)
+                    else:
+                        logger.error("Commit failed for %s/%s: %s",
+                                     canton, entry.systematic_number, result.stderr)
+
+                self._mark_processed(canton, entry.systematic_number, lang)
+
+            if (i + 1) % 50 == 0:
+                logger.info("  [%d/%d] checked (%d skipped, %d updated)...",
+                            i + 1, len(catalog), skipped, commits)
+                self._save_state()
+
+        self._save_state()
+        return commits
 
     def _process_canton(
         self, canton: str, languages: list[str], limit: int | None

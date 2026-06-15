@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 import logging
+import re
+import subprocess
+import tempfile
 import time
 from dataclasses import dataclass
 from datetime import date
@@ -50,11 +53,11 @@ LEXWORK_CANTONS: dict[str, str] = {
 }
 
 LEXFIND_ONLY_CANTONS = [
-    "ai", "ge", "ju", "ne", "nw", "ow", "sh", "sz", "ti", "ur", "vd",
+    "ai", "ju", "nw", "ow", "sh", "sz", "ti", "ur", "vd",
 ]
 
 # Cantons with dedicated fetchers (not LexWork, not generic LexFind)
-DEDICATED_FETCHER_CANTONS = ["zh"]
+DEDICATED_FETCHER_CANTONS = ["zh", "ge", "ne"]
 
 ALL_CANTONS = sorted(
     list(LEXWORK_CANTONS.keys()) + LEXFIND_ONLY_CANTONS + DEDICATED_FETCHER_CANTONS
@@ -235,11 +238,16 @@ class CantonalFetcher:
         return self._get_json(url)
 
     def fetch_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
-        """Fetch full catalog for a canton from LexFind systematics."""
+        """Fetch full catalog for a canton — dispatches to dedicated fetchers first."""
         if canton == "zh":
             from .zurich_fetcher import ZurichFetcher
-            zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
-            return zh_fetcher.fetch_catalog(lang)
+            return ZurichFetcher(rate_limit=self.rate_limit).fetch_catalog(lang)
+        if canton == "ge":
+            from .cantonal_scrapers import GeneveFetcher
+            return GeneveFetcher(rate_limit=self.rate_limit).fetch_catalog(lang)
+        if canton == "ne":
+            from .cantonal_scrapers import NeuchatelFetcher
+            return NeuchatelFetcher(rate_limit=self.rate_limit).fetch_catalog(lang)
 
         return self._fetch_lexfind_catalog_by_systematics(canton, lang)
 
@@ -422,9 +430,13 @@ class CantonalFetcher:
         2. If canton has LexWork portal → fetch from LexWork API
         3. Otherwise → fetch from LexFind
         """
-        # Dedicated fetcher (Zürich)
+        # Dedicated fetchers
         if canton == "zh":
             return self._fetch_from_zurich(number, lang, erlass_id=lexfind_id)
+        if canton == "ge":
+            return self._fetch_from_geneve(number, lang, filename=lexfind_id)
+        if canton == "ne":
+            return self._fetch_from_neuchatel(number, lang, filename=lexfind_id)
 
         # Try LexWork first
         if canton in LEXWORK_CANTONS:
@@ -467,7 +479,6 @@ class CantonalFetcher:
                 pass
         # Fallback: parse from version_dates_str
         if not version_date:
-            import re
             vds = sv.get("version_dates_str", "")
             m = re.search(r"seit:\s*(\d{2})\.(\d{2})\.(\d{4})", vds)
             if m:
@@ -496,26 +507,88 @@ class CantonalFetcher:
 
     def _fetch_from_lexfind(self, canton: str, number: str,
                             tol_id: str, lang: str = "de") -> CantonalLawText | None:
-        """Fetch law text for a LexFind-only canton.
+        """Fetch law text from LexFind PDF and extract via pdftotext."""
+        if not tol_id:
+            return None
 
-        LexFind serves the document itself only as a PDF (``/tol/{id}/{lang}``),
-        not as HTML. Until PDF text extraction is wired in, LexFind-only cantons
-        (AI, GE, JU, NE, NW, OW, SH, SZ, TI, UR, VD) yield a catalog but no text.
-        The 14 LexWork cantons and ZH are unaffected — they have structured text.
-        """
-        logger.info(
-            "Canton %s law %s: text only available as PDF on LexFind — skipping "
-            "(LexFind-only cantons need PDF extraction; not yet supported)",
-            canton.upper(), number,
+        pdf_url = f"https://www.lexfind.ch/tol/{tol_id}/{lang}"
+        pdf_bytes = self._get_pdf(pdf_url)
+        if not pdf_bytes:
+            return None
+
+        text = _pdf_to_text(pdf_bytes)
+        if not text or len(text) < 50:
+            logger.warning("Canton %s law %s: PDF text too short", canton.upper(), number)
+            return None
+
+        title = ""
+        lines = text.strip().split("\n")
+        for line in lines:
+            stripped = re.sub(r"\s+", " ", line).strip()
+            if not stripped:
+                continue
+            if re.match(r"^[\d\s.]+$", stripped):
+                continue
+            if re.match(r"^(Kanton|Canton|Cantone|Gesetzessammlung|Raccolta|Recueil)\b", stripped):
+                continue
+            title = stripped
+            break
+
+        version_date = _parse_lexfind_date(text, lang)
+
+        return CantonalLawText(
+            canton=canton,
+            systematic_number=number,
+            title=title,
+            html_content=text,
+            language=lang,
+            version_date=version_date,
         )
+
+    def _get_pdf(self, url: str) -> bytes | None:
+        """Download a PDF with retry and rate-limiting."""
+        backoff = INITIAL_BACKOFF
+        for attempt in range(1, MAX_RETRIES + 1):
+            self._throttle()
+            try:
+                resp = self.session.get(url, timeout=60)
+                if resp.status_code == 404:
+                    return None
+                if resp.status_code in RETRYABLE_HTTP_CODES and attempt < MAX_RETRIES:
+                    time.sleep(backoff)
+                    backoff *= BACKOFF_FACTOR
+                    continue
+                resp.raise_for_status()
+                ct = resp.headers.get("content-type", "")
+                if "pdf" not in ct:
+                    logger.warning("Expected PDF, got %s for %s", ct, url)
+                    return None
+                return resp.content
+            except requests.exceptions.RequestException as e:
+                if attempt < MAX_RETRIES:
+                    time.sleep(backoff)
+                    backoff *= BACKOFF_FACTOR
+                else:
+                    logger.error("Failed to download PDF %s: %s", url, e)
         return None
 
     def _fetch_from_zurich(self, number: str, lang: str = "de",
                            erlass_id: str = "") -> CantonalLawText | None:
-        """Fetch law text from the ZHLex API (Zürich dedicated fetcher)."""
         from .zurich_fetcher import ZurichFetcher
         zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
         return zh_fetcher.fetch_law_text(number, lang, erlass_id=erlass_id)
+
+    def _fetch_from_geneve(self, number: str, lang: str = "fr",
+                           filename: str = "") -> CantonalLawText | None:
+        from .cantonal_scrapers import GeneveFetcher
+        fetcher = GeneveFetcher(rate_limit=self.rate_limit)
+        return fetcher.fetch_law_text(number, lang, filename=filename)
+
+    def _fetch_from_neuchatel(self, number: str, lang: str = "fr",
+                              filename: str = "") -> CantonalLawText | None:
+        from .cantonal_scrapers import NeuchatelFetcher
+        fetcher = NeuchatelFetcher(rate_limit=self.rate_limit)
+        return fetcher.fetch_law_text(number, lang, filename=filename)
 
     def fetch_versions(self, canton: str, number: str) -> list[CantonalLawVersion]:
         """Fetch all available versions of a cantonal law."""
@@ -548,7 +621,6 @@ class CantonalFetcher:
 
         # Old versions
         for ov in tol.get("old_versions", []):
-            import re
             vid = ov.get("id", 0)
             title = ov.get("title", "")
             # Parse date from version_dates_str
@@ -587,7 +659,6 @@ class CantonalFetcher:
         if not xhtml:
             return None
 
-        import re
         version_date = None
         vds = sv.get("version_dates_str", "")
         m = re.search(r"seit:\s*(\d{2})\.(\d{2})\.(\d{4})", vds)
@@ -606,6 +677,94 @@ class CantonalFetcher:
             version_date=version_date,
             abbreviation=sv.get("abbreviation", ""),
         )
+
+
+# ─── PDF extraction helpers ───────────────────────────────────────────────────
+
+def _pdf_to_text(pdf_bytes: bytes) -> str:
+    """Extract text from PDF bytes using pdftotext."""
+    with tempfile.NamedTemporaryFile(suffix=".pdf", delete=True) as f:
+        f.write(pdf_bytes)
+        f.flush()
+        try:
+            result = subprocess.run(
+                ["pdftotext", "-layout", f.name, "-"],
+                capture_output=True, text=True, timeout=30,
+            )
+            if result.returncode != 0:
+                logger.warning("pdftotext failed: %s", result.stderr.strip())
+                return ""
+            return result.stdout
+        except (subprocess.TimeoutExpired, FileNotFoundError) as e:
+            logger.error("pdftotext error: %s", e)
+            return ""
+
+
+_DE_MONTHS = {
+    "januar": 1, "februar": 2, "märz": 3, "april": 4,
+    "mai": 5, "juni": 6, "juli": 7, "august": 8,
+    "september": 9, "oktober": 10, "november": 11, "dezember": 12,
+}
+
+_FR_MONTHS = {
+    "janvier": 1, "février": 2, "mars": 3, "avril": 4,
+    "mai": 5, "juin": 6, "juillet": 7, "août": 8,
+    "septembre": 9, "octobre": 10, "novembre": 11, "décembre": 12,
+    "fevrier": 2, "aout": 8, "decembre": 12,
+}
+
+_IT_MONTHS = {
+    "gennaio": 1, "febbraio": 2, "marzo": 3, "aprile": 4,
+    "maggio": 5, "giugno": 6, "luglio": 7, "agosto": 8,
+    "settembre": 9, "ottobre": 10, "novembre": 11, "dicembre": 12,
+}
+
+
+def _parse_lexfind_date(text: str, lang: str) -> date | None:
+    """Parse version date from LexFind PDF text header.
+
+    Looks for patterns like:
+      - German: "vom 24. November 1872 (Stand 1. Mai 2022)" → extracts Stand date
+      - French: "du 15 mars 2005 (état le 1er janvier 2023)" → extracts état date
+      - Italian: "del 15 marzo 2005 (stato 1° gennaio 2023)" → extracts stato date
+    Falls back to the enactment date if no Stand/état/stato found.
+    """
+    months = _DE_MONTHS if lang == "de" else _IT_MONTHS if lang == "it" else _FR_MONTHS
+
+    # Try Stand/état/stato date first (most current version date)
+    stand_patterns = [
+        r"(?:Stand|état\s+le|stato)\s+(\d{1,2})\.?\s*(?:er|°)?\s*(\w+)\s+(\d{4})",
+    ]
+    for pat in stand_patterns:
+        m = re.search(pat, text[:2000], re.IGNORECASE)
+        if m:
+            d = _month_date(m.group(1), m.group(2), m.group(3), months)
+            if d:
+                return d
+
+    # Fallback: enactment date
+    enact_patterns = [
+        r"(?:vom|du|del)\s+(\d{1,2})\.?\s*(?:er|°)?\s*(\w+)\s+(\d{4})",
+    ]
+    for pat in enact_patterns:
+        m = re.search(pat, text[:2000], re.IGNORECASE)
+        if m:
+            d = _month_date(m.group(1), m.group(2), m.group(3), months)
+            if d:
+                return d
+
+    return None
+
+
+def _month_date(day_s: str, month_s: str, year_s: str,
+                months: dict[str, int]) -> date | None:
+    m = months.get(month_s.lower())
+    if not m:
+        return None
+    try:
+        return date(int(year_s), m, int(day_s))
+    except ValueError:
+        return None
 
 
 # ─── Path helpers ──────────────────────────────────────────────────────────────
@@ -640,6 +799,7 @@ def cantonal_law_to_markdown(
     text_source = (
         "zhlex" if text.canton == "zh"
         else "lexwork" if text.canton in LEXWORK_CANTONS
+        else "lexfind_pdf" if text.canton in LEXFIND_ONLY_CANTONS
         else "lexfind"
     )
     if text.canton == "zh":

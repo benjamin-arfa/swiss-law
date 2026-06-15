@@ -72,15 +72,35 @@ def transform_cantonal_html(html: str, source: str = "lexwork") -> str:
 
     Args:
         html: Raw HTML content.
-        source: One of "lexwork", "lexfind", "zhlex".
+        source: One of "lexwork", "lexfind", "lexfind_pdf", "zhlex".
     """
     source = source.lower()
-    if source == "lexfind":
+    if source == "lexfind_pdf":
+        return _clean_pdf_text(html)
+    elif source == "lexfind":
         return transform_lexfind_html(html)
     elif source == "zhlex":
         return transform_zhlex_html(html)
     else:
         return transform_lexwork_html(html)
+
+
+# ─── PDF text cleanup ────────────────────────────────────────────────────────
+
+def _clean_pdf_text(text: str) -> str:
+    """Clean up plain text extracted from LexFind PDFs."""
+    if not text or not text.strip():
+        return ""
+    lines = text.split("\n")
+    cleaned = []
+    for line in lines:
+        stripped = line.rstrip()
+        if re.match(r"^\s*\d+\s*$", stripped):
+            continue
+        cleaned.append(stripped)
+    result = "\n".join(cleaned)
+    result = re.sub(r"\n{4,}", "\n\n\n", result)
+    return result.strip()
 
 
 # ─── HTML preprocessing ──────────────────────────────────────────────────────

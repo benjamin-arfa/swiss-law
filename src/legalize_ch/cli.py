@@ -408,18 +408,29 @@ def translate(repo: str, sr: str | None, source_lang: str, limit: int | None,
 
 @main.command("index")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--site-repo", default=None, envvar="SWISS_LAW_SITE_REPO",
+              help="Path to the site repo for laws.json output (default: ../swiss-law-as-source)")
 @click.option("--lang", "-l", default="de", help="Language for titles (default: de)")
 @click.option("--json/--no-json", "write_json", default=True,
-              help="Also write docs/laws.json for GitHub Pages (default: yes)")
-def index(repo: str, lang: str, write_json: bool):
-    """Generate INDEX.md and docs/laws.json (federal + cantonal)."""
-    from .index_generator import write_index, write_laws_json
+              help="Also write laws.json for the site (default: yes)")
+def index(repo: str, site_repo: str | None, lang: str, write_json: bool):
+    """Generate INDEX.md and laws.json (federal + cantonal)."""
+    from .index_generator import write_index, generate_laws_json
 
     out = write_index(repo_path=repo, lang=lang)
     click.echo(f"Generated: {out}")
     if write_json:
-        json_out = write_laws_json(repo_path=repo, lang=lang)
-        click.echo(f"Generated: {json_out}")
+        from pathlib import Path
+        import json
+        repo_path = Path(repo).resolve()
+        site_path = Path(site_repo).resolve() if site_repo else (repo_path.parent / "swiss-law-as-source")
+        if not site_path.exists():
+            site_path = repo_path / "docs"
+        laws = generate_laws_json(repo_path=repo, lang=lang)
+        out_path = site_path / "laws.json"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(json.dumps(laws, ensure_ascii=False), encoding="utf-8")
+        click.echo(f"Generated: {out_path} ({len(laws)} entries)")
 
 
 @main.command("health-check")
@@ -458,15 +469,15 @@ def health_check(repo: str, days: int, always_notify: bool):
 
 @main.command("stats")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--site-repo", default=None, envvar="SWISS_LAW_SITE_REPO",
+              help="Path to the site repo for stats/API output (default: ../swiss-law-as-source)")
 @click.option("--no-trees", is_flag=True, help="Skip fetching category trees from LexFind API")
 @click.option("--rate-limit", type=float, default=0.5, help="Seconds between API requests")
-def stats(repo: str, no_trees: bool, rate_limit: float):
+def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     """Generate statistics, tags, and category trees.
 
-    Scans all law files, aggregates frontmatter metadata, and writes:
-      docs/stats.json    Aggregate statistics by field, year, month
-      docs/tags.json     Per-law tag index with all category fields
-      docs/trees/*.json  LexFind category trees (global + per-canton)
+    Writes tagging data (tags.json, trees/) to the law repo (--repo).
+    Writes website data (stats.json, API, publications) to the site repo (--site-repo).
     """
     from pathlib import Path
     from .stats import (
@@ -477,6 +488,14 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
     )
 
     repo_path = Path(repo).resolve()
+    site_path = Path(site_repo).resolve() if site_repo else (repo_path.parent / "swiss-law-as-source")
+
+    if not site_path.exists():
+        click.echo(f"Site repo not found at {site_path} — falling back to {repo_path / 'docs'}", err=True)
+        site_path = repo_path / "docs"
+
+    click.echo(f"Law repo:  {repo_path}")
+    click.echo(f"Site repo: {site_path}")
 
     click.echo("Scanning frontmatter...")
     entries = collect_all_frontmatter(repo_path)
@@ -484,7 +503,7 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
 
     click.echo("Generating stats...")
     s = generate_stats(repo_path)
-    write_stats_json(s, repo_path / "docs" / "stats.json")
+    write_stats_json(s, site_path / "stats.json")
     click.echo(f"  stats.json: {s['total_laws']} laws ({s['federal_laws']} federal, {s['cantonal_laws']} cantonal)")
 
     click.echo("Generating tags...")
@@ -494,12 +513,12 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
 
     click.echo("Generating publications by year...")
     pubs = generate_publications(entries)
-    write_publications(pubs, repo_path / "docs" / "api" / "v1" / "publications")
+    write_publications(pubs, site_path / "api" / "v1" / "publications")
     click.echo(f"  {len(pubs)} year files written")
 
     click.echo("Generating per-year per-canton stats...")
-    yc_stats = generate_yearly_canton_stats(entries)
-    write_yearly_canton_stats(yc_stats, repo_path / "docs" / "api" / "v1" / "stats")
+    yc_stats = generate_yearly_canton_stats(entries, repo_path / "docs" / "trees")
+    write_yearly_canton_stats(yc_stats, site_path / "api" / "v1" / "stats")
     click.echo(f"  {sum(len(e) for e in yc_stats.values())} files across {len(yc_stats)} years")
 
     if not no_trees:
@@ -507,6 +526,49 @@ def stats(repo: str, no_trees: bool, rate_limit: float):
         fetch_and_write_trees(repo_path / "docs" / "trees", rate_limit=rate_limit)
         click.echo("  Trees written to docs/trees/")
 
+    click.echo("Done.")
+
+
+@main.command("enrich-categories")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--canton", "-c", default=None,
+              help="Canton code(s), comma-separated (default: all missing)")
+@click.option("--rate-limit", type=float, default=0.5, help="Seconds between LexFind API requests")
+@click.option("--dry-run", is_flag=True, help="Report what would change without modifying files")
+def enrich_categories(repo: str, canton: str | None, rate_limit: float, dry_run: bool):
+    """Back-fill category metadata from LexFind into cantonal law files.
+
+    For each canton, fetches the LexFind catalog (which includes category_type,
+    systematic_category, global_category) and injects those fields into the
+    YAML frontmatter of existing .md files.  Laws not found in LexFind get
+    category_type inferred from their title.
+    """
+    from pathlib import Path
+    from .category_enricher import enrich_all
+
+    repo_path = Path(repo).resolve()
+    cantons = [c.strip().lower() for c in canton.split(",")] if canton else None
+
+    if dry_run:
+        click.echo("DRY RUN — no files will be modified")
+
+    results = enrich_all(repo_path, cantons=cantons, rate_limit=rate_limit, dry_run=dry_run)
+
+    click.echo("")
+    click.echo(f"{'Canton':<8} {'Total':>6} {'LexFind':>8} {'Title':>8} {'Already':>8} {'Skip':>6}")
+    click.echo("-" * 50)
+    for r in results:
+        if r.get("error"):
+            click.echo(f"{r['canton']:<8} ERROR")
+            continue
+        click.echo(
+            f"{r['canton']:<8} {r['total_files']:>6} {r['lexfind_matched']:>8} "
+            f"{r['title_classified']:>8} {r['already_enriched']:>8} {r['skipped']:>6}"
+        )
+    total_matched = sum(r.get("lexfind_matched", 0) for r in results)
+    total_classified = sum(r.get("title_classified", 0) for r in results)
+    click.echo("-" * 50)
+    click.echo(f"{'TOTAL':<8} {'':>6} {total_matched:>8} {total_classified:>8}")
     click.echo("Done.")
 
 
@@ -560,14 +622,16 @@ def notify_test(commits: int, errors: int):
 
 @main.command("feed")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--output", "-o", default=None, help="Output directory (default: docs/feeds/)")
+@click.option("--site-repo", default=None, envvar="SWISS_LAW_SITE_REPO",
+              help="Path to the site repo for feed output (default: ../swiss-law-as-source)")
+@click.option("--output", "-o", default=None, help="Output directory (overrides --site-repo)")
 @click.option("--sr", type=str, default=None, help="SR number prefix filter")
 @click.option("--lang", "-l", default=None, help="Language filter (de/fr/it/en)")
 @click.option("--limit", "-n", type=int, default=50, help="Max entries per feed (default: 50)")
 @click.option("--since-days", type=int, default=90,
               help="Look back this many days (default: 90)")
-def feed(repo: str, output: str | None, sr: str | None, lang: str | None,
-         limit: int, since_days: int):
+def feed(repo: str, site_repo: str | None, output: str | None, sr: str | None,
+         lang: str | None, limit: int, since_days: int):
     """Generate RSS and Atom feeds of law changes (diffs).
 
     Creates feeds that allow subscribing to changes in specific laws.
@@ -578,7 +642,15 @@ def feed(repo: str, output: str | None, sr: str | None, lang: str | None,
       legalize-ch feed --sr 311    # Track criminal code changes
       legalize-ch feed --lang de   # German changes only
     """
+    from pathlib import Path
     from .rss_feed import write_feeds
+
+    if not output:
+        repo_path = Path(repo).resolve()
+        site_path = Path(site_repo).resolve() if site_repo else (repo_path.parent / "swiss-law-as-source")
+        if not site_path.exists():
+            site_path = repo_path / "docs"
+        output = str(site_path / "feeds")
 
     rss_path, atom_path = write_feeds(
         repo_path=repo,
@@ -620,39 +692,39 @@ def serve(repo: str, host: str, port: int, do_reload: bool):
 
 @main.command("cross-level-refs")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--site-repo", default=None, envvar="SWISS_LAW_SITE_REPO",
+              help="Path to the site repo for JSON/HTML output (default: ../swiss-law-as-source)")
 @click.option("--html/--no-html", "write_html", default=True,
               help="Also write HTML viewer page (default: yes)")
 @click.option("--inject/--no-inject", "inject_links", default=True,
               help="Inject cross-level link sections into law markdown files (default: yes)")
-def cross_level_refs(repo: str, write_html: bool, inject_links: bool):
+def cross_level_refs(repo: str, site_repo: str | None, write_html: bool, inject_links: bool):
     """Detect and export cross-level references (federal ↔ cantonal).
 
     Scans cantonal law files for references to federal SR numbers and
     abbreviations, and federal files for references to cantonal laws.
 
-    Writes docs/cross_level_refs.json with the full reference map and
-    optionally docs/cross_level_refs.html for visual exploration.
+    Writes cross_level_refs.json to the site repo and optionally
+    cross_level_refs.html for visual exploration.
 
     With --inject (default), also adds cross-level reference link sections
-    directly into the law markdown files:
-      - Cantonal files get a 'Cross-Level References (Federal Law)' section
-      - Federal files get a 'Referenced by Cantonal Laws' section
-
-    Detection strategies:
-      - Explicit SR references (e.g. "SR 935.61")
-      - Federal law abbreviations (e.g. BGFA, KVG, OR)
-      - Einführungsgesetz (implementing law) patterns
-      - LexWork/clex Bund URLs
+    directly into the law markdown files.
     """
+    from pathlib import Path
     from .cross_level_refs import (
         write_cross_level_json, write_cross_level_html, inject_cross_level_links,
     )
 
-    json_path = write_cross_level_json(repo_path=repo)
+    repo_path = Path(repo).resolve()
+    site_path = Path(site_repo).resolve() if site_repo else (repo_path.parent / "swiss-law-as-source")
+    if not site_path.exists():
+        site_path = repo_path / "docs"
+
+    json_path = write_cross_level_json(repo_path=repo, output_dir=site_path)
     click.echo(f"Cross-level refs JSON: {json_path}")
 
     if write_html:
-        html_path = write_cross_level_html(repo_path=repo)
+        html_path = write_cross_level_html(repo_path=repo, output_dir=site_path)
         click.echo(f"Cross-level refs HTML: {html_path}")
 
     if inject_links:

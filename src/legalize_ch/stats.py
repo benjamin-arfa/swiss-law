@@ -113,19 +113,25 @@ def enactment_year(e: dict) -> str:
     """Best-known year the law was ORIGINALLY enacted.
 
     Laws are (law, version) pairs: ``version_date`` is only the current
-    consolidated version. Priority: enactment_date → earliest known
-    version date → version_date. Empty string when nothing is known.
+    consolidated version. Uses the EARLIEST evidence: if the version
+    history starts before the recorded enactment date (contradiction),
+    the law provably existed at the earlier date. Empty string when
+    nothing is known.
     """
+    candidates = []
     ed = str(e.get("enactment_date", ""))
     if len(ed) >= 4:
-        return ed[:4]
+        candidates.append(ed)
     vds = e.get("version_dates")
     if isinstance(vds, list) and vds:
         first = str(min(vds))
         if len(first) >= 4:
-            return first[:4]
-    vd = str(e.get("version_date", ""))
-    return vd[:4] if len(vd) >= 4 else ""
+            candidates.append(first)
+    if not candidates:
+        vd = str(e.get("version_date", ""))
+        if len(vd) >= 4:
+            candidates.append(vd)
+    return min(candidates)[:4] if candidates else ""
 
 
 def effective_category_type(e: dict) -> tuple[str, str]:
@@ -413,18 +419,22 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
             "enacted_after_2003": 0, "all_time": 0, "date_provenance": {}}
         for c in ALL_CANTON_CODES
     }
+    group_minima = _concordat_group_minima(concordats)
+    year_evidence: Counter = Counter()
     for e in concordats:
         c = str(e.get("canton", "")).upper()
         if c not in rows:
             continue
         rows[c]["all_time"] += 1
-        year = enactment_year(e)
+        year, evidence = earliest_known_year(e, group_minima)
         if not year:
             rows[c]["undated"] += 1
+            year_evidence["undated"] += 1
             continue
         if year > "2003":
             rows[c]["enacted_after_2003"] += 1
             continue
+        year_evidence[evidence] += 1
         status = "repealed_listed" if e.get("is_active") is False else "active"
         rows[c][status] += 1
         src = str(e.get("enactment_date_source", "") or "version_date_only")
@@ -464,8 +474,13 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
     ours_total = sum(v["ours_enacted_until_2003"]["total"] for v in out_rows.values())
     return {
         "note": "Reconciliation vs chstat.ch 2003 (data-theme 1842, Institute "
-                "of Federalism / LexFind). ours = concordats ENACTED <= 2003 "
-                "as listed by LexFind today, split active / repealed_listed. "
+                "of Federalism / LexFind). ours = concordats with EARLIEST "
+                "KNOWN EVIDENCE of existence <= 2003 (own enactment date, own "
+                "version history, or the sibling group's authoritative minimum "
+                "when the canton's own date is unverified — a concordat is the "
+                "same act in every member canton), split active / "
+                "repealed_listed. Authoritative accession dates are kept: a "
+                "canton that verifiably joined after 2003 is not counted. "
                 "unexplained = chstat - ours: concordats delisted from LexFind "
                 "entirely + accession-vs-decision-date differences (cantons "
                 "accede at different times; our date is the act's decision "
@@ -477,6 +492,7 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
         "unexplained_total": chstat_total - ours_total,
         "undated_total": sum(v["undated"] for v in out_rows.values()),
         "diagnosis_totals": dict(diagnosis_totals),
+        "year_evidence_le2003": dict(year_evidence),
         "date_provenance_total": {
             k: sum(v["date_provenance"].get(k, 0) for v in out_rows.values())
             for k in {p for v in out_rows.values() for p in v["date_provenance"]}
@@ -659,6 +675,64 @@ def generate_harmonized_categories(entries: list[dict],
     }
 
 
+def _concordat_group_minima(concordats: list[dict]) -> dict[str, str]:
+    """Per sibling group (normalized title): the earliest AUTHORITATIVE
+    evidence date (lexwork_api enactment or version minimum). A concordat
+    is the same act in every member canton — the group's earliest
+    authoritative date bounds when the act existed."""
+    from .date_enricher import _normalize_title
+
+    minima: dict[str, str] = {}
+    for e in concordats:
+        cand = []
+        if str(e.get("enactment_date_source", "")) == "lexwork_api" and e.get("enactment_date"):
+            cand.append(str(e["enactment_date"]))
+        vds = e.get("version_dates")
+        if isinstance(vds, list) and vds \
+                and str(e.get("version_dates_source", "")) == "lexwork_api":
+            cand.append(str(min(vds)))
+        if not cand:
+            continue
+        k = _normalize_title(e.get("title", ""))
+        if not k:
+            continue
+        m = min(cand)
+        if k not in minima or m < minima[k]:
+            minima[k] = m
+    return minima
+
+
+def earliest_known_year(e: dict, group_minima: dict[str, str]) -> tuple[str, str]:
+    """(year, evidence) — earliest known evidence a concordat existed.
+
+    Own evidence (enactment date, version history) always counts; the
+    sibling group's authoritative minimum is used ONLY when the entry's
+    own date provenance is weak (text-parsed or missing) — an
+    authoritative accession date is canton-specific truth and is kept.
+    """
+    from .date_enricher import _normalize_title
+
+    cand: list[tuple[str, str]] = []
+    if e.get("enactment_date"):
+        cand.append((str(e["enactment_date"]), "own_enactment"))
+    vds = e.get("version_dates")
+    if isinstance(vds, list) and vds:
+        cand.append((str(min(vds)), "own_versions"))
+    src = str(e.get("enactment_date_source", "")).split(":")[0]
+    if src not in ("lexwork_api", "fedlex"):
+        gm = group_minima.get(_normalize_title(e.get("title", "")))
+        if gm:
+            cand.append((gm, "sibling_group"))
+    if not cand:
+        vd = str(e.get("version_date", ""))
+        if len(vd) >= 4:
+            cand.append((vd, "own_enactment"))
+    if not cand:
+        return "", "undated"
+    d, ev = min(cand)
+    return d[:4], ev
+
+
 def generate_concordats_by_domain(entries: list[dict]) -> dict:
     """Tabulate intercantonal agreements (concordats) per canton per domain.
 
@@ -689,6 +763,8 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         lambda: defaultdict(lambda: defaultdict(int)))
     unclassified = 0
     provenance: Counter = Counter()
+    year_evidence: Counter = Counter()
+    group_minima = _concordat_group_minima(concordats)
     for e in concordats:
         canton = str(e.get("canton", "")).upper()
         if canton not in table:
@@ -703,8 +779,9 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         else:
             provenance[prov] += 1
         table[canton][key] += 1
-        year = enactment_year(e) or "unknown"
-        by_year[year][canton][key] += 1
+        year, evidence = earliest_known_year(e, group_minima)
+        year_evidence[evidence] += 1
+        by_year[year or "unknown"][canton][key] += 1
         vd = str(e.get("version_date", ""))
         vyear = vd[:4] if len(vd) >= 4 else "unknown"
         by_version_year[vyear][canton][key] += 1
@@ -732,6 +809,7 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
                             for y, cantons in sorted(by_version_year.items())},
         "unclassified_in_autres": unclassified,
         "domain_provenance": dict(provenance),
+        "year_evidence": dict(year_evidence),
         "notes": [
             "\"Other\" includes civil law, criminal law and concordats without "
             "a legal domain in LexFind's public database (~28% unclassified at the source)",

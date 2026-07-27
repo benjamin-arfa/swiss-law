@@ -82,3 +82,30 @@ class TestConcordatsEnactmentSemantics:
         assert gr["unexplained"] == 67 - 2
         assert cmp["chstat_total"] == 2522
         assert cmp["ours_enacted_until_2003_total"] == 2
+
+
+class TestEarliestKnownEvidence:
+    def test_version_history_contradiction_wins(self):
+        assert enactment_year({"enactment_date": "2010-01-01",
+                               "version_dates": ["1999-05-01", "2010-01-01"]}) == "1999"
+
+    def test_sibling_evidence_only_for_weak_provenance(self):
+        from legalize_ch.stats import earliest_known_year
+        minima = {"konkordat uber x": "1980-01-01"}
+        weak = {"title": "Konkordat über X", "enactment_date": "2010-01-01",
+                "enactment_date_source": "text"}
+        strong = {"title": "Konkordat über X", "enactment_date": "2010-01-01",
+                  "enactment_date_source": "lexwork_api"}
+        assert earliest_known_year(weak, minima) == ("1980", "sibling_group")
+        # authoritative accession date is canton-specific truth — kept
+        assert earliest_known_year(strong, minima) == ("2010", "own_enactment")
+
+    def test_undated_with_group_evidence(self):
+        from legalize_ch.stats import earliest_known_year
+        minima = {"konkordat uber x": "1980-01-01"}
+        e = {"title": "Konkordat über X"}
+        assert earliest_known_year(e, minima) == ("1980", "sibling_group")
+
+    def test_truly_undated(self):
+        from legalize_ch.stats import earliest_known_year
+        assert earliest_known_year({"title": "Y"}, {}) == ("", "undated")

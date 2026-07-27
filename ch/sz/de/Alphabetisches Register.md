@@ -1,12 +1,22 @@
 ---
 canton: SZ
 category_type: Anderes
+enactment_date: '2020-02-01'
+enactment_date_source: lexfind_family
 global_category: 1.10.100.10 Gesetzessammlungen
 language: de
 source: LexFind
 systematic_category: 0 Register
 systematic_number: Alphabetisches Register
 title: Alphabetisches Register
+version_dates:
+- '2020-02-01'
+- '2021-02-01'
+- '2022-02-01'
+- '2023-02-01'
+- '2025-02-01'
+- '2026-02-01'
+version_dates_source: lexfind_family
 ---
 
 Alphabetisches Register

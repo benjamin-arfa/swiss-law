@@ -2,7 +2,7 @@
 canton: SH
 category_type: Staatsvertrag
 enactment_date: '1950-11-04'
-enactment_date_source: text
+enactment_date_source: lexfind_family
 global_category_inferred: 1 Staat
 inference_source: canton_systematics
 is_active: false

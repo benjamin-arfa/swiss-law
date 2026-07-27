@@ -114,24 +114,43 @@ def _clamped(enactment: date, fm: dict) -> bool:
     return True
 
 
+# Provenance ranking: higher wins. Authoritative API data upgrades
+# weaker parses; equal or weaker provenance never overwrites.
+_SOURCE_RANK = {"lexwork_api": 3, "fedlex": 3, "sibling": 2,
+                "git_history": 1, "text": 1, "title": 1, "": 0}
+
+
+def _rank(source: str) -> int:
+    return _SOURCE_RANK.get(str(source).split(":")[0], 0)
+
+
 def update_file_dates(path: Path, enactment: date | None, enactment_source: str,
                       version_dates: list[str] | None = None,
                       version_dates_source: str = "") -> bool:
-    """Inject date fields into a law file. Fill-missing-only; idempotent."""
+    """Inject date fields into a law file. Idempotent; fills missing values
+    and upgrades values whose provenance ranks strictly lower."""
     text = path.read_text(encoding="utf-8")
     fm, body = _parse_frontmatter(text)
     if fm is None:
         return False
 
     changed = False
-    if enactment and not fm.get("enactment_date") and _clamped(enactment, fm):
-        fm["enactment_date"] = enactment.isoformat()
-        fm["enactment_date_source"] = enactment_source
-        changed = True
-    if version_dates and len(version_dates) > 1 and not fm.get("version_dates"):
-        fm["version_dates"] = sorted(set(version_dates))
-        fm["version_dates_source"] = version_dates_source
-        changed = True
+    existing_src = str(fm.get("enactment_date_source", ""))
+    if enactment and _clamped(enactment, fm) and (
+            not fm.get("enactment_date") or _rank(enactment_source) > _rank(existing_src)):
+        if str(fm.get("enactment_date", "")) != enactment.isoformat() \
+                or existing_src != enactment_source:
+            fm["enactment_date"] = enactment.isoformat()
+            fm["enactment_date_source"] = enactment_source
+            changed = True
+    existing_vsrc = str(fm.get("version_dates_source", ""))
+    if version_dates and len(version_dates) > 1 and (
+            not fm.get("version_dates") or _rank(version_dates_source) > _rank(existing_vsrc)):
+        new_vd = sorted(set(version_dates))
+        if fm.get("version_dates") != new_vd or existing_vsrc != version_dates_source:
+            fm["version_dates"] = new_vd
+            fm["version_dates_source"] = version_dates_source
+            changed = True
 
     if not changed:
         return False

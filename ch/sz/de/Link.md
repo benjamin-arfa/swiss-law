@@ -1,6 +1,8 @@
 ---
 canton: SZ
 category_type: Anderes
+enactment_date: '2023-03-07'
+enactment_date_source: text
 global_category: 1.20.20.60 Verwaltungsgebühren
 language: de
 source: LexFind

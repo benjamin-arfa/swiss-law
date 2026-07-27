@@ -1,6 +1,6 @@
 # Index of Swiss Law (Systematische Rechtssammlung)
 
-Total: **9038** federal laws, **21006** cantonal laws indexed
+Total: **9038** federal laws, **25315** cantonal laws indexed
 
 ---
 
@@ -9118,7 +9118,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 # Cantonal Laws (Kantonsrecht)
 
-*21006 laws across 26 canton(s)*
+*25315 laws across 26 canton(s)*
 
 ## AG – Aargau
 
@@ -16251,7 +16251,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## GE – Genève
 
-*862 laws*
+*1304 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -16271,10 +16271,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [A 1 13](ch/ge/fr/A 1 13.md) | Convention instituant le Groupement local de coopération\r\ntransfrontalière\ |
 | [A 1 13.0](ch/ge/fr/A 1 13.0.md) | Loi approuvant la création du Groupement local de\r\ncoopération transfrontalière\ |
 | [A 2 00](ch/ge/fr/A 2 00.md) | Constitution de la République et canton de Genève (Cst-GE) |
+| [A 2 01](ch/ge/fr/A 2 01.md) | Loi constitutionnelle complétant la constitution A 2 01 |
+| [A 2 01.01](ch/ge/fr/A 2 01.01.md) | Règlement de l'Assemblée constituante de la A 2 01.01 |
 | [A 2 04](ch/ge/fr/A 2 04.md) | Loi-cadre sur la répartition des tâches entre les communes\r\net le canton\ |
 | [A 2 04.03](ch/ge/fr/A 2 04.03.md) | Règlement sur le fonds de régulation dans le cadre de la\r\nréforme de la\ |
 | [A 2 05](ch/ge/fr/A 2 05.md) | Loi sur la répartition des tâches entre les communes et le\r\ncanton (1er\ |
 | [A 2 05.03](ch/ge/fr/A 2 05.03.md) | Règlement sur les prestations de soutien aux personnes\r\nâgées délivrées\ |
+| [A 2 06](ch/ge/fr/A 2 06.md) | rsGE A 2 06: Loi sur la répartition des tâches entre les communes et le canton |
 | [A 2 07](ch/ge/fr/A 2 07.md) | Loi sur la répartition des tâches entre les communes et le\r\ncanton en matière\ |
 | [A 2 08](ch/ge/fr/A 2 08.md) | Loi sur l\x92information du public, l\x92accès aux documents et\r\nla protection\ |
 | [A 2 08.01](ch/ge/fr/A 2 08.01.md) | Règlement d'application de la loi sur l'information du\r\npublic, l'accès\ |
@@ -16283,11 +16286,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [A 2 15](ch/ge/fr/A 2 15.md) | Loi sur la prestation des serments (LSer) |
 | [A 2 20](ch/ge/fr/A 2 20.md) | Loi sur les commissions officielles (LCOf) |
 | [A 2 20.01](ch/ge/fr/A 2 20.01.md) | Règlement sur les commissions officielles (RCOf) |
+| [A 2 20.03](ch/ge/fr/A 2 20.03.md) | Règlement relatif à la durée du mandat des A 2 20.03 |
 | [A 2 24](ch/ge/fr/A 2 24.md) | Loi sur l\x92organisation des institutions de droit public\r\n(LOIDP) |
 | [A 2 24.01](ch/ge/fr/A 2 24.01.md) | Règlement sur l\x92organisation des institutions de droit\r\npublic (ROIDP) |
+| [A 2 25](ch/ge/fr/A 2 25.md) | Loi sur les fondations de droit public A 2 25 |
 | [A 2 30](ch/ge/fr/A 2 30.md) | Loi sur la computation des délais échéant un samedi\r\n(LDélais) |
 | [A 2 35](ch/ge/fr/A 2 35.md) | Loi concernant la législation expérimentale (LLExp) |
 | [A 2 40](ch/ge/fr/A 2 40.md) | Loi sur la responsabilité de l\x92Etat et des communes (LREC) |
+| [A 2 50](ch/ge/fr/A 2 50.md) | Loi d'application de la loi fédérale sur l'égalité A 2 50 |
 | [A 2 55](ch/ge/fr/A 2 55.md) | Loi sur l\x92intégration des étrangers (LIEtr) |
 | [A 2 55.01](ch/ge/fr/A 2 55.01.md) | Règlement d\x92application de la loi sur l\x92intégration des\r\nétrangers\ |
 | [A 2 60](ch/ge/fr/A 2 60.md) | Loi sur l\x92action publique en vue d\x92un développement durable\r\n(Agenda\ |
@@ -16306,27 +16312,37 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [A 5 05](ch/ge/fr/A 5 05.md) | Loi sur l\x92exercice des droits politiques (LEDP) |
 | [A 5 05.01](ch/ge/fr/A 5 05.01.md) | Règlement d\x92application de la loi sur l\x92exercice des\r\ndroits politiques\ |
 | [A 5 05.03](ch/ge/fr/A 5 05.03.md) | Règlement concernant la délimitation des arrondissements\r\nélectoraux de\ |
+| [A 5 05.04](ch/ge/fr/A 5 05.04.md) | Arrêté constatant le nombre d'électeurs et A 5 05.04 |
 | [A 5 10](ch/ge/fr/A 5 10.md) | Loi sur l\x92exercice du droit de pétition (LPétition) |
 | [B 1 01](ch/ge/fr/B 1 01.md) | Loi portant règlement du Grand Conseil de la République et\r\ncanton de Genève\ |
+| [B 1 03](ch/ge/fr/B 1 03.md) | Convention relative à la négociation, à la B 1 03 |
+| [B 1 03.0](ch/ge/fr/B 1 03.0.md) | Loi autorisant le Conseil d'Etat à adhérer à la B 1 03.0 |
 | [B 1 04](ch/ge/fr/B 1 04.md) | Convention relative à la participation des parlements\r\ncantonaux dans le\ |
 | [B 1 04.0](ch/ge/fr/B 1 04.0.md) | Loi autorisant le Conseil d'Etat à adhérer à la\r\nconvention relative à la\ |
+| [B 1 12](ch/ge/fr/B 1 12.md) | Loi sur l'incompatibilité de fonctions des B 1 12 |
 | [B 1 15](ch/ge/fr/B 1 15.md) | Loi sur l\x92exercice des compétences du Conseil d\x92Etat et\r\nl\x92organisation\ |
+| [B 1 15.01](ch/ge/fr/B 1 15.01.md) | Règlement concernant la protection des B 1 15.01 |
 | [B 1 15.03](ch/ge/fr/B 1 15.03.md) | Règlement pour l\x92organisation du Conseil d\x92Etat de la\r\nRépublique\ |
+| [B 1 15.06](ch/ge/fr/B 1 15.06.md) | Règlement concernant les recours au Conseil B 1 15.06 |
 | [B 1 20](ch/ge/fr/B 1 20.md) | Loi concernant le traitement et la retraite des membres du\r\nConseil d\x92\ |
 | [B 1 20.01](ch/ge/fr/B 1 20.01.md) | Règlement concernant la retraite des membres du Conseil\r\nd'Etat, de la chancelière\ |
 | [B 1 20.03](ch/ge/fr/B 1 20.03.md) | Règlement relatif aux indemnités de représentation et à\r\nla prise en charge\ |
 | [B 1 25](ch/ge/fr/B 1 25.md) | Loi sur le protocole (LProt) |
 | [B 1 25.01](ch/ge/fr/B 1 25.01.md) | Règlement sur le protocole (RProt) |
+| [B 1 25.04](ch/ge/fr/B 1 25.04.md) | Règlement concernant le protocole B 1 25.04 |
 | [B 1 30.12](ch/ge/fr/B 1 30.12.md) | Règlement pour la promotion de l'égalité et la\r\nprévention des violences\ |
 | [B 1 40](ch/ge/fr/B 1 40.md) | Loi sur la médiation administrative(1) (LMéd-GE) |
 | [B 2 05](ch/ge/fr/B 2 05.md) | Loi sur la forme, la publication et la promulgation des\r\nactes officiels\ |
 | [B 2 05.01](ch/ge/fr/B 2 05.01.md) | Règlement d\x92exécution de la loi sur la forme, la\r\npublication et la promulgation\ |
+| [B 2 05.13](ch/ge/fr/B 2 05.13.md) | Règlement relatif à l'usage de la forme féminine B 2 05.13 |
 | [B 2 10](ch/ge/fr/B 2 10.md) | Loi sur la Feuille d\x92avis officielle de la République et\r\ncanton de Genève\ |
 | [B 2 10.01](ch/ge/fr/B 2 10.01.md) | Règlement sur la Feuille d'avis officielle de la\r\nRépublique et canton de\ |
+| [B 2 10.03](ch/ge/fr/B 2 10.03.md) | Règlement relatif à l’édition de la Feuille d’avis B 2 10.03 |
 | [B 2 15](ch/ge/fr/B 2 15.md) | Loi sur les archives publiques (LArch) |
 | [B 2 15.01](ch/ge/fr/B 2 15.01.md) | Règlement d\x92application de la loi sur les archives\r\npubliques (RArch) |
 | [B 2 15.03](ch/ge/fr/B 2 15.03.md) | Règlement fixant les tarifs des émoluments des Archives\r\nd\x92Etat de Genève\ |
 | [B 3 05.03](ch/ge/fr/B 3 05.03.md) | Règlement relatif aux documents d'identité (RDId) |
+| [B 3 10.07](ch/ge/fr/B 3 10.07.md) | Règlement concernant la délivrance des cartes B 3 10.07 |
 | [B 3 15.04](ch/ge/fr/B 3 15.04.md) | Règlement relatif à la légalisation des signatures (RLS) |
 | [B 3 20.03](ch/ge/fr/B 3 20.03.md) | Règlement relatif à la signature des actes authentiques\r\net autres actes\ |
 | [B 3 25.04](ch/ge/fr/B 3 25.04.md) | Règlement sur les cartes de légitimation attestant un\r\npouvoir d\x92autorité\ |
@@ -16335,17 +16351,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [B 4 05.20](ch/ge/fr/B 4 05.20.md) | Règlement sur l\x92ouverture des bureaux de\r\nl\x92administration cantonale\ |
 | [B 4 05.22](ch/ge/fr/B 4 05.22.md) | Règlement de l\x92office du personnel de l\x92Etat(14) (ROPE) |
 | [B 4 10.03](ch/ge/fr/B 4 10.03.md) | Règlement sur les émoluments de l\x92administration\r\ncantonale (REmAC) |
+| [B 4 15.03](ch/ge/fr/B 4 15.03.md) | Règlement relatif à l'utilisation des appareils B 4 15.03 |
 | [B 4 20.03](ch/ge/fr/B 4 20.03.md) | Règlement de la centrale commune d'achats (RCCA) |
+| [B 4 22.03](ch/ge/fr/B 4 22.03.md) | Règlement du centre des technologies de B 4 22.03 |
 | [B 4 23](ch/ge/fr/B 4 23.md) | Loi sur l\x92administration en ligne (LAeL) |
 | [B 4 23.01](ch/ge/fr/B 4 23.01.md) | Règlement sur l\x92administration en ligne (RAeL) |
 | [B 4 23.03](ch/ge/fr/B 4 23.03.md) | Règlement sur l'organisation et la gouvernance des\r\nsystèmes d'information\ |
 | [B 4 25.04](ch/ge/fr/B 4 25.04.md) | Règlement concernant les inventaires et\r\nl\x92assurance-incendie des biens\ |
 | [B 4 30.08](ch/ge/fr/B 4 30.08.md) | Règlement concernant la protection de la santé et la\r\nsécurité du travail\ |
+| [B 4 35](ch/ge/fr/B 4 35.md) | Loi sur les informations traitées automatiquement B 4 35 |
+| [B 4 35.01](ch/ge/fr/B 4 35.01.md) | Règlement d'exécution de la loi sur les B 4 35.01 |
+| [B 4 36](ch/ge/fr/B 4 36.md) | rsGE B 4 36: Loi relative au système d’information du territoire à Genève |
+| [B 4 36.01](ch/ge/fr/B 4 36.01.md) | rsGE B 4 36.01: Règlement relatif à la désignation du centre de compétence |
 | [B 4 38](ch/ge/fr/B 4 38.md) | Loi sur la publicité relative aux biens immobiliers des\r\npersonnes morales\ |
 | [B 4 40](ch/ge/fr/B 4 40.md) | Loi sur la statistique publique cantonale (LStat) |
 | [B 4 40.01](ch/ge/fr/B 4 40.01.md) | Règlement d\x92exécution de la loi sur la statistique\r\npublique cantonale\ |
 | [B 4 40.03](ch/ge/fr/B 4 40.03.md) | Règlement relatif à la mise en \x9Cuvre de la législation\r\nfédérale sur\ |
 | [B 4 40.05](ch/ge/fr/B 4 40.05.md) | Règlement sur les émoluments requis pour les prestations\r\nde l\x92office\ |
+| [B 4 40.09](ch/ge/fr/B 4 40.09.md) | Règlement instituant une commission B 4 40.09 |
 | [B 5 05](ch/ge/fr/B 5 05.md) | Loi générale relative au personnel de l\x92administration\r\ncantonale, du\ |
 | [B 5 05.01](ch/ge/fr/B 5 05.01.md) | Règlement d\x92application de la loi générale relative au\r\npersonnel de\ |
 | [B 5 05.03](ch/ge/fr/B 5 05.03.md) | Règlement sur les cadres supérieurs de l\x92administration\r\ncantonale (RCSAC) |
@@ -16353,37 +16376,57 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [B 5 05.09](ch/ge/fr/B 5 05.09.md) | Règlement concernant les prestations complémentaires aux\r\nmagistrats et\ |
 | [B 5 05.10](ch/ge/fr/B 5 05.10.md) | Règlement relatif à la protection de la personnalité à\r\nl'Etat de Genève\ |
 | [B 5 05.11](ch/ge/fr/B 5 05.11.md) | Règlement pour l'égalité et la prévention des\r\ndiscriminations en raison\ |
+| [B 5 05.12](ch/ge/fr/B 5 05.12.md) | Règlement d’application concernant l’horaire B 5 05.12 |
 | [B 5 05.13](ch/ge/fr/B 5 05.13.md) | Règlement sur le télétravail dans l'administration\r\ncantonale (RTAC) |
 | [B 5 05.15](ch/ge/fr/B 5 05.15.md) | Règlement concernant la responsabilité des caissiers des\r\nservices de l\x92\ |
+| [B 5 05.18](ch/ge/fr/B 5 05.18.md) | rsGE B 5 05.18: Règlement fixant le statut des membres du personnel exerçant |
 | [B 5 07](ch/ge/fr/B 5 07.md) | Loi sur la protection des lanceurs d\x92alerte au sein de\r\nl\x92Etat (LPLA) |
 | [B 5 07.01](ch/ge/fr/B 5 07.01.md) | Règlement d'application de la loi sur la protection des\r\nlanceurs d'alerte\ |
 | [B 5 10.04](ch/ge/fr/B 5 10.04.md) | Règlement fixant le statut des membres du corps\r\nenseignant primaire, secondaire\ |
+| [B 5 10.12](ch/ge/fr/B 5 10.12.md) | Règlement fixant le statut des membres du corps B 5 10.12 |
+| [B 5 10.16](ch/ge/fr/B 5 10.16.md) | Règlement fixant le statut du corps enseignant B 5 10.16 |
 | [B 5 10.17](ch/ge/fr/B 5 10.17.md) | Règlement fixant le statut du corps enseignant HES de\r\nl'unité décentralisée\ |
 | [B 5 15](ch/ge/fr/B 5 15.md) | Loi concernant le traitement et les diverses prestations\r\nalloués aux membres\ |
 | [B 5 15.01](ch/ge/fr/B 5 15.01.md) | Règlement d\x92application de la loi concernant le\r\ntraitement et les diverses\ |
 | [B 5 15.04](ch/ge/fr/B 5 15.04.md) | Règlement instituant une commission de réexamen en\r\nmatière d\x92évaluation\ |
 | [B 5 15.10](ch/ge/fr/B 5 15.10.md) | Règlement relatif au traitement des membres du personnel\r\nenseignant non\ |
 | [B 5 15.13](ch/ge/fr/B 5 15.13.md) | Règlement relatif aux indemnités du corps enseignant et\r\ndes présidents\ |
+| [B 5 15.16](ch/ge/fr/B 5 15.16.md) | Règlement sur les traitements du corps B 5 15.16 |
 | [B 5 15.20](ch/ge/fr/B 5 15.20.md) | Règlement relatif à l\x92adaptation des traitements au coût\r\nde la vie (RATCV) |
 | [B 5 15.22](ch/ge/fr/B 5 15.22.md) | Règlement relatif à l\x92allocation unique de vie chère\r\n(RAUVC) |
 | [B 5 15.24](ch/ge/fr/B 5 15.24.md) | Règlement fixant les débours, frais de représentation et\r\nde déplacement\ |
+| [B 5 15.26](ch/ge/fr/B 5 15.26.md) | Règlement fixant les indemnités de déplacement B 5 15.26 |
 | [B 5 15.30](ch/ge/fr/B 5 15.30.md) | Règlement instituant des commissions du personnel au\r\nsein de l\x92administration\ |
 | [B 5 15.34](ch/ge/fr/B 5 15.34.md) | Règlement instituant une commission paritaire chargée\r\nd\x92examiner l\x92\ |
+| [B 5 16](ch/ge/fr/B 5 16.md) | rsGE B 5 16: Loi sur la suspension de l’augmentation annuelle due aux membres |
+| [B 5 17](ch/ge/fr/B 5 17.md) | Loi sur la suspension temporaire des B 5 17 |
 | [B 5 20](ch/ge/fr/B 5 20.md) | Loi sur la rente-pont AVS (LRP) |
 | [B 5 22](ch/ge/fr/B 5 22.md) | Loi instituant la Caisse de prévoyance de l'Etat de Genève\r\n(LCPEG) |
+| [B 5 22.01](ch/ge/fr/B 5 22.01.md) | Règlement général de la Caisse de prévoyance de B 5 22.01 |
+| [B 5 22.03](ch/ge/fr/B 5 22.03.md) | Règlement électoral de la Caisse de prévoyance B 5 22.03 |
 | [B 5 22.05](ch/ge/fr/B 5 22.05.md) | Règlement d\x92application de l\x92article 23 de la loi\r\ninstituant la Caisse\ |
+| [B 5 25](ch/ge/fr/B 5 25.md) | Loi définissant certaines prestations des caisses B 5 25 |
 | [B 5 30](ch/ge/fr/B 5 30.md) | Loi concernant l\x92adaptation au coût de la vie des pensions\r\nservies aux\ |
 | [B 5 33](ch/ge/fr/B 5 33.md) | Loi sur la Caisse de prévoyance des fonctionnaires de\r\npolice et des établissements\ |
+| [B 5 33.01](ch/ge/fr/B 5 33.01.md) | Règlement général de la Caisse de prévoyance B 5 33.01 |
 | [B 5 35](ch/ge/fr/B 5 35.md) | Loi concernant un pont-retraite en faveur du personnel\r\nassuré par la Caisse\ |
 | [B 5 40](ch/ge/fr/B 5 40.md) | Loi concernant la Fondation de prévoyance en faveur du\r\npersonnel des Transports\ |
+| [B 5 40.01](ch/ge/fr/B 5 40.01.md) | Règlement général de la Fondation de B 5 40.01 |
 | [B 6 05](ch/ge/fr/B 6 05.md) | Loi sur l\x92administration des communes (LAC) |
 | [B 6 05.01](ch/ge/fr/B 6 05.01.md) | Règlement d\x92application de la loi sur l\x92administration\r\ndes communes\ |
+| [B 6 05.03](ch/ge/fr/B 6 05.03.md) | Règlement sur la tenue des registres dans les B 6 05.03 |
 | [B 6 05.06](ch/ge/fr/B 6 05.06.md) | Règlement concernant l'écharpe des membres des conseils\r\nadministratifs\ |
 | [B 6 08](ch/ge/fr/B 6 08.md) | Loi sur le renforcement de la péréquation financière\r\nintercommunale et\ |
 | [B 6 08.01](ch/ge/fr/B 6 08.01.md) | Règlement d'application de la loi sur le renforcement de\r\nla péréquation\ |
 | [B 6 08.05](ch/ge/fr/B 6 08.05.md) | Statuts du Fonds intercommunal (StFI) |
 | [B 6 09](ch/ge/fr/B 6 09.md) | Loi sur la répartition entre le canton et les communes de\r\nla compensation\ |
+| [B 6 10](ch/ge/fr/B 6 10.md) | Loi sur le fonds d'équipement communal B 6 10 |
+| [B 6 10.05](ch/ge/fr/B 6 10.05.md) | Statuts du fonds d’équipement communal B 6 10.05 |
+| [B 6 10.07](ch/ge/fr/B 6 10.07.md) | Règlement concernant l'élection de 6 B 6 10.07 |
 | [B 6 12](ch/ge/fr/B 6 12.md) | Loi sur les fusions de communes (LFusC) |
+| [B 6 15](ch/ge/fr/B 6 15.md) | Loi sur l’encouragement aux sports B 6 15 |
+| [B 6 15.01](ch/ge/fr/B 6 15.01.md) | Règlement d'application de la loi sur B 6 15.01 |
+| [B 6 15.04](ch/ge/fr/B 6 15.04.md) | Règlement concernant l’octroi de subventions en B 6 15.04 |
 | [C 1 05](ch/ge/fr/C 1 05.md) | Concordat intercantonal sur la coordination scolaire (CICS) |
 | [C 1 05.0](ch/ge/fr/C 1 05.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer au concordat\r\nintercantonal\ |
 | [C 1 06](ch/ge/fr/C 1 06.md) | Accord intercantonal sur l'harmonisation de la scolarité\r\nobligatoire (HarmoS) |
@@ -16395,10 +16438,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [C 1 10](ch/ge/fr/C 1 10.md) | Loi sur l\x92instruction publique (LIP) |
 | [C 1 10.03](ch/ge/fr/C 1 10.03.md) | Règlement d\x92application de certaines dispositions de la\r\nloi sur l\x92\ |
 | [C 1 10.04](ch/ge/fr/C 1 10.04.md) | Règlement d\x92application de l\x92article 106 de la loi sur\r\nl\x92instruction\ |
+| [C 1 10.06](ch/ge/fr/C 1 10.06.md) | Règlement fixant l’émolument pour C 1 10.06 |
+| [C 1 10.09](ch/ge/fr/C 1 10.09.md) | Règlement relatif à la simplification de C 1 10.09 |
 | [C 1 10.11](ch/ge/fr/C 1 10.11.md) | &#12;Règlement relatif à la construction, à la\r\nrénovation et à la transformation\ |
+| [C 1 10.14](ch/ge/fr/C 1 10.14.md) | Règlement concernant la formation des C 1 10.14 |
+| [C 1 10.16](ch/ge/fr/C 1 10.16.md) | Règlement concernant la formation C 1 10.16 |
 | [C 1 10.18](ch/ge/fr/C 1 10.18.md) | Règlement relatif aux dispenses d\x92âge (RDAge) |
+| [C 1 10.19](ch/ge/fr/C 1 10.19.md) | Règlement sur les conseils d'établissement C 1 10.19 |
 | [C 1 10.21](ch/ge/fr/C 1 10.21.md) | Règlement de l\x92enseignement primaire (REP) |
+| [C 1 10.24](ch/ge/fr/C 1 10.24.md) | Règlement de l’enseignement secondaire C 1 10.24 |
 | [C 1 10.26](ch/ge/fr/C 1 10.26.md) | Règlement du cycle d'orientation (RCO) |
+| [C 1 10.27](ch/ge/fr/C 1 10.27.md) | Règlement du cycle d'orientation 2001(6) C 1 10.27 |
 | [C 1 10.28](ch/ge/fr/C 1 10.28.md) | Règlement du cycle d'orientation \x96 projet d\x92innovation\r\npédagogique\ |
 | [C 1 10.31](ch/ge/fr/C 1 10.31.md) | Règlement de l'enseignement secondaire II et tertiaire B\r\n(REST) |
 | [C 1 10.32](ch/ge/fr/C 1 10.32.md) | Règlement sur le dispositif sport-art-études (RDSAE) |
@@ -16406,6 +16456,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [C 1 10.34](ch/ge/fr/C 1 10.34.md) | Règlement relatif au service de l'accueil du degré\r\nsecondaire II(3) (RSADS-II) |
 | [C 1 10.35](ch/ge/fr/C 1 10.35.md) | Règlement relatif à la formation complémentaire à un\r\ntitre du degré secondaire\ |
 | [C 1 10.40](ch/ge/fr/C 1 10.40.md) | Règlement concernant les prestations fournies à des\r\ntiers, les ventes et\ |
+| [C 1 10.44](ch/ge/fr/C 1 10.44.md) | Règlement de l’école d’ingénieurs de Genève C 1 10.44 |
 | [C 1 10.48](ch/ge/fr/C 1 10.48.md) | Règlement de la formation préqualifiante (RFPQ) |
 | [C 1 10.49](ch/ge/fr/C 1 10.49.md) | Règlement du centre de formation pré-professionnelle(1)\r\n(RCFPP) |
 | [C 1 10.50](ch/ge/fr/C 1 10.50.md) | Règlement du centre de formation professionnelle santé\r\n(RCFPSa) |
@@ -16414,22 +16465,36 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [C 1 10.53](ch/ge/fr/C 1 10.53.md) | Règlement du centre de formation professionnelle social\r\n(RCFPSo) |
 | [C 1 10.54](ch/ge/fr/C 1 10.54.md) | Règlement du centre de formation professionnelle\r\nservices et hôtellerie\ |
 | [C 1 10.55](ch/ge/fr/C 1 10.55.md) | Règlement du centre de formation professionnelle nature\r\net environnement\ |
+| [C 1 10.56](ch/ge/fr/C 1 10.56.md) | Règlement des écoles d’art C 1 10.56 |
 | [C 1 10.57](ch/ge/fr/C 1 10.57.md) | Règlement du centre de formation professionnelle arts\r\n(RCFPA) |
 | [C 1 10.58](ch/ge/fr/C 1 10.58.md) | Règlement du centre de formation professionnelle\r\ncommerce (RCFPCom) |
+| [C 1 10.62](ch/ge/fr/C 1 10.62.md) | Règlement de l’école des arts décoratifs C 1 10.62 |
+| [C 1 10.65](ch/ge/fr/C 1 10.65.md) | Règlement du centre de Lullier C 1 10.65 |
 | [C 1 10.69](ch/ge/fr/C 1 10.69.md) | Règlement relatif à l'école de culture générale pour\r\nadultes (RECGAd) |
 | [C 1 10.70](ch/ge/fr/C 1 10.70.md) | Règlement relatif à l\x92école de culture générale (RECG) |
 | [C 1 10.71](ch/ge/fr/C 1 10.71.md) | Règlement relatif à la formation gymnasiale au collège\r\nde Genève (RGymCG) |
 | [C 1 10.72](ch/ge/fr/C 1 10.72.md) | Règlement relatif à la formation au collège pour adultes\r\nAlice-Rivaz (RCAd) |
 | [C 1 10.74](ch/ge/fr/C 1 10.74.md) | Règlement relatif à la maturité professionnelle\r\n(RMatuPro) |
+| [C 1 10.76](ch/ge/fr/C 1 10.76.md) | Règlement de la maturité technique C 1 10.76 |
+| [C 1 10.78](ch/ge/fr/C 1 10.78.md) | Règlement des formations professionnelles C 1 10.78 |
 | [C 1 10.83](ch/ge/fr/C 1 10.83.md) | Règlement relatif à l\x92enseignement privé (REPriv) |
 | [C 1 11](ch/ge/fr/C 1 11.md) | Loi sur la création de 2 fonds propres affectés pour chaque\r\ncentre de formation\ |
+| [C 1 12](ch/ge/fr/C 1 12.md) | Loi sur l'intégration des enfants et des jeunes à C 1 12 |
+| [C 1 12.01](ch/ge/fr/C 1 12.01.md) | rsGE C 1 12.01: Règlement sur l''intégration des enfants et des jeunes à besoins |
+| [C 1 12.03](ch/ge/fr/C 1 12.03.md) | Règlement relatif à la reprise des mesures de C 1 12.03 |
 | [C 1 12.05](ch/ge/fr/C 1 12.05.md) | Règlement sur la pédagogie spécialisée (RPSpéc) |
 | [C 1 15](ch/ge/fr/C 1 15.md) | Accord intercantonal sur la reconnaissance des diplômes de\r\nfin d\x92études\ |
 | [C 1 15.0](ch/ge/fr/C 1 15.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à l\x92accord\r\nintercantonal\ |
+| [C 1 15.04](ch/ge/fr/C 1 15.04.md) | Ordonnance du Conseil fédéral/Règlement de la C 1 15.04 |
+| [C 1 15.06](ch/ge/fr/C 1 15.06.md) | Règlement concernant la reconnaissance des C 1 15.06 |
+| [C 1 15.09](ch/ge/fr/C 1 15.09.md) | Règlement concernant la reconnaissance des C 1 15.09 |
+| [C 1 15.12](ch/ge/fr/C 1 15.12.md) | Règlement concernant la reconnaissance des C 1 15.12 |
+| [C 1 15.15](ch/ge/fr/C 1 15.15.md) | Règlement concernant la reconnaissance des C 1 15.15 |
 | [C 1 19](ch/ge/fr/C 1 19.md) | Accord intercantonal sur l\x92harmonisation des régimes de\r\nbourses d\x92\ |
 | [C 1 19.0](ch/ge/fr/C 1 19.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à l\x92accord\r\nintercantonal\ |
 | [C 1 20](ch/ge/fr/C 1 20.md) | Loi sur les bourses et prêts d'études (LBPE) |
 | [C 1 20.01](ch/ge/fr/C 1 20.01.md) | Règlement d'application de la loi sur les bourses et\r\nprêts d'études (RBPE) |
+| [C 1 20.04](ch/ge/fr/C 1 20.04.md) | Règlement concernant l'allocation C 1 20.04 |
 | [C 1 20.08](ch/ge/fr/C 1 20.08.md) | Règlement concernant l'exonération partielle des\r\nécolages aux élèves des\ |
 | [C 1 21](ch/ge/fr/C 1 21.md) | Accord intercantonal sur les Hautes écoles spécialisées à\r\npartir de 2005\ |
 | [C 1 21.0](ch/ge/fr/C 1 21.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à l\x92accord\r\nintercantonal\ |
@@ -16437,17 +16502,29 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [C 1 23.0](ch/ge/fr/C 1 23.0.md) | Loi autorisant le Conseil d'Etat à adhérer à la\r\nConvention intercantonale\ |
 | [C 1 24](ch/ge/fr/C 1 24.md) | Accord intercantonal sur le domaine suisse des hautes\r\nécoles (concordat\ |
 | [C 1 24.0](ch/ge/fr/C 1 24.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à l\x92accord\r\nintercantonal\ |
+| [C 1 25](ch/ge/fr/C 1 25.md) | Concordat concernant la Haute école suisse C 1 25 |
+| [C 1 25.0](ch/ge/fr/C 1 25.0.md) | Loi d’approbation du concordat concernant la C 1 25.0 |
 | [C 1 26](ch/ge/fr/C 1 26.md) | Loi sur la Haute école spécialisée de Suisse occidentale \x96\r\nGenève (LHES-SO-GE) |
+| [C 1 26.01](ch/ge/fr/C 1 26.01.md) | Règlement cantonal sur les Hautes écoles C 1 26.01 |
+| [C 1 26.04](ch/ge/fr/C 1 26.04.md) | Règlement d'admission HES-SO C 1 26.04 |
 | [C 1 26.05](ch/ge/fr/C 1 26.05.md) | Règlement sur le statut des membres du conseil de\r\ndirection de la Haute\ |
 | [C 1 27](ch/ge/fr/C 1 27.md) | Convention intercantonale sur la Haute école spécialisée de\r\nSuisse occidentale\ |
 | [C 1 27.0](ch/ge/fr/C 1 27.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à la\r\nconvention intercantonale\ |
 | [C 1 28](ch/ge/fr/C 1 28.md) | Convention intercantonale relative au contrôle\r\nparlementaire sur la Haute\ |
 | [C 1 28.0](ch/ge/fr/C 1 28.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à la\r\nconvention intercantonale\ |
+| [C 1 29](ch/ge/fr/C 1 29.md) | Convention intercantonale C 1 29 |
+| [C 1 29.0](ch/ge/fr/C 1 29.0.md) | Loi autorisant le Conseil d’Etat à adhérer à la C 1 29.0 |
 | [C 1 30](ch/ge/fr/C 1 30.md) | Loi sur l'université (LU) |
+| [C 1 30.01](ch/ge/fr/C 1 30.01.md) | Règlement d'application de la loi sur l'université C 1 30.01 |
+| [C 1 30.06](ch/ge/fr/C 1 30.06.md) | Règlement de l’université C 1 30.06 |
 | [C 1 30.10](ch/ge/fr/C 1 30.10.md) | Règlement sur le rectorat de l'Université de Genève\r\n(RRU) |
 | [C 1 30.15](ch/ge/fr/C 1 30.15.md) | Règlement sur la collaboration hospitalo-universitaire\r\net le statut du\ |
 | [C 1 32](ch/ge/fr/C 1 32.md) | Accord intercantonal sur les contributions aux coûts de\r\nformation des hautes\ |
 | [C 1 32.0](ch/ge/fr/C 1 32.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à l\x92accord\r\nintercantonal\ |
+| [C 1 33](ch/ge/fr/C 1 33.md) | Concordat intercantonal de coordination C 1 33 |
+| [C 1 33.0](ch/ge/fr/C 1 33.0.md) | Loi autorisant le Conseil d’Etat à adhérer au C 1 33.0 |
+| [C 1 35](ch/ge/fr/C 1 35.md) | Accord intercantonal sur la participation au C 1 35 |
+| [C 1 35.0](ch/ge/fr/C 1 35.0.md) | Loi autorisant le Conseil d'Etat à adhérer à C 1 35.0 |
 | [C 1 36](ch/ge/fr/C 1 36.md) | Accord intercantonal sur les contributions dans le domaine\r\ndes écoles supérieures\ |
 | [C 1 36.0](ch/ge/fr/C 1 36.0.md) | Loi autorisant le Conseil d'Etat à adhérer à l'accord\r\nintercantonal sur\ |
 | [C 1 40](ch/ge/fr/C 1 40.md) | Loi concernant la fondation de la faculté autonome de\r\nthéologie protestante(3)\ |
@@ -16457,13 +16534,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [C 1 50.04](ch/ge/fr/C 1 50.04.md) | Règlement concernant l'octroi de subventions en faveur\r\nde l'activité physique\ |
 | [C 2 05](ch/ge/fr/C 2 05.md) | Loi sur la formation professionnelle (LFP) |
 | [C 2 05.01](ch/ge/fr/C 2 05.01.md) | Règlement d'application de la loi sur la formation\r\nprofessionnelle (RFP) |
+| [C 2 05.04](ch/ge/fr/C 2 05.04.md) | Règlement fixant l'émolument pour C 2 05.04 |
+| [C 2 05.08](ch/ge/fr/C 2 05.08.md) | Règlement concernant l’apprentissage et C 2 05.08 |
+| [C 2 05.11](ch/ge/fr/C 2 05.11.md) | Règlement concernant l’apprentissage et C 2 05.11 |
+| [C 2 05.14](ch/ge/fr/C 2 05.14.md) | Règlement provisoire concernant l'apprentissage C 2 05.14 |
+| [C 2 05.17](ch/ge/fr/C 2 05.17.md) | Règlement concernant l'apprentissage et C 2 05.17 |
+| [C 2 05.20](ch/ge/fr/C 2 05.20.md) | Règlement concernant l’apprentissage de la C 2 05.20 |
 | [C 2 05.26](ch/ge/fr/C 2 05.26.md) | Règlement relatif à la formation commerciale pour\r\nporteurs de maturité\ |
+| [C 2 05.32](ch/ge/fr/C 2 05.32.md) | Règlement concernant l'apprentissage et C 2 05.32 |
+| [C 2 05.35](ch/ge/fr/C 2 05.35.md) | Règlement concernant l’apprentissage et C 2 05.35 |
+| [C 2 05.37](ch/ge/fr/C 2 05.37.md) | Règlement concernant la formation en emploi C 2 05.37 |
 | [C 2 06](ch/ge/fr/C 2 06.md) | Accord intercantonal sur les contributions dans le domaine\r\nde la formation\ |
 | [C 2 06.0](ch/ge/fr/C 2 06.0.md) | Loi autorisant le Conseil d'Etat à adhérer à l'accord\r\nintercantonal sur\ |
 | [C 2 08](ch/ge/fr/C 2 08.md) | Loi sur la formation continue des adultes (LFCA) |
 | [C 2 08.01](ch/ge/fr/C 2 08.01.md) | Règlement d\x92application de la loi sur la formation\r\ncontinue des adultes(5)\ |
 | [C 2 10](ch/ge/fr/C 2 10.md) | Loi sur l'information et l'orientation scolaires et\r\nprofessionnelles (LIOSP) |
 | [C 2 10.01](ch/ge/fr/C 2 10.01.md) | Règlement d'application de la loi sur l'information et\r\nl'orientation scolaires\ |
+| [C 2 15](ch/ge/fr/C 2 15.md) | Loi visant à augmenter le nombre de certificats C 2 15 |
+| [C 2 15.01](ch/ge/fr/C 2 15.01.md) | Règlement d'application de la loi visant à C 2 15.01 |
 | [C 3 05](ch/ge/fr/C 3 05.md) | Loi pour la promotion de la culture et de la création\r\nartistique (LPCCA) |
 | [C 3 05.01](ch/ge/fr/C 3 05.01.md) | Règlement d'application de la loi pour la promotion de\r\nla culture et de\ |
 | [C 3 09](ch/ge/fr/C 3 09.md) | Loi relative au Fonds cantonal d'art contemporain (LFCAC) |
@@ -16471,9 +16559,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [C 3 20.04](ch/ge/fr/C 3 20.04.md) | Règlement sur l\x92administration de l\x92observatoire (RObs) |
 | [C 3 20.08](ch/ge/fr/C 3 20.08.md) | Règlement relatif au dépôt et à la comparaison des\r\nchronomètres à l\x92\ |
 | [C 3 20.12](ch/ge/fr/C 3 20.12.md) | Règlement relatif aux émoluments pour les travaux\r\nspéciaux, perçus par\ |
+| [C 4 05](ch/ge/fr/C 4 05.md) | Loi sur les corporations religieuses C 4 05 |
+| [C 4 10](ch/ge/fr/C 4 10.md) | Loi sur le culte extérieur C 4 10 |
+| [C 4 15.03](ch/ge/fr/C 4 15.03.md) | Règlement déclarant que trois Eglises sont C 4 15.03 |
 | [D 1 05](ch/ge/fr/D 1 05.md) | Loi sur la gestion administrative et financière de l\x92Etat\r\n(LGAF) |
+| [D 1 05.03](ch/ge/fr/D 1 05.03.md) | Règlement sur les taux et catégories D 1 05.03 |
 | [D 1 05.04](ch/ge/fr/D 1 05.04.md) | Règlement sur la planification financière et le contrôle\r\nbudgétaire (RPFCB) |
 | [D 1 05.06](ch/ge/fr/D 1 05.06.md) | Règlement sur la planification et la gestion financière\r\ndes investissements\ |
+| [D 1 05.09](ch/ge/fr/D 1 05.09.md) | Règlement sur les crédits supplémentaires D 1 05.09 |
 | [D 1 05.10](ch/ge/fr/D 1 05.10.md) | Règlement sur la gestion des risques(b) (RGR) |
 | [D 1 05.12](ch/ge/fr/D 1 05.12.md) | Règlement sur le recouvrement des créances de l'Etat\r\n(RRCE) |
 | [D 1 05.15](ch/ge/fr/D 1 05.15.md) | Règlement sur l'établissement des états financiers\r\n(REEF) |
@@ -16482,10 +16575,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [D 1 06.01](ch/ge/fr/D 1 06.01.md) | Règlement d'application de la loi sur le financement de\r\nla solidarité internationale\ |
 | [D 1 07](ch/ge/fr/D 1 07.md) | Loi relative aux aides financières extraordinaires de\r\nl\x92Etat destinées\ |
 | [D 1 07.01](ch/ge/fr/D 1 07.01.md) | Règlement d'application de la loi relative aux aides\r\nfinancières extraordinaires\ |
+| [D 1 08](ch/ge/fr/D 1 08.md) | Loi sur le retour à l'équilibre des finances de D 1 08 |
 | [D 1 09](ch/ge/fr/D 1 09.md) | Loi sur la surveillance de l\x92Etat (LSurv) |
 | [D 1 09.01](ch/ge/fr/D 1 09.01.md) | Règlement d'application de la loi sur la surveillance de\r\nl'Etat (RSurv) |
+| [D 1 09.05](ch/ge/fr/D 1 09.05.md) | Règlement sur le pilotage de la surveillance de D 1 09.05 |
+| [D 1 09.10](ch/ge/fr/D 1 09.10.md) | Règlement sur la gestion des risques(a) D 1 09.10 |
+| [D 1 10](ch/ge/fr/D 1 10.md) | Loi sur la surveillance de la gestion D 1 10 |
+| [D 1 10.05](ch/ge/fr/D 1 10.05.md) | Règlement sur le pilotage de la surveillance de D 1 10.05 |
+| [D 1 10.10](ch/ge/fr/D 1 10.10.md) | Règlement sur la gestion des risques D 1 10.10 |
 | [D 1 11](ch/ge/fr/D 1 11.md) | Loi sur les indemnités et les aides financières (LIAF) |
 | [D 1 11.01](ch/ge/fr/D 1 11.01.md) | Règlement d'application de la loi sur les indemnités et\r\nles aides financières\ |
+| [D 1 12](ch/ge/fr/D 1 12.md) | Loi instituant une Cour des comptes D 1 12 |
 | [D 1 13](ch/ge/fr/D 1 13.md) | Loi concernant le traitement et la retraite des magistrates\r\net magistrats\ |
 | [D 1 15](ch/ge/fr/D 1 15.md) | Loi sur la caisse des consignations de l\x92Etat(3) (LCCE) |
 | [D 1 15.03](ch/ge/fr/D 1 15.03.md) | Règlement relatif aux taux d'intérêt de la caisse des\r\nconsignations (RTICC) |
@@ -16498,26 +16598,51 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [D 1 45](ch/ge/fr/D 1 45.md) | Accord entre le Conseil fédéral suisse et le Gouvernement\r\nde la République\ |
 | [D 1 45.0](ch/ge/fr/D 1 45.0.md) | Loi approuvant l'accord franco&#30;suisse, conclu le 29\r\njanvier 1973, relatif\ |
 | [D 2 05](ch/ge/fr/D 2 05.md) | Loi sur la Banque cantonale de Genève (LBCGe) |
+| [D 2 05.03](ch/ge/fr/D 2 05.03.md) | Règlement concernant la garantie accordée aux D 2 05.03 |
 | [D 2 10](ch/ge/fr/D 2 10.md) | Loi sur la caisse publique de prêts sur gages (LCPPG) |
+| [D 2 15](ch/ge/fr/D 2 15.md) | Loi sur la bourse de Genève D 2 15 |
 | [D 2 20](ch/ge/fr/D 2 20.md) | Loi générale relative à la garantie de l'Etat pour les\r\ninstitutions de\ |
 | [D 3 05](ch/ge/fr/D 3 05.md) | Loi générale sur les contributions publiques (LCP) |
 | [D 3 05.04](ch/ge/fr/D 3 05.04.md) | Règlement d\x92application de diverses dispositions de la\r\nloi générale\ |
+| [D 3 05.05](ch/ge/fr/D 3 05.05.md) | Règlement fixant les émoluments de D 3 05.05 |
 | [D 3 05.12](ch/ge/fr/D 3 05.12.md) | Règlement d\x92application de l\x92article 110A de la loi\r\ngénérale sur\ |
 | [D 3 05.16](ch/ge/fr/D 3 05.16.md) | Règlement concernant l\x92adaptation de certaines\r\ncontributions au coût\ |
 | [D 3 05.20](ch/ge/fr/D 3 05.20.md) | Règlement concernant le calcul de la capacité financière\r\ndes communes (RCFC) |
+| [D 3 05.21](ch/ge/fr/D 3 05.21.md) | Arrêté déterminant l’indice général de capacité D 3 05.21 |
 | [D 3 05.30](ch/ge/fr/D 3 05.30.md) | Arrêté approuvant le nombre des centimes additionnels à\r\npercevoir pour\ |
 | [D 3 06](ch/ge/fr/D 3 06.md) | Loi relative à la diminution de l\x92impôt sur le revenu des\r\npersonnes\ |
 | [D 3 07](ch/ge/fr/D 3 07.md) | Loi sur les centimes additionnels cantonaux (LCACant) |
 | [D 3 08](ch/ge/fr/D 3 08.md) | Loi sur l'imposition des personnes physiques (LIPP) |
 | [D 3 08.01](ch/ge/fr/D 3 08.01.md) | Règlement d'application de la loi sur l'imposition des\r\npersonnes physiques\ |
+| [D 3 08.03](ch/ge/fr/D 3 08.03.md) | Règlement transitoire relatif à la déduction des D 3 08.03 |
 | [D 3 08.05](ch/ge/fr/D 3 08.05.md) | Règlement relatif à la compensation des effets de la\r\nprogression à froid\ |
+| [D 3 08.06](ch/ge/fr/D 3 08.06.md) | rsGE D 3 08.06: Règlement fixant le montant maximal de la déduction pour les |
 | [D 3 08.07](ch/ge/fr/D 3 08.07.md) | Règlement concernant la déduction en cas d'activité  des\r\n2 conjoints pour\ |
 | [D 3 08.08](ch/ge/fr/D 3 08.08.md) | Règlement relatif à la valeur locative (RVL) |
 | [D 3 08.10](ch/ge/fr/D 3 08.10.md) | Règlement provisoire relatif à l'imposition d'après la\r\ndépense selon le\ |
+| [D 3 08.12](ch/ge/fr/D 3 08.12.md) | rsGE D 3 08.12: Règlement provisoire en lien avec l''entrée en vigueur de |
 | [D 3 10](ch/ge/fr/D 3 10.md) | Loi sur les estimations fiscales de certains immeubles\r\n(LEFI) |
 | [D 3 10.03](ch/ge/fr/D 3 10.03.md) | Règlement fixant l'indexation de la valeur fiscale de\r\ncertains immeubles\ |
+| [D 3 11](ch/ge/fr/D 3 11.md) | rsGE D 3 11: Loi relative à la préparation de l''estimation des immeubles |
+| [D 3 11.01](ch/ge/fr/D 3 11.01.md) | Règlement d'application de la loi sur l'imposition D 3 11.01 |
+| [D 3 12](ch/ge/fr/D 3 12.md) | Loi sur l'imposition dans le temps des personnes D 3 12 |
+| [D 3 12.01](ch/ge/fr/D 3 12.01.md) | Règlement d'application de la loi sur l'imposition D 3 12.01 |
+| [D 3 13](ch/ge/fr/D 3 13.md) | Loi sur l’imposition des personnes D 3 13 |
+| [D 3 13.01](ch/ge/fr/D 3 13.01.md) | Règlement d’application de la loi sur l’imposition D 3 13.01 |
+| [D 3 13.03](ch/ge/fr/D 3 13.03.md) | Règlement relatif à l'adaptation au D 3 13.03 |
+| [D 3 13.04](ch/ge/fr/D 3 13.04.md) | Règlement d’application de l’article 16 de la loi D 3 13.04 |
+| [D 3 14](ch/ge/fr/D 3 14.md) | Loi sur l’imposition des personnes D 3 14 |
+| [D 3 14.01](ch/ge/fr/D 3 14.01.md) | Règlement d'application de la loi sur l'imposition D 3 14.01 |
 | [D 3 15](ch/ge/fr/D 3 15.md) | Loi sur l\x92imposition des personnes morales (LIPM) |
+| [D 3 15.03](ch/ge/fr/D 3 15.03.md) | Règlement provisoire relatif à la compétence du D 3 15.03 |
+| [D 3 15.04](ch/ge/fr/D 3 15.04.md) | Règlement concernant la réduction de l'impôt sur D 3 15.04 |
+| [D 3 16](ch/ge/fr/D 3 16.md) | Loi sur l’imposition des personnes D 3 16 |
+| [D 3 16.01](ch/ge/fr/D 3 16.01.md) | Règlement d'application de la loi sur l'imposition D 3 16.01 |
+| [D 3 16.03](ch/ge/fr/D 3 16.03.md) | Règlement relatif à l'adaptation au D 3 16.03 |
+| [D 3 16.04](ch/ge/fr/D 3 16.04.md) | Règlement d’application de l’article 15 de D 3 16.04 |
 | [D 3 17](ch/ge/fr/D 3 17.md) | Loi de procédure fiscale (LPFisc) |
+| [D 3 17.03](ch/ge/fr/D 3 17.03.md) | Règlement relatif aux déclarations d'impôt D 3 17.03 |
+| [D 3 17.04](ch/ge/fr/D 3 17.04.md) | Règlement d'application de l'article 34 de la loi de D 3 17.04 |
 | [D 3 17.05](ch/ge/fr/D 3 17.05.md) | Règlement d'application de l'article 12, alinéa 1,\r\nlettre k, de la loi\ |
 | [D 3 17.07](ch/ge/fr/D 3 17.07.md) | Règlement d'application de l'article 29A de la loi de\r\nprocédure fiscale\ |
 | [D 3 18](ch/ge/fr/D 3 18.md) | Loi relative à la perception et aux garanties des impôts\r\ndes personnes\ |
@@ -16529,6 +16654,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [D 3 20.01](ch/ge/fr/D 3 20.01.md) | Règlement d\x92application de la loi sur l\x92imposition à la\r\nsource des\ |
 | [D 3 20.02](ch/ge/fr/D 3 20.02.md) | Règlement fixant les barèmes d'imposition à la source\r\ndes personnes physiques\ |
 | [D 3 20.03](ch/ge/fr/D 3 20.03.md) | Règlement instituant une commission consultative en\r\nmatière d'impôt à la\ |
+| [D 3 20.04](ch/ge/fr/D 3 20.04.md) | Règlement provisoire fixant le taux d'imposition à D 3 20.04 |
+| [D 3 21.02](ch/ge/fr/D 3 21.02.md) | Règlement provisoire fixant le taux de l'impôt sur D 3 21.02 |
 | [D 3 25](ch/ge/fr/D 3 25.md) | Loi sur les droits de succession (LDS) |
 | [D 3 25.03](ch/ge/fr/D 3 25.03.md) | Règlement d'application des articles 6, alinéa 2, de la\r\nloi sur les droits\ |
 | [D 3 25.05](ch/ge/fr/D 3 25.05.md) | Règlement sur l\x92inventaire au décès (RInDé) |
@@ -16541,9 +16668,16 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [D 3 45](ch/ge/fr/D 3 45.md) | Loi sur la constitution de réserves de crise par l\x92économie\r\nprivée (LRCEP) |
 | [D 3 45.01](ch/ge/fr/D 3 45.01.md) | Règlement d\x92exécution de la loi sur la constitution de\r\nréserves de crise\ |
 | [D 3 50](ch/ge/fr/D 3 50.md) | Loi sur les allégements fiscaux pour les réserves de crise\r\n(LAFRC) |
+| [D 3 55](ch/ge/fr/D 3 55.md) | Loi sur le taux d'intérêt légal applicable aux D 3 55 |
+| [D 3 55.01](ch/ge/fr/D 3 55.01.md) | Règlement d'application de la loi sur le taux D 3 55.01 |
 | [D 3 60](ch/ge/fr/D 3 60.md) | Concordat entre les cantons de la Confédération suisse sur\r\nl\x92interdiction\ |
 | [D 3 60.0](ch/ge/fr/D 3 60.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer, au nom de la\r\nRépublique\ |
+| [D 3 65](ch/ge/fr/D 3 65.md) | Concordat sur l'entraide judiciaire pour D 3 65 |
+| [D 3 65.0](ch/ge/fr/D 3 65.0.md) | Loi autorisant le Conseil d'Etat de la République D 3 65.0 |
 | [D 3 70](ch/ge/fr/D 3 70.md) | Loi établissant le budget administratif de l\x92Etat de Genève\r\npour l\x92\ |
+| [D 3 71](ch/ge/fr/D 3 71.md) | Loi autorisant le Conseil d'Etat à pourvoir aux D 3 71 |
+| [D 3 75](ch/ge/fr/D 3 75.md) | Loi autorisant le Conseil d’Etat à percevoir pour D 3 75 |
+| [D 3 75.03](ch/ge/fr/D 3 75.03.md) | Règlement relatif aux frais de perception de la D 3 75.03 |
 | [D 3 80.04](ch/ge/fr/D 3 80.04.md) | Règlement d\x92application de diverses dispositions\r\nfiscales fédérales\ |
 | [E 1 05](ch/ge/fr/E 1 05.md) | Loi d'application du code civil suisse et d'autres lois\r\nfédérales en matière\ |
 | [E 1 05.10](ch/ge/fr/E 1 05.10.md) | Règlement fixant le tarif des frais en matière civile\r\n(RTFMC) |
@@ -16552,22 +16686,33 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [E 1 13.03](ch/ge/fr/E 1 13.03.md) | Règlement sur l\x92état civil (REC) |
 | [E 1 13.09](ch/ge/fr/E 1 13.09.md) | Règlement fixant le tarif des émoluments en matière de\r\nchangement de nom\ |
 | [E 1 16](ch/ge/fr/E 1 16.md) | Loi sur la surveillance des fondations de droit civil et\r\ndes institutions\ |
+| [E 1 16.03](ch/ge/fr/E 1 16.03.md) | Règlement fixant la rémunération des membres E 1 16.03 |
 | [E 1 21.02](ch/ge/fr/E 1 21.02.md) | Règlement d\x92application de l\x92ordonnance fédérale sur\r\nl\x92activité\ |
 | [E 1 25](ch/ge/fr/E 1 25.md) | Loi sur l\x92avance et le recouvrement des pensions\r\nalimentaires (LARPA) |
 | [E 1 25.01](ch/ge/fr/E 1 25.01.md) | Règlement d\x92application de la loi sur l\x92avance et le\r\nrecouvrement\ |
+| [E 1 26](ch/ge/fr/E 1 26.md) | Loi d'application de la loi fédérale sur le E 1 26 |
+| [E 1 26.01](ch/ge/fr/E 1 26.01.md) | Règlement d'exécution de la loi d'application sur E 1 26.01 |
 | [E 1 27](ch/ge/fr/E 1 27.md) | Loi sur le partenariat (LPart-GE) |
 | [E 1 27.01](ch/ge/fr/E 1 27.01.md) | Règlement d\x92application de la loi sur le partenariat\r\n(RPart-GE) |
 | [E 1 40](ch/ge/fr/E 1 40.md) | Loi concernant la vente d\x92objets abandonnés sur les\r\nterrains de l\x92\ |
 | [E 1 40.03](ch/ge/fr/E 1 40.03.md) | Règlement concernant les objets trouvés (RObjT) |
+| [E 1 42](ch/ge/fr/E 1 42.md) | Loi limitant l’acquisition d’immeubles(2) E 1 42 |
 | [E 1 43](ch/ge/fr/E 1 43.md) | Loi d\x92application de la loi fédérale sur l\x92acquisition\r\nd\x92immeubles\ |
 | [E 1 46](ch/ge/fr/E 1 46.md) | Loi sur la géoinformation (LGéo-GE) |
 | [E 1 46.01](ch/ge/fr/E 1 46.01.md) | Règlement sur la géoinformation (RGéo-GE) |
+| [E 1 46.03](ch/ge/fr/E 1 46.03.md) | rsGE E 1 46.03: Règlement sur la mensuration officielle et les cadastres des |
+| [E 1 46.06](ch/ge/fr/E 1 46.06.md) | Règlement fixant le tarif des émoluments du E 1 46.06 |
+| [E 1 47](ch/ge/fr/E 1 47.md) | Loi sur les frais d’abornement en cas de révision E 1 47 |
+| [E 1 48.03](ch/ge/fr/E 1 48.03.md) | rsGE E 1 48.03: Règlement sur l’établissement des actes authentiques par un |
 | [E 1 50.04](ch/ge/fr/E 1 50.04.md) | Règlement sur le registre foncier (RRF) |
 | [E 1 50.06](ch/ge/fr/E 1 50.06.md) | Règlement sur le tarif des émoluments de l\x92office du\r\nregistre foncier\ |
+| [E 1 50.07](ch/ge/fr/E 1 50.07.md) | Règlement fixant le tarif des émoluments du E 1 50.07 |
+| [E 1 50.08](ch/ge/fr/E 1 50.08.md) | Règlement sur le registre foncier et la E 1 50.08 |
 | [E 1 50.13](ch/ge/fr/E 1 50.13.md) | Règlement concernant les autorisations de construire\r\ndites « à bien plaire\ |
 | [E 2 05](ch/ge/fr/E 2 05.md) | Loi sur l\x92organisation judiciaire (LOJ) |
 | [E 2 05.04](ch/ge/fr/E 2 05.04.md) | Règlement sur l'assistance juridique et l'indemnisation\r\ndes conseils juridiques\ |
 | [E 2 05.05](ch/ge/fr/E 2 05.05.md) | Règlement relatif à la formation spécifique des juges\r\nassesseurs de la\ |
+| [E 2 05.06](ch/ge/fr/E 2 05.06.md) | rsGE E 2 05.06: Règlement relatif aux médiateurs pénaux et civils (RMéd) |
 | [E 2 05.07](ch/ge/fr/E 2 05.07.md) | Règlement fixant le nombre de juges assesseurs à élire\r\nau Tribunal administratif\ |
 | [E 2 05.08](ch/ge/fr/E 2 05.08.md) | Règlement relatif aux juges assesseurs et aux juges\r\nsuppléants du Tribunal\ |
 | [E 2 05.09](ch/ge/fr/E 2 05.09.md) | Règlement fixant le nombre de juges assesseurs à élire\r\nau Tribunal de protection\ |
@@ -16588,13 +16733,29 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [E 2 05.53](ch/ge/fr/E 2 05.53.md) | Règlement sur la communication du pouvoir judiciaire\r\n(RComPJ) |
 | [E 2 05.54](ch/ge/fr/E 2 05.54.md) | Règlement sur l'audit interne du pouvoir judiciaire de\r\nla République et\ |
 | [E 2 05.60](ch/ge/fr/E 2 05.60.md) | Règlement relatif aux interprètes et traducteurs mis en\r\n\x9Cuvre par le\ |
+| [E 2 10](ch/ge/fr/E 2 10.md) | Loi fixant le nombre de certains magistrats du E 2 10 |
+| [E 2 20](ch/ge/fr/E 2 20.md) | Loi instituant un conseil supérieur de la E 2 20 |
 | [E 2 20.03](ch/ge/fr/E 2 20.03.md) | Règlement relatif à l\x92élection de certains membres du\r\nconseil supérieur\ |
 | [E 2 40](ch/ge/fr/E 2 40.md) | Loi concernant le traitement et la retraite des magistrats\r\ndu pouvoir judiciaire\ |
 | [E 2 40.03](ch/ge/fr/E 2 40.03.md) | Règlement concernant les indemnités allouées à divers\r\nmagistrates et magistrats\ |
+| [E 2 40.04](ch/ge/fr/E 2 40.04.md) | Règlement relatif à la prévoyance professionnelle E 2 40.04 |
+| [E 3 05](ch/ge/fr/E 3 05.md) | Loi de procédure civile E 3 05 |
+| [E 3 05.10](ch/ge/fr/E 3 05.10.md) | Règlement fixant le tarif des greffes en matière E 3 05.10 |
 | [E 3 05.17](ch/ge/fr/E 3 05.17.md) | Règlement relatif à la surveillance d\x92objets provenant\r\nd\x92évacuation(1)\ |
 | [E 3 10](ch/ge/fr/E 3 10.md) | Loi sur le Tribunal des prud\x92hommes (LTPH) |
 | [E 3 10.03](ch/ge/fr/E 3 10.03.md) | Règlement sur la formation des juges et présidents du\r\nTribunal des prud'hommes\ |
+| [E 3 10.04](ch/ge/fr/E 3 10.04.md) | Règlement relatif au serment des conciliateurs du E 3 10.04 |
 | [E 3 15](ch/ge/fr/E 3 15.md) | Loi organisant la commission de conciliation en matière de\r\nbaux et loyers\ |
+| [E 3 15.04](ch/ge/fr/E 3 15.04.md) | Règlement concernant la commission de E 3 15.04 |
+| [E 3 20](ch/ge/fr/E 3 20.md) | Concordat sur l'entraide judiciaire en matière E 3 20 |
+| [E 3 20.0](ch/ge/fr/E 3 20.0.md) | Loi autorisant le Conseil d'Etat de la République E 3 20.0 |
+| [E 3 25](ch/ge/fr/E 3 25.md) | Concordat libérant le demandeur de l'obligation E 3 25 |
+| [E 3 25.0](ch/ge/fr/E 3 25.0.md) | Loi(1) approuvant l’adhésion du canton de Genève E 3 25.0 |
+| [E 3 30](ch/ge/fr/E 3 30.md) | Concordat sur l'arbitrage E 3 30 |
+| [E 3 30.0](ch/ge/fr/E 3 30.0.md) | Loi autorisant le Conseil d'Etat à adhérer au E 3 30.0 |
+| [E 3 40](ch/ge/fr/E 3 40.md) | Loi d'application de la loi fédérale sur les fonds E 3 40 |
+| [E 3 50](ch/ge/fr/E 3 50.md) | Concordat sur l'exécution des jugements civils E 3 50 |
+| [E 3 50.0](ch/ge/fr/E 3 50.0.md) | Loi autorisant le Conseil d'Etat de la République E 3 50.0 |
 | [E 3 60](ch/ge/fr/E 3 60.md) | Loi d\x92application de la loi fédérale sur la poursuite pour\r\ndettes et\ |
 | [E 3 60.03](ch/ge/fr/E 3 60.03.md) | Règlement fixant le tarif des frais en matière\r\nd'assistance des communes\ |
 | [E 3 60.04](ch/ge/fr/E 3 60.04.md) | Normes d\x92insaisissabilité pour l\x92année 2026 (NI-2026) |
@@ -16604,14 +16765,31 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [E 4 10.03](ch/ge/fr/E 4 10.03.md) | Règlement fixant le tarif des frais en matière pénale\r\n(RTFMP) |
 | [E 4 10.04](ch/ge/fr/E 4 10.04.md) | Règlement d\x92exécution du code pénal suisse en matière\r\nd'interruption\ |
 | [E 4 10.06](ch/ge/fr/E 4 10.06.md) | Règlement concernant les modalités de signature des\r\nordonnances pénales\ |
+| [E 4 10.08](ch/ge/fr/E 4 10.08.md) | Règlement désignant les autorités compétentes E 4 10.08 |
+| [E 4 10.12](ch/ge/fr/E 4 10.12.md) | Règlement de l’office cantonal du casier E 4 10.12 |
 | [E 4 10.15](ch/ge/fr/E 4 10.15.md) | Règlement de fonctionnement de la commission\r\nd'évaluation de la dangerosité\ |
+| [E 4 20](ch/ge/fr/E 4 20.md) | Code de procédure pénale E 4 20 |
+| [E 4 20.03](ch/ge/fr/E 4 20.03.md) | Règlement fixant le tarif des frais et dépens en E 4 20.03 |
+| [E 4 20.09](ch/ge/fr/E 4 20.09.md) | rsGE E 4 20.09: Règlement sur le sort des pièces à conviction de peu de valeur |
+| [E 4 25](ch/ge/fr/E 4 25.md) | Concordat sur l'entraide judiciaire et la E 4 25 |
+| [E 4 25.0](ch/ge/fr/E 4 25.0.md) | Loi relative au concordat sur l'entraide judiciaire E 4 25.0 |
+| [E 4 30](ch/ge/fr/E 4 30.md) | Loi sur les juridictions pour enfants et E 4 30 |
+| [E 4 50](ch/ge/fr/E 4 50.md) | Loi sur l'exécution des peines, la libération E 4 50 |
+| [E 4 50.06](ch/ge/fr/E 4 50.06.md) | Règlement sur l’exécution du travail d’intérêt E 4 50.06 |
+| [E 4 50.12](ch/ge/fr/E 4 50.12.md) | Règlement sur la libération, la réintégration et le E 4 50.12 |
+| [E 4 50.15](ch/ge/fr/E 4 50.15.md) | rsGE E 4 50.15: Règlement sur le service de probation et d''insertion (RSPI) |
 | [E 4 55](ch/ge/fr/E 4 55.md) | Concordat sur l'exécution des peines privatives de liberté\r\net des mesures\ |
 | [E 4 55.0](ch/ge/fr/E 4 55.0.md) | Loi autorisant le Conseil d'Etat à adhérer au concordat\r\nsur l'exécution\ |
+| [E 4 55.01](ch/ge/fr/E 4 55.01.md) | Arrêté constatant l'entrée en vigueur du E 4 55.01 |
+| [E 4 55.03](ch/ge/fr/E 4 55.03.md) | Règlement sur le régime progressif de l'exécution E 4 55.03 |
 | [E 4 55.04](ch/ge/fr/E 4 55.04.md) | Règlement concernant la liste des établissements pour\r\nl'exécution des privations\ |
 | [E 4 55.05](ch/ge/fr/E 4 55.05.md) | Règlement sur l\x92exécution des peines et mesures(5)\r\n(REPM) |
+| [E 4 55.06](ch/ge/fr/E 4 55.06.md) | Règlement sur l’exécution d’une phase du régime E 4 55.06 |
 | [E 4 55.07](ch/ge/fr/E 4 55.07.md) | Règlement sur l'exécution des peines sous la forme de la\r\nsemi-détention\ |
+| [E 4 55.08](ch/ge/fr/E 4 55.08.md) | Règlement sur l’exécution des courtes peines E 4 55.08 |
 | [E 4 55.09](ch/ge/fr/E 4 55.09.md) | Règlement sur l'exécution des peines sous la forme du\r\ntravail d\x92intérêt\ |
 | [E 4 55.11](ch/ge/fr/E 4 55.11.md) | Règlement sur l'exécution des peines privatives de\r\nliberté sous surveillance\ |
+| [E 4 55.12](ch/ge/fr/E 4 55.12.md) | Règlement concernant l'octroi d'autorisations de E 4 55.12 |
 | [E 4 55.13](ch/ge/fr/E 4 55.13.md) | Règlement sur les formes alternatives d'exécution des\r\npeines (RFAEP) |
 | [E 4 55.15](ch/ge/fr/E 4 55.15.md) | Règlement concernant les sorties (RCS) |
 | [E 4 55.17](ch/ge/fr/E 4 55.17.md) | Règlement sur le processus latin d\x92exécution des\r\nsanctions orientée\ |
@@ -16621,8 +16799,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [E 4 58.03](ch/ge/fr/E 4 58.03.md) | Règlement sur le droit disciplinaire applicable aux\r\npersonnes détenues\ |
 | [E 4 58.05](ch/ge/fr/E 4 58.05.md) | Règlement concernant l\x92octroi d\x92autorisations de sortie\r\naux personnes\ |
 | [E 4 60](ch/ge/fr/E 4 60.md) | Loi sur les mesures visant à promouvoir la sécurité des\r\nminorités ayant\ |
+| [E 4 70](ch/ge/fr/E 4 70.md) | rsGE E 4 70: Loi sur la création d’un fonds destiné à la lutte contre la drogue |
 | [E 5 10](ch/ge/fr/E 5 10.md) | Loi sur la procédure administrative (LPA) |
 | [E 5 10.03](ch/ge/fr/E 5 10.03.md) | Règlement sur les frais, émoluments et indemnités en\r\nprocédure administrative\ |
+| [E 5 10.05](ch/ge/fr/E 5 10.05.md) | Règlement sur la communication électronique E 5 10.05 |
 | [E 6 05](ch/ge/fr/E 6 05.md) | Loi sur le notariat (LNot) |
 | [E 6 05.01](ch/ge/fr/E 6 05.01.md) | Règlement d\x92exécution de la loi sur le notariat (RNot) |
 | [E 6 05.03](ch/ge/fr/E 6 05.03.md) | Règlement sur les émoluments des notaires (REmNot) |
@@ -16631,33 +16811,58 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [E 6 15](ch/ge/fr/E 6 15.md) | Loi sur la profession d'huissier judiciaire (LHJ) |
 | [E 6 15.04](ch/ge/fr/E 6 15.04.md) | Règlement sur l\x92exercice de la profession d\x92huissier\r\njudiciaire (RHJ) |
 | [E 6 15.06](ch/ge/fr/E 6 15.06.md) | Règlement fixant le tarif des émoluments des huissiers\r\njudiciaires (REmHJ) |
+| [E 6 20](ch/ge/fr/E 6 20.md) | rsGE E 6 20: Loi réglementant la profession d’agent d’affaires (LPAA) |
+| [E 6 20.01](ch/ge/fr/E 6 20.01.md) | rsGE E 6 20.01: Règlement sur l’exercice de la profession d’agent d’affaires |
+| [E 6 20.03](ch/ge/fr/E 6 20.03.md) | rsGE E 6 20.03: Règlement sur le tarif des émoluments des agents d’affaires |
 | [E 6 25](ch/ge/fr/E 6 25.md) | Loi sur la médiation (LMédiation) |
 | [E 6 25.03](ch/ge/fr/E 6 25.03.md) | Règlement relatif aux médiatrices et médiateurs\r\nassermentés (RMA) |
 | [E 6 25.04](ch/ge/fr/E 6 25.04.md) | Règlement relatif au dispositif d'encouragement à la\r\nmédiation (RDEM) |
 | [F 1 05](ch/ge/fr/F 1 05.md) | Loi sur la police (LPol) |
 | [F 1 05.01](ch/ge/fr/F 1 05.01.md) | Règlement sur l\x92organisation de la police (ROPol) |
+| [F 1 05.03](ch/ge/fr/F 1 05.03.md) | Règlement concernant le traitement des F 1 05.03 |
+| [F 1 05.04](ch/ge/fr/F 1 05.04.md) | Règlement instituant une commission paritaire F 1 05.04 |
+| [F 1 05.05](ch/ge/fr/F 1 05.05.md) | Règlement concernant l'écharpe du chef de la F 1 05.05 |
+| [F 1 05.06](ch/ge/fr/F 1 05.06.md) | Règlement concernant les uniformes de la F 1 05.06 |
 | [F 1 05.07](ch/ge/fr/F 1 05.07.md) | Règlement général sur le personnel de la police (RGPPol) |
 | [F 1 05.08](ch/ge/fr/F 1 05.08.md) | Règlement sur l'organe de médiation indépendante entre\r\nla population et\ |
+| [F 1 05.09](ch/ge/fr/F 1 05.09.md) | Règlement fixant les congés annuels des F 1 05.09 |
+| [F 1 05.10](ch/ge/fr/F 1 05.10.md) | Règlement concernant les indemnités des F 1 05.10 |
+| [F 1 05.11](ch/ge/fr/F 1 05.11.md) | Règlement relatif aux indemnités pour risques F 1 05.11 |
+| [F 1 05.12](ch/ge/fr/F 1 05.12.md) | Règlement concernant l’interdiction d’établir des F 1 05.12 |
 | [F 1 05.15](ch/ge/fr/F 1 05.15.md) | Règlement sur les émoluments et frais des services de\r\npolice (REmPol) |
+| [F 1 05.16](ch/ge/fr/F 1 05.16.md) | Règlement concernant les débours et les autres F 1 05.16 |
 | [F 1 05.18](ch/ge/fr/F 1 05.18.md) | Règlement concernant les chiens de police (RChPol) |
+| [F 1 05.20](ch/ge/fr/F 1 05.20.md) | rsGE F 1 05.20: Règlement instituant le conseil consultatif de sécurité (RCCS) |
+| [F 1 05.21](ch/ge/fr/F 1 05.21.md) | Règlement relatif à la police de la sécurité F 1 05.21 |
 | [F 1 05.24](ch/ge/fr/F 1 05.24.md) | Règlement relatif aux soins médicaux des fonctionnaires\r\nde police et de\ |
+| [F 1 05.27](ch/ge/fr/F 1 05.27.md) | Règlement relatif aux accidents de service des F 1 05.27 |
+| [F 1 05.30](ch/ge/fr/F 1 05.30.md) | Règlement de la commission de recours des F 1 05.30 |
+| [F 1 05.33](ch/ge/fr/F 1 05.33.md) | Convention relative aux attributions de police des F 1 05.33 |
+| [F 1 05.36](ch/ge/fr/F 1 05.36.md) | Convention-type relative aux attributions de F 1 05.36 |
+| [F 1 05.37](ch/ge/fr/F 1 05.37.md) | Règlement sur les agents de sécurité municipaux F 1 05.37 |
 | [F 1 07](ch/ge/fr/F 1 07.md) | Loi sur les agents de la police municipale, les contrôleurs\r\nmunicipaux\ |
 | [F 1 07.01](ch/ge/fr/F 1 07.01.md) | Règlement sur les agents de la police municipale (RAPM) |
 | [F 1 10](ch/ge/fr/F 1 10.md) | Concordat du 3 avril 2014 réglant la coopération en matière\r\nde police en\ |
 | [F 1 10.0](ch/ge/fr/F 1 10.0.md) | Loi autorisant le Conseil d'Etat à adhérer au concordat\r\ndu 3 avril 2014\ |
+| [F 1 12](ch/ge/fr/F 1 12.md) | Accord (concordat) intercantonal du 2 avril 2009 F 1 12 |
+| [F 1 12.0](ch/ge/fr/F 1 12.0.md) | Loi autorisant le Conseil d'Etat à adhérer à F 1 12.0 |
 | [F 1 15](ch/ge/fr/F 1 15.md) | Convention relative aux transports de police (CTPol) |
 | [F 1 15.0](ch/ge/fr/F 1 15.0.md) | Loi approuvant la convention relative aux transports de\r\npolice(1) (L-CTPol) |
 | [F 1 20](ch/ge/fr/F 1 20.md) | Convention sur les frais d\x92interventions de police\r\nextracantonales selon\ |
 | [F 1 25](ch/ge/fr/F 1 25.md) | Loi sur les renseignements et les dossiers de police et la\r\ndélivrance des\ |
 | [F 1 25.01](ch/ge/fr/F 1 25.01.md) | Règlement d\x92application de la loi sur les renseignements\r\net les dossiers\ |
 | [F 1 30](ch/ge/fr/F 1 30.md) | Loi sur les violences domestiques (LVD) |
+| [F 1 30.03](ch/ge/fr/F 1 30.03.md) | rsGE F 1 30.03: Règlement concernant la commission consultative sur les violences |
 | [F 1 50](ch/ge/fr/F 1 50.md) | Loi sur l\x92organisation des établissements et le statut du\r\npersonnel\ |
 | [F 1 50.01](ch/ge/fr/F 1 50.01.md) | Règlement sur l'organisation des établissements et le\r\nstatut du personnel\ |
 | [F 1 50.04](ch/ge/fr/F 1 50.04.md) | Règlement sur le régime intérieur de la prison et le\r\nstatut des personnes\ |
 | [F 1 50.06](ch/ge/fr/F 1 50.06.md) | Règlement relatif à l\x92identification des détenus (RID) |
 | [F 1 50.08](ch/ge/fr/F 1 50.08.md) | Règlement relatif aux établissements ouverts ou fermés\r\nd\x92exécution des\ |
 | [F 1 50.09](ch/ge/fr/F 1 50.09.md) | Règlement fixant les indemnités pour la direction et le\r\npersonnel de surveillance\ |
+| [F 1 50.12](ch/ge/fr/F 1 50.12.md) | Règlement de la maison d'arrêt de Favra F 1 50.12 |
 | [F 1 50.15](ch/ge/fr/F 1 50.15.md) | Règlement de l'établissement de Curabilis (RCurabilis) |
+| [F 1 50.16](ch/ge/fr/F 1 50.16.md) | Règlement du quartier carcéral psychiatrique F 1 50.16 |
+| [F 1 50.20](ch/ge/fr/F 1 50.20.md) | Règlement du centre de sociothérapie « La F 1 50.20 |
 | [F 1 50.24](ch/ge/fr/F 1 50.24.md) | Règlement du centre éducatif de détention et\r\nd'observation de la Clairière\ |
 | [F 1 51](ch/ge/fr/F 1 51.md) | Loi sur le convoyage et la surveillance des détenus hors\r\ndes établissements\ |
 | [F 1 51.03](ch/ge/fr/F 1 51.03.md) | Règlement sur la brigade de sécurité et des audiences\r\n(RBSA) |
@@ -16668,6 +16873,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [F 2 10](ch/ge/fr/F 2 10.md) | Loi d'application de la loi fédérale sur les étrangers(13)\r\n(LaLEtr) |
 | [F 2 10.01](ch/ge/fr/F 2 10.01.md) | Règlement d'application de la loi fédérale sur les\r\nétrangers (RaLEtr) |
 | [F 2 10.02](ch/ge/fr/F 2 10.02.md) | Règlement d'application de l'ordonnance fédérale sur la\r\nlibre circulation\ |
+| [F 2 10.03](ch/ge/fr/F 2 10.03.md) | Règlement d'application des dispositions sur le F 2 10.03 |
+| [F 2 10.04](ch/ge/fr/F 2 10.04.md) | Règlement sur les taxes perçues pour les F 2 10.04 |
 | [F 2 12](ch/ge/fr/F 2 12.md) | Concordat sur l\x92exécution de la détention administrative à\r\nl\x92égard\ |
 | [F 2 12.0](ch/ge/fr/F 2 12.0.md) | Loi d\x92approbation du concordat sur l\x92exécution de la\r\ndétention administrative\ |
 | [F 2 12.04](ch/ge/fr/F 2 12.04.md) | Règlement de la Conférence romande des chefs de\r\ndépartement compétents\ |
@@ -16675,10 +16882,16 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [F 2 12.09](ch/ge/fr/F 2 12.09.md) | Règlement de l'établissement de détention administrative\r\nde Favra (RFavra) |
 | [F 2 15](ch/ge/fr/F 2 15.md) | Loi d\x92application de la loi fédérale sur l\x92asile (LaLAsi) |
 | [F 2 15.04](ch/ge/fr/F 2 15.04.md) | Règlement d'exécution concernant les mesures de\r\nréquisition d'immeubles\ |
+| [F 2 20](ch/ge/fr/F 2 20.md) | Loi concernant le contrôle de la population(6) F 2 20 |
+| [F 2 20.04](ch/ge/fr/F 2 20.04.md) | Règlement relatif aux taxes perçues par l’office F 2 20.04 |
 | [F 2 20.08](ch/ge/fr/F 2 20.08.md) | Règlement relatif à la délivrance de renseignements et\r\nde documents, ainsi\ |
 | [F 2 25](ch/ge/fr/F 2 25.md) | Loi d'application de la loi fédérale sur l'harmonisation\r\ndes registres\ |
+| [F 2 25.02](ch/ge/fr/F 2 25.02.md) | Règlement d'application de la loi fédérale sur F 2 25.02 |
+| [F 3 05](ch/ge/fr/F 3 05.md) | Loi sur la répression de l'abus des appareils F 3 05 |
 | [F 3 10](ch/ge/fr/F 3 10.md) | Loi sur les manifestations sur le domaine public (LMDPu) |
 | [F 3 10.01](ch/ge/fr/F 3 10.01.md) | Règlement d'exécution de la loi sur les manifestations\r\nsur le domaine public\ |
+| [F 3 10.03](ch/ge/fr/F 3 10.03.md) | Règlement concernant la tranquillité publique(19) F 3 10.03 |
+| [F 3 15.04](ch/ge/fr/F 3 15.04.md) | Règlement sur la propreté, la salubrité et la F 3 15.04 |
 | [F 3 17](ch/ge/fr/F 3 17.md) | Loi concernant la facturation des frais de sécurité lors de\r\nmanifestations\ |
 | [F 3 17.01](ch/ge/fr/F 3 17.01.md) | Règlement d\x92application de la loi concernant la\r\nfacturation des frais\ |
 | [F 3 18](ch/ge/fr/F 3 18.md) | Concordat instituant des mesures contre la violence lors de\r\nmanifestations\ |
@@ -16687,38 +16900,51 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [F 3 20](ch/ge/fr/F 3 20.md) | Loi sur les procédés de réclame (LPR) |
 | [F 3 20.01](ch/ge/fr/F 3 20.01.md) | Règlement d'application de la loi sur les procédés de\r\nréclame (RPR) |
 | [F 3 20.03](ch/ge/fr/F 3 20.03.md) | Règlement fixant le tarif des procédés de réclame (RTPR) |
+| [F 3 25.04](ch/ge/fr/F 3 25.04.md) | Règlement sur le vagabondage et la mendicité(1) F 3 25.04 |
 | [F 3 30](ch/ge/fr/F 3 30.md) | Loi sur les piscines et bains publics (LBains) |
 | [F 3 30.03](ch/ge/fr/F 3 30.03.md) | Règlement sur les bains publics (RBains) |
 | [F 3 30.04](ch/ge/fr/F 3 30.04.md) | Règlement de la plage publique des Eaux-Vives (RPEV) |
 | [F 4 05](ch/ge/fr/F 4 05.md) | Loi sur la prévention des sinistres, l\x92organisation et\r\nl\x92intervention\ |
 | [F 4 05.01](ch/ge/fr/F 4 05.01.md) | Règlement d\x92application de la loi sur la prévention des\r\nsinistres, l\x92\ |
+| [F 4 05.03](ch/ge/fr/F 4 05.03.md) | Règlement provisoire relatif à la répartition des F 4 05.03 |
 | [F 4 05.08](ch/ge/fr/F 4 05.08.md) | Règlement fixant le tarif des émoluments applicables aux\r\ninterventions\ |
+| [F 4 05.12](ch/ge/fr/F 4 05.12.md) | Règlement destiné à favoriser l'acquisition F 4 05.12 |
+| [F 4 10.03](ch/ge/fr/F 4 10.03.md) | Convention relative à l'intervention du service F 4 10.03 |
 | [F 4 15](ch/ge/fr/F 4 15.md) | Loi sur les caisses de secours des sapeurs-pompiers (LCSSP) |
 | [F 4 15.01](ch/ge/fr/F 4 15.01.md) | Règlement sur les caisses de secours et primes\r\nd\x92ancienneté des sapeurs-pompiers\ |
 | [G 1 05](ch/ge/fr/G 1 05.md) | Loi d\x92application des dispositions fédérales sur la taxe\r\nd\x92exemption\ |
 | [G 1 05.03](ch/ge/fr/G 1 05.03.md) | Règlement concernant l\x92application des prescriptions\r\nfédérales et cantonales\ |
 | [G 1 10.02](ch/ge/fr/G 1 10.02.md) | Règlement d\x92application des prescriptions fédérales sur\r\nle tir hors\ |
+| [G 1 15.03](ch/ge/fr/G 1 15.03.md) | Règlement instituant une commission G 1 15.03 |
 | [G 1 25.03](ch/ge/fr/G 1 25.03.md) | Règlement sur le corps de musique officiel de l'Etat de\r\nGenève (RCMO) |
+| [G 1 30.04](ch/ge/fr/G 1 30.04.md) | Règlement relatif aux examens d'aptitudes G 1 30.04 |
 | [G 1 50](ch/ge/fr/G 1 50.md) | Loi cantonale sur le service civil (LCSC) |
 | [G 2 05](ch/ge/fr/G 2 05.md) | Loi d\x92application des dispositions fédérales en matière de\r\nprotection\ |
 | [G 2 05.01](ch/ge/fr/G 2 05.01.md) | Règlement d\x92exécution de la loi d\x92application des\r\ndispositions fédérales\ |
 | [G 2 10.02](ch/ge/fr/G 2 10.02.md) | Règlement d\x92application des dispositions fédérales sur\r\nla protection\ |
 | [G 3 02.02](ch/ge/fr/G 3 02.02.md) | Règlement d'application de la loi fédérale sur\r\nl'approvisionnement économique\ |
 | [G 3 03](ch/ge/fr/G 3 03.md) | Loi d'application des dispositions fédérales en matière de\r\nprotection de\ |
+| [G 3 03.03](ch/ge/fr/G 3 03.03.md) | Règlement sur l'organisation de l'intervention G 3 03.03 |
 | [G 3 03.04](ch/ge/fr/G 3 03.04.md) | Règlement sur l'organisation en cas de catastrophe et de\r\nsituation exceptionnelle\ |
 | [G 3 10](ch/ge/fr/G 3 10.md) | Loi sur le service sanitaire coordonné (LSSC) |
 | [H 1 05](ch/ge/fr/H 1 05.md) | Loi d\x92application de la législation fédérale sur la\r\ncirculation routière\ |
 | [H 1 05.01](ch/ge/fr/H 1 05.01.md) | Règlement d\x92exécution de la loi d\x92application de la\r\nlégislation fédérale\ |
+| [H 1 05.04](ch/ge/fr/H 1 05.04.md) | Règlement relatif à la restriction temporaire de la H 1 05.04 |
 | [H 1 05.08](ch/ge/fr/H 1 05.08.md) | Règlement sur les émoluments de l\x92office cantonal des\r\nvéhicules(34)\ |
 | [H 1 05.12](ch/ge/fr/H 1 05.12.md) | Règlement sur le service cantonal de la fourrière des\r\nvéhicules(4) (RSCFV) |
 | [H 1 05.16](ch/ge/fr/H 1 05.16.md) | Règlement sur les patrouilleurs et patrouilleuses\r\nscolaires adultes (RPSA) |
 | [H 1 10.03](ch/ge/fr/H 1 10.03.md) | Règlement concernant la circulation et le stationnement\r\ndes véhicules sur\ |
 | [H 1 13](ch/ge/fr/H 1 13.md) | Loi sur la Fondation des parkings(1) (LFPark) |
+| [H 1 15.03](ch/ge/fr/H 1 15.03.md) | Règlement concernant les garages publics H 1 15.03 |
 | [H 1 20](ch/ge/fr/H 1 20.md) | Loi sur la mobilité (LMob) |
+| [H 1 20.0](ch/ge/fr/H 1 20.0.md) | Loi approuvant la convention entre les cantons H 1 20.0 |
 | [H 1 21](ch/ge/fr/H 1 21.md) | Loi pour une mobilité cohérente et équilibrée (LMCE) |
 | [H 1 21.03](ch/ge/fr/H 1 21.03.md) | Règlement relatif aux plans de mobilité d'entreprises\r\n(RPMob) |
+| [H 1 30](ch/ge/fr/H 1 30.md) | Loi sur les taxis et limousines (transport H 1 30 |
+| [H 1 30.01](ch/ge/fr/H 1 30.01.md) | Règlement d’exécution de la loi sur les taxis et H 1 30.01 |
 | [H 1 31](ch/ge/fr/H 1 31.md) | Loi sur les taxis et les voitures de transport avec\r\nchauffeur (LTVTC) |
 | [H 1 31.01](ch/ge/fr/H 1 31.01.md) | Règlement d'exécution de la loi sur les taxis et les\r\nvoitures de transport\ |
+| [H 1 35.02](ch/ge/fr/H 1 35.02.md) | Règlement concernant le service des fiacres H 1 35.02 |
 | [H 1 40.02](ch/ge/fr/H 1 40.02.md) | Règlement d\x92application de l\x92ordonnance fédérale sur les\r\nconcessions\ |
 | [H 1 50](ch/ge/fr/H 1 50.md) | Loi sur le réseau des transports publics (LRTP) |
 | [H 1 50.01](ch/ge/fr/H 1 50.01.md) | Règlement d\x92exécution de la loi sur le réseau des\r\ntransports publics\ |
@@ -16732,32 +16958,57 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [H 2 05](ch/ge/fr/H 2 05.md) | Loi sur la navigation dans les eaux genevoises (LNav) |
 | [H 2 05.01](ch/ge/fr/H 2 05.01.md) | Règlement d\x92application de la loi sur la navigation dans\r\nles eaux genevoises\ |
 | [H 2 05.02](ch/ge/fr/H 2 05.02.md) | Arrêté fixant les redevances relatives à la loi sur la\r\nnavigation dans\ |
+| [H 2 05.04](ch/ge/fr/H 2 05.04.md) | Arrêté fixant l'indexation des redevances H 2 05.04 |
 | [H 2 10](ch/ge/fr/H 2 10.md) | Loi sur la Compagnie générale de navigation sur le Lac\r\nLéman (LCGN) |
+| [H 2 10.06](ch/ge/fr/H 2 10.06.md) | Règlement intercantonal concernant la police de H 2 10.06 |
+| [H 2 10.07](ch/ge/fr/H 2 10.07.md) | Arrêté approuvant le règlement intercantonal H 2 10.07 |
 | [H 2 15.03](ch/ge/fr/H 2 15.03.md) | Règlement concernant l\x92indication du poids sur les gros\r\ncolis destinés\ |
 | [H 3 05.02](ch/ge/fr/H 3 05.02.md) | Règlement concernant l\x92exécution de la loi fédérale sur\r\nl\x92aviation(7)\ |
 | [H 3 10](ch/ge/fr/H 3 10.md) | Loi sur la procédure en matière de zones de sécurité et de\r\nbruit (LZSB) |
 | [H 3 15.03](ch/ge/fr/H 3 15.03.md) | Règlement interdisant la descente des hydravions\r\ncommerciaux sur la partie\ |
 | [H 3 25](ch/ge/fr/H 3 25.md) | Loi sur l\x92Aéroport international de Genève (LAIG) |
 | [H 3 25.01](ch/ge/fr/H 3 25.01.md) | Règlement d\x92application de la loi sur l\x92Aéroport\r\ninternational de\ |
+| [H 3 25.08](ch/ge/fr/H 3 25.08.md) | Règlement concernant le statut transitoire du H 3 25.08 |
 | [I 1 05](ch/ge/fr/I 1 05.md) | Loi sur les heures d\x92ouverture des magasins(15) (LHOM) |
 | [I 1 05.01](ch/ge/fr/I 1 05.01.md) | Règlement d\x92exécution de la loi sur les heures\r\nd\x92ouverture des magasins(14)\ |
 | [I 1 10](ch/ge/fr/I 1 10.md) | Loi sur la concurrence déloyale, l\x92indication et la\r\nsurveillance des\ |
 | [I 1 10.03](ch/ge/fr/I 1 10.03.md) | Règlement d\x92application des dispositions fédérales sur\r\nl'indication\ |
+| [I 1 10.07](ch/ge/fr/I 1 10.07.md) | Règlement fixant un émolument pour toute I 1 10.07 |
 | [I 1 15.04](ch/ge/fr/I 1 15.04.md) | Règlement d\x92application de la loi fédérale sur la\r\nmétrologie (RaLMétr) |
+| [I 1 15.08](ch/ge/fr/I 1 15.08.md) | Règlement fixant les émoluments à percevoir par I 1 15.08 |
+| [I 1 20.03](ch/ge/fr/I 1 20.03.md) | Règlement sur la vente et la livraison des I 1 20.03 |
 | [I 1 25](ch/ge/fr/I 1 25.md) | Loi relative à Timelab \x96 Fondation du laboratoire\r\nd\x92horlogerie et\ |
+| [I 1 25.04](ch/ge/fr/I 1 25.04.md) | rsGE I 1 25.04: Règlement concernant l’organisation du bureau de contrôle |
+| [I 1 25.08](ch/ge/fr/I 1 25.08.md) | rsGE I 1 25.08: Règlement sur le contrôle facultatif des montres de Genève |
+| [I 1 30](ch/ge/fr/I 1 30.md) | Loi(2) concernant la poursuite et le jugement des I 1 30 |
+| [I 1 30.03](ch/ge/fr/I 1 30.03.md) | Règlement concernant l'indication des prix(4) I 1 30.03 |
 | [I 1 35.02](ch/ge/fr/I 1 35.02.md) | Règlement d'application de la loi fédérale sur le\r\ncommerce itinérant (RaLFCI) |
 | [I 1 36](ch/ge/fr/I 1 36.md) | Loi en faveur du développement de l\x92économie et de l\x92emploi\r\n(LDévEco) |
 | [I 1 36.03](ch/ge/fr/I 1 36.03.md) | Règlement instituant les entités chargées du\r\ndéveloppement de l'employabilité\ |
+| [I 1 36.05](ch/ge/fr/I 1 36.05.md) | rsGE I 1 36.05: Règlement sur l''aide financière extraordinaire de l''Etat |
+| [I 1 36.06](ch/ge/fr/I 1 36.06.md) | rsGE I 1 36.06: Règlement d''application des lois cantonales sur l''aide financière |
+| [I 1 36.07](ch/ge/fr/I 1 36.07.md) | rsGE I 1 36.07: Règlement d''application de la loi 12810 sur l’aide financière |
+| [I 1 36.08](ch/ge/fr/I 1 36.08.md) | rsGE I 1 36.08: Règlement d''application de la loi sur l''aide financière |
+| [I 1 36.09](ch/ge/fr/I 1 36.09.md) | rsGE I 1 36.09: Règlement d''application de la loi 12863 relative aux aides |
 | [I 1 37](ch/ge/fr/I 1 37.md) | Loi sur l'aide aux entreprises (LAE) |
 | [I 1 37.01](ch/ge/fr/I 1 37.01.md) | Règlement d'application de la loi sur l'aide aux\r\nentreprises (RAE) |
 | [I 1 40](ch/ge/fr/I 1 40.md) | Loi accordant le statut de « JEDI » aux jeunes entreprises\r\ndéveloppant\ |
+| [I 1 40.04](ch/ge/fr/I 1 40.04.md) | Règlement sur la régale des marchés I 1 40.04 |
+| [I 1 40.08](ch/ge/fr/I 1 40.08.md) | Règlement relatif à la livraison et à la vente des I 1 40.08 |
+| [I 1 45](ch/ge/fr/I 1 45.md) | rsGE I 1 45: Loi sur le renforcement de l’attractivité de l’audiovisuel (LRAA) |
+| [I 1 45.01](ch/ge/fr/I 1 45.01.md) | rsGE I 1 45.01: Règlement d’application de la loi sur le renforcement de l''attractivité |
 | [I 1 50](ch/ge/fr/I 1 50.md) | Convention intercantonale sur la vente du sel en Suisse\r\n(CISel) |
 | [I 1 50.0](ch/ge/fr/I 1 50.0.md) | Loi concernant la convention intercantonale sur la vente\r\ndu sel en Suisse\ |
 | [I 1 51](ch/ge/fr/I 1 51.md) | Loi sur la vente du sel (LVS) |
+| [I 1 51.01](ch/ge/fr/I 1 51.01.md) | Règlement sur la vente du sel I 1 51.01 |
 | [I 1 60](ch/ge/fr/I 1 60.md) | Loi sur le tourisme (LTour) |
 | [I 1 60.01](ch/ge/fr/I 1 60.01.md) | Règlement d\x92application de la loi sur le tourisme\r\n(RTour) |
+| [I 1 60.04](ch/ge/fr/I 1 60.04.md) | rsGE I 1 60.04: Règlement d''application de la loi sur le soutien au secteur |
 | [I 2 03](ch/ge/fr/I 2 03.md) | Loi sur l\x92exercice des professions ou industries\r\npermanentes, ambulantes\ |
+| [I 2 03.01](ch/ge/fr/I 2 03.01.md) | Règlement d’exécution de la loi sur l’exercice des I 2 03.01 |
 | [I 2 03.04](ch/ge/fr/I 2 03.04.md) | Règlement concernant l\x92installation, l'exploitation et\r\nle contrôle des\ |
+| [I 2 03.08](ch/ge/fr/I 2 03.08.md) | Règlement sur l'assurance-responsabilité civile I 2 03.08 |
+| [I 2 03.12](ch/ge/fr/I 2 03.12.md) | Règlement concernant l’organisation des ventes I 2 03.12 |
 | [I 2 09](ch/ge/fr/I 2 09.md) | Loi sur le commerce d\x92objets usagés ou de seconde main\r\n(LCOU) |
 | [I 2 09.01](ch/ge/fr/I 2 09.01.md) | Règlement d\x92exécution de la loi sur le commerce d\x92objets\r\nusagés ou\ |
 | [I 2 12](ch/ge/fr/I 2 12.md) | Loi sur les agentes et agents intermédiaires(19) (LAInt) |
@@ -16766,23 +17017,44 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [I 2 14.0](ch/ge/fr/I 2 14.0.md) | Loi concernant le concordat sur les entreprises de\r\nsécurité (L-CES) |
 | [I 2 14.01](ch/ge/fr/I 2 14.01.md) | Règlement concernant le concordat sur les entreprises de\r\nsécurité (RCES) |
 | [I 2 18.02](ch/ge/fr/I 2 18.02.md) | Règlement d\x92application de la loi fédérale sur les\r\narmes, les accessoires\ |
+| [I 2 21](ch/ge/fr/I 2 21.md) | Loi sur la restauration, le débit de boissons et I 2 21 |
+| [I 2 21.01](ch/ge/fr/I 2 21.01.md) | Règlement d’exécution de la loi sur la I 2 21.01 |
 | [I 2 22](ch/ge/fr/I 2 22.md) | Loi sur la restauration, le débit de boissons,\r\nl\x92hébergement et le divertissement\ |
 | [I 2 22.01](ch/ge/fr/I 2 22.01.md) | Règlement d'exécution de la loi sur la restauration, le\r\ndébit de boissons,\ |
+| [I 2 24](ch/ge/fr/I 2 24.md) | Loi sur la vente à l’emporter des boissons I 2 24 |
+| [I 2 24.01](ch/ge/fr/I 2 24.01.md) | Règlement d’exécution de la loi sur la vente à I 2 24.01 |
 | [I 2 25](ch/ge/fr/I 2 25.md) | Loi sur la remise à titre gratuit et la vente à l\x92emporter\r\nde boissons\ |
 | [I 2 25.01](ch/ge/fr/I 2 25.01.md) | Règlement d'exécution de la loi sur la remise à titre\r\ngratuit et la vente\ |
+| [I 2 27.0](ch/ge/fr/I 2 27.0.md) | Loi autorisant le Conseil d'Etat à adhérer au I 2 27.0 |
+| [I 2 27.01](ch/ge/fr/I 2 27.01.md) | Règlement concernant le concordat latin sur la I 2 27.01 |
 | [I 2 30](ch/ge/fr/I 2 30.md) | Loi sur les ventes volontaires aux enchères publiques\r\n(LVVE) |
 | [I 2 30.01](ch/ge/fr/I 2 30.01.md) | Règlement d\x92exécution de la loi sur les ventes\r\nvolontaires aux enchères\ |
 | [I 2 36](ch/ge/fr/I 2 36.md) | Loi instituant le dépôt légal (LIDL) |
 | [I 2 36.01](ch/ge/fr/I 2 36.01.md) | Règlement d\x92application de la loi instituant le dépôt\r\nlégal (RIDL) |
+| [I 2 37.03](ch/ge/fr/I 2 37.03.md) | Règlement sur les éditeurs et imprimeurs(2) I 2 37.03 |
+| [I 2 37.06](ch/ge/fr/I 2 37.06.md) | Règlement sur la vente, la distribution et le I 2 37.06 |
 | [I 2 43](ch/ge/fr/I 2 43.md) | Loi sur les prêteurs professionnels, les prêts d\x92argent et\r\nl\x92octroi\ |
 | [I 2 43.01](ch/ge/fr/I 2 43.01.md) | Règlement d'exécution de la loi sur les prêteurs\r\nprofessionnels, les prêts\ |
 | [I 2 46](ch/ge/fr/I 2 46.md) | Loi sur les traducteurs-jurés (LTJ) |
 | [I 2 46.01](ch/ge/fr/I 2 46.01.md) | Règlement d\x92application de la loi sur les\r\ntraducteurs-jurés (RTJ) |
+| [I 2 46.03](ch/ge/fr/I 2 46.03.md) | Règlement relatif aux traducteurs-jurés I 2 46.03 |
 | [I 2 49](ch/ge/fr/I 2 49.md) | Loi sur la prostitution (LProst) |
 | [I 2 49.01](ch/ge/fr/I 2 49.01.md) | Règlement d'exécution de la loi sur la prostitution\r\n(RProst) |
+| [I 2 49.04](ch/ge/fr/I 2 49.04.md) | Règlement relatif à l'exercice de la prostitution I 2 49.04 |
+| [I 3 05](ch/ge/fr/I 3 05.md) | Loi sur les spectacles et les divertissements I 3 05 |
+| [I 3 05.03](ch/ge/fr/I 3 05.03.md) | Règlement concernant les spectacles et I 3 05.03 |
+| [I 3 10.04](ch/ge/fr/I 3 10.04.md) | Règlement relatif au contrôle des appareils I 3 10.04 |
 | [I 3 11](ch/ge/fr/I 3 11.md) | Loi d\x92application de la loi fédérale sur les jeux d\x92argent\r\n(LaLJAr) |
 | [I 3 11.01](ch/ge/fr/I 3 11.01.md) | Règlement d'application de la loi d'application de la\r\nloi fédérale sur\ |
+| [I 3 12](ch/ge/fr/I 3 12.md) | Loi d’application de la loi fédérale sur les jeux de I 3 12 |
 | [I 3 13](ch/ge/fr/I 3 13.md) | Loi sur les maisons de jeu (LMJeu) |
+| [I 3 14](ch/ge/fr/I 3 14.md) | Convention intercantonale sur la surveillance, I 3 14 |
+| [I 3 14.0](ch/ge/fr/I 3 14.0.md) | Loi autorisant le Conseil d’Etat à adhérer à la I 3 14.0 |
+| [I 3 15](ch/ge/fr/I 3 15.md) | 9e convention relative à la Loterie romande I 3 15 |
+| [I 3 15.0](ch/ge/fr/I 3 15.0.md) | Loi d’application de la loi fédérale sur les loteries I 3 15.0 |
+| [I 3 15.03](ch/ge/fr/I 3 15.03.md) | rsGE I 3 15.03: Règlement d’exécution de la loi fédérale sur les loteries |
+| [I 3 15.05](ch/ge/fr/I 3 15.05.md) | Règlement relatif à la répartition des bénéfices de I 3 15.05 |
+| [I 3 15.06](ch/ge/fr/I 3 15.06.md) | Règlement instituant un organe cantonal de I 3 15.06 |
 | [I 3 15.09](ch/ge/fr/I 3 15.09.md) | Règlement sur l'aide au sport (RASport) |
 | [I 3 16](ch/ge/fr/I 3 16.md) | Concordat sur les jeux d\x92argent au niveau suisse (CJA) |
 | [I 3 16.0](ch/ge/fr/I 3 16.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer au concordat\r\nsur les jeux\ |
@@ -16797,14 +17069,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [I 4 07](ch/ge/fr/I 4 07.md) | Loi d\x92application de la loi fédérale sur les\r\ncontrats-cadres de baux\ |
 | [I 4 10](ch/ge/fr/I 4 10.md) | Loi protégeant les garanties fournies par les locataires\r\n(LGFL) |
 | [I 4 10.01](ch/ge/fr/I 4 10.01.md) | Règlement d\x92exécution de la loi protégeant les garanties\r\nfournies par\ |
+| [I 4 25](ch/ge/fr/I 4 25.md) | Loi(4) destinée à assurer la construction de I 4 25 |
+| [I 4 25.04](ch/ge/fr/I 4 25.04.md) | Règlement concernant l'exemption d'impôts des I 4 25.04 |
+| [I 4 30](ch/ge/fr/I 4 30.md) | Loi d'application de la loi fédérale concernant I 4 30 |
+| [I 4 35](ch/ge/fr/I 4 35.md) | Loi d'application de l'arrêté fédéral concernant I 4 35 |
+| [I 4 35.04](ch/ge/fr/I 4 35.04.md) | Règlement concernant l'encouragement à la I 4 35.04 |
 | [I 4 40](ch/ge/fr/I 4 40.md) | Loi pour un plan d\x92urgence-logements (LPUL) |
 | [I 4 45.03](ch/ge/fr/I 4 45.03.md) | Règlement relatif à la consignation du loyer (RConsign) |
 | [I 4 45.06](ch/ge/fr/I 4 45.06.md) | Règlement relatif à la pénurie en matière d\x92habitations\r\net de locaux\ |
 | [I 4 45.07](ch/ge/fr/I 4 45.07.md) | Arrêté déterminant les catégories de logements où sévit\r\nla pénurie en vue\ |
+| [I 4 50.03](ch/ge/fr/I 4 50.03.md) | Règlement sur le service du logement et I 4 50.03 |
 | [I 4 53](ch/ge/fr/I 4 53.md) | Loi sur l\x92aide à la propriété individuelle (LAPI) |
 | [I 4 53.01](ch/ge/fr/I 4 53.01.md) | Règlement d\x92application de la loi sur l\x92aide à la\r\npropriété individuelle\ |
 | [I 4 55](ch/ge/fr/I 4 55.md) | Loi encourageant l\x92accession à la propriété du logement par\r\nl\x92épargne-logement\ |
 | [I 4 55.01](ch/ge/fr/I 4 55.01.md) | Règlement d\x92application de la loi encourageant\r\nl\x92accession à la propriété\ |
+| [I 4 60.04](ch/ge/fr/I 4 60.04.md) | Règlement de la commission consultative pour le I 4 60.04 |
+| [I 4 60.08](ch/ge/fr/I 4 60.08.md) | Règlement relatif au logement des travailleurs I 4 60.08 |
+| [I 4 60.12](ch/ge/fr/I 4 60.12.md) | Règlement concernant l'émolument annuel des I 4 60.12 |
+| [I 4 60.16](ch/ge/fr/I 4 60.16.md) | Règlement fixant la participation des employeurs I 4 60.16 |
 | [J 1 05](ch/ge/fr/J 1 05.md) | Loi sur l'inspection et les relations du travail (LIRT) |
 | [J 1 05.01](ch/ge/fr/J 1 05.01.md) | Règlement d\x92application de la loi sur l'inspection et\r\nles relations\ |
 | [J 1 05.03](ch/ge/fr/J 1 05.03.md) | Arrêté relatif au salaire minimum cantonal pour l\x92année\r\n2026 (ArSMC-2026) |
@@ -16812,25 +17094,61 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [J 1 15.01](ch/ge/fr/J 1 15.01.md) | Règlement d\x92application de la loi concernant la Chambre\r\ndes relations\ |
 | [J 1 15.03](ch/ge/fr/J 1 15.03.md) | Règlement fixant les indemnités allouées aux juges de la\r\nChambre des relations\ |
 | [J 1 20](ch/ge/fr/J 1 20.md) | Loi protégeant les garanties fournies par les employés\r\n(LPGFE) |
+| [J 1 30.04](ch/ge/fr/J 1 30.04.md) | Règlement de la commission consultative sur les J 1 30.04 |
 | [J 1 45](ch/ge/fr/J 1 45.md) | Loi sur les jours fériés (LJF) |
 | [J 1 50.03](ch/ge/fr/J 1 50.03.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs de l\x92économie\ |
 | [J 1 50.04](ch/ge/fr/J 1 50.04.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs pour les organisations\ |
+| [J 1 50.05](ch/ge/fr/J 1 50.05.md) | Contrat-type de travail avec salaires minimaux J 1 50.05 |
 | [J 1 50.06](ch/ge/fr/J 1 50.06.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs pour le secteur\ |
 | [J 1 50.07](ch/ge/fr/J 1 50.07.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs pour le secteur\ |
 | [J 1 50.09](ch/ge/fr/J 1 50.09.md) | Contrat-type de travail de l\x92agriculture (CTT-Agri) |
+| [J 1 50.10](ch/ge/fr/J 1 50.10.md) | rsGE J 1 50.10: Contrat-type de travail de la floriculture (CTT-Flor) |
+| [J 1 50.11](ch/ge/fr/J 1 50.11.md) | rsGE J 1 50.11: Contrat-type de travail avec salaires minimaux impératifs |
 | [J 1 50.12](ch/ge/fr/J 1 50.12.md) | Contrat-type de travail des jeunes gens au pair\r\nmajeurs(2) (CTT-TPMaj) |
 | [J 1 50.15](ch/ge/fr/J 1 50.15.md) | Contrat-type de travail des jeunes gens au pair mineurs\r\n(CTT-TPMin)(3) |
 | [J 1 50.16](ch/ge/fr/J 1 50.16.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs des esthéticiennes(1)\ |
 | [J 1 50.17](ch/ge/fr/J 1 50.17.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs pour le secteur\ |
 | [J 1 50.18](ch/ge/fr/J 1 50.18.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs pour le transport\ |
 | [J 1 50.19](ch/ge/fr/J 1 50.19.md) | Contrat-type de travail avec salaires minimaux\r\nimpératifs des monteurs\ |
+| [J 1 50.20](ch/ge/fr/J 1 50.20.md) | Accord salarial genevois dans le secteur de J 1 50.20 |
+| [J 1 50.21](ch/ge/fr/J 1 50.21.md) | Arrêté étendant le champ d'application de la J 1 50.21 |
+| [J 1 50.22](ch/ge/fr/J 1 50.22.md) | Convention collective de travail des bureaux J 1 50.22 |
+| [J 1 50.23](ch/ge/fr/J 1 50.23.md) | Arrêté étendant le champ d'application de la J 1 50.23 |
+| [J 1 50.24](ch/ge/fr/J 1 50.24.md) | Convention collective pour la retraite anticipée J 1 50.24 |
+| [J 1 50.25](ch/ge/fr/J 1 50.25.md) | Arrêté étendant le champ d’application de la J 1 50.25 |
+| [J 1 50.26](ch/ge/fr/J 1 50.26.md) | Convention collective de travail pour les métiers J 1 50.26 |
+| [J 1 50.27](ch/ge/fr/J 1 50.27.md) | Convention collective de travail pour le métier J 1 50.27 |
+| [J 1 50.28](ch/ge/fr/J 1 50.28.md) | Convention collective de travail pour le métier de J 1 50.28 |
+| [J 1 50.29](ch/ge/fr/J 1 50.29.md) | Convention collective de travail pour les métiers J 1 50.29 |
+| [J 1 50.30](ch/ge/fr/J 1 50.30.md) | Arrêté étendant le champ d'application de la J 1 50.30 |
+| [J 1 50.31](ch/ge/fr/J 1 50.31.md) | Convention collective de travail du deux-roues J 1 50.31 |
+| [J 1 50.32](ch/ge/fr/J 1 50.32.md) | Arrêté étendant le champ d'application de la J 1 50.32 |
+| [J 1 50.33](ch/ge/fr/J 1 50.33.md) | Convention collective de travail des métiers du J 1 50.33 |
+| [J 1 50.34](ch/ge/fr/J 1 50.34.md) | Arrêté étendant le champ d’application de la J 1 50.34 |
+| [J 1 50.35](ch/ge/fr/J 1 50.35.md) | Convention collective de travail pour le secteur J 1 50.35 |
+| [J 1 50.36](ch/ge/fr/J 1 50.36.md) | Arrêté à fin d’extension, selon l’article 1a LECCT, J 1 50.36 |
+| [J 1 50.37](ch/ge/fr/J 1 50.37.md) | Convention collective de travail de la J 1 50.37 |
+| [J 1 50.40](ch/ge/fr/J 1 50.40.md) | Arrêté étendant, selon l'article 1a LECCT, le J 1 50.40 |
+| [J 1 50.41](ch/ge/fr/J 1 50.41.md) | Convention collective de travail cadre du J 1 50.41 |
+| [J 1 50.45](ch/ge/fr/J 1 50.45.md) | Arrêté à fin d’extension du champ d’application J 1 50.45 |
+| [J 1 50.46](ch/ge/fr/J 1 50.46.md) | Convention collective de travail pour les J 1 50.46 |
+| [J 1 50.60](ch/ge/fr/J 1 50.60.md) | Arrêté étendant selon l’article 1a LECCT le champ J 1 50.60 |
+| [J 1 50.61](ch/ge/fr/J 1 50.61.md) | Convention collective de travail du secteur des J 1 50.61 |
+| [J 1 50.66](ch/ge/fr/J 1 50.66.md) | Arrêté étendant le champ d'application de la J 1 50.66 |
+| [J 1 50.67](ch/ge/fr/J 1 50.67.md) | Convention collective de travail pour les J 1 50.67 |
 | [J 2 05](ch/ge/fr/J 2 05.md) | Loi sur le service de l\x92emploi et la location de services\r\n(LSELS) |
 | [J 2 05.01](ch/ge/fr/J 2 05.01.md) | Règlement d\x92exécution de la loi sur le service de\r\nl\x92emploi et la\ |
+| [J 2 09.02](ch/ge/fr/J 2 09.02.md) | Règlement d'application de l'ordonnance sur J 2 09.02 |
+| [J 2 10.02](ch/ge/fr/J 2 10.02.md) | Règlement d’application de l’ordonnance limitant J 2 10.02 |
+| [J 2 10.12](ch/ge/fr/J 2 10.12.md) | Règlement d'application de l'arrêté du Conseil J 2 10.12 |
 | [J 2 20](ch/ge/fr/J 2 20.md) | Loi en matière de chômage (LMC) |
 | [J 2 20.01](ch/ge/fr/J 2 20.01.md) | Règlement d\x92exécution de la loi en matière de chômage\r\n(RMC) |
 | [J 2 20.03](ch/ge/fr/J 2 20.03.md) | Règlement relatif à la caisse cantonale genevoise de\r\nchômage (RCCGC) |
+| [J 2 25](ch/ge/fr/J 2 25.md) | Loi sur les prestations cantonales accordées aux J 2 25 |
+| [J 2 25.01](ch/ge/fr/J 2 25.01.md) | Règlement relatif à l’indexation des prestations J 2 25.01 |
 | [J 3 05](ch/ge/fr/J 3 05.md) | Loi d\x92application de la loi fédérale sur\r\nl\x92assurance-maladie (LaLAMal) |
 | [J 3 05.01](ch/ge/fr/J 3 05.01.md) | Règlement d\x92exécution de la loi d\x92application de la loi\r\nfédérale\ |
+| [J 3 05.04](ch/ge/fr/J 3 05.04.md) | Règlement fixant les tarifs provisoires des J 3 05.04 |
 | [J 3 05.05](ch/ge/fr/J 3 05.05.md) | Règlement fixant les tarifs des prestations fournies par\r\nles maisons de\ |
 | [J 3 05.06](ch/ge/fr/J 3 05.06.md) | Règlement fixant les tarifs des prestations fournies par\r\nles Hôpitaux universitaires\ |
 | [J 3 05.07](ch/ge/fr/J 3 05.07.md) | Règlement fixant les tarifs des prestations fournies par\r\nles établissements\ |
@@ -16841,11 +17159,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [J 3 05.12](ch/ge/fr/J 3 05.12.md) | Règlement fixant les forfaits journaliers des\r\nhospitalisations de jour\ |
 | [J 3 05.13](ch/ge/fr/J 3 05.13.md) | Règlement fixant le tarif provisoire des prestations\r\nfournies par les Hôpitaux\ |
 | [J 3 05.14](ch/ge/fr/J 3 05.14.md) | Règlement fixant les tarifs des prestations fournies par\r\nles hôpitaux privés\ |
+| [J 3 05.15](ch/ge/fr/J 3 05.15.md) | Règlement fixant le tarif provisoire des J 3 05.15 |
 | [J 3 05.16](ch/ge/fr/J 3 05.16.md) | Règlement fixant le tarif-cadre des actes professionnels\r\nchiropratiques\ |
 | [J 3 05.17](ch/ge/fr/J 3 05.17.md) | Règlement fixant le tarif provisoire des prestations\r\nfournies par les Hôpitaux\ |
 | [J 3 05.18](ch/ge/fr/J 3 05.18.md) | Règlement fixant la valeur du point des prestations\r\nfournies par les physiothérapeutes\ |
 | [J 3 05.19](ch/ge/fr/J 3 05.19.md) | Règlement fixant les tarifs provisoires des prestations\r\nde soins psychiatriques\ |
 | [J 3 05.20](ch/ge/fr/J 3 05.20.md) | Règlement fixant le tarif-cadre des prestations fournies\r\npar l\x92Institution\ |
+| [J 3 05.21](ch/ge/fr/J 3 05.21.md) | Règlement fixant le tarif-cadre des prestations J 3 05.21 |
 | [J 3 05.22](ch/ge/fr/J 3 05.22.md) | Règlement fixant le tarif-cadre des prestations fournies\r\npar les infirmières\ |
 | [J 3 05.23](ch/ge/fr/J 3 05.23.md) | Règlement fixant les montants destinés à déterminer le\r\nfinancement résiduel\ |
 | [J 3 05.24](ch/ge/fr/J 3 05.24.md) | Règlement fixant le tarif-cadre des prestations fournies\r\npar les logopédistes/orthophonistes\ |
@@ -16856,20 +17176,31 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [J 3 05.32](ch/ge/fr/J 3 05.32.md) | Règlement fixant le tarif-cadre des prestations fournies\r\npar les sages-femmes\ |
 | [J 3 05.36](ch/ge/fr/J 3 05.36.md) | Règlement fixant le tarif des conditions relatives à la\r\nprise en charge\ |
 | [J 3 05.50](ch/ge/fr/J 3 05.50.md) | Règlement sur l'admission des fournisseurs de\r\nprestations à pratiquer à\ |
+| [J 3 05.51](ch/ge/fr/J 3 05.51.md) | Règlement instituant une commission J 3 05.51 |
 | [J 3 05.52](ch/ge/fr/J 3 05.52.md) | Règlement instituant une commission consultative en\r\nmatière de planification\ |
 | [J 3 20](ch/ge/fr/J 3 20.md) | Loi d\x92application de la loi fédérale sur\r\nl\x92assurance-accidents (LaLAA) |
 | [J 3 20.03](ch/ge/fr/J 3 20.03.md) | Règlement concernant la caisse nationale suisse\r\nd\x92assurance en cas d\x92\ |
 | [J 3 20.06](ch/ge/fr/J 3 20.06.md) | Règlement fixant le tarif des prestations médicales pour\r\nla caisse nationale\ |
+| [J 3 20.09](ch/ge/fr/J 3 20.09.md) | Règlement concernant les apprentis qui J 3 20.09 |
 | [J 3 25.04](ch/ge/fr/J 3 25.04.md) | Règlement concernant les prestations aux élèves victimes\r\nd'accidents (RPEVA) |
+| [J 3 55.03](ch/ge/fr/J 3 55.03.md) | Règlement relatif au subside complémentaire J 3 55.03 |
 | [J 4 04](ch/ge/fr/J 4 04.md) | Loi sur l\x92aide sociale et la lutte contre la précarité\r\n(LASLP) |
 | [J 4 04.01](ch/ge/fr/J 4 04.01.md) | Règlement d'application de la loi sur l'aide sociale et\r\nla lutte contre\ |
 | [J 4 04.04](ch/ge/fr/J 4 04.04.md) | Règlement instituant une commission consultative de la\r\npolitique d'asile\ |
+| [J 4 04.06](ch/ge/fr/J 4 04.06.md) | rsGE J 4 04.06: Règlement d''application de la loi permettant de soutenir |
+| [J 4 04.08](ch/ge/fr/J 4 04.08.md) | rsGE J 4 04.08: Règlement d''exécution de la loi sur l''indemnisation pour |
+| [J 4 05](ch/ge/fr/J 4 05.md) | Loi sur l'assistance publique J 4 05 |
+| [J 4 05.03](ch/ge/fr/J 4 05.03.md) | Arrêté relatif aux directives 2002 en matière J 4 05.03 |
+| [J 4 05.06](ch/ge/fr/J 4 05.06.md) | Arrêté relatif à l'aide financière aux étrangers non J 4 05.06 |
+| [J 4 05.09](ch/ge/fr/J 4 05.09.md) | Règlement sur les prestations d'aide d'urgence J 4 05.09 |
 | [J 4 06](ch/ge/fr/J 4 06.md) | Loi sur le revenu déterminant unifié(7) (LRDU) |
 | [J 4 06.01](ch/ge/fr/J 4 06.01.md) | Règlement d'exécution de la loi sur le revenu\r\ndéterminant unifié (RRDU) |
 | [J 4 07](ch/ge/fr/J 4 07.md) | Loi sur l'Hospice général (LHG) |
 | [J 4 09.04](ch/ge/fr/J 4 09.04.md) | Règlement sur l\x92office de protection de l\x92adulte(1)\r\n(ROPAd) |
 | [J 4 10](ch/ge/fr/J 4 10.md) | Loi d'application de la loi fédérale sur l'aide aux\r\nvictimes d'infractions\ |
 | [J 4 10.01](ch/ge/fr/J 4 10.01.md) | Règlement d'exécution de la loi d'application de la loi\r\nfédérale sur l\x92\ |
+| [J 4 10.02](ch/ge/fr/J 4 10.02.md) | Règlement relatif à l’instance d’indemnisation J 4 10.02 |
+| [J 4 10.04](ch/ge/fr/J 4 10.04.md) | Règlement relatif au fonds de prévention de la J 4 10.04 |
 | [J 4 11](ch/ge/fr/J 4 11.md) | Loi sur l\x92aide aux personnes sans abri (LAPSA) |
 | [J 4 11.01](ch/ge/fr/J 4 11.01.md) | Règlement d'application de la loi sur l\x92aide aux\r\npersonnes sans abri\ |
 | [J 4 12](ch/ge/fr/J 4 12.md) | Loi sur la prévention et la lutte contre le surendettement\r\n(LPLS) |
@@ -16884,25 +17215,46 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [J 4 25.03](ch/ge/fr/J 4 25.03.md) | Règlement relatif aux prestations cantonales\r\ncomplémentaires à l'assurance-vieillesse\ |
 | [J 4 25.04](ch/ge/fr/J 4 25.04.md) | Règlement relatif aux prestations complémentaires\r\nfamiliales (RPCFam) |
 | [J 5 03.06](ch/ge/fr/J 5 03.06.md) | Règlement instituant une commission cantonale de la\r\nfamille (RComFam) |
+| [J 5 05](ch/ge/fr/J 5 05.md) | Loi concernant le centre d’information familiale et J 5 05 |
+| [J 5 05.01](ch/ge/fr/J 5 05.01.md) | Règlement d'exécution de la loi concernant la J 5 05.01 |
 | [J 5 07](ch/ge/fr/J 5 07.md) | Loi instituant une assurance en cas de maternité et\r\nd\x92adoption (LAMat) |
 | [J 5 07.01](ch/ge/fr/J 5 07.01.md) | Règlement d\x92application de la loi instituant une\r\nassurance en cas de\ |
 | [J 5 07.03](ch/ge/fr/J 5 07.03.md) | Règlement du conseil d\x92administration du fonds cantonal\r\nde compensation\ |
 | [J 5 10](ch/ge/fr/J 5 10.md) | Loi sur les allocations familiales (LAF) |
 | [J 5 10.01](ch/ge/fr/J 5 10.01.md) | Règlement d\x92exécution de la loi sur les allocations\r\nfamiliales (RAF) |
 | [J 5 10.03](ch/ge/fr/J 5 10.03.md) | Règlement du conseil d\x92administration du fonds cantonal\r\nde compensation\ |
+| [J 5 15](ch/ge/fr/J 5 15.md) | Loi concernant les allocations familiales aux J 5 15 |
 | [J 5 25.04](ch/ge/fr/J 5 25.04.md) | Règlement instaurant une carte pour familles nombreuses\r\n(RCFN) |
 | [J 6 01](ch/ge/fr/J 6 01.md) | Loi sur l\x92enfance et la jeunesse (LEJ) |
 | [J 6 01.01](ch/ge/fr/J 6 01.01.md) | Règlement d'application de la loi sur l'enfance et la\r\njeunesse (REJ) |
+| [J 6 05](ch/ge/fr/J 6 05.md) | Loi sur l’office de l’enfance et de la jeunesse(19) J 6 05 |
 | [J 6 11](ch/ge/fr/J 6 11.md) | Loi relative aux centres de loisirs et de rencontres et à\r\nla Fondation\ |
 | [J 6 15](ch/ge/fr/J 6 15.md) | Loi sur la Fondation officielle de la jeunesse (LFOJ) |
+| [J 6 20.04](ch/ge/fr/J 6 20.04.md) | rsGE J 6 20.04: Règlement sur la surveillance des mineurs (RSM) |
+| [J 6 25](ch/ge/fr/J 6 25.md) | Loi sur l'accueil et le placement d’enfants hors du J 6 25 |
+| [J 6 25.01](ch/ge/fr/J 6 25.01.md) | rsGE J 6 25.01: Règlement sur l''accueil et le placement d''enfants hors du |
 | [J 6 25.04](ch/ge/fr/J 6 25.04.md) | Règlement fixant les indemnités pour les familles\r\nd'accueil avec hébergement\ |
 | [J 6 26.04](ch/ge/fr/J 6 26.04.md) | Règlement fixant la participation financière des père et\r\nmère aux frais\ |
 | [J 6 28](ch/ge/fr/J 6 28.md) | Loi sur l\x92accueil préscolaire (LAPr) |
 | [J 6 28.01](ch/ge/fr/J 6 28.01.md) | Règlement d'application de la loi sur l'accueil\r\npréscolaire (RAPr) |
+| [J 6 29](ch/ge/fr/J 6 29.md) | Loi sur les structures d'accueil de la petite J 6 29 |
+| [J 6 29.01](ch/ge/fr/J 6 29.01.md) | rsGE J 6 29.01: Règlement sur les structures d''accueil de la petite enfance |
+| [J 6 30](ch/ge/fr/J 6 30.md) | Loi concernant l'attribution de subventions aux J 6 30 |
+| [J 6 30.01](ch/ge/fr/J 6 30.01.md) | rsGE J 6 30.01: Règlement d’application de la loi concernant l’attribution |
 | [J 6 32](ch/ge/fr/J 6 32.md) | Loi sur l\x92accueil à journée continue (LAJC) |
 | [J 6 32.01](ch/ge/fr/J 6 32.01.md) | Règlement d\x92application de la loi sur l'accueil à\r\njournée continue (RAJC) |
+| [J 6 35](ch/ge/fr/J 6 35.md) | Loi sur la coordination, le contrôle et l’octroi de J 6 35 |
+| [J 6 35.01](ch/ge/fr/J 6 35.01.md) | rsGE J 6 35.01: Règlement d’application de la loi sur la coordination, le |
+| [J 7 04](ch/ge/fr/J 7 04.md) | Loi relative à l'office cantonal des assurances J 7 04 |
+| [J 7 04.01](ch/ge/fr/J 7 04.01.md) | Règlement d'exécution de la loi relative à l'office J 7 04.01 |
+| [J 7 10](ch/ge/fr/J 7 10.md) | Loi sur les prestations fédérales J 7 10 |
+| [J 7 10.01](ch/ge/fr/J 7 10.01.md) | Règlement d’application de la loi sur les J 7 10.01 |
+| [J 7 10.05](ch/ge/fr/J 7 10.05.md) | Règlement relatif au remboursement des frais de J 7 10.05 |
+| [J 7 15](ch/ge/fr/J 7 15.md) | Loi sur les prestations cantonales J 7 15 |
+| [J 7 15.01](ch/ge/fr/J 7 15.01.md) | Règlement d’application de la loi sur les J 7 15.01 |
 | [J 7 20](ch/ge/fr/J 7 20.md) | Loi sur la gestion des établissements pour personnes âgées\r\n(LGEPA) |
 | [J 7 20.01](ch/ge/fr/J 7 20.01.md) | Règlement d'application de la loi sur la gestion des\r\nétablissements pour\ |
+| [J 7 30](ch/ge/fr/J 7 30.md) | Loi concernant la maison de retraite du Petit- J 7 30 |
 | [J 7 35](ch/ge/fr/J 7 35.md) | Loi concernant les Rentes genevoises \x96 Assurance pour la\r\nvieillesse\ |
 | [J 7 35.01](ch/ge/fr/J 7 35.01.md) | Règlement d\x92exécution de la loi concernant les Rentes\r\ngenevoises \x96\ |
 | [K 1 03](ch/ge/fr/K 1 03.md) | Loi sur la santé (LS) |
@@ -16910,16 +17262,23 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [K 1 03.07](ch/ge/fr/K 1 03.07.md) | Règlement relatif à la régulation des équipements\r\nmédico-techniques lourds\ |
 | [K 1 04](ch/ge/fr/K 1 04.md) | Loi sur l\x92organisation du réseau de soins en vue du\r\nmaintien à domicile\ |
 | [K 1 04.01](ch/ge/fr/K 1 04.01.md) | Règlement d\x92application de la loi sur l\x92organisation du\r\nréseau de\ |
+| [K 1 05](ch/ge/fr/K 1 05.md) | Loi sur l’aide à domicile K 1 05 |
+| [K 1 06](ch/ge/fr/K 1 06.md) | Loi sur le réseau de soins et le maintien à K 1 06 |
+| [K 1 06.01](ch/ge/fr/K 1 06.01.md) | Règlement d'application de la loi sur le réseau de K 1 06.01 |
 | [K 1 07](ch/ge/fr/K 1 07.md) | Loi sur l\x92Institution genevoise de maintien à domicile(5)\r\n(LIMAD) |
+| [K 1 07.01](ch/ge/fr/K 1 07.01.md) | Règlement d'application de la loi sur les centres K 1 07.01 |
 | [K 1 10](ch/ge/fr/K 1 10.md) | Convention intercantonale en matière de santé numérique\r\n(CISN) |
 | [K 1 10.0](ch/ge/fr/K 1 10.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à la\r\nconvention intercantonale\ |
+| [K 1 15](ch/ge/fr/K 1 15.md) | Loi d'application de la loi fédérale sur la lutte K 1 15 |
 | [K 1 15.01](ch/ge/fr/K 1 15.01.md) | Règlement d\x92exécution de la loi d\x92application de la loi\r\nfédérale\ |
 | [K 1 15.04](ch/ge/fr/K 1 15.04.md) | Règlement relatif aux frais de désinfection et de\r\ndésinfestation (RFDD) |
 | [K 1 15.08](ch/ge/fr/K 1 15.08.md) | Règlement concernant les vaccinations obligatoires et\r\nfacultatives (RVOF) |
 | [K 1 15.12](ch/ge/fr/K 1 15.12.md) | Règlement relatif au remboursement du prix du vaccin\r\n(RRV) |
 | [K 1 15.16](ch/ge/fr/K 1 15.16.md) | Règlement relatif au décompte des frais pour les\r\nvaccinations publiques\ |
+| [K 1 15.17](ch/ge/fr/K 1 15.17.md) | Règlement relatif au remboursement des K 1 15.17 |
 | [K 1 15.18](ch/ge/fr/K 1 15.18.md) | Règlement fixant le tarif relatif au remboursement des\r\nmammographies de\ |
 | [K 1 15.24](ch/ge/fr/K 1 15.24.md) | Règlement relatif au contrôle sanitaire des bains\r\npublics (RCSBP) |
+| [K 1 15.28](ch/ge/fr/K 1 15.28.md) | Règlement fixant le tarif applicable aux analyses K 1 15.28 |
 | [K 1 18](ch/ge/fr/K 1 18.md) | Loi sur l'interdiction de fumer dans les lieux publics\r\n(LIF) |
 | [K 1 18.01](ch/ge/fr/K 1 18.01.md) | Règlement d'application relatif à la loi sur\r\nl'interdiction de fumer dans\ |
 | [K 1 19.02](ch/ge/fr/K 1 19.02.md) | Règlement d\x92application de la loi fédérale sur les\r\nproduits du tabac\ |
@@ -16927,18 +17286,30 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [K 1 21.01](ch/ge/fr/K 1 21.01.md) | Règlement d'application de la loi sur les transports\r\nsanitaires urgents\ |
 | [K 1 21.03](ch/ge/fr/K 1 21.03.md) | Règlement fixant le tarif relatif au renforcement\r\nmédical des services\ |
 | [K 1 21.04](ch/ge/fr/K 1 21.04.md) | Règlement relatif aux urgences communautaires et aux\r\nsoins non programmés\ |
+| [K 1 21.05](ch/ge/fr/K 1 21.05.md) | Règlement fixant le tarif des transports sanitaires K 1 21.05 |
+| [K 1 21.06](ch/ge/fr/K 1 21.06.md) | Règlement fixant le tarif des transports sanitaires K 1 21.06 |
 | [K 1 22](ch/ge/fr/K 1 22.md) | Convention de coopération transfrontalière dans le domaine\r\nde la prise\ |
 | [K 1 22.0](ch/ge/fr/K 1 22.0.md) | Loi approuvant la convention de coopération\r\ntransfrontalière dans le domaine\ |
+| [K 1 24](ch/ge/fr/K 1 24.md) | Loi concernant la privation de liberté à des fins K 1 24 |
+| [K 1 25](ch/ge/fr/K 1 25.md) | Loi sur le régime des personnes atteintes K 1 25 |
+| [K 1 25.01](ch/ge/fr/K 1 25.01.md) | Règlement d'exécution de la loi sur le régime des K 1 25.01 |
+| [K 1 30.04](ch/ge/fr/K 1 30.04.md) | Règlement sur l'office de coordination et K 1 30.04 |
+| [K 1 35](ch/ge/fr/K 1 35.md) | Loi sur le centre d’intégration professionnelle(4) K 1 35 |
 | [K 1 36](ch/ge/fr/K 1 36.md) | Loi sur l\x92intégration des personnes handicapées (LIPH) |
 | [K 1 36.01](ch/ge/fr/K 1 36.01.md) | Règlement d\x92application de la loi sur l\x92intégration des\r\npersonnes\ |
 | [K 1 37](ch/ge/fr/K 1 37.md) | Convention intercantonale relative aux institutions\r\nsociales (CIIS) |
 | [K 1 37.0](ch/ge/fr/K 1 37.0.md) | Loi autorisant le Conseil d'Etat à adhérer à la\r\nconvention intercantonale\ |
 | [K 1 37.01](ch/ge/fr/K 1 37.01.md) | Règlement d'exécution de la convention intercantonale\r\nrelative aux institutions\ |
+| [K 1 40](ch/ge/fr/K 1 40.md) | Loi sur les établissements publics socio- K 1 40 |
+| [K 1 55](ch/ge/fr/K 1 55.md) | Loi concernant la constatation des décès et les K 1 55 |
 | [K 1 55.04](ch/ge/fr/K 1 55.04.md) | Règlement du Centre universitaire romand de médecine\r\nlégale, site de Genève\ |
 | [K 1 55.08](ch/ge/fr/K 1 55.08.md) | Règlement sur le sort du cadavre et la sépulture (RSép) |
+| [K 1 60](ch/ge/fr/K 1 60.md) | Loi sur les prélèvements et les transplantations K 1 60 |
+| [K 1 60.01](ch/ge/fr/K 1 60.01.md) | Règlement d'application de la loi sur les K 1 60.01 |
 | [K 1 65](ch/ge/fr/K 1 65.md) | Loi sur les cimetières (LCim) |
 | [K 1 65.01](ch/ge/fr/K 1 65.01.md) | Règlement d\x92exécution de la loi sur les cimetières\r\n(RCim) |
 | [K 1 70](ch/ge/fr/K 1 70.md) | Loi d\x92application de la loi fédérale sur la protection de\r\nl\x92environnement\ |
+| [K 1 70.02](ch/ge/fr/K 1 70.02.md) | Règlement d’application transitoire de la loi K 1 70.02 |
 | [K 1 70.03](ch/ge/fr/K 1 70.03.md) | Règlement du comité interdépartemental de coordination\r\n(RCIC) |
 | [K 1 70.04](ch/ge/fr/K 1 70.04.md) | Règlement du conseil du développement durable (RCDD) |
 | [K 1 70.05](ch/ge/fr/K 1 70.05.md) | Règlement sur les évaluations environnementales (REE) |
@@ -16951,15 +17322,23 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [K 1 70.12](ch/ge/fr/K 1 70.12.md) | Règlement d'application de l'ordonnance fédérale sur la\r\nréduction des risques\ |
 | [K 1 70.13](ch/ge/fr/K 1 70.13.md) | Règlement sur la protection des sols (RSol) |
 | [K 1 70.14](ch/ge/fr/K 1 70.14.md) | Règlement sur les substances dangereuses dans\r\nl'environnement bâti (RSDEB) |
+| [K 1 70.15](ch/ge/fr/K 1 70.15.md) | Règlement sur la protection de l'environnement K 1 70.15 |
 | [K 1 70.20](ch/ge/fr/K 1 70.20.md) | Règlement sur les émoluments du service de l'air, du\r\nbruit et des rayonnements\ |
 | [K 1 70.21](ch/ge/fr/K 1 70.21.md) | Règlement sur les émoluments du service de l'air, du\r\nbruit et des rayonnements\ |
 | [K 1 70.22](ch/ge/fr/K 1 70.22.md) | Règlement sur les émoluments du service de l\x92air, du\r\nbruit et des rayonnements\ |
 | [K 1 71](ch/ge/fr/K 1 71.md) | Loi d'application de la législation fédérale sur les sites\r\ncontaminés (LaLSC) |
 | [K 1 71.03](ch/ge/fr/K 1 71.03.md) | Règlement fixant les émoluments pour les prestations du\r\nservice de géologie,\ |
+| [K 1 75.03](ch/ge/fr/K 1 75.03.md) | rsGE K 1 75.03: Règlement instituant une commission consultative en matière |
+| [K 1 80](ch/ge/fr/K 1 80.md) | Loi concernant les rapports entre membres des K 1 80 |
 | [K 2 05](ch/ge/fr/K 2 05.md) | Loi sur les établissements publics médicaux(a) (LEPM) |
+| [K 2 05.04](ch/ge/fr/K 2 05.04.md) | Règlement concernant l’admission des malades K 2 05.04 |
 | [K 2 05.06](ch/ge/fr/K 2 05.06.md) | Règlement sur les institutions de santé (RISanté) |
+| [K 2 05.08](ch/ge/fr/K 2 05.08.md) | Règlement concernant l'élection de la K 2 05.08 |
+| [K 2 05.12](ch/ge/fr/K 2 05.12.md) | Règlement relatif à la commission de surveillance K 2 05.12 |
+| [K 2 05.20](ch/ge/fr/K 2 05.20.md) | Règlement concernant l’élection de divers K 2 05.20 |
 | [K 2 09](ch/ge/fr/K 2 09.md) | Convention sur les contributions des cantons aux hôpitaux\r\nrelative au financement\ |
 | [K 2 09.0](ch/ge/fr/K 2 09.0.md) | Loi autorisant le Conseil d'Etat à adhérer à la\r\nconvention sur les contributions\ |
+| [K 2 10](ch/ge/fr/K 2 10.md) | Loi relative au financement de la collaboration K 2 10 |
 | [K 2 16](ch/ge/fr/K 2 16.md) | Loi concernant la création d'un centre romand de\r\nneurochirurgie(1) (LCRN) |
 | [K 2 20](ch/ge/fr/K 2 20.md) | Convention intercantonale relative à la coordination et à\r\nla concentration\ |
 | [K 2 20.0](ch/ge/fr/K 2 20.0.md) | Loi autorisant le Conseil d'Etat à adhérer à la\r\nconvention intercantonale\ |
@@ -16968,18 +17347,35 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [K 3 02.05](ch/ge/fr/K 3 02.05.md) | Règlement sur les techniciens-dentistes (RTD) |
 | [K 3 03](ch/ge/fr/K 3 03.md) | Loi sur la commission de surveillance des professions de la\r\nsanté et des\ |
 | [K 3 03.01](ch/ge/fr/K 3 03.01.md) | Règlement concernant la constitution et le\r\nfonctionnement de la commission\ |
+| [K 3 05](ch/ge/fr/K 3 05.md) | Loi sur l'exercice des professions de la santé, les K 3 05 |
+| [K 3 05.01](ch/ge/fr/K 3 05.01.md) | Règlement d'exécution de la loi sur l'exercice des K 3 05.01 |
 | [K 3 05.02](ch/ge/fr/K 3 05.02.md) | Règlement d'application de la loi fédérale sur la\r\nprocréation médicalement\ |
+| [K 3 05.04](ch/ge/fr/K 3 05.04.md) | Règlement concernant le fonctionnement des K 3 05.04 |
+| [K 3 05.12](ch/ge/fr/K 3 05.12.md) | Règlement concernant les hygiénistes dentaires K 3 05.12 |
 | [K 3 05.16](ch/ge/fr/K 3 05.16.md) | Règlement fixant les compétences des départements en\r\nmatière de professions\ |
+| [K 3 05.20](ch/ge/fr/K 3 05.20.md) | Règlement relatif à la commission de surveillance K 3 05.20 |
+| [K 3 05.24](ch/ge/fr/K 3 05.24.md) | Règlement concernant la constitution de la K 3 05.24 |
+| [K 3 05.28](ch/ge/fr/K 3 05.28.md) | Règlement concernant les examens pour la K 3 05.28 |
+| [K 3 05.32](ch/ge/fr/K 3 05.32.md) | Règlement concernant la pratique de K 3 05.32 |
+| [K 3 05.36](ch/ge/fr/K 3 05.36.md) | Règlement relatif à l'exercice de la profession de K 3 05.36 |
 | [K 3 07](ch/ge/fr/K 3 07.md) | Loi sur le réseau communautaire d'informatique médicale\r\n(e-Toile) (LRCIM) |
 | [K 3 07.03](ch/ge/fr/K 3 07.03.md) | Règlement d'application de la loi sur le réseau\r\ncommunautaire d'informatique\ |
+| [K 3 10](ch/ge/fr/K 3 10.md) | Loi sur le contrôle des entreprises consacrant K 3 10 |
 | [K 3 10.03](ch/ge/fr/K 3 10.03.md) | Règlement sur les activités pouvant mettre en danger la\r\nsanté (RAMDS) |
+| [K 3 15.03](ch/ge/fr/K 3 15.03.md) | Règlement fixant les émoluments perçus par le K 3 15.03 |
 | [K 4 05.12](ch/ge/fr/K 4 05.12.md) | Règlement sur les produits thérapeutiques (RPTh) |
+| [K 4 05.18](ch/ge/fr/K 4 05.18.md) | Règlement sur les essais cliniques de produits K 4 05.18 |
+| [K 4 05.20](ch/ge/fr/K 4 05.20.md) | Règlement sur la recherche biomédicale avec des K 4 05.20 |
+| [K 4 05.24](ch/ge/fr/K 4 05.24.md) | Règlement interdisant certains médicaments K 4 05.24 |
 | [K 4 06.02](ch/ge/fr/K 4 06.02.md) | Règlement d'application de la loi fédérale relative à la\r\nrecherche sur\ |
 | [K 4 20.02](ch/ge/fr/K 4 20.02.md) | Règlement relatif à l\x92application de la loi fédérale sur\r\nles stupéfiants\ |
+| [K 4 20.06](ch/ge/fr/K 4 20.06.md) | Règlement concernant la prescription, la K 4 20.06 |
 | [K 4 25.02](ch/ge/fr/K 4 25.02.md) | Règlement d\x92exécution de la loi fédérale sur les\r\nproduits chimiques\ |
 | [K 5 02](ch/ge/fr/K 5 02.md) | Loi d\x92application de la législation fédérale sur les\r\ndenrées alimentaires\ |
 | [K 5 02.01](ch/ge/fr/K 5 02.01.md) | Règlement d'exécution de la loi d\x92application de la\r\nlégislation fédérale\ |
+| [K 5 10.03](ch/ge/fr/K 5 10.03.md) | Règlement concernant le service d'inspection et K 5 10.03 |
 | [L 1 05](ch/ge/fr/L 1 05.md) | Loi sur le domaine public (LDPu) |
+| [L 1 05.04](ch/ge/fr/L 1 05.04.md) | Règlement sur l’occupation L 1 05.04 |
 | [L 1 07](ch/ge/fr/L 1 07.md) | Loi sur l\x92arborisation, la végétalisation, la mobilité\r\ndouce et les\ |
 | [L 1 10](ch/ge/fr/L 1 10.md) | Loi sur les routes (LRoutes) |
 | [L 1 10.03](ch/ge/fr/L 1 10.03.md) | Règlement concernant la classification des voies\r\npubliques (RCVP) |
@@ -16997,6 +17393,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [L 1 20.01](ch/ge/fr/L 1 20.01.md) | Règlement d\x92application de la loi sur la gestion des\r\ndéchets (RGD) |
 | [L 1 30](ch/ge/fr/L 1 30.md) | Loi d\x92application de la loi fédérale sur l\x92aménagement du\r\nterritoire\ |
 | [L 1 30.01](ch/ge/fr/L 1 30.01.md) | Règlement d\x92application de la loi d\x92application de la\r\nloi fédérale\ |
+| [L 1 30.02](ch/ge/fr/L 1 30.02.md) | rsGE L 1 30.02: Règlement transitoire sur la prime de démolition (RTPD) |
 | [L 1 30.04](ch/ge/fr/L 1 30.04.md) | Règlement d'application de la loi 10788 relative à\r\nl'aménagement du quartier\ |
 | [L 1 35](ch/ge/fr/L 1 35.md) | Loi générale sur les zones de développement(8) (LGZD) |
 | [L 1 35.01](ch/ge/fr/L 1 35.01.md) | Règlement d\x92application de la loi générale sur les zones\r\nde développement\ |
@@ -17016,7 +17413,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [L 2 05](ch/ge/fr/L 2 05.md) | Loi sur les eaux (LEaux-GE) |
 | [L 2 05.01](ch/ge/fr/L 2 05.01.md) | Règlement d\x92exécution de la loi sur les eaux (REaux-GE) |
 | [L 2 05.04](ch/ge/fr/L 2 05.04.md) | Règlement sur l'utilisation des eaux superficielles et\r\nsouterraines (RUESS) |
+| [L 2 05.12](ch/ge/fr/L 2 05.12.md) | Règlement sur les eaux résiduaires L 2 05.12 |
+| [L 2 05.15](ch/ge/fr/L 2 05.15.md) | Règlement concernant les hydrocarbures et L 2 05.15 |
+| [L 2 05.18](ch/ge/fr/L 2 05.18.md) | Règlement fixant les émoluments perçus pour les L 2 05.18 |
 | [L 2 05.21](ch/ge/fr/L 2 05.21.md) | Règlement relatif aux taxes d'assainissement des eaux\r\n(RTAss) |
+| [L 2 05.24](ch/ge/fr/L 2 05.24.md) | Règlement instituant une commission des ports L 2 05.24 |
 | [L 2 05.27](ch/ge/fr/L 2 05.27.md) | Règlement relatif à la renaturation des cours d\x92eau et\r\ndes rives (RRCER) |
 | [L 2 10](ch/ge/fr/L 2 10.md) | Loi sur l'occupation des eaux publiques (LOEP) |
 | [L 2 10.01](ch/ge/fr/L 2 10.01.md) | Règlement sur l\x92occupation des eaux publiques(6) (a)\r\n(ROEP) |
@@ -17030,11 +17431,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [L 2 30.09](ch/ge/fr/L 2 30.09.md) | Règlement relatif à la commission consultative du réseau\r\nde distribution\ |
 | [L 2 32](ch/ge/fr/L 2 32.md) | Loi pour une production hydroélectrique locale (LPHL) |
 | [L 2 35](ch/ge/fr/L 2 35.md) | Loi sur l\x92organisation des Services industriels de Genève\r\n(LSIG) |
+| [L 2 35.03](ch/ge/fr/L 2 35.03.md) | Règlement concernant l’élection de 4 membres L 2 35.03 |
 | [L 2 35.06](ch/ge/fr/L 2 35.06.md) | Règlement concernant l\x92élection de 3 membres du conseil\r\nd\x92administration\ |
 | [L 2 35.10](ch/ge/fr/L 2 35.10.md) | Règlement d'application de l'article 1A de la loi sur\r\nl'organisation des\ |
 | [L 2 40](ch/ge/fr/L 2 40.md) | Loi instituant 2 fonds pour le développement des énergies\r\nrenouvelables\ |
 | [L 2 40.01](ch/ge/fr/L 2 40.01.md) | Règlement d\x92application de la loi instituant 2 fonds\r\npour le développement\ |
 | [L 2 45](ch/ge/fr/L 2 45.md) | Loi sur le financement de projets d\x92assainissement\r\nénergétique des bâtiments\ |
+| [L 2 45.01](ch/ge/fr/L 2 45.01.md) | rsGE L 2 45.01: Règlement d''application de la loi sur le financement de projets |
 | [L 2 50.01](ch/ge/fr/L 2 50.01.md) | Règlement d'application de la loi 12936 ouvrant un\r\ncrédit d'investissement\ |
 | [L 3 05](ch/ge/fr/L 3 05.md) | Loi sur les ressources du sous-sol (LRSS) |
 | [L 3 05.01](ch/ge/fr/L 3 05.01.md) | Règlement d\x92application de la loi sur les mines (RMines) |
@@ -17045,10 +17448,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [L 4 05.04](ch/ge/fr/L 4 05.04.md) | Règlement sur la conservation de la végétation arborée\r\n(RCVA) |
 | [L 4 05.08](ch/ge/fr/L 4 05.08.md) | Règlement relatif à la mise à ban temporaire\r\nd\x92emplacements dignes d\x92\ |
 | [L 4 05.11](ch/ge/fr/L 4 05.11.md) | Règlement sur la protection du paysage, des milieux\r\nnaturels et de la flore\ |
+| [L 4 05.15](ch/ge/fr/L 4 05.15.md) | Règlement applicable à certains sites protégés et L 4 05.15 |
+| [L 4 05.18](ch/ge/fr/L 4 05.18.md) | Règlement relatif à la protection et à la L 4 05.18 |
+| [L 4 05.21](ch/ge/fr/L 4 05.21.md) | Règlement relatif à la protection et à la L 4 05.21 |
 | [L 4 10](ch/ge/fr/L 4 10.md) | Loi sur la protection générale des rives du lac (LPRLac) |
 | [L 4 13](ch/ge/fr/L 4 13.md) | Loi sur la protection générale des rives du Rhône\r\n(LPRRhône) |
 | [L 4 16](ch/ge/fr/L 4 16.md) | Loi sur la protection générale et l\x92aménagement des rives\r\nde l\x92Arve\ |
 | [L 4 19](ch/ge/fr/L 4 19.md) | Loi sur la protection générale et l\x92aménagement des rives\r\nde la Versoix\ |
+| [L 4 30.04](ch/ge/fr/L 4 30.04.md) | Règlement relatif au fonds cantonal d'art L 4 30.04 |
 | [L 5 05](ch/ge/fr/L 5 05.md) | Loi sur les constructions et les installations diverses\r\n(LCI) |
 | [L 5 05.01](ch/ge/fr/L 5 05.01.md) | Règlement d\x92application de la loi sur les constructions\r\net les installations\ |
 | [L 5 05.03](ch/ge/fr/L 5 05.03.md) | Règlement sur les chantiers (RChant) |
@@ -17056,10 +17463,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [L 5 05.06](ch/ge/fr/L 5 05.06.md) | Règlement concernant l'accessibilité des constructions\r\net installations\ |
 | [L 5 05.08](ch/ge/fr/L 5 05.08.md) | Règlement concernant les ascenseurs et monte-charges(3)\r\n(RAsc) |
 | [L 5 05.10](ch/ge/fr/L 5 05.10.md) | Règlement relatif aux places de stationnement sur fonds\r\nprivés (RPSFP) |
+| [L 5 05.16](ch/ge/fr/L 5 05.16.md) | Règlement concernant les mesures de L 5 05.16 |
 | [L 5 05.20](ch/ge/fr/L 5 05.20.md) | Règlement sur les campings (RCamp) |
 | [L 5 05.24](ch/ge/fr/L 5 05.24.md) | Règlement relatif à l\x92installation et à l\x92utilisation\r\nd\x92appareils\ |
 | [L 5 07](ch/ge/fr/L 5 07.md) | Accord intercantonal sur l\x92élimination des entraves\r\ntechniques au commerce\ |
 | [L 5 07.0](ch/ge/fr/L 5 07.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à l\x92accord\r\nintercantonal\ |
+| [L 5 10.03](ch/ge/fr/L 5 10.03.md) | Règlement concernant l'installation et L 5 10.03 |
 | [L 5 11](ch/ge/fr/L 5 11.md) | Loi sur l\x92emploi du plomb et de ses composés dans les\r\ntravaux publics\ |
 | [L 5 15](ch/ge/fr/L 5 15.md) | Loi sur les obligations des entrepreneurs de chantiers en\r\ncas d\x92accidents(1)\ |
 | [L 5 20](ch/ge/fr/L 5 20.md) | Loi sur les démolitions, transformations et rénovations de\r\nmaisons d\x92\ |
@@ -17074,8 +17483,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [L 6 05](ch/ge/fr/L 6 05.md) | Accord intercantonal sur les marchés publics (AIMP) |
 | [L 6 05.0](ch/ge/fr/L 6 05.0.md) | Loi autorisant le Conseil d\x92Etat à adhérer à l\x92accord\r\nintercantonal\ |
 | [L 6 05.01](ch/ge/fr/L 6 05.01.md) | Règlement sur la passation des marchés publics (RMP) |
+| [L 6 05.03](ch/ge/fr/L 6 05.03.md) | Règlement sur la passation des marchés publics L 6 05.03 |
 | [L 6 10.04](ch/ge/fr/L 6 10.04.md) | Règlement relatif aux fermes et loyers cantonaux (RFL) |
 | [L 7 05](ch/ge/fr/L 7 05.md) | Loi sur l\x92expropriation pour cause d\x92utilité publique(2)\r\n(LEx-GE) |
+| [L 7 05.03](ch/ge/fr/L 7 05.03.md) | Règlement sur les indemnités des membres de la L 7 05.03 |
+| [L 7 10.02](ch/ge/fr/L 7 10.02.md) | Règlement désignant l'autorité chargée L 7 10.02 |
 | [M 1 05](ch/ge/fr/M 1 05.md) | Loi sur les améliorations foncières (LAmF) |
 | [M 1 05.01](ch/ge/fr/M 1 05.01.md) | Règlement d\x92application de la loi sur les améliorations\r\nfoncières (RAmF) |
 | [M 1 10](ch/ge/fr/M 1 10.md) | Loi d\x92application de la loi fédérale sur le droit foncier\r\nrural (LaLDFR) |
@@ -17083,23 +17495,47 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [M 1 15](ch/ge/fr/M 1 15.md) | Loi d\x92application de la loi fédérale sur le bail à ferme\r\nagricole (LaLBFA) |
 | [M 2 05](ch/ge/fr/M 2 05.md) | Loi sur la promotion de l'agriculture (LPromAgr) |
 | [M 2 05.01](ch/ge/fr/M 2 05.01.md) | Règlement d\x92application de la loi sur la promotion de\r\nl\x92agriculture\ |
+| [M 2 15.06](ch/ge/fr/M 2 15.06.md) | rsGE M 2 15.06: Règlement sur la lutte contre le feu bactérien (RLFB) |
 | [M 2 25](ch/ge/fr/M 2 25.md) | Loi sur la police rurale (LPRur) |
 | [M 2 25.01](ch/ge/fr/M 2 25.01.md) | Règlement d'application de la loi sur la police rurale\r\n(RPRur) |
+| [M 2 25.03](ch/ge/fr/M 2 25.03.md) | Règlement sur la police rurale M 2 25.03 |
 | [M 2 30](ch/ge/fr/M 2 30.md) | Loi d\x92application des ordonnances fédérales sur les\r\ncontributions versées\ |
 | [M 2 30.01](ch/ge/fr/M 2 30.01.md) | Règlement d'exécution de la loi d'application des\r\nordonnances fédérales\ |
+| [M 2 30.02](ch/ge/fr/M 2 30.02.md) | Règlement d’application des ordonnances M 2 30.02 |
+| [M 2 36](ch/ge/fr/M 2 36.md) | Loi ouvrant un crédit d'investissement et un M 2 36 |
+| [M 2 36.01](ch/ge/fr/M 2 36.01.md) | Règlement d'application de la loi ouvrant un M 2 36.01 |
 | [M 2 40](ch/ge/fr/M 2 40.md) | Loi pour la sauvegarde et le développement des jardins\r\nfamiliaux (LSDJF) |
 | [M 2 50](ch/ge/fr/M 2 50.md) | Loi sur la viticulture (LVit) |
+| [M 2 50.01](ch/ge/fr/M 2 50.01.md) | Règlement d’application de la loi sur la viticulture M 2 50.01 |
+| [M 2 50.04](ch/ge/fr/M 2 50.04.md) | Règlement sur les vins genevois M 2 50.04 |
 | [M 2 50.05](ch/ge/fr/M 2 50.05.md) | Règlement sur la vigne et les vins de Genève (RVV) |
+| [M 2 60](ch/ge/fr/M 2 60.md) | Loi concernant la répression M 2 60 |
+| [M 2 60.03](ch/ge/fr/M 2 60.03.md) | Règlement d’application de la loi sur la M 2 60.03 |
+| [M 2 60.06](ch/ge/fr/M 2 60.06.md) | Règlement concernant l’emploi de produits M 2 60.06 |
+| [M 2 60.09](ch/ge/fr/M 2 60.09.md) | Règlement concernant l'utilisation de certains M 2 60.09 |
+| [M 2 65.04](ch/ge/fr/M 2 65.04.md) | Règlement fixant les tarifs du laboratoire M 2 65.04 |
+| [M 3 02](ch/ge/fr/M 3 02.md) | Convention intercantonale sur le commerce du M 3 02 |
+| [M 3 02.0](ch/ge/fr/M 3 02.0.md) | Loi(1) ratifiant l’adhésion du Conseil d’Etat à la M 3 02.0 |
+| [M 3 02.04](ch/ge/fr/M 3 02.04.md) | Règlement relatif au commerce du bétail M 3 02.04 |
+| [M 3 03.0](ch/ge/fr/M 3 03.0.md) | Loi ratifiant l’adhésion du Conseil d’Etat à la M 3 03.0 |
 | [M 3 10.03](ch/ge/fr/M 3 10.03.md) | Règlement relatif à l'encouragement de la production\r\nanimale et de l'estivage\ |
+| [M 3 15.03](ch/ge/fr/M 3 15.03.md) | Règlement concernant l'allocation d'une M 3 15.03 |
 | [M 3 15.06](ch/ge/fr/M 3 15.06.md) | Règlement concernant l\x92estivage (REstiv) |
 | [M 3 20.02](ch/ge/fr/M 3 20.02.md) | Règlement d\x92application de la loi fédérale sur les\r\népizooties (RaLFE) |
 | [M 3 25](ch/ge/fr/M 3 25.md) | Loi sur le fonds cantonal des épizooties(4) (LFCE) |
 | [M 3 25.03](ch/ge/fr/M 3 25.03.md) | Règlement relatif au fonds cantonal des épizooties\r\n(RFCE) |
+| [M 3 25.06](ch/ge/fr/M 3 25.06.md) | Règlement relatif à la vaccination contre la peste M 3 25.06 |
+| [M 3 30.04](ch/ge/fr/M 3 30.04.md) | Règlement concernant l'élevage de souches M 3 30.04 |
+| [M 3 35.03](ch/ge/fr/M 3 35.03.md) | Règlement sur les émoluments et les honoraires M 3 35.03 |
+| [M 3 35.06](ch/ge/fr/M 3 35.06.md) | Règlement fixant le montant des indemnités des M 3 35.06 |
 | [M 3 45](ch/ge/fr/M 3 45.md) | Loi sur les chiens (LChiens) |
 | [M 3 45.01](ch/ge/fr/M 3 45.01.md) | Règlement d'application de la loi sur les chiens\r\n(RChiens) |
 | [M 3 45.03](ch/ge/fr/M 3 45.03.md) | Règlement relatif à l'examen pour moniteur canin agréé\r\n(REMCA) |
+| [M 3 45.04](ch/ge/fr/M 3 45.04.md) | Règlement transitoire concernant le port de la M 3 45.04 |
+| [M 3 45.05](ch/ge/fr/M 3 45.05.md) | Règlement d'exécution sur l'interdiction des M 3 45.05 |
 | [M 3 50.02](ch/ge/fr/M 3 50.02.md) | Règlement d'application de la loi fédérale sur la\r\nprotection des animaux\ |
 | [M 3 50.07](ch/ge/fr/M 3 50.07.md) | Règlement de la fourrière cantonale (RFour) |
+| [M 3 50.12](ch/ge/fr/M 3 50.12.md) | Règlement sur la détention d'animaux sauvages M 3 50.12 |
 | [M 4 03](ch/ge/fr/M 4 03.md) | Concordat sur la pêche dans le lac Léman (CPL) |
 | [M 4 03.0](ch/ge/fr/M 4 03.0.md) | Loi approuvant le concordat sur la pêche dans le lac\r\nLéman (L-CPL) |
 | [M 4 03.01](ch/ge/fr/M 4 03.01.md) | Règlement d\x92exécution du concordat intercantonal sur la\r\npêche dans le\ |
@@ -17109,18 +17545,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [M 5 05.01](ch/ge/fr/M 5 05.01.md) | Règlement d\x92application de la loi sur la faune (RFaune) |
 | [M 5 10](ch/ge/fr/M 5 10.md) | Loi sur les forêts (LForêts) |
 | [M 5 10.01](ch/ge/fr/M 5 10.01.md) | Règlement d\x92application de la loi sur les forêts\r\n(RForêts) |
+| [M 5 10.04](ch/ge/fr/M 5 10.04.md) | Règlement sur l'emploi des graines et plants M 5 10.04 |
 | [M 5 10.08](ch/ge/fr/M 5 10.08.md) | Règlement concernant la circulation des véhicules\r\nautomobiles et des cyclomoteurs\ |
 | [M 5 15](ch/ge/fr/M 5 15.md) | Loi sur la biodiversité (LBio) |
 | [M 5 15.01](ch/ge/fr/M 5 15.01.md) | Règlement d'application de la loi sur la biodiversité\r\n(RBio) |
+| [M 5 15.02](ch/ge/fr/M 5 15.02.md) | Règlement d'application de la loi fédérale sur la M 5 15.02 |
+| [M 5 15.04](ch/ge/fr/M 5 15.04.md) | Règlement instituant une commission cantonale M 5 15.04 |
+| [M 5 15.08](ch/ge/fr/M 5 15.08.md) | Règlement concernant la commission cantonale M 5 15.08 |
 | [M 5 25](ch/ge/fr/M 5 25.md) | Loi sur les gardes de l\x92environnement et autres agents\r\ntechniques chargés\ |
 | [M 5 25.03](ch/ge/fr/M 5 25.03.md) | Règlement sur l'organisation des offices cantonaux\r\nchargés de l\x92agriculture,\ |
 | [M 5 30](ch/ge/fr/M 5 30.md) | Loi visant à promouvoir des mesures en faveur de la\r\nbiodiversité et de\ |
 | [M 5 30.01](ch/ge/fr/M 5 30.01.md) | Règlement d'application de la loi visant à promouvoir\r\ndes mesures en faveur\ |
+| [M 5 35](ch/ge/fr/M 5 35.md) | Loi sur l’organisation des directions générales M 5 35 |
+| [M 5 35.01](ch/ge/fr/M 5 35.01.md) | Règlement d'application de la loi sur M 5 35.01 |
 | [M 5 38](ch/ge/fr/M 5 38.md) | Loi instituant une commission consultative de la diversité\r\nbiologique (LCCDB) |
 
 ## GL – Glarus
 
-*602 laws*
+*729 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -17132,8 +17574,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [I C/12/4](ch/gl/de/I C/12/4.md) | Verordnung zum Kantonalen Bürgerrechtsgesetz |
 | [I C/21/2](ch/gl/de/I C/21/2.md) | Einführungsgesetz zum Bundesgesetz über die Harmonisierung der Einwohnerregister |
 | [I C/21/3](ch/gl/de/I C/21/3.md) | Verordnung zum Betrieb einer kantonalen Datenplattform gemäss dem Einführungsgesetz |
+| [I C/23/1](ch/gl/de/I C/23/1.md) | 1999 I C/23/1 |
 | [I C/23/2](ch/gl/de/I C/23/2.md) | Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und Ausländer und |
 | [I C/23/3](ch/gl/de/I C/23/3.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und |
+| [I C/3/1](ch/gl/de/I C/3/1.md) | 1999 I C/3/1 |
 | [I C/3/2](ch/gl/de/I C/3/2.md) | Verordnung über den Vollzug des Bundesgesetzes über die Ausweise für Schweizer |
 | [I D/21/2](ch/gl/de/I D/21/2.md) | Vorschriften über die Durchführung der Landsgemeinde |
 | [I D/21/3](ch/gl/de/I D/21/3.md) | Verordnung über den Stimmberechtigungsausweis für die Landsgemeinde |
@@ -17151,13 +17595,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [I E/1/2](ch/gl/de/I E/1/2.md) | Verordnung zum kantonalen Gleichstellungsgesetz |
 | [I F/1](ch/gl/de/I F/1.md) | Gesetz über die Information der Öffentlichkeit, den Datenschutz und das Archivwesen |
 | [I F/2](ch/gl/de/I F/2.md) | Verordnung zum Gesetz über die Information der Öffentlichkeit, den Datenschutz |
+| [II A/1/2](ch/gl/de/II A/1/2.md) | 2000 II A/1/2 |
 | [II A/2/3](ch/gl/de/II A/2/3.md) | Landratsverordnung |
 | [II A/3/2](ch/gl/de/II A/3/2.md) | Gesetz über die Organisation des Regierungsrates und der Verwaltung |
 | [II A/3/3](ch/gl/de/II A/3/3.md) | Verordnung über die Organisation des Regierungsrates und der Verwaltung |
 | [II A/5/1](ch/gl/de/II A/5/1.md) | Gesetz über die kantonale Schatzungskommission |
 | [II A/6/1](ch/gl/de/II A/6/1.md) | Gesetz über das Personalwesen |
 | [II A/6/2](ch/gl/de/II A/6/2.md) | Personalverordnung |
+| [II A/6/5](ch/gl/de/II A/6/5.md) | II A/6/5 |
+| [II A/6/6](ch/gl/de/II A/6/6.md) | II A/6/6 |
 | [II A/6/7](ch/gl/de/II A/6/7.md) | Verordnung über die Arbeitszeit der Kantonsangestellten |
+| [II A/6/8](ch/gl/de/II A/6/8.md) | II A/6/8 |
 | [II A/7/1](ch/gl/de/II A/7/1.md) | Gesetz über das Archivwesen |
 | [II A/7/2](ch/gl/de/II A/7/2.md) | Verordnung zum Archivgesetz |
 | [II A/7/3](ch/gl/de/II A/7/3.md) | Richtlinien für die Aktenführung |
@@ -17167,16 +17615,30 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [II C/1/2](ch/gl/de/II C/1/2.md) | Verordnung über den Vollzug der Lohnverordnung |
 | [II C/1/3](ch/gl/de/II C/1/3.md) | Verordnung über die Entschädigung von Spesen und Inkonvenienzen |
 | [II C/1/4](ch/gl/de/II C/1/4.md) | Richtlinie Bewilligung von Nebenbeschäftigungen |
+| [II C/2/1](ch/gl/de/II C/2/1.md) | 2003 II C/2/1 |
+| [II C/2/2](ch/gl/de/II C/2/2.md) | II C/2/2 |
+| [II C/2/3](ch/gl/de/II C/2/3.md) | II C/2/3 |
+| [II C/3/3](ch/gl/de/II C/3/3.md) | 1995 II C/3/3 |
+| [II C/3/4](ch/gl/de/II C/3/4.md) | 2001 II C/3/4 |
+| [II C/4/1](ch/gl/de/II C/4/1.md) | 2004 II C/4/1 |
+| [II C/4/2](ch/gl/de/II C/4/2.md) | II C/4/2 |
 | [II C/4/3](ch/gl/de/II C/4/3.md) | Verordnung über die Einreihung der Lehrpersonen in die Lohnbänder |
+| [II C/4/5](ch/gl/de/II C/4/5.md) | II C/4/5 |
 | [II C/5/3](ch/gl/de/II C/5/3.md) | Verordnung über die Entschädigung des Kantonsarztes, des Kantonsapothekers, |
+| [II C/5/4](ch/gl/de/II C/5/4.md) | II C/5/4 |
+| [II C/6/1](ch/gl/de/II C/6/1.md) | II C/6/1 |
 | [II C/6/2](ch/gl/de/II C/6/2.md) | Beschluss über die Entschädigung der Pikettdienstleistenden der Oel-, Chemie- |
 | [II D/1/1](ch/gl/de/II D/1/1.md) | Verordnung über die Alterssicherung der Regierungsräte, der Gerichtspräsidenten |
 | [II D/1/2](ch/gl/de/II D/1/2.md) | Verordnung über die Alterssicherung der Behördenmitglieder |
 | [II D/2/1](ch/gl/de/II D/2/1.md) | Stiftungsurkunde für die Glarner Pensionskasse |
 | [II D/2/2](ch/gl/de/II D/2/2.md) | Verordnung über die Teuerungszulagen für die Rentner und Sparmitglieder der |
+| [II D/3/1](ch/gl/de/II D/3/1.md) | 2000 II D/3/1 |
+| [II D/4/2](ch/gl/de/II D/4/2.md) | 1995 II D/4/2 |
 | [II E/2](ch/gl/de/II E/2.md) | Gemeindegesetz |
 | [II E/2/1](ch/gl/de/II E/2/1.md) | Korporationsverordnung |
+| [II E/3](ch/gl/de/II E/3.md) | 1995 II E/3 |
 | [II F/2](ch/gl/de/II F/2.md) | Gesetz über die Haftung der Gemeinwesen und ihrer Amtsträger |
+| [II G/1/1](ch/gl/de/II G/1/1.md) | Beschluss über den Beitritt des Kantons Glarus zur Interkantonalen |
 | [II G/1/1/1](ch/gl/de/II G/1/1/1.md) | Beitritt zur Interkantonalen Vereinbarung über das öffentliche Beschaffungswesen |
 | [II G/1/2](ch/gl/de/II G/1/2.md) | Interkantonale Vereinbarung über das öffentliche Beschaffungswesen vom 25. |
 | [II G/1/2/1](ch/gl/de/II G/1/2/1.md) | Interkantonale Vereinbarung über das öffentliche Beschaffungswesen vom 15. |
@@ -17204,22 +17666,36 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [III B/1/4](ch/gl/de/III B/1/4.md) | Vollziehungsgesetz zum Bundesgesetz über den Erwerb von Grundstücken durch |
 | [III B/1/5](ch/gl/de/III B/1/5.md) | Verordnung zum Einführungsgesetz zum Zivilgesetzbuch und zum Vollziehungsgesetz |
 | [III B/1/6](ch/gl/de/III B/1/6.md) | Verordnung über die Kindes- und Erwachsenenschutzbehörde |
+| [III B/1/7](ch/gl/de/III B/1/7.md) | III B/1/7 |
 | [III B/1/8](ch/gl/de/III B/1/8.md) | Verordnung über die elektronische Überwachung zum Schutz gewaltbetroffener |
 | [III B/2/1](ch/gl/de/III B/2/1.md) | Gesetz über die Einführung des Schweizerischen Obligationenrechtes (Zivilgesetzbuch |
+| [III B/2/2](ch/gl/de/III B/2/2.md) | III B/2/2 |
+| [III B/2/3](ch/gl/de/III B/2/3.md) | 1997 III B/2/3 |
 | [III B/2/4](ch/gl/de/III B/2/4.md) | Verordnung zum Einführungsgesetz zum Obligationenrecht und zum Einführungsgesetz |
 | [III B/3/1](ch/gl/de/III B/3/1.md) | Gesetz über Beurkundung und Beglaubigung |
 | [III B/3/2](ch/gl/de/III B/3/2.md) | Verordnung über Beurkundung und Beglaubigung mit Gebührentarif |
 | [III B/3/3](ch/gl/de/III B/3/3.md) | Reglement über die Eignungsprüfung über Beurkundung und Beglaubigung |
 | [III B/4/1](ch/gl/de/III B/4/1.md) | Stiftungsverordnung |
+| [III B/4/1/1](ch/gl/de/III B/4/1/1.md) | 1995 III B/4/1/1 |
 | [III B/4/2](ch/gl/de/III B/4/2.md) | Interkantonale Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone |
 | [III B/4/2/1](ch/gl/de/III B/4/2/1.md) | Gebührenreglement der BVG- und Stiftungsaufsicht Tessin, Ostschweiz und Zürich |
 | [III B/4/2/2](ch/gl/de/III B/4/2/2.md) | Verfahrensrechtliche Bestimmungen der Ostschweizer BVG- und Stiftungsaufsicht |
 | [III B/5/2](ch/gl/de/III B/5/2.md) | Verordnung über den Vollzug der eidgenössischen Zivilstandsverordnung |
+| [III B/6/3](ch/gl/de/III B/6/3.md) | III B/6/3 |
 | [III B/6/4](ch/gl/de/III B/6/4.md) | Verordnung über die Führung des Grundbuchs mittels Informatik |
 | [III B/7/1](ch/gl/de/III B/7/1.md) | Verordnung über die Gebühren im Zivilrecht |
 | [III C/1](ch/gl/de/III C/1.md) | Einführungsgesetz zur Schweizerischen Zivilprozessordnung |
+| [III C/10](ch/gl/de/III C/10.md) | III C/10 |
+| [III C/11](ch/gl/de/III C/11.md) | III C/11 |
+| [III C/2](ch/gl/de/III C/2.md) | 2002 III C/2 |
+| [III C/4](ch/gl/de/III C/4.md) | III C/4 |
+| [III C/5](ch/gl/de/III C/5.md) | III C/5 |
+| [III C/7](ch/gl/de/III C/7.md) | III C/7 |
+| [III C/8](ch/gl/de/III C/8.md) | III C/8 |
 | [III D/1](ch/gl/de/III D/1.md) | Gesetz über die Einführung des Bundesgesetzes über Schuldbetreibung und Konkurs |
 | [III D/1/1](ch/gl/de/III D/1/1.md) | Verordnung zum Gesetz über die Einführung des Bundesgesetzes über Schuldbetreibung |
+| [III D/2](ch/gl/de/III D/2.md) | III D/2 |
+| [III D/3](ch/gl/de/III D/3.md) | III D/3 |
 | [III E/1](ch/gl/de/III E/1.md) | Gesetz über die Einführung des Schweizerischen Strafgesetzbuches im Kanton |
 | [III F/1](ch/gl/de/III F/1.md) | Einführungsgesetz zur Schweizerischen Strafprozessordnung und zur Schweizerischen |
 | [III F/1/1](ch/gl/de/III F/1/1.md) | Kantonale Ordnungsbussenverordnung |
@@ -17231,11 +17707,16 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [III F/5](ch/gl/de/III F/5.md) | Verordnung über die Bewährungshilfe |
 | [III F/6](ch/gl/de/III F/6.md) | Verordnung zum Bundesgesetz über die Hilfe an Opfer |
 | [III F/7](ch/gl/de/III F/7.md) | Verordnung über den Vollzug in den Bereichen Strafprozess, Straf- und Massnahmenvollzug |
+| [III F/8](ch/gl/de/III F/8.md) | III F/8 |
+| [III F/9/1](ch/gl/de/III F/9/1.md) | III F/9/1 |
+| [III F/9/2](ch/gl/de/III F/9/2.md) | III F/9/2 |
 | [III G/1](ch/gl/de/III G/1.md) | Gesetz über die Verwaltungsrechtspflege |
 | [III G/2](ch/gl/de/III G/2.md) | Verordnung über amtliche Kosten im Verwaltungsverfahren und in der Verwaltungsrechtspflege |
 | [III G/3](ch/gl/de/III G/3.md) | Beschluss über die Inkraftsetzung des Verwaltungsrechtspflegegesetzes und der |
+| [III G/4](ch/gl/de/III G/4.md) | III G/4 |
 | [III H/1](ch/gl/de/III H/1.md) | Beschluss betreffend Ausrichtung von Beiträgen an unentgeltliche Rechtsauskunftsstellen |
 | [III I/1](ch/gl/de/III I/1.md) | Anwaltsgesetz des Kantons Glarus |
+| [III I/2](ch/gl/de/III I/2.md) | III I/2 |
 | [III I/3](ch/gl/de/III I/3.md) | Reglement über die Anwaltsprüfung |
 | [III I/4](ch/gl/de/III I/4.md) | Geschäftsordnung der Anwaltskommission |
 | [III I/5](ch/gl/de/III I/5.md) | Tarif für die Entschädigung der öffentlichen Verteidigung und der unentgeltlichen |
@@ -17246,6 +17727,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IV A/21/1](ch/gl/de/IV A/21/1.md) | Kirchenordnung für die Evangelisch-Reformierte Landeskirche des Kantons Glarus |
 | [IV A/21/2](ch/gl/de/IV A/21/2.md) | Geschäftsreglement der Synode |
 | [IV A/22/1](ch/gl/de/IV A/22/1.md) | Vereinbarung zwischen der Diözese Chur und den staatskirchenrechtlichen Organisationen |
+| [IV B/1/10](ch/gl/de/IV B/1/10.md) | 1997 IV B/1/10 |
+| [IV B/1/11](ch/gl/de/IV B/1/11.md) | IV B/1/11 |
+| [IV B/1/12/1](ch/gl/de/IV B/1/12/1.md) | IV B/1/12/1 |
 | [IV B/1/12/2](ch/gl/de/IV B/1/12/2.md) | Interkantonale Vereinbarung über die Anerkennung von Ausbildungsabschlüssen |
 | [IV B/1/13](ch/gl/de/IV B/1/13.md) | Kinderbetreuungsgesetz |
 | [IV B/1/14](ch/gl/de/IV B/1/14.md) | Verordnung über die Festsetzung der Pauschalbeiträge für die Kinderbetreuung |
@@ -17258,14 +17742,26 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IV B/1/8](ch/gl/de/IV B/1/8.md) | Beitritt des Kantons Glarus zum Konkordat über die Schulkoordination |
 | [IV B/1/9](ch/gl/de/IV B/1/9.md) | Richtlinien über Bau, Einrichtung und Betrieb der Schülerbibliotheken |
 | [IV B/11/1](ch/gl/de/IV B/11/1.md) | Verordnung über die Gesundheitspflege und die Zahnpflege während der obligatorischen |
+| [IV B/11/2](ch/gl/de/IV B/11/2.md) | 1995 IV B/11/2 |
+| [IV B/11/3](ch/gl/de/IV B/11/3.md) | 2004 IV B/11/3 |
+| [IV B/11/4](ch/gl/de/IV B/11/4.md) | 2003 IV B/11/4 |
 | [IV B/11/5](ch/gl/de/IV B/11/5.md) | Weisung zur Schulgesundheitspflege |
 | [IV B/11/6](ch/gl/de/IV B/11/6.md) | Weisung zur Schulzahnpflege |
+| [IV B/12/1](ch/gl/de/IV B/12/1.md) | 2002 IV B/12/1 |
+| [IV B/12/2](ch/gl/de/IV B/12/2.md) | 2002 IV B/12/2 |
+| [IV B/12/3](ch/gl/de/IV B/12/3.md) | 2002 IV B/12/3 |
 | [IV B/31/1](ch/gl/de/IV B/31/1.md) | Verordnung über die Volksschule |
 | [IV B/31/2](ch/gl/de/IV B/31/2.md) | Verordnung über den Vollzug der Gesetzgebung zur Volksschule |
 | [IV B/31/3](ch/gl/de/IV B/31/3.md) | Verordnung über die Beurteilung, die Promotion und den Übertritt der Lernenden |
 | [IV B/31/4](ch/gl/de/IV B/31/4.md) | Verordnung über die Beurteilung, die Promotion und den Übertritt der Lernenden |
+| [IV B/31/6](ch/gl/de/IV B/31/6.md) | 2002 IV B/31/6 |
+| [IV B/31/7](ch/gl/de/IV B/31/7.md) | 2003 IV B/31/7 |
+| [IV B/31/8](ch/gl/de/IV B/31/8.md) | 2003 IV B/31/8 |
 | [IV B/31/9](ch/gl/de/IV B/31/9.md) | Verordnung über die Sportschule |
 | [IV B/31/9/1](ch/gl/de/IV B/31/9/1.md) | Schulordnung der Sportschule |
+| [IV B/32/2](ch/gl/de/IV B/32/2.md) | IV B/32/2 |
+| [IV B/32/3](ch/gl/de/IV B/32/3.md) | 2002 IV B/32/3 |
+| [IV B/32/4](ch/gl/de/IV B/32/4.md) | IV B/32/4 |
 | [IV B/33/1](ch/gl/de/IV B/33/1.md) | Interkantonale Vereinbarung über die Harmonisierung der obligatorischen Schule |
 | [IV B/4/1](ch/gl/de/IV B/4/1.md) | Reglement über die Organisation der Kantonsschule |
 | [IV B/4/10](ch/gl/de/IV B/4/10.md) | Verordnung über die Promotion am Gymnasium der Kantonsschule |
@@ -17275,6 +17771,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IV B/4/4](ch/gl/de/IV B/4/4.md) | Verordnung über die Aufnahme in die Kantonsschule |
 | [IV B/4/5](ch/gl/de/IV B/4/5.md) | Reglement für die Maturitätsprüfungen an der Kantonsschule Glarus |
 | [IV B/4/5/1](ch/gl/de/IV B/4/5/1.md) | Reglement der EDK über die Anerkennung von gymnasialen Maturitätszeugnissen |
+| [IV B/4/5/2](ch/gl/de/IV B/4/5/2.md) | 1995 IV B/4/5/2 |
 | [IV B/4/6](ch/gl/de/IV B/4/6.md) | Reglement über den Bildungsgang Sportschule der Kantonsschule Glarus |
 | [IV B/4/7](ch/gl/de/IV B/4/7.md) | Verordnung über die Behandlung der Schulversäumnisse an der Kantonsschule |
 | [IV B/4/8](ch/gl/de/IV B/4/8.md) | Verordnung über die Promotion an der Fachmittelschule |
@@ -17304,6 +17801,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IV B/711/2/1](ch/gl/de/IV B/711/2/1.md) | Verwaltungsvereinbarung über die Folgen des Austritts des Kantons Zürich aus |
 | [IV B/711/3](ch/gl/de/IV B/711/3.md) | Verordnung über Organisation und Verfahren der Rekurskommission des interkantonalen |
 | [IV B/711/4](ch/gl/de/IV B/711/4.md) | Vereinbarung über die Hochschule Rapperswil |
+| [IV C/1/2](ch/gl/de/IV C/1/2.md) | IV C/1/2 |
 | [IV C/1/3](ch/gl/de/IV C/1/3.md) | Reglement über die Weiterbildung der Lehrpersonen |
 | [IV C/2/2](ch/gl/de/IV C/2/2.md) | Reglement betreffend Beurlaubung von Lehrpersonen |
 | [IV C/2/3](ch/gl/de/IV C/2/3.md) | Berufsauftrag für die Lehrpersonen der Volksschule |
@@ -17322,9 +17820,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IV E/4](ch/gl/de/IV E/4.md) | Beschluss des Landrates vom 18. Mai 1927 über die Aenderung einiger Bestimmungen |
 | [IV E/5](ch/gl/de/IV E/5.md) | Verordnung über den Marty’schen Stipendienfonds |
 | [IV E/6](ch/gl/de/IV E/6.md) | Verordnung über den Stipendienfonds Friedrich Streiff-Thiriet |
+| [IV E/7](ch/gl/de/IV E/7.md) | 2001 IV E/7 |
+| [IV E/8](ch/gl/de/IV E/8.md) | 1995 IV E/8 |
 | [IV F/1](ch/gl/de/IV F/1.md) | Gesetz über die Förderung des kulturellen Lebens |
 | [IV F/1/1](ch/gl/de/IV F/1/1.md) | Kulturfondsverordnung |
 | [IV F/2](ch/gl/de/IV F/2.md) | Verordnung über die Landesbibliothek |
+| [IV F/3](ch/gl/de/IV F/3.md) | IV F/3 |
 | [IV G/1/1](ch/gl/de/IV G/1/1.md) | Gesetz über den Natur- und Heimatschutz |
 | [IV G/1/2](ch/gl/de/IV G/1/2.md) | Kantonale Natur- und Heimatschutzverordnung |
 | [IV G/1/3](ch/gl/de/IV G/1/3.md) | Verordnung über den Vollzug der Natur- und Heimatschutzgesetzgebung |
@@ -17373,11 +17874,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IX B/26/1](ch/gl/de/IX B/26/1.md) | Verordnung über den Vollzug des Bundesgesetzes über den Konsumkredit |
 | [IX B/31/1](ch/gl/de/IX B/31/1.md) | Gesetz über die Glarner Kantonalbank |
 | [IX B/31/2](ch/gl/de/IX B/31/2.md) | Verordnung über die Entschädigung der Staatsgarantie für die Kantonalbank |
+| [IX B/31/3](ch/gl/de/IX B/31/3.md) | IX B/31/3 |
+| [IX B/31/4](ch/gl/de/IX B/31/4.md) | 1995 IX B/31/4 |
 | [IX B/32/2](ch/gl/de/IX B/32/2.md) | Beschluss über die Bezeichnung der kantonalen Depositenstellen |
 | [IX B/42/1](ch/gl/de/IX B/42/1.md) | Gesetz über den Bergbau |
 | [IX B/42/2](ch/gl/de/IX B/42/2.md) | Beschluss über den Beitritt des Kantons Glarus zum Konkordat betreffend die |
 | [IX C/1/1](ch/gl/de/IX C/1/1.md) | Gesetz zur Entwicklung des Tourismus |
 | [IX C/1/2](ch/gl/de/IX C/1/2.md) | Verordnung zum Tourismusentwicklungsgesetz |
+| [IX C/1/3](ch/gl/de/IX C/1/3.md) | IX C/1/3 |
 | [IX C/2](ch/gl/de/IX C/2.md) | Beschluss über das Bergführerwesen |
 | [IX D/1/1](ch/gl/de/IX D/1/1.md) | Einführungsgesetz zu den Bundesgesetzen über die Landwirtschaft, über das bäuerliche |
 | [IX D/1/2](ch/gl/de/IX D/1/2.md) | Kantonale Landwirtschaftsverordnung |
@@ -17389,6 +17893,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IX D/3/1](ch/gl/de/IX D/3/1.md) | Verordnung über die Bemessung des höchstzulässigen Pachtzinszuschlags für Sömmerungsbetriebe |
 | [IX D/4/1](ch/gl/de/IX D/4/1.md) | Verordnung über die landwirtschaftlichen Strukturverbesserungen und die sozialen |
 | [IX D/5/1](ch/gl/de/IX D/5/1.md) | Verordnung über die landwirtschaftliche Ausbildung und Beratung |
+| [IX D/5/2](ch/gl/de/IX D/5/2.md) | IX D/5/2 |
+| [IX D/5/3](ch/gl/de/IX D/5/3.md) | 1995 IX D/5/3 |
 | [IX D/621/1](ch/gl/de/IX D/621/1.md) | Verordnung über den Weinbau |
 | [IX D/621/2](ch/gl/de/IX D/621/2.md) | Verordnung über die kontrollierten Ursprungsbezeichnungen für Weine |
 | [IX D/631/2](ch/gl/de/IX D/631/2.md) | Verordnung betreffend die Ausübung des Viehhandels |
@@ -17397,6 +17903,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IX D/631/5](ch/gl/de/IX D/631/5.md) | Gesetz über die Bienenzucht und Bienenhaltung |
 | [IX D/631/6](ch/gl/de/IX D/631/6.md) | Verordnung über die Bienenzucht und die Bienenhaltung |
 | [IX D/632/1](ch/gl/de/IX D/632/1.md) | Beschluss betreffend den Vollzug der eidgenössischen Milchqualitätsverordnung |
+| [IX D/633/1](ch/gl/de/IX D/633/1.md) | 1995 IX D/633/1 |
 | [IX D/633/2](ch/gl/de/IX D/633/2.md) | Verordnung zum kantonalen Tierschutz- und Tierseuchengesetz |
 | [IX D/633/3](ch/gl/de/IX D/633/3.md) | Verordnung über die Beseitigung von Tierkörpern |
 | [IX D/633/4](ch/gl/de/IX D/633/4.md) | Verordnung über die Bezeichnung und Nutzung des Hunderegisters |
@@ -17412,7 +17919,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [IX E/2/4](ch/gl/de/IX E/2/4.md) | Verordnung für die forstliche Planung |
 | [V A/11/1](ch/gl/de/V A/11/1.md) | Polizeigesetz |
 | [V A/11/2](ch/gl/de/V A/11/2.md) | Polizeiverordnung |
+| [V A/11/3](ch/gl/de/V A/11/3.md) | 1998 V A/11/3 |
 | [V A/11/4](ch/gl/de/V A/11/4.md) | Verordnung über die Vergütung von Inkonvenienzen bei der Kantonspolizei |
+| [V A/11/5](ch/gl/de/V A/11/5.md) | V A/11/5 |
+| [V A/11/6](ch/gl/de/V A/11/6.md) | V A/11/6 |
+| [V A/11/7](ch/gl/de/V A/11/7.md) | V A/11/7 |
+| [V A/11/8](ch/gl/de/V A/11/8.md) | V A/11/8 |
+| [V A/11/9](ch/gl/de/V A/11/9.md) | V A/11/9 |
 | [V A/12/1](ch/gl/de/V A/12/1.md) | Interkantonale Vereinbarung über die polizeiliche Zusammenarbeit |
 | [V A/12/1/1](ch/gl/de/V A/12/1/1.md) | Beschluss zur Interkantonalen Vereinbarung über die polizeiliche Zusammenarbeit |
 | [V A/12/1/2](ch/gl/de/V A/12/1/2.md) | Beschluss über den Beitritt des Kantons Glarus zur Interkantonalen Vereinbarung |
@@ -17420,6 +17933,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [V A/12/2/1](ch/gl/de/V A/12/2/1.md) | Beitritt zum Konkordat über Massnahmen gegen Gewalt anlässlich von Sportveranstaltungen |
 | [V A/12/3](ch/gl/de/V A/12/3.md) | Interkantonale Vereinbarung über die computergestützte Zusammenarbeit der Kantone |
 | [V A/12/3/1](ch/gl/de/V A/12/3/1.md) | Beitritt zur Interkantonalen Vereinbarung über die computergestützte Zusammenarbeit |
+| [V A/2/1](ch/gl/de/V A/2/1.md) | V A/2/1 |
 | [V C/1/1](ch/gl/de/V C/1/1.md) | Gesetz über den Brandschutz und die Feuerwehr |
 | [V C/1/2](ch/gl/de/V C/1/2.md) | Verordnung zum Gesetz über den Brandschutz und die Feuerwehr |
 | [V C/1/3](ch/gl/de/V C/1/3.md) | Vollzugsverordnung zum Brandschutzgesetz |
@@ -17431,10 +17945,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [V C/4/1](ch/gl/de/V C/4/1.md) | Kaminfegertarif |
 | [V C/4/2](ch/gl/de/V C/4/2.md) | Vorschriften für den Kaminfegerdienst |
 | [V C/4/3](ch/gl/de/V C/4/3.md) | Kaminfegerreglement |
+| [V D/1](ch/gl/de/V D/1.md) | 1995 V D/1 |
 | [V D/1/1](ch/gl/de/V D/1/1.md) | Gesetz über die Kantonale Sachversicherung Glarus |
 | [V D/1/2](ch/gl/de/V D/1/2.md) | Vollzugsreglement zum Sachversicherungsgesetz |
 | [V D/1/3](ch/gl/de/V D/1/3.md) | Prämientarif für die Versicherung im Monopol |
 | [V D/1/4](ch/gl/de/V D/1/4.md) | Geschäftsreglement der kantonalen Sachversicherung |
+| [V D/1/5](ch/gl/de/V D/1/5.md) | 1995 V D/1/5 |
 | [V D/1/6](ch/gl/de/V D/1/6.md) | Beschluss über den Beitritt der Kantonalen Sachversicherung zum Schweizerischen |
 | [V D/2/1](ch/gl/de/V D/2/1.md) | Entschädigungsreglement für den Verwaltungsrat der Glarnersach |
 | [V D/2/2](ch/gl/de/V D/2/2.md) | Verordnung über die Aufsicht des Regierungsrates bei der Kantonalen Sachversicherung |
@@ -17449,10 +17965,15 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [V G/1](ch/gl/de/V G/1.md) | Gesetz über den Bevölkerungsschutz |
 | [V G/2](ch/gl/de/V G/2.md) | Verordnung zum Gesetz über den Bevölkerungsschutz |
 | [V H/1](ch/gl/de/V H/1.md) | Einführungsgesetz zum Bundesgesetz über die wirtschaftliche Landesversorgung |
+| [V H/2](ch/gl/de/V H/2.md) | V H/2 |
 | [V H/3](ch/gl/de/V H/3.md) | Verordnung über die Notorganisation im Kanton Glarus |
 | [V H/4](ch/gl/de/V H/4.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die wirtschaftliche |
 | [VI A/1/2](ch/gl/de/VI A/1/2.md) | Gesetz über den Finanzhaushalt des Kantons Glarus und seiner Gemeinden |
 | [VI A/1/2/1](ch/gl/de/VI A/1/2/1.md) | Verordnung über den Finanzhaushalt des Kantons Glarus und seiner Gemeinden |
+| [VI A/1/3](ch/gl/de/VI A/1/3.md) | VI A/1/3 |
+| [VI A/1/3/1](ch/gl/de/VI A/1/3/1.md) | 1995 VI A/1/3/1 |
+| [VI A/1/4](ch/gl/de/VI A/1/4.md) | 2004 VI A/1/4 |
+| [VI A/1/4/1](ch/gl/de/VI A/1/4/1.md) | 1995 VI A/1/4/1 |
 | [VI A/2/1](ch/gl/de/VI A/2/1.md) | Gesetz über den Finanzausgleich zwischen dem Kanton und den Gemeinden |
 | [VI C/1/1](ch/gl/de/VI C/1/1.md) | Steuergesetz |
 | [VI C/1/1/1](ch/gl/de/VI C/1/1/1.md) | Verordnung über den Ausgleich der Folgen der kalten Progression für die natürlichen |
@@ -17462,6 +17983,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VI C/1/4](ch/gl/de/VI C/1/4.md) | Verordnung über die Bewertung der Grundstücke |
 | [VI C/1/5](ch/gl/de/VI C/1/5.md) | Verordnung über die Quellensteuer natürlicher und juristischer Personen |
 | [VI C/1/5/1](ch/gl/de/VI C/1/5/1.md) | Beschluss über Höhe und Verfahren der Bezugsprovision bei der Quellensteuer |
+| [VI C/1/5/2](ch/gl/de/VI C/1/5/2.md) | 1997 VI C/1/5/2 |
 | [VI C/1/6](ch/gl/de/VI C/1/6.md) | Verordnung über den Abzug der Kosten von Liegenschaften des Privatvermögens |
 | [VI C/1/7](ch/gl/de/VI C/1/7.md) | Verordnung über den Steuerbezug |
 | [VI C/1/7/1](ch/gl/de/VI C/1/7/1.md) | Verordnung über Zinsen, Skonti und Bezugslimiten für die Kantons- und Gemeindesteuern |
@@ -17473,6 +17995,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VI C/2/4](ch/gl/de/VI C/2/4.md) | Einführungsverordnung zum Bundesgesetz über die Wehrpflichtersatzabgabe |
 | [VI C/2/4/1](ch/gl/de/VI C/2/4/1.md) | Verordnung über den Vollzug der Vorschiften zur Wehrpflichtersatzabgabe |
 | [VI C/4/1](ch/gl/de/VI C/4/1.md) | Gebührentarif für die Einwohnerkontrollen |
+| [VI C/4/2](ch/gl/de/VI C/4/2.md) | 2003 VI C/4/2 |
 | [VI C/4/6](ch/gl/de/VI C/4/6.md) | Beschluss über die Hundetaxen |
 | [VI C/4/7](ch/gl/de/VI C/4/7.md) | Verordnung über die Gebühren der Arbeitsmarktbehörde |
 | [VI D/1](ch/gl/de/VI D/1.md) | Abkommen über Befreiung von Erbschafts- und Schenkungssteuern bei Vermächtnissen |
@@ -17506,13 +18029,20 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VI E/31/3](ch/gl/de/VI E/31/3.md) | Verordnung über den Vollzug der Fischereigesetzgebung |
 | [VI E/31/4](ch/gl/de/VI E/31/4.md) | Verordnung über die Patenttaxen für die Fischerei im Walensee |
 | [VI E/331/1](ch/gl/de/VI E/331/1.md) | Übereinkunft zwischen den Kantonen Zürich, Schwyz, Glarus und St. Gallen über |
+| [VI E/331/2](ch/gl/de/VI E/331/2.md) | VI E/331/2 |
 | [VI E/331/3](ch/gl/de/VI E/331/3.md) | Ausführungsbestimmungen über die Fischerei im Linthkanal |
 | [VI E/331/4](ch/gl/de/VI E/331/4.md) | Ausführungsbestimmungen über die Fischerei im Walensee |
 | [VI E/331/5](ch/gl/de/VI E/331/5.md) | Interkantonale Vereinbarung zwischen den Kantonen Uri und Glarus über die Ausübung |
 | [VI E/332/1](ch/gl/de/VI E/332/1.md) | Vereinbarung zwischen der Regierung des Kantons Glarus und den Kraftwerken |
 | [VI F/1](ch/gl/de/VI F/1.md) | Beschluss betreffend Beteiligung des Kantons Glarus bei der Schweizerischen |
 | [VI F/2](ch/gl/de/VI F/2.md) | Public Corporate Governance-Richtlinie |
+| [VII A/1/1](ch/gl/de/VII A/1/1.md) | 1995 VII A/1/1 |
 | [VII A/1/2](ch/gl/de/VII A/1/2.md) | Kantonaler Richtplan 2018 |
+| [VII A/1/3](ch/gl/de/VII A/1/3.md) | Regierungsrat |
+| [VII A/1/4](ch/gl/de/VII A/1/4.md) | Bau und Umwelt |
+| [VII A/1/5](ch/gl/de/VII A/1/5.md) | Kantonaler |
+| [VII A/1/6](ch/gl/de/VII A/1/6.md) | Kantonaler Richtplan 2018 – Fortschreibung |
+| [VII A/1/7](ch/gl/de/VII A/1/7.md) | Kantonaler Richtplan 2018 – Fortschreibung |
 | [VII A/2/1](ch/gl/de/VII A/2/1.md) | Einführungsgesetz zum Geoinformationsgesetz |
 | [VII A/2/3](ch/gl/de/VII A/2/3.md) | Verordnung zum Einführungsgesetz zum Geoinformationsgesetz |
 | [VII A/2/4](ch/gl/de/VII A/2/4.md) | Verordnung über die Gebühren für Zugang, Abgabe und Nutzung von Geodaten und |
@@ -17526,6 +18056,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VII B/2/4](ch/gl/de/VII B/2/4.md) | Beschluss über die Gewährung eines Kantonsbeitrages von 13,5 Millionen Franken |
 | [VII B/2/5](ch/gl/de/VII B/2/5.md) | Beschluss über die Gewährung eines Kredites von 14,77 Millionen Franken für |
 | [VII B/2/9](ch/gl/de/VII B/2/9.md) | Beschluss über die Erteilung eines Kredites von 9'415'000 Franken an die Braunwald-Standseilbahn |
+| [VII B/3/1](ch/gl/de/VII B/3/1.md) | 1995 VII B/3/1 |
 | [VII B/531/1](ch/gl/de/VII B/531/1.md) | Beschluss über Verwertung von Wasserkräften im Kanton Glarus |
 | [VII B/531/1/1](ch/gl/de/VII B/531/1/1.md) | Kompetenzdelegation für die Konzessionierung neuer oder erweiterter Kleinwasserkraftwerke |
 | [VII B/531/2](ch/gl/de/VII B/531/2.md) | Beschluss betreffend die Wasserkraft des Löntsch |
@@ -17540,6 +18071,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VII B/532/15](ch/gl/de/VII B/532/15.md) | Konzession für die Ausnützung der Wasserkraft des Mühlebaches an die Weseta |
 | [VII B/532/16](ch/gl/de/VII B/532/16.md) | Konzession zur Ausnützung der Wasserkraft des Löntsch unterhalb des NOK-Kraftwerkes |
 | [VII B/532/17](ch/gl/de/VII B/532/17.md) | Konzession für die Ausnützung der Wasserkraft des Ennendaner Dorfbaches in |
+| [VII B/532/18](ch/gl/de/VII B/532/18.md) | 1995 VII B/532/18 |
 | [VII B/532/19](ch/gl/de/VII B/532/19.md) | Konzession für die Ausnützung der Wasserkraft der Linth in Mitlödi zwischen |
 | [VII B/532/2](ch/gl/de/VII B/532/2.md) | Erneuerung der Konzession vom 10. Oktober 1928 für die Ausnützung der Wasserkraft |
 | [VII B/532/20](ch/gl/de/VII B/532/20.md) | Konzession für die Ausnützung der Wasserkraft des Sernf bzw. der Linth zwischen |
@@ -17552,11 +18084,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VII B/532/27](ch/gl/de/VII B/532/27.md) | Erneuerung der Konzession sowie der Nachkonzession für die Ausnützung der Wasserkraft |
 | [VII B/532/28](ch/gl/de/VII B/532/28.md) | Konzession für die Ausnützung der Wasserkraft des Brummbachs zwischen der Höhe |
 | [VII B/532/29](ch/gl/de/VII B/532/29.md) | Konzession für die Ausnützung der Wasserkraft des Luchsingerbaches vom Mittelstafel |
+| [VII B/532/3](ch/gl/de/VII B/532/3.md) | 1995 VII B/532/3 |
 | [VII B/532/4](ch/gl/de/VII B/532/4.md) | Konzessionserteilung zur Ausnützung der Wasserkraft des Luchsingerbaches |
 | [VII B/532/5](ch/gl/de/VII B/532/5.md) | Erteilung einer Nachkonzession zur Ausnützung der Wasserkräfte des Luchsingerbaches |
 | [VII B/532/6](ch/gl/de/VII B/532/6.md) | Konzession zur Ausnützung der Wasserkraft des Fätschbaches von der Kantonsgrenze |
 | [VII B/532/7](ch/gl/de/VII B/532/7.md) | Konzession für die Ausnützung der Wasserkräfte im Quellgebiet der Linth und |
 | [VII B/532/8](ch/gl/de/VII B/532/8.md) | Konzession für die Ausnützung der Wasserkräfte des Oberseetales im Elektrizitätswerk |
+| [VII B/532/9](ch/gl/de/VII B/532/9.md) | 1995 VII B/532/9 |
 | [VII B/55/1](ch/gl/de/VII B/55/1.md) | Beschluss über die Genehmigung der Interkantonalen Vereinbarung zwischen den |
 | [VII B/55/2](ch/gl/de/VII B/55/2.md) | Interkantonale Vereinbarung zwischen den Kantonen Glarus, Schwyz, St. Gallen |
 | [VII B/55/3](ch/gl/de/VII B/55/3.md) | Organisationsreglement zum Linthkonkordat |
@@ -17577,6 +18111,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VII C/11/9](ch/gl/de/VII C/11/9.md) | Verordnung über die Fuss- und Wanderwege |
 | [VII C/11/9/1](ch/gl/de/VII C/11/9/1.md) | Verordnung über den Vollzug der Verordnung über Fuss- und Wanderwege |
 | [VII C/12/1](ch/gl/de/VII C/12/1.md) | Kantonale Vollziehungsverordnung zum Bundesgesetz über die Nationalstrassen |
+| [VII C/13/1](ch/gl/de/VII C/13/1.md) | 1995 VII C/13/1 |
+| [VII C/2/1](ch/gl/de/VII C/2/1.md) | 1995 VII C/2/1 |
+| [VII C/2/2](ch/gl/de/VII C/2/2.md) | 1995 VII C/2/2 |
 | [VII D/11/1](ch/gl/de/VII D/11/1.md) | Einführungsgesetz zum Bundesgesetz über den Strassenverkehr |
 | [VII D/11/2](ch/gl/de/VII D/11/2.md) | Verordnung über den Strassenverkehr |
 | [VII D/11/3](ch/gl/de/VII D/11/3.md) | Gesetz über die Verwendung von Motorfahrzeugen ausserhalb der öffentlichen |
@@ -17587,7 +18124,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VII D/12/3](ch/gl/de/VII D/12/3.md) | Verordnung über die Gebühren im Strassenverkehr und in der Schifffahrt |
 | [VII D/12/4](ch/gl/de/VII D/12/4.md) | Verordnung über das ökologische Rabattsystem der Verkehrssteuern |
 | [VII D/12/5](ch/gl/de/VII D/12/5.md) | Verordnung über die Gebühren für die Bewilligung von Veranstaltungen auf öffentlichen |
+| [VII D/2/1](ch/gl/de/VII D/2/1.md) | 1995 VII D/2/1 |
 | [VII D/3/1](ch/gl/de/VII D/3/1.md) | Gesetz über die nicht eidgenössisch konzessionierten Transportanlagen |
+| [VII D/3/3](ch/gl/de/VII D/3/3.md) | 1995 VII D/3/3 |
 | [VII D/4/1](ch/gl/de/VII D/4/1.md) | Einführungsgesetz zum Bundesgesetz über die Binnenschifffahrt |
 | [VII D/4/2](ch/gl/de/VII D/4/2.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Binnenschifffahrt |
 | [VII D/4/3](ch/gl/de/VII D/4/3.md) | Verordnung über die Melde-, Einwasserungsbewilligungs- und Reinigungspflicht |
@@ -17607,10 +18146,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VII E/1/2/1](ch/gl/de/VII E/1/2/1.md) | Verordnung über den Vollzug der Energiegesetzgebung |
 | [VII E/1/3](ch/gl/de/VII E/1/3.md) | Verordnung über den Energiefonds |
 | [VII E/1/3/1](ch/gl/de/VII E/1/3/1.md) | Verordnung über den Vollzug der Verordnung über den Energiefonds |
+| [VII E/1/4](ch/gl/de/VII E/1/4.md) | 1995 VII E/1/4 |
+| [VII E/1/5](ch/gl/de/VII E/1/5.md) | 1995 VII E/1/5 |
 | [VII E/2](ch/gl/de/VII E/2.md) | Interkantonale Vereinbarung über den Vollzug der privaten Kontrolle im Energiebereich |
 | [VII E/2/1](ch/gl/de/VII E/2/1.md) | Zusatzvereinbarung zur Interkantonalen Vereinbarung über den Vollzug der Privaten |
 | [VII E/3](ch/gl/de/VII E/3.md) | Verordnung über Rohrleitungsanlagen |
 | [VIII A/1/1](ch/gl/de/VIII A/1/1.md) | Gesetz über das Gesundheitswesen |
+| [VIII A/1/2](ch/gl/de/VIII A/1/2.md) | 1995 VIII A/1/2 |
 | [VIII A/1/3](ch/gl/de/VIII A/1/3.md) | Verordnung über die ambulante Langzeit- und Gesundheitspflege |
 | [VIII A/1/4](ch/gl/de/VIII A/1/4.md) | Interkantonale Vereinbarung über die hochspezialisierte Medizin |
 | [VIII A/1/5](ch/gl/de/VIII A/1/5.md) | Pflege- und Betreuungsgesetz |
@@ -17618,8 +18160,22 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VIII A/1/7](ch/gl/de/VIII A/1/7.md) | Verordnung über die Ausbildungspflicht im Bereich der Pflege |
 | [VIII A/1/8](ch/gl/de/VIII A/1/8.md) | Kantonale Verordnung für die Förderung der Ausbildung im Bereich der Pflege |
 | [VIII A/211/1](ch/gl/de/VIII A/211/1.md) | Verordnung über das Kantonsspital Glarus |
+| [VIII A/211/2](ch/gl/de/VIII A/211/2.md) | 1997 VIII A/211/2 |
+| [VIII A/211/3](ch/gl/de/VIII A/211/3.md) | 2001 VIII A/211/3 |
+| [VIII A/211/4](ch/gl/de/VIII A/211/4.md) | 2003 VIII A/211/4 |
+| [VIII A/212/1](ch/gl/de/VIII A/212/1.md) | 1996 VIII A/212/1 |
+| [VIII A/212/2](ch/gl/de/VIII A/212/2.md) | 2004 VIII A/212/2 |
+| [VIII A/212/3](ch/gl/de/VIII A/212/3.md) | 1999 VIII A/212/3 |
+| [VIII A/212/4](ch/gl/de/VIII A/212/4.md) | 2004 VIII A/212/4 |
+| [VIII A/214/1](ch/gl/de/VIII A/214/1.md) | 2002 VIII A/214/1 |
+| [VIII A/214/2](ch/gl/de/VIII A/214/2.md) | 1999 VIII A/214/2 |
+| [VIII A/214/3](ch/gl/de/VIII A/214/3.md) | 2001 VIII A/214/3 |
+| [VIII A/214/4](ch/gl/de/VIII A/214/4.md) | 1995 VIII A/214/4 |
+| [VIII A/214/5](ch/gl/de/VIII A/214/5.md) | 1995 VIII A/214/5 |
 | [VIII A/215/1](ch/gl/de/VIII A/215/1.md) | Verordnung über den Spitalfonds Brigitta-Kundert/ Schmid-Lütschg |
 | [VIII A/22/2](ch/gl/de/VIII A/22/2.md) | Beschluss über die Gewährung von Beiträgen an die bauliche Sanierung der Höhenklinik |
+| [VIII A/23/1](ch/gl/de/VIII A/23/1.md) | 1996 VIII A/23/1 |
+| [VIII A/23/1/1](ch/gl/de/VIII A/23/1/1.md) | 1999 VIII A/23/1/1 |
 | [VIII A/23/2](ch/gl/de/VIII A/23/2.md) | Vereinbarung über das Rehabilitationszentrum für Drogenabhängige Lutzenberg |
 | [VIII A/23/3](ch/gl/de/VIII A/23/3.md) | Beschluss über den Beitritt zur Vereinbarung über das Rehabilitationszentrum |
 | [VIII A/3/1](ch/gl/de/VIII A/3/1.md) | Verordnung über Berufe und Einrichtungen der Gesundheitsversorgung |
@@ -17631,7 +18187,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VIII A/3/8](ch/gl/de/VIII A/3/8.md) | Reglement der Schweizerischen Konferenz der kantonalen Gesundheitsdirektorinnen |
 | [VIII A/3/9](ch/gl/de/VIII A/3/9.md) | Reglement der Schweizerischen Konferenz der kantonalen Gesundheitsdirektorinnen |
 | [VIII A/322/1](ch/gl/de/VIII A/322/1.md) | Verordnung über die Entschädigung des Bereitschaftsdienstes für Hausgeburten |
+| [VIII A/322/2](ch/gl/de/VIII A/322/2.md) | 1995 VIII A/322/2 |
 | [VIII A/4/1](ch/gl/de/VIII A/4/1.md) | Verordnung über den Vollzug der eidgenössischen Heil- und Betäubungsmittelgesetzgebung |
+| [VIII A/41/1](ch/gl/de/VIII A/41/1.md) | 1995 VIII A/41/1 |
+| [VIII A/42/1](ch/gl/de/VIII A/42/1.md) | 1995 VIII A/42/1 |
 | [VIII A/51/1](ch/gl/de/VIII A/51/1.md) | Verordnung zum Vollzug des Bundesgesetzes über Lebensmittel und Gebrauchsgegenstände |
 | [VIII A/51/2](ch/gl/de/VIII A/51/2.md) | Verordnung über den Vollzug des eidgenössischen Lebensmittelgesetzes und des |
 | [VIII A/51/3](ch/gl/de/VIII A/51/3.md) | Vereinbarung über eine gemeinsame Lebensmittelkontrolle der Kantone Appenzell |
@@ -17645,6 +18204,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VIII A/61/5](ch/gl/de/VIII A/61/5.md) | Verordnung zum Spezialfonds Härtefallunterstützungen für Unternehmen im Zusammenhang |
 | [VIII A/61/6](ch/gl/de/VIII A/61/6.md) | Kantonale Verordnung über Massnahmen für Publikumsanlässe von überkantonaler |
 | [VIII A/62/1](ch/gl/de/VIII A/62/1.md) | Vollziehungsgesetz zum Bundesgesetz vom 13. Juni 1928 betreffend Massnahmen |
+| [VIII A/62/2](ch/gl/de/VIII A/62/2.md) | 1995 VIII A/62/2 |
 | [VIII A/63/1](ch/gl/de/VIII A/63/1.md) | Verordnung über das Desinfektionswesen |
 | [VIII A/64/1](ch/gl/de/VIII A/64/1.md) | Verordnung über die öffentlichen Bäder |
 | [VIII A/7/1](ch/gl/de/VIII A/7/1.md) | Verordnung über das Bestattungswesen |
@@ -17663,6 +18223,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VIII B/21/6](ch/gl/de/VIII B/21/6.md) | Verordnung über die zulässige Düngerbelastung in der Landwirtschaft |
 | [VIII B/22/1/1](ch/gl/de/VIII B/22/1/1.md) | Vereinbarung über Bau und Betrieb der gemeinsamen zentralen Abwasserreinigungsanlage |
 | [VIII B/22/1/2](ch/gl/de/VIII B/22/1/2.md) | Statuten Abwasserverband Glarnerland |
+| [VIII B/22/3](ch/gl/de/VIII B/22/3.md) | 1997 VIII B/22/3 |
 | [VIII B/22/4/1](ch/gl/de/VIII B/22/4/1.md) | Vereinbarung über den Abwasserverband Mühlehorn-Obstalden-Murg |
 | [VIII B/22/4/2](ch/gl/de/VIII B/22/4/2.md) | Zweckverbandsvereinbarung Abwasserverband Walensee |
 | [VIII B/3/1](ch/gl/de/VIII B/3/1.md) | Interkantonale Vereinbarung über den Zweckverband für die Kehrichtbeseitigung |
@@ -17672,6 +18233,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VIII B/3/5](ch/gl/de/VIII B/3/5.md) | Verordnung über die Abgaben für die Nachsorge von Deponien |
 | [VIII B/4/2](ch/gl/de/VIII B/4/2.md) | Interkantonale Vereinbarung über den Vollzug der Privaten Kontrolle im Bereich |
 | [VIII B/41/1](ch/gl/de/VIII B/41/1.md) | Beschluss über die Realisierung von Lärmschutzmassnahmen an Kantonsstrassen; |
+| [VIII B/42/1](ch/gl/de/VIII B/42/1.md) | 1999 VIII B/42/1 |
 | [VIII B/6/1](ch/gl/de/VIII B/6/1.md) | Verordnung über die Öl-, Chemie- und Strahlenwehr |
 | [VIII C/12/3](ch/gl/de/VIII C/12/3.md) | Kantonaler Normalarbeitsvertrag Hauswirtschaft |
 | [VIII C/13/1](ch/gl/de/VIII C/13/1.md) | Gesetz über die Einigungsstelle |
@@ -17682,19 +18244,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VIII C/23/1](ch/gl/de/VIII C/23/1.md) | Verordnung über den Vollzug des Bundesgesetzes über Massnahmen zur Bekämpfung |
 | [VIII C/32/1](ch/gl/de/VIII C/32/1.md) | Verordnung über den Vollzug des Bundesgesetzes über die in die Schweiz entsandten |
 | [VIII C/32/2](ch/gl/de/VIII C/32/2.md) | Verordnung über den Vollzug der Bundesgesetzgebung über Zulassung und Erwerbstätigkeit |
+| [VIII C/33/1](ch/gl/de/VIII C/33/1.md) | 1995 VIII C/33/1 |
 | [VIII C/33/2](ch/gl/de/VIII C/33/2.md) | Gesetz über die steuerbegünstigten Arbeitsbeschaffungsreserven |
 | [VIII C/33/3](ch/gl/de/VIII C/33/3.md) | Verordnung zum Gesetz über die steuerbegünstigten Arbeitsbeschaffungsreserven |
 | [VIII D/111/1](ch/gl/de/VIII D/111/1.md) | Gesetz über die Aufhebung der Staatlichen Alters- und Invalidenversicherung |
 | [VIII D/112/1](ch/gl/de/VIII D/112/1.md) | Einführungsgesetz zum Bundesgesetz über die Alters- und Hinterlassenenversicherung |
+| [VIII D/112/2](ch/gl/de/VIII D/112/2.md) | 1995 VIII D/112/2 |
 | [VIII D/112/4](ch/gl/de/VIII D/112/4.md) | Reglement über die Verwaltungskostenbeiträge der Arbeitgeber, Selbstständigerwerbenden |
 | [VIII D/12/1](ch/gl/de/VIII D/12/1.md) | Einführungsgesetz zum Bundesgesetz über die Invalidenversicherung |
 | [VIII D/13/1](ch/gl/de/VIII D/13/1.md) | Einführungsgesetz zum Bundesgesetz über Ergänzungsleistungen zur Alters-, Hinterlassenen- |
 | [VIII D/13/2](ch/gl/de/VIII D/13/2.md) | Verordnung über den Vollzug des Einführungsgesetzes zum Bundesgesetz über Ergänzungsleistungen |
+| [VIII D/13/3](ch/gl/de/VIII D/13/3.md) | 1995 VIII D/13/3 |
 | [VIII D/21/1](ch/gl/de/VIII D/21/1.md) | Einführungsgesetz zum Bundesgesetz über die Krankenversicherung |
 | [VIII D/21/1/1](ch/gl/de/VIII D/21/1/1.md) | Verordnung über den Vollzug des Einführungsgesetzes zum Bundesgesetz über die |
 | [VIII D/21/2](ch/gl/de/VIII D/21/2.md) | Verordnung über den Vollzug der Prämienverbilligung |
 | [VIII D/21/3](ch/gl/de/VIII D/21/3.md) | Verordnung über die Prämienverbilligung |
+| [VIII D/21/4](ch/gl/de/VIII D/21/4.md) | 2003 VIII D/21/4 |
 | [VIII D/21/5](ch/gl/de/VIII D/21/5.md) | Beschluss über den Vermögensanteil am anrechenbaren Einkommen für die Berechnung |
+| [VIII D/21/6](ch/gl/de/VIII D/21/6.md) | 1995 VIII D/21/6 |
 | [VIII D/21/7](ch/gl/de/VIII D/21/7.md) | Ostschweizer Spitalvereinbarung |
 | [VIII D/21/8](ch/gl/de/VIII D/21/8.md) | Ergänzungsvereinbarung zur Ostschweizer Spitalvereinbarung |
 | [VIII D/21/9](ch/gl/de/VIII D/21/9.md) | Kantonale Verordnung über die Festlegung der Höchstzahlen für Ärztinnen und |
@@ -17718,8 +18285,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [VIII E/21/5](ch/gl/de/VIII E/21/5.md) | Verordnung über die Bemessung der wirtschaftlichen Sozialhilfe und der Hilfe |
 | [VIII E/21/6](ch/gl/de/VIII E/21/6.md) | Verordnung über die Erteilung von Betriebsbewilligungen für stationäre Einrichtungen |
 | [VIII E/21/8](ch/gl/de/VIII E/21/8.md) | Interkantonale Vereinbarung für soziale Einrichtungen |
+| [VIII E/21/9](ch/gl/de/VIII E/21/9.md) | 1995 VIII E/21/9 |
 | [VIII E/22/1](ch/gl/de/VIII E/22/1.md) | Beschluss über die Ausrichtung von Beiträgen an die Kinderkrippen |
 | [VIII E/23/2](ch/gl/de/VIII E/23/2.md) | Verordnung über Beiträge an Bauten und Betriebseinrichtungen für Behinderte |
+| [VIII E/24/1](ch/gl/de/VIII E/24/1.md) | 1995 VIII E/24/1 |
 | [VIII E/25/1](ch/gl/de/VIII E/25/1.md) | Verordnung über den Rosa-Hefti-Fonds |
 | [VIII E/25/2](ch/gl/de/VIII E/25/2.md) | Verordnung über den A.-Bremicker-Fonds |
 | [VIII E/25/3](ch/gl/de/VIII E/25/3.md) | Verordnung über den Fonds zur ergänzenden Unterstützung von Familien |
@@ -17729,7 +18298,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## GR – Graubünden
 
-*426 laws*
+*669 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -17746,15 +18315,21 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [150.300](ch/gr/de/150.300.md) | Verordnung über die Nationalratswahlen |
 | [150.400](ch/gr/de/150.400.md) | Gesetz über die Wahl des Grossen Rates |
 | [150.410](ch/gr/de/150.410.md) | Verordnung über die Wahl des Grossen Rates |
+| [170.010](ch/gr/de/170.010.md) | 170.010 Gesetz über die Unvereinbarkeit von Ämtern im Kanton Graubünden (Unvereinbarkeitsgesetz) |
 | [170.050](ch/gr/de/170.050.md) | Gesetz über die Staatshaftung |
 | [170.100](ch/gr/de/170.100.md) | Gesetz über den Grossen Rat |
 | [170.140](ch/gr/de/170.140.md) | Geschäftsordnung des Grossen Rates |
 | [170.300](ch/gr/de/170.300.md) | Regierungs- und Verwaltungsorganisationsgesetz |
 | [170.310](ch/gr/de/170.310.md) | Regierungs- und Verwaltungsorganisationsverordnung |
+| [170.320](ch/gr/de/170.320.md) | 170.320 Geschäftsordnung für die Regierung des Kantons Graubünden |
+| [170.325](ch/gr/de/170.325.md) | 170.325 Beschluss betreffend Zuweisung von Sachgebieten an die Departemente |
 | [170.340](ch/gr/de/170.340.md) | Verordnung betreffend die Übertragung von Befugnissen der Regierung auf die |
 | [170.360](ch/gr/de/170.360.md) | Gebührenverordnung für die Standeskanzlei |
 | [170.375](ch/gr/de/170.375.md) | Verordnung betreffend Auslagenersatz und Geschenkannahme |
 | [170.380](ch/gr/de/170.380.md) | Gesetz über die Gehälter und die berufliche Vorsorge der Mitglieder der Regierung |
+| [170.385](ch/gr/de/170.385.md) | 170.385 Verordnung über die Sparversicherung und die Ruhegehälter für die Mitglieder |
+| [170.390](ch/gr/de/170.390.md) | 170.390 Verordnung über die Ruhegehälter früherer Mitglieder der Regierung |
+| [170.395](ch/gr/de/170.395.md) | 170.395 Ausführungsbestimmungen zur Verordnung des Grossen Rates vom 22. November |
 | [170.400](ch/gr/de/170.400.md) | Gesetz über das Arbeitsverhältnis der Mitarbeitenden des Kantons Graubünden |
 | [170.410](ch/gr/de/170.410.md) | Personalverordnung |
 | [170.415](ch/gr/de/170.415.md) | Arbeitszeitverordnung |
@@ -17764,6 +18339,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [170.450](ch/gr/de/170.450.md) | Gesetz über die Pensionskasse Graubünden |
 | [170.480](ch/gr/de/170.480.md) | Reglement über den Fonds für nichtversicherte Risiken der kantonalen Verwaltungs- |
 | [170.500](ch/gr/de/170.500.md) | Verordnung über die Informatik in der kantonalen Verwaltung |
+| [170.600](ch/gr/de/170.600.md) | 170.600 Verordnung über die Unterschriftsberechtigung für Verfügungen und Beschwerdeentscheide |
 | [170.700](ch/gr/de/170.700.md) | Verordnung über die Deckung des Bürobedarfs in der kantonalen Verwaltung |
 | [170.800](ch/gr/de/170.800.md) | Verordnung über das Parkplatzmanagement der kantonalen Verwaltung |
 | [171.000](ch/gr/de/171.000.md) | Gesetz über das Öffentlichkeitsprinzip |
@@ -17777,6 +18353,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [173.020](ch/gr/de/173.020.md) | Geschäftsordnung des Justizgerichts |
 | [173.050](ch/gr/de/173.050.md) | Gesetz über die Gehälter und die berufliche Vorsorge der Mitglieder des Kantons- |
 | [173.100](ch/gr/de/173.100.md) | Verordnung über die Organisation des Kantonsgerichts |
+| [173.110](ch/gr/de/173.110.md) | 173.110 Verordnung über die Organisation und Geschäftsführung des Kantonsgerichtes |
 | [173.120](ch/gr/de/173.120.md) | Geschäftsordnung des Regionalgerichts Albula |
 | [173.125](ch/gr/de/173.125.md) | Geschäftsordnung des Regionalgerichts Bernina |
 | [173.130](ch/gr/de/173.130.md) | Geschäftsordnung des Regionalgerichts Engiadina Bassa/Val Müstair |
@@ -17793,6 +18370,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [173.200](ch/gr/de/173.200.md) | Verordnung über die Justizaufsicht |
 | [173.210](ch/gr/de/173.210.md) | Verordnung über das Finanz- und Rechnungswesen im Justizbereich |
 | [173.300](ch/gr/de/173.300.md) | Verordnung über die Organisation des Verwaltungsgerichtes |
+| [173.310](ch/gr/de/173.310.md) | 173.310 Gebührenverordnung für das Verwaltungsgericht |
 | [173.400](ch/gr/de/173.400.md) | Verordnung über die elektronische Stimmabgabe und Wahl in den Leitungsorganen |
 | [173.500](ch/gr/de/173.500.md) | Verordnung über die Organisation, die Besoldung und das Rechnungswesen der |
 | [173.510](ch/gr/de/173.510.md) | Verordnung über die Besoldung der nebenamtlichen Mitglieder richterlicher Behörden |
@@ -17807,6 +18385,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [180.200](ch/gr/de/180.200.md) | Verordnung betreffend die Verwendung von Rumantsch Grischun für die romanischen |
 | [180.500](ch/gr/de/180.500.md) | Verordnung über das Amtsblatt des Kantons Graubünden |
 | [210.100](ch/gr/de/210.100.md) | Einführungsgesetz zum Schweizerischen Zivilgesetzbuch |
+| [210.150](ch/gr/de/210.150.md) | Verordnung zur Umsetzung von Artikel 28b des |
 | [210.200](ch/gr/de/210.200.md) | Einführungsgesetz zum Schweizerischen Obligationenrecht |
 | [210.300](ch/gr/de/210.300.md) | Notariatsgesetz |
 | [210.350](ch/gr/de/210.350.md) | Notariatsverordnung |
@@ -17815,40 +18394,87 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [215.010](ch/gr/de/215.010.md) | Verordnung zum Kindes- und Erwachsenenschutz |
 | [215.020](ch/gr/de/215.020.md) | Kantonale Adoptionsverordnung |
 | [215.050](ch/gr/de/215.050.md) | Verordnung über die Bevorschussung von Unterhaltsbeiträgen für unterhaltsberechtigte |
+| [215.100](ch/gr/de/215.100.md) | Verordnung über die Geschäftsführung und Ent- |
+| [215.200](ch/gr/de/215.200.md) | Verordnung über die Ausrichtung von Kantonsbei- |
 | [217.100](ch/gr/de/217.100.md) | Verordnung über das Grundbuch im Kanton Graubünden |
 | [217.200](ch/gr/de/217.200.md) | Verordnung über die Gebühren der Grundbuchämter |
+| [217.250](ch/gr/de/217.250.md) | Verordnung über die amtliche Vermessung im Kan- |
+| [217.260](ch/gr/de/217.260.md) | Verordnung über die Gebühren für den Bezug von |
 | [217.300](ch/gr/de/217.300.md) | Kantonales Geoinformationsgesetz |
 | [217.310](ch/gr/de/217.310.md) | Kantonale Geoinformationsverordnung |
 | [217.320](ch/gr/de/217.320.md) | Verordnung über die amtliche Vermessung in Graubünden |
 | [217.330](ch/gr/de/217.330.md) | Gebührenverordnung zum kantonalen Geoinformationsgesetz |
 | [217.340](ch/gr/de/217.340.md) | Verordnung über den Leitungskataster |
+| [217.400](ch/gr/de/217.400.md) | 217.400 Grenzregulierung zwischen öffentlichen Gewässern und Privat- oder Korporationsboden |
+| [217.550](ch/gr/de/217.550.md) | Verordnung betreffend Anlage und Führung von |
 | [217.600](ch/gr/de/217.600.md) | Einführungsgesetz zum Bundesgesetz vom 16. Dezember 1983 über den Erwerb von |
+| [217.650](ch/gr/de/217.650.md) | Verordnung über den Fähigkeitsausweis der Grund- |
 | [219.050](ch/gr/de/219.050.md) | Pflegekindergesetz |
 | [219.100](ch/gr/de/219.100.md) | Verordnung betreffend die Aufsicht über die Stiftungen |
+| [219.110](ch/gr/de/219.110.md) | 219.110 Gebührentarif für die Aufsicht über die Stiftungen und die berufliche |
+| [219.130](ch/gr/de/219.130.md) | Beitritt des Kantons Graubünden zur Interkantonalen |
+| [219.140](ch/gr/de/219.140.md) | Interkantonale Vereinbarung über die BVG- und |
+| [219.150](ch/gr/de/219.150.md) | Genehmigung der Interkantonalen Vereinbarung |
+| [219.160](ch/gr/de/219.160.md) | Interkantonale Vereinbarung über die Ostschweizer |
+| [219.200](ch/gr/de/219.200.md) | 219.200 Verordnung über die Pflegekinderaufsicht |
 | [219.210](ch/gr/de/219.210.md) | Verordnung über die Zusammenarbeit und Koordination in der Jugendhilfe |
 | [219.300](ch/gr/de/219.300.md) | Verordnung über die Gebühren für Verrichtungen beim Erbgang |
 | [219.400](ch/gr/de/219.400.md) | Ausführungsbestimmungen zur eidgenössischen Verordnung vom 30. Oktober 1917 |
+| [219.600](ch/gr/de/219.600.md) | Vollziehungsverordnung über das Handelsregister |
+| [219.800](ch/gr/de/219.800.md) | Vollziehungsverordnung zum Schweizerischen Obli- |
 | [220.000](ch/gr/de/220.000.md) | Einführungsgesetz zum Bundesgesetz über Schuldbetreibung und Konkurs |
 | [220.010](ch/gr/de/220.010.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über Schuldbetreibung und |
 | [220.100](ch/gr/de/220.100.md) | Vollziehungsverordnung zum Bundesgesetz über Schuldbetreibung und Konkurs |
 | [220.150](ch/gr/de/220.150.md) | Ausführungsbestimmungen über die Haftpflichtversicherung für die Haftung des |
 | [220.300](ch/gr/de/220.300.md) | Beitritt des Kantons Graubünden zum Konkordat |
 | [220.310](ch/gr/de/220.310.md) | Konkordat über die Gewährung gegenseitiger |
+| [310.000](ch/gr/de/310.000.md) | 310.000 Gerichtsverfassungsgesetz (GVG) |
+| [310.050](ch/gr/de/310.050.md) | 310.050 Verordnung über die Organisation, Besoldung und Geschäftsführung der |
 | [310.100](ch/gr/de/310.100.md) | Anwaltsgesetz |
 | [310.200](ch/gr/de/310.200.md) | Anwaltsverordnung |
 | [310.210](ch/gr/de/310.210.md) | Verordnung über die Anwaltsprüfung |
 | [310.250](ch/gr/de/310.250.md) | Verordnung über die Bemessung des Honorars der Rechtsanwältinnen und Rechtsanwälte |
+| [320.000](ch/gr/de/320.000.md) | Zivilprozessordnung des Kantons Graubünden |
+| [320.030](ch/gr/de/320.030.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [320.035](ch/gr/de/320.035.md) | Konkordat über die Vollstreckung von Zivilurteilen |
+| [320.050](ch/gr/de/320.050.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [320.060](ch/gr/de/320.060.md) | Konkordat über die Schiedsgerichtsbarkeit |
+| [320.065](ch/gr/de/320.065.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [320.067](ch/gr/de/320.067.md) | Konkordat über die Gewährung gegenseitiger |
+| [320.070](ch/gr/de/320.070.md) | Verordnung über die Verfahrenskosten und Ent- |
+| [320.075](ch/gr/de/320.075.md) | Kostentarif im Zivilverfahren |
 | [320.100](ch/gr/de/320.100.md) | Einführungsgesetz zur Schweizerischen Zivilprozessordnung |
 | [320.110](ch/gr/de/320.110.md) | Verordnung zum Einführungsgesetz zur Schweizerischen Zivilprozessordnung |
+| [320.200](ch/gr/de/320.200.md) | 320.200 Vollziehungsverordnung zum Bundesgesetz vom 20. Dezember 1962 über |
 | [320.210](ch/gr/de/320.210.md) | Verordnung über die Gerichtsgebühren in Zivilverfahren |
+| [320.300](ch/gr/de/320.300.md) | 320.300 Vollziehungsverordnung zum Bundesgesetz über die Anlagefonds |
+| [320.400](ch/gr/de/320.400.md) | Konkordat betreffend Befreiung von der Verpflich- |
+| [320.500](ch/gr/de/320.500.md) | 320.500 Vollziehungsverordnung zum Bundesgesetz vom 18. März 1983 über die |
+| [350.000](ch/gr/de/350.000.md) | Gesetz über die Strafrechtspflege (StPO) |
+| [350.030](ch/gr/de/350.030.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [350.035](ch/gr/de/350.035.md) | Konkordat über die Rechtshilfe und die interkan- |
+| [350.050](ch/gr/de/350.050.md) | Verordnung über die Organisation und Geschäfts- |
+| [350.070](ch/gr/de/350.070.md) | Verordnung über die Mitwirkung der Medizinalper- |
 | [350.100](ch/gr/de/350.100.md) | Einführungsgesetz zur Schweizerischen Strafprozessordnung |
 | [350.110](ch/gr/de/350.110.md) | Verordnung zum Einführungsgesetz zur Schweizerischen Strafprozessordnung |
 | [350.140](ch/gr/de/350.140.md) | Verordnung über die Leumundszeugnisse |
 | [350.150](ch/gr/de/350.150.md) | Verordnung zur DNA-Profil-Gesetzgebung des Bundes |
+| [350.200](ch/gr/de/350.200.md) | Verordnung über die Kosten im Strafverfahren |
 | [350.210](ch/gr/de/350.210.md) | Verordnung über die Gerichtsgebühren in Strafverfahren |
+| [350.230](ch/gr/de/350.230.md) | Verordnung über Gebühren und Entschädigung der |
+| [350.250](ch/gr/de/350.250.md) | Verordnung über die schriftliche Mitteilung von |
 | [350.320](ch/gr/de/350.320.md) | Vollziehungsverordnung zum Bundesgesetz über explosionsgefährliche Stoffe (Sprengstoffgesetz) |
 | [350.325](ch/gr/de/350.325.md) | Vollziehungsverordnung zum eidgenössischen Sprengstoffrecht |
+| [350.330](ch/gr/de/350.330.md) | 350.330 Verordnung über die Lagerung von Waffen, Sprengstoffen und Zündmitteln |
+| [350.340](ch/gr/de/350.340.md) | Vollziehungsverordnung zum Bundesgesetz über |
 | [350.345](ch/gr/de/350.345.md) | Ausführungsbestimmungen zum Bundesgesetz über Waffen, Waffenzubehör und Munition |
+| [350.395](ch/gr/de/350.395.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [350.400](ch/gr/de/350.400.md) | Konkordat der ostschweizerischen Kantone über |
+| [350.410](ch/gr/de/350.410.md) | 350.410 Ausführungsbestimmungen zur ostschweizerischen Vereinbarung über den |
+| [350.450](ch/gr/de/350.450.md) | 350.450 Verordnung über die Unterbringung und Betreuung der Untersuchungsgefangenen |
+| [350.460](ch/gr/de/350.460.md) | 350.460 Verordnung über den Justizvollzug im Kanton Graubünden (Justizvollzugsverordnung) |
+| [350.480](ch/gr/de/350.480.md) | 350.480 Verordnung über die Schutzaufsicht und die Betreuung während des Straf- |
+| [350.490](ch/gr/de/350.490.md) | Verordnung über das Verwaltungsstrafverfahren |
 | [350.500](ch/gr/de/350.500.md) | Gesetz über den Justizvollzug im Kanton Graubünden |
 | [350.510](ch/gr/de/350.510.md) | Verordnung über den Justizvollzug im Kanton Graubünden |
 | [350.520](ch/gr/de/350.520.md) | Verordnung über die Vollzugseinrichtungen im Kanton Graubünden |
@@ -17859,15 +18485,42 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [370.140](ch/gr/de/370.140.md) | Verordnung über die Gebühren und Barauslagen in Verfahren vor dem Justizgericht |
 | [370.300](ch/gr/de/370.300.md) | Einführungsgesetz zum Schlichtungs- und Schiedsgerichtsverfahren nach eidgenössischem |
 | [370.310](ch/gr/de/370.310.md) | Verordnung über die Entlöhnung von Schlichtungsbehörde und Schiedsgericht nach |
+| [370.600](ch/gr/de/370.600.md) | 370.600 Verordnung über Verfahrenskosten in Verwaltungs- und Verfassungssachen |
 | [410.100](ch/gr/de/410.100.md) | Neuregelung der Aufsicht über die Klosterverwaltungen |
 | [420.150](ch/gr/de/420.150.md) | Verordnung über die Registrierung von Ausbildungsinstitutionen im Kanton Graubünden |
 | [420.200](ch/gr/de/420.200.md) | Verordnung über die Wohnheime der kantonalen Schulen |
+| [420.500](ch/gr/de/420.500.md) | Gesetz über die Kindergärten im Kanton Graubün- |
+| [420.510](ch/gr/de/420.510.md) | Verordnung betreffend Aufnahme von vierjährigen |
+| [420.520](ch/gr/de/420.520.md) | Wählbarkeit von Kindergärtnerinnen |
+| [420.525](ch/gr/de/420.525.md) | Verordnung über die Kindergartenaufsicht im Kan- |
+| [420.540](ch/gr/de/420.540.md) | Verordnung über die Förderung von Kindern mit |
+| [420.550](ch/gr/de/420.550.md) | Versicherungsleistungen für Kindergärtnerinnen |
+| [420.570](ch/gr/de/420.570.md) | Beitritt des Kantons Graubünden zur Interkanto- |
+| [420.575](ch/gr/de/420.575.md) | Schweizerische Konferenz der kantonalen Erziehungsdirektoren (EDK) |
 | [421.000](ch/gr/de/421.000.md) | Gesetz für die Volksschulen des Kantons Graubünden |
 | [421.010](ch/gr/de/421.010.md) | Verordnung zum Volksschulgesetz |
+| [421.015](ch/gr/de/421.015.md) | Verordnung für die Führung und Organisation der |
+| [421.020](ch/gr/de/421.020.md) | Verordnung zur Organisation von Kleinklassen |
+| [421.025](ch/gr/de/421.025.md) | Verordnung über Beitragsleistungen für Schul- |
 | [421.030](ch/gr/de/421.030.md) | Verordnung über weiter gehende Tagesstrukturen |
 | [421.040](ch/gr/de/421.040.md) | Verordnung über das Aufnahmeverfahren betreffend Talentklassen |
+| [421.050](ch/gr/de/421.050.md) | Verordnung über den Schulpsychologischen Dienst |
+| [421.070](ch/gr/de/421.070.md) | Verordnung über die Wählbarkeit von Lehrper- |
+| [421.080](ch/gr/de/421.080.md) | Verordnung über die Besoldung der Volksschullehr- |
+| [421.090](ch/gr/de/421.090.md) | Ausführungsbestimmungen über die Bewilligung |
+| [421.150](ch/gr/de/421.150.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [421.160](ch/gr/de/421.160.md) | Konkordat über die Schulkoordination |
+| [421.180](ch/gr/de/421.180.md) | Verordnung über die Promotion an den Volksschu- |
+| [421.200](ch/gr/de/421.200.md) | Verordnung über das Übertrittsverfahren in die |
+| [421.210](ch/gr/de/421.210.md) | Verordnung über die Talschaftssekundarschulen mit |
+| [421.300](ch/gr/de/421.300.md) | Verordnung über die Subventionierung von Schul- |
+| [421.310](ch/gr/de/421.310.md) | Verordnung über den Verzicht auf Beiträge an |
+| [421.350](ch/gr/de/421.350.md) | Verordnung über die Fort- und Weiterbildung von |
+| [421.400](ch/gr/de/421.400.md) | Verordnung über die Schulaufsicht im Kanton |
+| [421.600](ch/gr/de/421.600.md) | Verordnung über die Versicherungsleistungen für |
 | [421.800](ch/gr/de/421.800.md) | Verordnung über den schulärztlichen Dienst |
 | [421.850](ch/gr/de/421.850.md) | Verordnung über die Schulzahnpflege |
+| [421.900](ch/gr/de/421.900.md) | Verordnung über die sprachliche Förderung |
 | [425.000](ch/gr/de/425.000.md) | Gesetz über die Mittelschulen im Kanton Graubünden |
 | [425.040](ch/gr/de/425.040.md) | Verordnung über die Aufsichtskommission im Mittelschulwesen |
 | [425.050](ch/gr/de/425.050.md) | Verordnung über das Gymnasium |
@@ -17881,17 +18534,37 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [425.140](ch/gr/de/425.140.md) | Verordnung über die Fachmittelschule |
 | [425.150](ch/gr/de/425.150.md) | Verordnung über die Informatikmittelschule |
 | [425.170](ch/gr/de/425.170.md) | Verordnung über die Wohnheime im Mittelschulwesen |
+| [425.180](ch/gr/de/425.180.md) | Vereinbarung zwischen dem Kanton St. Gallen und |
 | [425.185](ch/gr/de/425.185.md) | Anerkennung der Fähigkeitsprüfungen für Sekundarlehrer und Fachlehrer auf Sekundarschulstufe |
 | [425.400](ch/gr/de/425.400.md) | Romanischkurse für die Nichtromanen an der Bündner Kantonsschule |
 | [425.450](ch/gr/de/425.450.md) | Reglement für die Kadettenmusik der Kantonsschule |
 | [425.500](ch/gr/de/425.500.md) | Benützungs- und Gebührenverordnung für die Mittelschulen mit kantonaler Trägerschaft |
 | [425.550](ch/gr/de/425.550.md) | Verordnung über die Lehrmittelsammlungen und die Schulbibliotheken an der Bündner |
+| [425.560](ch/gr/de/425.560.md) | 425.560 Reglement für die Schülerbibliotheken der Bündner Kantonsschule |
+| [427.000](ch/gr/de/427.000.md) | Beitritt des Kantons Graubünden zur Interkantonalen |
+| [427.010](ch/gr/de/427.010.md) | Interkantonale Vereinbarung über den schweizerischen |
+| [427.100](ch/gr/de/427.100.md) | Beitritt des Kantons Graubünden zur Interkanto- |
+| [427.110](ch/gr/de/427.110.md) | Interkantonale Universitätsvereinbarung |
 | [427.200](ch/gr/de/427.200.md) | Gesetz über Hochschulen und Forschung |
+| [427.205](ch/gr/de/427.205.md) | Verordnung zum Gesetz über die Pädagogische |
 | [427.210](ch/gr/de/427.210.md) | Verordnung über Hochschulen mit kantonaler Trägerschaft |
 | [427.220](ch/gr/de/427.220.md) | Verordnung über Hochschulen ohne kantonale Trägerschaft und über Forschung |
+| [427.230](ch/gr/de/427.230.md) | Verordnung über den Fachhochschulrat der Pädagogischen |
+| [427.240](ch/gr/de/427.240.md) | Verordnung über Ausbildungen und Prüfungen an |
+| [427.290](ch/gr/de/427.290.md) | Verordnung über den Vorkurs für die Zulassung |
+| [427.500](ch/gr/de/427.500.md) | Gesetz über die Hochschule für Technik und Wirt- |
+| [427.510](ch/gr/de/427.510.md) | Verordnung zum Gesetz über die Hochschule für |
+| [427.520](ch/gr/de/427.520.md) | Verordnung über Studium, Forschung und Dienst- |
 | [427.700](ch/gr/de/427.700.md) | Verordnung über die staatliche Anerkennung der Hochschulausweise sowie die |
 | [427.710](ch/gr/de/427.710.md) | Vollziehungsverordnung über die staatliche Anerkennung der Ausweise der Theologischen |
 | [430.000](ch/gr/de/430.000.md) | Gesetz über die Berufsbildung und weiterführende Bildungsangebote |
+| [430.010](ch/gr/de/430.010.md) | 430.010 Vollziehungsverordnung zum kantonalen Berufsbildungsgesetz |
+| [430.015](ch/gr/de/430.015.md) | 430.015 Verordnung über die Berufsmaturität |
+| [430.020](ch/gr/de/430.020.md) | 430.020 Gebührenverordnung für das Amt für Berufsbildung |
+| [430.025](ch/gr/de/430.025.md) | 430.025 Weisungen betreffend die Schulführung der Institutionen der Berufsbildung |
+| [430.030](ch/gr/de/430.030.md) | 430.030 Verordnung über die Anerkennung von Vorlehrinstitutionen |
+| [430.040](ch/gr/de/430.040.md) | 430.040 Reglement über Beiträge an Lehrlingswettbewerbe |
+| [430.050](ch/gr/de/430.050.md) | 430.050 Verordnung über die kantonale Berufsbildungskommission |
 | [430.100](ch/gr/de/430.100.md) | Verordnung über die Berufsbildung und weiterführende Bildungsangebote |
 | [430.150](ch/gr/de/430.150.md) | Verordnung über die Subventionierung von Bauten in der Berufsbildung, in weiterführenden |
 | [430.180](ch/gr/de/430.180.md) | Gebührenverordnung für das Amt für Berufsbildung |
@@ -17900,17 +18573,38 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [430.300](ch/gr/de/430.300.md) | Verordnung über die Defizitfinanzierung der Institutionen der Berufsbildung |
 | [430.350](ch/gr/de/430.350.md) | Verordnung über Beiträge an Leistungserbringende ohne Defizitfinanzierung in |
 | [430.400](ch/gr/de/430.400.md) | Kantonale Berufsmaturitätsverordnung |
+| [430.450](ch/gr/de/430.450.md) | 430.450 Verordnung über die Ausrichtung von Beiträgen an Lehrlingsheime und |
+| [430.470](ch/gr/de/430.470.md) | 430.470 Teilnehmerbeitrag für Lehrmeisterkurse |
+| [430.475](ch/gr/de/430.475.md) | 430.475 Teilnehmerinnenbeitrag für Haushaltlehrmeisterinnenkurse |
+| [430.500](ch/gr/de/430.500.md) | Beteiligung des Kantons Graubünden am Neu- |
+| [430.510](ch/gr/de/430.510.md) | Vereinbarung über die Hochschule für Technik |
+| [430.520](ch/gr/de/430.520.md) | Vereinbarung über die Beteiligung des Landes Vor- |
+| [430.530](ch/gr/de/430.530.md) | Beitritt des Kantons Graubünden zur Vereinbarung |
+| [430.540](ch/gr/de/430.540.md) | Vereinbarung über den Bau des Grundlagentraktes |
+| [430.600](ch/gr/de/430.600.md) | 430.600 Vereinbarung über Schulbeiträge an die Träger höherer technischer Lehranstalten |
 | [432.000](ch/gr/de/432.000.md) | Gesetz über Ausbildungsstätten im Gesundheits- und Sozialwesen |
 | [432.010](ch/gr/de/432.010.md) | Verordnung zum Gesetz über Ausbildungsstätten im Gesundheits- und Sozialwesen |
 | [433.100](ch/gr/de/433.100.md) | Gesetz über die Unterstützung der Fortbildung Jugendlicher und Erwachsener |
 | [433.150](ch/gr/de/433.150.md) | Vollziehungsverordnung zum Fortbildungsgesetz |
 | [433.170](ch/gr/de/433.170.md) | Rahmenlehrplan zum Fortbildungsgesetz |
+| [440.000](ch/gr/de/440.000.md) | Gesetz über die Förderung von Kindern und |
+| [440.010](ch/gr/de/440.010.md) | Verordnung über die Förderung der Integration von |
+| [440.020](ch/gr/de/440.020.md) | Verordnung über die Sonderschulung |
 | [440.100](ch/gr/de/440.100.md) | Gesetz zur sozialen und beruflichen Integration von Menschen mit Behinderung |
 | [440.110](ch/gr/de/440.110.md) | Verordnung zur sozialen und beruflichen Integration von Menschen mit Behinderung |
+| [450.100](ch/gr/de/450.100.md) | Beitritt des Kantons Graubünden zur |
+| [450.110](ch/gr/de/450.110.md) | Interkantonale Vereinbarung zur Harmonisierung |
 | [450.200](ch/gr/de/450.200.md) | Gesetz über Ausbildungsbeiträge |
+| [450.210](ch/gr/de/450.210.md) | 450.210 Vollziehungsverordnung zum kantonalen Stipendiengesetz |
 | [450.250](ch/gr/de/450.250.md) | Verordnung zum Gesetz über Ausbildungsbeiträge |
+| [450.300](ch/gr/de/450.300.md) | 450.300 Reglement über die Stipendien für die berufliche Aus- und Weiterbildung |
+| [450.350](ch/gr/de/450.350.md) | 450.350 Richtlinien für die Ausrichtung von Stipendien |
+| [450.360](ch/gr/de/450.360.md) | 450.360 Reglement über die Ausrichtung von Beiträgen aus dem Christian-Schmid-Fonds |
 | [470.000](ch/gr/de/470.000.md) | Gesetz über die Förderung von Sport und Bewegung |
 | [470.010](ch/gr/de/470.010.md) | Verordnung über die Förderung von Sport und Bewegung |
+| [470.100](ch/gr/de/470.100.md) | Verordnung über die Förderung von Turnen und |
+| [470.150](ch/gr/de/470.150.md) | Ausführungsverordnung über die Förderung von |
+| [470.300](ch/gr/de/470.300.md) | Verordnung über Beiträge an kantonale Sport- |
 | [490.000](ch/gr/de/490.000.md) | Gesetz über die Aktenführung und Archivierung |
 | [490.010](ch/gr/de/490.010.md) | Verordnung zum Gesetz über die Aktenführung und Archivierung |
 | [490.100](ch/gr/de/490.100.md) | Verordnung für das Staatsarchiv Graubünden |
@@ -17922,28 +18616,56 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [492.110](ch/gr/de/492.110.md) | Sprachenverordnung des Kantons Graubünden |
 | [494.300](ch/gr/de/494.300.md) | Gesetz über die Förderung der Kultur |
 | [494.310](ch/gr/de/494.310.md) | Verordnung zum Gesetz über die Förderung der Kultur |
+| [494.500](ch/gr/de/494.500.md) | 494.500 Erhöhung des jährlichen Kantonsbeitrages an die Ligia Romontscha/Lia |
+| [494.600](ch/gr/de/494.600.md) | 494.600 Jährliche Kantonsbeiträge an die Trägerschaft einer romanischen Nachrichtenagentur |
 | [496.000](ch/gr/de/496.000.md) | Gesetz über den Natur- und Heimatschutz im Kanton Graubünden |
 | [496.100](ch/gr/de/496.100.md) | Kantonale Natur- und Heimatschutzverordnung |
+| [496.110](ch/gr/de/496.110.md) | Ausführungsbestimmungen zur Verordnung über |
 | [496.150](ch/gr/de/496.150.md) | Verordnung über den Schutz der Oberengadiner Seelandschaft |
+| [496.200](ch/gr/de/496.200.md) | Reglement für die Ausrichtung von Beiträgen an |
+| [497.100](ch/gr/de/497.100.md) | 497.100 Vollziehungsverordnung zum Bundesgesetz über den Tierschutz 1 |
+| [497.200](ch/gr/de/497.200.md) | 497.200 Gebührenordnung für den Vollzug der Bundesgesetzgebung über den Tierschutz |
+| [498.100](ch/gr/de/498.100.md) | Gesetz über den Schutz von Pflanzen und Pilzen |
+| [498.150](ch/gr/de/498.150.md) | Verordnung über den Schutz der Pilze (Pilzschutz- |
 | [498.200](ch/gr/de/498.200.md) | Verordnung über den Schutz des Schweizerischen Nationalparks |
 | [498.210](ch/gr/de/498.210.md) | Verordnung über die Erhebung von Ordnungsbussen bei Verstössen gegen die Nationalparkordnung |
+| [498.250](ch/gr/de/498.250.md) | Reglement für die Hilfsaufseher im Dienste des |
 | [500.000](ch/gr/de/500.000.md) | Gesetz zum Schutz der Gesundheit im Kanton Graubünden |
 | [500.010](ch/gr/de/500.010.md) | Verordnung zum Gesundheitsgesetz |
+| [500.040](ch/gr/de/500.040.md) | Reglement für die Sanitätskommission |
+| [500.050](ch/gr/de/500.050.md) | Reglement für die kantonale Psychiatriekommission |
+| [500.060](ch/gr/de/500.060.md) | Reglement für die Drogenkommission |
 | [500.100](ch/gr/de/500.100.md) | Verordnung über die Gebühren im Gesundheitsbereich |
 | [500.200](ch/gr/de/500.200.md) | Vollziehungsverordnung zum Bundesgesetz über die Bekämpfung übertragbarer Krankheiten |
+| [500.330](ch/gr/de/500.330.md) | 500.330 Verordnung über die öffentlichen Bäder und Whirlpools |
 | [500.400](ch/gr/de/500.400.md) | Gesetz über öffentliche Schutzimpfungen gegen übertragbare Krankheiten |
 | [500.500](ch/gr/de/500.500.md) | Einführungsgesetz zum Bundesgesetz über Arzneimittel und Medizinprodukte |
 | [500.510](ch/gr/de/500.510.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über Arzneimittel und Medizinprodukte |
 | [500.700](ch/gr/de/500.700.md) | Erhöhung des Beitrages des Kantons Graubünden an die Stiftung Schweizerisches |
+| [500.710](ch/gr/de/500.710.md) | Jährlicher Betriebsbeitrag für das Laboratorium |
 | [500.800](ch/gr/de/500.800.md) | Gesetz über die Suchthilfe im Kanton Graubünden |
 | [500.810](ch/gr/de/500.810.md) | Ausführungsbestimmungen zum Suchthilfegesetz |
 | [500.900](ch/gr/de/500.900.md) | Gesetz über die Psychiatrischen Dienste Graubünden |
 | [500.920](ch/gr/de/500.920.md) | Verordnung zum Gesetz über die Psychiatrischen Dienste Graubünden |
 | [502.100](ch/gr/de/502.100.md) | Verordnung über die Amtsärzte und Amtsärztinnen |
+| [502.120](ch/gr/de/502.120.md) | Verordnung über die Entschädigung der Bezirks- |
+| [504.100](ch/gr/de/504.100.md) | Heilmittelverordnung |
+| [504.150](ch/gr/de/504.150.md) | 504.150 Inkraftsetzung der Schweizerischen Pharmakopöe für den Kanton Graubünden |
+| [504.160](ch/gr/de/504.160.md) | Kantonaler Arzneimitteltarif |
 | [504.300](ch/gr/de/504.300.md) | Vollziehungsverordnung zum Bundesgesetz über die Betäubungsmittel |
+| [504.350](ch/gr/de/504.350.md) | 504.350 Verordnung über den Verkehr mit Giften |
+| [504.360](ch/gr/de/504.360.md) | 504.360 Verordnung über die Meldepflicht für den Anbau von Hanf (cannabis sativa) |
 | [506.000](ch/gr/de/506.000.md) | Gesetz über die Förderung der Krankenpflege und der Betreuung von betagten |
 | [506.060](ch/gr/de/506.060.md) | Verordnung zum Gesetz über die Förderung der Krankenpflege und der Betreuung |
+| [506.070](ch/gr/de/506.070.md) | 506.070 Reglement für die kantonale Kommission zur Förderung der häuslichen |
+| [506.095](ch/gr/de/506.095.md) | 506.095 Tarifordnung für Organisationen der häuslichen Pflege und Betreuung |
+| [506.100](ch/gr/de/506.100.md) | 506.100 Reglement für den Austausch von Pflege- und Betreuungskräften und den |
+| [506.110](ch/gr/de/506.110.md) | 506.110 Reglement zur Entlastung und Anstellung von pflegenden Angehörigen |
 | [506.160](ch/gr/de/506.160.md) | Ausführungsbestimmungen zur Organisation des Rettungswesens |
+| [506.700](ch/gr/de/506.700.md) | Verordnung über die Anstellungsbedingungen für |
+| [506.750](ch/gr/de/506.750.md) | 506.750 Verordnung über die Führung von Pools an den öffentlichen Spitälern |
+| [506.800](ch/gr/de/506.800.md) | Beitritt des Kantons Graubünden zur Interkantona- |
+| [506.810](ch/gr/de/506.810.md) | Interkantonale Vereinbarung über die hochspeziali- |
 | [507.100](ch/gr/de/507.100.md) | Vollziehungsverordnung zum Bundesgesetz über Lebensmittel und Gebrauchsgegenstände |
 | [507.210](ch/gr/de/507.210.md) | Verordnung über die öffentlichen Bäder und Whirlpools |
 | [507.310](ch/gr/de/507.310.md) | Verordnung über die Gebühren in den Bereichen Lebensmittel, Chemikalien und |
@@ -17963,16 +18685,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [535.230](ch/gr/de/535.230.md) | Normalarbeitsvertrag für das landwirtschaftliche Arbeitsverhältnis |
 | [535.250](ch/gr/de/535.250.md) | Normalarbeitsvertrag für das Alp- und Hirtschaftspersonal |
 | [538.100](ch/gr/de/538.100.md) | Gesetz über die Beilegung von kollektiven Arbeitsstreitigkeiten |
+| [538.200](ch/gr/de/538.200.md) | Vollziehungsverordnung zum Bundesgesetz über die |
+| [540.100](ch/gr/de/540.100.md) | Verordnung betreffend Aufstellung und Betrieb von |
 | [542.100](ch/gr/de/542.100.md) | Gesetz über die Krankenversicherung und die Prämienverbilligung |
+| [542.115](ch/gr/de/542.115.md) | 542.115 Verordnung über die Festlegung der Selbstbehalte für die Verbilligung |
 | [542.120](ch/gr/de/542.120.md) | Verordnung zum Gesetz über die Krankenversicherung und die Prämienverbilligung |
 | [542.150](ch/gr/de/542.150.md) | Verordnung zur bundesrätlichen Verordnung über die Einschränkung der Zulassung |
+| [542.200](ch/gr/de/542.200.md) | Ausführungsbestimmungen zur Verordnung des |
+| [542.300](ch/gr/de/542.300.md) | 542.300 Verordnung über das Verfahren in Sozialversicherungsstreitsachen |
+| [543.100](ch/gr/de/543.100.md) | 543.100 Gesetz über die berufliche Vorsorge |
 | [544.000](ch/gr/de/544.000.md) | Einführungsgesetz zu den Bundesgesetzen über die Alters- und Hinterlassenenversicherung |
 | [544.010](ch/gr/de/544.010.md) | Vollziehungsverordnung zum Einführungsgesetz zu den Bundesgesetzen über die |
 | [544.050](ch/gr/de/544.050.md) | Reglement über die Organisation der Sozialversicherungsanstalt des Kantons |
 | [544.300](ch/gr/de/544.300.md) | Gesetz über kantonale Ergänzungsleistungen zur Alters-, Hinterlassenen- und |
+| [544.310](ch/gr/de/544.310.md) | 544.310 Vollziehungsverordnung zum kantonalen Gesetz über Ergänzungsleistungen |
 | [544.320](ch/gr/de/544.320.md) | Ausführungsbestimmungen zum kantonalen Gesetz über Ergänzungsleistungen |
 | [545.100](ch/gr/de/545.100.md) | Einführungsgesetz zur Arbeitsvermittlung und Arbeitslosenversicherung |
 | [545.200](ch/gr/de/545.200.md) | Verordnung zum Bundesgesetz über Massnahmen zur Bekämpfung der Schwarzarbeit |
+| [545.260](ch/gr/de/545.260.md) | 545.260 Vollziehungsverordnung zum Bundesgesetz über die obligatorische Arbeitslosenversicherung |
 | [545.265](ch/gr/de/545.265.md) | Geschäftsreglement der tripartiten Kommission |
 | [545.270](ch/gr/de/545.270.md) | Verordnung zum Einführungsgesetz zur Arbeitsvermittlung und Arbeitslosenversicherung |
 | [545.280](ch/gr/de/545.280.md) | Reglement der Arbeitslosenkasse |
@@ -17984,17 +18714,26 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [546.270](ch/gr/de/546.270.md) | Ausführungsbestimmungen zum kantonalen Unterstützungsgesetz |
 | [546.300](ch/gr/de/546.300.md) | Gesetz über den Lastenausgleich für bestimmte Sozialleistungen |
 | [546.320](ch/gr/de/546.320.md) | Ausführungsbestimmungen zum Gesetz über den Lastenausgleich für bestimmte Sozialleistungen |
+| [546.380](ch/gr/de/546.380.md) | Verordnung für den Winkelriedfonds bündnerischer |
 | [546.500](ch/gr/de/546.500.md) | Vollziehungsverordnung zum Bundesgesetz über die Schwangerschaftsberatungsstellen |
+| [546.700](ch/gr/de/546.700.md) | Beitritt des Kantons Graubünden zur Interkantona- |
+| [546.710](ch/gr/de/546.710.md) | Interkantonale Vereinbarung für soziale |
 | [548.100](ch/gr/de/548.100.md) | Gesetz über die Familienzulagen |
 | [548.120](ch/gr/de/548.120.md) | Ausführungsbestimmungen zum Gesetz über die Familienzulagen |
+| [548.130](ch/gr/de/548.130.md) | Interkantonale Vereinbarung vom 20. Februar 1989 |
 | [548.200](ch/gr/de/548.200.md) | Gesetz über Mutterschaftsbeiträge |
 | [548.210](ch/gr/de/548.210.md) | Ausführungsbestimmungen zum Gesetz über Mutterschaftsbeiträge |
 | [548.300](ch/gr/de/548.300.md) | Gesetz über die Förderung der familienergänzenden Kinderbetreuung im Kanton |
 | [548.310](ch/gr/de/548.310.md) | Verordnung über die Förderung der familienergänzenden Kinderbetreuung im Kanton |
 | [549.100](ch/gr/de/549.100.md) | Vollziehungsverordnung zum Bundesgesetz über die Hilfe an Opfer von Straftaten |
+| [610.100](ch/gr/de/610.100.md) | 610.100 Verordnung über das Amt für Polizeiwesen 1 |
 | [613.000](ch/gr/de/613.000.md) | Polizeigesetz des Kantons Graubünden |
 | [613.100](ch/gr/de/613.100.md) | Polizeiverordnung |
 | [613.140](ch/gr/de/613.140.md) | Verordnung über die Kosten für Amtshandlungen und Dienstleistungen der Kantonspolizei |
+| [613.150](ch/gr/de/613.150.md) | Beitritt des Kantons Graubünden zur interkantona- |
+| [613.160](ch/gr/de/613.160.md) | Interkantonale Vereinbarung über die polizeiliche |
+| [613.170](ch/gr/de/613.170.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [613.180](ch/gr/de/613.180.md) | Konkordat über Massnahmen gegen Gewalt |
 | [613.190](ch/gr/de/613.190.md) | Verordnung zum Bundesgesetz über Massnahmen zur Wahrung der inneren Sicherheit |
 | [615.100](ch/gr/de/615.100.md) | Verordnung über die Ausstellung von Ausweisen für Schweizer Staatsangehörige |
 | [618.100](ch/gr/de/618.100.md) | Einführungsgesetz zur Ausländer- und Asylgesetzgebung des Bundes |
@@ -18022,8 +18761,29 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [710.500](ch/gr/de/710.500.md) | Verordnung über die Spezialfinanzierung Sport |
 | [710.600](ch/gr/de/710.600.md) | Reglement für die Ausrichtung von Beiträgen aus der Spezialfinanzierung Landeslotterie |
 | [720.000](ch/gr/de/720.000.md) | Steuergesetz für den Kanton Graubünden |
+| [720.010](ch/gr/de/720.010.md) | 720.010 Vollziehungsverordnung zum Steuergesetz für den Kanton Graubünden |
 | [720.015](ch/gr/de/720.015.md) | Ausführungsbestimmungen zur Steuergesetzgebung |
+| [720.100](ch/gr/de/720.100.md) | Beitritt des Kantons Graubünden zum Konkordat |
+| [720.110](ch/gr/de/720.110.md) | Konkordat zwischen den Kantonen der Schweizeri- |
 | [720.200](ch/gr/de/720.200.md) | Gesetz über die Gemeinde- und Kirchensteuern |
+| [720.250](ch/gr/de/720.250.md) | Gegenrechtsvereinbarungen mit den Kantonen |
+| [720.255](ch/gr/de/720.255.md) | Gegenrechtsvereinbarung zwischen der Regierung |
+| [720.260](ch/gr/de/720.260.md) | Gegenrechtsvereinbarung zwischen der Regierung |
+| [720.265](ch/gr/de/720.265.md) | Gegenseitigkeitserklärung zwischen der Bundesre- |
+| [720.270](ch/gr/de/720.270.md) | Gegenrechtsvereinbarung zwischen dem Kanton |
+| [720.275](ch/gr/de/720.275.md) | Gegenrechtsvereinbarung zwischen dem Kanton |
+| [720.280](ch/gr/de/720.280.md) | Gegenrechtsvereinbarung zwischen der Regierung |
+| [720.290](ch/gr/de/720.290.md) | Gegenrechtsvereinbarung betreffend die Befreiung |
+| [720.300](ch/gr/de/720.300.md) | Gegenrechtsvereinbarung betreffend die Befreiung |
+| [720.310](ch/gr/de/720.310.md) | Vereinbarung zwischen dem Regierungsrat des |
+| [720.350](ch/gr/de/720.350.md) | 720.350 Gesetz über den interkommunalen Finanzausgleich (FAG) |
+| [720.360](ch/gr/de/720.360.md) | 720.360 Vollziehungsverordnung zum Gesetz über den interkommunalen Finanzausgleich |
+| [720.370](ch/gr/de/720.370.md) | 720.370 Ausführungsbestimmungen zum Gesetz über den interkommunalen Finanzausgleich |
+| [720.400](ch/gr/de/720.400.md) | 720.400 Gesetz über die Erhebung einer Kultussteuer von den juristischen Personen |
+| [720.430](ch/gr/de/720.430.md) | 720.430 Vollziehungsverordnung zum Bundesgesetz über die Verrechnungssteuer |
+| [720.550](ch/gr/de/720.550.md) | 720.550 Vollziehungsverordnung zum Bundesgesetz über die direkte Bundessteuer |
+| [730.100](ch/gr/de/730.100.md) | Beitritt des Kantons Graubünden zur Rahmen- |
+| [730.110](ch/gr/de/730.110.md) | Rahmenvereinbarung für die interkantonale |
 | [730.200](ch/gr/de/730.200.md) | Gesetz über den Finanzausgleich im Kanton Graubünden |
 | [730.210](ch/gr/de/730.210.md) | Vollziehungsverordnung zum Gesetz über den interkommunalen Finanzausgleich |
 | [730.220](ch/gr/de/730.220.md) | Verordnung über den Finanzausgleich |
@@ -18048,9 +18808,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [760.155](ch/gr/de/760.155.md) | Verordnung über den Fischereibetrieb |
 | [760.160](ch/gr/de/760.160.md) | Verordnung über die Erhebung von Ordnungsbussen bei Fischereirechtsübertretungen |
 | [760.180](ch/gr/de/760.180.md) | Verordnung über die Fischereipatentgebühren |
+| [760.200](ch/gr/de/760.200.md) | Übereinkommen zwischen den Kantonen Graubün- |
+| [760.210](ch/gr/de/760.210.md) | Vereinbarung zwischen den Kantonen Graubünden |
 | [760.300](ch/gr/de/760.300.md) | Reglement für die Fischereikommission |
 | [780.100](ch/gr/de/780.100.md) | Gesetz über das Salzregal des Kantons Graubünden |
 | [780.110](ch/gr/de/780.110.md) | Vollziehungsverordnung zum Gesetz über das Salzregal des Kantons Graubünden |
+| [780.200](ch/gr/de/780.200.md) | Interkantonale Vereinbarung über den Salzverkauf |
 | [800.110](ch/gr/de/800.110.md) | Verordnung über die Immobilien |
 | [801.100](ch/gr/de/801.100.md) | Raumplanungsgesetz für den Kanton Graubünden |
 | [801.110](ch/gr/de/801.110.md) | Raumplanungsverordnung für den Kanton Graubünden |
@@ -18062,11 +18825,19 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [803.210](ch/gr/de/803.210.md) | Richtlinien für die von der Regierung gewählten Perimeterkommissionen |
 | [803.300](ch/gr/de/803.300.md) | Submissionsgesetz |
 | [803.310](ch/gr/de/803.310.md) | Submissionsverordnung |
+| [803.400](ch/gr/de/803.400.md) | Beitritt des Kantons Graubünden zur Interkantona- |
+| [803.410](ch/gr/de/803.410.md) | Interkantonale Vereinbarung über das öffentliche |
+| [803.500](ch/gr/de/803.500.md) | Beitritt des Kantons Graubünden zur Interkantona- |
+| [803.510](ch/gr/de/803.510.md) | Interkantonale Vereinbarung über das öffentliche |
 | [803.600](ch/gr/de/803.600.md) | Einführungsgesetz zur Interkantonalen Vereinbarung über das öffentliche Beschaffungswesen |
 | [803.610](ch/gr/de/803.610.md) | Verordnung zum Einführungsgesetz zur Interkantonalen Vereinbarung über das |
+| [803.700](ch/gr/de/803.700.md) | Beitritt des Kantons Graubünden zur Interkantonalen |
+| [803.710](ch/gr/de/803.710.md) | Interkantonale Vereinbarung über das öffentliche |
 | [807.100](ch/gr/de/807.100.md) | Strassengesetz des Kantons Graubünden |
 | [807.110](ch/gr/de/807.110.md) | Strassenverordnung des Kantons Graubünden |
 | [807.700](ch/gr/de/807.700.md) | Gesetz über den Wasserbau im Kanton Graubünden |
+| [807.710](ch/gr/de/807.710.md) | 807.710 Vollziehungsverordnung zum Gesetz über Bewuhrung und Verbauung der |
+| [807.800](ch/gr/de/807.800.md) | 807.800 Kostentragung für die Projektierung und Bauleitung bei Schutzbauten |
 | [810.100](ch/gr/de/810.100.md) | Wasserrechtsgesetz des Kantons Graubünden |
 | [810.110](ch/gr/de/810.110.md) | Verordnung zum Wasserrechtsgesetz des Kantons Graubünden |
 | [810.115](ch/gr/de/810.115.md) | Verordnung über die Wasser- und Pumpwerksteuer |
@@ -18080,21 +18851,37 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [815.230](ch/gr/de/815.230.md) | Verordnung über die Ausrichtung von kantonalen Beiträgen an Abwasser- und Abfallanlagen |
 | [815.350](ch/gr/de/815.350.md) | Gebührenverordnung für den Umweltschutz |
 | [815.500](ch/gr/de/815.500.md) | Verordnung über den Schadendienst |
+| [815.700](ch/gr/de/815.700.md) | Interkantonale Vereinbarung über den Anschluss |
+| [815.710](ch/gr/de/815.710.md) | Interkantonale Vereinbarung zwischen den Kanto- |
 | [820.100](ch/gr/de/820.100.md) | Einführungsgesetz zum Bundesgesetz über den Umweltschutz |
 | [820.110](ch/gr/de/820.110.md) | Kantonale Umweltschutzverordnung |
 | [820.150](ch/gr/de/820.150.md) | Kantonale Verordnung über die Umweltverträglichkeitsprüfung |
 | [820.200](ch/gr/de/820.200.md) | Energiegesetz des Kantons Graubünden |
 | [820.210](ch/gr/de/820.210.md) | Energieverordnung des Kantons Graubünden |
+| [820.215](ch/gr/de/820.215.md) | Ausführungsbestimmungen über die energetischen |
+| [820.220](ch/gr/de/820.220.md) | Ausführungsbestimmungen über die energetischen |
 | [820.400](ch/gr/de/820.400.md) | Gesetz über die Förderung und Finanzierung von Massnahmen zu Klimaschutz und |
 | [820.410](ch/gr/de/820.410.md) | Verordnung über die Förderung und Finanzierung von Massnahmen zu Klimaschutz |
 | [830.100](ch/gr/de/830.100.md) | Gesetz über die Gebäudeversicherung im Kanton Graubünden |
 | [830.110](ch/gr/de/830.110.md) | Verordnung zum Gesetz über die Gebäudeversicherung im Kanton Graubünden |
+| [830.120](ch/gr/de/830.120.md) | Ausführungsbestimmungen zum Gesetz über die |
+| [830.200](ch/gr/de/830.200.md) | Verordnung über die Finanzierung der Gebäude- |
+| [830.300](ch/gr/de/830.300.md) | Geschäftsreglement für die Verwaltungskommission |
+| [830.400](ch/gr/de/830.400.md) | Verordnung über die Abgrenzung zwischen Ge- |
+| [830.500](ch/gr/de/830.500.md) | Verordnung über die Schadenschätzung 1) |
 | [835.100](ch/gr/de/835.100.md) | Gesetz über die Vergütung nicht versicherbarer Elementarschäden |
+| [835.110](ch/gr/de/835.110.md) | Vollziehungsverordnung zum Gesetz über die Ver- |
 | [835.120](ch/gr/de/835.120.md) | Verordnung zum Gesetz über die Vergütung nicht versicherbarer Elementarschäden |
+| [838.100](ch/gr/de/838.100.md) | Feuerpolizeiverordnung (FPV) 1) |
+| [838.150](ch/gr/de/838.150.md) | Ausführungsbestimmungen zur Feuerpolizei- |
+| [838.200](ch/gr/de/838.200.md) | Gebührenverordnung für die Feuerpolizei |
+| [838.350](ch/gr/de/838.350.md) | Kaminfegertarif |
 | [840.100](ch/gr/de/840.100.md) | Gesetz über den vorbeugenden Brandschutz und die Feuerwehr im Kanton Graubünden |
 | [840.110](ch/gr/de/840.110.md) | Verordnung zum Brandschutzgesetz |
 | [850.100](ch/gr/de/850.100.md) | Gesetz über die amtlichen Immobilienbewertungen |
 | [850.110](ch/gr/de/850.110.md) | Verordnung über die amtlichen Immobilienbewertungen |
+| [850.120](ch/gr/de/850.120.md) | 850.120 Schätzungsreglement (SchR) |
+| [850.200](ch/gr/de/850.200.md) | 850.200 Kosten- und Gebührentarif für die amtlichen Schätzungen |
 | [870.100](ch/gr/de/870.100.md) | Einführungsgesetz zum Bundesgesetz über den Strassenverkehr |
 | [870.110](ch/gr/de/870.110.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über den Strassenverkehr |
 | [870.120](ch/gr/de/870.120.md) | Verordnung über die Verkehrssteuern für Motorfahrzeuge und Anhänger |
@@ -18102,34 +18889,51 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [870.300](ch/gr/de/870.300.md) | Regelung der Benützung von Motorschlitten |
 | [872.100](ch/gr/de/872.100.md) | Gesetz über den öffentlichen Verkehr im Kanton Graubünden |
 | [872.150](ch/gr/de/872.150.md) | Verordnung über den öffentlichen Verkehr im Kanton Graubünden |
+| [873.350](ch/gr/de/873.350.md) | Gesetz über den Beitritt des Kantons Graubünden |
+| [873.400](ch/gr/de/873.400.md) | Konkordat über die nicht eidgenössisch konzessio- |
 | [873.450](ch/gr/de/873.450.md) | Verordnung über die nicht eidgenössisch konzessionierten Luftseilbahnen, Skilifte |
+| [873.500](ch/gr/de/873.500.md) | 873.500 Gebührenordnung für die Bewilligung von Luftseilbahnen und Skiliften |
+| [873.550](ch/gr/de/873.550.md) | 873.550 Gebühren für Betriebs- und Unterhaltskontrollen bei Kleinluftseilbahnen |
 | [875.100](ch/gr/de/875.100.md) | Kantonale Luftfahrtverordnung |
 | [877.100](ch/gr/de/877.100.md) | Einführungsgesetz zum Bundesgesetz über die Binnenschifffahrt |
 | [877.110](ch/gr/de/877.110.md) | Ausführungsbestimmungen zum Einführungsgesetz zum Bundesgesetz über die Binnenschifffahrt |
 | [877.120](ch/gr/de/877.120.md) | Verordnung über die Gebühren für die Binnenschifffahrt |
 | [910.000](ch/gr/de/910.000.md) | Gesetz über die Erhaltung und Förderung der Landwirtschaft |
 | [910.050](ch/gr/de/910.050.md) | Landwirtschaftsverordnung |
+| [910.100](ch/gr/de/910.100.md) | Gesetz über den Beitritt des Kantons Graubünden |
 | [910.150](ch/gr/de/910.150.md) | Verordnung über den Gewässerschutz in der Landwirtschaft |
 | [910.175](ch/gr/de/910.175.md) | Reglement über die Erhebung von Gebühren für Beratungen des Plantahofs |
 | [910.400](ch/gr/de/910.400.md) | Ausführungsbestimmungen für die Landwirtschaftliche Kreditgenossenschaft Graubünden |
 | [910.810](ch/gr/de/910.810.md) | Vorpachtrecht für Alpen und Nutzungsrecht für ausserkantonale Bewerber |
 | [912.010](ch/gr/de/912.010.md) | Viehwirtschaftsverordnung |
+| [912.070](ch/gr/de/912.070.md) | Ausführungsbestimmungen über den Selbsthilfe- |
+| [912.550](ch/gr/de/912.550.md) | Interkantonale Übereinkunft über den Viehhandel |
 | [914.000](ch/gr/de/914.000.md) | Veterinärgesetz |
+| [914.050](ch/gr/de/914.050.md) | 914.050 Veterinärverordnung |
 | [914.100](ch/gr/de/914.100.md) | Veterinärverordnung |
 | [914.200](ch/gr/de/914.200.md) | Sömmerungsverordnung |
 | [914.350](ch/gr/de/914.350.md) | Entschädigungstarif für Aufgaben im Bereich der Tiergesundheit |
+| [914.460](ch/gr/de/914.460.md) | 914.460 Reglement über die Organisation des Sammeldienstes zur Entsorgung tierischer |
 | [915.100](ch/gr/de/915.100.md) | Meliorationsgesetz des Kantons Graubünden |
 | [915.110](ch/gr/de/915.110.md) | Vollziehungsverordnung zum Meliorationsgesetz des Kantons Graubünden |
 | [915.120](ch/gr/de/915.120.md) | Ausführungsbestimmungen zum Meliorationsgesetz des Kantons Graubünden |
 | [917.200](ch/gr/de/917.200.md) | Reglement über die kantonale Alpkäseprämierung |
+| [917.270](ch/gr/de/917.270.md) | 917.270 Beitritt des Kantons Graubünden zum Konkordat betreffend den Ausbau |
+| [917.271](ch/gr/de/917.271.md) | 917.271 Konkordat betreffend Hochschule und Berufsbildungszentrum Wädenswil |
 | [917.400](ch/gr/de/917.400.md) | Ausführungsbestimmungen zur Verordnung über den Rebbau und die Einfuhr von |
 | [919.100](ch/gr/de/919.100.md) | Reglement der Kommission für Bildung und Beratung des Plantahofs |
 | [919.200](ch/gr/de/919.200.md) | Schulordnung für den Plantahof |
 | [919.300](ch/gr/de/919.300.md) | Reglement über die Kosten für Unterkunft und Verpflegung sowie über die Kursgebühren |
 | [920.100](ch/gr/de/920.100.md) | Kantonales Waldgesetz |
 | [920.110](ch/gr/de/920.110.md) | Kantonale Waldverordnung |
+| [920.120](ch/gr/de/920.120.md) | Ausführungsbestimmungen zum kantonalen Wald- |
+| [920.130](ch/gr/de/920.130.md) | Ausführungsbestimmungen betreffend Waldfeststel- |
+| [920.140](ch/gr/de/920.140.md) | Ausführungsbestimmungen betreffend Dienstver- |
 | [920.150](ch/gr/de/920.150.md) | Verordnung zum Integralen Risikomanagement bei Naturgefahren |
 | [920.600](ch/gr/de/920.600.md) | Verordnung über die forstliche Planung |
+| [920.750](ch/gr/de/920.750.md) | Vereinbarung über den Ausbau und Betrieb der In- |
+| [920.760](ch/gr/de/920.760.md) | Öffentliche Urkunde über die Errichtung der Stif- |
+| [920.770](ch/gr/de/920.770.md) | 920.770 Geschäftsordnung für den Stiftungsrat und den Ausschuss des Stiftungsrates |
 | [920.800](ch/gr/de/920.800.md) | Richtlinien für die Durchführung von organisierten Veranstaltungen im Wald |
 | [932.100](ch/gr/de/932.100.md) | Gesetz über die Förderung der wirtschaftlichen Entwicklung in Graubünden |
 | [932.160](ch/gr/de/932.160.md) | Verordnung über die Förderung der wirtschaftlichen Entwicklung in Graubünden |
@@ -18143,11 +18947,19 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [935.400](ch/gr/de/935.400.md) | Filmverordnung |
 | [935.450](ch/gr/de/935.450.md) | Gesetz über das Lotteriewesen |
 | [935.455](ch/gr/de/935.455.md) | Verordnung über das Lotteriewesen |
+| [935.460](ch/gr/de/935.460.md) | Beitritt des Kantons Graubünden zur Interkantona- |
+| [935.470](ch/gr/de/935.470.md) | Interkantonale Vereinbarung über die Aufsicht so- |
+| [935.480](ch/gr/de/935.480.md) | Interkantonale Vereinbarung betreffend die |
 | [935.500](ch/gr/de/935.500.md) | Geldspielgesetz des Kantons Graubünden |
 | [935.510](ch/gr/de/935.510.md) | Verordnung zum Geldspielgesetz des Kantons Graubünden |
 | [935.600](ch/gr/de/935.600.md) | Gesetz über die Spielautomaten und Spielbetriebe |
 | [935.610](ch/gr/de/935.610.md) | Ausführungsbestimmungen zum Gesetz über die Spielautomaten und Spielbetriebe |
+| [935.700](ch/gr/de/935.700.md) | Beitritt des Kantons Graubünden zum |
+| [935.710](ch/gr/de/935.710.md) | Gesamtschweizerisches Geldspielkonkordat (GSK) |
+| [935.800](ch/gr/de/935.800.md) | Beitritt des Kantons Graubünden zur Interkantonalen |
+| [935.810](ch/gr/de/935.810.md) | Interkantonale Vereinbarung betreffend die gemeinsame |
 | [938.200](ch/gr/de/938.200.md) | Gesetz über die Graubündner Kantonalbank |
+| [938.210](ch/gr/de/938.210.md) | 938.210 Vollziehungsverordnung zum Gesetz über die Graubündner Kantonalbank |
 | [938.220](ch/gr/de/938.220.md) | Grossratsbeschluss betreffend Festlegung der maximalen Höhe des Dotationskapitals |
 | [945.100](ch/gr/de/945.100.md) | Gastwirtschaftsgesetz für den Kanton Graubünden |
 | [945.110](ch/gr/de/945.110.md) | Ausführungsbestimmungen zum Gastwirtschaftsgesetz |
@@ -19313,7 +20125,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## LU – Luzern
 
-*691 laws*
+*1019 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -19325,19 +20137,84 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [10a](ch/lu/de/10a.md) | Verordnung zur Regelung der politischen Rechte aufgrund der besonderen Lage |
 | [11](ch/lu/de/11.md) | Kantonsratsbeschluss über die Verteilung der Sitze auf die sechs Kantonsratswahlkreise |
 | [12](ch/lu/de/12.md) | Verordnung über die versuchsweise Einführung der elektronischen Stimmabgabe |
+| [121](ch/lu/de/121.md) | SRL- |
 | [123](ch/lu/de/123.md) | Verordnung über Entschädigungen an die Mitglieder vom Kantonsgericht bestellter |
 | [13](ch/lu/de/13.md) | Verordnung über die elektronische Erfassung und Auszählung von Stimmzetteln |
 | [130](ch/lu/de/130.md) | Grossratsbeschluss über die Pensionsordnung der Mitglieder der obersten Verwaltungs- |
 | [131](ch/lu/de/131.md) | Verordnung über die Luzerner Pensionskasse |
 | [135](ch/lu/de/135.md) | Reglement der Luzerner Pensionskasse |
 | [148](ch/lu/de/148.md) | Verordnung über die Versicherung des Staatspersonals bei Betriebsunfall |
+| [15](ch/lu/de/15.md) | Nr. 15 |
 | [150](ch/lu/de/150.md) | Gemeindegesetz |
 | [151](ch/lu/de/151.md) | Verordnung über die Gemeinden im Kanton Luzern |
 | [152](ch/lu/de/152.md) | Verordnung über die Gemeindeaufsicht |
+| [154](ch/lu/de/154.md) | Nr. 154 |
 | [155](ch/lu/de/155.md) | Verordnung über die Schreibweise der Ortsnamen |
+| [156](ch/lu/de/156.md) | Nr. 156 |
+| [156a](ch/lu/de/156a.md) | Nr. 156a |
+| [156b](ch/lu/de/156b.md) | Nr. 156b |
+| [157](ch/lu/de/157.md) | Nr. 157 |
+| [157a](ch/lu/de/157a.md) | Nr. 157a |
+| [157b](ch/lu/de/157b.md) | Nr. 157b |
+| [158](ch/lu/de/158.md) | Nr. 158 |
+| [158a](ch/lu/de/158a.md) | Nr. 158a |
+| [158b](ch/lu/de/158b.md) | Nr. 158b |
+| [159](ch/lu/de/159.md) | Nr. 159 |
+| [159a](ch/lu/de/159a.md) | Nr. 159a |
+| [159b](ch/lu/de/159b.md) | Nr. 159b |
 | [160](ch/lu/de/160.md) | Gesetz über den Finanzhaushalt der Gemeinden |
+| [160a](ch/lu/de/160a.md) | Grossratsbeschluss |
+| [160b](ch/lu/de/160b.md) | Grossratsbeschluss |
+| [160c](ch/lu/de/160c.md) | Grossratsbeschluss |
+| [160d](ch/lu/de/160d.md) | Grossratsbeschluss |
+| [160e](ch/lu/de/160e.md) | Grossratsbeschluss |
+| [160f](ch/lu/de/160f.md) | Grossratsbeschluss |
+| [160g](ch/lu/de/160g.md) | Grossratsbeschluss |
+| [160h](ch/lu/de/160h.md) | Grossratsbeschluss |
+| [160i](ch/lu/de/160i.md) | Grossratsbeschluss |
+| [160k](ch/lu/de/160k.md) | Grossratsbeschluss |
+| [160l](ch/lu/de/160l.md) | Grossratsbeschluss |
+| [160m](ch/lu/de/160m.md) | Grossratsbeschluss |
+| [160n](ch/lu/de/160n.md) | Grossratsbeschluss |
+| [160o](ch/lu/de/160o.md) | Grossratsbeschluss |
+| [160p](ch/lu/de/160p.md) | Grossratsbeschluss |
+| [160q](ch/lu/de/160q.md) | Grossratsbeschluss |
 | [161](ch/lu/de/161.md) | Verordnung zum Gesetz über den Finanzhaushalt der Gemeinden |
+| [161b](ch/lu/de/161b.md) | Grossratsbeschluss |
+| [161c](ch/lu/de/161c.md) | Grossratsbeschluss |
+| [162](ch/lu/de/162.md) | Grossratsbeschluss |
+| [162a](ch/lu/de/162a.md) | Grossratsbeschluss |
+| [162b](ch/lu/de/162b.md) | Grossratsbeschluss |
+| [162c](ch/lu/de/162c.md) | Grossratsbeschluss |
+| [163](ch/lu/de/163.md) | Grossratsbeschluss |
+| [163a](ch/lu/de/163a.md) | Grossratsbeschluss |
+| [163b](ch/lu/de/163b.md) | Grossratsbeschluss |
+| [163c](ch/lu/de/163c.md) | Grossratsbeschluss |
+| [164](ch/lu/de/164.md) | Grossratsbeschluss |
+| [164a](ch/lu/de/164a.md) | Grossratsbeschluss |
+| [164b](ch/lu/de/164b.md) | Grossratsbeschluss |
+| [164c](ch/lu/de/164c.md) | Grossratsbeschluss |
+| [165](ch/lu/de/165.md) | Grossratsbeschluss |
+| [165a](ch/lu/de/165a.md) | Grossratsbeschluss |
+| [165b](ch/lu/de/165b.md) | Grossratsbeschluss |
+| [165c](ch/lu/de/165c.md) | Grossratsbeschluss |
+| [166](ch/lu/de/166.md) | Grossratsbeschluss |
+| [166b](ch/lu/de/166b.md) | Grossratsbeschluss |
+| [166c](ch/lu/de/166c.md) | Grossratsbeschluss |
+| [167](ch/lu/de/167.md) | Grossratsbeschluss |
+| [167a](ch/lu/de/167a.md) | Grossratsbeschluss |
+| [167b](ch/lu/de/167b.md) | Grossratsbeschluss |
+| [167c](ch/lu/de/167c.md) | Grossratsbeschluss |
+| [168](ch/lu/de/168.md) | Grossratsbeschluss |
+| [168a](ch/lu/de/168a.md) | Grossratsbeschluss |
+| [168b](ch/lu/de/168b.md) | Grossratsbeschluss |
+| [169](ch/lu/de/169.md) | Grossratsbeschluss |
+| [169a](ch/lu/de/169a.md) | Grossratsbeschluss |
+| [169b](ch/lu/de/169b.md) | Grossratsbeschluss über die Genehmigung der Vereinigung der Bürgergemeinde |
 | [170](ch/lu/de/170.md) | Gesetz über die Korporationen |
+| [170b](ch/lu/de/170b.md) | Grossratsbeschluss über die Genehmigung der Vereinigung der Bürgergemeinde |
+| [171a](ch/lu/de/171a.md) | Grossratsbeschluss |
+| [171b](ch/lu/de/171b.md) | Grossratsbeschluss |
 | [172](ch/lu/de/172.md) | Kantonsratsbeschluss über die Genehmigung der Umwandlung der Realkorporation |
 | [172a](ch/lu/de/172a.md) | Kantonsratsbeschluss über die Genehmigung der Umwandlung der Realkorporation |
 | [172b](ch/lu/de/172b.md) | Kantonsratsbeschluss über die Genehmigung der Umwandlung der Realkorporation |
@@ -19362,6 +20239,32 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [172u](ch/lu/de/172u.md) | Kantonsratsbeschluss über die Genehmigung der Umwandlung der Realkorporation |
 | [172v](ch/lu/de/172v.md) | Kantonsratsbeschluss über die Genehmigung der Umwandlung der Realkorporation |
 | [173](ch/lu/de/173.md) | Kantonsratsbeschluss über die Genehmigung der Aufhebung der Realkorporation |
+| [173a](ch/lu/de/173a.md) | Grossratsbeschluss |
+| [173b](ch/lu/de/173b.md) | Grossratsbeschluss |
+| [173c](ch/lu/de/173c.md) | Grossratsbeschluss |
+| [173d](ch/lu/de/173d.md) | Grossratsbeschluss |
+| [173f](ch/lu/de/173f.md) | Grossratsbeschluss |
+| [174](ch/lu/de/174.md) | Grossratsbeschluss |
+| [174a](ch/lu/de/174a.md) | Grossratsbeschluss |
+| [174b](ch/lu/de/174b.md) | Grossratsbeschluss |
+| [174c](ch/lu/de/174c.md) | Grossratsbeschluss |
+| [174d](ch/lu/de/174d.md) | Grossratsbeschluss |
+| [174f](ch/lu/de/174f.md) | Grossratsbeschluss |
+| [175](ch/lu/de/175.md) | Grossratsbeschluss |
+| [175a](ch/lu/de/175a.md) | Grossratsbeschluss |
+| [175b](ch/lu/de/175b.md) | Grossratsbeschluss |
+| [175c](ch/lu/de/175c.md) | Grossratsbeschluss |
+| [175d](ch/lu/de/175d.md) | Grossratsbeschluss |
+| [175e](ch/lu/de/175e.md) | Grossratsbeschluss |
+| [176](ch/lu/de/176.md) | Grossratsbeschluss |
+| [176a](ch/lu/de/176a.md) | Grossratsbeschluss |
+| [176b](ch/lu/de/176b.md) | Grossratsbeschluss |
+| [176c](ch/lu/de/176c.md) | Grossratsbeschluss |
+| [176d](ch/lu/de/176d.md) | Grossratsbeschluss |
+| [176e](ch/lu/de/176e.md) | Grossratsbeschluss |
+| [176f](ch/lu/de/176f.md) | Grossratsbeschluss |
+| [176g](ch/lu/de/176g.md) | Grossratsbeschluss |
+| [177](ch/lu/de/177.md) | Nr. 177 |
 | [177a](ch/lu/de/177a.md) | Gesetz über die Vereinigung der Korporationsgemeinden Wetzwil/Schlierbach |
 | [178](ch/lu/de/178.md) | Gesetz über die Aufhebung der Realkorporationsgemeinde Mauensee |
 | [178a](ch/lu/de/178a.md) | Gesetz über die Aufhebung der Realkorporationsgemeinde Langnau |
@@ -19383,6 +20286,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [2](ch/lu/de/2.md) | Kantonales Bürgerrechtsgesetz |
 | [20](ch/lu/de/20.md) | Gesetz über die Organisation von Regierung und Verwaltung |
 | [200](ch/lu/de/200.md) | Einführungsgesetz zum Schweizerischen Zivilgesetzbuch |
+| [200a](ch/lu/de/200a.md) | Nr. 200a |
 | [201](ch/lu/de/201.md) | Verordnung über das Zivilstandswesen |
 | [202](ch/lu/de/202.md) | Verordnung über die Stiftungsaufsicht |
 | [202a](ch/lu/de/202a.md) | Ausführungsbestimmungen der ZBSA betreffend die Aufsicht über die Stiftungen |
@@ -19392,21 +20296,29 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [204a](ch/lu/de/204a.md) | Verordnung über die Ausfallentschädigung für Institutionen der familienergänzenden |
 | [205](ch/lu/de/205.md) | Verordnung über die Zuständigkeiten gemäss dem Bundesgesetz über internationale |
 | [206](ch/lu/de/206.md) | Verordnung über den Kindes- und Erwachsenenschutz |
+| [207](ch/lu/de/207.md) | Nr. 207 |
 | [209](ch/lu/de/209.md) | Gesetz über die Betreuung Erwachsener |
 | [21](ch/lu/de/21.md) | Gesetz über Konflikte zwischen den administrativen und richterlichen Behörden |
 | [210](ch/lu/de/210.md) | Verordnung über das Verfahren in Erbschaftsfällen |
+| [211](ch/lu/de/211.md) | SRL-Nummer 211 |
 | [215](ch/lu/de/215.md) | Gesetz über das Handänderungs- und Hypothekarwesen |
 | [216](ch/lu/de/216.md) | Verordnung über die freiwilligen öffentlichen Versteigerungen |
+| [217](ch/lu/de/217.md) | Nr. 217 |
 | [218](ch/lu/de/218.md) | Gesetz zur Einführung des Bundesgesetzes über den Erwerb von Grundstücken durch |
 | [218a](ch/lu/de/218a.md) | Vollzugsverordnung zum Gesetz zur Einführung des Bundesgesetzes über den Erwerb |
 | [219](ch/lu/de/219.md) | Beschluss über die Bezeichnung der Fremdenverkehrsorte im Sinn des Bundesgesetzes |
 | [219b](ch/lu/de/219b.md) | Verordnung über die Anzeige eines Tierfundes |
 | [222](ch/lu/de/222.md) | Verordnung betreffend die Viehverpfändung |
 | [224](ch/lu/de/224.md) | Kantonsratsbeschluss über die Grundbuchkreise |
+| [225](ch/lu/de/225.md) | Nr. 225 |
+| [225a](ch/lu/de/225a.md) | Nr. 225a |
 | [226](ch/lu/de/226.md) | Verordnung über die Organisation des Grundbuchwesens |
 | [226a](ch/lu/de/226a.md) | Verordnung über die Führung des Grundbuchs mittels Informatik |
+| [227](ch/lu/de/227.md) | Verordnung |
 | [228](ch/lu/de/228.md) | Verordnung über die Grundbuchgebühren |
 | [23](ch/lu/de/23.md) | Haftungsgesetz |
+| [230](ch/lu/de/230.md) | SRL-Nummer 230 |
+| [231](ch/lu/de/231.md) | Nr. 231 |
 | [24](ch/lu/de/24.md) | Gesetz über die Förderung der Gleichstellung von Frau und Mann |
 | [25](ch/lu/de/25.md) | Gesetz über die Harmonisierung amtlicher Register |
 | [255](ch/lu/de/255.md) | Gesetz über die öffentlichen Beurkundungen |
@@ -19418,19 +20330,46 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [25c](ch/lu/de/25c.md) | Verordnung zum Gesetz über die Datendrehscheibe und das Informationssystem |
 | [26](ch/lu/de/26.md) | Informatikgesetz |
 | [260](ch/lu/de/260.md) | Gesetz über die Organisation der Gerichte und Behörden in Zivil-, Straf- und |
+| [260a](ch/lu/de/260a.md) | SRL-Nummer 260a |
+| [260c](ch/lu/de/260c.md) | SRL-Nummer 260c |
+| [260d](ch/lu/de/260d.md) | SRL-Nummer 260d |
 | [261](ch/lu/de/261.md) | Kantonsratsbeschluss über die Sitze der Gerichte und Schlichtungsbehörden und |
 | [262](ch/lu/de/262.md) | Verordnung zum Gesetz über die Organisation der Gerichte und Behörden in Zivil-, |
+| [262a](ch/lu/de/262a.md) | SRL-Nummer 262a |
 | [263](ch/lu/de/263.md) | Geschäftsordnung für das Kantonsgericht des Kantons Luzern |
+| [263a](ch/lu/de/263a.md) | SRL-Nummer 263a |
+| [264](ch/lu/de/264.md) | SRL-Nummer 264 |
 | [265](ch/lu/de/265.md) | Verordnung über die Kosten in Zivil-, Straf- und verwaltungsgerichtlichen Verfahren |
+| [266](ch/lu/de/266.md) | Nr. 266 |
+| [266a](ch/lu/de/266a.md) | SRL-Nummer 266a |
 | [267](ch/lu/de/267.md) | Kantonsratsbeschluss über die Zahl und den Beschäftigungsgrad der Mitglieder |
+| [267a](ch/lu/de/267a.md) | SRL-Nummer 267a |
+| [268](ch/lu/de/268.md) | SRL-Nummer 268 |
+| [268a](ch/lu/de/268a.md) | SRL-Nummer 268a |
+| [268b](ch/lu/de/268b.md) | SRL-Nummer 268b |
+| [268c](ch/lu/de/268c.md) | SRL-Nummer 268c |
+| [268d](ch/lu/de/268d.md) | SRL-Nummer 268d |
+| [268e](ch/lu/de/268e.md) | SRL-Nummer 268e |
+| [268f](ch/lu/de/268f.md) | SRL-Nummer 268f |
+| [269](ch/lu/de/269.md) | SRL-Nummer 269 |
 | [26a](ch/lu/de/26a.md) | Informatikverordnung |
 | [26b](ch/lu/de/26b.md) | Verordnung über die Informatiksicherheit und über die Nutzung von Informatikmitteln |
 | [26c](ch/lu/de/26c.md) | Verordnung über die Benutzung von Informatikmitteln am Arbeitsplatz |
 | [26d](ch/lu/de/26d.md) | Verordnung über den Testbetrieb eines elektronischen Identitätsverwaltungssystems |
 | [27](ch/lu/de/27.md) | Gesetz über die amtlichen Veröffentlichungen |
+| [270](ch/lu/de/270.md) | SRL-Nummer 270 |
+| [270a](ch/lu/de/270a.md) | SRL-Nummer 270a |
 | [271](ch/lu/de/271.md) | Verordnung über die Mediation im Jugendstrafverfahren |
+| [271a](ch/lu/de/271a.md) | SRL-Nummer 271a |
+| [271c](ch/lu/de/271c.md) | Grossratsbeschluss |
+| [271d](ch/lu/de/271d.md) | SRL-Nummer 271d |
+| [272](ch/lu/de/272.md) | SRL-Nummer 272 |
+| [273](ch/lu/de/273.md) | SRL-Nummer 273 |
+| [274](ch/lu/de/274.md) | SRL-Nummer 274 |
 | [275](ch/lu/de/275.md) | Verordnung über die Staatsanwaltschaft |
 | [276](ch/lu/de/276.md) | Kantonsratsbeschluss über die Zahl und den Beschäftigungsgrad der Staatsanwältinnen |
+| [277](ch/lu/de/277.md) | SRL-Nummer 277 |
+| [278](ch/lu/de/278.md) | SRL-Nummer 278 |
 | [28](ch/lu/de/28.md) | Reglement über die Information der Öffentlichkeit durch den Regierungsrat und |
 | [280](ch/lu/de/280.md) | Gesetz über das Anwaltspatent und die Parteivertretung |
 | [281](ch/lu/de/281.md) | Verordnung betreffend die Aufsicht über die Anwältinnen und Anwälte |
@@ -19461,11 +20400,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [296](ch/lu/de/296.md) | Grossratsbeschluss über die Vereinigung der Betreibungskreise Adligenswil und |
 | [296a](ch/lu/de/296a.md) | Beschluss über die Vereinigung der Betreibungskreise Pfaffnau und Roggliswil |
 | [296b](ch/lu/de/296b.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Buchrain |
+| [296c](ch/lu/de/296c.md) | Nr. 296c |
 | [296d](ch/lu/de/296d.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Altishofen |
 | [296e](ch/lu/de/296e.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Ballwil |
 | [297](ch/lu/de/297.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Gisikon-Honau-Root |
 | [297a](ch/lu/de/297a.md) | Beschluss über die Genehmigung der Bildung der Betreibungskreise Hitzkirch, |
 | [297b](ch/lu/de/297b.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Knutwil |
+| [297c](ch/lu/de/297c.md) | Beschluss |
 | [297d](ch/lu/de/297d.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Altbüron |
 | [297e](ch/lu/de/297e.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Aesch-Ermensee-Schongau |
 | [298](ch/lu/de/298.md) | Beschluss über die Aufteilung des Betreibungskreises Gettnau-Ohmstal in die |
@@ -19476,18 +20417,56 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [298e](ch/lu/de/298e.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Alberswil-Ettiswil, |
 | [299](ch/lu/de/299.md) | Beschluss über die Genehmigung der Vereinigung der Betreibungskreise Doppleschwand, |
 | [29a](ch/lu/de/29a.md) | Geoinformationsverordnung |
+| [2a](ch/lu/de/2a.md) | Kantonale Verordnung |
 | [3](ch/lu/de/3.md) | Kantonale Bürgerrechtsverordnung |
 | [30](ch/lu/de/30.md) | Gesetz über die Organisation und Geschäftsführung des Kantonsrates |
 | [300](ch/lu/de/300.md) | Übertretungsstrafgesetz |
 | [305](ch/lu/de/305.md) | Gesetz über den Justizvollzug |
+| [305a](ch/lu/de/305a.md) | SRL-Nummer 305a |
+| [305b](ch/lu/de/305b.md) | Kantonale Verordnung |
+| [305c](ch/lu/de/305c.md) | Verordnung |
+| [305d](ch/lu/de/305d.md) | Kantonale Verordnung |
+| [306](ch/lu/de/306.md) | SRL-Nummer 306 |
+| [307](ch/lu/de/307.md) | SRL-Nummer 307 |
+| [308](ch/lu/de/308.md) | SRL-Nummer 308 |
+| [309](ch/lu/de/309.md) | SRL-Nummer 309 |
+| [309a](ch/lu/de/309a.md) | SRL-Nummer 309a |
 | [31](ch/lu/de/31.md) | Geschäftsordnung des Kantonsrates |
+| [310](ch/lu/de/310.md) | Reglement |
+| [310a](ch/lu/de/310a.md) | Reglement |
+| [310b](ch/lu/de/310b.md) | Reglement |
+| [310c](ch/lu/de/310c.md) | Reglement |
+| [311](ch/lu/de/311.md) | SRL-Nummer 311 |
+| [312](ch/lu/de/312.md) | Reglement |
+| [313](ch/lu/de/313.md) | SRL-Nummer 313 |
 | [314](ch/lu/de/314.md) | Kantonale Ordnungsbussenverordnung |
+| [315](ch/lu/de/315.md) | SRL-Nummer 315 |
+| [316](ch/lu/de/316.md) | SRL-Nummer 316 |
+| [317](ch/lu/de/317.md) | Beschluss |
+| [318](ch/lu/de/318.md) | SRL-Nummer 318 |
+| [319](ch/lu/de/319.md) | SRL-Nummer 319 |
+| [31a](ch/lu/de/31a.md) | Nr. 31a |
+| [325](ch/lu/de/325.md) | Nr. 325 |
+| [326](ch/lu/de/326.md) | Verordnung |
 | [327](ch/lu/de/327.md) | Verordnung über den Justizvollzug |
+| [327a](ch/lu/de/327a.md) | Verordnung |
+| [328](ch/lu/de/328.md) | Verordnung |
 | [329](ch/lu/de/329.md) | Verordnung zum Übereinkommen über die Überstellung verurteilter Personen |
+| [330](ch/lu/de/330.md) | Reglement |
+| [331](ch/lu/de/331.md) | Beschluss |
+| [333](ch/lu/de/333.md) | Verordnung |
+| [337](ch/lu/de/337.md) | SRL-Nummer 337 |
 | [35](ch/lu/de/35.md) | Geschäftsordnung des Regierungsrates |
 | [350](ch/lu/de/350.md) | Gesetz über die Luzerner Polizei |
 | [351](ch/lu/de/351.md) | Verordnung über die Luzerner Polizei |
+| [352](ch/lu/de/352.md) | Nr. 352 |
+| [352a](ch/lu/de/352a.md) | Nr. 352a |
+| [353](ch/lu/de/353.md) | Reglement |
+| [354](ch/lu/de/354.md) | Nr. 354 |
+| [355](ch/lu/de/355.md) | Nr. 355 |
 | [356](ch/lu/de/356.md) | Kantonale Verordnung über Massnahmen zur Unterstützung der Sicherheit von Minderheiten |
+| [357](ch/lu/de/357.md) | SRL-Nummer 357 |
+| [358](ch/lu/de/358.md) | SRL-Nummer 358 |
 | [36](ch/lu/de/36.md) | Verordnung über die Organisation, die Führung und die Kontrolle der kantonalen |
 | [360](ch/lu/de/360.md) | Beschluss über die Neuumschreibung der Rekrutierungskreise des Kantons Luzern |
 | [364](ch/lu/de/364.md) | Verordnung über die Zuständigkeit im militärischen Disziplinarstrafrecht |
@@ -19499,20 +20478,33 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [371](ch/lu/de/371.md) | Verordnung über den Bevölkerungsschutz |
 | [372](ch/lu/de/372.md) | Gesetz über den Zivilschutz |
 | [372a](ch/lu/de/372a.md) | Verordnung über den Zivilschutz |
+| [372b](ch/lu/de/372b.md) | Nr. 372b |
 | [372c](ch/lu/de/372c.md) | Verordnung zur Einführung des am 20. Dezember 2019 geänderten Bundesgesetzes |
 | [373](ch/lu/de/373.md) | Verordnung über den Gebührenbezug im Zivilschutz |
+| [374](ch/lu/de/374.md) | Verordnung |
 | [37a](ch/lu/de/37a.md) | Verordnung über die Zuordnung der Anstalten zu den Departementen |
 | [38](ch/lu/de/38.md) | Kantonales Gesetz über den Schutz von Personendaten |
 | [385](ch/lu/de/385.md) | Vollzugsverordnung zum Bundesgesetz über die Wehrpflichtersatzabgabe |
 | [38b](ch/lu/de/38b.md) | Kantonale Datenschutzverordnung |
+| [38c](ch/lu/de/38c.md) | SRL-Nummer 38c |
 | [39](ch/lu/de/39.md) | Gesetz über die Videoüberwachung |
 | [390](ch/lu/de/390.md) | Verordnung über die Einführung des Bundesgesetzes über die Erwerbsausfallentschädigungen |
 | [395](ch/lu/de/395.md) | Einführungsgesetz zum Bundesgesetz über die wirtschaftliche Landesversorgung |
 | [396](ch/lu/de/396.md) | Verordnung über die wirtschaftliche Landesversorgung |
 | [39a](ch/lu/de/39a.md) | Verordnung zum Gesetz über die Videoüberwachung |
+| [39b](ch/lu/de/39b.md) | SRL-Nummer 39b |
 | [40](ch/lu/de/40.md) | Gesetz über die Verwaltungsrechtspflege |
+| [400](ch/lu/de/400.md) | Erziehungsgesetz |
 | [400a](ch/lu/de/400a.md) | Gesetz über die Volksschulbildung |
+| [400f](ch/lu/de/400f.md) | SRL-Nummer 400f |
+| [400y](ch/lu/de/400y.md) | Beschluss |
+| [400z](ch/lu/de/400z.md) | Beschluss |
+| [401](ch/lu/de/401.md) | Nr. 401 |
+| [401a](ch/lu/de/401a.md) | Interkantonale Vereinbarung |
+| [401d](ch/lu/de/401d.md) | Nr. 401d |
+| [401m](ch/lu/de/401m.md) | Nr. 401m |
 | [402](ch/lu/de/402.md) | Kulturförderungsgesetz |
+| [404](ch/lu/de/404.md) | Nr. 404 |
 | [405](ch/lu/de/405.md) | Verordnung zum Gesetz über die Volksschulbildung |
 | [405a](ch/lu/de/405a.md) | Verordnung über die Beurteilung der Lernenden in der Volksschule |
 | [405b](ch/lu/de/405b.md) | Verordnung über die Übertrittsverfahren in der Volksschule |
@@ -19520,47 +20512,91 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [408](ch/lu/de/408.md) | Verordnung über die Schuldienste |
 | [409](ch/lu/de/409.md) | Verordnung über die Sonderschulung |
 | [41](ch/lu/de/41.md) | Verordnung über den Stillstand der Fristen in verwaltungsrechtlichen Verfahren |
+| [412](ch/lu/de/412.md) | Verordnung |
 | [415](ch/lu/de/415.md) | Verordnung über die kommunalen Musikschulen und die ausserschulische musikalische |
+| [416](ch/lu/de/416.md) | Nr. 416 |
+| [42](ch/lu/de/42.md) | Nr. 42 |
 | [420](ch/lu/de/420.md) | Bibliotheksgesetz |
 | [421](ch/lu/de/421.md) | Verordnung über das kantonale Bibliotheksangebot |
 | [426](ch/lu/de/426.md) | Beschluss über die Gebühren für die Angebote der Berufs-, Studien- und Laufbahnberatung |
+| [42a](ch/lu/de/42a.md) | Nr. 42a |
+| [43](ch/lu/de/43.md) | Nr. 43 |
 | [430](ch/lu/de/430.md) | Gesetz über die Berufsbildung und die Weiterbildung |
 | [432](ch/lu/de/432.md) | Verordnung zum Gesetz über die Berufsbildung und die Weiterbildung |
 | [438](ch/lu/de/438.md) | Reglement über die Aufnahme, die Promotion und die Abschlussprüfungen an den |
+| [440](ch/lu/de/440.md) | Nr. 440 |
 | [444](ch/lu/de/444.md) | Reglement über die Berufsmaturität |
+| [446](ch/lu/de/446.md) | Nr. 446 |
+| [450](ch/lu/de/450.md) | Nr. 450 |
+| [455](ch/lu/de/455.md) | Reglement |
+| [457](ch/lu/de/457.md) | Nr. 457 |
+| [46](ch/lu/de/46.md) | Nr. 46 |
+| [460](ch/lu/de/460.md) | Reglement |
+| [461](ch/lu/de/461.md) | Reglement |
+| [463](ch/lu/de/463.md) | Reglement |
+| [466](ch/lu/de/466.md) | Reglement |
 | [467](ch/lu/de/467.md) | Reglement über die Diplomierung an der Akademie für Erwachsenenbildung in Luzern |
+| [47](ch/lu/de/47.md) | Nr. 47 |
+| [480](ch/lu/de/480.md) | Reglement |
+| [485](ch/lu/de/485.md) | Reglement |
+| [486](ch/lu/de/486.md) | Nr. 486 |
 | [497](ch/lu/de/497.md) | Verordnung über die berufliche Weiterbildung und die Berufseinführung der Lehrpersonen |
 | [5](ch/lu/de/5.md) | Gesetz über die Niederlassung und den Aufenthalt |
 | [50](ch/lu/de/50.md) | Gesetz über die Rechtsstellung der obersten Verwaltungs- und Gerichtsbehörden |
+| [500](ch/lu/de/500.md) | Konkordat |
 | [501](ch/lu/de/501.md) | Gesetz über die Gymnasialbildung |
 | [502](ch/lu/de/502.md) | Verordnung zum Gesetz über die Gymnasialbildung |
+| [502a](ch/lu/de/502a.md) | SRL-Nummer 502a |
 | [503](ch/lu/de/503.md) | Verordnung über die Benützung kantonaler Schulanlagen durch Dritte |
 | [506](ch/lu/de/506.md) | Reglement für die Maturitätsprüfungen im Kanton Luzern |
 | [506a](ch/lu/de/506a.md) | Reglement über die Maturitätsprüfungen am Gymnasium der RIS Swiss Section, |
 | [506b](ch/lu/de/506b.md) | Reglement über den Passerellen-Lehrgang und die Ergänzungsprüfungen für die |
 | [507](ch/lu/de/507.md) | Verordnung über die Leistungsbeurteilung während des Semesters und für die |
 | [507a](ch/lu/de/507a.md) | Verordnung über die Leistungsbeurteilung während des Semesters und für die |
+| [509](ch/lu/de/509.md) | Reglement |
 | [51](ch/lu/de/51.md) | Gesetz über das öffentlich-rechtliche Arbeitsverhältnis |
+| [511](ch/lu/de/511.md) | Reglement |
+| [512](ch/lu/de/512.md) | Reglement |
 | [515](ch/lu/de/515.md) | Gesetz über die Lehrerinnen- und Lehrerbildung und die Pädagogische Hochschule |
 | [515a](ch/lu/de/515a.md) | Personalverordnung der Pädagogischen Hochschule Luzern |
 | [516](ch/lu/de/516.md) | Statut der Pädagogischen Hochschule Luzern |
 | [516a](ch/lu/de/516a.md) | Studienreglement über die Ausbildung der Pädagogischen Hochschule Luzern |
 | [516b](ch/lu/de/516b.md) | Studienreglement über die Weiterbildung der Pädagogischen Hochschule Luzern |
 | [516c](ch/lu/de/516c.md) | Studienreglement über die Ausbildung der Pädagogischen Hochschule Luzern im |
+| [517](ch/lu/de/517.md) | Nr. 517 |
+| [517a](ch/lu/de/517a.md) | Nr. 517a |
 | [517b](ch/lu/de/517b.md) | Studien- und Prüfungsreglement der Pädagogischen Hochschule Zentralschweiz |
+| [517c](ch/lu/de/517c.md) | Nr. 517c |
+| [517d](ch/lu/de/517d.md) | Nr. 517d |
+| [517e](ch/lu/de/517e.md) | Nr. 517e |
 | [518](ch/lu/de/518.md) | Reglement für die Verwendung von Drittmitteln an der Pädagogischen Hochschule |
 | [518a](ch/lu/de/518a.md) | Verordnung über die Offenlegung von Drittmitteln der Pädagogischen Hochschule |
+| [518d](ch/lu/de/518d.md) | Nr. 518d |
+| [518e](ch/lu/de/518e.md) | Nr. 518e |
+| [519](ch/lu/de/519.md) | Nr. 519 |
+| [519a](ch/lu/de/519a.md) | Nr. 519a |
 | [52](ch/lu/de/52.md) | Verordnung zum Personalgesetz |
+| [520](ch/lu/de/520.md) | Nr. 520 |
 | [520a](ch/lu/de/520a.md) | Zentralschweizer Fachhochschul-Verordnung |
 | [520b](ch/lu/de/520b.md) | Statut der Hochschule Luzern, FH Zentralschweiz |
 | [520c](ch/lu/de/520c.md) | Personalverordnung der Hochschule Luzern, FH Zentralschweiz |
+| [520d](ch/lu/de/520d.md) | Nr. 520d |
 | [520e](ch/lu/de/520e.md) | Verordnung über die Gebühren an der Hochschule Luzern, FH Zentralschweiz |
 | [520f](ch/lu/de/520f.md) | Reglement zum Fundraising der Hochschule Luzern, FH Zentralschweiz |
 | [521](ch/lu/de/521.md) | Studienordnung für die Ausbildung an der Hochschule Luzern, FH Zentralschweiz |
+| [521b](ch/lu/de/521b.md) | Nr. 521b |
 | [522](ch/lu/de/522.md) | Studienordnung für die Weiterbildung an der Hochschule Luzern, FH Zentralschweiz |
+| [523](ch/lu/de/523.md) | Nr. 523 |
 | [524](ch/lu/de/524.md) | Reglement zur wissenschaftlichen Integrität und zur guten wissenschaftlichen |
+| [525](ch/lu/de/525.md) | Nr. 525 |
+| [526](ch/lu/de/526.md) | Nr. 526 |
+| [527](ch/lu/de/527.md) | Nr. 527 |
+| [528](ch/lu/de/528.md) | Nr. 528 |
 | [52a](ch/lu/de/52a.md) | Verordnung über die Wahlen und die übrigen personalrechtlichen Entscheide im |
 | [53](ch/lu/de/53.md) | Verordnung über die Beschäftigung der persönlichen Mitarbeiter und Mitarbeiterinnen |
+| [535](ch/lu/de/535.md) | Nr. 535 |
+| [537](ch/lu/de/537.md) | Nr. 537 |
+| [538](ch/lu/de/538.md) | Konkordat |
 | [539](ch/lu/de/539.md) | Gesetz über die universitäre Hochschulbildung |
 | [539a](ch/lu/de/539a.md) | Personalverordnung der Universität Luzern |
 | [539c](ch/lu/de/539c.md) | Statut der Universität Luzern |
@@ -19652,6 +20688,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [542s](ch/lu/de/542s.md) | Organisationsreglement des Zentrums Religionsforschung der Kultur- und Sozialwissenschaftlichen |
 | [543](ch/lu/de/543.md) | Dekret über die Durchführung des klinischen Unterrichts am Kantonsspital Luzern |
 | [543a](ch/lu/de/543a.md) | Interkantonale Vereinbarung über die Beiträge an die Ausbildungskosten von |
+| [543b](ch/lu/de/543b.md) | Nr. 543b |
 | [543c](ch/lu/de/543c.md) | Reglement zum Weiterbildungsangebot «CAS in Hochschuldidaktik» des Zentrums |
 | [544](ch/lu/de/544.md) | Verordnung über die Schul- und Studiengelder sowie die Gebühren an kantonalen |
 | [545](ch/lu/de/545.md) | Organisationsreglement der Wirtschaftswissenschaftlichen Fakultät der Universität |
@@ -19691,18 +20728,27 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [547e](ch/lu/de/547e.md) | Organisationsreglement Institut für Verhaltensforschung (Institute for Behavioural |
 | [547f](ch/lu/de/547f.md) | Organisationsreglement Zentrum für Psychotherapie (Center for Psychotherapy) |
 | [547g](ch/lu/de/547g.md) | Reglement zum Weiterbildungsangebot «Master of Advanced Studies (MAS) in Kognitiver |
+| [548](ch/lu/de/548.md) | Tarif |
 | [55](ch/lu/de/55.md) | Verordnung über die Eides- und Gelübdeformel |
+| [570](ch/lu/de/570.md) | Nr. 570 |
 | [575](ch/lu/de/575.md) | Gesetz über Ausbildungsbeiträge |
 | [575a](ch/lu/de/575a.md) | Verordnung zum Gesetz über Ausbildungsbeiträge |
+| [580](ch/lu/de/580.md) | Nr. 580 |
+| [582](ch/lu/de/582.md) | Nr. 582 |
 | [585](ch/lu/de/585.md) | Gesetz über das Archivwesen |
 | [586](ch/lu/de/586.md) | Verordnung zum Archivgesetz |
+| [589](ch/lu/de/589.md) | Verordnung |
+| [590](ch/lu/de/590.md) | Verordnung über die Gemeinde- und Regionalbibliotheken |
+| [593](ch/lu/de/593.md) | Verordnung |
 | [595](ch/lu/de/595.md) | Gesetz über den Schutz der Kulturdenkmäler |
 | [595a](ch/lu/de/595a.md) | Verordnung zum Gesetz über den Schutz der Kulturdenkmäler |
+| [596](ch/lu/de/596.md) | Nr. 596 |
 | [596a](ch/lu/de/596a.md) | Reglement für das Natur-Museum Luzern |
 | [597](ch/lu/de/597.md) | Reglement für das Museum Luzern |
 | [597a](ch/lu/de/597a.md) | Reglement über die Benützung des Schlachtfeldes von Sempach |
 | [598](ch/lu/de/598.md) | Verordnung zum Kulturförderungsgesetz |
 | [599](ch/lu/de/599.md) | Verordnung über Beiträge des Kantons Luzern und der Stadt Luzern an Künstlerinnen |
+| [5a](ch/lu/de/5a.md) | SRL-Nummer 5a |
 | [6](ch/lu/de/6.md) | Vollziehungsverordnung zum Gesetz über die Niederlassung und den Aufenthalt |
 | [60](ch/lu/de/60.md) | Verordnung über die Erteilung des Fähigkeitszeugnisses als Gemeindeschreiber |
 | [600](ch/lu/de/600.md) | Gesetz über die Steuerung der Finanzen und Leistungen |
@@ -19711,10 +20757,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [600c](ch/lu/de/600c.md) | Verordnung über die Lockerung der Schuldenbremse betreffend den Aufwandüberschuss |
 | [601](ch/lu/de/601.md) | Staatsbeitragsgesetz |
 | [602](ch/lu/de/602.md) | Verordnung über den Finanzhaushalt der Gemeinden |
+| [603](ch/lu/de/603.md) | SRL-Nummer 603 |
 | [61](ch/lu/de/61.md) | Verordnung über die Prüfung der Grundbuchverwalterinnen und -verwalter und |
 | [610](ch/lu/de/610.md) | Gesetz über den Finanzausgleich |
 | [611](ch/lu/de/611.md) | Verordnung über den Finanzausgleich |
 | [615](ch/lu/de/615.md) | Finanzkontrollgesetz |
+| [62](ch/lu/de/62.md) | SRL-Nummer 62 |
 | [620](ch/lu/de/620.md) | Steuergesetz |
 | [621](ch/lu/de/621.md) | Steuerverordnung |
 | [622](ch/lu/de/622.md) | Gesetz über den Steuerfussabtausch zur Aufgaben- und Finanzreform 18 |
@@ -19722,18 +20770,28 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [625](ch/lu/de/625.md) | Mietwertverordnung |
 | [626](ch/lu/de/626.md) | Gesetz über die amtliche Schatzung des unbeweglichen Vermögens |
 | [627](ch/lu/de/627.md) | Vollziehungsverordnung zum Gesetz über die amtliche Schatzung des unbeweglichen |
+| [628](ch/lu/de/628.md) | Dekret |
 | [628a](ch/lu/de/628a.md) | Verordnung über das Verfahren zur allgemeinen Anpassung der Katasterwerte |
+| [628b](ch/lu/de/628b.md) | Beschluss |
+| [628c](ch/lu/de/628c.md) | Beschluss |
+| [629](ch/lu/de/629.md) | Dekret |
+| [629a](ch/lu/de/629a.md) | Dekret |
+| [63](ch/lu/de/63.md) | SRL-Nummer 63 |
 | [630](ch/lu/de/630.md) | Gesetz betreffend die Erbschaftssteuern |
+| [631](ch/lu/de/631.md) | Verordnung über die Vollziehung des Gesetzes vom 27. Mai 1908 betreffend die |
+| [632](ch/lu/de/632.md) | Nr. 632 |
 | [64](ch/lu/de/64.md) | Verordnung über die Prüfung der Betreibungs- und Konkursbeamten sowie der Sachwalter |
 | [645](ch/lu/de/645.md) | Gesetz über die Handänderungssteuer |
 | [647](ch/lu/de/647.md) | Gesetz über die Grundstückgewinnsteuer |
 | [650](ch/lu/de/650.md) | Gesetz über Abgaben und Beiträge im Tourismus |
 | [652](ch/lu/de/652.md) | Gesetz betreffend die teilweise Abänderung des Steuergesetzes vom 30. November |
+| [660](ch/lu/de/660.md) | Nr. 660 |
 | [665](ch/lu/de/665.md) | Verordnung zum Bundesgesetz über die direkte Bundessteuer |
 | [666](ch/lu/de/666.md) | Verordnung zum Bundesgesetz über die Verrechnungssteuer |
 | [667](ch/lu/de/667.md) | Verordnung über die pauschale Steueranrechnung |
 | [670](ch/lu/de/670.md) | Gesetz über die Gewinnung von Bodenschätzen und die Nutzung des Untergrunds |
 | [671](ch/lu/de/671.md) | Beschluss über die Zuständigkeiten nach dem Gesetz über die Gewinnung von Bodenschätzen |
+| [676](ch/lu/de/676.md) | Nr. 676 |
 | [677](ch/lu/de/677.md) | Gesetz über das Salzregal |
 | [680](ch/lu/de/680.md) | Gebührengesetz |
 | [681](ch/lu/de/681.md) | Gebührentarif und Kostenverordnung für die Staatsverwaltung |
@@ -19742,17 +20800,25 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [687](ch/lu/de/687.md) | Verordnung über den Gebührenbezug der Gemeinden |
 | [688](ch/lu/de/688.md) | Verordnung über die Entschädigung im Steuerwesen |
 | [690](ch/lu/de/690.md) | Gesetz über die Umwandlung der Luzerner Kantonalbank in eine Aktiengesellschaft |
+| [694](ch/lu/de/694.md) | Nr. 694 |
+| [695](ch/lu/de/695.md) | Nr. 695 |
+| [696](ch/lu/de/696.md) | Nr. 696 |
+| [697](ch/lu/de/697.md) | Nr. 697 |
 | [7](ch/lu/de/7.md) | Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und Ausländer |
 | [70](ch/lu/de/70.md) | Kantonsratsbeschluss über die Entschädigung der Mitglieder und der Fraktionen |
 | [700](ch/lu/de/700.md) | Einführungsgesetz zum Bundesgesetz über den Umweltschutz |
+| [700a](ch/lu/de/700a.md) | Nr. 700a |
 | [701](ch/lu/de/701.md) | Umweltschutzverordnung |
 | [701a](ch/lu/de/701a.md) | Smog-Verordnung |
+| [701b](ch/lu/de/701b.md) | Verordnung |
 | [702](ch/lu/de/702.md) | Einführungsgesetz zum Bundesgesetz über den Schutz der Gewässer |
 | [703](ch/lu/de/703.md) | Vollzugsverordnung zum Einführungsgesetz zum Bundesgesetz über den Schutz der |
 | [703a](ch/lu/de/703a.md) | Verordnung über die Verminderung der Phosphorbelastung der Mittellandseen durch |
+| [704](ch/lu/de/704.md) | Nr. 704 |
 | [705](ch/lu/de/705.md) | Verordnung über die Gebühren im Bereich des Umweltschutzes und des Gewässerschutzes |
 | [709a](ch/lu/de/709a.md) | Gesetz über den Natur- und Landschaftsschutz |
 | [710](ch/lu/de/710.md) | Natur- und Landschaftsschutzverordnung |
+| [710b](ch/lu/de/710b.md) | SRL- |
 | [711](ch/lu/de/711.md) | Verordnung zum Schutz des Baldegger- und des Hallwilersees und ihrer Ufer |
 | [711b](ch/lu/de/711b.md) | Verordnung zum Schutze des Mauensees und seiner Ufer |
 | [711c](ch/lu/de/711c.md) | Verordnung zum Schutz des Sempachersees und seiner Ufer |
@@ -19780,8 +20846,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [72](ch/lu/de/72.md) | Besoldungsordnung für die Magistratspersonen und den Staatsschreiber oder die |
 | [720](ch/lu/de/720.md) | Fischereigesetz |
 | [721](ch/lu/de/721.md) | Fischereiverordnung |
+| [722](ch/lu/de/722.md) | Nr. 722 |
 | [722a](ch/lu/de/722a.md) | Übereinkunft über den Fischfang im Hallwilersee |
+| [723](ch/lu/de/723.md) | Nr. 723 |
 | [723a](ch/lu/de/723a.md) | Ausführungsbestimmungen zum Konkordat über die Fischerei im Zugersee |
+| [724](ch/lu/de/724.md) | Nr. 724 |
+| [724a](ch/lu/de/724a.md) | Nr. 724a |
 | [724b](ch/lu/de/724b.md) | Ausführungsbestimmungen zur Vereinbarung über die Fischerei im Vierwaldstättersee |
 | [725](ch/lu/de/725.md) | Kantonales Gesetz über die Jagd und den Schutz wildlebender Säugetiere und |
 | [725a](ch/lu/de/725a.md) | Kantonale Verordnung über die Jagd und den Schutz wildlebender Säugetiere und |
@@ -19789,17 +20859,21 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [726a](ch/lu/de/726a.md) | Reglement über die Zulassung und den Einsatz von Jagdhunden |
 | [727](ch/lu/de/727.md) | Verordnung über die Abschätzung von Wildschaden |
 | [728](ch/lu/de/728.md) | Kantonale Tierschutzverordnung |
+| [728a](ch/lu/de/728a.md) | SRL-Nummer 728a |
 | [73](ch/lu/de/73.md) | Besoldungsordnung für das Staatspersonal |
 | [730](ch/lu/de/730.md) | Enteignungsgesetz |
 | [731](ch/lu/de/731.md) | Beschluss über die Zuständigkeit für Entschädigungen aus vorbereitenden Enteignungshandlungen |
 | [732](ch/lu/de/732.md) | Verordnung über Grundeigentümer-Beiträge an öffentliche Werke |
 | [733](ch/lu/de/733.md) | Gesetz über die öffentlichen Beschaffungen |
+| [733a](ch/lu/de/733a.md) | Nr. 733a |
 | [733b](ch/lu/de/733b.md) | Interkantonale Vereinbarung über das öffentliche Beschaffungswesen |
 | [733c](ch/lu/de/733c.md) | Einführungsgesetz zur Interkantonalen Vereinbarung über das öffentliche Beschaffungswesen |
 | [734](ch/lu/de/734.md) | Verordnung zur Interkantonalen Vereinbarung über das öffentliche Beschaffungswesen |
 | [735](ch/lu/de/735.md) | Planungs- und Baugesetz |
 | [736](ch/lu/de/736.md) | Planungs- und Bauverordnung |
 | [736a](ch/lu/de/736a.md) | Beschluss über die gemeindeweise Inkraftsetzung von neuen Bestimmungen im Planungs- |
+| [736b](ch/lu/de/736b.md) | Verordnung zur Einführung des am 29. September 2023 geänderten Bundesgesetzes |
+| [737](ch/lu/de/737.md) | Nr. 737 |
 | [739](ch/lu/de/739.md) | Reklameverordnung |
 | [739a](ch/lu/de/739a.md) | Beschluss über die Zuständigkeit zur Erteilung von Reklamebewilligungen |
 | [73a](ch/lu/de/73a.md) | Besoldungsverordnung für das Staatspersonal |
@@ -19809,6 +20883,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [740b](ch/lu/de/740b.md) | Beschluss über die Einführung eines Dienstbüchleins für die Feuerwehren des |
 | [740c](ch/lu/de/740c.md) | Verordnung über die Einteilung der Kaminfegerkreise |
 | [742a](ch/lu/de/742a.md) | Verordnung über feuerpolizeiliche Kontrollen in Hotels, Gasthäusern und Pensionen |
+| [744a](ch/lu/de/744a.md) | Verordnung |
+| [744b](ch/lu/de/744b.md) | Beschluss |
 | [746](ch/lu/de/746.md) | Kaminfegertarif |
 | [75](ch/lu/de/75.md) | Besoldungsverordnung für die Lehrpersonen und die Fachpersonen der schulischen |
 | [750](ch/lu/de/750.md) | Gebäudeversicherungsgesetz |
@@ -19825,7 +20901,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [758b](ch/lu/de/758b.md) | Wegverordnung |
 | [760](ch/lu/de/760.md) | Wasserbaugesetz |
 | [760a](ch/lu/de/760a.md) | Wasserbauverordnung |
+| [761a](ch/lu/de/761a.md) | Gesetz |
 | [762](ch/lu/de/762.md) | Dekret über einen Staatsbeitrag an die Kosten der Korrektion der Luthern und |
+| [763](ch/lu/de/763.md) | Nr. 763 |
 | [764](ch/lu/de/764.md) | Reglement für die Regulierung des Vierwaldstättersees an der Reusswehranlage |
 | [765](ch/lu/de/765.md) | Beschluss betreffend das Öffnen und Schliessen des Reusswehres in Luzern |
 | [767](ch/lu/de/767.md) | Gebührentarif für die Sondernutzung der öffentlichen Gewässer |
@@ -19847,20 +20925,31 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [777a](ch/lu/de/777a.md) | Beschluss über die Zuständigkeit zum Erlass von Verkehrsanordnungen |
 | [778](ch/lu/de/778.md) | Verordnung über den Gebührenbezug des Strassenverkehrsamtes |
 | [783](ch/lu/de/783.md) | Gesetz über die Verwendung von Motorfahrzeugen ausserhalb der öffentlichen |
+| [785](ch/lu/de/785.md) | Nr. 785 |
+| [786](ch/lu/de/786.md) | Nr. 786 |
 | [787](ch/lu/de/787.md) | Verordnung über die Schifffahrt |
 | [787a](ch/lu/de/787a.md) | Verordnung über die Schiffsmelde- und -reinigungspflicht |
 | [788a](ch/lu/de/788a.md) | Gesetz über die Schiffssteuer |
 | [788b](ch/lu/de/788b.md) | Verordnung zum Gesetz über die Schiffssteuer |
+| [793](ch/lu/de/793.md) | Nr. 793 |
+| [794](ch/lu/de/794.md) | Nr. 794 |
+| [795](ch/lu/de/795.md) | SRL-Nummer 795 |
 | [798](ch/lu/de/798.md) | Verordnung über die Bezeichnung der zuständigen Behörden beim Vollzug des Bundesgesetzes |
+| [7a](ch/lu/de/7a.md) | Gesetz |
 | [8](ch/lu/de/8.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und |
 | [800](ch/lu/de/800.md) | Gesundheitsgesetz |
 | [800a](ch/lu/de/800a.md) | Spitalgesetz |
+| [800alt](ch/lu/de/800alt.md) | Gesetz |
 | [800b](ch/lu/de/800b.md) | Verordnung zum Spitalgesetz |
+| [800c](ch/lu/de/800c.md) | Nr. 800c |
+| [800d](ch/lu/de/800d.md) | Nr. 800d |
 | [800e](ch/lu/de/800e.md) | Beschluss über den kantonalen Anteil an der Abgeltung der stationären Leistungen |
 | [800f](ch/lu/de/800f.md) | Beschluss über den kantonalen Anteil an der Abgeltung der stationären Leistungen |
 | [800g](ch/lu/de/800g.md) | Beschluss über den kantonalen Anteil an der Abgeltung der stationären Leistungen |
 | [800h](ch/lu/de/800h.md) | Interkantonale Vereinbarung über die kantonalen Beiträge an die Spitäler zur |
+| [801](ch/lu/de/801.md) | Verordnung |
 | [801a](ch/lu/de/801a.md) | Vollzugsverordnung zur Durchführung des straflosen Schwangerschaftsabbruchs |
+| [802](ch/lu/de/802.md) | Verordnung |
 | [803](ch/lu/de/803.md) | Verordnung über den schulärztlichen Dienst und die Schulzahnpflege an den kantonalen |
 | [804](ch/lu/de/804.md) | Beschluss über den Betreiber des kantonalen Krebsregisters |
 | [804a](ch/lu/de/804a.md) | Gesetz über die Förderung von Sport und Bewegung |
@@ -19869,19 +20958,44 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [806](ch/lu/de/806.md) | Gesundheitsberufeverordnung |
 | [806a](ch/lu/de/806a.md) | Psychotherapeutenverordnung |
 | [806b](ch/lu/de/806b.md) | Verordnung über nicht bewilligungspflichtige Tätigkeiten im Gesundheitswesen |
+| [807](ch/lu/de/807.md) | Nr. 807 |
+| [808a](ch/lu/de/808a.md) | Nr. 808a |
+| [808b](ch/lu/de/808b.md) | Nr. 808b |
+| [808c](ch/lu/de/808c.md) | SRL-Nummer 808c |
+| [809](ch/lu/de/809.md) | Psychotherapeutenverordnung |
+| [809b](ch/lu/de/809b.md) | Nr. 809b |
 | [810](ch/lu/de/810.md) | Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung im Bereich |
 | [810a](ch/lu/de/810a.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung |
+| [811](ch/lu/de/811.md) | Nr. 811 |
+| [813](ch/lu/de/813.md) | Verordnung über die Ausübung des Berufes einer Dentalhygienikerin |
+| [815](ch/lu/de/815.md) | SRL-Nummer 815 |
+| [815a](ch/lu/de/815a.md) | Konkordat |
 | [820](ch/lu/de/820.md) | Reglement über die Organisation des Luzerner Kantonsspitals |
 | [820a](ch/lu/de/820a.md) | Personalreglement für das Luzerner Kantonsspital |
 | [820b](ch/lu/de/820b.md) | Reglement über die Rechte und Pflichten der Patientinnen und Patienten des |
 | [820c](ch/lu/de/820c.md) | Finanzreglement des Luzerner Kantonsspitals |
 | [820d](ch/lu/de/820d.md) | Reglement über die Tarife für die stationäre und ambulante Behandlung von Patientinnen |
+| [821](ch/lu/de/821.md) | Reglement |
 | [822](ch/lu/de/822.md) | Reglement über die Organisation der Luzerner Psychiatrie |
 | [822a](ch/lu/de/822a.md) | Personalreglement für die Luzerner Psychiatrie |
 | [822b](ch/lu/de/822b.md) | Patientenreglement für die Luzerner Psychiatrie |
 | [822c](ch/lu/de/822c.md) | Finanzreglement der Luzerner Psychiatrie |
 | [822d](ch/lu/de/822d.md) | Tarifreglement für die Luzerner Psychiatrie |
+| [823](ch/lu/de/823.md) | Verordnung |
+| [823a](ch/lu/de/823a.md) | Verordnung |
+| [823b](ch/lu/de/823b.md) | Verordnung |
+| [823c](ch/lu/de/823c.md) | Verordnung |
+| [823e](ch/lu/de/823e.md) | Verordnung |
+| [823g](ch/lu/de/823g.md) | Verordnung |
+| [824](ch/lu/de/824.md) | Verordnung |
+| [824a](ch/lu/de/824a.md) | Verordnung |
+| [825a](ch/lu/de/825a.md) | Reglement für die Aufsichtskommission der Psychiatrischen Klinik St. Urban |
+| [826](ch/lu/de/826.md) | Reglement für die Aufsichtskommission der Luzerner Höhenklinik Montana |
+| [828](ch/lu/de/828.md) | Dekret |
+| [828a](ch/lu/de/828a.md) | Reglement |
 | [830](ch/lu/de/830.md) | Heilmittelverordnung |
+| [832](ch/lu/de/832.md) | Nr. 832 |
+| [832a](ch/lu/de/832a.md) | Nr. 832a |
 | [833](ch/lu/de/833.md) | Kantonale Betäubungsmittelverordnung |
 | [834](ch/lu/de/834.md) | Vollzugsverordnung zur eidgenössischen Chemikaliengesetzgebung |
 | [835](ch/lu/de/835.md) | Kantonale Epidemienverordnung |
@@ -19895,13 +21009,16 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [844](ch/lu/de/844.md) | Kantonale Fleischhygieneverordnung |
 | [844a](ch/lu/de/844a.md) | Kantonale Tabakprodukteverordnung |
 | [845](ch/lu/de/845.md) | Kantonale Tierseuchenverordnung |
+| [846a](ch/lu/de/846a.md) | Beschluss |
 | [847](ch/lu/de/847.md) | Gesetz über die Tierseuchenkasse |
 | [848](ch/lu/de/848.md) | Gesetz über das Halten von Hunden |
+| [848a](ch/lu/de/848a.md) | Verordnung |
 | [849](ch/lu/de/849.md) | Verordnung über das Halten von Hunden |
 | [850](ch/lu/de/850.md) | Vollzugsverordnung zum Bundesgesetz über die Arbeit in Industrie, Gewerbe und |
 | [851](ch/lu/de/851.md) | Gesetz betreffend die Einführung des eidgenössischen Fabrikgesetzes vom 18. |
 | [852](ch/lu/de/852.md) | Vollzugsverordnung zum Bundesgesetz über die Heimarbeit |
 | [853](ch/lu/de/853.md) | Vollziehungsverordnung zum Bundesgesetz über die Allgemeinverbindlicherklärung |
+| [853a](ch/lu/de/853a.md) | Nr. 853a |
 | [853b](ch/lu/de/853b.md) | Beschluss über die Allgemeinverbindlicherklärung des Gesamtarbeitsvertrages |
 | [854](ch/lu/de/854.md) | Normalarbeitsvertrag für das hauswirtschaftliche Arbeitsverhältnis |
 | [854a](ch/lu/de/854a.md) | Normalarbeitsvertrag für das landwirtschaftliche Arbeitsverhältnis |
@@ -19918,10 +21035,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [865a](ch/lu/de/865a.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Krankenversicherung |
 | [865b](ch/lu/de/865b.md) | Verordnung zum Bundesgesetz über die Unfallversicherung |
 | [865c](ch/lu/de/865c.md) | Verordnung über die Zulassung von Leistungserbringern zur Tätigkeit zulasten |
+| [865d](ch/lu/de/865d.md) | Nr. 865d |
 | [866](ch/lu/de/866.md) | Gesetz über die Verbilligung von Prämien der Krankenversicherung |
 | [866a](ch/lu/de/866a.md) | Verordnung zum Gesetz über die Verbilligung von Prämien der Krankenversicherung |
 | [867](ch/lu/de/867.md) | Betreuungs- und Pflegegesetz |
 | [867a](ch/lu/de/867a.md) | Verordnung zum Betreuungs- und Pflegegesetz |
+| [867b](ch/lu/de/867b.md) | Nr. 867b |
 | [867c](ch/lu/de/867c.md) | Beschluss über den kantonalen Anteil an der Vergütung der Kosten der Akut- |
 | [867d](ch/lu/de/867d.md) | Beschluss über den kantonalen Anteil an der Vergütung der Kosten der Akut- |
 | [867e](ch/lu/de/867e.md) | Beschluss über den kantonalen Anteil an der Vergütung der Kosten der Akut- |
@@ -19946,12 +21065,18 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [882](ch/lu/de/882.md) | Gesetz über die Einführung des Bundesgesetzes über die Invalidenversicherung |
 | [885](ch/lu/de/885.md) | Gesetz über die Familienzulagen |
 | [885a](ch/lu/de/885a.md) | Verordnung zum Kantonalen Familienzulagengesetz |
+| [885b](ch/lu/de/885b.md) | Beschluss |
+| [885c](ch/lu/de/885c.md) | Grossratsbeschluss |
+| [885d](ch/lu/de/885d.md) | Grossratsbeschluss |
 | [886](ch/lu/de/886.md) | Vollziehungsverordnung zum Bundesgesetz über die Familienzulagen für landwirtschaftliche |
+| [886a](ch/lu/de/886a.md) | Gesetz |
 | [887](ch/lu/de/887.md) | Gesetz über die familienergänzende Kinderbetreuung |
 | [887a](ch/lu/de/887a.md) | Verordnung zum Gesetz über die familienergänzende Kinderbetreuung |
+| [887b](ch/lu/de/887b.md) | Beschluss |
 | [890](ch/lu/de/890.md) | Gesetz über die Arbeitslosenversicherung und den Arbeitslosenhilfsfonds |
 | [890a](ch/lu/de/890a.md) | Verordnung über die Arbeitslosenversicherung und den Arbeitslosenhilfsfonds |
 | [890b](ch/lu/de/890b.md) | Geschäftsreglement der tripartiten Kommission |
+| [890c](ch/lu/de/890c.md) | Nr. 890c |
 | [892](ch/lu/de/892.md) | Sozialhilfegesetz |
 | [892a](ch/lu/de/892a.md) | Sozialhilfeverordnung |
 | [892b](ch/lu/de/892b.md) | Kantonale Asylverordnung |
@@ -19961,9 +21086,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [893c](ch/lu/de/893c.md) | Einführungsgesetz zum Opferhilfegesetz des Bundes |
 | [893d](ch/lu/de/893d.md) | Verordnung zum Einführungsgesetz zum Opferhilfegesetz des Bundes |
 | [894](ch/lu/de/894.md) | Gesetz über soziale Einrichtungen |
+| [894a](ch/lu/de/894a.md) | Nr. 894a |
 | [894b](ch/lu/de/894b.md) | Verordnung zum Gesetz über soziale Einrichtungen |
 | [894c](ch/lu/de/894c.md) | Beschluss über die Beitragsansätze in sozialen Einrichtungen gemäss § 2 des |
 | [895](ch/lu/de/895.md) | Verordnung über die Anerkennung und finanzielle Förderung sozialpädagogischer |
+| [896](ch/lu/de/896.md) | Nr. 896 |
 | [897](ch/lu/de/897.md) | Gesetz über Wohnbau- und Eigentumsförderung |
 | [897a](ch/lu/de/897a.md) | Verordnung über die Förderung des preisgünstigen Wohnungsbaus, der Erneuerung |
 | [897b](ch/lu/de/897b.md) | Verordnung über die Verbesserung der Wohnverhältnisse in Berggebieten |
@@ -19984,34 +21111,47 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [900a](ch/lu/de/900a.md) | Beschluss über die Zuständigkeiten nach dem Gesetz über die Wirtschaftsförderung |
 | [900b](ch/lu/de/900b.md) | Verordnung über Härtefallmassnahmen für Luzerner Unternehmen im Zusammenhang |
 | [900c](ch/lu/de/900c.md) | Verordnung über die Massnahmen für Fach- und Publikumsmessen von überkantonaler |
+| [901](ch/lu/de/901.md) | SRL-Nummer 901 |
+| [901a](ch/lu/de/901a.md) | SRL-Nummer 901a |
+| [901b](ch/lu/de/901b.md) | SRL-Nummer 901b |
+| [901e](ch/lu/de/901e.md) | SRL- |
 | [902](ch/lu/de/902.md) | Kantonales Landwirtschaftsgesetz |
 | [903](ch/lu/de/903.md) | Kantonale Landwirtschaftsverordnung |
 | [903a](ch/lu/de/903a.md) | Verordnung über die Gebühren für Beratungen und Weiterbildungskurse in der |
 | [903b](ch/lu/de/903b.md) | Reglement über die milchwirtschaftlichen Fachschulen |
 | [91](ch/lu/de/91.md) | Verordnung über Vergütungen im Bildungswesen |
+| [911](ch/lu/de/911.md) | Dekret |
 | [913](ch/lu/de/913.md) | Dekret über bäuerliche Hilfsmassnahmen |
 | [914](ch/lu/de/914.md) | Richtlinien für die Unterstützung von Strukturverbesserungen |
 | [916](ch/lu/de/916.md) | Verordnung über den Gebirgshilfefonds für Strukturverbesserungen |
 | [917](ch/lu/de/917.md) | Verordnung über die kontrollierte Ursprungsbezeichnung für Weine |
+| [933](ch/lu/de/933.md) | Nr. 933 |
 | [938](ch/lu/de/938.md) | Gesetz über die Viehversicherung |
 | [938a](ch/lu/de/938a.md) | Vollziehungsverordnung zum Gesetz über die Viehversicherung |
 | [945](ch/lu/de/945.md) | Kantonales Waldgesetz |
 | [946](ch/lu/de/946.md) | Kantonale Waldverordnung |
+| [949](ch/lu/de/949.md) | Nr. 949 |
 | [950](ch/lu/de/950.md) | Verordnung zum Bundesgesetz über das Messwesen |
 | [955](ch/lu/de/955.md) | Gewerbepolizeigesetz |
 | [956](ch/lu/de/956.md) | Gewerbepolizeiverordnung |
 | [958a](ch/lu/de/958a.md) | Verordnung über das Sammeln von Gaben und den Verkauf von Abzeichen |
+| [975](ch/lu/de/975.md) | Konkordat |
 | [976](ch/lu/de/976.md) | Vollzugsverordnung zum Bundesgesetz über Waffen, Waffenzubehör und Munition |
 | [977](ch/lu/de/977.md) | Vollzugsverordnung zur eidgenössischen Sprengstoffgesetzgebung |
 | [980](ch/lu/de/980.md) | Gesetz über das Gastgewerbe, den Handel mit alkoholischen Getränken und die |
 | [981](ch/lu/de/981.md) | Verordnung zum Gesetz über das Gastgewerbe, den Handel mit alkoholischen Getränken |
+| [984](ch/lu/de/984.md) | Gesetz über die Leihbibliotheken und über die Bekämpfung der Schmutz- und Schunderzeugnisse |
+| [985](ch/lu/de/985.md) | Vollziehungsverordnung |
 | [991](ch/lu/de/991.md) | Einführungsgesetz zum Bundesgesetz über Geldspiele |
+| [992](ch/lu/de/992.md) | Nr. 992 |
+| [992a](ch/lu/de/992a.md) | Nr. 992a |
 | [993](ch/lu/de/993.md) | Kantonale Geldspielverordnung |
 | [994](ch/lu/de/994.md) | Verordnung über die Verwendung der Reingewinne von Lotterien, Sportwetten und |
+| [9a](ch/lu/de/9a.md) | SRL-Nummer 9a |
 
 ## NE – Neuchâtel
 
-*827 laws*
+*1600 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -20020,11 +21160,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [104](ch/ne/fr/104.md) | Convention entre les cantons de Berne et Neuchâtel au sujet de la rectification |
 | [104.0](ch/ne/fr/104.0.md) | Décret portant adoption de la modification de la limite cantonale entre les |
 | [104.1](ch/ne/fr/104.1.md) | Arrêté concernant l'adoption du tracé de la limite cantonale dans le lac de |
+| [105](ch/ne/fr/105.md) | 9 Arrêté |
+| [106](ch/ne/fr/106.md) | 9 Arrêté |
 | [107](ch/ne/fr/107.md) | Décret portant adhésion du canton de Neuchâtel à l'accord entre le Conseil |
+| [107.1](ch/ne/fr/107.1.md) | 29 Arrêté |
+| [107.10](ch/ne/fr/107.10.md) | 29 Arrêté |
 | [108](ch/ne/fr/108.md) | Accord intercantonal sur l\x92élimination des entraves techniques au commerce\ |
+| [109](ch/ne/fr/109.md) | 22 Décret |
 | [120](ch/ne/fr/120.md) | Loi d\x92application de la loi fédérale sur l\x92interdiction de se dissimuler\ |
 | [131.0](ch/ne/fr/131.0.md) | Loi sur le droit de cité neuchâtelois (LDCN), du 27 mars 2017 |
 | [131.1](ch/ne/fr/131.1.md) | Règlement d\x92exécution de la loi sur le droit de cité neuchâtelois (RLDCN),\ |
+| [131.21](ch/ne/fr/131.21.md) | 6 Arrêté |
 | [132.0](ch/ne/fr/132.0.md) | Loi concernant l'harmonisation des registres officiels de personnes et le contrôle |
 | [132.01](ch/ne/fr/132.01.md) | Règlement d'exécution de la loi sur l'harmonisation des registres officiels |
 | [132.02](ch/ne/fr/132.02.md) | Loi d'introduction de la loi fédérale sur le séjour et l'établissement des |
@@ -20033,9 +21179,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [132.025](ch/ne/fr/132.025.md) | Arrêté d'application de la loi d'introduction de la loi fédérale sur le séjour |
 | [132.026](ch/ne/fr/132.026.md) | Loi portant adhésion au concordat sur l'exécution de la détention administrative |
 | [132.03](ch/ne/fr/132.03.md) | Règlement de la commission consultative en matière d\x92asile (CCMA), du 10\ |
+| [132.031](ch/ne/fr/132.031.md) | 22 Arrêté |
 | [132.04](ch/ne/fr/132.04.md) | Loi sur l'intégration et la cohésion multiculturelle, du 26 août 1996 |
 | [132.041](ch/ne/fr/132.041.md) | Règlement sur l\x92intégration et la cohésion multiculturelle, du 14 novembre\ |
 | [132.07](ch/ne/fr/132.07.md) | Arrêté concernant les émoluments perçus en application de la loi fédérale\ |
+| [132.08](ch/ne/fr/132.08.md) | 12 Arrêté |
 | [132.09](ch/ne/fr/132.09.md) | Arrêté d'application de la législation fédérale sur l'asile (ALAsi), du 15 |
 | [132.092](ch/ne/fr/132.092.md) | Directive relative à l'assurance-maladie des requérants d'asile, des personnes |
 | [133.2](ch/ne/fr/133.2.md) | Arrêté d'application de la législation fédérale en matière d'établissement |
@@ -20044,16 +21192,23 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [141.02](ch/ne/fr/141.02.md) | Arrêté d'application de la loi fédérale sur les droits politiques, du 26 avril |
 | [141.03](ch/ne/fr/141.03.md) | Décret sur l'introduction à titre expérimental des moyens électroniques facilitant |
 | [150.10](ch/ne/fr/150.10.md) | Loi sur la responsabilité des collectivités publiques et de leurs agents (Loi |
+| [150.11](ch/ne/fr/150.11.md) | 27 Arrêté |
 | [150.20](ch/ne/fr/150.20.md) | Loi sur la publication des actes officiels (LPAO), du 27 septembre 2016 |
+| [150.21](ch/ne/fr/150.21.md) | 11 Arrêté |
 | [150.22](ch/ne/fr/150.22.md) | Règlement d\x92exécution de la loi sur la publication des actes officiels\ |
 | [150.30](ch/ne/fr/150.30.md) | Convention intercantonale relative à la protection des données et à la transparence |
+| [150.31](ch/ne/fr/150.31.md) | 20 Règlement d'exécution |
 | [150.315](ch/ne/fr/150.315.md) | Arrêté fixant le tarif des émoluments perçus par le préposé à la protection |
+| [150.316](ch/ne/fr/150.316.md) | 12 Arrêté |
 | [150.32](ch/ne/fr/150.32.md) | Loi sur la vidéosurveillance des installations de l'État, du 6 novembre 2018 |
+| [150.33](ch/ne/fr/150.33.md) | ) |
 | [150.40](ch/ne/fr/150.40.md) | Loi sur le guichet sécurisé unique (LGSU), du 28 septembre 2004 |
 | [150.401](ch/ne/fr/150.401.md) | Règlement d'exécution de la loi sur le guichet sécurisé unique (RELGSU), du |
+| [150.401.1](ch/ne/fr/150.401.1.md) | 20 Arrêté |
 | [150.401.2](ch/ne/fr/150.401.2.md) | Règlement concernant l'accès cantonal rapide aux données de l'office du registre |
 | [150.5](ch/ne/fr/150.5.md) | Loi sur le traitement de données à des fins de gestion administrative et financière |
 | [150.50](ch/ne/fr/150.50.md) | Loi portant sur la base de données des établissements, entreprises et entités |
+| [150.500](ch/ne/fr/150.500.md) | 13 Règlement d'exécution |
 | [150.501](ch/ne/fr/150.501.md) | Règlement d\x92exécution de la loi sur la base de données des établissements,\ |
 | [150.51](ch/ne/fr/150.51.md) | Règlement d\x92exécution de la loi sur le traitement de données à des fins\ |
 | [150.6](ch/ne/fr/150.6.md) | Loi sur la statistique cantonale (LStat), du 25 janvier 2011 |
@@ -20066,6 +21221,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [151.108](ch/ne/fr/151.108.md) | Règlement de la commission des pétitions et des grâces sur le traitement des |
 | [151.109](ch/ne/fr/151.109.md) | Règlement du bureau du Grand Conseil concernant la procédure applicable pour |
 | [151.110](ch/ne/fr/151.110.md) | Loi sur la haute surveillance de la gestion des autorités judiciaires et l'exercice |
+| [151.111](ch/ne/fr/151.111.md) | 3 Arrêté |
 | [151.115](ch/ne/fr/151.115.md) | Loi sur le droit de pétition (LDPé), du 15 mars 2005 |
 | [151.20](ch/ne/fr/151.20.md) | Règlement sur l\x92indemnisation des membres et membres suppléants du Grand\ |
 | [151.30](ch/ne/fr/151.30.md) | Convention relative à la participation des Parlements cantonaux dans le cadre |
@@ -20073,21 +21229,39 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [152.100.0](ch/ne/fr/152.100.0.md) | Arrêté fixant les attributions et l'organisation des départements et de la |
 | [152.100.00](ch/ne/fr/152.100.00.md) | Règlement protocolaire de la République et Canton de Neuchâtel, du 14 décembre |
 | [152.100.001](ch/ne/fr/152.100.001.md) | Règlement sur l'organisation du Conseil d'Etat, du 16 mars 2005 |
+| [152.100.002](ch/ne/fr/152.100.002.md) | 8 Arrêté |
 | [152.100.003](ch/ne/fr/152.100.003.md) | Règlement de gestion opérationnelle des services de l'administration cantonale |
 | [152.100.01](ch/ne/fr/152.100.01.md) | Règlement d\x92organisation du Département de la sécurité, de la digitalisation\ |
+| [152.100.010](ch/ne/fr/152.100.010.md) | 25 Arrêté |
+| [152.100.011](ch/ne/fr/152.100.011.md) | 25 Arrêté |
 | [152.100.02](ch/ne/fr/152.100.02.md) | Règlement d\x92organisation du Département de l\x92économie et de la cohésion\ |
 | [152.100.020](ch/ne/fr/152.100.020.md) | Arrêté instituant le Département de la sécurité, de la digitalisation et de |
 | [152.100.03](ch/ne/fr/152.100.03.md) | Règlement d\x92organisation du Département du développement territorial et\ |
+| [152.100.030](ch/ne/fr/152.100.030.md) | 25 Arrêté |
+| [152.100.031](ch/ne/fr/152.100.031.md) | 25 Arrêté |
+| [152.100.032](ch/ne/fr/152.100.032.md) | 13 Arrêté |
 | [152.100.04](ch/ne/fr/152.100.04.md) | Règlement d\x92organisation du Département de la santé, de la jeunesse et\ |
+| [152.100.040](ch/ne/fr/152.100.040.md) | 25 Arrêté |
+| [152.100.041](ch/ne/fr/152.100.041.md) | 25 Arrêté |
 | [152.100.05](ch/ne/fr/152.100.05.md) | Règlement d\x92organisation du Département de la formation et des finances\ |
 | [152.100.06](ch/ne/fr/152.100.06.md) | Règlement d\x92organisation de la chancellerie d\x92État (RO-CHAN), du 27\ |
+| [152.100.07](ch/ne/fr/152.100.07.md) | 3 Règlement |
 | [152.100.08](ch/ne/fr/152.100.08.md) | Arrêté déléguant à la chancellerie la compétence de faire opposition aux commandements |
+| [152.100.09](ch/ne/fr/152.100.09.md) | 17 Arrêté |
 | [152.100.1](ch/ne/fr/152.100.1.md) | Arrêté concernant la réorganisation et la gestion des achats effectués par\ |
+| [152.100.10](ch/ne/fr/152.100.10.md) | 26 Règlement |
+| [152.100.100](ch/ne/fr/152.100.100.md) | 23 Règlement |
+| [152.100.2](ch/ne/fr/152.100.2.md) | 24 Arrêté |
+| [152.100.3](ch/ne/fr/152.100.3.md) | 28 Arrêté |
 | [152.100.30](ch/ne/fr/152.100.30.md) | Arrêté relatif au tarif horaire des émoluments (ATHE), du 1er avril 2020 |
 | [152.100.4](ch/ne/fr/152.100.4.md) | Arrêté concernant la relocalisation de services et la création de centres\ |
 | [152.100.5](ch/ne/fr/152.100.5.md) | Arrêté concernant le plan de mobilité de l\x92administration cantonale, du\ |
+| [152.105](ch/ne/fr/152.105.md) | 21 Arrêté |
+| [152.107.10](ch/ne/fr/152.107.10.md) | 13 Arrêté |
+| [152.109.10](ch/ne/fr/152.109.10.md) | 10 Arrêté |
 | [152.111](ch/ne/fr/152.111.md) | Loi sur la politique familiale et l'égalité entre hommes et femmes, du 5 septembre |
 | [152.111.1](ch/ne/fr/152.111.1.md) | Règlement d'application de la loi sur la politique familiale et l'égalité entre |
+| [152.111.15](ch/ne/fr/152.111.15.md) | 3 Arrêté |
 | [152.112](ch/ne/fr/152.112.md) | Règlement concernant une formulation des textes officiels qui respecte l'égalité |
 | [152.113](ch/ne/fr/152.113.md) | Arrêté concernant une représentation équilibrée des genres et de la diversité\ |
 | [152.130](ch/ne/fr/152.130.md) | Loi sur la procédure administrative (LPA), du 18 mars 2025 |
@@ -20096,27 +21270,58 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [152.150.20](ch/ne/fr/152.150.20.md) | Règlement fixant les émoluments relatifs à la santé publique, du 20 décembre |
 | [152.323.0](ch/ne/fr/152.323.0.md) | Loi sur la prévoyance professionnelle en faveur des membres du Conseil d'Etat, |
 | [152.510](ch/ne/fr/152.510.md) | Loi sur le statut de la fonction publique (LSt), du 28 juin 1995 |
+| [152.510.0](ch/ne/fr/152.510.0.md) | 5 Loi |
+| [152.510.01](ch/ne/fr/152.510.01.md) | 5 Arrêté |
+| [152.510.02](ch/ne/fr/152.510.02.md) | 23 Décret |
+| [152.510.03](ch/ne/fr/152.510.03.md) | 7 Loi |
 | [152.511](ch/ne/fr/152.511.md) | Règlement général d'application de la loi sur le statut de la fonction publique |
 | [152.511.10](ch/ne/fr/152.511.10.md) | Règlement concernant les traitements de la fonction publique (RTFP), du 9 mars |
 | [152.511.100](ch/ne/fr/152.511.100.md) | Arrêté adoptant le tableau des fonctions des différents services de l'administration |
+| [152.511.101](ch/ne/fr/152.511.101.md) | 8 Arrêté |
 | [152.511.102](ch/ne/fr/152.511.102.md) | Arrêté réglant les modalités de validation et de rémunération du service de |
 | [152.511.103](ch/ne/fr/152.511.103.md) | Règlement sur la fixation et l'évolution des traitements du personnel policier |
 | [152.511.104](ch/ne/fr/152.511.104.md) | Arrêté fixant le montant de l'allocation complémentaire, du 5 décembre 2001 |
 | [152.511.105](ch/ne/fr/152.511.105.md) | Règlement concernant la protection de la santé et la sécurité du travail au\ |
 | [152.511.106](ch/ne/fr/152.511.106.md) | Arrêté concernant la subvention aux abonnements de transports publics, du 26 |
+| [152.511.107](ch/ne/fr/152.511.107.md) | 23 Arrêté |
+| [152.511.108](ch/ne/fr/152.511.108.md) | 15 Décret |
 | [152.511.14](ch/ne/fr/152.511.14.md) | Arrêté relatif aux apprenti-e-s et aux stagiaires préparant une maturité professionnelle, |
+| [152.511.15](ch/ne/fr/152.511.15.md) | 10 Arrêté |
 | [152.511.16](ch/ne/fr/152.511.16.md) | Arrêté relatif à la rémunération des étudiants ayant l'obligation légale ou |
 | [152.511.2](ch/ne/fr/152.511.2.md) | Règlement concernant les indemnités versées aux titulaires de fonctions publiques, |
 | [152.511.20](ch/ne/fr/152.511.20.md) | Arrêté fixant le montant de l'indemnité kilométrique versée aux titulaires |
+| [152.511.21](ch/ne/fr/152.511.21.md) | 11 Arrêté |
+| [152.511.3](ch/ne/fr/152.511.3.md) | 14 Règlement |
 | [152.511.4](ch/ne/fr/152.511.4.md) | Règlement relatif aux obligations attachées à certaines fonctions de l'administration |
 | [152.511.40](ch/ne/fr/152.511.40.md) | Arrêté relatif à l'assermentation des agentes et agents de détention, ainsi |
 | [152.511.5](ch/ne/fr/152.511.5.md) | Règlement relatif à l'interdiction de fumer dans les locaux de l'administration |
 | [152.512](ch/ne/fr/152.512.md) | Règlement des fonctionnaires (RDF), du 9 mars 2005 |
+| [152.512.01](ch/ne/fr/152.512.01.md) | 9 Arrêté |
+| [152.512.02](ch/ne/fr/152.512.02.md) | 8 Arrêté |
 | [152.512.05](ch/ne/fr/152.512.05.md) | Arrêté concernant le groupe de confiance de l'Etat de Neuchâtel, du 2 avril |
 | [152.513](ch/ne/fr/152.513.md) | Règlement général d'application de la loi sur le statut de la fonction publique |
+| [152.513.0](ch/ne/fr/152.513.0.md) | 14 Règlement d'application |
 | [152.513.1](ch/ne/fr/152.513.1.md) | Arrêté précisant le statut du personnel enseignant des institutions pour enfants |
+| [152.513.2](ch/ne/fr/152.513.2.md) | 3 Arrêté |
+| [152.513.3](ch/ne/fr/152.513.3.md) | 4 Arrêté |
+| [152.513.4](ch/ne/fr/152.513.4.md) | 4 Arrêté |
+| [152.513.41](ch/ne/fr/152.513.41.md) | 25 Arrêté |
+| [152.513.42](ch/ne/fr/152.513.42.md) | 22 Arrêté |
+| [152.513.43](ch/ne/fr/152.513.43.md) | 20 Arrêté |
+| [152.513.6](ch/ne/fr/152.513.6.md) | 19 Arrêté |
+| [152.513.7](ch/ne/fr/152.513.7.md) | 29 Arrêté |
 | [152.550](ch/ne/fr/152.550.md) | Loi sur la Caisse de pensions pour la fonction publique du canton de Neuchâtel |
+| [152.551](ch/ne/fr/152.551.md) | 19 Loi |
+| [152.551.002](ch/ne/fr/152.551.002.md) | 18 Arrêté |
+| [152.551.1](ch/ne/fr/152.551.1.md) | 7 Arrêté |
+| [152.551.10](ch/ne/fr/152.551.10.md) | 7 Arrêté |
 | [152.551.11](ch/ne/fr/152.551.11.md) | Règlement d'organisation et de fonctionnement de la commission thématique Prévoyance |
+| [152.551.21](ch/ne/fr/152.551.21.md) | 17 Arrêté |
+| [152.551.22](ch/ne/fr/152.551.22.md) | 5 Arrêté |
+| [152.551.23](ch/ne/fr/152.551.23.md) | 13 Arrêté |
+| [152.555](ch/ne/fr/152.555.md) | 21 Décret |
+| [152.555.1](ch/ne/fr/152.555.1.md) | 13 Arrêté |
+| [152.556](ch/ne/fr/152.556.md) | 27 Décret |
 | [152.72](ch/ne/fr/152.72.md) | Arrêté concernant les indemnités de présence et de déplacement des membres |
 | [161.1](ch/ne/fr/161.1.md) | Loi d'organisation judiciaire neuchâteloise (OJN), du 27 janvier 2010 |
 | [161.12](ch/ne/fr/161.12.md) | Règlement de la Conférence judiciaire, du 20 août 2018 |
@@ -20124,77 +21329,131 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [161.2](ch/ne/fr/161.2.md) | Loi sur l\x92assistance judiciaire (LAJ), du 28 mai 2019 |
 | [161.3](ch/ne/fr/161.3.md) | Loi sur la médiation civile et pénale (LMCP), du 24 mai 2023 |
 | [161.30](ch/ne/fr/161.30.md) | Règlement d\x92exécution de la loi sur la médiation civile et pénale (RLMCP),\ |
+| [161.31](ch/ne/fr/161.31.md) | 20 Règlement d’exécution |
+| [161.5](ch/ne/fr/161.5.md) | 4 Arrêté |
+| [161.7](ch/ne/fr/161.7.md) | 16 Loi |
+| [162.102](ch/ne/fr/162.102.md) | 10 Règlement |
 | [162.104](ch/ne/fr/162.104.md) | Règlement du Tribunal cantonal, du 20 mars 2017 |
 | [162.105](ch/ne/fr/162.105.md) | Règlement du Tribunal d\x92instance du Canton de Neuchâtel, du 21 octobre\ |
+| [162.114.1](ch/ne/fr/162.114.1.md) | 8 Règlement d'organisation |
+| [162.221](ch/ne/fr/162.221.md) | 23 Loi |
+| [162.221.0](ch/ne/fr/162.221.0.md) | 21 Loi |
+| [162.221.1](ch/ne/fr/162.221.1.md) | 16 Arrêté |
+| [162.221.2](ch/ne/fr/162.221.2.md) | 9 Arrêté |
+| [162.611](ch/ne/fr/162.611.md) | 9 Arrêté |
+| [162.612](ch/ne/fr/162.612.md) | 20 Loi |
+| [162.632](ch/ne/fr/162.632.md) | 30 Arrêté |
 | [162.7](ch/ne/fr/162.7.md) | Loi sur la magistrature de l'ordre judiciaire et la surveillance des autorités |
 | [162.70](ch/ne/fr/162.70.md) | Règlement organique du Conseil de la magistrature, du 30 avril 2009 |
 | [164.1](ch/ne/fr/164.1.md) | Loi fixant le tarif des frais, des émoluments de chancellerie et des dépens |
+| [164.11](ch/ne/fr/164.11.md) | 22 Arrêté |
 | [165.10](ch/ne/fr/165.10.md) | Loi sur la profession d'avocat ou d'avocate (LAv), du 19 juin 2002 |
 | [165.101](ch/ne/fr/165.101.md) | Règlement d'exécution de la loi sur la profession d'avocat ou d'avocate (RLAv), |
 | [165.105](ch/ne/fr/165.105.md) | Arrêté concernant les émoluments relatifs à l'exercice de la profession d'avocate |
 | [165.106](ch/ne/fr/165.106.md) | Arrêté concernant la formation des avocates et avocats stagiaires, du 5 mai |
+| [165.31](ch/ne/fr/165.31.md) | 9 Arrêté |
 | [166.10](ch/ne/fr/166.10.md) | Loi sur le notariat (LN), du 26 août 1996 |
 | [166.101](ch/ne/fr/166.101.md) | Règlement d'exécution de la loi sur le notariat (RELN), du 22 décembre 1997 |
 | [166.101.1](ch/ne/fr/166.101.1.md) | Arrêté concernant les émoluments perçus par les autorités cantonales en matière |
+| [166.101.2](ch/ne/fr/166.101.2.md) | 22 Arrêté |
 | [166.101.3](ch/ne/fr/166.101.3.md) | Règlement organique du Conseil notarial, du 13 janvier 1999 |
+| [166.101.30](ch/ne/fr/166.101.30.md) | 13 Règlement |
 | [166.102](ch/ne/fr/166.102.md) | Règlement sur la formation des stagiaires notaires, du 20 décembre 2005 |
 | [166.31](ch/ne/fr/166.31.md) | Arrêté fixant le tarif des émoluments des notaires, du 13 juin 2012 |
 | [171.1](ch/ne/fr/171.1.md) | Loi sur les communes (LCo), du 21 décembre 1964 |
+| [171.15](ch/ne/fr/171.15.md) | 18 Règlement |
+| [171.150](ch/ne/fr/171.150.md) | 5 Directives |
+| [171.151](ch/ne/fr/171.151.md) | 8 Directives |
+| [171.155](ch/ne/fr/171.155.md) | 29 Décret |
 | [171.16](ch/ne/fr/171.16.md) | Loi sur la péréquation financière intercommunale (LPFI), du 2 février 2000 |
 | [171.160](ch/ne/fr/171.160.md) | Règlement d'application de la loi sur la péréquation financière intercommunale |
 | [172.41](ch/ne/fr/172.41.md) | Loi sur le fonds d'aide aux communes (LFAC), du 3 décembre 2001 |
 | [172.410](ch/ne/fr/172.410.md) | Règlement d'application de la loi sur le fonds d'aide aux communes (RALFAC), |
+| [172.45](ch/ne/fr/172.45.md) | 11 Décret |
+| [174.210](ch/ne/fr/174.210.md) | 11 Arrêté |
+| [176.10](ch/ne/fr/176.10.md) | 19 Arrêté |
+| [181.1](ch/ne/fr/181.1.md) | 3 Décret |
 | [181.10](ch/ne/fr/181.10.md) | Concordat entre l'Etat de Neuchâtel et l'Eglise réformée évangélique du canton |
 | [211.1](ch/ne/fr/211.1.md) | Loi concernant l'introduction du code civil suisse (LI-CC), du 22 mars 1910 |
+| [212.110](ch/ne/fr/212.110.md) | 1er Arrêté |
 | [212.115](ch/ne/fr/212.115.md) | Arrêté concernant l'attribution des compétences en matière de changement de |
 | [212.120](ch/ne/fr/212.120.md) | Règlement sur l\x92état civil (REC), du 22 novembre 2023 |
+| [212.120.0](ch/ne/fr/212.120.0.md) | 16 Arrêté |
+| [212.120.01](ch/ne/fr/212.120.01.md) | 22 Arrêté |
 | [212.120.02](ch/ne/fr/212.120.02.md) | Arrêté concernant les émoluments perçus en matière de changement de nom, du |
 | [212.120.10](ch/ne/fr/212.120.10.md) | Loi sur le partenariat enregistré, du 27 janvier 2004 |
 | [212.120.100](ch/ne/fr/212.120.100.md) | Règlement d'exécution de la loi sur le partenariat enregistré, du 23 juin 2004 |
 | [213.15](ch/ne/fr/213.15.md) | Arrêté concernant les offices de consultation conjugale, du 5 mai 1993 |
+| [213.210](ch/ne/fr/213.210.md) | 22 Arrêté |
 | [213.211](ch/ne/fr/213.211.md) | Arrêté fixant les émoluments en matière d'adoption, du 17 octobre 2012 |
 | [213.221](ch/ne/fr/213.221.md) | Loi sur le recouvrement et l'avance des contributions d'entretien (LRACE), |
 | [213.221.1](ch/ne/fr/213.221.1.md) | Arrêté concernant le recouvrement et l'avance des contributions d'entretien |
+| [213.231](ch/ne/fr/213.231.md) | 13 Règlement d'application |
 | [213.31](ch/ne/fr/213.31.md) | Règlement du service de protection de l'adulte et de la jeunesse, du 13 décembre |
 | [213.32](ch/ne/fr/213.32.md) | Loi concernant les autorités de protection de l'enfant et de l'adulte (LAPEA), |
+| [213.33](ch/ne/fr/213.33.md) | 25 Arrêté |
 | [214.10](ch/ne/fr/214.10.md) | Loi sur le traitement des actes à cause de mort et actes similaires (LACDM), |
 | [214.101](ch/ne/fr/214.101.md) | Règlement d'exécution de la loi sur le traitement des actes à cause de mort |
 | [215.111](ch/ne/fr/215.111.md) | Loi d'introduction de la loi fédérale sur le droit foncier rural (LILDFR), |
 | [215.111.1](ch/ne/fr/215.111.1.md) | Arrêté d'exécution de la loi d'introduction de la loi fédérale sur le droit |
 | [215.131](ch/ne/fr/215.131.md) | Loi d'application de la loi fédérale sur l'acquisition d'immeubles par des |
 | [215.131.1](ch/ne/fr/215.131.1.md) | Arrêté d'exécution de la loi d'application de la loi fédérale sur l'acquisition |
+| [215.131.10](ch/ne/fr/215.131.10.md) | 21 Arrêté |
 | [215.211](ch/ne/fr/215.211.md) | Arrêté fixant le maximum du taux d'intérêt pour les créances garanties par |
+| [215.31](ch/ne/fr/215.31.md) | 26 Arrêté |
 | [215.32](ch/ne/fr/215.32.md) | Arrêté concernant les animaux trouvés, du 2 juillet 2004 |
 | [215.411](ch/ne/fr/215.411.md) | Règlement\t sur le registre foncier (RRF), du 25 septembre 1911 |
 | [215.411.3](ch/ne/fr/215.411.3.md) | Règlement sur l'épuration systématique des servitudes au registre foncier, |
 | [215.411.4](ch/ne/fr/215.411.4.md) | Règlement concernant l'introduction du registre foncier fédéral (RI-RFF), du |
 | [215.411.40](ch/ne/fr/215.411.40.md) | Règlement concernant la tenue du registre foncier par traitement informatique, |
+| [215.411.5](ch/ne/fr/215.411.5.md) | 9 Arrêté |
 | [215.411.6](ch/ne/fr/215.411.6.md) | Loi concernant le tarif des émoluments du registre foncier (LERF), du 25 janvier |
 | [215.411.60](ch/ne/fr/215.411.60.md) | Arrêté concernant le tarif des émoluments fixes du registre foncier, du 16 |
+| [215.411.61](ch/ne/fr/215.411.61.md) | 28 Arrêté |
+| [215.411.7](ch/ne/fr/215.411.7.md) | 4 Arrêté d'exécution |
 | [215.411.8](ch/ne/fr/215.411.8.md) | Arrêté concernant la publication des acquisitions immobilières, du 6 décembre |
 | [215.420](ch/ne/fr/215.420.md) | Loi cantonale sur la mensuration officielle (LCMO), du 5 septembre 1995 |
 | [215.421](ch/ne/fr/215.421.md) | Règlement d'exécution de la loi cantonale sur la mensuration officielle (RLCMO), |
 | [215.421.1](ch/ne/fr/215.421.1.md) | Arrêté fixant le tarif des émoluments du service de la géomatique et du registre |
+| [222.11](ch/ne/fr/222.11.md) | 25 Décret |
 | [223.10](ch/ne/fr/223.10.md) | Arrêté concernant la procédure en matière de garantie dans le commerce du bétail, |
 | [224.1](ch/ne/fr/224.1.md) | Loi d'introduction du code des obligations (LI-CO), du 27 janvier 2010 |
 | [224.2](ch/ne/fr/224.2.md) | Arrêté d'exécution de la loi d'introduction du code des obligations (bail à |
+| [224.20](ch/ne/fr/224.20.md) | 13 Arrêté |
+| [224.21](ch/ne/fr/224.21.md) | 13 Arrêté |
 | [224.3](ch/ne/fr/224.3.md) | Loi d'introduction de la loi fédérale sur le bail à ferme agricole (LI-LBFA), |
 | [224.30](ch/ne/fr/224.30.md) | Arrêté d'exécution de la loi d'introduction de la loi fédérale sur le bail |
 | [224.4](ch/ne/fr/224.4.md) | Décret chargeant le Conseil d'Etat de l'application de la loi fédérale sur |
 | [225.42](ch/ne/fr/225.42.md) | Arrêté relatif au contrat type de travail pour le service de maison et pour |
 | [225.43](ch/ne/fr/225.43.md) | Arrêté concernant le contrat-type de travail pour l'agriculture (CTT-Agri), |
 | [225.44](ch/ne/fr/225.44.md) | Arrêté relatif au contrat-type du personnel de vente dans le commerce de détail, |
+| [225.45](ch/ne/fr/225.45.md) | 13 Contrat-type de travail |
 | [225.46](ch/ne/fr/225.46.md) | Contrat-type de travail pour le personnel forestier, du 14 octobre 2009 |
+| [226.1](ch/ne/fr/226.1.md) | 20 Décret |
+| [227.1](ch/ne/fr/227.1.md) | 28 Loi |
 | [228.1](ch/ne/fr/228.1.md) | Arrêté concernant l'organisation du registre du commerce, du 8 juillet 1996 |
 | [251.1](ch/ne/fr/251.1.md) | Loi d'introduction du code de procédure civile (LI-CPC), du 27 janvier 2010 |
+| [251.4](ch/ne/fr/251.4.md) | 28 Loi |
+| [252.1](ch/ne/fr/252.1.md) | 5 Loi sur l'arbitrage (LIA) |
+| [252.2](ch/ne/fr/252.2.md) | 27 La conférence des directeurs cantonaux de la justice: |
+| [253.10](ch/ne/fr/253.10.md) | 10 Concordat |
+| [253.30](ch/ne/fr/253.30.md) | 8 Décret |
 | [253.31](ch/ne/fr/253.31.md) | Concordat sur l'entraide judiciaire en matière civile, du 26 avril 1974 8/9 |
+| [253.50](ch/ne/fr/253.50.md) | 20 Loi |
+| [253.51](ch/ne/fr/253.51.md) | 10 Concordat |
 | [261.1](ch/ne/fr/261.1.md) | Loi d'introduction de la loi fédérale sur la poursuite pour dettes et la faillite |
 | [261.10](ch/ne/fr/261.10.md) | Arrêté concernant l'organisation de l'office des poursuites et de l'office |
 | [261.101](ch/ne/fr/261.101.md) | Arrêté concernant la consultation des registres de l'office des poursuites |
+| [262.1](ch/ne/fr/262.1.md) | 1er Arrêté |
+| [263.10](ch/ne/fr/263.10.md) | 13 Décret |
 | [263.11](ch/ne/fr/263.11.md) | Concordat sur l'entraide judiciaire pour l'exécution des prétentions de droit |
+| [311.02](ch/ne/fr/311.02.md) | 24 Loi |
 | [312.0](ch/ne/fr/312.0.md) | Code pénal neuchâtelois (CPN), du 20 novembre 1940 |
+| [321.0](ch/ne/fr/321.0.md) | 23 Arrêté |
 | [322.0](ch/ne/fr/322.0.md) | Loi d\x92introduction du Code de procédure pénale suisse (LI-CPP), du 27 janvier\ |
 | [322.00](ch/ne/fr/322.00.md) | Directive du procureur général sur les dénonciations simplifiées au service |
+| [322.000](ch/ne/fr/322.000.md) | 22 Arrêté |
+| [322.001](ch/ne/fr/322.001.md) | 15 Directive |
 | [322.002](ch/ne/fr/322.002.md) | Arrêté concernant l'effacement de profils d'ADN, du 21 décembre 2005 |
 | [322.003](ch/ne/fr/322.003.md) | Règlement de fonctionnement de la commission de dangerosité, du 22 mars 2007 |
 | [322.01](ch/ne/fr/322.01.md) | Arrêté désignant les autorités compétentes et fixant la procédure à suivre |
@@ -20204,20 +21463,44 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [323.0](ch/ne/fr/323.0.md) | Loi d'introduction de la loi fédérale sur la procédure pénale applicable aux |
 | [323.1](ch/ne/fr/323.1.md) | Concordat sur l\x92exécution de la détention pénale des personnes mineures\ |
 | [323.11](ch/ne/fr/323.11.md) | Loi d\x92introduction de la loi fédérale régissant la condition pénale des\ |
+| [323.2](ch/ne/fr/323.2.md) | 2 Arrêté |
+| [323.20](ch/ne/fr/323.20.md) | 2 Arrêté |
 | [340](ch/ne/fr/340.md) | Arrêté concernant le casier judiciaire et le contrôle cantonal des condamnations, |
 | [351.0](ch/ne/fr/351.0.md) | Loi sur l'exécution des peines et des mesures pour les personnes adultes (LPMPA), |
 | [351.01](ch/ne/fr/351.01.md) | Arrêté sur l\x92exécution des peines et des mesures pour les personnes adultes\ |
+| [351.1](ch/ne/fr/351.1.md) | 6 Arrêté |
+| [351.10](ch/ne/fr/351.10.md) | 31 Décision |
+| [351.2](ch/ne/fr/351.2.md) | 31 Arrêté |
+| [351.3](ch/ne/fr/351.3.md) | 4 Arrêté |
 | [351.4](ch/ne/fr/351.4.md) | Arrêté d\x92application en matière d\x92exécution des expulsions pénales,\ |
+| [352.1](ch/ne/fr/352.1.md) | 3 Règlement général |
+| [352.2](ch/ne/fr/352.2.md) | 13 Arrêté |
+| [352.3](ch/ne/fr/352.3.md) | 11 Arrêté |
+| [353.1](ch/ne/fr/353.1.md) | 30 Arrêté |
+| [354.1](ch/ne/fr/354.1.md) | 27 Décret |
 | [354.2](ch/ne/fr/354.2.md) | Concordat sur l'exécution des peines privatives de liberté et des mesures concernant |
 | [354.21](ch/ne/fr/354.21.md) | Règlement concernant l\x92octroi d\x92autorisations de sortie aux personnes\ |
 | [354.22](ch/ne/fr/354.22.md) | Règlement sur l\x92exécution des peines sous forme du travail d\x92intérêt\ |
 | [354.23](ch/ne/fr/354.23.md) | Règlement sur l\x92exécution des peines sous la forme de la semi-détention\ |
 | [354.24](ch/ne/fr/354.24.md) | Règlement sur l\x92exécution des peines privatives de liberté sous surveillance\ |
+| [354.25](ch/ne/fr/354.25.md) | 1er Règlement |
+| [354.26](ch/ne/fr/354.26.md) | 24 Règlement |
+| [354.3](ch/ne/fr/354.3.md) | 17 Arrêté |
+| [354.4](ch/ne/fr/354.4.md) | 1er Loi |
+| [354.5](ch/ne/fr/354.5.md) | 5 Concordat |
 | [400.1](ch/ne/fr/400.1.md) | Loi sur l'accueil des enfants (LAE), du 28 septembre 2010 |
 | [400.10](ch/ne/fr/400.10.md) | Règlement général sur l\x92accueil des enfants (REGAE), du 7 juillet 2025 |
 | [400.100](ch/ne/fr/400.100.md) | Arrêté concernant la participation financière journalière des parents aux\ |
+| [400.100.0](ch/ne/fr/400.100.0.md) | 3 Arrêté |
 | [400.100.1](ch/ne/fr/400.100.1.md) | Arrêté relatif à l'utilisation de la vidéosurveillance dans les structures |
+| [400.100.10](ch/ne/fr/400.100.10.md) | 27 Arrêté |
+| [401.1](ch/ne/fr/401.1.md) | 17 Loi |
+| [401.10](ch/ne/fr/401.10.md) | 18 Règlement |
+| [410.03](ch/ne/fr/410.03.md) | 15 Arrêté |
+| [410.04](ch/ne/fr/410.04.md) | 10 Arrêté |
+| [410.05](ch/ne/fr/410.05.md) | 9 Directive |
 | [410.10](ch/ne/fr/410.10.md) | Loi sur l'organisation scolaire (LOS), du 28 mars 1984 |
+| [410.100](ch/ne/fr/410.100.md) | 13 Règlement |
 | [410.101](ch/ne/fr/410.101.md) | Règlement du cycle 3 de la scolarité obligatoire, du 6 mai 2015 |
 | [410.102](ch/ne/fr/410.102.md) | Accord intercantonal sur la collaboration dans le domaine de la pédagogie\ |
 | [410.105](ch/ne/fr/410.105.md) | Arrêté sur le subventionnement des périodes d\x92enseignement et le financement\ |
@@ -20225,137 +21508,421 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [410.107](ch/ne/fr/410.107.md) | Arrêté relatif aux cours de langue et de culture d\x92origine (LCO) dans la\ |
 | [410.108](ch/ne/fr/410.108.md) | Arrêté relatif à la scolarisation des élèves relevant du domaine de l\x92\ |
 | [410.109](ch/ne/fr/410.109.md) | Arrêté concernant la mise en place d\x92une structure de suivi scolaire pour\ |
+| [410.110](ch/ne/fr/410.110.md) | 3 Arrêté |
 | [410.111](ch/ne/fr/410.111.md) | Arrêté concernant la scolarisation à domicile d\x92un-e enfant en âge de scolarité\ |
+| [410.115](ch/ne/fr/410.115.md) | 27 Arrêté |
 | [410.131](ch/ne/fr/410.131.md) | Loi sur l'enseignement secondaire supérieur, du 19 décembre 1984 |
 | [410.131.0](ch/ne/fr/410.131.0.md) | Décret concernant la réorganisation de l'enseignement secondaire supérieur, |
+| [410.131.3](ch/ne/fr/410.131.3.md) | 20 Directive |
+| [410.131.4](ch/ne/fr/410.131.4.md) | 20 Directive |
 | [410.131.5](ch/ne/fr/410.131.5.md) | Arrêté concernant les mesures pour les personnes vivant avec un handicap dans |
 | [410.131.6](ch/ne/fr/410.131.6.md) | Règlement transitoire d'exécution de la loi fédérale concernant l\x92adoption\ |
+| [410.131.7](ch/ne/fr/410.131.7.md) | 23 Arrêté |
 | [410.132](ch/ne/fr/410.132.md) | Règlement de la CDIP sur la reconnaissance des certificats de maturité gymnasiale |
+| [410.132.1](ch/ne/fr/410.132.1.md) | 9 Arrêté |
+| [410.178](ch/ne/fr/410.178.md) | 24 Décret |
+| [410.179](ch/ne/fr/410.179.md) | 24 Décret |
+| [410.180](ch/ne/fr/410.180.md) | 16 Loi |
 | [410.181](ch/ne/fr/410.181.md) | Concordat sur la coordination scolaire, du 29 octobre 1970 |
+| [410.181.0](ch/ne/fr/410.181.0.md) | 25 Arrêté |
+| [410.181.01](ch/ne/fr/410.181.01.md) | 25 Convention intercantonale |
+| [410.182](ch/ne/fr/410.182.md) | 30 Arrêté |
 | [410.190](ch/ne/fr/410.190.md) | Convention concernant le changement de domicile des élèves, du 7 décembre 1907 |
 | [410.191](ch/ne/fr/410.191.md) | Annexe à la convention du 7 décembre 1907 concernant le changement de domicile |
+| [410.192](ch/ne/fr/410.192.md) | 12 Arrêté |
 | [410.192.0](ch/ne/fr/410.192.0.md) | Convention intercantonale réglant la fréquentation d'une école située dans |
 | [410.194](ch/ne/fr/410.194.md) | Arrêté concernant l'accès aux prestations du Service de l'enseignement obligatoire |
 | [410.23](ch/ne/fr/410.23.md) | Loi concernant les autorités scolaires (LAS), du 18 octobre 1983 |
+| [410.235](ch/ne/fr/410.235.md) | 23 Arrêté |
 | [410.240](ch/ne/fr/410.240.md) | Arrêté concernant la fréquentation de l'école obligatoire, du 19 février 1986 |
 | [410.241](ch/ne/fr/410.241.md) | Arrêté concernant le contrôle de l'enseignement privé, du 19 février 1986 |
 | [410.242](ch/ne/fr/410.242.md) | Arrêté concernant les mesures d\x92exclusion dans la scolarité obligatoire,\ |
+| [410.245](ch/ne/fr/410.245.md) | 15 Arrêté |
 | [410.246](ch/ne/fr/410.246.md) | Règlement de l'informatique scolaire dans l'enseignement obligatoire et postobligatoire |
+| [410.246.1](ch/ne/fr/410.246.1.md) | 1er Arrêté |
 | [410.247](ch/ne/fr/410.247.md) | Arrêté concernant le programme Sports-Arts-Études dans la scolarité obligatoire, |
+| [410.283](ch/ne/fr/410.283.md) | 31 Arrêté |
+| [410.311](ch/ne/fr/410.311.md) | 22 Arrêté |
+| [410.312](ch/ne/fr/410.312.md) | 30 Arrêté |
+| [410.312.1](ch/ne/fr/410.312.1.md) | 2 Arrêté |
+| [410.313](ch/ne/fr/410.313.md) | 12 Arrêté |
 | [410.313.1](ch/ne/fr/410.313.1.md) | Arrêté définissant les grilles horaires de la scolarité obligatoire, du 17 |
+| [410.314](ch/ne/fr/410.314.md) | 16 Arrêté |
+| [410.316](ch/ne/fr/410.316.md) | 6 Arrêté |
+| [410.317](ch/ne/fr/410.317.md) | 27 Arrêté |
+| [410.318](ch/ne/fr/410.318.md) | 5 Arrêté |
+| [410.350](ch/ne/fr/410.350.md) | 21 Arrêté |
 | [410.420.12](ch/ne/fr/410.420.12.md) | Arrêté concernant l'enseignement à temps partiel au cours des sept premières |
+| [410.420.502](ch/ne/fr/410.420.502.md) | 6 Arrêté |
+| [410.423.1](ch/ne/fr/410.423.1.md) | 2 Loi |
+| [410.423.10](ch/ne/fr/410.423.10.md) | 8 Règlement d'exécution |
+| [410.423.101](ch/ne/fr/410.423.101.md) | 14 Arrêté |
 | [410.510.1](ch/ne/fr/410.510.1.md) | Arrêté concernant l'application des mesures d'assouplissement lors de l'admission |
 | [410.510.2](ch/ne/fr/410.510.2.md) | Arrêté relatif à l'intégration d'un-e élève externe dans la scolarité obligatoire, |
+| [410.512.1](ch/ne/fr/410.512.1.md) | 23 Arrêté |
 | [410.512.3](ch/ne/fr/410.512.3.md) | Arrêté relatif aux mesures particulières pour les élèves de la scolarité obligatoire, |
+| [410.512.4](ch/ne/fr/410.512.4.md) | 3 Arrêté |
+| [410.515.1](ch/ne/fr/410.515.1.md) | 21 Arrêté |
+| [410.515.2](ch/ne/fr/410.515.2.md) | 28 Arrêté |
+| [410.515.3](ch/ne/fr/410.515.3.md) | 2 Arrêté |
+| [410.515.4](ch/ne/fr/410.515.4.md) | 6 Arrêté |
+| [410.515.7](ch/ne/fr/410.515.7.md) | 22 Arrêté |
 | [410.517.1](ch/ne/fr/410.517.1.md) | Arrêté concernant la libération de la scolarité obligatoire, du 21 février |
+| [410.521](ch/ne/fr/410.521.md) | 16 Arrêté |
 | [410.522](ch/ne/fr/410.522.md) | Arrêté concernant l'évaluation des apprentissages de l'élève dans le cycle |
 | [410.523](ch/ne/fr/410.523.md) | Règlement de la 8e année de la scolarité obligatoire, du 10 juin 2015 |
 | [410.524](ch/ne/fr/410.524.md) | Arrêté concernant le cycle 2 et l\x92évaluation des apprentissages de l\x92\ |
+| [410.541](ch/ne/fr/410.541.md) | 8 Arrêté |
+| [410.561](ch/ne/fr/410.561.md) | 3 Règlement |
+| [410.562](ch/ne/fr/410.562.md) | 29 Arrêté |
 | [410.610](ch/ne/fr/410.610.md) | Arrêté concernant les écolages dans les écoles publiques du canton, du 26 août |
+| [410.610.0](ch/ne/fr/410.610.0.md) | 21 Arrêté |
+| [410.610.01](ch/ne/fr/410.610.01.md) | 21 Arrêté |
+| [410.610.1](ch/ne/fr/410.610.1.md) | 23 Arrêté |
 | [410.610.2](ch/ne/fr/410.610.2.md) | Arrêté instituant un partenariat flexible entre entreprises et institutions |
+| [410.610.3](ch/ne/fr/410.610.3.md) | 11 Arrêté |
+| [410.610.4](ch/ne/fr/410.610.4.md) | 1er Arrêté |
+| [410.612](ch/ne/fr/410.612.md) | 13 Arrêté |
+| [410.613](ch/ne/fr/410.613.md) | 30 Arrêté |
 | [410.810](ch/ne/fr/410.810.md) | Loi sur l'orientation scolaire et professionnelle (LOSP), du 4 novembre 2008 |
 | [410.810.3](ch/ne/fr/410.810.3.md) | Règlement d'application de la loi sur l'orientation scolaire et professionnelle |
+| [410.811](ch/ne/fr/410.811.md) | 27 Arrêté |
+| [410.812](ch/ne/fr/410.812.md) | 12 Arrêté |
 | [410.82](ch/ne/fr/410.82.md) | Loi sur le soutien aux activités de jeunesse extra-scolaires (LSAJ), du 17 |
+| [410.830](ch/ne/fr/410.830.md) | 2 Arrêté |
 | [410.831](ch/ne/fr/410.831.md) | Arrêté concernant la reconnaissance par l\x92État des prestataires en psychomotricité,\ |
 | [410.840](ch/ne/fr/410.840.md) | Arrêté concernant l'orthophonie, du 2 février 2005 |
 | [410.841](ch/ne/fr/410.841.md) | Arrêté concernant la reconnaissance par l'État des prestataires en orthophonie/logopédie, |
 | [410.860](ch/ne/fr/410.860.md) | Arrêté concernant la médecine scolaire, du 19 janvier 2005 |
 | [410.860.14](ch/ne/fr/410.860.14.md) | Arrêté concernant la santé scolaire durant la scolarité obligatoire, du 7 février |
+| [410.860.15](ch/ne/fr/410.860.15.md) | 19 Arrêté |
+| [410.860.16](ch/ne/fr/410.860.16.md) | 16 Arrêté |
 | [411.02](ch/ne/fr/411.02.md) | Convention entre Berne, Jura et Neuchâtel sur les contributions aux frais d'enseignement |
+| [411.020](ch/ne/fr/411.020.md) | 24 Avenant |
+| [411.03](ch/ne/fr/411.03.md) | 17 Arrêté |
+| [411.030](ch/ne/fr/411.030.md) | 15 Règlement intercantonal |
+| [411.103](ch/ne/fr/411.103.md) | 6 Arrêté |
 | [411.11](ch/ne/fr/411.11.md) | Règlement général des lycées cantonaux, du 13 mai 1997 |
 | [411.110](ch/ne/fr/411.110.md) | Règlement des études des lycées cantonaux (admission, promotion et examens), |
+| [411.12](ch/ne/fr/411.12.md) | 28 Arrêté |
+| [411.121](ch/ne/fr/411.121.md) | 17 Règlement interne |
+| [411.122](ch/ne/fr/411.122.md) | 16 Règlement |
+| [411.122.10](ch/ne/fr/411.122.10.md) | 16 Règlement |
+| [411.122.11](ch/ne/fr/411.122.11.md) | 2 Règlement |
+| [411.122.12](ch/ne/fr/411.122.12.md) | 24 Règlement |
+| [411.123](ch/ne/fr/411.123.md) | 6 Règlement interne |
+| [411.125](ch/ne/fr/411.125.md) | 3 Règlement général |
+| [411.126](ch/ne/fr/411.126.md) | 17 Arrêté |
 | [411.126.0](ch/ne/fr/411.126.0.md) | Règlement intercantonal des domaines professionnels BEJUNE du certificat d\x92\ |
+| [411.127](ch/ne/fr/411.127.md) | 22 Règlement |
+| [411.128](ch/ne/fr/411.128.md) | 13 Règlement |
+| [411.129](ch/ne/fr/411.129.md) | 20 Arrêté |
 | [414.10](ch/ne/fr/414.10.md) | Loi sur la formation professionnelle (LFP), du 22 février 2005 |
 | [414.11](ch/ne/fr/414.11.md) | Décret portant sur les établissements scolaires de la formation professionnelle, |
 | [414.110](ch/ne/fr/414.110.md) | Règlement d\x92application de la loi sur la formation professionnelle, du\ |
+| [414.110.0](ch/ne/fr/414.110.0.md) | 21 Règlement |
 | [414.110.01](ch/ne/fr/414.110.01.md) | Règlement général du Centre de formation professionnelle neuchâtelois (RG-CPNE), |
 | [414.110.02](ch/ne/fr/414.110.02.md) | Arrêté relatif au subventionnement des cours interentreprises dans le canton |
 | [414.110.03](ch/ne/fr/414.110.03.md) | Arrêté relatif au subventionnement de la formation des adultes dans le Canton |
+| [414.110.04](ch/ne/fr/414.110.04.md) | 8 Arrêté |
+| [414.110.05](ch/ne/fr/414.110.05.md) | 6 Règlement |
 | [414.110.06](ch/ne/fr/414.110.06.md) | Arrêté concernant le financement des formations en compétences de base, du |
 | [414.110.07](ch/ne/fr/414.110.07.md) | Arrêté fixant la taxe forfaitaire annuelle pour le Centre de formation professionnelle |
 | [414.110.1](ch/ne/fr/414.110.1.md) | Règlement général des filières de maturité professionnelle, du 1er juillet |
+| [414.110.12](ch/ne/fr/414.110.12.md) | 15 Règlement |
 | [414.110.14](ch/ne/fr/414.110.14.md) | Règlement interne du Centre de formation professionnelle neuchâtelois, du 5 |
 | [414.110.14.1](ch/ne/fr/414.110.14.1.md) | Règlement concernant les filières de préapprentissage et de transition, du |
 | [414.110.15](ch/ne/fr/414.110.15.md) | Règlement concernant la filière CFC de commerce modèle i (intégré) en école\ |
+| [414.110.15.1](ch/ne/fr/414.110.15.1.md) | 8 Règlement |
+| [414.110.15.2](ch/ne/fr/414.110.15.2.md) | 8 Règlement |
+| [414.110.15.3](ch/ne/fr/414.110.15.3.md) | 8 Règlement |
+| [414.110.15.4](ch/ne/fr/414.110.15.4.md) | 8 Règlement |
 | [414.110.16](ch/ne/fr/414.110.16.md) | Règlement concernant la filière menant au certificat d\x92école de culture\ |
 | [414.110.160](ch/ne/fr/414.110.160.md) | Règlement concernant la filière EPD ES Direction d\x92institution de l\x92\ |
+| [414.110.17](ch/ne/fr/414.110.17.md) | 15 Règlement |
+| [414.110.170](ch/ne/fr/414.110.170.md) | 15 Règlement intercantonal |
 | [414.110.171](ch/ne/fr/414.110.171.md) | Règlement portant sur le cours préparatoire et l\x92examen complémentaire\ |
+| [414.110.18](ch/ne/fr/414.110.18.md) | 5 Règlement |
+| [414.110.19](ch/ne/fr/414.110.19.md) | 10 Règlement |
 | [414.110.2](ch/ne/fr/414.110.2.md) | Règlement concernant le projet pilote pour la maturité professionnelle flexible |
 | [414.110.21](ch/ne/fr/414.110.21.md) | Règlement concernant la filière créateur, créatrice de vêtements CFC à plein |
 | [414.110.22](ch/ne/fr/414.110.22.md) | Règlement concernant les filières CFC à plein temps en quatre ans du pôle Arts |
 | [414.110.23](ch/ne/fr/414.110.23.md) | Règlement concernant les filières de formation initiale du pôle Technologies |
+| [414.110.24](ch/ne/fr/414.110.24.md) | 2 Règlement |
+| [414.110.26](ch/ne/fr/414.110.26.md) | 20 Règlement organique |
+| [414.110.260](ch/ne/fr/414.110.260.md) | 10 Règlement |
 | [414.111](ch/ne/fr/414.111.md) | Loi instituant un fonds pour l'apprentissage et le perfectionnement professionnel |
 | [414.111.0](ch/ne/fr/414.111.0.md) | Règlement d\x92application de la loi instituant un fonds pour l\x92apprentissage\ |
+| [414.111.1](ch/ne/fr/414.111.1.md) | 17 Arrêté |
 | [414.111.10](ch/ne/fr/414.111.10.md) | Arrêté instituant une aide financière pour l\x92engagement d\x92apprenti-e-s\ |
 | [414.111.2](ch/ne/fr/414.111.2.md) | Décret instituant des aides à la création de nouvelles filières de formation |
 | [414.111.3](ch/ne/fr/414.111.3.md) | Arrêté d'exécution du décret instituant des aides à la création de nouvelles |
 | [414.112](ch/ne/fr/414.112.md) | Loi sur l'insertion des jeunes en formation professionnelle (LIFP), du 26 janvier |
 | [414.112.0](ch/ne/fr/414.112.0.md) | Règlement d\x92application de la loi sur l\x92insertion des jeunes en formation\ |
+| [414.113](ch/ne/fr/414.113.md) | 27 Loi |
+| [414.113.0](ch/ne/fr/414.113.0.md) | 23 Règlement |
+| [414.113.1](ch/ne/fr/414.113.1.md) | 5 Arrêté |
+| [414.113.2](ch/ne/fr/414.113.2.md) | 17 Arrêté |
+| [414.182](ch/ne/fr/414.182.md) | 1er Arrêté |
+| [414.183](ch/ne/fr/414.183.md) | 20 Règlement |
+| [414.184](ch/ne/fr/414.184.md) | 20 Règlement |
 | [414.195](ch/ne/fr/414.195.md) | Arrêté concernant la formation professionnelle initiale de forestier-bûcheron/forestière-bûcheronne |
+| [414.196](ch/ne/fr/414.196.md) | 29 Arrêté |
+| [414.197](ch/ne/fr/414.197.md) | 14 Règlement |
+| [414.198](ch/ne/fr/414.198.md) | 14 Règlement |
+| [414.199](ch/ne/fr/414.199.md) | 10 Règlement |
 | [414.210](ch/ne/fr/414.210.md) | Accord intercantonal sur les contributions dans le domaine des écoles supérieures |
+| [414.211](ch/ne/fr/414.211.md) | 13 Arrêté |
+| [414.211.5](ch/ne/fr/414.211.5.md) | 2 Règlement |
 | [414.212](ch/ne/fr/414.212.md) | Règlement général concernant les filières ES, du 6 juillet 2023 |
+| [414.212.0](ch/ne/fr/414.212.0.md) | 11 Règlement |
+| [414.212.1](ch/ne/fr/414.212.1.md) | 31 Règlement |
+| [414.214](ch/ne/fr/414.214.md) | 11 Règlement |
+| [414.221.0](ch/ne/fr/414.221.0.md) | 20 Règlement organique |
+| [414.221.01](ch/ne/fr/414.221.01.md) | 1er Règlement |
 | [414.231.0](ch/ne/fr/414.231.0.md) | Loi sur le Centre neuchâtelois d'intégration professionnelle (LCNIP), du 1er |
 | [414.231.01](ch/ne/fr/414.231.01.md) | Règlement d'organisation du Centre neuchâtelois d'intégration professionnelle |
+| [414.243.0](ch/ne/fr/414.243.0.md) | 13 Règlement |
+| [414.243.2](ch/ne/fr/414.243.2.md) | 25 Règlement |
+| [414.243.20](ch/ne/fr/414.243.20.md) | 25 Règlement |
+| [414.250](ch/ne/fr/414.250.md) | 23 Règlement général |
+| [414.250.051](ch/ne/fr/414.250.051.md) | 26 Règlement |
+| [414.250.052](ch/ne/fr/414.250.052.md) | 6 Arrêté |
+| [414.250.2](ch/ne/fr/414.250.2.md) | 22 Règlement |
+| [414.250.3](ch/ne/fr/414.250.3.md) | 22 Règlement |
+| [414.250.4](ch/ne/fr/414.250.4.md) | 22 Règlement |
+| [414.250.5](ch/ne/fr/414.250.5.md) | 22 Règlement |
+| [414.250.6](ch/ne/fr/414.250.6.md) | 14 Règlement |
+| [414.250.61](ch/ne/fr/414.250.61.md) | 25 Règlement |
+| [414.282](ch/ne/fr/414.282.md) | 5 Règlement organique |
+| [414.283](ch/ne/fr/414.283.md) | 18 Règlement |
+| [414.292](ch/ne/fr/414.292.md) | 22 Règlement |
 | [414.293](ch/ne/fr/414.293.md) | Règlement concernant la formation professionnelle de droguiste diplômé-e ES, |
+| [414.295.2](ch/ne/fr/414.295.2.md) | 20 Arrêté |
+| [414.295.3](ch/ne/fr/414.295.3.md) | 25 Décret |
+| [414.295.4](ch/ne/fr/414.295.4.md) | 24 Arrêté |
+| [414.296](ch/ne/fr/414.296.md) | 2 Arrêté |
+| [414.301.1](ch/ne/fr/414.301.1.md) | 11 Arrêté |
+| [414.301.2](ch/ne/fr/414.301.2.md) | 11 Arrêté |
+| [414.301.3](ch/ne/fr/414.301.3.md) | 28 Arrêté |
+| [414.301.4](ch/ne/fr/414.301.4.md) | 28 Arrêté |
 | [414.321.3](ch/ne/fr/414.321.3.md) | Règlement instituant de subir un test d'aptitudes avant l'entrée en apprentissage |
+| [414.621](ch/ne/fr/414.621.md) | 11 Arrêté |
+| [414.630](ch/ne/fr/414.630.md) | 11 Arrêté |
 | [414.680](ch/ne/fr/414.680.md) | Arrêté fixant les émoluments perçus par le Département de la formation et des |
+| [414.71](ch/ne/fr/414.71.md) | 29 Arrêté |
+| [414.711](ch/ne/fr/414.711.md) | 25 Arrêté |
+| [414.712](ch/ne/fr/414.712.md) | 29 Arrêté |
+| [414.713](ch/ne/fr/414.713.md) | 7 Arrêté |
+| [414.714](ch/ne/fr/414.714.md) | 12 Arrêté |
+| [414.715](ch/ne/fr/414.715.md) | 18 Arrêté |
+| [414.716](ch/ne/fr/414.716.md) | 7 Arrêté |
+| [415.101](ch/ne/fr/415.101.md) | 26 Règlement d'application |
 | [415.11](ch/ne/fr/415.11.md) | Accord intercantonal sur la reconnaissance des diplômes de fin d'études , du |
+| [415.173](ch/ne/fr/415.173.md) | 30 Arrêté |
+| [415.174](ch/ne/fr/415.174.md) | 12 Arrêté |
+| [415.175](ch/ne/fr/415.175.md) | 30 Arrêté |
+| [415.176](ch/ne/fr/415.176.md) | 15 Arrêté |
+| [415.312](ch/ne/fr/415.312.md) | 13 Règlement |
+| [415.312.1](ch/ne/fr/415.312.1.md) | 28 Règlement d'examens |
+| [415.313](ch/ne/fr/415.313.md) | 13 Arrêté |
+| [415.314](ch/ne/fr/415.314.md) | 16 Arrêté |
+| [415.511](ch/ne/fr/415.511.md) | 24 Arrêté |
+| [415.512](ch/ne/fr/415.512.md) | 7 Arrêté |
+| [415.513](ch/ne/fr/415.513.md) | 4 Arrêté |
+| [415.514](ch/ne/fr/415.514.md) | 22 Arrêté |
+| [415.515](ch/ne/fr/415.515.md) | 23 Arrêté |
 | [415.516](ch/ne/fr/415.516.md) | Arrêté concernant les formatrices et formateurs d'adultes des établissements |
+| [416.10](ch/ne/fr/416.10.md) | 5 Loi |
 | [416.100](ch/ne/fr/416.100.md) | Loi sur l\x92Université de Neuchâtel (LUNE), du 2 novembre 2016 |
+| [416.101](ch/ne/fr/416.101.md) | 10 Règlement |
+| [416.101.0](ch/ne/fr/416.101.0.md) | 7 Règlement |
+| [416.101.00](ch/ne/fr/416.101.00.md) | 30 Règlement |
+| [416.101.001](ch/ne/fr/416.101.001.md) | 30 Règlement |
+| [416.101.01](ch/ne/fr/416.101.01.md) | 25 Règlement |
+| [416.101.010](ch/ne/fr/416.101.010.md) | 14 Règlement |
+| [416.101.011](ch/ne/fr/416.101.011.md) | 15 Règlement |
+| [416.101.012](ch/ne/fr/416.101.012.md) | 20 Règlement |
+| [416.101.013](ch/ne/fr/416.101.013.md) | 17 Règlement |
+| [416.101.02](ch/ne/fr/416.101.02.md) | 22 Règlement |
+| [416.101.03](ch/ne/fr/416.101.03.md) | 27 Règlement |
 | [416.101.1](ch/ne/fr/416.101.1.md) | Arrêté concernant le montant de la finance d'inscription perçue par l'Université |
+| [416.101.2](ch/ne/fr/416.101.2.md) | 26 Règlement |
+| [416.101.3](ch/ne/fr/416.101.3.md) | 26 Règlement |
+| [416.101.4](ch/ne/fr/416.101.4.md) | 21 Règlement |
+| [416.101.5](ch/ne/fr/416.101.5.md) | 13 Règlement |
+| [416.101.6](ch/ne/fr/416.101.6.md) | 27 Décret |
+| [416.102](ch/ne/fr/416.102.md) | 19 Règlement |
 | [416.103](ch/ne/fr/416.103.md) | Arrêté concernant la rémunération des chargés de cours et des chargés d'enseignement |
 | [416.103.1](ch/ne/fr/416.103.1.md) | Arrêté concernant la rétribution des collaborateurs de l'enseignement et de |
+| [416.104](ch/ne/fr/416.104.md) | 18 Règlement |
+| [416.105](ch/ne/fr/416.105.md) | 23 Règlement |
+| [416.106](ch/ne/fr/416.106.md) | 22 Règlement |
+| [416.107](ch/ne/fr/416.107.md) | 25 Arrêté |
+| [416.108](ch/ne/fr/416.108.md) | 25 Règlement |
 | [416.109](ch/ne/fr/416.109.md) | Arrêté fixant l\x92indemnisation des membres de la commission de l\x92Université,\ |
 | [416.110](ch/ne/fr/416.110.md) | Règlement de la Commission de recours en matière d\x92examens de l\x92Université\ |
+| [416.182](ch/ne/fr/416.182.md) | 16 Arrêté I |
+| [416.183](ch/ne/fr/416.183.md) | 28 Arrêté II |
 | [416.192](ch/ne/fr/416.192.md) | Règlement de la Cité des étudiants, du 5 septembre 2013 |
+| [416.310](ch/ne/fr/416.310.md) | 25 Règlement |
+| [416.310.1](ch/ne/fr/416.310.1.md) | 30 Règlement |
+| [416.310.2](ch/ne/fr/416.310.2.md) | 25 Règlement |
+| [416.310.3](ch/ne/fr/416.310.3.md) | 2 Règlement |
+| [416.312.11](ch/ne/fr/416.312.11.md) | 22 Règlement spécial |
+| [416.312.2](ch/ne/fr/416.312.2.md) | 30 Règlement |
+| [416.315](ch/ne/fr/416.315.md) | 13 Règlement |
+| [416.315.0](ch/ne/fr/416.315.0.md) | 2 Règlement |
+| [416.315.1](ch/ne/fr/416.315.1.md) | 26 Règlement |
+| [416.315.2](ch/ne/fr/416.315.2.md) | 19 Règlement |
+| [416.316](ch/ne/fr/416.316.md) | 15 Règlement |
+| [416.317](ch/ne/fr/416.317.md) | 7 Règlement |
+| [416.318](ch/ne/fr/416.318.md) | 17 Règlement |
+| [416.320](ch/ne/fr/416.320.md) | 13 Règlement |
+| [416.321](ch/ne/fr/416.321.md) | 13 Règlement |
+| [416.322](ch/ne/fr/416.322.md) | 13 Règlement |
+| [416.323](ch/ne/fr/416.323.md) | 8 Règlement |
+| [416.323.1](ch/ne/fr/416.323.1.md) | 7 Règlement |
+| [416.324](ch/ne/fr/416.324.md) | 22 Règlement |
+| [416.324.1](ch/ne/fr/416.324.1.md) | 29 Arrêté |
+| [416.325](ch/ne/fr/416.325.md) | 7 Règlement |
+| [416.326](ch/ne/fr/416.326.md) | 25 Règlement |
+| [416.327](ch/ne/fr/416.327.md) | 1er Règlement |
+| [416.328](ch/ne/fr/416.328.md) | 21 Règlement |
+| [416.330](ch/ne/fr/416.330.md) | 17 Règlement |
+| [416.330.1](ch/ne/fr/416.330.1.md) | 22 Règlement |
+| [416.330.4](ch/ne/fr/416.330.4.md) | 14 Règlement |
+| [416.331](ch/ne/fr/416.331.md) | 22 Règlement |
+| [416.331.1](ch/ne/fr/416.331.1.md) | 9 Règlement |
+| [416.331.2](ch/ne/fr/416.331.2.md) | 19 Règlement |
+| [416.331.3](ch/ne/fr/416.331.3.md) | 22 Règlement |
+| [416.331.30](ch/ne/fr/416.331.30.md) | 3 Règlement |
+| [416.331.4](ch/ne/fr/416.331.4.md) | 6 Règlement |
+| [416.335](ch/ne/fr/416.335.md) | 8 Règlement |
+| [416.340](ch/ne/fr/416.340.md) | 27 Décret |
+| [416.341](ch/ne/fr/416.341.md) | 1er Règlement |
+| [416.42](ch/ne/fr/416.42.md) | 26 Règlement |
+| [416.43](ch/ne/fr/416.43.md) | 5 Règlement provisoire |
+| [416.450](ch/ne/fr/416.450.md) | 3 Statuts |
+| [416.451](ch/ne/fr/416.451.md) | 22 Règlement |
+| [416.452](ch/ne/fr/416.452.md) | 1er Règlement |
+| [416.453](ch/ne/fr/416.453.md) | 10 Règlement |
+| [416.453.1](ch/ne/fr/416.453.1.md) | 18 Arrêté |
+| [416.454](ch/ne/fr/416.454.md) | 1er Règlement |
+| [416.455](ch/ne/fr/416.455.md) | 27 Règlement |
+| [416.456](ch/ne/fr/416.456.md) | 27 Arrêté |
+| [416.457](ch/ne/fr/416.457.md) | 12 Règlement |
+| [416.462](ch/ne/fr/416.462.md) | 29 Arrêté |
+| [416.611](ch/ne/fr/416.611.md) | 24 Décret |
 | [416.612](ch/ne/fr/416.612.md) | Accord intercantonal universitaire (participation au financement des universités), |
 | [416.613](ch/ne/fr/416.613.md) | Accord intercantonal sur le domaine suisse des hautes écoles (concordat sur |
+| [416.615](ch/ne/fr/416.615.md) | 7 Décret |
+| [416.621](ch/ne/fr/416.621.md) | 15 Arrêté |
 | [416.622](ch/ne/fr/416.622.md) | Convention-cadre relative aux Centres universitaires d'enseignement et de recherche |
+| [416.631](ch/ne/fr/416.631.md) | 9 Arrêté |
 | [416.632](ch/ne/fr/416.632.md) | Convention-cadre relative à la coordination universitaire romande, du 27 mars |
 | [416.632.1](ch/ne/fr/416.632.1.md) | Règlement d'exécution de la convention-cadre relative à la coordination universitaire |
+| [416.633](ch/ne/fr/416.633.md) | 2 Arrêté |
+| [416.633.1](ch/ne/fr/416.633.1.md) | 2 Accord |
+| [416.633.10](ch/ne/fr/416.633.10.md) | 20 Arrêté |
 | [416.633.2](ch/ne/fr/416.633.2.md) | Concordat intercantonal instituant la Haute Ecole Pédagogique commune aux cantons |
 | [416.633.3](ch/ne/fr/416.633.3.md) | Loi sur la Haute école pédagogique (HEP-BEJUNE), du 21 juin 2000 |
+| [416.633.301](ch/ne/fr/416.633.301.md) | 19 Arrêté |
+| [416.633.302](ch/ne/fr/416.633.302.md) | 23 Arrêté |
 | [416.634](ch/ne/fr/416.634.md) | Convention intercantonale sur la haute école spécialisée de suisse occidentale |
+| [416.634.0](ch/ne/fr/416.634.0.md) | 28 Décret |
+| [416.634.1](ch/ne/fr/416.634.1.md) | 9 Concordat intercantonal |
+| [416.634.2](ch/ne/fr/416.634.2.md) | 3 Décret |
+| [416.634.20](ch/ne/fr/416.634.20.md) | 8 Arrêté |
 | [416.634.200](ch/ne/fr/416.634.200.md) | Convention intercantonale relative au contrôle parlementaire de la HES-SO, |
 | [416.636](ch/ne/fr/416.636.md) | Loi sur la Haute école neuchâteloise (HEN), du 24 mars 1998 |
+| [416.636.2](ch/ne/fr/416.636.2.md) | 13 Règlement |
 | [416.640](ch/ne/fr/416.640.md) | Règlement concernant la reconnaissance des diplômes dans le domaine de la pédagogie |
 | [416.641](ch/ne/fr/416.641.md) | Règlement concernant la reconnaissance des diplômes cantonaux des hautes écoles |
 | [416.642](ch/ne/fr/416.642.md) | Règlement concernant la reconnaissance des diplômes d\x92enseignement du degré\ |
+| [416.643](ch/ne/fr/416.643.md) | 26 Règlement |
+| [416.644](ch/ne/fr/416.644.md) | 25 Décret |
+| [416.65](ch/ne/fr/416.65.md) | 2 Décret |
+| [416.650](ch/ne/fr/416.650.md) | 15 Arrêté |
+| [416.650.0](ch/ne/fr/416.650.0.md) | 23 Arrêté |
+| [416.651](ch/ne/fr/416.651.md) | 17 Arrêté |
 | [416.651.0](ch/ne/fr/416.651.0.md) | Règlement intercantonal des compléments de formation requis en vue de l'admission |
+| [416.66](ch/ne/fr/416.66.md) | 29 Décret |
+| [416.660](ch/ne/fr/416.660.md) | 31 Convention intercantonale |
 | [416.67](ch/ne/fr/416.67.md) | Décret portant adhésion du canton de Neuchâtel à la convention visant à la |
 | [416.68](ch/ne/fr/416.68.md) | Convention sur la Haute école Arc Berne-Jura-Neuchâtel (HE-Arc), du 24 mai |
+| [416.71](ch/ne/fr/416.71.md) | 14 Règlement interne |
+| [416.72](ch/ne/fr/416.72.md) | 14 Règlement interne |
+| [416.73](ch/ne/fr/416.73.md) | 14 Règlement interne |
 | [417.10](ch/ne/fr/417.10.md) | Loi sur le sport (LSport), du 1er octobre 2013 |
+| [417.102](ch/ne/fr/417.102.md) | 28 Arrêté |
 | [417.103](ch/ne/fr/417.103.md) | Règlement relatif aux programmes Sports-Arts-Études, Sports-Arts-Apprentissage\ |
 | [417.105](ch/ne/fr/417.105.md) | Règlement du sport scolaire facultatif, du 7 décembre 1987 |
+| [417.105.1](ch/ne/fr/417.105.1.md) | 16 Arrêté |
+| [417.105.2](ch/ne/fr/417.105.2.md) | 28 Arrêté |
 | [417.106](ch/ne/fr/417.106.md) | Arrêté concernant la procédure relative aux demandes d'autorisations de manifestations |
+| [417.108](ch/ne/fr/417.108.md) | 19 Arrêté |
+| [417.110](ch/ne/fr/417.110.md) | 19 Règlement |
+| [417.110.0](ch/ne/fr/417.110.0.md) | 14 Règlement |
 | [418.10](ch/ne/fr/418.10.md) | Loi sur les aides à la formation (LAF), du 19 février 2013 |
+| [418.11](ch/ne/fr/418.11.md) | 3 Décret |
 | [418.110](ch/ne/fr/418.110.md) | Règlement d\x92application de la loi sur les aides à la formation (RLAF),\ |
 | [418.110.0](ch/ne/fr/418.110.0.md) | Arrêté relatif aux montants déterminants pour l'octroi d'aides à la formation |
+| [418.110.1](ch/ne/fr/418.110.1.md) | 17 Arrêté |
+| [418.5](ch/ne/fr/418.5.md) | 3 Décret |
+| [419.10](ch/ne/fr/419.10.md) | 17 Loi |
+| [419.11](ch/ne/fr/419.11.md) | 19 Arrêté |
+| [419.12](ch/ne/fr/419.12.md) | 1er Décret |
 | [441.0](ch/ne/fr/441.0.md) | Décret sur l'intégration d'activités issues de l'Observatoire cantonal au Centre |
+| [441.1](ch/ne/fr/441.1.md) | 12 Règlement |
+| [441.2](ch/ne/fr/441.2.md) | 12 Arrêté |
+| [442.10](ch/ne/fr/442.10.md) | 10 Décret |
+| [442.100](ch/ne/fr/442.100.md) | 20 Arrêté |
+| [442.11](ch/ne/fr/442.11.md) | 26 Arrêté |
 | [442.15](ch/ne/fr/442.15.md) | Arrêté concernant le recensement cantonal annuel de la population, du 15 février |
 | [442.17](ch/ne/fr/442.17.md) | Arrêté concernant l'établissement d'une statistique cantonale des logements |
 | [442.18](ch/ne/fr/442.18.md) | Arrêté concernant l'établissement d'une statistique cantonale des locaux industriels |
 | [442.20](ch/ne/fr/442.20.md) | Loi sur l'archivage (LArch), du 22 février 2011 |
+| [442.21](ch/ne/fr/442.21.md) | 2 Arrêté |
+| [442.22](ch/ne/fr/442.22.md) | 19 Arrêté |
 | [442.23](ch/ne/fr/442.23.md) | Règlement d'exécution de la loi sur l'archivage, du 29 avril 2013 |
 | [442.24](ch/ne/fr/442.24.md) | Arrêté fixant le tarif des émoluments perçus en application de la loi sur l'archivage, |
+| [442.25](ch/ne/fr/442.25.md) | 2 Arrêté |
 | [442.41](ch/ne/fr/442.41.md) | Loi concernant l'aide à la lecture publique et aux bibliothèques, du 15 décembre |
 | [442.411](ch/ne/fr/442.411.md) | Règlement concernant l'octroi de subventions en faveur des bibliothèques communales, |
 | [451.01](ch/ne/fr/451.01.md) | Loi sur l\x92encouragement des activités culturelles et artistiques (LEAC),\ |
 | [451.02](ch/ne/fr/451.02.md) | Accord entre les cantons de Berne, du Jura et de Neuchâtel instituant la Commission |
+| [451.03](ch/ne/fr/451.03.md) | 21 Règlement |
+| [451.04](ch/ne/fr/451.04.md) | 8 Règlement |
+| [451.07](ch/ne/fr/451.07.md) | 21 Règlement |
 | [451.20](ch/ne/fr/451.20.md) | Loi sur le Conservatoire de musique neuchâtelois (LCMN), du 27 juin 2006 |
 | [451.200.1](ch/ne/fr/451.200.1.md) | Règlement d'application de la loi sur le Conservatoire de musique neuchâtelois, |
 | [451.200.2](ch/ne/fr/451.200.2.md) | Règlement des études et des examens du Conservatoire de musique neuchâtelois, |
 | [451.200.3](ch/ne/fr/451.200.3.md) | Règlement définissant les écolages et les émoluments du Conservatoire de musique |
+| [451.200.5](ch/ne/fr/451.200.5.md) | 19 Règlement transitoire d'application |
+| [451.200.6](ch/ne/fr/451.200.6.md) | 19 Règlement transitoire |
+| [451.200.7](ch/ne/fr/451.200.7.md) | 19 Règlement transitoire |
+| [451.201](ch/ne/fr/451.201.md) | 3 Règlement d'application |
+| [451.201.0](ch/ne/fr/451.201.0.md) | 19 Arrêté |
 | [451.201.00](ch/ne/fr/451.201.00.md) | Règlement concernant le système de thésaurisation personnelle proposé au personnel |
+| [451.201.020](ch/ne/fr/451.201.020.md) | 24 Règlement |
+| [451.201.03](ch/ne/fr/451.201.03.md) | 27 Arrêté |
+| [451.201.05](ch/ne/fr/451.201.05.md) | 26 Règlement |
+| [451.201.06](ch/ne/fr/451.201.06.md) | 15 Règlement transitoire |
 | [461.031](ch/ne/fr/461.031.md) | Arrêté relatif aux contributions pour des prestations de caractère écologique |
 | [461.05](ch/ne/fr/461.05.md) | Arrêté concernant le tarif des émoluments perçus par le service de l'énergie |
+| [461.06](ch/ne/fr/461.06.md) | 13 Arrêté |
+| [461.07](ch/ne/fr/461.07.md) | 24 Arrêté |
 | [461.08](ch/ne/fr/461.08.md) | Arrêté concernant le radon, du 20 mai 2009 |
+| [461.09](ch/ne/fr/461.09.md) | 20 Arrêté |
 | [461.10](ch/ne/fr/461.10.md) | Loi sur la protection de la nature (LCPN), du 22 juin 1994 |
 | [461.100](ch/ne/fr/461.100.md) | Règlement d'exécution de la loi sur la protection de la nature (RELCPN), du |
+| [461.101](ch/ne/fr/461.101.md) | 20 Arrêté |
 | [461.102](ch/ne/fr/461.102.md) | Arrêté concernant la protection des escargots, du 31 janvier 2018 |
 | [461.105](ch/ne/fr/461.105.md) | Arrêté concernant la protection de la flore, du 13 juillet 1965 |
 | [461.106](ch/ne/fr/461.106.md) | Arrêté concernant la protection des haies, des bosquets, des murs de pierres |
 | [461.107](ch/ne/fr/461.107.md) | Arrêté sur les opérations mécaniques lourdes dans les milieux naturels, du |
+| [461.108](ch/ne/fr/461.108.md) | 22 Décret |
 | [461.12](ch/ne/fr/461.12.md) | Arrêté fixant le statut des réserves naturelles neuchâteloises de la faune |
 | [461.13](ch/ne/fr/461.13.md) | Règlement d'exécution des dispositions de l'ordonnance fédérale sur les paiements |
 | [461.21](ch/ne/fr/461.21.md) | Décret concernant la protection de biotopes, du 19 novembre 1969 |
@@ -20364,9 +21931,15 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [461.301.1](ch/ne/fr/461.301.1.md) | Arrêté concernant les frais d\x92intervention de la section Archéologie de\ |
 | [461.301.2](ch/ne/fr/461.301.2.md) | Arrêté déterminant les conditions de reconnaissance comme dignes d\x92être\ |
 | [461.303](ch/ne/fr/461.303.md) | Décret concernant la protection des sites naturels du canton, du 14 février |
+| [461.303.0](ch/ne/fr/461.303.0.md) | 17 Arrêté |
+| [461.303.1](ch/ne/fr/461.303.1.md) | 17 Arrêté |
+| [461.303.10](ch/ne/fr/461.303.10.md) | 28 Arrêté |
+| [461.303.11](ch/ne/fr/461.303.11.md) | 21 Arrêté |
 | [461.304](ch/ne/fr/461.304.md) | Décret concernant la conservation des blocs erratiques, du 18 avril 1895 |
+| [461.351](ch/ne/fr/461.351.md) | 30 Arrêté |
 | [465.0](ch/ne/fr/465.0.md) | Loi d'introduction de la législation fédérale sur la protection des animaux |
 | [465.01](ch/ne/fr/465.01.md) | Règlement d'application de la loi d'introduction de la législation fédérale |
+| [465.011](ch/ne/fr/465.011.md) | 13 Arrêté |
 | [501.3](ch/ne/fr/501.3.md) | Loi concernant les attributions des chefs de section militaire et leur rétribution |
 | [501.31](ch/ne/fr/501.31.md) | Arrêté relatif à l'organisation des chefs de section militaire, du 1er décembre |
 | [501.312](ch/ne/fr/501.312.md) | Arrêté fixant les indemnités des fonctionnaires désignés en qualité de chef |
@@ -20380,6 +21953,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [521.10](ch/ne/fr/521.10.md) | Règlement d'exécution de la loi d'application de la législation fédérale sur |
 | [521.100](ch/ne/fr/521.100.md) | Arrêté fixant la contribution forfaitaire des communes pour alimenter le fonds |
 | [521.11](ch/ne/fr/521.11.md) | Règlement de l'unité neuchâteloise d'intervention psychosociale UNIP, du 23 |
+| [521.15](ch/ne/fr/521.15.md) | 2 Arrêté |
 | [521.16](ch/ne/fr/521.16.md) | Arrêté concernant l\x92organisation de gestion de crise et de catastrophe\ |
 | [527.1](ch/ne/fr/527.1.md) | Arrêté concernant le service sanitaire coordonné, du 7 mars 1980 |
 | [542.1](ch/ne/fr/542.1.md) | Arrêté sur l'approvisionnement économique du pays, du 27 novembre 2002 |
@@ -20399,46 +21973,74 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [561.4](ch/ne/fr/561.4.md) | Concordat intercantonal sur la coopération assistée par ordinateur des cantons |
 | [561.5](ch/ne/fr/561.5.md) | Convention entre la Confédération et les cantons visant à harmoniser l\x92\ |
 | [561.6](ch/ne/fr/561.6.md) | Convention sur l\x92organisation et l\x92exécution des recherches intercantonales\ |
+| [563.1](ch/ne/fr/563.1.md) | 23 Loi |
 | [564.1](ch/ne/fr/564.1.md) | Loi sur l'usage des cloches par les Eglises et les associations religieuses, |
+| [564.12](ch/ne/fr/564.12.md) | 3 Arrêté |
 | [565.1](ch/ne/fr/565.1.md) | Loi sur les sépultures (inhumation gratuite), du 10 juillet 1894 |
 | [565.12](ch/ne/fr/565.12.md) | Arrêté concernant l'application du dernier alinéa de l'article 11 de la loi |
+| [568.1](ch/ne/fr/568.1.md) | 3 Décret |
 | [568.10](ch/ne/fr/568.10.md) | Concordat sur les entreprises de sécurité, du 18 octobre 1996 |
 | [568.100](ch/ne/fr/568.100.md) | Arrêté d'exécution du concordat sur les entreprises de sécurité, du 14 décembre |
+| [568.2](ch/ne/fr/568.2.md) | 28 Décret |
 | [601](ch/ne/fr/601.md) | Loi sur les finances de l'Etat et des communes (LFinEC), du 24 juin 2014 |
 | [601.0](ch/ne/fr/601.0.md) | Règlement général d'exécution de la loi sur les finances de l'Etat et des Communes |
+| [601.00](ch/ne/fr/601.00.md) | 8 Loi |
+| [601.01](ch/ne/fr/601.01.md) | 7 Arrêté |
 | [601.02](ch/ne/fr/601.02.md) | Arrêté précisant le champ d'application de la LFinEC aux établissements autonomes |
+| [601.03](ch/ne/fr/601.03.md) | 26 Règlement |
+| [601.05](ch/ne/fr/601.05.md) | 28 Arrêté |
+| [601.08](ch/ne/fr/601.08.md) | 13 Arrêté |
+| [601.10](ch/ne/fr/601.10.md) | 23 Décret |
+| [601.20](ch/ne/fr/601.20.md) | 23 Décret |
+| [601.200](ch/ne/fr/601.200.md) | 18 Décret |
+| [601.21](ch/ne/fr/601.21.md) | 29 Décret |
+| [601.23](ch/ne/fr/601.23.md) | 3 Décret |
 | [601.3](ch/ne/fr/601.3.md) | Loi sur le contrôle des finances (LCCFI), du 3 octobre 2006 |
 | [601.30](ch/ne/fr/601.30.md) | Règlement du service financier, du 4 février 2026 |
 | [601.50](ch/ne/fr/601.50.md) | Règlement sur le contrôle des finances, du 20 décembre 2006 |
 | [601.51](ch/ne/fr/601.51.md) | Arrêté sur la gestion des risques et le contrôle interne au sens de l'article |
 | [601.52](ch/ne/fr/601.52.md) | Arrêté désignant les entités sur lesquelles l\x92activité du CCF peut s\x92\ |
+| [601.60](ch/ne/fr/601.60.md) | 8 Arrêté |
 | [601.70](ch/ne/fr/601.70.md) | Loi portant adhésion à l'Accord intercantonal sur les marchés publics (LAIMP), |
 | [601.71](ch/ne/fr/601.71.md) | Accord intercantonal sur les marchés publics (AIMP), du 25 novembre 1994 |
 | [601.710](ch/ne/fr/601.710.md) | Accord intercantonal sur les marchés publics (AIMP), du 15 novembre 2019 |
 | [601.72](ch/ne/fr/601.72.md) | Loi sur les marchés publics (LCMP), du 5 septembre 2023 |
 | [601.720](ch/ne/fr/601.720.md) | Règlement d\x92exécution de la loi cantonale sur les marchés publics (RELCMP),\ |
 | [601.73](ch/ne/fr/601.73.md) | Arrêté concernant les publications sur le site Internet des collectivités publiques |
+| [601.730](ch/ne/fr/601.730.md) | 28 Arrêté |
 | [601.74](ch/ne/fr/601.74.md) | Arrêté portant création d'une commission de coordination pour la planification |
+| [601.75](ch/ne/fr/601.75.md) | 15 Arrêté |
 | [601.8](ch/ne/fr/601.8.md) | Loi sur les subventions (LSub), du 1er février 1999 |
 | [601.80](ch/ne/fr/601.80.md) | Règlement d'exécution de la loi sur les subventions (RELSub), du 5 février |
+| [601.9](ch/ne/fr/601.9.md) | 27 Décret |
 | [621](ch/ne/fr/621.md) | Loi sur la Banque cantonale neuchâteloise (LBCN), du 28 septembre 1998 |
+| [621.20](ch/ne/fr/621.20.md) | 17 Arrêté |
 | [621.3](ch/ne/fr/621.3.md) | Règlement des censeurs de la Banque cantonale neuchâteloise, du 5 mai 1999 |
+| [621.31](ch/ne/fr/621.31.md) | 18 Arrêté |
+| [621.5](ch/ne/fr/621.5.md) | 4 Arrêté |
 | [621.7](ch/ne/fr/621.7.md) | Arrêté concernant les modalités de la rémunération de l'Etat par la banque |
 | [631.0](ch/ne/fr/631.0.md) | Loi sur les contributions directes (LCdir), du 21 mars 2000 |
 | [631.00](ch/ne/fr/631.00.md) | Décret fixant les coefficients de l'impôt cantonal direct et de l'impôt communal |
 | [631.00.1](ch/ne/fr/631.00.1.md) | Décret fixant les coefficients de l'impôt cantonal et communal sur le bénéfice |
 | [631.01](ch/ne/fr/631.01.md) | Règlement général d'application de la loi sur les contributions directes (RELCdir), |
+| [631.010](ch/ne/fr/631.010.md) | 11 Arrêté |
+| [631.010.1](ch/ne/fr/631.010.1.md) | 20 Arrêté |
 | [631.011](ch/ne/fr/631.011.md) | Règlement concernant les remises d\x92impôt, du 23 octobre 2024 |
 | [631.012](ch/ne/fr/631.012.md) | Arrêté concernant l'hypothèque légale prévue à l'article 247 de la loi sur |
 | [631.014](ch/ne/fr/631.014.md) | Règlement concernant l'accès aux données fiscales par le guichet sécurisé unique, |
+| [631.015](ch/ne/fr/631.015.md) | 15 Arrêté |
 | [631.022](ch/ne/fr/631.022.md) | Règlement concernant la détermination de l'estimation cadastrale des immeubles |
 | [631.023](ch/ne/fr/631.023.md) | Règlement concernant la détermination de l'estimation cadastrale des immeubles |
 | [631.03](ch/ne/fr/631.03.md) | Règlement concernant la perception de l'impôt cantonal direct, de l'impôt communal |
+| [631.032.0](ch/ne/fr/631.032.0.md) | 29 Arrêté |
+| [631.09](ch/ne/fr/631.09.md) | 16 Décret |
 | [631.1](ch/ne/fr/631.1.md) | Loi d'introduction de la loi fédérale sur la constitution de réserves de crise |
 | [631.10](ch/ne/fr/631.10.md) | Arrêté d'exécution de la loi d'introduction de la loi fédérale sur la constitution |
 | [631.2](ch/ne/fr/631.2.md) | Loi sur la redistribution du produit de l'impôt communal sur le bénéfice et |
 | [631.31](ch/ne/fr/631.31.md) | Règlement concernant l\x92imposition à la source, du 17 août 2022 |
 | [633.0](ch/ne/fr/633.0.md) | Loi instituant un impôt sur les successions et sur les donations entre vifs |
+| [633.11](ch/ne/fr/633.11.md) | 14 Arrêté |
+| [633.2](ch/ne/fr/633.2.md) | 12 Arrêté |
 | [633.401](ch/ne/fr/633.401.md) | Convention entre les cantons de Neuchâtel et de Zurich concernant l'exonération |
 | [633.402](ch/ne/fr/633.402.md) | Convention entre les cantons d'Appenzell, Rhodes Extérieures, et de Neuchâtel |
 | [633.403](ch/ne/fr/633.403.md) | Convention entre les cantons de Neuchâtel et de Fribourg concernant l'exonération |
@@ -20459,35 +22061,52 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [636.20](ch/ne/fr/636.20.md) | Loi sur les chiens (LChiens), du 3 septembre 2019 |
 | [636.201](ch/ne/fr/636.201.md) | Règlement d\x92exécution de la loi sur les chiens (RELChiens), du 18 décembre\ |
 | [636.201.0](ch/ne/fr/636.201.0.md) | Arrêté fixant le nombre de box pour chiens devant être mis à disposition de |
+| [636.201.1](ch/ne/fr/636.201.1.md) | 15 Arrêté |
 | [636.21](ch/ne/fr/636.21.md) | Règlement relatif aux cours pour propriétaires de chiens (RCC), du 21 décembre |
 | [636.30](ch/ne/fr/636.30.md) | Loi autorisant les communes à percevoir une taxe des propriétaires de ruchers |
 | [637.01](ch/ne/fr/637.01.md) | Loi d'introduction de la loi fédérale sur l'impôt fédéral direct (LILIFD), |
 | [637.010](ch/ne/fr/637.010.md) | Arrêté d'exécution de la loi d'introduction de la loi fédérale sur l'impôt |
 | [637.20](ch/ne/fr/637.20.md) | Loi concernant la répartition de la part du canton au produit de l'impôt fédéral |
+| [637.200](ch/ne/fr/637.200.md) | 3 Loi |
 | [637.30](ch/ne/fr/637.30.md) | Décret concernant l'exécution des prescriptions fédérales sur l'impôt anticipé, |
 | [637.301](ch/ne/fr/637.301.md) | Arrêté d'exécution des prescriptions fédérales sur l'impôt anticipé, du 3 février |
 | [637.50](ch/ne/fr/637.50.md) | Décret concernant l'exécution des prescriptions fédérales sur la taxe d'exemption |
 | [637.501](ch/ne/fr/637.501.md) | Arrêté d'exécution des prescriptions fédérales sur la taxe d'exemption de l'obligation |
 | [638.1](ch/ne/fr/638.1.md) | Accord entre le Conseil fédéral suisse et le Gouvernement de la République |
+| [638.2](ch/ne/fr/638.2.md) | 27 Décret |
 | [638.3](ch/ne/fr/638.3.md) | Décret approuvant une modification apportée à l'accord signé le 11 avril 1983 |
 | [638.5](ch/ne/fr/638.5.md) | Arrêté concernant l'application du dégrèvement pour impôts étrangers prévu |
 | [660.1](ch/ne/fr/660.1.md) | Arrêté concernant la répartition de la dîme de l\x92alcool (ARDîme), du 17\ |
+| [681.0](ch/ne/fr/681.0.md) | 17 Décret |
 | [681.1](ch/ne/fr/681.1.md) | Convention intercantonale sur la vente du sel en Suisse, du 22 novembre 1973 |
 | [701.0](ch/ne/fr/701.0.md) | Loi cantonale sur l'aménagement du territoire (LCAT), du 2 octobre 1991 |
 | [701.01](ch/ne/fr/701.01.md) | Décret sur la conception directrice cantonale de l'aménagement du territoire |
+| [701.011](ch/ne/fr/701.011.md) | 22 Arrêté |
 | [701.012](ch/ne/fr/701.012.md) | Arrêté concernant l\x92octroi d\x92un délai supplémentaire pour l\x92adaptation\ |
+| [701.013](ch/ne/fr/701.013.md) | 2 Arrêté |
+| [701.014](ch/ne/fr/701.014.md) | 23 Arrêté |
+| [701.015](ch/ne/fr/701.015.md) | 8 Arrêté |
+| [701.016](ch/ne/fr/701.016.md) | 29 Arrêté |
+| [701.017](ch/ne/fr/701.017.md) | 29 Arrêté |
+| [701.018](ch/ne/fr/701.018.md) | 25 Arrêté |
+| [701.019](ch/ne/fr/701.019.md) | 25 Arrêté |
+| [701.019.0](ch/ne/fr/701.019.0.md) | 10 Arrêté |
 | [701.02](ch/ne/fr/701.02.md) | Règlement d'exécution de la loi cantonale sur l'aménagement du territoire (RELCAT), |
 | [701.021](ch/ne/fr/701.021.md) | Arrêté concernant la modification du plan directeur cantonal de l\x92aménagement\ |
+| [701.022](ch/ne/fr/701.022.md) | 16 Arrêté |
+| [701.03](ch/ne/fr/701.03.md) | 17 Arrêté |
 | [701.05](ch/ne/fr/701.05.md) | Décret concernant la protection des marais, des sites marécageux et des zones |
 | [701.06](ch/ne/fr/701.06.md) | Arrêté concernant les émoluments perçus pour les préavis relatifs à la prévention\ |
 | [701.07](ch/ne/fr/701.07.md) | Arrêté portant sur les émoluments perçus par le service de l'aménagement du |
 | [701.2](ch/ne/fr/701.2.md) | Loi sur la mobilité douce (LMD), du 26 septembre 2017 |
 | [701.20](ch/ne/fr/701.20.md) | Règlement d\x92exécution de la loi sur la mobilité douce, du 14 mars 2018 |
+| [701.21](ch/ne/fr/701.21.md) | 14 Arrêté |
 | [701.22](ch/ne/fr/701.22.md) | Arrêté concernant les organisations privées spécialisées en matière de mobilité |
 | [701.5](ch/ne/fr/701.5.md) | Convention relative à la communauté d'études pour l'aménagement du territoire, |
 | [701.6](ch/ne/fr/701.6.md) | Loi d'introduction de la loi fédérale sur les chemins pour piétons et les chemins |
 | [701.60](ch/ne/fr/701.60.md) | Règlement d'exécution de la loi d'introduction de la loi fédérale sur les chemins |
 | [701.61](ch/ne/fr/701.61.md) | Arrêté concernant les organisations privées spécialisées, du 5 juin 1990 |
+| [701.62](ch/ne/fr/701.62.md) | 3 Arrêté |
 | [701.7](ch/ne/fr/701.7.md) | Règlement d\x92exécution de la loi fédérale sur les résidences secondaires\ |
 | [702.0](ch/ne/fr/702.0.md) | Décret concernant le financement des mesures prises par l'Etat en vue de l'aménagement |
 | [705.1](ch/ne/fr/705.1.md) | Loi sur l'extraction de matériaux (LEM), du 31 janvier 1991 |
@@ -20504,6 +22123,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [720.11](ch/ne/fr/720.11.md) | Arrêté dispensant la commune du Locle de l\x92obligation de solliciter le\ |
 | [720.12](ch/ne/fr/720.12.md) | Arrêté dispensant la commune de La Chaux-de-Fonds de l\x92obligation de solliciter\ |
 | [720.13](ch/ne/fr/720.13.md) | Arrêté concernant les émoluments perçus pour les préavis relatifs aux questions |
+| [720.200](ch/ne/fr/720.200.md) | 12 Arrêté |
+| [720.201](ch/ne/fr/720.201.md) | 12 Arrêté |
+| [720.202](ch/ne/fr/720.202.md) | 12 Arrêté |
 | [720.3](ch/ne/fr/720.3.md) | Arrêté concernant l'intervention artistique pour les bâtiments édifiés ou rénovés |
 | [720.5](ch/ne/fr/720.5.md) | Accord intercantonal harmonisant la terminologie dans le domaine des constructions |
 | [720.6](ch/ne/fr/720.6.md) | Règlement sur le système automatisé de traitement des autorisations de construire |
@@ -20518,37 +22140,56 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [727.21](ch/ne/fr/727.21.md) | Arrêté portant sur la mise à disposition d\x92un site provisoire pour le transit\ |
 | [727.22](ch/ne/fr/727.22.md) | Arrêté portant sur la mise à disposition d\x92un site provisoire pour le séjour\ |
 | [727.3](ch/ne/fr/727.3.md) | Arrêté concernant le camping et le caravaning sur le domaine public ou privé |
+| [727.30](ch/ne/fr/727.30.md) | 8 Arrêté |
+| [727.31](ch/ne/fr/727.31.md) | 14 Arrêté |
 | [727.4](ch/ne/fr/727.4.md) | Arrêté concernant la mise à disposition estivale d\x92aires d\x92accueil pour\ |
+| [731.101](ch/ne/fr/731.101.md) | 24 Loi |
+| [731.111](ch/ne/fr/731.111.md) | 19 Décret |
 | [731.151](ch/ne/fr/731.151.md) | Règlement sur les piscines, les plages et les lieux de baignade publics, du |
 | [731.202](ch/ne/fr/731.202.md) | Arrêté d'exécution de la loi fédérale sur l'utilisation des forces hydrauliques, |
+| [731.221](ch/ne/fr/731.221.md) | 12 Arrêté |
 | [731.223](ch/ne/fr/731.223.md) | Arrêté sur les redevances, émoluments administratifs et taxes en matière d\x92\ |
 | [731.250](ch/ne/fr/731.250.md) | Loi sur le fonds cantonal des eaux, du 23 juin 1999 |
 | [731.250.1](ch/ne/fr/731.250.1.md) | Règlement d'utilisation du fonds cantonal des eaux (RUFCE), du 24 novembre |
+| [731.270](ch/ne/fr/731.270.md) | 1er Loi |
+| [731.270.1](ch/ne/fr/731.270.1.md) | 27 Arrêté d'application |
 | [735.10](ch/ne/fr/735.10.md) | Loi sur les routes et voies publiques (LRVP), du 21 janvier 2020 |
 | [735.100](ch/ne/fr/735.100.md) | Règlement d\x92exécution de la loi sur les routes et voies publiques (RELRVP),\ |
 | [735.101](ch/ne/fr/735.101.md) | Arrêté relatif à la redevance pour l\x92usage du domaine public routier par\ |
+| [735.103](ch/ne/fr/735.103.md) | 21 Arrêté |
+| [735.105.1](ch/ne/fr/735.105.1.md) | 24 Arrêté |
 | [735.15](ch/ne/fr/735.15.md) | Loi sur les routes nationales, ainsi que sur les routes principales et autres |
 | [735.151](ch/ne/fr/735.151.md) | Règlement d'exécution de la loi d'introduction de la législation fédérale sur |
 | [735.17](ch/ne/fr/735.17.md) | Loi sur l\x92entretien des routes nationales (LERN), du 26 mai 2020 |
 | [735.170](ch/ne/fr/735.170.md) | Règlement d\x92exécution de la loi sur l\x92entretien des routes nationales\ |
+| [740.04](ch/ne/fr/740.04.md) | 11 Arrêté |
 | [740.1](ch/ne/fr/740.1.md) | Loi cantonale sur l\x92énergie (LCEn), du 1er septembre 2020 |
 | [740.10](ch/ne/fr/740.10.md) | Règlement d\x92exécution de la loi cantonale sur l\x92énergie (RELCEn), du\ |
+| [740.10.01](ch/ne/fr/740.10.01.md) | 18 Règlement |
 | [740.100](ch/ne/fr/740.100.md) | Arrêté relatif aux subventions dans le domaine de l\x92énergie (ASUBEn), du\ |
 | [740.101](ch/ne/fr/740.101.md) | Loi sur l\x92approvisionnement en électricité (LAEL), du 25 janvier 2017 |
 | [740.101.0](ch/ne/fr/740.101.0.md) | Règlement d\x92exécution de la loi sur l\x92approvisionnement en électricité\ |
+| [740.103](ch/ne/fr/740.103.md) | 15 Arrêté |
+| [740.104](ch/ne/fr/740.104.md) | 27 Arrêté |
+| [740.105](ch/ne/fr/740.105.md) | 4 Arrêté |
+| [740.108](ch/ne/fr/740.108.md) | 1er Décret |
 | [740.11](ch/ne/fr/740.11.md) | Arrêté relatif au subventionnement des bornes de recharge (ASBor), du 24 novembre |
 | [740.12](ch/ne/fr/740.12.md) | Arrêté relatif au subventionnement des installations solaires photovoltaïques |
 | [740.13](ch/ne/fr/740.13.md) | Arrêté relatif au subventionnement des batteries de stockage d\x92électricité\ |
 | [740.15](ch/ne/fr/740.15.md) | Arrêté concernant les émoluments de décisions perçus par les autorités compétentes\ |
 | [740.16](ch/ne/fr/740.16.md) | Arrêté sur le contrôle obligatoire des installations de distribution de carburant |
+| [740.2](ch/ne/fr/740.2.md) | 14 Arrêté |
 | [751.0](ch/ne/fr/751.0.md) | Loi d''introduction de la législation fédérale sur la géoinformation (LGéo): |
 | [751.01](ch/ne/fr/751.01.md) | Règlement d'exécution de la loi cantonale sur la géoinformation (RLCGéo), du |
 | [761.10](ch/ne/fr/761.10.md) | Loi d'introduction des prescriptions fédérales sur la circulation routière |
 | [761.100](ch/ne/fr/761.100.md) | Arrêté d'exécution de la loi d'introduction des prescriptions fédérales sur |
 | [761.101](ch/ne/fr/761.101.md) | Arrêté d\x92introduction de la loi fédérale sur les amendes d\x92ordre (AI-LAO),\ |
 | [761.102](ch/ne/fr/761.102.md) | Arrêté sur l'emploi des véhicules automobiles à chenilles, du 7 décembre 1971 |
+| [761.104](ch/ne/fr/761.104.md) | 4 Arrêté |
+| [761.106](ch/ne/fr/761.106.md) | 22 Arrêté |
 | [761.107](ch/ne/fr/761.107.md) | Arrêté d'application de l'ordonnance fédérale relative à une redevance pour |
 | [761.108](ch/ne/fr/761.108.md) | Arrêté d'application de l'ordonnance fédérale concernant la redevance sur le |
+| [761.109](ch/ne/fr/761.109.md) | 20 Arrêté |
 | [761.110](ch/ne/fr/761.110.md) | Arrêté concernant l\x92octroi des facilités de stationnement pour les véhicules\ |
 | [761.20](ch/ne/fr/761.20.md) | Loi sur la taxe des véhicules automobiles, des remorques et des bateaux (LTVRB), |
 | [761.201](ch/ne/fr/761.201.md) | Arrêté concernant le rabais sur la taxe des véhicules automobiles accordé à |
@@ -20559,16 +22200,28 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [761.206](ch/ne/fr/761.206.md) | Arrêté concernant la taxation des véhicules automobiles fonctionnant à l\x92\ |
 | [761.30](ch/ne/fr/761.30.md) | Arrêté d'exécution de l'ordonnance fédérale relative au transport des marchandises |
 | [761.400](ch/ne/fr/761.400.md) | Loi sur le service cantonal des automobiles et de la navigation (LSCAN), du |
+| [761.400.1](ch/ne/fr/761.400.1.md) | 25 Arrêté |
+| [761.405](ch/ne/fr/761.405.md) | 22 Arrêté |
 | [761.41](ch/ne/fr/761.41.md) | Arrêté concernant la commission administrative du service cantonal des automobiles |
+| [761.42](ch/ne/fr/761.42.md) | 4 Arrêté |
 | [761.43](ch/ne/fr/761.43.md) | Arrêté concernant les émoluments perçus par le service cantonal des automobiles |
 | [761.50](ch/ne/fr/761.50.md) | Arrêté concernant les pistes et la pratique du motocross, du 28 septembre 1979 |
+| [761.60](ch/ne/fr/761.60.md) | 18 Loi |
+| [761.601](ch/ne/fr/761.601.md) | 8 Arrêté1) |
+| [763.10](ch/ne/fr/763.10.md) | 26 Décret |
 | [764.10](ch/ne/fr/764.10.md) | Arrêté concernant l'exploitation des installations à câbles transportant des\ |
 | [764.3](ch/ne/fr/764.3.md) | Concordat concernant les téléphériques et skilifts sans concession fédérale, |
 | [765.1](ch/ne/fr/765.1.md) | Loi sur les transports publics (LTP), du 1er octobre 1996 |
+| [765.10](ch/ne/fr/765.10.md) | 24 Arrêté |
 | [765.100](ch/ne/fr/765.100.md) | Règlement concernant l'octroi d'autorisations cantonales pour le transport |
+| [765.100.1](ch/ne/fr/765.100.1.md) | 13 Arrêté |
+| [765.2](ch/ne/fr/765.2.md) | 2 Décret |
+| [765.42](ch/ne/fr/765.42.md) | 20 Arrêté |
 | [766.10](ch/ne/fr/766.10.md) | Loi d'introduction de la législation fédérale en matière de navigation intérieure |
 | [766.100](ch/ne/fr/766.100.md) | Arrêté désignant les départements chargés de l'application de la loi d'introduction |
 | [766.11](ch/ne/fr/766.11.md) | Convention intercantonale du 15 août 2014 relative à l\x92organisation et\ |
+| [766.12](ch/ne/fr/766.12.md) | 22 Convention intercantonale |
+| [766.121](ch/ne/fr/766.121.md) | 16 Règlement intercantonal |
 | [766.122](ch/ne/fr/766.122.md) | Arrêté réglant l'exigence d'une attestation d'amarrage comme condition d'immatriculation |
 | [766.31](ch/ne/fr/766.31.md) | Arrêté portant interdiction de naviguer sur la Haute-Areuse entre Saint-Sulpice |
 | [766.32](ch/ne/fr/766.32.md) | Arrêté portant interdiction de la navigation à moteur sur le lac des Taillères, |
@@ -20602,6 +22255,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [766.398](ch/ne/fr/766.398.md) | Arrêté interdisant la navigation dans les eaux neuchâteloises aux alentours |
 | [766.399](ch/ne/fr/766.399.md) | Arrêté interdisant la navigation au large de la plage du Quai Jeanrenaud, à |
 | [766.400](ch/ne/fr/766.400.md) | Arrêté interdisant la navigation dans les eaux bordant la rive à la hauteur |
+| [766.51](ch/ne/fr/766.51.md) | 18 Arrêté |
 | [767.1](ch/ne/fr/767.1.md) | Loi sur les drones (LDro), du 26 janvier 2021 |
 | [767.10](ch/ne/fr/767.10.md) | Règlement d\x92exécution de la loi sur les drones (RELDro), du 16 février\ |
 | [780](ch/ne/fr/780.md) | Loi d'introduction de la loi fédérale sur la surveillance de la correspondance |
@@ -20619,20 +22273,51 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [800.40](ch/ne/fr/800.40.md) | Règlement d\x92exécution de la loi sur l\x92accompagnement et le soutien à\ |
 | [800.5](ch/ne/fr/800.5.md) | Loi sur AROSS (Accueil Réseau Orientation Santé Social) (LAROSS), du 28 mars |
 | [801.100](ch/ne/fr/801.100.md) | Règlement concernant l'exercice des professions médicales universitaires et |
+| [801.101](ch/ne/fr/801.101.md) | 11 Arrêté |
 | [801.102](ch/ne/fr/801.102.md) | Loi d\x92exécution de la loi fédérale relative à l\x92encouragement de la\ |
 | [801.103](ch/ne/fr/801.103.md) | Règlement d\x92exécution de la loi d\x92exécution de la loi fédérale relative\ |
+| [802.10](ch/ne/fr/802.10.md) | 25 Loi |
+| [802.101](ch/ne/fr/802.101.md) | 6 Arrêté |
+| [802.101.1](ch/ne/fr/802.101.1.md) | 27 Arrêté |
+| [802.101.2](ch/ne/fr/802.101.2.md) | 25 Arrêté |
+| [802.102](ch/ne/fr/802.102.md) | 12 Arrêté |
 | [802.105](ch/ne/fr/802.105.md) | Règlement sur les soins préhospitaliers et les transports de patients (RSPTP), |
+| [802.105.1](ch/ne/fr/802.105.1.md) | 2 Arrêté |
+| [802.105.2](ch/ne/fr/802.105.2.md) | 16 Arrêté |
+| [802.108](ch/ne/fr/802.108.md) | 21 Arrêté |
+| [802.113](ch/ne/fr/802.113.md) | 12 Arrêté |
+| [802.114](ch/ne/fr/802.114.md) | 2 Arrêté |
+| [802.115](ch/ne/fr/802.115.md) | 5 Arrêté |
+| [802.116](ch/ne/fr/802.116.md) | 26 Arrêté |
+| [802.117](ch/ne/fr/802.117.md) | 18 Arrêté |
 | [802.310](ch/ne/fr/802.310.md) | Loi sur le Centre neuchâtelois de psychiatrie (LCNP), du 29 janvier 2008 |
+| [802.310.1](ch/ne/fr/802.310.1.md) | 7 Règlement général |
+| [802.310.10](ch/ne/fr/802.310.10.md) | 24 Arrêté |
 | [802.4](ch/ne/fr/802.4.md) | Loi sur le Réseau hospitalier neuchâtelois (LRHNe), du 19 février 2019 |
+| [802.510](ch/ne/fr/802.510.md) | 1er Décret |
+| [802.520](ch/ne/fr/802.520.md) | 2 Décret |
+| [802.530](ch/ne/fr/802.530.md) | 29 Décret |
 | [802.540](ch/ne/fr/802.540.md) | Loi concernant la médecine et l'hygiène du travail, du 15 novembre 1993 |
 | [802.550](ch/ne/fr/802.550.md) | Règlement d\x92application de la loi fédérale sur les centres de consultation\ |
+| [804.01](ch/ne/fr/804.01.md) | 28 Décret |
+| [804.02](ch/ne/fr/804.02.md) | 5 Arrêté |
 | [804.10](ch/ne/fr/804.10.md) | Règlement sur les produits thérapeutiques, les pharmacies et les drogueries, |
+| [804.103](ch/ne/fr/804.103.md) | 4 Liste des médicaments qui peuvent être vendus |
+| [804.106](ch/ne/fr/804.106.md) | 9 Arrêté |
+| [804.11](ch/ne/fr/804.11.md) | 4 Règlement |
 | [804.30](ch/ne/fr/804.30.md) | Règlement d'application de la loi fédérale sur les stupéfiants, du 26 septembre |
 | [804.8](ch/ne/fr/804.8.md) | Loi vétérinaire (LVét), du 25 janvier 2005 |
 | [804.80](ch/ne/fr/804.80.md) | Règlement sur les médicaments vétérinaires, du 1er juillet 2005 |
 | [805.10](ch/ne/fr/805.10.md) | Loi sur la protection et la gestion des eaux (LPGE), du 2 octobre 2012 |
 | [805.100](ch/ne/fr/805.100.md) | Règlement d'exécution de la loi sur la protection et la gestion des eaux (RLPGE), |
+| [805.100.01](ch/ne/fr/805.100.01.md) | 5 Arrêté |
+| [805.100.02](ch/ne/fr/805.100.02.md) | 21 Arrêté |
+| [805.100.1](ch/ne/fr/805.100.1.md) | 6 Arrêté |
+| [805.101](ch/ne/fr/805.101.md) | 14 Arrêté |
+| [805.102](ch/ne/fr/805.102.md) | 14 Arrêté |
+| [805.116](ch/ne/fr/805.116.md) | 18 Arrêté |
 | [805.23](ch/ne/fr/805.23.md) | Arrêté d'exécution de l'ordonnance fédérale sur la protection contre le bruit |
+| [805.24](ch/ne/fr/805.24.md) | 4 Arrêté |
 | [805.240](ch/ne/fr/805.240.md) | Convention entre la République et Canton du Jura et la République et Canton |
 | [805.241](ch/ne/fr/805.241.md) | Arrêté concernant les mesures temporaires à prendre en cas de pollution excessive\ |
 | [805.242](ch/ne/fr/805.242.md) | Arrêté relatif au contrôle officiel des installations de chauffage, du 10 septembre |
@@ -20640,6 +22325,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [805.301](ch/ne/fr/805.301.md) | Règlement d\x92exécution de la loi sur les déchets et les sites pollués (RLDSP),\ |
 | [805.301.1](ch/ne/fr/805.301.1.md) | Arrêté concernant les déchets de chantier (ADC), du 10 août 2005 |
 | [805.301.2](ch/ne/fr/805.301.2.md) | Arrêté concernant la valorisation et l'élimination des boues d'épuration, du |
+| [805.301.3](ch/ne/fr/805.301.3.md) | 7 Arrêté |
 | [805.302](ch/ne/fr/805.302.md) | Arrêté sur les sites pollués (AsiPol), du 11 février 2009 |
 | [805.60](ch/ne/fr/805.60.md) | Règlement d'exécution de la législation fédérale sur la protection contre les |
 | [805.7](ch/ne/fr/805.7.md) | Loi sur l\x92action publique en vue d\x92un développement durable (LDD), du\ |
@@ -20648,11 +22334,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [806.12](ch/ne/fr/806.12.md) | Règlement concernant l\x92abattage des animaux, du 16 septembre 2020 |
 | [806.13](ch/ne/fr/806.13.md) | Arrêté concernant les émoluments perçus pour le contrôle des viandes, du 5 |
 | [806.15](ch/ne/fr/806.15.md) | Arrêté fixant les émoluments perçus par le service de la consommation et des |
+| [806.17](ch/ne/fr/806.17.md) | 30 Arrêté |
+| [806.18](ch/ne/fr/806.18.md) | 5 Arrêté |
 | [807.10](ch/ne/fr/807.10.md) | Règlement concernant l'application de la loi fédérale sur la lutte contre les |
 | [807.13](ch/ne/fr/807.13.md) | Règlement d'application des prescriptions fédérales sur la lutte contre la |
 | [807.201](ch/ne/fr/807.201.md) | Règlement sur les vaccinations et les revaccinations, du 4 juillet 1961 |
 | [807.301](ch/ne/fr/807.301.md) | Règlement concernant la protection des patients hospitalisés en milieu psychiatrique |
+| [807.401](ch/ne/fr/807.401.md) | 26 Règlement |
+| [807.8](ch/ne/fr/807.8.md) | 24 Arrêté |
+| [807.80](ch/ne/fr/807.80.md) | 24 Arrêté |
 | [810.40](ch/ne/fr/810.40.md) | Règlement concernant l'office cantonal de conciliation en matière de conflits |
+| [811.10](ch/ne/fr/811.10.md) | 22 Loi |
 | [811.101](ch/ne/fr/811.101.md) | Règlement d\x92application de la loi fédérale sur le travail 5.11.24, du 29\ |
 | [811.102](ch/ne/fr/811.102.md) | Arrêté concernant la durée hebdomadaire du travail des apprentis, du 19 avril |
 | [811.21](ch/ne/fr/811.21.md) | Arrêté d\x92exécution concernant les ordonnances fédérales sur les chauffeurs\ |
@@ -20674,17 +22366,23 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [820.10](ch/ne/fr/820.10.md) | Loi d'application de la loi fédérale sur l'assurance-vieillesse et survivants |
 | [820.101](ch/ne/fr/820.101.md) | Règlement d'exécution de la loi d'application de la loi fédérale sur l'assurance-vieillesse |
 | [820.102](ch/ne/fr/820.102.md) | Arrêté fixant la délégation de compétences du Conseil d\x92Etat à la direction\ |
+| [820.103](ch/ne/fr/820.103.md) | 15 Arrêté |
 | [820.104](ch/ne/fr/820.104.md) | Règlement de la Caisse cantonale de compensation, du 11 juin 1971 |
 | [820.105](ch/ne/fr/820.105.md) | Règlement fixant l'organisation et les attributions de la commission de gestion |
 | [820.22](ch/ne/fr/820.22.md) | Loi sur l\x92inclusion et l\x92accompagnement des personnes vivant avec un\ |
 | [820.220](ch/ne/fr/820.220.md) | Arrêté instituant le Tribunal arbitral cantonal prévu par la loi fédérale sur |
 | [820.221](ch/ne/fr/820.221.md) | Règlement d\x92exécution de la loi sur l\x92inclusion et l\x92accompagnement\ |
+| [820.222](ch/ne/fr/820.222.md) | 9 Directive |
 | [820.223](ch/ne/fr/820.223.md) | Règlement sur la planification et la reconnaissance des appartements LASDom |
+| [820.224](ch/ne/fr/820.224.md) | 5 Arrêté |
 | [820.30](ch/ne/fr/820.30.md) | Loi d'introduction de la loi fédérale sur les prestations complémentaires à |
 | [820.301](ch/ne/fr/820.301.md) | Règlement d'exécution de la loi d'introduction de la loi fédérale sur les prestations |
 | [820.301.01](ch/ne/fr/820.301.01.md) | Arrêté fixant le montant des dépenses personnelles laissé à disposition des\ |
 | [820.301.02](ch/ne/fr/820.301.02.md) | Arrêté fixant les taxes journalières des bénéficiaires de prestations des institutions |
 | [820.301.03](ch/ne/fr/820.301.03.md) | Arrêté fixant la taxe d\x92hébergement applicable aux personnes bénéficiant\ |
+| [820.301.04](ch/ne/fr/820.301.04.md) | 15 Arrêté |
+| [820.301.1](ch/ne/fr/820.301.1.md) | 13 Arrêté |
+| [820.303](ch/ne/fr/820.303.md) | 27 Arrêté |
 | [820.304](ch/ne/fr/820.304.md) | Règlement relatif au remboursement des frais de maladie et des frais résultant |
 | [820.305](ch/ne/fr/820.305.md) | Arrêté permettant l\x92octroi d\x92une aide au loyer, du 6 décembre 2021 |
 | [821.10](ch/ne/fr/821.10.md) | Loi d'introduction de la loi fédérale sur l'assurance-maladie (LILAMal), du |
@@ -20697,54 +22395,191 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [821.107](ch/ne/fr/821.107.md) | Règlement sur le financement résiduel des soins en cas de maladie (RFRS), du |
 | [821.121.2](ch/ne/fr/821.121.2.md) | Arrêté fixant la liste des hôpitaux admis à pratiquer à charge de l'assurance |
 | [821.121.20](ch/ne/fr/821.121.20.md) | Arrêté sur l\x92admission des fournisseurs de prestations et la fixation de\ |
+| [821.121.21](ch/ne/fr/821.121.21.md) | 29 Arrêté |
+| [821.121.3](ch/ne/fr/821.121.3.md) | 22 Arrêté |
+| [821.121.30](ch/ne/fr/821.121.30.md) | 8 Arrêté |
+| [821.121.31](ch/ne/fr/821.121.31.md) | 8 Arrêté |
+| [821.121.32](ch/ne/fr/821.121.32.md) | 8 Arrêté |
 | [821.121.33](ch/ne/fr/821.121.33.md) | Arrêté fixant les tarifs des soins de longue durée au sens de l\x92article\ |
 | [821.121.34](ch/ne/fr/821.121.34.md) | Arrêté fixant les tarifs de soins de longue durée au sens de l\x92article\ |
+| [821.121.4](ch/ne/fr/821.121.4.md) | 19 Arrêté |
+| [821.121.61](ch/ne/fr/821.121.61.md) | 11 Arrêté |
+| [821.123.001](ch/ne/fr/821.123.001.md) | 15 Arrêté |
+| [821.123.002](ch/ne/fr/821.123.002.md) | 6 Arrêté |
+| [821.123.003](ch/ne/fr/821.123.003.md) | 30 Arrêté |
+| [821.123.004](ch/ne/fr/821.123.004.md) | 4 Arrêté |
+| [821.123.005](ch/ne/fr/821.123.005.md) | 29 Arrêté |
+| [821.123.02](ch/ne/fr/821.123.02.md) | 14 Arrêté |
+| [821.125.10](ch/ne/fr/821.125.10.md) | 18 Arrêté |
+| [821.125.12](ch/ne/fr/821.125.12.md) | 2 Arrêté |
+| [821.125.15](ch/ne/fr/821.125.15.md) | 28 Arrêté |
+| [821.125.21](ch/ne/fr/821.125.21.md) | 8 Arrêté |
+| [821.125.210](ch/ne/fr/821.125.210.md) | 28 Arrêté |
+| [821.125.250](ch/ne/fr/821.125.250.md) | 16 Arrêté |
+| [821.125.26](ch/ne/fr/821.125.26.md) | 21 Arrêté |
+| [821.125.27](ch/ne/fr/821.125.27.md) | 1er Arrêté |
+| [821.125.30](ch/ne/fr/821.125.30.md) | 11 Arrêté |
+| [821.125.31](ch/ne/fr/821.125.31.md) | 2 Arrêté |
+| [821.125.40](ch/ne/fr/821.125.40.md) | 18 Arrêté |
+| [821.125.41](ch/ne/fr/821.125.41.md) | 4 Arrêté |
+| [821.125.42](ch/ne/fr/821.125.42.md) | 20 Arrêté |
+| [821.125.43](ch/ne/fr/821.125.43.md) | 23 Arrêté |
+| [821.125.44](ch/ne/fr/821.125.44.md) | 17 Arrêté |
+| [821.125.45](ch/ne/fr/821.125.45.md) | 12 Arrêté |
+| [821.125.46](ch/ne/fr/821.125.46.md) | 11 Arrêté |
+| [821.125.47](ch/ne/fr/821.125.47.md) | 11 Arrêté |
+| [821.125.50](ch/ne/fr/821.125.50.md) | 9 Arrêté |
+| [821.125.51](ch/ne/fr/821.125.51.md) | 9 Arrêté |
+| [821.125.52](ch/ne/fr/821.125.52.md) | 17 Arrêté |
+| [821.125.60](ch/ne/fr/821.125.60.md) | 4 Arrêté |
+| [821.125.61](ch/ne/fr/821.125.61.md) | 12 Arrêté |
+| [821.125.62](ch/ne/fr/821.125.62.md) | 24 Arrêté |
+| [821.125.620](ch/ne/fr/821.125.620.md) | 4 Arrêté |
+| [821.125.621](ch/ne/fr/821.125.621.md) | 4 Arrêté |
+| [821.125.622](ch/ne/fr/821.125.622.md) | 4 Arrêté |
+| [821.125.630](ch/ne/fr/821.125.630.md) | 17 Arrêté |
+| [821.125.65](ch/ne/fr/821.125.65.md) | 10 Arrêté |
+| [821.125.66](ch/ne/fr/821.125.66.md) | 10 Arrêté |
+| [821.125.660](ch/ne/fr/821.125.660.md) | 2 Arrêté |
+| [821.125.67](ch/ne/fr/821.125.67.md) | 3 Arrêté |
+| [821.125.70](ch/ne/fr/821.125.70.md) | 10 Arrêté |
+| [821.125.80](ch/ne/fr/821.125.80.md) | 25 Arrêté |
+| [821.125.90](ch/ne/fr/821.125.90.md) | 5 Arrêté |
+| [821.125.91](ch/ne/fr/821.125.91.md) | 15 Arrêté |
+| [821.125.92](ch/ne/fr/821.125.92.md) | 26 Arrêté |
+| [821.125.920](ch/ne/fr/821.125.920.md) | 29 Arrêté |
+| [821.125.93](ch/ne/fr/821.125.93.md) | 22 Arrêté |
+| [821.125.930](ch/ne/fr/821.125.930.md) | 9 Arrêté |
+| [821.125.931](ch/ne/fr/821.125.931.md) | 18 Arrêté |
+| [821.125.94](ch/ne/fr/821.125.94.md) | 20 Arrêté |
+| [821.127](ch/ne/fr/821.127.md) | 30 Arrêté |
+| [821.127.0](ch/ne/fr/821.127.0.md) | 30 Arrêté |
+| [821.127.001](ch/ne/fr/821.127.001.md) | 2 Arrêté |
+| [821.127.02](ch/ne/fr/821.127.02.md) | 30 Arrêté |
+| [821.127.10](ch/ne/fr/821.127.10.md) | 10 Arrêté |
+| [821.127.100](ch/ne/fr/821.127.100.md) | Arrêté |
+| [821.127.101](ch/ne/fr/821.127.101.md) | 6 Arrêté |
+| [821.127.102](ch/ne/fr/821.127.102.md) | Arrêté |
+| [821.127.25](ch/ne/fr/821.127.25.md) | 3 Arrêté |
+| [821.127.26](ch/ne/fr/821.127.26.md) | 22 Arrêté |
+| [821.127.27](ch/ne/fr/821.127.27.md) | 20 Arrêté |
 | [821.128](ch/ne/fr/821.128.md) | Arrêté fixant la procédure d'autorisation des hospitalisations hors canton |
+| [821.128.01](ch/ne/fr/821.128.01.md) | 21 Arrêté |
+| [821.128.02](ch/ne/fr/821.128.02.md) | 15 Arrêté |
+| [821.128.10](ch/ne/fr/821.128.10.md) | 15 Arrêté |
+| [821.128.100](ch/ne/fr/821.128.100.md) | 18 Arrêté |
+| [821.128.11](ch/ne/fr/821.128.11.md) | 14 Arrêté |
+| [821.128.13](ch/ne/fr/821.128.13.md) | 7 Arrêté |
+| [821.128.20](ch/ne/fr/821.128.20.md) | 28 Arrêté |
+| [821.128.21](ch/ne/fr/821.128.21.md) | 2 Arrêté |
+| [821.128.22](ch/ne/fr/821.128.22.md) | 2 Arrêté |
+| [821.129](ch/ne/fr/821.129.md) | 10 Arrêté |
+| [821.129.01](ch/ne/fr/821.129.01.md) | 10 Arrêté |
+| [821.129.02](ch/ne/fr/821.129.02.md) | 4 Arrêté |
+| [821.129.1](ch/ne/fr/821.129.1.md) | 10 Arrêté |
 | [821.204](ch/ne/fr/821.204.md) | Loi d'introduction de la loi fédérale sur l'assurance-accidents (LILAA), du |
 | [821.204.1](ch/ne/fr/821.204.1.md) | Arrêté d'exécution de la loi cantonale d'introduction de la loi fédérale sur |
+| [821.521](ch/ne/fr/821.521.md) | 18 Règlement |
+| [821.522](ch/ne/fr/821.522.md) | 18 Arrêté d'exécution |
+| [821.523](ch/ne/fr/821.523.md) | 11 Arrêté d'exécution |
+| [821.526](ch/ne/fr/821.526.md) | 4 Arrêté |
 | [821.53](ch/ne/fr/821.53.md) | Loi concernant le permis de conducteur de machines de travail (permis de machiniste), |
 | [821.530](ch/ne/fr/821.530.md) | Règlement relatif au permis de conducteur de machines de travail (permis de |
 | [822.10](ch/ne/fr/822.10.md) | Loi d'introduction de la loi fédérale sur les allocations familiales (LILAFam), |
 | [822.101](ch/ne/fr/822.101.md) | Règlement d'exécution de la loi d'introduction de la loi fédérale sur les allocations |
 | [822.101.1](ch/ne/fr/822.101.1.md) | Arrêté fixant les montants des allocations familiales, du 25 septembre 2024 |
+| [822.101.2](ch/ne/fr/822.101.2.md) | 23 Arrêté |
+| [822.102](ch/ne/fr/822.102.md) | 20 Règlement |
+| [822.201](ch/ne/fr/822.201.md) | 17 Règlement |
+| [822.30](ch/ne/fr/822.30.md) | 11 Règlement |
+| [822.300](ch/ne/fr/822.300.md) | 14 Arrêté |
+| [822.301](ch/ne/fr/822.301.md) | 27 Règlement |
 | [822.31](ch/ne/fr/822.31.md) | Règlement de la Caisse cantonale de compensation pour allocations familiales, |
 | [822.312](ch/ne/fr/822.312.md) | Arrêté fixant le taux de cotisation de la Caisse cantonale de compensation |
 | [822.313](ch/ne/fr/822.313.md) | Arrêté fixant les émoluments de surveillance des caisses de compensation pour |
 | [822.32](ch/ne/fr/822.32.md) | Arrêté allouant une indemnité aux communes pour la gestion de leurs agences |
 | [823.201](ch/ne/fr/823.201.md) | Règlement concernant les mesures d\x92intégration professionnelle (RMIP),\ |
 | [823.201.1](ch/ne/fr/823.201.1.md) | Arrêté fixant les limites financières et les montants d\x92aide des mesures\ |
+| [823.201.11](ch/ne/fr/823.201.11.md) | 4 Arrêté |
+| [823.201.12](ch/ne/fr/823.201.12.md) | 26 Arrêté |
+| [823.201.2](ch/ne/fr/823.201.2.md) | 21 Arrêté |
+| [823.201.20](ch/ne/fr/823.201.20.md) | 25 Arrêté |
+| [823.201.30](ch/ne/fr/823.201.30.md) | 16 Arrêté |
 | [823.31](ch/ne/fr/823.31.md) | Règlement relatif à la Caisse cantonale neuchâteloise d'assurance-chômage (RCCNAC), |
 | [824.0](ch/ne/fr/824.0.md) | Concordat sur la création et l'exploitation de l'Autorité de surveillance LPP |
+| [824.1](ch/ne/fr/824.1.md) | 27 Arrêté d'exécution |
 | [831.0](ch/ne/fr/831.0.md) | Loi sur l'action sociale (LASoc), du 25 juin 1996 |
 | [831.01](ch/ne/fr/831.01.md) | Règlement d'exécution de la loi sur l'action sociale (RELASoc), du 27 novembre |
 | [831.02](ch/ne/fr/831.02.md) | Arrêté fixant les normes pour le calcul de l'aide matérielle (ANCAM), du 4 |
 | [831.03](ch/ne/fr/831.03.md) | Arrêté fixant les normes pour le calcul de l'aide matérielle versée aux requérant-e-s\ |
+| [831.04](ch/ne/fr/831.04.md) | 7 Directive |
 | [831.2](ch/ne/fr/831.2.md) | Décret portant création d'un fonds de désendettement et de prévention sociale |
 | [831.3](ch/ne/fr/831.3.md) | Loi sur la lutte et la prévention contre le surendettement (LLPS), du 24 juin |
 | [831.30](ch/ne/fr/831.30.md) | Règlement d\x92exécution de la loi sur la lutte et la prévention contre le\ |
+| [831.31](ch/ne/fr/831.31.md) | 7 Arrêté |
 | [831.4](ch/ne/fr/831.4.md) | Loi sur l'harmonisation et la coordination des prestations sociales (LHaCoPS), |
 | [831.40](ch/ne/fr/831.40.md) | Règlement d'exécution de la loi sur l'harmonisation et la coordination des |
+| [831.41](ch/ne/fr/831.41.md) | 2 Règlement |
+| [831.42](ch/ne/fr/831.42.md) | 2 Arrêté |
 | [832.0](ch/ne/fr/832.0.md) | Convention intercantonale relatives aux institutions sociales (CIIS), du 13 |
 | [832.10](ch/ne/fr/832.10.md) | Loi sur l'aide financière aux établissements spécialisés pour enfants et adolescents |
 | [832.101](ch/ne/fr/832.101.md) | Règlement d\x92exécution de la loi sur l\x92aide financière aux établissements\ |
+| [832.101.0](ch/ne/fr/832.101.0.md) | 13 Directive |
 | [832.102](ch/ne/fr/832.102.md) | Arrêté concernant le champ d'application de la loi sur l'aide financière aux |
 | [832.103](ch/ne/fr/832.103.md) | Arrêté concernant la prise en charge psychiatrique et psychothérapeutique\ |
 | [832.104](ch/ne/fr/832.104.md) | Arrêté concernant la reconnaissance des institutions pour enfants atteints |
 | [832.105](ch/ne/fr/832.105.md) | Arrêté fixant les modalités pour les organes de contrôle des écoles spécialisées |
+| [832.106](ch/ne/fr/832.106.md) | 26 Directive |
+| [832.107](ch/ne/fr/832.107.md) | 1er Arrêté |
+| [832.12](ch/ne/fr/832.12.md) | 22 Décret |
+| [832.121](ch/ne/fr/832.121.md) | 6 Acte constitutif |
+| [832.122](ch/ne/fr/832.122.md) | 10 Arrêté |
+| [832.141](ch/ne/fr/832.141.md) | 7 Arrêté |
+| [832.142](ch/ne/fr/832.142.md) | 23 Arrêté |
+| [832.143](ch/ne/fr/832.143.md) | 3 Arrêté |
+| [832.144](ch/ne/fr/832.144.md) | 25 Arrêté |
+| [832.144.0](ch/ne/fr/832.144.0.md) | 3 Arrêté |
+| [832.145](ch/ne/fr/832.145.md) | 14 Arrêté |
+| [832.16](ch/ne/fr/832.16.md) | 22 Statuts |
 | [832.30](ch/ne/fr/832.30.md) | Loi sur le financement des établissements médico-sociaux (LFinEMS), du 28 septembre |
 | [832.300](ch/ne/fr/832.300.md) | Règlement sur le financement des établissements spécialisés (RFinES), du 20 |
+| [832.301](ch/ne/fr/832.301.md) | 21 Règlement d'exécution |
+| [832.301.1](ch/ne/fr/832.301.1.md) | 1er Arrêté |
+| [832.310](ch/ne/fr/832.310.md) | 26 Arrêté |
+| [832.32](ch/ne/fr/832.32.md) | 27 Décret |
+| [832.321](ch/ne/fr/832.321.md) | 11 Statuts |
+| [832.322](ch/ne/fr/832.322.md) | 5 Règlement général |
+| [832.323](ch/ne/fr/832.323.md) | 22 Arrêté |
+| [832.324](ch/ne/fr/832.324.md) | 10 Arrêté |
+| [832.325](ch/ne/fr/832.325.md) | 1er Arrêté |
 | [832.33](ch/ne/fr/832.33.md) | Arrêté fixant la liste des établissements médico-sociaux (EMS) du Canton de\ |
+| [832.34](ch/ne/fr/832.34.md) | 25 Arrêté |
 | [832.35](ch/ne/fr/832.35.md) | Règlement sur la reconnaissance des conditions générales de travail des établissements |
 | [832.36](ch/ne/fr/832.36.md) | Arrêté fixant la liste et les tarifs des prestations pour les établissements\ |
 | [841.0](ch/ne/fr/841.0.md) | Loi sur l'aide au logement (LAL), du 17 décembre 1985 |
 | [841.00](ch/ne/fr/841.00.md) | Loi sur l'aide au logement (LAL2), du 30 janvier 2008 |
 | [841.01](ch/ne/fr/841.01.md) | Règlement d'exécution de la loi sur l'aide au logement (RAL), du 3 septembre |
 | [841.010](ch/ne/fr/841.010.md) | Règlement d'exécution de la loi sur l'aide au logement (RAL2), du 22 décembre |
+| [841.02](ch/ne/fr/841.02.md) | 31 Arrêté |
+| [841.10](ch/ne/fr/841.10.md) | 15 Décret |
 | [841.101](ch/ne/fr/841.101.md) | Règlement relatif à l'exécution du décret concernant la participation de l'Etat |
+| [841.11](ch/ne/fr/841.11.md) | 26 Décret |
 | [841.110](ch/ne/fr/841.110.md) | Règlement relatif à l'exécution du décret concernant la participation de l'Etat |
 | [841.111](ch/ne/fr/841.111.md) | Règlement relatif à l'exécution du décret concernant la participation de l'Etat |
+| [841.20](ch/ne/fr/841.20.md) | 24 Décret |
+| [841.21](ch/ne/fr/841.21.md) | 12 Décret |
+| [841.22](ch/ne/fr/841.22.md) | 21 Décret |
+| [841.23](ch/ne/fr/841.23.md) | 23 Décret |
+| [841.24](ch/ne/fr/841.24.md) | 13 Décret |
+| [841.25](ch/ne/fr/841.25.md) | 25 Décret |
+| [841.251](ch/ne/fr/841.251.md) | 21 Décret |
+| [841.26](ch/ne/fr/841.26.md) | 21 Décret |
 | [841.300](ch/ne/fr/841.300.md) | Règlement d'application des décrets concernant l'aide à la construction de |
+| [841.301](ch/ne/fr/841.301.md) | 22 Arrêté |
+| [843.10](ch/ne/fr/843.10.md) | 23 Décret |
 | [843.101](ch/ne/fr/843.101.md) | Règlement d'exécution du décret concernant l'encouragement à la transformation |
+| [843.11](ch/ne/fr/843.11.md) | 17 Décret |
+| [843.12](ch/ne/fr/843.12.md) | 20 Décret |
 | [843.121](ch/ne/fr/843.121.md) | Règlement d'exécution du décret concernant l'encouragement à la transformation |
 | [844.10](ch/ne/fr/844.10.md) | Décret concernant la démolition et la transformation de maisons d'habitation, |
 | [844.101](ch/ne/fr/844.101.md) | Arrêté relatif à la démolition et la transformation de maisons d'habitation, |
@@ -20763,65 +22598,125 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [863.102](ch/ne/fr/863.102.md) | Règlement d\x92exécution de la loi sur la préservation et l\x92assurance des\ |
 | [863.104](ch/ne/fr/863.104.md) | Arrêté fixant la mesure dans laquelle les dispositions de la loi sur le statut |
 | [863.105](ch/ne/fr/863.105.md) | Règlement concernant l'accès aux données de l'assurance immobilière par le |
+| [863.21](ch/ne/fr/863.21.md) | 18 Décret |
+| [863.210](ch/ne/fr/863.210.md) | 5 Arrêté |
+| [864.10](ch/ne/fr/864.10.md) | 26 Loi |
+| [864.102](ch/ne/fr/864.102.md) | 11 Arrêté |
+| [864.102.0](ch/ne/fr/864.102.0.md) | 17 Arrêté |
+| [864.102.01](ch/ne/fr/864.102.01.md) | 25 Arrêté |
+| [864.102.1](ch/ne/fr/864.102.1.md) | 31 Arrêté |
+| [864.102.2](ch/ne/fr/864.102.2.md) | 29 Arrêté |
+| [864.104.3](ch/ne/fr/864.104.3.md) | 25 Arrêté |
+| [864.201](ch/ne/fr/864.201.md) | 21 Arrêté |
+| [864.202](ch/ne/fr/864.202.md) | 24 Arrêté |
 | [900.1](ch/ne/fr/900.1.md) | Loi sur l'appui au développement économique (LADE), du 29 septembre 2015 |
 | [900.10](ch/ne/fr/900.10.md) | Règlement d'exécution de la loi sur l'appui au développement économique (RELADE), |
 | [901.02](ch/ne/fr/901.02.md) | Loi d'exécution de la loi fédérale sur la politique régionale (LELPR), du 23 |
 | [901.020](ch/ne/fr/901.020.md) | Règlement d'application de la loi d'exécution de la loi fédérale sur la politique |
+| [901.1](ch/ne/fr/901.1.md) | 1er Loi d'introduction |
+| [901.11](ch/ne/fr/901.11.md) | 5 Arrêté |
+| [901.12](ch/ne/fr/901.12.md) | 21 Arrêté |
 | [910.1](ch/ne/fr/910.1.md) | Loi sur la promotion de l'agriculture (LPAgr), du 28 janvier 2009 |
 | [910.10](ch/ne/fr/910.10.md) | Règlement général d'exécution de la loi sur la promotion de l'agriculture (RELPAgr), |
+| [910.101](ch/ne/fr/910.101.md) | 6 Arrêté |
 | [910.11](ch/ne/fr/910.11.md) | Règlement relatif à la reconversion en agriculture biologique des terres de\ |
 | [913.1](ch/ne/fr/913.1.md) | Loi sur les améliorations structurelles dans l'agriculture (LASA), du 10 novembre |
 | [913.10](ch/ne/fr/913.10.md) | Règlement d'exécution de la loi sur les améliorations structurelles dans l'agriculture |
 | [915.20](ch/ne/fr/915.20.md) | Décret concernant le statut du site de Cernier, du 2 octobre 1995 |
+| [915.25](ch/ne/fr/915.25.md) | 13 Règlement |
 | [916.120](ch/ne/fr/916.120.md) | Loi sur la viticulture (LVit), du 30 juin 1976 |
 | [916.120.0](ch/ne/fr/916.120.0.md) | Règlement d'exécution de la loi sur la viticulture, du 22 juin 2009 |
+| [916.120.1](ch/ne/fr/916.120.1.md) | 20 Arrêté |
+| [916.120.10](ch/ne/fr/916.120.10.md) | 17 Arrêté |
+| [916.120.11](ch/ne/fr/916.120.11.md) | 4 Arrêté |
+| [916.120.12](ch/ne/fr/916.120.12.md) | 17 Arrêté |
+| [916.120.120](ch/ne/fr/916.120.120.md) | 4 Arrêté |
+| [916.120.13](ch/ne/fr/916.120.13.md) | 29 Arrêté |
+| [916.120.3](ch/ne/fr/916.120.3.md) | 30 Arrêté |
+| [916.120.30](ch/ne/fr/916.120.30.md) | 23 Arrêté |
+| [916.120.4](ch/ne/fr/916.120.4.md) | 17 Arrêté |
+| [916.120.5](ch/ne/fr/916.120.5.md) | 21 Arrêté |
 | [916.120.6](ch/ne/fr/916.120.6.md) | Règlement départemental relatif au subventionnement des traitements viticoles |
+| [916.120.60](ch/ne/fr/916.120.60.md) | 21 Arrêté |
 | [916.120.7](ch/ne/fr/916.120.7.md) | arrêté relatif au blocage-financement des vins issus de la récolte 2024, du |
 | [916.120.8](ch/ne/fr/916.120.8.md) | Arrêté relatif au blocage-financement des vins issus de la récolte 2025, du |
+| [916.120.9](ch/ne/fr/916.120.9.md) | 13 Règlement |
 | [916.201](ch/ne/fr/916.201.md) | Règlement concernant la protection des végétaux, du 17 décembre 1997 |
+| [916.201.1](ch/ne/fr/916.201.1.md) | 27 Arrêté |
 | [916.310.0](ch/ne/fr/916.310.0.md) | Règlement concernant la production animale, du 22 juin 2009 |
+| [916.310.4](ch/ne/fr/916.310.4.md) | 30 Règlement |
+| [916.322](ch/ne/fr/916.322.md) | 19 Arrêté |
 | [916.322.1](ch/ne/fr/916.322.1.md) | Convention intercantonale de mise en \x9Cuvre en matière de consultation en\ |
 | [916.420.2](ch/ne/fr/916.420.2.md) | Règlement concernant les équipes d'intervention en cas d'épizooties hautement |
 | [916.421](ch/ne/fr/916.421.md) | Règlement concernant la police sanitaire des animaux, du 31 mars 1999 |
+| [916.421.220](ch/ne/fr/916.421.220.md) | 26 Arrêté |
+| [916.421.24](ch/ne/fr/916.421.24.md) | 22 Arrêté |
+| [916.421.31](ch/ne/fr/916.421.31.md) | 30 Arrêté |
 | [916.421.32](ch/ne/fr/916.421.32.md) | Arrêté fixant le tarif des indemnités versées aux vétérinaires requis pour |
 | [916.421.320](ch/ne/fr/916.421.320.md) | Arrêté fixant le tarif des indemnités versées aux vétérinaires officiels, du |
+| [916.421.321](ch/ne/fr/916.421.321.md) | 12 Arrêté |
 | [916.421.34](ch/ne/fr/916.421.34.md) | Arrêté fixant les indemnités versées aux taxateurs requis pour l'estimation\ |
 | [916.421.35](ch/ne/fr/916.421.35.md) | Règlement relatif aux émoluments en matière de lutte contre les épizooties\ |
+| [916.421.350](ch/ne/fr/916.421.350.md) | 23 Arrêté |
+| [916.421.40](ch/ne/fr/916.421.40.md) | 17 Arrêté |
+| [916.421.41](ch/ne/fr/916.421.41.md) | 14 Arrêté |
+| [916.421.50](ch/ne/fr/916.421.50.md) | 7 Arrêté |
 | [916.423](ch/ne/fr/916.423.md) | Règlement concernant la police sanitaire des abeilles, du 5 décembre 2016 |
+| [916.423.1](ch/ne/fr/916.423.1.md) | 24 Arrêté |
 | [916.423.10](ch/ne/fr/916.423.10.md) | Arrêté fixant les indemnités, vacations et frais versés aux inspecteurs des |
+| [916.50](ch/ne/fr/916.50.md) | 13 Concordat |
+| [916.501](ch/ne/fr/916.501.md) | 16 Règlement |
+| [916.502](ch/ne/fr/916.502.md) | 30 Règlement d'exécution |
 | [916.510](ch/ne/fr/916.510.md) | Loi concernant l'élimination des déchets animaux, du 20 juin 1994 |
 | [916.510.1](ch/ne/fr/916.510.1.md) | Arrêté d'exécution de la loi concernant l'élimination des déchets animaux, |
+| [921.0](ch/ne/fr/921.0.md) | 31 Loi forestière |
 | [921.1](ch/ne/fr/921.1.md) | Loi cantonale sur les forêts (LCFo), du 6 février 1996 |
 | [921.10](ch/ne/fr/921.10.md) | Règlement d'exécution de la loi cantonale sur les forêts (RELCFo), du 27 novembre |
 | [921.101](ch/ne/fr/921.101.md) | Arrêté fixant la finance de martelage à payer par les propriétaires de forêts |
 | [921.101.0](ch/ne/fr/921.101.0.md) | Arrêté fixant les émoluments découlant de l'application de la loi cantonale |
 | [921.101.1](ch/ne/fr/921.101.1.md) | Arrêté concernant la participation des propriétaires de forêts publiques aux |
+| [921.101.2](ch/ne/fr/921.101.2.md) | 26 Arrêté |
 | [921.109](ch/ne/fr/921.109.md) | Arrêté concernant la lutte antiparasitaire en forêt, du 13 août 1997 |
 | [922.10](ch/ne/fr/922.10.md) | Loi sur la faune sauvage (LFS), du 7 février 1995 |
 | [922.101](ch/ne/fr/922.101.md) | Règlement d'exécution de la loi sur la faune sauvage (RLFS), du 27 novembre |
 | [922.101.1](ch/ne/fr/922.101.1.md) | Règlement de chasse (RCh), du 27 novembre 1996 |
 | [922.101.2](ch/ne/fr/922.101.2.md) | Arrêté fixant la valeur du gibier et des animaux protégés tués de manière illicite, |
 | [922.101.3](ch/ne/fr/922.101.3.md) | Arrêté concernant l\x92octroi d\x92une autorisation temporaire de chasser\ |
+| [922.105](ch/ne/fr/922.105.md) | 24 Barème |
 | [922.106](ch/ne/fr/922.106.md) | Arrêté concernant les indemnités versées aux gardes-faune auxiliaires, aux\ |
+| [922.510](ch/ne/fr/922.510.md) | 22 Arrêté |
+| [922.510.1](ch/ne/fr/922.510.1.md) | 9 Arrêté |
 | [922.511](ch/ne/fr/922.511.md) | Concordat sur l'exercice et la surveillance de la chasse, du 22 mai 1978 |
+| [922.520](ch/ne/fr/922.520.md) | 9 Arrêté |
 | [922.521](ch/ne/fr/922.521.md) | Concordat concernant la chasse sur le lac de Neuchâtel, du 19 février 1998 |
 | [923.10](ch/ne/fr/923.10.md) | Loi sur la faune aquatique (LFAq), du 26 août 1996 |
 | [923.101](ch/ne/fr/923.101.md) | Règlement d'exécution de la loi sur la faune aquatique (RLFAq) ), du 5 novembre |
 | [923.512](ch/ne/fr/923.512.md) | Convention entre les cantons de Berne et de Neuchâtel concernant l'exercice |
 | [923.520](ch/ne/fr/923.520.md) | Concordat sur la pêche dans le lac de Neuchâtel, du 19 mai 2003 |
+| [923.520.1](ch/ne/fr/923.520.1.md) | 24 Règlement d'exécution |
+| [923.520.10](ch/ne/fr/923.520.10.md) | 24 Règlement |
 | [923.521](ch/ne/fr/923.521.md) | Règlement d\x92exécution du concordat sur la pêche dans le lac de Neuchâtel\ |
 | [931.1](ch/ne/fr/931.1.md) | Loi sur l\x92utilisation du sous-sol (LUSS), du 26 janvier 2021 |
+| [931.11](ch/ne/fr/931.11.md) | 12 Règlement |
 | [931.12](ch/ne/fr/931.12.md) | Règlement concernant l'utilisation et la surveillance des anciennes carrières |
 | [933.10](ch/ne/fr/933.10.md) | Loi sur les établissements publics (LEP), du 18 février 2014 |
+| [933.101](ch/ne/fr/933.101.md) | 28 Règlement d'exécution |
+| [933.102](ch/ne/fr/933.102.md) | 25 Règlement |
 | [933.103](ch/ne/fr/933.103.md) | Arrêté d\x92exécution de l\x92ordonnance fédérale relative à la loi fédérale\ |
 | [933.103.01](ch/ne/fr/933.103.01.md) | Arrêté concernant délégation à la commune de Neuchâtel de compétences en matière |
+| [933.103.02](ch/ne/fr/933.103.02.md) | 9 Arrêté |
 | [933.20](ch/ne/fr/933.20.md) | Loi sur l'appui au développement touristique (LTour), du 18 février 2014 |
 | [933.201](ch/ne/fr/933.201.md) | Règlement d'exécution de la loi sur l'appui au développement touristique (RELTour), |
+| [933.201.1](ch/ne/fr/933.201.1.md) | 7 Arrêté |
+| [933.30](ch/ne/fr/933.30.md) | 21 Arrêté |
 | [933.40](ch/ne/fr/933.40.md) | Loi sur l'accès des personnes mineures aux représentations cinématographiques, |
 | [933.401](ch/ne/fr/933.401.md) | Règlement d'exécution de la loi sur le cinéma, du 2 avril 2003 |
 | [933.402](ch/ne/fr/933.402.md) | Arrêté concernant l'aide au cinéma, du 8 janvier 1986 |
 | [933.402.1](ch/ne/fr/933.402.1.md) | Arrêté relatif à la création d'un fonds pour l'encouragement de la culture |
+| [933.51](ch/ne/fr/933.51.md) | 19 Loi |
+| [933.511](ch/ne/fr/933.511.md) | 14 Règlement |
 | [933.515](ch/ne/fr/933.515.md) | Concordat sur les jeux d\x92argent au niveau suisse (CJA), du 20 mai 2019 |
+| [933.516](ch/ne/fr/933.516.md) | 15 Arrêté |
 | [933.517](ch/ne/fr/933.517.md) | Convention romande sur les jeux d\x92argent (CORJA) \t, du 29 novembre 2019 |
 | [933.52](ch/ne/fr/933.52.md) | Loi d\x92introduction de la loi fédérale sur les jeux d\x92argent (LILJAr),\ |
 | [933.53](ch/ne/fr/933.53.md) | Règlement d\x92exécution de la loi d\x92introduction de la loi fédérale sur\ |
@@ -20829,15 +22724,33 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [941.010](ch/ne/fr/941.010.md) | Règlement de police du commerce (RCom), du 23 juin 2025 |
 | [941.011](ch/ne/fr/941.011.md) | Loi sur les heures d'ouverture des commerces (LHOCom), du 19 février 2013 |
 | [941.011.1](ch/ne/fr/941.011.1.md) | Règlement d'exécution de la loi sur les heures d'ouverture des commerces (RELHOCom), |
+| [941.012](ch/ne/fr/941.012.md) | 8 Arrêté |
+| [941.012.1](ch/ne/fr/941.012.1.md) | 6 Arrêté |
+| [941.013](ch/ne/fr/941.013.md) | 4 Règlement |
 | [941.02](ch/ne/fr/941.02.md) | Loi sur le dimanche et les jours fériés, du 30 septembre 1991 |
 | [941.020](ch/ne/fr/941.020.md) | Arrêté d'application de la loi sur le dimanche et les jours fériés, du 4 novembre |
+| [941.10](ch/ne/fr/941.10.md) | 30 Règlement |
+| [941.100.1](ch/ne/fr/941.100.1.md) | 18 Arrêté |
+| [941.100.2](ch/ne/fr/941.100.2.md) | 24 Arrêté |
+| [941.100.3](ch/ne/fr/941.100.3.md) | 6 Arrêté |
+| [941.100.4](ch/ne/fr/941.100.4.md) | 24 Arrêté |
+| [941.100.5](ch/ne/fr/941.100.5.md) | 12 Arrêté |
+| [941.100.6](ch/ne/fr/941.100.6.md) | 23 Arrêté |
+| [941.151](ch/ne/fr/941.151.md) | 23 Règlement |
 | [941.2](ch/ne/fr/941.2.md) | Loi sur le bureau de contrôle des ouvrages en métaux précieux (LBCMP), du 3 |
 | [941.20](ch/ne/fr/941.20.md) | Règlement transitoire d\x92administration du bureau de contrôle des ouvrages\ |
+| [941.50](ch/ne/fr/941.50.md) | 30 Loi |
+| [941.51](ch/ne/fr/941.51.md) | 4 Arrêté |
+| [941.60](ch/ne/fr/941.60.md) | 29 Concordat1) |
 | [941.70](ch/ne/fr/941.70.md) | Loi sur la prostitution et la pornographie (LProst), du 30 août 2016 |
 | [941.71](ch/ne/fr/941.71.md) | Règlement d'exécution de la loi sur la prostitution et la pornographie (RELProst), |
 | [941.72](ch/ne/fr/941.72.md) | Arrêté fixant les émoluments relatifs à l\x92application de la législation\ |
+| [941.91](ch/ne/fr/941.91.md) | 18 Loi |
+| [941.911](ch/ne/fr/941.911.md) | 20 Règlement |
 | [944.151](ch/ne/fr/944.151.md) | Règlement d'application de la loi fédérale sur les armes, les accessoires d'armes |
 | [944.161](ch/ne/fr/944.161.md) | Règlement concernant les substances explosibles, du 5 novembre 1997 |
+| [951.2](ch/ne/fr/951.2.md) | 21 Arrêté |
+| [951.3](ch/ne/fr/951.3.md) | 13 Arrêté d'exécution |
 | [961.1](ch/ne/fr/961.1.md) | Loi sur la Caisse cantonale d'assurance populaire (LCCAP), du 1er septembre |
 | [961.10](ch/ne/fr/961.10.md) | Règlement d'exécution de la loi sur la Caisse cantonale d'assurance populaire |
 | [961.102](ch/ne/fr/961.102.md) | Arrêté approuvant le règlement du fonds de retraite et de prévoyance du personnel |
@@ -22430,27 +24343,32 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## SG – St. Gallen
 
-*1059 laws*
+*1404 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
+| [0.0](ch/sg/de/0.0.md) | Anleitung |
 | [0.1](ch/sg/de/0.1.md) | Gesetz über die Gesetzessammlung und das Amtsblatt |
+| [0.11](ch/sg/de/0.11.md) | Bereinigungsverordnung |
 | [0.12](ch/sg/de/0.12.md) | Regierungsbeschluss über die Bezeichnung der Stelle zur Einsichtnahme in die |
 | [111.1](ch/sg/de/111.1.md) | Verfassung des Kantons St.Gallen |
 | [111.3](ch/sg/de/111.3.md) | Beschluss des Grossen Rates des Kantons St.Gallen betreffend Erweiterung der |
 | [113.1](ch/sg/de/113.1.md) | Wappenverordnung |
+| [113.11](ch/sg/de/113.11.md) | Regierungsbeschluss über das Kantonswappen |
 | [115.1](ch/sg/de/115.1.md) | Vertrag zwischen den Ständen St.Gallen und Zürich betreffend die Festsetzung |
 | [115.2](ch/sg/de/115.2.md) | Vertrag zwischen den Ständen St.Gallen, Zürich und Schwyz betreffend die Festsetzung |
 | [115.3](ch/sg/de/115.3.md) | Vertrag zwischen den Ständen St.Gallen und Schwyz betreffend die Festsetzung |
 | [117.1](ch/sg/de/117.1.md) | Gesetz über die Amtsdauer |
 | [121.1](ch/sg/de/121.1.md) | Gesetz über das St.Galler Bürgerrecht |
 | [121.11](ch/sg/de/121.11.md) | Verordnung über das St.Galler Bürgerrecht |
+| [121.12](ch/sg/de/121.12.md) | Verordnung |
 | [125.1](ch/sg/de/125.1.md) | Gesetz über Referendum und Initiative |
 | [125.101](ch/sg/de/125.101.md) | Verordnung über den Fristenstillstand bei Referenden und Initiativen im Zusammenhang |
 | [125.11](ch/sg/de/125.11.md) | Verordnung über die gemischte Unterschriftensammlung |
 | [125.3](ch/sg/de/125.3.md) | Gesetz über Wahlen und Abstimmungen |
 | [125.301](ch/sg/de/125.301.md) | Verordnung über Massnahmen im Zusammenhang mit der Bekämpfung des Coronavirus |
 | [125.31](ch/sg/de/125.31.md) | Verordnung über das stehende Stimmregister |
+| [125.33](ch/sg/de/125.33.md) | Verordnung |
 | [131.11](ch/sg/de/131.11.md) | Geschäftsreglement des Kantonsrates |
 | [131.12](ch/sg/de/131.12.md) | Kantonsratsbeschluss über die Entschädigung der Mitglieder und der Fraktionen |
 | [140.1](ch/sg/de/140.1.md) | Staatsverwaltungsgesetz |
@@ -22460,7 +24378,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [141.2](ch/sg/de/141.2.md) | Geschäftsordnung der Regierung |
 | [141.3](ch/sg/de/141.3.md) | Geschäftsreglement der Regierung und der Staatskanzlei |
 | [141.31](ch/sg/de/141.31.md) | Regierungsratsbeschluss über die Übertragung von Befugnissen des Regierungsrates |
+| [141.33](ch/sg/de/141.33.md) | Regierungsratsbeschluss |
+| [141.35](ch/sg/de/141.35.md) | Regierungsratsbeschluss |
+| [141.36](ch/sg/de/141.36.md) | Regierungsratsbeschluss |
 | [141.41](ch/sg/de/141.41.md) | Delegationsverordnung |
+| [141.5](ch/sg/de/141.5.md) | Gesetz |
+| [141.51](ch/sg/de/141.51.md) | Vollzugsverordnung |
 | [141.81](ch/sg/de/141.81.md) | Verordnung über die Raumnutzung im Regierungsgebäude |
 | [141.91](ch/sg/de/141.91.md) | Grossratsbeschluss über Erwerb, Umbau und Ausstattung von Liegenschaften an |
 | [141.92](ch/sg/de/141.92.md) | Grossratsbeschluss über Erwerb, Umbau und Erneuerung der Liegenschaft Zeughausgasse |
@@ -22469,6 +24392,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [141.96](ch/sg/de/141.96.md) | Grossratsbeschluss über die Miete des Kantonalbankgebäudes an der Schützengasse |
 | [141.97](ch/sg/de/141.97.md) | Kantonsratsbeschluss über Erwerb sowie Neu- und Umbau von Liegenschaften am |
 | [142.1](ch/sg/de/142.1.md) | Datenschutzgesetz |
+| [142.11](ch/sg/de/142.11.md) | Datenschutzverordnung |
 | [142.21](ch/sg/de/142.21.md) | Verordnung über die Informatiksicherheit |
 | [142.22](ch/sg/de/142.22.md) | Verordnung über die digitale Postbearbeitung in der Staatsverwaltung |
 | [142.23](ch/sg/de/142.23.md) | Verordnung über den Pilotversuch betreffend die elektronische Überwachung |
@@ -22479,13 +24403,18 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [143.101](ch/sg/de/143.101.md) | Verordnung über die Lohnfortzahlung bei Leistung von Assistenzdienst für die |
 | [143.11](ch/sg/de/143.11.md) | Personalverordnung |
 | [143.2](ch/sg/de/143.2.md) | Besoldungsverordnung |
+| [143.20](ch/sg/de/143.20.md) | Verordnung |
 | [143.21](ch/sg/de/143.21.md) | Kantonsratsbeschluss über die Genehmigung der Besoldungsverordnung für Magistratspersonen |
 | [143.210](ch/sg/de/143.210.md) | Besoldungsverordnung für Magistratspersonen |
 | [143.211](ch/sg/de/143.211.md) | Verordnung über die Lohnfortzahlung für Magistratspersonen |
+| [143.22](ch/sg/de/143.22.md) | Arbeitszeitverordnung |
 | [143.23](ch/sg/de/143.23.md) | Verordnung über die Bemessung des Lohns des Staatspersonals im Jahr 2026 |
 | [143.24](ch/sg/de/143.24.md) | Verordnung zur Durchführung der Überprüfung der Lohngleichheitsanalysen |
 | [143.28](ch/sg/de/143.28.md) | Verordnung über die Beteiligung der Versicherten an der Ausfinanzierung der |
 | [143.4](ch/sg/de/143.4.md) | Ergänzende Verordnung über das Arbeitsverhältnis der Mittelschul-Lehrpersonen |
+| [143.41](ch/sg/de/143.41.md) | Regierungsbeschluss |
+| [143.5](ch/sg/de/143.5.md) | Ergänzende Dienst- und Besoldungsordnung |
+| [143.6](ch/sg/de/143.6.md) | Spesenverordnung |
 | [143.7](ch/sg/de/143.7.md) | Verordnung über die Versicherungskasse für das Staatspersonal |
 | [143.70](ch/sg/de/143.70.md) | Reglement über die Teilliquidation der Versicherungskasse für das Staatspersonal |
 | [143.71](ch/sg/de/143.71.md) | Verordnung über die Teuerungszulagen an Rentenbezüger der Versicherungskasse |
@@ -22504,6 +24433,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [151.16](ch/sg/de/151.16.md) | Regierungsbeschluss über die Änderung des Gemeindenamens Vilters in «Vilters-Wangs» |
 | [151.2](ch/sg/de/151.2.md) | Gemeindegesetz |
 | [151.201](ch/sg/de/151.201.md) | Verordnung über die Beschlussfassung über Geschäfte der Bürgerversammlung während |
+| [151.22](ch/sg/de/151.22.md) | Regierungsbeschluss |
 | [151.3](ch/sg/de/151.3.md) | Gemeindevereinigungsgesetz |
 | [151.301](ch/sg/de/151.301.md) | Kantonsratsbeschluss über die Förderbeiträge an die Vereinigung der Gemeinden |
 | [151.302](ch/sg/de/151.302.md) | Kantonsratsbeschluss über die Förderbeiträge an die Vereinigung der Gemeinden |
@@ -22518,6 +24448,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [151.32](ch/sg/de/151.32.md) | Gesetz über die Vereinigung der politischen Gemeinden Rapperswil und Jona |
 | [151.51](ch/sg/de/151.51.md) | Verordnung über die öffentliche Beurkundung und die Beglaubigung |
 | [151.53](ch/sg/de/151.53.md) | Verordnung über den Finanzhaushalt der Gemeinden |
+| [151.55](ch/sg/de/151.55.md) | Verordnung |
 | [151.57](ch/sg/de/151.57.md) | Verordnung über die Gemeindearchive |
 | [151.81](ch/sg/de/151.81.md) | Grossratsbeschluss über den Neubau des Bezirksgebäudes Sargans in Flums |
 | [151.82](ch/sg/de/151.82.md) | Grossratsbeschluss über den Neubau des Bezirksgebäudes Alttoggenburg in Bazenheid |
@@ -22539,14 +24470,42 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [171.2](ch/sg/de/171.2.md) | Grossratsbeschluss über die Israelitische Gemeinde St.Gallen |
 | [171.3](ch/sg/de/171.3.md) | Kantonsratsbeschluss über die christkatholische Kirchgemeinde St.Gallen |
 | [173.1](ch/sg/de/173.1.md) | Übereinkunft des Katholischen Grossratskollegiums mit dem Heiligen Stuhle über |
+| [173.3](ch/sg/de/173.3.md) | Grossratsbeschluss |
 | [173.5](ch/sg/de/173.5.md) | Verfassung des Katholischen Konfessionsteils des Kantons St.Gallen |
+| [173.50](ch/sg/de/173.50.md) | Dekret |
+| [173.51](ch/sg/de/173.51.md) | Dekret |
+| [173.52](ch/sg/de/173.52.md) | Dekret |
+| [173.53](ch/sg/de/173.53.md) | Dekret |
+| [173.54](ch/sg/de/173.54.md) | Dekret |
+| [173.55](ch/sg/de/173.55.md) | Dekret |
+| [173.56](ch/sg/de/173.56.md) | Dekret |
+| [173.58](ch/sg/de/173.58.md) | Dekret |
+| [173.60](ch/sg/de/173.60.md) | Dekret |
+| [173.71](ch/sg/de/173.71.md) | Vertrag |
+| [173.72](ch/sg/de/173.72.md) | Vertrag |
+| [173.73](ch/sg/de/173.73.md) | Vertrag |
+| [173.730](ch/sg/de/173.730.md) | Vereinbarung |
+| [173.731](ch/sg/de/173.731.md) | Vereinbarung |
+| [173.732](ch/sg/de/173.732.md) | Vereinbarung |
+| [173.733](ch/sg/de/173.733.md) | Konkordat |
+| [173.74](ch/sg/de/173.74.md) | Regierungsratsbeschluss über die Genehmigung von Beschlüssen |
+| [173.75](ch/sg/de/173.75.md) | Regierungsratsbeschluss über die Genehmigung von Beschlüssen |
+| [173.76](ch/sg/de/173.76.md) | Regierungsratsbeschluss über die Genehmigung von Beschlüssen |
+| [173.77](ch/sg/de/173.77.md) | Regierungsratsbeschluss über die Genehmigung der Aufhebung |
+| [173.78](ch/sg/de/173.78.md) | Regierungsratsbeschluss über die Genehmigung der Änderung |
+| [173.79](ch/sg/de/173.79.md) | Regierungsratsbeschluss über die Genehmigung der Aufhebung |
+| [173.80](ch/sg/de/173.80.md) | Regierungsratsbeschluss über die Genehmigung der Aufhebung |
 | [174.1](ch/sg/de/174.1.md) | Gemeindeordnung der Christkatholischen Kirchgemeinde St.Gallen |
 | [175.1](ch/sg/de/175.1.md) | Verfassung der evangelisch-reformierten Kirche des Kantons St.Gallen |
+| [175.11](ch/sg/de/175.11.md) | Kirchenordnung der evangelisch-reformierten Kirche des |
+| [175.13](ch/sg/de/175.13.md) | Reglement |
+| [175.3](ch/sg/de/175.3.md) | Konkordat |
 | [211.21](ch/sg/de/211.21.md) | Verordnung über den Schulärztlichen Dienst |
 | [211.3](ch/sg/de/211.3.md) | Grossratsbeschluss über den Beitritt zum Konkordat über die Schulkoordination |
 | [211.31](ch/sg/de/211.31.md) | Konkordat über die Schulkoordination |
 | [211.4](ch/sg/de/211.4.md) | Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den |
 | [211.40](ch/sg/de/211.40.md) | Regierungsbeschluss über den Beitritt des Kantons St.Gallen zur Interkantonalen |
+| [211.401](ch/sg/de/211.401.md) | Interkantonale Vereinbarung |
 | [211.41](ch/sg/de/211.41.md) | Interkantonale Vereinbarung über die Harmonisierung der obligatorischen Schule |
 | [211.5](ch/sg/de/211.5.md) | Gesetz über die staatlichen Stipendien und Studiendarlehen (Stipendiengesetz) |
 | [211.51](ch/sg/de/211.51.md) | Stipendienverordnung |
@@ -22562,7 +24521,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [211.81](ch/sg/de/211.81.md) | Vereinbarung über die Leistung von Schulbeiträgen für Auszubildende an Schulen |
 | [211.82](ch/sg/de/211.82.md) | Interkantonale Fachschulvereinbarung |
 | [211.83](ch/sg/de/211.83.md) | Interkantonale Vereinbarung für Schulen mit spezifisch strukturierten Angeboten |
+| [211.9](ch/sg/de/211.9.md) | Schulbautenverordnung |
+| [212.1](ch/sg/de/212.1.md) | Kindergartengesetz |
+| [212.11](ch/sg/de/212.11.md) | Kindergartenverordnung |
 | [212.12](ch/sg/de/212.12.md) | Verordnung über die Vergütungen an Volksschulträger für rückwirkende Entschädigungen |
+| [212.3](ch/sg/de/212.3.md) | Aufnahmereglement |
+| [212.31](ch/sg/de/212.31.md) | Aufnahmereglement |
 | [213.1](ch/sg/de/213.1.md) | Volksschulgesetz |
 | [213.101](ch/sg/de/213.101.md) | Verordnung über die Aufrechterhaltung eines Betreuungsangebots für Volksschülerinnen |
 | [213.12](ch/sg/de/213.12.md) | Verordnung über den Volksschulunterricht |
@@ -22573,14 +24537,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [213.351.5](ch/sg/de/213.351.5.md) | Vereinbarung über den Schulbesuch der Kinder von Steinach auf der Oberstufe |
 | [213.351.6](ch/sg/de/213.351.6.md) | Vereinbarung über den Schulbesuch der Kinder von Oberholz in Wald |
 | [213.351.8](ch/sg/de/213.351.8.md) | Vereinbarung zwischen den Kantonen Appenzell A.Rh. und St.Gallen über die Primarschulverhältnisse |
+| [213.352.1](ch/sg/de/213.352.1.md) | Vereinbarung |
 | [213.352.2](ch/sg/de/213.352.2.md) | Vereinbarung über die Musikschule Appenzeller Vorderland |
 | [213.352.3](ch/sg/de/213.352.3.md) | Vereinbarung über die Führung von Sonderklassen in der Region Mittelrheintal |
 | [213.352.4](ch/sg/de/213.352.4.md) | Vereinbarung über die Sekundar- und Realschulverhältnisse von Schönengrund |
+| [213.352.5](ch/sg/de/213.352.5.md) | Vereinbarung |
 | [213.352.6](ch/sg/de/213.352.6.md) | Vereinbarung über die Schul- und Steuerverhältnisse in Grenzgebieten des Kantons |
 | [213.352.7](ch/sg/de/213.352.7.md) | Vereinbarung über die Volksschulverhältnisse des Weilers Kapf (Gemeinde Oberegg |
 | [213.352.8](ch/sg/de/213.352.8.md) | Vereinbarung über den Schulbesuch der Kinder aus dem Raum Kubel (Gemeinde Stein |
 | [213.51](ch/sg/de/213.51.md) | Gesetz über den Lohn der Volksschul-Lehrpersonen |
 | [213.513](ch/sg/de/213.513.md) | Regierungsbeschluss über die Lohnansätze für die Volksschul-Lehrpersonen im |
+| [213.513.1](ch/sg/de/213.513.1.md) | Regierungsbeschluss |
 | [213.550](ch/sg/de/213.550.md) | Verordnung über die kantonale Lehrerversicherungskasse |
 | [213.551](ch/sg/de/213.551.md) | Verordnung über die Teuerungszulagen an die Rentenbezüger der kantonalen Lehrerversicherungskasse |
 | [213.552](ch/sg/de/213.552.md) | Reglement über die Teilliquidation der kantonalen Lehrerversicherungskasse |
@@ -22596,39 +24563,72 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [215.111](ch/sg/de/215.111.md) | Aufnahmereglement des Untergymnasiums |
 | [215.112](ch/sg/de/215.112.md) | Regierungsbeschluss über die Entlastungen für die Schulentwicklung an Mittelschulen |
 | [215.14](ch/sg/de/215.14.md) | Verordnung über die Verleihung des Professortitels an Lehrer der Mittelschulen |
+| [215.15](ch/sg/de/215.15.md) | Tarif |
 | [215.180](ch/sg/de/215.180.md) | Vereinbarung über die Zusammenarbeit zwischen dem Kanton St.Gallen und dem |
+| [215.2](ch/sg/de/215.2.md) | Gesetz |
+| [215.20](ch/sg/de/215.20.md) | Kantonsratsbeschluss |
+| [215.21](ch/sg/de/215.21.md) | Vollzugsverordnung |
 | [215.221](ch/sg/de/215.221.md) | Kantonsratsbeschluss über bauliche Massnahmen an den Gebäuden der Pädagogischen |
+| [215.31](ch/sg/de/215.31.md) | Aufnahmereglement |
+| [215.32](ch/sg/de/215.32.md) | Aufnahmereglement |
 | [215.351](ch/sg/de/215.351.md) | Vereinbarung zwischen dem Fürstentum Liechtenstein und dem Kanton St.Gallen |
 | [215.352](ch/sg/de/215.352.md) | Vereinbarung über den Besuch der Kantonsschule Ausserschwyz durch Schülerinnen |
 | [215.353](ch/sg/de/215.353.md) | Vereinbarung betreffend Übernahme der städtischen Mittelschule Talhof durch |
 | [215.354](ch/sg/de/215.354.md) | Vereinbarung über die Beteiligung des Kantons Thurgau an der Kantonsschule |
 | [215.355](ch/sg/de/215.355.md) | Vereinbarung zwischen den Kantonen St.Gallen und Appenzell Ausserrhoden über |
+| [215.392.1](ch/sg/de/215.392.1.md) | Grossratsbeschluss |
+| [215.393.2](ch/sg/de/215.393.2.md) | Grossratsbeschluss |
+| [215.393.3](ch/sg/de/215.393.3.md) | Grossratsbeschluss |
 | [215.394.1](ch/sg/de/215.394.1.md) | Grossratsbeschluss über bauliche Massnahmen an den Turnanlagen der Kantonsschule |
+| [215.394.2](ch/sg/de/215.394.2.md) | Grossratsbeschluss |
 | [215.395.1](ch/sg/de/215.395.1.md) | Grossratsbeschluss über den Neubau der Kantonsschule Wil |
 | [215.395.10](ch/sg/de/215.395.10.md) | Kantonsratsbeschluss über einen Nachtragskredit nach Ziff. 3 des Grossratsbeschlusses |
 | [215.395.2](ch/sg/de/215.395.2.md) | Grossratsbeschluss über bauliche Massnahmen an der Kantonsschule am Burggraben |
 | [215.395.3](ch/sg/de/215.395.3.md) | Kantonsratsbeschluss über Sanierung und Erweiterung der Kantonsschule in Heerbrugg |
 | [215.395.4](ch/sg/de/215.395.4.md) | Kantonsratsbeschluss über Teilabbruch und Erweiterung der Kantonsschule Sargans |
 | [215.395.5](ch/sg/de/215.395.5.md) | Kantonsratsbeschluss über die Erstellung des «Campus Wattwil» (Ersatzneubau |
+| [215.41](ch/sg/de/215.41.md) | Aufnahmereglement |
+| [215.491](ch/sg/de/215.491.md) | Grossratsbeschluss |
 | [215.511](ch/sg/de/215.511.md) | Grossratsbeschluss über Erwerb und Umbau des Schulhauses Hadwig in St.Gallen |
+| [215.513](ch/sg/de/215.513.md) | Vereinbarung |
+| [215.514](ch/sg/de/215.514.md) | Vereinbarung |
+| [215.515](ch/sg/de/215.515.md) | Vereinbarung |
+| [215.531.2](ch/sg/de/215.531.2.md) | Reglement |
+| [215.532.1](ch/sg/de/215.532.1.md) | Reglement |
+| [215.532.2](ch/sg/de/215.532.2.md) | Aufnahmereglement |
+| [215.532.3](ch/sg/de/215.532.3.md) | Reglement |
+| [215.539.3](ch/sg/de/215.539.3.md) | Grossratsbeschluss |
 | [215.539.4](ch/sg/de/215.539.4.md) | Grossratsbeschluss über bauliche Massnahmen an den Schulliegenschaften Mariaberg |
+| [215.552.1](ch/sg/de/215.552.1.md) | Aufnahmereglement |
+| [215.552.2](ch/sg/de/215.552.2.md) | Vereinbarung |
+| [215.552.3](ch/sg/de/215.552.3.md) | Vereinbarung |
+| [215.559](ch/sg/de/215.559.md) | Grossratsbeschluss |
 | [215.65](ch/sg/de/215.65.md) | Vereinbarung über die Interstaatliche Maturitätsschule für Erwachsene St.Gallen/Sargans |
 | [216.0](ch/sg/de/216.0.md) | Gesetz über die Pädagogische Hochschule St.Gallen |
+| [216.1](ch/sg/de/216.1.md) | Gesetz |
 | [216.10](ch/sg/de/216.10.md) | Verordnung über Berichterstattung, Rechnung und Eigenkapital der Pädagogischen |
 | [216.11](ch/sg/de/216.11.md) | Personalverordnung der Pädagogischen Hochschule St.Gallen |
 | [216.12](ch/sg/de/216.12.md) | Verordnung über die Zulassung von Bewerberinnen und Bewerbern ohne eine gymnasiale |
 | [216.13](ch/sg/de/216.13.md) | Gebührentarif der Pädagogischen Hochschule St.Gallen |
 | [216.14](ch/sg/de/216.14.md) | Studienordnung der Pädagogischen Hochschule St.Gallen |
 | [216.15](ch/sg/de/216.15.md) | Statut der Pädagogischen Hochschule St.Gallen |
+| [216.21](ch/sg/de/216.21.md) | Aufnahmereglement der Pädagogischen Hochschule St.Gallen* |
 | [216.22](ch/sg/de/216.22.md) | Reglement über die Aufnahmeprüfung zu Studiengängen Kindergarten und Primarschule |
 | [216.23](ch/sg/de/216.23.md) | Reglement über die Zwischen- und Diplomprüfungen für Studierende an der Pädagogischen |
+| [216.230](ch/sg/de/216.230.md) | Allgemeines Prüfungsreglement |
 | [216.24](ch/sg/de/216.24.md) | Reglement über die Zwischenprüfung an der Pädagogischen Hochschule des Kantons |
+| [216.240](ch/sg/de/216.240.md) | Prüfungsreglement Studiengang Kindergarten und Primarschule |
 | [216.25](ch/sg/de/216.25.md) | Reglement über die Diplomprüfungen an der Pädagogischen Hochschule des Kantons |
+| [216.250](ch/sg/de/216.250.md) | Prüfungsreglement Studiengang Sekundarstufe I |
 | [216.26](ch/sg/de/216.26.md) | Reglement über den Studiengang für Lehrpersonen für allgemein bildenden Unterricht |
+| [216.260](ch/sg/de/216.260.md) | Reglement |
 | [216.27](ch/sg/de/216.27.md) | Reglement über den Studiengang für Lehrpersonen für berufskundlichen Unterricht |
+| [216.270](ch/sg/de/216.270.md) | Reglement |
 | [216.31](ch/sg/de/216.31.md) | Reglement für den Master of Advanced Studies in Berufspädagogik |
 | [216.32](ch/sg/de/216.32.md) | Reglement für den Weiterbildungslehrgang «Diploma of Advanced Studies in Musikalischer |
 | [216.33](ch/sg/de/216.33.md) | Reglement für den Master of Advanced Studies in Allgemeinbildung für Unterricht |
+| [216.34](ch/sg/de/216.34.md) | Reglement |
+| [216.35](ch/sg/de/216.35.md) | Reglement |
 | [216.531](ch/sg/de/216.531.md) | Grossratsbeschluss über Erwerb, Umbau und Erneuerung der Liegenschaft Stella |
 | [216.532](ch/sg/de/216.532.md) | Kantonsratsbeschluss über Umbau und Erweiterung der Mensa der Pädagogischen |
 | [217.1](ch/sg/de/217.1.md) | Universitätsgesetz |
@@ -22643,13 +24643,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [217.31](ch/sg/de/217.31.md) | Gehaltsordnung für den Lehrkörper und das Verwaltungspersonal der Hochschule |
 | [217.311](ch/sg/de/217.311.md) | Regierungsratsbeschluss über die Erhöhung der Gehälter des Lehrkörpers der |
 | [217.312](ch/sg/de/217.312.md) | Regierungsratsbeschluss über die Erhöhung der Gehälter des Lehrkörpers der |
+| [217.313](ch/sg/de/217.313.md) | Regierungsratsbeschluss |
 | [217.32](ch/sg/de/217.32.md) | Personalreglement der Universität St.Gallen (HSG) |
 | [217.43](ch/sg/de/217.43.md) | Gebührenordnung der Universität St.Gallen |
 | [217.51](ch/sg/de/217.51.md) | Reglement für die Forschungskommission an der Hochschule St.Gallen |
+| [217.52](ch/sg/de/217.52.md) | Reglement |
 | [217.53](ch/sg/de/217.53.md) | Satzung für die Weiterbildungsseminare der Universität St.Gallen |
 | [217.54](ch/sg/de/217.54.md) | Satzung für die Nachdiplomstudiengänge Executive MBA HSG |
+| [217.55](ch/sg/de/217.55.md) | Satzung |
 | [217.618](ch/sg/de/217.618.md) | Satzung für die Schweizerischen Verwaltungskurse an der Hochschule St.Gallen |
 | [217.637](ch/sg/de/217.637.md) | Satzung für ein Aufbaustudium in Finanzmarkttheorie |
+| [217.638](ch/sg/de/217.638.md) | Satzung |
 | [217.641](ch/sg/de/217.641.md) | Satzung für das Nachdiplomstudium in International Retail Management der Universität |
 | [217.642](ch/sg/de/217.642.md) | Satzung für das Nachdiplomstudium in Media and Communication der Universität |
 | [217.643](ch/sg/de/217.643.md) | Satzung für das Nachdiplomstudium Master of Business Administration der Universität |
@@ -22674,6 +24678,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [221.1](ch/sg/de/221.1.md) | Gesetz über Beiträge für familien- und schulergänzende Kinderbetreuung |
 | [221.201](ch/sg/de/221.201.md) | Vollzugsverordnung zur eidgenössischen Verordnung über die Abfederung der wirtschaftlichen |
 | [230.1](ch/sg/de/230.1.md) | Gesetz über die Anerkennung von Ausbildungsabschlüssen |
+| [230.11](ch/sg/de/230.11.md) | Maturitäts-Anerkennungsreglement |
 | [230.3](ch/sg/de/230.3.md) | Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den |
 | [230.30](ch/sg/de/230.30.md) | Regierungsbeschluss über den Beitritt zur geänderten Interkantonalen Vereinbarung |
 | [230.31](ch/sg/de/230.31.md) | Interkantonale Vereinbarung über die Anerkennung von Ausbildungsabschlüssen |
@@ -22699,10 +24704,15 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [231.11](ch/sg/de/231.11.md) | Berufsbildungsverordnung |
 | [231.111.5](ch/sg/de/231.111.5.md) | Beschluss des Erziehungsdepartementes über die Mindestbeiträge für die Unfallversicherung |
 | [231.12](ch/sg/de/231.12.md) | Gebührentarif für die Berufsbildung |
+| [231.125](ch/sg/de/231.125.md) | Vereinbarung |
 | [231.13](ch/sg/de/231.13.md) | Vereinbarung über die Organisation der Lehrabschlussprüfungen durch den Kantonal |
 | [231.14](ch/sg/de/231.14.md) | Berufsmaturitätsverordnung |
+| [231.16](ch/sg/de/231.16.md) | Tarif |
 | [231.31](ch/sg/de/231.31.md) | Ergänzende Verordnung über das Arbeitsverhältnis der Lehrpersonen an Berufs- |
 | [231.311](ch/sg/de/231.311.md) | Regierungsbeschluss über die Anpassung der Besoldung der Berufsschul-Lehrkräfte |
+| [231.5](ch/sg/de/231.5.md) | Statut |
+| [231.51](ch/sg/de/231.51.md) | Reglement |
+| [231.52](ch/sg/de/231.52.md) | Reglement |
 | [231.81](ch/sg/de/231.81.md) | Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den |
 | [231.810](ch/sg/de/231.810.md) | Regierungsbeschluss über den Beitritt des Kantons St.Gallen zur Interkantonalen |
 | [231.811](ch/sg/de/231.811.md) | Interkantonale Vereinbarung über Beiträge an die Bildungsgänge der höheren |
@@ -22725,6 +24735,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [234.031](ch/sg/de/234.031.md) | Interkantonale Fachhochschulvereinbarung (FHV) ab 2005 |
 | [234.11](ch/sg/de/234.11.md) | Grossratsbeschluss über den Beitritt zur Vereinbarung über das Neu-Technikum |
 | [234.110](ch/sg/de/234.110.md) | Grossratsbeschluss über den Beitritt zum Nachtrag zur Vereinbarung über das |
+| [234.110.1](ch/sg/de/234.110.1.md) | Kantonsratsbeschluss |
 | [234.110.10](ch/sg/de/234.110.10.md) | Regierungsbeschluss über den Beitritt zur Vereinbarung zwischen den Trägern |
 | [234.110.11](ch/sg/de/234.110.11.md) | Vereinbarung zwischen den Trägern der Hochschule für Technik Buchs (NTB) über |
 | [234.111](ch/sg/de/234.111.md) | Vereinbarung über die Hochschule für Technik Buchs |
@@ -22745,6 +24756,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [234.231](ch/sg/de/234.231.md) | Dienst- und Besoldungsordnung für den Lehrkörper und die Angestellten des Interkantonalen |
 | [234.25](ch/sg/de/234.25.md) | Reglement über die Finanzkontrolle des Interkantonalen Technikums Rapperswil |
 | [234.291](ch/sg/de/234.291.md) | Kantonsratsbeschluss über den Neubau des Forschungszentrums der Hochschule |
+| [234.31](ch/sg/de/234.31.md) | Vereinbarung |
+| [234.50](ch/sg/de/234.50.md) | Grossratsbeschluss |
 | [234.60](ch/sg/de/234.60.md) | Grossratsbeschluss über den Beitritt zur Vereinbarung über die Interkantonale |
 | [234.61](ch/sg/de/234.61.md) | Vereinbarung über die Interkantonale Fachhochschule St.Gallen |
 | [234.911](ch/sg/de/234.911.md) | Kantonsratsbeschluss über das Fachhochschulzentrum Bahnhof Nord in St.Gallen |
@@ -22765,8 +24778,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [271.51](ch/sg/de/271.51.md) | Verordnung betreffend den Schutz von Naturkörpern und Altertümern |
 | [271.52](ch/sg/de/271.52.md) | Verordnung über das Strahlen |
 | [271.53](ch/sg/de/271.53.md) | Verordnung über die Sicherung und Überlieferung von Naturkörpern |
+| [272.52](ch/sg/de/272.52.md) | Vereinbarung |
 | [273.01](ch/sg/de/273.01.md) | Grossratsbeschluss über den Beitrag aus dem Lotteriefond an die Sanierung der |
 | [273.02](ch/sg/de/273.02.md) | Grossratsbeschluss über den Beitrag aus dem Lotteriefond für Erarbeitung und |
+| [273.03](ch/sg/de/273.03.md) | Grossratsbeschluss über Kantonsbeiträge an die Genossenschaft |
 | [273.04](ch/sg/de/273.04.md) | Kantonsratsbeschluss über den Kantonsbeitrag für das Kunst(Zeug)Haus Rapperswil-Jona |
 | [273.05](ch/sg/de/273.05.md) | Kantonsratsbeschluss über den Kantonsbeitrag an den Neubau des Naturmuseums |
 | [273.06](ch/sg/de/273.06.md) | Kantonsratsbeschluss über den Kantonsbeitrag an die dritte Bauetappe des Hofs |
@@ -22784,9 +24799,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [277.12](ch/sg/de/277.12.md) | Kulturerbeverordnung |
 | [277.3](ch/sg/de/277.3.md) | Vereinbarung über den Schutz und die Pflege des Weltkulturerbes Stiftsbezirk |
 | [311.1](ch/sg/de/311.1.md) | Gesundheitsgesetz |
+| [311.110](ch/sg/de/311.110.md) | Verordnung über die Änderung des Gesundheitsgesetzes |
 | [311.12](ch/sg/de/311.12.md) | Verordnung über den Schutz vor Passivrauchen |
 | [311.13](ch/sg/de/311.13.md) | Vereinbarung über die Einsetzung der Ethikkommission Ostschweiz (EKOS) |
 | [311.2](ch/sg/de/311.2.md) | Suchtgesetz |
+| [311.3](ch/sg/de/311.3.md) | Gebührentarif |
 | [311.5](ch/sg/de/311.5.md) | Verordnung über die Entschädigung der Ärzte für amtliche Verrichtungen |
 | [312.0](ch/sg/de/312.0.md) | Verordnung über die Ausübung der medizinischen Berufe |
 | [312.1](ch/sg/de/312.1.md) | Verordnung über die Ausübung von Berufen der Gesundheitspflege |
@@ -22796,6 +24813,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [312.310](ch/sg/de/312.310.md) | Gebührenverordnung der Schweizerischen Konferenz der kantonalen Gesundheitsdirektorinnen |
 | [312.311](ch/sg/de/312.311.md) | Reglement der Schweizerischen Konferenz der kantonalen Gesundheitsdirektorinnen |
 | [312.32](ch/sg/de/312.32.md) | Verordnung zum Register über die Gesundheitsfachpersonen NAREG |
+| [312.51](ch/sg/de/312.51.md) | Gegenrechtserklärung |
+| [312.52](ch/sg/de/312.52.md) | Gegenrechtserklärung |
+| [312.53](ch/sg/de/312.53.md) | Gegenrechtserklärung |
+| [312.61](ch/sg/de/312.61.md) | Verordnung |
 | [312.71](ch/sg/de/312.71.md) | Vereinbarung zwischen dem Kanton St.Gallen, vertreten durch das Gesundheitsdepartement, |
 | [312.72](ch/sg/de/312.72.md) | Vereinbarung über die Ausbildung von Schülern aus dem Fürstentum Liechtenstein |
 | [312.90](ch/sg/de/312.90.md) | Grossratsbeschluss über den Beitritt zur Vereinbarung über die Schule für Gesundheits- |
@@ -22806,13 +24827,21 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [313.5](ch/sg/de/313.5.md) | Vollzugsverordnung zur eidgenössischen Verordnung über den Strahlenschutz |
 | [313.51](ch/sg/de/313.51.md) | Einführungsverordnung zur Bundesgesetzgebung über den Schutz vor Gefährdungen |
 | [313.75](ch/sg/de/313.75.md) | Naturbäderverordnung |
+| [314.1](ch/sg/de/314.1.md) | Grossratsbeschluss |
+| [314.11](ch/sg/de/314.11.md) | Interkantonale Vereinbarung |
+| [314.111](ch/sg/de/314.111.md) | Regulativ |
+| [314.113](ch/sg/de/314.113.md) | Gebührentarif |
+| [314.114](ch/sg/de/314.114.md) | Gebührentarif |
 | [314.3](ch/sg/de/314.3.md) | Heilmittelverordnung |
 | [314.5](ch/sg/de/314.5.md) | Vollzugsverordnung zur Bundesgesetzgebung über die Betäubungsmittel |
 | [314.52](ch/sg/de/314.52.md) | Verordnung über die Meldepflicht bei Anbau von Hanf |
+| [314.7](ch/sg/de/314.7.md) | Vollzugsverordnung |
 | [315.1](ch/sg/de/315.1.md) | Einführungsgesetz zur eidgenössischen Lebensmittelgesetzgebung |
 | [315.11](ch/sg/de/315.11.md) | Verordnung über die Lebensmittelkontrolle |
 | [315.111](ch/sg/de/315.111.md) | Regierungsbeschluss über den Aufwandpunktwert nach der Verordnung über die |
 | [320.1](ch/sg/de/320.1.md) | Gesetz über die Spitalplanung und -finanzierung |
+| [320.10](ch/sg/de/320.10.md) | Kantonsratsbeschluss |
+| [320.11](ch/sg/de/320.11.md) | Regierungsbeschluss |
 | [320.2](ch/sg/de/320.2.md) | Gesetz über den Spitalverbund |
 | [320.20](ch/sg/de/320.20.md) | Grossratsbeschluss über die Schaffung von Spitalverbunden |
 | [320.201](ch/sg/de/320.201.md) | Kantonsratsbeschluss über die Übertragung der Spitalimmobilien |
@@ -22837,6 +24866,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [321.21](ch/sg/de/321.21.md) | Grossratsbeschluss über die Übernahme des Gemeindespitals Rorschach durch den |
 | [321.22](ch/sg/de/321.22.md) | Grossratsbeschluss über die Übernahme des Gemeindespitals Altstätten durch |
 | [321.24](ch/sg/de/321.24.md) | Grossratsbeschluss über die Übernahme des Gemeindespitals Flawil durch den |
+| [321.31](ch/sg/de/321.31.md) | Verordnung |
+| [321.62](ch/sg/de/321.62.md) | Taxordnung |
+| [321.64](ch/sg/de/321.64.md) | Tarif |
+| [321.67](ch/sg/de/321.67.md) | Verordnung |
 | [321.912.2](ch/sg/de/321.912.2.md) | Grossratsbeschluss über den Ausbau der Chirurgie und der Radiologie im Kantonsspital |
 | [321.915.1](ch/sg/de/321.915.1.md) | Grossratsbeschluss über den Neubau der Schulen für Spitalberufe in St.Gallen |
 | [321.915.10](ch/sg/de/321.915.10.md) | Kantonsratsbeschluss über die Erweiterung des Hauses 24 als Logistikzentrum |
@@ -22877,6 +24910,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [321.971.5](ch/sg/de/321.971.5.md) | Kantonsratsbeschluss über die Erhöhung des Eigenkapitals der Spitalregion Fürstenland |
 | [321.971.6](ch/sg/de/321.971.6.md) | Kantonsratsbeschluss über die Umwandlung von Baudarlehen der Spitalregion Fürstenland |
 | [322.51](ch/sg/de/322.51.md) | Vereinbarung über die Aufnahme von Patienten aus dem Fürstentum Liechtenstein |
+| [322.61](ch/sg/de/322.61.md) | Verordnung |
+| [322.71](ch/sg/de/322.71.md) | Tarif |
 | [322.911.1](ch/sg/de/322.911.1.md) | Grossratsbeschluss über bauliche Massnahmen in der kantonalen Psychiatrischen |
 | [322.912](ch/sg/de/322.912.md) | Grossratsbeschluss über zusätzliche Wohnheime für geistig und psychisch Behinderte |
 | [322.913](ch/sg/de/322.913.md) | Grossratsbeschluss über bauliche Massnahmen in der kantonalen Psychiatrischen |
@@ -22885,6 +24920,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [322.916](ch/sg/de/322.916.md) | Kantonsratsbeschluss über den Neubau des Zentrums für Alterspsychiatrie der |
 | [322.917](ch/sg/de/322.917.md) | Kantonsratsbeschluss über die Sanierung des Klostergebäudes der Psychiatrischen |
 | [322.918](ch/sg/de/322.918.md) | Kantonsratsbeschluss über die Errichtung einer Forensikstation auf dem Areal |
+| [323.11](ch/sg/de/323.11.md) | Gesetz |
+| [323.111](ch/sg/de/323.111.md) | Vollzugsverordnung |
+| [323.962](ch/sg/de/323.962.md) | Kantonsratsbeschluss |
 | [325.11](ch/sg/de/325.11.md) | Verordnung über den Betrieb privater Einrichtungen der Gesundheitspflege |
 | [325.21](ch/sg/de/325.21.md) | Grossratsbeschluss über den Beitritt zur Vereinbarung über das Rehabilitationszentrum |
 | [325.211](ch/sg/de/325.211.md) | Vereinbarung über das Rehabilitationszentrum für Drogenabhängige Lutzenberg |
@@ -22895,6 +24933,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [325.51](ch/sg/de/325.51.md) | Vollzugsverordnung zur Bundesgesetzgebung über die Schwangerschaftsberatungsstellen |
 | [325.71](ch/sg/de/325.71.md) | Grossratsbeschluss über die Übernahme der Ostschweizerischen Pleoptik- und |
 | [325.912](ch/sg/de/325.912.md) | Grossratsbeschluss über die Staatsbeiträge an Ausbau und Betrieb des Ostschweizerischen |
+| [325.916](ch/sg/de/325.916.md) | Grossratsbeschluss |
+| [325.917](ch/sg/de/325.917.md) | Grossratsbeschluss |
 | [325.918](ch/sg/de/325.918.md) | Grossratsbeschluss über den Neubau des Kantonalen Laboratoriums |
 | [325.919](ch/sg/de/325.919.md) | Grossratsbeschluss über den Staatsbeitrag an das Kinderschutzzentrum St.Gallen |
 | [325.920](ch/sg/de/325.920.md) | Kantonsratsbeschluss über den Kantonsbeitrag an den Neubau des Kinder- und |
@@ -22909,7 +24949,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [331.11](ch/sg/de/331.11.md) | Einführungsgesetz zur Bundesgesetzgebung über die Krankenversicherung |
 | [331.111](ch/sg/de/331.111.md) | Verordnung zum Einführungsgesetz zur Bundesgesetzgebung über die Krankenversicherung |
 | [331.112](ch/sg/de/331.112.md) | Verordnung über die Einschränkung der Kostenübernahme des Kantons bei bestimmten |
+| [331.113](ch/sg/de/331.113.md) | Verordnung |
 | [331.2](ch/sg/de/331.2.md) | Gesetz über die Pflegefinanzierung |
+| [331.20](ch/sg/de/331.20.md) | Regierungsbeschluss |
+| [331.200](ch/sg/de/331.200.md) | Verordnung |
 | [331.21](ch/sg/de/331.21.md) | Verordnung über die Pflegefinanzierung |
 | [331.22](ch/sg/de/331.22.md) | Verordnung über die Zulassung von Tages- und Nachtstrukturen |
 | [331.30](ch/sg/de/331.30.md) | Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch |
@@ -22917,32 +24960,173 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [331.42](ch/sg/de/331.42.md) | Regierungsbeschluss über die Spitalliste Psychiatrie |
 | [331.43](ch/sg/de/331.43.md) | Regierungsbeschluss über die Spitalliste Rehabilitation |
 | [331.441](ch/sg/de/331.441.md) | Regierungsbeschluss über die Behandlung von akutsomatischen Patientinnen und |
+| [331.501](ch/sg/de/331.501.md) | Regierungsbeschluss |
+| [331.502](ch/sg/de/331.502.md) | Regierungsbeschluss |
+| [331.502.1](ch/sg/de/331.502.1.md) | Regierungsbeschluss |
+| [331.502.2](ch/sg/de/331.502.2.md) | Regierungsbeschluss |
+| [331.502.3](ch/sg/de/331.502.3.md) | Regierungsbeschluss |
+| [331.502.4](ch/sg/de/331.502.4.md) | Regierungsbeschluss |
+| [331.503](ch/sg/de/331.503.md) | Regierungsbeschluss |
+| [331.504](ch/sg/de/331.504.md) | Regierungsbeschluss |
+| [331.511](ch/sg/de/331.511.md) | Regierungsratsbeschluss |
+| [331.511.1](ch/sg/de/331.511.1.md) | Regierungsratsbeschluss |
+| [331.511.2](ch/sg/de/331.511.2.md) | Regierungsratsbeschluss |
+| [331.511.3](ch/sg/de/331.511.3.md) | Regierungsbeschluss |
+| [331.511.4](ch/sg/de/331.511.4.md) | Regierungsbeschluss |
+| [331.511.5](ch/sg/de/331.511.5.md) | Regierungsbeschluss |
+| [331.512.0](ch/sg/de/331.512.0.md) | Regierungsbeschluss |
+| [331.512.01](ch/sg/de/331.512.01.md) | Regierungsbeschluss |
+| [331.512.02](ch/sg/de/331.512.02.md) | Regierungsbeschluss |
+| [331.512.03](ch/sg/de/331.512.03.md) | Regierungsbeschluss |
+| [331.512.04](ch/sg/de/331.512.04.md) | Regierungsbeschluss |
+| [331.512.05](ch/sg/de/331.512.05.md) | Regierungsbeschluss |
+| [331.512.06](ch/sg/de/331.512.06.md) | Regierungsbeschluss |
+| [331.512.07](ch/sg/de/331.512.07.md) | Regierungsbeschluss |
+| [331.512.08](ch/sg/de/331.512.08.md) | Regierungsbeschluss |
+| [331.512.09](ch/sg/de/331.512.09.md) | Regierungsbeschluss |
+| [331.512.1](ch/sg/de/331.512.1.md) | Regierungsbeschluss |
+| [331.512.2](ch/sg/de/331.512.2.md) | Regierungsbeschluss |
+| [331.512.3](ch/sg/de/331.512.3.md) | Regierungsbeschluss |
+| [331.512.4](ch/sg/de/331.512.4.md) | Regierungsbeschluss |
+| [331.512.5](ch/sg/de/331.512.5.md) | Regierungsbeschluss |
+| [331.513](ch/sg/de/331.513.md) | Regierungsbeschluss |
+| [331.514](ch/sg/de/331.514.md) | Regierungsbeschluss |
+| [331.514.1](ch/sg/de/331.514.1.md) | Regierungsbeschluss |
+| [331.514.2](ch/sg/de/331.514.2.md) | Regierungsbeschluss |
+| [331.514.3](ch/sg/de/331.514.3.md) | Regierungsbeschluss |
+| [331.514.4](ch/sg/de/331.514.4.md) | Regierungsbeschluss |
+| [331.514.5](ch/sg/de/331.514.5.md) | Regierungsbeschluss |
+| [331.515](ch/sg/de/331.515.md) | Regierungsratsbeschluss |
+| [331.516](ch/sg/de/331.516.md) | Regierungsbeschluss |
+| [331.516.1](ch/sg/de/331.516.1.md) | Regierungsbeschluss |
+| [331.516.10](ch/sg/de/331.516.10.md) | Regierungsbeschluss |
+| [331.516.2](ch/sg/de/331.516.2.md) | Regierungsbeschluss |
+| [331.516.3](ch/sg/de/331.516.3.md) | Regierungsbeschluss |
+| [331.516.4](ch/sg/de/331.516.4.md) | Regierungsbeschluss |
+| [331.516.5](ch/sg/de/331.516.5.md) | Regierungsbeschluss |
+| [331.517](ch/sg/de/331.517.md) | Regierungsbeschluss |
+| [331.518](ch/sg/de/331.518.md) | Regierungsratsbeschluss |
+| [331.519](ch/sg/de/331.519.md) | Regierungsbeschluss |
+| [331.521](ch/sg/de/331.521.md) | Regierungsratsbeschluss |
+| [331.523](ch/sg/de/331.523.md) | Regierungsbeschluss |
+| [331.523.1](ch/sg/de/331.523.1.md) | Regierungsbeschluss |
+| [331.523.2](ch/sg/de/331.523.2.md) | Regierungsbeschluss |
+| [331.523.3](ch/sg/de/331.523.3.md) | Regierungsbeschluss |
+| [331.523.4](ch/sg/de/331.523.4.md) | Regierungsbeschluss |
+| [331.523.5](ch/sg/de/331.523.5.md) | Regierungsbeschluss |
+| [331.524](ch/sg/de/331.524.md) | Regierungsratsbeschluss |
+| [331.525](ch/sg/de/331.525.md) | Regierungsratsbeschluss |
+| [331.531](ch/sg/de/331.531.md) | Regierungsratsbeschluss |
+| [331.533](ch/sg/de/331.533.md) | Regierungsratsbeschluss |
+| [331.535](ch/sg/de/331.535.md) | Regierungsbeschluss |
+| [331.535.1](ch/sg/de/331.535.1.md) | Regierungsbeschluss |
+| [331.535.2](ch/sg/de/331.535.2.md) | Regierungsbeschluss |
+| [331.535.3](ch/sg/de/331.535.3.md) | Regierungsbeschluss |
+| [331.535.4](ch/sg/de/331.535.4.md) | Regierungsbeschluss |
+| [331.536.1](ch/sg/de/331.536.1.md) | Regierungsbeschluss |
+| [331.536.2](ch/sg/de/331.536.2.md) | Regierungsbeschluss |
+| [331.536.3](ch/sg/de/331.536.3.md) | Regierungsbeschluss |
+| [331.536.4](ch/sg/de/331.536.4.md) | Regierungsbeschluss |
+| [331.536.5](ch/sg/de/331.536.5.md) | Regierungsbeschluss |
+| [331.536.6](ch/sg/de/331.536.6.md) | Regierungsbeschluss |
+| [331.536.7](ch/sg/de/331.536.7.md) | Regierungsbeschluss |
+| [331.537](ch/sg/de/331.537.md) | Regierungsbeschluss |
 | [331.538](ch/sg/de/331.538.md) | Regierungsbeschluss über die Prämienverbilligung 2026 für Personen im Kanton |
 | [331.538.1](ch/sg/de/331.538.1.md) | Regierungsbeschluss über die Prämienverbilligung 2026 für in der Schweiz obligatorisch |
 | [331.539](ch/sg/de/331.539.md) | Verordnung über die Kostenübernahme bei ausserkantonalem Spitalaufenthalt |
+| [331.540](ch/sg/de/331.540.md) | Regierungsbeschluss |
+| [331.541](ch/sg/de/331.541.md) | Regierungsbeschluss |
+| [331.542](ch/sg/de/331.542.md) | Regierungsbeschluss |
+| [331.543](ch/sg/de/331.543.md) | Regierungsbeschluss |
+| [331.544](ch/sg/de/331.544.md) | Regierungsbeschluss |
+| [331.545](ch/sg/de/331.545.md) | Regierungsbeschluss |
+| [331.546](ch/sg/de/331.546.md) | Regierungsbeschluss |
+| [331.546.1](ch/sg/de/331.546.1.md) | Regierungsbeschluss |
+| [331.546.2](ch/sg/de/331.546.2.md) | Regierungsbeschluss |
+| [331.546.3](ch/sg/de/331.546.3.md) | Regierungsbeschluss |
+| [331.546.4](ch/sg/de/331.546.4.md) | Regierungsbeschluss |
+| [331.546.5](ch/sg/de/331.546.5.md) | Regierungsbeschluss |
+| [331.547](ch/sg/de/331.547.md) | Regierungsbeschluss |
+| [331.548](ch/sg/de/331.548.md) | Regierungsbeschluss |
+| [331.549](ch/sg/de/331.549.md) | Regierungsbeschluss |
+| [331.550](ch/sg/de/331.550.md) | Regierungsbeschluss |
+| [331.551](ch/sg/de/331.551.md) | Regierungsbeschluss |
+| [331.552](ch/sg/de/331.552.md) | Regierungsbeschluss |
+| [331.552.1](ch/sg/de/331.552.1.md) | Regierungsbeschluss |
+| [331.552.2](ch/sg/de/331.552.2.md) | Regierungsbeschluss |
+| [331.552.3](ch/sg/de/331.552.3.md) | Regierungsbeschluss |
+| [331.552.4](ch/sg/de/331.552.4.md) | Regierungsbeschluss |
+| [331.552.5](ch/sg/de/331.552.5.md) | Regierungsbeschluss |
+| [331.552.6](ch/sg/de/331.552.6.md) | Regierungsbeschluss |
+| [331.553](ch/sg/de/331.553.md) | Regierungsbeschluss |
+| [331.554](ch/sg/de/331.554.md) | Regierungsbeschluss |
+| [331.554.1](ch/sg/de/331.554.1.md) | Regierungsbeschluss |
+| [331.555](ch/sg/de/331.555.md) | Regierungsbeschluss |
+| [331.556](ch/sg/de/331.556.md) | Regierungsbeschluss |
+| [331.557](ch/sg/de/331.557.md) | Regierungsbeschluss |
+| [331.558](ch/sg/de/331.558.md) | Regierungsbeschluss |
+| [331.559](ch/sg/de/331.559.md) | Regierungsbeschluss |
+| [331.560.1](ch/sg/de/331.560.1.md) | Regierungsbeschluss |
+| [331.561](ch/sg/de/331.561.md) | Regierungsbeschluss |
+| [331.562](ch/sg/de/331.562.md) | Regierungsbeschluss |
+| [331.563](ch/sg/de/331.563.md) | Regierungsbeschluss |
+| [331.563.1](ch/sg/de/331.563.1.md) | Regierungsbeschluss |
+| [331.563.2](ch/sg/de/331.563.2.md) | Regierungsbeschluss |
+| [331.563.3](ch/sg/de/331.563.3.md) | Regierungsbeschluss |
+| [331.563.4](ch/sg/de/331.563.4.md) | Regierungsbeschluss |
+| [331.563.5](ch/sg/de/331.563.5.md) | Regierungsbeschluss |
+| [331.564](ch/sg/de/331.564.md) | Regierungsbeschluss |
+| [331.565](ch/sg/de/331.565.md) | Regierungsbeschluss |
+| [331.566](ch/sg/de/331.566.md) | Regierungsbeschluss |
+| [331.566.1](ch/sg/de/331.566.1.md) | Regierungsbeschluss |
+| [331.566.2](ch/sg/de/331.566.2.md) | Regierungsbeschluss |
+| [331.566.3](ch/sg/de/331.566.3.md) | Regierungsbeschluss |
+| [331.566.4](ch/sg/de/331.566.4.md) | Regierungsbeschluss |
+| [331.567](ch/sg/de/331.567.md) | Regierungsbeschluss |
+| [331.568](ch/sg/de/331.568.md) | Regierungsbeschluss |
+| [331.569](ch/sg/de/331.569.md) | Regierungsbeschluss |
 | [350.1](ch/sg/de/350.1.md) | Einführungsgesetz zur Bundesgesetzgebung über die Alters-, Hinterlassenen- |
 | [350.2](ch/sg/de/350.2.md) | Interkantonale Vereinbarung über die Berufsberatung in der Invalidenversicherung |
 | [351.13](ch/sg/de/351.13.md) | Beschluss über die Verwaltungskostenbeiträge in der AHV |
 | [351.5](ch/sg/de/351.5.md) | Ergänzungsleistungsgesetz |
 | [351.52](ch/sg/de/351.52.md) | Verordnung über die nach Ergänzungsleistungsgesetz anrechenbare Tagespauschale |
 | [351.53](ch/sg/de/351.53.md) | Verordnung über die Vergütung von Krankheits- und Behinderungskosten bei den |
+| [353.7](ch/sg/de/353.7.md) | Gesetz |
+| [353.71](ch/sg/de/353.71.md) | Vollzugsverordnung |
 | [353.91](ch/sg/de/353.91.md) | Grossratsbeschluss über den Staatsbeitrag an den Bau des Behindertenwohnheims |
 | [353.92](ch/sg/de/353.92.md) | Grossratsbeschluss über die Staatsbeiträge an das Wohn- und Beschäftigungsheim |
 | [355.0](ch/sg/de/355.0.md) | Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den |
 | [355.00](ch/sg/de/355.00.md) | Regierungsbeschluss über den Beitritt des Kantons St.Gallen zur Interkantonalen |
 | [355.01](ch/sg/de/355.01.md) | Interkantonale Vereinbarung über die Ostschweizer BVG- und Stiftungsaufsicht |
+| [355.1](ch/sg/de/355.1.md) | Verordnung |
 | [355.11](ch/sg/de/355.11.md) | Verfahrensrechtliche Bestimmungen der Ostschweizer BVG- und Stiftungsaufsicht |
+| [355.12](ch/sg/de/355.12.md) | Gebührentarif |
 | [355.2](ch/sg/de/355.2.md) | Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den |
 | [355.20](ch/sg/de/355.20.md) | Regierungsbeschluss über den Beitritt zur Interkantonalen Vereinbarung über |
 | [355.21](ch/sg/de/355.21.md) | Interkantonale Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone |
+| [355.211](ch/sg/de/355.211.md) | Gebührenreglement |
 | [361.0](ch/sg/de/361.0.md) | Gesetz über Arbeitslosenversicherung und Arbeitsvermittlung |
 | [361.11](ch/sg/de/361.11.md) | Verordnung über Arbeitslosenversicherung und Arbeitsvermittlung |
 | [361.12](ch/sg/de/361.12.md) | Grossratsbeschluss über Staatsbeiträge an arbeitsmarktliche Projekte der Sozialhilfe |
+| [361.13](ch/sg/de/361.13.md) | Verordnung |
 | [371.1](ch/sg/de/371.1.md) | Einführungsgesetz zur Bundesgesetzgebung über die Familienzulagen |
 | [371.11](ch/sg/de/371.11.md) | Verordnung zum Einführungsgesetz zur Bundesgesetzgebung über die Familienzulagen |
+| [371.14](ch/sg/de/371.14.md) | Beschluss |
 | [371.15](ch/sg/de/371.15.md) | Reglement der kantonalen Familienausgleichskasse |
 | [371.151](ch/sg/de/371.151.md) | Regierungsratsbeschluss über die Beiträge der Arbeitgeber an die kantonale |
 | [371.17](ch/sg/de/371.17.md) | Regierungsbeschluss über die Abgabe für den Lastenausgleich unter den Familienausgleichskassen |
+| [371.511](ch/sg/de/371.511.md) | Vereinbarung |
+| [371.512](ch/sg/de/371.512.md) | Vereinbarung |
+| [371.513](ch/sg/de/371.513.md) | Vereinbarung |
+| [371.514](ch/sg/de/371.514.md) | Vereinbarung |
+| [371.515](ch/sg/de/371.515.md) | Vereinbarung |
+| [371.516](ch/sg/de/371.516.md) | Vereinbarung |
+| [371.517](ch/sg/de/371.517.md) | Vereinbarung |
+| [371.518](ch/sg/de/371.518.md) | Vereinbarung |
+| [371.519](ch/sg/de/371.519.md) | Vereinbarung |
+| [371.520](ch/sg/de/371.520.md) | Interkantonale Vereinbarung |
+| [371.521](ch/sg/de/371.521.md) | Vereinbarung |
+| [371.522](ch/sg/de/371.522.md) | Vereinbarung |
 | [372.1](ch/sg/de/372.1.md) | Gesetz über Elternschaftsbeiträge |
 | [372.11](ch/sg/de/372.11.md) | Vollzugsverordnung zum Gesetz über Elternschaftsbeiträge |
 | [372.111](ch/sg/de/372.111.md) | Regierungsbeschluss über die Übergangsregelung zum Gesetz über Mutterschaftsbeiträge |
@@ -22971,7 +25155,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [381.930](ch/sg/de/381.930.md) | Grossratsbeschluss über den Staatsbeitrag an den Neubau des Betagtenheims in |
 | [383.1](ch/sg/de/383.1.md) | Gesetz über die Aufhebung der Kantonshilfskasse für nichtversicherbare Schäden |
 | [383.11](ch/sg/de/383.11.md) | Vollzugsverordnung zum Gesetz über die Kantonshilfskasse für nichtversicherbare |
+| [387.1](ch/sg/de/387.1.md) | Grossratsbeschluss |
+| [387.11](ch/sg/de/387.11.md) | Interkantonale Vereinbarung |
 | [387.21](ch/sg/de/387.21.md) | Verordnung zur Interkantonalen Vereinbarung für soziale Einrichtungen IVSE |
+| [387.4](ch/sg/de/387.4.md) | Kantonsratsbeschluss |
+| [387.41](ch/sg/de/387.41.md) | Verordnung |
 | [411.1](ch/sg/de/411.1.md) | Gesetz über das Militärwesen |
 | [411.15](ch/sg/de/411.15.md) | Verordnung über die Sektionschefs |
 | [411.5](ch/sg/de/411.5.md) | Verordnung zur Bundesgesetzgebung über die Wehrpflichtersatzabgabe |
@@ -23008,6 +25196,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [452.15](ch/sg/de/452.15.md) | Verordnung zur eidgenössischen Waffengesetzgebung |
 | [452.4](ch/sg/de/452.4.md) | Vollzugsverordnung zur eidgenössischen Sprengstoffgesetzgebung |
 | [453.1](ch/sg/de/453.1.md) | Gesetz über Niederlassung und Aufenthalt |
+| [453.10](ch/sg/de/453.10.md) | Verordnung |
 | [453.11](ch/sg/de/453.11.md) | Verordnung über die kantonale Einwohnerdatenplattform |
 | [453.31](ch/sg/de/453.31.md) | Verordnung zur Bundesgesetzgebung über die Ausweise für Schweizer Staatsangehörige |
 | [453.51](ch/sg/de/453.51.md) | Verordnung zur Bundesgesetzgebung über die Ausländerinnen und Ausländer |
@@ -23036,8 +25225,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [512.11](ch/sg/de/512.11.md) | Verordnung zur eidgenössischen Entsendegesetzgebung |
 | [513.1](ch/sg/de/513.1.md) | Normalarbeitsvertrag für hauswirtschaftliche Arbeitnehmerinnen und Arbeitnehmer |
 | [513.2](ch/sg/de/513.2.md) | Normalarbeitsvertrag für landwirtschaftliche Arbeitnehmende |
+| [513.3](ch/sg/de/513.3.md) | Normalarbeitsvertrag |
 | [514.1](ch/sg/de/514.1.md) | Vollzugsverordnung zum Bundesgesetz über die Allgemeinverbindlicherklärung |
 | [514.21](ch/sg/de/514.21.md) | Allgemeinverbindlicherklärung der überarbeiteten Fassung vom 1. Januar 2011 |
+| [514.211](ch/sg/de/514.211.md) | Gesamtarbeitsvertrag |
 | [515.1](ch/sg/de/515.1.md) | Gesetz betreffend das kantonale Einigungsamt |
 | [517.11](ch/sg/de/517.11.md) | Verordnung zur Bundesgesetzgebung über Massnahmen zur Bekämpfung der Schwarzarbeit |
 | [532.9](ch/sg/de/532.9.md) | Grossratsbeschluss über die Förderung der Erneuerung von Altwohnungen |
@@ -23048,6 +25239,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [552.1](ch/sg/de/552.1.md) | Gesetz über Ruhetag und Ladenöffnung |
 | [552.11](ch/sg/de/552.11.md) | Verordnung zum Gesetz über Ruhetag und Ladenöffnung |
 | [552.21](ch/sg/de/552.21.md) | Verordnung zur Bundesgesetzgebung über das Gewerbe der Reisenden |
+| [552.35](ch/sg/de/552.35.md) | Gesetz |
+| [552.4](ch/sg/de/552.4.md) | Wandergewerbegesetz |
+| [552.41](ch/sg/de/552.41.md) | Wandergewerbeverordnung |
 | [552.5](ch/sg/de/552.5.md) | Gesetz über den Abbau technischer Handelshemmnisse |
 | [552.53](ch/sg/de/552.53.md) | Grossratsbeschluss über den Beitritt zur Interkantonalen Vereinbarung zum Abbau |
 | [552.531](ch/sg/de/552.531.md) | Interkantonale Vereinbarung zum Abbau technischer Handelshemmnisse |
@@ -23061,9 +25255,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [553.155](ch/sg/de/553.155.md) | Gegenrechtserklärung gegenüber dem Kanton Tessin über die Anerkennung von Fähigkeitsausweisen |
 | [553.156](ch/sg/de/553.156.md) | Gegenrechtserklärung gegenüber dem Kanton Appenzell A.Rh. über die Anerkennung |
 | [554.1](ch/sg/de/554.1.md) | Kinogesetz |
+| [554.11](ch/sg/de/554.11.md) | Vollzugsverordnung |
 | [554.3](ch/sg/de/554.3.md) | Gesetz über Spielgeräte und Spiellokale |
 | [554.30](ch/sg/de/554.30.md) | Verordnung über das Verbot von Geschicklichkeitsspielen |
 | [554.31](ch/sg/de/554.31.md) | Vollzugsverordnung zum Gesetz über Spielgeräte und Spiellokale |
+| [554.4](ch/sg/de/554.4.md) | Unterhaltungsgewerbegesetz |
+| [554.41](ch/sg/de/554.41.md) | Unterhaltungsgewerbeverordnung |
 | [555.1](ch/sg/de/555.1.md) | Gesetz über das Pfandleihgewerbe |
 | [556.11](ch/sg/de/556.11.md) | Verordnung zur Bundesgesetzgebung über den Konsumkredit |
 | [559.11](ch/sg/de/559.11.md) | Verordnung zur Bundesgesetzgebung über Risikoaktivitäten |
@@ -23084,6 +25281,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [571.31](ch/sg/de/571.31.md) | Regierungsbeschluss über die Festlegung des Zinssatzes für Kredite nach dem |
 | [571.32](ch/sg/de/571.32.md) | Regierungsbeschluss über die Bestimmung der NOGA-Codes der unterstützten Branchen |
 | [573.0](ch/sg/de/573.0.md) | Standortförderungsgesetz |
+| [573.1](ch/sg/de/573.1.md) | Grossratsbeschluss |
 | [573.11](ch/sg/de/573.11.md) | Vollzugsverordnung zum Grossratsbeschluss über den Fond für Wirtschaftsförderung |
 | [573.2](ch/sg/de/573.2.md) | Kantonsratsbeschluss über das Mehrjahresprogramm der Standortförderung für |
 | [573.3](ch/sg/de/573.3.md) | Kantonsratsbeschluss über den Sonderkredit zur Start-up-Finanzierung |
@@ -23109,8 +25307,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [611.15](ch/sg/de/611.15.md) | Kantonsratsbeschluss über die Unterstützung der Genossenschaft Olma Messen |
 | [611.16](ch/sg/de/611.16.md) | Kantonsratsbeschluss über die Erhöhung des Eigenkapitals der Genossenschaft |
 | [611.17](ch/sg/de/611.17.md) | Kantonsratsbeschluss über einen Sonderkredit für Beiträge im Zusammenhang mit |
+| [611.21](ch/sg/de/611.21.md) | Verordnung |
 | [611.211](ch/sg/de/611.211.md) | Interkantonale Vereinbarung über die Aufnahme von Schülern in die landwirtschaftlichen |
 | [611.217](ch/sg/de/611.217.md) | Vereinbarung über den Besuch der landwirtschaftlichen Schulen Sennwald und |
+| [611.25](ch/sg/de/611.25.md) | Grossratsbeschluss |
+| [611.251](ch/sg/de/611.251.md) | Konkordat |
+| [611.253](ch/sg/de/611.253.md) | Reglement |
+| [611.26](ch/sg/de/611.26.md) | Grossratsbeschluss |
+| [611.261](ch/sg/de/611.261.md) | Konkordat |
 | [611.30](ch/sg/de/611.30.md) | Grossratsbeschluss über die Finanzierung der Zinsverbilligung für Darlehen |
 | [611.31](ch/sg/de/611.31.md) | Verordnung zum Grossratsbeschluss über die Finanzierung der Zinsverbilligung |
 | [633.1](ch/sg/de/633.1.md) | Meliorationsgesetz |
@@ -23124,6 +25328,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [633.401](ch/sg/de/633.401.md) | Regierungsbeschluss über den Beitritt zum Nachtrag zur Interkantonalen Vereinbarung |
 | [633.41](ch/sg/de/633.41.md) | Interkantonale Vereinbarung betreffend die Melioration der Linthebene in den |
 | [633.410](ch/sg/de/633.410.md) | Reglement der Linthebene-Melioration |
+| [633.411](ch/sg/de/633.411.md) | Gebühren und Entschädigungen |
 | [633.81](ch/sg/de/633.81.md) | Interkantonale Vereinbarung über die Strassenkorporation «Suruggen-Flecken-Kellersegg» |
 | [633.82](ch/sg/de/633.82.md) | Interkantonale Vereinbarung über die Birt-Strassen-Korporation |
 | [633.920](ch/sg/de/633.920.md) | Grossratsbeschluss über einen Staatsbeitrag an die Melioration Niederhelfenschwil |
@@ -23154,8 +25359,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [672.1](ch/sg/de/672.1.md) | Einführungsgesetz zur eidgenössischen Umweltschutzgesetzgebung |
 | [672.11](ch/sg/de/672.11.md) | Verordnung zum Einführungsgesetz zur eidgenössischen Umweltschutzgesetzgebung |
 | [672.115](ch/sg/de/672.115.md) | Interkantonale Vereinbarung über den Vollzug der Privaten Kontrolle im Bereich |
+| [672.32](ch/sg/de/672.32.md) | Grossratsbeschluss |
+| [672.33](ch/sg/de/672.33.md) | Regierungsratsbeschluss |
+| [672.351](ch/sg/de/672.351.md) | Regierungsratsbeschluss |
+| [672.43](ch/sg/de/672.43.md) | Grossratsbeschluss |
+| [672.431](ch/sg/de/672.431.md) | Regierungsratsbeschluss |
+| [672.432](ch/sg/de/672.432.md) | Regierungsratsbeschluss |
 | [672.5](ch/sg/de/672.5.md) | Einführungsgesetz zur eidgenössischen Chemikaliengesetzgebung |
 | [672.51](ch/sg/de/672.51.md) | Verordnung zum Einführungsgesetz zur eidgenössischen Chemikaliengesetzgebung |
+| [672.53](ch/sg/de/672.53.md) | Grossratsbeschluss |
+| [672.531](ch/sg/de/672.531.md) | Regierungsbeschluss |
+| [672.533](ch/sg/de/672.533.md) | Regierungsbeschluss |
 | [672.63](ch/sg/de/672.63.md) | Grossratsbeschluss über regionale Sammelstellen für Kleinmengen von Sonder- |
 | [710.5](ch/sg/de/710.5.md) | Gesetz über den öffentlichen Verkehr |
 | [710.51](ch/sg/de/710.51.md) | Verordnung über den öffentlichen Verkehr |
@@ -23201,6 +25415,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [714.51](ch/sg/de/714.51.md) | Interkantonale Vereinbarung über die Schiffahrt auf dem Zürichsee und dem Walensee |
 | [715.1](ch/sg/de/715.1.md) | Vollzugsverordnung zu den eidgenössischen Vorschriften über die Luftfahrt |
 | [716.1](ch/sg/de/716.1.md) | Verordnung zum eidgenössischen Rohrleitungsgesetz |
+| [718.1](ch/sg/de/718.1.md) | Verkehrsgebührentarif |
 | [731.1](ch/sg/de/731.1.md) | Planungs- und Baugesetz |
 | [731.10](ch/sg/de/731.10.md) | Regierungsbeschluss über den Vollzug von Art. 77 Abs. 2 und Art. 87bis des |
 | [731.11](ch/sg/de/731.11.md) | Verordnung zum Planungs- und Baugesetz |
@@ -23213,6 +25428,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [732.12](ch/sg/de/732.12.md) | Verordnung über den Klosterplatz in St.Gallen |
 | [732.15](ch/sg/de/732.15.md) | Kantonsratsbeschluss über den Kantonsstrassenplan |
 | [732.21](ch/sg/de/732.21.md) | Regierungsratsbeschluss über die Bezeichnung der Fuss- und Wanderwegnetze |
+| [732.321](ch/sg/de/732.321.md) | Vereinbarung |
+| [732.322](ch/sg/de/732.322.md) | Vereinbarung |
+| [732.323](ch/sg/de/732.323.md) | Vereinbarung |
 | [732.325](ch/sg/de/732.325.md) | Vereinbarung zwischen den Kantonen Zürich und St.Gallen über den betrieblichen |
 | [732.326](ch/sg/de/732.326.md) | Vereinbarung zwischen den Kantonen St.Gallen und Glarus über den Unterhalt |
 | [732.41](ch/sg/de/732.41.md) | Grossratsbeschluss über den Bau der Umfahrungsstrasse Wagen–Eschenbach–Schmerikon |
@@ -23231,6 +25449,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [733.21](ch/sg/de/733.21.md) | Kantonsratsbeschluss über den Sonderkredit zur Erstellung von Fotovoltaikanlagen |
 | [734.1](ch/sg/de/734.1.md) | Wasserbaugesetz |
 | [734.11](ch/sg/de/734.11.md) | Wasserbauverordnung |
+| [734.111](ch/sg/de/734.111.md) | Regierungsbeschluss |
 | [734.21](ch/sg/de/734.21.md) | Rheingesetz |
 | [734.211](ch/sg/de/734.211.md) | Verordnung über die Wasserwehr am Alpenrhein und Linthkanal |
 | [734.22](ch/sg/de/734.22.md) | Gesetz über die Verfahren zur Verbesserung des Hochwasserschutzes am Rhein |
@@ -23255,6 +25474,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [737.51](ch/sg/de/737.51.md) | Vollzugsverordnung zum Grossratsbeschluss über Massnahmen zur Förderung des |
 | [737.7](ch/sg/de/737.7.md) | Einführungsgesetz zum Bundesgesetz über die Verbesserung der Wohnverhältnisse |
 | [738.3](ch/sg/de/738.3.md) | Vollzugsverordnung zur Bundesgesetzgebung über Investitionshilfe für Berggebiete |
+| [738.611](ch/sg/de/738.611.md) | Vereinbarung |
+| [738.612](ch/sg/de/738.612.md) | Vereinbarung |
 | [738.7](ch/sg/de/738.7.md) | Grossratsbeschluss über die Zuwendung zugunsten der Bergbevölkerung aus Anlass |
 | [738.71](ch/sg/de/738.71.md) | Vollzugsverordnung zum Grossratsbeschluss über die Zuwendung zugunsten der |
 | [741.1](ch/sg/de/741.1.md) | Energiegesetz |
@@ -23266,6 +25487,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [741.122](ch/sg/de/741.122.md) | Kantonsratsbeschluss über den Sonderkredit für die Jahre 2020 bis 2023 zur |
 | [741.123](ch/sg/de/741.123.md) | Kantonsratsbeschluss über den Sonderkredit zur Finanzierung der Energieförderung |
 | [741.2](ch/sg/de/741.2.md) | Einführungsgesetz zur eidgenössischen Stromversorgungsgesetzgebung |
+| [741.20](ch/sg/de/741.20.md) | Verordnung |
 | [741.51](ch/sg/de/741.51.md) | Interkantonale Vereinbarung über die Versorgung des Gebietes Mohren der Einwohnergemeinde |
 | [741.52](ch/sg/de/741.52.md) | Interkantonale Vereinbarung über die Versorgung der Gebiete Faulenschwendi-Oberreute-Spielberg |
 | [741.53](ch/sg/de/741.53.md) | Interkantonale Vereinbarung über die Versorgung der Gebiete Kapf, Honegg und |
@@ -23280,6 +25502,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [751.54](ch/sg/de/751.54.md) | Interkantonale Vereinbarung über örtliche Korporationen im Grenzgebiet der |
 | [751.55](ch/sg/de/751.55.md) | Interkantonale Vereinbarung über die Versorgung des Gebietes Kapf des Bezirks |
 | [751.56](ch/sg/de/751.56.md) | Interkantonale Vereinbarung über die Versorgung der Gebiete Biäsche, Escherau, |
+| [752.1](ch/sg/de/752.1.md) | Einführungsgesetz |
+| [752.10](ch/sg/de/752.10.md) | Grossratsbeschluss |
 | [752.11](ch/sg/de/752.11.md) | Vollzugsverordnung zum Einführungsgesetz zum eidgenössischen Gewässerschutzgesetz |
 | [752.2](ch/sg/de/752.2.md) | Vollzugsgesetz zur eidgenössischen Gewässerschutzgesetzgebung |
 | [752.21](ch/sg/de/752.21.md) | Verordnung zum Vollzugsgesetz zur eidgenössischen Gewässerschutzgesetzgebung |
@@ -23307,6 +25531,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [760.12](ch/sg/de/760.12.md) | Vermessungsverordnung |
 | [811.1](ch/sg/de/811.1.md) | Steuergesetz |
 | [811.11](ch/sg/de/811.11.md) | Steuerverordnung |
+| [811.110](ch/sg/de/811.110.md) | Verordnung über die Änderung des Steuergesetzes |
 | [811.12](ch/sg/de/811.12.md) | Verordnung über den Ausgleich der Folgen der kalten Progression |
 | [811.14](ch/sg/de/811.14.md) | Regierungsbeschluss über die Ausgleichs-, Verzugs- und Rückerstattungszinsen |
 | [811.15](ch/sg/de/811.15.md) | Regierungsbeschluss über Tarife der Quellensteuer für das Jahr 2026 |
@@ -23315,6 +25540,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [811.41](ch/sg/de/811.41.md) | Gesetz über steuerbegünstigte Arbeitsbeschaffungsreserven |
 | [811.411](ch/sg/de/811.411.md) | Vollzugsverordnung zum Gesetz über steuerbegünstigte Arbeitsbeschaffungsreserven |
 | [811.711](ch/sg/de/811.711.md) | Vereinbarung zwischen der Regierung des Fürstentums Liechtenstein und dem Regierungsrat |
+| [811.712](ch/sg/de/811.712.md) | Vereinbarung |
 | [811.714](ch/sg/de/811.714.md) | Vereinbarung zwischen dem Regierungsrat des Kantons Basel-Landschaft und dem |
 | [811.715](ch/sg/de/811.715.md) | Vereinbarung zwischen dem Regierungsrat des Kantons Zürich und dem Regierungsrat |
 | [811.716](ch/sg/de/811.716.md) | Vereinbarung zwischen dem Regierungsrat des Kantons St.Gallen und dem Regierungsrat |
@@ -23323,19 +25549,25 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [811.719](ch/sg/de/811.719.md) | Vereinbarung zwischen dem Kanton Schaffhausen und dem Kanton St.Gallen über |
 | [811.720](ch/sg/de/811.720.md) | Gegenrechtsvereinbarung zwischen dem Regierungsrat des Kantons St.Gallen und |
 | [811.721](ch/sg/de/811.721.md) | Vereinbarung zwischen dem Regierungsrat des Kantons St.Gallen und dem Staatsrat |
+| [811.722](ch/sg/de/811.722.md) | Vereinbarung |
 | [811.723](ch/sg/de/811.723.md) | Gegenrechtsvereinbarung zwischen den Kantonen Aargau und St.Gallen über die |
+| [811.724](ch/sg/de/811.724.md) | Gegenrechtsvereinbarung |
 | [811.725](ch/sg/de/811.725.md) | Gegenrechtsvereinbarung zwischen den Kantonen Wallis und St.Gallen über die |
+| [811.726](ch/sg/de/811.726.md) | Gegenrechtsvereinbarung |
 | [811.727](ch/sg/de/811.727.md) | Gegenrechtsvereinbarung zwischen den Kantonen Appenzell I.Rh. und St.Gallen |
 | [811.728](ch/sg/de/811.728.md) | Gegenrechtsvereinbarung zwischen den Kantonen Solothurn und St.Gallen über |
+| [811.729](ch/sg/de/811.729.md) | Gegenrechtsvereinbarung |
 | [811.730](ch/sg/de/811.730.md) | Gegenrechtsvereinbarung zwischen den Kantonen Uri und St.Gallen über die Befreiung |
 | [811.81](ch/sg/de/811.81.md) | Vereinbarung zwischen dem Schweizerischen Bundesrat und der Regierung der Französischen |
 | [813.1](ch/sg/de/813.1.md) | Finanzausgleichsgesetz |
+| [813.10](ch/sg/de/813.10.md) | Grossratsbeschluss |
 | [813.11](ch/sg/de/813.11.md) | Vollzugsverordnung zum Finanzausgleichsgesetz |
 | [813.3](ch/sg/de/813.3.md) | Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den |
 | [813.30](ch/sg/de/813.30.md) | Regierungsbeschluss über den Beitritt des Kantons St.Gallen zur Rahmenvereinbarung |
 | [813.31](ch/sg/de/813.31.md) | Rahmenvereinbarung für die interkantonale Zusammenarbeit mit Lastenausgleich |
 | [813.51](ch/sg/de/813.51.md) | Dekret über den Finanzausgleich (Ausgleichsdekret) |
 | [813.52](ch/sg/de/813.52.md) | Reglement über den Finanzausgleich |
+| [813.6](ch/sg/de/813.6.md) | Gesetz |
 | [814.1](ch/sg/de/814.1.md) | Gesetz über die Durchführung der Grundstückschätzung |
 | [814.11](ch/sg/de/814.11.md) | Verordnung über die Durchführung der Grundstückschätzung |
 | [815.1](ch/sg/de/815.1.md) | Verordnung zum Bundesgesetz über die direkte Bundessteuer |
@@ -23344,15 +25576,20 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [816.1](ch/sg/de/816.1.md) | Gesetz über die Kursaalabgabe |
 | [816.11](ch/sg/de/816.11.md) | Verordnung über Veranlagung und Bezug der Kursaalabgabe |
 | [821.1](ch/sg/de/821.1.md) | Verordnung über Kosten und Entschädigungen im Verwaltungsverfahren (Verwaltungsgebührenverordnung) |
+| [821.5](ch/sg/de/821.5.md) | Gebührentarif |
 | [831.1](ch/sg/de/831.1.md) | Finanzhaushaltsverordnung |
+| [831.3](ch/sg/de/831.3.md) | Verordnung |
 | [831.51](ch/sg/de/831.51.md) | Kantonsratsbeschluss über die Zuweisung von ausserordentlichen Erträgen an |
 | [831.61](ch/sg/de/831.61.md) | Grossratsbeschluss über die Einlage in die Rückstellung für Hilfeleistung bei |
 | [831.611](ch/sg/de/831.611.md) | Verordnung zum Grossratsbeschluss über die Einlage in die Rückstellung für |
 | [831.62](ch/sg/de/831.62.md) | Grossratsbeschluss über eine Einlage in den Fonds für die betriebswirtschaftliche |
+| [831.621](ch/sg/de/831.621.md) | Verordnung |
 | [831.63](ch/sg/de/831.63.md) | Grossratsbeschluss über den Verkauf eines Grundstücks an der Zürcher Strasse |
 | [831.64](ch/sg/de/831.64.md) | Kantonsratsbeschluss über die finanzielle Beteiligung des Kantons St.Gallen |
 | [841.1](ch/sg/de/841.1.md) | Einführungsgesetz zur Interkantonalen Vereinbarung über das öffentliche Beschaffungswesen |
 | [841.11](ch/sg/de/841.11.md) | Verordnung über das öffentliche Beschaffungswesen |
+| [841.3](ch/sg/de/841.3.md) | Grossratsbeschluss |
+| [841.31](ch/sg/de/841.31.md) | Interkantonale Vereinbarung |
 | [841.32](ch/sg/de/841.32.md) | Interkantonale Vereinbarung über das öffentliche Beschaffungswesen |
 | [841.4](ch/sg/de/841.4.md) | Grossratsbeschluss über den Beitritt zur Interkantonalen Vereinbarung über |
 | [841.5](ch/sg/de/841.5.md) | Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den |
@@ -23386,8 +25623,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [854.1](ch/sg/de/854.1.md) | Gesetz über die Fischerei sowie den Schutz der im Wasser lebenden Tiere und |
 | [854.11](ch/sg/de/854.11.md) | Fischereiverordnung |
 | [854.111](ch/sg/de/854.111.md) | Regierungsratsbeschluss über die Dauer der Fischereipachten |
+| [854.2](ch/sg/de/854.2.md) | Taxtarif für die Fischerei |
 | [854.311](ch/sg/de/854.311.md) | Interkantonale Vereinbarung zwischen den Kantonen Thurgau und St.Gallen über |
 | [854.312](ch/sg/de/854.312.md) | Verordnung über die Fischerei im Bodensee-Obersee |
+| [854.331](ch/sg/de/854.331.md) | Fischereiverordnung |
 | [854.332](ch/sg/de/854.332.md) | Übereinkommen zwischen den Kantonen Graubünden und St.Gallen betreffend Ausübung |
 | [854.350](ch/sg/de/854.350.md) | Grossratsbeschluss über den Beitritt zur Übereinkunft über die Fischerei im |
 | [854.351](ch/sg/de/854.351.md) | Übereinkunft zwischen den Kantonen Zürich, Schwyz, Glarus und St.Gallen über |
@@ -23399,6 +25638,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [854.352](ch/sg/de/854.352.md) | Grossratsbeschluss über den Neubau der Fischzuchtanstalt Weesen |
 | [854.353](ch/sg/de/854.353.md) | Kantonsratsbeschluss über den Neubau des kantonalen Fischereizentrums in Steinach |
 | [854.371](ch/sg/de/854.371.md) | Vertrag zwischen den Kantonen Schwyz und St.Gallen über die Schwebnetzfischerei |
+| [854.372](ch/sg/de/854.372.md) | Vereinbarung |
 | [854.373](ch/sg/de/854.373.md) | Übereinkunft zwischen den Kantonen Zürich und St.Gallen über die Fischerei |
 | [854.374](ch/sg/de/854.374.md) | Interkantonale Vereinbarung zwischen den Kantonen Appenzell A.Rh. und St.Gallen |
 | [854.375](ch/sg/de/854.375.md) | Vereinbarung zwischen den Kantonen Schwyz und St.Gallen über die Angelfischerei |
@@ -23417,6 +25657,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [871.13](ch/sg/de/871.13.md) | Verordnung über die Blitzschutzkontrolle |
 | [871.14](ch/sg/de/871.14.md) | Beschluss des Interkantonalen Organs betreffend Brandschutzvorschriften |
 | [871.15](ch/sg/de/871.15.md) | Verordnung über die Entschädigungen für Feuerwehrdienst im regionalen Stützpunkt |
+| [871.16](ch/sg/de/871.16.md) | Tarif für die Schadenbekämpfung |
 | [871.3](ch/sg/de/871.3.md) | Verordnung über Gebühren, Tarife und Entschädigungen zum Feuerschutz |
 | [871.5](ch/sg/de/871.5.md) | Vollzugsverordnung zum eidgenössischen Elektrizitätsgesetz |
 | [872.1](ch/sg/de/872.1.md) | Gesetz über Beitragsleistung von Feuerversicherungsgesellschaften zu Feuerlöschzwecken |
@@ -23449,35 +25690,50 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [914.372](ch/sg/de/914.372.md) | Übereinkommen zwischen den Regierungen der Kantone Appenzell A.Rh. und St.Gallen |
 | [914.41](ch/sg/de/914.41.md) | Verordnung über die selbständigen Anteilrechte und das Alpbuch |
 | [914.45](ch/sg/de/914.45.md) | Verordnung über die Prüfung und den Fähigkeitsausweis der Grundbuchverwalterinnen |
+| [914.5](ch/sg/de/914.5.md) | Verordnung |
 | [914.7](ch/sg/de/914.7.md) | Gesetz über die amtliche Vermessung |
 | [914.71](ch/sg/de/914.71.md) | Verordnung zum Gesetz über die amtliche Vermessung |
+| [914.711](ch/sg/de/914.711.md) | Gebührentarif |
 | [914.715](ch/sg/de/914.715.md) | Regierungsratsbeschluss über die Ermittlung der landwirtschaftlich genutzten |
 | [914.75](ch/sg/de/914.75.md) | Verordnung über die Erhebung und Schreibweise der Lokalnamen |
 | [915.1](ch/sg/de/915.1.md) | Gesetz betreffend die Führung des Handelsregisters |
 | [921.1](ch/sg/de/921.1.md) | Übertretungsstrafgesetz |
 | [941.1](ch/sg/de/941.1.md) | Gerichtsgesetz |
 | [941.10](ch/sg/de/941.10.md) | Kantonsratsbeschluss über die Zahl der Richterinnen und Richter |
+| [941.111](ch/sg/de/941.111.md) | Verordnung |
 | [941.112](ch/sg/de/941.112.md) | Verordnung über die Schlichtungsbehörden |
 | [941.113](ch/sg/de/941.113.md) | Verordnung über die Organisation der Verwaltungsrekurskommission |
 | [941.114](ch/sg/de/941.114.md) | Reglement über Organisation und Geschäftsgang des Versicherungsgerichtes |
+| [941.115](ch/sg/de/941.115.md) | Regierungsbeschluss |
+| [941.12](ch/sg/de/941.12.md) | Gerichtskostenverordnung |
 | [941.13](ch/sg/de/941.13.md) | Verordnung über die Entschädigung der Richterinnen und Richter ohne feste Anstellung |
 | [941.21](ch/sg/de/941.21.md) | Gerichtsordnung |
 | [941.22](ch/sg/de/941.22.md) | Reglement über die Organisation und den Geschäftsgang des Verwaltungsgerichtes |
 | [941.223](ch/sg/de/941.223.md) | Reglement über den Geschäftsgang der Verwaltungsrekurskommission |
+| [941.224](ch/sg/de/941.224.md) | Reglement |
 | [941.30](ch/sg/de/941.30.md) | Reglement der Konferenz der Gerichte |
 | [941.91](ch/sg/de/941.91.md) | Kantonsratsbeschluss über die Instandsetzung und Umnutzung der Schützengasse |
 | [951.1](ch/sg/de/951.1.md) | Gesetz über die Verwaltungsrechtspflege |
 | [951.11](ch/sg/de/951.11.md) | Verordnung über die Bearbeitung von Rekursverfahren vor den Departementen |
 | [951.12](ch/sg/de/951.12.md) | Verordnung über den elektronischen Verkehr in Verfahren vor dem Migrationsamt |
 | [961.2](ch/sg/de/961.2.md) | Einführungsgesetz zur Schweizerischen Zivilprozessordnung |
+| [961.21](ch/sg/de/961.21.md) | Zivilprozessverordnung |
+| [961.22](ch/sg/de/961.22.md) | Verordnung |
+| [961.51](ch/sg/de/961.51.md) | Konkordat |
+| [961.6](ch/sg/de/961.6.md) | Grossratsbeschluss |
+| [961.61](ch/sg/de/961.61.md) | Konkordat |
+| [961.7](ch/sg/de/961.7.md) | Grossratsbeschluss |
+| [961.71](ch/sg/de/961.71.md) | Konkordat |
 | [962.1](ch/sg/de/962.1.md) | Einführungsgesetz zur Schweizerischen Straf- und Jugendstrafprozessordnung |
 | [962.101](ch/sg/de/962.101.md) | Verordnung über die Zuständigkeit für den Vollzug von Landesverweisungen |
 | [962.11](ch/sg/de/962.11.md) | Strafprozessverordnung |
 | [962.12](ch/sg/de/962.12.md) | Verordnung über die elektronische Überwachung |
 | [962.13](ch/sg/de/962.13.md) | Verordnung über das Zwangsmassnahmengericht |
 | [962.14](ch/sg/de/962.14.md) | Verordnung über die Gefängnisse und Vollzugsanstalten |
+| [962.151](ch/sg/de/962.151.md) | Reglement |
 | [962.17](ch/sg/de/962.17.md) | Verordnung über die Bewährungshilfe |
 | [962.51](ch/sg/de/962.51.md) | Konkordat der ostschweizerischen Kantone über den Vollzug von Strafen und Massnahmen |
+| [962.52](ch/sg/de/962.52.md) | Ausführungsbestimmungen |
 | [962.6](ch/sg/de/962.6.md) | Grossratsbeschluss über den Beitritt zum Konkordat über die Rechtshilfe und |
 | [962.61](ch/sg/de/962.61.md) | Konkordat über die Rechtshilfe und die interkantonale Zusammenarbeit in Strafsachen |
 | [962.91](ch/sg/de/962.91.md) | Grossratsbeschluss über die Übernahme und Erweiterung des Erziehungsheims Platanenhof |
@@ -23493,6 +25749,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [963.74](ch/sg/de/963.74.md) | Reglement über das Register der Notarinnen und Notare |
 | [963.75](ch/sg/de/963.75.md) | Honorarordnung |
 | [971.1](ch/sg/de/971.1.md) | Einführungsgesetz zum Bundesgesetz über Schuldbetreibung und Konkurs |
+| [971.3](ch/sg/de/971.3.md) | Grossratsbeschluss |
+| [971.31](ch/sg/de/971.31.md) | Konkordat |
 
 ## SH – Schaffhausen
 
@@ -24123,7 +26381,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## SO – Solothurn
 
-*609 laws*
+*1098 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -24150,13 +26408,23 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [105.1](ch/so/de/105.1.md) | Verordnung über die Festlegung des Zinssatzes für die Verzugszinsen bei den |
 | [106.1](ch/so/de/106.1.md) | Verordnung zur Erhöhung der Staukote beim Kraftwerk Ruppoldingen |
 | [111.1](ch/so/de/111.1.md) | Verfassung des Kantons Solothurn |
+| [111.21](ch/so/de/111.21.md) | Standeswappen |
+| [111.22](ch/so/de/111.22.md) | Bezirkswappen |
 | [111.23](ch/so/de/111.23.md) | Bereinigung der Wappen der Bezirke des Kantons Solothurn |
+| [111.24](ch/so/de/111.24.md) | Bereinigung der Gemeindewappen des |
 | [111.31](ch/so/de/111.31.md) | Gesetz über die amtlichen Publikationsorgane |
 | [111.311](ch/so/de/111.311.md) | Gesetz über die Herausgabe einer Bereinigten Sammlung der solothurnischen Erlasse |
 | [111.312](ch/so/de/111.312.md) | Vollzugsverordnung zum Gesetz über die Herausgabe einer Bereinigten Sammlung |
 | [111.32](ch/so/de/111.32.md) | Verordnung über die amtlichen Publikationsorgane |
 | [111.321](ch/so/de/111.321.md) | Verordnung über die amtlichen Bekanntmachungen |
+| [111.412.1](ch/so/de/111.412.1.md) | Allgemeines Festgeläute am 1. August |
 | [111.423.1](ch/so/de/111.423.1.md) | Gesetz über die Verwendung der Bettagssteuer |
+| [111.423.2](ch/so/de/111.423.2.md) | Zuteilung des Ertrages der |
+| [111.51](ch/so/de/111.51.md) | Übereinkommen zwischen dem |
+| [111.52](ch/so/de/111.52.md) | Genehmigung des Übereinkommens |
+| [111.53](ch/so/de/111.53.md) | Vereinbarung zur Gründung des |
+| [111.531](ch/so/de/111.531.md) | Vereinbarung zur Gründung des |
+| [111.61](ch/so/de/111.61.md) | Verordnung über die Durchführung der |
 | [112.11](ch/so/de/112.11.md) | Gesetz über das Kantons- und Gemeindebürgerrecht |
 | [112.12](ch/so/de/112.12.md) | Vollzugsverordnung zum Gesetz über das Kantons- und Gemeindebürgerrecht |
 | [112.21](ch/so/de/112.21.md) | Verordnung Jung- und Neubürgerwesen |
@@ -24190,11 +26458,18 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [122.151](ch/so/de/122.151.md) | Gesetz über Massnahmen für den Fall von Katastrophen und kriegerischen Ereignissen |
 | [122.152](ch/so/de/122.152.md) | Verordnung zum Katastrophengesetz |
 | [122.171](ch/so/de/122.171.md) | Vereinbarung über die Nordwestschweizer Regierungskonferenz |
+| [122.217](ch/so/de/122.217.md) | Verordnung über die Delegation von |
 | [122.218](ch/so/de/122.218.md) | Verordnung über die Delegation der Unterschriftsberechtigung in den Departementen |
+| [122.222.72](ch/so/de/122.222.72.md) | Verordnung über die Reorganisation des |
 | [122.51](ch/so/de/122.51.md) | Archivgesetz |
 | [122.511](ch/so/de/122.511.md) | Archivverordnung |
 | [122.551](ch/so/de/122.551.md) | Beglaubigung von Warenursprungszeugnissen der Solothurnischen Handelskammer |
+| [122.581](ch/so/de/122.581.md) | Weisungen für das Staatsarchiv |
+| [122.582](ch/so/de/122.582.md) | Weisungen über die |
 | [123.21](ch/so/de/123.21.md) | Verordnung über die Geschäftsführung der Amtschreibereien |
+| [123.215](ch/so/de/123.215.md) | Übereinkunft zwischen den Kantonen |
+| [123.215.1](ch/so/de/123.215.1.md) | Vereinbarung über den Eintritt des |
+| [123.222.1](ch/so/de/123.222.1.md) | Verordnung über die Filiale Grenchen- |
 | [123.321](ch/so/de/123.321.md) | Verordnung zur Einführung des Bundesgesetzes über Schuldbetreibung und Konkurs |
 | [123.41](ch/so/de/123.41.md) | Gesetz über den Weibeldienst |
 | [123.421](ch/so/de/123.421.md) | Verordnung über den Weibeldienst |
@@ -24209,14 +26484,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [124.22](ch/so/de/124.22.md) | Übergangsverordnung zum Verfahren bei medizinischer Staatshaftung |
 | [125.12](ch/so/de/125.12.md) | Gesetz über die Gerichtsorganisation |
 | [125.121](ch/so/de/125.121.md) | Verordnung über die Aufbewahrung und Archivierung der Gerichtsakten |
+| [125.13](ch/so/de/125.13.md) | Geschäftsreglement der |
 | [125.411](ch/so/de/125.411.md) | Reglement über die Geschäftsführung und Organisation des Richteramtes Solothurn-Lebern |
 | [125.412](ch/so/de/125.412.md) | Reglement über die Geschäftsführung und Organisation des Richteramtes Bucheggberg-Wasseramt |
 | [125.413](ch/so/de/125.413.md) | Reglement über die Geschäftsführung und Organisation des Richteramtes Thal-Gäu |
 | [125.414](ch/so/de/125.414.md) | Reglement über die Geschäftsführung und Organisation des Richteramtes Olten-Gösgen |
 | [125.415](ch/so/de/125.415.md) | Reglement über die Geschäftsführung und Organisation des Richteramtes Dorneck-Thierstein |
+| [125.432.1](ch/so/de/125.432.1.md) | Schaffung der Stellen eines zweiten |
 | [125.432.2](ch/so/de/125.432.2.md) | Doppelbesetzung des Amtsgerichtspräsidiums von Bucheggberg-Wasseramt |
 | [125.434.1](ch/so/de/125.434.1.md) | Definitive Schaffung der Stelle eines dritten Amtsgerichtspräsidenten auf dem |
+| [125.61](ch/so/de/125.61.md) | Gesetz über die Arbeitsgerichte |
 | [125.71](ch/so/de/125.71.md) | Geschäftsreglement des Obergerichts des Kantons Solothurn und der ihm angegliederten |
+| [125.751.1](ch/so/de/125.751.1.md) | Haager Übereinkunft betreffend das |
+| [125.751.2](ch/so/de/125.751.2.md) | Haager Übereinkunft betreffend das |
+| [125.751.3](ch/so/de/125.751.3.md) | Haager Übereinkunft betreffend das |
+| [125.752.1](ch/so/de/125.752.1.md) | Abkommen zur Vollstreckung |
+| [125.752.2](ch/so/de/125.752.2.md) | Abkommen über die gegenseitige |
+| [125.753.1](ch/so/de/125.753.1.md) | Abkommen über die Anerkennung und |
+| [125.757.1](ch/so/de/125.757.1.md) | Bezeichnung des Obergerichts als |
 | [125.81](ch/so/de/125.81.md) | Haftrichterverordnung |
 | [125.922](ch/so/de/125.922.md) | Verordnung des Kantonsrates über das Verfahren vor dem Versicherungsgericht |
 | [125.932](ch/so/de/125.932.md) | Geschäftsreglement des kantonalen Steuergerichts |
@@ -24230,22 +26515,71 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [126.51.1](ch/so/de/126.51.1.md) | Verordnung über die Besoldungen und die Arbeitszeit des Staatspersonals und |
 | [126.51.3](ch/so/de/126.51.3.md) | Vollzugsverordnung zur Verordnung des Kantonsrates über die Besoldungen des |
 | [126.511.31](ch/so/de/126.511.31.md) | Verordnung über die Sitzungsgelder und die Sitzungspauschalen |
+| [126.511.322](ch/so/de/126.511.322.md) | Verordnung über die Vergütung der |
+| [126.511.323](ch/so/de/126.511.323.md) | Verordnung über die Entschädigung für |
+| [126.511.326](ch/so/de/126.511.326.md) | Verordnung über die |
 | [126.511.328.4](ch/so/de/126.511.328.4.md) | Verordnung über Sitzungsgelder und Verwaltungskosten der Regional-Schulkommissionen |
 | [126.511.329.4](ch/so/de/126.511.329.4.md) | Verordnung über die Entschädigung der für die Sportfachstelle tätigen Personen, |
+| [126.511.329.5](ch/so/de/126.511.329.5.md) | Verordnung über die |
+| [126.511.345.5](ch/so/de/126.511.345.5.md) | Verordnung über die Entschädigungen |
+| [126.512.11](ch/so/de/126.512.11.md) | Verordnung über die Ferien des |
+| [126.512.15](ch/so/de/126.512.15.md) | Verordnung über den Ferienbezug des |
+| [126.512.21](ch/so/de/126.512.21.md) | Verordnung über den Gehaltsanspruch |
+| [126.512.25](ch/so/de/126.512.25.md) | Verordnung über die Entschädigungen |
 | [126.515.123.53](ch/so/de/126.515.123.53.md) | Verordnung über die Entschädigung der Experten bei den Schüler-Radfahrerprüfungen |
+| [126.515.123.56](ch/so/de/126.515.123.56.md) | Verordnung über die |
+| [126.515.31](ch/so/de/126.515.31.md) | Verordnung über die Besoldungen der |
+| [126.515.341](ch/so/de/126.515.341.md) | Verordnung über die Besoldungen des |
+| [126.515.342](ch/so/de/126.515.342.md) | Verordnung über die |
+| [126.515.35](ch/so/de/126.515.35.md) | Verordnung über die Besoldungen des |
+| [126.515.351](ch/so/de/126.515.351.md) | Richtpositionen für das Pflegepersonal |
+| [126.515.41](ch/so/de/126.515.41.md) | Verordnung über die Entschädigung |
+| [126.515.42](ch/so/de/126.515.42.md) | Verordnung über die |
+| [126.515.45](ch/so/de/126.515.45.md) | Verordnung über die Entschädigung der |
+| [126.515.46](ch/so/de/126.515.46.md) | Verordnung über die Frei-Tage des |
+| [126.515.48](ch/so/de/126.515.48.md) | Verordnung über die private Benützung |
+| [126.515.822](ch/so/de/126.515.822.md) | Verordnung über das Anstellungsver- |
+| [126.515.824.2](ch/so/de/126.515.824.2.md) | Verordnung über die Anrechnung und |
+| [126.515.824.5](ch/so/de/126.515.824.5.md) | Vergütung von Auslagen für die |
+| [126.515.826.1](ch/so/de/126.515.826.1.md) | Entschädigung für Überstunden der |
+| [126.515.828.5](ch/so/de/126.515.828.5.md) | Reiseentschädigung an Hilfslehrer der |
+| [126.515.828.6](ch/so/de/126.515.828.6.md) | Verordnung über Reiseentschädigungen |
+| [126.515.829.2](ch/so/de/126.515.829.2.md) | Verordnung über die Entschädigung für |
 | [126.515.851.1](ch/so/de/126.515.851.1.md) | Gesetz über die Besoldungen der Lehrkräfte an der Volksschule |
+| [126.515.851.11](ch/so/de/126.515.851.11.md) | Kantonsrätliche |
 | [126.515.851.12](ch/so/de/126.515.851.12.md) | Vollzugsverordnung zum Lehrerbesoldungsgesetz |
+| [126.515.851.13](ch/so/de/126.515.851.13.md) | Verordnung über Dienstauftrag und |
+| [126.515.851.22](ch/so/de/126.515.851.22.md) | Besoldung der Lehrkraft an der |
+| [126.515.851.44](ch/so/de/126.515.851.44.md) | Verordnung über Besoldung und |
+| [126.515.851.51](ch/so/de/126.515.851.51.md) | Besoldung und Rechtsstellung des |
+| [126.515.851.54](ch/so/de/126.515.851.54.md) | Reglement über Honorare und |
+| [126.515.851.55](ch/so/de/126.515.851.55.md) | Besoldungen und Entschädigungen für |
+| [126.515.851.56](ch/so/de/126.515.851.56.md) | Verordnung über die Besoldungen und |
+| [126.515.851.57](ch/so/de/126.515.851.57.md) | Besoldungen und Entschädigungen für |
+| [126.515.851.58](ch/so/de/126.515.851.58.md) | Besoldungen und Entschädigungen für |
+| [126.515.851.59](ch/so/de/126.515.851.59.md) | Verordnung über Besoldungen und |
+| [126.515.852.5](ch/so/de/126.515.852.5.md) | Anfangsbesoldung von Lehrkräften, die |
 | [126.515.855.11](ch/so/de/126.515.855.11.md) | Verteilungsschlüssel für die Klassifikation der Einwohnergemeinden zur Berechnung |
 | [126.515.855.12](ch/so/de/126.515.855.12.md) | Vollzugsverordnung zum Verteilungsschlüssel für die Lehrerbesoldungen |
 | [126.515.855.15](ch/so/de/126.515.855.15.md) | Verordnung über Staatsbeiträge an Musikunterricht |
 | [126.515.855.151](ch/so/de/126.515.855.151.md) | Vom Kanton entrichtete Beiträge für Schüler der Berufs- und der Mittelschulen, |
 | [126.515.855.31](ch/so/de/126.515.855.31.md) | Verordnung über die Festsetzung der Subventionsgrenze für die Besoldungen der |
 | [126.515.856.1](ch/so/de/126.515.856.1.md) | Verordnung über die Entschädigung von Kursleitern und Referenten an Jungbürger- |
+| [126.521](ch/so/de/126.521.md) | Verordnung über die |
+| [126.525](ch/so/de/126.525.md) | Verordnung über die |
 | [126.541](ch/so/de/126.541.md) | Verordnung über die Unfallfürsorge des Staatspersonals des Kantons Solothurn |
+| [126.551.1](ch/so/de/126.551.1.md) | Verordnung über die |
+| [126.551.2](ch/so/de/126.551.2.md) | Vollzugsverordnung zum |
+| [126.553.21](ch/so/de/126.553.21.md) | Verordnung über die Ausrichtung von |
 | [126.581](ch/so/de/126.581.md) | Gesetz über die Pensionskasse Kanton Solothurn |
 | [126.581.1](ch/so/de/126.581.1.md) | Verordnung über die berufliche Alters-, Hinterlassenen- und Invalidenvorsorge |
 | [126.582](ch/so/de/126.582.md) | Statuten der Kantonalen Pensionskasse Solothurn |
+| [126.582.1](ch/so/de/126.582.1.md) | Übergangsrechtliche Bestimmungen der |
+| [126.582.2](ch/so/de/126.582.2.md) | Verordnung über die Erleichterung der |
 | [126.582.3](ch/so/de/126.582.3.md) | Teilliquidationsreglement der Kantonalen Pensionskasse Solothurn |
+| [126.582.311](ch/so/de/126.582.311.md) | Reglement über die Wahl der |
+| [126.582.521](ch/so/de/126.582.521.md) | Vollzug des Bundesgesetzes über die |
+| [126.582.522](ch/so/de/126.582.522.md) | Vollzug des Bundesgesetzes über die |
 | [126.582.53](ch/so/de/126.582.53.md) | Freiwillige Weiterführung der Mitgliedschaft |
 | [126.582.54](ch/so/de/126.582.54.md) | Regelung bei Urlaub |
 | [126.583](ch/so/de/126.583.md) | Gesetz über das Ruhegehalt des Regierungsrates |
@@ -24253,10 +26587,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [127.11](ch/so/de/127.11.md) | Verordnung über das Anwaltsregister |
 | [128.111](ch/so/de/128.111.md) | Verordnung über die juristische Grundausbildung |
 | [128.121](ch/so/de/128.121.md) | Verordnung über Seminarkurse für Angestellte der Amtschreibereien zur Vorbereitung |
+| [128.131](ch/so/de/128.131.md) | Reglement über die Durchführung von |
 | [128.213](ch/so/de/128.213.md) | Juristische Prüfungsverordnung |
 | [128.221](ch/so/de/128.221.md) | Verordnung über die Ausbildung von Fachpersonen der Amtschreiberei |
 | [128.232](ch/so/de/128.232.md) | Verordnung über die Ausbildung von Steuerrevisoren und Steuerrevisorinnen |
+| [128.241](ch/so/de/128.241.md) | Verordnung über die Prüfung für |
 | [129.11](ch/so/de/129.11.md) | Notariatsverordnung |
+| [129.12](ch/so/de/129.12.md) | Notariats-Gebührentarif |
 | [131.1](ch/so/de/131.1.md) | Gemeindegesetz |
 | [131.3](ch/so/de/131.3.md) | Verzeichnis der solothurnischen Gemeinden |
 | [131.45](ch/so/de/131.45.md) | Verordnung über das Leumundszeugnis |
@@ -24274,18 +26611,26 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [131.741](ch/so/de/131.741.md) | Verordnung über den Finanzausgleich der Kirchgemeinden |
 | [136.631](ch/so/de/136.631.md) | Verordnung über die Klassifikation der Bürgergemeinden und die Einbürgerungstaxen |
 | [211.1](ch/so/de/211.1.md) | Gesetz über die Einführung des Schweizerischen Zivilgesetzbuches |
+| [211.2](ch/so/de/211.2.md) | In Kraft bleibende Bestimmungen des |
 | [212.11](ch/so/de/212.11.md) | Verordnung über den Zivilstandsdienst |
 | [212.15](ch/so/de/212.15.md) | Vereinbarung der Kantone Aargau und Solothurn über die BVG-Aufsicht |
 | [212.151](ch/so/de/212.151.md) | Einführungsgesetz über die BVG- und Stiftungsaufsicht |
 | [212.152](ch/so/de/212.152.md) | Verordnung über die Aufsicht über Stiftungen |
 | [212.153](ch/so/de/212.153.md) | Gebührenordnung BVG- und Stiftungsaufsicht Kanton Solothurn |
+| [212.217](ch/so/de/212.217.md) | Verordnung über die Ehe- und |
+| [212.222](ch/so/de/212.222.md) | Gesetz über Vorschüsse für den |
+| [212.222.1](ch/so/de/212.222.1.md) | Vollzugsverordnung zum Gesetz über |
 | [212.232](ch/so/de/212.232.md) | Verordnung über die Anlage und Sicherung des Vermögens bevormundeter Personen |
+| [212.233.12](ch/so/de/212.233.12.md) | Verordnung über die Verwendung des |
+| [212.233.2](ch/so/de/212.233.2.md) | Vollzugsverordnung zum |
+| [212.233.22](ch/so/de/212.233.22.md) | Verordnung über die Organisation, den |
 | [212.233.23](ch/so/de/212.233.23.md) | Reglement der Anstalt Schachen Deitingen |
 | [212.233.24](ch/so/de/212.233.24.md) | Dienstreglement für die Angestellten der Anstalt Schachen |
 | [212.233.25](ch/so/de/212.233.25.md) | Neuregelung des Kostgeldes der Anstalt Schachen |
 | [212.233.26](ch/so/de/212.233.26.md) | Verdienstanteil der Insassen der Anstalt Schachen |
 | [212.235](ch/so/de/212.235.md) | Vollzug vormundschaftlicher Verfügungen und Gewährung polizeilicher Hilfe |
 | [212.238](ch/so/de/212.238.md) | Bevormundung der zu Freiheitsstrafen verurteilten Personen |
+| [212.239](ch/so/de/212.239.md) | Pflegekinderverordnung |
 | [212.331](ch/so/de/212.331.md) | Verordnung über die Inventaraufnahme und Schätzung im Erbgang |
 | [212.331.2](ch/so/de/212.331.2.md) | Verordnung über die Entschädigung der Inventurbeamten |
 | [212.431](ch/so/de/212.431.md) | Einführungsgesetz zum Bundesgesetz über den Erwerb von Grundstücken durch Personen |
@@ -24307,42 +26652,92 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [212.478.3](ch/so/de/212.478.3.md) | Allgemeine Revision der Katasterschätzung |
 | [212.478.31](ch/so/de/212.478.31.md) | Inkraftsetzung der allgemeinen Revision der Katasterschätzung |
 | [212.478.41](ch/so/de/212.478.41.md) | Verordnung über die Überprüfung der allgemeinen Revision der Katasterschätzung |
+| [212.478.411](ch/so/de/212.478.411.md) | Anhang zur Verordnung über die |
 | [212.478.42](ch/so/de/212.478.42.md) | Verordnung über die Katasterschätzung |
 | [212.478.43](ch/so/de/212.478.43.md) | Verordnung über die allgemeine Revision der Katasterschätzung; Übergangsregelung |
 | [212.478.451](ch/so/de/212.478.451.md) | Weisung I (Bewertung von unüberbautem Land) |
+| [212.478.452](ch/so/de/212.478.452.md) | Allgemeine Revision der |
 | [212.478.453](ch/so/de/212.478.453.md) | Vereinbarung zwischen dem kantonalen Steueramt und der Solothurnischen Gebäudeversicherung |
 | [212.555](ch/so/de/212.555.md) | Verordnung über die Verwertung von Fundgegenständen und die Verwendung des |
+| [212.575](ch/so/de/212.575.md) | Verordnung über die vorläufige |
+| [212.582](ch/so/de/212.582.md) | Bürgschaftsrecht |
+| [219.1](ch/so/de/219.1.md) | Einführungsverordnung zum |
+| [221.1](ch/so/de/221.1.md) | Zivilprozessordnung |
 | [221.2](ch/so/de/221.2.md) | Einführungsgesetz zur Schweizerischen Zivilprozessordnung |
+| [225.61](ch/so/de/225.61.md) | Konkordat über die Befreiung von der |
+| [225.62](ch/so/de/225.62.md) | Gesetz betreffend den Beitritt des |
+| [227.1](ch/so/de/227.1.md) | Verordnung zur Einführung des Lugano- |
+| [232.51](ch/so/de/232.51.md) | Konkordat über die Gewährung |
+| [232.52](ch/so/de/232.52.md) | Beitritt zum Konkordat über die |
+| [233.21](ch/so/de/233.21.md) | Übereinkunft zwischen der |
+| [233.22](ch/so/de/233.22.md) | Übereinkunft |
+| [233.23](ch/so/de/233.23.md) | Übereinkunft |
 | [311.1](ch/so/de/311.1.md) | Gesetz über das kantonale Strafrecht und die Einführung des Schweizerischen |
 | [311.3](ch/so/de/311.3.md) | Vollzugsverordnung zu Artikel 120 StGB über die straflose Unterbrechung der |
 | [311.4](ch/so/de/311.4.md) | Verordnung über die kantonalen Ordnungsbussen und den Vollzug der Ordnungsbussengesetzgebung |
+| [321.1](ch/so/de/321.1.md) | Strafprozessordnung |
+| [321.2](ch/so/de/321.2.md) | Verordnung zur Einführung des |
 | [321.3](ch/so/de/321.3.md) | Einführungsgesetz zur Schweizerischen Strafprozessordnung und zur Schweizerischen |
+| [321.311.3](ch/so/de/321.311.3.md) | Verordnung über die |
 | [321.51](ch/so/de/321.51.md) | Verordnung über die Aufbewahrung, Vernichtung und Verwertung eingezogener Gegenstände |
 | [322.12](ch/so/de/322.12.md) | Verordnung über die Jugendstrafrechtspflege |
 | [323.1](ch/so/de/323.1.md) | Einführungsgesetz zum Bundesgesetz über den ausserprozessualen Zeugenschutz |
 | [326.1](ch/so/de/326.1.md) | Übernahme der Schutzaufsicht durch den Kanton |
+| [326.2](ch/so/de/326.2.md) | Verordnung über die Schutzaufsicht |
 | [328.13](ch/so/de/328.13.md) | Verordnung über die Begnadigung |
+| [329.11](ch/so/de/329.11.md) | Gegenrechtserklärung mit dem Kanton |
+| [329.21](ch/so/de/329.21.md) | Beitritt zum Konkordat über die |
+| [329.22](ch/so/de/329.22.md) | Konkordat über die Rechtshilfe und die |
 | [331.11](ch/so/de/331.11.md) | Gesetz über den Justizvollzug |
 | [331.12](ch/so/de/331.12.md) | Verordnung über den Justizvollzug |
+| [331.155](ch/so/de/331.155.md) | Kündigung des Konkordates über die |
 | [331.16](ch/so/de/331.16.md) | Hausordnung für die Justizvollzugsanstalt des Kantons Solothurn |
 | [331.17](ch/so/de/331.17.md) | Hausordnung für die Gefängnisse des Kantons Solothurn |
+| [331.231](ch/so/de/331.231.md) | Verordnung über den Vollzug von |
+| [333.111](ch/so/de/333.111.md) | Konkordat der Kantone der Nordwest- |
+| [333.161.1](ch/so/de/333.161.1.md) | Richtlinien über die Urlaubsgewährung, |
+| [333.161.2](ch/so/de/333.161.2.md) | Kostgelder und Pekuliumsansätze in den |
+| [411.211](ch/so/de/411.211.md) | Konkordat über die Schulkoordination |
+| [411.212](ch/so/de/411.212.md) | Beitritt zum Konkordat über die |
+| [411.213](ch/so/de/411.213.md) | Interkantonale Vereinbarung über die |
+| [411.214](ch/so/de/411.214.md) | Beitritt des Kantons Solothurn zur |
 | [411.214.1](ch/so/de/411.214.1.md) | Interkantonale Vereinbarung über die Harmonisierung der obligatorischen Schule |
+| [411.214.2](ch/so/de/411.214.2.md) | Interkantonale Vereinbarung über die |
+| [411.215.1](ch/so/de/411.215.1.md) | Verlegung des Schuljahrbeginns auf den |
 | [411.215.2](ch/so/de/411.215.2.md) | Vollzugsverordnung zum Kantonsratsbeschluss über die Verlegung des Schuljahrbeginns |
+| [411.241](ch/so/de/411.241.md) | Regionales Schulabkommen über die |
 | [411.251](ch/so/de/411.251.md) | Interkantonale Vereinbarung über die Anerkennung von Ausbildungsabschlüssen |
+| [411.252](ch/so/de/411.252.md) | Beitritt zur Interkantonalen |
+| [411.253](ch/so/de/411.253.md) | Reglement über die Anerkennung von |
 | [411.254](ch/so/de/411.254.md) | Verordnung zum Register über die Gesundheitsfachpersonen NAREG |
+| [411.255](ch/so/de/411.255.md) | Reglement über die Anerkennung der |
 | [411.256](ch/so/de/411.256.md) | Verordnung über die Anerkennung von Lehrdiplomen |
 | [411.261](ch/so/de/411.261.md) | Interkantonale Vereinbarung über die Beiträge an die Ausbildungskosten von |
+| [411.261.1](ch/so/de/411.261.1.md) | Beitritt zur interkantonalen Universitäts- |
 | [411.262](ch/so/de/411.262.md) | Gesetz über den Beitritt zur Interkantonalen Vereinbarung über Hochschulbeiträge |
+| [411.263](ch/so/de/411.263.md) | Interkantonale Fachschulvereinbarung |
+| [411.263.1](ch/so/de/411.263.1.md) | Beitritt des Kantons Solothurn zur |
 | [411.263.2](ch/so/de/411.263.2.md) | Interkantonale Vereinbarung über Beiträge an die Bildungsgänge der höheren |
+| [411.264](ch/so/de/411.264.md) | Interkantonale |
+| [411.264.1](ch/so/de/411.264.1.md) | Beitritt des Kantons Solothurn zur |
 | [411.265](ch/so/de/411.265.md) | Interkantonale Vereinbarung über den schweizerischen Hochschulbereich |
+| [411.265.1](ch/so/de/411.265.1.md) | Interkantonale Vereinbarung über den |
 | [411.271](ch/so/de/411.271.md) | Statut der Interkantonalen Lehrmittelzentrale ilz |
 | [411.273](ch/so/de/411.273.md) | Verordnung über die Kantonale Lehrmittelkommission |
 | [411.274](ch/so/de/411.274.md) | Geschäftsreglement der Kantonalen Lehrmittelkommission |
 | [411.275.1](ch/so/de/411.275.1.md) | Anschluss an die Berner Schulwarte |
+| [411.281](ch/so/de/411.281.md) | Erlasse der Schweizerischen Konferenz |
 | [411.29](ch/so/de/411.29.md) | Interkantonale Vereinbarung für schulische Angebote in Spitälern |
 | [411.311.51](ch/so/de/411.311.51.md) | Verordnung über die Subventionierung von Transport-, Verpflegungs- und Unterkunftskosten |
 | [411.311.52](ch/so/de/411.311.52.md) | Verordnung über die Organisation und Finanzierung der Schülertransporte |
+| [411.311.711](ch/so/de/411.311.711.md) | Staatsbeitrag an die Betriebskosten des |
+| [411.331.13](ch/so/de/411.331.13.md) | Staatlicher Beitrag an Lehrervereine, |
+| [411.347.31](ch/so/de/411.347.31.md) | Vereinbarung zwischen dem |
 | [411.442.1](ch/so/de/411.442.1.md) | Verordnung über Turnen und Sport an der Volksschule und an den Mittelschulen |
+| [412.121](ch/so/de/412.121.md) | Schaffung eines |
+| [412.131.1](ch/so/de/412.131.1.md) | Verordnung über die Ausbildung von |
+| [412.131.3](ch/so/de/412.131.3.md) | Reglement für das Kindergärtnerinnen- |
+| [412.131.4](ch/so/de/412.131.4.md) | Lehrplan für das Kantonale |
 | [412.131.5](ch/so/de/412.131.5.md) | Beschluss zur definitiven Einführung des Rahmenlehrplanes für den Kindergarten |
 | [413.111](ch/so/de/413.111.md) | Volksschulgesetz |
 | [413.121.1](ch/so/de/413.121.1.md) | Volksschulverordnung |
@@ -24350,9 +26745,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [413.131](ch/so/de/413.131.md) | Verordnung über die Kooperativen Oberstufenschulen |
 | [413.15](ch/so/de/413.15.md) | Ausbau des kinderpsychiatrischen und schulpsychologischen Dienstes des Kantons |
 | [413.151](ch/so/de/413.151.md) | Verordnung über den schulpsychologischen Dienst |
+| [413.215.1](ch/so/de/413.215.1.md) | Verordnung über das Inspektorat für |
 | [413.215.3](ch/so/de/413.215.3.md) | Zusätzliche Kompetenzen des hauptamtlichen Inspektors für die Kleinklassen |
 | [413.215.5](ch/so/de/413.215.5.md) | Schulleitungsverordnung |
+| [413.313.62](ch/so/de/413.313.62.md) | Vereinbarung der Kantone Solothurn |
 | [413.331](ch/so/de/413.331.md) | Verordnung über die Fortbildung der Volksschullehrer |
+| [413.337](ch/so/de/413.337.md) | Vereinbarung über den Kurs zur |
 | [413.353.6](ch/so/de/413.353.6.md) | Verordnung über die Schulleiter von Sonderschulen |
 | [413.411](ch/so/de/413.411.md) | Übergangsreglement zur Promotion in der Volksschule |
 | [413.412](ch/so/de/413.412.md) | Laufbahnreglement für die Volksschule |
@@ -24360,7 +26758,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [413.414](ch/so/de/413.414.md) | Vertrag zwischen den Kantonen Basel-Landschaft und Solothurn über die Abgeltung |
 | [413.451](ch/so/de/413.451.md) | Reglement zum Übertritt von der Primarstufe in die Sekundarstufe I |
 | [413.461](ch/so/de/413.461.md) | Weisungen über die Begutachtung und Bewilligung von Dispensationsgesuchen vom |
+| [413.61](ch/so/de/413.61.md) | Stundenplanverordnung für die |
 | [413.612](ch/so/de/413.612.md) | Verordnung über die Unterrichtsberechtigung |
+| [413.613](ch/so/de/413.613.md) | Bewilligung zur Führung |
 | [413.614](ch/so/de/413.614.md) | Verordnung über die Gemeindebeiträge an die Kosten der gymnasialen Ausbildung |
 | [413.621](ch/so/de/413.621.md) | Reglement über die Lektionspläne für die Volksschule |
 | [413.631](ch/so/de/413.631.md) | Reglement über die Richtzahlen für die Klassenbestände der einzelnen Schularten |
@@ -24369,6 +26769,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [413.665](ch/so/de/413.665.md) | Verordnung über den Unterricht zur Behandlung von Sprachstörungen und Lese-/Rechtschreibschwächen |
 | [413.666](ch/so/de/413.666.md) | Verordnung über den Unterricht zur Behandlung von temporären Lernstörungen |
 | [413.671](ch/so/de/413.671.md) | Verordnung über die Integration fremdsprachiger Kinder und Jugendlicher |
+| [413.811](ch/so/de/413.811.md) | Vertrag zwischen dem Staat Solothurn |
+| [413.813.1](ch/so/de/413.813.1.md) | 413.813.1 Beschluss des Kleinen Rathes der Helvetischen Republik |
+| [413.813.2](ch/so/de/413.813.2.md) | Klosterschule Nominis Jesu; Bewilligung |
 | [413.831](ch/so/de/413.831.md) | Bergschule Grossbrunnersberg |
 | [414.11](ch/so/de/414.11.md) | Mittelschulgesetz |
 | [414.113](ch/so/de/414.113.md) | Mittelschulverordnung |
@@ -24393,25 +26796,47 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [414.151.73](ch/so/de/414.151.73.md) | Schulgelder von Mittelschülern aus Kantonen, welche nicht unter das Regionale |
 | [414.151.74](ch/so/de/414.151.74.md) | Reduziertes Schulgeld für Aargauer Schüler im neunten Schuljahr an solothurnischen |
 | [414.151.77](ch/so/de/414.151.77.md) | Schulgeld für Absolventen des Lehramtskurses für Sekundar- und Oberschullehrer |
+| [414.251](ch/so/de/414.251.md) | Verordnung über die Pflichten der |
+| [414.312](ch/so/de/414.312.md) | Dienstauftrag für Lehrkräfte an den |
 | [414.441.1](ch/so/de/414.441.1.md) | Reglement über die Aufnahme, Promotion und Entlassung für das Untergymnasium |
+| [414.441.2](ch/so/de/414.441.2.md) | Übergangsreglement über die |
 | [414.441.5](ch/so/de/414.441.5.md) | Reglement über Aufnahme, Zeugnisse, Promotion und Entlassung für die Maturitätsschulen |
 | [414.446.3](ch/so/de/414.446.3.md) | Reglement für den Übertritt von Schülern der Bezirksschule Schönenwerd an das |
 | [414.471.1](ch/so/de/414.471.1.md) | Verwendung von Hilfsmitteln an den Maturitätsprüfungen |
 | [414.471.11](ch/so/de/414.471.11.md) | Verordnung über die Erteilung der Maturität an den Maturitätsschulen des Kantons |
 | [414.471.12](ch/so/de/414.471.12.md) | Reglement über die Fachmaturitäten |
 | [414.472](ch/so/de/414.472.md) | Reglement über die gymnasialen Maturitätsprüfungen |
+| [414.474.1](ch/so/de/414.474.1.md) | Verordnung über die Diplomprüfungen |
+| [414.474.21](ch/so/de/414.474.21.md) | Verordnung über die Diplomprüfungen |
 | [414.481](ch/so/de/414.481.md) | Absenzen- und Disziplinarordnung der kantonalen Mittelschulen |
 | [414.482](ch/so/de/414.482.md) | Absenzen- und Disziplinarreglement der Kantonsschule Solothurn |
 | [414.483](ch/so/de/414.483.md) | Absenzen- und Disziplinarreglement der Kantonsschule Olten |
+| [414.483.1](ch/so/de/414.483.1.md) | Ausführungsbestimmungen zur |
+| [414.485](ch/so/de/414.485.md) | Verordnung über die kantonalen |
+| [414.485.1](ch/so/de/414.485.1.md) | Verordnung über die Pensionspreise der |
 | [414.616.1](ch/so/de/414.616.1.md) | Lehrplan für den allgemeinen und beruflichen Unterricht am Kantonalen Lehrerseminar |
+| [414.619.2](ch/so/de/414.619.2.md) | Stundentafel der 1. bis 3. Gymnasial- |
+| [414.619.3](ch/so/de/414.619.3.md) | Stundentafel der 1. bis 3. Gymnasial- |
 | [414.62](ch/so/de/414.62.md) | Verordnung über die Unterrichtssprache an den Mittelschulen |
 | [414.651](ch/so/de/414.651.md) | Verordnung über den Religionsunterricht an den Kantonsschulen |
 | [414.675](ch/so/de/414.675.md) | Wintersportlager der Kantonsschulen Olten und Solothurn |
 | [414.691](ch/so/de/414.691.md) | Verordnung über die Durchführung von Studienwochen an den Kantonsschulen |
 | [414.694.2](ch/so/de/414.694.2.md) | Verordnung über die Abschlussreisen der Klassen der Kantonsschulen Olten und |
 | [414.71](ch/so/de/414.71.md) | Verordnung über die Benützung von Schulräumen und Schulanlagen der Kantons- |
+| [414.72](ch/so/de/414.72.md) | Verordnung über die Ankündigung von |
 | [415.211](ch/so/de/415.211.md) | Fachhochschulgesetz |
+| [415.212](ch/so/de/415.212.md) | Verordnung über die Fachhochschule |
+| [415.213](ch/so/de/415.213.md) | Verordnung über die Fachrichtungen |
+| [415.214](ch/so/de/415.214.md) | Verordnung über die Entschädigung des |
+| [415.215](ch/so/de/415.215.md) | Verordnung über persönliche |
 | [415.215.1](ch/so/de/415.215.1.md) | Verordnung über Schulgelder und Schulgebühren an den Höheren Fachschulen |
+| [415.216](ch/so/de/415.216.md) | Reglement über die Anerkennung |
+| [415.217](ch/so/de/415.217.md) | Reglement über die Anerkennung von |
+| [415.218](ch/so/de/415.218.md) | Reglement über die Anerkennung von |
+| [415.219](ch/so/de/415.219.md) | Vertrag zwischen den Kantonen Aargau, |
+| [415.230](ch/so/de/415.230.md) | Gesetz über die Pädagogische |
+| [415.231](ch/so/de/415.231.md) | Verordnung über die Pädagogische |
+| [415.232](ch/so/de/415.232.md) | Verordnung zur Überführung der Orga- |
 | [416.111](ch/so/de/416.111.md) | Gesetz über die Berufsbildung |
 | [416.112](ch/so/de/416.112.md) | Verordnung über die Berufsbildung |
 | [416.112.1](ch/so/de/416.112.1.md) | Geschäftsreglement der Beschwerdekommission der Berufsbildung |
@@ -24429,38 +26854,171 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [416.152](ch/so/de/416.152.md) | Entschädigungen für Experten und Funktionäre der kaufmännischen Lehrabschlussprüfungen |
 | [416.161](ch/so/de/416.161.md) | Verordnung über die Lehrmeisterkurse |
 | [416.211](ch/so/de/416.211.md) | Einführung der Akademischen Berufsberatung |
+| [416.213.1](ch/so/de/416.213.1.md) | Verordnung über die Akademische |
+| [416.323](ch/so/de/416.323.md) | Verordnung über die Forstwartlehre |
+| [416.326.1](ch/so/de/416.326.1.md) | Verordnung über die Durchführung der |
+| [416.326.2](ch/so/de/416.326.2.md) | Verordnung über das bäuerliche |
+| [416.326.3](ch/so/de/416.326.3.md) | Entschädigungen für Kursleiterinnen |
 | [416.327](ch/so/de/416.327.md) | Führung eines Lehrateliers für Damenschneiderinnen im Neubau des Berufsbildungszentrums |
+| [416.353.12](ch/so/de/416.353.12.md) | Verordnung über Organisation und |
 | [416.353.13](ch/so/de/416.353.13.md) | Absenzen- und Disziplinarordnung der kantonalen Berufsfachschulen |
+| [416.353.201.1](ch/so/de/416.353.201.1.md) | Regionale Fachklassen für Maurer- und |
+| [416.353.201.10](ch/so/de/416.353.201.10.md) | Zuweisung der Industrielackierer und |
+| [416.353.201.2](ch/so/de/416.353.201.2.md) | Kantonale Fachklassen für Maler- |
+| [416.353.201.3](ch/so/de/416.353.201.3.md) | Zuweisung der Pflästerer-Lehrlinge an |
+| [416.353.201.4](ch/so/de/416.353.201.4.md) | Zuweisung der Bauwerktrenner und |
+| [416.353.201.5](ch/so/de/416.353.201.5.md) | Zuweisung der Anlehrlinge aus dem |
+| [416.353.201.6](ch/so/de/416.353.201.6.md) | Zuweisung der Bauisoleur-Lehrlinge an |
+| [416.353.201.71](ch/so/de/416.353.201.71.md) | Interkantonale Fachklassen für |
+| [416.353.201.72](ch/so/de/416.353.201.72.md) | Interkantonale Fachklassen für |
+| [416.353.201.8](ch/so/de/416.353.201.8.md) | Zuweisung der Tiefbauzeichner an die |
+| [416.353.201.9](ch/so/de/416.353.201.9.md) | Zuweisung der Plattenlegerinnen und |
+| [416.353.204.3](ch/so/de/416.353.204.3.md) | Zuweisung der Technischen Modellbauer |
+| [416.353.205.1](ch/so/de/416.353.205.1.md) | Zuweisung der Bahnbetriebsdisponent- |
+| [416.353.205.2](ch/so/de/416.353.205.2.md) | Zuweisung der Bahnbetriebssekretär- |
+| [416.353.207.1](ch/so/de/416.353.207.1.md) | Zuweisung der Spengler/Spengler- |
+| [416.353.209.1](ch/so/de/416.353.209.1.md) | Zuweisung der Dekorationsgestalter |
+| [416.353.210.1](ch/so/de/416.353.210.1.md) | Zuweisung der Schaltanlagenmonteur- |
+| [416.353.210.3](ch/so/de/416.353.210.3.md) | Interkantonale Fachklassen für |
+| [416.353.210.4](ch/so/de/416.353.210.4.md) | Interkantonale Fachklassen für |
+| [416.353.210.5](ch/so/de/416.353.210.5.md) | Interkantonale Fachklassen für Fernseh- |
+| [416.353.210.6](ch/so/de/416.353.210.6.md) | Zuweisung der Fahrzeugelektriker |
+| [416.353.211.1](ch/so/de/416.353.211.1.md) | Ausbildung zum Informatik-Fachmann; |
+| [416.353.211.2](ch/so/de/416.353.211.2.md) | Reglement über die Ausbildung und die |
+| [416.353.211.3](ch/so/de/416.353.211.3.md) | Zuweisung der Informations- und |
+| [416.353.211.4](ch/so/de/416.353.211.4.md) | Zuweisung der Telematiker und |
+| [416.353.212.1](ch/so/de/416.353.212.1.md) | Zuweisung der Gärtner-Lehrlinge an die |
+| [416.353.212.4](ch/so/de/416.353.212.4.md) | Zuweisung der Landschaftsbauzeichner |
+| [416.353.215.1](ch/so/de/416.353.215.1.md) | Kantonale Fachklassen für Koch- |
+| [416.353.215.2](ch/so/de/416.353.215.2.md) | Kantonale Fachklassen für Schreiner-, |
+| [416.353.215.4](ch/so/de/416.353.215.4.md) | Zuweisung der Anlehrlinge Restaurant- |
+| [416.353.220.1](ch/so/de/416.353.220.1.md) | Interkantonale Fachklassen für |
+| [416.353.220.5](ch/so/de/416.353.220.5.md) | Zuweisung der Theatermaler-Lehrlinge |
+| [416.353.225.1](ch/so/de/416.353.225.1.md) | Zuweisung der Holzbildhauer-Lehrlinge |
+| [416.353.225.2](ch/so/de/416.353.225.2.md) | Kantonale Fachklassen für Schreiner-, |
+| [416.353.225.3](ch/so/de/416.353.225.3.md) | Zuweisung der Drechsler-Lehrlinge an |
+| [416.353.225.5](ch/so/de/416.353.225.5.md) | Zuweisung der Zimmerleute an die |
+| [416.353.225.6](ch/so/de/416.353.225.6.md) | Zuweisung der Zimmerleute Zusatzlehre |
+| [416.353.227.1](ch/so/de/416.353.227.1.md) | Zuweisung der Kunststofftechnologen |
+| [416.353.230.1](ch/so/de/416.353.230.1.md) | Zuweisung der Lageristen-Lehrlinge an |
+| [416.353.240.1](ch/so/de/416.353.240.1.md) | Interkantonale Fachklassen für Bäcker-, |
+| [416.353.245.7](ch/so/de/416.353.245.7.md) | Zuweisung der |
+| [416.353.245.8](ch/so/de/416.353.245.8.md) | Kantonales, vorläufiges Ausbildungs- |
+| [416.353.250.1](ch/so/de/416.353.250.1.md) | Interkantonale Fachklassen für |
+| [416.353.250.2](ch/so/de/416.353.250.2.md) | Kantonale Fachklassen für Werkzeug- |
+| [416.353.260.1](ch/so/de/416.353.260.1.md) | Zuweisung der Dentalassistenten und |
+| [416.353.260.2](ch/so/de/416.353.260.2.md) | Zuweisung der Podologen und |
+| [416.353.270.1](ch/so/de/416.353.270.1.md) | Zuweisung der Lehrtöchter im Beruf |
+| [416.353.280.1](ch/so/de/416.353.280.1.md) | Zuweisung der Forstwarte und |
+| [416.353.290.1](ch/so/de/416.353.290.1.md) | Einführungskurse von Berufsverbänden |
+| [416.353.290.2](ch/so/de/416.353.290.2.md) | Einführungskurse für Lehrlinge |
+| [416.353.34](ch/so/de/416.353.34.md) | Dienstauftrag für Lehrkräfte an den |
+| [416.353.451](ch/so/de/416.353.451.md) | Vereinbarung über die Durchführung |
 | [416.353.452](ch/so/de/416.353.452.md) | Reglement über die gewerblich-industriellen Lehrabschlussprüfungen |
+| [416.353.453](ch/so/de/416.353.453.md) | Vereinbarung zwischen dem |
+| [416.353.622](ch/so/de/416.353.622.md) | Informatikunterricht für Lehrtöchter |
 | [416.353.652](ch/so/de/416.353.652.md) | Verordnung über den Einsatz und die Entschädigung von Expertinnen und Experten |
+| [416.355.2](ch/so/de/416.355.2.md) | Verordnung über die Arbeitszeit und die |
+| [416.616](ch/so/de/416.616.md) | Lehrplan für die hauswirtschaftliche |
+| [416.911.2](ch/so/de/416.911.2.md) | Verordnung über die Kantonale |
+| [416.911.21](ch/so/de/416.911.21.md) | Verordnung über das Studium an der |
+| [416.911.22](ch/so/de/416.911.22.md) | Schulordnung der Kantonalen |
+| [416.911.23](ch/so/de/416.911.23.md) | Weisung über den Vollzug der HWV- |
+| [416.911.3](ch/so/de/416.911.3.md) | Weisung über den Vollzug der HWV- |
+| [416.911.31](ch/so/de/416.911.31.md) | Verordnung über den Vorkurs für den |
 | [416.915](ch/so/de/416.915.md) | Technikerschule des Kantons Solothurn |
+| [416.915.1](ch/so/de/416.915.1.md) | Festlegung der Studiengänge an der |
+| [416.915.2](ch/so/de/416.915.2.md) | Organisation der kantonalen |
+| [416.915.3](ch/so/de/416.915.3.md) | Schulreglement der Technikerschule des |
+| [416.915.4](ch/so/de/416.915.4.md) | Diplomreglement der Technikerschule |
+| [416.915.5](ch/so/de/416.915.5.md) | Diplomreglement für das |
+| [416.915.6](ch/so/de/416.915.6.md) | Diplomreglement für das |
+| [416.931](ch/so/de/416.931.md) | Errichtung einer Höheren Wirtschafts- |
+| [416.932](ch/so/de/416.932.md) | Abkommen zwischen den Kantonen |
+| [416.932.1](ch/so/de/416.932.1.md) | Verordnung über die Höhere |
+| [416.932.2](ch/so/de/416.932.2.md) | Verordnung über das Schweizerische |
+| [416.932.21](ch/so/de/416.932.21.md) | Verordnung über das |
+| [416.932.22](ch/so/de/416.932.22.md) | Verordnung über das |
+| [416.932.23](ch/so/de/416.932.23.md) | Verordnung über das Schweizerische |
 | [416.932.3](ch/so/de/416.932.3.md) | Schaffung einer Wirtschaftsinformatik-Schule (WIS) an der Höheren Wirtschafts- |
+| [416.934.1](ch/so/de/416.934.1.md) | Verordnung über die Aufnahme, die |
+| [416.934.3](ch/so/de/416.934.3.md) | Verordnung über persönliche |
+| [416.951](ch/so/de/416.951.md) | Staatsbeitrag an die Schule für |
 | [416.961](ch/so/de/416.961.md) | Gesetz über die Beteiligung an der interkantonalen Trägerschaft des Heilpädagogischen |
 | [416.962](ch/so/de/416.962.md) | Beitritt zur revidierten Interkantonalen Vereinbarung über die Hochschule für |
+| [416.963](ch/so/de/416.963.md) | Interkantonale Vereinbarung über die |
 | [419.11](ch/so/de/419.11.md) | Gesetz über Ausbildungsbeiträge |
 | [419.12](ch/so/de/419.12.md) | Vollzugsverordnung zum Gesetz über Ausbildungsbeiträge |
+| [419.452](ch/so/de/419.452.md) | Gesetz über den Allgemeinen |
+| [419.453](ch/so/de/419.453.md) | Vollzugsverordnung zum Gesetz über |
+| [423.31](ch/so/de/423.31.md) | Übereinkunft zwischen dem Heiligen |
+| [423.32](ch/so/de/423.32.md) | Übereinkunft zwischen den Ständen |
+| [423.33](ch/so/de/423.33.md) | Bulle des Papstes Leo XII. "Inter |
+| [423.331](ch/so/de/423.331.md) | Verzicht auf die Ausübung des |
+| [423.351.1](ch/so/de/423.351.1.md) | Leitung der Geschäfte der |
+| [423.351.2](ch/so/de/423.351.2.md) | Leitung der Geschäfte der |
+| [423.355.1](ch/so/de/423.355.1.md) | Verteilung der Unkosten innerhalb des |
+| [423.373.11](ch/so/de/423.373.11.md) | Mitwirkung der Stände bei der Wahl des |
+| [423.373.21](ch/so/de/423.373.21.md) | Ausschlussrecht der Stände bei der |
+| [423.373.23](ch/so/de/423.373.23.md) | Beeidigung und Amtseinsetzung des |
+| [423.375.1](ch/so/de/423.375.1.md) | Verlegung der bischöflichen Wohnung |
+| [423.378.1](ch/so/de/423.378.1.md) | Regelung der beruflichen Vorsorge für |
+| [423.378.21](ch/so/de/423.378.21.md) | Verwaltungszuschuss zur Ergänzung der |
 | [423.541](ch/so/de/423.541.md) | Gesetz über die Prüfungen der Pfarrgeistlichen |
+| [423.543](ch/so/de/423.543.md) | Übereinkommen zwischen dem |
 | [423.581.1](ch/so/de/423.581.1.md) | Gesetz über die staatliche Besoldungsreform |
 | [423.581.2](ch/so/de/423.581.2.md) | Gesetz über die Änderung des Gesetzes vom 29. März 1925 über die Beteiligung |
+| [423.582](ch/so/de/423.582.md) | Statuten der St. Ursen-Stiftung |
 | [423.582.1](ch/so/de/423.582.1.md) | Änderung der versicherten Besoldung in der Alters, und Invalidenversicherung |
 | [423.71](ch/so/de/423.71.md) | Wiedereinsetzung der Klöster in die Selbstverwaltung ihrer Güter |
 | [423.751](ch/so/de/423.751.md) | Novizenaufnahme für Frauenklöster |
 | [423.761](ch/so/de/423.761.md) | Wiedereröffnung des Kapuzinernoviziats |
+| [423.771](ch/so/de/423.771.md) | Kloster Mariastein und Stifte St. Urs und |
 | [423.772](ch/so/de/423.772.md) | Volksbeschluss über das Kloster Mariastein |
 | [423.772.1](ch/so/de/423.772.1.md) | Vollzugsbestimmungen zum Volksbeschluss über das Kloster Mariastein |
+| [424.31](ch/so/de/424.31.md) | Verfassung der christkatholischen |
+| [424.371.1](ch/so/de/424.371.1.md) | Eid des Bischofs der christkatholischen |
+| [424.542](ch/so/de/424.542.md) | Übereinkommen zwischen dem |
 | [424.581.1](ch/so/de/424.581.1.md) | Errichtung einer Pensionskasse für die christkatholischen und evangelisch-reformierten |
+| [424.582](ch/so/de/424.582.md) | Statuten der Pensionskasse für die |
+| [424.582.1](ch/so/de/424.582.1.md) | Pensionsversicherung der in den |
+| [425.11](ch/so/de/425.11.md) | Ordnung des Verbandes der Evangelisch- |
+| [425.12](ch/so/de/425.12.md) | Organisationsreglement der |
+| [425.131](ch/so/de/425.131.md) | Übereinkunft zwischen den Ständen |
+| [425.131.1](ch/so/de/425.131.1.md) | Übereinkunft mit dem Kanton Bern über |
+| [425.132](ch/so/de/425.132.md) | Änderung und Ergänzung der |
+| [425.141](ch/so/de/425.141.md) | Genehmigung der Kirchenordnung des |
+| [425.142](ch/so/de/425.142.md) | Genehmigung des Reglementes über |
+| [425.151](ch/so/de/425.151.md) | Verfassung der Evangelisch- |
+| [425.152](ch/so/de/425.152.md) | Verordnung betreffend die Abstimmung |
+| [425.541](ch/so/de/425.541.md) | Konkordat betreffend die gemeinsame |
 | [431.11](ch/so/de/431.11.md) | Gesetz über Kulturförderung |
 | [431.115](ch/so/de/431.115.md) | Verordnung über das Kuratorium für Kulturförderung |
 | [431.117](ch/so/de/431.117.md) | Verordnung über die künstlerische Ausschmückung staatlicher Bauten |
 | [431.118](ch/so/de/431.118.md) | Verordnung über Massnahmen im Kulturbereich zur Bewältigung der Covid-19-Epidemie |
+| [434.211](ch/so/de/434.211.md) | Statut der Dokumentationsstelle zur |
+| [434.212](ch/so/de/434.212.md) | Beitritt des Kantons Solothurn zum |
 | [434.311](ch/so/de/434.311.md) | Errichtung einer öffentlich-rechtlichen Stiftung für die Zentralbibliothek |
+| [434.312](ch/so/de/434.312.md) | Vertrag vom 27. Juni/21. November 1995 |
 | [434.313](ch/so/de/434.313.md) | Statuten der Stiftung der Zentralbibliothek Solothurn |
 | [434.54](ch/so/de/434.54.md) | Verordnung über das Filmwesen |
 | [435.141](ch/so/de/435.141.md) | Verordnung über den Natur- und Heimatschutz |
 | [435.145](ch/so/de/435.145.md) | Unterschutzstellung der erratischen Blöcke |
 | [435.146](ch/so/de/435.146.md) | Verordnung über den Pflanzenschutz |
+| [435.147](ch/so/de/435.147.md) | Verordnung über Pilzschontage und |
 | [435.148.5](ch/so/de/435.148.5.md) | Verordnung über den Schutz der Weinbergschnecke |
 | [436.11](ch/so/de/436.11.md) | Verordnung über den Schutz der historischen Kulturdenkmäler |
+| [436.911](ch/so/de/436.911.md) | Stiftung Schloss Gilgenberg |
+| [436.912](ch/so/de/436.912.md) | Stiftung Schloss Neu-Falkenstein |
+| [436.913](ch/so/de/436.913.md) | Stiftung Schloss Buchegg, |
+| [436.914.1](ch/so/de/436.914.1.md) | Stiftung Schloss Waldegg |
+| [436.914.2](ch/so/de/436.914.2.md) | Schenkungs- und Kaufvertrag |
+| [436.914.3](ch/so/de/436.914.3.md) | Betriebsordnung Schloss Waldegg |
+| [436.914.31](ch/so/de/436.914.31.md) | Gebührenordnung für Schloss Waldegg |
+| [436.915](ch/so/de/436.915.md) | Stiftung Schloss Neu-Bechburg |
+| [436.916](ch/so/de/436.916.md) | Stiftung Schloss Wartenfels |
+| [436.931](ch/so/de/436.931.md) | Wehrdenkmal-Stiftung |
+| [436.932](ch/so/de/436.932.md) | Stiftung Dornacher Schlachtdenkmal |
 | [511.11](ch/so/de/511.11.md) | Gesetz über die Kantonspolizei |
 | [511.12](ch/so/de/511.12.md) | Dienstreglement für die Kantonspolizei |
 | [511.121](ch/so/de/511.121.md) | Verordnung über die Dienstaufsicht und Kontrolle der Tätigkeiten der Polizei |
@@ -24469,25 +27027,48 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [511.155.1](ch/so/de/511.155.1.md) | Vereinbarung über die Zusammenarbeit und die Kompetenzabgrenzung zwischen der |
 | [511.171](ch/so/de/511.171.md) | Bestandeserhöhung bei der Kantonspolizei |
 | [511.511](ch/so/de/511.511.md) | Vereinbarung über die interkantonalen Polizeieinsätze |
+| [511.512](ch/so/de/511.512.md) | Vereinbarung über die interkantonalen |
 | [511.513](ch/so/de/511.513.md) | Verwaltungsvereinbarung zwischen dem Kanton Solothurn und der Schweizerischen |
 | [511.514](ch/so/de/511.514.md) | Konkordat über Massnahmen gegen Gewalt anlässlich von Sportveranstaltungen |
+| [511.514.1](ch/so/de/511.514.1.md) | Beitritt zum Konkordat über |
+| [511.515](ch/so/de/511.515.md) | Interkantonale Vereinbarung |
+| [511.515.1](ch/so/de/511.515.1.md) | Beitritt zur interkantonalen |
+| [511.516](ch/so/de/511.516.md) | Konkordat über Errichtung und Betrieb |
+| [511.531](ch/so/de/511.531.md) | Interkantonale Übereinkunft zur |
+| [511.532](ch/so/de/511.532.md) | Beitritt zum Konkordat über die |
+| [511.541](ch/so/de/511.541.md) | Konkordat über die polizeiliche |
+| [511.541.1](ch/so/de/511.541.1.md) | Beitritt zum Konkordat über die |
+| [511.551.1](ch/so/de/511.551.1.md) | Vereinbarung zwischen den Kantonen |
+| [511.551.11](ch/so/de/511.551.11.md) | Vereinbarung zwischen den Kantonen |
 | [511.551.2](ch/so/de/511.551.2.md) | Vereinbarung zwischen den Kantonen Aargau und Solothurn über die Autobahnpolizei |
+| [511.552.1](ch/so/de/511.552.1.md) | Vereinbarung zwischen den Kantonen |
 | [511.553](ch/so/de/511.553.md) | Interkantonale bzw. interbehördliche Vereinbarung über den Datenaustausch zum |
 | [512.11](ch/so/de/512.11.md) | Verordnung über die Einführung des Bundesgesetzes über die Ausweise für Schweizer |
+| [512.115.1](ch/so/de/512.115.1.md) | Touristenverkehr im schweizerischen- |
+| [512.115.2](ch/so/de/512.115.2.md) | Convention additionnelle au procès- |
+| [512.116](ch/so/de/512.116.md) | Ausstellung der Grenzkarten für den |
 | [512.151](ch/so/de/512.151.md) | Verordnung über Aufenthalt und Niederlassung der Ausländer |
 | [512.152](ch/so/de/512.152.md) | Verordnung über Zwangsmassnahmen im Ausländerrecht |
 | [512.153](ch/so/de/512.153.md) | Einführungsverordnung zum Bundesgesetz über die Ausländerinnen und Ausländer |
+| [512.154](ch/so/de/512.154.md) | Kontrollfrist bei |
 | [512.211](ch/so/de/512.211.md) | Verordnung über den Vollzug des eidgenössischen Waffenrechts |
 | [512.251](ch/so/de/512.251.md) | Vollzugsverordnung zur Bundesgesetzgebung über explosionsgefährliche Stoffe |
+| [512.351.1](ch/so/de/512.351.1.md) | Vereinbarung |
+| [512.351.2](ch/so/de/512.351.2.md) | Vereinbarung zwischen den Kantonen |
 | [512.354](ch/so/de/512.354.md) | Abteilung Administrativmassnahmen im Strassenverkehr |
 | [512.41](ch/so/de/512.41.md) | Gesetz über die öffentlichen Ruhetage |
 | [512.42](ch/so/de/512.42.md) | Verordnung zum Gesetz über die öffentlichen Ruhetage |
+| [512.55](ch/so/de/512.55.md) | Übereinkunft über die Polizeitransporte |
+| [512.61](ch/so/de/512.61.md) | Verordnung über das Bestattungswesen |
+| [512.645](ch/so/de/512.645.md) | Vertrag zwischen dem Regierungsrat |
 | [513.11](ch/so/de/513.11.md) | Verordnung über das Messwesen |
 | [513.363](ch/so/de/513.363.md) | Einführungsverordnung zum Bundesgesetz und die Verordnung über das Gewerbe |
 | [513.37](ch/so/de/513.37.md) | Verordnung über die Aufhebung der Bestimmungen über das Sammelwesen |
 | [513.431](ch/so/de/513.431.md) | Verordnung über den Ladenschluss |
 | [513.631](ch/so/de/513.631.md) | Verordnung über Tombolen, Lottos, Preisausschreiben und Wettbewerbe |
 | [513.633.1](ch/so/de/513.633.1.md) | Interkantonale Vereinbarung betreffend die gemeinsame Durchführung von Geldspielen |
+| [513.633.2](ch/so/de/513.633.2.md) | Vereinbarung über die gemeinsame |
+| [513.633.3](ch/so/de/513.633.3.md) | Beitritt zur Interkantonalen |
 | [513.633.4](ch/so/de/513.633.4.md) | Vollzugsverordnung zur Interkantonalen Vereinbarung über die Aufsicht sowie |
 | [513.633.5](ch/so/de/513.633.5.md) | Gesamtschweizerisches Geldspielkonkordat |
 | [513.641](ch/so/de/513.641.md) | Einführungsverordnung zum Bundesgesetz über Glücksspiele und Spielbanken (Spielbankengesetz; |
@@ -24496,17 +27077,28 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [513.81](ch/so/de/513.81.md) | Gesetz über das Gastgewerbe und den Handel mit alkoholhaltigen Getränken |
 | [513.82](ch/so/de/513.82.md) | Vollzugsverordnung zum Gesetz über das Gastgewerbe und den Handel mit alkoholhaltigen |
 | [513.83](ch/so/de/513.83.md) | Gebührentarif zum Gesetz über das Gastgewerbe und den Handel mit alkoholhaltigen |
+| [513.91](ch/so/de/513.91.md) | Verwaltungsvereinbarung ESPACE |
 | [521.1](ch/so/de/521.1.md) | Einführungsgesetz über die Militärgesetzgebung und die Wehrpflichtersatzabgabe |
 | [521.11](ch/so/de/521.11.md) | Verordnung über die Bewilligung von Sportschiessanlagen |
 | [521.15](ch/so/de/521.15.md) | Verordnung über das militärische Disziplinarstrafwesen |
 | [521.41](ch/so/de/521.41.md) | Verordnung über die Sektionskreise |
+| [521.47](ch/so/de/521.47.md) | Wiederholungskurse für |
 | [521.81](ch/so/de/521.81.md) | Verordnung über die Wehrpflichtersatzabgabe |
 | [521.931](ch/so/de/521.931.md) | Verwaltungsreglement "Winkelried-Fonds |
 | [523.11](ch/so/de/523.11.md) | Verordnung über die Kantonale Sportfachstelle und die Kanto­nale Sportkommission |
 | [523.21](ch/so/de/523.21.md) | Kantonale Schiesskreise |
 | [523.25](ch/so/de/523.25.md) | Abnahme von Schiessanlagen für Kleinkaliberwaffen |
+| [524.31](ch/so/de/524.31.md) | Militärische |
+| [527.11](ch/so/de/527.11.md) | Vereinbarung zwischen der |
+| [527.21](ch/so/de/527.21.md) | Vereinbarung zwischen der |
 | [531.1](ch/so/de/531.1.md) | Einführungsgesetz zur eidgenössischen Bevölkerungsschutz- und Zivilschutzgesetzgebung |
 | [531.2](ch/so/de/531.2.md) | Verordnung über den Bevölkerungsschutz und den Zivilschutz |
+| [531.41](ch/so/de/531.41.md) | Verordnung über die ärztliche |
+| [535.221](ch/so/de/535.221.md) | Einkauf in bestehende |
+| [535.222](ch/so/de/535.222.md) | Verordnung über den Kantonsbeitrag an |
+| [535.511](ch/so/de/535.511.md) | Unterstellung aller solothurnischen |
+| [535.512](ch/so/de/535.512.md) | Verzeichnis der |
+| [535.61](ch/so/de/535.61.md) | 535.61 RRB: Verzeichnis der betriebsschutzpflichtigen Betriebe |
 | [611.751](ch/so/de/611.751.md) | Gesetz über die steuerbegünstigten Arbeitsbeschaffungsreserven |
 | [611.752](ch/so/de/611.752.md) | Vollzugsverordnung zum Gesetz über die steuerbegünstigten Arbeitsbeschaffungsreserven |
 | [613.31](ch/so/de/613.31.md) | Vollzugsverordnung zum Bundesgesetz über die direkte Bundessteuer |
@@ -24518,6 +27110,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [614.14](ch/so/de/614.14.md) | Verordnung über das Abrechnungsverfahren beim Einheitsbezug von Staats- und |
 | [614.159.01](ch/so/de/614.159.01.md) | Steuerverordnung Nr. 1: Organisation des kantonalen Steuerwesens für die Veranlagung |
 | [614.159.02](ch/so/de/614.159.02.md) | Steuerverordnung Nr. 2: Organisation des kantonalen Steuerwesens für die Veranlagung |
+| [614.159.022](ch/so/de/614.159.022.md) | Abrechnung über die |
 | [614.159.03](ch/so/de/614.159.03.md) | Steuerverordnung Nr. 3: Erhebung der Quellensteuer |
 | [614.159.04](ch/so/de/614.159.04.md) | Steuerverordnung Nr. 4: Organisation des kantonalen Steuerwesens für die Veranlagung |
 | [614.159.05](ch/so/de/614.159.05.md) | Steuerverordnung Nr. 5: Organisation des Steuerbezuges für die Haupt- und |
@@ -24528,8 +27121,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [614.159.11](ch/so/de/614.159.11.md) | Steuerverordnung Nr. 11: Zahlungserleichterungen, Erlass und Abschreibungen |
 | [614.159.12](ch/so/de/614.159.12.md) | Steuerverordnung Nr. 12: Berufliche Vorsorge |
 | [614.159.13](ch/so/de/614.159.13.md) | Steuerverordnung Nr. 13: Abzüge für Berufskosten |
+| [614.159.14](ch/so/de/614.159.14.md) | Steuerverordnung Nr. 14 |
 | [614.159.15](ch/so/de/614.159.15.md) | Steuerverordnung Nr. 15: Bemessung des Mietwertes der eigenen Wohnung |
 | [614.159.16](ch/so/de/614.159.16.md) | Steuerverordnung Nr. 16: Unterhalts-, Betriebs- und Verwaltungskosten von |
+| [614.159.17](ch/so/de/614.159.17.md) | Steuerverordnung Nr. 17 |
 | [614.159.18](ch/so/de/614.159.18.md) | Steuerverordnung Nr. 18: Besteuerung nach dem Aufwand |
 | [614.159.19](ch/so/de/614.159.19.md) | Steuerverordnung Nr. 19: Steuerfreie Rücklagen für Forschung, Betriebsumstellungen |
 | [614.159.20](ch/so/de/614.159.20.md) | Steuerverordnung Nr. 20: Anpassung von Tarifstufen, allgemeinen Abzügen und |
@@ -24537,51 +27132,85 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [614.159.22](ch/so/de/614.159.22.md) | Steuerverordnung Nr. 22: Elektronische Zustellung von Verfügungen und Rechnungen |
 | [614.159.23](ch/so/de/614.159.23.md) | Steuerverordnung Nr. 23: Einheitsbezug |
 | [614.159.24](ch/so/de/614.159.24.md) | Steuerverordnung Nr. 24: Algorithmische Systeme |
+| [614.171.1](ch/so/de/614.171.1.md) | Konkordat zwischen den Kantonen der |
 | [614.171.2](ch/so/de/614.171.2.md) | Beitritt des Kantons Solothurn zum Konkordat über den Ausschluss von Steuerabkommen |
 | [614.175.1](ch/so/de/614.175.1.md) | Verordnung über die pauschale Steueranrechnung für den Kanton Solothurn |
 | [614.175.51](ch/so/de/614.175.51.md) | Vollzugsverordnung zum Bundesratsbeschluss über den zusätzlichen Steuerrückbehalt |
+| [614.175.61](ch/so/de/614.175.61.md) | Vereinbarung zwischen dem |
 | [614.175.611](ch/so/de/614.175.611.md) | Verordnung zur Vereinbarung zwischen der Schweiz und Frankreich über die Besteuerung |
 | [614.175.62](ch/so/de/614.175.62.md) | Genehmigung der Schweizerisch-französischen Vereinbarung über die Besteuerung |
 | [614.175.63](ch/so/de/614.175.63.md) | Verordnung über die Verteilung der von Frankreich in Anwendung der Grenzgängervereinbarung |
+| [614.352.1](ch/so/de/614.352.1.md) | Gegenrechtsvereinbarungen betreffend |
+| [614.352.101](ch/so/de/614.352.101.md) | Gegenrechtszusicherung an den Kanton |
 | [614.352.103](ch/so/de/614.352.103.md) | Gegenrechtsvereinbarung zwischen den Kantonen Solothurn und Waadt über die |
+| [614.352.104](ch/so/de/614.352.104.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.105](ch/so/de/614.352.105.md) | Gegenrechtsvereinbarung über die |
+| [614.352.106](ch/so/de/614.352.106.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.107](ch/so/de/614.352.107.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.108](ch/so/de/614.352.108.md) | Gegenrechtsvereinbarung über die |
+| [614.352.109](ch/so/de/614.352.109.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.110](ch/so/de/614.352.110.md) | Gegenrechtszusicherung an denKanton |
+| [614.352.111](ch/so/de/614.352.111.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.112](ch/so/de/614.352.112.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.113](ch/so/de/614.352.113.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.114](ch/so/de/614.352.114.md) | Gegenrechtszusicherung an den Kanton |
+| [614.352.115](ch/so/de/614.352.115.md) | Erbschafts- und Schenkungssteuer; |
+| [614.352.21](ch/so/de/614.352.21.md) | Gegenrechtszusicherung an Deutschland |
+| [614.352.22](ch/so/de/614.352.22.md) | Gegenrechtszusicherung an Frankreich |
+| [614.352.23](ch/so/de/614.352.23.md) | Erbschaftssteuer von Verlassenschaften |
 | [614.51](ch/so/de/614.51.md) | Gesetz über die Billettsteuer |
 | [614.61](ch/so/de/614.61.md) | Gesetz über die Steuern und Gebühren für Motorfahrzeuge und Fahrräder |
+| [614.62](ch/so/de/614.62.md) | Verordnung über Steuern und Gebühren |
 | [614.71](ch/so/de/614.71.md) | Gesetz über das Halten von Hunden |
 | [614.72](ch/so/de/614.72.md) | Verordnung zum Gesetz über das Halten von Hunden |
 | [614.81](ch/so/de/614.81.md) | Gesetz über die Schiffssteuer |
 | [615.11](ch/so/de/615.11.md) | Gebührentarif |
 | [615.137.1](ch/so/de/615.137.1.md) | Erlass der Bewilligungsgebühren für Unternehmen der Bodenverbesserung, welchen |
 | [615.154.7](ch/so/de/615.154.7.md) | Gebührenerhebung durch das Kantonale Amt für Berufsbildung und Berufsberatung |
+| [615.155.6](ch/so/de/615.155.6.md) | Kantonaler Gebührentarif zum |
+| [615.157.5](ch/so/de/615.157.5.md) | Gebühren des Kantonalen |
 | [615.158.3](ch/so/de/615.158.3.md) | Gebühren für Untersuchungen und Behandlungen beim Schulpsychologischen Dienst |
 | [615.158.5](ch/so/de/615.158.5.md) | Gebühr für die im kleinen Grenzverkehr erteilten Arbeitsbewilligungen |
 | [615.159](ch/so/de/615.159.md) | Verordnung über die Erhebung von Eintrittsgebühren für das Museum Altes Zeughaus |
 | [617.11](ch/so/de/617.11.md) | Gesetz über die Privatisierung der Solothurner Kantonalbank |
 | [618.111](ch/so/de/618.111.md) | Gesetz über die Gebäudeversicherung, den Brandschutz und die Elementarschadenprävention, |
 | [618.112](ch/so/de/618.112.md) | Vollzugsverordnung zum Gesetz über die Gebäudeversicherung, den Brandschutz |
+| [618.112.1](ch/so/de/618.112.1.md) | Anhang zur Vollzugsverordnung vom |
 | [618.112.21](ch/so/de/618.112.21.md) | Änderung der einheitlichen Grundlage für die Gebäudeversicherungswerte |
 | [618.112.22](ch/so/de/618.112.22.md) | Festsetzung und Anpassung des minimalen Versicherungswertes |
 | [618.112.23](ch/so/de/618.112.23.md) | Anpassung der Versicherungswerte an die Baukosten: Index für 2025 |
 | [618.112.24](ch/so/de/618.112.24.md) | Reglement über die Schätzung von Versicherungswert und Schäden |
 | [618.114](ch/so/de/618.114.md) | Verordnung über die Entschädigung des Verwaltungsrates der Solothurnischen |
+| [618.115](ch/so/de/618.115.md) | Statuten des Schweizerischen Pools für |
 | [618.115.1](ch/so/de/618.115.1.md) | Beitritt der Solothurnischen Gebäudeversicherung zum Schweizerischen Pool für |
 | [618.181](ch/so/de/618.181.md) | Prämientarif der Solothurnischen Gebäudeversicherung |
+| [618.182](ch/so/de/618.182.md) | Reglement über die |
 | [618.185.1](ch/so/de/618.185.1.md) | Kaminfegertarif für den Kanton Solothurn |
 | [618.22](ch/so/de/618.22.md) | Entschädigungen und Erwerbsersatz bei Feuerwehrkursen |
 | [618.23](ch/so/de/618.23.md) | Maximum und Minimum der Feuerwehr-Ersatzabgabe |
 | [618.512](ch/so/de/618.512.md) | Reglement über die Nachbarhilfe und den Einsatz von Spezialgeräten durch Feuerwehren |
+| [618.513.1](ch/so/de/618.513.1.md) | Übernahme von Zivilschutzmaterial für |
 | [618.516](ch/so/de/618.516.md) | Verordnung über die Soldansätze der Betriebsfeuerwehr der Kantonalen Psychiatrischen |
 | [618.517](ch/so/de/618.517.md) | Reglement betreffend Feuerwehren und Löschwasserversorgung |
 | [618.53](ch/so/de/618.53.md) | Reglement über die sicherheitstechnische Wartung von wärmetechnischen Anlagen |
+| [618.55](ch/so/de/618.55.md) | Reglement über die Entschädigung der |
 | [618.56](ch/so/de/618.56.md) | Reglement über die Beiträge an den Brandschutz und die Elementarschadenprävention |
+| [624.121](ch/so/de/624.121.md) | Interkantonale Vereinbarung über den |
 | [624.122](ch/so/de/624.122.md) | Gesetz über das Salzregal und den Beitritt zur Interkantonalen Vereinbarung |
+| [624.511](ch/so/de/624.511.md) | Statuten der Schweizer Salinen AG |
 | [624.512](ch/so/de/624.512.md) | Beteiligung des Kantons an der Aktiengesellschaft Vereinigte Schweizerische |
 | [625.11](ch/so/de/625.11.md) | Fischereigesetz |
 | [625.12](ch/so/de/625.12.md) | Fischereiverordnung |
 | [625.711](ch/so/de/625.711.md) | Vereinbarung zwischen den Kantonen Bern und Solothurn betreffend die Fischerei |
+| [625.721](ch/so/de/625.721.md) | Übereinkunft über die Ausübung der |
+| [625.731](ch/so/de/625.731.md) | Übereinkunft mit dem Kanton Basel- |
+| [625.732](ch/so/de/625.732.md) | Übereinkunft über die Ausübung der |
+| [625.733](ch/so/de/625.733.md) | Übereinkunft über die Ausübung der |
 | [626.11](ch/so/de/626.11.md) | Jagdgesetz |
 | [626.12](ch/so/de/626.12.md) | Jagdverordnung |
 | [626.133](ch/so/de/626.133.md) | Verordnung über die Pflichten der Jagdaufseher |
 | [626.15](ch/so/de/626.15.md) | Jagdprüfungsverordnung |
+| [626.17](ch/so/de/626.17.md) | Gegenrechtsvereinbarung zwischen den |
 | [711.1](ch/so/de/711.1.md) | Planungs- und Baugesetz |
 | [711.15](ch/so/de/711.15.md) | Verordnung über Verfahrenskoordination und Umweltverträglichkeitsprüfung |
 | [711.16](ch/so/de/711.16.md) | Richtlinien über die Durchführung der Umweltverträglichkeitsprüfung |
@@ -24591,32 +27220,71 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [711.26](ch/so/de/711.26.md) | Verordnung über den elektronischen Austausch von Zonendaten zwischen Gemeinden |
 | [711.27](ch/so/de/711.27.md) | Geoinformationsgesetz |
 | [711.271](ch/so/de/711.271.md) | Geoinformationsverordnung |
+| [711.281](ch/so/de/711.281.md) | Richtlinien über die Anwendung von |
 | [711.31](ch/so/de/711.31.md) | Verordnung über Baulandumlegung und Grenzbereinigung |
 | [711.41](ch/so/de/711.41.md) | Kantonale Verordnung über Grundeigentümerbeiträge und -gebühren |
 | [711.515](ch/so/de/711.515.md) | Verordnung über den Schutz von Fossilien und Mineralien |
 | [711.61](ch/so/de/711.61.md) | Kantonale Bauverordnung |
+| [711.611.1](ch/so/de/711.611.1.md) | Geschosszahl und Gebäudehöhe |
+| [711.611.2](ch/so/de/711.611.2.md) | Grenz- und Gebäudeabstände |
+| [711.611.3](ch/so/de/711.611.3.md) | Ausnützungsziffer |
+| [711.611.4](ch/so/de/711.611.4.md) | Richtwerte für Abstellplätze für |
+| [711.611.5](ch/so/de/711.611.5.md) | Abstände von öffentlichen |
+| [711.611.6](ch/so/de/711.611.6.md) | Terrainauffüllungen und Abgrabungen |
+| [711.611.7](ch/so/de/711.611.7.md) | Dachaufbauten und -einschnitte (§ 64) |
+| [711.611.8](ch/so/de/711.611.8.md) | Hinweise auf andere Gesetze und |
+| [711.62](ch/so/de/711.62.md) | Informations- und Beratungsstelle über |
+| [711.63](ch/so/de/711.63.md) | Beitritt zur Interkantonalen |
 | [711.64](ch/so/de/711.64.md) | Interkantonale Vereinbarung über die Harmonisierung der Baubegriffe |
 | [711.65](ch/so/de/711.65.md) | Verordnung über das elektronische Baugesuchsverfahren |
 | [712.14](ch/so/de/712.14.md) | Verordnung über den Abwasser- und Altlastenfonds |
 | [712.15](ch/so/de/712.15.md) | Gesetz über Wasser, Boden und Abfall |
 | [712.16](ch/so/de/712.16.md) | Verordnung über Wasser, Boden und Abfall |
+| [712.51](ch/so/de/712.51.md) | Gesetz betreffend Vollzug des |
+| [712.52](ch/so/de/712.52.md) | Verordnung betreffend Vollzug des |
+| [712.561](ch/so/de/712.561.md) | Verordnung über die Revision des |
+| [712.564.1](ch/so/de/712.564.1.md) | Reglement für die Schätzung der |
+| [712.571](ch/so/de/712.571.md) | Verordnung über die Berechnung des |
+| [712.572](ch/so/de/712.572.md) | Ausführungsbestimmungen für die |
+| [712.591.1](ch/so/de/712.591.1.md) | Übereinkunft zwischen dem |
+| [712.591.2](ch/so/de/712.591.2.md) | Finanzielle Beteiligung an der Aare- |
+| [712.61](ch/so/de/712.61.md) | Vollzugsverordnung über die |
+| [712.651](ch/so/de/712.651.md) | Verordnung über |
+| [712.912](ch/so/de/712.912.md) | Verordnung zum Schutz der Gewässer |
+| [712.916.1](ch/so/de/712.916.1.md) | Verbindlicherklärung der Richtlinie über |
+| [712.918.2](ch/so/de/712.918.2.md) | Sicherheitsvorschriften für den Bau und |
 | [712.921](ch/so/de/712.921.md) | Gesetz über die Schaffung einer Ölwehr im Kanton Solothurn |
 | [712.922](ch/so/de/712.922.md) | Verordnung über den kantonalen Schadendienst |
+| [721.51](ch/so/de/721.51.md) | Interkantonale Vereinbarung |
+| [721.52](ch/so/de/721.52.md) | Interkantonale Vereinbarung über das |
+| [721.521](ch/so/de/721.521.md) | Interkantonale Vereinbarung über das |
+| [721.53](ch/so/de/721.53.md) | Beitritt zur interkantonalen |
+| [721.531](ch/so/de/721.531.md) | Genehmigung der Änderung der |
 | [721.532](ch/so/de/721.532.md) | Interkantonale Vereinbarung über das öffentliche Beschaffungswesen |
 | [721.54](ch/so/de/721.54.md) | Submissionsgesetz |
 | [721.55](ch/so/de/721.55.md) | Submissionsverordnung |
+| [721.56](ch/so/de/721.56.md) | Weisungen über die Anpassung von |
 | [725.11](ch/so/de/725.11.md) | Strassengesetz |
 | [725.112](ch/so/de/725.112.md) | Verordnung über die Festsetzung der Beiträge der Einwohnergemeinden an den |
+| [725.116.1](ch/so/de/725.116.1.md) | Verordnung über Landumlegungen für |
+| [725.118.1](ch/so/de/725.118.1.md) | Supplément de Convention |
+| [725.124.31](ch/so/de/725.124.31.md) | Route Grand-Lucelle-Klösterlé |
+| [725.124.32](ch/so/de/725.124.32.md) | Route Grand-Lucelle-Klösterlé |
 | [725.126](ch/so/de/725.126.md) | Verordnung über den Unterhalt und den Ausbau von Strassen im Berggebiet sowie |
 | [725.21](ch/so/de/725.21.md) | Einführungsgesetz zum Bundesgesetz über die Nationalstrassen |
 | [725.255](ch/so/de/725.255.md) | Verordnung über das Betreten von Nationalstrassenbaustellen |
+| [728.111](ch/so/de/728.111.md) | Interkantonale Vereinbarung zwischen |
 | [728.121](ch/so/de/728.121.md) | Korrektion der Dünnern zwischen Oensingen und Olten |
+| [728.131](ch/so/de/728.131.md) | Unterhalt der Birskorrektion |
+| [728.132](ch/so/de/728.132.md) | Grenzregulierung der Birs bei Dornach |
+| [728.141](ch/so/de/728.141.md) | Unterhalt der korrigierten Oesch |
 | [732.1](ch/so/de/732.1.md) | Gesetz über den öffentlichen Verkehr |
 | [732.11](ch/so/de/732.11.md) | Verordnung über den öffentlichen Verkehr |
 | [732.2](ch/so/de/732.2.md) | Verordnung über die Übergangsbestimmungen des Gesetzes über den öffentlichen |
 | [732.21](ch/so/de/732.21.md) | Verordnung zur Festsetzung der Leistungen der Einwohnergemeinden an den öffentlichen |
 | [732.4](ch/so/de/732.4.md) | Verordnung über das Grundangebot im regionalen Personenverkehr |
 | [733.11](ch/so/de/733.11.md) | Verordnung über den Strassenverkehr |
+| [733.61](ch/so/de/733.61.md) | Richtlinien für Reklamen |
 | [733.73](ch/so/de/733.73.md) | Signalisation von Baustellen im Strassengebiet |
 | [733.75](ch/so/de/733.75.md) | Kostentragung für Strassensignalisation |
 | [734.411](ch/so/de/734.411.md) | Ausbau des Autokurses Solothurn-Wasseramt (ASW) mit neuer staatlicher Kapitalbeteiligung |
@@ -24625,14 +27293,23 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [734.432](ch/so/de/734.432.md) | Zustimmung zur Fusion der Automobilgesellschaft Gösgeramt (AGO) und der Stadtomnibus |
 | [734.441](ch/so/de/734.441.md) | Staatliche Beteiligung am Busbetrieb Grenchen und Umgebung |
 | [734.451](ch/so/de/734.451.md) | Staatliche Beteiligung am Busbetrieb Aarau (BBA) |
+| [735.211](ch/so/de/735.211.md) | Übereinkunft zwischen dem |
+| [735.212](ch/so/de/735.212.md) | Nachtrag zur Übereinkunft zwischen |
 | [735.411](ch/so/de/735.411.md) | Staatliche Beteiligung an der Elektrifikation der Solothurn-Münster-Bahn und |
+| [735.421](ch/so/de/735.421.md) | Staatliche Beteiligung an der |
+| [735.431](ch/so/de/735.431.md) | Staatliche Beteiligung an der |
+| [735.432](ch/so/de/735.432.md) | Ausführungsbestimmungen zur |
+| [735.433](ch/so/de/735.433.md) | Zustimmung zur Fusion der Solothurn- |
 | [735.441](ch/so/de/735.441.md) | Staatliche Beteiligung an der Strassenbahn Niederbipp-Solothurn |
 | [735.451](ch/so/de/735.451.md) | Staatliche Beteiligung an der Weiterführung der Birsigtalbahn von Flüh bis |
 | [735.452](ch/so/de/735.452.md) | Zustimmung zur Fusion von 4 basellandschaftlichen Vorortsbahngesellschaften |
 | [735.453](ch/so/de/735.453.md) | Technische und finanzielle Sanierung der ehemaligen Birseckbahn (Linie 10 der |
+| [735.454](ch/so/de/735.454.md) | Vereinbarung über die technische und |
 | [736.12](ch/so/de/736.12.md) | Verordnung über die Schifffahrt |
 | [737.1](ch/so/de/737.1.md) | Verordnung über die Einführung des Bundesgesetzes über die Luftfahrt (Luftfahrtsgesetz) |
 | [737.121](ch/so/de/737.121.md) | Staatliche Beteiligung am Regionalflugplatz Jura in Grenchen |
+| [738.1](ch/so/de/738.1.md) | Konkordat über die nicht eidgenössisch |
+| [738.2](ch/so/de/738.2.md) | Beitritt zum Konkordat über die nicht |
 | [739.1](ch/so/de/739.1.md) | Verordnung über Rohrleitungsanlagen |
 | [811.11](ch/so/de/811.11.md) | Gesundheitsgesetz |
 | [811.12](ch/so/de/811.12.md) | Vollzugsverordnung zum Gesundheitsgesetz |
@@ -24640,64 +27317,118 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [811.13](ch/so/de/811.13.md) | Verordnung über die Amteiärzte und Amteiärztinnen sowie die Infektionsärzte |
 | [811.131](ch/so/de/811.131.md) | Verordnung über die bedarfsabhängige Zulassung von Ärzten und Ärztinnen |
 | [811.14](ch/so/de/811.14.md) | Verordnung zum Schutz vor Passivrauchen |
+| [811.151](ch/so/de/811.151.md) | Vereinbarung zwischen dem Kanton |
 | [811.16](ch/so/de/811.16.md) | Verordnung über den Vollzug der eidgenössischen Epidemiengesetzgebung |
 | [811.17](ch/so/de/811.17.md) | Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung im Bereich |
 | [811.18](ch/so/de/811.18.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung |
 | [811.19](ch/so/de/811.19.md) | Verordnung über die Aus- und Weiterbildung in nicht-universitären Gesundheitsberufen |
 | [811.233](ch/so/de/811.233.md) | Anzeigepflicht des Kantonsarztes |
+| [811.311](ch/so/de/811.311.md) | Verordnung der Schweizerischen |
+| [811.312](ch/so/de/811.312.md) | Verordnung der Schweizerischen Sani- |
+| [811.313](ch/so/de/811.313.md) | Verordnung über die Anerkennung |
+| [811.411](ch/so/de/811.411.md) | Vereinbarung zwischen den Kantonen |
+| [811.411.1](ch/so/de/811.411.1.md) | Vom Schweizerischen Roten Kreuz |
 | [811.421](ch/so/de/811.421.md) | Verordnung über die solothurnische Vorschule für Gesundheitsberufe |
+| [811.422.1](ch/so/de/811.422.1.md) | Verordnung über die Organisation und |
 | [811.422.2](ch/so/de/811.422.2.md) | Verordnung über die Lehrverhältnisse am kantonalen Bildungszentrum für Gesundheitsberufe |
 | [811.422.3](ch/so/de/811.422.3.md) | Verordnung über die Besoldungen der Lehrverhältnisse am kantonalen Bildungszentrum |
 | [811.422.4](ch/so/de/811.422.4.md) | Verordnung über den Lohn und die Entschädigung der Studierenden der höheren |
+| [811.426.1](ch/so/de/811.426.1.md) | Vertrag zwischen dem Kanton Solothurn |
 | [812.1](ch/so/de/812.1.md) | Einführungsgesetz zum Vollzug der eidgenössischen Umweltschutzgesetzgebung |
 | [812.2](ch/so/de/812.2.md) | Biosicherheitsverordnung |
 | [812.41](ch/so/de/812.41.md) | Luftreinhalte-Verordnung |
 | [812.42](ch/so/de/812.42.md) | Verordnung über die Kontrolle von Feuerungsanlagen (Feuerungskontrolle 2000) |
+| [812.51](ch/so/de/812.51.md) | Stoffverordnung des Kantons Solothurn |
+| [812.52](ch/so/de/812.52.md) | Kantonale Verordnung über die Abfälle |
 | [812.53](ch/so/de/812.53.md) | Verordnung über die Lagerung und Beseitigung von ausgedienten Fahrzeugen |
+| [812.54](ch/so/de/812.54.md) | Verordnung über den Vollzug der |
 | [812.55](ch/so/de/812.55.md) | Verordnung über den Vollzug der eidgenössischen Störfallverordnung |
 | [812.56](ch/so/de/812.56.md) | Verordnung über den Vollzug der Eidgenössischen Chemikaliengesetzgebung, der |
 | [812.61](ch/so/de/812.61.md) | Lärmschutz-Verordnung des Kantons Solothurn |
 | [812.72](ch/so/de/812.72.md) | Vollzugsverordnung zur Verordnung des Schweizerischen Bundesrates über den |
 | [813.111](ch/so/de/813.111.md) | Gesetz über die Einführung des Bundesgesetzes über Arzneimittel und Medizinprodukte |
+| [813.12](ch/so/de/813.12.md) | Verordnung über die Erteilung von |
 | [813.13](ch/so/de/813.13.md) | Verordnung über den Einsatz von Heilmitteln in der Tierhaltung |
 | [813.14](ch/so/de/813.14.md) | Verordnung über die Heilmittel und die Betäubungsmittel |
+| [813.152](ch/so/de/813.152.md) | Vereinbarung der |
 | [813.161](ch/so/de/813.161.md) | Vereinbarung über die Einsetzung einer gemeinsamen Ethikkommission Nordwest- |
+| [813.32](ch/so/de/813.32.md) | Vollzugsverordnung zur |
 | [815.131](ch/so/de/815.131.md) | Gesetz über die Schulzahnpflege |
 | [815.182](ch/so/de/815.182.md) | Verordnung über die Hygiene und Sicherheit von Bädern |
 | [815.21](ch/so/de/815.21.md) | Vollzugsverordnung zum Bundesgesetz über Lebensmittel und Gebrauchsgegenstände |
 | [815.22](ch/so/de/815.22.md) | Vollzugsverordnung zur kantonalen Lebensmittelverordnung |
+| [816.221](ch/so/de/816.221.md) | Massnahmen gegen den Missbrauch und |
 | [817.11](ch/so/de/817.11.md) | Spitalgesetz |
+| [817.111](ch/so/de/817.111.md) | Verordnung zum Spitalgesetz |
+| [817.112](ch/so/de/817.112.md) | Statuten Solothurner Spitäler AG |
+| [817.113](ch/so/de/817.113.md) | Verordnung über den Vollzug des |
 | [817.114](ch/so/de/817.114.md) | Gesamtkonzept für den Um- und Ausbau des Kantonsspitals Olten; Bewilligung |
+| [817.115](ch/so/de/817.115.md) | Verordnung über das Personalrecht in |
 | [817.116](ch/so/de/817.116.md) | Verordnung über die Spitalliste |
+| [817.12](ch/so/de/817.12.md) | Spitalvorlage IV Betriebskostenbeiträge |
+| [817.21](ch/so/de/817.21.md) | Abkommen über die Kostenabgeltung |
+| [817.22](ch/so/de/817.22.md) | Vertrag zwischen dem Kanton Solothurn |
+| [817.23](ch/so/de/817.23.md) | Vertrag zwischen dem Kanton Solothurn |
+| [817.411](ch/so/de/817.411.md) | Vereinbarung zwischen dem Kanton |
+| [817.421](ch/so/de/817.421.md) | Vereinbarung zwischen dem Kanton |
+| [817.431](ch/so/de/817.431.md) | Vereinbarung zwischen dem Kanton |
+| [817.441](ch/so/de/817.441.md) | Vereinbarung zwischen dem Kanton |
+| [817.451](ch/so/de/817.451.md) | Vereinbarung zwischen dem Kanton |
+| [817.461](ch/so/de/817.461.md) | Vereinbarung zwischen dem Kanton |
+| [817.548.1](ch/so/de/817.548.1.md) | Verordnung über die Ausrichtung von |
 | [821.321](ch/so/de/821.321.md) | Normalarbeitsvertrag für Arbeitnehmer und Arbeitnehmerinnen in der Hauswirtschaft |
 | [821.322](ch/so/de/821.322.md) | Normalarbeitsvertrag für Arbeitnehmer in der Landwirtschaft |
 | [821.422](ch/so/de/821.422.md) | Verordnung über das Kantonale Einigungsamt |
 | [821.51](ch/so/de/821.51.md) | Verordnung zur Einführung des Gleichstellungsgesetzes |
+| [822.12](ch/so/de/822.12.md) | Verordnung zum Bundesgesetz vom |
 | [822.13](ch/so/de/822.13.md) | Einführungsgesetz zum Bundesgesetz über die Arbeit in Industrie, Gewerbe und |
+| [822.14](ch/so/de/822.14.md) | Verordnung über Aufstellung und |
 | [822.15](ch/so/de/822.15.md) | Verordnung über Azetylen, Sauerstoff und Kalziumkarbid |
 | [822.16](ch/so/de/822.16.md) | Vollzugsverordnung zur Bundesgesetzgebung über die Sicherheit von technischen |
 | [822.17](ch/so/de/822.17.md) | Vollzugsverordnung zum Bundesgesetz über die Gewichtsbezeichnung an schweren |
 | [822.31](ch/so/de/822.31.md) | Vollzugsverordnung zur Bundesgesetzgebung über die Heimarbeit |
 | [822.41](ch/so/de/822.41.md) | Einführungsgesetz zum Bundesgesetz über Massnahmen zur Bekämpfung der Schwarzarbeit |
+| [822.61](ch/so/de/822.61.md) | Gesetz über die Gewährung von Ferien |
 | [823.221](ch/so/de/823.221.md) | Verordnung über die Begrenzung der Zahl der erwerbstätigen Ausländer |
 | [823.222](ch/so/de/823.222.md) | Einführungsverordnung zum Bundesgesetz über die in die Schweiz entsandten Arbeitnehmerinnen |
+| [823.27](ch/so/de/823.27.md) | Vereinbarung zwischen Frankreich und |
 | [831.1](ch/so/de/831.1.md) | Sozialgesetz |
 | [831.2](ch/so/de/831.2.md) | Sozialverordnung |
 | [831.3](ch/so/de/831.3.md) | Reglement über die Vergütung von Krankheits- und Behinderungskosten bei den |
+| [832.13](ch/so/de/832.13.md) | Verordnung zum Bundesgesetz über die |
 | [832.14](ch/so/de/832.14.md) | Vollzugsverordnung über die Einschränkung der Zulassung von Leistungserbringern |
 | [832.15](ch/so/de/832.15.md) | Verordnung über die Akut- und Übergangspflege |
+| [832.21](ch/so/de/832.21.md) | Kantonaler Rahmentarif zum |
 | [832.212](ch/so/de/832.212.md) | Übertragung des Vollzuges der Prämienverbilligung in der Krankenversicherung |
 | [832.213](ch/so/de/832.213.md) | Reglement über die Parameter der Prämienverbilligung 2013 |
 | [832.214](ch/so/de/832.214.md) | Reglement über die Prämienverbilligung in Härtefällen |
 | [832.215](ch/so/de/832.215.md) | Reglement über die Prämienverbilligung für Personen, die an der Quelle besteuert |
+| [832.32](ch/so/de/832.32.md) | Verordnung zum Bundesgesetz über die |
 | [832.331](ch/so/de/832.331.md) | Genehmigung des Vertrages für die ärztliche Behandlung von SUVA-Versicherten |
+| [833.11](ch/so/de/833.11.md) | Kinderzulagengesetz1) |
+| [833.12](ch/so/de/833.12.md) | Vollzugsverordnung zum |
+| [833.13](ch/so/de/833.13.md) | Kinderzulagengesetz Erhöhung des |
+| [834.11](ch/so/de/834.11.md) | Einführungsgesetz zum Bundesgesetz |
+| [834.13](ch/so/de/834.13.md) | Vollzugsverordnung zum Einführungs- |
 | [835.1](ch/so/de/835.1.md) | Verwaltungskostenbeiträge der Ausgleichskasse des Kantons Solothurn (AKSO) |
+| [835.221](ch/so/de/835.221.md) | Gesetz über die öffentliche Sozialhilfe |
+| [835.222](ch/so/de/835.222.md) | Vollzugsverordnung zum Gesetz über |
+| [835.31](ch/so/de/835.31.md) | Gesetz über die Säuglingsfürsorge, |
+| [835.41](ch/so/de/835.41.md) | Suchthilfegesetz |
 | [836.11](ch/so/de/836.11.md) | Einführungsgesetz zum Bundesgesetz über Massnahmen zur Förderung des Wohnungsbaues |
+| [836.13](ch/so/de/836.13.md) | Verteilungsschlüssel für die Beiträge der |
+| [836.141](ch/so/de/836.141.md) | Vollziehungsverordnung über die Aus- |
 | [836.21](ch/so/de/836.21.md) | Gesetz über die Hypothekar-Hilfskasse |
 | [836.22](ch/so/de/836.22.md) | Gesetz über die Auflösung der Solothurnischen Hypothekar-Hilfskasse |
 | [836.23](ch/so/de/836.23.md) | Reglement für die Verwaltungs­kommission und die Verwaltung der Hypothekar-Hilfskasse |
 | [836.24](ch/so/de/836.24.md) | Verordnung über die Beteiligung der Hypothekar-Hilfskasse an Selbsthilfeorganisationen |
 | [837.33](ch/so/de/837.33.md) | Interkantonale Vereinbarung für soziale Einrichtungen |
+| [837.331](ch/so/de/837.331.md) | Beitritt des Kantons zur Interkantonalen |
+| [837.34](ch/so/de/837.34.md) | Übernahme der Betriebsdefizite von |
+| [837.341](ch/so/de/837.341.md) | Beitritt zur Vereinbarung über die |
+| [837.511](ch/so/de/837.511.md) | Verordnung über die Stiftung Allémandi |
+| [837.521](ch/so/de/837.521.md) | Übernahme der Gibelin’schen Stiftung |
+| [837.522](ch/so/de/837.522.md) | Regulativ betreffend die Verwendung |
 | [837.531](ch/so/de/837.531.md) | Verwaltungsreglement Adolf-Schläfli-Fonds |
 | [837.532](ch/so/de/837.532.md) | Verwaltungsreglement Olga Ziegler-Fonds |
 | [837.533](ch/so/de/837.533.md) | Verwaltungsreglement Verwendung Alkoholzehntel |
@@ -24705,6 +27436,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [837.535](ch/so/de/837.535.md) | Verwaltungsreglement Max-Müller-Fonds |
 | [837.536.1](ch/so/de/837.536.1.md) | Gesetz über die Swisslos-Fonds |
 | [837.536.2](ch/so/de/837.536.2.md) | Verordnung über die Swisslos-Fonds |
+| [838.11](ch/so/de/838.11.md) | Alters- und Pflegeheimgesetz |
+| [838.12](ch/so/de/838.12.md) | Vollzugsverordnung zum Alters- und |
+| [838.13](ch/so/de/838.13.md) | Heimplanung 2005 |
+| [838.35](ch/so/de/838.35.md) | Verordnung über die Begrenzung der |
 | [911.11](ch/so/de/911.11.md) | Wirtschaftsförderungsgesetz |
 | [911.12](ch/so/de/911.12.md) | Verordnung zum Wirtschaftsförderungsgesetz |
 | [912.12](ch/so/de/912.12.md) | Verordnung über Investitionshilfe für Berggebiete |
@@ -24717,14 +27452,25 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [924.12](ch/so/de/924.12.md) | Verordnung über Investitionshilfen in der Landwirtschaft (IHV) |
 | [924.17](ch/so/de/924.17.md) | Richtlinien für die Ausrichtung und Bemessung von Beiträgen aus dem Natur- |
 | [925.12](ch/so/de/925.12.md) | Verordnung über die land- und hauswirtschaftliche Aus- und Weiterbildung |
+| [925.151](ch/so/de/925.151.md) | Konkordat betreffend die |
+| [925.152](ch/so/de/925.152.md) | Beitritt des Kantons Solothurn zu einem |
+| [925.155](ch/so/de/925.155.md) | Konkordat betreffend Hochschule und |
+| [925.156](ch/so/de/925.156.md) | Beitritt des Kantons Solothurn zum |
 | [926.21](ch/so/de/926.21.md) | Vereinbarung über die Zusammenarbeit zwischen dem Kanton Solothurn und dem |
 | [926.711](ch/so/de/926.711.md) | Tierseuchen- und Tierschutz-Verordnung |
 | [926.712](ch/so/de/926.712.md) | Verordnung über die Honorare und Entschädigungen im Bereich Tierseuchen und |
 | [926.712.1](ch/so/de/926.712.1.md) | Verordnung über die Festsetzung der Tierhalterbeiträge für die kantonale Tierseuchenkasse |
+| [926.721](ch/so/de/926.721.md) | Verordnung zur Regelung des |
+| [926.731](ch/so/de/926.731.md) | Interkantonale Übereinkunft über den |
+| [926.732](ch/so/de/926.732.md) | Beitritt des Kantons Solothurn zur |
+| [926.732.2](ch/so/de/926.732.2.md) | Beitritt des Kantons Solothurn zur |
 | [926.733](ch/so/de/926.733.md) | Vollzugsverordnung über die Ausübung des Viehhandels |
 | [931.11](ch/so/de/931.11.md) | Waldgesetz |
 | [931.12](ch/so/de/931.12.md) | Waldverordnung |
+| [931.345](ch/so/de/931.345.md) | Stiftung interkantonale Försterschule |
+| [931.345.1](ch/so/de/931.345.1.md) | Beteiligung des Kantons Solothurn an |
 | [931.72](ch/so/de/931.72.md) | Verordnung über Waldfeststellung und Waldabstand |
+| [931.73](ch/so/de/931.73.md) | Verordnung über die Bemessung der |
 | [940.11](ch/so/de/940.11.md) | Wirtschafts- und Arbeitsgesetz |
 | [940.12](ch/so/de/940.12.md) | Verordnung zum Wirtschafts- und Arbeitsgesetz |
 | [940.20](ch/so/de/940.20.md) | Gesetz über Härtefallmassnahmen für Unternehmen im Zusammenhang mit Covid-19 |
@@ -24736,6 +27482,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [943.11](ch/so/de/943.11.md) | Interkantonale Vereinbarung zum Abbau technischer Handelshemmnisse |
 | [944.11](ch/so/de/944.11.md) | Einführungsverordnung zum Bundesgesetz über den Konsumkredit |
 | [981.21](ch/so/de/981.21.md) | Einführungsgesetz zum Bundesgesetz über die wirtschaftliche Landesversorgung |
+| [981.22](ch/so/de/981.22.md) | Verordnung über Organisation und |
 
 ## SZ – Schwyz
 
@@ -25325,7 +28072,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## TG – Thurgau
 
-*517 laws*
+*608 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -25342,6 +28089,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [141.11](ch/tg/de/141.11.md) | Verordnung des Regierungsrates zum Gesetz über das Kantons- und Gemeindebürgerrecht |
 | [142.15](ch/tg/de/142.15.md) | Gesetz über das Einwohnerregister sowie kantonale Register |
 | [142.151](ch/tg/de/142.151.md) | Einwohnerregisterverordnung |
+| [142.16](ch/tg/de/142.16.md) | Verordnung des Regierungsrates zum Gesetz über |
+| [142.21](ch/tg/de/142.21.md) | Verordnung des Regierungsrates zum Bundesgesetz |
 | [142.211](ch/tg/de/142.211.md) | Verordnung des Regierungsrates zum Ausländer- und Integrationsgesetz, zum Freizügigkeitsabkommen |
 | [142.611](ch/tg/de/142.611.md) | Weisung des Departementes für Justiz und Sicherheit betreffend Kleiner Grenzverkehr |
 | [142.621](ch/tg/de/142.621.md) | Weisung des Departementes für Justiz und Sicherheit betreffend Kleiner Grenzverkehr |
@@ -25369,17 +28118,28 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [172.31](ch/tg/de/172.31.md) | Informatikverordnung |
 | [172.33](ch/tg/de/172.33.md) | Reglement des Regierungsrates für das Personalamt |
 | [172.41](ch/tg/de/172.41.md) | Richtlinien für die Kommunikation der Kantonalen Verwaltung Thurgau |
+| [172.811](ch/tg/de/172.811.md) | Weihnachtskarte Rechtsdienst 2023 |
+| [173.11](ch/tg/de/173.11.md) | Gesetz über die Organisation der Zivilrechtspflege |
 | [173.12](ch/tg/de/173.12.md) | Verordnung über die personelle Organisation der Bezirksgerichte |
+| [173.121](ch/tg/de/173.121.md) | Verordnung des Obergerichts über die Organisation |
+| [173.131](ch/tg/de/173.131.md) | Verordnung des Obergerichts über die Organisation |
+| [173.142](ch/tg/de/173.142.md) | Verordnung des Obergerichts über die Überführung |
+| [173.151](ch/tg/de/173.151.md) | Verordnung des Obergerichts über die Organisation |
 | [173.21](ch/tg/de/173.21.md) | Verordnung des Verwaltungsgerichts über die Organisation und den Geschäftsgang |
 | [173.31](ch/tg/de/173.31.md) | Verordnung des Verwaltungsgerichts über die Organisation und den Geschäftsgang |
 | [176.1](ch/tg/de/176.1.md) | Anwaltsgesetz |
 | [176.11](ch/tg/de/176.11.md) | Anwaltsverordnung |
+| [176.2](ch/tg/de/176.2.md) | Verordnung des Obergerichts zum Anwaltsgesetz |
+| [176.3](ch/tg/de/176.3.md) | Verordnung des Obergerichts über den |
 | [176.31](ch/tg/de/176.31.md) | Anwaltstarif in Zivil- und Strafsachen |
+| [176.6](ch/tg/de/176.6.md) | Verordnung des Verwaltungsgerichtes über den |
 | [176.61](ch/tg/de/176.61.md) | Verordnung des Verwaltungsgerichtes über den Anwaltstarif für Streitigkeiten |
 | [177.112](ch/tg/de/177.112.md) | Rechtsstellungsverordnung |
+| [177.113](ch/tg/de/177.113.md) | Verordnung des Obergerichts über die |
 | [177.22](ch/tg/de/177.22.md) | Verordnung des Grossen Rates über die Besoldung des Staatspersonals |
 | [177.223](ch/tg/de/177.223.md) | Verordnung des Regierungsrates zur Besoldungsverordnung |
 | [177.250](ch/tg/de/177.250.md) | Verordnung des Grossen Rates über die Besoldung der Lehrpersonen |
+| [177.252](ch/tg/de/177.252.md) | Verordnung des Regierungsrates über die |
 | [177.41](ch/tg/de/177.41.md) | Verordnung des Grossen Rates über die berufliche Vorsorge des Staatspersonals |
 | [177.42](ch/tg/de/177.42.md) | Pensionskassenreglement |
 | [186.1](ch/tg/de/186.1.md) | Gesetz über kirchliche Paritätsverhältnisse und Verträge |
@@ -25396,8 +28156,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [187.141](ch/tg/de/187.141.md) | Geschäftsreglement des Evangelischen Kirchenrates des Kantons Thurgau |
 | [187.143](ch/tg/de/187.143.md) | Verordnung der Synode über Entschädigungen in der Evangelischen Landeskirche |
 | [187.144](ch/tg/de/187.144.md) | Verordnung der Evangelischen Synode des Kantons Thurgau über die Abgeltung |
+| [187.15](ch/tg/de/187.15.md) | Verordnung der Evangelischen Synode des Kantons |
 | [187.151](ch/tg/de/187.151.md) | Verordnung der Evangelischen Synode des Kantons Thurgau über die Einteilung |
 | [187.153](ch/tg/de/187.153.md) | Verordnung des Evangelischen Kirchenrates des Kantons Thurgau zum kirchlichen |
+| [187.16](ch/tg/de/187.16.md) | Verordnung des Evangelischen Kirchenrates des |
+| [187.17](ch/tg/de/187.17.md) | Verordnung der Evangelischen Synode des Kantons |
 | [187.171](ch/tg/de/187.171.md) | Verordnung der Evangelischen Synode des Kantons Thurgau über Leistungen der |
 | [187.172](ch/tg/de/187.172.md) | Verordnung des Kirchenrates zur Verordnung der Evangelischen Synode des Kantons |
 | [187.181](ch/tg/de/187.181.md) | Reglement der Evangelischen Synode des Kantons Thurgau über den Fonds zur Mitfinanzierung |
@@ -25416,6 +28179,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [187.25](ch/tg/de/187.25.md) | Verordnung über die Amtsübergabe bei Pfarrwechseln |
 | [187.261](ch/tg/de/187.261.md) | Verordnung des Evangelischen Kirchenrates des Kantons Thurgau über die Aktenführung |
 | [187.27](ch/tg/de/187.27.md) | Verordnung der Evangelischen Synode des Kantons Thurgau betreffend die berufliche |
+| [187.271](ch/tg/de/187.271.md) | Reglement für die Pensionskasse PERKOS |
 | [187.28](ch/tg/de/187.28.md) | Verordnung des Evangelischen Kirchenrates des Kantons Thurgau über die Bestätigungswahl |
 | [187.29](ch/tg/de/187.29.md) | Verordnung der Evangelischen Synode des Kantons Thurgau über die Ausrichtung |
 | [187.51](ch/tg/de/187.51.md) | Übereinkunft betreffend die kirchliche Besorgung der in Grenzgebieten des Kantons |
@@ -25447,10 +28211,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [188.251](ch/tg/de/188.251.md) | Verordnung des Katholischen Kirchenrats über das Rechnungswesen |
 | [188.252](ch/tg/de/188.252.md) | Ausführungsverordnung des Katholischen Kirchenrats zum Finanzausgleichsgesetz |
 | [188.26](ch/tg/de/188.26.md) | Verordnung der Katholischen Synode des Kantons Thurgau über die Pensionskasse |
+| [188.261](ch/tg/de/188.261.md) | Reglement der Pensionskasse der Katholischen |
 | [188.27](ch/tg/de/188.27.md) | Stipendienreglement der Katholischen Landeskirche |
 | [188.271](ch/tg/de/188.271.md) | Weisung des Katholischen Kirchenrates betreffend Verwendung der katholischen |
 | [188.272](ch/tg/de/188.272.md) | Verordnung des Katholischen Kirchenrates des Kantons Thurgau betreffend die |
 | [188.28](ch/tg/de/188.28.md) | Verordnung der Katholischen Synode über den Religionsunterricht an der Volksschule |
+| [188.29](ch/tg/de/188.29.md) | Verordnung der Katholischen Synode über die |
 | [188.291](ch/tg/de/188.291.md) | Archivverordnung des Katholischen Kirchenrats |
 | [188.31](ch/tg/de/188.31.md) | Übereinkunft zwischen dem katholischen Administrationsrat des Kantons St. Gallen |
 | [188.32](ch/tg/de/188.32.md) | Übereinkunft zwischen den Regierungen der Kantone St. Gallen und Thurgau betreffend |
@@ -25458,7 +28224,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [188.34](ch/tg/de/188.34.md) | Vereinbarung über die Pastoration und die Steuerpflicht der auf dem Gebiet |
 | [210.1](ch/tg/de/210.1.md) | Einführungsgesetz zum Schweizerischen Zivilgesetzbuch |
 | [211.111](ch/tg/de/211.111.md) | Verordnung des Regierungsrates über das Zivilstandswesen |
+| [211.15](ch/tg/de/211.15.md) | Verordnung des Regierungsrates betreffend die |
 | [211.24](ch/tg/de/211.24.md) | Kindes- und Erwachsenenschutzverordnung |
+| [211.241](ch/tg/de/211.241.md) | Verordnung des Regierungsrates über die Tätigkeit |
 | [211.242](ch/tg/de/211.242.md) | Verordnung des Regierungsrates betreffend Regelung der Übergangsmodalitäten |
 | [211.34](ch/tg/de/211.34.md) | Verordnung des Obergerichts über die Errichtung des öffentlichen Inventars |
 | [211.412](ch/tg/de/211.412.md) | Verordnung des Regierungsrates zum Bundesgesetz über das bäuerliche Bodenrecht |
@@ -25475,42 +28243,64 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [211.445](ch/tg/de/211.445.md) | Geoinformationsweisung |
 | [218.5](ch/tg/de/218.5.md) | Übereinkunft zwischen den Kantonen Zürich und Thurgau betreffend die neue Feststellung |
 | [221.214](ch/tg/de/221.214.md) | Verordnung des Regierungsrates zur Bundesgesetzgebung über den Konsumkredit |
+| [221.223](ch/tg/de/221.223.md) | Verordnung des Obergerichts über die Organisation |
 | [221.226](ch/tg/de/221.226.md) | Verordnung des Regierungsrates zum Bundesgesetz über die landwirtschaftliche |
 | [221.251](ch/tg/de/221.251.md) | Verordnung des Regierungsrates zum Bundesgesetz vom 28. September 1956 über |
 | [221.252](ch/tg/de/221.252.md) | Verordnung des Regierungsrates über den Normalarbeitsvertrag für hauswirtschaftliche |
 | [221.253](ch/tg/de/221.253.md) | Verordnung des Regierungsrates über den Normalarbeitsvertrag für landwirtschaftliche |
 | [221.254](ch/tg/de/221.254.md) | Verordnung des Regierungsrates über den Normalarbeitsvertrag für Angestellte |
 | [221.42](ch/tg/de/221.42.md) | Verordnung des Regierungsrates über das Handelsregister |
+| [271](ch/tg/de/271.md) | Gesetz über die Zivilrechtspflege |
 | [271.1](ch/tg/de/271.1.md) | Gesetz über die Zivil- und Strafrechtspflege |
 | [271.11](ch/tg/de/271.11.md) | Zivil- und Strafrechtspflegeverordnung |
 | [271.31](ch/tg/de/271.31.md) | Verordnung des Obergerichts über die Information in Zivil- und Strafgerichtsverfahren |
+| [273.2](ch/tg/de/273.2.md) | Konkordat betreffend Befreiung von der |
+| [274](ch/tg/de/274.md) | Konkordat über die Gewährung gegenseitiger |
+| [276](ch/tg/de/276.md) | Konkordat über die Vollstreckung von Zivilurteilen |
+| [277.11](ch/tg/de/277.11.md) | Verordnung des Obergerichtes zum |
+| [279](ch/tg/de/279.md) | Konkordat über die Schiedsgerichtsbarkeit |
 | [281.12](ch/tg/de/281.12.md) | Verordnung über die Organisation des Amtes für Betreibungs- und Konkurswesen |
 | [281.14](ch/tg/de/281.14.md) | Verordnung des Regierungsrates über die Prüfung und den Fähigkeitsausweis zur |
+| [281.22](ch/tg/de/281.22.md) | Konkordat über die Gewährung gegenseitiger |
 | [281.31](ch/tg/de/281.31.md) | Übereinkunft zwischen der Schweizerischen Eidgenossenschaft und der Krone Württemberg |
 | [281.32](ch/tg/de/281.32.md) | Übereinkunft zwischen den schweizerischen Kantonen Zürich, Bern, Luzern, Unterwalden |
 | [311.1](ch/tg/de/311.1.md) | Einführungsgesetz zum Schweizerischen Strafrecht |
 | [311.4](ch/tg/de/311.4.md) | Interkantonale Vereinbarung (beziehungsweise Konkordat) über die computergestützte |
 | [311.41](ch/tg/de/311.41.md) | Verordnung des Regierungsrates betreffend den Vollzug der Interkantonalen Vereinbarung |
 | [311.61](ch/tg/de/311.61.md) | Verordnung des Regierungsrates über die Organisation der Staatsanwaltschaft |
+| [312.1](ch/tg/de/312.1.md) | Gesetz über die Strafrechtspflege |
+| [313.0](ch/tg/de/313.0.md) | Regierungsratsbeschluss über die Zuständigkeiten |
 | [313.11](ch/tg/de/313.11.md) | Verordnung betreffend die Zuständigkeiten der kantonalen Behörden gemäss Bundesgesetz |
 | [331.11](ch/tg/de/331.11.md) | Verordnung des Regierungsrates über das Strafregister |
+| [340.3](ch/tg/de/340.3.md) | Verordnung des Grossen Rates über den Vollzug |
 | [340.31](ch/tg/de/340.31.md) | Justizvollzugsverordnung |
+| [340.32](ch/tg/de/340.32.md) | Verfügung des Departementes für Justiz und |
+| [340.33](ch/tg/de/340.33.md) | Verfügung des Departementes für Justiz und |
 | [340.34](ch/tg/de/340.34.md) | Verfügung des Departementes für Justiz und Sicherheit über die gemeinnützige |
+| [340.51](ch/tg/de/340.51.md) | Verordnung des Regierungsrates über die |
 | [341.1](ch/tg/de/341.1.md) | Konkordat der ostschweizerischen Kantone über den Vollzug von Strafen und Massnahmen |
+| [342.3](ch/tg/de/342.3.md) | Vereinbarung der Kantone Zürich, Glarus, |
+| [342.31](ch/tg/de/342.31.md) | Ausführungsbestimmungen zur ostschweizerischen |
+| [352](ch/tg/de/352.md) | Konkordat über die Rechtshilfe und die |
+| [410.1](ch/tg/de/410.1.md) | Gesetz über das Unterrichtswesen |
 | [410.31](ch/tg/de/410.31.md) | Verordnung des Regierungsrates über die Vereinigung von Schulgemeinden und |
+| [410.4](ch/tg/de/410.4.md) | Beschluss des Grossen Rates betreffend die |
 | [411.11](ch/tg/de/411.11.md) | Gesetz über die Volksschule |
 | [411.111](ch/tg/de/411.111.md) | Volksschulverordnung |
 | [411.114](ch/tg/de/411.114.md) | Verordnung über die Rechtsstellung der Lehrpersonen an den Volksschulen |
 | [411.115](ch/tg/de/411.115.md) | Reglement über die Beurteilung in der Volksschule |
 | [411.116](ch/tg/de/411.116.md) | Verordnung des Regierungsrates über die Rechtsstellung der sonderpädagogischen |
 | [411.411](ch/tg/de/411.411.md) | Verordnung des Regierungsrates über die Sonderschulung, Heilpädagogische Früherziehung, |
+| [411.42](ch/tg/de/411.42.md) | Vereinbarung betreffend die Übernahme der |
 | [411.61](ch/tg/de/411.61.md) | Gesetz über Beitragsleistungen an die Schulgemeinden |
 | [411.611](ch/tg/de/411.611.md) | Verordnung zum Gesetz über Beitragsleistungen an die Schulgemeinden |
 | [411.661](ch/tg/de/411.661.md) | Musikschulverordnung |
 | [411.71](ch/tg/de/411.71.md) | Vereinbarung über die Schul- und Steuerverhältnisse in Grenzgebieten des Kantons |
 | [411.72](ch/tg/de/411.72.md) | Vereinbarung über den Schulbesuch der Kinder von Steinach auf der Oberstufe |
+| [411.73](ch/tg/de/411.73.md) | Vereinbarung über den Sonderklassen-Schulbesuch |
 | [411.74](ch/tg/de/411.74.md) | Rahmenvertrag zwischen dem Kanton Thurgau und dem Kanton Zürich über den kantonsübergreifenden |
 | [411.75](ch/tg/de/411.75.md) | Konkordat über die Schulkoordination |
+| [412.11](ch/tg/de/412.11.md) | Gesetz über die Berufsbildung |
 | [412.211](ch/tg/de/412.211.md) | Verordnung über die Organisation des Berufsbildungswesens |
 | [412.212](ch/tg/de/412.212.md) | Verordnung über die berufliche Grundbildung |
 | [412.213](ch/tg/de/412.213.md) | Verordnung des Regierungsrates über die höhere Berufsbildung und die berufsorientierte |
@@ -25523,6 +28313,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [412.226](ch/tg/de/412.226.md) | Reglement des Departements für Erziehung und Kultur über Ausbildungsunterstützungen |
 | [412.227](ch/tg/de/412.227.md) | Reglement des Departements für Erziehung und Kultur über die Ausbildung zur |
 | [412.228](ch/tg/de/412.228.md) | Reglement des Departements für Erziehung und Kultur über die Bildungsgänge |
+| [412.241](ch/tg/de/412.241.md) | Reglement des Regierungsrates über die |
+| [412.611](ch/tg/de/412.611.md) | Interkantonale Vereinbarung über Beiträge der |
 | [412.612](ch/tg/de/412.612.md) | Vereinbarung über die Leistung von Schulbeiträgen für Auszubildende an Schulen |
 | [412.613](ch/tg/de/412.613.md) | Interkantonale Vereinbarung über die Beiträge an die Ausbildungskosten in der |
 | [412.615](ch/tg/de/412.615.md) | Interkantonale Vereinbarung über die Anerkennung von Ausbildungsabschlüssen |
@@ -25532,8 +28324,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [412.631](ch/tg/de/412.631.md) | Vereinbarung über die Fachhochschule Ostschweiz |
 | [412.632](ch/tg/de/412.632.md) | Vereinbarung über die Interkantonale Fachhochschule St. Gallen |
 | [412.633](ch/tg/de/412.633.md) | Vereinbarung über die Ost – Ostschweizer Fachhochschule |
+| [412.634](ch/tg/de/412.634.md) | Konkordat betreffend Hochschule und |
 | [412.636](ch/tg/de/412.636.md) | Interkantonale Vereinbarung über die Hochschule für Heilpädagogik Zürich |
 | [412.637](ch/tg/de/412.637.md) | Vereinbarung über den Ausbau und Betrieb der Interkantonalen Försterschule |
+| [412.638](ch/tg/de/412.638.md) | Vereinbarung zwischen dem Schweizerischen |
 | [413.11](ch/tg/de/413.11.md) | Gesetz über die Berufsbildung und die Mittelschulen (Sekundarstufe II) |
 | [413.12](ch/tg/de/413.12.md) | Beschluss des Grossen Rates betreffend Standorte der Berufsfach- und Mittelschulen |
 | [413.13](ch/tg/de/413.13.md) | Vereinbarung über die Beteiligung des Kantons Thurgau an der Kantonsschule |
@@ -25544,14 +28338,18 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [413.226](ch/tg/de/413.226.md) | Verordnung über die Maturitätsabteilung an den thurgauischen Kantonsschulen |
 | [413.228](ch/tg/de/413.228.md) | Verordnung über die Informatikmittelschule der Kantonsschule Frauenfeld |
 | [413.241](ch/tg/de/413.241.md) | Verordnung des Regierungsrates über die Ausbildung an der Handelsmittelschule |
+| [413.252](ch/tg/de/413.252.md) | Verordnung des Regierungsrates über die |
 | [413.253](ch/tg/de/413.253.md) | Verordnung über die Ausbildung an den Fachmittelschulen der thurgauischen Kantonsschulen |
 | [413.28](ch/tg/de/413.28.md) | Vereinbarung über die Thurgauisch-Schaffhauserische Maturitätsschule für Erwachsene |
 | [413.282](ch/tg/de/413.282.md) | Reglement über die Maturitätsprüfungen an der Thurgauisch-Schaffhauserischen |
 | [413.284](ch/tg/de/413.284.md) | Personalreglement der Thurgauisch-Schaffhauserischen Maturitätsschule für Erwachsene |
+| [413.315](ch/tg/de/413.315.md) | Verordnung des Regierungsrates über die Promo- |
+| [413.35](ch/tg/de/413.35.md) | Vereinbarung über den Besuch des Arbeits- und |
 | [414.1](ch/tg/de/414.1.md) | Interkantonale Vereinbarung über die Beiträge an die Ausbildungskosten von |
 | [414.2](ch/tg/de/414.2.md) | Gesetz über die tertiäre Bildung |
 | [414.21](ch/tg/de/414.21.md) | Reglement über die Studiengänge Primarstufe Schuljahre 1 bis 5 und Primarstufe |
 | [414.22](ch/tg/de/414.22.md) | Reglement über den Masterstudiengang Frühe Kindheit der Pädagogischen Hochschule |
+| [414.23](ch/tg/de/414.23.md) | Reglement der Pädagogischen Hochschule |
 | [414.24](ch/tg/de/414.24.md) | Gebührenreglement der Pädagogischen Hochschule Thurgau |
 | [414.243](ch/tg/de/414.243.md) | Disziplinarordnung der Pädagogischen Hochschule Thurgau |
 | [414.25](ch/tg/de/414.25.md) | Reglement über den Studiengang Sekundarstufe II der Pädagogischen Hochschule |
@@ -25559,6 +28357,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [414.27](ch/tg/de/414.27.md) | Personalreglement der Pädagogischen Hochschule Thurgau |
 | [414.28](ch/tg/de/414.28.md) | Geschäftsreglement der Pädagogischen Hochschule Thurgau |
 | [414.3](ch/tg/de/414.3.md) | Interkantonale Vereinbarung über den schweizerischen Hochschulbereich |
+| [414.4](ch/tg/de/414.4.md) | Vereinbarung über den Besuch der Pädagogischen |
 | [415.1](ch/tg/de/415.1.md) | Gesetz über die Förderung von Sport und Bewegung |
 | [415.11](ch/tg/de/415.11.md) | Sportförderungs- und Sportfondsverordnung |
 | [416.1](ch/tg/de/416.1.md) | Gesetz über Ausbildungsbeiträge |
@@ -25579,8 +28378,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [450.11](ch/tg/de/450.11.md) | Verordnung zum Schutz und zur Pflege der Natur und der Heimat |
 | [450.41](ch/tg/de/450.41.md) | Verordnung des Regierungsrates zur Bundesgesetzgebung über den Tierschutz |
 | [450.65](ch/tg/de/450.65.md) | Regierungsratsbeschluss betreffend Errichtung eines naturwissenschaftlichen |
+| [511.11](ch/tg/de/511.11.md) | Verordnung des Regierungsrates betreffend die |
 | [511.54](ch/tg/de/511.54.md) | Verordnung des Regierungsrates über die Zuständigkeit für Disziplinarstrafen |
+| [512](ch/tg/de/512.md) | Verfügung des Departementes für Justiz und |
+| [512.5](ch/tg/de/512.5.md) | Regierungsratsbeschluss betreffend den Vollzug der |
 | [512.51](ch/tg/de/512.51.md) | Regierungsratsbeschluss betreffend den Vollzug der Verordnung des Bundesrates |
+| [514.5](ch/tg/de/514.5.md) | Verordnung des Regierungsrates über den Vollzug |
 | [514.52](ch/tg/de/514.52.md) | Verordnung des Regierungsrates über den Vollzug der eidgenössischen Waffengesetzgebung |
 | [520.1](ch/tg/de/520.1.md) | Einführungsgesetz zur Bundesgesetzgebung über den Zivilschutz |
 | [520.11](ch/tg/de/520.11.md) | Verordnung des Regierungsrates zum Einführungsgesetz zur Bundesgesetzgebung |
@@ -25591,6 +28394,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [541.2](ch/tg/de/541.2.md) | Verwaltungsvereinbarung zwischen dem Kanton Thurgau und der Schweizerischen |
 | [551.1](ch/tg/de/551.1.md) | Polizeigesetz |
 | [551.11](ch/tg/de/551.11.md) | Polizeiverordnung |
+| [551.21](ch/tg/de/551.21.md) | Dienstreglement der Kantonspolizei Thurgau 1) |
 | [551.41](ch/tg/de/551.41.md) | Verordnung über die Beförderungen der Polizistinnen und Polizisten |
 | [551.6](ch/tg/de/551.6.md) | Verordnung des Regierungsrates über die Datenbearbeitung durch die Kantonspolizei |
 | [552.1](ch/tg/de/552.1.md) | Interkantonale Vereinbarung über die polizeiliche Zusammenarbeit |
@@ -25619,6 +28423,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [613.3](ch/tg/de/613.3.md) | Rahmenvereinbarung für die interkantonale Zusammenarbeit mit Lastenausgleich |
 | [631.1](ch/tg/de/631.1.md) | Verordnung des Grossen Rates über die Gebühren der kantonalen Verwaltungsbehörden |
 | [631.11](ch/tg/de/631.11.md) | Verordnung des Regierungsrates über die Gebühren der kantonalen Verwaltungsbehörden |
+| [631.12](ch/tg/de/631.12.md) | Verordnung des Regierungsrates über die Gebühren |
 | [632.1](ch/tg/de/632.1.md) | Gesetz über die Gebühren und Gemengsteuern der Grundbuchämter und Notariate |
 | [638.1](ch/tg/de/638.1.md) | Verordnung des Grossen Rates über die Gebühren der Strafverfolgungs- und Gerichtsbehörden |
 | [640.1](ch/tg/de/640.1.md) | Steuergesetz |
@@ -25634,6 +28439,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [641.81](ch/tg/de/641.81.md) | Erbschafts- und Schenkungssteuerverordnung |
 | [642.11](ch/tg/de/642.11.md) | Verordnung des Regierungsrates zum Bundesgesetz über die direkte Bundessteuer |
 | [642.2](ch/tg/de/642.2.md) | Verordnung des Regierungsrates zum Bundesgesetz über die Verrechnungssteuer |
+| [661](ch/tg/de/661.md) | Verordnung des Regierungsrates zum Bundesgesetz |
 | [661.11](ch/tg/de/661.11.md) | Verordnung des Regierungsrates zum Bundesgesetz über die Wehrpflichtersatzabgabe |
 | [671.1](ch/tg/de/671.1.md) | Konkordat zwischen den Kantonen der Schweizerischen Eidgenossenschaft über |
 | [672.1](ch/tg/de/672.1.md) | Gegenrechtserklärung mit Deutschland betreffend Steuerbefreiung für Vermächtnisse |
@@ -25643,12 +28449,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [672.509](ch/tg/de/672.509.md) | Gegenrechtserklärung zwischen den Regierungsräten der Kantone Thurgau und Zug |
 | [672.514](ch/tg/de/672.514.md) | Vereinbarung zwischen dem Regierungsrat des Kantons Schaffhausen und dem Regierungsrat |
 | [672.515](ch/tg/de/672.515.md) | Gegenrechtsvereinbarung zwischen dem Regierungsrat des Kantons Thurgau und |
+| [672.516](ch/tg/de/672.516.md) | Gegenrechtsvereinbarung zwischen dem |
 | [672.518](ch/tg/de/672.518.md) | Gegenrechtsvereinbarung zwischen der Regierung des Kantons Graubünden und dem |
 | [672.522](ch/tg/de/672.522.md) | Convention de réciprocité entre le Conseil d'Etat du canton de Thurgovie et |
 | [672.523](ch/tg/de/672.523.md) | Gegenrechtserklärung zwischen den Regierungen der Kantone Thurgau und Wallis |
 | [672.524](ch/tg/de/672.524.md) | Convention de réciprocité entre le Conseil d'Etat du canton de Thurgovie et |
 | [672.525](ch/tg/de/672.525.md) | Gegenrechtsvereinbarung zwischen den Regierungen der Kantone Thurgau und Solothurn |
 | [672.526](ch/tg/de/672.526.md) | Gegenrechtsvereinbarung zwischen den Regierungen der Kantone Uri und Thurgau |
+| [672.528](ch/tg/de/672.528.md) | Gegenrechtsvereinbarungen mit den Kantonen |
 | [690](ch/tg/de/690.md) | Gesetz über das Salzregal |
 | [691](ch/tg/de/691.md) | Interkantonale Vereinbarung über den Salzverkauf in der Schweiz |
 | [700](ch/tg/de/700.md) | Planungs- und Baugesetz |
@@ -25660,6 +28468,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [700.41](ch/tg/de/700.41.md) | Verordnung zum Gesetz über Vereinbarungen zur Milderung finanzieller Härtefälle |
 | [708.1](ch/tg/de/708.1.md) | Gesetz über den Feuerschutz |
 | [708.11](ch/tg/de/708.11.md) | Verordnung des Regierungsrates zum Gesetz über den Feuerschutz |
+| [708.111](ch/tg/de/708.111.md) | Regierungsratsbeschluss betreffend die |
 | [708.112](ch/tg/de/708.112.md) | Regierungsratsbeschluss betreffend die Verbindlicherklärung von Reglementen |
 | [708.12](ch/tg/de/708.12.md) | Verordnung des Regierungsrates über Betriebsfeuerwehren |
 | [708.13](ch/tg/de/708.13.md) | Verordnung des Regierungsrates über die Beiträge an den Brandschutz und die |
@@ -25692,11 +28501,18 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [725.11](ch/tg/de/725.11.md) | Verordnung des Regierungsrates zur Einführung des Bundesgesetzes über die Nationalstrassen |
 | [725.12](ch/tg/de/725.12.md) | Verordnung des Regierungsrates über die Gebühren für den gesteigerten Gemeingebrauch |
 | [725.16](ch/tg/de/725.16.md) | Verordnung des Regierungsrates über die Offenhaltung der Versorgungsrouten |
+| [725.171](ch/tg/de/725.171.md) | Vereinbarung zwischen den Kantonen St. Gallen |
+| [725.172](ch/tg/de/725.172.md) | Vereinbarung zwischen den Kantonen Zürich und |
+| [725.173](ch/tg/de/725.173.md) | Vereinbarung zwischen den Kantonen Zürich und |
+| [731](ch/tg/de/731.md) | Energiegesetz |
 | [731.1](ch/tg/de/731.1.md) | Gesetz über die Energienutzung |
 | [731.11](ch/tg/de/731.11.md) | Energienutzungsverordnung |
+| [731.3](ch/tg/de/731.3.md) | Verordnung des Regierungsrates über den |
+| [734.0](ch/tg/de/734.0.md) | Regierungsbeschluss betreffend die Bezeichnung der |
 | [734.1](ch/tg/de/734.1.md) | Einführungsgesetz zum Bundesgesetz über die Stromversorgung |
 | [741.1](ch/tg/de/741.1.md) | Gesetz über die Strassenverkehrsabgaben |
 | [741.11](ch/tg/de/741.11.md) | Strassenverkehrsabgabenverordnung |
+| [741.12](ch/tg/de/741.12.md) | Regierungsratsbeschluss betreffend |
 | [741.2](ch/tg/de/741.2.md) | Verordnung des Regierungsrates zum Strassenverkehrsgesetz und den Nebenerlassen |
 | [742.1](ch/tg/de/742.1.md) | Gesetz über die Förderung des öffentlichen Verkehrs |
 | [742.11](ch/tg/de/742.11.md) | Verordnung des Regierungsrates zum Gesetz über die Förderung des öffentlichen |
@@ -25706,11 +28522,27 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [747.13](ch/tg/de/747.13.md) | Verordnung des Regierungsrates über die Ordnungsbussen im Schiffsverkehr |
 | [747.2](ch/tg/de/747.2.md) | Gesetz über die Wasserfahrzeugsteuer |
 | [747.21](ch/tg/de/747.21.md) | Verordnung des Regierungsrates zum Gesetz über die Wasserfahrzeugsteuer |
+| [748.0](ch/tg/de/748.0.md) | Verordnung des Regierungsrates zur |
 | [748.11](ch/tg/de/748.11.md) | Verordnung des Regierungsrates zur Luftfahrtgesetzgebung des Bundes |
 | [810.1](ch/tg/de/810.1.md) | Gesundheitsgesetz |
 | [810.16](ch/tg/de/810.16.md) | Vereinbarung über die Einsetzung der Ethikkommission Ostschweiz |
 | [810.7](ch/tg/de/810.7.md) | Gesetz zum Schutz vor bleibenden Veränderungen des menschlichen Erbgutes |
 | [811.121](ch/tg/de/811.121.md) | Gesundheitsberufeverordnung |
+| [811.191](ch/tg/de/811.191.md) | Verordnung des Regierungsrates über die Prüfung |
+| [811.192](ch/tg/de/811.192.md) | Gegenrechtserklärung gegenüber dem Kanton |
+| [811.193](ch/tg/de/811.193.md) | Gegenrechtserklärung gegenüber dem Kanton |
+| [811.231](ch/tg/de/811.231.md) | Reglement des Departements für Erziehung und |
+| [811.232](ch/tg/de/811.232.md) | Reglement des Departements für Erziehung und |
+| [811.233](ch/tg/de/811.233.md) | Reglement des Departements für Erziehung und |
+| [811.234](ch/tg/de/811.234.md) | Reglement des Departements für Erziehung und |
+| [811.235](ch/tg/de/811.235.md) | Reglement des Departements für Erziehung und |
+| [811.236](ch/tg/de/811.236.md) | Reglement des Departements für Erziehung und Kultur |
+| [811.237](ch/tg/de/811.237.md) | Reglement des Departementes für Erziehung und |
+| [811.24](ch/tg/de/811.24.md) | Vereinbarung über die Ausbildung von |
+| [811.26](ch/tg/de/811.26.md) | Verordnung des Regierungsrates über das |
+| [811.27](ch/tg/de/811.27.md) | Vereinbarung über die Schule für Gesundheits- und |
+| [811.28](ch/tg/de/811.28.md) | Vereinbarung über die Zusammenarbeit und |
+| [811.31](ch/tg/de/811.31.md) | Gesetz über den Verbund der kantonalen |
 | [811.314](ch/tg/de/811.314.md) | Verordnung des Regierungsrates über die Rechtsstellung der Patienten und Patientinnen |
 | [811.32](ch/tg/de/811.32.md) | Interkantonale Vereinbarung über die hochspezialisierte Medizin |
 | [812.2](ch/tg/de/812.2.md) | Heilmittelverordnung |
@@ -25739,6 +28571,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [814.36](ch/tg/de/814.36.md) | Interkantonale Vereinbarung über den Zweckverband Gruppenwasserversorgung BHW |
 | [814.37](ch/tg/de/814.37.md) | Vereinbarung über den Zweckverband Abfallverwertung Bazenheid |
 | [814.811](ch/tg/de/814.811.md) | Verordnung des Regierungsrates zur Chemikaliengesetzgebung des Bundes |
+| [814.82](ch/tg/de/814.82.md) | Vereinbarung über die gemeinsame Koordination Vollzug Chemikalienrecht Ostschweiz |
 | [817.21](ch/tg/de/817.21.md) | Verordnung des Regierungsrates über den Vollzug der Bundesgesetzgebung über |
 | [817.31](ch/tg/de/817.31.md) | Verordnung des Regierungsrates über die öffentlichen Bäder und Duschanlagen |
 | [817.51](ch/tg/de/817.51.md) | Verordnung über das Schlachten und die Fleischkontrolle |
@@ -25750,6 +28583,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [822.31](ch/tg/de/822.31.md) | Verordnung des Regierungsrates zum Bundesgesetz über die Heimarbeit (Heimarbeitsgesetz) |
 | [822.9](ch/tg/de/822.9.md) | Ruhetagsgesetz |
 | [823.20](ch/tg/de/823.20.md) | Verordnung des Regierungsrates zur Bundesgesetzgebung über die in die Schweiz |
+| [823.21](ch/tg/de/823.21.md) | Verordnung des Regierungsrates zur Bundesgesetz- |
 | [831.1](ch/tg/de/831.1.md) | Einführungsgesetz zu den Bundesgesetzen über die Alters- und Hinterlassenenversicherung |
 | [831.10](ch/tg/de/831.10.md) | Verordnung des Regierungsrates zum Einführungsgesetz über die Alters- und Hinterlassenenversicherung |
 | [831.14](ch/tg/de/831.14.md) | Verordnung des Regierungsrates über die Verwaltungskostenbeiträge an die AHV/IV/EO/FL |
@@ -25799,6 +28633,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [916.40](ch/tg/de/916.40.md) | Gesetz über die Bekämpfung von Tierseuchen |
 | [916.401](ch/tg/de/916.401.md) | Verordnung des Regierungsrates über die Bekämpfung von Tierseuchen |
 | [916.411](ch/tg/de/916.411.md) | Verordnung des Regierungsrates über die Entschädigung der Tierärzte für Verrichtungen |
+| [916.423](ch/tg/de/916.423.md) | Seuchenpolizeilicher Entscheid des Kantonstier- |
 | [916.48](ch/tg/de/916.48.md) | Gesetz über die Ausübung des Viehhandels |
 | [916.49](ch/tg/de/916.49.md) | Interkantonale Übereinkunft über den Viehhandel (Viehhandelskonkordat) |
 | [921.1](ch/tg/de/921.1.md) | Waldgesetz |
@@ -25823,11 +28658,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [923.41](ch/tg/de/923.41.md) | Verordnung des Regierungsrates zur Unterseefischereiordnung |
 | [923.421](ch/tg/de/923.421.md) | Reglement des Departementes für Justiz und Sicherheit über die Verpachtung |
 | [923.711](ch/tg/de/923.711.md) | Verfügung des Departementes für Justiz und Sicherheit betreffend Anerkennung |
+| [931.1](ch/tg/de/931.1.md) | Konkordat betreffend die Schürfung und |
 | [935.1](ch/tg/de/935.1.md) | Gesetz über den Lotterie- und Sportfonds |
 | [935.2](ch/tg/de/935.2.md) | Kleinspielgesetz |
 | [935.21](ch/tg/de/935.21.md) | Kleinspielverordnung |
 | [935.5](ch/tg/de/935.5.md) | Gesamtschweizerisches Geldspielkonkordat |
 | [935.51](ch/tg/de/935.51.md) | Lotteriegesetz |
+| [935.521](ch/tg/de/935.521.md) | Verordnung des Regierungsrates über die |
 | [935.523](ch/tg/de/935.523.md) | Lotteriefondsverordnung |
 | [935.53](ch/tg/de/935.53.md) | Interkantonale Vereinbarung betreffend die gemeinsame Durchführung von Lotterien |
 | [935.54](ch/tg/de/935.54.md) | Interkantonale Vereinbarung über die Aufsicht sowie die Bewilligung und Ertragsverwendung |
@@ -25838,6 +28675,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [942.21](ch/tg/de/942.21.md) | Verordnung des Regierungsrates betreffend die Anschrift der Detailpreise |
 | [946.5](ch/tg/de/946.5.md) | Interkantonale Vereinbarung zum Abbau technischer Handelshemmnisse |
 | [951.1](ch/tg/de/951.1.md) | Gesetz über die Thurgauer Kantonalbank |
+| [951.11](ch/tg/de/951.11.md) | Geschäfts- und Organisationsreglement der |
 | [954.1](ch/tg/de/954.1.md) | Gesetz über das Elektrizitätswerk des Kantons Thurgau |
 | [954.4](ch/tg/de/954.4.md) | Vertrag zwischen den Kantonen Aargau, Glarus, Zürich, St. Gallen, Thurgau, |
 | [956.1](ch/tg/de/956.1.md) | Gesetz über die Gebäudeversicherung |
@@ -28628,28 +31466,37 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## VS – Valais
 
-*753 laws*
+*911 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
 | [101.1](ch/vs/de/101.1.md) | Verfassung des Kantons Wallis |
 | [101.100](ch/vs/de/101.100.md) | Dekret über den Verfassungsrat |
 | [111.010](ch/vs/de/111.010.md) | Gesetz über die Umsetzung der Neugestaltung des Finanzausgleichs und der Aufgabenteilung |
+| [111.011](ch/vs/de/111.011.md) | -1- |
+| [111.012](ch/vs/de/111.012.md) | -1- |
 | [111.1](ch/vs/de/111.1.md) | Gesetz über das Siegel der Republik |
 | [111.21](ch/vs/de/111.21.md) | Das Karlsruher Übereinkommen über die grenzüberschreitende Zusammenarbeit zwischen |
 | [112.1](ch/vs/de/112.1.md) | Gesetz betreffend die Leistungen der Stadt Sitten als Hauptort des Kantons |
 | [141.1](ch/vs/de/141.1.md) | Gesetz über das Walliser Bürgerrecht |
 | [141.100](ch/vs/de/141.100.md) | Reglement betreffend den Vollzug des Gesetzes über das Walliser Bürgerrecht |
 | [142.1](ch/vs/de/142.1.md) | Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und Ausländer |
+| [142.10](ch/vs/de/142.10.md) | -1- |
 | [142.100](ch/vs/de/142.100.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und |
+| [142.102](ch/vs/de/142.102.md) | -1- |
 | [142.104](ch/vs/de/142.104.md) | Reglement über die Festsetzung der fremdenpolizeilichen Gebühren und den Verteilungsmodus |
+| [142.250](ch/vs/de/142.250.md) | -1- |
 | [142.3](ch/vs/de/142.3.md) | Gesetz über die Sammelunterkunft für Personen aus dem Asylbereich |
+| [142.310](ch/vs/de/142.310.md) | -1- |
+| [142.4](ch/vs/de/142.4.md) | -1- |
 | [142.400](ch/vs/de/142.400.md) | Ausführungsverordnung zum Einführungsgesetz zum Bundesgesetz über Zwangsmassnahmen |
+| [143.100](ch/vs/de/143.100.md) | -1- |
 | [143.102](ch/vs/de/143.102.md) | Beschluss betreffend den Ausweis zum Bezug von Einheimischbilletten |
 | [143.300](ch/vs/de/143.300.md) | Anwendungsverordnung über die Ausweisschriften |
 | [151.1](ch/vs/de/151.1.md) | Gesetz über die Anwendung des Grundsatzes der Gleichstellung von Frau und Mann |
 | [151.100](ch/vs/de/151.100.md) | Reglement über die Aufgaben und Kompetenzen des kantonalen Amts für Gleichstellung |
 | [160.1](ch/vs/de/160.1.md) | Gesetz über die politischen Rechte |
+| [160.101](ch/vs/de/160.101.md) | -1- |
 | [160.102](ch/vs/de/160.102.md) | Verordnung über die briefliche Stimmabgabe |
 | [160.3](ch/vs/de/160.3.md) | Ausführungsgesetz betreffend das Bundesgesetz über die politischen Rechte |
 | [160.5](ch/vs/de/160.5.md) | Gesetz über die Unvereinbarkeiten |
@@ -28684,8 +31531,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [172.16](ch/vs/de/172.16.md) | Gesetz über die Amtsbefugnisse der Regierungsstatthalter |
 | [172.2](ch/vs/de/172.2.md) | Gesetz über das Personal des Staates Wallis |
 | [172.200](ch/vs/de/172.200.md) | Verordnung über das Personal des Staates Wallis |
+| [172.210](ch/vs/de/172.210.md) | -1- |
 | [172.211](ch/vs/de/172.211.md) | Reglement über die Arbeitszeit in der kantonalen Verwaltung |
 | [172.212](ch/vs/de/172.212.md) | Reglement über die Organisation und Umsetzung der Sicherheit und des Gesundheitsschutzes |
+| [172.214](ch/vs/de/172.214.md) | -1- |
 | [172.216](ch/vs/de/172.216.md) | Reglement betreffend die Personen in der beruflichen Grundbildung der Kantonsverwaltung |
 | [172.218](ch/vs/de/172.218.md) | Reglement zur Festlegung der Entschädigungen und Honorare im Bereich Landwirtschaft |
 | [172.220](ch/vs/de/172.220.md) | Reglement über die Weiterbildung des Personals der kantonalen Verwaltung |
@@ -28700,6 +31549,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [172.432](ch/vs/de/172.432.md) | Reglement welches die verschiedenen Spesen- und Reiseentschädigungen für die |
 | [172.433](ch/vs/de/172.433.md) | Beschluss über die Kommissionsentschädigungen |
 | [172.5](ch/vs/de/172.5.md) | Gesetz über die staatlichen Vorsorgeeinrichtungen |
+| [172.500](ch/vs/de/172.500.md) | -1- |
 | [172.51](ch/vs/de/172.51.md) | Gesetz über die Pensionskasse des Kantons Wallis (PKWAL) |
 | [172.510](ch/vs/de/172.510.md) | Reglement über die Delegiertenversammlung der PKWAL |
 | [172.512](ch/vs/de/172.512.md) | Ausführungsreglement betreffend das Gesetz über die Pensionskasse des Kantons |
@@ -28731,6 +31581,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [175.101](ch/vs/de/175.101.md) | Gesetz über die Fusion der Einwohner- und Burgergemeinden Sitten und Les Agettes |
 | [175.102](ch/vs/de/175.102.md) | Gesetz über die Fusion der Einwohnergemeinden Baltschieder, Eggerberg und Visp |
 | [175.2](ch/vs/de/175.2.md) | Gesetz über die Burgerschaften |
+| [175.5](ch/vs/de/175.5.md) | -1- |
 | [176.1](ch/vs/de/176.1.md) | Gesetz über die Einwohnerkontrolle |
 | [176.2](ch/vs/de/176.2.md) | Gesetz über die Harmonisierung der Einwohnerregister und anderer amtlicher |
 | [176.200](ch/vs/de/176.200.md) | Verordnung über die Harmonisierung der Einwohnerregister und anderer amtlicher |
@@ -28740,11 +31591,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [177.700](ch/vs/de/177.700.md) | Verordnung über den gerichtlichen Rechtsbeistand |
 | [178.1](ch/vs/de/178.1.md) | Notariatsgesetz |
 | [178.101](ch/vs/de/178.101.md) | Reglement betreffend das Notariatsgesetz |
+| [178.102](ch/vs/de/178.102.md) | -1- |
 | [178.104](ch/vs/de/178.104.md) | Reglement über den Tarif der Gebühren und der Auslagen der Notare |
 | [180.1](ch/vs/de/180.1.md) | Gesetz über das Verhältnis zwischen Kirchen und Staat im Kanton Wallis |
 | [180.100](ch/vs/de/180.100.md) | Ausführungsreglement zum Gesetz über das Verhältnis zwischen Kirchen und Staat |
 | [211.1](ch/vs/de/211.1.md) | Einführungsgesetz zum Schweizerischen Zivilgesetzbuch |
 | [211.100](ch/vs/de/211.100.md) | Ausführungsverordnung zum Einführungsgesetz zum Schweizerischen Zivilgesetzbuch |
+| [211.113](ch/vs/de/211.113.md) | -1- |
 | [211.130](ch/vs/de/211.130.md) | Zivilstandsverordnung |
 | [211.15](ch/vs/de/211.15.md) | Einführungsgesetz zum Bundesgesetz über die eingetragene Partnerschaft gleichgeschlechtlicher |
 | [211.250](ch/vs/de/211.250.md) | Verordnung über den Kindes- und Erwachsenenschutz |
@@ -28755,11 +31608,21 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [211.412](ch/vs/de/211.412.md) | Gesetz betreffend die Anwendung des bäuerlichen Bodenrechts |
 | [211.6](ch/vs/de/211.6.md) | Gesetz über die amtliche Vermessung |
 | [211.600](ch/vs/de/211.600.md) | Verordnung über die amtliche Vermessung |
+| [211.601](ch/vs/de/211.601.md) | -1- |
+| [211.603](ch/vs/de/211.603.md) | -1- |
+| [211.604](ch/vs/de/211.604.md) | -1- |
 | [211.605](ch/vs/de/211.605.md) | Verordnung über Geoinformation |
+| [211.606](ch/vs/de/211.606.md) | -1- |
+| [211.607](ch/vs/de/211.607.md) | -1- |
 | [211.610](ch/vs/de/211.610.md) | Verordnung betreffend die Grundbucheinführung im Kanton Wallis |
 | [211.611](ch/vs/de/211.611.md) | Kantonale Grundbuchverordnung |
 | [211.612](ch/vs/de/211.612.md) | Verordnung über die Führung des informatisierten Grundbuchs |
 | [211.613](ch/vs/de/211.613.md) | Beschluss betreffend das Stockwerkeigentum |
+| [211.620](ch/vs/de/211.620.md) | Beschluss |
+| [211.621](ch/vs/de/211.621.md) | Beschluss |
+| [211.622](ch/vs/de/211.622.md) | Beschluss |
+| [211.623](ch/vs/de/211.623.md) | Beschluss |
+| [211.624](ch/vs/de/211.624.md) | Beschluss |
 | [211.7](ch/vs/de/211.7.md) | Ausführungsgesetz zum Bundesgesetz über Geoinformation |
 | [211.700](ch/vs/de/211.700.md) | Verordnung über Geoinformation |
 | [211.705](ch/vs/de/211.705.md) | Verordnung über den Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen |
@@ -28773,12 +31636,20 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [221.605](ch/vs/de/221.605.md) | Beschluss über den Erlass eines Normalarbeitsvertrags mit zwingenden Mindestlöhnen |
 | [221.606](ch/vs/de/221.606.md) | Beschluss über den Erlass eines Normalarbeitsvertrags für das Personal der |
 | [221.608](ch/vs/de/221.608.md) | Beschluss über den Erlass eines Normalarbeitsvertrags für die Landwirtschaft |
+| [235.1](ch/vs/de/235.1.md) | -1- |
+| [235.101](ch/vs/de/235.101.md) | -1- |
 | [270.1](ch/vs/de/270.1.md) | Einführungsgesetz zur Schweizerischen Zivilprozessordnung |
 | [271.100](ch/vs/de/271.100.md) | Reglement über die finanzielle Unterstützung in der zivilrechtlichen Mediation |
+| [274.1](ch/vs/de/274.1.md) | -1- |
+| [276.1](ch/vs/de/276.1.md) | -1- |
+| [276.2](ch/vs/de/276.2.md) | -1- |
+| [279.1](ch/vs/de/279.1.md) | -1- |
 | [281.1](ch/vs/de/281.1.md) | Einführungsgesetz zum Bundesgesetz über Schuldbetreibung und Konkurs |
 | [281.100](ch/vs/de/281.100.md) | Ausführungsverordnung zur Gesetzgebung über Schuldbetreibung und Konkurs |
+| [281.101](ch/vs/de/281.101.md) | -1- |
 | [281.9](ch/vs/de/281.9.md) | Konkordat über die Gewährung gegenseitiger Rechtshilfe zur Vollstreckung öffentlich-rechtlicher |
 | [311.1](ch/vs/de/311.1.md) | Einführungsgesetz zum Strafgesetzbuch |
+| [311.100](ch/vs/de/311.100.md) | -1- |
 | [311.200](ch/vs/de/311.200.md) | Allgemeine Ausführungsverordnung zum Einführungsgesetz zum Schweizerischen |
 | [311.210](ch/vs/de/311.210.md) | Verordnung über den Vollzug von Einziehungen |
 | [311.300](ch/vs/de/311.300.md) | Reglement über die Verwendung eines Fonds zur Unterstützung von Gefangenen |
@@ -28787,10 +31658,20 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [312.100](ch/vs/de/312.100.md) | Ausführungsreglement zum Gesetz über die Akten der gerichtlichen Polizei |
 | [312.2](ch/vs/de/312.2.md) | Einführungsgesetz zum Ordnungsbussengesetz |
 | [312.5](ch/vs/de/312.5.md) | Ausführungsgesetz zum Bundesgesetz über die Hilfe an Opfer von Straftaten |
+| [312.501](ch/vs/de/312.501.md) | -1- |
 | [314.1](ch/vs/de/314.1.md) | Einführungsgesetz zum Bundesgesetz über das Jugendstrafrecht |
 | [314.2](ch/vs/de/314.2.md) | Einführungsgesetz zur Schweizerischen Jugendstrafprozessordnung |
+| [331.100](ch/vs/de/331.100.md) | -1- |
 | [340.100](ch/vs/de/340.100.md) | Verordnung über die Rechte und Pflichten von inhaftierten Personen |
 | [340.104](ch/vs/de/340.104.md) | Verordnung betreffend die Organisation, die Rechte und Pflichten des Personals |
+| [340.200](ch/vs/de/340.200.md) | -1- |
+| [340.201](ch/vs/de/340.201.md) | -1- |
+| [340.202](ch/vs/de/340.202.md) | -1- |
+| [340.205](ch/vs/de/340.205.md) | -1- |
+| [340.210](ch/vs/de/340.210.md) | -1- |
+| [340.211](ch/vs/de/340.211.md) | -1- |
+| [340.212](ch/vs/de/340.212.md) | -1- |
+| [340.213](ch/vs/de/340.213.md) | -1- |
 | [343.3](ch/vs/de/343.3.md) | Konkordat über den Vollzug der Freiheitsstrafen und Massnahmen an Erwachsenen |
 | [343.300](ch/vs/de/343.300.md) | Reglement über die Gewährung von Ausgangsbewilligungen für erwachsene und junge |
 | [343.301](ch/vs/de/343.301.md) | Reglement über die Stiftung der lateinischen Schweiz Pilotprojekte - Sucht |
@@ -28802,6 +31683,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [343.4](ch/vs/de/343.4.md) | Konkordat über den Vollzug der strafrechtlichen Einschliessung Jugendlicher |
 | [343.400](ch/vs/de/343.400.md) | Reglement über die Gewährung von Ausgangsbewilligungen für minderjährige Verurteilte |
 | [343.401](ch/vs/de/343.401.md) | Reglement über das Disziplinarrecht für Personen in strafrechtlicher Einschliessung |
+| [351.71](ch/vs/de/351.71.md) | -1– |
 | [362.1](ch/vs/de/362.1.md) | Vereinbarung zwischen Bund und Kantonen betreffend Umsetzung, Anwendung und |
 | [400.050](ch/vs/de/400.050.md) | Reglement betreffend den Spezialfinanzierungsfonds Kantonale Lehrmittelausgabestelle |
 | [400.1](ch/vs/de/400.1.md) | Gesetz über das öffentliche Unterrichtswesen |
@@ -28826,9 +31708,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [400.90](ch/vs/de/400.90.md) | Gesetz über die Schulkoordination |
 | [405.1](ch/vs/de/405.1.md) | Gesetz über den Gemeindeanteil an den Gehältern des Personals der obligatorischen |
 | [405.100](ch/vs/de/405.100.md) | Reglement über den Gemeindeanteil an den Gehältern des Personals der obligatorischen |
+| [405.101](ch/vs/de/405.101.md) | -1- |
 | [405.20](ch/vs/de/405.20.md) | Verordnung über die Direktion der obligatorischen Schulen |
+| [405.200](ch/vs/de/405.200.md) | -1- |
 | [405.3](ch/vs/de/405.3.md) | Gesetz über die Besoldung des Personals der obligatorischen Schulzeit und der |
 | [405.30](ch/vs/de/405.30.md) | Verordnung über die Besoldung des Personals der obligatorischen Schulzeit und |
+| [405.301](ch/vs/de/405.301.md) | -1- |
+| [410.10](ch/vs/de/410.10.md) | -1- |
 | [411.0](ch/vs/de/411.0.md) | Gesetz über die Primarschule |
 | [411.001](ch/vs/de/411.001.md) | Verordnung betreffend das Gesetz über die Primarschule |
 | [411.100](ch/vs/de/411.100.md) | Verordnung betreffend das Statut der Schulkommission |
@@ -28838,8 +31724,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [411.108](ch/vs/de/411.108.md) | Beschluss über die Pensenteilung in den Primarschulen des Kantons Wallis |
 | [411.2](ch/vs/de/411.2.md) | Gesetz über die Orientierungsschule |
 | [411.200](ch/vs/de/411.200.md) | Verordnung über die überregionalen Strukturen der Orientierungsschule |
+| [411.250](ch/vs/de/411.250.md) | -1- |
 | [411.3](ch/vs/de/411.3.md) | Gesetz über die Sonderschulung |
 | [411.300](ch/vs/de/411.300.md) | Verordnung zum Gesetz über die Sonderschulung |
+| [411.301](ch/vs/de/411.301.md) | -1- |
 | [411.320](ch/vs/de/411.320.md) | Reglement über die Organisation und die Zuständigkeiten der kantonalen strategischen |
 | [411.35](ch/vs/de/411.35.md) | Interkantonale Vereinbarung über die Zusammenarbeit im Bereich der Sonderpädagogik |
 | [411.350](ch/vs/de/411.350.md) | Beschluss betreffend die provisorische Beschränkung der Anerkennung durch die |
@@ -28897,9 +31785,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [414.703](ch/vs/de/414.703.md) | Verordnung über die Geschäftsführung und die Finanzkontrolle sowie die Leistungen |
 | [414.705](ch/vs/de/414.705.md) | Verordnung über die Verwendung von Französisch und/oder Deutsch im Unterricht |
 | [414.71](ch/vs/de/414.71.md) | Interkantonale Fachhochschulvereinbarung ab 2005 |
+| [414.72](ch/vs/de/414.72.md) | -1- |
 | [414.720](ch/vs/de/414.720.md) | Reglement über die Zusatzmodule im Berufsfeld Gesundheit |
+| [414.73](ch/vs/de/414.73.md) | -1- |
 | [414.733](ch/vs/de/414.733.md) | Reglement über das geistige Eigentum, die Verwertung und Nutzung der Forschungsergebnisse |
 | [414.734](ch/vs/de/414.734.md) | Beschluss betreffend die Studiengebühren, die von den Studierenden der Bachelorstudiengänge |
+| [414.735](ch/vs/de/414.735.md) | -1- |
 | [414.75](ch/vs/de/414.75.md) | Interkantonales Abkommen betreffend die parlamentarische Kontrolle über die |
 | [415.1](ch/vs/de/415.1.md) | Gesetz über den Sport |
 | [415.100](ch/vs/de/415.100.md) | Verordnung über den Sport |
@@ -28910,10 +31801,22 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [416.100](ch/vs/de/416.100.md) | Verordnung über Stipendien und Studiendarlehen |
 | [416.110](ch/vs/de/416.110.md) | Reglement über Ausbildungsbeiträge für Bildungsgänge an höheren Fachschulen |
 | [416.2](ch/vs/de/416.2.md) | Interkantonale Vereinbarung zur Harmonisierung von Ausbildungsbeiträgen |
+| [417.02](ch/vs/de/417.02.md) | -1- |
+| [417.020](ch/vs/de/417.020.md) | -1- |
 | [417.03](ch/vs/de/417.03.md) | Gesetz über die Besoldung des Lehrpersonals der Lehranstalten für eine höhere |
 | [417.030](ch/vs/de/417.030.md) | Verordnung über die Besoldung des Personals der Lehranstalten des Kantons Wallis |
 | [417.10](ch/vs/de/417.10.md) | Gesetz über den Beitrag der Standortgemeinden an die Bildungs- und Forschungsinstitutionen |
 | [417.100](ch/vs/de/417.100.md) | Reglement über die Beiträge der Standortgemeinden an die kantonalen Bildungs- |
+| [417.101](ch/vs/de/417.101.md) | -1- |
+| [417.104](ch/vs/de/417.104.md) | -1- |
+| [417.11](ch/vs/de/417.11.md) | -1- |
+| [417.110](ch/vs/de/417.110.md) | -1- |
+| [417.115](ch/vs/de/417.115.md) | -1- |
+| [417.120](ch/vs/de/417.120.md) | -1- |
+| [417.22](ch/vs/de/417.22.md) | -1- |
+| [417.23](ch/vs/de/417.23.md) | -1- |
+| [417.230](ch/vs/de/417.230.md) | -1- |
+| [417.235](ch/vs/de/417.235.md) | -1- |
 | [417.4](ch/vs/de/417.4.md) | Weiterbildungsgesetz |
 | [417.400](ch/vs/de/417.400.md) | Beschluss über die Modalitäten der Finanzierung für den Erhalt eines Titels |
 | [417.401](ch/vs/de/417.401.md) | Reglement über die Anerkennung und die Unterstützung der Weiterbildung Erwachsener |
@@ -28929,10 +31832,16 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [419.107](ch/vs/de/419.107.md) | Verordnung über die Ausbildung für den Unterricht auf der Sekundarstufe I und/oder |
 | [419.108](ch/vs/de/419.108.md) | Studienreglement der nebenberuflichen Studiengänge für die Lehrtätigkeit an |
 | [419.109](ch/vs/de/419.109.md) | Reglement über die Besoldung der externen Auftragnehmer durch die Pädagogische |
+| [419.110](ch/vs/de/419.110.md) | -1- |
+| [419.2](ch/vs/de/419.2.md) | -1- |
+| [419.20](ch/vs/de/419.20.md) | -1- |
 | [419.200](ch/vs/de/419.200.md) | Verordnung betreffend das Statut des Personals der Pädagogischen Hochschule |
+| [419.201](ch/vs/de/419.201.md) | -1- |
 | [419.202](ch/vs/de/419.202.md) | Verordnung betreffend die Besoldung des Personals der Pädagogischen Hochschule |
 | [419.204](ch/vs/de/419.204.md) | Verordnung über die Geschäftsführung und Finanzkontrolle der PH-VS |
+| [419.205](ch/vs/de/419.205.md) | -1- |
 | [419.206](ch/vs/de/419.206.md) | Reglement über die Zusammensetzung, die Organisation und die Zuständigkeiten |
+| [419.4](ch/vs/de/419.4.md) | -1- |
 | [420.1](ch/vs/de/420.1.md) | Gesetz über die Förderung von Hochschulen und Forschung |
 | [420.100](ch/vs/de/420.100.md) | Reglement zur Anwendung des Gesetzes über Bildung und Forschung von universitären |
 | [420.101](ch/vs/de/420.101.md) | Reglement über die Förderung von Hochschulen und Forschung |
@@ -28940,11 +31849,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [420.104](ch/vs/de/420.104.md) | Reglement über die Ausübung von Bildungstätigkeiten der Tertiärstufe durch |
 | [440.1](ch/vs/de/440.1.md) | Kulturförderungsgesetz |
 | [440.100](ch/vs/de/440.100.md) | Reglement zur Kulturförderung |
+| [440.101](ch/vs/de/440.101.md) | Reglement |
 | [440.102](ch/vs/de/440.102.md) | Reglement über die Bewahrung des beweglichen, dokumentarischen, immateriellen |
+| [440.103](ch/vs/de/440.103.md) | Beschluss |
 | [440.104](ch/vs/de/440.104.md) | Reglement für die Musikschulen |
 | [440.106](ch/vs/de/440.106.md) | Reglement betreffend die Archive der Staatsverwaltung |
 | [440.108](ch/vs/de/440.108.md) | Beschluss betreffend die Reorganisation der Gemeinde- und Burgerarchive |
 | [440.2](ch/vs/de/440.2.md) | Vertrag zwischen dem Staate Wallis und dem ehrwürdigen Domkapitel von Sitten |
+| [443.4](ch/vs/de/443.4.md) | -1- |
 | [451.1](ch/vs/de/451.1.md) | Gesetz über den Natur- und Heimatschutz |
 | [451.100](ch/vs/de/451.100.md) | Verordnung über den Natur- und Heimatschutz |
 | [451.102](ch/vs/de/451.102.md) | Verordnung betreffend Bewirtschaftungsbeiträge an die Landwirtschaft für Leistungen |
@@ -29005,12 +31917,15 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [501.100](ch/vs/de/501.100.md) | Verordnung über den Bevölkerungsschutz und die Bewältigung von besonderen und |
 | [501.20](ch/vs/de/501.20.md) | Dekret zur Bewältigung der Folgen der Naturereignisse im Lötschental |
 | [501.201](ch/vs/de/501.201.md) | Reglement über die Organisation und Funktionsweise der kantonalen Koordinationsgruppe |
+| [501.30](ch/vs/de/501.30.md) | Dekret zur Unterstützung der Opfer der Brandkatastrophe in Crans-Montana vom |
 | [502.1](ch/vs/de/502.1.md) | Ausführungsgesetz zum Bundesgesetz über Waffen, Waffenzubehör und Munition |
 | [503.100](ch/vs/de/503.100.md) | Verordnung über die Aufsicht des Schiesswesens, die Schiessanlagen und die |
 | [504.1](ch/vs/de/504.1.md) | Ausführungsgesetz zum Bundesgesetz über die Armee und die Militärverwaltung |
+| [504.100](ch/vs/de/504.100.md) | -1- |
 | [520.1](ch/vs/de/520.1.md) | Ausführungsgesetz zur Bundesgesetzgebung über den Zivilschutz |
 | [520.100](ch/vs/de/520.100.md) | Verordnung zum Ausführungsgesetz zur Bundesgesetzgebung über den Zivilschutz |
 | [520.101](ch/vs/de/520.101.md) | Reglement über die Administration während des Zivilschutzdienstes |
+| [520.103](ch/vs/de/520.103.md) | -1- |
 | [520.110](ch/vs/de/520.110.md) | Beschluss über den Betrag der Ersatzbeiträge für Schutzräume |
 | [520.120](ch/vs/de/520.120.md) | Beschluss über die von der Dienststelle für zivile Sicherheit und Militär erhobenen |
 | [520.200](ch/vs/de/520.200.md) | Verordnung über den kantonalen Ersatzbeitragsfonds zugunsten der Zivilschutzbauten |
@@ -29027,6 +31942,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [550.101](ch/vs/de/550.101.md) | Verordnung über die Anwendung von Zwangsmitteln durch die Kantonspolizei |
 | [550.102](ch/vs/de/550.102.md) | Verordnung über Video- und Audioüberwachungsmassnahmen durch die Kantonspolizei |
 | [550.103](ch/vs/de/550.103.md) | Reglement über die Schaffung eines Fonds für die Finanzierung vertraulicher |
+| [550.104](ch/vs/de/550.104.md) | -1- |
 | [550.110](ch/vs/de/550.110.md) | Verordnung über Besoldung, Auslagen und Spesen der Mitglieder des Korps der |
 | [550.113](ch/vs/de/550.113.md) | Reglement betreffend die Entschädigungen an die Mitglieder der Kantonspolizei |
 | [550.2](ch/vs/de/550.2.md) | Konkordat über die polizeiliche Zusammenarbeit in der Westschweiz |
@@ -29045,20 +31961,24 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [611.103](ch/vs/de/611.103.md) | Reglement betreffend die Vertretung des Staates vor den Gerichten |
 | [611.104](ch/vs/de/611.104.md) | Verordnung zum Inkasso- und Eintreibungsverfahren |
 | [611.105](ch/vs/de/611.105.md) | Verordnung über das Finanz-, Personal- und Leistungscontrolling |
+| [611.20](ch/vs/de/611.20.md) | -1- |
 | [611.5](ch/vs/de/611.5.md) | Rahmenvereinbarung für die interkantonale Zusammenarbeit mit Lastenausgleich |
 | [611.6](ch/vs/de/611.6.md) | Dekret über die Obergrenze und Einlage des Kompensationsfonds für Ertragsschwankungen |
 | [612.1](ch/vs/de/612.1.md) | Gesetz über die Ausgaben- und Schuldenbremse |
+| [612.100](ch/vs/de/612.100.md) | -1- |
 | [612.2](ch/vs/de/612.2.md) | Dekret über die Anwendung der Bestimmungen über die Ausgaben- und Schuldenbremse |
 | [612.3](ch/vs/de/612.3.md) | Gesetz über den Fonds zur Finanzierung der Investitionen und der Geschäftsführung |
 | [612.5](ch/vs/de/612.5.md) | Gesetz betreffend die Finanzierung der Infrastrukturgrossprojekte des 21. Jahrhunderts |
 | [612.500](ch/vs/de/612.500.md) | Dekret zur Schaffung eines Finanzierungsfonds für das Projekt der 3. Rhonekorrektion |
 | [612.7](ch/vs/de/612.7.md) | Gesetz über die Finanzierung der 3. Rhonekorrektion |
 | [613.1](ch/vs/de/613.1.md) | Gesetz über den interkommunalen Finanzausgleich |
+| [613.10](ch/vs/de/613.10.md) | -1- |
 | [613.100](ch/vs/de/613.100.md) | Verordnung über den interkommunalen Finanzausgleich |
 | [613.104](ch/vs/de/613.104.md) | Beschluss über den interkommunalen Finanzausgleich 2026 |
 | [614.100](ch/vs/de/614.100.md) | Reglement betreffend das kantonale Finanzinspektorat |
 | [616.1](ch/vs/de/616.1.md) | Subventionsgesetz |
 | [616.100](ch/vs/de/616.100.md) | Subventionsverordnung |
+| [616.200](ch/vs/de/616.200.md) | -1- |
 | [620.1](ch/vs/de/620.1.md) | Gesetz über die Walliser Kantonalbank |
 | [620.3](ch/vs/de/620.3.md) | Interkantonales Konkordat über Massnahmen zu Bekämpfung von Missbräuchen im |
 | [620.310](ch/vs/de/620.310.md) | Beschluss zur Vollziehung des Bundesgesetzes über die Banken und Sparkassen |
@@ -29084,6 +32004,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [642.400](ch/vs/de/642.400.md) | Verordnung über die Besteuerung nach dem Aufwand |
 | [642.500](ch/vs/de/642.500.md) | Verordnung über die Hingabe an Erfüllungs statt |
 | [643.1](ch/vs/de/643.1.md) | Gesetz über die Handänderungssteuer |
+| [643.100](ch/vs/de/643.100.md) | -1- |
 | [645.100](ch/vs/de/645.100.md) | Reglement betreffend die Katastertaxen |
 | [645.102](ch/vs/de/645.102.md) | Reglement betreffend die Steuerregisterhalter in den Gemeinden |
 | [645.104](ch/vs/de/645.104.md) | Beschluss über die Festsetzung der Tarife betreffend die Gebühren der Steuerregisterhalter |
@@ -29099,6 +32020,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [701.102](ch/vs/de/701.102.md) | Beschluss über die Genehmigung des kantonalen Raumentwicklungskonzepts |
 | [701.105](ch/vs/de/701.105.md) | Reglement betreffend die Förderungsmassnahmen und die Ausgleichsregelung in |
 | [701.106](ch/vs/de/701.106.md) | Beschluss über die Erhaltung der Bausubstanz ausserhalb der Bauzonen |
+| [701.110](ch/vs/de/701.110.md) | -1- |
 | [701.2](ch/vs/de/701.2.md) | Gesetz über die Landumlegung und die Grenzregulierung |
 | [701.201](ch/vs/de/701.201.md) | Reglement zur Festlegung des Tarifs der kantonalen Leistungen in Sachen Baulandumlegungen |
 | [701.6](ch/vs/de/701.6.md) | Gesetz über die Erhebung von Grundeigentümerbeiträgen an die Erschliessungskosten |
@@ -29115,11 +32037,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [705.106](ch/vs/de/705.106.md) | Reglement über den Zugang und die Benutzung der kantonalen Plattform eConstruction |
 | [710.1](ch/vs/de/710.1.md) | Enteignungsgesetz |
 | [710.110](ch/vs/de/710.110.md) | Beschluss über die Entschädigungen der Mitglieder des Expertenkollegiums in |
+| [710.2](ch/vs/de/710.2.md) | -1- |
 | [710.200](ch/vs/de/710.200.md) | Beschluss betreffend Vollziehung des Artikels 15 des Bundesgesetzes über die |
 | [721.1](ch/vs/de/721.1.md) | Gesetz über die Naturgefahren und den Wasserbau |
 | [721.100](ch/vs/de/721.100.md) | Verordnung über die Naturgefahren und den Wasserbau |
 | [721.200](ch/vs/de/721.200.md) | Verordnung über die Bestimmung des Gewässerraums bei grossen Fliessgewässern |
 | [721.8](ch/vs/de/721.8.md) | Gesetz über die Nutzbarmachung der Wasserkräfte |
+| [721.80](ch/vs/de/721.80.md) | -1- |
 | [721.800](ch/vs/de/721.800.md) | Reglement betreffend die Ausführung des Gesetzes über die Nutzbarmachung der |
 | [721.801](ch/vs/de/721.801.md) | Reglement betreffend die Ausführung von Artikel 46 des Gesetzes über die Nutzbarmachung |
 | [721.802](ch/vs/de/721.802.md) | Beschluss betreffend die Benutzung von Wasserleitungen, die ihren Ausgang von |
@@ -29128,6 +32052,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [725.1](ch/vs/de/725.1.md) | Strassengesetz |
 | [725.100](ch/vs/de/725.100.md) | Beschluss über die Deklassierung und Klassierung von Strassen |
 | [725.101](ch/vs/de/725.101.md) | Beschluss betreffend die Kriterien zur Festlegung der Prioritäten für den Bau, |
+| [725.102](ch/vs/de/725.102.md) | Reglement |
+| [725.104](ch/vs/de/725.104.md) | Reglement |
 | [725.105](ch/vs/de/725.105.md) | Reglement über die Wintersperre von kantonalen Strassen und Wegen |
 | [725.107](ch/vs/de/725.107.md) | Reglement welches die jährlichen Gebühren betreffend die Benützung des öffentlichen |
 | [725.108](ch/vs/de/725.108.md) | Reglement über die Gebühren und Entschädigungen, die beim Vollzug des Strassengesetzes |
@@ -29149,6 +32075,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [740.200](ch/vs/de/740.200.md) | Reglement über den öffentlichen Verkehr und den Alltagslangsamverkehr |
 | [741.1](ch/vs/de/741.1.md) | Ausführungsgesetz über die Bundesgesetzgebung betreffend den Strassenverkehr |
 | [741.100](ch/vs/de/741.100.md) | Reglement der Kantonalen Kommission für Strassensignalisation |
+| [741.101](ch/vs/de/741.101.md) | Reglement über den Zugang und die Benutzung der digitalen Plattform SIROUT |
 | [741.102](ch/vs/de/741.102.md) | Beschluss betreffend die Hinterlegung der Motorfahrzeugschilder |
 | [741.104](ch/vs/de/741.104.md) | Reglement über den Tarif der Gebühren und Kosten im Bereich der Zulassung von |
 | [741.106](ch/vs/de/741.106.md) | Beschluss durch welchen die Bewilligungsgebühren für sportliche Anlässe der |
@@ -29156,6 +32083,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [741.109](ch/vs/de/741.109.md) | Beschluss betreffend die Beschränkungen des Motorfahrzeugverkehrs auf der Kantonsstrasse |
 | [741.110](ch/vs/de/741.110.md) | Reglement über Karting-, Motocross- oder ähnliche Bahnen |
 | [741.111](ch/vs/de/741.111.md) | Reglement über die Benutzung von Raupenfahrzeugen |
+| [743.0](ch/vs/de/743.0.md) | Gesetz |
+| [743.010](ch/vs/de/743.010.md) | Verordnung |
 | [743.2](ch/vs/de/743.2.md) | Konkordat über die nicht eidgenössisch konzessionierten Luftseilbahnen und |
 | [743.20](ch/vs/de/743.20.md) | Verordnung betreffend den Bau und den Betrieb von nicht eidgenössisch konzessionierten |
 | [746.10](ch/vs/de/746.10.md) | Beschluss betreffend Rohrleitungsanlagen zur Beförderung flüssiger oder gasförmiger |
@@ -29174,15 +32103,20 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [800.102](ch/vs/de/800.102.md) | Verordnung über die Ombudsstelle für das Gesundheitswesen und die sozialen |
 | [800.103](ch/vs/de/800.103.md) | Reglement über den Gesundheits- und Ethikrat |
 | [800.104](ch/vs/de/800.104.md) | Beschluss betreffend die beim Vollzug des Gesundheitsgesetzes anfallenden Kosten |
+| [800.11](ch/vs/de/800.11.md) | -1- |
+| [800.12](ch/vs/de/800.12.md) | -1- |
 | [800.15](ch/vs/de/800.15.md) | Verordnung über die Lohn- und die Sozialbedingungen sowie über die berufliche |
 | [800.16](ch/vs/de/800.16.md) | Verordnung zur Übertragung der Infrastrukturen der Spitäler |
 | [800.17](ch/vs/de/800.17.md) | Verordnung über den buchhalterischen und finanziellen Übergang zwischen dem |
+| [800.18](ch/vs/de/800.18.md) | -1- |
+| [800.19](ch/vs/de/800.19.md) | -1- |
 | [800.200](ch/vs/de/800.200.md) | Verordnung über den Gesundheits- und Ethikrat |
 | [800.300](ch/vs/de/800.300.md) | Verordnung über die Versorgungsqualität und Patientensicherheit |
 | [800.400](ch/vs/de/800.400.md) | Verordnung über die Regulierung der medizinisch-technischen Grossgeräte |
 | [800.500](ch/vs/de/800.500.md) | Verordnung über Massnahmen zur Einschränkung der Bewegungsfreiheit in Gesundheitsinstitutionen |
 | [800.6](ch/vs/de/800.6.md) | Interkantonalen Vereinbarung über die Digitalisierung des Gesundheitswesens |
 | [800.9](ch/vs/de/800.9.md) | Interkantonale Vereinbarung über die hochspezialisierte Medizin |
+| [801.10](ch/vs/de/801.10.md) | -1- |
 | [801.100](ch/vs/de/801.100.md) | Verordnung über die Gesundheitsförderung und die Verhütung von nichtübertragbaren |
 | [801.110](ch/vs/de/801.110.md) | Beschluss zur Festlegung des Spezialgebührentarifs für die Gesundheitsförderung |
 | [801.120](ch/vs/de/801.120.md) | Verordnung über den schulärztlichen Dienst |
@@ -29190,11 +32124,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [805.1](ch/vs/de/805.1.md) | Gesetz über die Langzeitpflege |
 | [805.10](ch/vs/de/805.10.md) | Verordnung über die Planung und die Finanzierung der Langzeitpflege |
 | [805.100](ch/vs/de/805.100.md) | Beschluss betreffend die Festsetzung der fakturierbaren Kosten und der Restbeiträge |
+| [805.101](ch/vs/de/805.101.md) | -1- |
+| [805.102](ch/vs/de/805.102.md) | -1- |
 | [805.110](ch/vs/de/805.110.md) | Beschluss über die Festsetzung der fakturierbaren Kosten und der Restbeiträge |
 | [805.120](ch/vs/de/805.120.md) | Beschluss über die Festsetzung der fakturierbaren Kosten und der Restbeiträge |
 | [805.130](ch/vs/de/805.130.md) | Beschluss über die Festsetzung der fakturierbaren Kosten und der Restbeiträge |
 | [805.2](ch/vs/de/805.2.md) | Gesetz über die Palliative Care und die Rahmenbedingungen für Beihilfe zum |
 | [810.10](ch/vs/de/810.10.md) | Verordnung über die Gesundheitsplanung und die Subventionierung der Krankenanstalten |
+| [810.11](ch/vs/de/810.11.md) | -1- |
 | [810.12](ch/vs/de/810.12.md) | Verordnung über die Betriebsbewilligungen für Gesundheitsinstitutionen |
 | [810.13](ch/vs/de/810.13.md) | Verordnung über die ausserkantonalen Hospitalisierungen |
 | [810.20](ch/vs/de/810.20.md) | Verordnung über die Spitalplanung und Spitalfinanzierung |
@@ -29202,16 +32139,21 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [810.41](ch/vs/de/810.41.md) | Verordnung über die kantonale Gesundheitsstatistik |
 | [810.8](ch/vs/de/810.8.md) | Gesetz über die Organisation des sanitätsdienstlichen Rettungswesens |
 | [810.800](ch/vs/de/810.800.md) | Verordnung über die Organisation des sanitätsdienstlichen Rettungswesens |
+| [811.10](ch/vs/de/811.10.md) | -1- |
 | [811.100](ch/vs/de/811.100.md) | Verordnung über die Ausübung der Gesundheitsberufe |
 | [811.102](ch/vs/de/811.102.md) | Verordnung über die Beaufsichtigung der Gesundheitsberufe |
 | [811.104](ch/vs/de/811.104.md) | Reglement zur obligatorischen Fortbildung für Gesundheitsfachleute |
+| [811.11](ch/vs/de/811.11.md) | -1- |
 | [811.110](ch/vs/de/811.110.md) | Beschluss über die Befugnisse von Bezirksärztinnen und Bezirksärzten |
+| [811.12](ch/vs/de/811.12.md) | -1- |
 | [811.200](ch/vs/de/811.200.md) | Verordnung über die vom Staat delegierten Tätigkeiten im Gesundheitswesen |
 | [811.3](ch/vs/de/811.3.md) | Gesetz über die Bereitstellung von Praktikums- und Ausbildungsplätzen für nichtuniversitäre |
 | [811.300](ch/vs/de/811.300.md) | Verordnung über die Bereitstellung von Praktikums- und Ausbildungsplätzen für |
 | [811.5](ch/vs/de/811.5.md) | Interkantonale Vereinbarung über die kantonalen Beiträge an die Spitäler zur |
+| [811.70](ch/vs/de/811.70.md) | -1- |
 | [811.900](ch/vs/de/811.900.md) | Reglement der Schweizerischen Konferenz der kantonalen Gesundheitsdirektorinnen |
 | [812.10](ch/vs/de/812.10.md) | Verordnung über suchtbedingte Abhängigkeiten |
+| [812.20](ch/vs/de/812.20.md) | -1- |
 | [812.200](ch/vs/de/812.200.md) | Heilmittelverordnung |
 | [813.10](ch/vs/de/813.10.md) | Ausführungsgesetz zum Bundesgesetz über den Schutz vor gefährlichen Stoffen |
 | [813.2](ch/vs/de/813.2.md) | Interkantonale Vereinbarung über das Spital Riviera-Chablais Waadt-Wallis |
@@ -29227,8 +32169,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [814.105](ch/vs/de/814.105.md) | Reglement über die Bewirtschaftung des kantonalen Fonds für Voruntersuchungen |
 | [814.106](ch/vs/de/814.106.md) | Beschluss zum kantonalen Massnahmenplan zur Luftreinhaltung |
 | [814.107](ch/vs/de/814.107.md) | Reglement über die Verwaltung des kantonalen Fonds für Ersatzvornahmen im Umweltschutzbereich |
+| [814.2](ch/vs/de/814.2.md) | -1- |
 | [814.200](ch/vs/de/814.200.md) | Reglement betreffend das Verfahren über die Ausscheidung von Grundwasserschutzzonen |
 | [814.201](ch/vs/de/814.201.md) | Beschluss betreffend die Grundwasserschutzareale |
+| [814.202](ch/vs/de/814.202.md) | -1- |
+| [814.203](ch/vs/de/814.203.md) | -1- |
 | [814.204](ch/vs/de/814.204.md) | Beschluss betreffend die Beseitigung von ausgedienten Motorfahrzeugen und die |
 | [814.206](ch/vs/de/814.206.md) | Beschluss betreffend die Kies- und Sandausbeutung |
 | [814.3](ch/vs/de/814.3.md) | Kantonales Gewässerschutzgesetz |
@@ -29239,21 +32184,31 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [817.104](ch/vs/de/817.104.md) | Beschluss betreffend Gebührentarif für Analysen des Kantonslaboratoriums |
 | [818.100](ch/vs/de/818.100.md) | Verordnung über die Bekämpfung von übertragbaren Krankheiten |
 | [818.120](ch/vs/de/818.120.md) | Verordnung über den Schutz der Bevölkerung vor Passivrauchen und das Verbot |
+| [818.15](ch/vs/de/818.15.md) | -1- |
+| [818.150](ch/vs/de/818.150.md) | -1- |
 | [818.300](ch/vs/de/818.300.md) | Reglement betreffend die Gesundheits- und Sicherheitskontrolle von öffentlichen |
+| [818.301](ch/vs/de/818.301.md) | -1- |
 | [818.400](ch/vs/de/818.400.md) | Verordnung über die Todesfeststellung und den Umgang mit Leichen |
 | [818.500](ch/vs/de/818.500.md) | Beschluss COVID 19 betreffend Veranstaltungen mit mehr als 1'000 Personen |
 | [818.502](ch/vs/de/818.502.md) | Beschluss Covid-19 betreffend Grossveranstaltungen, grosse Fachmessen und Publikumsmessen |
 | [822.1](ch/vs/de/822.1.md) | Kantonales Arbeitsgesetz |
 | [822.100](ch/vs/de/822.100.md) | Verordnung zum kantonalen Arbeitsgesetz |
+| [822.101](ch/vs/de/822.101.md) | -1- |
+| [822.102](ch/vs/de/822.102.md) | -1- |
 | [822.103](ch/vs/de/822.103.md) | Beschluss betreffend die Entschädigungen an die Mitglieder des Arbeitsgerichtes |
 | [822.106](ch/vs/de/822.106.md) | Reglement über die Verleihung des Berufsausweises für Baumaschinenführer |
+| [822.15](ch/vs/de/822.15.md) | -1- |
+| [822.151](ch/vs/de/822.151.md) | -1- |
 | [822.2](ch/vs/de/822.2.md) | Gesetz über die Ruhe an Sonn- und Feiertagen |
 | [822.20](ch/vs/de/822.20.md) | Gesetz betreffend die Ladenöffnung |
 | [822.200](ch/vs/de/822.200.md) | Ausführungsreglement zum Gesetze über die Sonn- und Feiertagsruhe |
 | [822.201](ch/vs/de/822.201.md) | Reglement über die Ladenöffnung |
+| [822.3](ch/vs/de/822.3.md) | -1- |
 | [823.1](ch/vs/de/823.1.md) | Ausführungsgesetz zum Entsendegesetz und zum Bundesgesetz gegen die Schwarzarbeit |
 | [823.100](ch/vs/de/823.100.md) | Verordnung zum Ausführungsgesetz zum Entsendegesetz und zum Bundesgesetz gegen |
 | [823.102](ch/vs/de/823.102.md) | Verordnung über das individuelle Kontrollinstrument |
+| [823.150](ch/vs/de/823.150.md) | -1- |
+| [823.210](ch/vs/de/823.210.md) | -1- |
 | [823.33](ch/vs/de/823.33.md) | Gesetz über die Bildung steuerbegünstigter Arbeitsbeschaffungsreserven |
 | [823.330](ch/vs/de/823.330.md) | Ausführungsreglement zum Gesetz über die Bildung steuerbegünstigter Arbeitsbeschaffungsreserven |
 | [831.1](ch/vs/de/831.1.md) | Ausführungsgesetz zum Bundesgesetz über die Alters- und Hinterlassenenversicherung |
@@ -29275,9 +32230,18 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [836.1](ch/vs/de/836.1.md) | Ausführungsgesetz zum Bundesgesetz über die Familienzulagen |
 | [836.100](ch/vs/de/836.100.md) | Kantonale Verordnung über die Familienzulagen |
 | [836.101](ch/vs/de/836.101.md) | Kantonale Verordnung über die Anpassung der Beträge der Familienzulagen an |
+| [836.2](ch/vs/de/836.2.md) | -1- |
+| [836.200](ch/vs/de/836.200.md) | -1- |
+| [836.201](ch/vs/de/836.201.md) | -1- |
+| [836.202](ch/vs/de/836.202.md) | -1- |
+| [836.300](ch/vs/de/836.300.md) | -1- |
 | [837.1](ch/vs/de/837.1.md) | Gesetz über die Beschäftigung und die Massnahmen zugunsten von Arbeitslosen |
 | [837.100](ch/vs/de/837.100.md) | Reglement, über die Beschäftigung und die Massnahmen zugunsten von Arbeitslosen |
 | [837.101](ch/vs/de/837.101.md) | Reglement über die Organisation und die Führung der öffentlichen Arbeitslosenkasse |
+| [837.102](ch/vs/de/837.102.md) | -1- |
+| [837.103](ch/vs/de/837.103.md) | -1- |
+| [837.105](ch/vs/de/837.105.md) | -1- |
+| [837.106](ch/vs/de/837.106.md) | -1- |
 | [837.107](ch/vs/de/837.107.md) | Reglement über die Gebühren betreffend das Bundesgesetz über die Arbeitsvermittlung |
 | [837.108](ch/vs/de/837.108.md) | Beschluss über den Lohn der Teilnehmenden an einem qualifizierenden Programm |
 | [837.109](ch/vs/de/837.109.md) | Beschluss über die Beteiligung des kantonalen Beschäftigungsfonds und des Arbeitgebers |
@@ -29289,6 +32253,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [850.1](ch/vs/de/850.1.md) | Gesetz über die Eingliederung und die Sozialhilfe |
 | [850.100](ch/vs/de/850.100.md) | Verordnung über die Eingliederung und die Sozialhilfe |
 | [850.101](ch/vs/de/850.101.md) | Reglement über die Verwendung des Fonds für die soziale und berufliche Integration |
+| [850.11](ch/vs/de/850.11.md) | -1- |
 | [850.110](ch/vs/de/850.110.md) | Beschluss über die Betreuung von Personen aus dem Asylbereich im Kanton Wallis |
 | [850.2](ch/vs/de/850.2.md) | Gesetz über die Harmonisierung der Finanzierung der Sozialsysteme sowie der |
 | [850.200](ch/vs/de/850.200.md) | Reglement über die Harmonisierung der Finanzierung der Sozialsysteme sowie |
@@ -29304,9 +32269,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [850.601](ch/vs/de/850.601.md) | Beschluss betreffend die Beiträge für die Beseitigung von bautechnischen Hindernissen |
 | [850.610](ch/vs/de/850.610.md) | Verordnung über die Organisation und den Betrieb von La Castalie |
 | [850.9](ch/vs/de/850.9.md) | Interkantonale Vereinbarung für soziale Einrichtungen |
+| [850.910](ch/vs/de/850.910.md) | Gesetz |
 | [857.1](ch/vs/de/857.1.md) | Gesetz über die Vollziehung des Bundesgesetzes über die Schwangerschaftsberatungsstellen |
 | [857.100](ch/vs/de/857.100.md) | Reglement über den Vollzug der eidgenössischen und kantonalen Gesetzgebung |
 | [900.1](ch/vs/de/900.1.md) | Gesetz über die kantonale Wirtschaftspolitik |
+| [900.100](ch/vs/de/900.100.md) | -1- |
 | [900.101](ch/vs/de/900.101.md) | Verordnung über die kantonale Wirtschaftspolitik |
 | [900.110](ch/vs/de/900.110.md) | Dekret über die Gewährung von ausserordentlichen Massnahmen für Wirtschaftsakteure, |
 | [900.120](ch/vs/de/900.120.md) | Reglement über die Gewährung von ausserordentlichen Massnahmen für Wirtschaftsakteure, |
@@ -29314,6 +32281,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [900.2](ch/vs/de/900.2.md) | Gesetz über die Verwaltungs- und Betriebsgesellschaft des Innovationsparks |
 | [901.1](ch/vs/de/901.1.md) | Gesetz über die Regionalpolitik |
 | [901.100](ch/vs/de/901.100.md) | Verordnung zum Gesetz über die Regionalpolitik |
+| [901.101](ch/vs/de/901.101.md) | -1- |
 | [902.1](ch/vs/de/902.1.md) | Gesetz zur Förderung der Bergbahnen |
 | [902.100](ch/vs/de/902.100.md) | Verordnung zum Gesetz zur Förderung der Bergbahnen |
 | [902.110](ch/vs/de/902.110.md) | Reglement über den Kantonalen Bergbahnfonds |
@@ -29323,17 +32291,38 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [910.103](ch/vs/de/910.103.md) | Reglement zur Festlegung des Tarifs der kantonalen Leistungen in Sachen Landwirtschaft |
 | [910.105](ch/vs/de/910.105.md) | Beschluss betreffend die Entschädigungen an die Mitglieder der kantonalen Rekurskommission |
 | [910.110](ch/vs/de/910.110.md) | Reglement über die Spezialfinanzierung für meteorologische oder phytosanitäre |
+| [913.100](ch/vs/de/913.100.md) | -1- |
+| [913.106](ch/vs/de/913.106.md) | -1- |
+| [913.107](ch/vs/de/913.107.md) | -1- |
+| [915.100](ch/vs/de/915.100.md) | -1- |
+| [915.101](ch/vs/de/915.101.md) | -1- |
+| [915.102](ch/vs/de/915.102.md) | -1- |
+| [916.100](ch/vs/de/916.100.md) | -1- |
+| [916.110](ch/vs/de/916.110.md) | -1- |
 | [916.120](ch/vs/de/916.120.md) | Dekret über die Blockierung-Finanzierung im Walliser Weinbau |
+| [916.130](ch/vs/de/916.130.md) | -1- |
+| [916.140](ch/vs/de/916.140.md) | -1- |
 | [916.142](ch/vs/de/916.142.md) | Verordnung über den Rebbau und den Wein |
 | [916.148](ch/vs/de/916.148.md) | Verordnung über die Echtheit der Walliser Rebpflanzen |
 | [916.340](ch/vs/de/916.340.md) | Verordnung über den Vollzug der Bundesgesetzgebung über das Schlachten und |
+| [916.373](ch/vs/de/916.373.md) | -1- |
 | [916.4](ch/vs/de/916.4.md) | Ausführungsgesetz zum eidgenössischen Tierseuchengesetz |
 | [916.400](ch/vs/de/916.400.md) | Verordnung über die Entsorgung tierischer Nebenprodukte |
+| [916.401](ch/vs/de/916.401.md) | -1- |
+| [916.402](ch/vs/de/916.402.md) | -1- |
 | [916.403](ch/vs/de/916.403.md) | Beschluss über die Interventionsmannschaft in Fällen hochansteckender Seuchen |
+| [916.406](ch/vs/de/916.406.md) | -1- |
+| [916.407](ch/vs/de/916.407.md) | -1- |
+| [916.471](ch/vs/de/916.471.md) | -1- |
 | [916.472](ch/vs/de/916.472.md) | Reglement über die Kosten und Entschädigungen im Bereich Veterinärwesen |
 | [916.500](ch/vs/de/916.500.md) | Beschluss über die Sömmerung 2026 |
+| [916.6](ch/vs/de/916.6.md) | -1- |
+| [917.100](ch/vs/de/917.100.md) | -1- |
 | [921.1](ch/vs/de/921.1.md) | Gesetz über den Wald |
 | [921.100](ch/vs/de/921.100.md) | Verordnung über den Wald |
+| [921.101](ch/vs/de/921.101.md) | -1- |
+| [921.105](ch/vs/de/921.105.md) | -1- |
+| [921.106](ch/vs/de/921.106.md) | -1- |
 | [921.150](ch/vs/de/921.150.md) | Reglement betreffend die Funktion und die Aufgaben des Revierförsters |
 | [921.151](ch/vs/de/921.151.md) | Beschluss über den Tarif für Leistungen der Dienststelle für Wald und Landschaft |
 | [922.1](ch/vs/de/922.1.md) | Gesetz über die Jagd und den Schutz wildlebender Säugetiere und Vögel |
@@ -29346,8 +32335,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [923.170](ch/vs/de/923.170.md) | 5-Jahres-Beschluss über die Ausübung der Fischerei im Wallis für die Jahre |
 | [923.9](ch/vs/de/923.9.md) | Concordat sur la pêche dans le lac Léman (nur auf französisch) |
 | [923.900](ch/vs/de/923.900.md) | Règlement d'exécution du concordat intercantonal sur la pêche dans le lac Léman |
+| [923.901](ch/vs/de/923.901.md) | -1- |
 | [930.1](ch/vs/de/930.1.md) | Gesetz über die Gewerbepolizei |
 | [930.100](ch/vs/de/930.100.md) | Verordnung betreffend das Gesetz über die Gewerbepolizei |
+| [930.101](ch/vs/de/930.101.md) | -1- |
+| [930.102](ch/vs/de/930.102.md) | -1- |
+| [930.104](ch/vs/de/930.104.md) | -1- |
 | [930.106](ch/vs/de/930.106.md) | Beschluss über die Abänderung des Beschlusses betreffend die Beteiligung des |
 | [931.1](ch/vs/de/931.1.md) | Gesetz über die Bergwerke und Steinbrüche |
 | [932.1](ch/vs/de/932.1.md) | Gesetz über die Prostitution |
@@ -29356,6 +32349,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [935.100](ch/vs/de/935.100.md) | Verordnung zum Gesetz über den Tourismus |
 | [935.101](ch/vs/de/935.101.md) | Verordnung betreffend eine Befreiung von der Kurtaxe |
 | [935.102](ch/vs/de/935.102.md) | Reglement über den kantonalen Tourismusfonds |
+| [935.104](ch/vs/de/935.104.md) | -1- |
+| [935.105](ch/vs/de/935.105.md) | -1- |
 | [935.2](ch/vs/de/935.2.md) | Gesetz über das Bergführerwesen und Anbieten weiterer Risikoaktivitäten |
 | [935.200](ch/vs/de/935.200.md) | Verordnung über das Bergführerwesen und das Anbieten weiterer Risikoaktivitäten |
 | [935.3](ch/vs/de/935.3.md) | Gesetz über die Beherbergung, die Bewirtung und den Kleinhandel mit alkoholischen |
@@ -29379,6 +32374,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [935.550](ch/vs/de/935.550.md) | Verordnung betreffend das Ausführungsgesetz zum Bundesgesetz über Geldspiele |
 | [935.700](ch/vs/de/935.700.md) | Reglement über den Sport-Fonds |
 | [935.701](ch/vs/de/935.701.md) | Reglement betreffend die Verwendung des von der Loterie de la Suisse romande |
+| [935.702](ch/vs/de/935.702.md) | -1- |
 | [935.703](ch/vs/de/935.703.md) | Reglement das die Unterstützungsmodalitäten von Subventionen des Sportfonds |
 | [941.2](ch/vs/de/941.2.md) | Ausführungsgesetz zum Bundesgesetz über das Messwesen |
 | [941.200](ch/vs/de/941.200.md) | Verordnung betreffend das Ausführungsgesetz zum Bundesgesetz über das Messwesen |
@@ -29388,7 +32384,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 
 ## ZG – Zug
 
-*758 laws*
+*906 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -29431,23 +32427,36 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [1021.037](ch/zg/de/1021.037.md) | Kantonsratsbeschluss betreffend Freigabe eines Objektkredits für die Strassenraumgestaltung |
 | [1021.038](ch/zg/de/1021.038.md) | Kantonsratsbeschluss betreffend Freigabe eines Objektkredits für das Projekt |
 | [1021.039](ch/zg/de/1021.039.md) | Kantonsratsbeschluss betreffend Objektkredit für die Planung eines Provisoriums |
+| [1021.040](ch/zg/de/1021.040.md) | Kantonsratsbeschluss betreffend Freigabe eines Objektkredits für den Bau und |
 | [1031.001](ch/zg/de/1031.001.md) | Kantonsratsbeschluss betreffend Zusatzkredit für das Projekt «Instandsetzung |
 | [1031.002](ch/zg/de/1031.002.md) | Kantonsratsbeschluss betreffend Zusatzkredit für das Projekt Radstrecke 29, |
 | [111.1](ch/zg/de/111.1.md) | Verfassung des Kantons Zug |
 | [121.3](ch/zg/de/121.3.md) | Gesetz betreffend Erwerb und Verlust des Gemeinde- und des Kantonsbürgerrechts |
 | [121.31](ch/zg/de/121.31.md) | Verordnung zum kantonalen Bürgerrechtsgesetz |
 | [121.32](ch/zg/de/121.32.md) | Übergangsverordnung zum revidierten Bundesgesetz über das Schweizer Bürgerrecht |
+| [121.33](ch/zg/de/121.33.md) | Kostendeckende Gebühren |
 | [122.3](ch/zg/de/122.3.md) | Verordnung zur Bundesgesetzgebung über die Ausweise für Schweizer Staatsangehörige |
 | [122.5](ch/zg/de/122.5.md) | Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und Ausländer und |
 | [122.51](ch/zg/de/122.51.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Ausländerinnen und |
+| [122.7](ch/zg/de/122.7.md) | Kantonsratsbeschluss |
 | [122.72](ch/zg/de/122.72.md) | Verordnung über die Kommission für Integrationsfragen und gegen Rassismus |
 | [131.1](ch/zg/de/131.1.md) | Gesetz über die Wahlen und Abstimmungen |
 | [131.11](ch/zg/de/131.11.md) | Kantonsratsbeschluss betreffend Anzahl Kantonsratsmandate für die einzelnen |
 | [131.2](ch/zg/de/131.2.md) | Verordnung zum Wahl- und Abstimmungsgesetz |
+| [131.2-A1](ch/zg/de/131.2-A1.md) | BGS 131.2-A1 |
+| [131.2-A2](ch/zg/de/131.2-A2.md) | Staatskanzlei, 12. Mai 2026 (Muster) BGS 131.2-A2 |
+| [131.2-A3](ch/zg/de/131.2-A3.md) | BGS 131.2-A3 |
+| [131.2-A4](ch/zg/de/131.2-A4.md) | BGS 131.2-A4 |
+| [131.2-A5](ch/zg/de/131.2-A5.md) | BGS 131.2-A5 |
+| [131.2-A6](ch/zg/de/131.2-A6.md) | Stimmzettel, SKA, 10. Dezember 2025 (Muster), BGS 131.2-A6 |
+| [131.2-A7](ch/zg/de/131.2-A7.md) | Stimmzettelbogen VS, SKA, 10. Dezember 2025 (Muster), BGS 131.2-A7 |
+| [131.2-A8](ch/zg/de/131.2-A8.md) | Stimmzettel, SKA, 12. November 2025 (Muster), BGS 131.2-A8 |
 | [131.7](ch/zg/de/131.7.md) | Richtlinien für die Ausgestaltung der amtlichen Abstimmungserläuterungen |
 | [132.11](ch/zg/de/132.11.md) | Verordnung über die Gleichstellung von Frau und Mann |
 | [141.1](ch/zg/de/141.1.md) | Kantonsratsbeschluss über die Geschäftsordnung des Kantonsrats |
 | [141.111](ch/zg/de/141.111.md) | Reglement betreffend elektronische Abstimmungsanlage im Kantonsratssaal |
+| [141.111-A1](ch/zg/de/141.111-A1.md) | Reglement betreffend elektronische Abstimmungsanlage im |
+| [141.111-A2](ch/zg/de/141.111-A2.md) | Reglement betreffend elektronische Abstimmungsanlage im |
 | [141.2](ch/zg/de/141.2.md) | Kantonsratsbeschluss über die Entschädigung der Fraktionen des Kantonsrats |
 | [141.3](ch/zg/de/141.3.md) | Kantonsratsbeschluss über die Behandlung von Oberaufsichtsbeschwerden durch |
 | [141.4](ch/zg/de/141.4.md) | Reglement über die Grundsätze zur Übernahme der Weiterbildungskosten für die |
@@ -29463,6 +32472,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [153.2](ch/zg/de/153.2.md) | Verordnung betreffend die Organisation und die Zuständigkeiten der Staatsverwaltung |
 | [153.21](ch/zg/de/153.21.md) | Regierungsratsbeschluss betreffend Direktionswechsel von Kommissionen, anderen |
 | [153.3](ch/zg/de/153.3.md) | Delegationsverordnung |
+| [153.4](ch/zg/de/153.4.md) | Verordnung über die |
 | [153.5](ch/zg/de/153.5.md) | Kantonsratsbeschluss betreffend Textverarbeitung und Büroautomation in der |
 | [153.53](ch/zg/de/153.53.md) | Informatikverordnung |
 | [153.62](ch/zg/de/153.62.md) | Verordnung betreffend Steuerung der Verwaltungstätigkeit |
@@ -29519,9 +32529,18 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [154.217](ch/zg/de/154.217.md) | Reglement über die Jahresarbeitszeit |
 | [154.219](ch/zg/de/154.219.md) | Verordnung über die Bewirtschaftung und Zuteilung von Parkplätzen in der kantonalen |
 | [154.221](ch/zg/de/154.221.md) | Verordnung über besondere Entschädigungen |
+| [154.222](ch/zg/de/154.222.md) | Reglement |
 | [154.223](ch/zg/de/154.223.md) | Reglement über die Abgabe und Entschädigung von Arbeitskleidern und Sicherheitsausrüstung |
 | [154.224](ch/zg/de/154.224.md) | Reglement über die Entschädigung für besondere Aufgaben von Lehrpersonen der |
+| [154.225](ch/zg/de/154.225.md) | Unterstellung des Rettungsdienstes |
+| [154.226](ch/zg/de/154.226.md) | Entschädigung |
+| [154.227](ch/zg/de/154.227.md) | Kleiderentschädigung |
+| [154.228](ch/zg/de/154.228.md) | Nebenzulagen |
+| [154.229](ch/zg/de/154.229.md) | Entschädigung für die Leistung von Pikettdienst |
+| [154.230](ch/zg/de/154.230.md) | Reglement |
 | [154.231](ch/zg/de/154.231.md) | Reglement über die Entschädigung der nebenamtlich Beauftragten im Veterinärdienst |
+| [154.232](ch/zg/de/154.232.md) | Reglement |
+| [154.233](ch/zg/de/154.233.md) | Entschädigung für die Teilnahme an Kursen |
 | [154.234](ch/zg/de/154.234.md) | Verordnung über die Referenzfunktionen, den Einreihungsplan und die Lohneinreihung |
 | [154.235](ch/zg/de/154.235.md) | Verordnung über die Lohneinreihungen von Lehrpersonen an den Gymnasien, an |
 | [154.236](ch/zg/de/154.236.md) | Verordnung über die Lohneinreihung der Lehrpersonen der Mittel- und Berufsfachschulen |
@@ -29597,6 +32616,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [215.11](ch/zg/de/215.11.md) | Einführungsgesetz zum Bundesgesetz über den Erwerb von Grundstücken durch Personen |
 | [215.14](ch/zg/de/215.14.md) | Verordnung über die amtliche Schätzung |
 | [215.142](ch/zg/de/215.142.md) | Verordnung über die Gebühren und die Entschädigung für Liegenschaftsschätzungen |
+| [215.21](ch/zg/de/215.21.md) | Gesetz betreffend Ablösung von Dienstbarkeiten |
 | [215.23](ch/zg/de/215.23.md) | Verordnung betreffend die Viehverpfändung |
 | [215.31](ch/zg/de/215.31.md) | Verordnung über die amtliche Vermessung |
 | [215.313](ch/zg/de/215.313.md) | Verordnung über die Führung des Grundbuchs mittels Informatik, den elektronischen |
@@ -29607,16 +32627,31 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [215.56](ch/zg/de/215.56.md) | Verordnung über das Pfandleihgewerbe |
 | [215.71](ch/zg/de/215.71.md) | Gesetz über Geoinformation im Kanton Zug |
 | [215.711](ch/zg/de/215.711.md) | Verordnung über Geoinformation im Kanton Zug |
+| [215.711-A1](ch/zg/de/215.711-A1.md) | 215.711-A1 |
+| [215.711-A2](ch/zg/de/215.711-A2.md) | 215.711-A2 |
+| [215.711-A3](ch/zg/de/215.711-A3.md) | 215.711-A3 |
+| [215.711-A4](ch/zg/de/215.711-A4.md) | 215.711-A4 |
 | [215.712](ch/zg/de/215.712.md) | Verordnung über den Leitungskataster |
 | [216.1](ch/zg/de/216.1.md) | Einführungsgesetz zum Schweizerischen Obligationenrecht |
 | [216.12](ch/zg/de/216.12.md) | Verordnung zum Einführungsgesetz zum Schweizerischen Obligationenrecht |
+| [216.2](ch/zg/de/216.2.md) | Interkantonales Konkordat |
+| [216.3](ch/zg/de/216.3.md) | Einführungsgesetz über die Behörden |
+| [216.5](ch/zg/de/216.5.md) | Verordnung |
+| [216.51](ch/zg/de/216.51.md) | Kantonsratsbeschluss |
+| [216.511](ch/zg/de/216.511.md) | Reglement |
 | [216.71](ch/zg/de/216.71.md) | Verordnung über die Schlichtungsstelle für arbeitsrechtliche Streitigkeiten |
+| [222.1](ch/zg/de/222.1.md) | Zivilprozessordnung für den Kanton Zug |
+| [222.3](ch/zg/de/222.3.md) | Konkordat betreffend Befreiung von der Verpflichtung |
+| [222.4](ch/zg/de/222.4.md) | Kantonsratsbeschluss |
 | [223.1](ch/zg/de/223.1.md) | Gesetz über die öffentliche Beurkundung und die Beglaubigung in Zivilsachen |
 | [223.11](ch/zg/de/223.11.md) | Einführungsverordnung zur Verordnung des Bundes über die Erstellung elektronischer |
 | [223.2](ch/zg/de/223.2.md) | Kreisschreiben des Obergerichtes und der Justiz- und Polizeidirektion des Kantons |
 | [231.1](ch/zg/de/231.1.md) | Einführungsgesetz zum Bundesgesetz über Schuldbetreibung und Konkurs |
 | [231.11](ch/zg/de/231.11.md) | Verordnung der Justizkommission des Obergerichts über die Prüfung der Betreibungsbeamten |
 | [231.12](ch/zg/de/231.12.md) | Verordnung über die zuständige kantonale Behörde gemäss Art. 230a Abs. 3 SchKG |
+| [231.3](ch/zg/de/231.3.md) | Kantonsratsbeschluss über den Beitritt zum Konkordat |
+| [231.4](ch/zg/de/231.4.md) | Kantonsratsbeschluss |
+| [231.5](ch/zg/de/231.5.md) | Kantonsratsbeschluss |
 | [231.7](ch/zg/de/231.7.md) | Völkerrechtliche Erklärung betreffend Gleichbehandlung von Staatsangehörigen |
 | [231.8](ch/zg/de/231.8.md) | Übereinkunft zwischen der Schweizerischen Eidgenossenschaft und der Krone Württemberg |
 | [251.1](ch/zg/de/251.1.md) | Einführungsgesetz zum Bundesgesetz über die Harmonisierung der Einwohnerregister |
@@ -29626,23 +32661,34 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [312.1-A1](ch/zg/de/312.1-A1.md) | Übertretungsstrafgesetz (Anhang: Bussenkatalog gemäss § 15 ÜStG) |
 | [312.11](ch/zg/de/312.11.md) | Verordnung zum Übertretungsstrafgesetz |
 | [315.1](ch/zg/de/315.1.md) | Kantonale Verordnung zur Bundesgesetzgebung über die Hilfe an Opfer von Straftaten |
+| [321.1](ch/zg/de/321.1.md) | Strafprozessordnung für den Kanton Zug |
 | [321.21](ch/zg/de/321.21.md) | Verordnung zur Einführung des Bundesgesetzes über die Verwendung von DNA-Profilen |
 | [321.21-A1](ch/zg/de/321.21-A1.md) | Verordnung zur Einführung des Bundesgesetzes über die Verwendung von DNA-Profilen |
+| [321.3](ch/zg/de/321.3.md) | Vollziehungsverordnung zu Art. 57 StGB |
 | [321.4](ch/zg/de/321.4.md) | Vollziehungsverordnung zu Art. 119 f. StGB über die Durchführung des straflosen |
+| [321.5](ch/zg/de/321.5.md) | Verordnung 1) |
 | [331.1](ch/zg/de/331.1.md) | Verordnung über die Strafanstalt Zug |
 | [331.11](ch/zg/de/331.11.md) | Justizvollzugsverordnung |
 | [331.2](ch/zg/de/331.2.md) | Verordnung über den strafrechtlichen Justizvollzug gegenüber Erwachsenen |
 | [331.31](ch/zg/de/331.31.md) | Verordnung betreffend Koordinationsstelle für das Strafregister |
+| [331.5](ch/zg/de/331.5.md) | Gesetz über das Strafregister, die Strafkontrolle |
+| [331.51](ch/zg/de/331.51.md) | Verordnung |
 | [331.71](ch/zg/de/331.71.md) | Verordnung über den Vollzug der Schutzmassnahmen und Strafen gegenüber Jugendlichen |
 | [332.1](ch/zg/de/332.1.md) | Übereinkunft betreffend die Polizeitransporte |
+| [332.2](ch/zg/de/332.2.md) | Kantonsratsbeschluss |
 | [332.31](ch/zg/de/332.31.md) | Vertrag zwischen den Kantonen Basel-Stadt und Zug zur Errichtung und zum Betrieb |
+| [332.31-A1](ch/zg/de/332.31-A1.md) | 332.31-A1 |
 | [332.311](ch/zg/de/332.311.md) | Personalverordnung für die Mitarbeiterinnen und Mitarbeiter der Justizvollzugsanstalt |
 | [332.312](ch/zg/de/332.312.md) | Hausordnung für die Justizvollzugsanstalt (JVA) Bostadel |
 | [332.313](ch/zg/de/332.313.md) | Reglement der Rekurskommission der Justizvollzugsanstalt Bostadel |
 | [332.33](ch/zg/de/332.33.md) | Konkordat der Kantone der Nordwest- und Innerschweiz über den Vollzug von Strafen |
+| [332.33-A1](ch/zg/de/332.33-A1.md) | 332.33-A1 |
+| [332.61](ch/zg/de/332.61.md) | Einführungsgesetz zum Bundesgesetz |
 | [411.1](ch/zg/de/411.1.md) | Konkordat über die Schulkoordination |
+| [411.1-A1](ch/zg/de/411.1-A1.md) | 411.1\x10$\x14 |
 | [411.2](ch/zg/de/411.2.md) | Interkantonale Vereinbarung über die Anerkennung von Ausbildungsabschlüssen |
 | [411.2-A1](ch/zg/de/411.2-A1.md) | Interkantonale Vereinbarung über die Anerkennung von Ausbildungsabschlüssen |
+| [411.2-A2](ch/zg/de/411.2-A2.md) | 411.2-A2 |
 | [411.2-A3](ch/zg/de/411.2-A3.md) | Kantonsratsbeschluss betreffend Anpassung der Interkantonalen Vereinbarung |
 | [411.213](ch/zg/de/411.213.md) | Reglement über die Anerkennung von Lehrdiplomen für den Unterricht auf der |
 | [411.214](ch/zg/de/411.214.md) | Reglement über die Anerkennung von Hochschuldiplomen für Lehrkräfte der Vorschulstufe |
@@ -29650,23 +32696,30 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [411.216-A1](ch/zg/de/411.216-A1.md) | Reglement über die Anerkennung von Hochschuldiplomen für Lehrkräfte der Sekundarstufe |
 | [411.217](ch/zg/de/411.217.md) | Reglement über die Anerkennung der Lehrdiplome für Maturitätsschulen |
 | [411.218](ch/zg/de/411.218.md) | Reglement über die Anerkennung der Diplome im Bereich der Sonderpädagogik (Vertiefungsrichtung |
+| [411.221](ch/zg/de/411.221.md) | Reglement |
 | [411.3](ch/zg/de/411.3.md) | Reglement über die Anerkennung von gymnasialen Maturitätsausweisen |
 | [411.5](ch/zg/de/411.5.md) | Interkantonale Universitätsvereinbarung |
+| [411.5-A1](ch/zg/de/411.5-A1.md) | 411.5-A1 |
 | [411.6](ch/zg/de/411.6.md) | Interkantonale Vereinbarung über die Beiträge an die Ausbildungskosten von |
 | [411.6-A1](ch/zg/de/411.6-A1.md) | Kantonsratsbeschluss betreffend Beitritt zur Interkantonalen Vereinbarung über |
 | [411.61](ch/zg/de/411.61.md) | Interkantonale Vereinbarung über die Beiträge an die Ausbildungskosten von |
 | [411.7](ch/zg/de/411.7.md) | Verordnung über das Schulgeld für auswärtige Schülerinnen und Schüler an der |
 | [412.11](ch/zg/de/412.11.md) | Schulgesetz |
 | [412.111](ch/zg/de/412.111.md) | Verordnung zum Schulgesetz |
+| [412.111-A1](ch/zg/de/412.111-A1.md) | 412.111-A1 |
+| [412.111-A2](ch/zg/de/412.111-A2.md) | 412.111-A2 |
 | [412.112](ch/zg/de/412.112.md) | Reglement zum Schulgesetz |
 | [412.113](ch/zg/de/412.113.md) | Reglement über die Promotion an den öffentlichen Schulen |
 | [412.114](ch/zg/de/412.114.md) | Reglement betreffend das Übertrittsverfahren |
 | [412.115](ch/zg/de/412.115.md) | Reglement über die Beurteilung, die Promotion und den Übertritt an den gemeindlichen |
 | [412.116](ch/zg/de/412.116.md) | Reglement über die Handelsdiplomprüfungen an den privaten Wirtschaftsmittelschulen |
+| [412.117](ch/zg/de/412.117.md) | Regierungsratsbeschluss |
 | [412.118](ch/zg/de/412.118.md) | Kantonsratsbeschluss betreffend Integrationsklassen auf der Primarstufe und |
 | [412.12](ch/zg/de/412.12.md) | Regionales Schulabkommen Zentralschweiz |
 | [412.31](ch/zg/de/412.31.md) | Gesetz über das Dienstverhältnis und die Besoldung der Lehrpersonen an den |
+| [412.311](ch/zg/de/412.311.md) | Verordnung |
 | [412.312](ch/zg/de/412.312.md) | Verordnung betreffend Pauschalbeiträge an die Besoldungen des gemeindlichen |
+| [412.315](ch/zg/de/412.315.md) | Richtlinien betreffend Kantonsbeiträge |
 | [412.32](ch/zg/de/412.32.md) | Kantonsratsbeschluss betreffend die solidarische Finanzierung der Beschulung |
 | [412.35](ch/zg/de/412.35.md) | Reglement über die Intensivweiterbildung der Lehrpersonen an den gemeindlichen |
 | [413.11](ch/zg/de/413.11.md) | Einführungsgesetz zu den Bundesgesetzen über die Berufsbildung und die Fachhochschulen |
@@ -29682,9 +32735,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [413.123](ch/zg/de/413.123.md) | Verordnung betreffend die Entschädigung für Experten- und Referententätigkeit |
 | [413.124](ch/zg/de/413.124.md) | Reglement für die Förderung von überdurchschnittlichen Leistungen am GIBZ |
 | [413.13](ch/zg/de/413.13.md) | Schulordnung des Gewerblich-industriellen Bildungszentrums, des Kaufmännischen |
+| [413.134](ch/zg/de/413.134.md) | Reglement über Nachdiplomstudiengänge |
 | [413.14](ch/zg/de/413.14.md) | Reglement über die Höhere Fachschule für Wirtschaft |
 | [413.14-A1](ch/zg/de/413.14-A1.md) | Reglement über die Höhere Fachschule für Wirtschaft (Anhang) |
 | [413.142](ch/zg/de/413.142.md) | Reglement über die Diplomprüfung an der Höheren Fachschule für Wirtschaft |
+| [413.145](ch/zg/de/413.145.md) | Weitergeltung bisherigen Rechts |
+| [413.15](ch/zg/de/413.15.md) | Kantonsratsbeschluss |
 | [413.152](ch/zg/de/413.152.md) | Verordnung über die Berufsschule für Gesundheits- und Krankenpflege Zug |
 | [413.16](ch/zg/de/413.16.md) | Reglement über die Höhere Fachschule für Technik und Gestaltung (HFTG) |
 | [413.17](ch/zg/de/413.17.md) | Reglement über die Höhere Fachschule Landwirtschaft |
@@ -29696,6 +32752,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [413.21](ch/zg/de/413.21.md) | Kantonsratsbeschluss betreffend Standortbeitrag an die Mieterausbaukosten eines |
 | [413.41](ch/zg/de/413.41.md) | Vereinbarung über den Ausbau und Betrieb der Interkantonalen Försterschule |
 | [413.41-A1](ch/zg/de/413.41-A1.md) | Vereinbarung über den Ausbau und Betrieb der Interkantonalen Försterschule |
+| [413.41-A2](ch/zg/de/413.41-A2.md) | 413.41-A2 |
 | [413.42](ch/zg/de/413.42.md) | Kantonsratsbeschluss über die Genehmigung der Kündigung der Vereinbarung über |
 | [414.11](ch/zg/de/414.11.md) | Gesetz über die kantonalen Schulen |
 | [414.111](ch/zg/de/414.111.md) | Verordnung über die Kantonsschule Zug |
@@ -29745,11 +32802,13 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [414.312](ch/zg/de/414.312.md) | Personalverordnung der Hochschule Luzern, FH Zentralschweiz |
 | [414.313](ch/zg/de/414.313.md) | Verordnung über die Gebühren an der Hochschule Luzern, FH Zentralschweiz |
 | [414.32](ch/zg/de/414.32.md) | Kantonsratsbeschluss über den Beitritt zum interkantonalen Konkordat betreffend |
+| [414.321](ch/zg/de/414.321.md) | Konkordat |
 | [414.361](ch/zg/de/414.361.md) | Konkordat über die Pädagogische Hochschule Zentralschweiz |
 | [414.361.1](ch/zg/de/414.361.1.md) | Kantonsratsbeschluss über die Aufhebung des PHZ-Konkordats per 31. Juli 2013 |
 | [414.361.1-A1](ch/zg/de/414.361.1-A1.md) | Kantonsratsbeschluss über die Aufhebung des PHZ-Konkordats per 31. Juli 2013 |
 | [414.361.1-A2](ch/zg/de/414.361.1-A2.md) | Kantonsratsbeschluss über die Aufhebung des PHZ-Konkordats per 31. Juli 2013 |
 | [414.362](ch/zg/de/414.362.md) | Interkantonale Vereinbarung über die Hochschule für Heilpädagogik Zürich |
+| [414.362-A1](ch/zg/de/414.362-A1.md) | 414.362-A1 |
 | [414.362-A2](ch/zg/de/414.362-A2.md) | Kantonsratsbeschluss betreffend Austritt des Kantons Zug aus der Interkantonalen |
 | [414.363](ch/zg/de/414.363.md) | Verordnung über Forschung, Entwicklung und Dienstleistungen an der Pädagogischen |
 | [414.364](ch/zg/de/414.364.md) | Verordnung über die Rechte und Pflichten der Studierenden der Pädagogischen |
@@ -29772,6 +32831,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [414.511](ch/zg/de/414.511.md) | Reglement betreffend die Berücksichtigung von Mehr- und Minderlektionen der |
 | [414.611](ch/zg/de/414.611.md) | Reglement über die Entschädigung für besondere Aufgaben von Lehrpersonen der |
 | [415.11](ch/zg/de/415.11.md) | Aufnahmereglement der Pädagogischen Hochschule Zentralschweiz |
+| [415.2](ch/zg/de/415.2.md) | Reglement über die Diplomprüfungen |
+| [415.311](ch/zg/de/415.311.md) | Kantonsratsbeschluss |
 | [416.162](ch/zg/de/416.162.md) | Kantonsratsbeschluss betreffend Gewährung von Beiträgen an die Werkjahr- und |
 | [416.21](ch/zg/de/416.21.md) | Gesetz über Ausbildungsbeiträge |
 | [416.211](ch/zg/de/416.211.md) | Verordnung zum Gesetz über Ausbildungsbeiträge |
@@ -29780,6 +32841,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [416.213](ch/zg/de/416.213.md) | Verordnung zum Gesetz über Ausbildungsbeiträge |
 | [416.311](ch/zg/de/416.311.md) | Reglement über die Beiträge für den obligatorischen Fremdsprachenaufenthalt |
 | [417.1](ch/zg/de/417.1.md) | Sportgesetz |
+| [417.12](ch/zg/de/417.12.md) | Regierungsratsbeschluss |
 | [417.13](ch/zg/de/417.13.md) | Regierungsratsbeschluss betreffend Beiträge an die ungedeckten Kosten der beruflichen |
 | [417.16](ch/zg/de/417.16.md) | Verordnung über den Sportfonds |
 | [417.2](ch/zg/de/417.2.md) | Kantonsratsbeschluss betreffend Beitrag des Kantons Zug an die Aufbaukosten |
@@ -29791,11 +32853,17 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [421.3](ch/zg/de/421.3.md) | Vereinbarung über die interkantonale Zusammenarbeit im Bereich überregionaler |
 | [421.3-A1](ch/zg/de/421.3-A1.md) | Vereinbarung über die interkantonale Zusammenarbeit im Bereich überregionaler |
 | [421.3-A2](ch/zg/de/421.3-A2.md) | Vereinbarung über die interkantonale Zusammenarbeit im Bereich überregionaler |
+| [421.3-A3](ch/zg/de/421.3-A3.md) | 421.3\x10$\x16 |
+| [421.4](ch/zg/de/421.4.md) | Kantonsratsbeschluss |
 | [422.1](ch/zg/de/422.1.md) | Filmgesetz |
 | [423.11](ch/zg/de/423.11.md) | Gesetz über Denkmalpflege, Archäologie und Kulturgüterschutz |
 | [423.31](ch/zg/de/423.31.md) | Kantonsratsbeschluss betreffend die Übernahme der Burgliegenschaft in Zug sowie |
 | [423.31-A1](ch/zg/de/423.31-A1.md) | Kantonsratsbeschluss betreffend die Übernahme der Burgliegenschaft in Zug |
 | [423.311](ch/zg/de/423.311.md) | Satzungen der Stiftung «Museum in der Burg Zug» |
+| [423.311-A1](ch/zg/de/423.311-A1.md) | 423.311-A1 |
+| [423.311-A2](ch/zg/de/423.311-A2.md) | 423.311-A2 |
+| [423.311-A3](ch/zg/de/423.311-A3.md) | 423.311-A3 |
+| [423.311-A4](ch/zg/de/423.311-A4.md) | Schenkung Louis Bossard mit 2323 Gegenständen nicht eingerechnet. Das |
 | [423.51](ch/zg/de/423.51.md) | Kantonsratsbeschluss betreffend Beiträge an das Verkehrshaus der Schweiz |
 | [424.1](ch/zg/de/424.1.md) | Kantonsratsbeschluss betreffend Beteiligung an der Stadt- und Kantonsbibliothek |
 | [432.1](ch/zg/de/432.1.md) | Gesetz über den Natur- und Landschaftsschutz |
@@ -29803,30 +32871,46 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [432.2](ch/zg/de/432.2.md) | Verordnung zur Erhaltung und Förderung der Hecken und Feldgehölze |
 | [436.1](ch/zg/de/436.1.md) | Vollziehungsverordnung zum Tierschutzgesetz |
 | [436.1-A1](ch/zg/de/436.1-A1.md) | Vollziehungsverordnung zum Tierschutzgesetz (Anhang: Gebührentarif) |
+| [436.111](ch/zg/de/436.111.md) | Kantonsratsbeschluss |
 | [439.1](ch/zg/de/439.1.md) | Kantonsratsbeschluss betreffend Beitritt des Kantons Zug zur Stiftung «Villette |
+| [442.1](ch/zg/de/442.1.md) | Übereinkunft zwischen dem Heiligen Stuhl |
 | [442.2](ch/zg/de/442.2.md) | Übereinkunft zwischen den hohen Ständen Luzern, Bern, Solothurn und Zug für |
 | [446.1](ch/zg/de/446.1.md) | Gesetz über den Steuerausgleich unter den katholischen Kirchgemeinden des Kantons |
+| [446.12](ch/zg/de/446.12.md) | Regierungsratsbeschluss |
 | [446.21](ch/zg/de/446.21.md) | Reglement über den Steuerausgleich unter den katholischen Kirchgemeinden des |
 | [511.1](ch/zg/de/511.1.md) | Konkordat über die Grundlagen der Polizei-Zusammenarbeit in der Zentralschweiz |
+| [511.1-A1](ch/zg/de/511.1-A1.md) | 511.1-A1 |
+| [511.11](ch/zg/de/511.11.md) | Regierungsratsbeschluss |
 | [511.114](ch/zg/de/511.114.md) | Interkantonale Vereinbarung über die Zusammenarbeit in den Bereichen Ordnungsdienst |
 | [511.115](ch/zg/de/511.115.md) | Interkantonale Vereinbarung über die Zusammenarbeit der kantonalen Polizeikorps |
 | [511.115-A1](ch/zg/de/511.115-A1.md) | Interkantonale Vereinbarung über die Zusammenarbeit der kantonalen Polizeikorps |
 | [511.12](ch/zg/de/511.12.md) | Regierungsratsbeschluss betreffend die zuständige Behörde gemäss Konkordat |
+| [511.13](ch/zg/de/511.13.md) | Vorübergehende Weitergeltung des Konkordats |
 | [511.2](ch/zg/de/511.2.md) | Interkantonale Vereinbarung (bzw. Konkordat) über die computergestützte Zusammenarbeit |
+| [511.2-A1](ch/zg/de/511.2-A1.md) | 511.2-A1 |
 | [511.3](ch/zg/de/511.3.md) | Konkordat über Massnahmen gegen Gewalt anlässlich von Sportveranstaltungen |
 | [511.3-A1](ch/zg/de/511.3-A1.md) | Kantonsratsbeschluss betreffend Änderung des Konkordats über Massnahmen gegen |
 | [511.5](ch/zg/de/511.5.md) | Konkordat vom 25. Juni 2003 über Errichtung und Betrieb einer interkantonalen |
+| [511.5-A1](ch/zg/de/511.5-A1.md) | 511.5-A1 |
+| [511.5-A2](ch/zg/de/511.5-A2.md) | 511.5-A2 |
 | [511.61](ch/zg/de/511.61.md) | Vereinbarung über die interkantonalen Polizeieinsätze |
 | [511.74](ch/zg/de/511.74.md) | Vereinbarung zwischen den Kantonen Zürich und Zug über die Ausübung der Polizeidienste |
+| [511.74-A1](ch/zg/de/511.74-A1.md) | 511.74-A1 |
+| [511.74-A2](ch/zg/de/511.74-A2.md) | 511.74-A2 |
+| [511.74-A3](ch/zg/de/511.74-A3.md) | 511.74-A3 |
 | [511.75](ch/zg/de/511.75.md) | Verwaltungsvereinbarung zwischen den Kantonen Schwyz und Zug über die Ausübung |
 | [512.1](ch/zg/de/512.1.md) | Polizeigesetz |
 | [512.14](ch/zg/de/512.14.md) | Verordnung über die Ausrüstung der Polizei |
 | [512.15](ch/zg/de/512.15.md) | Verordnung über Datenbearbeitungssysteme für die Polizei |
 | [512.2](ch/zg/de/512.2.md) | Gesetz über die Organisation der Polizei |
+| [512.2-A1](ch/zg/de/512.2-A1.md) | Gesetz über die Organisation der Polizei (Anhang: Aufgabenteilung Kanton – |
 | [512.22](ch/zg/de/512.22.md) | Verordnung über die Festlegung des Wohnsitzrayons für Mitarbeitende der Polizei |
 | [512.22-A1](ch/zg/de/512.22-A1.md) | Verordnung über die Festlegung des Wohnsitzrayons für Mitarbeitende der Polizei |
 | [512.25](ch/zg/de/512.25.md) | Verordnung zum Konkordat vom 15. November 2007 über Massnahmen gegen Gewalt |
 | [512.26](ch/zg/de/512.26.md) | Verordnung über den Kostenersatz für polizeiliche Leistungen |
+| [512.3](ch/zg/de/512.3.md) | Dienstreglement für die Zuger Polizei |
+| [512.32](ch/zg/de/512.32.md) | Vereinbarung der KKJPD und des EJPD |
+| [512.33](ch/zg/de/512.33.md) | Vorschriften betreffend |
 | [512.4](ch/zg/de/512.4.md) | Verordnung über die Dienstgrade und die Beförderung der Angehörigen der Polizei |
 | [514.1](ch/zg/de/514.1.md) | Verordnung zur Bundesgesetzgebung über Waffen, Waffenzubehör und Munition |
 | [521.1](ch/zg/de/521.1.md) | Verordnung über die Militärverwaltung |
@@ -29835,6 +32919,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [531.1](ch/zg/de/531.1.md) | Gesetz für den Zivilschutz |
 | [531.11](ch/zg/de/531.11.md) | Verordnung zum Einführungsgesetz betreffend Zivilschutz |
 | [531.14](ch/zg/de/531.14.md) | Verordnung über die Alarmorganisation in Friedenszeiten |
+| [531.14-A1](ch/zg/de/531.14-A1.md) | 531.14-A1 |
+| [531.14-A2](ch/zg/de/531.14-A2.md) | 531.14-A2 |
+| [531.14-A3](ch/zg/de/531.14-A3.md) | 531.14-A3 |
+| [531.14-A4](ch/zg/de/531.14-A4.md) | 531.14-A4 |
 | [531.16](ch/zg/de/531.16.md) | Vereinbarung zwischen den Kantonen über die interkantonale Hilfeleistung durch |
 | [531.17](ch/zg/de/531.17.md) | Verwaltungsvereinbarung betreffend gemeinsame Durchführung der Grund-, Zusatz- |
 | [531.51](ch/zg/de/531.51.md) | Verordnung über die Ausrichtung von Pauschalvergütungen an das Milizkader der |
@@ -29842,6 +32930,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [531.912](ch/zg/de/531.912.md) | Vollziehungsverordnung zum Kantonsratsbeschluss betreffend Versorgung der Zivilbevölkerung |
 | [541.1](ch/zg/de/541.1.md) | Gesetz betreffend den Schutz der Bevölkerung |
 | [541.11](ch/zg/de/541.11.md) | Verordnung über die Notorganisation |
+| [541.13](ch/zg/de/541.13.md) | Katastrophenplan |
 | [542.12](ch/zg/de/542.12.md) | Kantonsratsbeschluss betreffend sofortige Hilfeleistungen bei Katastrophen |
 | [611.1](ch/zg/de/611.1.md) | Gesetz über den Finanzhaushalt des Kantons und der Gemeinden |
 | [611.11](ch/zg/de/611.11.md) | Finanzhaushaltverordnung |
@@ -29849,6 +32938,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [611.35](ch/zg/de/611.35.md) | Verordnung über die Sicherung und Rückerstattung von Investitionsbeiträgen |
 | [612.11](ch/zg/de/612.11.md) | Verordnung zur Errichtung eines Stützungsfonds in Folge des Coronavirus |
 | [612.12](ch/zg/de/612.12.md) | Verordnung zur Bewilligung des Kredits für die kantonale Verwaltung und die |
+| [612.13](ch/zg/de/612.13.md) | Verordnung |
 | [612.14](ch/zg/de/612.14.md) | Verordnung zur Äufnung des Lotteriefonds und des Sportfonds in Folge des Coronavirus |
 | [612.141](ch/zg/de/612.141.md) | Reglement zur Beurteilung von Gesuchen zu Unterstützungsmassnahmen im Bereich |
 | [612.142](ch/zg/de/612.142.md) | Richtlinien zur Beurteilung von Gesuchen im Kultur-, Sozial- und Bildungsbereich |
@@ -29875,11 +32965,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [621.2](ch/zg/de/621.2.md) | Kantonsratsbeschluss über die Beteiligung der Einwohnergemeinden am interkantonalen |
 | [632.1](ch/zg/de/632.1.md) | Steuergesetz |
 | [632.11](ch/zg/de/632.11.md) | Verordnung zum Steuergesetz |
+| [632.112](ch/zg/de/632.112.md) | Ablesetarif |
 | [632.12](ch/zg/de/632.12.md) | Verordnung über die elektronische Einreichung der Steuererklärung |
 | [632.15](ch/zg/de/632.15.md) | Verordnung über die Verlustscheinbewirtschaftung für die kantonale Verwaltung |
 | [632.15-A1](ch/zg/de/632.15-A1.md) | Verordnung über die Verlustscheinbewirtschaftung für die kantonale Verwaltung |
 | [632.2](ch/zg/de/632.2.md) | Kantonsratsbeschluss über den Solidaritätsbeitrag des Kantons an die Einwohnergemeinden |
 | [633.1](ch/zg/de/633.1.md) | Konkordat zwischen den Kantonen der schweizerischen Eidgenossenschaft über |
+| [633.1-A1](ch/zg/de/633.1-A1.md) | 633.1-A1 |
+| [633.5](ch/zg/de/633.5.md) | Gegenseitigkeitserklärung |
 | [641.1](ch/zg/de/641.1.md) | Kantonsratsbeschluss über die Gebühren in Verwaltungs- und Zivilsachen |
 | [641.11](ch/zg/de/641.11.md) | Verordnung zum Mahnwesen von Gebühren und Auslagen |
 | [641.7](ch/zg/de/641.7.md) | Kantonsratsbeschluss über die Gebühren für die besondere Inanspruchnahme von |
@@ -29889,9 +32982,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [651.31](ch/zg/de/651.31.md) | Anforderungsprofil für die vom Kanton delegierten Mitglieder des Bankrates |
 | [651.32](ch/zg/de/651.32.md) | Anforderungsprofil für die vom Kanton delegierten Mitglieder der Revisionsstelle |
 | [661.1](ch/zg/de/661.1.md) | Interkantonale Vereinbarung über den Salzverkauf in der Schweiz |
+| [661.1-A1](ch/zg/de/661.1-A1.md) | 661.1-A1 |
 | [661.2](ch/zg/de/661.2.md) | Gesetz über das Salzregal |
 | [671.1](ch/zg/de/671.1.md) | Kantonsratsbeschluss betreffend Darlehen an die Zugerland Verkehrsbetriebe |
 | [711.3](ch/zg/de/711.3.md) | Kantonsratsbeschluss betreffend den kantonalen Richtplan |
+| [711.31](ch/zg/de/711.31.md) | BGS 711.31 |
+| [711.32](ch/zg/de/711.32.md) | BGS 711.32 |
 | [711.7](ch/zg/de/711.7.md) | Gesetz über den Schutz und die Erhaltung der Moränenlandschaft im Raume Menzingen–Neuheim |
 | [711.9](ch/zg/de/711.9.md) | Kantonsratsbeschluss betreffend Landerwerb für kantonale Bauvorhaben in der |
 | [721.11](ch/zg/de/721.11.md) | Planungs- und Baugesetz |
@@ -29906,9 +33002,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [721.6](ch/zg/de/721.6.md) | Gesetz über die Nutzung des Untergrunds |
 | [721.61](ch/zg/de/721.61.md) | Verordnung zum Gesetz über die Nutzung des Untergrunds |
 | [721.7](ch/zg/de/721.7.md) | Interkantonale Vereinbarung über die Harmonisierung der Baubegriffe |
+| [721.7-A1](ch/zg/de/721.7-A1.md) | Interkantonale Vereinbarung |
+| [721.7-A2](ch/zg/de/721.7-A2.md) | Interkantonale Vereinbarung |
 | [722.11](ch/zg/de/722.11.md) | Gesetz über die Gebäudeversicherung |
 | [722.111](ch/zg/de/722.111.md) | Verordnung zum Gesetz über die Gebäudeversicherung |
 | [722.112](ch/zg/de/722.112.md) | Reglement betreffend Ermittlung der Versicherungswerte und Schadenabschätzung |
+| [722.112-A1](ch/zg/de/722.112-A1.md) | 722.112-A1 |
 | [722.113](ch/zg/de/722.113.md) | Reglement über die Abgrenzung zwischen mitversicherten und nicht mitversicherten |
 | [722.114](ch/zg/de/722.114.md) | Reglement betreffend Lohneinreihung und Entschädigungen von Mitarbeitenden |
 | [722.21](ch/zg/de/722.21.md) | Gesetz über den Feuerschutz |
@@ -29930,9 +33029,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [740.161](ch/zg/de/740.161.md) | Verordnung zum Kantonsratsbeschluss betreffend Rahmenkredit zur Förderung von |
 | [740.162](ch/zg/de/740.162.md) | Verordnung zum Kantonsratsbeschluss betreffend zweiten Rahmenkredit zur Förderung |
 | [740.17](ch/zg/de/740.17.md) | Kantonsratsbeschluss betreffend Rahmenkredit für ein Programm 2023 bis 2032 |
+| [740.25](ch/zg/de/740.25.md) | Kantonsratsbeschluss |
 | [741.1](ch/zg/de/741.1.md) | Vertrag zwischen den Kantonen Zürich, Schwyz und Zug einerseits und den Schweizerischen |
 | [741.2](ch/zg/de/741.2.md) | Konzession an die Aktiengesellschaft «Elektrizitätswerk an der Sihl» in Wädenswil |
 | [741.3](ch/zg/de/741.3.md) | Kantonsratsbeschluss betreffend Ablösung des NOK-Gründungsvertrags durch einen |
+| [742.1](ch/zg/de/742.1.md) | Kantonsratsbeschluss |
 | [742.21](ch/zg/de/742.21.md) | Konkordat betreffend die Schürfung und Ausbeutung von Erdöl |
 | [751.12](ch/zg/de/751.12.md) | Kantonsratsbeschluss über das Strassenbauprogramm 2023–2030 |
 | [751.12-A1](ch/zg/de/751.12-A1.md) | Kantonsratsbeschluss über das Strassenbauprogramm 2023–2030 (Anhang 1: Kostenkatalog |
@@ -29958,6 +33059,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [751.41](ch/zg/de/751.41.md) | Vereinbarung zwischen den Kantonen Zug und Aargau über die Durchführung von |
 | [751.51](ch/zg/de/751.51.md) | Kantonsratsbeschluss betreffend Genehmigung des Generellen Projekts «Umfahrung |
 | [751.52](ch/zg/de/751.52.md) | Kantonsratsbeschluss betreffend Genehmigung des Generellen Projekts «Umfahrung |
+| [752.111](ch/zg/de/752.111.md) | Kantonsratsbeschluss über die Beteiligung des Kantons |
 | [752.5](ch/zg/de/752.5.md) | Konkordat über die nicht eidgenössisch konzessionierten Seilbahnen und Skilifte |
 | [752.5-A1](ch/zg/de/752.5-A1.md) | Kantonsratsbeschluss über den Beitritt zum Konkordat über die nicht eidgenössisch |
 | [753.1](ch/zg/de/753.1.md) | Einführungsgesetz zum Bundesgesetz über die Binnenschifffahrt |
@@ -29969,15 +33071,22 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [753.32](ch/zg/de/753.32.md) | Verordnung über das Einwassern von Booten |
 | [753.4](ch/zg/de/753.4.md) | Kantonsratsbeschluss über die Erhaltung des öffentlichen Schiffsverkehrs auf |
 | [753.5](ch/zg/de/753.5.md) | Verordnung über das Drachensegeln auf den Gewässern des Kantons Zug |
+| [753.5-A1](ch/zg/de/753.5-A1.md) | 753.5-A1 |
 | [753.6](ch/zg/de/753.6.md) | Verordnung über das Wakeboarden und andere vergleichbare Wassersportarten auf |
+| [753.6-A1](ch/zg/de/753.6-A1.md) | 753.6-A1 |
+| [753.6-A2](ch/zg/de/753.6-A2.md) | 753.6-A2 |
 | [754.1](ch/zg/de/754.1.md) | Kantonale Vollziehungsverordnung zum Bundesgesetz über die Luftfahrt |
 | [811.1](ch/zg/de/811.1.md) | Einführungsgesetz zum Bundesgesetz über den Umweltschutz |
 | [811.11](ch/zg/de/811.11.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über den Umweltschutz |
 | [811.15](ch/zg/de/811.15.md) | Interkantonale Vereinbarung über die Gründung einer interkantonalen Umweltagentur |
+| [811.15-A1](ch/zg/de/811.15-A1.md) | 811.15-A1 |
+| [815.1](ch/zg/de/815.1.md) | Regierungsratsbeschluss über den Strahlenschutz |
 | [816.1](ch/zg/de/816.1.md) | Verordnung über den Vollzug der eidgenössischen Chemikaliengesetzgebung |
 | [821.1](ch/zg/de/821.1.md) | Gesetz über das Gesundheitswesen im Kanton Zug |
 | [821.11](ch/zg/de/821.11.md) | Verordnung über das Gesundheitswesen im Kanton Zug |
+| [821.12](ch/zg/de/821.12.md) | Verordnung II zum Gesundheitsgesetz |
 | [821.13](ch/zg/de/821.13.md) | Verordnung über das Krebsregister |
+| [821.14](ch/zg/de/821.14.md) | Verordnung IV zum Gesundheitsgesetz |
 | [821.15](ch/zg/de/821.15.md) | Reglement über die Ambulanten Psychiatrischen Dienste |
 | [821.16](ch/zg/de/821.16.md) | Vereinbarung über die Zusammenarbeit im Bereich des Koordinierten Sanitätsdienstes |
 | [821.17](ch/zg/de/821.17.md) | Meldestelle gemäss Art. 10 Abs. 2 des Sterilisationsgesetzes Verfügung der |
@@ -29987,24 +33096,32 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [821.20](ch/zg/de/821.20.md) | Verordnung über Massnahmen zur Bekämpfung der COVID-19-Epidemie |
 | [821.201](ch/zg/de/821.201.md) | Verfügung über die Delegation von Entscheidbefugnissen der Sicherheitsdirektion |
 | [821.202](ch/zg/de/821.202.md) | Verfügung über Massnahmen für soziale Einrichtungen zur Bekämpfung der COVID-19-Epidemie |
+| [821.31](ch/zg/de/821.31.md) | Psychotherapeutenverordnung |
 | [822.1](ch/zg/de/822.1.md) | Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung im Bereich |
 | [822.11](ch/zg/de/822.11.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung |
 | [822.111](ch/zg/de/822.111.md) | Reglement über die Durchführung des Beitragswesens im Rahmen der Förderung |
 | [822.2](ch/zg/de/822.2.md) | Kantonsratsbeschluss betreffend Unterstützung des ärztlichen Notfalldienstes |
+| [822.3](ch/zg/de/822.3.md) | Festsetzung des Wartegeldes für Hebammen |
 | [822.6](ch/zg/de/822.6.md) | Gebührenverordnung der Schweizerischen Konferenz der kantonalen Gesundheitsdirektorinnen |
+| [823.1](ch/zg/de/823.1.md) | Regierungsratsbeschluss |
 | [823.2](ch/zg/de/823.2.md) | Verordnung über den Verkehr mit Heilmitteln |
 | [823.5](ch/zg/de/823.5.md) | Einführungsgesetz zum Bundesgesetz über die Betäubungsmittel |
 | [824.2](ch/zg/de/824.2.md) | Vollziehungsverordnung zum Bundesgesetz über Lebensmittel und Gebrauchsgegenstände |
 | [824.26](ch/zg/de/824.26.md) | Gebührentarif für die Lebensmittelkontrolle |
 | [824.27](ch/zg/de/824.27.md) | Gebührentarif für die Schlachttier- und Fleischkontrolle |
 | [824.4](ch/zg/de/824.4.md) | Reglement zur Qualitätsbescheinigung über die lebensmittelrechtliche Sicherheit |
+| [825.14](ch/zg/de/825.14.md) | Verordnung |
 | [825.31](ch/zg/de/825.31.md) | Vollziehungsverordnung zum Bundesgesetz über die Bekämpfung übertragbarer Krankheiten |
+| [825.41](ch/zg/de/825.41.md) | Kantonsratsbeschluss |
 | [826.11](ch/zg/de/826.11.md) | Spitalgesetz |
+| [826.111](ch/zg/de/826.111.md) | Übergangsrechtliche Weitergeltung |
 | [826.113](ch/zg/de/826.113.md) | Verordnung über die stationäre und ambulante Langzeitpflege |
 | [826.115](ch/zg/de/826.115.md) | Kantonsratsbeschluss betreffend Anerkennung öffentlich subventionierter Spitäler |
 | [826.116](ch/zg/de/826.116.md) | Kantonsratsbeschluss betreffend Anerkennung von Pflegeheimen mit regionalem |
 | [826.117](ch/zg/de/826.117.md) | Verordnung über Investitionsbeiträge an die öffentlich subventionierten Spitäler |
 | [826.12](ch/zg/de/826.12.md) | Gesetz über das Zuger Kantonsspital |
+| [826.13](ch/zg/de/826.13.md) | Gesetz über das Kantonsspital |
+| [826.131](ch/zg/de/826.131.md) | Verordnung |
 | [826.14](ch/zg/de/826.14.md) | Kantonsratsbeschluss betreffend Übernahme des Bürgerspitals und der Schwesternschule |
 | [826.14-A1](ch/zg/de/826.14-A1.md) | Kantonsratsbeschluss betreffend Übernahme des Bürgerspitals und der Schwesternschule |
 | [826.153](ch/zg/de/826.153.md) | Vereinbarung der Innerschweizer Kantone über Ausbildungen für Berufe des Gesundheitswesens |
@@ -30017,16 +33134,22 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [826.192](ch/zg/de/826.192.md) | Gebührentarif für die Benützung des Rettungsdienstes |
 | [826.192.2](ch/zg/de/826.192.2.md) | Gebührentarif des Rettungsdienstes für Hilfeleistungseinsätze ohne medizinische |
 | [826.192.3](ch/zg/de/826.192.3.md) | Gebührentarif für Zusatzaufwendungen bei der Benützung des Rettungsdienstes |
+| [826.193](ch/zg/de/826.193.md) | Kantonsratsbeschluss |
 | [826.25](ch/zg/de/826.25.md) | Gesetz über die Ausrichtung kantonaler Mutterschaftsbeiträge |
 | [826.251](ch/zg/de/826.251.md) | Verordnung über die Anpassung der Mutterschaftsbeiträge an die Preisentwicklung |
 | [831.1](ch/zg/de/831.1.md) | Vollziehungsverordnung zum Bundesbeschluss über die Allgemeinverbindlicherklärung |
 | [831.51](ch/zg/de/831.51.md) | Regierungsratsbeschluss über den Normalarbeitsvertrag für das landwirtschaftliche |
 | [831.511](ch/zg/de/831.511.md) | Normalarbeitsvertrag für das landwirtschaftliche Arbeitsverhältnis |
+| [831.511-A1](ch/zg/de/831.511-A1.md) | Normalarbeitsvertrag |
 | [831.52](ch/zg/de/831.52.md) | Regierungsratsbeschluss über den Normalarbeitsvertrag Privathaushalt |
 | [831.521](ch/zg/de/831.521.md) | Normalarbeitsvertrag Privathaushalt |
 | [831.521-A1](ch/zg/de/831.521-A1.md) | Normalarbeitsvertrag Privathaushalt (Anhang) |
+| [831.521-A2](ch/zg/de/831.521-A2.md) | Normalarbeitsvertrag |
 | [832.1](ch/zg/de/832.1.md) | Reglement der tripartiten Kommission Arbeitsmarkt |
 | [833.2](ch/zg/de/833.2.md) | Vollziehungsverordnung zum Bundesgesetz über die Sicherheit von technischen |
+| [833.31](ch/zg/de/833.31.md) | Verordnung betreffend Aufstellung und Betrieb |
+| [833.32](ch/zg/de/833.32.md) | Vollziehungsverordnung über Aufstellung und Betrieb |
+| [833.6](ch/zg/de/833.6.md) | Vollziehungsverordnung zum Bundesgesetz |
 | [834.15](ch/zg/de/834.15.md) | Gesetz über die Bildung steuerbegünstigter Arbeitsbeschaffungsreserven |
 | [834.17](ch/zg/de/834.17.md) | Reglement über das kantonale Kontrollorgan im Bereich der Bekämpfung der Schwarzarbeit |
 | [834.21](ch/zg/de/834.21.md) | Einführungsgesetz zum Bundesgesetz über die minimalen Arbeits- und Lohnbedingungen |
@@ -30052,14 +33175,22 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [843.1](ch/zg/de/843.1.md) | Regierungsratsbeschluss betreffend den Vollzug des Bundesgesetzes über die |
 | [844.1](ch/zg/de/844.1.md) | Einführungsgesetz zum Bundesgesetz über die Familienzulagen in der Landwirtschaft |
 | [844.4](ch/zg/de/844.4.md) | Einführungsgesetz zum Bundesgesetz über die Familienzulagen |
+| [844.411](ch/zg/de/844.411.md) | Vollziehungsverordnung zum Gesetz |
 | [844.412](ch/zg/de/844.412.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über die Familienzulagen |
 | [844.413](ch/zg/de/844.413.md) | Vereinbarung zwischen dem Kanton St. Gallen und dem Kanton Zug über die Zuständigkeit |
 | [845.1](ch/zg/de/845.1.md) | Verordnung zum Bundesgesetz über die Arbeitsvermittlung und den Personalverleih |
 | [845.5](ch/zg/de/845.5.md) | Einführungsgesetz zum Bundesgesetz über die obligatorische Arbeitslosenversicherung |
+| [851.1](ch/zg/de/851.1.md) | Einführungsgesetz |
 | [851.211](ch/zg/de/851.211.md) | Gesetz über die Förderung von preisgünstigem Wohnraum |
 | [851.212](ch/zg/de/851.212.md) | Verordnung über die Förderung von preisgünstigem Wohnraum |
 | [851.213](ch/zg/de/851.213.md) | Kantonsratsbeschluss betreffend Rahmenkredit für die Förderung von preisgünstigem |
 | [851.214](ch/zg/de/851.214.md) | Kantonsratsbeschluss betreffend Rahmenkredit für die Förderung von preisgünstigem |
+| [851.4](ch/zg/de/851.4.md) | Kantonsratsbeschluss |
+| [851.5](ch/zg/de/851.5.md) | Kantonsratsbeschluss |
+| [851.51](ch/zg/de/851.51.md) | Vollziehungsverordnung |
+| [851.52](ch/zg/de/851.52.md) | Regierungsratsbeschluss |
+| [851.6](ch/zg/de/851.6.md) | Kantonsratsbeschluss |
+| [851.8](ch/zg/de/851.8.md) | Einführungsgesetz zum Bundesgesetz |
 | [861.4](ch/zg/de/861.4.md) | Gesetz über die Sozialhilfe im Kanton Zug |
 | [861.41](ch/zg/de/861.41.md) | Verordnung zum Sozialhilfegesetz |
 | [861.42](ch/zg/de/861.42.md) | Verordnung betreffend Sozialhilfe für Personen aus dem Asylbereich |
@@ -30075,11 +33206,15 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [861.52-A2](ch/zg/de/861.52-A2.md) | Interkantonale Vereinbarung für Soziale Einrichtungen (Anhang 2: Abkürzungen) |
 | [861.52-A3](ch/zg/de/861.52-A3.md) | Interkantonale Vereinbarung für Soziale Einrichtungen (Anhang 3: Liste der |
 | [861.6](ch/zg/de/861.6.md) | Kantonsratsbeschluss betreffend Soziallöhne im Rahmen von Integrationsprojekten |
+| [861.61](ch/zg/de/861.61.md) | Richtlinien |
+| [861.62](ch/zg/de/861.62.md) | Kantonsratsbeschluss |
 | [862.11](ch/zg/de/862.11.md) | Kantonsratsbeschluss betreffend die Verwendung von 10 % der Einnahmen aus dem |
 | [868.4](ch/zg/de/868.4.md) | Kantonsratsbeschluss betreffend Aufhebung des Gesetzes über die Ausrichtung |
 | [868.7](ch/zg/de/868.7.md) | Kantonsratsbeschluss betreffend Beteiligung des Kantons an der «Stiftung Eichholz» |
+| [868.72](ch/zg/de/868.72.md) | Kantonsratsbeschluss |
 | [868.73](ch/zg/de/868.73.md) | Kantonsratsbeschluss über die Gewährung eines Baubeitrages an die Kolonie Herdern |
 | [911.1](ch/zg/de/911.1.md) | Verordnung über die Organisation und die Aufgaben der wirtschaftlichen Landesversorgung |
+| [912.111](ch/zg/de/912.111.md) | Verordnung über die Preiskontrolle |
 | [913.1](ch/zg/de/913.1.md) | Kantonsratsbeschluss betreffend Vergabe von Innovationspreisen im Wirtschaftsbereich |
 | [913.2](ch/zg/de/913.2.md) | Kantonsratsbeschluss betreffend Beteiligung des Kantons an Innovationsförderungsmassnahmen |
 | [913.3](ch/zg/de/913.3.md) | Kantonsratsbeschluss betreffend Beitrag des Kantons Zug zur Unterstützung des |
@@ -30104,8 +33239,10 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [922.513](ch/zg/de/922.513.md) | Kantonsratsbeschluss betreffend Ausrichtung von Beiträgen zur Sanierung landwirtschaftlicher |
 | [922.71](ch/zg/de/922.71.md) | Reglement über die Förderung von Partikelfiltern bei schweren landwirtschaftlichen |
 | [924.111](ch/zg/de/924.111.md) | Kantonsratsbeschluss betreffend Beiträge für die Umstellung auf biologischen |
+| [924.112](ch/zg/de/924.112.md) | Reglement |
 | [924.113](ch/zg/de/924.113.md) | Verfügung betreffend kantonale Hangbeiträge |
 | [924.21](ch/zg/de/924.21.md) | Verwaltungsvereinbarung der Kantone Schwyz, Nidwalden und Zug über die Organisation |
+| [924.211](ch/zg/de/924.211.md) | Reglement über den Kontrolldienst im Bereich |
 | [924.25](ch/zg/de/924.25.md) | Reglement über die kontrollierte Ursprungsbezeichnung für Weine |
 | [925.11](ch/zg/de/925.11.md) | Vollziehungsverordnung zum Tierseuchengesetz |
 | [925.11-A1](ch/zg/de/925.11-A1.md) | Vollziehungsverordnung zum eidgenössischen Tierseuchengesetz (Anhang 1: Konkordanztabelle) |
@@ -30124,22 +33261,28 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [932.111](ch/zg/de/932.111.md) | Jagdbetriebsvorschriften 2025/2026 |
 | [932.13](ch/zg/de/932.13.md) | Reglement über die Jagdausbildung und -prüfung |
 | [933.11](ch/zg/de/933.11.md) | Konkordat über die Fischerei im Zugersee |
+| [933.11-A1](ch/zg/de/933.11-A1.md) | 933.11-A1 |
 | [933.111](ch/zg/de/933.111.md) | Ausführungsbestimmungen zum Konkordat über die Fischerei im Zugersee |
 | [933.112](ch/zg/de/933.112.md) | Reglement über die Zulassungs- und Vergabekriterien für die Berufsfischerei |
 | [933.14](ch/zg/de/933.14.md) | Übereinkunft zwischen den Kantonen Zürich und Zug über die Fischerei im zürcherisch-zugerischen |
+| [933.14-A1](ch/zg/de/933.14-A1.md) | 933.14-A1 |
 | [933.141](ch/zg/de/933.141.md) | Ausführungsbestimmungen über die Ausübung der Fischerei in der zürcherisch-zugerischen |
 | [933.15](ch/zg/de/933.15.md) | Übereinkommen betreffend die Fischerei im luzernisch-zugerischen Grenzabschnitt |
+| [933.15-A1](ch/zg/de/933.15-A1.md) | 933.15-A1 |
 | [933.21](ch/zg/de/933.21.md) | Gesetz über die Fischerei |
 | [933.211](ch/zg/de/933.211.md) | Verordnung über die Fischerei |
 | [933.281](ch/zg/de/933.281.md) | Kantonsratsbeschluss über die Neuordnung der Fischereirechte an der Lorze zwischen |
 | [942.11](ch/zg/de/942.11.md) | Vollziehungsverordnung zur Bundesgesetzgebung über das Messwesen |
 | [942.12](ch/zg/de/942.12.md) | Verwaltungsvereinbarung über die Zusammenarbeit im Bereich Messwesen |
 | [942.22](ch/zg/de/942.22.md) | Interkantonale Vereinbarung zum Abbau technischer Handelshemmnisse |
+| [942.22-A1](ch/zg/de/942.22-A1.md) | 942.22-A1 |
 | [942.31](ch/zg/de/942.31.md) | Ruhetags- und Ladenöffnungsgesetz |
 | [942.41](ch/zg/de/942.41.md) | Gesetz über Lotterien und gewerbsmässige Wetten |
 | [942.415](ch/zg/de/942.415.md) | Interkantonale Vereinbarung betreffend die gemeinsame Durchführung von Lotterien |
 | [942.42](ch/zg/de/942.42.md) | Interkantonale Vereinbarung über die Aufsicht sowie die Bewilligung und Ertragsverwendung |
+| [942.43](ch/zg/de/942.43.md) | Gesamtschweizerisches Geldspielkonkordat (GSK) |
 | [942.43-A1](ch/zg/de/942.43-A1.md) | Kantonsratsbeschluss betreffend Beitritt zum Gesamtschweizerischen Geldspielkonkordat |
+| [942.45](ch/zg/de/942.45.md) | Interkantonale Vereinbarung betreffend die gemeinsame Durchführung |
 | [942.45-A1](ch/zg/de/942.45-A1.md) | Kantonsratsbeschluss betreffend Beitritt zur Interkantonalen Vereinbarung betreffend |
 | [942.46](ch/zg/de/942.46.md) | Einführungsgesetz zum Bundesgesetz über Geldspiele |
 | [942.461](ch/zg/de/942.461.md) | Verordnung zum Einführungsgesetz zum Bundesgesetz über Geldspiele |
@@ -30150,10 +33293,11 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [943.15](ch/zg/de/943.15.md) | Verordnung über die Errichtung und den Betrieb von Zeltplätzen |
 | [944.1](ch/zg/de/944.1.md) | Tourismusgesetz |
 | [944.2](ch/zg/de/944.2.md) | Gesetz über die Beherbergungsabgabe |
+| [944.4](ch/zg/de/944.4.md) | Kantonsratsbeschluss |
 
 ## ZH – Zürich
 
-*150 laws*
+*1315 laws*
 
 | Systematic Number | Title |
 |-------------------|-------|
@@ -30173,6 +33317,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [132.11](ch/zh/de/132.11.md) | Finanzausgleichsverordnung (FAV) |
 | [132.2](ch/zh/de/132.2.md) | Staatsbeitragsgesetz |
 | [132.21](ch/zh/de/132.21.md) | Staatsbeitragsverordnung (StBV) |
+| [133.1](ch/zh/de/133.1.md) | Verordnung über den Gemeindehaushalt (VGH) 133.1 |
+| [133.15](ch/zh/de/133.15.md) | Abschreibung nach betriebswirtschaftlichen Gesichtspunkten 133.15 |
+| [133.3](ch/zh/de/133.3.md) | Verordnung über das Globalbudget in den Gemeinden 133.3 |
 | [141.1](ch/zh/de/141.1.md) | Kantonales Bürgerrechtsgesetz (KBüG) |
 | [141.11](ch/zh/de/141.11.md) | Kantonale Bürgerrechtsverordnung (KBüV) |
 | [142.1](ch/zh/de/142.1.md) | Gesetz über das Meldewesen und die Einwohnerregister (MERG) |
@@ -30181,9 +33328,12 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [142.21](ch/zh/de/142.21.md) | Ausländerrechtliche Gebührenordnung |
 | [142.31](ch/zh/de/142.31.md) | Verordnung über die Härtefallkommission |
 | [142.51](ch/zh/de/142.51.md) | Verordnung über das elektronische Archiv des Migrationsamtes (ELARV) |
+| [142.61](ch/zh/de/142.61.md) | Vollzug von Nichteintretensentscheiden im Asylverfahren – V 142.61 |
 | [143.2](ch/zh/de/143.2.md) | Kantonale Ausweisverordnung |
+| [151](ch/zh/de/151.md) | EG zum Gleichstellungsgesetz 151 |
 | [161](ch/zh/de/161.md) | Gesetz über die politischen Rechte (GPR) |
 | [161.1](ch/zh/de/161.1.md) | Verordnung über die politischen Rechte (VPR) |
+| [162](ch/zh/de/162.md) | Volkswahl der Mitglieder der Arbeitsgerichte und der Mietgerichte – G 162 |
 | [170.1](ch/zh/de/170.1.md) | Haftungsgesetz |
 | [170.4](ch/zh/de/170.4.md) | Gesetz über die Information und den Datenschutz (IDG) |
 | [170.41](ch/zh/de/170.41.md) | Verordnung über die Information und den Datenschutz (IDV) |
@@ -30191,11 +33341,14 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [170.51](ch/zh/de/170.51.md) | Publikationsverordnung (PublV) |
 | [170.6](ch/zh/de/170.6.md) | Archivgesetz |
 | [170.61](ch/zh/de/170.61.md) | Archivverordnung |
+| [170.7](ch/zh/de/170.7.md) | KITT-Verordnung 170.7 |
 | [170.8](ch/zh/de/170.8.md) | Verordnung über die Informationsverwaltung und -sicherheit (IVSV) |
 | [171.1](ch/zh/de/171.1.md) | Kantonsratsgesetz (KRG) |
 | [171.11](ch/zh/de/171.11.md) | Kantonsratsreglement (KRR) |
+| [171.13](ch/zh/de/171.13.md) | Festsetzung der Entschädigungen 171.13 |
 | [171.21](ch/zh/de/171.21.md) | Entschädigungsverordnung des Kantonsrates (EVKR) |
 | [171.3](ch/zh/de/171.3.md) | Verordnung über die Parlamentsdienste (VoPD) |
+| [171.31](ch/zh/de/171.31.md) | Verordnung |
 | [171.41](ch/zh/de/171.41.md) | Verordnung über das kantonale Jugendparlament (VJP) |
 | [171.51](ch/zh/de/171.51.md) | Reglement des Kantonsrates über den Zürcher Zukunftspreis (RZZP) |
 | [172.1](ch/zh/de/172.1.md) | Gesetz über die Organisation des Regierungsrates und der kantonalen Verwaltung |
@@ -30208,6 +33361,9 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [172.110.5](ch/zh/de/172.110.5.md) | Organisationsverordnung der Gesundheitsdirektion (OV GD) |
 | [172.110.6](ch/zh/de/172.110.6.md) | Organisationsverordnung der Bildungsdirektion (OV BI) |
 | [172.110.7](ch/zh/de/172.110.7.md) | Organisationsverordnung der Baudirektion (BDOV) |
+| [172.111](ch/zh/de/172.111.md) | Beschluss des Regierungsrates |
+| [172.122](ch/zh/de/172.122.md) | Beschluss des Kantonsrates |
+| [172.14](ch/zh/de/172.14.md) | Delegationsverordnung 172.14 |
 | [172.15](ch/zh/de/172.15.md) | Verordnung über das Rekursverfahren vor dem Regierungsrat |
 | [172.16](ch/zh/de/172.16.md) | Rechtsetzungsverordnung (RSV) |
 | [172.18](ch/zh/de/172.18.md) | Beschluss des Kantonsrates über die Festsetzung der Entschädigung für die Mitglieder |
@@ -30219,6 +33375,8 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [172.71](ch/zh/de/172.71.md) | Gesetz über die Auslagerung von Informatikdienstleistungen |
 | [172.8](ch/zh/de/172.8.md) | Integrationsverordnung |
 | [173.1](ch/zh/de/173.1.md) | Bezirksverwaltungsgesetz (BezVG) |
+| [173.301](ch/zh/de/173.301.md) | Beschluss des Regierungsrates |
+| [173.35](ch/zh/de/173.35.md) | Beschluss des Kantonsrates |
 | [173.4](ch/zh/de/173.4.md) | Gesetz über die Bildung eines neuen Bezirks Dietikon und den Übergang der Gemeinde |
 | [173.41](ch/zh/de/173.41.md) | Bezirksgericht Dietikon (Errichtung) |
 | [173.42](ch/zh/de/173.42.md) | Verordnung über den Aufbau des Bezirksgerichts Dietikon |
@@ -30228,28 +33386,47 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [175.213](ch/zh/de/175.213.md) | Beschluss des Kantonsrates über die Zahl der Mitglieder und Ersatzmitglieder |
 | [175.22](ch/zh/de/175.22.md) | Beschluss des Kantonsrates über die Festsetzung der Besoldungen der Mitglieder |
 | [175.252](ch/zh/de/175.252.md) | Gebührenverordnung des Verwaltungsgerichts (GebV VGr) |
+| [176.1](ch/zh/de/176.1.md) | Beschluss des Kantonsrates |
 | [176.5](ch/zh/de/176.5.md) | Verordnung über die Beteiligung der Gemeinden an den Kosten der Ombudsperson |
 | [177.10](ch/zh/de/177.10.md) | Personalgesetz (PG) |
 | [177.11](ch/zh/de/177.11.md) | Personalverordnung (PVO) |
 | [177.111](ch/zh/de/177.111.md) | Vollzugsverordnung zum Personalgesetz (VVO) |
 | [177.115](ch/zh/de/177.115.md) | Verordnung über die Nutzung von Internet und E-Mail |
 | [177.12](ch/zh/de/177.12.md) | Gesetz über das Schlichtungsverfahren für Streitigkeiten nach Gleichstellungsgesetz |
+| [177.201](ch/zh/de/177.201.md) | Gesetz über die Versicherungskasse für das Staatspersonal 177.201 |
 | [177.201.1](ch/zh/de/177.201.1.md) | Gesetz über die Verselbstständigung der Versicherungskasse für das Staatspersonal |
+| [177.201.13](ch/zh/de/177.201.13.md) | WahlV-BVK 177.201.13 |
+| [177.201.2](ch/zh/de/177.201.2.md) | Stiftungsurkunde – BVK Personalvorsorge des Kantons Zürich 177.201.2 |
+| [177.21](ch/zh/de/177.21.md) | Statuten der Versicherungskasse für das Staatspersonal 177.21 |
+| [177.22](ch/zh/de/177.22.md) | Teuerungszulagen an Bezüger staatlicher Renten – RRB 177.22 |
+| [177.23](ch/zh/de/177.23.md) | Beschluss des Kantonsrates |
+| [177.231](ch/zh/de/177.231.md) | Vollziehungsbestimmungen |
+| [177.24](ch/zh/de/177.24.md) | Verordnung über Leistungen der Versicherungskasse 177.24 |
 | [177.25](ch/zh/de/177.25.md) | Beschluss des Kantonsrates über die Abgangsleistungen für die Mitglieder des |
 | [180.1](ch/zh/de/180.1.md) | Kirchengesetz (KiG) |
 | [180.11](ch/zh/de/180.11.md) | Verordnung zum Kirchengesetz und zum Gesetz über die anerkannten jüdischen |
 | [181.10](ch/zh/de/181.10.md) | Kirchenordnung der Evangelisch-reformierten Landeskirche des Kantons Zürich |
+| [181.11](ch/zh/de/181.11.md) | Gesetz über die evangelisch-reformierte Landeskirche 181.11 |
+| [181.111](ch/zh/de/181.111.md) | Statuten der französischen Kirchgemeinschaft Zürich 181.111 |
+| [181.112](ch/zh/de/181.112.md) | Statuten der französischen Kirchgemeinschaft Winterthur 181.112 |
+| [181.113](ch/zh/de/181.113.md) | Synodalwahlverfahren der französischen Kirchgemeinschaften 181.113 |
+| [181.12](ch/zh/de/181.12.md) | Kirchenordnung der evangelisch-reformierten Landeskirche 181.12 |
 | [181.13](ch/zh/de/181.13.md) | Finanzverordnung der Evangelisch-reformierten Landeskirche des Kantons Zürich |
 | [181.131](ch/zh/de/181.131.md) | Vollzugsverordnung zur Finanzverordnung |
+| [181.132](ch/zh/de/181.132.md) | Richtlinien für Baubeiträge 181.132 |
+| [181.14](ch/zh/de/181.14.md) | Finanzausgleichsreglement der Evang.-ref. Landeskirche 181.14 |
 | [181.15](ch/zh/de/181.15.md) | Verordnung über das Mitgliederregister (MRVO) |
 | [181.17](ch/zh/de/181.17.md) | Verordnung über die religionspädagogischen Module (rpg-Verordnung) |
 | [181.19](ch/zh/de/181.19.md) | Verordnung über die Aufsicht über kirchliche Stiftungen (StAVO) |
 | [181.20](ch/zh/de/181.20.md) | Verordnung über die Wahl der Kirchensynode (Synodalwahlverordnung) |
 | [181.21](ch/zh/de/181.21.md) | Geschäftsordnung der Evangelisch-reformierten Kirchensynode des Kantons Zürich |
+| [181.211](ch/zh/de/181.211.md) | RRB über die Verteilung der Wahlkreise für die Kirchensynode 181.211 |
+| [181.212](ch/zh/de/181.212.md) | Beschluss des Regierungsrates |
 | [181.22](ch/zh/de/181.22.md) | Geschäftsordnung des Kirchenrates (GO KR) |
 | [181.221](ch/zh/de/181.221.md) | Verordnung über die Organisation der Gesamtkirchlichen Dienste (VO GKD) |
 | [181.222](ch/zh/de/181.222.md) | Verordnung über die Konferenz der Dekaninnen und Dekane (DeKVO) |
 | [181.23](ch/zh/de/181.23.md) | Geschäftsordnung der Rekurskommission der Evangelisch-reformierten Landeskirche |
+| [181.231](ch/zh/de/181.231.md) | Beschluss des Regierungsrates |
 | [181.25](ch/zh/de/181.25.md) | Verordnung über die Entschädigungen an Mitglieder landeskirchlicher Behörden, |
 | [181.31](ch/zh/de/181.31.md) | Übereinkunft zwischen den Ständen Zürich und Thurgau betreffend definitive |
 | [181.32](ch/zh/de/181.32.md) | Übereinkunft zwischen den Kantonen Zürich und Thurgau betreffend die Grenzortschaften |
@@ -30264,27 +33441,46 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [181.41](ch/zh/de/181.41.md) | Konkordat betreffend die gemeinsame Ausbildung der evangelisch-reformierten |
 | [181.411](ch/zh/de/181.411.md) | Ausbildungsordnung (AO) |
 | [181.412](ch/zh/de/181.412.md) | Verordnung über den Quereinstieg ins Pfarramt (Quest-Verordnung, QuestV) |
+| [181.414](ch/zh/de/181.414.md) | Finanzordnung 181.414 |
 | [181.415](ch/zh/de/181.415.md) | Geschäftsordnung (GO) |
 | [181.416](ch/zh/de/181.416.md) | Rekursverordnung (RVO) |
+| [181.417](ch/zh/de/181.417.md) | Satzungen für Kolloquien 181.417 |
+| [181.42](ch/zh/de/181.42.md) | Verordnung über die Neuwahlen von Pfarrern 181.42 |
+| [181.421](ch/zh/de/181.421.md) | Verordnung über die Ergänzungspfarrstellen 181.421 |
+| [181.422](ch/zh/de/181.422.md) | Reglement |
 | [181.43](ch/zh/de/181.43.md) | Verordnung über die Aufsicht und die Visitation in den Kirchgemeinden |
 | [181.44](ch/zh/de/181.44.md) | Verordnung über die Führung des Pfarrarchivs und der kirchlichen Register |
+| [181.45](ch/zh/de/181.45.md) | Verordnung über die Besoldungen der Pfarrer 181.45 |
+| [181.46](ch/zh/de/181.46.md) | Verordnung über die Aufteilung von Pfarrstellen 181.46 |
 | [181.50](ch/zh/de/181.50.md) | Verordnung über die Seelsorge in Institutionen (SIVO) |
+| [181.51](ch/zh/de/181.51.md) | Reglement betreffend die Pastoration der Taubstummen 181.51 |
+| [181.52](ch/zh/de/181.52.md) | Verordnung über die reformierte Spitalseelsorge 181.52 |
+| [181.61](ch/zh/de/181.61.md) | Verordnung |
+| [181.611](ch/zh/de/181.611.md) | V über Staatsbeiträge an Kirchen und Pfarrwohnungen 181.611 |
+| [181.62](ch/zh/de/181.62.md) | Verordnung |
 | [181.621](ch/zh/de/181.621.md) | Hausordnung der Pfarrhäuser |
+| [181.71](ch/zh/de/181.71.md) | Verordnung über diakonische Mitarbeiterinnen und Mitarbeiter 181.71 |
+| [181.82](ch/zh/de/181.82.md) | Vermittlungskommission bei Minderheitenfragen – Verordnung 181.82 |
+| [182.1](ch/zh/de/182.1.md) | Gesetz über das katholische Kirchenwesen 182.1 |
 | [182.10](ch/zh/de/182.10.md) | Kirchenordnung der Römisch-katholischen Körperschaft des Kantons Zürich |
 | [182.11](ch/zh/de/182.11.md) | Beschluss des Synodalrates über die Festlegung der Grenzen der römisch-katholischen |
+| [182.12](ch/zh/de/182.12.md) | Kirchenordnung 182.12 |
 | [182.14](ch/zh/de/182.14.md) | Verordnung über das Register der Mitglieder und weiterer Personen der Römisch-katholischen |
 | [182.15](ch/zh/de/182.15.md) | Entschädigungsreglement der Römisch-katholischen Körperschaft des Kantons Zürich |
+| [182.2](ch/zh/de/182.2.md) | Geschäftsordnung der röm.-kath. Zentralkommission 182.2 |
 | [182.21](ch/zh/de/182.21.md) | Geschäftsordnung des Synodalrates der Römisch-katholischen Körperschaft des |
 | [182.22](ch/zh/de/182.22.md) | Reglement über die Wahl der Pfarrer und Pfarreibeauftragten (RWPP) |
 | [182.23](ch/zh/de/182.23.md) | Reglement über die Organisation, die Aufgaben und Kompetenzen der Personalkommission |
 | [182.25](ch/zh/de/182.25.md) | Finanzordnung über den Finanzhaushalt und den Finanzausgleich der Römisch-katholischen |
 | [182.26](ch/zh/de/182.26.md) | Reglement der Römisch-katholischen Körperschaft des Kantons Zürich über Baukostenbeiträge |
 | [182.31](ch/zh/de/182.31.md) | Geschäftsordnung der Synode der Römisch-katholischen Körperschaft des Kantons |
+| [182.32](ch/zh/de/182.32.md) | Verordnung über die Entschädigung der röm.-kath. Körperschaft 182.32 |
 | [182.33](ch/zh/de/182.33.md) | Verordnung der römisch-katholischen Körperschaft des Kantons Zürich über die |
 | [182.34](ch/zh/de/182.34.md) | Verordnung der römisch-katholischen Körperschaft des Kantons Zürich über die |
 | [182.41](ch/zh/de/182.41.md) | Anstellungsordnung der Römisch-katholischen Körperschaft des Kantons Zürich |
 | [182.42](ch/zh/de/182.42.md) | Reglement über den Einsatz der Informatikmittel in der Römisch-katholischen |
 | [182.43](ch/zh/de/182.43.md) | Reglement über die Entbindung vom Seelsorgegeheimnis |
+| [182.5](ch/zh/de/182.5.md) | Geschäftsordnung der Synode der röm.-kath. Körperschaft 182.5 |
 | [182.51](ch/zh/de/182.51.md) | Reglement über Organisation und Verfahren der Rekurskommission der Römisch-katholischen |
 | [182.60](ch/zh/de/182.60.md) | Reglement der Römisch-katholischen Körperschaft des Kantons Zürich über die |
 | [182.63](ch/zh/de/182.63.md) | Reglement über den Finanzhaushalt der römisch-katholischen Kirchgemeinden im |
@@ -30293,6 +33489,7 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [184.1](ch/zh/de/184.1.md) | Gesetz über die anerkannten jüdischen Gemeinden (GjG) |
 | [211.1](ch/zh/de/211.1.md) | Gesetz über die Gerichts- und Behördenorganisation im Zivil- und Strafprozess |
 | [211.11](ch/zh/de/211.11.md) | Gebührenverordnung des Obergerichts (GebV OG) |
+| [211.111](ch/zh/de/211.111.md) | V betreffend Vorladungs-, Zustellungs- und Schreibgebühren 211.111 |
 | [211.112](ch/zh/de/211.112.md) | Verordnung über das Inkasso von Gebühren und Kosten |
 | [211.12](ch/zh/de/211.12.md) | Verordnung der obersten kantonalen Gerichte über die Entschädigung der Zeugen |
 | [211.13](ch/zh/de/211.13.md) | Verordnung des Obergerichtes über die Verwaltung von Depositen, Kautionen und |
@@ -30305,8 +33502,1120 @@ Total: **9038** federal laws, **21006** cantonal laws indexed
 | [211.23](ch/zh/de/211.23.md) | Verordnung der obersten kantonalen Gerichte über die Gerichtsauditoren und |
 | [211.25](ch/zh/de/211.25.md) | Verordnung über das Mitspracherecht des Personals der Gerichte und Notariate |
 | [211.251](ch/zh/de/211.251.md) | Reglement der Verwaltungskommission des Obergerichts über die Wahl der Mitglieder |
+| [211.3](ch/zh/de/211.3.md) | V über die Paritätischen Schlichtungsbehörden in Miet- u. Pachtsachen 211.3 |
+| [211.51](ch/zh/de/211.51.md) | Beschluss des Kantonsrates |
 | [211.56](ch/zh/de/211.56.md) | Verordnung über den Vollzug der Zwangsmassnahmen im Ausländerrecht (VVZMA) |
+| [212.121](ch/zh/de/212.121.md) | Beschluss des Regierungsrates |
+| [212.122](ch/zh/de/212.122.md) | Beschluss des Regierungsrates |
 | [212.126](ch/zh/de/212.126.md) | Beschluss des Regierungsrates über die Neuaufteilung der Friedensrichterkreise |
+| [212.127](ch/zh/de/212.127.md) | Beschluss des Regierungsrates |
+| [212.22](ch/zh/de/212.22.md) | Beschluss des Kantonsrates |
+| [212.221](ch/zh/de/212.221.md) | Beschluss des Kantonsrates |
+| [212.222](ch/zh/de/212.222.md) | Beschluss des Kantonsrates |
+| [212.23](ch/zh/de/212.23.md) | Beschluss des Kantonsrates |
+| [212.24](ch/zh/de/212.24.md) | Beschluss des Kantonsrates |
+| [212.32](ch/zh/de/212.32.md) | KRB über das Arbeitsgericht Zürich 212.32 |
+| [212.33](ch/zh/de/212.33.md) | KRB über das Arbeitsgericht Winterthur 212.33 |
+| [212.51](ch/zh/de/212.51.md) | Verordnung über die Organisation des Obergerichts 212.51 |
+| [212.511](ch/zh/de/212.511.md) | Organisation und Geschäftsführung der Obergerichtskanzlei – V 212.511 |
+| [212.513](ch/zh/de/212.513.md) | Akturierungsverordnung 212.513 |
+| [212.521](ch/zh/de/212.521.md) | Beschluss des Kantonsrates |
+| [212.53](ch/zh/de/212.53.md) | Besoldungen der Mitglieder des Obergerichts 212.53 |
+| [212.61](ch/zh/de/212.61.md) | Beschluss des Kantonsrates |
+| [212.721](ch/zh/de/212.721.md) | Beschluss des Kantonsrates |
+| [212.722](ch/zh/de/212.722.md) | Beschluss des Kantonsrates |
+| [212.723](ch/zh/de/212.723.md) | Beschluss des Kantonsrates |
+| [212.73](ch/zh/de/212.73.md) | Beschluss des Kantonsrates |
+| [212.81](ch/zh/de/212.81.md) | Gesetz über das Sozialversicherungsgericht (GSVGer) 212.81 |
+| [212.811](ch/zh/de/212.811.md) | Organisation und Geschäftsgang des Sozialversicherungsgerichts 212.811 |
+| [212.812](ch/zh/de/212.812.md) | Gebühren, Kosten und Entschädigungen SVGer 212.812 |
+| [212.814](ch/zh/de/212.814.md) | V über das Schiedsgericht in Sozialversicherungsstreitigkeiten 212.814 |
+| [212.82](ch/zh/de/212.82.md) | Beschluss des Kantonsrates |
+| [212.83](ch/zh/de/212.83.md) | Besoldungen der Mitglieder des Sozialversicherungsgerichts 212.83 |
+| [212.84](ch/zh/de/212.84.md) | Beschluss des Kantonsrates |
+| [213.12](ch/zh/de/213.12.md) | Zahl der ordentlichen Staatsanwältinnen/-anwälte – KRB 213.12 |
+| [213.121](ch/zh/de/213.121.md) | Beschluss des Regierungsrates |
+| [213.131](ch/zh/de/213.131.md) | Beschluss des Kantonsrates |
+| [213.141](ch/zh/de/213.141.md) | Beschluss des Kantonsrates |
+| [213.21](ch/zh/de/213.21.md) | Oberstaatsanwaltschaft/Staatsanwaltschaften, Organisation (VOSTA) 213.21 |
+| [213.222](ch/zh/de/213.222.md) | Beschluss des Kantonsrates |
+| [213.23](ch/zh/de/213.23.md) | Wahlfähigkeitszeugnis für Staatsanwältinnen/-anwälte – V 213.23 |
+| [213.231](ch/zh/de/213.231.md) | Reglement – Prüfungskommission für die Staatsanwaltschaften 213.231 |
+| [213.27](ch/zh/de/213.27.md) | Verordnung |
+| [215.1](ch/zh/de/215.1.md) | Anwaltsgesetz 215.1 |
+| [215.11](ch/zh/de/215.11.md) | Verordnung über die Fähigkeitsprüfung für den Anwaltsberuf 215.11 |
+| [215.111](ch/zh/de/215.111.md) | Verordnung des Obergerichts |
+| [215.12](ch/zh/de/215.12.md) | Verordnung über die Gebühren, Kosten und Entschädigungen 215.12 |
+| [215.2](ch/zh/de/215.2.md) | Aufsichtskommission über die Anwältinnen und Anwälte – V 215.2 |
+| [215.21](ch/zh/de/215.21.md) | Mitglieder und Ersatzmitglieder der Aufsichtskommission – Wahl 215.21 |
+| [215.22](ch/zh/de/215.22.md) | Verordnung |
+| [215.3](ch/zh/de/215.3.md) | Verordnung über die Anwaltsgebühren (AnwGebV) 215.3 |
+| [231.1](ch/zh/de/231.1.md) | Kantonale Zivilstandsverordnung (ZVO) 231.1 |
+| [231.13](ch/zh/de/231.13.md) | Zivilstandsdienst der Gemeinde Bergdietikon – Vereinbarung 231.13 |
+| [231.2](ch/zh/de/231.2.md) | Gesetz über die Registrierung gleichgeschlechtlicher Paare 231.2 |
+| [231.21](ch/zh/de/231.21.md) | Verordnung über die Registrierung gleichgeschlechtlicher Paare 231.21 |
+| [232.2](ch/zh/de/232.2.md) | Verordnung betreffend Aufbewahrung von Mündelvermögen 232.2 |
+| [232.3](ch/zh/de/232.3.md) | EG KESR 232.3 |
+| [232.32](ch/zh/de/232.32.md) | Elektronischer Zugriff der KESB auf die Einwohnerregister – V 232.32 |
+| [232.35](ch/zh/de/232.35.md) | Entschädigung und Spesenersatz bei Beistandschaften (ESBV) 232.35 |
+| [232.351](ch/zh/de/232.351.md) | Verordnung |
+| [234.1](ch/zh/de/234.1.md) | EG BewG 234.1 |
+| [234.12](ch/zh/de/234.12.md) | Verordnung zum EG BewG (VBewG) 234.12 |
+| [234.2](ch/zh/de/234.2.md) | Verordnung betreffend die Bezirksschätzungskommissionen 234.2 |
+| [234.3](ch/zh/de/234.3.md) | Verordnung über die Meldestelle für gefundene Tiere 234.3 |
+| [235.15](ch/zh/de/235.15.md) | Verfahren bei freiwilligen öffentlichen Versteigerungen – V 235.15 |
+| [235.3](ch/zh/de/235.3.md) | Einführungsgesetz zum Bundesgesetz über Rahmenmietverträge 235.3 |
+| [235.41](ch/zh/de/235.41.md) | Beschluss des Regierungsrates |
+| [235.52](ch/zh/de/235.52.md) | Beschluss des Regierungsrates |
+| [236.1](ch/zh/de/236.1.md) | Datenschutzgesetz 236.1 |
+| [236.11](ch/zh/de/236.11.md) | Datenschutzverordnung 236.11 |
+| [242](ch/zh/de/242.md) | Notariatsgesetz (NotG) 242 |
+| [242.1](ch/zh/de/242.1.md) | Wahlfähigkeitszeugnis für Notarinnen und Notare (NotPV) 242.1 |
+| [242.15](ch/zh/de/242.15.md) | Weiterbildungsverordnung 242.15 |
+| [242.2](ch/zh/de/242.2.md) | Notariatsverordnung 242.2 |
+| [242.25](ch/zh/de/242.25.md) | Notariatsverwaltungsverordnung 242.25 |
+| [242.26](ch/zh/de/242.26.md) | Rechnungswesenverordnung 242.26 |
+| [242.5](ch/zh/de/242.5.md) | Notariatskreise und Sitz der Notariate 242.5 |
+| [243](ch/zh/de/243.md) | Notariatsgebührenverordnung (NotGebV) 243 |
+| [244](ch/zh/de/244.md) | Verordnung über die Archive der Notariate 244 |
+| [245](ch/zh/de/245.md) | Übereinkunft |
+| [252](ch/zh/de/252.md) | Kantonale Grundbuchverordnung 252 |
+| [252.1](ch/zh/de/252.1.md) | V über die Grundbuchführung betreffend die Korporationsteilrechte 252.1 |
+| [252.5](ch/zh/de/252.5.md) | Übereinkunft mit dem Kanton Thurgau betr. Beurkundung 252.5 |
+| [254.1](ch/zh/de/254.1.md) | Flächenerhebungsverordnung 254.1 |
+| [254.2](ch/zh/de/254.2.md) | Vermessungsanweisung von 1920 254.2 |
+| [255](ch/zh/de/255.md) | Verordnung über die amtliche Vermessung 255 |
+| [255.1](ch/zh/de/255.1.md) | Gebührenverordnung für Vermessungsdaten 255.1 |
+| [271](ch/zh/de/271.md) | Zivilprozessordnung (ZPO) 271 |
+| [272](ch/zh/de/272.md) | Konkordat |
+| [273](ch/zh/de/273.md) | Gewährung gegenseitiger Rechtshilfe in Zivilsachen – Konkordat 273 |
+| [274](ch/zh/de/274.md) | Konkordat über die Schiedsgerichtsbarkeit 274 |
+| [281](ch/zh/de/281.md) | EG SchKG 281 |
+| [281.1](ch/zh/de/281.1.md) | V über die Betreibungs- und Gemeindeammannämter (VBG) 281.1 |
+| [281.11](ch/zh/de/281.11.md) | V über die Gebühren der Gemeindeammannämter (GebV GA) 281.11 |
+| [281.2](ch/zh/de/281.2.md) | Kantonale Konkursverordnung 281.2 |
+| [281.41](ch/zh/de/281.41.md) | Stadtammannamts- und Betreibungskreise Winterthur 281.41 |
+| [281.51](ch/zh/de/281.51.md) | Wahlfähigkeitsausweis für Betreibungsbeamtinnen/-beamte – V 281.51 |
+| [281.6](ch/zh/de/281.6.md) | Beschluss des Regierungsrates |
+| [282](ch/zh/de/282.md) | Vollstreckung öffentlich-rechtlicher Ansprüche – Konkordat 282 |
+| [283.1](ch/zh/de/283.1.md) | Übereinkunft |
+| [283.2](ch/zh/de/283.2.md) | Übereinkunft |
+| [312](ch/zh/de/312.md) | Gesetz betreffend die Ordnungsstrafen 312 |
+| [315.1](ch/zh/de/315.1.md) | Runder Tisch Menschenhandel (VRTM) 315.1 |
+| [321](ch/zh/de/321.md) | Strafprozessordnung (StPO) 321 |
+| [321.1](ch/zh/de/321.1.md) | Zuständigkeit der Gemeinden im Übertretungsstrafrecht – V 321.1 |
+| [321.2](ch/zh/de/321.2.md) | Kantonale Ordnungsbussenverordnung (KOBV) 321.2 |
+| [321.212](ch/zh/de/321.212.md) | Beschluss des Kantonsrates |
+| [321.213](ch/zh/de/321.213.md) | Beschluss des Kantonsrates |
+| [321.3](ch/zh/de/321.3.md) | Haftrichterverordnung 321.3 |
+| [321.4](ch/zh/de/321.4.md) | PPGV 321.4 |
+| [321.5](ch/zh/de/321.5.md) | DNA-Verordnung (DNAV) 321.5 |
+| [321.6](ch/zh/de/321.6.md) | Verordnung über die Mediation im Jugendstrafverfahren 321.6 |
+| [322](ch/zh/de/322.md) | Verordnung über die Jugendstrafrechtspflege (JStV) 322 |
+| [322.1](ch/zh/de/322.1.md) | Verordnung |
+| [322.2](ch/zh/de/322.2.md) | Beschluss des Regierungsrates |
+| [323.1](ch/zh/de/323.1.md) | GebV StrV 323.1 |
+| [325](ch/zh/de/325.md) | Rechtshilfe und interkantonale Zusammenarbeit in Strafsachen 325 |
+| [326](ch/zh/de/326.md) | Reglement für das Kriminalistische Institut 326 |
+| [331](ch/zh/de/331.md) | Straf- und Justizvollzugsgesetz (StJVG) 331 |
+| [331.1](ch/zh/de/331.1.md) | Justizvollzugsverordnung (JVV) 331.1 |
+| [331.41](ch/zh/de/331.41.md) | Verordnung über den Bussenvollzug 331.41 |
+| [331.5](ch/zh/de/331.5.md) | Verordnung – Strafregister-Informationssystem VOSTRA (KStReV) 331.5 |
+| [334](ch/zh/de/334.md) | Konkordat – Vollzug von Strafen und Massnahmen 334 |
+| [334.1](ch/zh/de/334.1.md) | Ausführungsbestimmungen zur Vereinbarung über den Strafvollzug 334.1 |
+| [341](ch/zh/de/341.md) | Einführungsgesetz zum Opferhilfegesetz (EG OHG) 341 |
+| [341.1](ch/zh/de/341.1.md) | Kantonale Opferhilfeverordnung (KOHV) 341.1 |
+| [351](ch/zh/de/351.md) | Gewaltschutzgesetz (GSG) 351 |
+| [351.3](ch/zh/de/351.3.md) | Verordnung |
+| [410.1](ch/zh/de/410.1.md) | Bildungsgesetz (BiG) 410.1 |
+| [410.11](ch/zh/de/410.11.md) | Synodalverordnung 410.11 |
+| [410.13](ch/zh/de/410.13.md) | Schulraumverordnung 410.13 |
+| [410.21](ch/zh/de/410.21.md) | Verordnung zum Gesetz über Schulversuche 410.21 |
+| [410.211](ch/zh/de/410.211.md) | Beschluss des Regierungsrates |
+| [410.3](ch/zh/de/410.3.md) | Konkordat über die Schulkoordination 410.3 |
+| [410.31](ch/zh/de/410.31.md) | HarmoS-Konkordat 410.31 |
+| [410.32](ch/zh/de/410.32.md) | Sonderpädagogik-Konkordat 410.32 |
+| [410.33](ch/zh/de/410.33.md) | Interkantonale Spitalschulvereinbarung (ISV) 410.33 |
+| [410.4](ch/zh/de/410.4.md) | Vereinbarung über die Anerkennung von Ausbildungsabschlüssen 410.4 |
+| [410.411](ch/zh/de/410.411.md) | Anerkennung der Lehrdiplome für Maturitätsschulen – R 410.411 |
+| [410.412](ch/zh/de/410.412.md) | Anerkennung der Lehrdiplome in Schulischer Heilpädagogik – R 410.412 |
+| [410.441](ch/zh/de/410.441.md) | Anerkennung der Diplome in bildender Kunst – Reglement 410.441 |
+| [410.442](ch/zh/de/410.442.md) | Anerkennung der Diplome für höhere Ausbildung in Musik – R 410.442 |
+| [410.443](ch/zh/de/410.443.md) | Diplome der höheren Fachschulen für Soziale Arbeit – R 410.443 |
+| [410.444](ch/zh/de/410.444.md) | Anerkennung der Diplome für Erwachsenenbildner/-bildnerin – R 410.444 |
+| [410.5](ch/zh/de/410.5.md) | Anerkennung von gymnasialen Maturitätsausweisen (MAR) 410.5 |
+| [410.6](ch/zh/de/410.6.md) | Musikschulgesetz (MuSG) 410.6 |
+| [410.61](ch/zh/de/410.61.md) | Musikschulverordnung (MuSV) 410.61 |
+| [410.7](ch/zh/de/410.7.md) | Bildungsdatenverordnung 410.7 |
+| [410.8](ch/zh/de/410.8.md) | Verordnung |
+| [410.9](ch/zh/de/410.9.md) | Gesetz über den Lehrmittelverlag (LMVG) 410.9 |
+| [412.100](ch/zh/de/412.100.md) | Volksschulgesetz (VSG) 412.100 |
+| [412.100.1](ch/zh/de/412.100.1.md) | Beschluss des Regierungsrates |
+| [412.100.2](ch/zh/de/412.100.2.md) | Übergangsordnung zum Volksschulgesetz 412.100.2 |
+| [412.100.3](ch/zh/de/412.100.3.md) | Übergangsordnung |
+| [412.101](ch/zh/de/412.101.md) | Volksschulverordnung (VSV) 412.101 |
+| [412.101.21](ch/zh/de/412.101.21.md) | Datenschutz bei den schulpsychologischen Diensten 412.101.21 |
+| [412.101.3](ch/zh/de/412.101.3.md) | Aufnahme von Schülerinnen/Schülern in fremdsprachige Schulen 412.101.3 |
+| [412.101.6](ch/zh/de/412.101.6.md) | Reglement über die Aufsicht über den Privatunterricht 412.101.6 |
+| [412.103](ch/zh/de/412.103.md) | Verordnung über die sonderpädagogischen Massnahmen (VSM) 412.103 |
+| [412.104](ch/zh/de/412.104.md) | Verordnung über Schulversuche an der Volksschule 412.104 |
+| [412.105](ch/zh/de/412.105.md) | Finanzverordnung zum Volksschulgesetz 412.105 |
+| [412.106](ch/zh/de/412.106.md) | Verordnung über die Finanzierung der Sonderschulung (VFiSo) 412.106 |
+| [412.106.1](ch/zh/de/412.106.1.md) | Verordnung über die Aufsicht über die Sonderschulung 412.106.1 |
+| [412.106.2](ch/zh/de/412.106.2.md) | Versorgertaxen 412.106.2 |
+| [412.107](ch/zh/de/412.107.md) | Spitalschulverordnung (SpiV) 412.107 |
+| [412.107.1](ch/zh/de/412.107.1.md) | Verordnung über die Aufsicht über die Spitalschulen 412.107.1 |
+| [412.11](ch/zh/de/412.11.md) | Volksschulgesetz 412.11 |
+| [412.111](ch/zh/de/412.111.md) | Volksschulverordnung 412.111 |
+| [412.12](ch/zh/de/412.12.md) | Übertrittsverordnung 412.12 |
+| [412.121.2](ch/zh/de/412.121.2.md) | Stundenplanreglement 412.121.2 |
+| [412.121.3](ch/zh/de/412.121.3.md) | Reglement über das Promotionsverfahren an der Primarschule 412.121.3 |
+| [412.121.31](ch/zh/de/412.121.31.md) | Zeugnisreglement 412.121.31 |
+| [412.121.4](ch/zh/de/412.121.4.md) | Reglement über die Klassenlager 412.121.4 |
+| [412.121.5](ch/zh/de/412.121.5.md) | Reglement über Kurs- und Projektwochen 412.121.5 |
+| [412.121.6](ch/zh/de/412.121.6.md) | HSK 412.121.6 |
+| [412.121.7](ch/zh/de/412.121.7.md) | Reglement |
+| [412.13](ch/zh/de/412.13.md) | Reglement über die Sonderklassen und die Sonderschulung 412.13 |
+| [412.138.1](ch/zh/de/412.138.1.md) | Abschluss Sekundarstufe I für Erwachsene – Reglement 412.138.1 |
+| [412.14](ch/zh/de/412.14.md) | Lehrmittelverordnung für die Volksschule 412.14 |
+| [412.141](ch/zh/de/412.141.md) | Verordnung über den Lehrmittelverlag 412.141 |
+| [412.155](ch/zh/de/412.155.md) | Beschluss des Regierungsrates |
+| [412.21](ch/zh/de/412.21.md) | Vereinbarung |
+| [412.221](ch/zh/de/412.221.md) | Vertrag |
+| [412.222](ch/zh/de/412.222.md) | Rahmenvertrag über den kantonsübergreifenden Schulbesuch 412.222 |
+| [412.223](ch/zh/de/412.223.md) | Schulbeiträge für Auszubildende an Schulen der Sekundarstufe II 412.223 |
+| [412.31](ch/zh/de/412.31.md) | Lehrpersonalgesetz (LPG) 412.31 |
+| [412.311](ch/zh/de/412.311.md) | Lehrpersonalverordnung (LPVO) 412.311 |
+| [412.32](ch/zh/de/412.32.md) | Schulleistungsgesetz 412.32 |
+| [412.321](ch/zh/de/412.321.md) | Schulleistungsverordnung 412.321 |
+| [412.322](ch/zh/de/412.322.md) | Beitragsklassenverordnung 412.322 |
+| [412.41](ch/zh/de/412.41.md) | Gesetz über das Zentrum für Gehör und Sprache 412.41 |
+| [412.411](ch/zh/de/412.411.md) | Personalreglement für das Zentrum für Gehör und Sprache 412.411 |
+| [412.412](ch/zh/de/412.412.md) | Finanzreglement für das Zentrum für Gehör und Sprache 412.412 |
+| [412.415](ch/zh/de/412.415.md) | Übergangsordnung – G über das Zentrum für Gehör und Sprache 412.415 |
+| [412.42](ch/zh/de/412.42.md) | Verordnung über das Gehörlosenzentrum 412.42 |
+| [412.43](ch/zh/de/412.43.md) | Taxordnung/Zentrum für gehörlose und schwerhörige Kinder 412.43 |
+| [412.44](ch/zh/de/412.44.md) | Dienst- und Besoldungsverhältnisse an der Gehörlosenschule – R 412.44 |
+| [413.111](ch/zh/de/413.111.md) | Mittelschul- und Berufsschullehrerverordnung (MBVO) 413.111 |
+| [413.112](ch/zh/de/413.112.md) | Mittel- und Berufsschullehrervollzugsverordnung (MBVVO) 413.112 |
+| [413.112.5](ch/zh/de/413.112.5.md) | Reglement |
+| [413.113](ch/zh/de/413.113.md) | Schulgelder an den kantonalen Mittelschulen – V 413.113 |
+| [413.116.1](ch/zh/de/413.116.1.md) | Verordnung |
+| [413.121](ch/zh/de/413.121.md) | Verordnung über Integrationskurse 413.121 |
+| [413.250.1](ch/zh/de/413.250.1.md) | Aufnahme in die Gymnasien mit Anschluss an die 6. Klasse – R 413.250.1 |
+| [413.250.2](ch/zh/de/413.250.2.md) | V über die Aufnahme in die Maturitätsschulen (VAM) 413.250.2 |
+| [413.250.31](ch/zh/de/413.250.31.md) | Aufnahme in einen zweisprachigen Maturitätsgang – R 413.250.31 |
+| [413.250.32](ch/zh/de/413.250.32.md) | Aufnahme in die K+S Klassen am Gymnasium Rämibühl 413.250.32 |
+| [413.250.33](ch/zh/de/413.250.33.md) | Aufnahme in die K+S Klassen am Mathem.-Naturw. Gymn. 413.250.33 |
+| [413.250.4](ch/zh/de/413.250.4.md) | Reglement für die Aufnahme in die Fachmittelschulen 413.250.4 |
+| [413.250.5](ch/zh/de/413.250.5.md) | Aufnahme in die kant. Handelsmittelschulen – Reglement 413.250.5 |
+| [413.250.51](ch/zh/de/413.250.51.md) | Aufnahmereglement Informatikmittelschulen 413.250.51 |
+| [413.250.8](ch/zh/de/413.250.8.md) | Aufnahme ins schweizerisch-italienische Liceo artistico – R 413.250.8 |
+| [413.250.9](ch/zh/de/413.250.9.md) | Kant. Maturitätsschule für Erwachsene – Aufnahmereglement 413.250.9 |
+| [413.251.1](ch/zh/de/413.251.1.md) | Promotionsreglement für die Gymnasien des Kantons Zürich 413.251.1 |
+| [413.251.15](ch/zh/de/413.251.15.md) | Promotionsreglement für die K+S Klassen 413.251.15 |
+| [413.251.2](ch/zh/de/413.251.2.md) | Kant. Maturitätsschule für Erwachsene – Promotionsreglement 413.251.2 |
+| [413.251.4](ch/zh/de/413.251.4.md) | Fachmittelschulen des Kantons Zürich – Promotionsreglement 413.251.4 |
+| [413.251.5](ch/zh/de/413.251.5.md) | Kantonale Handelsmittelschulen – Promotionsreglement 413.251.5 |
+| [413.251.51](ch/zh/de/413.251.51.md) | Informatikmittelschulen an Handelsmittelschulen 413.251.51 |
+| [413.251.8](ch/zh/de/413.251.8.md) | Liceo artistico – Promotionsreglement 413.251.8 |
+| [413.252.1](ch/zh/de/413.252.1.md) | Reglement für die Maturitätsprüfungen 413.252.1 |
+| [413.252.4](ch/zh/de/413.252.4.md) | Fachmittelschulen des Kantons Zürich – Prüfungsreglement 413.252.4 |
+| [413.252.8](ch/zh/de/413.252.8.md) | Liceo artistico – Reglement für die Maturitätsprüfungen 413.252.8 |
+| [413.30](ch/zh/de/413.30.md) | Gesetz über die Trägerschaft der Berufsschulen 413.30 |
+| [413.301](ch/zh/de/413.301.md) | Verordnung über Staatsbeiträge an die Berufsbildung 413.301 |
+| [413.305](ch/zh/de/413.305.md) | Berufsschullehrerverordnung 413.305 |
+| [413.31](ch/zh/de/413.31.md) | EG BBG 413.31 |
+| [413.311](ch/zh/de/413.311.md) | VEG BBG 413.311 |
+| [413.311.1](ch/zh/de/413.311.1.md) | Zulassungsvoraussetzungen und Abschlussbeurteilung (ZABV) 413.311.1 |
+| [413.311.5](ch/zh/de/413.311.5.md) | Anforderungen an Lehrpersonen in Berufsvorbereitungsjahren 413.311.5 |
+| [413.311.9](ch/zh/de/413.311.9.md) | V über die Berufsvorbereitungsjahre 2009/2010 bis 2013/2014 413.311.9 |
+| [413.311.91](ch/zh/de/413.311.91.md) | Verordnung – Zulassung zu den Berufsvorbereitungsjahren 413.311.91 |
+| [413.311.95](ch/zh/de/413.311.95.md) | Reglement – Berufsvorbereitungsjahre 2013/2014 413.311.95 |
+| [413.312](ch/zh/de/413.312.md) | Finanzierung von Leistungen der Berufsbildung (VFin BBG) 413.312 |
+| [413.313](ch/zh/de/413.313.md) | Verordnung über den Berufsbildungsfonds (VBBF) 413.313 |
+| [413.319](ch/zh/de/413.319.md) | Berufs-, Studien- und Laufbahnberatung (V BSLB) 413.319 |
+| [413.322](ch/zh/de/413.322.md) | Disziplinarreglement Berufsbildung 413.322 |
+| [413.323](ch/zh/de/413.323.md) | Disziplinarreglement Berufsvorbereitungsjahr 413.323 |
+| [413.325](ch/zh/de/413.325.md) | Qualifikationsverfahren – berufliche Grundbildung (RQV BBG) 413.325 |
+| [413.325.1](ch/zh/de/413.325.1.md) | Entschädigung von Mitwirkenden bei Qualifikationsverfahren 413.325.1 |
+| [413.326](ch/zh/de/413.326.md) | Berufsmaturitätsreglement (BMR) 413.326 |
+| [413.331](ch/zh/de/413.331.md) | Ausbildung medizinischer Laboranten – Reglement 413.331 |
+| [413.332](ch/zh/de/413.332.md) | Ausbildung des Mechapraktikers – Reglement 413.332 |
+| [413.333](ch/zh/de/413.333.md) | Ausbildung des Betriebspraktikers – Reglement 413.333 |
+| [413.334](ch/zh/de/413.334.md) | Ausbildung des Elektropraktikers – Reglement 413.334 |
+| [413.335](ch/zh/de/413.335.md) | Ausbildung des Betriebstechnologen – Reglement 413.335 |
+| [413.351](ch/zh/de/413.351.md) | Aufsicht über die Lehrverhältnisse und die Berufsschulen – R 413.351 |
+| [413.41](ch/zh/de/413.41.md) | Gesetz über die hauswirtschaftliche Fortbildung 413.41 |
+| [413.411](ch/zh/de/413.411.md) | Verordnung über die hauswirtschaftliche Fortbildung 413.411 |
+| [413.412](ch/zh/de/413.412.md) | Lehrpersonen der Hauswirtschaftskurse an Mittelschulen – V 413.412 |
+| [413.44](ch/zh/de/413.44.md) | Hauswirtschaftsverordnung 413.44 |
+| [413.51](ch/zh/de/413.51.md) | Verordnung über die Schulen im Gesundheitswesen 413.51 |
+| [413.521](ch/zh/de/413.521.md) | Zulassung zu den höheren Fachschulen für Gesundheit – R 413.521 |
+| [413.53](ch/zh/de/413.53.md) | Schulordnung – Zentrum für Ausbildung im Gesundheitswesen 413.53 |
+| [413.533](ch/zh/de/413.533.md) | Disziplinarreglement 413.533 |
+| [413.541](ch/zh/de/413.541.md) | Promotionsordnung – Pflegefachfrau HF / Pflegefachmann HF 413.541 |
+| [413.545](ch/zh/de/413.545.md) | Reglement Validierungsverfahren FaGe 413.545 |
+| [413.551](ch/zh/de/413.551.md) | Aktivierungsfachfrau HF / Aktivierungsfachmann HF 413.551 |
+| [413.561](ch/zh/de/413.561.md) | Ausbildung – dipl. Orthoptistin HF oder dipl. Orthoptist HF 413.561 |
+| [413.571](ch/zh/de/413.571.md) | Schule für Ernährungsberatung am Universitätsspital Zürich 413.571 |
+| [413.572.2](ch/zh/de/413.572.2.md) | Promotionsordnung – Pflegefachfrau HF / Pflegefachmann HF 413.572.2 |
+| [413.574.1](ch/zh/de/413.574.1.md) | Reglement |
+| [413.574.7](ch/zh/de/413.574.7.md) | Ausbildung zur Pflegeassistentin / zum Pflegeassistenten 413.574.7 |
+| [413.575.2](ch/zh/de/413.575.2.md) | Schule für medizinisch-technische Radiologie (MTRA) 413.575.2 |
+| [414.10](ch/zh/de/414.10.md) | Fachhochschulgesetz (FaHG) 414.10 |
+| [414.101](ch/zh/de/414.101.md) | Verordnung zum Fachhochschulgesetz (VFaHG) 414.101 |
+| [414.102](ch/zh/de/414.102.md) | Finanzverordnung der Zürcher Fachhochschulen (FVF) 414.102 |
+| [414.109.1](ch/zh/de/414.109.1.md) | Zürcher Hochschule für Angewandte Wissenschaften 414.109.1 |
+| [414.109.2](ch/zh/de/414.109.2.md) | Übergangsordnung für die Zürcher Hochschule der Künste 414.109.2 |
+| [414.11](ch/zh/de/414.11.md) | Fachhochschulgesetz 414.11 |
+| [414.112](ch/zh/de/414.112.md) | Personalverordnung der Zürcher Fachhochschulen (PVF) 414.112 |
+| [414.112.1](ch/zh/de/414.112.1.md) | Reglement zur Umsetzung der Personalverordnung 414.112.1 |
+| [414.112.163](ch/zh/de/414.112.163.md) | V über besondere Personalkategorien an der ZHdK 414.112.163 |
+| [414.112.2](ch/zh/de/414.112.2.md) | Titel der Professorin oder des Professors an der ZFH – R 414.112.2 |
+| [414.113](ch/zh/de/414.113.md) | Organisationsreglement des Fachhochschulrats 414.113 |
+| [414.114](ch/zh/de/414.114.md) | Beschluss des Regierungsrates |
+| [414.12](ch/zh/de/414.12.md) | Interkantonale Fachhochschulvereinbarung 414.12 |
+| [414.15](ch/zh/de/414.15.md) | Interkantonale Fachschulvereinbarung 414.15 |
+| [414.153](ch/zh/de/414.153.md) | Beiträge an die Bildungsgänge der höheren Fachschulen (HFSV) 414.153 |
+| [414.16](ch/zh/de/414.16.md) | Regionales Schulabkommen (RSA 2009) 414.16 |
+| [414.17](ch/zh/de/414.17.md) | Schulen mit spezifisch-strukturierten Angeboten für Hochbegabte 414.17 |
+| [414.251](ch/zh/de/414.251.md) | Hochschulordnung der ZHAW 414.251 |
+| [414.252.3](ch/zh/de/414.252.3.md) | RPO ZHAW 414.252.3 |
+| [414.252.4](ch/zh/de/414.252.4.md) | Rahmenordnung – Weiterbildung an der ZHAW 414.252.4 |
+| [414.253.111](ch/zh/de/414.253.111.md) | Bachelorstudiengänge Architektur und Bauingenieurwesen 414.253.111 |
+| [414.253.115](ch/zh/de/414.253.115.md) | Masterstudiengang Architektur an der ZHAW 414.253.115 |
+| [414.253.125](ch/zh/de/414.253.125.md) | Masterstudiengang – Integrierte Bau- und Energiesysteme 414.253.125 |
+| [414.253.211](ch/zh/de/414.253.211.md) | Ergo, Gesundheit, Prävention, Hebamme, Pflege und Physio 414.253.211 |
+| [414.253.215](ch/zh/de/414.253.215.md) | Masterstudiengang in Ergotherapie an der ZHAW 414.253.215 |
+| [414.253.225](ch/zh/de/414.253.225.md) | Masterstudiengang in Physiotherapie – ZHAW 414.253.225 |
+| [414.253.235](ch/zh/de/414.253.235.md) | Masterstudiengang Hebamme an der ZHAW 414.253.235 |
+| [414.253.245](ch/zh/de/414.253.245.md) | Masterstudiengang in Pflege – ZHAW 414.253.245 |
+| [414.253.311](ch/zh/de/414.253.311.md) | Studienordnung für Bachelorstudiengänge an der ZHAW 414.253.311 |
+| [414.253.315](ch/zh/de/414.253.315.md) | Masterstudiengang in Life Sciences an der ZHAW 414.253.315 |
+| [414.253.325](ch/zh/de/414.253.325.md) | Masterstudiengang Real Estate & Facility Management 414.253.325 |
+| [414.253.335](ch/zh/de/414.253.335.md) | Masterstudiengang Environment and Natural Resources 414.253.335 |
+| [414.253.345](ch/zh/de/414.253.345.md) | Preneurship for Regenerative Food Systems – ZHAW 414.253.345 |
+| [414.253.411](ch/zh/de/414.253.411.md) | Kommunikation/Medien, sprachliche Integration 414.253.411 |
+| [414.253.415](ch/zh/de/414.253.415.md) | Masterstudiengang Language and Communication – ZHAW 414.253.415 |
+| [414.253.511](ch/zh/de/414.253.511.md) | Bachelorstudiengang in Angewandter Psychologie – ZHAW 414.253.511 |
+| [414.253.515](ch/zh/de/414.253.515.md) | Masterstudiengang in Angewandter Psychologie – ZHAW 414.253.515 |
+| [414.253.611](ch/zh/de/414.253.611.md) | Bachelorstudiengang Soziale Arbeit an der ZHAW 414.253.611 |
+| [414.253.615](ch/zh/de/414.253.615.md) | Masterstudiengang in Sozialer Arbeit an der ZHAW 414.253.615 |
+| [414.253.711](ch/zh/de/414.253.711.md) | Bachelorstudiengänge School of Engineering – ZHAW 414.253.711 |
+| [414.253.715](ch/zh/de/414.253.715.md) | Masterstudiengang Engineering an der ZHAW 414.253.715 |
+| [414.253.811](ch/zh/de/414.253.811.md) | Bachelorstudiengänge an der ZHAW 414.253.811 |
+| [414.253.815](ch/zh/de/414.253.815.md) | Masterstudiengang Business Administration an der ZHAW 414.253.815 |
+| [414.253.825](ch/zh/de/414.253.825.md) | Masterstudiengang Banking and Finance an der ZHAW 414.253.825 |
+| [414.253.835](ch/zh/de/414.253.835.md) | Masterstudiengang Wirtschaftsinformatik – ZHAW 414.253.835 |
+| [414.253.845](ch/zh/de/414.253.845.md) | Masterstudiengang Management and Law – ZHAW 414.253.845 |
+| [414.253.855](ch/zh/de/414.253.855.md) | International Business an der ZHAW 414.253.855 |
+| [414.253.865](ch/zh/de/414.253.865.md) | Accounting and Controlling an der ZHAW 414.253.865 |
+| [414.253.875](ch/zh/de/414.253.875.md) | Masterstudiengang Circular Economy Management 414.253.875 |
+| [414.254](ch/zh/de/414.254.md) | Professurenreglement der ZHAW 414.254 |
+| [414.261](ch/zh/de/414.261.md) | Hochschulordnung der ZHdK 414.261 |
+| [414.262](ch/zh/de/414.262.md) | Allgemeine Studienordnung der Zürcher Hochschule der Künste 414.262 |
+| [414.262.1](ch/zh/de/414.262.1.md) | Bachelor- und Masterstudiengänge der ZHdK 414.262.1 |
+| [414.263.111](ch/zh/de/414.263.111.md) | Besondere Studienordnung für den Bachelor of Arts in Film 414.263.111 |
+| [414.263.115](ch/zh/de/414.263.115.md) | Besondere Studienordnung für den Master of Arts in Film 414.263.115 |
+| [414.263.121](ch/zh/de/414.263.121.md) | Bachelor of Arts in Theater 414.263.121 |
+| [414.263.125](ch/zh/de/414.263.125.md) | Besondere Studienordnung für den Master of Arts in Theater 414.263.125 |
+| [414.263.131](ch/zh/de/414.263.131.md) | Bachelor of Arts in Contemporary Dance – ZHdK 414.263.131 |
+| [414.263.135](ch/zh/de/414.263.135.md) | Besondere Studienordnung für den Master of Arts in Dance 414.263.135 |
+| [414.263.211](ch/zh/de/414.263.211.md) | Bachelor of Arts in Design – ZHdK 414.263.211 |
+| [414.263.215](ch/zh/de/414.263.215.md) | Master of Arts in Design – ZHdK 414.263.215 |
+| [414.263.311](ch/zh/de/414.263.311.md) | Bachelor of Arts in Art Education der ZHdK 414.263.311 |
+| [414.263.315](ch/zh/de/414.263.315.md) | Master of Arts in Art Education der ZHdK 414.263.315 |
+| [414.263.325](ch/zh/de/414.263.325.md) | Master of Arts in Transdisziplinarität – ZHdK 414.263.325 |
+| [414.263.411](ch/zh/de/414.263.411.md) | Fine Arts – ZHdK 414.263.411 |
+| [414.263.415](ch/zh/de/414.263.415.md) | Master of Arts in Fine Arts – ZHdK 414.263.415 |
+| [414.263.511](ch/zh/de/414.263.511.md) | Bachelor of Arts in Musik / in Musik und Bewegung 414.263.511 |
+| [414.263.515](ch/zh/de/414.263.515.md) | Besondere Studienordnung für den Master of Arts in Music 414.263.515 |
+| [414.264](ch/zh/de/414.264.md) | Professurenreglement der ZHdK 414.264 |
+| [414.41](ch/zh/de/414.41.md) | Gesetz über die Pädagogische Hochschule (PHG) 414.41 |
+| [414.410](ch/zh/de/414.410.md) | Hochschulordnung der Pädagogischen Hochschule Zürich 414.410 |
+| [414.410.1](ch/zh/de/414.410.1.md) | Weisung zu den Professorenstellen an der PHZH 414.410.1 |
+| [414.410.2](ch/zh/de/414.410.2.md) | Umgang mit geistigem Eigentum an der PHZH – Weisung 414.410.2 |
+| [414.410.3](ch/zh/de/414.410.3.md) | Benutzung der Bibliotheken der PHZH – Weisung 414.410.3 |
+| [414.410.5](ch/zh/de/414.410.5.md) | Weisung zu den Gebühren der PHZH 414.410.5 |
+| [414.411.9](ch/zh/de/414.411.9.md) | Externe Nutzung von Räumen und Anlagen der PHZH 414.411.9 |
+| [414.412](ch/zh/de/414.412.md) | Zulassung zum Studium an der Pädagogischen Hochschule – R 414.412 |
+| [414.412.1](ch/zh/de/414.412.1.md) | Aufnahme- und Immatrikulationsverfahren an der PHZH 414.412.1 |
+| [414.412.2](ch/zh/de/414.412.2.md) | Reglement zum ausserschulischen Praktikum 414.412.2 |
+| [414.413](ch/zh/de/414.413.md) | V über das besondere Aufnahmeverfahren an der PHZH 414.413 |
+| [414.414](ch/zh/de/414.414.md) | Rahmenordnung – Studiengänge an der PHZH 414.414 |
+| [414.414.2](ch/zh/de/414.414.2.md) | Ergänzungsstudien an der PHZH – Reglement 414.414.2 |
+| [414.414.5](ch/zh/de/414.414.5.md) | R – Instrumental- und Sologesangsunterricht an der PHZH 414.414.5 |
+| [414.415](ch/zh/de/414.415.md) | Übergangsordnung zum G über die Pädagogische Hochschule 414.415 |
+| [414.416.3](ch/zh/de/414.416.3.md) | V über die Berufseinführung der Lehrpersonen der Volksschule 414.416.3 |
+| [414.417](ch/zh/de/414.417.md) | Reglement betreffend Erweiterungsstudien an der PHZH 414.417 |
+| [414.417.1](ch/zh/de/414.417.1.md) | Reglement zum Zusatzdiplom Grundstufe an der PHZH 414.417.1 |
+| [414.417.2](ch/zh/de/414.417.2.md) | Kantonaler Stufenumstieg Sekundarstufe I (PHZH) 414.417.2 |
+| [414.418](ch/zh/de/414.418.md) | Interk. Vereinbarung, Hochschule für Pädagogik Zürich 414.418 |
+| [414.419](ch/zh/de/414.419.md) | Rahmenordnung zu den Weiterbildungsangeboten an der PHZH 414.419 |
+| [414.421.1](ch/zh/de/414.421.1.md) | MAS PHZH in Bildungsmanagement und in Bildungsinnovation 414.421.1 |
+| [414.421.2](ch/zh/de/414.421.2.md) | Diplomreglement – MAS in Bildungsinnovation PHZH 414.421.2 |
+| [414.422.1](ch/zh/de/414.422.1.md) | Joint Degree Masterstudiengang Fachdidaktik Naturwissenschaften 414.422.1 |
+| [414.422.2](ch/zh/de/414.422.2.md) | Fachdidaktik Schulsprache Deutsch 414.422.2 |
+| [414.422.3](ch/zh/de/414.422.3.md) | Joint Degree Masterstudiengang Fachdidaktik Mathematik 414.422.3 |
+| [414.422.4](ch/zh/de/414.422.4.md) | R – Fachdidaktik Künste an der PHZH und an der ZHdK 414.422.4 |
+| [414.422.5](ch/zh/de/414.422.5.md) | Joint Degree Masterstudiengänge an der PHZH / UZH 414.422.5 |
+| [414.424](ch/zh/de/414.424.md) | Professurenreglement der PHZH 414.424 |
+| [414.54](ch/zh/de/414.54.md) | Erteilen von allgemein bildendem Unterricht – Reglement 414.54 |
+| [414.55](ch/zh/de/414.55.md) | Berufsbildungsverantwortliche im Haupt- und Nebenberuf PHZH 414.55 |
+| [414.56](ch/zh/de/414.56.md) | Allgemeinbildender Unterricht an Berufsfachschulen an der PHZH 414.56 |
+| [414.57](ch/zh/de/414.57.md) | Diplomprüfung für das Lehramt im Informatik-Unterricht – R 414.57 |
+| [414.58](ch/zh/de/414.58.md) | Unterrichten von Fächern in der Berufsmaturität – Reglement 414.58 |
+| [414.581](ch/zh/de/414.581.md) | Reglement – Secondary and Higher Education in einem Schritt 414.581 |
+| [414.582](ch/zh/de/414.582.md) | Reglement – Secondary and Higher Education in zwei Schritten 414.582 |
+| [415.11](ch/zh/de/415.11.md) | Universitätsgesetz (UniG) 415.11 |
+| [415.111](ch/zh/de/415.111.md) | Universitätsordnung der Universität Zürich (UniO) 415.111 |
+| [415.111.1](ch/zh/de/415.111.1.md) | Organisationsreglement des Universitätsrats 415.111.1 |
+| [415.111.2](ch/zh/de/415.111.2.md) | Wahlreglement 415.111.2 |
+| [415.111.3](ch/zh/de/415.111.3.md) | OrgR EUL 415.111.3 |
+| [415.111.4](ch/zh/de/415.111.4.md) | OrgR Senat 415.111.4 |
+| [415.111.41](ch/zh/de/415.111.41.md) | Reglement – Benutzung von Räumen und Aussenflächen 415.111.41 |
+| [415.111.411](ch/zh/de/415.111.411.md) | Allgemeine Hausordnung der Universität Zürich 415.111.411 |
+| [415.111.42](ch/zh/de/415.111.42.md) | V über die Parkanlage der Universität Zürich-Irchel 415.111.42 |
+| [415.111.6](ch/zh/de/415.111.6.md) | Gebührenordnung für die Benützung von Universitätsräumen 415.111.6 |
+| [415.111.7](ch/zh/de/415.111.7.md) | Organisation und Verfahren der Rekurskommission – VoRK 415.111.7 |
+| [415.112](ch/zh/de/415.112.md) | Finanzreglement der Universität Zürich 415.112 |
+| [415.113](ch/zh/de/415.113.md) | Fundraising UZH 415.113 |
+| [415.114](ch/zh/de/415.114.md) | V über die Verleihung der Würde eines Ehrendoktorats 415.114 |
+| [415.115](ch/zh/de/415.115.md) | Evaluationsreglement der Universität Zürich 415.115 |
+| [415.116](ch/zh/de/415.116.md) | Schutz vor sexueller Belästigung an der Universität Zürich – R 415.116 |
+| [415.117](ch/zh/de/415.117.md) | Immobilienverordnung der Universität Zürich (ImV UZH) 415.117 |
+| [415.117.1](ch/zh/de/415.117.1.md) | Zuständigkeiten im Immobilienwesen der Universität Zürich 415.117.1 |
+| [415.119](ch/zh/de/415.119.md) | Verordnung über die Senioren-Universität 415.119 |
+| [415.121](ch/zh/de/415.121.md) | Beurteilung von Lehrveranstaltungen durch die Studierenden – R 415.121 |
+| [415.16](ch/zh/de/415.16.md) | Forschung und Lehre der Universität im Gesundheitsbereich (VüFL) 415.16 |
+| [415.165](ch/zh/de/415.165.md) | Reglement über die Verwendung des Forschungskredits 415.165 |
+| [415.166](ch/zh/de/415.166.md) | Verwendung des Nachwuchsförderungskredits – Richtlinien 415.166 |
+| [415.17](ch/zh/de/415.17.md) | Interkantonale Universitätsvereinbarung (IUV) 415.17 |
+| [415.171](ch/zh/de/415.171.md) | Hochschulkonkordat 415.171 |
+| [415.19](ch/zh/de/415.19.md) | Gesetz über die Teilverlegung der Universität 415.19 |
+| [415.21](ch/zh/de/415.21.md) | Personalverordnung der Universität Zürich (PVO-UZH) 415.21 |
+| [415.211](ch/zh/de/415.211.md) | Anstellung von externen Lehrpersonen (LPR-UZH) 415.211 |
+| [415.212](ch/zh/de/415.212.md) | Reglement – klinisch tätige Ärzte an der Vetsuisse-Fakultät 415.212 |
+| [415.213](ch/zh/de/415.213.md) | Spesenreglement 415.213 |
+| [415.215](ch/zh/de/415.215.md) | Funktionszulagen für Professorinnen und Professoren – R 415.215 |
+| [415.215.3](ch/zh/de/415.215.3.md) | Leistungsabhängige Entschädigung, Med. Fakultät – Reglement 415.215.3 |
+| [415.22](ch/zh/de/415.22.md) | Ruhegehaltsverordnung der Professorinnen und Professoren 415.22 |
+| [415.23](ch/zh/de/415.23.md) | RVO Habil 415.23 |
+| [415.24](ch/zh/de/415.24.md) | RVO TP 415.24 |
+| [415.27](ch/zh/de/415.27.md) | Integritätsverordnung 415.27 |
+| [415.31](ch/zh/de/415.31.md) | V über die Zulassung zum Studium an der Universität (VZS) 415.31 |
+| [415.311](ch/zh/de/415.311.md) | V über die Aufnahmeprüfung an die Universität Zürich 415.311 |
+| [415.321](ch/zh/de/415.321.md) | Verordnung über die Studiengebühren an der Universität Zürich 415.321 |
+| [415.321.1](ch/zh/de/415.321.1.md) | Beschluss des Universitätsrates |
+| [415.322](ch/zh/de/415.322.md) | Verordnung |
+| [415.33](ch/zh/de/415.33.md) | Disziplinarverordnung der Universität Zürich 415.33 |
+| [415.34](ch/zh/de/415.34.md) | Statuten der öffentlich-rechtlichen Körperschaft VSUZH 415.34 |
+| [415.36](ch/zh/de/415.36.md) | Reglement für die kantonalen Maturitätsprüfungen 415.36 |
+| [415.401](ch/zh/de/415.401.md) | Organisationsreglement der Theologischen Fakultät 415.401 |
+| [415.403.1](ch/zh/de/415.403.1.md) | Promotion – Theologische/Religionswissenschaftliche Fakultät 415.403.1 |
+| [415.403.2](ch/zh/de/415.403.2.md) | Promotion an der Theolog. und der Philosoph. Fakultät – V 415.403.2 |
+| [415.404.1](ch/zh/de/415.404.1.md) | Prüfungen an der Theolog. Fakultät, Religionswissenschaft – R 415.404.1 |
+| [415.404.2](ch/zh/de/415.404.2.md) | Prüfungen in Theologie an der Theologischen Fakultät 415.404.2 |
+| [415.405.1](ch/zh/de/415.405.1.md) | Bachelor- und Masterstudiengänge (RVO TRF) 415.405.1 |
+| [415.405.6](ch/zh/de/415.405.6.md) | Joint Degree Master-Studiengänge – Theologische Fakultät 415.405.6 |
+| [415.405.71](ch/zh/de/415.405.71.md) | RVO JD Sustainability TRF 415.405.71 |
+| [415.408](ch/zh/de/415.408.md) | HabilO ThF 415.408 |
+| [415.409](ch/zh/de/415.409.md) | TPV ThF 415.409 |
+| [415.411](ch/zh/de/415.411.md) | OrgR RWF 415.411 |
+| [415.413](ch/zh/de/415.413.md) | Doktorin/Doktor der Rechtswissenschaft (Dr. iur.) 415.413 |
+| [415.415.1](ch/zh/de/415.415.1.md) | RVO RWF 415.415.1 |
+| [415.415.61](ch/zh/de/415.415.61.md) | RVO JD RWF 415.415.61 |
+| [415.415.7](ch/zh/de/415.415.7.md) | RVO DD RWF 415.415.7 |
+| [415.416.1](ch/zh/de/415.416.1.md) | LL.M-Studiengang Internationales Wirtschaftsrecht 415.416.1 |
+| [415.416.2](ch/zh/de/415.416.2.md) | CAS und LL. M. in International Tax Law – Verordnung 415.416.2 |
+| [415.416.3](ch/zh/de/415.416.3.md) | CAS und LL. M. Internationales Wirtschaftsrecht 415.416.3 |
+| [415.418](ch/zh/de/415.418.md) | HabilO RWF 415.418 |
+| [415.419](ch/zh/de/415.419.md) | Verordnung über die Titularprofessur (TPV RWF) 415.419 |
+| [415.421](ch/zh/de/415.421.md) | OrgR WWF 415.421 |
+| [415.423.1](ch/zh/de/415.423.1.md) | Prüfungs- und Promotionsordnung – Ökonomie 415.423.1 |
+| [415.423.11](ch/zh/de/415.423.11.md) | RVO WWF 415.423.11 |
+| [415.423.12](ch/zh/de/415.423.12.md) | Master of Arts (MA) in Wirtschaftswissenschaften 415.423.12 |
+| [415.423.13](ch/zh/de/415.423.13.md) | Doktorat in Wirtschaftswissenschaften – PromotionsV 415.423.13 |
+| [415.423.2](ch/zh/de/415.423.2.md) | Prüfungs- und Promotionsordnung – Informatik 415.423.2 |
+| [415.423.21](ch/zh/de/415.423.21.md) | Bachelor of Science (BSc) in Informatik 415.423.21 |
+| [415.423.22](ch/zh/de/415.423.22.md) | Master of Science (MSc) in Informatik 415.423.22 |
+| [415.423.23](ch/zh/de/415.423.23.md) | Doktorat in Informatik – Promotionsverordnung 415.423.23 |
+| [415.423.33](ch/zh/de/415.423.33.md) | Doktorat in Neuroökonomie – Promotionsverordnung 415.423.33 |
+| [415.423.61](ch/zh/de/415.423.61.md) | RVO MSc QF UZH ETH Zürich 415.423.61 |
+| [415.425](ch/zh/de/415.425.md) | Executive Master of Business Administration – Verordnung 415.425 |
+| [415.428](ch/zh/de/415.428.md) | HabilO WWF 415.428 |
+| [415.429](ch/zh/de/415.429.md) | Verordnung über die Titularprofessur (TPV WWF) 415.429 |
+| [415.431](ch/zh/de/415.431.md) | Organisationsreglement der Medizinischen Fakultät 415.431 |
+| [415.432](ch/zh/de/415.432.md) | Zulassungsbeschränkungen zu den med. Studiengängen (VZMS) 415.432 |
+| [415.433.1](ch/zh/de/415.433.1.md) | Promotionsverordnung Dr. med. / Dr. med. dent. / Dr. med. chiro. 415.433.1 |
+| [415.433.2](ch/zh/de/415.433.2.md) | Promotionsordnung zur Doktorin/zum Doktor der Zahnmedizin 415.433.2 |
+| [415.433.3](ch/zh/de/415.433.3.md) | PromVO Dr. sc. med. / Dr. sc. med. dent. 415.433.3 |
+| [415.433.5](ch/zh/de/415.433.5.md) | RVO MeF 415.433.5 |
+| [415.433.91](ch/zh/de/415.433.91.md) | RVO JMM-HSG/UZH 415.433.91 |
+| [415.433.92](ch/zh/de/415.433.92.md) | RVO JMM-UniLU/UZH 415.433.92 |
+| [415.434](ch/zh/de/415.434.md) | Verordnung über die Titularprofessur (TPV MeF) 415.434 |
+| [415.434.1](ch/zh/de/415.434.1.md) | Ärztliche Prüfungen an der Medizinischen Fakultät – Reglement 415.434.1 |
+| [415.434.11](ch/zh/de/415.434.11.md) | Ausbildungs-/Prüfungsmodell der ersten vier Studienjahre 415.434.11 |
+| [415.434.2](ch/zh/de/415.434.2.md) | Zahnärztliche Prüfungen an der Med. Fakultät – Reglement 415.434.2 |
+| [415.435](ch/zh/de/415.435.md) | Verordnung über das Zentrum für Klinische Forschung 415.435 |
+| [415.436](ch/zh/de/415.436.md) | Titel «Klinische Dozentin» oder «Klinischer Dozent» 415.436 |
+| [415.437](ch/zh/de/415.437.md) | V-ZZM 415.437 |
+| [415.438](ch/zh/de/415.438.md) | HabilO MeF 415.438 |
+| [415.439](ch/zh/de/415.439.md) | Institut für Rechtsmedizin der Universität Zürich (V-IRM) 415.439 |
+| [415.439.1](ch/zh/de/415.439.1.md) | Gebührenverordnung für das Institut für Medizinische Genetik 415.439.1 |
+| [415.439.2](ch/zh/de/415.439.2.md) | GebV – Institute für Med. Mikrobiologie und Med. Virologie 415.439.2 |
+| [415.439.3](ch/zh/de/415.439.3.md) | Gebührenverordnung des Instituts für Rechtsmedizin 415.439.3 |
+| [415.439.4](ch/zh/de/415.439.4.md) | Institut für Epidemiologie, Biostatistik und Prävention 415.439.4 |
+| [415.439.5](ch/zh/de/415.439.5.md) | Gebührenverordnung für das Zentrum für Zahnmedizin 415.439.5 |
+| [415.439.6](ch/zh/de/415.439.6.md) | GebV für das Psychotherapeutische Zentrum 415.439.6 |
+| [415.439.7](ch/zh/de/415.439.7.md) | GebührenV – Institut für Medizinische Molekulargenetik 415.439.7 |
+| [415.441](ch/zh/de/415.441.md) | OrgR VSF 415.441 |
+| [415.442](ch/zh/de/415.442.md) | Vetsuisse-Fakultät der Universitäten Bern und Zürich 415.442 |
+| [415.443](ch/zh/de/415.443.md) | Doctor medicinae veterinariae der Vetsuisse-Fakultät 415.443 |
+| [415.443.1](ch/zh/de/415.443.1.md) | Promotionsverordnung Dr. sc. med. vet. 415.443.1 |
+| [415.444](ch/zh/de/415.444.md) | Fakultätsprüfungen an der Veterinärmed. Fakultät – Reglement 415.444 |
+| [415.446](ch/zh/de/415.446.md) | Verordnung über die Titularprofessur (TPV VSF) 415.446 |
+| [415.447](ch/zh/de/415.447.md) | Tierspitalverordnung 415.447 |
+| [415.448](ch/zh/de/415.448.md) | Habilitationsreglement der Vetsuisse-Fakultät 415.448 |
+| [415.449.1](ch/zh/de/415.449.1.md) | GIVIP UZH 415.449.1 |
+| [415.449.2](ch/zh/de/415.449.2.md) | Gebührenordnung des Instituts für Parasitologie 415.449.2 |
+| [415.449.3](ch/zh/de/415.449.3.md) | Gebührenordnung |
+| [415.451](ch/zh/de/415.451.md) | OrgR PhF 415.451 |
+| [415.452](ch/zh/de/415.452.md) | V über die Promotion an der Philosophischen Fakultät 415.452 |
+| [415.453](ch/zh/de/415.453.md) | Promotionsverordnung der Philosophischen Fakultät 415.453 |
+| [415.454](ch/zh/de/415.454.md) | Prüfungsordnung über das Lizenziat der Philosophischen Fakultät 415.454 |
+| [415.454.1](ch/zh/de/415.454.1.md) | Zwischenprüfung an der Philosophischen Fakultät 415.454.1 |
+| [415.454.12](ch/zh/de/415.454.12.md) | Publizistikwissenschaft, Zwischenprüfung – Reglement 415.454.12 |
+| [415.455.1](ch/zh/de/415.455.1.md) | Rahmenverordnung der Philosophischen Fakultät 415.455.1 |
+| [415.455.51](ch/zh/de/415.455.51.md) | Masterstudiengang «Filmwissenschaft» 415.455.51 |
+| [415.455.81](ch/zh/de/415.455.81.md) | Rahmenverordnung – Joint Degree Masterstudiengang 415.455.81 |
+| [415.455.82](ch/zh/de/415.455.82.md) | Masterstudiengang «Fachdidaktik Naturwissenschaften» 415.455.82 |
+| [415.455.83](ch/zh/de/415.455.83.md) | Masterstudiengang «Fachdidaktik Schulsprache Deutsch» 415.455.83 |
+| [415.455.84](ch/zh/de/415.455.84.md) | Fachdidaktik Ethik, Religionen, Gemeinschaft 415.455.84 |
+| [415.456.1](ch/zh/de/415.456.1.md) | RVO LfM 415.456.1 |
+| [415.456.2](ch/zh/de/415.456.2.md) | Organisationsverordnung LLBM 415.456.2 |
+| [415.456.21](ch/zh/de/415.456.21.md) | Entschädigungsreglement LLBM 415.456.21 |
+| [415.458](ch/zh/de/415.458.md) | HabilO PhF 415.458 |
+| [415.459](ch/zh/de/415.459.md) | Verordnung über die Titularprofessur (TPV PhF) 415.459 |
+| [415.461](ch/zh/de/415.461.md) | OrgR MNF 415.461 |
+| [415.462](ch/zh/de/415.462.md) | Rahmenverordnung Mathematisch-naturwissenschaftliche Fakultät 415.462 |
+| [415.462.51](ch/zh/de/415.462.51.md) | Neural Systems and Computation 415.462.51 |
+| [415.462.52](ch/zh/de/415.462.52.md) | Computational Biology and Bioinformatics 415.462.52 |
+| [415.462.53](ch/zh/de/415.462.53.md) | Joint MSc in Interdisciplinary Brain Sciences 415.462.53 |
+| [415.463](ch/zh/de/415.463.md) | Promotionsverordnung – Mathemat.-naturwissenschaftl. Fakultät 415.463 |
+| [415.463.1](ch/zh/de/415.463.1.md) | PromVO MNF ETHZ 415.463.1 |
+| [415.464](ch/zh/de/415.464.md) | Prüfungsordnung für das Diplom an der Math.-naturw. Fakultät 415.464 |
+| [415.466](ch/zh/de/415.466.md) | HabilO MNF 415.466 |
+| [415.467](ch/zh/de/415.467.md) | Zoologisches und Paläontologisches Museum – Reglement 415.467 |
+| [415.468](ch/zh/de/415.468.md) | Verordnung über die Titularprofessur (TPV MNF) 415.468 |
+| [415.511](ch/zh/de/415.511.md) | Masterstudiengang Theologische/Philosophische Fakultät 415.511 |
+| [415.60](ch/zh/de/415.60.md) | Rahmenverordnung über die Weiterbildung – Universität Zürich 415.60 |
+| [415.611](ch/zh/de/415.611.md) | CAS, DAS und MAS in Applied Ethics 415.611 |
+| [415.612](ch/zh/de/415.612.md) | Master of Advanced Studies in Finance – Verordnung 415.612 |
+| [415.613](ch/zh/de/415.613.md) | MAS in Kognitiver Verhaltenstherapie und Verhaltensmedizin 415.613 |
+| [415.614](ch/zh/de/415.614.md) | Master of Advanced Studies in psychoanalytic Psychotherapy – V 415.614 |
+| [415.615](ch/zh/de/415.615.md) | MAS / CAS International Organisations 415.615 |
+| [415.616](ch/zh/de/415.616.md) | Diplomstudiengang «IT-Projektmanagement» – Verordnung 415.616 |
+| [415.617](ch/zh/de/415.617.md) | Verordnung |
+| [415.618](ch/zh/de/415.618.md) | DAS in Psychotraumatologie 415.618 |
+| [415.619](ch/zh/de/415.619.md) | DAS und MAS in Neuropsychologie 415.619 |
+| [415.621](ch/zh/de/415.621.md) | CAS, DAS und Executive Master in Arts Administration 415.621 |
+| [415.622](ch/zh/de/415.622.md) | CAS, DAS und MAS in Applied History 415.622 |
+| [415.623](ch/zh/de/415.623.md) | CAS, DAS und MAS in Bibliotheks- und Informationswissenschaft 415.623 |
+| [415.624](ch/zh/de/415.624.md) | CAS, DAS und MAS in Spiritualität 415.624 |
+| [415.625](ch/zh/de/415.625.md) | CAS, DAS und MAS in Bibelwissenschaften 415.625 |
+| [415.626](ch/zh/de/415.626.md) | MAS in Real Estate 415.626 |
+| [415.627](ch/zh/de/415.627.md) | CAS, DAS und MAS in Angewandter Liturgik 415.627 |
+| [415.628](ch/zh/de/415.628.md) | CAS, DAS und MAS in Informatik an Gymnasien 415.628 |
+| [415.629](ch/zh/de/415.629.md) | CAS, DAS und MAS in Parodontologie 415.629 |
+| [415.631](ch/zh/de/415.631.md) | CAS, DAS und MAS in Postvention nach Häuslicher Gewalt 415.631 |
+| [415.632](ch/zh/de/415.632.md) | CAS, DAS und MAS in Kirchen- und Gemeindeentwicklung 415.632 |
+| [415.633](ch/zh/de/415.633.md) | DAS und MAS in Finance – V 415.633 |
+| [415.634](ch/zh/de/415.634.md) | DAS in Kognitiv-verhaltenstherapeutischer Supervision 415.634 |
+| [415.635](ch/zh/de/415.635.md) | CAS, DAS und Master in Public Health 415.635 |
+| [415.636](ch/zh/de/415.636.md) | MAS in Kognitiver Verhaltenstherapie 415.636 |
+| [415.637](ch/zh/de/415.637.md) | Forensische Wissenschaften an der Medizinischen Fakultät – V 415.637 |
+| [415.638](ch/zh/de/415.638.md) | CAS, DAS und Executive Master in Art Market Studies 415.638 |
+| [415.639](ch/zh/de/415.639.md) | MAS in Schulpsychologie 415.639 |
+| [415.641](ch/zh/de/415.641.md) | DAS und MAS in Head and Neck Oncology 415.641 |
+| [415.642](ch/zh/de/415.642.md) | DAS und MAS in Ärztlicher Psychotherapie 415.642 |
+| [415.643](ch/zh/de/415.643.md) | CAS und DAS in Entwicklungspädiatrie 415.643 |
+| [415.644](ch/zh/de/415.644.md) | Organizational Health Development, Work + Health – V 415.644 |
+| [415.645](ch/zh/de/415.645.md) | Client Advisory und Wealth Management 415.645 |
+| [415.646](ch/zh/de/415.646.md) | MAS in European and Chinese Business Management 415.646 |
+| [415.647](ch/zh/de/415.647.md) | CAS in Applied Economic History 415.647 |
+| [415.648](ch/zh/de/415.648.md) | CAS sowie DAS und MAS in Oraler Implantologie 415.648 |
+| [415.649](ch/zh/de/415.649.md) | Clinical Data Management, Monitoring, Trial Management 415.649 |
+| [415.651](ch/zh/de/415.651.md) | CAS/DAS Schweizer Literatur, CAS Literaturvermittlung 415.651 |
+| [416.1](ch/zh/de/416.1.md) | Verordnung über die Ausbildungsbeiträge (VAB) 416.1 |
+| [416.3](ch/zh/de/416.3.md) | Stipendienkonkordat 416.3 |
+| [431.1](ch/zh/de/431.1.md) | Statistikgesetz (StatG) 431.1 |
+| [431.11](ch/zh/de/431.11.md) | Verordnung über das Amt für Statistik und Daten (VASD) 431.11 |
+| [432.11](ch/zh/de/432.11.md) | Archivgesetz 432.11 |
+| [432.111](ch/zh/de/432.111.md) | Archivverordnung 432.111 |
+| [432.21](ch/zh/de/432.21.md) | Vertrag betreffend Errichtung einer Zentralbibliothek 432.21 |
+| [432.211](ch/zh/de/432.211.md) | Statuten der Zentralbibliothek 432.211 |
+| [432.212](ch/zh/de/432.212.md) | Bibliotheksordnung der Zentralbibliothek Zürich 432.212 |
+| [432.22](ch/zh/de/432.22.md) | Bibliotheksförderungsverordnung (BFV) 432.22 |
+| [432.311](ch/zh/de/432.311.md) | Vereinbarung über die Waffensammlungen 432.311 |
+| [440.1](ch/zh/de/440.1.md) | Kulturförderungsgesetz (KFG) 440.1 |
+| [440.11](ch/zh/de/440.11.md) | Kulturförderungsverordnung (KFV) 440.11 |
+| [440.2](ch/zh/de/440.2.md) | Opernhausgesetz (OpHG) 440.2 |
+| [440.6](ch/zh/de/440.6.md) | Interkantonale Kulturlastenvereinbarung 440.6 |
+| [511.11](ch/zh/de/511.11.md) | Erfüllung von Verwaltungsaufgaben im militärischen Bereich 511.11 |
+| [513.1](ch/zh/de/513.1.md) | Verordnung |
+| [514.1](ch/zh/de/514.1.md) | Gesetz |
+| [514.2](ch/zh/de/514.2.md) | Vertrag betreffend Benützung des Waffenplatzes Zürich 514.2 |
+| [514.22](ch/zh/de/514.22.md) | Zusatzvertrag Nr. 2 |
+| [514.3](ch/zh/de/514.3.md) | Vertrag betreffend Höckler-Areal und Militärschiessplatz 514.3 |
+| [514.4](ch/zh/de/514.4.md) | Vereinbarung |
+| [514.8](ch/zh/de/514.8.md) | Vereinbarung betreffend die Zeughausverhältnisse im Kanton Zürich 514.8 |
+| [520](ch/zh/de/520.md) | Bevölkerungsschutzgesetz (BSG) 520 |
+| [521](ch/zh/de/521.md) | Verordnung über den Zivilschutz 521 |
+| [522](ch/zh/de/522.md) | Zivilschutzgesetz (ZSG) 522 |
+| [522.1](ch/zh/de/522.1.md) | Kantonale Zivilschutzverordnung (KZV) 522.1 |
+| [523](ch/zh/de/523.md) | V über geschützte zivile sanitätsdienstliche Anlagen (Basisspitäler) 523 |
+| [525.1](ch/zh/de/525.1.md) | Zivilschutzorganisation Region Dietikon – Staatsvertrag 525.1 |
+| [528.1](ch/zh/de/528.1.md) | Verordnung über den ABC-Schutz (ABCV) 528.1 |
+| [550.1](ch/zh/de/550.1.md) | Polizeigesetz (PolG) 550.1 |
+| [550.11](ch/zh/de/550.11.md) | Verordnung über die polizeiliche Zwangsanwendung (PolZ) 550.11 |
+| [550.12](ch/zh/de/550.12.md) | VpÜN 550.12 |
+| [551.1](ch/zh/de/551.1.md) | Polizeiorganisationsgesetz (POG) 551.1 |
+| [551.101](ch/zh/de/551.101.md) | Verordnung über die kriminalpolizeiliche Aufgabenteilung 551.101 |
+| [551.102](ch/zh/de/551.102.md) | Entschädigung für gemeindepolizeiliche Aufgaben (VEGPA) 551.102 |
+| [551.103](ch/zh/de/551.103.md) | POLIS-Verordnung 551.103 |
+| [551.104](ch/zh/de/551.104.md) | ViCLAS-Konkordat 551.104 |
+| [551.11](ch/zh/de/551.11.md) | Kantonspolizeiverordnung (KapoV) 551.11 |
+| [551.111](ch/zh/de/551.111.md) | Dienstreglement für das kantonale Polizeikorps 551.111 |
+| [551.112](ch/zh/de/551.112.md) | Erkennungsdienstliche Behandlung von Personen – Verordnung 551.112 |
+| [551.113](ch/zh/de/551.113.md) | Biometrisches Gesichtserkennungssystem – V 551.113 |
+| [551.12](ch/zh/de/551.12.md) | Reglement über die Beförderungen bei der Kantonspolizei 551.12 |
+| [551.121](ch/zh/de/551.121.md) | Beförderungen bei der Flughafen-Sicherheitspolizei – Reglement 551.121 |
+| [551.131](ch/zh/de/551.131.md) | Zulagen und Entschädigungen bei der Kantonspolizei – Reglement 551.131 |
+| [551.137](ch/zh/de/551.137.md) | Heilungskostenverordnung 551.137 |
+| [551.15](ch/zh/de/551.15.md) | V über die Zusammenarbeit der Kantons- und Gemeindepolizei 551.15 |
+| [551.151](ch/zh/de/551.151.md) | V betreffend Kriminalpolizei und politische Polizei in Winterthur 551.151 |
+| [551.171](ch/zh/de/551.171.md) | Vereinbarung betreffend die Autobahnpolizei auf der N 3 551.171 |
+| [551.172](ch/zh/de/551.172.md) | Vereinbarung betreffend Autobahnpolizei auf der N 1 und der N 7 551.172 |
+| [551.173](ch/zh/de/551.173.md) | Vereinbarung betreffend die Autobahnpolizei auf der N 3 551.173 |
+| [551.174](ch/zh/de/551.174.md) | Vereinbarung betreffend die Polizeidienste auf der N 4 551.174 |
+| [551.175](ch/zh/de/551.175.md) | Vereinbarung über die Ausübung der Polizeidienste auf der A4/A4a 551.175 |
+| [551.18](ch/zh/de/551.18.md) | Vereinbarung über die interkantonalen Polizeieinsätze (IKAPOL) 551.18 |
+| [551.19](ch/zh/de/551.19.md) | Massnahmen gegen Gewalt anlässlich von Sportveranstaltungen 551.19 |
+| [551.191](ch/zh/de/551.191.md) | Massnahmen gegen Gewalt anlässlich von Sportveranstaltungen 551.191 |
+| [551.2](ch/zh/de/551.2.md) | KVSMS 551.2 |
+| [551.4](ch/zh/de/551.4.md) | Gesetz für ein Polizei- und Justizzentrum Zürich 551.4 |
+| [551.5](ch/zh/de/551.5.md) | Verordnung über die kantonalen Polizeigefängnisse 551.5 |
+| [551.60](ch/zh/de/551.60.md) | Vereinbarung – Forensisches Institut Zürich 551.60 |
+| [551.61](ch/zh/de/551.61.md) | Organisationsreglement des Forensischen Instituts Zürich 551.61 |
+| [551.62](ch/zh/de/551.62.md) | Geschäftsordnung des Forensischen Instituts Zürich 551.62 |
+| [551.63](ch/zh/de/551.63.md) | Gebührenordnung des Forensischen Instituts Zürich 551.63 |
+| [551.64](ch/zh/de/551.64.md) | Finanzreglement des Forensischen Instituts Zürich 551.64 |
+| [551.65](ch/zh/de/551.65.md) | Personalreglement des Forensischen Instituts Zürich 551.65 |
+| [552.1](ch/zh/de/552.1.md) | Waffenverordnung (WafVO) 552.1 |
+| [552.5](ch/zh/de/552.5.md) | Kantonale Sprengstoffverordnung (KSprstV) 552.5 |
+| [553](ch/zh/de/553.md) | Einführungsgesetz zum Bundesgesetz über Geldspiele (EG BGS) 553 |
+| [553.1](ch/zh/de/553.1.md) | Kantonale Geldspielverordnung (KGSV) 553.1 |
+| [553.2](ch/zh/de/553.2.md) | Gesetz über den Beitritt zum GSK und zur IKV 2020 553.2 |
+| [553.3](ch/zh/de/553.3.md) | Interkantonale Vereinbarung betreffend Lotterien und Wetten 553.3 |
+| [554.1](ch/zh/de/554.1.md) | Kantonales Tierschutzgesetz 554.1 |
+| [554.11](ch/zh/de/554.11.md) | Kantonale Tierschutzverordnung (KTSchV) 554.11 |
+| [554.5](ch/zh/de/554.5.md) | Hundegesetz (HuG) 554.5 |
+| [554.51](ch/zh/de/554.51.md) | Hundeverordnung (HuV) 554.51 |
+| [611](ch/zh/de/611.md) | Gesetz über Controlling und Rechnungslegung (CRG) 611 |
+| [611.1](ch/zh/de/611.1.md) | Rechnungslegungsverordnung (RLV) 611.1 |
+| [611.2](ch/zh/de/611.2.md) | Finanzcontrollingverordnung (FCV) 611.2 |
+| [612](ch/zh/de/612.md) | Verordnung über die Finanzverwaltung 612 |
+| [612.1](ch/zh/de/612.1.md) | Verordnung über den Gemeinnützigen Fonds (VGF) 612.1 |
+| [612.2](ch/zh/de/612.2.md) | Verordnung über das Globalbudget 612.2 |
+| [612.3](ch/zh/de/612.3.md) | Kulturfondsverordnung (KufV) 612.3 |
+| [612.4](ch/zh/de/612.4.md) | Beschluss des Kantonsrates |
+| [614](ch/zh/de/614.md) | Finanzkontrollgesetz (FKG) 614 |
+| [615](ch/zh/de/615.md) | Rahmenvereinbarung – Interkant. Zusammenarbeit mit Lastenausgleich 615 |
+| [631.21](ch/zh/de/631.21.md) | Beschluss des Kantonsrates |
+| [631.31](ch/zh/de/631.31.md) | Berufliche Vorsorge, Steuerbefreiung, V 631.31 |
+| [631.32](ch/zh/de/631.32.md) | Bewertung von Liegenschaften, Festsetzung der Eigenmietwerte 631.32 |
+| [631.321](ch/zh/de/631.321.md) | Übergangsregelung zur Weisung 2026 631.321 |
+| [631.322](ch/zh/de/631.322.md) | Verordnung über den Vollzug von Art. 69 StHG 631.322 |
+| [631.33](ch/zh/de/631.33.md) | Pauschalierung von Berufsauslagen bei der Steuereinschätzung 631.33 |
+| [631.41](ch/zh/de/631.41.md) | Quellensteuerverordnung I 631.41 |
+| [631.42](ch/zh/de/631.42.md) | Quellensteuerverordnung II 631.42 |
+| [631.421](ch/zh/de/631.421.md) | Tarife für quellensteuerpflichtige Arbeitnehmer/innen 631.421 |
+| [631.422](ch/zh/de/631.422.md) | Weisung zur Quellensteuer 631.422 |
+| [631.423](ch/zh/de/631.423.md) | Verordnung der Finanzdirektion |
+| [631.424](ch/zh/de/631.424.md) | Verordnung |
+| [631.43](ch/zh/de/631.43.md) | V über die elektronische Einreichung von Quellensteuerdaten 631.43 |
+| [631.51](ch/zh/de/631.51.md) | Verordnung über die Organisation des kantonalen Steueramtes 631.51 |
+| [631.53](ch/zh/de/631.53.md) | Organisationsverordnung des Steuerrekursgerichts (OV StRG) 631.53 |
+| [631.531](ch/zh/de/631.531.md) | Beschluss des Kantonsrates |
+| [631.55](ch/zh/de/631.55.md) | Weisung betreffend Anzeigepflicht gegenüber Steuerbehörden 631.55 |
+| [631.61](ch/zh/de/631.61.md) | Skonto, Zinsen für Staats- und Gemeindesteuern 631.61 |
+| [631.611](ch/zh/de/631.611.md) | RRB über die Festsetzung und Berechnung von Zinsen 631.611 |
+| [631.62](ch/zh/de/631.62.md) | Beschluss des Regierungsrates |
+| [631.71](ch/zh/de/631.71.md) | Anweisung |
+| [632.1](ch/zh/de/632.1.md) | Erbschafts- und Schenkungssteuergesetz (ESchG) 632.1 |
+| [632.11](ch/zh/de/632.11.md) | Verordnung zum Erbschafts- und Schenkungssteuergesetz 632.11 |
+| [632.111](ch/zh/de/632.111.md) | Verfügung der Finanzdirektion |
+| [634.1](ch/zh/de/634.1.md) | Verordnung über die Durchführung der direkten Bundessteuer 634.1 |
+| [634.2](ch/zh/de/634.2.md) | Verordnung über die Rückerstattung der Verrechnungssteuer 634.2 |
+| [634.3](ch/zh/de/634.3.md) | Verordnung – Anrechnung ausländischer Quellensteuern 634.3 |
+| [634.31](ch/zh/de/634.31.md) | Maximalbetrag für pauschale Steueranrechnung 634.31 |
+| [634.41](ch/zh/de/634.41.md) | Verordnung über Steuerrückbehalt Amerika 634.41 |
+| [634.5](ch/zh/de/634.5.md) | Kantonale Verordnung über die Wehrpflichtersatzabgabe (KWPEV) 634.5 |
+| [671.1](ch/zh/de/671.1.md) | Konkordat über den Ausschluss von Steuerabkommen 671.1 |
+| [672.101](ch/zh/de/672.101.md) | Vereinbarung |
+| [672.108](ch/zh/de/672.108.md) | Vereinbarung |
+| [672.111](ch/zh/de/672.111.md) | Gegenrechtserklärungen |
+| [672.113](ch/zh/de/672.113.md) | Steuerbefreiung |
+| [672.116](ch/zh/de/672.116.md) | Vereinbarung |
+| [672.119](ch/zh/de/672.119.md) | Vereinbarung |
+| [672.601](ch/zh/de/672.601.md) | Gegenrechtserklärungen |
+| [672.602](ch/zh/de/672.602.md) | Vereinbarung |
+| [672.603](ch/zh/de/672.603.md) | Gegenrechtsvereinbarung |
+| [672.606](ch/zh/de/672.606.md) | Gegenrechtsvereinbarung |
+| [672.607](ch/zh/de/672.607.md) | Vereinbarung |
+| [672.608](ch/zh/de/672.608.md) | Vereinbarung |
+| [672.609](ch/zh/de/672.609.md) | Vereinbarung |
+| [672.610](ch/zh/de/672.610.md) | Gegenrechtsvereinbarung |
+| [672.611](ch/zh/de/672.611.md) | Vereinbarung |
+| [672.612](ch/zh/de/672.612.md) | Gegenrechtserklärung |
+| [672.613](ch/zh/de/672.613.md) | Vereinbarung |
+| [672.614](ch/zh/de/672.614.md) | Gegenrechtsvereinbarung |
+| [672.615](ch/zh/de/672.615.md) | Gegenrechtsvereinbarung |
+| [672.616](ch/zh/de/672.616.md) | Vereinbarung |
+| [672.617](ch/zh/de/672.617.md) | Gegenrechtsvereinbarung mit dem Kanton Graubünden 672.617 |
+| [672.618](ch/zh/de/672.618.md) | Vereinbarung |
+| [672.619](ch/zh/de/672.619.md) | Vereinbarung |
+| [672.621](ch/zh/de/672.621.md) | Gegenrechtsvereinbarung |
+| [672.622](ch/zh/de/672.622.md) | Gegenrechtsvereinbarung |
+| [672.623](ch/zh/de/672.623.md) | Vereinbarung |
+| [672.625](ch/zh/de/672.625.md) | Gegenrechtserklärung |
+| [673.11](ch/zh/de/673.11.md) | Gegenrechtserklärung des Regierungsrates |
+| [673.12](ch/zh/de/673.12.md) | Gegenrechtsvereinbarung mit Frankreich 673.12 |
+| [681](ch/zh/de/681.md) | Verordnung über die Gebühren der Gemeindebehörden (VOGG) 681 |
+| [682](ch/zh/de/682.md) | Gebührenordnung für die Verwaltungsbehörden 682 |
+| [691](ch/zh/de/691.md) | Salzgesetz 691 |
+| [700.1](ch/zh/de/700.1.md) | Planungs- und Baugesetz (PBG) 700.1 |
+| [700.11](ch/zh/de/700.11.md) | Verordnung über die Kleinsiedlungen ausserhalb der Bauzonen 700.11 |
+| [700.2](ch/zh/de/700.2.md) | Allgemeine Bauverordnung (ABV) 700.2 |
+| [700.21](ch/zh/de/700.21.md) | Besondere Bauverordnung I (BBV I) 700.21 |
+| [700.211](ch/zh/de/700.211.md) | Wärmedämmvorschriften (WDV) 700.211 |
+| [700.212](ch/zh/de/700.212.md) | Klima-, Belüftungs- und Beleuchtungsanlagen – Anforderungen 700.212 |
+| [700.22](ch/zh/de/700.22.md) | Besondere Bauverordnung II (BBV II) 700.22 |
+| [700.3](ch/zh/de/700.3.md) | Sondergebrauchsverordnung (SGV) 700.3 |
+| [700.4](ch/zh/de/700.4.md) | Verkehrserschliessungsverordnung (VErV) 700.4 |
+| [700.5](ch/zh/de/700.5.md) | Zugangsnormalien 700.5 |
+| [700.6](ch/zh/de/700.6.md) | Bauverfahrensverordnung (BVV) 700.6 |
+| [700.7](ch/zh/de/700.7.md) | Organisationsverordnung des Baurekursgerichts (OV BRG) 700.7 |
+| [700.71](ch/zh/de/700.71.md) | Beschluss des Kantonsrates |
+| [700.8](ch/zh/de/700.8.md) | Verordnung über den preisgünstigen Wohnraum (PWV) 700.8 |
+| [700.9](ch/zh/de/700.9.md) | Mehrwertausgleichsgesetz (MAG) 700.9 |
+| [700.91](ch/zh/de/700.91.md) | Mehrwertausgleichsverordnung (MAV) 700.91 |
+| [701.1](ch/zh/de/701.1.md) | KRB – Festsetzung des revidierten kantonalen Richtplans 701.1 |
+| [701.11](ch/zh/de/701.11.md) | Verordnung über die Richtplanungen 701.11 |
+| [701.12](ch/zh/de/701.12.md) | V über die Darstellung von Nutzungsplänen (VDNP) 701.12 |
+| [701.13](ch/zh/de/701.13.md) | Quartierplanverordnung (QPV) 701.13 |
+| [701.3](ch/zh/de/701.3.md) | Verordnung über Staatsbeiträge für den Natur- und Heimatschutz 701.3 |
+| [702.11](ch/zh/de/702.11.md) | Kantonale Natur- und Heimatschutzverordnung (KNHV) 702.11 |
+| [702.111](ch/zh/de/702.111.md) | Sachverständigenkommissionen gemäss § 216 PBG (VSVK) 702.111 |
+| [702.112](ch/zh/de/702.112.md) | Natur- und Heimatschutzfondsverordnung (NHFV) 702.112 |
+| [702.12](ch/zh/de/702.12.md) | Verordnung über den Pflanzenschutz 702.12 |
+| [702.13](ch/zh/de/702.13.md) | Verordnung zum Schutze der Tier- und Pflanzenwelt 702.13 |
+| [702.15](ch/zh/de/702.15.md) | Pilzschutzverordnung 702.15 |
+| [702.21](ch/zh/de/702.21.md) | Natur- und Heimatschutzfondsgesetz (NHFG) 702.21 |
+| [702.22](ch/zh/de/702.22.md) | Natur- und Heimatschutzfondsverordnung (NHFV) 702.22 |
+| [702.25](ch/zh/de/702.25.md) | Bewirtschaftungsbeiträge für Naturschutzleistungen (VBN) 702.25 |
+| [702.311](ch/zh/de/702.311.md) | RRB über Pflanzenschutzgebiet am Üetliberg 702.311 |
+| [702.315](ch/zh/de/702.315.md) | Beschluss des Regierungsrates |
+| [702.332](ch/zh/de/702.332.md) | V zum Schutze des Landschaftsbildes am Albispass 702.332 |
+| [702.411](ch/zh/de/702.411.md) | Verordnung zum Schutze des Landschaftsbildes Forch 702.411 |
+| [702.422](ch/zh/de/702.422.md) | Schutz des Lützelsees, Seeweidsees, Uetzikerrietes – V 702.422 |
+| [702.435](ch/zh/de/702.435.md) | RRB über das Schongebiet am Tössstock 702.435 |
+| [702.439](ch/zh/de/702.439.md) | V zum Schutze des Bachtels und des Allmens 702.439 |
+| [702.476](ch/zh/de/702.476.md) | Beschluss des Regierungsrates |
+| [702.541](ch/zh/de/702.541.md) | Verordnung zum Schutze des Ortsbildes Ellikon am Rhein 702.541 |
+| [702.581](ch/zh/de/702.581.md) | V zum Schutze des Landschaftsbildes beim Rheinfall 702.581 |
+| [702.615](ch/zh/de/702.615.md) | Verordnung zum Schutze des Eigentales 702.615 |
+| [702.625](ch/zh/de/702.625.md) | Verordnung zum Schutze des Bachsertales 702.625 |
+| [702.651](ch/zh/de/702.651.md) | Verordnung zum Schutze des Neeracherriedes 702.651 |
+| [702.665](ch/zh/de/702.665.md) | Verordnung zum Schutze des Ortsbildes von Regensberg 702.665 |
+| [702.675](ch/zh/de/702.675.md) | Verordnung zum Schutze der Altläufe der Glatt 702.675 |
+| [704.1](ch/zh/de/704.1.md) | Kantonales Geoinformationsgesetz (KGeoIG) 704.1 |
+| [704.11](ch/zh/de/704.11.md) | Kantonale Geoinformationsverordnung (KGeoIV) 704.11 |
+| [704.12](ch/zh/de/704.12.md) | Kantonale Verordnung über die amtliche Vermessung (KVAV) 704.12 |
+| [704.13](ch/zh/de/704.13.md) | KÖREBKV 704.13 |
+| [704.14](ch/zh/de/704.14.md) | Leitungskatasterverordnung (LKV) 704.14 |
+| [704.15](ch/zh/de/704.15.md) | Gebührenverordnung für Geodaten (GebV GeoD) 704.15 |
+| [704.16](ch/zh/de/704.16.md) | Gebäude- und Wohnungsregister und die Datenlogistik (GWDV) 704.16 |
+| [704.2](ch/zh/de/704.2.md) | GIS-Verordnung 704.2 |
+| [704.21](ch/zh/de/704.21.md) | Beschluss des Regierungsrates |
+| [704.25](ch/zh/de/704.25.md) | Xxxxxxxxxxxxxx 704.25 |
+| [710.2](ch/zh/de/710.2.md) | Gebührenverordnung zum Vollzug des Umweltrechts (GebV UR) 710.2 |
+| [710.3](ch/zh/de/710.3.md) | Verordnung über allgemeine und Wohnhygiene 710.3 |
+| [710.31](ch/zh/de/710.31.md) | Ausführungsvorschriften zur Verordnung über Hygiene 710.31 |
+| [710.4](ch/zh/de/710.4.md) | Stoffverordnung (Vollzugsorganisation) 710.4 |
+| [710.5](ch/zh/de/710.5.md) | Einführungsverordnung über die Umweltverträglichkeitsprüfung 710.5 |
+| [710.6](ch/zh/de/710.6.md) | Verordnung über den Vollzug der Störfallverordnung 710.6 |
+| [711.1](ch/zh/de/711.1.md) | Einführungsgesetz zum Gewässerschutzgesetz (EG GSchG) 711.1 |
+| [711.11](ch/zh/de/711.11.md) | Verordnung über den Gewässerschutz (KGSchV) 711.11 |
+| [711.13](ch/zh/de/711.13.md) | Beschluss des Regierungsrates |
+| [711.14](ch/zh/de/711.14.md) | Beschluss des Regierungsrates |
+| [711.511](ch/zh/de/711.511.md) | Vertrag über die Kläranlage von Schaffhausen 711.511 |
+| [711.521](ch/zh/de/711.521.md) | Staatsvertrag über eine Kläranlage mit dem Kanton Aargau 711.521 |
+| [711.522](ch/zh/de/711.522.md) | Abwasserverband Kelleramt 711.522 |
+| [711.531](ch/zh/de/711.531.md) | Staatsvertrag über eine Kläranlage mit dem Kanton Thurgau 711.531 |
+| [711.532](ch/zh/de/711.532.md) | Staatsvertrag über eine Kläranlage mit dem Kanton Thurgau 711.532 |
+| [711.533](ch/zh/de/711.533.md) | Staatsvertrag über eine Kläranlage mit dem Kanton Thurgau 711.533 |
+| [711.534](ch/zh/de/711.534.md) | Staatsvertrag über eine Abwasserreinigungsanlage mit dem Kt. TG 711.534 |
+| [712.1](ch/zh/de/712.1.md) | Abfallgesetz (AbfG) 712.1 |
+| [712.11](ch/zh/de/712.11.md) | Abfallverordnung (AbfV) 712.11 |
+| [712.12](ch/zh/de/712.12.md) | Deponienachsorgeverordnung (DeNaV) 712.12 |
+| [712.41](ch/zh/de/712.41.md) | Sonderabfall-Abgabeverordnung 712.41 |
+| [712.444](ch/zh/de/712.444.md) | Verordnung |
+| [712.61](ch/zh/de/712.61.md) | Vertrag |
+| [713.11](ch/zh/de/713.11.md) | Verordnung zum Massnahmenplan Luftreinhaltung (VML) 713.11 |
+| [713.111](ch/zh/de/713.111.md) | Luftreinhaltung, Teilmassnahmenplan Feuerung 713.111 |
+| [713.12](ch/zh/de/713.12.md) | SMOG-Verordnung 713.12 |
+| [713.41](ch/zh/de/713.41.md) | Lärmschutzverordnung |
+| [713.5](ch/zh/de/713.5.md) | Verordnung über den Baulärm 713.5 |
+| [715.1](ch/zh/de/715.1.md) | V über den Vollzug der Chemikaliengesetzgebung (VVChem) 715.1 |
+| [715.2](ch/zh/de/715.2.md) | Vereinbarung Vollzug Chemikalienrecht Ostschweiz und FL 715.2 |
+| [720.1](ch/zh/de/720.1.md) | Interkantonale Vereinbarung über das öffentliche Beschaffungswesen 720.1 |
+| [720.11](ch/zh/de/720.11.md) | Submissionsverordnung (SVO) 720.11 |
+| [721.1](ch/zh/de/721.1.md) | Immobilienverordnung (ImV) 721.1 |
+| [721.11](ch/zh/de/721.11.md) | Regulativ für die staatlichen Liegenschaften 721.11 |
+| [721.2](ch/zh/de/721.2.md) | Verordnung über die Organisation des Hausdienstes 721.2 |
+| [722.1](ch/zh/de/722.1.md) | Strassengesetz (StrG) 722.1 |
+| [722.11](ch/zh/de/722.11.md) | V – Beiträge an den Unterhalt von Gemeindestrassen (VBUG) 722.11 |
+| [722.15](ch/zh/de/722.15.md) | Verkehrssicherheitsverordnung (VSiV) 722.15 |
+| [722.18](ch/zh/de/722.18.md) | Strassenbeitragsverordnung (StrBV) 722.18 |
+| [722.2](ch/zh/de/722.2.md) | Einführungsgesetz zum Nationalstrassengesetz (EG NSG) 722.2 |
+| [722.21](ch/zh/de/722.21.md) | Verordnung zum Einführungsgesetz zum Nationalstrassengesetz 722.21 |
+| [722.61](ch/zh/de/722.61.md) | Verordnung über das Gesamtverkehrsmodell (GVMV) 722.61 |
+| [724.1](ch/zh/de/724.1.md) | Wassergesetz (WsG) 724.1 |
+| [724.11](ch/zh/de/724.11.md) | Wasserverordnung (WsV) 724.11 |
+| [724.112](ch/zh/de/724.112.md) | Hochwasserschutz und Wasserbaupolizei (HWSchV) 724.112 |
+| [724.115](ch/zh/de/724.115.md) | Wasserwirtschaftsgesetz |
+| [724.12](ch/zh/de/724.12.md) | Interkantonale Vereinbarung – Linthwerk 724.12 |
+| [724.21](ch/zh/de/724.21.md) | Gebührenverordnung zum Wasserwirtschaftsgesetz (GebV WWG) 724.21 |
+| [724.211](ch/zh/de/724.211.md) | Konzessionsverordnung WWG 724.211 |
+| [724.31](ch/zh/de/724.31.md) | Vertrag |
+| [724.32](ch/zh/de/724.32.md) | Vertrag über die Etzelwerkkonzession 724.32 |
+| [724.321](ch/zh/de/724.321.md) | RRB über Bestätigung der Zustimmung zur Etzelwerkkonzession 724.321 |
+| [724.322](ch/zh/de/724.322.md) | Genehmigungsbeschluss über die Planvorlage für das Etzelwerk 724.322 |
+| [724.323](ch/zh/de/724.323.md) | Genehmigungsbeschluss für die Werkanlagen des Etzelwerkes 724.323 |
+| [724.33](ch/zh/de/724.33.md) | Vertrag über das Kraftwerk Sihl-Höfe 724.33 |
+| [724.34](ch/zh/de/724.34.md) | Wasserrechtsverleihung für das Limmatwerk Wettingen 724.34 |
+| [724.35](ch/zh/de/724.35.md) | Regulativ über Wasserstand des Pfäffikersees 724.35 |
+| [724.41](ch/zh/de/724.41.md) | Verordnung über die Wasserversorgung (WsVV) 724.41 |
+| [724.42](ch/zh/de/724.42.md) | Gemeinsame Wassergewinnungsanlage – Staatsvertrag SH/ZH 724.42 |
+| [725.1](ch/zh/de/725.1.md) | Gesetz über die Nutzung des Untergrundes (GNU) 725.1 |
+| [725.11](ch/zh/de/725.11.md) | Verordnung über die Nutzung des Untergrundes (VNU) 725.11 |
+| [732.1](ch/zh/de/732.1.md) | EKZ-Gesetz 732.1 |
+| [732.11](ch/zh/de/732.11.md) | EKZ-Verordnung 732.11 |
+| [732.15](ch/zh/de/732.15.md) | Endverbraucher und Produzenten – EKZ 732.15 |
+| [732.151](ch/zh/de/732.151.md) | Tarife |
+| [732.152](ch/zh/de/732.152.md) | Netzanschlussbedingungen der EKZ |
+| [732.16](ch/zh/de/732.16.md) | Freie Endverbraucher und Produzenten – EKZ 732.16 |
+| [732.17](ch/zh/de/732.17.md) | Netznutzung durch Verteilnetzbetreiber im Mittelspannungsnetz 732.17 |
+| [732.2](ch/zh/de/732.2.md) | Gründungsvertrag NOK 732.2 |
+| [732.212](ch/zh/de/732.212.md) | Beschluss des Kantonsrates |
+| [740.1](ch/zh/de/740.1.md) | Gesetz über den öffentlichen Personenverkehr (PVG) 740.1 |
+| [740.12](ch/zh/de/740.12.md) | Verordnung über die Videoüberwachung im öffentlichen Verkehr 740.12 |
+| [740.13](ch/zh/de/740.13.md) | Verbundtarif des Zürcher Verkehrsverbunds 740.13 |
+| [740.3](ch/zh/de/740.3.md) | Angebotsverordnung 740.3 |
+| [740.35](ch/zh/de/740.35.md) | Fahrplanverfahrensverordnung (FVV) 740.35 |
+| [740.4](ch/zh/de/740.4.md) | GR-ZVV 740.4 |
+| [740.6](ch/zh/de/740.6.md) | Kostenverteiler-Verordnung 740.6 |
+| [740.7](ch/zh/de/740.7.md) | Bahninfrastrukturfonds des Bundes (VB BIF) 740.7 |
+| [741.1](ch/zh/de/741.1.md) | Verkehrsabgabengesetz (VAG) 741.1 |
+| [741.11](ch/zh/de/741.11.md) | Verkehrsabgabenverordnung (VAV) 741.11 |
+| [741.2](ch/zh/de/741.2.md) | Kantonale Signalisationsverordnung (KSigV) 741.2 |
+| [741.3](ch/zh/de/741.3.md) | Beschluss des Regierungsrates |
+| [741.4](ch/zh/de/741.4.md) | Verordnung |
+| [743.1](ch/zh/de/743.1.md) | Konkordat über die Seilbahnen und Skilifte 743.1 |
+| [743.2](ch/zh/de/743.2.md) | Einführungsverordnung zur Seilbahnverordnung (ESebV) 743.2 |
+| [744.11](ch/zh/de/744.11.md) | Kantonale Personenbeförderungsverordnung (KPBV) 744.11 |
+| [747.1](ch/zh/de/747.1.md) | Einführungsgesetz |
+| [747.11](ch/zh/de/747.11.md) | Schifffahrtsverordnung 747.11 |
+| [747.12](ch/zh/de/747.12.md) | Schiffssteuergesetz 747.12 |
+| [747.121](ch/zh/de/747.121.md) | Schiffssteuerverordnung2 |
+| [747.2](ch/zh/de/747.2.md) | Interkantonale Vereinbarung über die Schifffahrt 747.2 |
+| [747.4](ch/zh/de/747.4.md) | Schiffsstationierungsverordnung (SchSV) 747.4 |
+| [747.5](ch/zh/de/747.5.md) | Vereinbarung |
+| [747.51](ch/zh/de/747.51.md) | Vertrag |
+| [747.61](ch/zh/de/747.61.md) | Vereinbarung über den Unterhalt des Rheinfallfelsens 747.61 |
+| [748.1](ch/zh/de/748.1.md) | Flughafengesetz 748.1 |
+| [748.15](ch/zh/de/748.15.md) | Verordnung zum Zürcher Fluglärm-Index (ZFI-VO) 748.15 |
+| [748.2](ch/zh/de/748.2.md) | Verordnung zum Luftfahrtrecht des Bundes (VLB) 748.2 |
+| [748.3](ch/zh/de/748.3.md) | Flughafenfondsgesetz 748.3 |
+| [754.2](ch/zh/de/754.2.md) | V über die Top Level Domain «.zuerich» (TLDV) 754.2 |
+| [781](ch/zh/de/781.md) | Gesetz betreffend die Abtretung von Privatrechten 781 |
+| [781.1](ch/zh/de/781.1.md) | Verordnung betreffend das Administrativverfahren 781.1 |
+| [781.2](ch/zh/de/781.2.md) | Verordnung über das Verfahren der Schätzungskommissionen 781.2 |
+| [782](ch/zh/de/782.md) | Beschluss des Regierungsrates |
+| [810.1](ch/zh/de/810.1.md) | Gesundheitsgesetz (GesG) 810.1 |
+| [810.11](ch/zh/de/810.11.md) | Verordnung |
+| [810.4](ch/zh/de/810.4.md) | G – Verselbstständigung der Kantonsapotheke Zürich (VKG) 810.4 |
+| [810.5](ch/zh/de/810.5.md) | IVHSM 810.5 |
+| [810.6](ch/zh/de/810.6.md) | Weiterbildungsfinanzierungsvereinbarung (WFV) 810.6 |
+| [811.11](ch/zh/de/811.11.md) | Verordnung über die universitären Medizinalberufe (MedBV) 811.11 |
+| [811.12](ch/zh/de/811.12.md) | Gesamtarbeitsvertrag für Assistenzärztinnen und -ärzte 811.12 |
+| [811.121](ch/zh/de/811.121.md) | Beschluss des Regierungsrates |
+| [811.15](ch/zh/de/811.15.md) | Verordnung über die Chiropraktoren 811.15 |
+| [811.152](ch/zh/de/811.152.md) | SDK, Prüfung von Chiropraktoren und -praktorinnen – Statut 811.152 |
+| [811.152.1](ch/zh/de/811.152.1.md) | SDK, Interkantonale Chiropraktorenprüfung – Reglement 811.152.1 |
+| [811.17](ch/zh/de/811.17.md) | Vfg. über Fachärzte f. Gutachten z. Schwangerschaftsunterbrechung 811.17 |
+| [811.21](ch/zh/de/811.21.md) | Zahnärzteverordnung 811.21 |
+| [811.22](ch/zh/de/811.22.md) | Zahnprothetikverordnung 811.22 |
+| [811.23](ch/zh/de/811.23.md) | Dentalhygieneverordnung 811.23 |
+| [811.241](ch/zh/de/811.241.md) | Interkantonale Prüfung von Osteopathinnen und Osteopathen – R 811.241 |
+| [811.241.1](ch/zh/de/811.241.1.md) | Prüfungsgebühren der Osteopathinnen und Osteopathen – R 811.241.1 |
+| [811.242](ch/zh/de/811.242.md) | Osteopathie – Verordnung Ausland 811.242 |
+| [811.31](ch/zh/de/811.31.md) | Verordnung über die Berufe der Gesundheitspflege 811.31 |
+| [811.34](ch/zh/de/811.34.md) | SDK, kantonale Ausbildungsabschlüsse im Gesundheitswesen – V 811.34 |
+| [811.341](ch/zh/de/811.341.md) | SRK, Anerkennung kantonaler Ausbildungsabschlüsse – R 811.341 |
+| [811.35](ch/zh/de/811.35.md) | SDK, ausländische Ausbildungsabschlüsse – V 811.35 |
+| [811.351](ch/zh/de/811.351.md) | SRK, Anerkennung ausländischer Ausbildungsabschlüsse – R 811.351 |
+| [811.355](ch/zh/de/811.355.md) | Gebührenverordnung der GDK 811.355 |
+| [811.36](ch/zh/de/811.36.md) | SDK, Anerkennung kantonaler Fachhochschuldiplome – V 811.36 |
+| [811.4](ch/zh/de/811.4.md) | EG Ausbildungsfördergesetz Pflege 811.4 |
+| [811.41](ch/zh/de/811.41.md) | Verordnung zum EG Ausbildungsfördergesetz Pflege (VEG AFP) 811.41 |
+| [811.411](ch/zh/de/811.411.md) | Verfügung der Direktion des Gesundheitswesens |
+| [811.42](ch/zh/de/811.42.md) | Förderbeiträge an Auszubildende im Bereich der Pflege (VFAP) 811.42 |
+| [811.43](ch/zh/de/811.43.md) | EV APIG 811.43 |
+| [811.51](ch/zh/de/811.51.md) | Tierärzteverordnung 811.51 |
+| [811.61](ch/zh/de/811.61.md) | Psychologische Psychotherapeutinnen/-therapeuten (PPsyV) 811.61 |
+| [811.62](ch/zh/de/811.62.md) | Interkantonale Prüfung von Osteopathinnen und Osteopathen – R 811.62 |
+| [811.621](ch/zh/de/811.621.md) | Gebührenreglement – interkant. Prüfung, Osteopathinnen/-pathen 811.621 |
+| [812.1](ch/zh/de/812.1.md) | Heilmittelverordnung (HMV) 812.1 |
+| [812.3](ch/zh/de/812.3.md) | Verfügung der Gesundheitsdirektion |
+| [812.31](ch/zh/de/812.31.md) | Verfügung der Gesundheitsdirektion |
+| [812.35](ch/zh/de/812.35.md) | Verfügung |
+| [812.4](ch/zh/de/812.4.md) | Verordnung über die Kantonale Ethikkommission (KEKV) 812.4 |
+| [812.5](ch/zh/de/812.5.md) | Vollzugsverordnung zur Bundesgesetzgebung über die Gifte 812.5 |
+| [813.11](ch/zh/de/813.11.md) | Verordnung über die kantonalen psychiatrischen Spitäler 813.11 |
+| [813.111](ch/zh/de/813.111.md) | Taxordnung 813.111 |
+| [813.111.1](ch/zh/de/813.111.1.md) | Vollzug der Taxordnung der kantonalen Spitäler (VVo TaxO) 813.111.1 |
+| [813.114](ch/zh/de/813.114.md) | V über die Führungsstruktur des Universitätsspitals Zürich 813.114 |
+| [813.114.1](ch/zh/de/813.114.1.md) | Führungsstruktur der Psychiatrischen Universitätsklinik – V 813.114.1 |
+| [813.115](ch/zh/de/813.115.md) | V über die Aufsichtskommissionen der kant. Krankenhäuser 813.115 |
+| [813.116](ch/zh/de/813.116.md) | Hausordnung für die kantonalen Krankenhäuser 813.116 |
+| [813.118](ch/zh/de/813.118.md) | Personalausschussverfügung 813.118 |
+| [813.12](ch/zh/de/813.12.md) | Verordnung über die Spitalräte (SRV) 813.12 |
+| [813.121](ch/zh/de/813.121.md) | Pauschalierung von Staatsbeiträgen im Gesundheitswesen – V 813.121 |
+| [813.13](ch/zh/de/813.13.md) | Patientinnen- und Patientengesetz 813.13 |
+| [813.14](ch/zh/de/813.14.md) | Gesetz über die ärztlichen Zusatzhonorare 813.14 |
+| [813.15](ch/zh/de/813.15.md) | Gesetz über das Universitätsspital Zürich (USZG) 813.15 |
+| [813.151](ch/zh/de/813.151.md) | Statut des Universitätsspitals Zürich (USZ-Statut) 813.151 |
+| [813.151.5](ch/zh/de/813.151.5.md) | USZ-Hausordnung 813.151.5 |
+| [813.152](ch/zh/de/813.152.md) | Personalreglement des Universitätsspitals Zürich (PR-USZ) 813.152 |
+| [813.153](ch/zh/de/813.153.md) | Finanzreglement des Universitätsspitals Zürich (FinReg-USZ) 813.153 |
+| [813.155](ch/zh/de/813.155.md) | Taxordnung des Universitätsspitals Zürich (TO USZ) 813.155 |
+| [813.155.1](ch/zh/de/813.155.1.md) | VVO TO USZ 813.155.1 |
+| [813.16](ch/zh/de/813.16.md) | Gesetz über das Kantonsspital Winterthur (KSWG) 813.16 |
+| [813.161](ch/zh/de/813.161.md) | Statut über das Kantonsspital Winterthur (KSW-Statut) 813.161 |
+| [813.161.5](ch/zh/de/813.161.5.md) | Hausordnung für das Kantonsspital Winterthur 813.161.5 |
+| [813.162](ch/zh/de/813.162.md) | Personalreglement des Kantonsspitals Winterthur (PR-KSW) 813.162 |
+| [813.163](ch/zh/de/813.163.md) | Finanzreglement des Kantonsspitals Winterthur (FinReg-KSW) 813.163 |
+| [813.165](ch/zh/de/813.165.md) | TO KSW 813.165 |
+| [813.165.1](ch/zh/de/813.165.1.md) | VVO TO KSW 813.165.1 |
+| [813.17](ch/zh/de/813.17.md) | G über die Psychiatrische Universitätsklinik Zürich (PUKG) 813.17 |
+| [813.171](ch/zh/de/813.171.md) | PUK-Statut 813.171 |
+| [813.172](ch/zh/de/813.172.md) | PR-PUK 813.172 |
+| [813.175](ch/zh/de/813.175.md) | Taxordnung PUK 813.175 |
+| [813.18](ch/zh/de/813.18.md) | ipwG 813.18 |
+| [813.181](ch/zh/de/813.181.md) | ipw-Statut 813.181 |
+| [813.182](ch/zh/de/813.182.md) | PR-ipw 813.182 |
+| [813.20](ch/zh/de/813.20.md) | Spitalplanungs- und -finanzierungsgesetz (SPFG) 813.20 |
+| [813.205](ch/zh/de/813.205.md) | V über die Umwandlung von Investitionsbeiträgen an Spitäler 813.205 |
+| [813.206](ch/zh/de/813.206.md) | Verordnung zur Förderung ambulanter Behandlungen 813.206 |
+| [813.21](ch/zh/de/813.21.md) | Verordnung über die Staatsbeiträge an die Krankenpflege 813.21 |
+| [813.211](ch/zh/de/813.211.md) | Beschluss des Regierungsrates |
+| [813.24](ch/zh/de/813.24.md) | Verordnung |
+| [813.31](ch/zh/de/813.31.md) | Verordnung über das Rettungswesen (RWV) 813.31 |
+| [813.42](ch/zh/de/813.42.md) | Spitalärzteverordnung |
+| [817.1](ch/zh/de/817.1.md) | VVO zur Lebensmittel- und Gebrauchsgegenständegesetzgebung 817.1 |
+| [817.11](ch/zh/de/817.11.md) | Verfügung |
+| [817.12](ch/zh/de/817.12.md) | Verfügung |
+| [817.21](ch/zh/de/817.21.md) | Reglement für die Milch- und Käserei-Inspektoren 817.21 |
+| [818.11](ch/zh/de/818.11.md) | Vollzugsverordnung zur eidg. Epidemiengesetzgebung (VV EpiG) 818.11 |
+| [818.12](ch/zh/de/818.12.md) | Gesetz |
+| [818.13](ch/zh/de/818.13.md) | V Covid-19 Gesundheitsbereich 818.13 |
+| [818.14](ch/zh/de/818.14.md) | Zulassung zum Berufsmaturitätsunterricht – Coronapandemie 818.14 |
+| [818.15](ch/zh/de/818.15.md) | Funktionsfähigkeit der Gemeindeorgane – Corona-Pandemie 818.15 |
+| [818.16](ch/zh/de/818.16.md) | Gesetz |
+| [818.161](ch/zh/de/818.161.md) | Covid-19-ZBG 818.161 |
+| [818.17](ch/zh/de/818.17.md) | Kindertagesstätten/Tagesfamilienorganisationen – Entschädigung 818.17 |
+| [818.18](ch/zh/de/818.18.md) | V Covid-19 818.18 |
+| [818.21](ch/zh/de/818.21.md) | Beschluss des Kantonsrates |
+| [818.22](ch/zh/de/818.22.md) | Verordnung über die Schul- und Volkszahnpflege (VSVZ) 818.22 |
+| [818.221](ch/zh/de/818.221.md) | Verfügung der Direktion des Gesundheitswesens |
+| [818.25](ch/zh/de/818.25.md) | Verordnung über die Bekämpfung des Suchtmittelmissbrauchs 818.25 |
+| [818.32](ch/zh/de/818.32.md) | VVO zur Tabakproduktegesetzgebung (VV TPG) 818.32 |
+| [818.41](ch/zh/de/818.41.md) | Krebsregistergesetz 818.41 |
+| [818.61](ch/zh/de/818.61.md) | Bestattungsverordnung (BesV) 818.61 |
+| [821.11](ch/zh/de/821.11.md) | Allgemeinverbindlicherklärung von Gesamtarbeitsverträgen – VVO 821.11 |
+| [821.112](ch/zh/de/821.112.md) | Allgemeinverbindlicherklärung GAV Gipsergewerbe 821.112 |
+| [821.112.1](ch/zh/de/821.112.1.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.1 |
+| [821.112.2](ch/zh/de/821.112.2.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.2 |
+| [821.112.3](ch/zh/de/821.112.3.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.3 |
+| [821.112.4](ch/zh/de/821.112.4.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.4 |
+| [821.112.5](ch/zh/de/821.112.5.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.5 |
+| [821.112.6](ch/zh/de/821.112.6.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.6 |
+| [821.112.7](ch/zh/de/821.112.7.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.7 |
+| [821.112.8](ch/zh/de/821.112.8.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.8 |
+| [821.112.9](ch/zh/de/821.112.9.md) | Zusatzvereinbarung GAV Gipsergewerbe 821.112.9 |
+| [821.12](ch/zh/de/821.12.md) | Normalarbeitsvertrag für hauswirtschaftliche Arbeitnehmer 821.12 |
+| [821.13](ch/zh/de/821.13.md) | Normalarbeitsvertrag für landwirtschaftliche Arbeitnehmer 821.13 |
+| [821.5](ch/zh/de/821.5.md) | Gesetz über das kantonale Einigungsamt 821.5 |
+| [822.1](ch/zh/de/822.1.md) | Verordnung zum Arbeitsgesetz 822.1 |
+| [822.3](ch/zh/de/822.3.md) | Beschluss des Regierungsrates |
+| [822.4](ch/zh/de/822.4.md) | Ruhetags- und Ladenöffnungsgesetz 822.4 |
+| [822.41](ch/zh/de/822.41.md) | Verordnung zum Ruhetags- und Ladenöffnungsgesetz 822.41 |
+| [823.21](ch/zh/de/823.21.md) | V – freier Personenverkehr, Begrenzung der erwerbstät. Ausländer 823.21 |
+| [823.41](ch/zh/de/823.41.md) | V über die tripartite Kommission für arbeitsmarktliche Aufgaben 823.41 |
+| [823.44](ch/zh/de/823.44.md) | Vollzugsverordnung |
+| [831.1](ch/zh/de/831.1.md) | Einführungsgesetz AHVG /IVG 831.1 |
+| [831.3](ch/zh/de/831.3.md) | Zusatzleistungsgesetz (ZLG) 831.3 |
+| [831.31](ch/zh/de/831.31.md) | Zusatzleistungsverordnung (ZLV) 831.31 |
+| [831.4](ch/zh/de/831.4.md) | Verordnung über die berufliche Vorsorge und das Stiftungswesen 831.4 |
+| [831.46](ch/zh/de/831.46.md) | Vereinbarung zwischen den Kantonen Schaffhausen und Zürich 831.46 |
+| [831.5](ch/zh/de/831.5.md) | Selbstbestimmungsgesetz (SLBG) 831.5 |
+| [831.51](ch/zh/de/831.51.md) | Selbstbestimmungsverordnung (SLBV) 831.51 |
+| [832.01](ch/zh/de/832.01.md) | Einführungsgesetz zum Krankenversicherungsgesetz (EG KVG) 832.01 |
+| [832.1](ch/zh/de/832.1.md) | Verordnung zum EG KVG (VEG KVG) 832.1 |
+| [832.13](ch/zh/de/832.13.md) | Beschluss des Regierungsrates |
+| [832.14](ch/zh/de/832.14.md) | EV VEZL 832.14 |
+| [832.21](ch/zh/de/832.21.md) | Bundesgesetzgebung über die Unfallversicherung (VV UVG) 832.21 |
+| [833.1](ch/zh/de/833.1.md) | Gesetz über die BVG- und Stiftungsaufsicht (BSAG) 833.1 |
+| [833.12](ch/zh/de/833.12.md) | Organisationsreglement BVS (OrgR-BVS) 833.12 |
+| [833.13](ch/zh/de/833.13.md) | Personalreglement BVS (PersR-BVS) 833.13 |
+| [833.14](ch/zh/de/833.14.md) | Finanzreglement BVS (FinR-BVS) 833.14 |
+| [833.15](ch/zh/de/833.15.md) | Gebührenreglement BVS (GebR-BVS) 833.15 |
+| [836.1](ch/zh/de/836.1.md) | EG zum BG über die Familienzulagen 836.1 |
+| [836.11](ch/zh/de/836.11.md) | Verordnung zum EG FamZG 836.11 |
+| [836.111](ch/zh/de/836.111.md) | Kaufkraftabstufung im Bereich der Kinderzulagen – Reglement 836.111 |
+| [836.12](ch/zh/de/836.12.md) | V über Kinderzulagen für ausländische Arbeitnehmer 836.12 |
+| [836.19](ch/zh/de/836.19.md) | Einführungsverordnung zum BG über die Familienzulagen 836.19 |
+| [837.1](ch/zh/de/837.1.md) | Einführungsgesetz zum Arbeitslosenversicherungsgesetz (EG AVIG) 837.1 |
+| [837.11](ch/zh/de/837.11.md) | Verordnung zum EG AVIG 837.11 |
+| [837.15](ch/zh/de/837.15.md) | Delegationsverordnung AVIG 837.15 |
+| [841](ch/zh/de/841.md) | Gesetz über die Wohnbau- und Wohneigentumsförderung (WBFG) 841 |
+| [841.1](ch/zh/de/841.1.md) | Wohnbauförderungsverordnung (WBFV) 841.1 |
+| [844](ch/zh/de/844.md) | Gesetz |
+| [844.1](ch/zh/de/844.1.md) | Tarifordnung |
+| [851.1](ch/zh/de/851.1.md) | Sozialhilfegesetz (SHG) 851.1 |
+| [851.11](ch/zh/de/851.11.md) | Verordnung zum Sozialhilfegesetz (SHV) 851.11 |
+| [851.13](ch/zh/de/851.13.md) | Asylfürsorgeverordnung (AfV) 851.13 |
+| [851.14](ch/zh/de/851.14.md) | Nothilfeverordnung 851.14 |
+| [851.5](ch/zh/de/851.5.md) | Interkantonale Vereinbarung für soziale Einrichtungen (IVSE) 851.5 |
+| [852.1](ch/zh/de/852.1.md) | Kinder- und Jugendhilfegesetz (KJHG) 852.1 |
+| [852.11](ch/zh/de/852.11.md) | Kinder- und Jugendhilfeverordnung (KJHV) 852.11 |
+| [852.12](ch/zh/de/852.12.md) | Sonderpädagogische Massnahmen im Vor- und Nachschulbereich 852.12 |
+| [852.13](ch/zh/de/852.13.md) | Verordnung über die Alimentenhilfe (AlimV) 852.13 |
+| [852.14](ch/zh/de/852.14.md) | V über die Tagesfamilien und Kindertagesstätten (V TaK) 852.14 |
+| [852.15](ch/zh/de/852.15.md) | Verordnung über Versuche mit neuen Strukturen der Jugendhilfe 852.15 |
+| [852.17](ch/zh/de/852.17.md) | Verordnung über die Kindesschutzkommission (VKSK) 852.17 |
+| [852.2](ch/zh/de/852.2.md) | Kinder- und Jugendheimgesetz (KJG) 852.2 |
+| [852.21](ch/zh/de/852.21.md) | Kinder- und Jugendheimverordnung (KJV) 852.21 |
+| [852.22](ch/zh/de/852.22.md) | Verordnung über die Pflegekinderfürsorge 852.22 |
+| [852.225](ch/zh/de/852.225.md) | Pflegegeld-Richtlinien für Dauer- und Wochenpflegeplätze 852.225 |
+| [852.23](ch/zh/de/852.23.md) | Bewilligungen der ausserfamiliären Betreuung (V BAB) 852.23 |
+| [854.3](ch/zh/de/854.3.md) | Xxxxxxxxxxxxxx 854.3 |
+| [854.6](ch/zh/de/854.6.md) | Verfügung |
+| [855.1](ch/zh/de/855.1.md) | Pflegegesetz 855.1 |
+| [855.11](ch/zh/de/855.11.md) | Verordnung über die Staatsbeiträge für Altersheime 855.11 |
+| [855.12](ch/zh/de/855.12.md) | V über die Ausbildungspflicht in der Langzeitpflege (ALV) 855.12 |
+| [855.2](ch/zh/de/855.2.md) | Gesetz – Transport von mobilitätsbehinderten Personen (TMG) 855.2 |
+| [855.21](ch/zh/de/855.21.md) | Verordnung – Transport von mobilitätsbehinderten Personen (TMV) 855.21 |
+| [857.5](ch/zh/de/857.5.md) | Verordnung |
+| [857.6](ch/zh/de/857.6.md) | Verordnung |
+| [861.1](ch/zh/de/861.1.md) | Gesetz über die Feuerpolizei und das Feuerwehrwesen (FFG) 861.1 |
+| [861.12](ch/zh/de/861.12.md) | Verordnung über den vorbeugenden Brandschutz (VVB) 861.12 |
+| [861.122](ch/zh/de/861.122.md) | Verordnung über Dampfkessel 861.122 |
+| [861.2](ch/zh/de/861.2.md) | Feuerwehrverordnung 861.2 |
+| [861.21](ch/zh/de/861.21.md) | VSGB 861.21 |
+| [861.211](ch/zh/de/861.211.md) | Vollzugsvorschriften für das Feuerwehrwesen 861.211 |
+| [861.31](ch/zh/de/861.31.md) | Tarifordnung für die Aufwendungen der ABC-Wehr 861.31 |
+| [861.32](ch/zh/de/861.32.md) | Tarifordnung – Verkehrsunfälle und Fahrzeugbrände 861.32 |
+| [861.33](ch/zh/de/861.33.md) | Tarifordnung für die Aufschaltung der Alarmkriterien 861.33 |
+| [861.34](ch/zh/de/861.34.md) | Tarifordnung Alarmierung 861.34 |
+| [861.51](ch/zh/de/861.51.md) | Zweckverband Feuerwehr Weinland 861.51 |
+| [862.1](ch/zh/de/862.1.md) | Gesetz über die Gebäudeversicherung (GebVG) 862.1 |
+| [862.11](ch/zh/de/862.11.md) | Vollzugsbestimmungen für die Gebäudeversicherung 862.11 |
+| [862.111](ch/zh/de/862.111.md) | Geschäftsreglement für die Gebäudeversicherung 862.111 |
+| [862.12](ch/zh/de/862.12.md) | Verordnung über die Rekurskommission der Gebäudeversicherung 862.12 |
+| [862.2](ch/zh/de/862.2.md) | Gesetz |
+| [862.21](ch/zh/de/862.21.md) | Verordnung |
+| [901.2](ch/zh/de/901.2.md) | Gesetz |
+| [901.21](ch/zh/de/901.21.md) | Verordnung |
+| [910.1](ch/zh/de/910.1.md) | Landwirtschaftsgesetz (LG) 910.1 |
+| [910.11](ch/zh/de/910.11.md) | Landwirtschaftsverordnung (LV) 910.11 |
+| [910.2](ch/zh/de/910.2.md) | V über die Bewirtschaftungsbeiträge an die Landwirtschaft 910.2 |
+| [910.5](ch/zh/de/910.5.md) | Biologische Bewirtschaftung, Umstellungsbeiträge – V 910.5 |
+| [911.2](ch/zh/de/911.2.md) | Verordnung über den Vollzug des bäuerlichen Bodenrechts 911.2 |
+| [911.3](ch/zh/de/911.3.md) | V zum BG über die landwirtschaftliche Pacht 911.3 |
+| [913.11](ch/zh/de/913.11.md) | Bodenverbesserungs-Verordnung 913.11 |
+| [915.11](ch/zh/de/915.11.md) | Landwirtschaftliche Bildungsverordnung (LBV) 915.11 |
+| [915.2](ch/zh/de/915.2.md) | Landwirtschaftliche Schulgeldvereinbarung 915.2 |
+| [915.3](ch/zh/de/915.3.md) | Schweizerische Hochschule für Landwirtschaft 915.3 |
+| [916.11](ch/zh/de/916.11.md) | Tierzucht-Verordnung 916.11 |
+| [916.21](ch/zh/de/916.21.md) | Kantonales Tierseuchengesetz (KTSG) 916.21 |
+| [916.22](ch/zh/de/916.22.md) | Kantonale Tierseuchenverordnung (KTSV) 916.22 |
+| [916.31](ch/zh/de/916.31.md) | Gesetz über den gewerbsmässigen Viehhandel 916.31 |
+| [916.32](ch/zh/de/916.32.md) | Vereinbarung zur Aufhebung des Viehhandelskonkordats 916.32 |
+| [916.33](ch/zh/de/916.33.md) | Verordnung über den gewerbsmässigen Viehhandel (VgVH) 916.33 |
+| [916.331](ch/zh/de/916.331.md) | Reglement über die Kautionen im Viehhandel 916.331 |
+| [916.51](ch/zh/de/916.51.md) | Verordnung über den Rebbau 916.51 |
+| [921.1](ch/zh/de/921.1.md) | Kantonales Waldgesetz 921.1 |
+| [921.11](ch/zh/de/921.11.md) | Kantonale Waldverordnung (KWaV) 921.11 |
+| [921.2](ch/zh/de/921.2.md) | Einteilung des Kantons in Forstkreise 921.2 |
+| [921.51](ch/zh/de/921.51.md) | Staatsvertrag SH/ZH – Gemeinsame Führung eines Forstbetriebs 921.51 |
+| [922.1](ch/zh/de/922.1.md) | Kantonales Jagdgesetz (JG) 922.1 |
+| [922.11](ch/zh/de/922.11.md) | Kantonale Jagdverordnung (JV) 922.11 |
+| [922.12](ch/zh/de/922.12.md) | Verfügung über die Jagd 922.12 |
+| [922.3](ch/zh/de/922.3.md) | Verordnung über die Jägerprüfung 922.3 |
+| [922.31](ch/zh/de/922.31.md) | Verfügung über die Jägerprüfung 922.31 |
+| [922.5](ch/zh/de/922.5.md) | Wildschadenverordnung 922.5 |
+| [923.1](ch/zh/de/923.1.md) | Gesetz über die Fischerei 923.1 |
+| [923.11](ch/zh/de/923.11.md) | Fischereiverordnung 923.11 |
+| [923.12](ch/zh/de/923.12.md) | Fischereireglement 923.12 |
+| [923.13](ch/zh/de/923.13.md) | Verfügung |
+| [923.71](ch/zh/de/923.71.md) | Übereinkunft |
+| [923.72](ch/zh/de/923.72.md) | Übereinkunft über die Fischerei 923.72 |
+| [923.721](ch/zh/de/923.721.md) | Fischerei im Zürichsee und Obersee – Ausführungsbestimmungen 923.721 |
+| [923.73](ch/zh/de/923.73.md) | Übereinkunft |
+| [923.74](ch/zh/de/923.74.md) | Fischerei im zürcherisch-zugerischen Grenzabschnitt der Sihl 923.74 |
+| [923.741](ch/zh/de/923.741.md) | Fischerei im zürcherisch-zugerischen Grenzabschnitt der Sihl 923.741 |
+| [923.75](ch/zh/de/923.75.md) | Übereinkunft über die Fischerei 923.75 |
+| [930.1](ch/zh/de/930.1.md) | Mmmmm 930.1 |
+| [930.11](ch/zh/de/930.11.md) | V zur administrativen Entlastung der Unternehmen (EntlV) 930.11 |
+| [931.1](ch/zh/de/931.1.md) | Erdölkonkordat 931.1 |
+| [935.11](ch/zh/de/935.11.md) | Gastgewerbegesetz 935.11 |
+| [935.12](ch/zh/de/935.12.md) | Verordnung zum Gastgewerbegesetz 935.12 |
+| [935.21](ch/zh/de/935.21.md) | JFTG 935.21 |
+| [935.22](ch/zh/de/935.22.md) | JFTV 935.22 |
+| [935.25](ch/zh/de/935.25.md) | Kommission Jugendschutz im Film – Vereinbarung 935.25 |
+| [935.31](ch/zh/de/935.31.md) | Gesetz über die Märkte und das Reisendengewerbe 935.31 |
+| [935.311](ch/zh/de/935.311.md) | Märkte- und Reisendengewerbeverordnung |
+| [935.32](ch/zh/de/935.32.md) | Unterhaltungsgewerbegesetz 935.32 |
+| [935.41](ch/zh/de/935.41.md) | Geschäftsagenten, Liegenschaftenvermittler, Privatdetektive – G 935.41 |
+| [935.51](ch/zh/de/935.51.md) | G – Personentransport mit Taxis und Limousinen (PTLG) 935.51 |
+| [935.511](ch/zh/de/935.511.md) | V – Personentransport mit Taxis und Limousinen (PTLV) 935.511 |
+| [935.512](ch/zh/de/935.512.md) | Reglement – Vorgaben zur kantonalen Taxilampe 935.512 |
+| [935.513](ch/zh/de/935.513.md) | Reglement – Vorgaben zur kantonalen Limousinenplakette 935.513 |
+| [941.1](ch/zh/de/941.1.md) | Verordnung über das Messwesen 941.1 |
+| [951.1](ch/zh/de/951.1.md) | Kantonalbankgesetz (ZKBG) 951.1 |
+| [951.101](ch/zh/de/951.101.md) | Beschluss des Kantonsrates |
+| [951.102](ch/zh/de/951.102.md) | R für den Fonds zur Absicherung der Staatsgarantie für die ZKB 951.102 |
+| [951.11](ch/zh/de/951.11.md) | Vorbereitung der Wahl neuer Mitglieder Bankrat/Bankpräsidium 951.11 |
+| [951.12](ch/zh/de/951.12.md) | Entschädigungen der Mitglieder des Bankrates der ZKB 951.12 |
+| [951.13](ch/zh/de/951.13.md) | Richtlinien für die Erfüllung des Leistungsauftrages der ZKB 951.13 |
+| [951.14](ch/zh/de/951.14.md) | R über die Entschädigung der Staatsgarantie durch die ZKB 951.14 |
+| [954.2](ch/zh/de/954.2.md) | Verordnung |
+| [954.3](ch/zh/de/954.3.md) | Verordnung über die Pfandleiher 954.3 |
 
 ---
 

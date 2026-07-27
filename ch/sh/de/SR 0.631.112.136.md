@@ -1,6 +1,8 @@
 ---
 canton: SH
 category_type: Staatsvertrag
+enactment_date: '1964-11-23'
+enactment_date_source: text
 global_category: 5.40.10 Grenzwacht
 language: de
 source: LexFind

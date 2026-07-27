@@ -484,6 +484,7 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
         collect_all_frontmatter, generate_stats, generate_tags,
         generate_publications, write_publications,
         generate_yearly_canton_stats, write_yearly_canton_stats,
+        generate_concordats_by_domain,
         write_stats_json, write_tags_json, fetch_and_write_trees,
     )
 
@@ -520,6 +521,11 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     yc_stats = generate_yearly_canton_stats(entries, repo_path / "docs" / "trees")
     write_yearly_canton_stats(yc_stats, site_path / "api" / "v1" / "stats")
     click.echo(f"  {sum(len(e) for e in yc_stats.values())} files across {len(yc_stats)} years")
+
+    click.echo("Generating concordats-by-domain table...")
+    conc = generate_concordats_by_domain(entries)
+    write_stats_json(conc, site_path / "api" / "v1" / "stats" / "concordats_by_domain.json")
+    click.echo(f"  {conc['total_concordats']} concordats across {len(conc['cantons'])} cantons")
 
     if not no_trees:
         click.echo("Fetching category trees from LexFind...")

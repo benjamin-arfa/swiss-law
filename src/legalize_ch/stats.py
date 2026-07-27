@@ -10,6 +10,32 @@ import yaml
 
 logger = logging.getLogger(__name__)
 
+CONCORDAT_TYPES = {
+    "Interkantonale Vereinbarung",
+    "Accord intercantonal",
+    "Accordo intercantonale",
+}
+
+ALL_CANTON_CODES = [
+    "AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE", "GL", "GR", "JU", "LU",
+    "NE", "NW", "OW", "SG", "SH", "SO", "SZ", "TG", "TI", "UR", "VD", "VS",
+    "ZG", "ZH",
+]
+
+# chstat.ch-style domains ("Concordats par domaine"), mapped from the
+# top-level codes of the LexFind global systematics tree (docs/trees/global.json).
+# Codes 2 (Zivilrecht), 3 (Strafrecht), 10 (Publikationen ohne Text) and laws
+# without a global_category fall into "autres" so nothing is silently dropped.
+CONCORDAT_DOMAINS = [
+    {"key": "etat", "label_fr": "Organisation de l'état, sécurité", "codes": ["1", "5"]},
+    {"key": "sante", "label_fr": "Santé, sécurité sociale", "codes": ["8"]},
+    {"key": "educ", "label_fr": "Éducation, science, culture", "codes": ["4"]},
+    {"key": "infra", "label_fr": "Infrastructure, trafic, environnement", "codes": ["7"]},
+    {"key": "eco", "label_fr": "Économie, agriculture", "codes": ["9"]},
+    {"key": "fin", "label_fr": "Finances publiques, impôts", "codes": ["6"]},
+    {"key": "autres", "label_fr": "Autres / non classés", "codes": ["2", "3", "10"]},
+]
+
 
 def _parse_frontmatter(path: Path) -> dict | None:
     try:
@@ -48,18 +74,57 @@ def collect_all_frontmatter(repo_path: str | Path = ".") -> list[dict]:
     return results
 
 
+def _deduplicate(entries: list[dict]) -> list[dict]:
+    """Deduplicate entries so each law counts once regardless of language.
+
+    Groups by unique law identity (sr_number for federal,
+    canton/systematic_number for cantonal), keeps the German version
+    as representative, falling back to the first available.
+    """
+    groups: dict[str, list[dict]] = defaultdict(list)
+    for e in entries:
+        if e["_scope"] == "federal":
+            key = f"federal/{e.get('sr_number', '')}"
+        else:
+            key = f"{e.get('canton', '')}/{e.get('systematic_number', '')}"
+        groups[key].append(e)
+
+    result = []
+    for group in groups.values():
+        de_versions = [e for e in group if e.get("language") == "de"]
+        representative = de_versions[0] if de_versions else group[0]
+        representative["_languages"] = sorted(
+            {e.get("language", "unknown") for e in group}
+        )
+        result.append(representative)
+
+    logger.info("Deduplicated %d files → %d unique laws", len(entries), len(result))
+    return result
+
+
 def generate_stats(repo_path: str | Path = ".") -> dict:
-    """Generate comprehensive statistics from all law frontmatter."""
-    entries = collect_all_frontmatter(repo_path)
-    if not entries:
+    """Generate comprehensive statistics from all law frontmatter.
+
+    All counts are deduplicated: each law counts once regardless of how
+    many language versions exist.  A supplementary ``by_languages`` field
+    shows the raw file-level language distribution.
+    """
+    all_entries = collect_all_frontmatter(repo_path)
+    if not all_entries:
         return {}
+
+    # Language distribution of files (before dedup — useful context)
+    by_languages = Counter(e.get("language", "unknown") for e in all_entries)
+    total_files = len(all_entries)
+
+    # Deduplicate: one entry per unique law
+    entries = _deduplicate(all_entries)
 
     total = len(entries)
     federal = [e for e in entries if e["_scope"] == "federal"]
     cantonal = [e for e in entries if e["_scope"] == "cantonal"]
 
     # ─── Per-field counters ─────────────────────────────────────────────
-    by_language = Counter(e.get("language", "unknown") for e in entries)
     by_source = Counter(e.get("source", "unknown") for e in entries)
     by_canton = Counter(e["canton"] for e in cantonal if e.get("canton"))
 
@@ -117,7 +182,6 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         return {y: dict(counts) for y, counts in sorted(result.items())}
 
     category_type_by_year = _yearly_breakdown("category_type", "cantonal")
-    language_by_year = _yearly_breakdown("language")
     canton_by_year = _yearly_breakdown("canton", "cantonal")
 
     # Canton × category_type cross-tab
@@ -143,7 +207,8 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         "total_laws": total,
         "federal_laws": len(federal),
         "cantonal_laws": len(cantonal),
-        "by_language": dict(by_language.most_common()),
+        "total_files": total_files,
+        "by_languages": dict(by_languages.most_common()),
         "by_source": dict(by_source.most_common()),
         "by_canton": dict(by_canton.most_common()),
         "by_sr_category": dict(by_sr_category.most_common()),
@@ -154,7 +219,6 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         "by_month": dict(sorted(by_month.items())),
         "by_year_scope": {y: dict(c) for y, c in sorted(by_year_scope.items())},
         "category_type_by_year": category_type_by_year,
-        "language_by_year": language_by_year,
         "canton_by_year": canton_by_year,
         "category_type_by_canton": {c: dict(v) for c, v in sorted(category_type_by_canton.items())},
         "category_type_by_canton_by_year": {
@@ -198,6 +262,62 @@ def generate_tags(entries: list[dict]) -> dict:
         "federal": federal,
         "cantonal": {k: v for k, v in sorted(by_canton.items())},
         "total": len(federal) + sum(len(v) for v in by_canton.values()),
+    }
+
+
+def generate_concordats_by_domain(entries: list[dict]) -> dict:
+    """Tabulate intercantonal agreements (concordats) per canton per domain.
+
+    Reproduces the layout of chstat.ch's "Concordats par domaine" table
+    (which is likewise derived from LexFind data), with an extra
+    "autres" column for concordats outside the six chstat domains or
+    without a global_category.  Entries are deduplicated so each
+    concordat counts once regardless of language versions.
+    """
+    cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
+    concordats = [e for e in cantonal if e.get("category_type") in CONCORDAT_TYPES]
+
+    code_to_key = {c: d["key"] for d in CONCORDAT_DOMAINS for c in d["codes"]}
+    domain_keys = [d["key"] for d in CONCORDAT_DOMAINS]
+
+    table: dict[str, dict[str, int]] = {
+        canton: {k: 0 for k in domain_keys} for canton in ALL_CANTON_CODES
+    }
+    unclassified = 0
+    for e in concordats:
+        canton = str(e.get("canton", "")).upper()
+        if canton not in table:
+            logger.warning("Concordat with unknown canton %r: %s", canton, e.get("_path"))
+            continue
+        top_code = _extract_identifier(str(e.get("global_category", ""))).split(".")[0]
+        key = code_to_key.get(top_code)
+        if key is None:
+            key = "autres"
+            unclassified += 1
+        table[canton][key] += 1
+
+    for row in table.values():
+        row["total"] = sum(row.values())
+    totals = {k: sum(row[k] for row in table.values()) for k in domain_keys}
+    totals["total"] = sum(totals.values())
+
+    return {
+        "title": "Concordats intercantonaux par domaine",
+        "source": "LexFind (Institut pour le fédéralisme, Université de Fribourg)",
+        "total_concordats": totals["total"],
+        "domains": [
+            {"key": d["key"], "label_fr": d["label_fr"], "global_category_codes": d["codes"]}
+            for d in CONCORDAT_DOMAINS
+        ],
+        "cantons": table,
+        "totals": totals,
+        "unclassified_in_autres": unclassified,
+        "notes": [
+            "ZH: couverture partielle (fetcher dédié, peu de concordats signalés)",
+            "GR: aucun concordat classé (lacune de classification)",
+            "FR: classification lacunaire",
+            "« Autres » inclut droit civil, droit pénal, publications sans texte et non classés",
+        ],
     }
 
 
@@ -320,10 +440,11 @@ def _clean_tree(raw: dict) -> list[dict]:
 def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-source/swiss-law-as-source.github.io") -> dict[int, dict]:
     """Generate per-year publication JSON files from frontmatter entries.
 
-    Groups laws by version_date year, producing the same shape as the old
-    static_export: ``{date_prefix, count, publications: [...]}``.
+    Each law appears once per year (deduplicated across languages).
+    A ``languages`` field lists all available language versions.
     """
-    by_year: dict[int, list[dict]] = defaultdict(list)
+    # Group all file-level entries by (law_identity, year)
+    groups: dict[tuple[str, int], list[dict]] = defaultdict(list)
 
     for e in entries:
         vd = str(e.get("version_date", ""))
@@ -334,8 +455,23 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
         if not sr:
             continue
         scope = e.get("_scope", "federal")
-        lang = e.get("language", "de")
         canton = e.get("canton", "")
+        if scope == "cantonal" and canton:
+            key = f"{canton}/{sr}"
+        else:
+            key = f"federal/{sr}"
+        groups[(key, year)].append(e)
+
+    by_year: dict[int, list[dict]] = defaultdict(list)
+
+    for (_, year), group in groups.items():
+        de_versions = [e for e in group if e.get("language") == "de"]
+        rep = de_versions[0] if de_versions else group[0]
+        sr = str(rep.get("sr_number") or rep.get("systematic_number", ""))
+        scope = rep.get("_scope", "federal")
+        canton = rep.get("canton", "")
+        lang = rep.get("language", "de")
+        languages = sorted({e.get("language", "unknown") for e in group})
 
         if scope == "cantonal" and canton:
             path = f"ch/{canton.lower()}/{lang}/{sr}.md"
@@ -344,21 +480,21 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
             path = f"ch/{prefix}/{lang}/{sr}.md"
 
         rec = {
-            "date": vd,
+            "date": str(rep.get("version_date", "")),
             "sr_number": sr,
-            "title": e.get("title", ""),
+            "title": rep.get("title", ""),
             "scope": scope,
-            "language": lang,
+            "languages": languages,
             "canton": canton,
             "path": path,
             "url_main": f"https://raw.githubusercontent.com/{repo_name}/main/{path}",
         }
-        if e.get("systematic_category"):
-            rec["systematic_category"] = e["systematic_category"]
-        if e.get("global_category"):
-            rec["global_category"] = e["global_category"]
-        if e.get("category_type"):
-            rec["category_type"] = e["category_type"]
+        if rep.get("systematic_category"):
+            rec["systematic_category"] = rep["systematic_category"]
+        if rep.get("global_category"):
+            rec["global_category"] = rep["global_category"]
+        if rep.get("category_type"):
+            rec["category_type"] = rep["category_type"]
         by_year[year].append(rec)
 
     result = {}
@@ -435,9 +571,14 @@ def generate_yearly_canton_stats(
 ) -> dict[str, dict[str, dict]]:
     """Generate per-year per-canton/CH stats with cross-tabs and tree structures.
 
+    Entries are deduplicated before counting so each law is counted once
+    regardless of language versions.
+
     Returns ``{year: {entity: stats_dict}}`` where entity is a canton code
     or ``"CH"`` for federal.
     """
+    deduped = _deduplicate(entries)
+
     trees_path = Path(trees_dir)
     global_tree = _load_tree(trees_path / "global.json")
     tree_cache: dict[str, list[dict]] = {}
@@ -449,7 +590,7 @@ def generate_yearly_canton_stats(
 
     data: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
 
-    for e in entries:
+    for e in deduped:
         vd = str(e.get("version_date", ""))
         if len(vd) < 4:
             continue
@@ -509,10 +650,11 @@ def generate_yearly_canton_stats(
 
             by_global_tree = _annotate_tree(global_tree, global_map)
 
-            # --- by_language ---
-            by_lang: Counter[str] = Counter(
-                e.get("language", "unknown") for e in laws
-            )
+            # --- language versions available ---
+            langs_available: Counter[str] = Counter()
+            for e in laws:
+                for lang in e.get("_languages", [e.get("language", "unknown")]):
+                    langs_available[lang] += 1
 
             result[year][entity] = {
                 "year": year,
@@ -523,7 +665,7 @@ def generate_yearly_canton_stats(
                 "by_type": by_type,
                 "by_topic_tree": by_topic_tree,
                 "by_global_category_tree": by_global_tree,
-                "by_language": dict(by_lang.most_common()),
+                "languages_available": dict(langs_available.most_common()),
             }
 
     return result
@@ -533,33 +675,77 @@ def write_yearly_canton_stats(
     stats: dict[str, dict[str, dict]],
     output_dir: str | Path = "docs/api/v1/stats",
 ):
-    """Write per-year per-canton stats as ``{year}/{entity}.json``."""
+    """Write per-year per-canton stats as ``{year}/{entity}.json``.
+
+    For year/entity combinations with no data, writes a stub JSON with
+    ``total: 0`` and navigation hints (available years for that entity,
+    available entities for that year) so consumers never get a 404.
+    """
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
 
     all_years = sorted(stats.keys())
     all_entities: set[str] = set()
 
+    # First pass: build reverse indexes
+    years_by_entity: dict[str, list[str]] = defaultdict(list)
+    entities_by_year: dict[str, list[str]] = defaultdict(list)
+    for year, entities in stats.items():
+        for entity in entities:
+            all_entities.add(entity)
+            years_by_entity[entity].append(year)
+            entities_by_year[year].append(entity)
+    for entity in years_by_entity:
+        years_by_entity[entity].sort()
+    for year in entities_by_year:
+        entities_by_year[year].sort()
+
+    # Second pass: write files with navigation metadata
     for year, entities in stats.items():
         year_dir = out / year
         year_dir.mkdir(parents=True, exist_ok=True)
         for entity, payload in entities.items():
-            all_entities.add(entity)
+            payload["available_years_for_entity"] = years_by_entity[entity]
+            payload["available_entities_for_year"] = entities_by_year[year]
             (year_dir / f"{entity}.json").write_text(
                 json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
             )
 
+    # Write stubs for missing combinations
+    sorted_entities = sorted(all_entities)
+    stubs = 0
+    for year in all_years:
+        year_dir = out / year
+        year_dir.mkdir(parents=True, exist_ok=True)
+        existing = set(stats.get(year, {}).keys())
+        for entity in sorted_entities:
+            if entity in existing:
+                continue
+            stub = {
+                "year": year,
+                "entity": entity,
+                "total": 0,
+                "message": f"No data for {entity} in {year}.",
+                "available_years_for_entity": years_by_entity.get(entity, []),
+                "available_entities_for_year": entities_by_year.get(year, []),
+            }
+            (year_dir / f"{entity}.json").write_text(
+                json.dumps(stub, indent=2, ensure_ascii=False), encoding="utf-8"
+            )
+            stubs += 1
+
+    real_files = sum(len(e) for e in stats.values())
     index = {
         "years": all_years,
-        "entities": sorted(all_entities),
-        "total_files": sum(len(e) for e in stats.values()),
+        "entities": sorted_entities,
+        "total_files": real_files,
     }
     (out / "index.json").write_text(
         json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     logger.info(
-        "Wrote %d year×entity stats files to %s",
-        index["total_files"], out,
+        "Wrote %d year×entity stats files + %d stubs to %s",
+        real_files, stubs, out,
     )
 
 

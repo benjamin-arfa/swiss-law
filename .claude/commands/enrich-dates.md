@@ -16,7 +16,7 @@ Back-fill enactment dates and version-date lists — laws are (law, version) pai
    Rate limits: the hosts declare none (no RateLimit headers / robots Crawl-delay); the fetcher's 429/5xx exponential backoff is the adaptive governor. Full pass:
    ```
    mkdir -p data/logs
-   nohup ./scripts/enrich_dates_lexwork.sh 1.0 > data/logs/enrich_dates_$(date +%Y%m%d).out 2>&1 &
+   nohup ./scripts/enrich_dates_lexwork.sh 0.2 > data/logs/enrich_dates_$(date +%Y%m%d).out 2>&1 &
    ```
    One API call per law → `date_of_decision` (original enactment) + the full version-date list. Resumable (state in `data/state/`); on completion it commits per canton, regenerates stats + indexes, deploys the site, pushes, and sends a Telegram summary (`mode: enrich-dates`). Do not run concurrently with a backfill (git contention).
 

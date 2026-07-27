@@ -109,7 +109,13 @@ class CantonalLawVersion:
 
 @dataclass
 class CantonalLawText:
-    """Full text of a cantonal law version."""
+    """Full text of a cantonal law version.
+
+    ``origin`` records which source actually produced the text
+    ("lexwork", "lexfind_pdf", "zhlex", "lexfind") — it drives the
+    transformer choice and the frontmatter ``source`` label, which
+    matters when a LexWork canton is served by the LexFind fallback.
+    """
     canton: str
     systematic_number: str
     title: str
@@ -117,6 +123,7 @@ class CantonalLawText:
     language: str = "de"
     version_date: date | None = None
     abbreviation: str = ""
+    origin: str = ""
 
 
 # ─── Fetcher ───────────────────────────────────────────────────────────────────
@@ -503,6 +510,7 @@ class CantonalFetcher:
             language=lang,
             version_date=version_date,
             abbreviation=abbr,
+            origin="lexwork",
         )
 
     def _fetch_from_lexfind(self, canton: str, number: str,
@@ -543,6 +551,7 @@ class CantonalFetcher:
             html_content=text,
             language=lang,
             version_date=version_date,
+            origin="lexfind_pdf",
         )
 
     def _get_pdf(self, url: str) -> bytes | None:
@@ -576,19 +585,28 @@ class CantonalFetcher:
                            erlass_id: str = "") -> CantonalLawText | None:
         from .zurich_fetcher import ZurichFetcher
         zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
-        return zh_fetcher.fetch_law_text(number, lang, erlass_id=erlass_id)
+        text = zh_fetcher.fetch_law_text(number, lang, erlass_id=erlass_id)
+        if text:
+            text.origin = text.origin or "zhlex"
+        return text
 
     def _fetch_from_geneve(self, number: str, lang: str = "fr",
                            filename: str = "") -> CantonalLawText | None:
         from .cantonal_scrapers import GeneveFetcher
         fetcher = GeneveFetcher(rate_limit=self.rate_limit)
-        return fetcher.fetch_law_text(number, lang, filename=filename)
+        text = fetcher.fetch_law_text(number, lang, filename=filename)
+        if text:
+            text.origin = text.origin or "lexfind"
+        return text
 
     def _fetch_from_neuchatel(self, number: str, lang: str = "fr",
                               filename: str = "") -> CantonalLawText | None:
         from .cantonal_scrapers import NeuchatelFetcher
         fetcher = NeuchatelFetcher(rate_limit=self.rate_limit)
-        return fetcher.fetch_law_text(number, lang, filename=filename)
+        text = fetcher.fetch_law_text(number, lang, filename=filename)
+        if text:
+            text.origin = text.origin or "lexfind"
+        return text
 
     def fetch_versions(self, canton: str, number: str) -> list[CantonalLawVersion]:
         """Fetch all available versions of a cantonal law."""
@@ -676,6 +694,7 @@ class CantonalFetcher:
             language=lang,
             version_date=version_date,
             abbreviation=sv.get("abbreviation", ""),
+            origin="lexwork",
         )
 
 
@@ -796,18 +815,18 @@ def cantonal_law_to_markdown(
     - LexFind HTML: extracts body from full-page HTML, strips navigation
     - ZHLex HTML: handles Zürich's semantic HTML structure
     """
-    text_source = (
+    # Prefer the recorded text origin; fall back to canton-based inference
+    # for texts produced before the origin field existed.
+    text_source = text.origin or (
         "zhlex" if text.canton == "zh"
         else "lexwork" if text.canton in LEXWORK_CANTONS
         else "lexfind_pdf" if text.canton in LEXFIND_ONLY_CANTONS
         else "lexfind"
     )
-    if text.canton == "zh":
-        source_label = "LexFind+ZHLex"
-    elif text.canton in LEXWORK_CANTONS:
-        source_label = "LexFind+LexWork"
-    else:
-        source_label = "LexFind"
+    source_label = {
+        "zhlex": "LexFind+ZHLex",
+        "lexwork": "LexFind+LexWork",
+    }.get(text_source, "LexFind")
 
     meta: dict[str, object] = {
         "canton": text.canton.upper(),

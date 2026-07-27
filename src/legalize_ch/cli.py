@@ -578,6 +578,96 @@ def enrich_categories(repo: str, canton: str | None, rate_limit: float, dry_run:
     click.echo("Done.")
 
 
+@main.command("backfill-lexfind")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--canton", "-c", multiple=True, default=None,
+              help="Canton code(s) (default: 14 LexWork cantons + ZH)")
+@click.option("--limit", "-n", type=int, default=None,
+              help="Max missing laws to fetch per canton per language")
+@click.option("--rate-limit", type=float, default=1.5, help="Seconds between API requests")
+@click.option("--dry-run", is_flag=True, help="Report gaps only, write nothing")
+@click.option("--no-commit", is_flag=True, help="Write files but skip git commit")
+def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
+                     rate_limit: float, dry_run: bool, no_commit: bool):
+    """Import laws present in LexFind's catalog but missing locally (add-only).
+
+    LexWork collections and ZH's capped catalog lack whole sections (notably
+    intercantonal concordats) that LexFind covers.  Existing files are never
+    overwritten; re-running resumes where an interrupted run stopped.
+    Category metadata comes from the catalog, so enrich-categories is not
+    needed for backfilled files.
+    """
+    from pathlib import Path
+    from .lexfind_backfill import run_backfill
+
+    repo_path = Path(repo).resolve()
+    cantons = [c.strip().lower() for c in canton] if canton else None
+
+    if dry_run:
+        click.echo("DRY RUN — no files will be written")
+
+    summaries = run_backfill(
+        repo_path, cantons=cantons, rate_limit=rate_limit,
+        limit=limit, dry_run=dry_run, commit=not no_commit,
+    )
+
+    click.echo("")
+    click.echo(f"{'Canton':<8} {'Catalog':>8} {'Present':>8} {'Missing':>8} {'Fetched':>8} {'Failed':>7}")
+    click.echo("-" * 52)
+    for s in summaries:
+        click.echo(
+            f"{s['canton'].upper():<8} {s['catalog']:>8} {s['present']:>8} "
+            f"{s['missing']:>8} {s['fetched']:>8} {s['failed']:>7}"
+        )
+    click.echo("-" * 52)
+    click.echo(
+        f"{'TOTAL':<8} {sum(s['catalog'] for s in summaries):>8} "
+        f"{sum(s['present'] for s in summaries):>8} "
+        f"{sum(s['missing'] for s in summaries):>8} "
+        f"{sum(s['fetched'] for s in summaries):>8} "
+        f"{sum(max(s['failed'], 0) for s in summaries):>7}"
+    )
+    if not dry_run:
+        click.echo("")
+        click.echo("Next: .venv/bin/legalize-ch stats --repo . --site-repo ../swiss-law-as-source --no-trees")
+        click.echo("      .venv/bin/legalize-ch index --repo . --site-repo ../swiss-law-as-source")
+        click.echo("      then publish via /publish-site")
+
+
+@main.command("seed-state")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+@click.option("--last-run", default="2026-06-15",
+              help="last_run date to seed for the federal pipeline (default: last data commit)")
+@click.option("--skip-cantonal", is_flag=True, help="Only seed the federal state file")
+def seed_state(repo: str, rate_limit: float, last_run: str, skip_cantonal: bool):
+    """Rebuild lost pipeline state files from existing law files.
+
+    data/ is gitignored, so pipeline state does not survive a machine rebuild.
+    Without it the federal update aborts ("No last_run date in state") and a
+    cantonal update would treat every known law as new.  This reconstructs
+    both state files without fetching any documents (cantonal seeding only
+    fetches LexFind catalogs).  Idempotent — merges into existing state.
+    """
+    from pathlib import Path
+    from .lexfind_backfill import seed_federal_state, seed_cantonal_state
+
+    repo_path = Path(repo).resolve()
+
+    click.echo("Seeding federal pipeline state...")
+    fed = seed_federal_state(repo_path, last_run=last_run)
+    click.echo(f"  {fed['added']} keys added ({fed['total']} total), last_run={fed['last_run']}")
+
+    if not skip_cantonal:
+        click.echo("Seeding cantonal pipeline state (fetching LexFind catalogs)...")
+        per_canton = seed_cantonal_state(repo_path, rate_limit=rate_limit)
+        for c, n in per_canton.items():
+            click.echo(f"  {c.upper()}: {n} keys added")
+        click.echo(f"  Total: {sum(per_canton.values())} cantonal keys added")
+
+    click.echo("Done.")
+
+
 @main.command("export")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--format", "-f", "fmt", type=click.Choice(["all", "csv", "jsonld"]),

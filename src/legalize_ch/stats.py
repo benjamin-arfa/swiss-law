@@ -313,10 +313,10 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         "totals": totals,
         "unclassified_in_autres": unclassified,
         "notes": [
-            "ZH: couverture partielle (fetcher dédié, peu de concordats signalés)",
-            "GR: aucun concordat classé (lacune de classification)",
-            "FR: classification lacunaire",
-            "« Autres » inclut droit civil, droit pénal, publications sans texte et non classés",
+            "« Autres » inclut droit civil, droit pénal et les concordats sans "
+            "domaine juridique dans la base publique LexFind (~28 % non classés à la source)",
+            "Couverture selon les collections importées — lancer backfill-lexfind "
+            "pour compléter les cantons sous-représentés",
         ],
     }
 

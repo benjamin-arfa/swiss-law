@@ -208,6 +208,42 @@ legalize-ch index                              # laws.json search index
 
 The cron job (`scripts/weekly_update.sh`) runs every Monday at 03:43, updates everything, pushes to GitHub, and sends a Telegram notification.
 
+### LexFind backfill
+
+LexWork collections and ZH's capped catalog lack whole sections (notably
+intercantonal concordats) that LexFind's catalog covers. The backfill imports
+only the missing laws — **add-only**, existing files are never overwritten, and
+an interrupted run resumes automatically when re-run (file existence is the
+state). Category metadata comes from the LexFind catalog, so
+`enrich-categories` is not needed for backfilled files.
+
+```bash
+# Gap report (fast, writes nothing)
+legalize-ch backfill-lexfind --dry-run
+
+# Full run — hours; run detached (one git commit per canton)
+mkdir -p data/logs
+nohup ./scripts/backfill_lexfind.sh 1.5 > data/logs/backfill_$(date +%Y%m%d).out 2>&1 &
+
+# Afterwards: regenerate + publish
+legalize-ch stats --repo . --site-repo ../swiss-law-as-source --no-trees
+legalize-ch index --repo . --site-repo ../swiss-law-as-source
+```
+
+### Pipeline state repair
+
+`data/` is gitignored, so the pipeline state files do not survive a machine
+rebuild. Without them the federal update aborts ("No last_run date in state")
+and a cantonal update would re-fetch everything. `seed-state` reconstructs
+both files from the existing law collection (federal: frontmatter scan;
+cantonal: LexFind catalog vs local files — no documents fetched):
+
+```bash
+legalize-ch seed-state         # then re-add the cron entry if missing:
+crontab -l | grep weekly_update || \
+  (crontab -l 2>/dev/null; echo "43 3 * * 1 /home/ubuntu/swiss-law/scripts/weekly_update.sh") | crontab -
+```
+
 ## CLI commands
 
 | Command | Description |
@@ -217,6 +253,8 @@ The cron job (`scripts/weekly_update.sh`) runs every Monday at 03:43, updates ev
 | `stats` | Generate statistics, tags, category trees |
 | `index` | Generate INDEX.md and laws.json |
 | `enrich-categories` | Back-fill LexFind category metadata into cantonal files |
+| `backfill-lexfind` | Import laws missing locally from LexFind (add-only, resumable) |
+| `seed-state` | Rebuild lost pipeline state files from existing law files |
 | `cantonal` | Fetch a single cantonal law |
 | `cantonal-list` | List all cantons and their data sources |
 | `export` | Export metadata as CSV or JSON-LD |

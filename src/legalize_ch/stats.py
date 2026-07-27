@@ -685,7 +685,8 @@ def _concordat_group_minima(concordats: list[dict]) -> dict[str, str]:
     minima: dict[str, str] = {}
     for e in concordats:
         cand = []
-        if str(e.get("enactment_date_source", "")) == "lexwork_api" and e.get("enactment_date"):
+        if str(e.get("enactment_date_source", "")) in ("lexfind_family", "lexwork_api") \
+                and e.get("enactment_date"):
             cand.append(str(e["enactment_date"]))
         vds = e.get("version_dates")
         if isinstance(vds, list) and vds \
@@ -712,13 +713,18 @@ def earliest_known_year(e: dict, group_minima: dict[str, str]) -> tuple[str, str
     """
     from .date_enricher import _normalize_title
 
+    src = str(e.get("enactment_date_source", "")).split(":")[0]
+    # FROZEN canonical basis (see api/v1/quality/methodology_changelog.json):
+    # a lexfind_family date IS the act's original date — use it alone,
+    # no mixing with version minima or sibling evidence.
+    if src == "lexfind_family" and e.get("enactment_date"):
+        return str(e["enactment_date"])[:4], "lexfind_family"
     cand: list[tuple[str, str]] = []
     if e.get("enactment_date"):
         cand.append((str(e["enactment_date"]), "own_enactment"))
     vds = e.get("version_dates")
     if isinstance(vds, list) and vds:
         cand.append((str(min(vds)), "own_versions"))
-    src = str(e.get("enactment_date_source", "")).split(":")[0]
     if src not in ("lexwork_api", "fedlex"):
         gm = group_minima.get(_normalize_title(e.get("title", "")))
         if gm:

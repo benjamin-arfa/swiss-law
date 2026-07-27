@@ -145,6 +145,35 @@ def build_markdown() -> str:
         "  (directives, décisions, concessions, tarifs) — liste de contrôle publiée.",
         "- **Domaines juridiques** : taxonomie harmonisée LexFind (« domaine juridique ») couvrant droit",
         "  fédéral et cantonal, avec inférence tracée pour les actes non classés à la source.",
+    ]
+
+    # date methodology & changelog (frozen basis)
+    clog = json.loads((SITE / "api/v1/quality/methodology_changelog.json").read_text())
+    pol = clog["canonical_date_policy"]
+    lines += [
+        "",
+        "# Méthodologie des dates — base FIGÉE et journal des versions",
+        "",
+        f"**Source canonique (figée le {pol['frozen_since']})** : `family_active_since` de LexFind",
+        "(API frontend) — la date d'origine de la « famille » de l'acte, disponible pour les 26 cantons.",
+        "Les dates LexWork (`date_of_decision`) ont été remplacées car elles reflétaient souvent la",
+        "décision d'adhésion du canton : les divergences de dates entre cantons frères sont passées de",
+        "**72 groupes à 4** avec la base famille. À défaut de donnée famille, chaîne de repli fixe :",
+        "`lexwork_api` > preuve d'un canton frère > analyse du texte > date de version courante.",
+        "",
+        "**Les chiffres ne changent désormais que si les données sous-jacentes changent, et tout",
+        "changement est consigné dans le journal ci-dessous.**",
+        "",
+        "| v | Base de datation | Exist. <= 2003 | Inexpl. | Sans date | Motif |",
+        "|---|---|---:|---:|---:|---|",
+    ]
+    for v in clog["changelog"]:
+        e3 = "—" if v["existed_by_2003"] is None else n(v["existed_by_2003"])
+        ux = "—" if v["unexplained"] is None else n(v["unexplained"])
+        ud = "—" if v["undated"] is None else n(v["undated"])
+        lines.append(f"| {v['version']} | {v['date_basis']} | {e3} | {ux} | {ud} | {v['change_reason']} |")
+
+    lines += [
         "",
         "# Limites et prochaine étape",
         "",

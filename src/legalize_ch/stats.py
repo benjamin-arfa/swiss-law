@@ -10,6 +10,15 @@ from urllib.parse import quote
 
 import yaml
 
+from .categories import (
+    CATEGORY_TYPE_LABELS,
+    build_canton_title_map,
+    build_global_title_map,
+    canonical_category_type,
+    canonical_global_category,
+    canonical_systematic_category,
+)
+
 logger = logging.getLogger(__name__)
 
 CONCORDAT_TYPES = {
@@ -163,17 +172,31 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     by_source = Counter(e.get("source", "unknown") for e in entries)
     by_canton = Counter(e["canton"] for e in cantonal if e.get("canton"))
 
-    # Category breakdowns (cantonal only — federal uses SR prefix categories)
+    # Category breakdowns (cantonal only — federal uses SR prefix categories).
+    # Keys are harmonized: instrument types to their canonical German label,
+    # global categories by dotted code (German tree title), canton systematics
+    # by (canton, code) so language variants merge and label collisions split.
+    trees_dir = Path(repo_path) / "docs" / "trees"
+    global_titles = build_global_title_map(trees_dir)
+    canton_titles: dict[str, dict[str, str]] = {}
+
+    def _canton_titles(canton: str) -> dict[str, str]:
+        if canton not in canton_titles:
+            canton_titles[canton] = build_canton_title_map(trees_dir, canton)
+        return canton_titles[canton]
+
     by_category_type = Counter(
-        e.get("category_type", "")
+        canonical_category_type(e["category_type"])
         for e in cantonal if e.get("category_type")
     )
     by_systematic_category = Counter(
-        e.get("systematic_category", "")
+        canonical_systematic_category(
+            str(e.get("canton", "")), e["systematic_category"],
+            _canton_titles(str(e.get("canton", "")).lower()))
         for e in cantonal if e.get("systematic_category")
     )
     by_global_category = Counter(
-        e.get("global_category", "")
+        canonical_global_category(e["global_category"], global_titles)
         for e in cantonal if e.get("global_category")
     )
 
@@ -213,6 +236,8 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
             val = e.get(field, "")
             vd = str(e.get("version_date", ""))
             if val and len(vd) >= 4:
+                if field == "category_type":
+                    val = canonical_category_type(val)
                 result[vd[:4]][val] += 1
         return {y: dict(counts) for y, counts in sorted(result.items())}
 
@@ -223,7 +248,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     category_type_by_canton: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     for e in cantonal:
         c = e.get("canton", "")
-        ct = e.get("category_type", "")
+        ct = canonical_category_type(e.get("category_type", ""))
         if c and ct:
             category_type_by_canton[c][ct] += 1
 
@@ -234,7 +259,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     for e in cantonal:
         vd = str(e.get("version_date", ""))
         c = e.get("canton", "")
-        ct = e.get("category_type", "")
+        ct = canonical_category_type(e.get("category_type", ""))
         if len(vd) >= 4 and c and ct:
             cat_by_canton_by_year[vd[:4]][c][ct] += 1
 
@@ -247,6 +272,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         "by_source": dict(by_source.most_common()),
         "by_canton": dict(by_canton.most_common()),
         "by_sr_category": dict(by_sr_category.most_common()),
+        "category_type_labels": CATEGORY_TYPE_LABELS,
         "by_category_type": dict(by_category_type.most_common()),
         "by_systematic_category": dict(by_systematic_category.most_common()),
         "by_global_category": dict(by_global_category.most_common()),
@@ -310,7 +336,10 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     concordat counts once regardless of language versions.
     """
     cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
-    concordats = [e for e in cantonal if e.get("category_type") in CONCORDAT_TYPES]
+    concordats = [
+        e for e in cantonal
+        if canonical_category_type(e.get("category_type", "")) == "Interkantonale Vereinbarung"
+    ]
 
     code_to_key = {c: d["key"] for d in CONCORDAT_DOMAINS for c in d["codes"]}
     domain_keys = [d["key"] for d in CONCORDAT_DOMAINS]
@@ -445,6 +474,13 @@ def write_tags_json(tags: dict, output_path: str | Path = "docs/tags.json"):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(tags, indent=2, ensure_ascii=False))
     logger.info("Wrote tags to %s (%d entries)", path, tags.get("total", 0))
+
+
+def _iter_tree(nodes: list[dict]):
+    """Yield every node of a nested tree (depth-first)."""
+    for n in nodes:
+        yield n
+        yield from _iter_tree(n.get("children", []))
 
 
 def _clean_tree(raw: dict) -> list[dict]:
@@ -618,6 +654,7 @@ def generate_yearly_canton_stats(
 
     trees_path = Path(trees_dir)
     global_tree = _load_tree(trees_path / "global.json")
+    global_titles = build_global_title_map(trees_path)
     tree_cache: dict[str, list[dict]] = {}
 
     def _get_canton_tree(entity: str) -> list[dict]:
@@ -644,11 +681,11 @@ def generate_yearly_canton_stats(
         for entity in sorted(data[year]):
             laws = data[year][entity]
 
-            # --- by_type with cross-tabs ---
+            # --- by_type with cross-tabs (canonical type labels) ---
             type_groups: dict[str, list[dict]] = defaultdict(list)
             categorized = 0
             for e in laws:
-                ct = e.get("category_type", "")
+                ct = canonical_category_type(e.get("category_type", ""))
                 if ct:
                     type_groups[ct].append(e)
                     categorized += 1
@@ -663,7 +700,8 @@ def generate_yearly_canton_stats(
                         if e.get("systematic_category")
                     ).most_common()),
                     "by_global_category": dict(Counter(
-                        e["global_category"] for e in type_laws
+                        canonical_global_category(e["global_category"], global_titles)
+                        for e in type_laws
                         if e.get("global_category")
                     ).most_common()),
                 }
@@ -821,13 +859,18 @@ def fetch_and_write_trees(output_dir: str | Path = "docs/trees", rate_limit: flo
     out.mkdir(parents=True, exist_ok=True)
     fetcher = CantonalFetcher(rate_limit=rate_limit)
 
-    # Global tree
-    logger.info("Fetching global systematics tree...")
-    global_raw = fetcher._get_json(f"{LEXFIND_API}/de/global/systematics")
-    if global_raw:
-        tree = _clean_tree(global_raw)
-        (out / "global.json").write_text(json.dumps(tree, indent=2, ensure_ascii=False))
-        logger.info("Wrote global tree (%d top-level nodes)", len(tree))
+    # Global tree — all three languages (fr/it feed the Categories API)
+    for lang in ("de", "fr", "it"):
+        logger.info("Fetching global systematics tree (%s)...", lang)
+        global_raw = fetcher._get_json(f"{LEXFIND_API}/{lang}/global/systematics")
+        if global_raw:
+            tree = _clean_tree(global_raw)
+            suffix = "" if lang == "de" else f"_{lang}"
+            (out / f"global{suffix}.json").write_text(
+                json.dumps(tree, indent=2, ensure_ascii=False))
+            n_nodes = sum(1 for _ in _iter_tree(tree))
+            logger.info("Wrote global tree %s (%d nodes, %d top-level)",
+                        lang, n_nodes, len(tree))
 
     # CH (federal) tree — entity 27
     logger.info("Fetching CH (federal) systematics tree...")

@@ -11,7 +11,7 @@
 #   ./scripts/backfill_lexfind.sh [--no-publish] [rate_limit] [canton ...]
 #     --no-publish  skip the final stats/index/site-deploy/push/notify chain
 #     rate_limit    seconds between API requests (default 1.5)
-#     canton ...    canton codes (default: 14 LexWork cantons + zh)
+#     canton ...    canton codes (default: all 26 cantons)
 #
 # Recommended: run detached, it takes hours for a full pass:
 #   mkdir -p data/logs
@@ -41,7 +41,7 @@ RATE_LIMIT="${1:-1.5}"
 shift || true
 CANTONS=("$@")
 if [ ${#CANTONS[@]} -eq 0 ]; then
-    CANTONS=(ag ar be bl bs fr gl gr lu sg so tg vs zg zh)
+    CANTONS=(ag ai ar be bl bs fr ge gl gr ju lu ne nw ow sg sh so sz tg ti ur vd vs zg zh)
 fi
 
 LOG_DIR="${REPO_DIR}/data/logs"

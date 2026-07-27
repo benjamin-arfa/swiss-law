@@ -137,11 +137,15 @@ class TestBackfillCanton:
         assert len(log) == 2  # init + one backfill commit
         assert "Backfill SO" in log[0]
 
-    def test_zh_bypasses_dedicated_fetcher(self, tmp_repo):
-        fetcher = _mock_fetcher([_entry(canton="zh")], _text(canton="zh"))
-        backfill_canton(tmp_repo, "zh", fetcher, None, {"processed": {}}, commit=False)
-        fetcher._fetch_from_lexfind.assert_called_once()
-        fetcher.fetch_law_text.assert_not_called()
+    def test_dedicated_fetcher_cantons_bypass_to_lexfind(self, tmp_repo):
+        # zh/ge/ne must fetch via LexFind PDFs — their dedicated fetchers
+        # have partial catalogs and expect their own ids, not tol ids.
+        for canton in ("zh", "ge", "ne"):
+            fetcher = _mock_fetcher([_entry(canton=canton)], _text(canton=canton))
+            backfill_canton(tmp_repo, canton, fetcher, None, {"processed": {}},
+                            commit=False)
+            fetcher._fetch_from_lexfind.assert_called()
+            fetcher.fetch_law_text.assert_not_called()
 
 
 class TestRunBackfill:
@@ -165,10 +169,10 @@ class TestRunBackfill:
         assert summaries[0]["failed"] == -1
         assert summaries[1]["canton"] == "so"
 
-    def test_default_cantons(self):
-        assert "zh" in DEFAULT_BACKFILL_CANTONS
-        assert "gr" in DEFAULT_BACKFILL_CANTONS
-        assert len(DEFAULT_BACKFILL_CANTONS) == 15
+    def test_default_cantons_all_26(self):
+        assert len(DEFAULT_BACKFILL_CANTONS) == 26
+        for c in ("zh", "ge", "ne", "gr", "ai"):
+            assert c in DEFAULT_BACKFILL_CANTONS
 
 
 class TestOriginAttribution:

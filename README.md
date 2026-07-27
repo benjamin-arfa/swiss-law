@@ -207,7 +207,7 @@ legalize-ch index                              # laws.json search index
 ./scripts/update_all.sh 0.5 --push   # Update + push both repos
 ```
 
-The cron job (`scripts/weekly_update.sh`) runs every Monday at 03:43, updates everything, pushes to GitHub, and sends a Telegram notification.
+The cron job (`scripts/weekly_update.sh`) runs every Monday at 03:43, updates everything, pushes to GitHub, and sends a Telegram notification. It is **self-healing**: after the per-canton updates it runs `backfill-lexfind` (all 26 cantons, add-only — any law of any type that appears in a LexFind catalog gets fetched within a week) and a `coverage` audit that publishes `api/v1/coverage.json` comparing local files against the LexFind and Fedlex catalogs per canton × instrument type.
 
 ### LexFind backfill
 
@@ -273,7 +273,8 @@ crontab -l | grep weekly_update || \
 | `stats` | Generate statistics, tags, category trees |
 | `index` | Generate INDEX.md and laws.json |
 | `enrich-categories` | Back-fill LexFind category metadata into cantonal files |
-| `backfill-lexfind` | Import laws missing locally from LexFind (add-only, resumable) |
+| `backfill-lexfind` | Import laws missing locally from LexFind (all 26 cantons, all types, add-only, resumable) |
+| `coverage` | Audit completeness vs LexFind/Fedlex catalogs, per canton × law type |
 | `seed-state` | Rebuild lost pipeline state files from existing law files |
 | `cantonal` | Fetch a single cantonal law |
 | `cantonal-list` | List all cantons and their data sources |

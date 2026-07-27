@@ -1,0 +1,2938 @@
+[
+  {
+    "id": 1,
+    "identifier": "1",
+    "title": "Stato",
+    "children": [
+      {
+        "id": 2,
+        "identifier": "1.10",
+        "title": "Norme generali\n",
+        "children": [
+          {
+            "id": 3,
+            "identifier": "1.10.10",
+            "title": "Costituzione\n"
+          },
+          {
+            "id": 4,
+            "identifier": "1.10.20",
+            "title": "Colori e sigilli\n"
+          },
+          {
+            "id": 5,
+            "identifier": "1.10.30",
+            "title": "Cooperazione transfrontaliera\n",
+            "children": [
+              {
+                "id": 504,
+                "identifier": "1.10.30.10",
+                "title": "Organizzazioni internazionali"
+              },
+              {
+                "id": 505,
+                "identifier": "1.10.30.20",
+                "title": "Relazioni diplomatiche e consolari"
+              },
+              {
+                "id": 511,
+                "identifier": "1.10.30.30",
+                "title": "Componimento dei conflitti internazionali"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "identifier": "1.10.40",
+            "title": "Cooperazione intercantonale\n"
+          },
+          {
+            "id": 7,
+            "identifier": "1.10.50",
+            "title": "Territorio\n",
+            "children": [
+              {
+                "id": 8,
+                "identifier": "1.10.50.10",
+                "title": "Delimitazioni territoriali, distritti"
+              },
+              {
+                "id": 9,
+                "identifier": "1.10.50.20",
+                "title": "Confini\n"
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "identifier": "1.10.60",
+            "title": "Cittadinanza, attinenza\n"
+          },
+          {
+            "id": 11,
+            "identifier": "1.10.70",
+            "title": "Domicilio e dimora\n",
+            "children": [
+              {
+                "id": 410,
+                "identifier": "1.10.70.10",
+                "title": "Dimora e domicilio degli stranieri",
+                "children": [
+                  {
+                    "id": 411,
+                    "identifier": "1.10.70.10.10",
+                    "title": "controllo degli abitanti"
+                  }
+                ]
+              },
+              {
+                "id": 12,
+                "identifier": "1.10.70.20",
+                "title": "Dimora e domicilio degli stranieri",
+                "children": [
+                  {
+                    "id": 13,
+                    "identifier": "1.10.70.20.10",
+                    "title": "asilo\n"
+                  },
+                  {
+                    "id": 14,
+                    "identifier": "1.10.70.20.20",
+                    "title": "misure coercitive\n"
+                  },
+                  {
+                    "id": 15,
+                    "identifier": "1.10.70.20.30",
+                    "title": "integrazione\n"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "identifier": "1.10.80",
+            "title": "Documenti di identità\n"
+          },
+          {
+            "id": 17,
+            "identifier": "1.10.90",
+            "title": "Diritti fondamentali, diritti politici\n",
+            "children": [
+              {
+                "id": 18,
+                "identifier": "1.10.90.10",
+                "title": "parità dei sessi"
+              },
+              {
+                "id": 19,
+                "identifier": "1.10.90.20",
+                "title": "diritti politici\n",
+                "children": [
+                  {
+                    "id": 20,
+                    "identifier": "1.10.90.20.10",
+                    "title": "Elezioni e votazioni\n"
+                  },
+                  {
+                    "id": 21,
+                    "identifier": "1.10.90.20.20",
+                    "title": "Landsgemeinde\n"
+                  },
+                  {
+                    "id": 22,
+                    "identifier": "1.10.90.20.30",
+                    "title": "Ricusa, incompatibilità\n"
+                  },
+                  {
+                    "id": 538,
+                    "identifier": "1.10.90.20.40",
+                    "title": "Finanziamento della politica, trasparenza"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "identifier": "1.10.100",
+            "title": "Pubblicazioni ufficiali\n",
+            "children": [
+              {
+                "id": 24,
+                "identifier": "1.10.100.10",
+                "title": "Raccolte delle leggi\n"
+              },
+              {
+                "id": 25,
+                "identifier": "1.10.100.20",
+                "title": "Fogli ufficiali\n"
+              }
+            ]
+          },
+          {
+            "id": 497,
+            "identifier": "1.10.110",
+            "title": "Procedura legislativa"
+          },
+          {
+            "id": 26,
+            "identifier": "1.10.120",
+            "title": "Informazione del pubblico"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "identifier": "1.20",
+        "title": "Autorità",
+        "children": [
+          {
+            "id": 28,
+            "identifier": "1.20.10",
+            "title": "Parlamento\n",
+            "children": [
+              {
+                "id": 29,
+                "identifier": "1.20.10.10",
+                "title": "Elezione del parlamento"
+              },
+              {
+                "id": 30,
+                "identifier": "1.20.10.20",
+                "title": "Indennità ai deputati\n"
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "identifier": "1.20.20",
+            "title": "Governo e amministrazione\n",
+            "children": [
+              {
+                "id": 32,
+                "identifier": "1.20.20.10",
+                "title": "Organizzazione\n",
+                "children": [
+                  {
+                    "id": 482,
+                    "identifier": "1.20.20.10.10",
+                    "title": "Deleghe"
+                  }
+                ]
+              },
+              {
+                "id": 33,
+                "identifier": "1.20.20.20",
+                "title": "Governo\n",
+                "children": [
+                  {
+                    "id": 34,
+                    "identifier": "1.20.20.20.10",
+                    "title": "Indennità"
+                  },
+                  {
+                    "id": 483,
+                    "identifier": "1.20.20.20.20",
+                    "title": "Pensioni"
+                  },
+                  {
+                    "id": 35,
+                    "identifier": "1.20.20.20.30",
+                    "title": "Cancelleria di Stato"
+                  },
+                  {
+                    "id": 484,
+                    "identifier": "1.20.20.20.40",
+                    "title": "Prefetti"
+                  }
+                ]
+              },
+              {
+                "id": 481,
+                "identifier": "1.20.20.30",
+                "title": "Amministrazione",
+                "children": [
+                  {
+                    "id": 488,
+                    "identifier": "1.20.20.30.10",
+                    "title": "Dipartimenti"
+                  },
+                  {
+                    "id": 489,
+                    "identifier": "1.20.20.30.20",
+                    "title": "Uffici e servizi"
+                  },
+                  {
+                    "id": 490,
+                    "identifier": "1.20.20.30.30",
+                    "title": "Commissioni"
+                  }
+                ]
+              },
+              {
+                "id": 36,
+                "identifier": "1.20.20.40",
+                "title": "Dipendenti dello Stato",
+                "children": [
+                  {
+                    "id": 37,
+                    "identifier": "1.20.20.40.10",
+                    "title": "Assunzione\n"
+                  },
+                  {
+                    "id": 480,
+                    "identifier": "1.20.20.40.20",
+                    "title": "Giuramento"
+                  },
+                  {
+                    "id": 439,
+                    "identifier": "1.20.20.40.30",
+                    "title": "Durata del lavoro, vacanze"
+                  },
+                  {
+                    "id": 38,
+                    "identifier": "1.20.20.40.40",
+                    "title": "Stipendi, indennità"
+                  },
+                  {
+                    "id": 419,
+                    "identifier": "1.20.20.40.50",
+                    "title": "Pensioni, previdenza, assicurazione"
+                  },
+                  {
+                    "id": 469,
+                    "identifier": "1.20.20.40.60",
+                    "title": "Formazione, aggiornamento"
+                  },
+                  {
+                    "id": 476,
+                    "identifier": "1.20.20.40.70",
+                    "title": "Posteggi"
+                  },
+                  {
+                    "id": 477,
+                    "identifier": "1.20.20.40.80",
+                    "title": "Commissioni del personale, commissioni paritetiche"
+                  }
+                ]
+              },
+              {
+                "id": 412,
+                "identifier": "1.20.20.50",
+                "title": "Procedura amministrativa"
+              },
+              {
+                "id": 438,
+                "identifier": "1.20.20.60",
+                "title": "Tasse amministrative"
+              },
+              {
+                "id": 39,
+                "identifier": "1.20.20.70",
+                "title": "New Public Management"
+              }
+            ]
+          },
+          {
+            "id": 40,
+            "identifier": "1.20.30",
+            "title": "Ombudsman, mediatore"
+          },
+          {
+            "id": 41,
+            "identifier": "1.20.40",
+            "title": "Responsabilità dello Stato\n"
+          },
+          {
+            "id": 42,
+            "identifier": "1.20.50",
+            "title": "Protezione dei dati personali"
+          },
+          {
+            "id": 43,
+            "identifier": "1.20.60",
+            "title": "Informatica\n",
+            "children": [
+              {
+                "id": 535,
+                "identifier": "1.20.60.10",
+                "title": "E-Government"
+              }
+            ]
+          },
+          {
+            "id": 44,
+            "identifier": "1.20.70",
+            "title": "Organizzazione giudiziaria\n",
+            "children": [
+              {
+                "id": 45,
+                "identifier": "1.20.70.10",
+                "title": "Autorità giudiziarie\n",
+                "children": [
+                  {
+                    "id": 46,
+                    "identifier": "1.20.70.10.10",
+                    "title": "Giudice dell'istruzione, Ministero pubblico",
+                    "children": [
+                      {
+                        "id": 502,
+                        "identifier": "1.20.70.10.10.10",
+                        "title": "Giudici istruttori"
+                      },
+                      {
+                        "id": 503,
+                        "identifier": "1.20.70.10.10.20",
+                        "title": "Ministero pubblico"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 47,
+                    "identifier": "1.20.70.10.20",
+                    "title": "Tribunali superiori, tribunali federali"
+                  },
+                  {
+                    "id": 48,
+                    "identifier": "1.20.70.10.30",
+                    "title": "Tribunali amministrativi, delle assicurazioni e delle assicurazioni sociali"
+                  },
+                  {
+                    "id": 49,
+                    "identifier": "1.20.70.10.40",
+                    "title": "Tribunali di distretto, giudici di pace"
+                  },
+                  {
+                    "id": 50,
+                    "identifier": "1.20.70.10.50",
+                    "title": "Tribunali del lavoro, tribunali di affitti e locazioni"
+                  },
+                  {
+                    "id": 51,
+                    "identifier": "1.20.70.10.60",
+                    "title": "Commissioni di ricorso"
+                  }
+                ]
+              },
+              {
+                "id": 478,
+                "identifier": "1.20.70.20",
+                "title": "Personale dei tribunali"
+              },
+              {
+                "id": 467,
+                "identifier": "1.20.70.30",
+                "title": "Stipendi e indennità dei giudici"
+              },
+              {
+                "id": 468,
+                "identifier": "1.20.70.40",
+                "title": "Pensioni e assicurazione dei giudici"
+              },
+              {
+                "id": 52,
+                "identifier": "1.20.70.50",
+                "title": "Tariffa giudiziaria, tasse giudiziarie"
+              }
+            ]
+          },
+          {
+            "id": 498,
+            "identifier": "1.20.80",
+            "title": "Termini"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "identifier": "1.30",
+        "title": "Comuni\n",
+        "children": [
+          {
+            "id": 54,
+            "identifier": "1.30.10",
+            "title": "Finanze comunali\n"
+          },
+          {
+            "id": 55,
+            "identifier": "1.30.20",
+            "title": "Contribuzioni finanziarie dei comuni"
+          },
+          {
+            "id": 56,
+            "identifier": "1.30.30",
+            "title": "Sussidi\n"
+          },
+          {
+            "id": 57,
+            "identifier": "1.30.40",
+            "title": "Ripartizione dei compiti tra cantoni e comuni\n"
+          },
+          {
+            "id": 58,
+            "identifier": "1.30.50",
+            "title": "Fusione di comuni\n"
+          },
+          {
+            "id": 59,
+            "identifier": "1.30.60",
+            "title": "Patriziati, almende\n"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "identifier": "1.40",
+        "title": "Chiesa e Stato\n",
+        "children": [
+          {
+            "id": 61,
+            "identifier": "1.40.10",
+            "title": "Chiesa cattolica romana\n"
+          },
+          {
+            "id": 62,
+            "identifier": "1.40.20",
+            "title": "Chiesa cattolica cristiana\n"
+          },
+          {
+            "id": 63,
+            "identifier": "1.40.30",
+            "title": "Chiesa evangelica e riformata\n"
+          },
+          {
+            "id": 64,
+            "identifier": "1.40.40",
+            "title": "Altre religioni\n"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "identifier": "1.50",
+        "title": "Professioni giuridiche",
+        "children": [
+          {
+            "id": 66,
+            "identifier": "1.50.10",
+            "title": "Avvocati\n",
+            "children": [
+              {
+                "id": 67,
+                "identifier": "1.50.10.10",
+                "title": "Formazione\n"
+              },
+              {
+                "id": 68,
+                "identifier": "1.50.10.20",
+                "title": "Tariffa\n"
+              },
+              {
+                "id": 69,
+                "identifier": "1.50.10.30",
+                "title": "Assistenza giudiziaria\n"
+              }
+            ]
+          },
+          {
+            "id": 70,
+            "identifier": "1.50.20",
+            "title": "Notai\n",
+            "children": [
+              {
+                "id": 71,
+                "identifier": "1.50.20.10",
+                "title": "Formazione\n"
+              },
+              {
+                "id": 72,
+                "identifier": "1.50.20.20",
+                "title": "Tariffa"
+              },
+              {
+                "id": 73,
+                "identifier": "1.50.20.30",
+                "title": "Atti in forma autentica / Legalizzazioni\n"
+              },
+              {
+                "id": 74,
+                "identifier": "1.50.20.40",
+                "title": "Agenti giuridici\n"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "identifier": "2",
+    "title": "Diritto civile\n",
+    "children": [
+      {
+        "id": 76,
+        "identifier": "2.10",
+        "title": "Norme generali d'applicazione del CCS",
+        "children": [
+          {
+            "id": 77,
+            "identifier": "2.10.10",
+            "title": "Diritto delle persone, stato civile\n",
+            "children": [
+              {
+                "id": 491,
+                "identifier": "2.10.10.10",
+                "title": "Unione domestica registrata"
+              },
+              {
+                "id": 78,
+                "identifier": "2.10.10.20",
+                "title": "Fondazioni, sorveglianza",
+                "children": [
+                  {
+                    "id": 79,
+                    "identifier": "2.10.10.20.10",
+                    "title": "Fondazioni LPP\n"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 80,
+            "identifier": "2.10.20",
+            "title": "Diritto di famiglia\n",
+            "children": [
+              {
+                "id": 81,
+                "identifier": "2.10.20.10",
+                "title": "Tutele"
+              },
+              {
+                "id": 440,
+                "identifier": "2.10.20.20",
+                "title": "Collocamento dei minorenni, adozione"
+              },
+              {
+                "id": 82,
+                "identifier": "2.10.20.30",
+                "title": "Privazione della libertà a scopo d'assistenza"
+              }
+            ]
+          },
+          {
+            "id": 83,
+            "identifier": "2.10.30",
+            "title": "Diritto successorio\n"
+          },
+          {
+            "id": 84,
+            "identifier": "2.10.40",
+            "title": "Diritti reali\n",
+            "children": [
+              {
+                "id": 85,
+                "identifier": "2.10.40.10",
+                "title": "Estimazione ufficiale dei fondi\n"
+              },
+              {
+                "id": 86,
+                "identifier": "2.10.40.20",
+                "title": "Acquisto di fondi da parte di persone all'estero\n"
+              },
+              {
+                "id": 87,
+                "identifier": "2.10.40.30",
+                "title": "Registro fondiario, misurazioni catastali"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 88,
+        "identifier": "2.20",
+        "title": "Norme generali d'applicazione del CO",
+        "children": [
+          {
+            "id": 89,
+            "identifier": "2.20.10",
+            "title": "Dei diversi contratti\n",
+            "children": [
+              {
+                "id": 90,
+                "identifier": "2.20.10.10",
+                "title": "Vendita all'asta"
+              },
+              {
+                "id": 91,
+                "identifier": "2.20.10.20",
+                "title": "Locazione e affitto",
+                "children": [
+                  {
+                    "id": 92,
+                    "identifier": "2.20.10.20.10",
+                    "title": "Affitto agricolo"
+                  }
+                ]
+              },
+              {
+                "id": 93,
+                "identifier": "2.20.10.30",
+                "title": "Prestito"
+              },
+              {
+                "id": 94,
+                "identifier": "2.20.10.40",
+                "title": "Contratto di lavoro",
+                "children": [
+                  {
+                    "id": 95,
+                    "identifier": "2.20.10.40.10",
+                    "title": "Contratti collettivi di lavoro",
+                    "children": [
+                      {
+                        "id": 96,
+                        "identifier": "2.20.10.40.10.10",
+                        "title": "Conferimento del carattere obbligatorio generale al contratto di lavoro"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 97,
+                    "identifier": "2.20.10.40.20",
+                    "title": "Contratti normali",
+                    "children": [
+                      {
+                        "id": 98,
+                        "identifier": "2.20.10.40.20.10",
+                        "title": "Lavoratori delle economie domestiche private"
+                      },
+                      {
+                        "id": 99,
+                        "identifier": "2.20.10.40.20.30",
+                        "title": "Lavoratori agricoli"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 100,
+                "identifier": "2.20.10.50",
+                "title": "Mediazione matrimoniale e ricerca di partner"
+              }
+            ]
+          },
+          {
+            "id": 101,
+            "identifier": "2.20.20",
+            "title": "Diritto commerciale",
+            "children": [
+              {
+                "id": 102,
+                "identifier": "2.20.20.10",
+                "title": "Registro di commercio"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "identifier": "2.30",
+        "title": "Proprietà intellettuale"
+      },
+      {
+        "id": 104,
+        "identifier": "2.40",
+        "title": "Concorrenza sleale / cartelli"
+      },
+      {
+        "id": 105,
+        "identifier": "2.50",
+        "title": "Procedura civile",
+        "children": [
+          {
+            "id": 106,
+            "identifier": "2.50.10",
+            "title": "Tariffa\n"
+          },
+          {
+            "id": 107,
+            "identifier": "2.50.20",
+            "title": "Assistenza giudiziaria\n"
+          },
+          {
+            "id": 108,
+            "identifier": "2.50.30",
+            "title": "Esecuzione\n"
+          }
+        ]
+      },
+      {
+        "id": 109,
+        "identifier": "2.60",
+        "title": "Esecuzioni e fallimenti",
+        "children": [
+          {
+            "id": 110,
+            "identifier": "2.60.10",
+            "title": "Organizzazione\n"
+          }
+        ]
+      },
+      {
+        "id": 111,
+        "identifier": "2.70",
+        "title": "Diritto internazionale privato"
+      },
+      {
+        "id": 416,
+        "identifier": "2.80",
+        "title": "Arbitrato"
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "identifier": "3",
+    "title": "Diritto penale\n",
+    "children": [
+      {
+        "id": 113,
+        "identifier": "3.10",
+        "title": "Norme generali d'applicazione del CP",
+        "children": [
+          {
+            "id": 114,
+            "identifier": "3.10.10",
+            "title": "Criminalità economica, riciclaggio di denaro"
+          },
+          {
+            "id": 458,
+            "identifier": "3.10.20",
+            "title": "Interruzione di gravidanza"
+          }
+        ]
+      },
+      {
+        "id": 115,
+        "identifier": "3.20",
+        "title": "Procedura penale\n",
+        "children": [
+          {
+            "id": 528,
+            "identifier": "3.20.10",
+            "title": "Codici di procedura penale"
+          },
+          {
+            "id": 119,
+            "identifier": "3.20.20",
+            "title": "Medicina legale"
+          },
+          {
+            "id": 492,
+            "identifier": "3.20.30",
+            "title": "Profili del DNA"
+          },
+          {
+            "id": 493,
+            "identifier": "3.20.40",
+            "title": "Inchiesta mascherata"
+          },
+          {
+            "id": 117,
+            "identifier": "3.20.50",
+            "title": "Assistenza giudiziaria"
+          },
+          {
+            "id": 116,
+            "identifier": "3.20.60",
+            "title": "Tariffa"
+          },
+          {
+            "id": 120,
+            "identifier": "3.20.70",
+            "title": "Aiuto alle vittime di reati"
+          }
+        ]
+      },
+      {
+        "id": 474,
+        "identifier": "3.30",
+        "title": "Diritto penale dei minorenni e procedura penale dei minorenni"
+      },
+      {
+        "id": 121,
+        "identifier": "3.40",
+        "title": "Diritto penale militare"
+      },
+      {
+        "id": 118,
+        "identifier": "3.50",
+        "title": "Contravvenzioni"
+      },
+      {
+        "id": 122,
+        "identifier": "3.60",
+        "title": "Casellario giudiziale",
+        "children": [
+          {
+            "id": 123,
+            "identifier": "3.60.10",
+            "title": "Certificato di buona condotta\n"
+          }
+        ]
+      },
+      {
+        "id": 124,
+        "identifier": "3.70",
+        "title": "Esecuzione delle pene e delle misure",
+        "children": [
+          {
+            "id": 125,
+            "identifier": "3.70.10",
+            "title": "Stabilimenti di pena\n",
+            "children": [
+              {
+                "id": 475,
+                "identifier": "3.70.10.10",
+                "title": "Personale"
+              }
+            ]
+          },
+          {
+            "id": 126,
+            "identifier": "3.70.20",
+            "title": "Patronato"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "identifier": "4",
+    "title": "Istruzione, scienza, documentazione, archivi\n",
+    "children": [
+      {
+        "id": 128,
+        "identifier": "4.10",
+        "title": "Grado prescolastico, scuola elementare, grado secondario I",
+        "children": [
+          {
+            "id": 360,
+            "identifier": "4.10.10",
+            "title": "Asili infantili"
+          },
+          {
+            "id": 129,
+            "identifier": "4.10.20",
+            "title": "Scuola dell'infanzia"
+          },
+          {
+            "id": 514,
+            "identifier": "4.10.30",
+            "title": "Scuola elementare, grado secondario I"
+          }
+        ]
+      },
+      {
+        "id": 130,
+        "identifier": "4.20",
+        "title": "Grado secondario II",
+        "children": [
+          {
+            "id": 515,
+            "identifier": "4.20.10",
+            "title": "Scuola media"
+          },
+          {
+            "id": 441,
+            "identifier": "4.20.20",
+            "title": "Scuole specializzate, scuole di diploma"
+          },
+          {
+            "id": 442,
+            "identifier": "4.20.30",
+            "title": "Scuole medie die commercio, scuole medie d'informatica"
+          }
+        ]
+      },
+      {
+        "id": 138,
+        "identifier": "4.30",
+        "title": "Grado secondario II: Formazione professionale di base",
+        "children": [
+          {
+            "id": 154,
+            "identifier": "4.30.10",
+            "title": "Scuole professionali",
+            "children": [
+              {
+                "id": 155,
+                "identifier": "4.30.10.10",
+                "title": "Insegnamento dell'economia domestica"
+              }
+            ]
+          },
+          {
+            "id": 516,
+            "identifier": "4.30.20",
+            "title": "Scuole professionali con esame di maturità"
+          },
+          {
+            "id": 153,
+            "identifier": "4.30.30",
+            "title": "Orientazione professionale"
+          },
+          {
+            "id": 517,
+            "identifier": "4.30.40",
+            "title": "Passerelle"
+          },
+          {
+            "id": 518,
+            "identifier": "4.30.50",
+            "title": "Soluzioni transitorie"
+          }
+        ]
+      },
+      {
+        "id": 131,
+        "identifier": "4.40",
+        "title": "Grado terziario: università",
+        "children": [
+          {
+            "id": 132,
+            "identifier": "4.40.10",
+            "title": "Facoltà di legge\n"
+          },
+          {
+            "id": 133,
+            "identifier": "4.40.20",
+            "title": "Facoltà di teologia\n"
+          },
+          {
+            "id": 134,
+            "identifier": "4.40.30",
+            "title": "Facoltà di scienze economiche\n"
+          },
+          {
+            "id": 135,
+            "identifier": "4.40.40",
+            "title": "Facoltà di scienze naturali"
+          },
+          {
+            "id": 136,
+            "identifier": "4.40.50",
+            "title": "Facoltà di filosofia"
+          },
+          {
+            "id": 137,
+            "identifier": "4.40.60",
+            "title": "Facoltà di medicina umana e veterinaria"
+          },
+          {
+            "id": 499,
+            "identifier": "4.40.70",
+            "title": "Altri cicli di studio"
+          }
+        ]
+      },
+      {
+        "id": 139,
+        "identifier": "4.50",
+        "title": "Grado terziario: Alte Scuole",
+        "children": [
+          {
+            "id": 140,
+            "identifier": "4.50.10",
+            "title": "Pedagogia\n"
+          },
+          {
+            "id": 141,
+            "identifier": "4.50.20",
+            "title": "Scienze sociali\n"
+          },
+          {
+            "id": 142,
+            "identifier": "4.50.30",
+            "title": "Economia\n"
+          },
+          {
+            "id": 501,
+            "identifier": "4.50.40",
+            "title": "Agricoltura"
+          },
+          {
+            "id": 500,
+            "identifier": "4.50.50",
+            "title": "Altri cicli di studi"
+          }
+        ]
+      },
+      {
+        "id": 443,
+        "identifier": "4.60",
+        "title": "Grado terziario: Scuole specializzate superiori"
+      },
+      {
+        "id": 163,
+        "identifier": "4.70",
+        "title": "Formazione continua (Grado quaternario)",
+        "children": [
+          {
+            "id": 164,
+            "identifier": "4.70.10",
+            "title": "Formazione degli adulti"
+          },
+          {
+            "id": 519,
+            "identifier": "4.70.20",
+            "title": "Aggiornamento insegnanti"
+          }
+        ]
+      },
+      {
+        "id": 143,
+        "identifier": "4.80",
+        "title": "Pedagogia specializzata",
+        "children": [
+          {
+            "id": 144,
+            "identifier": "4.80.10",
+            "title": "Scuole speciali"
+          },
+          {
+            "id": 510,
+            "identifier": "4.80.20",
+            "title": "Allievi intellettualmente precoci"
+          },
+          {
+            "id": 431,
+            "identifier": "4.80.30",
+            "title": "Scuole d'arte e di sport"
+          },
+          {
+            "id": 507,
+            "identifier": "4.80.40",
+            "title": "Integrazioni degli allievi stranieri"
+          },
+          {
+            "id": 444,
+            "identifier": "4.80.50",
+            "title": "Logopedia"
+          },
+          {
+            "id": 520,
+            "identifier": "4.80.60",
+            "title": "Classi speciali"
+          },
+          {
+            "id": 521,
+            "identifier": "4.80.70",
+            "title": "Insegnamento di sostegno"
+          },
+          {
+            "id": 522,
+            "identifier": "4.80.80",
+            "title": "Psicomotricità"
+          },
+          {
+            "id": 523,
+            "identifier": "4.80.90",
+            "title": "Educazione precoce specializzata"
+          }
+        ]
+      },
+      {
+        "id": 149,
+        "identifier": "4.90",
+        "title": "Docenti",
+        "children": [
+          {
+            "id": 150,
+            "identifier": "4.90.10",
+            "title": "Assunzione\n"
+          },
+          {
+            "id": 151,
+            "identifier": "4.90.20",
+            "title": "Stipendi, indennità"
+          },
+          {
+            "id": 152,
+            "identifier": "4.90.30",
+            "title": "Formazione"
+          },
+          {
+            "id": 415,
+            "identifier": "4.90.40",
+            "title": "Previdenza, Casse pensioni"
+          },
+          {
+            "id": 479,
+            "identifier": "4.90.50",
+            "title": "Personale universitario"
+          }
+        ]
+      },
+      {
+        "id": 157,
+        "identifier": "4.100",
+        "title": "Contributi alle spese di formazione",
+        "children": [
+          {
+            "id": 162,
+            "identifier": "4.100.10",
+            "title": "Borse di studio"
+          },
+          {
+            "id": 158,
+            "identifier": "4.100.20",
+            "title": "Tasse scolastiche"
+          },
+          {
+            "id": 524,
+            "identifier": "4.100.30",
+            "title": "Tasse scolastiche"
+          }
+        ]
+      },
+      {
+        "id": 525,
+        "identifier": "4.110",
+        "title": "Strutture di custodia complementari"
+      },
+      {
+        "id": 145,
+        "identifier": "4.120",
+        "title": "Garantie di qualità, sorveglianza, direzione",
+        "children": [
+          {
+            "id": 146,
+            "identifier": "4.120.10",
+            "title": "Coordinamento"
+          },
+          {
+            "id": 147,
+            "identifier": "4.120.20",
+            "title": "Circondari scolastici"
+          },
+          {
+            "id": 148,
+            "identifier": "4.120.30",
+            "title": "Sorveglianza scolare"
+          },
+          {
+            "id": 161,
+            "identifier": "4.120.40",
+            "title": "Materiale scolastico"
+          },
+          {
+            "id": 508,
+            "identifier": "4.120.50",
+            "title": "Promovimento di tecnologie d'informazione"
+          },
+          {
+            "id": 430,
+            "identifier": "4.120.60",
+            "title": "Edilizia scolastica"
+          },
+          {
+            "id": 509,
+            "identifier": "4.120.70",
+            "title": "Biblioteche scolastiche"
+          },
+          {
+            "id": 506,
+            "identifier": "4.120.80",
+            "title": "Direzione"
+          },
+          {
+            "id": 159,
+            "identifier": "4.120.90",
+            "title": "Medicina scolastica, servizi psicologici scolastici"
+          },
+          {
+            "id": 526,
+            "identifier": "4.120.100",
+            "title": "Autorità scolastiche"
+          },
+          {
+            "id": 527,
+            "identifier": "4.120.110",
+            "title": "Garanzia della qualità"
+          },
+          {
+            "id": 160,
+            "identifier": "4.120.120",
+            "title": "Assicurazione sugli infortuni scolastici"
+          }
+        ]
+      },
+      {
+        "id": 462,
+        "identifier": "4.130",
+        "title": "Scuole private"
+      },
+      {
+        "id": 414,
+        "identifier": "4.140",
+        "title": "Riconoscimento dei diplomi"
+      },
+      {
+        "id": 156,
+        "identifier": "4.150",
+        "title": "Sport scolastico"
+      },
+      {
+        "id": 165,
+        "identifier": "4.160",
+        "title": "Scienza, ricerca"
+      },
+      {
+        "id": 166,
+        "identifier": "4.170",
+        "title": "Documentazione",
+        "children": [
+          {
+            "id": 167,
+            "identifier": "4.170.10",
+            "title": "Statistica\n"
+          },
+          {
+            "id": 168,
+            "identifier": "4.170.20",
+            "title": "Archivi"
+          },
+          {
+            "id": 169,
+            "identifier": "4.170.30",
+            "title": "Biblioteche"
+          },
+          {
+            "id": 170,
+            "identifier": "4.170.40",
+            "title": "Musei"
+          }
+        ]
+      },
+      {
+        "id": 171,
+        "identifier": "4.180",
+        "title": "Arte, cultura, sport",
+        "children": [
+          {
+            "id": 172,
+            "identifier": "4.180.10",
+            "title": "Arte",
+            "children": [
+              {
+                "id": 173,
+                "identifier": "4.180.10.10",
+                "title": "Cinema, teatro, divertimento"
+              }
+            ]
+          },
+          {
+            "id": 174,
+            "identifier": "4.180.20",
+            "title": "Aiuto alla cultura"
+          },
+          {
+            "id": 427,
+            "identifier": "4.180.30",
+            "title": "Sport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "identifier": "5",
+    "title": "Militare, protezione civile, polizia\n",
+    "children": [
+      {
+        "id": 176,
+        "identifier": "5.10",
+        "title": "Difesa",
+        "children": [
+          {
+            "id": 177,
+            "identifier": "5.10.10",
+            "title": "Obblighi militari\n"
+          },
+          {
+            "id": 178,
+            "identifier": "5.10.20",
+            "title": "Tassa d'esenzione dell'obbligo militare\n"
+          },
+          {
+            "id": 179,
+            "identifier": "5.10.30",
+            "title": "Amministrazione militare\n"
+          },
+          {
+            "id": 180,
+            "identifier": "5.10.40",
+            "title": "Piazze di tiro, arsenali\n"
+          }
+        ]
+      },
+      {
+        "id": 181,
+        "identifier": "5.20",
+        "title": "Protezione della popolazione\n",
+        "children": [
+          {
+            "id": 182,
+            "identifier": "5.20.10",
+            "title": "Protezione civile\n",
+            "children": [
+              {
+                "id": 183,
+                "identifier": "5.20.10.10",
+                "title": "Finanziamento"
+              },
+              {
+                "id": 184,
+                "identifier": "5.20.10.20",
+                "title": "Costruzione di protezione civile"
+              },
+              {
+                "id": 185,
+                "identifier": "5.20.10.30",
+                "title": "Protezione dei beni culturali in caso di guerra"
+              }
+            ]
+          },
+          {
+            "id": 186,
+            "identifier": "5.20.20",
+            "title": "Approviggiamento del paese\n"
+          },
+          {
+            "id": 187,
+            "identifier": "5.20.30",
+            "title": "Protezione dal fuoco / incendi/ danni della natura",
+            "children": [
+              {
+                "id": 188,
+                "identifier": "5.20.30.10",
+                "title": "Protezione dal fuoco, pompieri"
+              },
+              {
+                "id": 189,
+                "identifier": "5.20.30.20",
+                "title": "Protezione dagli incendi"
+              },
+              {
+                "id": 190,
+                "identifier": "5.20.30.30",
+                "title": "Spazzacamino\n"
+              },
+              {
+                "id": 191,
+                "identifier": "5.20.30.40",
+                "title": "Assicurazione immobiliare",
+                "children": [
+                  {
+                    "id": 192,
+                    "identifier": "5.20.30.40.10",
+                    "title": "Assicurazione contro i danni della natura\n"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 193,
+        "identifier": "5.30",
+        "title": "Sicurezza interna",
+        "children": [
+          {
+            "id": 194,
+            "identifier": "5.30.10",
+            "title": "Polizia\n",
+            "children": [
+              {
+                "id": 445,
+                "identifier": "5.30.10.10",
+                "title": "Polizia cantonale"
+              },
+              {
+                "id": 446,
+                "identifier": "5.30.10.20",
+                "title": "Polizia comunale"
+              },
+              {
+                "id": 195,
+                "identifier": "5.30.10.30",
+                "title": "Personale"
+              },
+              {
+                "id": 196,
+                "identifier": "5.30.10.40",
+                "title": "Tassi"
+              },
+              {
+                "id": 422,
+                "identifier": "5.30.10.50",
+                "title": "Cooperazione di polizia"
+              },
+              {
+                "id": 447,
+                "identifier": "5.30.10.60",
+                "title": "Trasporti di polizia"
+              }
+            ]
+          },
+          {
+            "id": 197,
+            "identifier": "5.30.20",
+            "title": "Tranquillità e ordine pubblico \n",
+            "children": [
+              {
+                "id": 448,
+                "identifier": "5.30.20.10",
+                "title": "Cani, animali pericolosi"
+              },
+              {
+                "id": 451,
+                "identifier": "5.30.20.20",
+                "title": "Dominio pubblico"
+              }
+            ]
+          },
+          {
+            "id": 198,
+            "identifier": "5.30.30",
+            "title": "Armi e munizioni\n"
+          },
+          {
+            "id": 199,
+            "identifier": "5.30.40",
+            "title": "Esplosivi\n"
+          },
+          {
+            "id": 435,
+            "identifier": "5.30.50",
+            "title": "Piazze di tiro"
+          },
+          {
+            "id": 449,
+            "identifier": "5.30.60",
+            "title": "Imprese di sicurezza"
+          },
+          {
+            "id": 496,
+            "identifier": "5.30.70",
+            "title": "Investigatori privati"
+          }
+        ]
+      },
+      {
+        "id": 436,
+        "identifier": "5.40",
+        "title": "Dogane",
+        "children": [
+          {
+            "id": 530,
+            "identifier": "5.40.10",
+            "title": "Protezione delle frontiere"
+          },
+          {
+            "id": 534,
+            "identifier": "5.40.20",
+            "title": "Uffici a controlli"
+          },
+          {
+            "id": 531,
+            "identifier": "5.40.30",
+            "title": "Circolazione delle merci",
+            "children": [
+              {
+                "id": 533,
+                "identifier": "5.40.30.10",
+                "title": "Prodotti agricoli"
+              }
+            ]
+          },
+          {
+            "id": 532,
+            "identifier": "5.40.40",
+            "title": "Circolazione delle persone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "identifier": "6",
+    "title": "Finanze, pubblici tributi, monopoli, imprese pubbliche\n",
+    "children": [
+      {
+        "id": 201,
+        "identifier": "6.10",
+        "title": "Finanze\n",
+        "children": [
+          {
+            "id": 202,
+            "identifier": "6.10.10",
+            "title": "Bilancio, conti\n"
+          },
+          {
+            "id": 203,
+            "identifier": "6.10.20",
+            "title": "Perequazione finanziaria",
+            "children": [
+              {
+                "id": 485,
+                "identifier": "6.10.20.10",
+                "title": "Collaborazione intercantonale con perequazione degli oneri"
+              }
+            ]
+          },
+          {
+            "id": 204,
+            "identifier": "6.10.30",
+            "title": "Pubblici tributi, sussidi"
+          },
+          {
+            "id": 205,
+            "identifier": "6.10.40",
+            "title": "Controllo delle finanze"
+          },
+          {
+            "id": 206,
+            "identifier": "6.10.50",
+            "title": "Privatizzazioni"
+          }
+        ]
+      },
+      {
+        "id": 207,
+        "identifier": "6.20",
+        "title": "Tributi\n",
+        "children": [
+          {
+            "id": 208,
+            "identifier": "6.20.10",
+            "title": "Imposte sul reddito e sulla sostanza / imposte sugli utili da capitale",
+            "children": [
+              {
+                "id": 209,
+                "identifier": "6.20.10.10",
+                "title": "Imposta federale diretta\n"
+              },
+              {
+                "id": 210,
+                "identifier": "6.20.10.20",
+                "title": "Imposta cantonale\n"
+              },
+              {
+                "id": 211,
+                "identifier": "6.20.10.30",
+                "title": "Imposta comunale\n"
+              },
+              {
+                "id": 471,
+                "identifier": "6.20.10.40",
+                "title": "Computo globale dell'imposta"
+              },
+              {
+                "id": 212,
+                "identifier": "6.20.10.50",
+                "title": "Imposta di culto"
+              },
+              {
+                "id": 213,
+                "identifier": "6.20.10.60",
+                "title": "Imposta alla fonte"
+              },
+              {
+                "id": 214,
+                "identifier": "6.20.10.70",
+                "title": "Coefficiente d'imposta"
+              }
+            ]
+          },
+          {
+            "id": 215,
+            "identifier": "6.20.20",
+            "title": "Tasse di mutazione\n"
+          },
+          {
+            "id": 216,
+            "identifier": "6.20.30",
+            "title": "Imposta fondiaria\n"
+          },
+          {
+            "id": 217,
+            "identifier": "6.20.40",
+            "title": "Imposte sulle successioni e sulle donazioni\n"
+          },
+          {
+            "id": 424,
+            "identifier": "6.20.50",
+            "title": "Tasse di bollo"
+          },
+          {
+            "id": 432,
+            "identifier": "6.20.60",
+            "title": "Imposta preventiva"
+          },
+          {
+            "id": 218,
+            "identifier": "6.20.70",
+            "title": "Imposta sui cani"
+          },
+          {
+            "id": 219,
+            "identifier": "6.20.80",
+            "title": "Imposta di bollo e sugli spettacoli"
+          },
+          {
+            "id": 433,
+            "identifier": "6.20.90",
+            "title": "Tasse soggiorno"
+          },
+          {
+            "id": 220,
+            "identifier": "6.20.100",
+            "title": "Esenzione e agevolazioni fiscali"
+          },
+          {
+            "id": 221,
+            "identifier": "6.20.110",
+            "title": "Divieto di convenzioni fiscali"
+          },
+          {
+            "id": 222,
+            "identifier": "6.20.120",
+            "title": "Doppia imposizione"
+          }
+        ]
+      },
+      {
+        "id": 223,
+        "identifier": "6.30",
+        "title": "Monopoli, regalie, imprese pubbliche\n",
+        "children": [
+          {
+            "id": 224,
+            "identifier": "6.30.10",
+            "title": "Alcool"
+          },
+          {
+            "id": 225,
+            "identifier": "6.30.20",
+            "title": "Miniere"
+          },
+          {
+            "id": 226,
+            "identifier": "6.30.30",
+            "title": "Regalia del sale\n"
+          },
+          {
+            "id": 450,
+            "identifier": "6.30.40",
+            "title": "Petrolio"
+          },
+          {
+            "id": 227,
+            "identifier": "6.30.50",
+            "title": "Caccia",
+            "children": [
+              {
+                "id": 228,
+                "identifier": "6.30.50.10",
+                "title": "Cacciatori"
+              }
+            ]
+          },
+          {
+            "id": 229,
+            "identifier": "6.30.60",
+            "title": "Pesca",
+            "children": [
+              {
+                "id": 230,
+                "identifier": "6.30.60.10",
+                "title": "Patenti"
+              },
+              {
+                "id": 231,
+                "identifier": "6.30.60.20",
+                "title": "Zone di pesca"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 232,
+        "identifier": "6.40",
+        "title": "Imprese pubbliche",
+        "children": [
+          {
+            "id": 233,
+            "identifier": "6.40.10",
+            "title": "Banche cantonali"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "identifier": "7",
+    "title": "Pianificazione del territorio, edilizia, espropriazione, opere pubbliche, energia, trasporti, protezione dell'ambiente",
+    "children": [
+      {
+        "id": 235,
+        "identifier": "7.10",
+        "title": "Pianificazione del territorio e costruzioni",
+        "children": [
+          {
+            "id": 236,
+            "identifier": "7.10.10",
+            "title": "Piani\n"
+          },
+          {
+            "id": 237,
+            "identifier": "7.10.20",
+            "title": "Zone\n"
+          },
+          {
+            "id": 238,
+            "identifier": "7.10.30",
+            "title": "Urbanizzazione\n"
+          },
+          {
+            "id": 239,
+            "identifier": "7.10.40",
+            "title": "Raggrupamenti\n"
+          },
+          {
+            "id": 240,
+            "identifier": "7.10.50",
+            "title": "Procedura\n"
+          },
+          {
+            "id": 241,
+            "identifier": "7.10.60",
+            "title": "Impianti pubblicitari\n"
+          },
+          {
+            "id": 459,
+            "identifier": "7.10.70",
+            "title": "Posteggi"
+          }
+        ]
+      },
+      {
+        "id": 242,
+        "identifier": "7.20",
+        "title": "Espropriazione\n"
+      },
+      {
+        "id": 243,
+        "identifier": "7.30",
+        "title": "Opere pubbliche\n",
+        "children": [
+          {
+            "id": 244,
+            "identifier": "7.30.10",
+            "title": "Edifici e terreni pubblici"
+          },
+          {
+            "id": 245,
+            "identifier": "7.30.20",
+            "title": "Sistemazione dei corsi d'acqua",
+            "children": [
+              {
+                "id": 246,
+                "identifier": "7.30.20.10",
+                "title": "Correzioni delle acque / Protezione contro le piene"
+              },
+              {
+                "id": 247,
+                "identifier": "7.30.20.20",
+                "title": "Sfruttamento delle acque"
+              }
+            ]
+          },
+          {
+            "id": 248,
+            "identifier": "7.30.30",
+            "title": "Strade\n",
+            "children": [
+              {
+                "id": 249,
+                "identifier": "7.30.30.10",
+                "title": "Strade nazionali\n"
+              },
+              {
+                "id": 250,
+                "identifier": "7.30.30.20",
+                "title": "Percorsi pedonali\n"
+              }
+            ]
+          },
+          {
+            "id": 251,
+            "identifier": "7.30.40",
+            "title": "Commesse pubbliche\n"
+          }
+        ]
+      },
+      {
+        "id": 252,
+        "identifier": "7.40",
+        "title": "Energia\n",
+        "children": [
+          {
+            "id": 253,
+            "identifier": "7.40.10",
+            "title": "Approviggionamento in energia"
+          },
+          {
+            "id": 254,
+            "identifier": "7.40.20",
+            "title": "Forze idrauliche\n"
+          },
+          {
+            "id": 255,
+            "identifier": "7.40.30",
+            "title": "Energia atomica\n"
+          },
+          {
+            "id": 417,
+            "identifier": "7.40.40",
+            "title": "Elettricità"
+          }
+        ]
+      },
+      {
+        "id": 256,
+        "identifier": "7.50",
+        "title": "Trasporti\n",
+        "children": [
+          {
+            "id": 257,
+            "identifier": "7.50.10",
+            "title": "Trasporti pubblici",
+            "children": [
+              {
+                "id": 258,
+                "identifier": "7.50.10.10",
+                "title": "Trasporti regionali\n"
+              },
+              {
+                "id": 259,
+                "identifier": "7.50.10.20",
+                "title": "Trasporti ferroviari\n"
+              },
+              {
+                "id": 260,
+                "identifier": "7.50.10.30",
+                "title": "Autobus et trolleybus\n"
+              }
+            ]
+          },
+          {
+            "id": 261,
+            "identifier": "7.50.20",
+            "title": "Circolazione stradale\n",
+            "children": [
+              {
+                "id": 262,
+                "identifier": "7.50.20.10",
+                "title": "Imposte e tasse di circolazione"
+              },
+              {
+                "id": 263,
+                "identifier": "7.50.20.20",
+                "title": "Polizia di circolazione\n"
+              },
+              {
+                "id": 466,
+                "identifier": "7.50.20.30",
+                "title": "Controllo tecnico per i veicoli"
+              },
+              {
+                "id": 472,
+                "identifier": "7.50.20.40",
+                "title": "Transporto di persone"
+              }
+            ]
+          },
+          {
+            "id": 264,
+            "identifier": "7.50.30",
+            "title": "Teleferici, teleski"
+          },
+          {
+            "id": 265,
+            "identifier": "7.50.40",
+            "title": "Condotte"
+          },
+          {
+            "id": 266,
+            "identifier": "7.50.60",
+            "title": "Navigazione\n",
+            "children": [
+              {
+                "id": 267,
+                "identifier": "7.50.60.10",
+                "title": "Imposte e tasse sulle navi\n"
+              },
+              {
+                "id": 268,
+                "identifier": "7.50.60.20",
+                "title": "Polizia di navigazione\n"
+              }
+            ]
+          },
+          {
+            "id": 269,
+            "identifier": "7.50.70",
+            "title": "Navigazione aerea\n",
+            "children": [
+              {
+                "id": 270,
+                "identifier": "7.50.70.10",
+                "title": "Aeronavi\n"
+              },
+              {
+                "id": 271,
+                "identifier": "7.50.70.20",
+                "title": "Aeroporti"
+              }
+            ]
+          },
+          {
+            "id": 437,
+            "identifier": "7.50.80",
+            "title": "Poste, telecomunicazioni"
+          },
+          {
+            "id": 512,
+            "identifier": "7.50.90",
+            "title": "Diritto spaziale"
+          }
+        ]
+      },
+      {
+        "id": 272,
+        "identifier": "7.60",
+        "title": "Protezione dell'ambiente\n",
+        "children": [
+          {
+            "id": 273,
+            "identifier": "7.60.10",
+            "title": "Rifiuti"
+          },
+          {
+            "id": 274,
+            "identifier": "7.60.20",
+            "title": "Protezione delle acque\n"
+          },
+          {
+            "id": 275,
+            "identifier": "7.60.30",
+            "title": "Protezione conto l'inquinamento dell'aria\n",
+            "children": [
+              {
+                "id": 495,
+                "identifier": "7.60.30.10",
+                "title": "Polveri sottili/smog"
+              }
+            ]
+          },
+          {
+            "id": 420,
+            "identifier": "7.60.40",
+            "title": "Protezione contro l'inquinamento fonico"
+          },
+          {
+            "id": 276,
+            "identifier": "7.60.50",
+            "title": "Esame dell'impatto sull'ambiente"
+          },
+          {
+            "id": 277,
+            "identifier": "7.60.60",
+            "title": "Protezione da radiazioni"
+          },
+          {
+            "id": 278,
+            "identifier": "7.60.70",
+            "title": "Sostanze tossiche, prodotti chimici"
+          },
+          {
+            "id": 279,
+            "identifier": "7.60.80",
+            "title": "Sostanze pericolose per l'ambiente"
+          },
+          {
+            "id": 280,
+            "identifier": "7.60.90",
+            "title": "Lotta contro i danni all'ambiente"
+          }
+        ]
+      },
+      {
+        "id": 281,
+        "identifier": "7.70",
+        "title": "Protezione della natura e del paesaggio\n",
+        "children": [
+          {
+            "id": 282,
+            "identifier": "7.70.10",
+            "title": "Protezione del paesaggio\n"
+          },
+          {
+            "id": 283,
+            "identifier": "7.70.20",
+            "title": "Protezione degli animali\n"
+          },
+          {
+            "id": 284,
+            "identifier": "7.70.30",
+            "title": "Protezione della flora\n"
+          },
+          {
+            "id": 473,
+            "identifier": "7.70.40",
+            "title": "Funghi"
+          },
+          {
+            "id": 285,
+            "identifier": "7.70.50",
+            "title": "Protezione della natura"
+          },
+          {
+            "id": 452,
+            "identifier": "7.70.60",
+            "title": "Protezione delle rive"
+          },
+          {
+            "id": 421,
+            "identifier": "7.70.70",
+            "title": "Protezione dei monumenti storici e dei beni culturali"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "identifier": "8",
+    "title": "Sanità, lavoro, assicurazioni sociali, abitazione, case per anziani\n",
+    "children": [
+      {
+        "id": 287,
+        "identifier": "8.10",
+        "title": "Sanità\n",
+        "children": [
+          {
+            "id": 454,
+            "identifier": "8.10.10",
+            "title": "Etica"
+          },
+          {
+            "id": 288,
+            "identifier": "8.10.20",
+            "title": "Ospedali e istituti cantonali pubblici",
+            "children": [
+              {
+                "id": 289,
+                "identifier": "8.10.20.10",
+                "title": "Ospedali cantonali"
+              },
+              {
+                "id": 290,
+                "identifier": "8.10.20.20",
+                "title": "Cliniche psichiatriche\n"
+              },
+              {
+                "id": 470,
+                "identifier": "8.10.20.30",
+                "title": "Diritti dei pazienti"
+              }
+            ]
+          },
+          {
+            "id": 291,
+            "identifier": "8.10.30",
+            "title": "Professioni sanitarie",
+            "children": [
+              {
+                "id": 292,
+                "identifier": "8.10.30.10",
+                "title": "Medici\n"
+              },
+              {
+                "id": 293,
+                "identifier": "8.10.30.20",
+                "title": "Dentista\n"
+              },
+              {
+                "id": 294,
+                "identifier": "8.10.30.30",
+                "title": "Personale di assistenza\n"
+              },
+              {
+                "id": 295,
+                "identifier": "8.10.30.40",
+                "title": "Levatrici\n"
+              },
+              {
+                "id": 296,
+                "identifier": "8.10.30.50",
+                "title": "Fisioterapeuti"
+              },
+              {
+                "id": 297,
+                "identifier": "8.10.30.60",
+                "title": "Psicoterpeuti\n"
+              },
+              {
+                "id": 298,
+                "identifier": "8.10.30.70",
+                "title": "Naturopati\n"
+              },
+              {
+                "id": 299,
+                "identifier": "8.10.30.80",
+                "title": "Pedicura\n"
+              },
+              {
+                "id": 300,
+                "identifier": "8.10.30.90",
+                "title": "Farmacisti\n"
+              },
+              {
+                "id": 301,
+                "identifier": "8.10.30.100",
+                "title": "Medici-veterinari\n"
+              }
+            ]
+          },
+          {
+            "id": 302,
+            "identifier": "8.10.40",
+            "title": "Ambulatori medicali"
+          },
+          {
+            "id": 303,
+            "identifier": "8.10.50",
+            "title": "Servici psichiatrici"
+          },
+          {
+            "id": 304,
+            "identifier": "8.10.60",
+            "title": "Cure a domicilio"
+          },
+          {
+            "id": 305,
+            "identifier": "8.10.70",
+            "title": "Medicamenti e stupefacenti"
+          },
+          {
+            "id": 306,
+            "identifier": "8.10.80",
+            "title": "Farmacie e drogherie"
+          },
+          {
+            "id": 307,
+            "identifier": "8.10.90",
+            "title": "Soccorso e trasporto sanitario"
+          },
+          {
+            "id": 308,
+            "identifier": "8.10.100",
+            "title": "Lotta contro le malattie",
+            "children": [
+              {
+                "id": 309,
+                "identifier": "8.10.100.10",
+                "title": "Epidemie, pandemie"
+              },
+              {
+                "id": 310,
+                "identifier": "8.10.100.20",
+                "title": "Tubercolosi\n"
+              }
+            ]
+          },
+          {
+            "id": 311,
+            "identifier": "8.10.110",
+            "title": "Lotta contro gli incidenti"
+          },
+          {
+            "id": 312,
+            "identifier": "8.10.120",
+            "title": "Prevenzione delle dipendenze",
+            "children": [
+              {
+                "id": 313,
+                "identifier": "8.10.120.10",
+                "title": "Alcoolismo"
+              },
+              {
+                "id": 463,
+                "identifier": "8.10.120.20",
+                "title": "Divieti di fumare"
+              }
+            ]
+          },
+          {
+            "id": 314,
+            "identifier": "8.10.130",
+            "title": "Igiene",
+            "children": [
+              {
+                "id": 315,
+                "identifier": "8.10.130.10",
+                "title": "Derrate alimentari, oggetti d'uso e consumo\n",
+                "children": [
+                  {
+                    "id": 316,
+                    "identifier": "8.10.130.10.10",
+                    "title": "Sorveglianza delle derrate alimentari\n"
+                  },
+                  {
+                    "id": 317,
+                    "identifier": "8.10.130.10.20",
+                    "title": "Carni\n",
+                    "children": [
+                      {
+                        "id": 318,
+                        "identifier": "8.10.130.10.20.10",
+                        "title": "Macelli\n"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 319,
+                    "identifier": "8.10.130.10.30",
+                    "title": "Funghi\n"
+                  }
+                ]
+              },
+              {
+                "id": 453,
+                "identifier": "8.10.130.20",
+                "title": "Approvvigionamento idrico"
+              },
+              {
+                "id": 320,
+                "identifier": "8.10.130.30",
+                "title": "Piscine"
+              },
+              {
+                "id": 321,
+                "identifier": "8.10.130.40",
+                "title": "Inumazioni, cimiteri"
+              },
+              {
+                "id": 322,
+                "identifier": "8.10.130.50",
+                "title": "Sotterramento degli scarti di carne"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 323,
+        "identifier": "8.20",
+        "title": "Dirito del lavoro",
+        "children": [
+          {
+            "id": 324,
+            "identifier": "8.20.10",
+            "title": "Lavoratori",
+            "children": [
+              {
+                "id": 455,
+                "identifier": "8.20.10.10",
+                "title": "Sicurezza"
+              },
+              {
+                "id": 325,
+                "identifier": "8.20.10.20",
+                "title": "Tempo di lavoro"
+              },
+              {
+                "id": 326,
+                "identifier": "8.20.10.30",
+                "title": "Domeniche e giorni festivi"
+              },
+              {
+                "id": 327,
+                "identifier": "8.20.10.40",
+                "title": "Mobbing, molestia sessuale"
+              }
+            ]
+          },
+          {
+            "id": 328,
+            "identifier": "8.20.20",
+            "title": "Mercato del lavoro\n",
+            "children": [
+              {
+                "id": 329,
+                "identifier": "8.20.20.10",
+                "title": "Lotta contro la crisi, riserve di crisi al beneficio di sgravi fiscali"
+              },
+              {
+                "id": 330,
+                "identifier": "8.20.20.20",
+                "title": "Invio di lavoratori all'estero\n"
+              },
+              {
+                "id": 331,
+                "identifier": "8.20.20.30",
+                "title": "Libera circolazione\n"
+              },
+              {
+                "id": 456,
+                "identifier": "8.20.20.40",
+                "title": "Collocamento e personale a prestito"
+              },
+              {
+                "id": 529,
+                "identifier": "8.20.20.50",
+                "title": "Lavoro nero"
+              }
+            ]
+          },
+          {
+            "id": 332,
+            "identifier": "8.20.30",
+            "title": "Uffici di conciliazione\n"
+          },
+          {
+            "id": 429,
+            "identifier": "8.20.40",
+            "title": "Lavoro a domicilio"
+          }
+        ]
+      },
+      {
+        "id": 333,
+        "identifier": "8.30",
+        "title": "Diritto delle assicurazioni sociali\n",
+        "children": [
+          {
+            "id": 334,
+            "identifier": "8.30.10",
+            "title": "Casse di compensazione"
+          },
+          {
+            "id": 335,
+            "identifier": "8.30.20",
+            "title": "Parte generale del diritto delle assicurazioni sociali\n"
+          },
+          {
+            "id": 336,
+            "identifier": "8.30.30",
+            "title": "Assicurazione per la vecchiaia / assicurazione invalidità (LAVS / AI)\n"
+          },
+          {
+            "id": 337,
+            "identifier": "8.30.40",
+            "title": "Prestazioni complementari\n"
+          },
+          {
+            "id": 338,
+            "identifier": "8.30.50",
+            "title": "Previdenza professionale (LPP)\n"
+          },
+          {
+            "id": 339,
+            "identifier": "8.30.60",
+            "title": "Assicurazione malattie (Amal)\n",
+            "children": [
+              {
+                "id": 340,
+                "identifier": "8.30.60.10",
+                "title": "Tariffa\n",
+                "children": [
+                  {
+                    "id": 341,
+                    "identifier": "8.30.60.10.10",
+                    "title": "TARMED\n"
+                  },
+                  {
+                    "id": 342,
+                    "identifier": "8.30.60.10.20",
+                    "title": "Convenzioni"
+                  }
+                ]
+              },
+              {
+                "id": 343,
+                "identifier": "8.30.60.20",
+                "title": "Riduzione dei premi\n"
+              },
+              {
+                "id": 344,
+                "identifier": "8.30.60.30",
+                "title": "Lista degli ospedali\n"
+              },
+              {
+                "id": 457,
+                "identifier": "8.30.60.40",
+                "title": "Limitazione del numero di fornitori di prestazioni"
+              }
+            ]
+          },
+          {
+            "id": 345,
+            "identifier": "8.30.70",
+            "title": "LAA\n"
+          },
+          {
+            "id": 346,
+            "identifier": "8.30.80",
+            "title": "Assicurazione militare\n"
+          },
+          {
+            "id": 347,
+            "identifier": "8.30.90",
+            "title": "Indennità di perdita di guadagno\n"
+          },
+          {
+            "id": 348,
+            "identifier": "8.30.100",
+            "title": "Assegni familiari\n",
+            "children": [
+              {
+                "id": 349,
+                "identifier": "8.30.100.10",
+                "title": "Lavoratori agricoli\n"
+              },
+              {
+                "id": 350,
+                "identifier": "8.30.100.20",
+                "title": "Lavoratori dipendenti e autonomi\n"
+              }
+            ]
+          },
+          {
+            "id": 351,
+            "identifier": "8.30.110",
+            "title": "Assicurazione disoccupazione\n"
+          },
+          {
+            "id": 352,
+            "identifier": "8.30.120",
+            "title": "Assicurazione maternità, aiuti finanziari alle madri"
+          }
+        ]
+      },
+      {
+        "id": 353,
+        "identifier": "8.40",
+        "title": "Abitazione\n",
+        "children": [
+          {
+            "id": 354,
+            "identifier": "8.40.10",
+            "title": "Misure di promovimento della costruzione di abitazioni"
+          },
+          {
+            "id": 355,
+            "identifier": "8.40.20",
+            "title": "Abitazione nelle zone di montagna\n"
+          }
+        ]
+      },
+      {
+        "id": 356,
+        "identifier": "8.70",
+        "title": "Assistenza",
+        "children": [
+          {
+            "id": 418,
+            "identifier": "8.70.10",
+            "title": "Assistenza sociale"
+          },
+          {
+            "id": 425,
+            "identifier": "8.70.20",
+            "title": "Protezione dei giovani, aiuto ai giovani"
+          },
+          {
+            "id": 357,
+            "identifier": "8.70.30",
+            "title": "Case",
+            "children": [
+              {
+                "id": 358,
+                "identifier": "8.70.30.10",
+                "title": "Case per anziani\n"
+              },
+              {
+                "id": 359,
+                "identifier": "8.70.30.20",
+                "title": "Case per giovani e adolescenti\n"
+              }
+            ]
+          },
+          {
+            "id": 361,
+            "identifier": "8.70.50",
+            "title": "Disabili",
+            "children": [
+              {
+                "id": 362,
+                "identifier": "8.70.50.10",
+                "title": "Laboratori protetti\n"
+              }
+            ]
+          },
+          {
+            "id": 363,
+            "identifier": "8.70.60",
+            "title": "Donazioni e collette pubbliche"
+          },
+          {
+            "id": 364,
+            "identifier": "8.70.70",
+            "title": "Anticipo delle pensioni alimentari"
+          },
+          {
+            "id": 365,
+            "identifier": "8.70.80",
+            "title": "Consiglio per le donne incinte"
+          },
+          {
+            "id": 426,
+            "identifier": "8.70.90",
+            "title": "Consultazione famigliare e matrimoniale"
+          },
+          {
+            "id": 465,
+            "identifier": "8.70.100",
+            "title": "Politica famigliare, promozione della famiglia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "identifier": "9",
+    "title": "Economia\n",
+    "children": [
+      {
+        "id": 434,
+        "identifier": "9.10",
+        "title": "Promozione economica"
+      },
+      {
+        "id": 367,
+        "identifier": "9.20",
+        "title": "Agricoltura",
+        "children": [
+          {
+            "id": 368,
+            "identifier": "9.20.10",
+            "title": "Misure di promovimento"
+          },
+          {
+            "id": 369,
+            "identifier": "9.20.20",
+            "title": "Agricoltura biologica\n"
+          },
+          {
+            "id": 370,
+            "identifier": "9.20.30",
+            "title": "Diritto fondiario rurale"
+          },
+          {
+            "id": 371,
+            "identifier": "9.20.40",
+            "title": "Zone di montagna\n"
+          },
+          {
+            "id": 372,
+            "identifier": "9.20.50",
+            "title": "Bonifiche fondiarie\n"
+          },
+          {
+            "id": 373,
+            "identifier": "9.20.60",
+            "title": "Credito agricolo\n"
+          },
+          {
+            "id": 374,
+            "identifier": "9.20.70",
+            "title": "Formazione agricola\n",
+            "children": [
+              {
+                "id": 375,
+                "identifier": "9.20.70.10",
+                "title": "Scuola agricola\n"
+              }
+            ]
+          },
+          {
+            "id": 376,
+            "identifier": "9.20.80",
+            "title": "Produzione vegetale\n",
+            "children": [
+              {
+                "id": 377,
+                "identifier": "9.20.80.10",
+                "title": "Viticoltura\n"
+              },
+              {
+                "id": 378,
+                "identifier": "9.20.80.20",
+                "title": "Lotta contro i parasiti\n"
+              }
+            ]
+          },
+          {
+            "id": 379,
+            "identifier": "9.20.90",
+            "title": "Allevamento in generale",
+            "children": [
+              {
+                "id": 380,
+                "identifier": "9.20.90.10",
+                "title": "Bovini\n"
+              },
+              {
+                "id": 460,
+                "identifier": "9.20.90.20",
+                "title": "Commercio di bestiame"
+              }
+            ]
+          },
+          {
+            "id": 381,
+            "identifier": "9.20.100",
+            "title": "Latte\n"
+          },
+          {
+            "id": 382,
+            "identifier": "9.20.110",
+            "title": "Apicoltura\n"
+          },
+          {
+            "id": 383,
+            "identifier": "9.20.120",
+            "title": "Lotta contro le epizoozie\n"
+          },
+          {
+            "id": 384,
+            "identifier": "9.20.130",
+            "title": "Alpaggio\n"
+          },
+          {
+            "id": 385,
+            "identifier": "9.20.140",
+            "title": "Assicurazione degli animali"
+          }
+        ]
+      },
+      {
+        "id": 386,
+        "identifier": "9.30",
+        "title": "Foresta",
+        "children": [
+          {
+            "id": 387,
+            "identifier": "9.30.10",
+            "title": "Misure di protezione\n"
+          },
+          {
+            "id": 388,
+            "identifier": "9.30.20",
+            "title": "Personale forestiere\n"
+          },
+          {
+            "id": 461,
+            "identifier": "9.30.30",
+            "title": "Formazione professionale"
+          }
+        ]
+      },
+      {
+        "id": 389,
+        "identifier": "9.40",
+        "title": "Sviluppo economico nelle regioni di montagna"
+      },
+      {
+        "id": 392,
+        "identifier": "9.50",
+        "title": "Arti e mestieri",
+        "children": [
+          {
+            "id": 393,
+            "identifier": "9.50.10",
+            "title": "Servizi",
+            "children": [
+              {
+                "id": 394,
+                "identifier": "9.50.10.10",
+                "title": "Professioni che necessitano un'autorizzazione\n"
+              },
+              {
+                "id": 395,
+                "identifier": "9.50.10.20",
+                "title": "Turismo\n"
+              },
+              {
+                "id": 396,
+                "identifier": "9.50.10.30",
+                "title": "Ristorazione, Esercizi pubblici",
+                "children": [
+                  {
+                    "id": 397,
+                    "identifier": "9.50.10.30.10",
+                    "title": "Campeggio\n"
+                  }
+                ]
+              },
+              {
+                "id": 423,
+                "identifier": "9.50.10.40",
+                "title": "Tassi"
+              },
+              {
+                "id": 398,
+                "identifier": "9.50.10.50",
+                "title": "Cinema, teatro, divertimento"
+              },
+              {
+                "id": 399,
+                "identifier": "9.50.10.60",
+                "title": "Gioco d'azzardo e lotterie",
+                "children": [
+                  {
+                    "id": 400,
+                    "identifier": "9.50.10.60.10",
+                    "title": "Fondi delle lotterie\n"
+                  },
+                  {
+                    "id": 487,
+                    "identifier": "9.50.10.60.20",
+                    "title": "Sport-Toto"
+                  },
+                  {
+                    "id": 486,
+                    "identifier": "9.50.10.60.30",
+                    "title": "Case da gioco"
+                  }
+                ]
+              },
+              {
+                "id": 464,
+                "identifier": "9.50.10.70",
+                "title": "Prostituzione"
+              },
+              {
+                "id": 401,
+                "identifier": "9.50.10.80",
+                "title": "Istituti di credito / assicurazioni",
+                "children": [
+                  {
+                    "id": 402,
+                    "identifier": "9.50.10.80.10",
+                    "title": "Banche, borse"
+                  }
+                ]
+              },
+              {
+                "id": 428,
+                "identifier": "9.50.10.90",
+                "title": "Credito al consumo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 390,
+        "identifier": "9.60",
+        "title": "Commercio",
+        "children": [
+          {
+            "id": 403,
+            "identifier": "9.60.10",
+            "title": "Orari di apertura dei negozi"
+          },
+          {
+            "id": 404,
+            "identifier": "9.60.20",
+            "title": "Pesi e misure, mezzi di pagamento"
+          },
+          {
+            "id": 405,
+            "identifier": "9.60.30",
+            "title": "Sorveglianza dei prezzi\n"
+          },
+          {
+            "id": 494,
+            "identifier": "9.60.40",
+            "title": "Protezione dei consumatori"
+          },
+          {
+            "id": 406,
+            "identifier": "9.60.50",
+            "title": "Mercato interno, ostacoli tecnici al commercio"
+          },
+          {
+            "id": 407,
+            "identifier": "9.60.60",
+            "title": "Commercio ambulante"
+          },
+          {
+            "id": 391,
+            "identifier": "9.60.70",
+            "title": "Fiere, mercati"
+          },
+          {
+            "id": 408,
+            "identifier": "9.60.80",
+            "title": "Distributori automatici di merce"
+          },
+          {
+            "id": 409,
+            "identifier": "9.60.90",
+            "title": "Commercio esterno"
+          },
+          {
+            "id": 513,
+            "identifier": "9.60.100",
+            "title": "Sviluppo e cooperazione"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 413,
+    "identifier": "10",
+    "title": "Pubblicazioni senza testo"
+  }
+]

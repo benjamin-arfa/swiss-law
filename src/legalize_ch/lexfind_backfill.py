@@ -18,8 +18,9 @@ import logging
 from pathlib import Path
 
 from .cantonal import (
+    ALL_CANTONS,
     CANTON_LANGUAGES,
-    LEXWORK_CANTONS,
+    DEDICATED_FETCHER_CANTONS,
     CantonalFetcher,
     canton_to_path,
     cantonal_law_to_markdown,
@@ -29,7 +30,10 @@ from .committer import GitCommitter
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_BACKFILL_CANTONS = sorted(list(LEXWORK_CANTONS) + ["zh"])
+# All 26 — the LexFind-only cantons no-op in minutes when already complete;
+# covering everything guarantees every law type is fetched without
+# canton- or type-specific special cases.
+DEFAULT_BACKFILL_CANTONS = list(ALL_CANTONS)
 
 # LexFind serves de/fr/it only (no Romansh).
 _LEXFIND_LANGUAGES = ("de", "fr", "it")
@@ -100,9 +104,10 @@ def backfill_canton(
                 continue
             attempts += 1
 
-            if canton == "zh":
-                # Bypass the dedicated ZH fetcher (capped zh.ch catalog):
-                # these laws only exist in LexFind.
+            if canton in DEDICATED_FETCHER_CANTONS:
+                # zh/ge/ne: bypass the dedicated fetchers — their catalogs
+                # are partial and fetch_law_text expects their own ids,
+                # not the LexFind tol id the catalog provides.
                 text = fetcher._fetch_from_lexfind(
                     canton, entry.systematic_number, entry.lexfind_id, lang)
             else:

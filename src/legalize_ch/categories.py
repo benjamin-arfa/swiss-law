@@ -1,0 +1,198 @@
+"""Canonical category dictionaries + harmonization helpers.
+
+Law files store category fields in the language of the file, so raw
+aggregation splits one category into up to three keys (Gesetz / Loi /
+Legge) and, for canton-specific systematics, merges unrelated categories
+that share a label.  This module provides:
+
+- the instrument-type dictionary (LexFind category ids are stable across
+  languages) with one label per language,
+- canonicalization helpers used by the stats aggregations,
+- generators for the public Categories API
+  (``api/v1/categories/{index,types,global,<canton>}.json``).
+"""
+from __future__ import annotations
+
+import json
+import logging
+from pathlib import Path
+
+logger = logging.getLogger(__name__)
+
+# LexFind /api/fe/{lang}/categories — ids are language-stable (verified live).
+CATEGORY_TYPES = [
+    {"id": 1, "label": {"de": "Staatsvertrag", "fr": "Traité international", "it": "Trattato internazionale"}},
+    {"id": 2, "label": {"de": "Interkantonale Vereinbarung", "fr": "Accord intercantonal", "it": "Accordo intercantonale"}},
+    {"id": 3, "label": {"de": "Verfassung", "fr": "Constitution", "it": "Costituzione"}},
+    {"id": 4, "label": {"de": "Gesetz", "fr": "Loi", "it": "Legge"}},
+    {"id": 5, "label": {"de": "Anderes", "fr": "Autre", "it": "Altro"}},
+    {"id": 6, "label": {"de": "Verordnung", "fr": "Ordonnance", "it": "Ordinanza"}},
+    {"id": 7, "label": {"de": "Reglement", "fr": "Règlement", "it": "Regolamento"}},
+    {"id": 8, "label": {"de": "Verordnung des Parlaments (Dekret)", "fr": "Ordonnance parlementaire (décret)", "it": "Ordinanza parlamentaria (decreto legislativo)"}},
+    {"id": 9, "label": {"de": "Gemeindeerlass", "fr": "Acte législatif communal", "it": "Atto legislativo comunale"}},
+]
+
+# any-language name → canonical (German) label
+_CANONICAL_TYPE: dict[str, str] = {
+    name: entry["label"]["de"]
+    for entry in CATEGORY_TYPES
+    for name in entry["label"].values()
+}
+
+# canonical label → {de, fr, it}
+CATEGORY_TYPE_LABELS: dict[str, dict[str, str]] = {
+    entry["label"]["de"]: entry["label"] for entry in CATEGORY_TYPES
+}
+
+
+def canonical_category_type(name: str) -> str:
+    """Map a localized instrument-type name to its canonical (German) label."""
+    return _CANONICAL_TYPE.get(name, name)
+
+
+def _extract_code(value: str) -> str:
+    return value.split(" ", 1)[0] if value else ""
+
+
+def build_global_title_map(trees_dir: str | Path, lang: str = "de") -> dict[str, str]:
+    """identifier → title from the global systematics tree (one language)."""
+    suffix = "" if lang == "de" else f"_{lang}"
+    path = Path(trees_dir) / f"global{suffix}.json"
+    return _walk_titles(_load_tree(path))
+
+
+def build_canton_title_map(trees_dir: str | Path, canton: str) -> dict[str, str]:
+    """identifier → title from a canton's systematics tree."""
+    return _walk_titles(_load_tree(Path(trees_dir) / f"{canton.lower()}.json"))
+
+
+def _load_tree(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def _walk_titles(nodes: list[dict]) -> dict[str, str]:
+    result: dict[str, str] = {}
+
+    def _walk(ns: list[dict]):
+        for n in ns:
+            ident = str(n.get("identifier", ""))
+            if ident and ident not in result:
+                result[ident] = str(n.get("title", ""))
+            _walk(n.get("children", []))
+
+    _walk(nodes)
+    return result
+
+
+def canonical_global_category(value: str, title_map: dict[str, str]) -> str:
+    """Harmonize a global_category value by its dotted code.
+
+    ``7.70.50 Protection de la nature`` → ``7.70.50 Naturschutz`` (title
+    from the German global tree). Unknown codes keep their raw value.
+    """
+    code = _extract_code(value)
+    title = title_map.get(code)
+    return f"{code} {title}" if title else value
+
+
+def canonical_systematic_category(canton: str, value: str,
+                                  title_map: dict[str, str]) -> str:
+    """Harmonize a canton systematic_category: key by (canton, code).
+
+    Prefixing with the canton splits cross-canton label collisions
+    ("Universität" = code VIII in one canton, 217 in another); the tree
+    title merges language variants within bilingual cantons.
+    """
+    code = _extract_code(value)
+    title = title_map.get(code)
+    body = f"{code} {title}" if title else value
+    return f"{canton.upper()} {body}"
+
+
+# ─── Categories API generators ────────────────────────────────────────────────
+
+def generate_categories_api(trees_dir: str | Path, output_dir: str | Path):
+    """Write the public category dictionaries to ``api/v1/categories/``.
+
+    - ``types.json``: instrument types with one label per language
+    - ``global.json``: domaine-juridique tree, titles in de/fr/it where
+      the fr/it trees have been fetched (falls back to de-only)
+    - ``{canton}.json``: per-canton systematic tree (primary language)
+    - ``index.json``: available dictionaries
+    """
+    trees = Path(trees_dir)
+    out = Path(output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    (out / "types.json").write_text(json.dumps({
+        "note": "Instrument types (LexFind category ids, language-stable). "
+                "stats.json by_category_type keys use the German label.",
+        "types": CATEGORY_TYPES,
+    }, indent=1, ensure_ascii=False), encoding="utf-8")
+
+    # Multilingual global tree: merge de/fr/it trees by node id
+    de_tree = _load_tree(trees / "global.json")
+    lang_maps = {}
+    for lang in ("fr", "it"):
+        by_id: dict[int, str] = {}
+
+        def _collect(ns):
+            for n in ns:
+                if n.get("id") is not None:
+                    by_id[n["id"]] = str(n.get("title", ""))
+                _collect(n.get("children", []))
+
+        _collect(_load_tree(trees / f"global_{lang}.json"))
+        lang_maps[lang] = by_id
+
+    def _multilingual(ns: list[dict]) -> list[dict]:
+        result = []
+        for n in ns:
+            title = {"de": str(n.get("title", ""))}
+            for lang, m in lang_maps.items():
+                t = m.get(n.get("id"))
+                if t:
+                    title[lang] = t
+            node = {"identifier": str(n.get("identifier", "")), "title": title}
+            children = _multilingual(n.get("children", []))
+            if children:
+                node["children"] = children
+            result.append(node)
+        return result
+
+    (out / "global.json").write_text(json.dumps({
+        "note": "Global systematics ('domaine juridique'). stats.json "
+                "by_global_category keys are '<identifier> <german title>'.",
+        "tree": _multilingual(de_tree),
+    }, indent=1, ensure_ascii=False), encoding="utf-8")
+
+    cantons_written = []
+    for tree_file in sorted(trees.glob("*.json")):
+        stem = tree_file.stem
+        if stem in ("global", "global_fr", "global_it", "ch") or len(stem) != 2:
+            continue
+        tree = _load_tree(tree_file)
+        if not tree:
+            continue
+        (out / f"{stem.upper()}.json").write_text(json.dumps({
+            "canton": stem.upper(),
+            "note": "Canton systematics tree (primary language). stats.json "
+                    "by_systematic_category keys are "
+                    "'<CANTON> <identifier> <title>'.",
+            "tree": tree,
+        }, indent=1, ensure_ascii=False), encoding="utf-8")
+        cantons_written.append(stem.upper())
+
+    (out / "index.json").write_text(json.dumps({
+        "types": "api/v1/categories/types.json",
+        "global": "api/v1/categories/global.json",
+        "cantons": {c: f"api/v1/categories/{c}.json" for c in cantons_written},
+    }, indent=1, ensure_ascii=False), encoding="utf-8")
+
+    logger.info("Wrote categories API (%d canton trees) to %s",
+                len(cantons_written), out)

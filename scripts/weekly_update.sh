@@ -121,9 +121,25 @@ for canton in ag ai ar be bl bs fr ge gl gr ju lu ne nw ow sg sh so sz tg ti ur 
     fi
 done
 
+# 1.6. Self-healing backfill: fetch anything in the LexFind catalogs that is
+# missing locally (all 26 cantons, all instrument types, add-only — no-ops
+# in minutes when the collection is complete).
+echo "[1.6/5] Backfilling any catalog gaps from LexFind..."
+if ! "${VENV}/bin/legalize-ch" backfill-lexfind --repo "$REPO_DIR" --rate-limit 1.0 2>&1; then
+    echo "WARNING: LexFind backfill encountered errors."
+    ERRORS="${ERRORS:+${ERRORS}|||}LexFind backfill failed"
+fi
+
 # 1c. Enrich categories for any newly added cantonal laws
 echo "[1.7/5] Enriching categories for new laws..."
 "${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.5 2>&1 || true
+
+# 1.8. Coverage audit — report-only; gaps show up in the log and coverage.json
+echo "[1.8/5] Auditing coverage against source catalogs..."
+"${VENV}/bin/legalize-ch" coverage --repo "$REPO_DIR" --rate-limit 0.5 2>&1 || {
+    echo "WARNING: Coverage audit reported gaps or failed."
+    ERRORS="${ERRORS:+${ERRORS}|||}Coverage gaps reported"
+}
 
 # Count commits after
 COMMITS_AFTER=$(git rev-list --count HEAD)

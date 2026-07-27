@@ -533,6 +533,12 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_law_index(law_idx, site_path / "api" / "v1" / "laws")
     click.echo(f"  {sum(v['laws'] for v in law_idx.values())} laws across {len(law_idx)} entities")
 
+    click.echo("Generating categories API...")
+    from .categories import generate_categories_api
+    generate_categories_api(repo_path / "docs" / "trees",
+                            site_path / "api" / "v1" / "categories")
+    click.echo("  api/v1/categories/ written")
+
     if not no_trees:
         click.echo("Fetching category trees from LexFind...")
         fetch_and_write_trees(repo_path / "docs" / "trees", rate_limit=rate_limit)
@@ -638,6 +644,56 @@ def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
         click.echo("Next: .venv/bin/legalize-ch stats --repo . --site-repo ../swiss-law-as-source --no-trees")
         click.echo("      .venv/bin/legalize-ch index --repo . --site-repo ../swiss-law-as-source")
         click.echo("      then publish via /publish-site")
+
+
+@main.command("coverage")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--site-repo", default=None, envvar="SWISS_LAW_SITE_REPO",
+              help="Site repo — writes api/v1/coverage.json there (default: ../swiss-law-as-source)")
+@click.option("--canton", "-c", multiple=True, default=None,
+              help="Canton code(s) (default: all 26)")
+@click.option("--no-federal", is_flag=True, help="Skip the Fedlex comparison")
+@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+def coverage(repo: str, site_repo: str | None, canton: tuple,
+             no_federal: bool, rate_limit: float):
+    """Audit collection completeness against the source catalogs.
+
+    Compares every canton's local files with the LexFind catalog (ALL
+    instrument types) and local federal SRs with the Fedlex catalog.
+    Writes api/v1/coverage.json to the site repo and exits non-zero if
+    anything is missing — run backfill-lexfind (cantonal) or update
+    (federal) to close reported gaps.
+    """
+    from pathlib import Path
+    from .coverage import run_coverage, write_coverage
+
+    repo_path = Path(repo).resolve()
+    site_path = Path(site_repo).resolve() if site_repo else (repo_path.parent / "swiss-law-as-source")
+    cantons = [c.strip().lower() for c in canton] if canton else None
+
+    report = run_coverage(repo_path, cantons=cantons, rate_limit=rate_limit,
+                          include_federal=not no_federal)
+
+    click.echo("")
+    click.echo(f"{'Entity':<8} {'Catalog':>8} {'Present':>8} {'Missing':>8}")
+    click.echo("-" * 36)
+    fed = report.get("federal")
+    if fed:
+        click.echo(f"{'CH':<8} {str(fed.get('catalog', '?')):>8} "
+                   f"{fed['present']:>8} {str(fed.get('missing', '?')):>8}")
+    for code, cov in report["cantons"].items():
+        click.echo(f"{code:<8} {cov['catalog']:>8} {cov['present']:>8} {cov['missing']:>8}")
+    click.echo("-" * 36)
+    click.echo(f"Total missing: {report['total_missing']}")
+
+    if site_path.exists():
+        write_coverage(report, site_path / "api" / "v1" / "coverage.json")
+        click.echo(f"Report written to {site_path / 'api' / 'v1' / 'coverage.json'}")
+
+    if report["total_missing"] > 0:
+        click.echo("Gaps found — run backfill-lexfind (cantonal) / update (federal).", err=True)
+        raise SystemExit(1)
+    click.echo("Coverage complete — nothing missing.")
 
 
 @main.command("seed-state")

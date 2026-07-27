@@ -20,17 +20,34 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 
 # LexFind /api/fe/{lang}/categories — ids are language-stable (verified live).
+# "en" labels are our own translations (LexFind serves de/fr/it only).
 CATEGORY_TYPES = [
-    {"id": 1, "label": {"de": "Staatsvertrag", "fr": "Traité international", "it": "Trattato internazionale"}},
-    {"id": 2, "label": {"de": "Interkantonale Vereinbarung", "fr": "Accord intercantonal", "it": "Accordo intercantonale"}},
-    {"id": 3, "label": {"de": "Verfassung", "fr": "Constitution", "it": "Costituzione"}},
-    {"id": 4, "label": {"de": "Gesetz", "fr": "Loi", "it": "Legge"}},
-    {"id": 5, "label": {"de": "Anderes", "fr": "Autre", "it": "Altro"}},
-    {"id": 6, "label": {"de": "Verordnung", "fr": "Ordonnance", "it": "Ordinanza"}},
-    {"id": 7, "label": {"de": "Reglement", "fr": "Règlement", "it": "Regolamento"}},
-    {"id": 8, "label": {"de": "Verordnung des Parlaments (Dekret)", "fr": "Ordonnance parlementaire (décret)", "it": "Ordinanza parlamentaria (decreto legislativo)"}},
-    {"id": 9, "label": {"de": "Gemeindeerlass", "fr": "Acte législatif communal", "it": "Atto legislativo comunale"}},
+    {"id": 1, "label": {"de": "Staatsvertrag", "fr": "Traité international", "it": "Trattato internazionale", "en": "International treaty"}},
+    {"id": 2, "label": {"de": "Interkantonale Vereinbarung", "fr": "Accord intercantonal", "it": "Accordo intercantonale", "en": "Intercantonal agreement"}},
+    {"id": 3, "label": {"de": "Verfassung", "fr": "Constitution", "it": "Costituzione", "en": "Constitution"}},
+    {"id": 4, "label": {"de": "Gesetz", "fr": "Loi", "it": "Legge", "en": "Act"}},
+    {"id": 5, "label": {"de": "Anderes", "fr": "Autre", "it": "Altro", "en": "Other"}},
+    {"id": 6, "label": {"de": "Verordnung", "fr": "Ordonnance", "it": "Ordinanza", "en": "Ordinance"}},
+    {"id": 7, "label": {"de": "Reglement", "fr": "Règlement", "it": "Regolamento", "en": "Regulation"}},
+    {"id": 8, "label": {"de": "Verordnung des Parlaments (Dekret)", "fr": "Ordonnance parlementaire (décret)", "it": "Ordinanza parlamentaria (decreto legislativo)", "en": "Parliamentary ordinance (decree)"}},
+    {"id": 9, "label": {"de": "Gemeindeerlass", "fr": "Acte législatif communal", "it": "Atto legislativo comunale", "en": "Municipal act"}},
 ]
+
+# English names for the harmonized taxonomy's top-level domains
+# (LexFind has no English tree; deeper nodes stay de/fr/it).
+DOMAIN_EN = {
+    "1": "State, people, authorities",
+    "2": "Civil law",
+    "3": "Criminal law",
+    "4": "Education, science, culture",
+    "5": "Defence, civil protection, police",
+    "6": "Finance, taxes",
+    "7": "Planning, construction, environment, transport",
+    "8": "Health, labour, social security",
+    "9": "Economy",
+    "10": "Publications without text",
+    "uncategorized": "Unclassifiable",
+}
 
 # any-language name → canonical (German) label
 _CANONICAL_TYPE: dict[str, str] = {

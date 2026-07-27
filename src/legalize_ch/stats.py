@@ -38,13 +38,13 @@ ALL_CANTON_CODES = [
 # Codes 2 (Zivilrecht), 3 (Strafrecht), 10 (Publikationen ohne Text) and laws
 # without a global_category fall into "autres" so nothing is silently dropped.
 CONCORDAT_DOMAINS = [
-    {"key": "etat", "label_fr": "Organisation de l'état, sécurité", "codes": ["1", "5"]},
-    {"key": "sante", "label_fr": "Santé, sécurité sociale", "codes": ["8"]},
-    {"key": "educ", "label_fr": "Éducation, science, culture", "codes": ["4"]},
-    {"key": "infra", "label_fr": "Infrastructure, trafic, environnement", "codes": ["7"]},
-    {"key": "eco", "label_fr": "Économie, agriculture", "codes": ["9"]},
-    {"key": "fin", "label_fr": "Finances publiques, impôts", "codes": ["6"]},
-    {"key": "autres", "label_fr": "Autres / non classés", "codes": ["2", "3", "10"]},
+    {"key": "etat", "label_fr": "Organisation de l'état, sécurité", "label_en": "State organisation, security", "codes": ["1", "5"]},
+    {"key": "sante", "label_fr": "Santé, sécurité sociale", "label_en": "Health, social security", "codes": ["8"]},
+    {"key": "educ", "label_fr": "Éducation, science, culture", "label_en": "Education, science, culture", "codes": ["4"]},
+    {"key": "infra", "label_fr": "Infrastructure, trafic, environnement", "label_en": "Infrastructure, transport, environment", "codes": ["7"]},
+    {"key": "eco", "label_fr": "Économie, agriculture", "label_en": "Economy, agriculture", "codes": ["9"]},
+    {"key": "fin", "label_fr": "Finances publiques, impôts", "label_en": "Public finance, taxes", "codes": ["6"]},
+    {"key": "autres", "label_fr": "Autres / non classés", "label_en": "Other / unclassified", "codes": ["2", "3", "10"]},
 ]
 
 
@@ -336,16 +336,27 @@ def generate_harmonized_categories(entries: list[dict],
     fetched SR mapping (docs/federal_global_categories.json), falling back
     to the SR top-level prefix (which mirrors the global tree by design).
     """
-    from .categories import federal_fallback_code, load_federal_global_categories
+    from .categories import (DOMAIN_EN, federal_fallback_code,
+                             load_federal_global_categories)
 
     repo = Path(repo_path)
     deduped = _deduplicate(entries)
     fed_map = load_federal_global_categories(repo)
 
     code_counts: dict[str, dict[str, int]] = defaultdict(lambda: {"federal": 0, "cantonal": 0})
+    # Cantonal canton×type breakdowns, accumulated per depth-1/depth-2
+    # ancestor node so shallow nodes can offer a secondary split.
+    breakdowns: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     stats_counts = {"federal_lexfind": 0, "federal_fallback": 0,
                     "federal_unmapped": 0, "cantonal_classified": 0,
                     "cantonal_unclassified": 0}
+
+    def _ancestors(code: str) -> list[str]:
+        parts = code.split(".")
+        result = [parts[0]]
+        if len(parts) > 1:
+            result.append(f"{parts[0]}.{parts[1]}")
+        return result
 
     for e in deduped:
         if e["_scope"] == "cantonal":
@@ -353,6 +364,10 @@ def generate_harmonized_categories(entries: list[dict],
             if code:
                 code_counts[code]["cantonal"] += 1
                 stats_counts["cantonal_classified"] += 1
+                canton = str(e.get("canton", "")).upper()
+                ctype = canonical_category_type(e.get("category_type", "")) or "(untyped)"
+                for anc in _ancestors(code):
+                    breakdowns[anc][canton][ctype] += 1
             else:
                 stats_counts["cantonal_unclassified"] += 1
         else:
@@ -377,27 +392,41 @@ def generate_harmonized_categories(entries: list[dict],
     global_tree = _load_tree(trees_dir / "global.json")
     seen_codes: set[str] = set()
 
-    def _annotate(nodes: list[dict]) -> list[dict]:
+    def _annotate(nodes: list[dict], depth: int = 1) -> list[dict]:
         result = []
         for n in nodes:
             ident = str(n.get("identifier", ""))
             own = code_counts.get(ident, {"federal": 0, "cantonal": 0})
             if ident:
                 seen_codes.add(ident)
-            children = _annotate(n.get("children", []))
+            children = _annotate(n.get("children", []), depth + 1)
             federal = own["federal"] + sum(c["federal"] for c in children)
             cant = own["cantonal"] + sum(c["cantonal"] for c in children)
             if federal + cant == 0:
                 continue
+            title = {lang: m.get(ident, "") for lang, m in titles.items()
+                     if m.get(ident)}
+            if depth == 1 and ident in DOMAIN_EN:
+                title["en"] = DOMAIN_EN[ident]
             node = {
                 "identifier": ident,
-                "title": {lang: m.get(ident, "") for lang, m in titles.items()
-                          if m.get(ident)},
+                "title": title,
                 "total": federal + cant,
                 "federal": federal,
                 "cantonal": cant,
                 "own": own["federal"] + own["cantonal"],
             }
+            # Secondary-split data for shallow nodes (cantonal laws only)
+            if depth <= 2 and ident in breakdowns:
+                per_canton = breakdowns[ident]
+                node["by_canton"] = {c: sum(t.values())
+                                     for c, t in sorted(per_canton.items())}
+                by_type: Counter = Counter()
+                for t in per_canton.values():
+                    by_type.update(t)
+                node["by_type"] = dict(by_type.most_common())
+                node["by_canton_type"] = {c: dict(t.most_common())
+                                          for c, t in sorted(per_canton.items())}
             if children:
                 node["children"] = children
             result.append(node)
@@ -449,6 +478,9 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     table: dict[str, dict[str, int]] = {
         canton: {k: 0 for k in domain_keys} for canton in ALL_CANTON_CODES
     }
+    # Per-year breakdown for date-filtered views ("unknown" = no version_date)
+    by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))
     unclassified = 0
     for e in concordats:
         canton = str(e.get("canton", "")).upper()
@@ -461,6 +493,9 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
             key = "autres"
             unclassified += 1
         table[canton][key] += 1
+        vd = str(e.get("version_date", ""))
+        year = vd[:4] if len(vd) >= 4 else "unknown"
+        by_year[year][canton][key] += 1
 
     for row in table.values():
         row["total"] = sum(row.values())
@@ -468,21 +503,24 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     totals["total"] = sum(totals.values())
 
     return {
-        "title": "Concordats intercantonaux par domaine",
-        "source": "LexFind (Institut pour le fédéralisme, Université de Fribourg)",
+        "title": "Intercantonal agreements (concordats) by domain",
+        "source": "LexFind (Institute of Federalism, University of Fribourg)",
         "total_concordats": totals["total"],
         "domains": [
-            {"key": d["key"], "label_fr": d["label_fr"], "global_category_codes": d["codes"]}
+            {"key": d["key"], "label_fr": d["label_fr"], "label_en": d["label_en"],
+             "global_category_codes": d["codes"]}
             for d in CONCORDAT_DOMAINS
         ],
         "cantons": table,
         "totals": totals,
+        "by_year": {y: {c: dict(d) for c, d in cantons.items()}
+                    for y, cantons in sorted(by_year.items())},
         "unclassified_in_autres": unclassified,
         "notes": [
-            "« Autres » inclut droit civil, droit pénal et les concordats sans "
-            "domaine juridique dans la base publique LexFind (~28 % non classés à la source)",
-            "Couverture selon les collections importées — lancer backfill-lexfind "
-            "pour compléter les cantons sous-représentés",
+            "\"Other\" includes civil law, criminal law and concordats without "
+            "a legal domain in LexFind's public database (~28% unclassified at the source)",
+            "Coverage follows the imported collections — run backfill-lexfind "
+            "to complete under-represented cantons",
         ],
     }
 

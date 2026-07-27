@@ -31,7 +31,7 @@ class TestCanonicalCategoryType:
     def test_labels_cover_all_types(self):
         assert len(CATEGORY_TYPE_LABELS) == len(CATEGORY_TYPES) == 9
         for labels in CATEGORY_TYPE_LABELS.values():
-            assert set(labels) == {"de", "fr", "it"}
+            assert set(labels) == {"de", "fr", "it", "en"}
 
 
 class TestCanonicalGlobalCategory:
@@ -123,3 +123,41 @@ class TestGenerateHarmonizedCategories:
         # deep node carries both scopes
         node = result["tree"][0]["children"][0]["children"][0]
         assert node["identifier"] == "1.10.10" and node["total"] == 2
+
+
+class TestEnglishLabelsAndBreakdowns:
+    def test_types_have_english(self):
+        from legalize_ch.categories import CATEGORY_TYPES
+        for t in CATEGORY_TYPES:
+            assert "en" in t["label"], t
+
+    def test_breakdowns_at_shallow_depth(self, tmp_path):
+        import json
+        trees = tmp_path / "docs" / "trees"
+        trees.mkdir(parents=True)
+        tree = [{"id": 1, "identifier": "1", "title": "Staat", "children": [
+                    {"id": 2, "identifier": "1.10", "title": "Grundlagen", "children": [
+                        {"id": 3, "identifier": "1.10.10", "title": "Verfassung"}]}]}]
+        (trees / "global.json").write_text(json.dumps(tree))
+        entries = [
+            {"_scope": "cantonal", "canton": "GR", "systematic_number": "1.1",
+             "language": "de", "_path": "ch/gr/de/1.1.md",
+             "global_category": "1.10.10 Verfassung",
+             "category_type": "Loi"},  # fr name -> canonical Gesetz
+            {"_scope": "cantonal", "canton": "BE", "systematic_number": "2.2",
+             "language": "de", "_path": "ch/be/de/2.2.md",
+             "global_category": "1.10 Grundlagen",
+             "category_type": "Gesetz"},
+        ]
+        result = generate_harmonized_categories(entries, tmp_path)
+        top = result["tree"][0]
+        assert top["title"]["en"] == "State, people, authorities"
+        assert top["by_canton"] == {"BE": 1, "GR": 1}
+        assert top["by_type"] == {"Gesetz": 2}
+        assert top["by_canton_type"]["GR"] == {"Gesetz": 1}
+        lvl2 = top["children"][0]
+        assert lvl2["identifier"] == "1.10"
+        assert lvl2["by_canton"] == {"BE": 1, "GR": 1}
+        # depth-3 node stays lean
+        lvl3 = lvl2["children"][0]
+        assert "by_canton" not in lvl3

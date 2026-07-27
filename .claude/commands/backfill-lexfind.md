@@ -13,9 +13,9 @@ If `$ARGUMENTS` contains canton codes or `--limit N`, forward them to the comman
 2. **Launch the backfill (long-running — run detached)**
    ```
    mkdir -p data/logs
-   nohup ./scripts/backfill_lexfind.sh 1.5 > data/logs/backfill_$(date +%Y%m%d).out 2>&1 &
+   nohup ./scripts/backfill_lexfind.sh 0.1 > data/logs/backfill_$(date +%Y%m%d).out 2>&1 &
    ```
-   Expected runtime: ~3-5s per missing law (≈2 API requests at the 1.5s rate limit). GR alone ≈ 45-60 min; a full 15-canton pass ≈ 4-10 hours. One batch git commit per canton.
+   Expected runtime: ~3-5s per missing law (≈2 API requests at the 0.1s rate limit). GR alone ≈ 45-60 min; a full 15-canton pass ≈ 4-10 hours. One batch git commit per canton.
 
 3. **Monitor / resume**
    `tail -f data/logs/backfill_*.out`. Safe to interrupt any time; re-running skips files that already exist and sweeps uncommitted leftovers into the next canton commit.

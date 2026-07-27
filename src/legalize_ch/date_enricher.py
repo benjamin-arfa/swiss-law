@@ -283,13 +283,13 @@ def propagate_concordat_dates(repo_path: str | Path, dry_run: bool = False) -> d
 # ─── LexWork API pass (long-running, resumable) ───────────────────────────────
 
 def enrich_dates_lexwork(repo_path: str | Path, cantons: list[str] | None = None,
-                         rate_limit: float = 0.2, limit: int | None = None,
+                         rate_limit: float = 0.1, limit: int | None = None,
                          concordats_only: bool = False) -> dict:
     """Authoritative pass for LexWork cantons: one API call per unique law →
     date_of_decision (enactment) + full version date list. Resumable via
     data/state/enrich_dates_{canton}.json.
 
-    Rate limit defaults to 0.2s: the hosts declare no limits (no RateLimit
+    Rate limit defaults to 0.1s: the hosts declare no limits (no RateLimit
     headers, no robots Crawl-delay); the 429/5xx exponential backoff in the
     fetcher is the adaptive governor.
     """

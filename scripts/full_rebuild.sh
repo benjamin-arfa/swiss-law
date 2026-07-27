@@ -31,7 +31,7 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 VENV="${REPO_DIR}/.venv"
 SITE_DIR="${SWISS_LAW_SITE_REPO:-/home/ubuntu/swiss-law-as-source}"
 GITHUB_TOKEN_FILE="/home/ubuntu/.env"
-RATE_LIMIT="${1:-1.5}"
+RATE_LIMIT="${1:-0.1}"
 START_TIME=$(date +%s)
 ERRORS=""
 PUSH_OK="true"
@@ -81,23 +81,23 @@ step "[2/9] Backfill from LexFind (all catalog gaps)"
     --rate-limit "$RATE_LIMIT" 2>&1 || fail "LexFind backfill failed"
 
 step "[3/9] Enrich categories (gap-fill, idempotent)"
-"${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.5 2>&1 \
+"${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.1 2>&1 \
     || fail "Category enrichment failed"
 
 step "[4/9] Enrich dates: local parse + git history, then authoritative LexWork API, then sibling propagation"
 "${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" 2>&1 || fail "Local date pass failed"
-"${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --lexwork-versions --rate-limit 0.2 2>&1 \
+"${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --lexwork-versions --rate-limit 0.1 2>&1 \
     || fail "LexWork date pass failed"
 "${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --siblings 2>&1 || fail "Sibling propagation failed"
 
 step "[5/9] Enrich domains (inference for unclassified) + repeal status"
 "${VENV}/bin/legalize-ch" enrich-domains --repo "$REPO_DIR" 2>&1 || fail "Domain inference failed"
-"${VENV}/bin/legalize-ch" enrich-status --repo "$REPO_DIR" --rate-limit 0.2 2>&1 || fail "Status enrichment failed"
+"${VENV}/bin/legalize-ch" enrich-status --repo "$REPO_DIR" --rate-limit 0.1 2>&1 || fail "Status enrichment failed"
 git add ch/ && git diff --cached --quiet || git commit -q -m "Full rebuild: enrichment passes (dates, domains, status)"
 
 step "[6/9] Stats (with category trees) + tags + publications + law index"
 "${VENV}/bin/legalize-ch" stats --repo "$REPO_DIR" --site-repo "$SITE_DIR" \
-    --rate-limit 0.5 2>&1 || fail "Stats generation failed"
+    --rate-limit 0.1 2>&1 || fail "Stats generation failed"
 
 step "[7/9] Search index (laws.json + INDEX.md)"
 "${VENV}/bin/legalize-ch" index --repo "$REPO_DIR" --site-repo "$SITE_DIR" 2>&1 \

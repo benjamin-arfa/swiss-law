@@ -7,13 +7,13 @@
 #   only downloads text for new or updated laws
 #
 # Usage:
-#   ./scripts/update_all.sh              # default rate limit 1.0s
+#   ./scripts/update_all.sh              # default rate limit 0.1s
 #   ./scripts/update_all.sh 0.5          # faster (0.5s between requests)
 #   ./scripts/update_all.sh 2.0 --push   # slower + auto-push both repos
 
 set -euo pipefail
 
-RATE_LIMIT="${1:-1.0}"
+RATE_LIMIT="${1:-0.1}"
 PUSH="${2:-}"
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 VENV="${REPO}/.venv"
@@ -45,7 +45,7 @@ done
 # ── 3. Enrich categories for any new laws ─────────────────────────────────
 echo ""
 echo "[3/5] Enriching categories..."
-"${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO" --rate-limit 0.5 2>&1
+"${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO" --rate-limit 0.1 2>&1
 
 COMMITS_AFTER=$(git rev-list --count HEAD)
 NEW_COMMITS=$((COMMITS_AFTER - COMMITS_BEFORE))

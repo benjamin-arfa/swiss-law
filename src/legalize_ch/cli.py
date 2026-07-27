@@ -27,7 +27,7 @@ def main(verbose: bool):
 @click.option("--limit", "-n", type=int, default=None, help="Max laws to process")
 @click.option("--lang", "-l", multiple=True, default=["de", "fr", "it"], help="Languages")
 @click.option("--sr", type=str, default=None, help="SR number prefix filter")
-@click.option("--rate-limit", type=float, default=1.5, help="Seconds between requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between requests")
 @click.option("--latest-only", is_flag=True, help="Only fetch the latest version per law")
 @click.option("--no-chronological", is_flag=True,
               help="Disable chronological sorting (commits grouped by law instead)")
@@ -76,7 +76,7 @@ def bootstrap(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_li
 @click.option("--limit", "-n", type=int, default=None, help="Max laws to process")
 @click.option("--lang", "-l", multiple=True, default=["de", "fr", "it"], help="Languages")
 @click.option("--sr", type=str, default=None, help="SR number prefix filter")
-@click.option("--rate-limit", type=float, default=1.5, help="Seconds between requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between requests")
 @click.option("--since", type=click.DateTime(formats=["%Y-%m-%d"]), default=None,
               help="Override last_run: only fetch versions since this date (YYYY-MM-DD)")
 @click.option("--no-chronological", is_flag=True,
@@ -145,7 +145,7 @@ def catalog(repo: str, limit: int | None):
 @click.option("--canton", "-c", type=str, required=True, help="Canton abbreviation (e.g. bs, zh)")
 @click.option("--number", "-n", type=str, default=None, help="Specific systematic number")
 @click.option("--lang", "-l", default="de", help="Language (de/fr/it)")
-@click.option("--rate-limit", type=float, default=1.0, help="Seconds between requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between requests")
 @click.option("--all-versions", is_flag=True, help="Fetch all versions (not just current)")
 def cantonal(repo: str, canton: str, number: str | None, lang: str, rate_limit: float,
              all_versions: bool):
@@ -247,7 +247,7 @@ def cantonal_list(canton: str | None):
 @click.option("--limit", "-n", type=int, default=None,
               help="Max laws per canton (None = all)")
 @click.option("--lang", "-l", multiple=True, default=["de"], help="Languages to fetch")
-@click.option("--rate-limit", type=float, default=1.0, help="Seconds between requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between requests")
 @click.option("--dry-run", is_flag=True, help="Show what would be done without fetching")
 @click.option("--status", "show_status", is_flag=True, help="Show rollout progress and exit")
 @click.option("--reset", type=str, default=None,
@@ -472,7 +472,7 @@ def health_check(repo: str, days: int, always_notify: bool):
 @click.option("--site-repo", default=None, envvar="SWISS_LAW_SITE_REPO",
               help="Path to the site repo for stats/API output (default: ../swiss-law-as-source)")
 @click.option("--no-trees", is_flag=True, help="Skip fetching category trees from LexFind API")
-@click.option("--rate-limit", type=float, default=0.5, help="Seconds between API requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between API requests")
 def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     """Generate statistics, tags, and category trees.
 
@@ -572,7 +572,7 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--canton", "-c", default=None,
               help="Canton code(s), comma-separated (default: all missing)")
-@click.option("--rate-limit", type=float, default=0.5, help="Seconds between LexFind API requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between LexFind API requests")
 @click.option("--dry-run", is_flag=True, help="Report what would change without modifying files")
 def enrich_categories(repo: str, canton: str | None, rate_limit: float, dry_run: bool):
     """Back-fill category metadata from LexFind into cantonal law files.
@@ -617,7 +617,7 @@ def enrich_categories(repo: str, canton: str | None, rate_limit: float, dry_run:
               help="Canton code(s) (default: 14 LexWork cantons + ZH)")
 @click.option("--limit", "-n", type=int, default=None,
               help="Max missing laws to fetch per canton per language")
-@click.option("--rate-limit", type=float, default=1.5, help="Seconds between API requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between API requests")
 @click.option("--dry-run", is_flag=True, help="Report gaps only, write nothing")
 @click.option("--no-commit", is_flag=True, help="Write files but skip git commit")
 def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
@@ -679,7 +679,7 @@ def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
                    "(run AFTER the LexWork pass; local, seconds).")
 @click.option("--concordats-only", is_flag=True,
               help="Restrict the LexWork pass to concordats (~1,600 laws, minutes)")
-@click.option("--rate-limit", type=float, default=0.2,
+@click.option("--rate-limit", type=float, default=0.1,
               help="Seconds between API requests (hosts declare no limits; 429 backoff governs)")
 @click.option("--limit", "-n", type=int, default=None, help="Max laws per canton (API pass) / files (local)")
 @click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
@@ -736,7 +736,7 @@ def enrich_domains_cmd(repo: str, canton: tuple, dry_run: bool):
 @main.command("enrich-status")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--canton", "-c", multiple=True, default=None, help="Canton code(s) (default: all 26)")
-@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between API requests")
 @click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
 def enrich_status(repo: str, canton: tuple, rate_limit: float, dry_run: bool):
     """Mark laws LexFind lists as repealed (is_active: false in frontmatter).
@@ -763,7 +763,7 @@ def enrich_status(repo: str, canton: tuple, rate_limit: float, dry_run: bool):
 @click.option("--canton", "-c", multiple=True, default=None,
               help="Canton code(s) (default: all 26)")
 @click.option("--no-federal", is_flag=True, help="Skip the Fedlex comparison")
-@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between API requests")
 def coverage(repo: str, site_repo: str | None, canton: tuple,
              no_federal: bool, rate_limit: float):
     """Audit collection completeness against the source catalogs.
@@ -808,7 +808,7 @@ def coverage(repo: str, site_repo: str | None, canton: tuple,
 
 @main.command("seed-state")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+@click.option("--rate-limit", type=float, default=0.1, help="Seconds between API requests")
 @click.option("--last-run", default="2026-06-15",
               help="last_run date to seed for the federal pipeline (default: last data commit)")
 @click.option("--skip-cantonal", is_flag=True, help="Only seed the federal state file")

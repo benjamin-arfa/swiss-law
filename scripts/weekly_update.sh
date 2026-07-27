@@ -107,7 +107,7 @@ COMMITS_BEFORE=$(git rev-list --count HEAD)
 
 # 1a. Federal update (Fedlex SPARQL — date-filtered, fast)
 echo "[1/5] Running federal incremental update..."
-if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --scope federal --rate-limit 1.5 2>&1; then
+if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --scope federal --rate-limit 0.1 2>&1; then
     ERRORS="Federal update failed"
     echo "WARNING: Federal update encountered errors."
 fi
@@ -115,7 +115,7 @@ fi
 # 1b. Cantonal update (all 26 cantons, sequential to avoid git lock)
 echo "[1.5/5] Running cantonal incremental update..."
 for canton in ag ai ar be bl bs fr ge gl gr ju lu ne nw ow sg sh so sz tg ti ur vd vs zg zh; do
-    if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --scope cantonal -c "$canton" --rate-limit 1.0 2>&1; then
+    if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --scope cantonal -c "$canton" --rate-limit 0.1 2>&1; then
         echo "WARNING: Canton ${canton^^} update failed, continuing..."
         ERRORS="${ERRORS:+${ERRORS}|||}Canton ${canton^^} update failed"
     fi
@@ -125,25 +125,25 @@ done
 # missing locally (all 26 cantons, all instrument types, add-only — no-ops
 # in minutes when the collection is complete).
 echo "[1.6/5] Backfilling any catalog gaps from LexFind..."
-if ! "${VENV}/bin/legalize-ch" backfill-lexfind --repo "$REPO_DIR" --rate-limit 1.0 2>&1; then
+if ! "${VENV}/bin/legalize-ch" backfill-lexfind --repo "$REPO_DIR" --rate-limit 0.1 2>&1; then
     echo "WARNING: LexFind backfill encountered errors."
     ERRORS="${ERRORS:+${ERRORS}|||}LexFind backfill failed"
 fi
 
 # 1c. Enrich categories for any newly added cantonal laws
 echo "[1.7/5] Enriching categories for new laws..."
-"${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.5 2>&1 || true
+"${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.1 2>&1 || true
 
 # 1.75. Enactment dates + domain inference for new laws (local, fast, idempotent)
 echo "[1.75/5] Enriching dates + domains for new laws..."
 "${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" 2>&1 || true
 "${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --siblings 2>&1 || true
 "${VENV}/bin/legalize-ch" enrich-domains --repo "$REPO_DIR" 2>&1 || true
-"${VENV}/bin/legalize-ch" enrich-status --repo "$REPO_DIR" --rate-limit 1.0 2>&1 || true
+"${VENV}/bin/legalize-ch" enrich-status --repo "$REPO_DIR" --rate-limit 0.1 2>&1 || true
 
 # 1.8. Coverage audit — report-only; gaps show up in the log and coverage.json
 echo "[1.8/5] Auditing coverage against source catalogs..."
-"${VENV}/bin/legalize-ch" coverage --repo "$REPO_DIR" --rate-limit 0.5 2>&1 || {
+"${VENV}/bin/legalize-ch" coverage --repo "$REPO_DIR" --rate-limit 0.1 2>&1 || {
     echo "WARNING: Coverage audit reported gaps or failed."
     ERRORS="${ERRORS:+${ERRORS}|||}Coverage gaps reported"
 }

@@ -226,7 +226,7 @@ legalize-ch backfill-lexfind --dry-run
 
 # Full run — hours; run detached (one git commit per canton)
 mkdir -p data/logs
-nohup ./scripts/backfill_lexfind.sh 1.5 > data/logs/backfill_$(date +%Y%m%d).out 2>&1 &
+nohup ./scripts/backfill_lexfind.sh 0.1 > data/logs/backfill_$(date +%Y%m%d).out 2>&1 &
 ```
 
 On completion the script automatically regenerates stats + indexes,

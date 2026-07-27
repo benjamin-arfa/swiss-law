@@ -37,7 +37,7 @@ if [ "${1:-}" = "--no-publish" ]; then
     PUBLISH="false"
     shift
 fi
-RATE_LIMIT="${1:-1.5}"
+RATE_LIMIT="${1:-0.1}"
 shift || true
 CANTONS=("$@")
 if [ ${#CANTONS[@]} -eq 0 ]; then

@@ -114,6 +114,23 @@ def run_coverage(repo_path: str | Path, cantons: list[str] | None = None,
         if isinstance(report["federal"].get("missing"), int):
             report["total_missing"] += report["federal"]["missing"]
 
+    # Cross-check against LexFind's own global counts (frontend API):
+    # our systematics-walk catalogs may miss tols detached from the tree
+    # (mostly inactive/delisted) — this quantifies that invisible slice.
+    try:
+        from .lexfind_frontend import LexfindFrontend
+        gs = LexfindFrontend(rate_limit=rate_limit).fetch_global_stats()
+        if gs:
+            ours = sum(c.get("catalog", 0) for c in report["cantons"].values())
+            report["lexfind_global_stats"] = gs
+            report["lexfind_global_stats"]["note"] = (
+                "LexFind's own totals incl. the Confederation and tols not "
+                "attached to any systematics node; our per-canton catalogs "
+                f"enumerate {ours} — the difference bounds the delisted/"
+                "detached slice.")
+    except Exception as e:
+        logger.warning("global stats cross-check failed: %s", e)
+
     return report
 
 

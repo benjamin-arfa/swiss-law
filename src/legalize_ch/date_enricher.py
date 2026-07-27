@@ -116,8 +116,11 @@ def _clamped(enactment: date, fm: dict) -> bool:
 
 # Provenance ranking: higher wins. Authoritative API data upgrades
 # weaker parses; equal or weaker provenance never overwrites.
-_SOURCE_RANK = {"lexwork_api": 3, "fedlex": 3, "sibling": 2,
-                "git_history": 1, "text": 1, "title": 1, "": 0}
+# lexfind_family = the family's ORIGINAL date from LexFind's frontend API
+# (the exact "earliest known existence" concept) — outranks LexWork's
+# date_of_decision, which can be a canton's accession decision.
+_SOURCE_RANK = {"lexfind_family": 4, "lexwork_api": 3, "fedlex": 3,
+                "sibling": 2, "git_history": 1, "text": 1, "title": 1, "": 0}
 
 
 def _rank(source: str) -> int:
@@ -219,6 +222,82 @@ def enrich_dates_local(repo_path: str | Path, limit: int | None = None,
 
     logger.info("Local date pass: %s", stats)
     return stats
+
+
+# ─── LexFind frontend/v1 family pass (all 26 cantons) ─────────────────────────
+
+def enrich_dates_lexfind_families(repo_path: str | Path,
+                                  cantons: list[str] | None = None,
+                                  rate_limit: float = 0.1,
+                                  limit: int | None = None,
+                                  concordats_only: bool = False) -> dict:
+    """Authoritative pass for ALL cantons via LexFind's frontend API:
+    family_active_since (the act's original date) + full version dates.
+    One catalog fetch per canton (systematic_number → tol id), then one
+    with-version-groups call per law. Resumable via
+    data/state/enrich_family_{canton}.json."""
+    from .cantonal import ALL_CANTONS, CANTON_LANGUAGES
+    from .categories import canonical_category_type
+    from .lexfind_frontend import LexfindFrontend
+
+    repo = Path(repo_path)
+    cantons = [c.lower() for c in (cantons or ALL_CANTONS)]
+    fetcher = CantonalFetcher(rate_limit=rate_limit)
+    state_dir = repo / DATE_STATE_DIR
+    state_dir.mkdir(parents=True, exist_ok=True)
+    prefix = "enrich_family_conc" if concordats_only else "enrich_family"
+
+    totals: dict[str, int] = defaultdict(int)
+    for canton in cantons:
+        lang = next((l for l in CANTON_LANGUAGES.get(canton, ["de"])
+                     if l in ("de", "fr", "it")), "de")
+        frontend = LexfindFrontend(rate_limit=rate_limit, lang=lang)
+        state_file = state_dir / f"{prefix}_{canton}.json"
+        done: set[str] = set(json.loads(state_file.read_text())) if state_file.exists() else set()
+
+        # catalog: systematic_number -> tol id
+        catalog = fetcher._fetch_lexfind_catalog_by_systematics(canton, lang)
+        tol_by_number = {e.systematic_number: e.lexfind_id for e in catalog if e.lexfind_id}
+
+        canton_dir = repo / "ch" / canton
+        files_by_number: dict[str, list[Path]] = defaultdict(list)
+        for md in sorted(canton_dir.rglob("*.md")):
+            fm, _ = _parse_frontmatter(md.read_text(encoding="utf-8"))
+            if not fm or not fm.get("systematic_number"):
+                continue
+            if concordats_only and canonical_category_type(
+                    str(fm.get("category_type", ""))) != "Interkantonale Vereinbarung" \
+                    and str(fm.get("category_type_inferred", "")) != "Interkantonale Vereinbarung":
+                continue
+            files_by_number[str(fm["systematic_number"])].append(md)
+
+        n = 0
+        for number, paths in files_by_number.items():
+            if number in done:
+                continue
+            if limit is not None and n >= limit:
+                break
+            tol_id = tol_by_number.get(number)
+            done.add(number)
+            if not tol_id:
+                totals["no_tol_id"] += 1
+                continue
+            n += 1
+            fam = frontend.fetch_family_dates(tol_id)
+            if fam is None or (not fam.family_active_since and len(fam.version_dates) <= 1):
+                totals["no_data"] += 1
+            else:
+                vdates = [d.isoformat() for d in fam.version_dates]
+                for p in paths:
+                    if update_file_dates(p, fam.family_active_since, "lexfind_family",
+                                         vdates, "lexfind_family"):
+                        totals["updated"] += 1
+            if len(done) % 25 == 0:
+                state_file.write_text(json.dumps(sorted(done)))
+        state_file.write_text(json.dumps(sorted(done)))
+        logger.info("%s: %d laws family-dated (state saved)", canton.upper(), n)
+
+    return dict(totals)
 
 
 # ─── Sibling date propagation (concordats) ────────────────────────────────────

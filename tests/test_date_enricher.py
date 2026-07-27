@@ -154,3 +154,25 @@ class TestSiblingPropagation:
         _concordat_file(tmp_path, "be", "2.2", self.TITLE, "1970-01-01", "lexwork_api")
         propagate_concordat_dates(tmp_path)
         assert "enactment_date_source: lexwork_api" in a.read_text()
+
+
+class TestLexfindFamily:
+    def test_parse_ddmmyyyy(self):
+        from legalize_ch.lexfind_frontend import _parse_ddmmyyyy
+        assert _parse_ddmmyyyy("24.11.1872") == date(1872, 11, 24)
+        assert _parse_ddmmyyyy("") is None
+        assert _parse_ddmmyyyy("2003-01-01") is None
+
+    def test_family_rank_upgrades_lexwork(self, tmp_path):
+        p = tmp_path / "ch" / "gr" / "de" / "1.1.md"
+        _law_file(p, extra="enactment_date: '2008-01-01'\nenactment_date_source: lexwork_api\n")
+        assert update_file_dates(p, date(1975, 3, 1), "lexfind_family")
+        s = p.read_text()
+        assert "enactment_date: '1975-03-01'" in s
+        assert "enactment_date_source: lexfind_family" in s
+
+    def test_family_not_downgraded(self, tmp_path):
+        p = tmp_path / "ch" / "gr" / "de" / "1.1.md"
+        _law_file(p, extra="enactment_date: '1975-03-01'\nenactment_date_source: lexfind_family\n")
+        assert not update_file_dates(p, date(2008, 1, 1), "lexwork_api")
+        assert "1975-03-01" in p.read_text()

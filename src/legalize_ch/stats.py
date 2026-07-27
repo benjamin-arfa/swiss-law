@@ -377,50 +377,77 @@ CHSTAT_2003 = {
 }
 
 
-def generate_chstat_comparison(concordats_payload: dict) -> dict:
-    """Compare our concordats, ENACTED on or before 2003 and still in force,
-    against chstat.ch's 2003 table — the verification the version-aware
-    dates make possible."""
-    keys6 = ["etat", "sante", "educ", "infra", "eco", "fin"]
-    ours: dict[str, dict[str, int]] = {
-        c: {k: 0 for k in keys6 + ["autres", "total"]}
-        for c in concordats_payload["cantons"]
+def generate_chstat_comparison(entries: list[dict]) -> dict:
+    """Full reconciliation of our concordats vs chstat.ch's 2003 table.
+
+    Per canton: our concordats ENACTED on or before 2003, split into
+    still-active and repealed-but-listed (LexFind ``is_active: false``);
+    ``unexplained`` = chstat − (active + repealed) = concordats delisted
+    from LexFind entirely (only the Institute's internal DB has them) plus
+    accession-vs-decision-date noise (cantons accede to concordats at
+    different times; our date is the act's decision date).
+    """
+    cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
+    concordats = [
+        e for e in cantonal
+        if canonical_category_type(e.get("category_type", "")) == "Interkantonale Vereinbarung"
+    ]
+
+    rows: dict[str, dict] = {
+        c: {"active": 0, "repealed_listed": 0, "undated": 0,
+            "enacted_after_2003": 0, "date_provenance": {}}
+        for c in ALL_CANTON_CODES
     }
-    undated = 0
-    for year, per_canton in concordats_payload.get("by_year", {}).items():
-        if year == "unknown":
-            undated += sum(sum(r.values()) for r in per_canton.values())
+    for e in concordats:
+        c = str(e.get("canton", "")).upper()
+        if c not in rows:
+            continue
+        year = enactment_year(e)
+        if not year:
+            rows[c]["undated"] += 1
             continue
         if year > "2003":
+            rows[c]["enacted_after_2003"] += 1
             continue
-        for c, row in per_canton.items():
-            for k, n in row.items():
-                ours[c][k] += n
-                ours[c]["total"] += n
+        status = "repealed_listed" if e.get("is_active") is False else "active"
+        rows[c][status] += 1
+        src = str(e.get("enactment_date_source", "") or "version_date_only")
+        rows[c]["date_provenance"][src] = rows[c]["date_provenance"].get(src, 0) + 1
 
-    rows = {}
+    keys6 = ["etat", "sante", "educ", "infra", "eco", "fin"]
+    out_rows = {}
     for c in sorted(CHSTAT_2003):
         ch = CHSTAT_2003[c]
-        rows[c] = {
+        r = rows.get(c, {})
+        explained = r.get("active", 0) + r.get("repealed_listed", 0)
+        out_rows[c] = {
             "chstat_2003": dict(zip(keys6, ch)) | {"total": sum(ch)},
-            "ours_enacted_until_2003": ours.get(c, {}),
-            "delta_total": ours.get(c, {}).get("total", 0) - sum(ch),
+            "ours_enacted_until_2003": {
+                "active": r.get("active", 0),
+                "repealed_listed": r.get("repealed_listed", 0),
+                "total": explained,
+            },
+            "undated": r.get("undated", 0),
+            "unexplained": sum(ch) - explained,
+            "date_provenance": r.get("date_provenance", {}),
         }
     chstat_total = sum(sum(v) for v in CHSTAT_2003.values())
-    ours_total = sum(r["total"] for r in ours.values())
+    ours_total = sum(v["ours_enacted_until_2003"]["total"] for v in out_rows.values())
     return {
-        "note": "Verification: our concordats ENACTED on or before 2003 and "
-                "still in force today, vs chstat.ch's 2003 table (data-theme "
-                "1842, Institute of Federalism / LexFind). Differences stem "
-                "from: concordats repealed since 2003 (absent from our "
-                "in-force collection), domain classification gaps ('autres'), "
-                "and undated laws. Year = original enactment date.",
+        "note": "Reconciliation vs chstat.ch 2003 (data-theme 1842, Institute "
+                "of Federalism / LexFind). ours = concordats ENACTED <= 2003 "
+                "as listed by LexFind today, split active / repealed_listed. "
+                "unexplained = chstat - ours: concordats delisted from LexFind "
+                "entirely + accession-vs-decision-date differences (cantons "
+                "accede at different times; our date is the act's decision "
+                "date) + undated laws. Improve dates with "
+                "enrich_dates_lexwork.sh then enrich-dates --siblings.",
         "source_chstat": "https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine",
         "chstat_total": chstat_total,
         "ours_enacted_until_2003_total": ours_total,
-        "ours_all_time_total": concordats_payload["totals"]["total"],
-        "undated": undated,
-        "cantons": rows,
+        "unexplained_total": chstat_total - ours_total,
+        "undated_total": sum(v["undated"] for v in out_rows.values()),
+        "cantons": out_rows,
     }
 
 

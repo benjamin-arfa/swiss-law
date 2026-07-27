@@ -108,3 +108,49 @@ class TestFederalDatesFromGit:
                 GIT_AUTHOR_DATE=f"{d}T12:00:00", GIT_COMMITTER_DATE=f"{d}T12:00:00")
         dates = federal_dates_from_git(tmp_path)
         assert dates["ch/1/de/101.md"] == ["1999-01-01", "2005-06-30"]
+
+
+from legalize_ch.date_enricher import propagate_concordat_dates
+
+
+def _concordat_file(root: Path, canton: str, nr: str, title: str,
+                    enacted: str | None = None, source: str = ""):
+    p = root / "ch" / canton / "de" / f"{nr}.md"
+    p.parent.mkdir(parents=True, exist_ok=True)
+    extra = ""
+    if enacted:
+        extra = f"enactment_date: '{enacted}'\nenactment_date_source: {source}\n"
+    p.write_text(
+        f"---\ncanton: {canton.upper()}\nsystematic_number: '{nr}'\n"
+        f"title: {title}\nlanguage: de\n"
+        f"category_type: Interkantonale Vereinbarung\n{extra}---\n\n# T\n",
+        encoding="utf-8")
+    return p
+
+
+class TestSiblingPropagation:
+    TITLE = "Interkantonale Vereinbarung über die Schulen"
+
+    def test_propagates_authoritative_date(self, tmp_path):
+        _concordat_file(tmp_path, "ag", "1.1", self.TITLE, "1970-01-01", "lexwork_api")
+        weak = _concordat_file(tmp_path, "sz", "9.9", self.TITLE, "1999-01-01", "text")
+        missing = _concordat_file(tmp_path, "ur", "8.8", self.TITLE)
+        stats = propagate_concordat_dates(tmp_path)
+        assert stats["propagated"] == 2
+        assert "enactment_date: '1970-01-01'" in weak.read_text()
+        assert "enactment_date_source: sibling:AG" in weak.read_text()
+        assert "enactment_date: '1970-01-01'" in missing.read_text()
+
+    def test_conflicting_authoritative_dates_skip(self, tmp_path):
+        _concordat_file(tmp_path, "ag", "1.1", self.TITLE, "1970-01-01", "lexwork_api")
+        _concordat_file(tmp_path, "be", "2.2", self.TITLE, "1971-05-05", "lexwork_api")
+        weak = _concordat_file(tmp_path, "sz", "9.9", self.TITLE, "1999-01-01", "text")
+        stats = propagate_concordat_dates(tmp_path)
+        assert stats["conflicting_skipped"] == 1 and stats["propagated"] == 0
+        assert "1999-01-01" in weak.read_text()
+
+    def test_authoritative_never_overwritten(self, tmp_path):
+        a = _concordat_file(tmp_path, "ag", "1.1", self.TITLE, "1970-01-01", "lexwork_api")
+        _concordat_file(tmp_path, "be", "2.2", self.TITLE, "1970-01-01", "lexwork_api")
+        propagate_concordat_dates(tmp_path)
+        assert "enactment_date_source: lexwork_api" in a.read_text()

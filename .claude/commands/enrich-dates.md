@@ -18,5 +18,12 @@ Back-fill enactment dates and version-date lists — laws are (law, version) pai
 ## Fields written (fill-missing-only, sources never overwritten)
 `enactment_date` + `enactment_date_source` (lexwork_api | text | git_history), `version_dates` + `version_dates_source`. Inspect per law in `api/v1/laws/{ENTITY}.json`.
 
+3. **Sibling propagation (AFTER the LexWork pass; local, seconds):**
+   ```
+   .venv/bin/legalize-ch enrich-dates --repo . --siblings
+   ```
+   A concordat is the same act in every member canton — propagates the authoritative `date_of_decision` from LexWork cantons to LexFind-only siblings (matched by normalized title; skipped when authoritative dates conflict; writes `enactment_date_source: sibling:<CANTON>`).
+
 ## Related
-`legalize-ch enrich-domains` infers harmonized domains for laws LexFind leaves unclassified (offline; writes `global_category_inferred` + `inference_source` only).
+- `legalize-ch enrich-domains` infers harmonized domains for laws LexFind leaves unclassified (offline; writes `global_category_inferred` + `inference_source` only).
+- `legalize-ch enrich-status` marks LexFind-repealed laws (`is_active: false`) — enables the active/repealed split in the chstat reconciliation (`api/v1/stats/concordats_chstat_comparison.json`).

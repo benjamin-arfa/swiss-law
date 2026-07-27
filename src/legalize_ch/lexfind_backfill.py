@@ -191,6 +191,47 @@ def run_backfill(
     return summaries
 
 
+def enrich_status(repo_path: str | Path, cantons: list[str] | None = None,
+                  rate_limit: float = 1.0, dry_run: bool = False) -> dict:
+    """Write ``is_active: false`` (+ status_source) for laws LexFind marks
+    repealed. Active laws stay untouched (absence of the field = active),
+    so the pass only rewrites the repealed minority. Idempotent.
+    """
+    from .category_enricher import _parse_frontmatter, _write_frontmatter
+
+    repo_path = Path(repo_path)
+    cantons = [c.lower() for c in (cantons or DEFAULT_BACKFILL_CANTONS)]
+    fetcher = CantonalFetcher(rate_limit=rate_limit)
+
+    stats = {"cantons": 0, "inactive_in_catalog": 0, "marked": 0,
+             "already_marked": 0, "no_local_file": 0}
+    for canton in cantons:
+        stats["cantons"] += 1
+        inactive: set[str] = set()
+        for lang in _canton_languages(canton):
+            for entry in fetcher._fetch_lexfind_catalog_by_systematics(canton, lang):
+                if not entry.is_active:
+                    inactive.add(entry.systematic_number)
+        stats["inactive_in_catalog"] += len(inactive)
+
+        canton_dir = repo_path / "ch" / canton
+        for md in sorted(canton_dir.rglob("*.md")):
+            fm, body = _parse_frontmatter(md.read_text(encoding="utf-8"))
+            if fm is None or str(fm.get("systematic_number", "")) not in inactive:
+                continue
+            if fm.get("is_active") is False:
+                stats["already_marked"] += 1
+                continue
+            stats["marked"] += 1
+            if not dry_run:
+                fm["is_active"] = False
+                fm["status_source"] = "lexfind_catalog"
+                md.write_text(_write_frontmatter(fm, body), encoding="utf-8")
+        logger.info("%s: %d inactive in catalog", canton.upper(), len(inactive))
+
+    return stats
+
+
 # ─── Pipeline-state seeding (cron repair) ──────────────────────────────────────
 
 def seed_federal_state(repo_path: str | Path, last_run: str = "2026-06-15") -> dict:

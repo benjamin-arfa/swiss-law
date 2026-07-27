@@ -68,13 +68,17 @@ class TestConcordatsEnactmentSemantics:
         assert conc["unclassified_in_autres"] == 0
 
     def test_chstat_comparison(self):
-        conc = generate_concordats_by_domain([
+        entries = [
             _concordat(nr="a", enacted="1990-01-01", version="2010-01-01"),
             _concordat(nr="b", enacted="2010-01-01"),
             _concordat(nr="c", version=""),  # undated
-        ])
-        cmp = generate_chstat_comparison(conc)
-        assert cmp["ours_enacted_until_2003_total"] == 1  # only 'a'
-        assert cmp["undated"] == 1
+            {**_concordat(nr="d", enacted="1985-01-01"), "is_active": False},
+        ]
+        cmp = generate_chstat_comparison(entries)
+        gr = cmp["cantons"]["GR"]
+        assert gr["ours_enacted_until_2003"] == {
+            "active": 1, "repealed_listed": 1, "total": 2}
+        assert gr["undated"] == 1
+        assert gr["unexplained"] == 67 - 2
         assert cmp["chstat_total"] == 2522
-        assert cmp["cantons"]["GR"]["chstat_2003"]["total"] == 67
+        assert cmp["ours_enacted_until_2003_total"] == 2

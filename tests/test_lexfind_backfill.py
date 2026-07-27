@@ -216,3 +216,28 @@ class TestSeedFederalState:
         assert state["processed"]["999@2020-01-01"] is True
         assert state["last_run"] == "2026-07-01"  # existing last_run kept
         assert result["last_run"] == "2026-07-01"
+
+
+class TestEnrichStatus:
+    def test_marks_only_inactive(self, tmp_repo, monkeypatch):
+        from legalize_ch.lexfind_backfill import enrich_status
+        active = tmp_repo / "ch" / "so" / "de" / "1.1.md"
+        inactive = tmp_repo / "ch" / "so" / "de" / "2.2.md"
+        for p, nr in ((active, "1.1"), (inactive, "2.2")):
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(f"---\ncanton: SO\nsystematic_number: '{nr}'\n"
+                         f"title: T\nlanguage: de\n---\n\n# T\n")
+        fetcher = MagicMock()
+        fetcher._fetch_lexfind_catalog_by_systematics.return_value = [
+            _entry(canton="so", nr="1.1", is_active=True),
+            _entry(canton="so", nr="2.2", is_active=False),
+        ]
+        monkeypatch.setattr("legalize_ch.lexfind_backfill.CantonalFetcher",
+                            MagicMock(return_value=fetcher))
+        stats = enrich_status(tmp_repo, cantons=["so"])
+        assert stats["marked"] == 1
+        assert "is_active: false" in inactive.read_text()
+        assert "is_active" not in active.read_text()
+        # idempotent
+        stats2 = enrich_status(tmp_repo, cantons=["so"])
+        assert stats2["already_marked"] == 1 and stats2["marked"] == 0

@@ -202,6 +202,84 @@ def enrich_dates_local(repo_path: str | Path, limit: int | None = None,
     return stats
 
 
+# ─── Sibling date propagation (concordats) ────────────────────────────────────
+
+def _normalize_title(title: str) -> str:
+    import unicodedata
+    t = unicodedata.normalize("NFKD", str(title).lower())
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    t = re.sub(r"\b(vom|du|del|dal)\b.*?\d{4}", "", t)
+    t = re.sub(r"[^a-z0-9 ]", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+_CONCORDAT_TYPES = {"Interkantonale Vereinbarung", "Accord intercantonal",
+                    "Accordo intercantonale"}
+
+
+def propagate_concordat_dates(repo_path: str | Path, dry_run: bool = False) -> dict:
+    """Propagate authoritative enactment dates between member cantons.
+
+    A concordat is the SAME act in every member canton, so its
+    ``date_of_decision`` is identical everywhere. Groups concordat files
+    by normalized title (per language); if ALL siblings with
+    ``lexwork_api`` provenance agree on one date, that date is written to
+    siblings with weaker (``text``/``sibling``) or missing dates as
+    ``enactment_date_source: sibling:<CANTON>``. Authoritative fields are
+    never overwritten. Run AFTER the LexWork API pass.
+    """
+    from .category_enricher import _parse_frontmatter, _write_frontmatter
+
+    repo = Path(repo_path)
+    groups: dict[tuple[str, str], list[tuple[Path, dict, str]]] = defaultdict(list)
+    for md in sorted((repo / "ch").rglob("*.md")):
+        if md.name in ("INDEX.md", "README.md"):
+            continue
+        text = md.read_text(encoding="utf-8")
+        fm, body = _parse_frontmatter(text)
+        if not fm or not fm.get("canton"):
+            continue
+        if fm.get("category_type") not in _CONCORDAT_TYPES:
+            continue
+        key = (str(fm.get("language", "de")), _normalize_title(fm.get("title", "")))
+        if key[1]:
+            groups[key].append((md, fm, body))
+
+    stats = {"groups": 0, "authoritative_groups": 0, "propagated": 0,
+             "conflicting_skipped": 0}
+    for key, members in groups.items():
+        cantons = {fm.get("canton") for _, fm, _ in members}
+        if len(cantons) < 2:
+            continue
+        stats["groups"] += 1
+        auth = {(str(fm.get("enactment_date")), str(fm.get("canton")))
+                for _, fm, _ in members
+                if fm.get("enactment_date_source") == "lexwork_api"
+                and fm.get("enactment_date")}
+        auth_dates = {d for d, _ in auth}
+        if not auth_dates:
+            continue
+        if len(auth_dates) > 1:
+            stats["conflicting_skipped"] += 1
+            continue
+        stats["authoritative_groups"] += 1
+        the_date, source_canton = next(iter(auth))
+        for md, fm, body in members:
+            src = str(fm.get("enactment_date_source", ""))
+            if src == "lexwork_api":
+                continue
+            if str(fm.get("enactment_date", "")) == the_date:
+                continue
+            stats["propagated"] += 1
+            if not dry_run:
+                fm["enactment_date"] = the_date
+                fm["enactment_date_source"] = f"sibling:{source_canton}"
+                md.write_text(_write_frontmatter(fm, body), encoding="utf-8")
+
+    logger.info("Sibling propagation: %s", stats)
+    return stats
+
+
 # ─── LexWork API pass (long-running, resumable) ───────────────────────────────
 
 def enrich_dates_lexwork(repo_path: str | Path, cantons: list[str] | None = None,

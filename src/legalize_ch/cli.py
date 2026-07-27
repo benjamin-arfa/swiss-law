@@ -543,9 +543,10 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
 
     click.echo("Generating chstat-2003 verification comparison...")
     from .stats import generate_chstat_comparison
-    comparison = generate_chstat_comparison(conc)
+    comparison = generate_chstat_comparison(entries)
     write_stats_json(comparison, site_path / "api" / "v1" / "stats" / "concordats_chstat_comparison.json")
-    click.echo(f"  enacted<=2003: {comparison['ours_enacted_until_2003_total']} vs chstat {comparison['chstat_total']}")
+    click.echo(f"  enacted<=2003: {comparison['ours_enacted_until_2003_total']} vs chstat {comparison['chstat_total']}"
+               f" (unexplained: {comparison['unexplained_total']})")
 
     click.echo("Generating per-entity law index...")
     from .law_index import generate_law_index, write_law_index
@@ -673,10 +674,13 @@ def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
 @click.option("--lexwork-versions", is_flag=True,
               help="Run the LexWork API pass (authoritative enactment + full version "
                    "dates; ~5-6h for all cantons — run detached). Default: cheap local pass.")
+@click.option("--siblings", is_flag=True,
+              help="Propagate authoritative concordat dates between member cantons "
+                   "(run AFTER the LexWork pass; local, seconds).")
 @click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
 @click.option("--limit", "-n", type=int, default=None, help="Max laws per canton (API pass) / files (local)")
 @click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
-def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool,
+def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool, siblings: bool,
                  rate_limit: float, limit: int | None, dry_run: bool):
     """Back-fill enactment dates + version-date lists (laws are law+version).
 
@@ -686,10 +690,13 @@ def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool,
     their APIs (date_of_decision + full version lists).
     """
     from pathlib import Path
-    from .date_enricher import enrich_dates_local, enrich_dates_lexwork
+    from .date_enricher import (enrich_dates_local, enrich_dates_lexwork,
+                                propagate_concordat_dates)
 
     repo_path = Path(repo).resolve()
-    if lexwork_versions:
+    if siblings:
+        stats = propagate_concordat_dates(repo_path, dry_run=dry_run)
+    elif lexwork_versions:
         cantons = [c.strip().lower() for c in canton] if canton else None
         stats = enrich_dates_lexwork(repo_path, cantons=cantons,
                                      rate_limit=rate_limit, limit=limit)
@@ -717,6 +724,29 @@ def enrich_domains_cmd(repo: str, canton: tuple, dry_run: bool):
     repo_path = Path(repo).resolve()
     cantons = [c.strip().lower() for c in canton] if canton else None
     stats = enrich_domains(repo_path, cantons=cantons, dry_run=dry_run)
+    for k, v in stats.items():
+        click.echo(f"  {k}: {v}")
+    click.echo("Done.")
+
+
+@main.command("enrich-status")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--canton", "-c", multiple=True, default=None, help="Canton code(s) (default: all 26)")
+@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+@click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
+def enrich_status(repo: str, canton: tuple, rate_limit: float, dry_run: bool):
+    """Mark laws LexFind lists as repealed (is_active: false in frontmatter).
+
+    Active laws stay untouched; the flag enables active-vs-repealed splits
+    in the concordat tables and the chstat reconciliation.
+    """
+    from pathlib import Path
+    from .lexfind_backfill import enrich_status as _enrich_status
+
+    repo_path = Path(repo).resolve()
+    cantons = [c.strip().lower() for c in canton] if canton else None
+    stats = _enrich_status(repo_path, cantons=cantons, rate_limit=rate_limit,
+                           dry_run=dry_run)
     for k, v in stats.items():
         click.echo(f"  {k}: {v}")
     click.echo("Done.")

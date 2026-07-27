@@ -118,6 +118,102 @@ def infer_domain(fm: dict, topcode_map: dict[str, str]) -> tuple[str, str] | Non
     return None
 
 
+# ─── Instrument-type inference ────────────────────────────────────────────────
+#
+# LexFind files ~6,700 cantonal laws under the catch-all type "Anderes";
+# in Swiss legal drafting the instrument is normally the title's leading
+# word, so most are rule-classifiable. Rules map ONLY into LexFind's fixed
+# 9-type taxonomy and carry ids so every inference is traceable.
+
+_PARL = r"(grand conseil|grosser rat|kantonsrat|landrat|parlament|gran consiglio)"
+
+TYPE_RULES: list[tuple[str, str, str]] = [
+    # (rule_id, regex, canonical type)
+    ("parl_beschluss", r"^\s*(kantonsrats|grossrats|landrats)beschluss|^\s*beschluss des (kantonsrat|grossen rat|landrat)", "Verordnung des Parlaments (Dekret)"),
+    ("decret", r"^\s*(décret|decret\b|decreto)", "Verordnung des Parlaments (Dekret)"),
+    ("arrete_parl", rf"^\s*arrêté.{{0,60}}{_PARL}", "Verordnung des Parlaments (Dekret)"),
+    ("exec_beschluss", r"^\s*(regierungsrats|regierungs|staatsrats|standeskommissions)beschluss", "Verordnung"),
+    ("arrete_exec", r"^\s*arrêté", "Verordnung"),
+    ("ausfuehrung", r"^\s*ausführungsbestimmungen", "Verordnung"),
+    ("verordnung", r"^\s*(verordnung|ordonnance|ordinanza)\b", "Verordnung"),
+    ("reglement", r"^\s*(reglement|règlement|regolamento|geschäftsordnung)\b", "Reglement"),
+    ("gesetz", r"^\s*(gesetz|loi|legge)\b", "Gesetz"),
+    ("konkordat", r"^\s*(konkordat|interkantonale vereinbarung|accord intercantonal|concordat\b|concordato)", "Interkantonale Vereinbarung"),
+    ("vereinb_ik", r"^\s*(vereinbarung|vertrag|convention|convenzione).{0,80}(interkantonal|zwischen den kantonen|entre les cantons|tra i cantoni)", "Interkantonale Vereinbarung"),
+    ("vertrag_int", r"^\s*(vereinbarung|vertrag|convention|abkommen).{0,80}(ausländisch|république|bundesrepublik|fürstentum|königreich|frankreich|deutschland|italien|österreich|liechtenstein)", "Staatsvertrag"),
+]
+
+# Instruments that genuinely have no slot in the 9-type taxonomy —
+# intentionally left as Other (documented residual).
+_LEAVE_OTHER = re.compile(
+    r"^\s*(richtlinien?|weisungen?|verfügung|entscheid|konzession|kreisschreiben|"
+    r"gebührentarif|tarif\b|beitritt|entrée|statuten|statuts|direttive|istruzioni)",
+    re.IGNORECASE)
+
+_TYPE_RULES_COMPILED = [(rid, re.compile(rx, re.IGNORECASE), t)
+                        for rid, rx, t in TYPE_RULES]
+
+OTHER_TYPES = {"Anderes", "Autre", "Altro", ""}
+
+
+def classify_type(title: str) -> tuple[str, str] | None:
+    """Classify a title into (canonical instrument type, rule_id)."""
+    t = str(title or "")
+    if _LEAVE_OTHER.match(t):
+        return None
+    for rid, rx, ctype in _TYPE_RULES_COMPILED:
+        if rx.search(t):
+            return ctype, rid
+    return None
+
+
+def enrich_types(repo_path: str | Path, cantons: list[str] | None = None,
+                 dry_run: bool = False) -> dict:
+    """Back-fill category_type_inferred for laws LexFind types as 'Other'.
+
+    LexFind's value is never touched; inferences carry the matching
+    rule id (``type_inference_rule``) for verifiability. Idempotent."""
+    from .cantonal import ALL_CANTONS
+    from .categories import canonical_category_type
+    from .category_enricher import _parse_frontmatter, _write_frontmatter
+
+    repo = Path(repo_path)
+    cantons = [c.lower() for c in (cantons or ALL_CANTONS)]
+    stats = {"scanned": 0, "typed_by_lexfind": 0, "inferred": 0,
+             "already_inferred": 0, "residual": 0}
+    per_rule: dict[str, int] = {}
+
+    for canton in cantons:
+        for md in sorted((repo / "ch" / canton).rglob("*.md")):
+            text = md.read_text(encoding="utf-8")
+            fm, body = _parse_frontmatter(text)
+            if fm is None or not fm.get("systematic_number"):
+                continue
+            stats["scanned"] += 1
+            ct = canonical_category_type(str(fm.get("category_type", "")))
+            if ct not in OTHER_TYPES:
+                stats["typed_by_lexfind"] += 1
+                continue
+            if fm.get("category_type_inferred"):
+                stats["already_inferred"] += 1
+                continue
+            result = classify_type(str(fm.get("title", "")))
+            if not result:
+                stats["residual"] += 1
+                continue
+            ctype, rule = result
+            stats["inferred"] += 1
+            per_rule[rule] = per_rule.get(rule, 0) + 1
+            if not dry_run:
+                fm["category_type_inferred"] = ctype
+                fm["type_inference_rule"] = rule
+                md.write_text(_write_frontmatter(fm, body), encoding="utf-8")
+
+    stats["per_rule"] = per_rule
+    logger.info("Type inference: %s", stats)
+    return stats
+
+
 def enrich_domains(repo_path: str | Path, cantons: list[str] | None = None,
                    dry_run: bool = False) -> dict:
     """Back-fill global_category_inferred for cantonal laws without a

@@ -92,6 +92,7 @@ step "[4/9] Enrich dates: local parse + git history, then authoritative LexWork 
 
 step "[5/9] Enrich domains (inference for unclassified) + repeal status"
 "${VENV}/bin/legalize-ch" enrich-domains --repo "$REPO_DIR" 2>&1 || fail "Domain inference failed"
+"${VENV}/bin/legalize-ch" enrich-types --repo "$REPO_DIR" 2>&1 || fail "Type inference failed"
 "${VENV}/bin/legalize-ch" enrich-status --repo "$REPO_DIR" --rate-limit 0.1 2>&1 || fail "Status enrichment failed"
 git add ch/ && git diff --cached --quiet || git commit -q -m "Full rebuild: enrichment passes (dates, domains, status)"
 

@@ -128,6 +128,17 @@ def enactment_year(e: dict) -> str:
     return vd[:4] if len(vd) >= 4 else ""
 
 
+def effective_category_type(e: dict) -> tuple[str, str]:
+    """(instrument type, provenance) — LexFind first; rule-inferred fills 'Other'."""
+    ct = canonical_category_type(str(e.get("category_type", "")))
+    if ct and ct != "Anderes":
+        return ct, "lexfind"
+    inf = str(e.get("category_type_inferred", ""))
+    if inf:
+        return inf, f"rule:{e.get('type_inference_rule', '')}"
+    return ct, "lexfind" if ct else ""
+
+
 def effective_global_category(e: dict) -> tuple[str, str]:
     """(global_category value, provenance) — LexFind first, inferred second."""
     gc = str(e.get("global_category", ""))
@@ -215,10 +226,13 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
             canton_titles[canton] = build_canton_title_map(trees_dir, canton)
         return canton_titles[canton]
 
-    by_category_type = Counter(
-        canonical_category_type(e["category_type"])
-        for e in cantonal if e.get("category_type")
-    )
+    by_category_type: Counter = Counter()
+    type_provenance: Counter = Counter()
+    for e in cantonal:
+        ct, prov = effective_category_type(e)
+        if ct:
+            by_category_type[ct] += 1
+            type_provenance["inferred" if prov.startswith("rule:") else prov] += 1
     by_systematic_category = Counter(
         canonical_systematic_category(
             str(e.get("canton", "")), e["systematic_category"],
@@ -267,7 +281,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
             year = enactment_year(e)
             if val and year:
                 if field == "category_type":
-                    val = canonical_category_type(val)
+                    val = effective_category_type(e)[0]
                 result[year][val] += 1
         return {y: dict(counts) for y, counts in sorted(result.items())}
 
@@ -278,7 +292,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     category_type_by_canton: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     for e in cantonal:
         c = e.get("canton", "")
-        ct = canonical_category_type(e.get("category_type", ""))
+        ct = effective_category_type(e)[0]
         if c and ct:
             category_type_by_canton[c][ct] += 1
 
@@ -289,7 +303,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     for e in cantonal:
         year = enactment_year(e)
         c = e.get("canton", "")
-        ct = canonical_category_type(e.get("category_type", ""))
+        ct = effective_category_type(e)[0]
         if year and c and ct:
             cat_by_canton_by_year[year][c][ct] += 1
 
@@ -303,6 +317,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         "by_canton": dict(by_canton.most_common()),
         "by_sr_category": dict(by_sr_category.most_common()),
         "category_type_labels": CATEGORY_TYPE_LABELS,
+        "type_provenance": dict(type_provenance.most_common()),
         "by_category_type": dict(by_category_type.most_common()),
         "by_systematic_category": dict(by_systematic_category.most_common()),
         "by_global_category": dict(by_global_category.most_common()),
@@ -390,7 +405,7 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
     cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
     concordats = [
         e for e in cantonal
-        if canonical_category_type(e.get("category_type", "")) == "Interkantonale Vereinbarung"
+        if effective_category_type(e)[0] == "Interkantonale Vereinbarung"
     ]
 
     rows: dict[str, dict] = {
@@ -470,6 +485,47 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
     }
 
 
+def generate_unclassified_types(entries: list[dict]) -> dict:
+    """Review list: every law LexFind types as 'Other', with our rule-based
+    inference (or null for the residual). The audit trail behind
+    ``category_type_inferred``."""
+    from .domain_inference import classify_type
+
+    rows = []
+    for e in _deduplicate(entries):
+        if e["_scope"] != "cantonal":
+            continue
+        ct = canonical_category_type(str(e.get("category_type", "")))
+        if ct not in ("", "Anderes"):
+            continue
+        inferred = e.get("category_type_inferred")
+        rule = e.get("type_inference_rule")
+        if not inferred:
+            result = classify_type(str(e.get("title", "")))
+            if result:
+                inferred, rule = result
+        rows.append({
+            "entity": str(e.get("canton", "")).upper(),
+            "id": str(e.get("systematic_number", "")),
+            "title": e.get("title", ""),
+            "lexfind_type": e.get("category_type", ""),
+            "inferred_type": inferred or None,
+            "rule": rule or None,
+        })
+    classified = sum(1 for r in rows if r["inferred_type"])
+    return {
+        "note": "Laws LexFind files under the catch-all instrument type "
+                "'Anderes/Autre/Altro', with our rule-based classification "
+                "(title-leading-word rules; see type_inference_rule ids). "
+                "inferred_type null = genuinely other instruments "
+                "(directives, rulings, concessions, tariffs...).",
+        "total": len(rows),
+        "classified": classified,
+        "residual": len(rows) - classified,
+        "items": sorted(rows, key=lambda r: (r["entity"], r["id"])),
+    }
+
+
 def generate_harmonized_categories(entries: list[dict],
                                    repo_path: str | Path = ".") -> dict:
     """Aggregate ALL laws (federal + cantonal) on the harmonized taxonomy.
@@ -511,7 +567,7 @@ def generate_harmonized_categories(entries: list[dict],
                 stats_counts["cantonal_classified"] += 1
                 stats_counts[f"cantonal_{prov}"] = stats_counts.get(f"cantonal_{prov}", 0) + 1
                 canton = str(e.get("canton", "")).upper()
-                ctype = canonical_category_type(e.get("category_type", "")) or "(untyped)"
+                ctype = effective_category_type(e)[0] or "(untyped)"
                 for anc in _ancestors(code):
                     breakdowns[anc][canton][ctype] += 1
             else:
@@ -615,7 +671,7 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
     concordats = [
         e for e in cantonal
-        if canonical_category_type(e.get("category_type", "")) == "Interkantonale Vereinbarung"
+        if effective_category_type(e)[0] == "Interkantonale Vereinbarung"
     ]
 
     code_to_key = {c: d["key"] for d in CONCORDAT_DOMAINS for c in d["codes"]}
@@ -984,7 +1040,7 @@ def generate_yearly_canton_stats(
             type_groups: dict[str, list[dict]] = defaultdict(list)
             categorized = 0
             for e in laws:
-                ct = canonical_category_type(e.get("category_type", ""))
+                ct = effective_category_type(e)[0]
                 if ct:
                     type_groups[ct].append(e)
                     categorized += 1

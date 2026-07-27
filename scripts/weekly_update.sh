@@ -139,6 +139,7 @@ echo "[1.75/5] Enriching dates + domains for new laws..."
 "${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" 2>&1 || true
 "${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --siblings 2>&1 || true
 "${VENV}/bin/legalize-ch" enrich-domains --repo "$REPO_DIR" 2>&1 || true
+"${VENV}/bin/legalize-ch" enrich-types --repo "$REPO_DIR" 2>&1 || true
 "${VENV}/bin/legalize-ch" enrich-status --repo "$REPO_DIR" --rate-limit 0.1 2>&1 || true
 
 # 1.8. Coverage audit — report-only; gaps show up in the log and coverage.json

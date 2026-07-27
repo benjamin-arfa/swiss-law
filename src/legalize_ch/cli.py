@@ -554,6 +554,13 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_law_index(law_idx, site_path / "api" / "v1" / "laws")
     click.echo(f"  {sum(v['laws'] for v in law_idx.values())} laws across {len(law_idx)} entities")
 
+    click.echo("Generating unclassified-types review list...")
+    from .stats import generate_unclassified_types
+    unc = generate_unclassified_types(entries)
+    write_stats_json(unc, site_path / "api" / "v1" / "quality" / "unclassified_types.json")
+    click.echo(f"  {unc['total']} 'Other' laws: {unc['classified']} rule-classified, "
+               f"{unc['residual']} residual")
+
     click.echo("Generating categories API...")
     from .categories import generate_categories_api
     generate_categories_api(repo_path / "docs" / "trees",
@@ -730,6 +737,32 @@ def enrich_domains_cmd(repo: str, canton: tuple, dry_run: bool):
     stats = enrich_domains(repo_path, cantons=cantons, dry_run=dry_run)
     for k, v in stats.items():
         click.echo(f"  {k}: {v}")
+    click.echo("Done.")
+
+
+@main.command("enrich-types")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--canton", "-c", multiple=True, default=None, help="Canton code(s)")
+@click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
+def enrich_types_cmd(repo: str, canton: tuple, dry_run: bool):
+    """Infer instrument types for laws LexFind files under 'Other'.
+
+    Title-leading-word rules (Beschluss families, arrêtés, décrets, ...)
+    mapped into LexFind's own 9-type taxonomy. Writes
+    category_type_inferred + type_inference_rule only — LexFind's value
+    is never touched. Review list: api/v1/quality/unclassified_types.json.
+    """
+    from pathlib import Path
+    from .domain_inference import enrich_types
+
+    repo_path = Path(repo).resolve()
+    cantons = [c.strip().lower() for c in canton] if canton else None
+    stats = enrich_types(repo_path, cantons=cantons, dry_run=dry_run)
+    per_rule = stats.pop("per_rule", {})
+    for k, v in stats.items():
+        click.echo(f"  {k}: {v}")
+    for rule, n in sorted(per_rule.items(), key=lambda kv: -kv[1]):
+        click.echo(f"    rule {rule}: {n}")
     click.echo("Done.")
 
 

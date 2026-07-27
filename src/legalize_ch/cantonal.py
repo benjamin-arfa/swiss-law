@@ -6,7 +6,7 @@ import re
 import subprocess
 import tempfile
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date
 
 import requests
@@ -104,7 +104,17 @@ class CantonalLawVersion:
     version_id: int | str
     title: str
     date_in_force: date | None = None
+    date_until: date | None = None
     abbreviation: str = ""
+
+
+@dataclass
+class LawDates:
+    """Date facts for one law: original enactment + known version dates."""
+    canton: str
+    systematic_number: str
+    enactment_date: date | None = None
+    version_dates: list[date] = field(default_factory=list)  # sorted ascending
 
 
 @dataclass
@@ -629,37 +639,79 @@ class CantonalFetcher:
         # Current version
         cv = tol.get("current_version", {})
         if cv:
+            since, until = _parse_version_dates_str(cv.get("version_dates_str", "")
+                                                    or tol.get("text_of_law_dates_str", ""))
             versions.append(CantonalLawVersion(
                 canton=canton,
                 systematic_number=number,
                 version_id=cv.get("id", 0),
                 title=cv.get("title", tol.get("title", "")),
+                date_in_force=since,
+                date_until=until,
                 abbreviation=cv.get("abbreviation", ""),
             ))
 
         # Old versions
         for ov in tol.get("old_versions", []):
-            vid = ov.get("id", 0)
-            title = ov.get("title", "")
-            # Parse date from version_dates_str
-            vds = ov.get("version_dates_str", "")
-            d = None
-            m = re.search(r"seit:\s*(\d{2})\.(\d{2})\.(\d{4})", vds)
-            if m:
-                try:
-                    d = date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
-                except ValueError:
-                    pass
+            since, until = _parse_version_dates_str(ov.get("version_dates_str", ""))
             versions.append(CantonalLawVersion(
                 canton=canton,
                 systematic_number=number,
-                version_id=vid,
-                title=title,
-                date_in_force=d,
+                version_id=ov.get("id", 0),
+                title=ov.get("title", ""),
+                date_in_force=since,
+                date_until=until,
                 abbreviation=ov.get("abbreviation", ""),
             ))
 
         return versions
+
+    def fetch_law_dates(self, canton: str, number: str) -> LawDates | None:
+        """Fetch enactment date + all version dates for one LexWork law.
+
+        One API call: the payload's ``text_of_law.date_of_decision`` is the
+        original enactment (ISO); current + old versions carry their
+        in-force dates in ``version_dates_str``.
+        """
+        if canton not in LEXWORK_CANTONS:
+            return None
+        data = self.fetch_lexwork_law(canton, number)
+        if not data:
+            return None
+        tol = data.get("text_of_law", {})
+
+        enactment = None
+        dod = str(tol.get("date_of_decision") or "")[:10]
+        if dod:
+            try:
+                enactment = date.fromisoformat(dod)
+            except ValueError:
+                pass
+        if not enactment:
+            m = re.search(r"vom\s+(\d{2})\.(\d{2})\.(\d{4})",
+                          str(tol.get("text_of_law_dates_str", "")))
+            if m:
+                try:
+                    enactment = date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
+                except ValueError:
+                    pass
+
+        version_dates: set[date] = set()
+        for v in [tol.get("current_version") or {}] + list(tol.get("old_versions", [])):
+            since, _ = _parse_version_dates_str(v.get("version_dates_str", ""))
+            if since:
+                version_dates.add(since)
+        # The overall dates string carries the current version's in-force date
+        since, _ = _parse_version_dates_str(str(tol.get("text_of_law_dates_str", "")))
+        if since:
+            version_dates.add(since)
+
+        return LawDates(
+            canton=canton,
+            systematic_number=number,
+            enactment_date=enactment,
+            version_dates=sorted(version_dates),
+        )
 
     def fetch_version_text(self, canton: str, number: str,
                            version_id: int, lang: str = "de") -> CantonalLawText | None:
@@ -696,6 +748,39 @@ class CantonalFetcher:
             abbreviation=sv.get("abbreviation", ""),
             origin="lexwork",
         )
+
+
+_DDMMYYYY = r"(\d{2})\.(\d{2})\.(\d{4})"
+
+
+def _parse_version_dates_str(vds: str) -> tuple[date | None, date | None]:
+    """Parse a LexWork version date string into (in_force_since, until).
+
+    Handles the observed formats across de/fr portals:
+    - "Version in Kraft seit: 01.05.2024"
+    - "Version in Kraft von: 01.05.2024 bis: 29.06.2024"
+    - "vom 25.06.1980, in Kraft seit: 01.01.1982"
+    - "Version en vigueur depuis le: 01.01.2010" / "du: ... au: ..."
+    """
+    def _mk(m) -> date | None:
+        try:
+            return date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
+        except (ValueError, AttributeError):
+            return None
+
+    vds = str(vds or "")
+    since = until = None
+    m = re.search(rf"(?:seit|depuis(?:\s+le)?|dal)\s*:?\s*{_DDMMYYYY}", vds)
+    if m:
+        since = _mk(m)
+    else:
+        m = re.search(rf"(?:von|du)\s*:?\s*{_DDMMYYYY}", vds)
+        if m:
+            since = _mk(m)
+    m = re.search(rf"(?:bis|au|al)\s*:?\s*{_DDMMYYYY}", vds)
+    if m:
+        until = _mk(m)
+    return since, until
 
 
 # ─── PDF extraction helpers ───────────────────────────────────────────────────

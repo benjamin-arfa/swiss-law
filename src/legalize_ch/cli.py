@@ -541,6 +541,12 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_stats_json(conc, site_path / "api" / "v1" / "stats" / "concordats_by_domain.json")
     click.echo(f"  {conc['total_concordats']} concordats across {len(conc['cantons'])} cantons")
 
+    click.echo("Generating chstat-2003 verification comparison...")
+    from .stats import generate_chstat_comparison
+    comparison = generate_chstat_comparison(conc)
+    write_stats_json(comparison, site_path / "api" / "v1" / "stats" / "concordats_chstat_comparison.json")
+    click.echo(f"  enacted<=2003: {comparison['ours_enacted_until_2003_total']} vs chstat {comparison['chstat_total']}")
+
     click.echo("Generating per-entity law index...")
     from .law_index import generate_law_index, write_law_index
     law_idx = generate_law_index(entries)
@@ -658,6 +664,62 @@ def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
         click.echo("Next: .venv/bin/legalize-ch stats --repo . --site-repo ../swiss-law-as-source --no-trees")
         click.echo("      .venv/bin/legalize-ch index --repo . --site-repo ../swiss-law-as-source")
         click.echo("      then publish via /publish-site")
+
+
+@main.command("enrich-dates")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--canton", "-c", multiple=True, default=None,
+              help="Canton code(s) for the LexWork pass (default: all LexWork cantons)")
+@click.option("--lexwork-versions", is_flag=True,
+              help="Run the LexWork API pass (authoritative enactment + full version "
+                   "dates; ~5-6h for all cantons — run detached). Default: cheap local pass.")
+@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+@click.option("--limit", "-n", type=int, default=None, help="Max laws per canton (API pass) / files (local)")
+@click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
+def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool,
+                 rate_limit: float, limit: int | None, dry_run: bool):
+    """Back-fill enactment dates + version-date lists (laws are law+version).
+
+    Local pass (default): parses the original "vom/du/del D. Month YYYY"
+    from stored texts and derives federal version histories from git —
+    no network. --lexwork-versions upgrades LexWork cantons + ZH from
+    their APIs (date_of_decision + full version lists).
+    """
+    from pathlib import Path
+    from .date_enricher import enrich_dates_local, enrich_dates_lexwork
+
+    repo_path = Path(repo).resolve()
+    if lexwork_versions:
+        cantons = [c.strip().lower() for c in canton] if canton else None
+        stats = enrich_dates_lexwork(repo_path, cantons=cantons,
+                                     rate_limit=rate_limit, limit=limit)
+    else:
+        stats = enrich_dates_local(repo_path, limit=limit, dry_run=dry_run)
+    for k, v in stats.items():
+        click.echo(f"  {k}: {v}")
+    click.echo("Done.")
+
+
+@main.command("enrich-domains")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--canton", "-c", multiple=True, default=None, help="Canton code(s)")
+@click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
+def enrich_domains_cmd(repo: str, canton: tuple, dry_run: bool):
+    """Infer harmonized domains for laws LexFind leaves unclassified.
+
+    Offline (uses canton trees on disk + title keywords). Writes
+    global_category_inferred + inference_source only — the LexFind
+    field is never touched.
+    """
+    from pathlib import Path
+    from .domain_inference import enrich_domains
+
+    repo_path = Path(repo).resolve()
+    cantons = [c.strip().lower() for c in canton] if canton else None
+    stats = enrich_domains(repo_path, cantons=cantons, dry_run=dry_run)
+    for k, v in stats.items():
+        click.echo(f"  {k}: {v}")
+    click.echo("Done.")
 
 
 @main.command("coverage")

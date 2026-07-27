@@ -134,6 +134,11 @@ fi
 echo "[1.7/5] Enriching categories for new laws..."
 "${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.5 2>&1 || true
 
+# 1.75. Enactment dates + domain inference for new laws (local, fast, idempotent)
+echo "[1.75/5] Enriching dates + domains for new laws..."
+"${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" 2>&1 || true
+"${VENV}/bin/legalize-ch" enrich-domains --repo "$REPO_DIR" 2>&1 || true
+
 # 1.8. Coverage audit — report-only; gaps show up in the log and coverage.json
 echo "[1.8/5] Auditing coverage against source catalogs..."
 "${VENV}/bin/legalize-ch" coverage --repo "$REPO_DIR" --rate-limit 0.5 2>&1 || {

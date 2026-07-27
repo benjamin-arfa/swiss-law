@@ -95,9 +95,15 @@ def generate_law_index(entries: list[dict], repo_name: str = LAW_REPO) -> dict[s
         }
         if rep.get("version_date"):
             item["version_date"] = str(rep["version_date"])
+        if rep.get("enactment_date"):
+            item["enactment_date"] = str(rep["enactment_date"])
+            item["enactment_date_source"] = str(rep.get("enactment_date_source", ""))
+        if isinstance(rep.get("version_dates"), list) and rep["version_dates"]:
+            item["version_dates"] = [str(d) for d in rep["version_dates"]]
         if rep.get("abbreviation"):
             item["abbreviation"] = str(rep["abbreviation"])
-        for field in ("category_type", "systematic_category", "global_category"):
+        for field in ("category_type", "systematic_category", "global_category",
+                      "global_category_inferred", "inference_source"):
             if rep.get(field):
                 item[field] = rep[field]
 

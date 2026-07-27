@@ -109,6 +109,36 @@ def collect_all_frontmatter(repo_path: str | Path = ".") -> list[dict]:
     return results
 
 
+def enactment_year(e: dict) -> str:
+    """Best-known year the law was ORIGINALLY enacted.
+
+    Laws are (law, version) pairs: ``version_date`` is only the current
+    consolidated version. Priority: enactment_date → earliest known
+    version date → version_date. Empty string when nothing is known.
+    """
+    ed = str(e.get("enactment_date", ""))
+    if len(ed) >= 4:
+        return ed[:4]
+    vds = e.get("version_dates")
+    if isinstance(vds, list) and vds:
+        first = str(min(vds))
+        if len(first) >= 4:
+            return first[:4]
+    vd = str(e.get("version_date", ""))
+    return vd[:4] if len(vd) >= 4 else ""
+
+
+def effective_global_category(e: dict) -> tuple[str, str]:
+    """(global_category value, provenance) — LexFind first, inferred second."""
+    gc = str(e.get("global_category", ""))
+    if gc:
+        return gc, "lexfind"
+    gi = str(e.get("global_category_inferred", ""))
+    if gi:
+        return gi, str(e.get("inference_source", "inferred"))
+    return "", ""
+
+
 def _group_by_identity(entries: list[dict]) -> dict[str, list[dict]]:
     """Group file-level entries by unique law identity.
 
@@ -219,11 +249,11 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     by_year_scope: dict[str, Counter[str]] = defaultdict(Counter)
 
     for e in entries:
-        vd = str(e.get("version_date", ""))
-        if len(vd) >= 4:
-            year = vd[:4]
+        year = enactment_year(e)
+        if year:
             by_year[year] += 1
             by_year_scope[year][e["_scope"]] += 1
+        vd = str(e.get("version_date", ""))
         if len(vd) >= 7:
             by_month[vd[:7]] += 1
 
@@ -234,11 +264,11 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
             if scope_filter and e["_scope"] != scope_filter:
                 continue
             val = e.get(field, "")
-            vd = str(e.get("version_date", ""))
-            if val and len(vd) >= 4:
+            year = enactment_year(e)
+            if val and year:
                 if field == "category_type":
                     val = canonical_category_type(val)
-                result[vd[:4]][val] += 1
+                result[year][val] += 1
         return {y: dict(counts) for y, counts in sorted(result.items())}
 
     category_type_by_year = _yearly_breakdown("category_type", "cantonal")
@@ -257,11 +287,11 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         lambda: defaultdict(lambda: defaultdict(int))
     )
     for e in cantonal:
-        vd = str(e.get("version_date", ""))
+        year = enactment_year(e)
         c = e.get("canton", "")
         ct = canonical_category_type(e.get("category_type", ""))
-        if len(vd) >= 4 and c and ct:
-            cat_by_canton_by_year[vd[:4]][c][ct] += 1
+        if year and c and ct:
+            cat_by_canton_by_year[year][c][ct] += 1
 
     return {
         "total_laws": total,
@@ -276,6 +306,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         "by_category_type": dict(by_category_type.most_common()),
         "by_systematic_category": dict(by_systematic_category.most_common()),
         "by_global_category": dict(by_global_category.most_common()),
+        "year_semantics": "enactment",
         "by_year": dict(sorted(by_year.items())),
         "by_month": dict(sorted(by_month.items())),
         "by_year_scope": {y: dict(c) for y, c in sorted(by_year_scope.items())},
@@ -326,6 +357,73 @@ def generate_tags(entries: list[dict]) -> dict:
     }
 
 
+# chstat.ch 2003 reference table ("Concordats par domaine", data-theme 1842),
+# derived from the Institute of Federalism's database — frozen historical
+# reference for verification. Columns: etat, sante, educ, infra, eco, fin.
+CHSTAT_2003 = {
+    "ZH": [21, 8, 28, 27, 13, 30], "BE": [33, 14, 43, 5, 16, 29],
+    "LU": [17, 12, 19, 9, 11, 11], "UR": [17, 7, 15, 9, 9, 10],
+    "SZ": [17, 8, 31, 22, 14, 4], "OW": [19, 15, 26, 11, 9, 5],
+    "NW": [20, 14, 26, 11, 13, 2], "GL": [14, 9, 24, 11, 14, 11],
+    "ZG": [15, 5, 19, 4, 10, 15], "FR": [17, 10, 29, 6, 14, 16],
+    "SO": [31, 15, 23, 7, 22, 20], "BS": [34, 27, 36, 19, 11, 14],
+    "BL": [36, 22, 40, 19, 18, 24], "SH": [14, 9, 21, 6, 8, 11],
+    "AR": [11, 10, 27, 20, 13, 13], "AI": [15, 6, 20, 5, 8, 12],
+    "SG": [22, 23, 50, 49, 45, 29], "GR": [14, 7, 23, 3, 7, 13],
+    "AG": [22, 10, 28, 10, 16, 26], "TG": [18, 9, 38, 18, 13, 18],
+    "TI": [13, 3, 18, 2, 6, 2], "VD": [20, 7, 26, 10, 12, 23],
+    "VS": [14, 4, 19, 4, 7, 15], "NE": [21, 8, 31, 4, 12, 17],
+    "GE": [19, 4, 19, 3, 6, 8], "JU": [19, 14, 33, 3, 6, 9],
+}
+
+
+def generate_chstat_comparison(concordats_payload: dict) -> dict:
+    """Compare our concordats, ENACTED on or before 2003 and still in force,
+    against chstat.ch's 2003 table — the verification the version-aware
+    dates make possible."""
+    keys6 = ["etat", "sante", "educ", "infra", "eco", "fin"]
+    ours: dict[str, dict[str, int]] = {
+        c: {k: 0 for k in keys6 + ["autres", "total"]}
+        for c in concordats_payload["cantons"]
+    }
+    undated = 0
+    for year, per_canton in concordats_payload.get("by_year", {}).items():
+        if year == "unknown":
+            undated += sum(sum(r.values()) for r in per_canton.values())
+            continue
+        if year > "2003":
+            continue
+        for c, row in per_canton.items():
+            for k, n in row.items():
+                ours[c][k] += n
+                ours[c]["total"] += n
+
+    rows = {}
+    for c in sorted(CHSTAT_2003):
+        ch = CHSTAT_2003[c]
+        rows[c] = {
+            "chstat_2003": dict(zip(keys6, ch)) | {"total": sum(ch)},
+            "ours_enacted_until_2003": ours.get(c, {}),
+            "delta_total": ours.get(c, {}).get("total", 0) - sum(ch),
+        }
+    chstat_total = sum(sum(v) for v in CHSTAT_2003.values())
+    ours_total = sum(r["total"] for r in ours.values())
+    return {
+        "note": "Verification: our concordats ENACTED on or before 2003 and "
+                "still in force today, vs chstat.ch's 2003 table (data-theme "
+                "1842, Institute of Federalism / LexFind). Differences stem "
+                "from: concordats repealed since 2003 (absent from our "
+                "in-force collection), domain classification gaps ('autres'), "
+                "and undated laws. Year = original enactment date.",
+        "source_chstat": "https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine",
+        "chstat_total": chstat_total,
+        "ours_enacted_until_2003_total": ours_total,
+        "ours_all_time_total": concordats_payload["totals"]["total"],
+        "undated": undated,
+        "cantons": rows,
+    }
+
+
 def generate_harmonized_categories(entries: list[dict],
                                    repo_path: str | Path = ".") -> dict:
     """Aggregate ALL laws (federal + cantonal) on the harmonized taxonomy.
@@ -360,10 +458,12 @@ def generate_harmonized_categories(entries: list[dict],
 
     for e in deduped:
         if e["_scope"] == "cantonal":
-            code = _extract_identifier(str(e.get("global_category", "")))
+            gc, prov = effective_global_category(e)
+            code = _extract_identifier(gc)
             if code:
                 code_counts[code]["cantonal"] += 1
                 stats_counts["cantonal_classified"] += 1
+                stats_counts[f"cantonal_{prov}"] = stats_counts.get(f"cantonal_{prov}", 0) + 1
                 canton = str(e.get("canton", "")).upper()
                 ctype = canonical_category_type(e.get("category_type", "")) or "(untyped)"
                 for anc in _ancestors(code):
@@ -478,24 +578,34 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     table: dict[str, dict[str, int]] = {
         canton: {k: 0 for k in domain_keys} for canton in ALL_CANTON_CODES
     }
-    # Per-year breakdown for date-filtered views ("unknown" = no version_date)
+    # Per-year breakdowns: by_year = ENACTMENT year (laws are law+version
+    # pairs; a 1970 concordat amended in 2015 counts as 1970);
+    # by_version_year = current consolidated version's year (transparency).
     by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
         lambda: defaultdict(lambda: defaultdict(int)))
+    by_version_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))
     unclassified = 0
+    provenance: Counter = Counter()
     for e in concordats:
         canton = str(e.get("canton", "")).upper()
         if canton not in table:
             logger.warning("Concordat with unknown canton %r: %s", canton, e.get("_path"))
             continue
-        top_code = _extract_identifier(str(e.get("global_category", ""))).split(".")[0]
+        gc, prov = effective_global_category(e)
+        top_code = _extract_identifier(gc).split(".")[0]
         key = code_to_key.get(top_code)
         if key is None:
             key = "autres"
             unclassified += 1
+        else:
+            provenance[prov] += 1
         table[canton][key] += 1
-        vd = str(e.get("version_date", ""))
-        year = vd[:4] if len(vd) >= 4 else "unknown"
+        year = enactment_year(e) or "unknown"
         by_year[year][canton][key] += 1
+        vd = str(e.get("version_date", ""))
+        vyear = vd[:4] if len(vd) >= 4 else "unknown"
+        by_version_year[vyear][canton][key] += 1
 
     for row in table.values():
         row["total"] = sum(row.values())
@@ -513,9 +623,13 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         ],
         "cantons": table,
         "totals": totals,
+        "year_semantics": "enactment",
         "by_year": {y: {c: dict(d) for c, d in cantons.items()}
                     for y, cantons in sorted(by_year.items())},
+        "by_version_year": {y: {c: dict(d) for c, d in cantons.items()}
+                            for y, cantons in sorted(by_version_year.items())},
         "unclassified_in_autres": unclassified,
+        "domain_provenance": dict(provenance),
         "notes": [
             "\"Other\" includes civil law, criminal law and concordats without "
             "a legal domain in LexFind's public database (~28% unclassified at the source)",
@@ -805,10 +919,9 @@ def generate_yearly_canton_stats(
     data: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
 
     for e in deduped:
-        vd = str(e.get("version_date", ""))
-        if len(vd) < 4:
+        year = enactment_year(e)
+        if not year:
             continue
-        year = vd[:4]
         if e.get("_scope") == "cantonal" and e.get("canton"):
             entity = str(e["canton"]).upper()
         else:
@@ -873,6 +986,7 @@ def generate_yearly_canton_stats(
 
             result[year][entity] = {
                 "year": year,
+                "year_semantics": "enactment",
                 "entity": entity,
                 "total": len(laws),
                 "categorized": categorized,

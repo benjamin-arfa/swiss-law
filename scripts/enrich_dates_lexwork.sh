@@ -54,6 +54,11 @@ done
 NEW_COMMITS=$(( $(git rev-list --count HEAD) - COMMITS_BEFORE ))
 echo "=== Enrichment finished: ${NEW_COMMITS} commits ==="
 
+echo "Propagating authoritative dates to sibling cantons..."
+"${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --siblings 2>&1 \
+    || ERRORS="${ERRORS:+${ERRORS}|||}Sibling propagation failed"
+git add ch/ 2>/dev/null; git diff --cached --quiet || git commit -q -m "Sibling date propagation after LexWork pass"
+
 echo "Regenerating stats + indexes..."
 "${VENV}/bin/legalize-ch" stats --repo "$REPO_DIR" --site-repo "$SITE_DIR" --no-trees 2>&1 \
     || ERRORS="${ERRORS:+${ERRORS}|||}Stats generation failed"

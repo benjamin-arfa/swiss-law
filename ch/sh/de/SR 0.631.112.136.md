@@ -4,8 +4,10 @@ category_type: Staatsvertrag
 enactment_date: '1964-11-23'
 enactment_date_source: text
 global_category: 5.40.10 Grenzwacht
+is_active: false
 language: de
 source: LexFind
+status_source: lexfind_catalog
 systematic_category: 63 Zollwesen
 systematic_number: SR 0.631.112.136
 title: SR 0.631.112.136

@@ -5,8 +5,10 @@ enactment_date: '1950-11-04'
 enactment_date_source: text
 global_category_inferred: 1 Staat
 inference_source: canton_systematics
+is_active: false
 language: de
 source: LexFind
+status_source: lexfind_catalog
 systematic_category: 10 Verfassung
 systematic_number: SR 0.101
 title: SR 0.101

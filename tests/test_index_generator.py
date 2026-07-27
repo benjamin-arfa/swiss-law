@@ -176,3 +176,84 @@ def test_generate_laws_json_no_cantonal(sample_repo):
     laws = generate_laws_json(repo_path=str(sample_repo), lang="de")
     assert all(l["scope"] == "federal" for l in laws)
     assert len(laws) == 3
+
+
+def _law_md(canton: str, num: str, lang: str, title: str) -> str:
+    return (
+        "---\n"
+        f"canton: {canton.upper()}\n"
+        f"language: {lang}\n"
+        f"systematic_number: '{num}'\n"
+        f"title: {title}\n"
+        "---\n\n# Text\n"
+    )
+
+
+def test_empty_de_dir_falls_back_to_fr(sample_repo):
+    """GE-style canton: empty de/ dir must not mask the fr/ laws."""
+    (sample_repo / "ch" / "ge" / "de").mkdir(parents=True)  # empty
+    ge_fr = sample_repo / "ch" / "ge" / "fr"
+    ge_fr.mkdir(parents=True)
+    (ge_fr / "A 1 03.md").write_text(_law_md("ge", "A 1 03", "fr", "Constitution"),
+                                     encoding="utf-8")
+    laws = generate_laws_json(repo_path=str(sample_repo), lang="de")
+    ge = [l for l in laws if l.get("canton") == "ge"]
+    assert len(ge) == 1
+    assert ge[0]["path"] == "ch/ge/fr/A 1 03.md"
+    assert ge[0]["languages"] == ["fr"]
+
+
+def test_nested_systematic_numbers_found(sample_repo):
+    """GL-style nested paths (systematic numbers containing '/') are indexed."""
+    gl_nested = sample_repo / "ch" / "gl" / "de" / "III H"
+    gl_nested.mkdir(parents=True)
+    (gl_nested / "1.md").write_text(_law_md("gl", "III H/1", "de", "Steuergesetz"),
+                                    encoding="utf-8")
+    laws = generate_laws_json(repo_path=str(sample_repo), lang="de")
+    gl = [l for l in laws if l.get("canton") == "gl"]
+    assert len(gl) == 1
+    assert gl[0]["sr"] == "III H/1"
+    assert gl[0]["path"] == "ch/gl/de/III H/1.md"
+
+
+def test_federal_legacy_tree_scanned(sample_repo):
+    """Laws existing only in the legacy ch/{lang}/ tree must appear."""
+    legacy = sample_repo / "ch" / "de" / "211"
+    legacy.mkdir(parents=True)
+    (legacy / "211.413.1.md").write_text(
+        "---\nsr_number: '211.413.1'\nlanguage: de\ntitle: Legacy Law\n---\n\n# L\n",
+        encoding="utf-8")
+    laws = generate_laws_json(repo_path=str(sample_repo), lang="de")
+    legacy_laws = [l for l in laws if l["sr"] == "211.413.1"]
+    assert len(legacy_laws) == 1
+    assert legacy_laws[0]["path"] == "ch/de/211/211.413.1.md"
+
+
+def test_canonical_preferred_over_legacy(sample_repo):
+    """Same (law, lang) in both trees: canonical ch/{prefix}/{lang}/ wins."""
+    legacy = sample_repo / "ch" / "de"
+    legacy.mkdir(parents=True, exist_ok=True)
+    (legacy / "999.md").write_text(
+        "---\nsr_number: '999'\nlanguage: de\ntitle: Legacy Copy\n---\n\n# L\n",
+        encoding="utf-8")
+    canonical = sample_repo / "ch" / "999" / "de"
+    canonical.mkdir(parents=True)
+    (canonical / "999.md").write_text(
+        "---\nsr_number: '999'\nlanguage: de\ntitle: Canonical Copy\n---\n\n# C\n",
+        encoding="utf-8")
+    laws = generate_laws_json(repo_path=str(sample_repo), lang="de")
+    entry = [l for l in laws if l["sr"] == "999"][0]
+    assert entry["path"] == "ch/999/de/999.md"
+    assert entry["title"] == "Canonical Copy"
+
+
+def test_languages_array_union(sample_repo_with_cantonal):
+    """languages lists every available language version of a law."""
+    bs_fr = sample_repo_with_cantonal / "ch" / "bs" / "fr"
+    bs_fr.mkdir(parents=True)
+    (bs_fr / "300.100.md").write_text(_law_md("bs", "300.100", "fr", "Loi santé"),
+                                      encoding="utf-8")
+    laws = generate_laws_json(repo_path=str(sample_repo_with_cantonal), lang="de")
+    bs = [l for l in laws if l.get("canton") == "bs"][0]
+    assert bs["languages"] == ["de", "fr"]
+    assert bs["path"] == "ch/bs/de/300.100.md"  # de preferred

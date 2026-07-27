@@ -527,6 +527,12 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_stats_json(conc, site_path / "api" / "v1" / "stats" / "concordats_by_domain.json")
     click.echo(f"  {conc['total_concordats']} concordats across {len(conc['cantons'])} cantons")
 
+    click.echo("Generating per-entity law index...")
+    from .law_index import generate_law_index, write_law_index
+    law_idx = generate_law_index(entries)
+    write_law_index(law_idx, site_path / "api" / "v1" / "laws")
+    click.echo(f"  {sum(v['laws'] for v in law_idx.values())} laws across {len(law_idx)} entities")
+
     if not no_trees:
         click.echo("Fetching category trees from LexFind...")
         fetch_and_write_trees(repo_path / "docs" / "trees", rate_limit=rate_limit)

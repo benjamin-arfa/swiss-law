@@ -4,13 +4,14 @@ Every Swiss federal and cantonal law in Markdown, with a full git history of eve
 
 ## At a glance
 
-| Scope | Laws | Languages |
-|-------|------|-----------|
-| Federal (SR) | 11,151 | DE, FR, IT |
-| Cantonal (26 cantons) | 26,507 | DE, FR, IT |
-| **Total** | **62,686** | |
+| Scope | Unique laws | Languages |
+|-------|-------------|-----------|
+| Federal (SR) | 9,038 | DE, FR, IT |
+| Cantonal (26 cantons) | 21,000+ | DE, FR, IT |
+| **Total** | **30,000+** | |
 
-59,600+ git commits. Updated weekly.
+65,000+ language-version files, 59,600+ git commits. Updated weekly.
+(Counts are deduplicated: one law counted once regardless of language versions — see `stats.json`.)
 
 ## How it works
 
@@ -224,11 +225,30 @@ legalize-ch backfill-lexfind --dry-run
 # Full run — hours; run detached (one git commit per canton)
 mkdir -p data/logs
 nohup ./scripts/backfill_lexfind.sh 1.5 > data/logs/backfill_$(date +%Y%m%d).out 2>&1 &
-
-# Afterwards: regenerate + publish
-legalize-ch stats --repo . --site-repo ../swiss-law-as-source --no-trees
-legalize-ch index --repo . --site-repo ../swiss-law-as-source
 ```
+
+On completion the script automatically regenerates stats + indexes,
+deploys the website, pushes the law repo, and sends a Telegram summary
+(`mode: backfill`). Pass `--no-publish` as the first argument to skip
+that chain and publish manually via `/publish-site`.
+
+### Full rebuild from scratch
+
+`scripts/full_rebuild.sh` is the one-shot "get all the data" routine:
+bootstrap (federal all-versions + 26 cantons via the LexFind catalog,
+concordats included) → ZH backfill (its dedicated fetcher's catalog is
+capped) → category enrichment → stats with trees → search index →
+cross-refs + feeds → site deploy + push + Telegram.
+
+```bash
+mkdir -p data/logs
+nohup ./scripts/full_rebuild.sh > data/logs/full_rebuild_$(date +%Y%m%d).out 2>&1 &
+```
+
+**Runtime: multiple days** at the default 1.5s rate limit. Every step is
+resumable — re-running continues where it stopped. If only the gitignored
+`data/` state files were lost, run `legalize-ch seed-state` instead (see
+below).
 
 ### Pipeline state repair
 

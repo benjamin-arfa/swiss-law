@@ -20,14 +20,9 @@ If `$ARGUMENTS` contains canton codes or `--limit N`, forward them to the comman
 3. **Monitor / resume**
    `tail -f data/logs/backfill_*.out`. Safe to interrupt any time; re-running skips files that already exist and sweeps uncommitted leftovers into the next canton commit.
 
-4. **Post-steps (after the run finishes)**
-   ```
-   .venv/bin/legalize-ch stats --repo . --site-repo ../swiss-law-as-source --no-trees
-   .venv/bin/legalize-ch index --repo . --site-repo ../swiss-law-as-source
-   ```
-   Then publish via `/publish-site`. The concordats-by-domain table and all coverage stats update automatically.
+4. **Post-steps — automatic.** On completion the script regenerates stats + search index + law index, deploys the site repo, pushes the law repo, and sends a Telegram notification (`mode: backfill`). Pass `--no-publish` as the FIRST argument to skip this chain (then publish manually via `/publish-site`).
 
-5. **Report summary**: per-canton fetched/failed counts, total new laws, and remind that the law repo needs a `git push` (backfill commits locally only).
+5. **Report summary**: per-canton fetched/failed counts, total new laws, push/deploy status from the log tail.
 
 ## Caveats
 - ZH: backfilled laws come from LexFind PDFs and won't receive version updates from the capped zh.ch catalog until the ZH fetcher is extended.

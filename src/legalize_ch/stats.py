@@ -3,8 +3,10 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
+from urllib.parse import quote
 
 import yaml
 
@@ -37,24 +39,46 @@ CONCORDAT_DOMAINS = [
 ]
 
 
-def _parse_frontmatter(path: Path) -> dict | None:
+def _parse_frontmatter(path: Path) -> tuple[dict | None, str]:
+    """Parse a law file. Returns (frontmatter, body) — (None, "") if invalid."""
     try:
         text = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError):
-        return None
+        return None, ""
     if not text.startswith("---"):
-        return None
+        return None, ""
     end = text.find("\n---", 3)
     if end == -1:
-        return None
+        return None, ""
     try:
-        return yaml.safe_load(text[4:end]) or None
+        fm = yaml.safe_load(text[4:end]) or None
     except yaml.YAMLError:
-        return None
+        return None, ""
+    return fm, text[end + 4:]
+
+
+_ARTICLE_RE = re.compile(
+    r"(?:Art\.|Artikel\b|Article\b|Articolo\b)\s*(\d+[a-z]{0,3}\b|premier\b)"
+    r"|^\s*§+\s*(\d+[a-z]{0,3})\b",
+    re.MULTILINE,
+)
+
+
+def count_articles(body: str) -> int:
+    """Heuristic article count: number of distinct article identifiers
+    referenced as 'Art. N' / 'Article N|premier' / 'Articolo N' or a
+    line-leading '§ N'.  Counting distinct IDs (not occurrences) keeps
+    run-on federal texts and repeated cross-references from inflating it.
+    """
+    return len({m.group(1) or m.group(2) for m in _ARTICLE_RE.finditer(body)})
 
 
 def collect_all_frontmatter(repo_path: str | Path = ".") -> list[dict]:
-    """Scan all .md files under ch/ and return their frontmatter dicts."""
+    """Scan all .md files under ch/ and return their frontmatter dicts.
+
+    Each dict also carries ``_scope``, ``_path``, and body metrics
+    ``_body_chars`` / ``_body_articles`` (used by the law index).
+    """
     ch_dir = Path(repo_path) / "ch"
     if not ch_dir.exists():
         return []
@@ -63,15 +87,32 @@ def collect_all_frontmatter(repo_path: str | Path = ".") -> list[dict]:
     for md in sorted(ch_dir.rglob("*.md")):
         if md.name in ("INDEX.md", "README.md"):
             continue
-        fm = _parse_frontmatter(md)
+        fm, body = _parse_frontmatter(md)
         if fm and (fm.get("sr_number") or fm.get("systematic_number")):
             scope = "cantonal" if fm.get("canton") else "federal"
             fm["_scope"] = scope
             fm["_path"] = str(md.relative_to(repo_path))
+            fm["_body_chars"] = len(body)
+            fm["_body_articles"] = count_articles(body)
             results.append(fm)
 
     logger.info("Scanned %d law files", len(results))
     return results
+
+
+def _group_by_identity(entries: list[dict]) -> dict[str, list[dict]]:
+    """Group file-level entries by unique law identity.
+
+    Key: ``federal/{sr_number}`` or ``{canton}/{systematic_number}``.
+    """
+    groups: dict[str, list[dict]] = defaultdict(list)
+    for e in entries:
+        if e["_scope"] == "federal":
+            key = f"federal/{e.get('sr_number', '')}"
+        else:
+            key = f"{e.get('canton', '')}/{e.get('systematic_number', '')}"
+        groups[key].append(e)
+    return groups
 
 
 def _deduplicate(entries: list[dict]) -> list[dict]:
@@ -81,13 +122,7 @@ def _deduplicate(entries: list[dict]) -> list[dict]:
     canton/systematic_number for cantonal), keeps the German version
     as representative, falling back to the first available.
     """
-    groups: dict[str, list[dict]] = defaultdict(list)
-    for e in entries:
-        if e["_scope"] == "federal":
-            key = f"federal/{e.get('sr_number', '')}"
-        else:
-            key = f"{e.get('canton', '')}/{e.get('systematic_number', '')}"
-        groups[key].append(e)
+    groups = _group_by_identity(entries)
 
     result = []
     for group in groups.values():
@@ -437,7 +472,7 @@ def _clean_tree(raw: dict) -> list[dict]:
     return [c for c in (_build(cid) for cid in root_children) if c]
 
 
-def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-source/swiss-law-as-source.github.io") -> dict[int, dict]:
+def generate_publications(entries: list[dict], repo_name: str = "benjamin-arfa/swiss-law") -> dict[int, dict]:
     """Generate per-year publication JSON files from frontmatter entries.
 
     Each law appears once per year (deduplicated across languages).
@@ -473,11 +508,13 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
         lang = rep.get("language", "de")
         languages = sorted({e.get("language", "unknown") for e in group})
 
-        if scope == "cantonal" and canton:
-            path = f"ch/{canton.lower()}/{lang}/{sr}.md"
-        else:
-            prefix = sr.split(".")[0]
-            path = f"ch/{prefix}/{lang}/{sr}.md"
+        path = rep.get("_path", "")
+        if not path:
+            if scope == "cantonal" and canton:
+                path = f"ch/{canton.lower()}/{lang}/{sr}.md"
+            else:
+                prefix = sr.split(".")[0]
+                path = f"ch/{prefix}/{lang}/{sr}.md"
 
         rec = {
             "date": str(rep.get("version_date", "")),
@@ -487,7 +524,7 @@ def generate_publications(entries: list[dict], repo_name: str = "swiss-law-as-so
             "languages": languages,
             "canton": canton,
             "path": path,
-            "url_main": f"https://raw.githubusercontent.com/{repo_name}/main/{path}",
+            "url_main": f"https://raw.githubusercontent.com/{repo_name}/main/{quote(path)}",
         }
         if rep.get("systematic_category"):
             rec["systematic_category"] = rep["systematic_category"]

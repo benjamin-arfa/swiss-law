@@ -87,67 +87,116 @@ def _is_canton_dir(name: str) -> bool:
     return name in CANTON_NAMES
 
 
-def _collect_federal_entries(ch_dir: Path, lang: str) -> dict[str, str]:
-    """Collect federal law entries (sr_number -> title)."""
-    entries: dict[str, str] = {}
+_TREE_LANGS = ("de", "fr", "it")
+
+
+def _lang_preference(lang: str) -> list[str]:
+    """Preferred-language order: requested language first, then de/fr/it."""
+    return [lang] + [l for l in _TREE_LANGS if l != lang]
+
+
+def _collect_federal_entries(ch_dir: Path, lang: str) -> dict[str, dict]:
+    """Collect federal law entries: sr_number -> {title, path, languages}.
+
+    Scans the canonical tree ``ch/{prefix}/{lang}/*.md`` AND the legacy tree
+    ``ch/{de,fr,it}/**/*.md`` (some laws exist only there).  Per law, the
+    requested language is preferred (de/fr/it fallback), and the canonical
+    tree wins over the legacy tree for the same (law, language).
+    """
+    # candidates[sr][lang] = (path, title, is_canonical)
+    candidates: dict[str, dict[str, tuple[str, str, bool]]] = {}
+
+    def _add(md_file: Path, file_lang: str, canonical: bool):
+        fm = _extract_frontmatter(md_file)
+        if not fm or not fm.get("sr_number"):
+            return
+        sr = fm["sr_number"]
+        file_lang = fm.get("language", file_lang) or file_lang
+        title = fm.get("title", "(kein Titel)")
+        rel = str(md_file.relative_to(ch_dir.parent))
+        existing = candidates.setdefault(sr, {}).get(file_lang)
+        if existing and existing[2] and not canonical:
+            return  # canonical already present
+        if existing is None or (canonical and not existing[2]):
+            candidates[sr][file_lang] = (rel, title, canonical)
 
     for subdir in sorted(ch_dir.iterdir()):
-        if not subdir.is_dir():
+        if not subdir.is_dir() or _is_canton_dir(subdir.name):
             continue
-        # Federal directories are numeric (0-9xx)
-        if _is_canton_dir(subdir.name):
+        if subdir.name in _TREE_LANGS or subdir.name == "en":
+            # Legacy tree ch/{lang}/... (flat files and prefix subdirs)
+            if subdir.name != "en":
+                for md_file in sorted(subdir.rglob("*.md")):
+                    _add(md_file, subdir.name, canonical=False)
             continue
-        # Look for language-specific files
-        lang_dir = subdir / lang
-        if not lang_dir.exists():
-            continue
-        for md_file in sorted(lang_dir.glob("*.md")):
-            fm = _extract_frontmatter(md_file)
-            if fm and fm.get("sr_number"):
-                sr = fm["sr_number"]
-                title = fm.get("title", "(kein Titel)")
-                if sr not in entries:
-                    entries[sr] = title
+        # Canonical tree ch/{prefix}/{lang}/
+        for tree_lang in _TREE_LANGS:
+            lang_dir = subdir / tree_lang
+            if not lang_dir.is_dir():
+                continue
+            for md_file in sorted(lang_dir.rglob("*.md")):
+                _add(md_file, tree_lang, canonical=True)
+
+    entries: dict[str, dict] = {}
+    for sr, per_lang in candidates.items():
+        for pick in _lang_preference(lang):
+            if pick in per_lang:
+                path, title, _ = per_lang[pick]
+                entries[sr] = {
+                    "title": title,
+                    "path": path,
+                    "languages": sorted(per_lang.keys()),
+                }
+                break
 
     return entries
 
 
-def _collect_cantonal_entries(ch_dir: Path, lang: str = "de") -> dict[str, list[tuple[str, str]]]:
+def _collect_cantonal_entries(ch_dir: Path, lang: str = "de") -> dict[str, list[dict]]:
     """Collect cantonal law entries grouped by canton.
 
-    Returns:
-        dict: canton_code -> list of (systematic_number, title)
+    Returns canton_code -> list of {id, title, path, languages}.  Uses
+    rglob so nested systematic numbers (e.g. GL ``III H/1``) are found,
+    and treats a language as available only when it has actual files —
+    empty ``de/`` dirs (GE, JU, NE, TI, VD) no longer mask fr/it laws.
     """
-    cantonal: dict[str, list[tuple[str, str]]] = {}
+    cantonal: dict[str, list[dict]] = {}
 
     for subdir in sorted(ch_dir.iterdir()):
-        if not subdir.is_dir():
+        if not subdir.is_dir() or not _is_canton_dir(subdir.name):
             continue
-        if not _is_canton_dir(subdir.name):
-            continue
-
         canton = subdir.name
-        # Try the specified language first, fall back to de, then any available
-        lang_dir = subdir / lang
-        if not lang_dir.exists():
-            lang_dir = subdir / "de"
-        if not lang_dir.exists():
-            # Try any language dir that has files
-            for alt_lang in ("fr", "it"):
-                alt_dir = subdir / alt_lang
-                if alt_dir.exists() and any(alt_dir.glob("*.md")):
-                    lang_dir = alt_dir
-                    break
-            else:
+
+        # candidates[sys_num][lang] = (path, title)
+        candidates: dict[str, dict[str, tuple[str, str]]] = {}
+        for tree_lang in _TREE_LANGS + ("rm",):
+            lang_dir = subdir / tree_lang
+            if not lang_dir.is_dir():
                 continue
+            for md_file in sorted(lang_dir.rglob("*.md")):
+                fm = _extract_frontmatter(md_file)
+                if not fm:
+                    continue
+                sys_num = fm.get("systematic_number") or str(
+                    md_file.relative_to(lang_dir))[:-3]
+                title = fm.get("title", "(kein Titel)")
+                rel = str(md_file.relative_to(ch_dir.parent))
+                candidates.setdefault(sys_num, {}).setdefault(
+                    tree_lang, (rel, title))
 
         entries = []
-        for md_file in sorted(lang_dir.glob("*.md")):
-            fm = _extract_frontmatter(md_file)
-            if fm:
-                sys_num = fm.get("systematic_number", md_file.stem)
-                title = fm.get("title", "(kein Titel)")
-                entries.append((sys_num, title))
+        for sys_num in sorted(candidates):
+            per_lang = candidates[sys_num]
+            for pick in _lang_preference(lang) + ["rm"]:
+                if pick in per_lang:
+                    path, title = per_lang[pick]
+                    entries.append({
+                        "id": sys_num,
+                        "title": title,
+                        "path": path,
+                        "languages": sorted(per_lang.keys()),
+                    })
+                    break
 
         if entries:
             cantonal[canton] = entries
@@ -193,12 +242,12 @@ def generate_index(repo_path: str = ".", lang: str = "de") -> str:
     lines.append("")
 
     # Group by top-level category
-    categorized: dict[str, list[tuple[str, str]]] = {}
-    for sr, title in sorted(entries.items(), key=lambda x: _sr_sort_key(x[0])):
+    categorized: dict[str, list[tuple[str, dict]]] = {}
+    for sr, entry in sorted(entries.items(), key=lambda x: _sr_sort_key(x[0])):
         cat = sr.split(".")[0] if "." in sr else sr
         top = cat.split(".")[0]
         top_cat = top[0] if top else "0"
-        categorized.setdefault(top_cat, []).append((sr, title))
+        categorized.setdefault(top_cat, []).append((sr, entry))
 
     for cat_num in sorted(categorized.keys()):
         cat_name = SR_CATEGORIES.get(cat_num, f"Kategorie {cat_num}")
@@ -210,12 +259,11 @@ def generate_index(repo_path: str = ".", lang: str = "de") -> str:
         lines.append("| SR Number | Title |")
         lines.append("|-----------|-------|")
 
-        for sr, title in cat_entries:
-            sr_prefix = sr.split(".")[0]
-            link = f"ch/{sr_prefix}/{lang}/{sr}.md"
+        for sr, entry in cat_entries:
+            title = entry["title"]
             display_title = title if len(title) <= 120 else title[:117] + "..."
             display_title = display_title.replace("|", "\\|")
-            lines.append(f"| [{sr}]({link}) | {display_title} |")
+            lines.append(f"| [{sr}]({entry['path']}) | {display_title} |")
 
         lines.append("")
 
@@ -238,12 +286,11 @@ def generate_index(repo_path: str = ".", lang: str = "de") -> str:
             lines.append("| Systematic Number | Title |")
             lines.append("|-------------------|-------|")
 
-            for sys_num, title in canton_entries:
-                # Determine which lang dir was actually used
-                link = f"ch/{canton}/{lang}/{sys_num}.md"
+            for entry in canton_entries:
+                title = entry["title"]
                 display_title = title if len(title) <= 120 else title[:117] + "..."
                 display_title = display_title.replace("|", "\\|")
-                lines.append(f"| [{sys_num}]({link}) | {display_title} |")
+                lines.append(f"| [{entry['id']}]({entry['path']}) | {display_title} |")
 
             lines.append("")
 
@@ -271,30 +318,32 @@ def generate_laws_json(repo_path: str = ".", lang: str = "de") -> list[dict]:
 
     # Federal
     entries = _collect_federal_entries(ch_dir, lang)
-    for sr, title in sorted(entries.items(), key=lambda x: _sr_sort_key(x[0])):
+    for sr, entry in sorted(entries.items(), key=lambda x: _sr_sort_key(x[0])):
         sr_prefix = sr.split(".")[0]
         top_cat = sr_prefix[0] if sr_prefix else "0"
         cat_name = SR_CATEGORIES.get(top_cat, f"Kategorie {top_cat}")
         laws.append({
             "sr": sr,
-            "title": title,
-            "path": f"ch/{sr_prefix}/{lang}/{sr}.md",
+            "title": entry["title"],
+            "path": entry["path"],
             "cat": f"{top_cat} – {cat_name}",
             "scope": "federal",
+            "languages": entry["languages"],
         })
 
     # Cantonal
     cantonal = _collect_cantonal_entries(ch_dir, lang)
     for canton in sorted(cantonal.keys()):
         canton_name = CANTON_NAMES.get(canton, canton.upper())
-        for sys_num, title in cantonal[canton]:
+        for entry in cantonal[canton]:
             laws.append({
-                "sr": sys_num,
-                "title": title,
-                "path": f"ch/{canton}/{lang}/{sys_num}.md",
+                "sr": entry["id"],
+                "title": entry["title"],
+                "path": entry["path"],
                 "cat": f"{canton.upper()} – {canton_name}",
                 "scope": "cantonal",
                 "canton": canton,
+                "languages": entry["languages"],
             })
 
     return laws

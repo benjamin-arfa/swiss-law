@@ -65,3 +65,61 @@ class TestConcordatInvariance:
         names = ["Interkantonale Vereinbarung", "Accord intercantonal",
                  "Accordo intercantonale"]
         assert {canonical_category_type(n) for n in names} == {"Interkantonale Vereinbarung"}
+
+
+from legalize_ch.categories import federal_fallback_code
+from legalize_ch.stats import generate_harmonized_categories
+
+
+class TestFederalFallbackCode:
+    def test_international_law_follows_suffix(self):
+        assert federal_fallback_code("0.142.113.672") == "1"
+        assert federal_fallback_code("0.946.31") == "9"
+
+    def test_domestic_uses_first_digit(self):
+        assert federal_fallback_code("220") == "2"
+        assert federal_fallback_code("831.10") == "8"
+
+    def test_unparseable_empty(self):
+        assert federal_fallback_code("") == ""
+        assert federal_fallback_code("X.1") == ""
+
+
+class TestGenerateHarmonizedCategories:
+    def _entries(self):
+        return [
+            {"_scope": "federal", "sr_number": "101", "language": "de",
+             "_path": "ch/1/de/101.md"},
+            {"_scope": "federal", "sr_number": "999.99", "language": "de",
+             "_path": "ch/999/de/999.99.md"},  # not in mapping -> fallback 9
+            {"_scope": "cantonal", "canton": "GR", "systematic_number": "1.1",
+             "language": "de", "_path": "ch/gr/de/1.1.md",
+             "global_category": "1.10.10 Verfassung"},
+        ]
+
+    def test_tree_counts_and_provenance(self, tmp_path):
+        import json
+        trees = tmp_path / "docs" / "trees"
+        trees.mkdir(parents=True)
+        tree = [{"id": 1, "identifier": "1", "title": "Staat", "children": [
+                    {"id": 2, "identifier": "1.10", "title": "Grundlagen", "children": [
+                        {"id": 3, "identifier": "1.10.10", "title": "Verfassung"}]}]},
+                {"id": 9, "identifier": "9", "title": "Wirtschaft"}]
+        (trees / "global.json").write_text(json.dumps(tree))
+        (tmp_path / "docs").joinpath("federal_global_categories.json").write_text(
+            json.dumps({"101": "1.10.10 Verfassung"}))
+
+        result = generate_harmonized_categories(self._entries(), tmp_path)
+
+        top = {n["identifier"]: n for n in result["top_level"]}
+        # SR 101 (lexfind-mapped) + GR law both roll up under "1"
+        assert top["1"]["total"] == 2
+        assert top["1"]["federal"] == 1 and top["1"]["cantonal"] == 1
+        # 999.99 fell back to top-level 9
+        assert top["9"]["federal"] == 1
+        assert result["counts"]["federal_lexfind"] == 1
+        assert result["counts"]["federal_fallback"] == 1
+        assert result["counts"]["cantonal_classified"] == 1
+        # deep node carries both scopes
+        node = result["tree"][0]["children"][0]["children"][0]
+        assert node["identifier"] == "1.10.10" and node["total"] == 2

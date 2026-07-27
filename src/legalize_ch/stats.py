@@ -326,6 +326,108 @@ def generate_tags(entries: list[dict]) -> dict:
     }
 
 
+def generate_harmonized_categories(entries: list[dict],
+                                   repo_path: str | Path = ".") -> dict:
+    """Aggregate ALL laws (federal + cantonal) on the harmonized taxonomy.
+
+    The taxonomy is LexFind's global systematics ("domaine juridique") —
+    the same tree for the Confederation and all 26 cantons.  Cantonal laws
+    carry ``global_category`` directly; federal laws resolve via the
+    fetched SR mapping (docs/federal_global_categories.json), falling back
+    to the SR top-level prefix (which mirrors the global tree by design).
+    """
+    from .categories import federal_fallback_code, load_federal_global_categories
+
+    repo = Path(repo_path)
+    deduped = _deduplicate(entries)
+    fed_map = load_federal_global_categories(repo)
+
+    code_counts: dict[str, dict[str, int]] = defaultdict(lambda: {"federal": 0, "cantonal": 0})
+    stats_counts = {"federal_lexfind": 0, "federal_fallback": 0,
+                    "federal_unmapped": 0, "cantonal_classified": 0,
+                    "cantonal_unclassified": 0}
+
+    for e in deduped:
+        if e["_scope"] == "cantonal":
+            code = _extract_identifier(str(e.get("global_category", "")))
+            if code:
+                code_counts[code]["cantonal"] += 1
+                stats_counts["cantonal_classified"] += 1
+            else:
+                stats_counts["cantonal_unclassified"] += 1
+        else:
+            sr = str(e.get("sr_number", ""))
+            label = fed_map.get(sr, "")
+            code = _extract_identifier(label)
+            if code:
+                stats_counts["federal_lexfind"] += 1
+            else:
+                code = federal_fallback_code(sr)
+                if code:
+                    stats_counts["federal_fallback"] += 1
+                else:
+                    stats_counts["federal_unmapped"] += 1
+                    continue
+            code_counts[code]["federal"] += 1
+
+    # Annotate the multilingual global tree with rolled-up counts
+    trees_dir = repo / "docs" / "trees"
+    from .categories import build_global_title_map
+    titles = {lang: build_global_title_map(trees_dir, lang) for lang in ("de", "fr", "it")}
+    global_tree = _load_tree(trees_dir / "global.json")
+    seen_codes: set[str] = set()
+
+    def _annotate(nodes: list[dict]) -> list[dict]:
+        result = []
+        for n in nodes:
+            ident = str(n.get("identifier", ""))
+            own = code_counts.get(ident, {"federal": 0, "cantonal": 0})
+            if ident:
+                seen_codes.add(ident)
+            children = _annotate(n.get("children", []))
+            federal = own["federal"] + sum(c["federal"] for c in children)
+            cant = own["cantonal"] + sum(c["cantonal"] for c in children)
+            if federal + cant == 0:
+                continue
+            node = {
+                "identifier": ident,
+                "title": {lang: m.get(ident, "") for lang, m in titles.items()
+                          if m.get(ident)},
+                "total": federal + cant,
+                "federal": federal,
+                "cantonal": cant,
+                "own": own["federal"] + own["cantonal"],
+            }
+            if children:
+                node["children"] = children
+            result.append(node)
+        return result
+
+    tree = _annotate(global_tree)
+    orphans = {c: v for c, v in code_counts.items() if c not in seen_codes}
+    if orphans:
+        logger.warning("Harmonized categories: %d codes not in the global tree "
+                       "(%d laws)", len(orphans),
+                       sum(v["federal"] + v["cantonal"] for v in orphans.values()))
+
+    top_level = [
+        {"identifier": n["identifier"], "title": n["title"],
+         "total": n["total"], "federal": n["federal"], "cantonal": n["cantonal"]}
+        for n in tree
+    ]
+
+    return {
+        "note": "Harmonized taxonomy: LexFind global systematics ('domaine "
+                "juridique') covering federal AND cantonal law. Labels per "
+                "language in /api/v1/categories/global.json. Federal laws "
+                "without a LexFind assignment fall back to their SR "
+                "top-level prefix.",
+        "counts": stats_counts,
+        "top_level": top_level,
+        "tree": tree,
+    }
+
+
 def generate_concordats_by_domain(entries: list[dict]) -> dict:
     """Tabulate intercantonal agreements (concordats) per canton per domain.
 
@@ -881,6 +983,14 @@ def fetch_and_write_trees(output_dir: str | Path = "docs/trees", rate_limit: flo
             tree = _clean_tree(ch_raw)
             (out / "ch.json").write_text(json.dumps(tree, indent=2, ensure_ascii=False))
             logger.info("Wrote CH (federal) tree (%d top-level nodes)", len(tree))
+
+    # Federal SR → global-category mapping (harmonized taxonomy)
+    from .categories import fetch_federal_global_categories
+    logger.info("Fetching federal global-category mapping...")
+    try:
+        fetch_federal_global_categories(fetcher, Path(output_dir).parent.parent)
+    except Exception:
+        logger.exception("Federal global-category fetch failed (continuing)")
 
     # Per-canton trees
     for canton in ALL_CANTONS:

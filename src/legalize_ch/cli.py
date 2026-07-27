@@ -504,6 +504,20 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
 
     click.echo("Generating stats...")
     s = generate_stats(repo_path)
+
+    click.echo("Generating harmonized categories (federal + cantonal)...")
+    from .stats import generate_harmonized_categories
+    harm = generate_harmonized_categories(entries, repo_path)
+    write_stats_json(harm, site_path / "api" / "v1" / "stats" / "harmonized_categories.json")
+    s["by_harmonized_domain"] = {
+        f"{n['identifier']} {n['title'].get('de', '')}".strip(): {
+            "total": n["total"], "federal": n["federal"], "cantonal": n["cantonal"]}
+        for n in harm["top_level"]
+    }
+    click.echo(f"  {len(harm['top_level'])} top-level domains, "
+               f"federal mapped: {harm['counts']['federal_lexfind']} lexfind "
+               f"+ {harm['counts']['federal_fallback']} fallback")
+
     write_stats_json(s, site_path / "stats.json")
     click.echo(f"  stats.json: {s['total_laws']} laws ({s['federal_laws']} federal, {s['cantonal_laws']} cantonal)")
 

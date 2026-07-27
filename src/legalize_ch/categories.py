@@ -114,6 +114,79 @@ def canonical_systematic_category(canton: str, value: str,
     return f"{canton.upper()} {body}"
 
 
+FEDERAL_GLOBAL_CATEGORIES_FILE = "docs/federal_global_categories.json"
+
+
+def fetch_federal_global_categories(fetcher, repo_path: str | Path = ".") -> dict[str, str]:
+    """Fetch the SR → global-category mapping for federal law from LexFind.
+
+    LexFind classifies the Confederation (entity CH) in the same global
+    "domaine juridique" tree as the cantons, which makes it the single
+    harmonized taxonomy across federal and cantonal law.  Queries the
+    global tree directly with the CH entity filter (the CH entity's own
+    tree walk misses laws attached to non-leaf nodes, e.g. SR 101).
+    Writes ``docs/federal_global_categories.json`` ({sr_number: "code title"}).
+    """
+    from .cantonal import LEXFIND_API, _GLOBAL_SYSTEMATICS_BATCH
+
+    entity_id = fetcher._lexfind_entity_id("ch", "de")
+    if entity_id is None:
+        raise RuntimeError("LexFind CH entity not found")
+
+    # All node ids, not just leaves — laws can be attached to internal
+    # nodes too (e.g. SR 220 Obligationenrecht).
+    gtree = fetcher._get_json(f"{LEXFIND_API}/de/global/systematics")
+    if not isinstance(gtree, dict):
+        raise RuntimeError("LexFind global systematics unavailable")
+    node_ids = sorted(int(k) for k in gtree if k)
+
+    mapping: dict[str, str] = {}
+    for i in range(0, len(node_ids), _GLOBAL_SYSTEMATICS_BATCH):
+        batch = node_ids[i:i + _GLOBAL_SYSTEMATICS_BATCH]
+        params = "&".join(f"tols_for_systematics[]={lid}" for lid in batch)
+        url = (f"{LEXFIND_API}/de/global/systematics"
+               f"?active_only=false&entity_filter[]={entity_id}&{params}")
+        data = fetcher._get_json(url)
+        if not isinstance(data, dict):
+            continue
+        for k, v in data.items():
+            if not k:
+                continue
+            label = f"{v.get('identifier', '')} {v.get('title', '')}".strip()
+            for tol in v.get("tols", []):
+                sr = str(tol.get("systematic_number", "")).strip()
+                if sr and sr not in mapping:
+                    mapping[sr] = label
+
+    out = Path(repo_path) / FEDERAL_GLOBAL_CATEGORIES_FILE
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(mapping, indent=1, ensure_ascii=False, sort_keys=True),
+                   encoding="utf-8")
+    logger.info("Wrote federal global-category mapping: %d SRs classified", len(mapping))
+    return mapping
+
+
+def load_federal_global_categories(repo_path: str | Path = ".") -> dict[str, str]:
+    path = Path(repo_path) / FEDERAL_GLOBAL_CATEGORIES_FILE
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def federal_fallback_code(sr: str) -> str:
+    """Map an SR number to a global-tree TOP-LEVEL code when LexFind has no
+    assignment.  The SR top levels 1-9 mirror the global tree by design;
+    international law (SR 0.X…) follows the domestic scheme after the dot.
+    """
+    sr = str(sr).strip()
+    if sr.startswith("0.") and len(sr) > 2 and sr[2].isdigit():
+        return sr[2]
+    return sr[0] if sr[:1].isdigit() and sr[0] != "0" else ""
+
+
 # ─── Categories API generators ────────────────────────────────────────────────
 
 def generate_categories_api(trees_dir: str | Path, output_dir: str | Path):

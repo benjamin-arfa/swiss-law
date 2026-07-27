@@ -277,6 +277,8 @@ crontab -l | grep weekly_update || \
 | `enrich-categories` | Back-fill LexFind category metadata into cantonal files |
 | `backfill-lexfind` | Import laws missing locally from LexFind (all 26 cantons, all types, add-only, resumable) |
 | `coverage` | Audit completeness vs LexFind/Fedlex catalogs, per canton × law type |
+| `enrich-dates` | Back-fill enactment dates + version lists (laws are law+version pairs) |
+| `enrich-domains` | Infer harmonized domains for unclassified laws (provenance-flagged) |
 | `seed-state` | Rebuild lost pipeline state files from existing law files |
 | `cantonal` | Fetch a single cantonal law |
 | `cantonal-list` | List all cantons and their data sources |

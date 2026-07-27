@@ -8,7 +8,12 @@ Back-fill enactment dates and version-date lists — laws are (law, version) pai
    ```
    Parses "vom/du/del D. Month YYYY" from stored law texts (~93% hit rate) and derives federal version histories from git commits. Idempotent, fill-missing-only.
 
-2. **LexWork API pass (authoritative; ~5-6 h for all 14 cantons — run detached):**
+2. **LexWork API pass (authoritative; ~1.5-2.5 h for all laws at the 0.2s default — run detached).**
+   Shortcut when only the concordat verification matters: `--concordats-only` (~1,640 laws, ~15 min):
+   ```
+   .venv/bin/legalize-ch enrich-dates --repo . --lexwork-versions --concordats-only --rate-limit 0.1
+   ```
+   Rate limits: the hosts declare none (no RateLimit headers / robots Crawl-delay); the fetcher's 429/5xx exponential backoff is the adaptive governor. Full pass:
    ```
    mkdir -p data/logs
    nohup ./scripts/enrich_dates_lexwork.sh 1.0 > data/logs/enrich_dates_$(date +%Y%m%d).out 2>&1 &

@@ -395,13 +395,14 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
 
     rows: dict[str, dict] = {
         c: {"active": 0, "repealed_listed": 0, "undated": 0,
-            "enacted_after_2003": 0, "date_provenance": {}}
+            "enacted_after_2003": 0, "all_time": 0, "date_provenance": {}}
         for c in ALL_CANTON_CODES
     }
     for e in concordats:
         c = str(e.get("canton", "")).upper()
         if c not in rows:
             continue
+        rows[c]["all_time"] += 1
         year = enactment_year(e)
         if not year:
             rows[c]["undated"] += 1
@@ -416,10 +417,21 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
 
     keys6 = ["etat", "sante", "educ", "infra", "eco", "fin"]
     out_rows = {}
+    diagnosis_totals: dict[str, int] = defaultdict(int)
     for c in sorted(CHSTAT_2003):
         ch = CHSTAT_2003[c]
         r = rows.get(c, {})
         explained = r.get("active", 0) + r.get("repealed_listed", 0)
+        unexplained = sum(ch) - explained
+        if abs(unexplained) <= 5:
+            diagnosis = "reconciled"
+        elif r.get("all_time", 0) >= sum(ch):
+            # We hold at least as many concordats as chstat counted in
+            # 2003 — the shortfall is in the DATES (fixable), not absence.
+            diagnosis = "dating"
+        else:
+            diagnosis = "delisting_or_coverage"
+        diagnosis_totals[diagnosis] += 1
         out_rows[c] = {
             "chstat_2003": dict(zip(keys6, ch)) | {"total": sum(ch)},
             "ours_enacted_until_2003": {
@@ -427,8 +439,10 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
                 "repealed_listed": r.get("repealed_listed", 0),
                 "total": explained,
             },
+            "all_time_total": r.get("all_time", 0),
             "undated": r.get("undated", 0),
-            "unexplained": sum(ch) - explained,
+            "unexplained": unexplained,
+            "diagnosis": diagnosis,
             "date_provenance": r.get("date_provenance", {}),
         }
     chstat_total = sum(sum(v) for v in CHSTAT_2003.values())
@@ -447,6 +461,11 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
         "ours_enacted_until_2003_total": ours_total,
         "unexplained_total": chstat_total - ours_total,
         "undated_total": sum(v["undated"] for v in out_rows.values()),
+        "diagnosis_totals": dict(diagnosis_totals),
+        "date_provenance_total": {
+            k: sum(v["date_provenance"].get(k, 0) for v in out_rows.values())
+            for k in {p for v in out_rows.values() for p in v["date_provenance"]}
+        },
         "cantons": out_rows,
     }
 

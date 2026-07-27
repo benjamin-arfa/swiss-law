@@ -19,7 +19,7 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 VENV="${REPO_DIR}/.venv"
 SITE_DIR="${SWISS_LAW_SITE_REPO:-/home/ubuntu/swiss-law-as-source}"
 GITHUB_TOKEN_FILE="/home/ubuntu/.env"
-RATE_LIMIT="${1:-1.0}"
+RATE_LIMIT="${1:-0.2}"
 shift || true
 CANTONS=("$@")
 if [ ${#CANTONS[@]} -eq 0 ]; then

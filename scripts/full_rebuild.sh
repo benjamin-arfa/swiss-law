@@ -67,36 +67,47 @@ echo "=== Swiss Law FULL REBUILD ==="
 echo "Started: $(date -Iseconds) (rate limit ${RATE_LIMIT}s)"
 COMMITS_BEFORE=$(git rev-list --count HEAD)
 
-step "[1/7] Bootstrap: federal (all versions) + all 26 cantons"
+step "[1/9] Bootstrap: federal (all versions) + all 26 cantons"
 # Bootstrap resumes via data/ state: already-processed laws are skipped.
 # Cantonal catalogs come from LexFind (full, incl. concordats) with
 # LexWork/dedicated-fetcher text preferred and LexFind PDF fallback.
 "${VENV}/bin/legalize-ch" bootstrap --repo "$REPO_DIR" --scope all \
     --rate-limit "$RATE_LIMIT" 2>&1 || fail "Bootstrap encountered errors"
 
-step "[2/7] Backfill ZH from LexFind"
-# ZH's dedicated fetcher reads a capped zh.ch catalog (~150 laws); the
-# LexFind catalog has ZH's full collection. Add-only, resumable.
-"${VENV}/bin/legalize-ch" backfill-lexfind --repo "$REPO_DIR" -c zh \
-    --rate-limit "$RATE_LIMIT" 2>&1 || fail "ZH backfill failed"
+step "[2/9] Backfill from LexFind (all catalog gaps)"
+# Fetch anything the bootstrap missed across ALL 26 cantons (dedicated
+# fetchers have partial catalogs; LexFind is authoritative). Add-only.
+"${VENV}/bin/legalize-ch" backfill-lexfind --repo "$REPO_DIR" \
+    --rate-limit "$RATE_LIMIT" 2>&1 || fail "LexFind backfill failed"
 
-step "[3/7] Enrich categories (gap-fill, idempotent)"
+step "[3/9] Enrich categories (gap-fill, idempotent)"
 "${VENV}/bin/legalize-ch" enrich-categories --repo "$REPO_DIR" --rate-limit 0.5 2>&1 \
     || fail "Category enrichment failed"
 
-step "[4/7] Stats (with category trees) + tags + publications + law index"
+step "[4/9] Enrich dates: local parse + git history, then authoritative LexWork API, then sibling propagation"
+"${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" 2>&1 || fail "Local date pass failed"
+"${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --lexwork-versions --rate-limit 0.2 2>&1 \
+    || fail "LexWork date pass failed"
+"${VENV}/bin/legalize-ch" enrich-dates --repo "$REPO_DIR" --siblings 2>&1 || fail "Sibling propagation failed"
+
+step "[5/9] Enrich domains (inference for unclassified) + repeal status"
+"${VENV}/bin/legalize-ch" enrich-domains --repo "$REPO_DIR" 2>&1 || fail "Domain inference failed"
+"${VENV}/bin/legalize-ch" enrich-status --repo "$REPO_DIR" --rate-limit 0.2 2>&1 || fail "Status enrichment failed"
+git add ch/ && git diff --cached --quiet || git commit -q -m "Full rebuild: enrichment passes (dates, domains, status)"
+
+step "[6/9] Stats (with category trees) + tags + publications + law index"
 "${VENV}/bin/legalize-ch" stats --repo "$REPO_DIR" --site-repo "$SITE_DIR" \
     --rate-limit 0.5 2>&1 || fail "Stats generation failed"
 
-step "[5/7] Search index (laws.json + INDEX.md)"
+step "[7/9] Search index (laws.json + INDEX.md)"
 "${VENV}/bin/legalize-ch" index --repo "$REPO_DIR" --site-repo "$SITE_DIR" 2>&1 \
     || fail "Index generation failed"
 
-step "[6/7] Supplementary artifacts (cross-refs, feeds)"
+step "[8/9] Supplementary artifacts (cross-refs, feeds)"
 "${VENV}/bin/legalize-ch" cross-level-refs --repo "$REPO_DIR" 2>&1 || fail "cross-level-refs failed"
 "${VENV}/bin/legalize-ch" feed --repo "$REPO_DIR" 2>&1 || fail "feed generation failed"
 
-step "[7/7] Publish: site deploy + law-repo push"
+step "[9/9] Publish: site deploy + law-repo push"
 COMMITS_AFTER=$(git rev-list --count HEAD)
 NEW_COMMITS=$((COMMITS_AFTER - COMMITS_BEFORE))
 if [ -d "$SITE_DIR/.git" ]; then

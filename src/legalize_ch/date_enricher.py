@@ -283,27 +283,40 @@ def propagate_concordat_dates(repo_path: str | Path, dry_run: bool = False) -> d
 # ─── LexWork API pass (long-running, resumable) ───────────────────────────────
 
 def enrich_dates_lexwork(repo_path: str | Path, cantons: list[str] | None = None,
-                         rate_limit: float = 1.0, limit: int | None = None) -> dict:
+                         rate_limit: float = 0.2, limit: int | None = None,
+                         concordats_only: bool = False) -> dict:
     """Authoritative pass for LexWork cantons: one API call per unique law →
     date_of_decision (enactment) + full version date list. Resumable via
-    data/state/enrich_dates_{canton}.json."""
+    data/state/enrich_dates_{canton}.json.
+
+    Rate limit defaults to 0.2s: the hosts declare no limits (no RateLimit
+    headers, no robots Crawl-delay); the 429/5xx exponential backoff in the
+    fetcher is the adaptive governor.
+    """
+    from .categories import canonical_category_type
+
     repo = Path(repo_path)
     cantons = [c.lower() for c in (cantons or sorted(LEXWORK_CANTONS))]
     fetcher = CantonalFetcher(rate_limit=rate_limit)
     state_dir = repo / DATE_STATE_DIR
     state_dir.mkdir(parents=True, exist_ok=True)
+    state_prefix = "enrich_dates_conc" if concordats_only else "enrich_dates"
 
     totals: dict[str, int] = defaultdict(int)
     for canton in cantons:
-        state_file = state_dir / f"enrich_dates_{canton}.json"
+        state_file = state_dir / f"{state_prefix}_{canton}.json"
         done: set[str] = set(json.loads(state_file.read_text())) if state_file.exists() else set()
 
         canton_dir = repo / "ch" / canton
         files_by_number: dict[str, list[Path]] = defaultdict(list)
         for md in sorted(canton_dir.rglob("*.md")):
             fm, _ = _parse_frontmatter(md.read_text(encoding="utf-8"))
-            if fm and fm.get("systematic_number"):
-                files_by_number[str(fm["systematic_number"])].append(md)
+            if not fm or not fm.get("systematic_number"):
+                continue
+            if concordats_only and canonical_category_type(
+                    str(fm.get("category_type", ""))) != "Interkantonale Vereinbarung":
+                continue
+            files_by_number[str(fm["systematic_number"])].append(md)
 
         n = 0
         for number, paths in files_by_number.items():

@@ -677,11 +677,14 @@ def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
 @click.option("--siblings", is_flag=True,
               help="Propagate authoritative concordat dates between member cantons "
                    "(run AFTER the LexWork pass; local, seconds).")
-@click.option("--rate-limit", type=float, default=1.0, help="Seconds between API requests")
+@click.option("--concordats-only", is_flag=True,
+              help="Restrict the LexWork pass to concordats (~1,600 laws, minutes)")
+@click.option("--rate-limit", type=float, default=0.2,
+              help="Seconds between API requests (hosts declare no limits; 429 backoff governs)")
 @click.option("--limit", "-n", type=int, default=None, help="Max laws per canton (API pass) / files (local)")
 @click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
 def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool, siblings: bool,
-                 rate_limit: float, limit: int | None, dry_run: bool):
+                 concordats_only: bool, rate_limit: float, limit: int | None, dry_run: bool):
     """Back-fill enactment dates + version-date lists (laws are law+version).
 
     Local pass (default): parses the original "vom/du/del D. Month YYYY"
@@ -699,7 +702,8 @@ def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool, siblings: boo
     elif lexwork_versions:
         cantons = [c.strip().lower() for c in canton] if canton else None
         stats = enrich_dates_lexwork(repo_path, cantons=cantons,
-                                     rate_limit=rate_limit, limit=limit)
+                                     rate_limit=rate_limit, limit=limit,
+                                     concordats_only=concordats_only)
     else:
         stats = enrich_dates_local(repo_path, limit=limit, dry_run=dry_run)
     for k, v in stats.items():

@@ -104,7 +104,37 @@ def build_markdown() -> str:
               "sibling_group": "preuve d'un canton frère", "undated": "sans date"}.get(k, k)
         lines.append(f"| {fr} | {n(v)} |")
     tp = stats.get("type_provenance", {})
+    # comparison by domain (chstat per-domain vs ours <=2003)
+    keys6 = ["etat", "sante", "educ", "infra", "eco", "fin"]
+    chstat_dom = {k: sum(v["chstat_2003"].get(k, 0) for v in rows.values()) for k in keys6}
+    ours03 = {k: 0 for k in keys6 + ["autres"]}
+    for y, pc in conc.get("by_year", {}).items():
+        if y == "unknown" or y > "2003":
+            continue
+        for row in pc.values():
+            for k, v in row.items():
+                if k in ours03:
+                    ours03[k] += v
+    labels_fr = {d["key"]: d["label_fr"] for d in conc["domains"]}
     lines += [
+        "",
+        "# Comparaison par domaine (chstat 2003 vs notre collection)",
+        "",
+        "| Domaine | chstat 2003 | Chez nous ≤ 2003 | Chez nous (toutes dates) | Δ ≤2003 |",
+        "|---|---:|---:|---:|---:|",
+    ]
+    for k in keys6:
+        lines.append(f"| {labels_fr[k]} | {n(chstat_dom[k])} | {n(ours03[k])} | "
+                     f"{n(conc['totals'][k])} | {ours03[k] - chstat_dom[k]:+d} |")
+    lines += [
+        f"| {labels_fr['autres']} (absent de chstat) | — | {n(ours03['autres'])} | "
+        f"{n(conc['totals']['autres'])} | — |",
+        f"| **Total** | **{n(cmp_['chstat_total'])}** | "
+        f"**{n(sum(ours03.values()))}** | **{n(conc['totals']['total'])}** | |",
+        "",
+        "La base interne 2003 de l'Institut classait chaque concordat dans un domaine ; notre colonne",
+        "« Autres » (droit civil, droit pénal, actes sans domaine à la source) explique l'essentiel des",
+        "écarts négatifs des colonnes nominales.",
         "",
         "# Qualité des données",
         "",
@@ -134,6 +164,8 @@ def build_markdown() -> str:
 
 
 def to_pdf(md: str, out: Path):
+    # pdflatex lacks glyphs for these — use math-mode equivalents
+    md = md.replace("≤", "<=").replace("Δ", "Diff.")
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as f:
         f.write(md)
         src = f.name

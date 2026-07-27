@@ -207,6 +207,8 @@ legalize-ch index                              # laws.json search index
 ./scripts/update_all.sh 0.5 --push   # Update + push both repos
 ```
 
+The website (https://swiss-law-as-source.github.io) is intentionally minimal: `index.html` is the interactive statistics dashboard, `laws.html` the per-entity law browser (with cross-entity search), `api.html` the Swagger/OpenAPI explorer — everything else is JSON under `/api/v1/`.
+
 The cron job (`scripts/weekly_update.sh`) runs every Monday at 03:43, updates everything, pushes to GitHub, and sends a Telegram notification. It is **self-healing**: after the per-canton updates it runs `backfill-lexfind` (all 26 cantons, add-only — any law of any type that appears in a LexFind catalog gets fetched within a week) and a `coverage` audit that publishes `api/v1/coverage.json` comparing local files against the LexFind and Fedlex catalogs per canton × instrument type.
 
 ### LexFind backfill

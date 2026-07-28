@@ -20,9 +20,16 @@ Data sources
        - /api/fe/{lang}/entities/{id}/systematics     → category tree + texts
        - /api/frontend/v1/{lang}/texts-of-law/{id}/with-version-groups
                                                       → family/version dates
-  2. Baseline: Bochsler et al. (2004), "Les cantons suisses sous la loupe",
-     BADAC/IDHEAP — inventory of 733 intercantonal concordats 1848-2003
-     (press release: https://www.presseportal.ch/fr/pm/100006693/100488671).
+  2. Baseline: the CHStat (ex-BADAC) concordats visualization, graph G1 of
+     the IDHEAP/BADAC press release "Les concordats intercantonaux: clé de
+     voûte du fédéralisme suisse" (15.11.2004), built on the concordats
+     database of the Institut du fédéralisme, University of Fribourg.
+     G1 caption: "Total 1848-2003 = 733 concordats; 2564 cantons membres"
+     with "résultats pondérés : 2564 = 100%" — i.e. the visualization's
+     percentages are weighted by CANTON MEMBERSHIPS (2564), not by
+     concordat count (733). Both units are carried through this script.
+     PDF: https://chstat.ch/download/pages/nehhqpsts5nj.pdf/CP4fr.pdf
+     (archived by this script under baseline/CP4fr.pdf).
 
 Usage:
     python scripts/fetch_concordats_to_2003.py [--out DIR] [--lang de]
@@ -52,21 +59,49 @@ BATCH_SIZE = 20
 USER_AGENT = "swiss-law-concordat-audit/1.0 (research; contact: repo owner)"
 
 # ── 2003 baseline ──────────────────────────────────────────────────────────
-# Bochsler et al. (2004), BADAC/IDHEAP: inventory of intercantonal
-# concordats concluded between 1848 and 2003.
+# CHStat/BADAC concordats visualization (graph G1 of the IDHEAP/BADAC press
+# release of 15.11.2004), based on the concordats database of the Institut du
+# fédéralisme, University of Fribourg.
+#
+# The G1 caption reads: "Total 1848-2003 = 733 concordats; 2564 cantons
+# membres" and "résultats pondérés : 2564 = 100%".  Two units therefore
+# coexist:
+#   * 733  = number of concordats CONCLUDED 1848-2003 (one per treaty);
+#   * 2564 = number of CANTON MEMBERSHIPS (each concordat counted once per
+#            signatory canton; 2564 / 733 ≈ 3.5 cantons per concordat).
+# All percentages published in the visualization (domains and
+# signatory-size classes) are weighted by memberships, i.e. shares of 2564.
+# The release's prose ("44% étaient des accords bilatéraux") repeats the
+# weighted figures loosely; taken as shares of the 733 concordats they are
+# arithmetically impossible (44% bilateral + 22% with ≥20 cantons would
+# alone exceed 2564 memberships).  The implied per-concordat distribution is
+# derived below in `derive_baseline_concordat_distribution()`.
 BASELINE_2003 = {
     "source": (
-        "Bochsler/Koller/Sciarini/Traimond/Trippolini (2004): "
-        "'Les cantons suisses sous la loupe', BADAC/IDHEAP, Haupt Verlag. "
-        "Press release: https://www.presseportal.ch/fr/pm/100006693/100488671"
+        "CHStat/BADAC (IDHEAP), 'Les concordats intercantonaux: clé de voûte "
+        "du fédéralisme suisse', communiqué du 15.11.2004, graphique G1 — "
+        "d'après la banque de données des concordats de l'Institut du "
+        "fédéralisme, Université de Fribourg. "
+        "PDF: https://chstat.ch/download/pages/nehhqpsts5nj.pdf/CP4fr.pdf"
     ),
     "period": "1848-2003",
     "total_concordats": 733,
-    "share_signed_since_1970s": 0.70,
-    "share_bilateral": 0.44,
-    "share_20plus_cantons": 0.22,
-    # Domain distribution as published by the study.
-    "domains": {
+    "total_canton_memberships": 2564,
+    "share_signed_since_1970s": 0.70,  # share of concordats (prose, unweighted)
+    "share_signed_last_decade": 0.30,  # 1994-2003, share of concordats
+    # Signatory-size classes, membership-weighted (G1 legend, 2564 = 100%).
+    "size_classes_membership_weighted": {
+        "2": 0.44,
+        "3-4": 0.08,
+        "5-10": 0.20,
+        "11-19": 0.06,
+        "20-26": 0.22,
+    },
+    # Midpoint canton count used to convert membership shares back to
+    # concordat counts (class "2" is exact by definition).
+    "size_class_midpoints": {"2": 2, "3-4": 3.5, "5-10": 7.5, "11-19": 15, "20-26": 23},
+    # Domain distribution, membership-weighted (G1, 2564 = 100%).
+    "domains_membership_weighted": {
         "Éducation, science et culture": 0.25,
         "Organisation étatique et sécurité": 0.13,
         "Finances et fiscalité": 0.20,
@@ -75,6 +110,65 @@ BASELINE_2003 = {
         "Santé et sécurité sociale": 0.10,
     },
 }
+
+BASELINE_PDF_URL = "https://chstat.ch/download/pages/nehhqpsts5nj.pdf/CP4fr.pdf"
+
+
+def derive_baseline_concordat_distribution() -> dict:
+    """Convert the membership-weighted G1 size classes back to concordat counts.
+
+    memberships(class) = share * 2564 ; concordats(class) = memberships / midpoint.
+    The derived total (~726) reconciles with the published 733 to within ~1%,
+    which validates the weighted reading of the legend.
+    """
+    total_m = BASELINE_2003["total_canton_memberships"]
+    out = {}
+    for cls, share in BASELINE_2003["size_classes_membership_weighted"].items():
+        memberships = share * total_m
+        midpoint = BASELINE_2003["size_class_midpoints"][cls]
+        out[cls] = {
+            "memberships": round(memberships),
+            "concordats_est": round(memberships / midpoint),
+        }
+    out["_derived_total_concordats"] = sum(v["concordats_est"] for v in out.values()
+                                           if isinstance(v, dict))
+    return out
+
+
+# Canton names as they appear in German Intlex titles (incl. spelling
+# variants).  Used to count named signatories per title — an exact lower
+# bound on memberships for treaties that enumerate their parties.
+CANTON_NAME_VARIANTS = {
+    "ZH": ["Zürich"], "BE": ["Bern"], "LU": ["Luzern"], "UR": ["Uri"],
+    "SZ": ["Schwyz"], "OW": ["Obwalden"], "NW": ["Nidwalden"],
+    "GL": ["Glarus"], "ZG": ["Zug"], "FR": ["Freiburg", "Fribourg"],
+    "SO": ["Solothurn"], "BS": ["Basel-Stadt"],
+    "BL": ["Basel-Landschaft", "Basel-Land"],
+    "SH": ["Schaffhausen"],
+    "AR": ["Appenzell Ausserrhoden", "Appenzell A.Rh", "Appenzell AR"],
+    "AI": ["Appenzell Innerrhoden", "Appenzell I.Rh", "Appenzell IR"],
+    "SG": ["St.Gallen", "St. Gallen", "Sankt Gallen"],
+    "GR": ["Graubünden"], "AG": ["Aargau"], "TG": ["Thurgau"],
+    "TI": ["Tessin", "Ticino"], "VD": ["Waadt"], "VS": ["Wallis"],
+    "NE": ["Neuenburg"], "GE": ["Genf"], "JU": ["Jura"],
+}
+# "Basel" alone (without Stadt/Landschaft) historically means BS in
+# pre-1833 treaties; matched only when neither compound form is present.
+_BASEL_BARE = "Basel"
+
+
+def cantons_named_in_title(title: str) -> list[str]:
+    """Return the sorted canton codes explicitly named in a treaty title."""
+    t = title or ""
+    found = set()
+    for code, variants in CANTON_NAME_VARIANTS.items():
+        if any(v in t for v in variants):
+            found.add(code)
+    if "BS" not in found and "BL" not in found and _BASEL_BARE in t:
+        found.add("BS")
+    # "Appenzell" bare would double-count via AR/AI variants only if the
+    # compound is present, which the variant lists already require.
+    return sorted(found)
 
 # Map Intlex top-level chapters (1-9) onto the BADAC domain categories so the
 # two distributions can be compared side by side.
@@ -146,6 +240,35 @@ class AuditedHttp:
             self._log(record)
             self.request_count += 1
             return json.loads(body)
+        raise RuntimeError(f"GET failed after 3 attempts: {url}: {last_err}")
+
+    def get_bytes(self, url: str, tag: str) -> bytes:
+        """Audited GET for non-JSON resources (e.g. the baseline PDF)."""
+        last_err = None
+        for attempt in range(1, 4):
+            time.sleep(self.rate)
+            record = {
+                "ts": datetime.now(timezone.utc).isoformat(),
+                "url": url,
+                "tag": tag,
+                "attempt": attempt,
+            }
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    body = resp.read()
+                    record["status"] = resp.status
+            except (urllib.error.URLError, TimeoutError, OSError) as exc:
+                record["error"] = str(exc)
+                self._log(record)
+                last_err = exc
+                time.sleep(2 * attempt)
+                continue
+            record["bytes"] = len(body)
+            record["sha256"] = hashlib.sha256(body).hexdigest()
+            self._log(record)
+            self.request_count += 1
+            return body
         raise RuntimeError(f"GET failed after 3 attempts: {url}: {last_err}")
 
     def _log(self, record: dict):
@@ -304,6 +427,9 @@ def main() -> int:
         )
         row["in_scope_to_2003"] = bool(best and best <= cutoff)
         row["url"] = f"https://www.lexfind.ch/tol/{tid}/{args.lang}"
+        named = cantons_named_in_title(row["title"])
+        row["named_cantons"] = " ".join(named)
+        row["n_named_cantons"] = len(named)
         if n % 50 == 0:
             print(f"      dates: {n}/{len(tols)}")
     print(f"[4/4] dates resolved for {len(tols)} texts")
@@ -318,6 +444,7 @@ def main() -> int:
         "node_identifier", "node_title", "is_active", "category_id",
         "title_date", "family_active_since", "earliest_version_date",
         "best_date", "date_source", "in_scope_to_2003", "url",
+        "named_cantons", "n_named_cantons",
     ]
     full_csv = out_dir / "intlex_full_inventory.csv"
     with open(full_csv, "w", newline="", encoding="utf-8") as fh:
@@ -330,6 +457,20 @@ def main() -> int:
         w.writeheader()
         w.writerows(in_scope)
 
+    # ── Baseline source archiving ─────────────────────────────────────────
+    baseline_dir = out_dir / "baseline"
+    baseline_dir.mkdir(parents=True, exist_ok=True)
+    baseline_pdf = baseline_dir / "CP4fr.pdf"
+    try:
+        pdf_bytes = http.get_bytes(BASELINE_PDF_URL, tag="baseline_pdf")
+        baseline_pdf.write_bytes(pdf_bytes)
+        baseline_pdf_note = (
+            f"archivé dans `baseline/CP4fr.pdf` "
+            f"(sha256 `{hashlib.sha256(pdf_bytes).hexdigest()[:16]}…`)"
+        )
+    except RuntimeError as exc:
+        baseline_pdf_note = f"téléchargement échoué ({exc}); URL: {BASELINE_PDF_URL}"
+
     # ── Statistics + baseline comparison ──────────────────────────────────
     by_decade = Counter()
     for r in in_scope:
@@ -340,13 +481,33 @@ def main() -> int:
         by_domain[CHAPTER_TO_BASELINE_DOMAIN.get(r["chapter"], "Autre")] += 1
     bilateral = [
         r for r in in_scope
-        if re.search(r"zwischen den (Kantonen|Ständen) [^,]+ und ", r["title"])
+        if r["n_named_cantons"] == 2
+        or re.search(r"zwischen den (Kantonen|Ständen) [^,]+ und ", r["title"])
         or re.search(r"zwischen dem (Kanton|Stand) [^,]+ und dem (Kanton|Stand)", r["title"])
     ]
     active_in_scope = [r for r in in_scope if r["is_active"]]
 
     baseline_total = BASELINE_2003["total_concordats"]
+    baseline_memberships = BASELINE_2003["total_canton_memberships"]
+    baseline_derived = derive_baseline_concordat_distribution()
     n_scope = len(in_scope)
+
+    # Canton-membership estimate for the LexFind ≤cutoff subset.
+    # Titles that enumerate their parties (≥2 named cantons) give an exact
+    # count; open multilateral treaties (no cantons in the title) are bounded
+    # by [2, 26] members each and estimated at the baseline's non-bilateral
+    # mean of (2564 − 1128) / (733 − 564) ≈ 8.5 members.
+    named_rows = [r for r in in_scope if r["n_named_cantons"] >= 2]
+    unnamed_rows = [r for r in in_scope if r["n_named_cantons"] < 2]
+    named_membership_sum = sum(r["n_named_cantons"] for r in named_rows)
+    bilat_m = round(BASELINE_2003["size_classes_membership_weighted"]["2"]
+                    * baseline_memberships)
+    bilat_c = round(bilat_m / 2)
+    nonbilateral_mean = (baseline_memberships - bilat_m) / (baseline_total - bilat_c)
+    memberships_low = named_membership_sum + 2 * len(unnamed_rows)
+    memberships_high = named_membership_sum + 26 * len(unnamed_rows)
+    memberships_est = round(named_membership_sum
+                            + nonbilateral_mean * len(unnamed_rows))
 
     def pct(x, whole):
         return f"{100 * x / whole:.1f}%" if whole else "n/a"
@@ -356,7 +517,7 @@ def main() -> int:
     script_hash = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     lines = []
     a = lines.append
-    a("# Concordats intercantonaux jusqu'à 2003 — LexFind vs. statistique 2003")
+    a("# Concordats intercantonaux jusqu'à 2003 — LexFind vs. visualisation CHStat 2003")
     a("")
     a(f"*Généré le {finished.strftime('%Y-%m-%d %H:%M UTC')} — script "
       f"`scripts/fetch_concordats_to_2003.py` (sha256 `{script_hash[:16]}…`)*")
@@ -369,27 +530,90 @@ def main() -> int:
     a(f"| … dont conclus jusqu'au {cutoff.isoformat()} | **{n_scope}** |")
     a(f"| … dont encore en vigueur aujourd'hui | {len(active_in_scope)} |")
     a(f"| … sans date déterminable | {len(undated)} |")
-    a(f"| Baseline 2003 (BADAC/IDHEAP, 1848-2003) | **{baseline_total}** concordats conclus |")
-    a(f"| Écart LexFind (≤2003) vs baseline | **{n_scope - baseline_total:+d}** "
+    a(f"| Baseline CHStat 2003 — concordats conclus 1848-2003 | **{baseline_total}** |")
+    a(f"| Baseline CHStat 2003 — cantons membres (pondération de la visualisation) | **{baseline_memberships}** |")
+    a(f"| Écart LexFind ≤2003 vs baseline (en concordats) | **{n_scope - baseline_total:+d}** "
       f"({pct(n_scope, baseline_total)} de l'inventaire 2003) |")
+    a(f"| Adhésions cantonales estimées, LexFind ≤2003 (voir méthode) | ~{memberships_est} "
+      f"(bornes [{memberships_low}, {memberships_high}]) |")
+    a("")
+    a("## Les deux unités de la visualisation CHStat : 733 concordats, 2564 cantons membres")
+    a("")
+    a("La visualisation « Concordats » de CHStat/BADAC (graphique G1 du communiqué "
+      "IDHEAP du 15.11.2004, d'après la banque de données des concordats de "
+      "l'Institut du fédéralisme de l'Université de Fribourg) porte en légende : "
+      "**« Total 1848-2003 = 733 concordats; 2564 cantons membres »**, avec la "
+      "mention *« résultats pondérés : 2564 = 100% »*. Deux unités coexistent donc :")
+    a("")
+    a("1. **733** — le nombre de concordats *conclus* entre 1848 et 2003 "
+      "(un par traité) ;")
+    a("2. **≈2500 (2564)** — le nombre d'*adhésions cantonales* : chaque concordat "
+      "compté une fois par canton signataire (soit ≈3,5 cantons par concordat en "
+      "moyenne).")
+    a("")
+    a("Tous les pourcentages affichés par la visualisation (domaines et classes de "
+      "taille) sont **pondérés par les adhésions** (2564 = 100 %), pas par le "
+      "nombre de textes. Lecture inverse de la légende des classes de taille :")
+    a("")
+    a("| Cantons signataires | Part des adhésions (G1) | Adhésions | Concordats (dérivé) |")
+    a("|---|---|---|---|")
+    for cls, share in BASELINE_2003["size_classes_membership_weighted"].items():
+        d = baseline_derived[cls]
+        a(f"| {cls} | {share:.0%} | {d['memberships']} | ~{d['concordats_est']} |")
+    a(f"| **Total** | 100% | {baseline_memberships} | "
+      f"~{baseline_derived['_derived_total_concordats']} (publié : {baseline_total}) |")
+    a("")
+    a("Le total dérivé (~726) recoupe le total publié (733) à ~1 % près, ce qui "
+      "valide cette lecture pondérée. Conséquence notable : **~77 % des concordats "
+      "1848-2003 étaient bilatéraux** (564 sur 733), même si les accords "
+      "bilatéraux ne représentent que 44 % des adhésions.")
     a("")
     a("## Interprétation de l'écart")
     a("")
-    a("L'inventaire BADAC 2003 compte **tous** les concordats *conclus* entre 1848 "
-      "et 2003 (y compris les accords bilatéraux ponctuels, remplacés ou éteints). "
-      "LexFind/Intlex est en revanche le **recueil systématique du droit "
-      "intercantonal** tenu par la Fondation ch : il ne référence pour l'essentiel "
-      "que les textes encore pertinents (en vigueur ou récemment abrogés). "
-      "L'écart mesure donc surtout l'attrition historique du corpus — il ne "
-      "signifie pas que LexFind « manque » des données, mais que les deux sources "
-      "répondent à des questions différentes.")
+    a("L'inventaire de l'Institut du fédéralisme compte **tous** les concordats "
+      "*conclus* entre 1848 et 2003 (y compris les accords bilatéraux ponctuels, "
+      "remplacés ou éteints). LexFind/Intlex est en revanche le **recueil "
+      "systématique du droit intercantonal** tenu par la Fondation ch : il ne "
+      "référence pour l'essentiel que les textes encore pertinents (en vigueur ou "
+      "récemment abrogés). L'écart mesure donc surtout l'attrition historique du "
+      "corpus — il ne signifie pas que LexFind « manque » des données, mais que "
+      "les deux sources répondent à des questions différentes.")
+    a("")
+    a(f"En unité « concordats » : {n_scope} vs {baseline_total} "
+      f"({pct(n_scope, baseline_total)} du corpus historique subsiste). "
+      f"En unité « adhésions cantonales » : ~{memberships_est} estimées vs "
+      f"{baseline_memberships} — la part subsistante est plus élevée en adhésions "
+      f"qu'en textes, car ce sont surtout les petits accords bilatéraux qui ont "
+      f"disparu, tandis que les grands concordats multilatéraux ont survécu.")
+    a("")
+    a("### Méthode d'estimation des adhésions LexFind")
+    a("")
+    a(f"- {len(named_rows)} textes ≤{cutoff.year} énumèrent leurs cantons dans le "
+      f"titre (≥2 cantons nommés) → comptage exact : {named_membership_sum} adhésions ;")
+    a(f"- {len(unnamed_rows)} textes multilatéraux « ouverts » ne nomment pas "
+      f"leurs parties → bornes [2, 26] par texte, estimation à la moyenne "
+      f"non-bilatérale de la baseline "
+      f"({baseline_memberships}−{bilat_m} adhésions / {baseline_total}−{bilat_c} "
+      f"concordats ≈ {nonbilateral_mean:.1f} cantons/texte) ;")
+    a("- LexFind/Intlex ne publie pas la liste des cantons membres par texte via "
+      "son API — un comptage exact nécessiterait la banque de données de "
+      "l'Institut du fédéralisme ou le dépouillement des clauses d'adhésion des "
+      "PDF. Les colonnes `named_cantons`/`n_named_cantons` des CSV rendent le "
+      "comptage titre par titre vérifiable.")
     a("")
     a("## Répartition par domaine — comparaison")
     a("")
-    a("| Domaine (nomenclature BADAC) | BADAC 1848-2003 | LexFind ≤2003 (aujourd'hui) |")
+    a("⚠️ Unités différentes : la colonne CHStat est pondérée par **adhésions** "
+      "(2564 = 100 %), la colonne LexFind par **textes** (les adhésions par texte "
+      "n'étant pas connues côté LexFind). Les écarts domaine par domaine mêlent "
+      "donc attrition réelle et effet de pondération : un domaine riche en "
+      "accords bilatéraux (2 adhésions/texte) pèse moins dans la colonne CHStat "
+      "qu'en nombre de textes.")
+    a("")
+    a("| Domaine (nomenclature BADAC) | CHStat 1848-2003 (% adhésions) | LexFind ≤2003 (% textes) |")
     a("|---|---|---|")
-    for dom, share in BASELINE_2003["domains"].items():
-        a(f"| {dom} | {share:.0%} (~{round(share * baseline_total)}) "
+    for dom, share in BASELINE_2003["domains_membership_weighted"].items():
+        a(f"| {dom} | {share:.0%} (~{round(share * baseline_memberships)} adh.) "
           f"| {pct(by_domain.get(dom, 0), n_scope)} ({by_domain.get(dom, 0)}) |")
     if by_domain.get("Autre"):
         a(f"| Autre / non mappé | — | {pct(by_domain['Autre'], n_scope)} ({by_domain['Autre']}) |")
@@ -401,19 +625,22 @@ def main() -> int:
     for dec in sorted(by_decade):
         a(f"| {dec} | {by_decade[dec]} |")
     a("")
-    a(f"Baseline : ~70 % des 733 concordats 1848-2003 signés depuis les années 1970 ; "
-      f"dans LexFind ≤2003 : "
+    a(f"Baseline : ~70 % des 733 concordats 1848-2003 signés depuis les années 1970 "
+      f"(part en concordats, non pondérée) ; dans LexFind ≤2003 : "
       f"{pct(sum(v for k, v in by_decade.items() if k >= '1970s'), n_scope)}.")
     a("")
-    a(f"Bilatéraux (heuristique sur le titre « zwischen den Kantonen X und Y ») : "
-      f"{pct(len(bilateral), n_scope)} ({len(bilateral)}) — baseline : 44 %.")
+    a(f"Bilatéraux (2 cantons nommés dans le titre, ou motif « zwischen den "
+      f"Kantonen X und Y ») : {pct(len(bilateral), n_scope)} ({len(bilateral)}) — "
+      f"baseline : ~77 % des concordats (dérivé ; 44 % des adhésions). "
+      f"La sous-représentation des bilatéraux dans le corpus subsistant est "
+      f"encore plus marquée qu'annoncé dans la première version de ce rapport.")
     a("")
     a("## Sources et auditabilité")
     a("")
     a(f"- LexFind : entité Intlex (id {intlex_id}), {http.request_count} requêtes HTTP, "
       f"toutes journalisées dans `audit_log.jsonl` (URL, statut, octets, SHA-256).")
     a("- Réponses brutes archivées dans `raw/` (une par empreinte SHA-256).")
-    a(f"- Baseline : {BASELINE_2003['source']}")
+    a(f"- Baseline : {BASELINE_2003['source']} — {baseline_pdf_note}.")
     a("- Fichiers produits : `intlex_full_inventory.csv` (tout Intlex), "
       "`concordats_up_to_2003.csv` (filtré ≤2003), `run_manifest.json`.")
     a("- Date retenue par texte : `family_active_since` de l'API LexFind "
@@ -438,8 +665,15 @@ def main() -> int:
             "in_scope_to_2003": n_scope,
             "active_in_scope": len(active_in_scope),
             "undated": len(undated),
-            "baseline_total_2003": baseline_total,
+            "baseline_total_concordats_2003": baseline_total,
+            "baseline_canton_memberships_2003": baseline_memberships,
+            "lexfind_titles_naming_cantons": len(named_rows),
+            "lexfind_named_membership_sum": named_membership_sum,
+            "lexfind_memberships_estimate": memberships_est,
+            "lexfind_memberships_bounds": [memberships_low, memberships_high],
+            "bilateral_in_scope": len(bilateral),
         },
+        "baseline_derived_size_distribution": baseline_derived,
         "by_decade": dict(sorted(by_decade.items())),
         "by_domain": dict(by_domain),
     }

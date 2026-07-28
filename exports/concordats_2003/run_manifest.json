@@ -1,6 +1,6 @@
 {
   "script": "/home/ubuntu/swiss-law/scripts/fetch_concordats_to_2003.py",
-  "script_sha256": "06b549e7852f2de975cca2470db018de7e629e275a85ba60d214914c17bde51c",
+  "script_sha256": "48d4321282fe2bddbca2d0a2b2fa297f52fd81305748256a6eadf0b37fa5ab3b",
   "python": "3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]",
   "params": {
     "out": "exports/concordats_2003",
@@ -8,16 +8,48 @@
     "cutoff": "2003-12-31",
     "rate": 0.15
   },
-  "started_utc": "2026-07-28T07:13:07.547012+00:00",
-  "finished_utc": "2026-07-28T07:14:40.115616+00:00",
-  "http_requests": 338,
+  "started_utc": "2026-07-28T10:36:54.785350+00:00",
+  "finished_utc": "2026-07-28T10:38:31.823091+00:00",
+  "http_requests": 339,
   "intlex_entity_id": 28,
   "counts": {
     "total_intlex_texts": 333,
     "in_scope_to_2003": 171,
     "active_in_scope": 162,
     "undated": 0,
-    "baseline_total_2003": 733
+    "baseline_total_concordats_2003": 733,
+    "baseline_canton_memberships_2003": 2564,
+    "lexfind_titles_naming_cantons": 74,
+    "lexfind_named_membership_sum": 172,
+    "lexfind_memberships_estimate": 996,
+    "lexfind_memberships_bounds": [
+      366,
+      2694
+    ],
+    "bilateral_in_scope": 67
+  },
+  "baseline_derived_size_distribution": {
+    "2": {
+      "memberships": 1128,
+      "concordats_est": 564
+    },
+    "3-4": {
+      "memberships": 205,
+      "concordats_est": 59
+    },
+    "5-10": {
+      "memberships": 513,
+      "concordats_est": 68
+    },
+    "11-19": {
+      "memberships": 154,
+      "concordats_est": 10
+    },
+    "20-26": {
+      "memberships": 564,
+      "concordats_est": 25
+    },
+    "_derived_total_concordats": 726
   },
   "by_decade": {
     "1820s": 1,

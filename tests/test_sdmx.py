@@ -66,9 +66,10 @@ class TestSdmx:
         ns = {"str": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"}
         codelists = {cl.get("id"): len(cl.findall("str:Code", ns))
                      for cl in root.iter("{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure}Codelist")}
-        assert codelists["CL_CANTON"] == 26
-        assert codelists["CL_DOMAIN"] == 7
-        assert codelists["CL_INSTRUMENT_TYPE"] == 9
+        # 26 cantons / 7 domains / 9 types, each + the SDMX "_T" total code
+        assert codelists["CL_CANTON"] == 27
+        assert codelists["CL_DOMAIN"] == 8
+        assert codelists["CL_INSTRUMENT_TYPE"] == 10
         dsds = [d.get("id") for d in root.iter("{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure}DataStructure")]
         assert set(dsds) == {"DSD_LAWS", "DSD_CONCORDATS"}
         flows = [d.get("id") for d in root.iter("{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure}Dataflow")]
@@ -81,16 +82,51 @@ class TestSdmx:
         conc_root = ET.fromstring(files["data/df_concordats.xml"])
         values = [int(o.get("value"))
                   for o in conc_root.iter(f"{gen_ns}ObsValue")]
-        assert sum(values) == conc_sig["total_memberships"]
-        # SDMX-CSV rows match XML observations
+        # XML observation count matches SDMX-CSV row count (incl. _T totals)
         csv_rows = files["data/df_concordats.sdmx.csv"].strip().splitlines()[1:]
         assert len(csv_rows) == len(values)
         assert csv_rows[0].startswith("SLC:DF_CONCORDATS(1.0),")
+        # detail rows (no _T) sum to the table total
+        detail = [r for r in csv_rows if ",_T," not in r]
+        assert sum(int(r.rsplit(",", 1)[1]) for r in detail) \
+            == conc_sig["total_memberships"]
 
     def test_laws_flow_matches_type_totals(self):
         type_tables, conc_sig = _fixtures()
         files = generate_sdmx_files(type_tables, conc_sig)
         csv_rows = files["data/df_laws.sdmx.csv"].strip().splitlines()[1:]
-        total = sum(int(r.rsplit(",", 1)[1]) for r in csv_rows)
-        dated_total = sum(t["total"] for t in type_tables["index"]["types"])
+        detail = [r for r in csv_rows if ",_T," not in r]
+        total = sum(int(r.rsplit(",", 1)[1]) for r in detail)
+        dated_total = sum(t.get("published_total", t["total"])
+                          for t in type_tables["index"]["types"])
         assert total == dated_total  # all fixture laws are dated
+
+    def test_totals_marginals_consistent(self):
+        type_tables, conc_sig = _fixtures()
+        files = generate_sdmx_files(type_tables, conc_sig)
+        # DF_CONCORDATS: per year, (_T,_T) equals the sum of detail rows
+        rows = [r.split(",") for r in
+                files["data/df_concordats.sdmx.csv"].strip().splitlines()[1:]]
+        years = {r[3] for r in rows}
+        for y in years:
+            detail = sum(int(r[4]) for r in rows
+                         if r[3] == y and r[1] != "_T" and r[2] != "_T")
+            grand = [int(r[4]) for r in rows
+                     if r[3] == y and r[1] == "_T" and r[2] == "_T"]
+            assert grand == [detail], y
+            # a canton's (c,_T) equals the sum of its domain details
+            for canton in {r[1] for r in rows if r[3] == y and r[1] != "_T"}:
+                c_detail = sum(int(r[4]) for r in rows
+                               if r[3] == y and r[1] == canton and r[2] != "_T")
+                c_total = [int(r[4]) for r in rows
+                           if r[3] == y and r[1] == canton and r[2] == "_T"]
+                assert c_total == [c_detail], (y, canton)
+        # DF_LAWS: per year, (_T,_T,_T) equals the sum of detail rows
+        lrows = [r.split(",") for r in
+                 files["data/df_laws.sdmx.csv"].strip().splitlines()[1:]]
+        for y in {r[4] for r in lrows}:
+            detail = sum(int(r[5]) for r in lrows
+                         if r[4] == y and "_T" not in (r[1], r[2], r[3]))
+            grand = [int(r[5]) for r in lrows if r[4] == y
+                     and (r[1], r[2], r[3]) == ("_T", "_T", "_T")]
+            assert grand == [detail], y

@@ -126,16 +126,20 @@ def generate_structures() -> str:
         "Swiss Law Collection's collections — no scaling, no external "
         "baseline. chstat.ch/BADAC's 2003 figure (2,522 memberships <= 2003) "
         "is an external comparison reference only; the computed value is "
-        "lower because long-repealed agreements were delisted upstream.")
+        "lower because long-repealed agreements were delisted upstream. "
+        "Aggregates use the SDMX reserved code _T (per-year canton totals, "
+        "domain totals and grand total); totals across all years = sum over "
+        "TIME_PERIOD.")
 
+    total = [("_T", "Total")]   # SDMX reserved code for aggregates
     body = f"""<?xml version="1.0" encoding="UTF-8"?>
 <mes:Structure {_NS}>
 {_HEADER.format(msg_id="SLC_STRUCTURES", prepared="2026-08-03T00:00:00")}
   <mes:Structures>
     <str:Codelists>
-{_codelist("CL_CANTON", "Swiss cantons", [(c, _CANTON_NAMES[c]) for c in ALL_CANTON_CODES])}
-{_codelist("CL_DOMAIN", "Legal domains (chstat/BADAC)", domains)}
-{_codelist("CL_INSTRUMENT_TYPE", "Instrument types (LexFind)", types)}
+{_codelist("CL_CANTON", "Swiss cantons", [(c, _CANTON_NAMES[c]) for c in ALL_CANTON_CODES] + total)}
+{_codelist("CL_DOMAIN", "Legal domains (chstat/BADAC)", domains + total)}
+{_codelist("CL_INSTRUMENT_TYPE", "Instrument types (LexFind)", types + total)}
     </str:Codelists>
     <str:Concepts>
       <str:ConceptScheme id="CS_SLC" agencyID="{AGENCY}" version="{VERSION}">
@@ -166,25 +170,61 @@ def generate_structures() -> str:
 
 
 def _laws_observations(type_tables: dict):
-    """Yield (type_slug, canton, domain, year, value) from the per-type cubes."""
+    """Yield (type_slug, canton, domain, year, value): detail rows plus the
+    per-year marginal totals under the SDMX reserved code ``_T``:
+    (type,_T,_T), (_T,canton,_T), (_T,_T,domain) and (_T,_T,_T)."""
+    per_year: dict[str, dict] = {}
     for slug, tbl in sorted(type_tables["files"].items()):
-        for year in sorted(tbl.get("by_year", {})):
+        for year, cantons in tbl.get("by_year", {}).items():
             if year == "unknown":
                 continue  # SDMX TIME_PERIOD must be a real period
-            for canton in sorted(tbl["by_year"][year]):
-                for dom, n in sorted(tbl["by_year"][year][canton].items()):
-                    if n:
-                        yield slug, canton, dom, year, n
+            agg = per_year.setdefault(year, {"detail": [], "type": {},
+                                             "canton": {}, "domain": {}, "all": 0})
+            for canton in sorted(cantons):
+                for dom, n in sorted(cantons[canton].items()):
+                    if not n:
+                        continue
+                    agg["detail"].append((slug, canton, dom, year, n))
+                    agg["type"][slug] = agg["type"].get(slug, 0) + n
+                    agg["canton"][canton] = agg["canton"].get(canton, 0) + n
+                    agg["domain"][dom] = agg["domain"].get(dom, 0) + n
+                    agg["all"] += n
+    for year in sorted(per_year):
+        agg = per_year[year]
+        yield from sorted(agg["detail"])
+        for slug, n in sorted(agg["type"].items()):
+            yield slug, "_T", "_T", year, n
+        for canton, n in sorted(agg["canton"].items()):
+            yield "_T", canton, "_T", year, n
+        for dom, n in sorted(agg["domain"].items()):
+            yield "_T", "_T", dom, year, n
+        yield "_T", "_T", "_T", year, agg["all"]
 
 
 def _concordat_observations(conc_sig: dict):
+    """Yield (canton, domain, year, value): detail rows plus per-year ``_T``
+    marginals — (canton,_T), (_T,domain) and the grand total (_T,_T)."""
     for year in sorted(conc_sig.get("by_year", {})):
         if year == "unknown":
             continue
-        for canton in sorted(conc_sig["by_year"][year]):
-            for dom, n in sorted(conc_sig["by_year"][year][canton].items()):
-                if n:
-                    yield canton, dom, year, n
+        cantons = conc_sig["by_year"][year]
+        canton_tot: dict[str, int] = {}
+        domain_tot: dict[str, int] = {}
+        total = 0
+        for canton in sorted(cantons):
+            for dom, n in sorted(cantons[canton].items()):
+                if not n:
+                    continue
+                yield canton, dom, year, n
+                canton_tot[canton] = canton_tot.get(canton, 0) + n
+                domain_tot[dom] = domain_tot.get(dom, 0) + n
+                total += n
+        for canton, n in sorted(canton_tot.items()):
+            yield canton, "_T", year, n
+        for dom, n in sorted(domain_tot.items()):
+            yield "_T", dom, year, n
+        if total:
+            yield "_T", "_T", year, total
 
 
 def generate_sdmx_csv(flow_id: str, dims: list[str], observations) -> str:

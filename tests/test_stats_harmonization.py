@@ -125,6 +125,71 @@ class TestGenerateHarmonizedCategories:
         assert node["identifier"] == "1.10.10" and node["total"] == 2
 
 
+class TestGenerateHarmonizedByYear:
+    def _setup_repo(self, tmp_path):
+        import json
+        trees = tmp_path / "docs" / "trees"
+        trees.mkdir(parents=True)
+        tree = [{"id": 1, "identifier": "1", "title": "Staat", "children": [
+                    {"id": 2, "identifier": "1.10", "title": "Grundlagen", "children": [
+                        {"id": 3, "identifier": "1.10.10", "title": "Verfassung"}]}]},
+                {"id": 9, "identifier": "9", "title": "Wirtschaft"}]
+        (trees / "global.json").write_text(json.dumps(tree))
+        (tmp_path / "docs").joinpath("federal_global_categories.json").write_text(
+            json.dumps({"101": "1.10.10 Verfassung"}))
+
+    def test_year_cube_and_language_dedup(self, tmp_path):
+        from legalize_ch.stats import generate_harmonized_by_year
+        self._setup_repo(tmp_path)
+        entries = [
+            {"_scope": "federal", "sr_number": "101", "language": "de",
+             "_path": "ch/1/de/101.md", "enactment_date": "1999-06-01"},
+            # same cantonal law in two languages — must count once
+            {"_scope": "cantonal", "canton": "GR", "systematic_number": "1.1",
+             "language": "de", "_path": "ch/gr/de/1.1.md",
+             "global_category": "1.10.10 Verfassung",
+             "enactment_date": "1999-01-01"},
+            {"_scope": "cantonal", "canton": "GR", "systematic_number": "1.1",
+             "language": "it", "_path": "ch/gr/it/1.1.md",
+             "global_category": "1.10.10 Costituzione",
+             "enactment_date": "1999-01-01"},
+            # sentinel date → unknown bucket
+            {"_scope": "cantonal", "canton": "BE", "systematic_number": "2.2",
+             "language": "de", "_path": "ch/be/de/2.2.md",
+             "global_category": "9 Wirtschaft",
+             "enactment_date": "1000-01-01"},
+        ]
+        cube = generate_harmonized_by_year(entries, tmp_path)
+        assert cube["years"]["1999"]["1"] == [1, 1]
+        assert cube["years"]["1999"]["1.10"] == [1, 1]
+        assert "1.10.10" not in cube["years"]["1999"]  # depth capped at 2
+        assert cube["unknown"]["9"] == [0, 1]
+        assert "1000" not in cube["years"]
+
+    def test_totals_match_harmonized_categories(self, tmp_path):
+        from legalize_ch.stats import (generate_harmonized_by_year,
+                                       generate_harmonized_categories)
+        self._setup_repo(tmp_path)
+        entries = [
+            {"_scope": "federal", "sr_number": "101", "language": "de",
+             "_path": "ch/1/de/101.md", "enactment_date": "1999-06-01"},
+            {"_scope": "cantonal", "canton": "GR", "systematic_number": "1.1",
+             "language": "de", "_path": "ch/gr/de/1.1.md",
+             "global_category": "1.10.10 Verfassung"},  # undated
+            {"_scope": "federal", "sr_number": "999.99", "language": "de",
+             "_path": "ch/999/de/999.99.md", "enactment_date": "2005-01-01"},
+        ]
+        cube = generate_harmonized_by_year(entries, tmp_path)
+        harm = generate_harmonized_categories(entries, tmp_path)
+        for n in harm["top_level"]:
+            code = n["identifier"]
+            fed = sum(codes.get(code, [0, 0])[0] for codes in cube["years"].values())
+            fed += cube["unknown"].get(code, [0, 0])[0]
+            cant = sum(codes.get(code, [0, 0])[1] for codes in cube["years"].values())
+            cant += cube["unknown"].get(code, [0, 0])[1]
+            assert (fed, cant) == (n["federal"], n["cantonal"]), code
+
+
 class TestEnglishLabelsAndBreakdowns:
     def test_types_have_english(self):
         from legalize_ch.categories import CATEGORY_TYPES

@@ -27,6 +27,19 @@ CONCORDAT_TYPES = {
     "Accordo intercantonale",
 }
 
+# Earliest plausible enactment year. LexFind serves 1000-01-01 as an
+# "unknown" placeholder (348 files, mostly BE 669.x), and LexWork has at
+# least one century typo (ch/bs/de/561.112.md: 1019-02-01 for 2019-02-01).
+# The oldest genuine entries are 1562/1564 concordats, so 1400 filters the
+# sentinels without touching real data. Applied at aggregation time only —
+# frontmatter keeps the raw upstream values as provenance.
+MIN_PLAUSIBLE_YEAR = 1400
+
+
+def _plausible_date(d: str) -> bool:
+    y = str(d)[:4]
+    return y.isdigit() and int(y) >= MIN_PLAUSIBLE_YEAR
+
 ALL_CANTON_CODES = [
     "AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE", "GL", "GR", "JU", "LU",
     "NE", "NW", "OW", "SG", "SH", "SO", "SZ", "TG", "TI", "UR", "VD", "VS",
@@ -120,16 +133,16 @@ def enactment_year(e: dict) -> str:
     """
     candidates = []
     ed = str(e.get("enactment_date", ""))
-    if len(ed) >= 4:
+    if len(ed) >= 4 and _plausible_date(ed):
         candidates.append(ed)
     vds = e.get("version_dates")
     if isinstance(vds, list) and vds:
-        first = str(min(vds))
-        if len(first) >= 4:
-            candidates.append(first)
+        plausible = [str(v) for v in vds if _plausible_date(str(v))]
+        if plausible:
+            candidates.append(min(plausible))
     if not candidates:
         vd = str(e.get("version_date", ""))
-        if len(vd) >= 4:
+        if len(vd) >= 4 and _plausible_date(vd):
             candidates.append(vd)
     return min(candidates)[:4] if candidates else ""
 
@@ -274,7 +287,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
             by_year[year] += 1
             by_year_scope[year][e["_scope"]] += 1
         vd = str(e.get("version_date", ""))
-        if len(vd) >= 7:
+        if len(vd) >= 7 and _plausible_date(vd):
             by_month[vd[:7]] += 1
 
     # ─── Time x field cross-tabs ────────────────────────────────────────
@@ -371,10 +384,20 @@ def generate_tags(entries: list[dict]) -> dict:
             rec["source"] = e.get("source", "")
             federal.append(rec)
 
+    total_files = len(federal) + sum(len(v) for v in by_canton.values())
+    unique_laws = len({
+        (str(e.get("canton", "")),
+         str(e.get("systematic_number") or e.get("sr_number", "")))
+        for e in entries
+        if e.get("systematic_number") or e.get("sr_number")
+    })
     return {
         "federal": federal,
         "cantonal": {k: v for k, v in sorted(by_canton.items())},
-        "total": len(federal) + sum(len(v) for v in by_canton.values()),
+        # records are per language FILE (kept for consumers); the headline
+        # total counts unique laws so languages don't inflate it
+        "total": unique_laws,
+        "total_files": total_files,
     }
 
 
@@ -542,6 +565,36 @@ def generate_unclassified_types(entries: list[dict]) -> dict:
     }
 
 
+def _ancestor_codes(code: str) -> list[str]:
+    """Depth-1 and (if present) depth-2 ancestor codes: '8.10.5' → ['8', '8.10']."""
+    parts = code.split(".")
+    result = [parts[0]]
+    if len(parts) > 1:
+        result.append(f"{parts[0]}.{parts[1]}")
+    return result
+
+
+def _harmonized_code(e: dict, fed_map: dict[str, str]) -> tuple[str, str, str] | None:
+    """(scope, code, provenance) of an entry on the harmonized taxonomy.
+
+    Cantonal laws use their (effective) global_category; federal laws
+    resolve via the fetched SR mapping, falling back to the SR top-level
+    prefix. None when the entry cannot be placed on the tree.
+    """
+    from .categories import federal_fallback_code
+
+    if e["_scope"] == "cantonal":
+        gc, prov = effective_global_category(e)
+        code = _extract_identifier(gc)
+        return ("cantonal", code, prov) if code else None
+    sr = str(e.get("sr_number", ""))
+    code = _extract_identifier(fed_map.get(sr, ""))
+    if code:
+        return "federal", code, "lexfind"
+    code = federal_fallback_code(sr)
+    return ("federal", code, "fallback") if code else None
+
+
 def generate_harmonized_categories(entries: list[dict],
                                    repo_path: str | Path = ".") -> dict:
     """Aggregate ALL laws (federal + cantonal) on the harmonized taxonomy.
@@ -552,8 +605,7 @@ def generate_harmonized_categories(entries: list[dict],
     fetched SR mapping (docs/federal_global_categories.json), falling back
     to the SR top-level prefix (which mirrors the global tree by design).
     """
-    from .categories import (DOMAIN_EN, federal_fallback_code,
-                             load_federal_global_categories)
+    from .categories import DOMAIN_EN, load_federal_global_categories
 
     repo = Path(repo_path)
     deduped = _deduplicate(entries)
@@ -567,41 +619,24 @@ def generate_harmonized_categories(entries: list[dict],
                     "federal_unmapped": 0, "cantonal_classified": 0,
                     "cantonal_unclassified": 0}
 
-    def _ancestors(code: str) -> list[str]:
-        parts = code.split(".")
-        result = [parts[0]]
-        if len(parts) > 1:
-            result.append(f"{parts[0]}.{parts[1]}")
-        return result
-
     for e in deduped:
-        if e["_scope"] == "cantonal":
-            gc, prov = effective_global_category(e)
-            code = _extract_identifier(gc)
-            if code:
-                code_counts[code]["cantonal"] += 1
-                stats_counts["cantonal_classified"] += 1
-                stats_counts[f"cantonal_{prov}"] = stats_counts.get(f"cantonal_{prov}", 0) + 1
-                canton = str(e.get("canton", "")).upper()
-                ctype = effective_category_type(e)[0] or "(untyped)"
-                for anc in _ancestors(code):
-                    breakdowns[anc][canton][ctype] += 1
-            else:
-                stats_counts["cantonal_unclassified"] += 1
+        hc = _harmonized_code(e, fed_map)
+        if hc is None:
+            key = ("cantonal_unclassified" if e["_scope"] == "cantonal"
+                   else "federal_unmapped")
+            stats_counts[key] += 1
+            continue
+        scope, code, prov = hc
+        code_counts[code][scope] += 1
+        if scope == "cantonal":
+            stats_counts["cantonal_classified"] += 1
+            stats_counts[f"cantonal_{prov}"] = stats_counts.get(f"cantonal_{prov}", 0) + 1
+            canton = str(e.get("canton", "")).upper()
+            ctype = effective_category_type(e)[0] or "(untyped)"
+            for anc in _ancestor_codes(code):
+                breakdowns[anc][canton][ctype] += 1
         else:
-            sr = str(e.get("sr_number", ""))
-            label = fed_map.get(sr, "")
-            code = _extract_identifier(label)
-            if code:
-                stats_counts["federal_lexfind"] += 1
-            else:
-                code = federal_fallback_code(sr)
-                if code:
-                    stats_counts["federal_fallback"] += 1
-                else:
-                    stats_counts["federal_unmapped"] += 1
-                    continue
-            code_counts[code]["federal"] += 1
+            stats_counts[f"federal_{prov}"] += 1
 
     # Annotate the multilingual global tree with rolled-up counts
     trees_dir = repo / "docs" / "trees"
@@ -675,6 +710,50 @@ def generate_harmonized_categories(entries: list[dict],
     }
 
 
+def generate_harmonized_by_year(entries: list[dict],
+                                repo_path: str | Path = ".") -> dict:
+    """Per-enactment-year counts on the harmonized taxonomy, depth ≤ 2.
+
+    Companion cube to ``generate_harmonized_categories`` — kept in a
+    separate file so the main endpoint's payload stays stable and the
+    dashboard only fetches it when a year filter is active.  Sparse:
+    only non-zero (year, code) cells are emitted, values are
+    ``[federal, cantonal]`` pairs.  Undated laws (including implausible
+    sentinel dates) land in the ``unknown`` bucket.
+    """
+    from .categories import load_federal_global_categories
+
+    deduped = _deduplicate(entries)
+    fed_map = load_federal_global_categories(Path(repo_path))
+
+    years: dict[str, dict[str, list[int]]] = defaultdict(
+        lambda: defaultdict(lambda: [0, 0]))
+    unknown: dict[str, list[int]] = defaultdict(lambda: [0, 0])
+
+    for e in deduped:
+        hc = _harmonized_code(e, fed_map)
+        if hc is None:
+            continue
+        scope, code, _ = hc
+        idx = 0 if scope == "federal" else 1
+        year = enactment_year(e)
+        target = years[year] if year else unknown
+        for anc in _ancestor_codes(code):
+            target[anc][idx] += 1
+
+    return {
+        "note": "Per-enactment-year counts on the harmonized taxonomy "
+                "(LexFind global systematics), depth <= 2. Values are "
+                "[federal, cantonal] pairs. Titles: join "
+                "/api/v1/categories/global.json or "
+                "/api/v1/stats/harmonized_categories.json.",
+        "year_semantics": "enactment",
+        "depth": 2,
+        "years": {y: dict(codes) for y, codes in sorted(years.items())},
+        "unknown": dict(unknown),
+    }
+
+
 def _concordat_group_minima(concordats: list[dict]) -> dict[str, str]:
     """Per sibling group (normalized title): the earliest AUTHORITATIVE
     evidence date (lexwork_api enactment or version minimum). A concordat
@@ -686,12 +765,14 @@ def _concordat_group_minima(concordats: list[dict]) -> dict[str, str]:
     for e in concordats:
         cand = []
         if str(e.get("enactment_date_source", "")) in ("lexfind_family", "lexwork_api") \
-                and e.get("enactment_date"):
+                and e.get("enactment_date") and _plausible_date(str(e["enactment_date"])):
             cand.append(str(e["enactment_date"]))
         vds = e.get("version_dates")
         if isinstance(vds, list) and vds \
                 and str(e.get("version_dates_source", "")) == "lexwork_api":
-            cand.append(str(min(vds)))
+            plausible = [str(v) for v in vds if _plausible_date(str(v))]
+            if plausible:
+                cand.append(min(plausible))
         if not cand:
             continue
         k = _normalize_title(e.get("title", ""))
@@ -716,22 +797,26 @@ def earliest_known_year(e: dict, group_minima: dict[str, str]) -> tuple[str, str
     src = str(e.get("enactment_date_source", "")).split(":")[0]
     # FROZEN canonical basis (see api/v1/quality/methodology_changelog.json):
     # a lexfind_family date IS the act's original date — use it alone,
-    # no mixing with version minima or sibling evidence.
-    if src == "lexfind_family" and e.get("enactment_date"):
+    # no mixing with version minima or sibling evidence. Sentinel dates
+    # (LexFind's 1000-01-01 "unknown" placeholder) fall through instead.
+    if src == "lexfind_family" and e.get("enactment_date") \
+            and _plausible_date(str(e["enactment_date"])):
         return str(e["enactment_date"])[:4], "lexfind_family"
     cand: list[tuple[str, str]] = []
-    if e.get("enactment_date"):
+    if e.get("enactment_date") and _plausible_date(str(e["enactment_date"])):
         cand.append((str(e["enactment_date"]), "own_enactment"))
     vds = e.get("version_dates")
     if isinstance(vds, list) and vds:
-        cand.append((str(min(vds)), "own_versions"))
+        plausible = [str(v) for v in vds if _plausible_date(str(v))]
+        if plausible:
+            cand.append((min(plausible), "own_versions"))
     if src not in ("lexwork_api", "fedlex"):
         gm = group_minima.get(_normalize_title(e.get("title", "")))
         if gm:
             cand.append((gm, "sibling_group"))
     if not cand:
         vd = str(e.get("version_date", ""))
-        if len(vd) >= 4:
+        if len(vd) >= 4 and _plausible_date(vd):
             cand.append((vd, "own_enactment"))
     if not cand:
         return "", "undated"
@@ -753,16 +838,60 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         e for e in cantonal
         if effective_category_type(e)[0] == "Interkantonale Vereinbarung"
     ]
+    group_minima = _concordat_group_minima(concordats)
+    tab = _domain_cross_tab(
+        concordats, lambda e: earliest_known_year(e, group_minima))
 
+    return {
+        "title": "Intercantonal agreements (concordats) by domain",
+        "source": "LexFind (Institute of Federalism, University of Fribourg)",
+        "total_concordats": tab["totals"]["total"],
+        "domains": _domains_export(),
+        "cantons": tab["cantons"],
+        "totals": tab["totals"],
+        "year_semantics": "enactment",
+        "by_year": tab["by_year"],
+        "by_version_year": tab["by_version_year"],
+        "unclassified_in_autres": tab["unclassified_in_autres"],
+        "domain_provenance": tab["domain_provenance"],
+        "year_evidence": tab["year_evidence"],
+        "notes": [
+            "\"Other\" includes civil law, criminal law and concordats without "
+            "a legal domain in LexFind's public database (~28% unclassified at the source)",
+            "Coverage follows the imported collections — run backfill-lexfind "
+            "to complete under-represented cantons",
+            "Counting unit: canton memberships, not distinct treaties — each "
+            "agreement counts once per signatory canton whose collection "
+            "publishes it (a 26-canton concordat counts 26), matching the "
+            "chstat.ch methodology. Distinct agreements with their signing "
+            "cantons: /api/v1/stats/concordats_signatories.json",
+        ],
+    }
+
+
+def _domains_export() -> list[dict]:
+    return [
+        {"key": d["key"], "label_fr": d["label_fr"], "label_en": d["label_en"],
+         "global_category_codes": d["codes"]}
+        for d in CONCORDAT_DOMAINS
+    ]
+
+
+def _domain_cross_tab(laws: list[dict], year_fn) -> dict:
+    """Canton × domain accumulation shared by the concordats table and the
+    per-instrument-type tables.
+
+    ``year_fn(e) -> (year, evidence)``.  Per-year breakdowns: ``by_year``
+    uses the year_fn result (enactment semantics — a 1970 act amended in
+    2015 counts as 1970); ``by_version_year`` uses the current
+    consolidated version's year (transparency).
+    """
     code_to_key = {c: d["key"] for d in CONCORDAT_DOMAINS for c in d["codes"]}
     domain_keys = [d["key"] for d in CONCORDAT_DOMAINS]
 
     table: dict[str, dict[str, int]] = {
         canton: {k: 0 for k in domain_keys} for canton in ALL_CANTON_CODES
     }
-    # Per-year breakdowns: by_year = ENACTMENT year (laws are law+version
-    # pairs; a 1970 concordat amended in 2015 counts as 1970);
-    # by_version_year = current consolidated version's year (transparency).
     by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
         lambda: defaultdict(lambda: defaultdict(int)))
     by_version_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
@@ -770,11 +899,10 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     unclassified = 0
     provenance: Counter = Counter()
     year_evidence: Counter = Counter()
-    group_minima = _concordat_group_minima(concordats)
-    for e in concordats:
+    for e in laws:
         canton = str(e.get("canton", "")).upper()
         if canton not in table:
-            logger.warning("Concordat with unknown canton %r: %s", canton, e.get("_path"))
+            logger.warning("Law with unknown canton %r: %s", canton, e.get("_path"))
             continue
         gc, prov = effective_global_category(e)
         top_code = _extract_identifier(gc).split(".")[0]
@@ -785,11 +913,11 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         else:
             provenance[prov] += 1
         table[canton][key] += 1
-        year, evidence = earliest_known_year(e, group_minima)
+        year, evidence = year_fn(e)
         year_evidence[evidence] += 1
         by_year[year or "unknown"][canton][key] += 1
         vd = str(e.get("version_date", ""))
-        vyear = vd[:4] if len(vd) >= 4 else "unknown"
+        vyear = vd[:4] if len(vd) >= 4 and _plausible_date(vd) else "unknown"
         by_version_year[vyear][canton][key] += 1
 
     for row in table.values():
@@ -798,17 +926,8 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     totals["total"] = sum(totals.values())
 
     return {
-        "title": "Intercantonal agreements (concordats) by domain",
-        "source": "LexFind (Institute of Federalism, University of Fribourg)",
-        "total_concordats": totals["total"],
-        "domains": [
-            {"key": d["key"], "label_fr": d["label_fr"], "label_en": d["label_en"],
-             "global_category_codes": d["codes"]}
-            for d in CONCORDAT_DOMAINS
-        ],
         "cantons": table,
         "totals": totals,
-        "year_semantics": "enactment",
         "by_year": {y: {c: dict(d) for c, d in cantons.items()}
                     for y, cantons in sorted(by_year.items())},
         "by_version_year": {y: {c: dict(d) for c, d in cantons.items()}
@@ -816,12 +935,512 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         "unclassified_in_autres": unclassified,
         "domain_provenance": dict(provenance),
         "year_evidence": dict(year_evidence),
-        "notes": [
-            "\"Other\" includes civil law, criminal law and concordats without "
-            "a legal domain in LexFind's public database (~28% unclassified at the source)",
+    }
+
+
+# canonical German instrument-type label → filename slug for
+# api/v1/stats/types/{slug}_by_domain.json
+TYPE_SLUGS = {
+    "Staatsvertrag": "staatsvertrag",
+    "Interkantonale Vereinbarung": "interkantonale_vereinbarung",
+    "Verfassung": "verfassung",
+    "Gesetz": "gesetz",
+    "Anderes": "anderes",
+    "Verordnung": "verordnung",
+    "Reglement": "reglement",
+    "Verordnung des Parlaments (Dekret)": "dekret",
+    "Gemeindeerlass": "gemeindeerlass",
+}
+
+
+def generate_types_by_domain(entries: list[dict],
+                             concordat_override: dict | None = None) -> dict:
+    """Canton × domain cross-tab per instrument type — the concordats table
+    generalized to every text category.
+
+    Returns ``{"files": {slug: table_dict}, "index": index_dict}``.  Each
+    table reuses the concordats_by_domain key names (``domains``,
+    ``cantons``, ``totals``, ``by_year``…) so the dashboard renders any
+    type with the same code.  The intercantonal type keeps its
+    provenance-ranked year logic (``earliest_known_year``); other types
+    use plain ``enactment_year`` — sibling-group evidence only makes
+    sense for the same act existing in several cantons.
+    """
+    cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
+    by_type: dict[str, list[dict]] = defaultdict(list)
+    for e in cantonal:
+        ct = effective_category_type(e)[0]
+        if ct in TYPE_SLUGS:
+            by_type[ct].append(e)
+
+    def _plain_year(e: dict) -> tuple[str, str]:
+        y = enactment_year(e)
+        return y, ("dated" if y else "undated")
+
+    files: dict[str, dict] = {}
+    index_types: list[dict] = []
+    for label_de, laws in by_type.items():
+        slug = TYPE_SLUGS[label_de]
+        if label_de == "Interkantonale Vereinbarung":
+            gm = _concordat_group_minima(laws)
+            tab = _domain_cross_tab(laws, lambda e: earliest_known_year(e, gm))
+        else:
+            tab = _domain_cross_tab(laws, _plain_year)
+        label = CATEGORY_TYPE_LABELS.get(label_de, {"de": label_de})
+        notes = [
+            "\"Other\" column includes civil law, criminal law and laws "
+            "without a legal domain in LexFind's public database",
             "Coverage follows the imported collections — run backfill-lexfind "
             "to complete under-represented cantons",
+        ]
+        if label_de == "Interkantonale Vereinbarung":
+            notes.append(
+                "Counting unit: canton memberships, not distinct treaties — "
+                "each agreement counts once per signatory canton whose "
+                "collection publishes it, matching the chstat.ch methodology")
+        files[slug] = {
+            "title": f"Cantonal acts of type '{label_de}' by canton and domain",
+            "type": {"slug": slug, "label": label},
+            "source": "LexFind (Institute of Federalism, University of Fribourg)",
+            "total": tab["totals"]["total"],
+            "domains": _domains_export(),
+            "cantons": tab["cantons"],
+            "totals": tab["totals"],
+            "year_semantics": "enactment",
+            "by_year": tab["by_year"],
+            "unclassified_in_autres": tab["unclassified_in_autres"],
+            "domain_provenance": tab["domain_provenance"],
+            "notes": notes,
+        }
+        entry = {"slug": slug, "label": label,
+                 "total": tab["totals"]["total"],
+                 "path": f"api/v1/stats/types/{slug}_by_domain.json"}
+        if slug == "interkantonale_vereinbarung" and concordat_override:
+            # keep the dashboard selector consistent with the headline
+            # (chstat-calibrated) table it actually displays
+            entry.update(concordat_override)
+            entry["published_total"] = tab["totals"]["total"]
+        index_types.append(entry)
+
+    index_types.sort(key=lambda t: -t["total"])
+    index = {
+        "note": "Canton × domain cross-tabs per instrument type. Same shape "
+                "as /api/v1/stats/concordats_by_domain.json.",
+        "types": index_types,
+    }
+    return {"files": files, "index": index}
+
+
+# Canton names as they appear in treaty titles, in all three languages
+# (incl. spelling variants).  A canton named in an agreement's title is a
+# signatory even when its own collection does not publish the text —
+# ported from scripts/fetch_concordats_to_2003.py and extended with
+# French/Italian variants (fr-only cantons title their copies in French).
+CANTON_NAME_VARIANTS = {
+    "ZH": ["Zürich", "Zurich", "Zurigo"],
+    "BE": ["Bern", "Berne", "Berna"],
+    "LU": ["Luzern", "Lucerne", "Lucerna"],
+    "UR": ["Uri"],
+    "SZ": ["Schwyz", "Schwytz", "Svitto"],
+    "OW": ["Obwalden", "Obwald", "Obvaldo"],
+    "NW": ["Nidwalden", "Nidwald", "Nidvaldo"],
+    "GL": ["Glarus", "Glaris", "Glarona"],
+    "ZG": ["Zug", "Zoug", "Zugo"],
+    "FR": ["Freiburg", "Fribourg", "Friburgo"],
+    "SO": ["Solothurn", "Soleure", "Soletta"],
+    "BS": ["Basel-Stadt", "Bâle-Ville", "Basilea Città"],
+    "BL": ["Basel-Landschaft", "Basel-Land", "Bâle-Campagne", "Basilea Campagna"],
+    "SH": ["Schaffhausen", "Schaffhouse", "Sciaffusa"],
+    "AR": ["Appenzell Ausserrhoden", "Appenzell A.Rh", "Appenzell AR",
+           "Appenzell Rhodes-Extérieures"],
+    "AI": ["Appenzell Innerrhoden", "Appenzell I.Rh", "Appenzell IR",
+           "Appenzell Rhodes-Intérieures"],
+    "SG": ["St.Gallen", "St. Gallen", "Sankt Gallen", "Saint-Gall", "San Gallo"],
+    "GR": ["Graubünden", "Grisons", "Grigioni"],
+    "AG": ["Aargau", "Argovie", "Argovia"],
+    "TG": ["Thurgau", "Thurgovie", "Turgovia"],
+    "TI": ["Tessin", "Ticino"],
+    "VD": ["Waadt", "Vaud"],
+    "VS": ["Wallis", "Valais", "Vallese"],
+    "NE": ["Neuenburg", "Neuchâtel"],
+    "GE": ["Genf", "Genève", "Ginevra"],
+    "JU": ["Jura", "Giura"],
+}
+# "Basel"/"Bâle" alone (without Stadt/Landschaft) historically means BS in
+# pre-1833 treaties; matched only when neither compound form is present.
+_BASEL_BARE = ("Basel", "Bâle", "Basilea")
+
+
+def cantons_named_in_title(title: str) -> list[str]:
+    """Return the sorted canton codes explicitly named in a treaty title."""
+    t = title or ""
+    found = set()
+    for code, variants in CANTON_NAME_VARIANTS.items():
+        if any(v in t for v in variants):
+            found.add(code)
+    if "BS" not in found and "BL" not in found \
+            and any(b in t for b in _BASEL_BARE):
+        found.add("BS")
+    return sorted(found)
+
+
+def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
+    """Distinct intercantonal agreements with their estimated signatory sets.
+
+    Takes RAW (pre-dedup) entries so every language version's title can be
+    scanned for named cantons.  Sibling copies of the same agreement across
+    cantons are grouped by normalized title (the same grouping
+    ``propagate_concordat_dates`` uses).  Per agreement:
+
+    - ``published``: cantons whose collections publish the text
+    - ``named``: cantons explicitly named in any language version's title
+    - ``signatories``: the union — the best available estimate of the full
+      signatory set (LexFind publishes no official member-canton lists)
+    """
+    from .date_enricher import _normalize_title
+
+    cantonal_raw = [
+        e for e in entries if e["_scope"] == "cantonal"
+        and effective_category_type(e)[0] == "Interkantonale Vereinbarung"
+    ]
+    # all-language titles per unique law, before dedup drops fr/it copies
+    titles_by_identity: dict[str, list[str]] = {
+        k: [str(f.get("title", "")) for f in files]
+        for k, files in _group_by_identity(cantonal_raw).items()
+    }
+    concordats = _deduplicate(cantonal_raw)
+    group_minima = _concordat_group_minima(concordats)
+    code_to_key = {c: d["key"] for d in CONCORDAT_DOMAINS for c in d["codes"]}
+
+    groups: dict[str, list[dict]] = defaultdict(list)
+    for e in concordats:
+        k = _normalize_title(e.get("title", ""))
+        if not k:  # untitled: keep as its own singleton group
+            k = f"_untitled/{e.get('canton')}/{e.get('systematic_number')}"
+        groups[k].append(e)
+
+    agreements = []
+    for members in groups.values():
+        de_members = [e for e in members if e.get("language") == "de"]
+        rep = de_members[0] if de_members else members[0]
+        gc, _ = effective_global_category(rep)
+        domain = code_to_key.get(_extract_identifier(gc).split(".")[0], "autres")
+        years = [y for y, _ in (earliest_known_year(e, group_minima)
+                                for e in members) if y]
+        per_canton: dict[str, dict] = {}
+        named: set[str] = set()
+        for e in sorted(members, key=lambda x: str(x.get("canton", ""))):
+            canton = str(e.get("canton", "")).upper()
+            per_canton.setdefault(canton, {
+                "systematic_number": str(e.get("systematic_number", "")),
+                "languages": e.get("_languages", [str(e.get("language", ""))]),
+            })
+            ident = f"{e.get('canton', '')}/{e.get('systematic_number', '')}"
+            for t in titles_by_identity.get(ident, [str(e.get("title", ""))]):
+                named.update(cantons_named_in_title(t))
+        named &= set(ALL_CANTON_CODES)
+        published = sorted(per_canton)
+        agreements.append({
+            "title": str(rep.get("title", "")),
+            "domain": domain,
+            "year": min(years) if years else "",
+            "published": published,
+            "named": sorted(named),
+            "signatories": sorted(set(published) | named),
+            "per_canton": per_canton,
+        })
+    return agreements
+
+
+def generate_concordat_signatories(entries: list[dict]) -> dict:
+    """Distinct intercantonal agreements with their signing cantons.
+
+    Signatories = cantons whose collections publish the text, UNION the
+    cantons explicitly named in any language version's title.  Only
+    implemented for intercantonal agreements — the signing-cantons
+    dimension exists only for texts adopted by several cantons.
+    """
+    agreements = [{
+        "title": a["title"],
+        "domain": a["domain"],
+        "year": a["year"],
+        "n_signatories": len(a["signatories"]),
+        "signatories": a["signatories"],
+        "published": a["published"],
+        "named_in_title": a["named"],
+        "per_canton": a["per_canton"],
+    } for a in _concordat_agreement_groups(entries)]
+
+    agreements.sort(key=lambda a: (-a["n_signatories"], a["year"] or "9999",
+                                   a["title"]))
+    return {
+        "title": "Intercantonal agreements with signing cantons",
+        "source": "LexFind (Institute of Federalism, University of Fribourg)",
+        "total_agreements": len(agreements),
+        "year_semantics": "enactment",
+        "domains": _domains_export(),
+        "agreements": agreements,
+        "notes": [
+            "Signatories = cantons whose collections publish the text, plus "
+            "cantons explicitly named in the title of any language version "
+            "— the best available estimate: LexFind does not publish "
+            "official member-canton lists per text",
+            "Grouping is by normalized title and therefore language-"
+            "sensitive: a canton publishing only a French version of an "
+            "agreement titled in German elsewhere appears as a separate "
+            "entry",
         ],
+    }
+
+
+def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
+    """Canton × domain concordats table under the chstat/BADAC 2003
+    methodology: one agreement counts once per SIGNATORY canton — an
+    agreement signed by 10 cantons contributes 10 to its year's total.
+
+    Signatory sets are estimated per agreement (published collections ∪
+    cantons named in titles, see ``_concordat_agreement_groups``).  Same
+    output shape as ``generate_concordats_by_domain`` so the dashboard
+    table, CSV export and embeds render it unchanged.
+    """
+    agreements = _concordat_agreement_groups(entries)
+    domain_keys = [d["key"] for d in CONCORDAT_DOMAINS]
+
+    table: dict[str, dict[str, int]] = {
+        canton: {k: 0 for k in domain_keys} for canton in ALL_CANTON_CODES
+    }
+    by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))
+    named_only_adds = 0
+    until_2003 = 0
+    for a in agreements:
+        for canton in a["signatories"]:
+            table[canton][a["domain"]] += 1
+            by_year[a["year"] or "unknown"][canton][a["domain"]] += 1
+        named_only_adds += len(set(a["signatories"]) - set(a["published"]))
+        if a["year"] and a["year"] <= "2003":
+            until_2003 += len(a["signatories"])
+
+    for row in table.values():
+        row["total"] = sum(row.values())
+    totals = {k: sum(row[k] for row in table.values()) for k in domain_keys}
+    totals["total"] = sum(totals.values())
+
+    return {
+        "title": "Intercantonal agreements (concordats) by domain — "
+                 "signatory-canton counting",
+        "source": "LexFind (Institute of Federalism, University of Fribourg)",
+        "methodology": "chstat/BADAC 2003: each agreement counts once per "
+                       "signatory canton (an agreement signed by 10 cantons "
+                       "counts 10). Signatory set per agreement = cantons "
+                       "publishing the text in their collections ∪ cantons "
+                       "named in any language version's title.",
+        "total_concordats": totals["total"],
+        "total_memberships": totals["total"],
+        "total_agreements": len(agreements),
+        "memberships_until_2003": until_2003,
+        "chstat_2003_reference": 2522,
+        "memberships_added_by_title_evidence": named_only_adds,
+        "domains": _domains_export(),
+        "cantons": table,
+        "totals": totals,
+        "year_semantics": "enactment",
+        "by_year": {y: {c: dict(d) for c, d in cantons.items()}
+                    for y, cantons in sorted(by_year.items())},
+        "notes": [
+            "Counting unit: canton memberships under the chstat/BADAC 2003 "
+            "methodology — each agreement counts once per signatory canton",
+            "Signatories are estimated (published collections ∪ cantons "
+            "named in titles); LexFind publishes no official member lists. "
+            "The remaining gap to chstat's 2003 figure is historical "
+            "attrition: agreements repealed before today's collections "
+            "were built no longer appear",
+            "Distinct agreements with their signatory sets: "
+            "/api/v1/stats/concordats_signatories.json",
+        ],
+    }
+
+
+def generate_concordats_extrapolated(entries: list[dict],
+                                     chstat_2003: dict | None = None) -> dict:
+    """Cumulative concordat memberships 1848 → today, COMPUTED from our
+    signatory-weighted data and calibrated to chstat's 2003 canton totals.
+
+    chstat/BADAC counting: each agreement counts once per signatory canton.
+    Today's collections under-count the historical corpus (agreements
+    repealed decades ago were delisted), so the ≤2003 part of our computed
+    series S[canton][domain][year] is scaled per canton by
+    ``F_c = chstat_canton_total / S_c(≤2003)`` and integerized with the
+    largest-remainder method so each canton's ≤2003 total equals chstat's
+    published figure exactly (grand total 2,522 by construction).  The
+    domain split and the year distribution remain OUR computed structure —
+    nothing is copied cell-by-cell.  Post-2003 cells are unscaled: recent
+    collections are effectively complete.
+
+    Same output shape as ``generate_concordats_by_domain`` so the dashboard
+    table, CSV export and embeds render it unchanged.
+    """
+    chstat = chstat_2003 if chstat_2003 is not None else CHSTAT_2003
+    domain_keys = [d["key"] for d in CONCORDAT_DOMAINS]
+
+    # Our signatory-weighted series, real years
+    series: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))  # canton → year → domain
+    for a in _concordat_agreement_groups(entries):
+        year = a["year"] or "unknown"
+        for canton in a["signatories"]:
+            series[canton][year][a["domain"]] += 1
+
+    table: dict[str, dict[str, int]] = {
+        canton: {k: 0 for k in domain_keys} for canton in ALL_CANTON_CODES
+    }
+    by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))
+    factors: dict[str, float] = {}
+    our_le2003: dict[str, int] = {}
+    chstat_totals = {c: sum(v) for c, v in chstat.items()}
+    post_2003 = 0
+
+    for canton in ALL_CANTON_CODES:
+        cells_le2003 = []   # (year, domain, our_count)
+        for year, doms in series.get(canton, {}).items():
+            for dom, cnt in doms.items():
+                if year != "unknown" and year <= "2003":
+                    cells_le2003.append((year, dom, cnt))
+                else:
+                    table[canton][dom] += cnt
+                    by_year[year][canton][dom] += cnt
+                    post_2003 += cnt
+        ours = sum(c for _, _, c in cells_le2003)
+        our_le2003[canton] = ours
+        target = chstat_totals.get(canton, 0)
+        if not cells_le2003 or not ours:
+            factors[canton] = 0.0
+            continue
+        f = target / ours
+        factors[canton] = round(f, 4)
+        # largest-remainder integerization: canton's ≤2003 total == target
+        scaled = [(y, d, c * f) for y, d, c in cells_le2003]
+        floored = [(y, d, int(v)) for y, d, v in scaled]
+        remainder = target - sum(v for _, _, v in floored)
+        order = sorted(range(len(scaled)),
+                       key=lambda i: (-(scaled[i][2] - floored[i][2]),
+                                      scaled[i][0], scaled[i][1]))
+        for rank, i in enumerate(order):
+            y, d, v = floored[i]
+            if rank < remainder:
+                v += 1
+            if v:
+                table[canton][d] += v
+                by_year[y][canton][d] += v
+
+    for row in table.values():
+        row["total"] = sum(row.values())
+    totals = {k: sum(row[k] for row in table.values()) for k in domain_keys}
+    totals["total"] = sum(totals.values())
+    # achieved ≤2003 sum — equals the chstat target whenever every canton has
+    # ≤2003 evidence to scale (true on real data)
+    baseline = sum(
+        n for y, cantons in by_year.items() if y != "unknown" and y <= "2003"
+        for doms in cantons.values() for n in doms.values())
+
+    return {
+        "title": "Intercantonal agreements (concordats) by domain — "
+                 "cumulative memberships since 1848, chstat-calibrated",
+        "source": "Computed from LexFind-derived collections (signatory-"
+                  "weighted); ≤2003 calibrated per canton to chstat.ch/BADAC "
+                  "2003 (Institute of Federalism)",
+        "methodology": "chstat/BADAC counting: each agreement counts once per "
+                       "signatory canton (signed by 10 cantons → counts 10). "
+                       "Signatories per agreement = cantons publishing the "
+                       "text ∪ cantons named in any language version's title. "
+                       "≤2003 cells are our computed series scaled per canton "
+                       "(largest-remainder) so canton totals equal chstat's "
+                       "published 2003 figures; the domain and year structure "
+                       "is computed, not copied. Post-2003 cells are unscaled.",
+        "total_concordats": totals["total"],
+        "total_memberships": totals["total"],
+        "baseline_memberships_2003": baseline,
+        "post_2003_memberships": post_2003,
+        "calibration": {
+            "target": "chstat.ch/BADAC 2003 per-canton totals",
+            "target_total": sum(chstat_totals.values()),
+            "chstat_canton_totals": chstat_totals,
+            "our_le2003_memberships": our_le2003,
+            "factors": factors,
+        },
+        "domains": _domains_export(),
+        "cantons": table,
+        "totals": totals,
+        "year_semantics": "enactment",
+        "by_year": {y: {c: dict(d) for c, d in cantons.items()}
+                    for y, cantons in sorted(by_year.items())},
+        "notes": [
+            "≤2003 is computed from our signatory-weighted series and "
+            "calibrated per canton to chstat's published 2003 totals "
+            "(2,522 memberships overall) — the calibration corrects "
+            "historical attrition (agreements delisted from today's "
+            "collections); see the 'calibration' block for the factors",
+            "Post-2003 agreements are signatory-weighted from our data, "
+            "unscaled: cantons publishing the text plus cantons named in "
+            "any language version's title",
+            "by_year carries the real computed year distribution (earliest "
+            "known evidence per agreement)",
+        ],
+    }
+
+
+def generate_undated_laws(entries: list[dict]) -> dict:
+    """Review list of laws with no plausible enactment-year evidence.
+
+    A law is undated when ``enactment_year`` finds nothing usable: either
+    no date fields at all (``no_date``) or only implausible values —
+    LexFind's 1000-01-01 "unknown" sentinel and similar pre-1400 dates
+    (``implausible_date``).  Published at api/v1/quality/undated_laws.json
+    so the excluded laws can be inspected one by one.
+    """
+    link_base = "https://github.com/benjamin-arfa/swiss-law/blob/main/"
+    laws = []
+    by_entity: Counter = Counter()
+    by_reason: Counter = Counter()
+    for e in _deduplicate(entries):
+        if enactment_year(e):
+            continue
+        entity = "CH" if e["_scope"] == "federal" else str(e.get("canton", "")).upper()
+        raw_dates: dict = {}
+        if e.get("enactment_date"):
+            raw_dates["enactment_date"] = str(e["enactment_date"])
+        if e.get("version_date"):
+            raw_dates["version_date"] = str(e["version_date"])
+        vds = e.get("version_dates")
+        if isinstance(vds, list) and vds:
+            raw_dates["version_dates"] = [str(v) for v in vds]
+        reason = "implausible_date" if raw_dates else "no_date"
+        by_entity[entity] += 1
+        by_reason[reason] += 1
+        laws.append({
+            "entity": entity,
+            "id": str(e.get("sr_number") or e.get("systematic_number") or ""),
+            "title": str(e.get("title", "")),
+            "category_type": effective_category_type(e)[0],
+            "languages": e.get("_languages", [str(e.get("language", ""))]),
+            "raw_dates": raw_dates,
+            "enactment_date_source": str(e.get("enactment_date_source", "")),
+            "reason": reason,
+            "link": link_base + str(e.get("_path", "")),
+        })
+    laws.sort(key=lambda l: (l["entity"], l["id"]))
+    return {
+        "title": "Laws excluded from year-based statistics (no plausible date)",
+        "note": "enactment_year() found no usable evidence: 'no_date' = no "
+                "date fields at all; 'implausible_date' = only sentinel or "
+                f"typo values before year {MIN_PLAUSIBLE_YEAR} (e.g. LexFind's "
+                "1000-01-01 'unknown' placeholder). Raw upstream values are "
+                "kept in raw_dates for review.",
+        "total": len(laws),
+        "by_entity": dict(by_entity.most_common()),
+        "by_reason": dict(by_reason),
+        "laws": laws,
     }
 
 

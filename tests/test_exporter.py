@@ -65,14 +65,15 @@ def law_repo(tmp_path):
 
 class TestCollectMetadata:
     def test_collects_all_languages(self, law_repo):
+        # One row per LAW — language versions collapse into `languages`
         entries = collect_metadata(str(law_repo), languages=["de", "fr"])
-        sr_numbers = {e["sr_number"] for e in entries}
+        sr_numbers = [e["sr_number"] for e in entries]
         assert "210" in sr_numbers
         assert "311.0" in sr_numbers
-        # French version of 210
-        fr_entries = [e for e in entries if e["sr_number"] == "210" and e["language"] == "fr"]
-        assert len(fr_entries) == 1
-        assert fr_entries[0]["title"] == "Code civil"
+        assert len(sr_numbers) == len(set(sr_numbers))  # no per-language rows
+        e210 = next(e for e in entries if e["sr_number"] == "210")
+        assert e210["languages"] == "de|fr"
+        assert e210["language"] == "de"   # representative (de-preferred)
 
     def test_sr_filter(self, law_repo):
         entries = collect_metadata(str(law_repo), languages=["de"], sr_filter="21")

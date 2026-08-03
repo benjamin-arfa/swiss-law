@@ -518,6 +518,13 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
                f"federal mapped: {harm['counts']['federal_lexfind']} lexfind "
                f"+ {harm['counts']['federal_fallback']} fallback")
 
+    click.echo("Generating harmonized-by-year cube...")
+    from .stats import generate_harmonized_by_year
+    harm_by_year = generate_harmonized_by_year(entries, repo_path)
+    write_stats_json(harm_by_year,
+                     site_path / "api" / "v1" / "stats" / "harmonized_by_year.json")
+    click.echo(f"  {len(harm_by_year['years'])} year buckets")
+
     write_stats_json(s, site_path / "stats.json")
     click.echo(f"  stats.json: {s['total_laws']} laws ({s['federal_laws']} federal, {s['cantonal_laws']} cantonal)")
 
@@ -541,6 +548,54 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_stats_json(conc, site_path / "api" / "v1" / "stats" / "concordats_by_domain.json")
     click.echo(f"  {conc['total_concordats']} concordats across {len(conc['cantons'])} cantons")
 
+    click.echo("Generating chstat-calibrated cumulative table (1848 -> today)...")
+    from .stats import generate_concordats_extrapolated
+    conc_ext = generate_concordats_extrapolated(entries)
+    write_stats_json(conc_ext, site_path / "api" / "v1" / "stats"
+                     / "concordats_by_domain_extrapolated.json")
+    click.echo(f"  {conc_ext['baseline_memberships_2003']} (<=2003, calibrated to chstat) + "
+               f"{conc_ext['post_2003_memberships']} post-2003 = "
+               f"{conc_ext['total_memberships']} memberships")
+
+    click.echo("Generating per-type domain tables...")
+    from .stats import generate_types_by_domain
+    type_tables = generate_types_by_domain(entries, concordat_override={
+        "total": conc_ext["total_memberships"],
+        "path": "api/v1/stats/concordats_by_domain_extrapolated.json",
+    })
+    for slug, tbl in type_tables["files"].items():
+        write_stats_json(tbl, site_path / "api" / "v1" / "stats" / "types"
+                         / f"{slug}_by_domain.json")
+    write_stats_json(type_tables["index"],
+                     site_path / "api" / "v1" / "stats" / "types" / "index.json")
+    click.echo(f"  {len(type_tables['files'])} instrument types written")
+
+    click.echo("Generating concordat signatories...")
+    from .stats import generate_concordat_signatories
+    sig = generate_concordat_signatories(entries)
+    write_stats_json(sig, site_path / "api" / "v1" / "stats" / "concordats_signatories.json")
+    click.echo(f"  {sig['total_agreements']} distinct agreements")
+
+    click.echo("Generating signatory-weighted concordats table (chstat methodology)...")
+    from .stats import generate_concordats_by_domain_signatories
+    conc_sig = generate_concordats_by_domain_signatories(entries)
+    write_stats_json(conc_sig, site_path / "api" / "v1" / "stats"
+                     / "concordats_by_domain_signatories.json")
+    click.echo(f"  {conc_sig['total_memberships']} memberships across "
+               f"{conc_sig['total_agreements']} agreements; "
+               f"<=2003: {conc_sig['memberships_until_2003']} vs chstat "
+               f"{conc_sig['chstat_2003_reference']} "
+               f"(+{conc_sig['memberships_added_by_title_evidence']} from title evidence)")
+
+    click.echo("Generating CSV + SDMX data exports...")
+    from .data_exports import generate_csv_exports, write_csv_exports
+    from .sdmx import generate_sdmx_files, write_sdmx_files
+    csv_files = generate_csv_exports(type_tables, conc_ext)
+    write_csv_exports(csv_files, site_path / "api" / "v1" / "csv")
+    sdmx_files = generate_sdmx_files(type_tables, conc_ext)
+    write_sdmx_files(sdmx_files, site_path / "api" / "sdmx")
+    click.echo(f"  {len(csv_files)} CSV files, {len(sdmx_files)} SDMX artefacts")
+
     click.echo("Generating chstat-2003 verification comparison...")
     from .stats import generate_chstat_comparison
     comparison = generate_chstat_comparison(entries)
@@ -553,6 +608,12 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     law_idx = generate_law_index(entries)
     write_law_index(law_idx, site_path / "api" / "v1" / "laws")
     click.echo(f"  {sum(v['laws'] for v in law_idx.values())} laws across {len(law_idx)} entities")
+
+    click.echo("Generating undated-laws review list...")
+    from .stats import generate_undated_laws
+    und = generate_undated_laws(entries)
+    write_stats_json(und, site_path / "api" / "v1" / "quality" / "undated_laws.json")
+    click.echo(f"  {und['total']} undated laws ({und['by_reason']})")
 
     click.echo("Generating unclassified-types review list...")
     from .stats import generate_unclassified_types

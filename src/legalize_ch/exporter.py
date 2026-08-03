@@ -66,7 +66,10 @@ def collect_metadata(repo_path: str = ".", languages: list[str] | None = None,
         sr_filter: Only include SR numbers starting with this prefix.
 
     Returns:
-        List of metadata dicts, one per law file.
+        List of metadata dicts, ONE PER LAW — language versions are collapsed
+        into a ``languages`` field ("de|fr|it"); the representative metadata
+        (title, abbreviation…) comes from the first language in scan order
+        (de-preferred).
     """
     if languages is None:
         languages = ["de", "fr", "it"]
@@ -77,8 +80,7 @@ def collect_metadata(repo_path: str = ".", languages: list[str] | None = None,
     if not ch_dir.exists():
         raise FileNotFoundError(f"Directory not found: {ch_dir}")
 
-    entries: list[dict] = []
-    seen: set[tuple[str, str]] = set()  # (sr_number, language) dedup
+    by_sr: dict[str, dict] = {}
 
     for lang in languages:
         for md_file in sorted(ch_dir.rglob(f"*/{lang}/*.md")):
@@ -92,14 +94,15 @@ def collect_metadata(repo_path: str = ".", languages: list[str] | None = None,
             if sr_filter and not sr.startswith(sr_filter):
                 continue
 
-            key = (sr, file_lang)
-            if key in seen:
+            if sr in by_sr:
+                if file_lang not in by_sr[sr]["_langs"]:
+                    by_sr[sr]["_langs"].append(file_lang)
                 continue
-            seen.add(key)
 
             entry = {
                 "sr_number": sr,
-                "language": file_lang,
+                "language": file_lang,   # representative (de-preferred)
+                "_langs": [file_lang],
                 "title": fm.get("title", ""),
                 "abbreviation": fm.get("abbreviation", ""),
                 "version_date": fm.get("version_date", ""),
@@ -114,13 +117,18 @@ def collect_metadata(repo_path: str = ".", languages: list[str] | None = None,
             # Build Fedlex URI
             entry["fedlex_uri"] = f"https://fedlex.data.admin.ch/eli/cc/{sr}"
 
-            # Relative file path
+            # Relative file path (representative language version)
             sr_prefix = sr.split(".")[0]
             entry["file_path"] = f"ch/{sr_prefix}/{file_lang}/{sr}.md"
 
-            entries.append(entry)
+            by_sr[sr] = entry
 
-    logger.info(f"Collected metadata for {len(entries)} law files")
+    entries = []
+    for entry in by_sr.values():
+        entry["languages"] = "|".join(entry.pop("_langs"))
+        entries.append(entry)
+
+    logger.info(f"Collected metadata for {len(entries)} unique laws")
     return entries
 
 
@@ -137,7 +145,7 @@ def export_csv(entries: list[dict]) -> str:
         return ""
 
     fieldnames = [
-        "sr_number", "title", "abbreviation", "language",
+        "sr_number", "title", "abbreviation", "languages",
         "version_date", "category", "fedlex_uri", "source", "file_path",
     ]
 
@@ -169,7 +177,7 @@ def export_jsonld(entries: list[dict]) -> dict:
             "@id": entry["fedlex_uri"],
             "identifier": entry["sr_number"],
             "name": entry.get("title", ""),
-            "inLanguage": entry.get("language", ""),
+            "inLanguage": (entry.get("languages") or entry.get("language", "")).split("|"),
             "legislationIdentifier": entry["sr_number"],
             "isPartOf": {
                 "@type": "LegislationObject",

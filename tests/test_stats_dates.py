@@ -25,6 +25,36 @@ class TestEnactmentYear:
         assert enactment_year({}) == ""
 
 
+class TestYearPlausibilityFloor:
+    def test_lexfind_sentinel_is_unknown(self):
+        assert enactment_year({"enactment_date": "1000-01-01"}) == ""
+
+    def test_century_typo_in_version_dates_skipped(self):
+        # ch/bs/de/561.112.md: lexwork_api typo 1019-02-01 for 2019-02-01
+        assert enactment_year({"version_dates": ["1019-02-01", "2019-02-01"],
+                               "version_date": "2019-02-01"}) == "2019"
+
+    def test_sentinel_falls_back_to_version_history(self):
+        assert enactment_year({"enactment_date": "1000-01-01",
+                               "version_dates": ["1998-01-01"]}) == "1998"
+
+    def test_genuine_old_concordat_kept(self):
+        assert enactment_year({"enactment_date": "1562-06-01"}) == "1562"
+
+    def test_earliest_known_year_sentinel_undated(self):
+        from legalize_ch.stats import earliest_known_year
+        e = {"title": "X", "enactment_date": "1000-01-01",
+             "enactment_date_source": "lexfind_family"}
+        assert earliest_known_year(e, {}) == ("", "undated")
+
+    def test_earliest_known_year_sentinel_uses_other_evidence(self):
+        from legalize_ch.stats import earliest_known_year
+        e = {"title": "X", "enactment_date": "1000-01-01",
+             "enactment_date_source": "lexfind_family",
+             "version_dates": ["1998-01-01"]}
+        assert earliest_known_year(e, {}) == ("1998", "own_versions")
+
+
 class TestEffectiveGlobalCategory:
     def test_lexfind_precedence(self):
         e = {"global_category": "8.10 Spital",

@@ -548,20 +548,22 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_stats_json(conc, site_path / "api" / "v1" / "stats" / "concordats_by_domain.json")
     click.echo(f"  {conc['total_concordats']} concordats across {len(conc['cantons'])} cantons")
 
-    click.echo("Generating chstat-calibrated cumulative table (1848 -> today)...")
-    from .stats import generate_concordats_extrapolated
-    conc_ext = generate_concordats_extrapolated(entries)
-    write_stats_json(conc_ext, site_path / "api" / "v1" / "stats"
-                     / "concordats_by_domain_extrapolated.json")
-    click.echo(f"  {conc_ext['baseline_memberships_2003']} (<=2003, calibrated to chstat) + "
-               f"{conc_ext['post_2003_memberships']} post-2003 = "
-               f"{conc_ext['total_memberships']} memberships")
+    click.echo("Generating signatory-weighted concordats table (the computed statistic)...")
+    from .stats import generate_concordats_by_domain_signatories
+    conc_sig = generate_concordats_by_domain_signatories(entries)
+    write_stats_json(conc_sig, site_path / "api" / "v1" / "stats"
+                     / "concordats_by_domain_signatories.json")
+    click.echo(f"  {conc_sig['total_memberships']} memberships across "
+               f"{conc_sig['total_agreements']} agreements; "
+               f"<=2003: {conc_sig['memberships_until_2003']} "
+               f"(chstat reference: {conc_sig['chstat_2003_reference']}; "
+               f"+{conc_sig['memberships_added_by_title_evidence']} from title evidence)")
 
     click.echo("Generating per-type domain tables...")
     from .stats import generate_types_by_domain
     type_tables = generate_types_by_domain(entries, concordat_override={
-        "total": conc_ext["total_memberships"],
-        "path": "api/v1/stats/concordats_by_domain_extrapolated.json",
+        "total": conc_sig["total_memberships"],
+        "path": "api/v1/stats/concordats_by_domain_signatories.json",
     })
     for slug, tbl in type_tables["files"].items():
         write_stats_json(tbl, site_path / "api" / "v1" / "stats" / "types"
@@ -576,23 +578,18 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_stats_json(sig, site_path / "api" / "v1" / "stats" / "concordats_signatories.json")
     click.echo(f"  {sig['total_agreements']} distinct agreements")
 
-    click.echo("Generating signatory-weighted concordats table (chstat methodology)...")
-    from .stats import generate_concordats_by_domain_signatories
-    conc_sig = generate_concordats_by_domain_signatories(entries)
-    write_stats_json(conc_sig, site_path / "api" / "v1" / "stats"
-                     / "concordats_by_domain_signatories.json")
-    click.echo(f"  {conc_sig['total_memberships']} memberships across "
-               f"{conc_sig['total_agreements']} agreements; "
-               f"<=2003: {conc_sig['memberships_until_2003']} vs chstat "
-               f"{conc_sig['chstat_2003_reference']} "
-               f"(+{conc_sig['memberships_added_by_title_evidence']} from title evidence)")
+    click.echo("Generating undated-laws review list...")
+    from .stats import generate_undated_laws
+    und = generate_undated_laws(entries)
+    write_stats_json(und, site_path / "api" / "v1" / "quality" / "undated_laws.json")
+    click.echo(f"  {und['total']} undated laws ({und['by_reason']})")
 
     click.echo("Generating CSV + SDMX data exports...")
     from .data_exports import generate_csv_exports, write_csv_exports
     from .sdmx import generate_sdmx_files, write_sdmx_files
-    csv_files = generate_csv_exports(type_tables, conc_ext)
+    csv_files = generate_csv_exports(type_tables, conc_sig, und)
     write_csv_exports(csv_files, site_path / "api" / "v1" / "csv")
-    sdmx_files = generate_sdmx_files(type_tables, conc_ext)
+    sdmx_files = generate_sdmx_files(type_tables, conc_sig)
     write_sdmx_files(sdmx_files, site_path / "api" / "sdmx")
     click.echo(f"  {len(csv_files)} CSV files, {len(sdmx_files)} SDMX artefacts")
 
@@ -608,12 +605,6 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     law_idx = generate_law_index(entries)
     write_law_index(law_idx, site_path / "api" / "v1" / "laws")
     click.echo(f"  {sum(v['laws'] for v in law_idx.values())} laws across {len(law_idx)} entities")
-
-    click.echo("Generating undated-laws review list...")
-    from .stats import generate_undated_laws
-    und = generate_undated_laws(entries)
-    write_stats_json(und, site_path / "api" / "v1" / "quality" / "undated_laws.json")
-    click.echo(f"  {und['total']} undated laws ({und['by_reason']})")
 
     click.echo("Generating unclassified-types review list...")
     from .stats import generate_unclassified_types
@@ -942,6 +933,36 @@ def seed_state(repo: str, rate_limit: float, last_run: str, skip_cantonal: bool)
         click.echo(f"  Total: {sum(per_canton.values())} cantonal keys added")
 
     click.echo("Done.")
+
+
+@main.command("import-dates")
+@click.argument("csv_file", type=click.Path(exists=True))
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--dry-run", is_flag=True, help="Report what would change without writing")
+@click.option("--force", is_flag=True,
+              help="Also overwrite laws that already have a plausible date")
+def import_dates_cmd(csv_file: str, repo: str, dry_run: bool, force: bool):
+    """Apply corrected enactment dates from a filled undated_laws.csv.
+
+    Download api/v1/csv/undated_laws.csv from the site, fill the
+    corrected_enactment_date (YYYY-MM-DD) and correction_note columns,
+    then run this command. Corrections are written to every language
+    version of the law (enactment_date_source: manual_import) and picked
+    up by the next `legalize-ch stats` run.
+    """
+    from .date_import import import_dates
+    res = import_dates(csv_file, repo, dry_run=dry_run, force=force)
+    click.echo(f"{res['rows']} rows read; {res['applied']} corrections "
+               f"{'would be ' if dry_run else ''}applied "
+               f"({res['files']} language files)")
+    if res["skipped"]:
+        click.echo(f"{len(res['skipped'])} skipped:")
+        for label, reason in res["skipped"][:20]:
+            click.echo(f"  {label}: {reason}")
+        if len(res["skipped"]) > 20:
+            click.echo(f"  … and {len(res['skipped']) - 20} more")
+    if res["applied"] and not dry_run:
+        click.echo("Run `legalize-ch stats` to refresh the statistics.")
 
 
 @main.command("export")

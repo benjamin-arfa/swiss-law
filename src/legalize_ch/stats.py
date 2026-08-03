@@ -1248,144 +1248,19 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         "by_year": {y: {c: dict(d) for c, d in cantons.items()}
                     for y, cantons in sorted(by_year.items())},
         "notes": [
-            "Counting unit: canton memberships under the chstat/BADAC 2003 "
-            "methodology — each agreement counts once per signatory canton",
-            "Signatories are estimated (published collections ∪ cantons "
-            "named in titles); LexFind publishes no official member lists. "
-            "The remaining gap to chstat's 2003 figure is historical "
-            "attrition: agreements repealed before today's collections "
-            "were built no longer appear",
+            "THE computed concordats statistic: each agreement counts once "
+            "per signing canton (signed by 10 cantons → 10 occurrences), "
+            "purely from the source data — no scaling, no external baseline",
+            "Signatories per agreement = cantons publishing the text in "
+            "their collections ∪ cantons named in any language version's "
+            "title; LexFind/LexWork publish no official member lists",
+            "chstat.ch/BADAC's 2003 figure (2,522 memberships ≤2003) is an "
+            "external reference only — our computed ≤2003 value is lower "
+            "because agreements repealed decades ago were delisted from "
+            "today's collections (historical attrition); see the "
+            "verification report",
             "Distinct agreements with their signatory sets: "
             "/api/v1/stats/concordats_signatories.json",
-        ],
-    }
-
-
-def generate_concordats_extrapolated(entries: list[dict],
-                                     chstat_2003: dict | None = None) -> dict:
-    """Cumulative concordat memberships 1848 → today, COMPUTED from our
-    signatory-weighted data and calibrated to chstat's 2003 canton totals.
-
-    chstat/BADAC counting: each agreement counts once per signatory canton.
-    Today's collections under-count the historical corpus (agreements
-    repealed decades ago were delisted), so the ≤2003 part of our computed
-    series S[canton][domain][year] is scaled per canton by
-    ``F_c = chstat_canton_total / S_c(≤2003)`` and integerized with the
-    largest-remainder method so each canton's ≤2003 total equals chstat's
-    published figure exactly (grand total 2,522 by construction).  The
-    domain split and the year distribution remain OUR computed structure —
-    nothing is copied cell-by-cell.  Post-2003 cells are unscaled: recent
-    collections are effectively complete.
-
-    Same output shape as ``generate_concordats_by_domain`` so the dashboard
-    table, CSV export and embeds render it unchanged.
-    """
-    chstat = chstat_2003 if chstat_2003 is not None else CHSTAT_2003
-    domain_keys = [d["key"] for d in CONCORDAT_DOMAINS]
-
-    # Our signatory-weighted series, real years
-    series: dict[str, dict[str, dict[str, int]]] = defaultdict(
-        lambda: defaultdict(lambda: defaultdict(int)))  # canton → year → domain
-    for a in _concordat_agreement_groups(entries):
-        year = a["year"] or "unknown"
-        for canton in a["signatories"]:
-            series[canton][year][a["domain"]] += 1
-
-    table: dict[str, dict[str, int]] = {
-        canton: {k: 0 for k in domain_keys} for canton in ALL_CANTON_CODES
-    }
-    by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
-        lambda: defaultdict(lambda: defaultdict(int)))
-    factors: dict[str, float] = {}
-    our_le2003: dict[str, int] = {}
-    chstat_totals = {c: sum(v) for c, v in chstat.items()}
-    post_2003 = 0
-
-    for canton in ALL_CANTON_CODES:
-        cells_le2003 = []   # (year, domain, our_count)
-        for year, doms in series.get(canton, {}).items():
-            for dom, cnt in doms.items():
-                if year != "unknown" and year <= "2003":
-                    cells_le2003.append((year, dom, cnt))
-                else:
-                    table[canton][dom] += cnt
-                    by_year[year][canton][dom] += cnt
-                    post_2003 += cnt
-        ours = sum(c for _, _, c in cells_le2003)
-        our_le2003[canton] = ours
-        target = chstat_totals.get(canton, 0)
-        if not cells_le2003 or not ours:
-            factors[canton] = 0.0
-            continue
-        f = target / ours
-        factors[canton] = round(f, 4)
-        # largest-remainder integerization: canton's ≤2003 total == target
-        scaled = [(y, d, c * f) for y, d, c in cells_le2003]
-        floored = [(y, d, int(v)) for y, d, v in scaled]
-        remainder = target - sum(v for _, _, v in floored)
-        order = sorted(range(len(scaled)),
-                       key=lambda i: (-(scaled[i][2] - floored[i][2]),
-                                      scaled[i][0], scaled[i][1]))
-        for rank, i in enumerate(order):
-            y, d, v = floored[i]
-            if rank < remainder:
-                v += 1
-            if v:
-                table[canton][d] += v
-                by_year[y][canton][d] += v
-
-    for row in table.values():
-        row["total"] = sum(row.values())
-    totals = {k: sum(row[k] for row in table.values()) for k in domain_keys}
-    totals["total"] = sum(totals.values())
-    # achieved ≤2003 sum — equals the chstat target whenever every canton has
-    # ≤2003 evidence to scale (true on real data)
-    baseline = sum(
-        n for y, cantons in by_year.items() if y != "unknown" and y <= "2003"
-        for doms in cantons.values() for n in doms.values())
-
-    return {
-        "title": "Intercantonal agreements (concordats) by domain — "
-                 "cumulative memberships since 1848, chstat-calibrated",
-        "source": "Computed from LexFind-derived collections (signatory-"
-                  "weighted); ≤2003 calibrated per canton to chstat.ch/BADAC "
-                  "2003 (Institute of Federalism)",
-        "methodology": "chstat/BADAC counting: each agreement counts once per "
-                       "signatory canton (signed by 10 cantons → counts 10). "
-                       "Signatories per agreement = cantons publishing the "
-                       "text ∪ cantons named in any language version's title. "
-                       "≤2003 cells are our computed series scaled per canton "
-                       "(largest-remainder) so canton totals equal chstat's "
-                       "published 2003 figures; the domain and year structure "
-                       "is computed, not copied. Post-2003 cells are unscaled.",
-        "total_concordats": totals["total"],
-        "total_memberships": totals["total"],
-        "baseline_memberships_2003": baseline,
-        "post_2003_memberships": post_2003,
-        "calibration": {
-            "target": "chstat.ch/BADAC 2003 per-canton totals",
-            "target_total": sum(chstat_totals.values()),
-            "chstat_canton_totals": chstat_totals,
-            "our_le2003_memberships": our_le2003,
-            "factors": factors,
-        },
-        "domains": _domains_export(),
-        "cantons": table,
-        "totals": totals,
-        "year_semantics": "enactment",
-        "by_year": {y: {c: dict(d) for c, d in cantons.items()}
-                    for y, cantons in sorted(by_year.items())},
-        "notes": [
-            "≤2003 is computed from our signatory-weighted series and "
-            "calibrated per canton to chstat's published 2003 totals "
-            "(2,522 memberships overall) — the calibration corrects "
-            "historical attrition (agreements delisted from today's "
-            "collections); see the 'calibration' block for the factors",
-            "Post-2003 agreements are signatory-weighted from our data, "
-            "unscaled: cantons publishing the text plus cantons named in "
-            "any language version's title",
-            "by_year carries the real computed year distribution (earliest "
-            "known evidence per agreement)",
         ],
     }
 

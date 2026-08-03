@@ -123,9 +123,10 @@ def generate_structures() -> str:
         "chstat/BADAC counting: one observation unit per signatory canton of an "
         "agreement (signatories = cantons publishing the text plus cantons named "
         "in titles). Observations with TIME_PERIOD <= 2003 are computed from the "
-        "Swiss Law Collection's signatory-weighted series and calibrated per "
-        "canton so canton totals equal chstat.ch/BADAC's published 2003 figures "
-        "(2,522 overall); later periods are unscaled.")
+        "Swiss Law Collection's collections — no scaling, no external "
+        "baseline. chstat.ch/BADAC's 2003 figure (2,522 memberships <= 2003) "
+        "is an external comparison reference only; the computed value is "
+        "lower because long-repealed agreements were delisted upstream.")
 
     body = f"""<?xml version="1.0" encoding="UTF-8"?>
 <mes:Structure {_NS}>
@@ -145,7 +146,7 @@ def generate_structures() -> str:
     <str:DataStructures>
 {_dsd("DSD_LAWS", "Cantonal acts by instrument type, canton, legal domain and enactment year",
       [("INSTRUMENT_TYPE", "CL_INSTRUMENT_TYPE"), ("CANTON", "CL_CANTON"), ("DOMAIN", "CL_DOMAIN")])}
-{_dsd("DSD_CONCORDATS", "Intercantonal agreement memberships since 1848 (chstat-calibrated)",
+{_dsd("DSD_CONCORDATS", "Intercantonal agreement memberships (computed signatory counting)",
       [("CANTON", "CL_CANTON"), ("DOMAIN", "CL_DOMAIN")], concordat_annotation)}
     </str:DataStructures>
     <str:Dataflows>
@@ -176,12 +177,12 @@ def _laws_observations(type_tables: dict):
                         yield slug, canton, dom, year, n
 
 
-def _concordat_observations(conc_ext: dict):
-    for year in sorted(conc_ext.get("by_year", {})):
+def _concordat_observations(conc_sig: dict):
+    for year in sorted(conc_sig.get("by_year", {})):
         if year == "unknown":
             continue
-        for canton in sorted(conc_ext["by_year"][year]):
-            for dom, n in sorted(conc_ext["by_year"][year][canton].items()):
+        for canton in sorted(conc_sig["by_year"][year]):
+            for dom, n in sorted(conc_sig["by_year"][year][canton].items()):
                 if n:
                     yield canton, dom, year, n
 
@@ -228,10 +229,10 @@ def generate_generic_data(flow_id: str, dsd_id: str, dims: list[str],
             f'\n  </mes:DataSet>\n</mes:GenericData>\n')
 
 
-def generate_sdmx_files(type_tables: dict, conc_ext: dict) -> dict[str, str]:
+def generate_sdmx_files(type_tables: dict, conc_sig: dict) -> dict[str, str]:
     """Return {relative_path: content} for api/sdmx/."""
     laws = list(_laws_observations(type_tables))
-    conc = list(_concordat_observations(conc_ext))
+    conc = list(_concordat_observations(conc_sig))
     return {
         "structures.xml": generate_structures(),
         "data/df_laws.sdmx.csv": generate_sdmx_csv(

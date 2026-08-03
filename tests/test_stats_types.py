@@ -188,49 +188,6 @@ class TestSignatoryWeightedTable:
                     "year_semantics", "by_year", "notes", "total_concordats"):
             assert key in conc, key
 
-    def test_extrapolated_computed_and_calibrated(self):
-        from legalize_ch.stats import (CHSTAT_2003,
-                                       generate_concordats_extrapolated)
-        assert sum(sum(v) for v in CHSTAT_2003.values()) == 2522
-        entries = [
-            _law(canton="ZH", nr="a", ctype="Interkantonale Vereinbarung",
-                 title="Konkordat Alt A", enacted="1990-01-01"),   # educ
-            _law(canton="ZH", nr="b", ctype="Interkantonale Vereinbarung",
-                 title="Konkordat Alt B", gc="6.10 Steuern",
-                 enacted="1995-01-01"),                            # fin
-            # post-2003, 3 signatories (ZH publishes; BE + LU named in title)
-            _law(canton="ZH", nr="c", ctype="Interkantonale Vereinbarung",
-                 title="Vereinbarung zwischen den Kantonen Zürich, Bern "
-                       "und Luzern", enacted="2010-01-01"),
-        ]
-        target = {"ZH": [0, 0, 6, 0, 0, 0]}   # synthetic chstat: ZH total 6
-        conc = generate_concordats_extrapolated(entries, chstat_2003=target)
-        # ≤2003 COMPUTED from our series (educ 1990 + fin 1995), scaled ×3
-        assert conc["calibration"]["factors"]["ZH"] == 3.0
-        assert conc["baseline_memberships_2003"] == 6
-        assert conc["by_year"]["1990"]["ZH"]["educ"] == 3
-        assert conc["by_year"]["1995"]["ZH"]["fin"] == 3
-        assert "2003" not in conc["by_year"]   # no artificial baseline block
-        # post-2003 unscaled: agreement signed by 3 cantons counts 3
-        assert conc["post_2003_memberships"] == 3
-        assert conc["total_memberships"] == 9
-        assert conc["cantons"]["BE"]["educ"] == 1   # named signatory counted
-
-    def test_largest_remainder_hits_canton_target_exactly(self):
-        from legalize_ch.stats import generate_concordats_extrapolated
-        # 3 equal cells scaled to a non-divisible target must sum exactly
-        entries = [
-            _law(canton="GR", nr=str(i), ctype="Interkantonale Vereinbarung",
-                 title=f"Konkordat {i}", enacted=f"19{70 + i}-01-01")
-            for i in range(3)
-        ]
-        target = {"GR": [0, 0, 7, 0, 0, 0]}
-        conc = generate_concordats_extrapolated(entries, chstat_2003=target)
-        assert conc["baseline_memberships_2003"] == 7
-        gr_cells = [conc["by_year"][y]["GR"]["educ"]
-                    for y in ("1970", "1971", "1972")]
-        assert sorted(gr_cells) == [2, 2, 3]
-
     def test_signatories_export_includes_named(self):
         title = "Vereinbarung zwischen den Kantonen Zürich und Bern"
         sig = generate_concordat_signatories(

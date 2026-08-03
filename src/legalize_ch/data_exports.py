@@ -44,11 +44,15 @@ def _csv(header_comments: list[str], columns: list[str], rows: list[list]) -> st
     return "\n".join(lines) + "\n"
 
 
-def generate_csv_exports(type_tables: dict, conc_ext: dict) -> dict[str, str]:
+def generate_csv_exports(type_tables: dict, conc_sig: dict,
+                         undated: dict | None = None) -> dict[str, str]:
     """Return {filename: csv_text} for api/v1/csv/.
 
     ``type_tables`` is ``generate_types_by_domain``'s return value;
-    ``conc_ext`` is ``generate_concordats_extrapolated``'s.
+    ``conc_sig`` is ``generate_concordats_by_domain_signatories``'s;
+    ``undated`` (optional) is ``generate_undated_laws``'s — exported as a
+    fillable correction template for the ``legalize-ch import-dates``
+    round-trip.
     """
     files: dict[str, str] = {}
     index: list[dict] = []
@@ -83,20 +87,47 @@ def generate_csv_exports(type_tables: dict, conc_ext: dict) -> dict[str, str]:
                   "description": "Everything: all types × cantons × years × domains "
                                  "(long format)"})
 
-    conc_rows = _wide_rows(conc_ext.get("by_year", {}))
-    files["concordats_memberships_since_1848.csv"] = _csv(
-        ["Swiss Law Collection — intercantonal agreement memberships since 1848, "
-         "chstat/BADAC counting (one count per signatory canton)",
-         "computed from the collection's signatory-weighted series; years <= 2003 "
-         "are calibrated per canton so canton totals equal chstat's published 2003 "
-         "figures (2,522 overall); later years are unscaled",
-         f"source: {SOURCE_LINE}; calibration target: chstat.ch/BADAC 2003 "
-         "(Institute of Federalism)"],
+    conc_rows = _wide_rows(conc_sig.get("by_year", {}))
+    files["concordats_memberships.csv"] = _csv(
+        ["Swiss Law Collection — intercantonal agreement memberships, computed: "
+         "one occurrence per SIGNING canton per agreement (signed by 10 cantons "
+         "-> 10 occurrences)",
+         "signatories per agreement = cantons publishing the text in their "
+         "collections + cantons named in any language version's title; no "
+         "scaling, no external baseline",
+         f"source: {SOURCE_LINE}"],
         wide_cols, conc_rows)
-    index.append({"file": "concordats_memberships_since_1848.csv",
+    index.append({"file": "concordats_memberships.csv",
                   "rows": len(conc_rows),
-                  "description": "Concordat memberships, chstat methodology, "
-                                 "cumulative since 1848"})
+                  "description": "Concordat memberships, computed signatory "
+                                 "counting (1 per signing canton per agreement)"})
+
+    if undated:
+        q = lambda s: '"' + str(s).replace('"', '""') + '"'
+        und_rows = [
+            [l["entity"], q(l["id"]), q(l["title"]), q(l["category_type"]),
+             "|".join(l["languages"]),
+             q(json.dumps(l["raw_dates"], ensure_ascii=False)),
+             l["enactment_date_source"], l["reason"], l["link"],
+             "", ""]   # ← columns for the user to fill
+            for l in undated["laws"]
+        ]
+        files["undated_laws.csv"] = _csv(
+            ["Swiss Law Collection — laws without a plausible enactment date "
+             "(correction template)",
+             "fill corrected_enactment_date (YYYY-MM-DD) and correction_note "
+             "(source/citation), then run: legalize-ch import-dates "
+             "undated_laws.csv — corrections are applied to the law files as "
+             "enactment_date_source: manual_import and improve the statistics "
+             "on the next regeneration",
+             f"source: {SOURCE_LINE}"],
+            ["entity", "id", "title", "category_type", "languages",
+             "raw_dates", "enactment_date_source", "reason", "link",
+             "corrected_enactment_date", "correction_note"],
+            und_rows)
+        index.append({"file": "undated_laws.csv", "rows": len(und_rows),
+                      "description": "Undated laws — fillable correction "
+                                     "template for legalize-ch import-dates"})
 
     files["index.json"] = json.dumps({
         "note": "Static CSV exports; regenerated with `legalize-ch stats`. "

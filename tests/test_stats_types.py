@@ -170,15 +170,55 @@ class TestSignatoryWeightedTable:
 
     def test_until_2003_counter(self):
         from legalize_ch.stats import generate_concordats_by_domain_signatories
+        pre = "Vereinbarung zwischen den Kantonen Zürich und Bern"
+        post = "Vereinbarung zwischen den Kantonen Genf und Waadt"
         entries = [
             _law(canton="ZH", nr="a", ctype="Interkantonale Vereinbarung",
-                 title="Konkordat A", enacted="1990-01-01"),
-            _law(canton="BE", nr="b", ctype="Interkantonale Vereinbarung",
-                 title="Konkordat B", enacted="2010-01-01"),
+                 title=pre, enacted="1990-01-01"),
+            _law(canton="GE", nr="b", ctype="Interkantonale Vereinbarung",
+                 title=post, enacted="2010-01-01"),
         ]
         conc = generate_concordats_by_domain_signatories(entries)
-        assert conc["memberships_until_2003"] == 1
+        # only the 1990 concordat is ≤2003; it has two parties → 2 memberships
+        assert conc["concordats_until_2003"] == 1
+        assert conc["memberships_until_2003"] == 2
         assert conc["chstat_2003_reference"] == 2522
+
+    def test_single_party_groups_are_not_concordats(self):
+        from legalize_ch.stats import generate_concordats_by_domain_signatories
+        entries = [
+            # no second canton is evidenced anywhere: an unresolved membership,
+            # not a one-canton concordat
+            _law(canton="ZH", nr="a", ctype="Interkantonale Vereinbarung",
+                 title="Konkordat A", enacted="1990-01-01"),
+        ]
+        conc = generate_concordats_by_domain_signatories(entries)
+        assert conc["min_parties"] == 2
+        assert conc["unresolved_single_party_groups"] == 1
+        assert conc["total_agreements"] == 0
+        assert conc["concordats_until_2003"] == 0
+        assert conc["memberships_until_2003"] == 0
+
+    def test_repeal_dated_before_2003_drops_the_canton(self):
+        from legalize_ch.stats import generate_concordats_by_domain_signatories
+        title = "Vereinbarung zwischen den Kantonen Zürich, Bern und Luzern"
+        entries = [
+            _law(canton="ZH", nr="1.1", ctype="Interkantonale Vereinbarung",
+                 title=title, enacted="1990-01-01"),
+            _law(canton="BE", nr="9.9", ctype="Interkantonale Vereinbarung",
+                 title=title, enacted="1990-01-01"),
+        ]
+        # ZH repealed its copy in 1995 — it was not in the 2003 stock, but the
+        # title still names it, so title evidence keeps the membership
+        zh: dict = entries[0]
+        zh["is_active"] = False
+        zh["repealed_date"] = "1995-06-01"
+        conc = generate_concordats_by_domain_signatories(entries)
+        assert conc["memberships_until_2003"] == 3
+        ev = conc["memberships_until_2003_by_evidence"]
+        # ZH is no longer counted as publishing-in-own-collection
+        assert ev["published_in_own_collection"] == 1
+        assert ev["named_in_title_only"] == 2
 
     def test_shape_matches_legacy_table(self):
         from legalize_ch.stats import generate_concordats_by_domain_signatories

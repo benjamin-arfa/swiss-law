@@ -479,6 +479,14 @@ BADAC_2003_SIZE_BANDS = {
 # "Guère plus d'une dizaine de conventions rassemblaient l'ensemble des
 # cantons" — footnote 1 of the press release names 12 such conventions.
 BADAC_2003_ALL_CANTON_CONVENTIONS = 12
+# A concordat is by definition an agreement BETWEEN cantons.  A group for
+# which only one canton can be evidenced is a membership we failed to resolve
+# (an accession decree, a cantonal implementing act, a stray record) — not a
+# one-canton concordat.  Requiring two established parties is what makes our
+# count comparable to BADAC's, and is applied identically by
+# ``generate_concordat_size_distribution`` and
+# ``generate_concordats_by_domain_signatories``.
+CONCORDAT_MIN_PARTIES = 2
 
 
 def badac_baseline_bands(observed: dict[str, tuple[int, int]] | None = None
@@ -1573,12 +1581,21 @@ def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
         per_canton: dict[str, dict] = {}
         named: set[str] = set()
         in_text: set[str] = set()
+        live: set[str] = set()
         for e in sorted(members, key=lambda x: str(x.get("canton", ""))):
             canton = str(e.get("canton", "")).upper()
             per_canton.setdefault(canton, {
                 "systematic_number": str(e.get("systematic_number", "")),
                 "languages": e.get("_languages", [str(e.get("language", ""))]),
             })
+            # chstat/BADAC is a 2003 STOCK snapshot: an act already repealed
+            # when it was taken was never in it.  Only a DATED repeal on or
+            # before 2003 disqualifies a canton's copy; undated repeals and
+            # repeals after 2003 leave the canton in the 2003 stock.
+            repealed = str(e.get("repealed_date", "") or "")[:4]
+            if not (e.get("is_active") is False and repealed
+                    and repealed <= "2003"):
+                live.add(canton)
             ident = f"{e.get('canton', '')}/{e.get('systematic_number', '')}"
             for t in titles_by_identity.get(ident, [str(e.get("title", ""))]):
                 named.update(cantons_named_in_title(t))
@@ -1588,14 +1605,19 @@ def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
         named &= all_codes
         in_text &= all_codes
         published = sorted(per_canton)
+        # parties as of the 2003 snapshot: a canton's own live copy, or the
+        # act naming it as a party (title or recitals)
+        parties = sorted((live | named | in_text) & all_codes)
         agreements.append({
             "title": str(rep.get("title", "")),
             "domain": domain,
             "year": min(years) if years else "",
             "published": published,
+            "published_live_2003": sorted(live),
             "named": sorted(named),
             "named_in_text": sorted(in_text),
-            "signatories": sorted(set(published) | named | in_text),
+            "signatories": parties,
+            "n_signatories": len(parties),
             "per_canton": per_canton,
         })
     return agreements
@@ -1771,7 +1793,12 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
     output shape as ``generate_concordats_by_domain`` so the dashboard
     table, CSV export and embeds render it unchanged.
     """
-    agreements = _concordat_agreement_groups(entries)
+    all_groups = _concordat_agreement_groups(entries)
+    # THE definition, applied once and used everywhere below: a concordat is a
+    # distinct agreement with at least two established parties.
+    agreements = [a for a in all_groups
+                  if a["n_signatories"] >= CONCORDAT_MIN_PARTIES]
+    unresolved = len(all_groups) - len(agreements)
     domain_keys = [d["key"] for d in CONCORDAT_DOMAINS]
 
     table: dict[str, dict[str, int]] = {
@@ -1781,10 +1808,11 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         lambda: defaultdict(lambda: defaultdict(int)))
     named_only_adds = 0
     until_2003 = 0
+    concordats_until_2003 = 0
     # ≤2003 memberships split by the evidence that put the canton in the
-    # signatory set, and restricted to chstat's six domains ('autres' has no
-    # chstat counterpart) — so the gap to the 2003 reference is decomposable
-    # instead of a single unexplained delta.
+    # party set, and restricted to chstat's six domains ('autres' has no
+    # chstat counterpart) — so the residual vs the 2003 reference is
+    # decomposable instead of a single unexplained delta.
     chstat_domain_keys = {d["key"] for d in CONCORDAT_DOMAINS if d["key"] != "autres"}
     tiers = {"published_in_own_collection": 0, "named_in_title_only": 0,
              "named_as_party_in_preamble_only": 0}
@@ -1795,8 +1823,9 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
             by_year[a["year"] or "unknown"][canton][a["domain"]] += 1
         named_only_adds += len(set(a["signatories"]) - set(a["published"]))
         if a["year"] and a["year"] <= "2003":
+            concordats_until_2003 += 1
             until_2003 += len(a["signatories"])
-            published = set(a["published"])
+            published = set(a["published_live_2003"])
             title_only = set(a["named"]) - published
             preamble_only = set(a["named_in_text"]) - published - title_only
             tiers["published_in_own_collection"] += len(published)
@@ -1815,20 +1844,27 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         "title": "Intercantonal agreements (concordats) by domain — "
                  "signatory-canton counting",
         "source": "LexFind (Institute of Federalism, University of Fribourg)",
-        "methodology": "chstat/BADAC 2003: each agreement counts once per "
-                       "signatory canton (an agreement signed by 10 cantons "
-                       "counts 10). Signatory set per agreement = cantons "
-                       "publishing the text in their collections ∪ cantons "
-                       "named in any language version's title ∪ cantons "
-                       "enumerated as contracting parties in the recitals.",
+        "methodology": "chstat/BADAC 2003: each concordat counts once per "
+                       "party canton (a concordat with 10 parties counts "
+                       "10). A concordat is a distinct agreement with at "
+                       f"least {CONCORDAT_MIN_PARTIES} established parties. "
+                       "Party set = cantons whose collections publish a copy "
+                       "not repealed by 2003 ∪ cantons named in any language "
+                       "version's title ∪ cantons enumerated as contracting "
+                       "parties in the recitals.",
         "total_concordats": totals["total"],
         "total_memberships": totals["total"],
         "total_agreements": len(agreements),
+        "concordats_until_2003": concordats_until_2003,
         "memberships_until_2003": until_2003,
         "memberships_until_2003_by_evidence": tiers,
         "memberships_until_2003_chstat_domains": until_2003_chstat_domains,
+        "unresolved_single_party_groups": unresolved,
+        "min_parties": CONCORDAT_MIN_PARTIES,
         # summed from the published table, not restated as a literal
         "chstat_2003_reference": chstat_reference,
+        "badac_g1_concordats": BADAC_2003_TOTAL_CONCORDATS,
+        "badac_g1_memberships": BADAC_2003_TOTAL_MEMBERSHIPS,
         "memberships_added_by_title_evidence": named_only_adds,
         "domains": _domains_export(),
         "cantons": table,
@@ -1837,28 +1873,39 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         "by_year": {y: {c: dict(d) for c, d in cantons.items()}
                     for y, cantons in sorted(by_year.items())},
         "notes": [
-            "THE computed concordats statistic: each agreement counts once "
-            "per signing canton (signed by 10 cantons → 10 occurrences), "
-            "purely from the source data — no scaling, no external baseline",
-            "Signatories per agreement = cantons publishing the text in "
-            "their collections ∪ cantons named in any language version's "
-            "title ∪ cantons enumerated as contracting parties in the "
-            "recitals; LexFind/LexWork publish no official member lists",
-            f"chstat.ch/BADAC's 2003 figure ({chstat_reference:,} "
-            f"memberships ≤2003, summed from the published table) is an "
-            f"external reference only. Our ≤2003 value ({until_2003:,}) is an "
-            f"UPPER bound and exceeds it: "
-            f"{tiers['named_as_party_in_preamble_only']:,} of those "
-            "memberships rest on preamble enumeration alone (the act names a "
-            "canton as a contracting party, but that canton's own collection "
-            "never published the text), which counts intended parties rather "
-            "than ratified accessions; a further "
-            f"{until_2003 - until_2003_chstat_domains:,} fall in 'autres', a "
-            "domain chstat's six-column table has no counterpart for; and "
-            "nothing here is filtered for repeal, whereas chstat is a 2003 "
-            "stock snapshot. The matching LOWER bound — memberships with a "
-            "canton's own published copy or accession instrument — is in the "
-            "verification report",
+            f"THE computed concordats statistic: {concordats_until_2003:,} "
+            f"concordats up to 2003 carrying {until_2003:,} canton "
+            "memberships. Each concordat counts once per party canton "
+            "(a concordat with 10 parties → 10 memberships), purely from "
+            "the source data — no scaling, no external baseline",
+            f"A concordat is a distinct agreement with at least "
+            f"{CONCORDAT_MIN_PARTIES} established parties, first enacted "
+            "≤2003 and not carrying a dated repeal on or before 2003 "
+            "(chstat is a 2003 stock snapshot). A canton is a party if its "
+            "own collection publishes the text, or the act names it in any "
+            "language version's title, or the recitals enumerate it as a "
+            "contracting party; LexFind/LexWork publish no official member "
+            "lists, so these three are the available evidence",
+            f"{unresolved:,} title-groups evidence only ONE canton and are "
+            "excluded: a concordat is by definition an agreement between "
+            "cantons, so a single-canton group is an unresolved membership "
+            "(an accession decree, a cantonal implementing act) rather than "
+            "a one-canton concordat. Same rule as the G1 size distribution",
+            f"External reference: chstat.ch's 2003 table sums to "
+            f"{chstat_reference:,} memberships and IDHEAP/BADAC graph G1 "
+            f"states {BADAC_2003_TOTAL_MEMBERSHIPS:,} memberships across "
+            f"{BADAC_2003_TOTAL_CONCORDATS:,} concordats. Our "
+            f"{until_2003:,} memberships reproduce G1's total to within "
+            f"{abs(until_2003 - BADAC_2003_TOTAL_MEMBERSHIPS) / BADAC_2003_TOTAL_MEMBERSHIPS:.1%}"
+            f"; our {concordats_until_2003:,} concordats fall short of G1's "
+            f"{BADAC_2003_TOTAL_CONCORDATS:,} because agreements whose "
+            "parties are unrecoverable from today's collections ('die "
+            "unterzeichnenden Kantone', no member list anywhere) stay in "
+            f"the {unresolved:,} single-party residue",
+            f"{until_2003 - until_2003_chstat_domains:,} of the memberships "
+            "fall in 'autres', a domain chstat's six-column table has no "
+            "counterpart for; the per-canton evidence split is in "
+            "memberships_until_2003_by_evidence",
             "Distinct agreements with their signatory sets: "
             "/api/v1/stats/concordats_signatories.json",
         ],

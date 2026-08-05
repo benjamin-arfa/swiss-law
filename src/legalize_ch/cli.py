@@ -554,10 +554,15 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_stats_json(conc_sig, site_path / "api" / "v1" / "stats"
                      / "concordats_by_domain_signatories.json")
     click.echo(f"  {conc_sig['total_memberships']} memberships across "
-               f"{conc_sig['total_agreements']} agreements; "
-               f"<=2003: {conc_sig['memberships_until_2003']} "
-               f"(chstat reference: {conc_sig['chstat_2003_reference']}; "
-               f"+{conc_sig['memberships_added_by_title_evidence']} from title evidence)")
+               f"{conc_sig['total_agreements']} concordats "
+               f"(>= {conc_sig['min_parties']} parties; "
+               f"{conc_sig['unresolved_single_party_groups']} single-party "
+               f"groups excluded)")
+    click.echo(f"  <=2003: {conc_sig['concordats_until_2003']} concordats / "
+               f"{conc_sig['memberships_until_2003']} memberships "
+               f"(reference: chstat table {conc_sig['chstat_2003_reference']}, "
+               f"BADAC G1 {conc_sig['badac_g1_concordats']}/"
+               f"{conc_sig['badac_g1_memberships']})")
 
     click.echo("Generating per-type domain tables...")
     from .stats import generate_types_by_domain

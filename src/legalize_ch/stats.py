@@ -1781,6 +1781,14 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         lambda: defaultdict(lambda: defaultdict(int)))
     named_only_adds = 0
     until_2003 = 0
+    # ≤2003 memberships split by the evidence that put the canton in the
+    # signatory set, and restricted to chstat's six domains ('autres' has no
+    # chstat counterpart) — so the gap to the 2003 reference is decomposable
+    # instead of a single unexplained delta.
+    chstat_domain_keys = {d["key"] for d in CONCORDAT_DOMAINS if d["key"] != "autres"}
+    tiers = {"published_in_own_collection": 0, "named_in_title_only": 0,
+             "named_as_party_in_preamble_only": 0}
+    until_2003_chstat_domains = 0
     for a in agreements:
         for canton in a["signatories"]:
             table[canton][a["domain"]] += 1
@@ -1788,6 +1796,14 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         named_only_adds += len(set(a["signatories"]) - set(a["published"]))
         if a["year"] and a["year"] <= "2003":
             until_2003 += len(a["signatories"])
+            published = set(a["published"])
+            title_only = set(a["named"]) - published
+            preamble_only = set(a["named_in_text"]) - published - title_only
+            tiers["published_in_own_collection"] += len(published)
+            tiers["named_in_title_only"] += len(title_only)
+            tiers["named_as_party_in_preamble_only"] += len(preamble_only)
+            if a["domain"] in chstat_domain_keys:
+                until_2003_chstat_domains += len(a["signatories"])
 
     for row in table.values():
         row["total"] = sum(row.values())
@@ -1809,6 +1825,8 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         "total_memberships": totals["total"],
         "total_agreements": len(agreements),
         "memberships_until_2003": until_2003,
+        "memberships_until_2003_by_evidence": tiers,
+        "memberships_until_2003_chstat_domains": until_2003_chstat_domains,
         # summed from the published table, not restated as a literal
         "chstat_2003_reference": chstat_reference,
         "memberships_added_by_title_evidence": named_only_adds,
@@ -1828,9 +1846,18 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
             "recitals; LexFind/LexWork publish no official member lists",
             f"chstat.ch/BADAC's 2003 figure ({chstat_reference:,} "
             f"memberships ≤2003, summed from the published table) is an "
-            "external reference only — our computed ≤2003 value is lower "
-            "because agreements repealed decades ago were delisted from "
-            "today's collections (historical attrition); see the "
+            f"external reference only. Our ≤2003 value ({until_2003:,}) is an "
+            f"UPPER bound and exceeds it: "
+            f"{tiers['named_as_party_in_preamble_only']:,} of those "
+            "memberships rest on preamble enumeration alone (the act names a "
+            "canton as a contracting party, but that canton's own collection "
+            "never published the text), which counts intended parties rather "
+            "than ratified accessions; a further "
+            f"{until_2003 - until_2003_chstat_domains:,} fall in 'autres', a "
+            "domain chstat's six-column table has no counterpart for; and "
+            "nothing here is filtered for repeal, whereas chstat is a 2003 "
+            "stock snapshot. The matching LOWER bound — memberships with a "
+            "canton's own published copy or accession instrument — is in the "
             "verification report",
             "Distinct agreements with their signatory sets: "
             "/api/v1/stats/concordats_signatories.json",

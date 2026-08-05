@@ -1759,7 +1759,8 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         "total_memberships": totals["total"],
         "total_agreements": len(agreements),
         "memberships_until_2003": until_2003,
-        "chstat_2003_reference": 2522,
+        # summed from the published table, not restated as a literal
+        "chstat_2003_reference": sum(sum(v) for v in CHSTAT_2003.values()),
         "memberships_added_by_title_evidence": named_only_adds,
         "domains": _domains_export(),
         "cantons": table,

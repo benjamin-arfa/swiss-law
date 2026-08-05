@@ -578,6 +578,16 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_stats_json(sig, site_path / "api" / "v1" / "stats" / "concordats_signatories.json")
     click.echo(f"  {sig['total_agreements']} distinct agreements")
 
+    click.echo("Generating concordat size distribution (BADAC G1 baseline)...")
+    from .stats import generate_concordat_size_distribution
+    dist = generate_concordat_size_distribution(entries)
+    write_stats_json(dist, site_path / "api" / "v1" / "stats"
+                     / "concordats_size_distribution.json")
+    click.echo(f"  {dist['ours']['concordats']} concordats / "
+               f"{dist['ours']['memberships']} memberships "
+               f"(baseline {dist['baseline']['total_concordats']} / "
+               f"{dist['baseline']['total_memberships']})")
+
     click.echo("Generating undated-laws review list...")
     from .stats import generate_undated_laws
     und = generate_undated_laws(entries)
@@ -594,10 +604,18 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     click.echo(f"  {len(csv_files)} CSV files, {len(sdmx_files)} SDMX artefacts")
 
     click.echo("Generating chstat-2003 verification comparison...")
-    from .stats import generate_chstat_comparison
-    comparison = generate_chstat_comparison(entries)
+    from .stats import (generate_chstat_comparison,
+                        generate_concordat_membership_evidence)
+    comparison = generate_chstat_comparison(entries, repo_path)
     write_stats_json(comparison, site_path / "api" / "v1" / "stats" / "concordats_chstat_comparison.json")
-    click.echo(f"  enacted<=2003: {comparison['ours_enacted_until_2003_total']} vs chstat {comparison['chstat_total']}"
+    evidence = generate_concordat_membership_evidence(entries, repo_path)
+    write_stats_json(evidence, site_path / "api" / "v1" / "quality"
+                     / "concordat_membership_evidence.json")
+    click.echo(f"  published<=2003: {comparison['ours_enacted_until_2003_total']}"
+               f" + accession {comparison['accession_evidence_total']}"
+               f" + intlex-named {comparison['intlex_named_evidence_total']}"
+               f" = {comparison['explained_total']}"
+               f" vs chstat {comparison['chstat_total']}"
                f" (unexplained: {comparison['unexplained_total']})")
 
     click.echo("Generating per-entity law index...")
@@ -739,6 +757,10 @@ def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
 @click.option("--lexfind-families", is_flag=True,
               help="LexFind frontend API pass: family (original) dates + version "
                    "histories for ALL 26 cantons — the highest provenance tier.")
+@click.option("--repeals", is_flag=True,
+              help="LexFind frontend API pass dating the REPEALS: for laws marked "
+                   "is_active: false, write repealed_date (the last version's "
+                   "inactive date). Combine with --concordats-only.")
 @click.option("--concordats-only", is_flag=True,
               help="Restrict the API pass to concordats (minutes instead of hours)")
 @click.option("--rate-limit", type=float, default=0.1,
@@ -746,7 +768,7 @@ def backfill_lexfind(repo: str, canton: tuple, limit: int | None,
 @click.option("--limit", "-n", type=int, default=None, help="Max laws per canton (API pass) / files (local)")
 @click.option("--dry-run", is_flag=True, help="Report what would change, write nothing")
 def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool, siblings: bool,
-                 lexfind_families: bool, concordats_only: bool,
+                 lexfind_families: bool, repeals: bool, concordats_only: bool,
                  rate_limit: float, limit: int | None, dry_run: bool):
     """Back-fill enactment dates + version-date lists (laws are law+version).
 
@@ -762,6 +784,12 @@ def enrich_dates(repo: str, canton: tuple, lexwork_versions: bool, siblings: boo
     repo_path = Path(repo).resolve()
     if siblings:
         stats = propagate_concordat_dates(repo_path, dry_run=dry_run)
+    elif repeals:
+        from .date_enricher import enrich_repeal_dates
+        cantons = [c.strip().lower() for c in canton] if canton else None
+        stats = enrich_repeal_dates(repo_path, cantons=cantons,
+                                    rate_limit=rate_limit, limit=limit,
+                                    concordats_only=concordats_only)
     elif lexfind_families:
         from .date_enricher import enrich_dates_lexfind_families
         cantons = [c.strip().lower() for c in canton] if canton else None

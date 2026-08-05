@@ -198,3 +198,78 @@ class TestSignatoryWeightedTable:
         assert a["named_in_title"] == ["BE", "ZH"]
         assert a["signatories"] == ["BE", "ZH"]
         assert a["n_signatories"] == 2
+
+
+class TestConcordatPreamble:
+    def test_stops_at_first_article(self):
+        from legalize_ch.stats import concordat_preamble
+        body = ("Konkordat\n\nDie Kantone Zürich und Bern vereinbaren:\n\n"
+                "Art. 1\nDer Kanton Luzern wird hier nur zitiert.\n")
+        pre = concordat_preamble(body)
+        assert "vereinbaren" in pre
+        assert "Luzern" not in pre  # cross-reference, not a party
+
+    def test_no_article_marker_falls_back_to_head(self):
+        from legalize_ch.stats import concordat_preamble
+        assert concordat_preamble("Nur Fliesstext ohne Artikel").startswith("Nur")
+
+
+class TestCantonsNamedAsParties:
+    def test_enumerated_parties_are_extracted(self):
+        from legalize_ch.stats import cantons_named_as_parties
+        pre = ("Konkordat\n\nabgeschlossen zwischen den Kantonen Zürich, "
+               "Luzern, Basel-Stadt und St. Gallen.\n")
+        assert cantons_named_as_parties(pre) == ["BS", "LU", "SG", "ZH"]
+
+    def test_open_concordat_without_named_members_yields_nothing(self):
+        from legalize_ch.stats import cantons_named_as_parties
+        assert cantons_named_as_parties("Die unterzeichnenden Kantone,\n"
+                                        "vereinbaren:\n") == []
+
+    def test_incidental_mention_without_party_marker_is_ignored(self):
+        from legalize_ch.stats import cantons_named_as_parties
+        # a seat-of-institution mention must not create a membership
+        assert cantons_named_as_parties(
+            "Vereinbarung über die Tollwutzentrale an der Universität Bern\n"
+            "Vom 10. April 1991\n") == []
+
+
+class TestSizeDistribution:
+    def test_reproduces_bands_and_excludes_single_party_records(self):
+        from legalize_ch.stats import generate_concordat_size_distribution
+        title = "Vereinbarung zwischen den Kantonen Zürich, Bern und Luzern"
+        entries = [
+            _law(canton="ZH", nr="1.1", ctype="Interkantonale Vereinbarung",
+                 title=title, enacted="1990-01-01"),
+            # a record we can only tie to one canton: not a concordat count
+            _law(canton="GR", nr="7.7", ctype="Interkantonale Vereinbarung",
+                 title="Vereinbarung über das Schulwesen", enacted="1995-01-01"),
+        ]
+        dist = generate_concordat_size_distribution(entries)
+        assert dist["ours"]["concordats"] == 1
+        assert dist["ours"]["memberships"] == 3
+        assert dist["ours"]["unresolved_single_party"] == 1
+        band = {b["band"]: b for b in dist["bands"]}["3-4"]
+        assert band["ours_concordats"] == 1
+        assert dist["baseline"]["total_concordats"] == 733
+        assert dist["baseline"]["total_memberships"] == 2564
+
+    def test_post_2003_agreements_are_out_of_scope(self):
+        from legalize_ch.stats import generate_concordat_size_distribution
+        title = "Vereinbarung zwischen den Kantonen Zürich und Bern"
+        entries = [
+            _law(canton="ZH", nr="1.1", ctype="Interkantonale Vereinbarung",
+                 title=title, enacted="2010-01-01"),
+        ]
+        assert generate_concordat_size_distribution(entries)["ours"][
+            "concordats"] == 0
+
+
+class TestBadacBaseline:
+    def test_bands_sum_to_the_published_totals(self):
+        from legalize_ch.stats import badac_baseline_bands
+        bands = badac_baseline_bands()
+        assert sum(b["memberships"] for b in bands) == 2564
+        # implied concordat counts reconstruct 733 to within rounding
+        assert 720 <= sum(b["concordats_implied"] for b in bands) <= 740
+        assert abs(sum(b["share_of_memberships"] for b in bands) - 1.0) < 1e-9

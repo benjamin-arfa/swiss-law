@@ -41,6 +41,9 @@ class FamilyDates:
     family_active_since: date | None = None
     version_dates: list[date] = field(default_factory=list)  # sorted asc
     is_active: bool | None = None
+    # date the family left force: the LAST version's inactive date, only
+    # meaningful when no version is still active (repealed families)
+    inactive_since: date | None = None
 
 
 class LexfindFrontend:
@@ -61,6 +64,8 @@ class LexfindFrontend:
         fam = FamilyDates(tol_id=int(tol_id))
         earliest_family = None
         vdates: set[date] = set()
+        inactive: set[date] = set()
+        any_version_active = False
         for family in data.get("families", []):
             for group in family:
                 for v in group if isinstance(group, list) else [group]:
@@ -72,10 +77,17 @@ class LexfindFrontend:
                     vs = _parse_ddmmyyyy(v.get("version_active_since"))
                     if vs:
                         vdates.add(vs)
+                    vi = _parse_ddmmyyyy(v.get("version_inactive_since"))
+                    if vi:
+                        inactive.add(vi)
+                    if v.get("is_active"):
+                        any_version_active = True
                     if v.get("info_badge") == "current":
                         fam.is_active = bool(v.get("is_active", True))
         fam.family_active_since = earliest_family
         fam.version_dates = sorted(vdates)
+        if inactive and not any_version_active:
+            fam.inactive_since = max(inactive)
         return fam
 
     def fetch_global_stats(self) -> dict | None:

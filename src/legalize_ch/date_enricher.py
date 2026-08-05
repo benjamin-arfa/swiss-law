@@ -300,6 +300,91 @@ def enrich_dates_lexfind_families(repo_path: str | Path,
     return dict(totals)
 
 
+# ─── LexFind repeal-date pass (inactive concordats) ───────────────────────────
+
+def enrich_repeal_dates(repo_path: str | Path,
+                        cantons: list[str] | None = None,
+                        rate_limit: float = 0.1,
+                        limit: int | None = None,
+                        concordats_only: bool = False) -> dict:
+    """Date the repeals: for every law LexFind marks inactive
+    (``is_active: false``), fetch the family's version groups and write
+    ``repealed_date`` (the last version's ``version_inactive_since``) +
+    ``repealed_date_source: lexfind_family``. Without this date an act
+    repealed in 1990 is indistinguishable from one repealed in 2015 —
+    the chstat-2003 reconciliation needs the distinction. Resumable via
+    data/state/enrich_repeal_{canton}.json."""
+    from .cantonal import ALL_CANTONS, CANTON_LANGUAGES
+    from .categories import canonical_category_type
+    from .lexfind_frontend import LexfindFrontend
+
+    repo = Path(repo_path)
+    cantons = [c.lower() for c in (cantons or ALL_CANTONS)]
+    fetcher = CantonalFetcher(rate_limit=rate_limit)
+    state_dir = repo / DATE_STATE_DIR
+    state_dir.mkdir(parents=True, exist_ok=True)
+
+    totals: dict[str, int] = defaultdict(int)
+    for canton in cantons:
+        lang = next((l for l in CANTON_LANGUAGES.get(canton, ["de"])
+                     if l in ("de", "fr", "it")), "de")
+        frontend = LexfindFrontend(rate_limit=rate_limit, lang=lang)
+        state_file = state_dir / f"enrich_repeal_{canton}.json"
+        done: set[str] = set(json.loads(state_file.read_text())) if state_file.exists() else set()
+
+        canton_dir = repo / "ch" / canton
+        files_by_number: dict[str, list[Path]] = defaultdict(list)
+        for md in sorted(canton_dir.rglob("*.md")):
+            fm, _ = _parse_frontmatter(md.read_text(encoding="utf-8"))
+            if not fm or not fm.get("systematic_number"):
+                continue
+            if fm.get("is_active") is not False or fm.get("repealed_date"):
+                continue
+            if concordats_only and canonical_category_type(
+                    str(fm.get("category_type", ""))) != "Interkantonale Vereinbarung" \
+                    and str(fm.get("category_type_inferred", "")) != "Interkantonale Vereinbarung":
+                continue
+            files_by_number[str(fm["systematic_number"])].append(md)
+        if not files_by_number:
+            continue
+
+        catalog = fetcher._fetch_lexfind_catalog_by_systematics(canton, lang)
+        tol_by_number = {e.systematic_number: e.lexfind_id for e in catalog if e.lexfind_id}
+
+        n = 0
+        for number, paths in files_by_number.items():
+            if number in done:
+                continue
+            if limit is not None and n >= limit:
+                break
+            tol_id = tol_by_number.get(number)
+            done.add(number)
+            if not tol_id:
+                totals["no_tol_id"] += 1
+                continue
+            n += 1
+            fam = frontend.fetch_family_dates(tol_id)
+            if fam is None or not fam.inactive_since:
+                totals["no_repeal_date"] += 1
+            else:
+                for p in paths:
+                    text = p.read_text(encoding="utf-8")
+                    fm, body = _parse_frontmatter(text)
+                    if fm is None or fm.get("repealed_date"):
+                        continue
+                    fm["repealed_date"] = fam.inactive_since.isoformat()
+                    fm["repealed_date_source"] = "lexfind_family"
+                    p.write_text(_write_frontmatter(fm, body), encoding="utf-8")
+                    totals["dated"] += 1
+            if len(done) % 25 == 0:
+                state_file.write_text(json.dumps(sorted(done)))
+        state_file.write_text(json.dumps(sorted(done)))
+        logger.info("%s: %d inactive laws repeal-dated (state saved)",
+                    canton.upper(), n)
+
+    return dict(totals)
+
+
 # ─── Sibling date propagation (concordats) ────────────────────────────────────
 
 def _normalize_title(title: str) -> str:

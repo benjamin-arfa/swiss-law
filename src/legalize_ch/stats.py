@@ -95,6 +95,29 @@ def count_articles(body: str) -> int:
     return len({m.group(1) or m.group(2) for m in _ARTICLE_RE.finditer(body)})
 
 
+# Start of the enacting text — everything BEFORE it is the preamble, which is
+# where a concordat enumerates its contracting cantons ("abgeschlossen
+# zwischen den Kantonen Zürich, Luzern, …").  Canton names occurring later are
+# cross-references (seats of institutions, cited cantonal law) and are NOT
+# evidence of membership, so the scan stops here.
+_FIRST_ARTICLE_RE = re.compile(
+    r"(?m)^\s*(?:Art(?:ikel|icle|icolo)?\.?\s*(?:1er|premier|primo|I|1)\b"
+    r"|§+\s*1\b)"
+)
+_PREAMBLE_CAP = 6000
+
+
+def concordat_preamble(body: str) -> str:
+    """The recitals of an intercantonal agreement: text before Art. 1.
+
+    Falls back to a bounded head of the document when no article marker is
+    found (scanned images, tabular annexes).
+    """
+    m = _FIRST_ARTICLE_RE.search(body)
+    head = body[:m.start()] if m else body
+    return head[:_PREAMBLE_CAP]
+
+
 def collect_all_frontmatter(repo_path: str | Path = ".") -> list[dict]:
     """Scan all .md files under ch/ and return their frontmatter dicts.
 
@@ -116,6 +139,9 @@ def collect_all_frontmatter(repo_path: str | Path = ".") -> list[dict]:
             fm["_path"] = str(md.relative_to(repo_path))
             fm["_body_chars"] = len(body)
             fm["_body_articles"] = count_articles(body)
+            if str(fm.get("category_type", "")) == "Interkantonale Vereinbarung":
+                # only concordats need the recitals kept in memory (~2k files)
+                fm["_preamble"] = concordat_preamble(body)
             results.append(fm)
 
     logger.info("Scanned %d law files", len(results))
@@ -420,12 +446,305 @@ CHSTAT_2003 = {
     "GE": [19, 4, 19, 3, 6, 8], "JU": [19, 14, 33, 3, 6, 9],
 }
 
+# IDHEAP/BADAC press release CP4 (2004), "Les concordats intercantonaux: clé
+# de voûte du fédéralisme suisse", graph G1 — the ORIGINAL publication behind
+# the chstat.ch table.  Archived at exports/concordats_2003/baseline/CP4fr.pdf.
+#
+# G1's caption states the two headline totals for 1848-2003:
+#     733 concordats; 2564 cantons membres
+# and its source line fixes the base of the percentages:
+#     "estimation BADAC (résultats pondérés : 2564 = 100%)"
+# so the legend shares are shares of MEMBERSHIPS, not of concordats.  The
+# press-release prose ("44% étaient des accords bilatéraux") reads them as
+# shares of concordats; that reading is arithmetically impossible — 22% of
+# 733 concordats holding >=20 cantons alone would exceed 3200 memberships,
+# well past the stated 2564.  Membership weighting is therefore authoritative
+# and is what we reproduce.  Unweighted, bilaterals are ~77% of all
+# concordats, i.e. even more dominant than the prose suggests.
+BADAC_2003_TOTAL_CONCORDATS = 733
+BADAC_2003_TOTAL_MEMBERSHIPS = 2564
+# bucket -> (share of the 2564 memberships, representative size for the band)
+BADAC_2003_SIZE_BANDS = {
+    "2": (0.44, 2.0),
+    "3-4": (0.08, 3.5),
+    "5-10": (0.20, 7.5),
+    "11-19": (0.06, 15.0),
+    "20-26": (0.22, 23.0),
+}
+# "Guère plus d'une dizaine de conventions rassemblaient l'ensemble des
+# cantons" — footnote 1 of the press release names 12 such conventions.
+BADAC_2003_ALL_CANTON_CONVENTIONS = 12
 
-def generate_chstat_comparison(entries: list[dict]) -> dict:
+
+def badac_baseline_bands() -> list[dict]:
+    """The G1 baseline as absolute memberships and implied concordat counts.
+
+    Memberships are exact (share x 2564).  Concordat counts are implied by
+    dividing by the band's representative size and are therefore estimates —
+    they reconstruct 726 of the stated 733 concordats (99.0%), which is the
+    rounding residue of the five published shares.
+    """
+    bands = []
+    for label, (share, size) in BADAC_2003_SIZE_BANDS.items():
+        memberships = round(share * BADAC_2003_TOTAL_MEMBERSHIPS)
+        bands.append({
+            "band": label,
+            "share_of_memberships": share,
+            "memberships": memberships,
+            "concordats_implied": round(memberships / size),
+            "representative_size": size,
+        })
+    return bands
+
+
+# Cantons whose collections carry German titles — Intlex (German catalog)
+# title matching is only sound against these; French/Italian-only
+# collections would produce cross-language false positives.
+_GERMAN_TITLED_CANTONS = frozenset(ALL_CANTON_CODES) - {"GE", "VD", "NE", "JU", "TI"}
+
+# "Accession instrument": a decree/law/decision in a canton's own collection
+# recording accession to an intercantonal agreement.  When the canton does
+# not (or no longer) publish the agreement itself, the instrument is the
+# surviving evidence of membership — exactly the texts the Institute of
+# Federalism's 2003 database counted but today's collections delisted.
+_ACCESSION_REF_PATTERNS = [
+    # de: "Beitritt (des Kantons X / der Kantone X und Y) zum Konkordat …" /
+    # "zur Interkantonalen Vereinbarung …" / "zu den Vollzugsvereinbarungen …"
+    re.compile(r"[Bb]eitritt\w*\s+(?:[\w.\-'’, ]{0,60}?\s)??"
+               r"zu[mr]?\s+(?:de[nmr]\s+)?(?P<ref>.+)$"),
+    # fr: "adhésion (du canton de X / de la République et Canton du Jura)
+    # à la convention …" / "au concordat …"
+    re.compile(r"[Aa]dh[ée]sion\s+(?:[\w.\-'’, ]{0,60}?\s)??"
+               r"(?:à\s+la\s+|à\s+l['’]\s*|aux?\s+|à\s+)(?P<ref>.+)$"),
+    re.compile(r"adh[ée]rer\s+(?:à\s+la\s+|à\s+l['’]\s*|aux?\s+|à\s+)(?P<ref>.+)$"),
+    # it: "adesione (del Cantone X) al concordato …"
+    re.compile(r"[Aa]desione\s+(?:[\w.\-'’, ]{0,60}?\s)??"
+               r"(?:alla\s+|all['’]\s*|al\s+)(?P<ref>.+)$"),
+]
+
+_INTERCANTONAL_MARKERS = (
+    "konkordat", "concordat", "concordato", "interkantonal", "intercantonal",
+    "zwischen den kantonen", "entre les cantons", "tra i cantoni",
+)
+_AGREEMENT_WORDS = re.compile(
+    r"[Vv]ereinbarung|[Aa]bkommen|[Vv]ertrag|[Cc]onvention|[Aa]ccord|[Cc]onvenzione")
+
+# An agreement whose parties include the Confederation or a foreign state is
+# a Staatsvertrag, not a concordat — even when cantons are named in it
+# (e.g. "accord entre le Conseil fédéral …, agissant au nom des cantons de
+# Berne, de Vaud …, et le Gouvernement de la République française").
+_NON_CANTONAL_PARTY = re.compile(
+    r"Conseil\s+f[ée]d[ée]ral|Bundesrat|Consiglio\s+federale|"
+    r"Eidgenossenschaft|Conf[ée]d[ée]ration|Confederazione|"
+    r"R[ée]publique\s+fran[çc]aise|France|Frankreich|Deutschland|"
+    r"Allemagne|Italien(?![a-z])|Italie\b|Italia\b|[ÖO]sterreich|Autriche|"
+    r"Liechtenstein|Baden-Württemberg|Bayern|Vorarlberg|Lombardei|Lombardia")
+
+
+def _extract_accession_reference(title: str) -> str:
+    """The agreement a 'Beitritt/adhésion/adesione' instrument refers to."""
+    for pat in _ACCESSION_REF_PATTERNS:
+        m = pat.search(title or "")
+        if m:
+            return m.group("ref").strip()
+    return ""
+
+
+def _is_intercantonal_reference(ref: str, canton: str) -> bool:
+    """Does the referenced text look like an intercantonal agreement?
+
+    Strong markers first; otherwise the reference must name other cantons
+    (a bare 'Vereinbarung' could be with the Confederation or a commune).
+    """
+    from .date_enricher import _normalize_title
+
+    if _NON_CANTONAL_PARTY.search(ref):
+        return False
+    low = _normalize_title(ref)
+    if any(m in low for m in _INTERCANTONAL_MARKERS):
+        return True
+    named = set(cantons_named_in_title(ref))
+    named.discard(canton)
+    if len(named) >= 2:
+        return True
+    return bool(named) and bool(_AGREEMENT_WORDS.search(ref))
+
+
+# Tokens that mark the instrument type without distinguishing the agreement
+# ("Interkantonale Vereinbarung über X" vs a reference to "Vereinbarung über
+# X" is the same text) — dropped from match keys so the fuzzy match is not
+# diluted by boilerplate.
+_MATCH_KEY_STOPWORDS = frozenset({
+    "interkantonale", "interkantonalen", "intercantonale", "intercantonal",
+    "intercantonaux", "intercantonali",
+})
+
+
+def _intlex_named_parties(title: str) -> list[str]:
+    """Party cantons named in an Intlex treaty title — strict variant.
+
+    Unlike ``cantons_named_in_title`` (substring, recall-oriented) this is
+    precision-oriented: when the title has a "zwischen X und Y über/
+    betreffend …" structure, only the party segment is scanned, so lake and
+    place names in the subject ("… Staatsgrenze auf dem Zürichsee") do not
+    mint parties; names must sit on word boundaries ("Zürich-Obersee" is
+    not Zürich).
+    """
+    seg = title or ""
+    m = re.search(r"\bzwischen\s+(.*)$", seg, re.IGNORECASE)
+    if m:
+        seg = m.group(1)
+        cut = re.search(r"\b(über|ueber|betreffend|hinsichtlich|zur|zum)\b",
+                        seg, re.IGNORECASE)
+        if cut:
+            seg = seg[:cut.start()]
+    found = set()
+    for code, variants in CANTON_NAME_VARIANTS.items():
+        for v in variants:
+            if re.search(rf"(?<![A-Za-zÀ-ÿ]){re.escape(v)}(?![A-Za-zÀ-ÿ])",
+                         seg):
+                found.add(code)
+                break
+    return sorted(found)
+
+
+def _agreement_match_key(title: str) -> str:
+    """Normalized, boilerplate-free key for matching agreement titles."""
+    from .date_enricher import _normalize_title
+
+    words = [w for w in _normalize_title(title).split()
+             if w not in _MATCH_KEY_STOPWORDS]
+    return " ".join(words)
+
+
+def _close_title_match(key: str, keys: list[str]) -> bool:
+    """Inflection-tolerant match ('Interkantonalen' vs 'Interkantonale')."""
+    import difflib
+
+    if key in keys:
+        return True
+    return bool(difflib.get_close_matches(key, keys, n=1, cutoff=0.85))
+
+
+def generate_concordat_membership_evidence(
+        entries: list[dict], repo_path: str | Path = ".") -> dict:
+    """Membership evidence beyond published copies — the audit trail for
+    the two additional tiers of the chstat-2003 reconciliation.
+
+    Tier ``accession``: instruments in a canton's own collection recording
+    accession to an intercantonal agreement the canton does not itself
+    publish (matched inflection-tolerantly against its concordat titles).
+    Tier ``intlex_named``: cantons named in the title of a text of the
+    audited Intlex ≤2003 inventory (``exports/concordats_2003/``) with
+    neither a published copy nor an accession instrument; German-titled
+    collections only, so titles are comparable.
+
+    Every instrument is listed with its status — ``counted`` feeds the
+    reconciliation, the rest (``published_separately``, ``after_2003``,
+    ``undated``) document why it was not counted.
+    """
+    cantonal = _deduplicate(
+        [e for e in entries if e["_scope"] == "cantonal"])
+    published_keys: dict[str, list[str]] = {c: [] for c in ALL_CANTON_CODES}
+    accession_candidates: list[dict] = []
+    for e in cantonal:
+        c = str(e.get("canton", "")).upper()
+        if c not in published_keys:
+            continue
+        if effective_category_type(e)[0] == "Interkantonale Vereinbarung":
+            published_keys[c].append(
+                _agreement_match_key(str(e.get("title", ""))))
+        else:
+            accession_candidates.append(e)
+
+    accession: dict[str, list[dict]] = {c: [] for c in ALL_CANTON_CODES}
+    counted_ref_keys: dict[str, list[str]] = {c: [] for c in ALL_CANTON_CODES}
+    for e in accession_candidates:
+        c = str(e.get("canton", "")).upper()
+        title = str(e.get("title", ""))
+        ref = _extract_accession_reference(title)
+        if not ref or not _is_intercantonal_reference(ref, c):
+            continue
+        key = _agreement_match_key(ref)
+        year = earliest_known_year(e, {})[0]
+        if _close_title_match(key, published_keys[c]):
+            status = "published_separately"
+        elif _close_title_match(key, counted_ref_keys[c]):
+            status = "duplicate_instrument"
+        elif not year:
+            status = "undated"
+        elif year > "2003":
+            status = "after_2003"
+        else:
+            status = "counted"
+            counted_ref_keys[c].append(key)
+        accession[c].append({
+            "instrument_title": title,
+            "referenced_agreement": ref,
+            "systematic_number": str(e.get("systematic_number", "")),
+            "year": year,
+            "status": status,
+        })
+
+    intlex: dict[str, list[dict]] = {c: [] for c in ALL_CANTON_CODES}
+    csv_path = (Path(repo_path)
+                / "exports/concordats_2003/concordats_up_to_2003.csv")
+    if csv_path.exists():
+        import csv as _csv
+
+        with csv_path.open(encoding="utf-8") as f:
+            for row in _csv.DictReader(f):
+                # recompute parties strictly from the title (the CSV's
+                # named_cantons column is substring-matched and can mint
+                # parties from place names like "Zürichsee")
+                named = _intlex_named_parties(row.get("title", ""))
+                if len(named) < 2:
+                    continue  # open multilateral: title names no parties
+                key = _agreement_match_key(row.get("title", ""))
+                year = str(row.get("best_date", ""))[:4]
+                for c in named:
+                    if c not in _GERMAN_TITLED_CANTONS:
+                        continue
+                    if _close_title_match(key, published_keys.get(c, [])) \
+                            or _close_title_match(key, counted_ref_keys[c]):
+                        continue
+                    intlex[c].append({
+                        "title": row.get("title", ""),
+                        "url": row.get("url", ""),
+                        "year": year,
+                        "status": "counted",
+                    })
+
+    def _tier_counts(tier: dict[str, list[dict]]) -> dict[str, int]:
+        return {c: sum(1 for i in items if i["status"] == "counted")
+                for c, items in tier.items()}
+
+    return {
+        "note": "Audit trail for the additional membership-evidence tiers "
+                "of the chstat-2003 reconciliation. 'accession' = Beitritt/"
+                "adhésion/adesione instruments in the canton's own "
+                "collection whose referenced agreement the canton does not "
+                "itself publish; 'intlex_named' = cantons named in titles "
+                "of the audited Intlex ≤2003 inventory with neither a "
+                "published copy nor an accession instrument (German-titled "
+                "collections only). Only status='counted' rows feed the "
+                "reconciliation.",
+        "intlex_inventory": "exports/concordats_2003/concordats_up_to_2003.csv",
+        "accession_counted": _tier_counts(accession),
+        "intlex_named_counted": _tier_counts(intlex),
+        "accession": {c: v for c, v in accession.items() if v},
+        "intlex_named": {c: v for c, v in intlex.items() if v},
+    }
+
+
+def generate_chstat_comparison(entries: list[dict],
+                               repo_path: str | Path = ".") -> dict:
     """Full reconciliation of our concordats vs chstat.ch's 2003 table.
 
     Per canton: our concordats ENACTED on or before 2003, split into
-    still-active and repealed-but-listed (LexFind ``is_active: false``);
+    still-active, repealed-but-listed (LexFind ``is_active: false``, repeal
+    dated after 2003 or undated) and repealed-by-2003 (dated repeal on or
+    before the snapshot — excluded, chstat never counted these);
     ``unexplained`` = chstat − (active + repealed) = concordats delisted
     from LexFind entirely (only the Institute's internal DB has them) plus
     accession-vs-decision-date noise (cantons accede to concordats at
@@ -438,8 +757,9 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
     ]
 
     rows: dict[str, dict] = {
-        c: {"active": 0, "repealed_listed": 0, "undated": 0,
-            "enacted_after_2003": 0, "all_time": 0, "date_provenance": {}}
+        c: {"active": 0, "repealed_listed": 0, "repealed_by_2003": 0,
+            "undated": 0, "enacted_after_2003": 0, "all_time": 0,
+            "date_provenance": {}}
         for c in ALL_CANTON_CODES
     }
     group_minima = _concordat_group_minima(concordats)
@@ -458,10 +778,22 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
             rows[c]["enacted_after_2003"] += 1
             continue
         year_evidence[evidence] += 1
-        status = "repealed_listed" if e.get("is_active") is False else "active"
+        if e.get("is_active") is False:
+            # chstat's 2003 table is a stock snapshot: an act repealed
+            # BEFORE the snapshot was never in it. Only dated repeals can
+            # be excluded; undated repeals stay counted (repealed_listed).
+            repealed = str(e.get("repealed_date", ""))[:4]
+            status = "repealed_by_2003" if repealed and repealed <= "2003" \
+                else "repealed_listed"
+        else:
+            status = "active"
         rows[c][status] += 1
         src = str(e.get("enactment_date_source", "") or "version_date_only")
         rows[c]["date_provenance"][src] = rows[c]["date_provenance"].get(src, 0) + 1
+
+    evidence = generate_concordat_membership_evidence(entries, repo_path)
+    accession_counts = evidence["accession_counted"]
+    intlex_counts = evidence["intlex_named_counted"]
 
     keys6 = ["etat", "sante", "educ", "infra", "eco", "fin"]
     out_rows = {}
@@ -469,9 +801,18 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
     for c in sorted(CHSTAT_2003):
         ch = CHSTAT_2003[c]
         r = rows.get(c, {})
-        explained = r.get("active", 0) + r.get("repealed_listed", 0)
+        published = r.get("active", 0) + r.get("repealed_listed", 0)
+        accession = accession_counts.get(c, 0)
+        intlex_named = intlex_counts.get(c, 0)
+        explained = published + accession + intlex_named
         unexplained = sum(ch) - explained
-        if abs(unexplained) <= 5:
+        if unexplained < -5:
+            # More ≤2003 evidence than chstat counted: LexFind types some
+            # concordat-implementing texts (annexes, regulations of joint
+            # institutions) as agreements of their own, and title evidence
+            # can name a canton that acceded only later.
+            diagnosis = "exceeds_reference"
+        elif abs(unexplained) <= 5:
             diagnosis = "reconciled"
         elif r.get("all_time", 0) >= sum(ch):
             # We hold at least as many concordats as chstat counted in
@@ -485,8 +826,14 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
             "ours_enacted_until_2003": {
                 "active": r.get("active", 0),
                 "repealed_listed": r.get("repealed_listed", 0),
-                "total": explained,
+                "repealed_by_2003": r.get("repealed_by_2003", 0),
+                "total": published,
             },
+            "additional_evidence": {
+                "accession": accession,
+                "intlex_named": intlex_named,
+            },
+            "explained_total": explained,
             "all_time_total": r.get("all_time", 0),
             "undated": r.get("undated", 0),
             "unexplained": unexplained,
@@ -495,6 +842,7 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
         }
     chstat_total = sum(sum(v) for v in CHSTAT_2003.values())
     ours_total = sum(v["ours_enacted_until_2003"]["total"] for v in out_rows.values())
+    explained_total = sum(v["explained_total"] for v in out_rows.values())
     return {
         "note": "Reconciliation vs chstat.ch 2003 (data-theme 1842, Institute "
                 "of Federalism / LexFind). ours = concordats with EARLIEST "
@@ -502,17 +850,45 @@ def generate_chstat_comparison(entries: list[dict]) -> dict:
                 "version history, or the sibling group's authoritative minimum "
                 "when the canton's own date is unverified — a concordat is the "
                 "same act in every member canton), split active / "
-                "repealed_listed. Authoritative accession dates are kept: a "
-                "canton that verifiably joined after 2003 is not counted. "
-                "unexplained = chstat - ours: concordats delisted from LexFind "
-                "entirely + accession-vs-decision-date differences (cantons "
-                "accede at different times; our date is the act's decision "
-                "date) + undated laws. Improve dates with "
-                "enrich_dates_lexwork.sh then enrich-dates --siblings.",
+                "repealed_listed / repealed_by_2003. chstat's table is a 2003 "
+                "stock snapshot, so acts with a DATED repeal on or before "
+                "2003 (repealed_date from LexFind's version_inactive_since) "
+                "are excluded from the comparison; repeals dated after 2003 "
+                "or undated stay counted. Authoritative accession dates are "
+                "kept: a canton that verifiably joined after 2003 is not "
+                "counted. "
+                "additional_evidence: memberships proven although the "
+                "agreement itself is delisted — 'accession' = Beitritt/"
+                "adhésion instruments in the canton's own collection "
+                "(agreement not separately published), 'intlex_named' = "
+                "cantons named in titles of the audited Intlex ≤2003 "
+                "inventory with neither copy nor accession instrument. "
+                "unexplained = chstat - explained: concordats delisted from "
+                "every public trace + accession-vs-decision-date differences "
+                "(cantons accede at different times; our date is the act's "
+                "decision date) + undated laws. Audit trail: "
+                "api/v1/quality/concordat_membership_evidence.json. Improve "
+                "dates with enrich_dates_lexwork.sh then enrich-dates "
+                "--siblings.",
         "source_chstat": "https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine",
         "chstat_total": chstat_total,
+        # The chstat table tabulates the SIX attributable domains only. The
+        # underlying IDHEAP/BADAC publication (graph G1) states 2564 canton
+        # memberships over 1848-2003 and shows a seventh, "pas attribuable"
+        # band; the 42-membership difference is that unattributed remainder.
+        # Unit of both figures is the canton-membership (canton x concordat),
+        # NOT the concordat: BADAC counted 733 distinct concordats.
+        "badac_total_memberships": BADAC_2003_TOTAL_MEMBERSHIPS,
+        "badac_total_concordats": BADAC_2003_TOTAL_CONCORDATS,
+        "chstat_vs_badac_unattributed": BADAC_2003_TOTAL_MEMBERSHIPS - chstat_total,
         "ours_enacted_until_2003_total": ours_total,
-        "unexplained_total": chstat_total - ours_total,
+        "repealed_by_2003_total": sum(
+            v["ours_enacted_until_2003"]["repealed_by_2003"]
+            for v in out_rows.values()),
+        "accession_evidence_total": sum(accession_counts.values()),
+        "intlex_named_evidence_total": sum(intlex_counts.values()),
+        "explained_total": explained_total,
+        "unexplained_total": chstat_total - explained_total,
         "undated_total": sum(v["undated"] for v in out_rows.values()),
         "diagnosis_totals": dict(diagnosis_totals),
         "year_evidence_le2003": dict(year_evidence),
@@ -1084,6 +1460,45 @@ def cantons_named_in_title(title: str) -> list[str]:
     return sorted(found)
 
 
+# Phrases that introduce the CONTRACTING PARTIES in a concordat's recitals.
+# Requiring one of these before trusting canton names in the preamble is what
+# separates a party list ("abgeschlossen zwischen den Kantonen Zürich,
+# Luzern, …") from an incidental mention ("Tollwutzentrale an der Universität
+# Bern").  Open concordats that decline to name their members ("Die
+# unterzeichnenden Kantone … vereinbaren:") match no marker and contribute
+# nothing — correctly, since their membership is simply not in the text.
+_PARTY_MARKERS = (
+    # de
+    "zwischen den kantonen", "zwischen den ständen", "zwischen den staaten",
+    "die kantone", "die stände", "der kantone", "abgeschlossen zwischen",
+    "schliessen sich", "vereinbarung zwischen", "vertrag zwischen",
+    "konkordat zwischen", "beigetretenen kantone",
+    # fr
+    "entre les cantons", "entre les états", "entre les etats", "les cantons",
+    "conclu entre", "conclue entre", "convention entre", "concordat entre",
+    # it
+    "tra i cantoni", "i cantoni", "conclusa tra", "convenzione tra",
+)
+
+
+def party_marker_in(preamble: str) -> str:
+    """The first contracting-parties marker found in the recitals, or ''."""
+    low = (preamble or "").lower()
+    hits = [(low.find(m), m) for m in _PARTY_MARKERS if m in low]
+    return min(hits)[1] if hits else ""
+
+
+def cantons_named_as_parties(preamble: str) -> list[str]:
+    """Cantons enumerated as contracting parties in a concordat's recitals.
+
+    Empty when the recitals carry no parties marker — absence of evidence,
+    not evidence of a two-canton agreement.
+    """
+    if not party_marker_in(preamble):
+        return []
+    return cantons_named_in_title(preamble)
+
+
 def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
     """Distinct intercantonal agreements with their estimated signatory sets.
 
@@ -1104,9 +1519,16 @@ def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
         and effective_category_type(e)[0] == "Interkantonale Vereinbarung"
     ]
     # all-language titles per unique law, before dedup drops fr/it copies
+    by_identity = _group_by_identity(cantonal_raw)
     titles_by_identity: dict[str, list[str]] = {
         k: [str(f.get("title", "")) for f in files]
-        for k, files in _group_by_identity(cantonal_raw).items()
+        for k, files in by_identity.items()
+    }
+    # recitals of every language version — the only place an open concordat
+    # ever enumerates its member cantons
+    preambles_by_identity: dict[str, list[str]] = {
+        k: [str(f.get("_preamble", "")) for f in files if f.get("_preamble")]
+        for k, files in by_identity.items()
     }
     concordats = _deduplicate(cantonal_raw)
     group_minima = _concordat_group_minima(concordats)
@@ -1129,6 +1551,7 @@ def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
                                 for e in members) if y]
         per_canton: dict[str, dict] = {}
         named: set[str] = set()
+        in_text: set[str] = set()
         for e in sorted(members, key=lambda x: str(x.get("canton", ""))):
             canton = str(e.get("canton", "")).upper()
             per_canton.setdefault(canton, {
@@ -1138,7 +1561,11 @@ def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
             ident = f"{e.get('canton', '')}/{e.get('systematic_number', '')}"
             for t in titles_by_identity.get(ident, [str(e.get("title", ""))]):
                 named.update(cantons_named_in_title(t))
-        named &= set(ALL_CANTON_CODES)
+            for p in preambles_by_identity.get(ident, []):
+                in_text.update(cantons_named_as_parties(p))
+        all_codes = set(ALL_CANTON_CODES)
+        named &= all_codes
+        in_text &= all_codes
         published = sorted(per_canton)
         agreements.append({
             "title": str(rep.get("title", "")),
@@ -1146,7 +1573,8 @@ def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
             "year": min(years) if years else "",
             "published": published,
             "named": sorted(named),
-            "signatories": sorted(set(published) | named),
+            "named_in_text": sorted(in_text),
+            "signatories": sorted(set(published) | named | in_text),
             "per_canton": per_canton,
         })
     return agreements
@@ -1168,6 +1596,7 @@ def generate_concordat_signatories(entries: list[dict]) -> dict:
         "signatories": a["signatories"],
         "published": a["published"],
         "named_in_title": a["named"],
+        "named_in_text": a["named_in_text"],
         "per_canton": a["per_canton"],
     } for a in _concordat_agreement_groups(entries)]
 
@@ -1182,13 +1611,104 @@ def generate_concordat_signatories(entries: list[dict]) -> dict:
         "agreements": agreements,
         "notes": [
             "Signatories = cantons whose collections publish the text, plus "
-            "cantons explicitly named in the title of any language version "
-            "— the best available estimate: LexFind does not publish "
-            "official member-canton lists per text",
+            "cantons explicitly named in the title of any language version, "
+            "plus cantons enumerated as contracting parties in the recitals "
+            "(text before Art. 1) — the best available estimate: LexFind "
+            "does not publish official member-canton lists per text",
+            "Open concordats worded 'Die unterzeichnenden Kantone' name no "
+            "members anywhere in the text; their membership is unrecoverable "
+            "from LexFind and is the main residual gap vs the BADAC baseline",
             "Grouping is by normalized title and therefore language-"
             "sensitive: a canton publishing only a French version of an "
             "agreement titled in German elsewhere appears as a separate "
             "entry",
+        ],
+    }
+
+
+_SIZE_BANDS = [("2", 2, 2), ("3-4", 3, 4), ("5-10", 5, 10),
+               ("11-19", 11, 19), ("20-26", 20, 26)]
+
+
+def generate_concordat_size_distribution(entries: list[dict]) -> dict:
+    """Reproduction of IDHEAP/BADAC graph G1 for the 1848-2003 period.
+
+    Answers the two questions the baseline poses: how many cantons each
+    concordat associates, and how many canton signatures there are in total.
+
+    Counts only agreements with at least TWO established parties — a
+    concordat is by definition an agreement between cantons, so a record for
+    which we can evidence a single canton is a membership we have failed to
+    resolve, not a one-canton concordat.  Those records are reported
+    separately as ``unresolved_single_party`` rather than silently dropped.
+    """
+    ags = [a for a in _concordat_agreement_groups(entries)
+           if str(a.get("year", ""))[:4] and str(a["year"])[:4] <= "2003"]
+    sizes = [len(a["signatories"]) for a in ags]
+    known = [n for n in sizes if n >= 2]
+    total_memberships = sum(known)
+
+    base = {b["band"]: b for b in badac_baseline_bands()}
+    bands = []
+    for label, lo, hi in _SIZE_BANDS:
+        sel = [n for n in known if lo <= n <= hi]
+        memberships = sum(sel)
+        b = base[label]
+        bands.append({
+            "band": label,
+            "ours_concordats": len(sel),
+            "ours_memberships": memberships,
+            "ours_share_of_memberships": round(
+                memberships / total_memberships, 4) if total_memberships else 0,
+            "badac_memberships": b["memberships"],
+            "badac_share_of_memberships": b["share_of_memberships"],
+            "badac_concordats_implied": b["concordats_implied"],
+        })
+
+    evidence: Counter = Counter()
+    for a in ags:
+        if len(a["signatories"]) < 2:
+            continue
+        for c in a["signatories"]:
+            if c in a["published"]:
+                evidence["published_in_own_collection"] += 1
+            elif c in a.get("named_in_text", []):
+                evidence["named_as_party_in_preamble"] += 1
+            else:
+                evidence["named_in_title"] += 1
+
+    return {
+        "title": "Concordats by number of signatory cantons, 1848-2003",
+        "baseline": {
+            "source": "IDHEAP/BADAC press release CP4 (2004), graph G1",
+            "archived_copy": "exports/concordats_2003/baseline/CP4fr.pdf",
+            "period": "1848-2003",
+            "total_concordats": BADAC_2003_TOTAL_CONCORDATS,
+            "total_memberships": BADAC_2003_TOTAL_MEMBERSHIPS,
+            "all_canton_conventions": BADAC_2003_ALL_CANTON_CONVENTIONS,
+            "weighting": "G1 percentages are shares of the 2564 memberships "
+                         "('résultats pondérés : 2564 = 100%'), not shares of "
+                         "the 733 concordats",
+        },
+        "ours": {
+            "concordats": len(known),
+            "memberships": total_memberships,
+            "mean_signatories": round(
+                total_memberships / len(known), 2) if known else 0,
+            "unresolved_single_party": len(sizes) - len(known),
+            "all_canton_agreements": sum(1 for n in known if n == 26),
+        },
+        "bands": bands,
+        "membership_evidence": dict(evidence),
+        "notes": [
+            "Signatories = cantons publishing the text in their own "
+            "collection, UNION cantons named in a title, UNION cantons "
+            "enumerated as contracting parties in the recitals",
+            "The residual gap is structural: open concordats that decline to "
+            "name their members ('Die unterzeichnenden Kantone …') carry no "
+            "membership evidence in the text at all. BADAC read membership "
+            "from the Institute of Federalism's concordat database, which "
+            "records accessions; LexFind publishes no such lists",
         ],
     }
 

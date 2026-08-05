@@ -104,13 +104,33 @@ class TestConcordatsEnactmentSemantics:
             _concordat(nr="c", version=""),  # undated
             {**_concordat(nr="d", enacted="1985-01-01"), "is_active": False},
         ]
-        cmp = generate_chstat_comparison(entries)
+        cmp = generate_chstat_comparison(entries, repo_path="/nonexistent")
         gr = cmp["cantons"]["GR"]
         assert gr["ours_enacted_until_2003"] == {
-            "active": 1, "repealed_listed": 1, "total": 2}
+            "active": 1, "repealed_listed": 1, "repealed_by_2003": 0,
+            "total": 2}
         assert gr["undated"] == 1
         assert gr["unexplained"] == 67 - 2
         assert cmp["chstat_total"] == 2522
+        assert cmp["ours_enacted_until_2003_total"] == 2
+
+    def test_repeal_dated_before_2004_excluded_from_snapshot(self):
+        entries = [
+            # repealed 1990 — chstat's 2003 snapshot never held it
+            {**_concordat(nr="a", enacted="1970-01-01"),
+             "is_active": False, "repealed_date": "1990-06-30"},
+            # repealed 2015 — was in force in 2003, stays counted
+            {**_concordat(nr="b", enacted="1970-01-01"),
+             "is_active": False, "repealed_date": "2015-01-01"},
+            # repeal undated — conservatively stays counted
+            {**_concordat(nr="c", enacted="1970-01-01"), "is_active": False},
+        ]
+        cmp = generate_chstat_comparison(entries, repo_path="/nonexistent")
+        gr = cmp["cantons"]["GR"]
+        assert gr["ours_enacted_until_2003"] == {
+            "active": 0, "repealed_listed": 2, "repealed_by_2003": 1,
+            "total": 2}
+        assert cmp["repealed_by_2003_total"] == 1
         assert cmp["ours_enacted_until_2003_total"] == 2
 
 
@@ -139,3 +159,110 @@ class TestEarliestKnownEvidence:
     def test_truly_undated(self):
         from legalize_ch.stats import earliest_known_year
         assert earliest_known_year({"title": "Y"}, {}) == ("", "undated")
+
+
+def _accession(canton="GR", nr="9.9", title=None, enacted="1980-01-01",
+               ctype="Verordnung des Parlaments (Dekret)"):
+    return {"_scope": "cantonal", "canton": canton, "systematic_number": nr,
+            "language": "de", "_path": f"ch/{canton.lower()}/de/{nr}.md",
+            "category_type": ctype, "enactment_date": enacted,
+            "title": title or ("Dekret über den Beitritt des Kantons "
+                               "Graubünden zum Konkordat über die Fischerei")}
+
+
+class TestMembershipEvidence:
+    def test_accession_instrument_counted(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        ev = generate_concordat_membership_evidence(
+            [_accession()], repo_path="/nonexistent")
+        assert ev["accession_counted"]["GR"] == 1
+        assert ev["accession"]["GR"][0]["status"] == "counted"
+        assert ev["accession"]["GR"][0]["referenced_agreement"] \
+            == "Konkordat über die Fischerei"
+
+    def test_accession_not_counted_when_agreement_published(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        conc = {**_concordat(nr="1.2"),
+                "title": "Konkordat über die Fischerei"}
+        ev = generate_concordat_membership_evidence(
+            [conc, _accession()], repo_path="/nonexistent")
+        assert ev["accession_counted"]["GR"] == 0
+        assert ev["accession"]["GR"][0]["status"] == "published_separately"
+
+    def test_accession_inflection_tolerant_dedup(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        conc = {**_concordat(nr="1.2"),
+                "title": "Interkantonale Vereinbarung über die Anerkennung "
+                         "von Ausbildungsabschlüssen"}
+        acc = _accession(title="Gesetz über den Beitritt zur Interkantonalen "
+                               "Vereinbarung über die Anerkennung von "
+                               "Ausbildungsabschlüssen", ctype="Gesetz")
+        ev = generate_concordat_membership_evidence(
+            [conc, acc], repo_path="/nonexistent")
+        assert ev["accession_counted"]["GR"] == 0
+
+    def test_accession_after_2003_not_counted(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        ev = generate_concordat_membership_evidence(
+            [_accession(enacted="2010-01-01")], repo_path="/nonexistent")
+        assert ev["accession_counted"]["GR"] == 0
+        assert ev["accession"]["GR"][0]["status"] == "after_2003"
+
+    def test_french_adhesion_pattern(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        acc = _accession(
+            canton="JU", ctype="Loi",
+            title="Loi portant adhésion de la République et Canton du Jura "
+                  "au concordat sur les entreprises de sécurité")
+        ev = generate_concordat_membership_evidence(
+            [acc], repo_path="/nonexistent")
+        assert ev["accession_counted"]["JU"] == 1
+
+    def test_plain_vereinbarung_without_canton_names_ignored(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        acc = _accession(title="Dekret über den Beitritt zur Vereinbarung "
+                               "über den Finanzausgleich")
+        ev = generate_concordat_membership_evidence(
+            [acc], repo_path="/nonexistent")
+        assert ev["accession_counted"]["GR"] == 0
+
+    def test_duplicate_instruments_counted_once(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        ev = generate_concordat_membership_evidence(
+            [_accession(nr="9.9"), _accession(nr="9.10")],
+            repo_path="/nonexistent")
+        assert ev["accession_counted"]["GR"] == 1
+
+    def test_chstat_comparison_includes_tiers(self):
+        entries = [
+            _concordat(nr="a", enacted="1990-01-01"),
+            _accession(),
+        ]
+        cmp = generate_chstat_comparison(entries, repo_path="/nonexistent")
+        gr = cmp["cantons"]["GR"]
+        assert gr["ours_enacted_until_2003"]["total"] == 1
+        assert gr["additional_evidence"] == {"accession": 1, "intlex_named": 0}
+        assert gr["explained_total"] == 2
+        assert gr["unexplained"] == 67 - 2
+        assert cmp["explained_total"] == 2
+        assert cmp["accession_evidence_total"] == 1
+
+    def test_exceeds_reference_diagnosis(self):
+        entries = [_concordat(canton="TI", nr=str(i),
+                              enacted="1990-01-01", gc="4.10 Scuola")
+                   for i in range(55)]  # chstat TI total = 44
+        cmp = generate_chstat_comparison(entries, repo_path="/nonexistent")
+        assert cmp["cantons"]["TI"]["diagnosis"] == "exceeds_reference"
+
+    def test_federal_or_foreign_party_not_counted(self):
+        from legalize_ch.stats import generate_concordat_membership_evidence
+        acc = _accession(
+            canton="NE", ctype="Loi",
+            title="Décret portant adhésion du canton de Neuchâtel à l'accord "
+                  "entre le Conseil fédéral suisse, agissant au nom des "
+                  "cantons de Berne, de Vaud, de Neuchâtel et du Jura, et le "
+                  "Gouvernement de la République française relatif à la "
+                  "création d'une école")
+        ev = generate_concordat_membership_evidence(
+            [acc], repo_path="/nonexistent")
+        assert ev["accession_counted"]["NE"] == 0

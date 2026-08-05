@@ -20,13 +20,15 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent.parent.parent / "swiss-law-as-source"
 
 DIAG_FR = {"dating": "datation", "delisting_or_coverage": "retrait du répertoire",
-           "reconciled": "rapproché"}
+           "reconciled": "rapproché", "exceeds_reference": "au-delà de la référence"}
 
 
 def build_markdown() -> str:
     cmp_ = json.loads((SITE / "api/v1/stats/concordats_chstat_comparison.json").read_text())
     conc = json.loads((SITE / "api/v1/stats/concordats_by_domain.json").read_text())
     stats = json.loads((SITE / "stats.json").read_text())
+    dist = json.loads(
+        (SITE / "api/v1/stats/concordats_size_distribution.json").read_text())
     unc = json.loads((SITE / "api/v1/quality/unclassified_types.json").read_text())
 
     n = lambda x: f"{x:,}".replace(",", " ")
@@ -54,11 +56,22 @@ def build_markdown() -> str:
         f"| Référence chstat 2003 | **{n(cmp_['chstat_total'])}** |",
         f"| Nos concordats existant ≤ 2003, en vigueur | {n(active)} |",
         f"| Nos concordats existant ≤ 2003, abrogés mais répertoriés | {n(repealed)} |",
+        f"| Actes d'adhésion (concordat non publié séparément) | {n(cmp_.get('accession_evidence_total', 0))} |",
+        f"| Cantons nommés dans l'inventaire Intlex ≤ 2003 | {n(cmp_.get('intlex_named_evidence_total', 0))} |",
+        f"| **Total expliqué** | **{n(cmp_.get('explained_total', active + repealed))}** |",
         f"| Écart inexpliqué | {n(cmp_['unexplained_total'])} |",
         f"| (Sans date connue chez nous) | {n(cmp_['undated_total'])} |",
         "",
-        f"Notre collection compte au total **{n(conc['totals']['total'])}** entrées de concordats",
-        "(toutes dates confondues), contre 2 522 en 2003 — la croissance attendue sur 23 ans.",
+        f"Notre collection compte au total **{n(conc['totals']['total'])}** appartenances cantonales",
+        f"(toutes dates confondues), contre {n(cmp_['chstat_total'])} en 2003.",
+        "",
+        "**Unité de compte.** Les deux chiffres comptent des *appartenances* (canton × concordat), et non",
+        "des concordats. La publication d'origine (IDHEAP/BADAC, communiqué CP4 de 2004, graphique G1)",
+        f"annonce pour 1848–2003 **{n(cmp_.get('badac_total_concordats', 733))} concordats** pour",
+        f"**{n(cmp_.get('badac_total_memberships', 2564))} appartenances cantonales**. La table chstat",
+        f"n'en recense que {n(cmp_['chstat_total'])} parce qu'elle ne tabule que les six domaines",
+        f"attribuables ; l'écart de {n(cmp_.get('chstat_vs_badac_unattributed', 42))} correspond à la",
+        "septième bande « pas attribuable » du graphique G1.",
         "",
         "# Méthodologie",
         "",
@@ -77,22 +90,34 @@ def build_markdown() -> str:
         "",
         "# Rapprochement par canton",
         "",
-        "| Canton | chstat 2003 | ≤2003 en vigueur | ≤2003 abrogés | Inexpliqué | Total (toutes dates) | Diagnostic |",
-        "|---|---:|---:|---:|---:|---:|---|",
+        "| Canton | chstat 2003 | ≤2003 en vigueur | ≤2003 abrogés | Adhésions | Intlex | Inexpliqué | Total (toutes dates) | Diagnostic |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---|",
     ]
     for c, v in rows.items():
         o = v["ours_enacted_until_2003"]
+        a = v.get("additional_evidence", {"accession": 0, "intlex_named": 0})
         lines.append(f"| {c} | {v['chstat_2003']['total']} | {o['active']} | "
-                     f"{o['repealed_listed']} | {v['unexplained']} | {v['all_time_total']} | "
+                     f"{o['repealed_listed']} | {a['accession']} | {a['intlex_named']} | "
+                     f"{v['unexplained']} | {v['all_time_total']} | "
                      f"{DIAG_FR.get(v['diagnosis'], v['diagnosis'])} |")
     lines += [
         f"| **Total** | **{n(cmp_['chstat_total'])}** | **{n(active)}** | **{n(repealed)}** | "
+        f"**{n(cmp_.get('accession_evidence_total', 0))}** | "
+        f"**{n(cmp_.get('intlex_named_evidence_total', 0))}** | "
         f"**{n(cmp_['unexplained_total'])}** | "
         f"**{n(sum(v['all_time_total'] for v in rows.values()))}** | |",
         "",
         "Diagnostics : *datation* = nous détenons au moins autant de concordats que chstat, mais les dates",
         "en placent une partie hors 2003 ; *retrait du répertoire* = nous en détenons moins que chstat",
-        "(actes retirés du répertoire public) ; *rapproché* = écart ≤ 5.",
+        "(actes retirés du répertoire public) ; *rapproché* = écart ≤ 5 ; *au-delà de la référence* =",
+        "nous comptons davantage de preuves ≤ 2003 que chstat (textes d'application typés « concordat »",
+        "par LexFind, adhésions postérieures nommées dans les intitulés).",
+        "",
+        "Colonnes *Adhésions* / *Intlex* : appartenances prouvées bien que le concordat lui-même soit",
+        "retiré du répertoire — actes d'adhésion cantonaux (Beitritt/adhésion) dont le concordat n'est",
+        "pas publié séparément, et cantons nommés dans les intitulés de l'inventaire Intlex ≤ 2003",
+        "(collections germanophones uniquement). Piste d'audit :",
+        "`api/v1/quality/concordat_membership_evidence.json`.",
         "",
         "## Preuves utilisées (≤ 2003)",
         "",
@@ -135,6 +160,57 @@ def build_markdown() -> str:
         "La base interne 2003 de l'Institut classait chaque concordat dans un domaine ; notre colonne",
         "« Autres » (droit civil, droit pénal, actes sans domaine à la source) explique l'essentiel des",
         "écarts négatifs des colonnes nominales.",
+        "",
+        "# Nombre de cantons par concordat (reproduction du graphique G1)",
+        "",
+        "Référence : IDHEAP/BADAC, communiqué CP4 (2004), graphique G1, 1848–2003. Les pourcentages",
+        "publiés sont des parts des **appartenances** (« résultats pondérés : 2564 = 100 % »), et non",
+        "des parts des 733 concordats — la lecture littérale du texte du communiqué (« 44 % étaient",
+        "des accords bilatéraux ») est arithmétiquement impossible : 22 % de 733 concordats réunissant",
+        "au moins 20 cantons dépasseraient à eux seuls 3 200 appartenances. Non pondérés, les accords",
+        "bilatéraux représentent environ 77 % des concordats.",
+        "",
+        "| Cantons signataires | Nos concordats | Nos appartenances | Part | Réf. appartenances | Part réf. | Réf. concordats |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for b in dist["bands"]:
+        lines.append(
+            f"| {b['band']} | {n(b['ours_concordats'])} | {n(b['ours_memberships'])} | "
+            f"{100 * b['ours_share_of_memberships']:.1f} % | {n(b['badac_memberships'])} | "
+            f"{100 * b['badac_share_of_memberships']:.0f} % | {n(b['badac_concordats_implied'])} |")
+    do_, db_ = dist["ours"], dist["baseline"]
+    lines += [
+        f"| **Total** | **{n(do_['concordats'])}** | **{n(do_['memberships'])}** | 100 % | "
+        f"**{n(db_['total_memberships'])}** | 100 % | **{n(db_['total_concordats'])}** |",
+        "",
+        f"Nombre moyen de cantons par concordat : **{do_['mean_signatories']}** chez nous, contre",
+        f"**{db_['total_memberships'] / db_['total_concordats']:.2f}** dans la référence.",
+        f"Conventions réunissant les 26 cantons : {n(do_['all_canton_agreements'])} chez nous, une",
+        f"douzaine selon la référence ({n(db_['all_canton_conventions'])} nommées en note 1 du communiqué).",
+        "",
+        "**Comment un canton signataire est établi.** Trois preuves cumulatives : le canton publie le",
+        "texte dans son propre recueil ; le canton est nommé dans l'intitulé ; le canton est énuméré",
+        "comme partie contractante dans le préambule (texte avant l'art. 1). Détail :",
+        "",
+        "| Preuve d'appartenance | Nombre |",
+        "|---|---:|",
+    ]
+    ev_fr = {"published_in_own_collection": "publication dans le recueil du canton",
+             "named_as_party_in_preamble": "partie nommée au préambule",
+             "named_in_title": "canton nommé dans l'intitulé"}
+    for k, v in sorted(dist["membership_evidence"].items(), key=lambda kv: -kv[1]):
+        lines.append(f"| {ev_fr.get(k, k)} | {n(v)} |")
+    lines += [
+        "",
+        f"**Limite structurelle.** {n(do_['unresolved_single_party'])} actes typés « concordat » par",
+        "LexFind ne laissent apparaître qu'un seul canton : ce sont des appartenances que nous ne",
+        "parvenons pas à résoudre, et non des concordats à un canton — ils sont donc exclus du tableau",
+        "ci-dessus plutôt que comptés comme bilatéraux. La cause principale est rédactionnelle : les",
+        "concordats ouverts s'adressent « aux cantons signataires » (« Die unterzeichnenden Kantone »)",
+        "sans jamais les nommer. Leur composition ne figure nulle part dans le texte ; la BADAC la",
+        "tirait de la base de données de l'Institut du fédéralisme, qui enregistre les adhésions,",
+        "alors que LexFind ne publie aucune liste de membres. C'est aussi ce qui explique que la bande",
+        "20–26 reste sous-représentée chez nous : ce sont précisément les grands concordats ouverts.",
         "",
         "# Qualité des données",
         "",
@@ -192,9 +268,27 @@ def build_markdown() -> str:
     return "\n".join(lines)
 
 
+# pdflatex has no glyphs for the mathematical-operator block, and xelatex's
+# default Latin Modern text font does not carry them either, so they are
+# transliterated before rendering.  Anything left in the arrow/operator ranges
+# is dropped rather than allowed to abort the build.
+_TEX_SUBSTITUTIONS = {
+    "≤": "<=", "≥": ">=", "≈": "~", "≠": "!=",
+    "∪": " U ", "∩": " et ", "∈": " dans ",
+    "→": "->", "←": "<-", "×": "x", "Δ": "Diff.",
+}
+_DROP_RANGES = ((0x2190, 0x21FF), (0x2200, 0x22FF), (0x2300, 0x23FF))
+
+
+def tex_safe(md: str) -> str:
+    for src, dst in _TEX_SUBSTITUTIONS.items():
+        md = md.replace(src, dst)
+    return "".join("" if any(lo <= ord(c) <= hi for lo, hi in _DROP_RANGES) else c
+                   for c in md)
+
+
 def to_pdf(md: str, out: Path):
-    # pdflatex lacks glyphs for these — use math-mode equivalents
-    md = md.replace("≤", "<=").replace("Δ", "Diff.")
+    md = tex_safe(md)
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as f:
         f.write(md)
         src = f.name

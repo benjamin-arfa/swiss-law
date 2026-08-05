@@ -637,6 +637,14 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
                             site_path / "api" / "v1" / "categories")
     click.echo("  api/v1/categories/ written")
 
+    # Ship the public reproduction script alongside the data it reproduces —
+    # copied, never edited in place on the site, so the download can never
+    # drift from the version in this repo.
+    repro = repo_path / "scripts" / "reproduce_concordats.py"
+    if repro.exists():
+        (site_path / "reproduce_concordats.py").write_bytes(repro.read_bytes())
+        click.echo("  reproduce_concordats.py synced to the site")
+
     if not no_trees:
         click.echo("Fetching category trees from LexFind...")
         fetch_and_write_trees(repo_path / "docs" / "trees", rate_limit=rate_limit)

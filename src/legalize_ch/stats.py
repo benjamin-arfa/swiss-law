@@ -463,36 +463,57 @@ CHSTAT_2003 = {
 # concordats, i.e. even more dominant than the prose suggests.
 BADAC_2003_TOTAL_CONCORDATS = 733
 BADAC_2003_TOTAL_MEMBERSHIPS = 2564
-# bucket -> (share of the 2564 memberships, representative size for the band)
+# The five size classes of G1, as (label, lower bound, upper bound).  Only the
+# bounds are read off the graph; every derived quantity below (band midpoint,
+# representative size, implied concordat count) is computed from them.
+_SIZE_BANDS = [("2", 2, 2), ("3-4", 3, 4), ("5-10", 5, 10),
+               ("11-19", 11, 19), ("20-26", 20, 26)]
+# band -> share of the 2564 memberships, read off the G1 legend.
 BADAC_2003_SIZE_BANDS = {
-    "2": (0.44, 2.0),
-    "3-4": (0.08, 3.5),
-    "5-10": (0.20, 7.5),
-    "11-19": (0.06, 15.0),
-    "20-26": (0.22, 23.0),
+    "2": 0.44,
+    "3-4": 0.08,
+    "5-10": 0.20,
+    "11-19": 0.06,
+    "20-26": 0.22,
 }
 # "Guère plus d'une dizaine de conventions rassemblaient l'ensemble des
 # cantons" — footnote 1 of the press release names 12 such conventions.
 BADAC_2003_ALL_CANTON_CONVENTIONS = 12
 
 
-def badac_baseline_bands() -> list[dict]:
+def badac_baseline_bands(observed: dict[str, tuple[int, int]] | None = None
+                         ) -> list[dict]:
     """The G1 baseline as absolute memberships and implied concordat counts.
 
-    Memberships are exact (share x 2564).  Concordat counts are implied by
-    dividing by the band's representative size and are therefore estimates —
-    they reconstruct 726 of the stated 733 concordats (99.0%), which is the
-    rounding residue of the five published shares.
+    Memberships are exact (published share x the published membership total).
+    Concordat counts are not published per band; they are implied by dividing
+    a band's memberships by the mean concordat size within that band.  That
+    mean is itself computed — from our own evidenced concordats in the band
+    (``observed`` maps band -> (concordats, memberships)) — and only falls
+    back to the arithmetic midpoint of the band's bounds for a band in which
+    we evidence nothing.  Each band records which basis was used, so the
+    reconstruction is auditable rather than tuned.
     """
     bands = []
-    for label, (share, size) in BADAC_2003_SIZE_BANDS.items():
+    for label, lo, hi in _SIZE_BANDS:
+        share = BADAC_2003_SIZE_BANDS[label]
         memberships = round(share * BADAC_2003_TOTAL_MEMBERSHIPS)
+        obs_concordats, obs_memberships = (observed or {}).get(label, (0, 0))
+        if obs_concordats:
+            size = obs_memberships / obs_concordats
+            basis = "observed_mean"
+        else:
+            size = (lo + hi) / 2
+            basis = "band_midpoint"
         bands.append({
             "band": label,
+            "lower": lo,
+            "upper": hi,
             "share_of_memberships": share,
             "memberships": memberships,
             "concordats_implied": round(memberships / size),
-            "representative_size": size,
+            "representative_size": round(size, 3),
+            "representative_size_basis": basis,
         })
     return bands
 
@@ -873,11 +894,11 @@ def generate_chstat_comparison(entries: list[dict],
         "source_chstat": "https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine",
         "chstat_total": chstat_total,
         # The chstat table tabulates the SIX attributable domains only. The
-        # underlying IDHEAP/BADAC publication (graph G1) states 2564 canton
-        # memberships over 1848-2003 and shows a seventh, "pas attribuable"
-        # band; the 42-membership difference is that unattributed remainder.
+        # underlying IDHEAP/BADAC publication (graph G1) states the full
+        # 1848-2003 membership total and shows a seventh, "pas attribuable"
+        # band; the difference computed below is that unattributed remainder.
         # Unit of both figures is the canton-membership (canton x concordat),
-        # NOT the concordat: BADAC counted 733 distinct concordats.
+        # NOT the concordat, which BADAC counted separately.
         "badac_total_memberships": BADAC_2003_TOTAL_MEMBERSHIPS,
         "badac_total_concordats": BADAC_2003_TOTAL_CONCORDATS,
         "chstat_vs_badac_unattributed": BADAC_2003_TOTAL_MEMBERSHIPS - chstat_total,
@@ -1626,10 +1647,6 @@ def generate_concordat_signatories(entries: list[dict]) -> dict:
     }
 
 
-_SIZE_BANDS = [("2", 2, 2), ("3-4", 3, 4), ("5-10", 5, 10),
-               ("11-19", 11, 19), ("20-26", 20, 26)]
-
-
 def generate_concordat_size_distribution(entries: list[dict]) -> dict:
     """Reproduction of IDHEAP/BADAC graph G1 for the 1848-2003 period.
 
@@ -1648,7 +1665,12 @@ def generate_concordat_size_distribution(entries: list[dict]) -> dict:
     known = [n for n in sizes if n >= 2]
     total_memberships = sum(known)
 
-    base = {b["band"]: b for b in badac_baseline_bands()}
+    # Our own within-band mean sizes are what the baseline reconstruction
+    # divides by — no hand-picked representative sizes.
+    observed = {label: (len([n for n in known if lo <= n <= hi]),
+                        sum(n for n in known if lo <= n <= hi))
+                for label, lo, hi in _SIZE_BANDS}
+    base = {b["band"]: b for b in badac_baseline_bands(observed)}
     bands = []
     for label, lo, hi in _SIZE_BANDS:
         sel = [n for n in known if lo <= n <= hi]
@@ -1660,10 +1682,14 @@ def generate_concordat_size_distribution(entries: list[dict]) -> dict:
             "ours_memberships": memberships,
             "ours_share_of_memberships": round(
                 memberships / total_memberships, 4) if total_memberships else 0,
+            "ours_mean_size": round(memberships / len(sel), 3) if sel else None,
             "badac_memberships": b["memberships"],
             "badac_share_of_memberships": b["share_of_memberships"],
             "badac_concordats_implied": b["concordats_implied"],
+            "badac_representative_size": b["representative_size"],
+            "badac_representative_size_basis": b["representative_size_basis"],
         })
+    implied_total = sum(b["badac_concordats_implied"] for b in bands)
 
     evidence: Counter = Counter()
     for a in ags:
@@ -1685,10 +1711,26 @@ def generate_concordat_size_distribution(entries: list[dict]) -> dict:
             "period": "1848-2003",
             "total_concordats": BADAC_2003_TOTAL_CONCORDATS,
             "total_memberships": BADAC_2003_TOTAL_MEMBERSHIPS,
+            "mean_signatories": round(
+                BADAC_2003_TOTAL_MEMBERSHIPS / BADAC_2003_TOTAL_CONCORDATS, 2),
             "all_canton_conventions": BADAC_2003_ALL_CANTON_CONVENTIONS,
-            "weighting": "G1 percentages are shares of the 2564 memberships "
-                         "('résultats pondérés : 2564 = 100%'), not shares of "
-                         "the 733 concordats",
+            "weighting": f"G1 percentages are shares of the "
+                         f"{BADAC_2003_TOTAL_MEMBERSHIPS} memberships "
+                         f"('résultats pondérés : "
+                         f"{BADAC_2003_TOTAL_MEMBERSHIPS} = 100%'), not "
+                         f"shares of the {BADAC_2003_TOTAL_CONCORDATS} "
+                         f"concordats",
+            # G1 publishes no per-band concordat counts; these are implied by
+            # dividing each band's memberships by the mean concordat size we
+            # observe in that band (band midpoint only where we observe none).
+            "reconstruction": {
+                "concordats_implied_total": implied_total,
+                "stated_total": BADAC_2003_TOTAL_CONCORDATS,
+                "accuracy": round(
+                    implied_total / BADAC_2003_TOTAL_CONCORDATS, 4),
+                "size_basis": {b["band"]: b["badac_representative_size_basis"]
+                               for b in bands},
+            },
         },
         "ours": {
             "concordats": len(known),
@@ -1709,6 +1751,12 @@ def generate_concordat_size_distribution(entries: list[dict]) -> dict:
             "membership evidence in the text at all. BADAC read membership "
             "from the Institute of Federalism's concordat database, which "
             "records accessions; LexFind publishes no such lists",
+            "Everything in 'ours' is computed from the source data. The only "
+            "values taken from the publication are the five G1 shares and "
+            "the two caption totals under 'baseline'; the per-band concordat "
+            "counts BADAC never published are reconstructed by dividing each "
+            "band's memberships by the mean concordat size we observe in "
+            "that band (see baseline.reconstruction)",
         ],
     }
 
@@ -1745,6 +1793,7 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         row["total"] = sum(row.values())
     totals = {k: sum(row[k] for row in table.values()) for k in domain_keys}
     totals["total"] = sum(totals.values())
+    chstat_reference = sum(sum(v) for v in CHSTAT_2003.values())
 
     return {
         "title": "Intercantonal agreements (concordats) by domain — "
@@ -1754,13 +1803,14 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
                        "signatory canton (an agreement signed by 10 cantons "
                        "counts 10). Signatory set per agreement = cantons "
                        "publishing the text in their collections ∪ cantons "
-                       "named in any language version's title.",
+                       "named in any language version's title ∪ cantons "
+                       "enumerated as contracting parties in the recitals.",
         "total_concordats": totals["total"],
         "total_memberships": totals["total"],
         "total_agreements": len(agreements),
         "memberships_until_2003": until_2003,
         # summed from the published table, not restated as a literal
-        "chstat_2003_reference": sum(sum(v) for v in CHSTAT_2003.values()),
+        "chstat_2003_reference": chstat_reference,
         "memberships_added_by_title_evidence": named_only_adds,
         "domains": _domains_export(),
         "cantons": table,
@@ -1774,8 +1824,10 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
             "purely from the source data — no scaling, no external baseline",
             "Signatories per agreement = cantons publishing the text in "
             "their collections ∪ cantons named in any language version's "
-            "title; LexFind/LexWork publish no official member lists",
-            "chstat.ch/BADAC's 2003 figure (2,522 memberships ≤2003) is an "
+            "title ∪ cantons enumerated as contracting parties in the "
+            "recitals; LexFind/LexWork publish no official member lists",
+            f"chstat.ch/BADAC's 2003 figure ({chstat_reference:,} "
+            f"memberships ≤2003, summed from the published table) is an "
             "external reference only — our computed ≤2003 value is lower "
             "because agreements repealed decades ago were delisted from "
             "today's collections (historical attrition); see the "

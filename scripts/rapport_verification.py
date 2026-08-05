@@ -67,10 +67,10 @@ def build_markdown() -> str:
         "",
         "**Unité de compte.** Les deux chiffres comptent des *appartenances* (canton × concordat), et non",
         "des concordats. La publication d'origine (IDHEAP/BADAC, communiqué CP4 de 2004, graphique G1)",
-        f"annonce pour 1848–2003 **{n(cmp_.get('badac_total_concordats', 733))} concordats** pour",
-        f"**{n(cmp_.get('badac_total_memberships', 2564))} appartenances cantonales**. La table chstat",
+        f"annonce pour 1848–2003 **{n(cmp_['badac_total_concordats'])} concordats** pour",
+        f"**{n(cmp_['badac_total_memberships'])} appartenances cantonales**. La table chstat",
         f"n'en recense que {n(cmp_['chstat_total'])} parce qu'elle ne tabule que les six domaines",
-        f"attribuables ; l'écart de {n(cmp_.get('chstat_vs_badac_unattributed', 42))} correspond à la",
+        f"attribuables ; l'écart de {n(cmp_['chstat_vs_badac_unattributed'])} correspond à la",
         "septième bande « pas attribuable » du graphique G1.",
         "",
         "# Méthodologie",
@@ -163,12 +163,27 @@ def build_markdown() -> str:
         "",
         "# Nombre de cantons par concordat (reproduction du graphique G1)",
         "",
+    ]
+    do_, db_ = dist["ours"], dist["baseline"]
+    rec = db_.get("reconstruction", {})
+    big = next(b for b in dist["bands"] if b["band"] == "20-26")
+    bil = next(b for b in dist["bands"] if b["band"] == "2")
+    # La lecture « parts des concordats » du communiqué se réfute par le
+    # calcul, pas par une valeur recopiée.
+    impossible = big["badac_share_of_memberships"] * db_["total_concordats"] * 20
+    lines += [
         "Référence : IDHEAP/BADAC, communiqué CP4 (2004), graphique G1, 1848–2003. Les pourcentages",
-        "publiés sont des parts des **appartenances** (« résultats pondérés : 2564 = 100 % »), et non",
-        "des parts des 733 concordats — la lecture littérale du texte du communiqué (« 44 % étaient",
-        "des accords bilatéraux ») est arithmétiquement impossible : 22 % de 733 concordats réunissant",
-        "au moins 20 cantons dépasseraient à eux seuls 3 200 appartenances. Non pondérés, les accords",
-        "bilatéraux représentent environ 77 % des concordats.",
+        f"publiés sont des parts des **appartenances** (« résultats pondérés : "
+        f"{db_['total_memberships']} = 100 % »), et non",
+        f"des parts des {db_['total_concordats']} concordats — la lecture littérale du texte du "
+        f"communiqué (« {100 * bil['badac_share_of_memberships']:.0f} % étaient",
+        f"des accords bilatéraux ») est arithmétiquement impossible : "
+        f"{100 * big['badac_share_of_memberships']:.0f} % de {db_['total_concordats']} concordats "
+        "réunissant",
+        f"au moins 20 cantons dépasseraient à eux seuls {n(round(impossible))} appartenances, bien "
+        f"au-delà des {n(db_['total_memberships'])} annoncées. Non pondérés, les accords",
+        f"bilatéraux représentent {100 * bil['badac_concordats_implied'] / db_['total_concordats']:.0f} %"
+        " des concordats.",
         "",
         "| Cantons signataires | Nos concordats | Nos appartenances | Part | Réf. appartenances | Part réf. | Réf. concordats |",
         "|---|---:|---:|---:|---:|---:|---:|",
@@ -178,13 +193,21 @@ def build_markdown() -> str:
             f"| {b['band']} | {n(b['ours_concordats'])} | {n(b['ours_memberships'])} | "
             f"{100 * b['ours_share_of_memberships']:.1f} % | {n(b['badac_memberships'])} | "
             f"{100 * b['badac_share_of_memberships']:.0f} % | {n(b['badac_concordats_implied'])} |")
-    do_, db_ = dist["ours"], dist["baseline"]
     lines += [
         f"| **Total** | **{n(do_['concordats'])}** | **{n(do_['memberships'])}** | 100 % | "
-        f"**{n(db_['total_memberships'])}** | 100 % | **{n(db_['total_concordats'])}** |",
+        f"**{n(db_['total_memberships'])}** | 100 % | "
+        f"**{n(rec.get('concordats_implied_total', 0))}** |",
+        "",
+        "La colonne « Réf. concordats » n'est pas publiée : G1 ne donne que des parts "
+        "d'appartenances. Elle est",
+        "reconstituée en divisant les appartenances de chaque bande par la taille moyenne des "
+        "concordats que nous",
+        f"observons dans cette bande — soit {n(rec.get('concordats_implied_total', 0))} concordats "
+        f"pour {n(db_['total_concordats'])} annoncés "
+        f"({100 * rec.get('accuracy', 0):.1f} % du total publié).",
         "",
         f"Nombre moyen de cantons par concordat : **{do_['mean_signatories']}** chez nous, contre",
-        f"**{db_['total_memberships'] / db_['total_concordats']:.2f}** dans la référence.",
+        f"**{db_['mean_signatories']}** dans la référence.",
         f"Conventions réunissant les 26 cantons : {n(do_['all_canton_agreements'])} chez nous, une",
         f"douzaine selon la référence ({n(db_['all_canton_conventions'])} nommées en note 1 du communiqué).",
         "",

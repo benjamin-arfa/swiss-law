@@ -273,3 +273,57 @@ class TestBadacBaseline:
         # implied concordat counts reconstruct 733 to within rounding
         assert 720 <= sum(b["concordats_implied"] for b in bands) <= 740
         assert abs(sum(b["share_of_memberships"] for b in bands) - 1.0) < 1e-9
+
+    def test_representative_size_defaults_to_the_computed_band_midpoint(self):
+        from legalize_ch.stats import badac_baseline_bands
+        bands = {b["band"]: b for b in badac_baseline_bands()}
+        assert all(b["representative_size_basis"] == "band_midpoint"
+                   for b in bands.values())
+        # midpoints are computed from the band bounds, not written down
+        for b in bands.values():
+            assert b["representative_size"] == (b["lower"] + b["upper"]) / 2
+
+    def test_observed_sizes_override_the_midpoint(self):
+        from legalize_ch.stats import badac_baseline_bands
+        # 8 concordats totalling 40 memberships -> mean size 5.0, not the
+        # 7.5 midpoint of the 5-10 band
+        bands = {b["band"]: b
+                 for b in badac_baseline_bands({"5-10": (8, 40)})}
+        five = bands["5-10"]
+        assert five["representative_size"] == 5.0
+        assert five["representative_size_basis"] == "observed_mean"
+        assert five["concordats_implied"] == round(five["memberships"] / 5.0)
+        # untouched bands keep the midpoint basis
+        assert bands["2"]["representative_size_basis"] == "band_midpoint"
+
+    def test_size_distribution_reconstruction_is_computed_from_our_data(self):
+        from legalize_ch.stats import generate_concordat_size_distribution
+        entries = [
+            _law(canton="ZH", nr="1.1", ctype="Interkantonale Vereinbarung",
+                 title="Vereinbarung zwischen den Kantonen Zürich, Bern, "
+                       "Luzern und Uri", enacted="1990-01-01"),
+        ]
+        dist = generate_concordat_size_distribution(entries)
+        rec = dist["baseline"]["reconstruction"]
+        assert rec["stated_total"] == dist["baseline"]["total_concordats"]
+        assert rec["concordats_implied_total"] == sum(
+            b["badac_concordats_implied"] for b in dist["bands"])
+        assert rec["accuracy"] == round(
+            rec["concordats_implied_total"] / rec["stated_total"], 4)
+        # the 3-4 band saw one 4-canton agreement: mean size 4.0 is used
+        band = {b["band"]: b for b in dist["bands"]}["3-4"]
+        assert band["ours_mean_size"] == 4.0
+        assert band["badac_representative_size"] == 4.0
+        assert band["badac_representative_size_basis"] == "observed_mean"
+        assert rec["size_basis"]["3-4"] == "observed_mean"
+        assert rec["size_basis"]["20-26"] == "band_midpoint"
+
+    def test_baseline_prose_is_derived_not_restated(self):
+        from legalize_ch.stats import (BADAC_2003_TOTAL_CONCORDATS,
+                                       BADAC_2003_TOTAL_MEMBERSHIPS,
+                                       generate_concordat_size_distribution)
+        base = generate_concordat_size_distribution([])["baseline"]
+        assert str(BADAC_2003_TOTAL_MEMBERSHIPS) in base["weighting"]
+        assert str(BADAC_2003_TOTAL_CONCORDATS) in base["weighting"]
+        assert base["mean_signatories"] == round(
+            BADAC_2003_TOTAL_MEMBERSHIPS / BADAC_2003_TOTAL_CONCORDATS, 2)

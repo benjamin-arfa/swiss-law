@@ -97,9 +97,8 @@ BASELINE_2003 = {
         "11-19": 0.06,
         "20-26": 0.22,
     },
-    # Midpoint canton count used to convert membership shares back to
-    # concordat counts (class "2" is exact by definition).
-    "size_class_midpoints": {"2": 2, "3-4": 3.5, "5-10": 7.5, "11-19": 15, "20-26": 23},
+    # NB: no representative sizes are listed here — they are computed from
+    # each class label's own bounds in size_class_midpoint().
     # Domain distribution, membership-weighted (G1, 2564 = 100%).
     "domains_membership_weighted": {
         "Éducation, science et culture": 0.25,
@@ -114,21 +113,32 @@ BASELINE_2003 = {
 BASELINE_PDF_URL = "https://chstat.ch/download/pages/nehhqpsts5nj.pdf/CP4fr.pdf"
 
 
+def size_class_midpoint(cls: str) -> float:
+    """Arithmetic midpoint of a G1 size class, parsed from its own label.
+
+    "2" -> 2.0, "3-4" -> 3.5, "20-26" -> 23.0.  Computing it from the label
+    keeps the conversion auditable: nothing here is a chosen number.
+    """
+    lo, _, hi = cls.partition("-")
+    return (int(lo) + int(hi or lo)) / 2
+
+
 def derive_baseline_concordat_distribution() -> dict:
     """Convert the membership-weighted G1 size classes back to concordat counts.
 
-    memberships(class) = share * 2564 ; concordats(class) = memberships / midpoint.
-    The derived total (~726) reconciles with the published 733 to within ~1%,
-    which validates the weighted reading of the legend.
+    memberships(class) = share * the published membership total ;
+    concordats(class) = memberships / the class midpoint.  The derived total
+    reconciles with the published concordat count to within ~1%, which
+    validates the weighted reading of the legend.
     """
     total_m = BASELINE_2003["total_canton_memberships"]
     out = {}
     for cls, share in BASELINE_2003["size_classes_membership_weighted"].items():
         memberships = share * total_m
-        midpoint = BASELINE_2003["size_class_midpoints"][cls]
         out[cls] = {
             "memberships": round(memberships),
-            "concordats_est": round(memberships / midpoint),
+            "concordats_est": round(memberships / size_class_midpoint(cls)),
+            "midpoint": size_class_midpoint(cls),
         }
     out["_derived_total_concordats"] = sum(v["concordats_est"] for v in out.values()
                                            if isinstance(v, dict))
@@ -537,7 +547,8 @@ def main() -> int:
     a(f"| Adhésions cantonales estimées, LexFind ≤2003 (voir méthode) | ~{memberships_est} "
       f"(bornes [{memberships_low}, {memberships_high}]) |")
     a("")
-    a("## Les deux unités de la visualisation CHStat : 733 concordats, 2564 cantons membres")
+    a(f"## Les deux unités de la visualisation CHStat : {baseline_total} "
+      f"concordats, {baseline_memberships} cantons membres")
     a("")
     a("La visualisation « Concordats » de CHStat/BADAC (graphique G1 du communiqué "
       "IDHEAP du 15.11.2004, d'après la banque de données des concordats de "
@@ -545,11 +556,12 @@ def main() -> int:
       "**« Total 1848-2003 = 733 concordats; 2564 cantons membres »**, avec la "
       "mention *« résultats pondérés : 2564 = 100% »*. Deux unités coexistent donc :")
     a("")
-    a("1. **733** — le nombre de concordats *conclus* entre 1848 et 2003 "
-      "(un par traité) ;")
-    a("2. **≈2500 (2564)** — le nombre d'*adhésions cantonales* : chaque concordat "
-      "compté une fois par canton signataire (soit ≈3,5 cantons par concordat en "
-      "moyenne).")
+    a(f"1. **{baseline_total}** — le nombre de concordats *conclus* entre 1848 "
+      f"et 2003 (un par traité) ;")
+    a(f"2. **{baseline_memberships}** — le nombre d'*adhésions cantonales* : chaque "
+      f"concordat compté une fois par canton signataire (soit ≈"
+      f"{baseline_memberships / baseline_total:.1f} cantons par concordat en "
+      f"moyenne).")
     a("")
     a("Tous les pourcentages affichés par la visualisation (domaines et classes de "
       "taille) sont **pondérés par les adhésions** (2564 = 100 %), pas par le "
@@ -563,10 +575,18 @@ def main() -> int:
     a(f"| **Total** | 100% | {baseline_memberships} | "
       f"~{baseline_derived['_derived_total_concordats']} (publié : {baseline_total}) |")
     a("")
-    a("Le total dérivé (~726) recoupe le total publié (733) à ~1 % près, ce qui "
-      "valide cette lecture pondérée. Conséquence notable : **~77 % des concordats "
-      "1848-2003 étaient bilatéraux** (564 sur 733), même si les accords "
-      "bilatéraux ne représentent que 44 % des adhésions.")
+    derived_total = baseline_derived["_derived_total_concordats"]
+    bilat = baseline_derived["2"]["concordats_est"]
+    bilat_share_memberships = BASELINE_2003[
+        "size_classes_membership_weighted"]["2"]
+    a(f"Le total dérivé (~{derived_total}) recoupe le total publié "
+      f"({baseline_total}) à "
+      f"~{abs(derived_total - baseline_total) / baseline_total:.0%} près, ce qui "
+      f"valide cette lecture pondérée. Conséquence notable : "
+      f"**~{bilat / baseline_total:.0%} des concordats 1848-2003 étaient "
+      f"bilatéraux** ({bilat} sur {baseline_total}), même si les accords "
+      f"bilatéraux ne représentent que {bilat_share_memberships:.0%} des "
+      f"adhésions.")
     a("")
     a("## Interprétation de l'écart")
     a("")
@@ -625,7 +645,8 @@ def main() -> int:
     for dec in sorted(by_decade):
         a(f"| {dec} | {by_decade[dec]} |")
     a("")
-    a(f"Baseline : ~70 % des 733 concordats 1848-2003 signés depuis les années 1970 "
+    a(f"Baseline : ~{BASELINE_2003['share_signed_since_1970s']:.0%} des "
+      f"{baseline_total} concordats 1848-2003 signés depuis les années 1970 "
       f"(part en concordats, non pondérée) ; dans LexFind ≤2003 : "
       f"{pct(sum(v for k, v in by_decade.items() if k >= '1970s'), n_scope)}.")
     a("")

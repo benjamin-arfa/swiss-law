@@ -65,6 +65,9 @@ def generate_csv_exports(type_tables: dict, conc_sig: dict,
         files[name] = _csv(
             [f"Swiss Law Collection — cantonal acts of type '{label}' by canton, "
              "year and legal domain",
+             "counting_unit: published_copies — one count per canton whose "
+             "collection publishes the act; this is the unit the site's year "
+             "chart uses, so the two agree for any year",
              "year = enactment year; 'unknown' rows are undated laws",
              f"source: {SOURCE_LINE}"],
             wide_cols, rows)
@@ -81,6 +84,8 @@ def generate_csv_exports(type_tables: dict, conc_sig: dict,
     files["laws_cube.csv"] = _csv(
         ["Swiss Law Collection — all cantonal acts: instrument type × canton × "
          "enactment year × legal domain",
+         "counting_unit: published_copies — one count per canton whose "
+         "collection publishes the act",
          f"source: {SOURCE_LINE}"],
         ["instrument_type", "canton", "year", "domain", "count"], cube_rows)
     index.append({"file": "laws_cube.csv", "rows": len(cube_rows),
@@ -92,6 +97,11 @@ def generate_csv_exports(type_tables: dict, conc_sig: dict,
         ["Swiss Law Collection — intercantonal agreement memberships, computed: "
          "one occurrence per SIGNING canton per agreement (signed by 10 cantons "
          "-> 10 occurrences)",
+         "counting_unit: signatory_memberships — a DIFFERENT unit from the "
+         "site's year chart and from interkantonale_vereinbarung_canton_year.csv, "
+         "which count published copies: this file also credits signatory cantons "
+         "that never published their own copy, and dates each agreement by its "
+         "earliest member. Per-year totals therefore differ by design",
          "signatories per agreement = cantons publishing the text in their "
          "collections + cantons named in any language version's title; no "
          "scaling, no external baseline",

@@ -300,6 +300,29 @@ The `stats` command generates:
 | `api/v1/stats/{year}/{entity}.json` | site repo | Per-year per-canton breakdowns with topic trees |
 | `api/v1/publications/{year}.json` | site repo | Laws published in each year |
 
+### Two rules every year-keyed output obeys
+
+**One year per law.** `canonical_year_fn()` (`src/legalize_ch/stats.py`) is the
+single definition, built once over the deduplicated cantonal entries and passed
+to every year-keyed aggregation. Concordats use `earliest_known_year()`, which
+accepts a sibling canton's authoritative date for the same act; every other type
+uses `enactment_year()`. Building it from a different set of entries changes the
+group minima, so a caller that constructs its own would silently put `stats.json`
+out of step with `api/v1/stats/types/*_by_domain.json` — which is exactly the bug
+`tests/test_stats_year_parity.py` guards against (chart and table disagreed for
+concordats across 55 years).
+
+**Every table declares its counting unit** in a `counting_unit` field:
+
+| Unit | Files | Meaning |
+|------|-------|---------|
+| `published_copies` | `stats.json` cube, `concordats_by_domain.json`, `types/*_by_domain.json`, `csv/*_canton_year.csv`, `csv/laws_cube.csv` | one count per canton whose collection publishes the act |
+| `signatory_memberships` | `concordats_by_domain_signatories.json`, `csv/concordats_memberships.csv` | also credits signatory cantons that never published a copy (chstat.ch-comparable); each agreement dated by its earliest member |
+
+The two are different measures of the same corpus and their per-year totals
+differ by design. Anything that shows one must name it — the dashboard prints
+both totals under the concordat table for this reason.
+
 ## Architecture
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed technical documentation including module map, state management, and data flow diagrams.

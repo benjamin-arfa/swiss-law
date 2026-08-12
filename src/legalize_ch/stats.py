@@ -307,8 +307,14 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
     by_month: Counter[str] = Counter()
     by_year_scope: dict[str, Counter[str]] = defaultdict(Counter)
 
+    # The site-wide year rule, built once over the deduplicated cantonal
+    # set — the same input generate_types_by_domain() uses, so the year
+    # cube below and api/v1/stats/types/*_by_domain.json agree by
+    # construction rather than by coincidence.
+    year_fn = canonical_year_fn(cantonal)
+
     for e in entries:
-        year = enactment_year(e)
+        year = year_fn(e)[0]
         if year:
             by_year[year] += 1
             by_year_scope[year][e["_scope"]] += 1
@@ -322,11 +328,13 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         for e in entries:
             if scope_filter and e["_scope"] != scope_filter:
                 continue
-            val = e.get(field, "")
-            year = enactment_year(e)
+            # Resolve the effective type BEFORE the truthiness test: a law
+            # LexFind leaves untyped but the rules classify still belongs in
+            # the breakdown (and is already counted in the cube below).
+            val = (effective_category_type(e)[0] if field == "category_type"
+                   else e.get(field, ""))
+            year = year_fn(e)[0]
             if val and year:
-                if field == "category_type":
-                    val = effective_category_type(e)[0]
                 result[year][val] += 1
         return {y: dict(counts) for y, counts in sorted(result.items())}
 
@@ -346,7 +354,7 @@ def generate_stats(repo_path: str | Path = ".") -> dict:
         lambda: defaultdict(lambda: defaultdict(int))
     )
     for e in cantonal:
-        year = enactment_year(e)
+        year = year_fn(e)[0]
         c = e.get("canton", "")
         ct = effective_category_type(e)[0]
         if year and c and ct:
@@ -1135,13 +1143,15 @@ def generate_harmonized_by_year(entries: list[dict],
         lambda: defaultdict(lambda: [0, 0]))
     unknown: dict[str, list[int]] = defaultdict(lambda: [0, 0])
 
+    year_fn = canonical_year_fn(
+        [e for e in deduped if e.get("_scope") == "cantonal"])
     for e in deduped:
         hc = _harmonized_code(e, fed_map)
         if hc is None:
             continue
         scope, code, _ = hc
         idx = 0 if scope == "federal" else 1
-        year = enactment_year(e)
+        year = year_fn(e)[0]
         target = years[year] if year else unknown
         for anc in _ancestor_codes(code):
             target[anc][idx] += 1
@@ -1229,6 +1239,38 @@ def earliest_known_year(e: dict, group_minima: dict[str, str]) -> tuple[str, str
     return d[:4], ev
 
 
+CONCORDAT_TYPE = "Interkantonale Vereinbarung"
+
+
+def canonical_year_fn(cantonal: list[dict]):
+    """One year per law for the whole site.
+
+    Concordats use the provenance-ranked ``earliest_known_year`` (which
+    accepts a sibling canton's authoritative evidence — the same act
+    exists in every member canton); every other instrument type uses
+    plain ``enactment_year``, since sibling-group evidence only makes
+    sense for an act shared between cantons.
+
+    Returns ``year_fn(e) -> (year, evidence)``.  Build it ONCE from the
+    deduplicated cantonal entries and pass it to every year-keyed
+    aggregation: the group minima depend on which concordats are in
+    scope, so a fn built from a different set would silently redistribute
+    concordats across years and put stats.json back out of step with
+    api/v1/stats/types/*_by_domain.json.
+    """
+    concordats = [e for e in cantonal
+                  if effective_category_type(e)[0] == CONCORDAT_TYPE]
+    group_minima = _concordat_group_minima(concordats)
+
+    def year_of(e: dict) -> tuple[str, str]:
+        if effective_category_type(e)[0] == CONCORDAT_TYPE:
+            return earliest_known_year(e, group_minima)
+        y = enactment_year(e)
+        return y, ("dated" if y else "undated")
+
+    return year_of
+
+
 def generate_concordats_by_domain(entries: list[dict]) -> dict:
     """Tabulate intercantonal agreements (concordats) per canton per domain.
 
@@ -1241,11 +1283,9 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
     cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
     concordats = [
         e for e in cantonal
-        if effective_category_type(e)[0] == "Interkantonale Vereinbarung"
+        if effective_category_type(e)[0] == CONCORDAT_TYPE
     ]
-    group_minima = _concordat_group_minima(concordats)
-    tab = _domain_cross_tab(
-        concordats, lambda e: earliest_known_year(e, group_minima))
+    tab = _domain_cross_tab(concordats, canonical_year_fn(cantonal))
 
     return {
         "title": "Intercantonal agreements (concordats) by domain",
@@ -1254,6 +1294,7 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         "domains": _domains_export(),
         "cantons": tab["cantons"],
         "totals": tab["totals"],
+        "counting_unit": "published_copies",
         "year_semantics": "enactment",
         "by_year": tab["by_year"],
         "by_version_year": tab["by_version_year"],
@@ -1265,11 +1306,14 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
             "a legal domain in LexFind's public database (~28% unclassified at the source)",
             "Coverage follows the imported collections — run backfill-lexfind "
             "to complete under-represented cantons",
-            "Counting unit: canton memberships, not distinct treaties — each "
-            "agreement counts once per signatory canton whose collection "
-            "publishes it (a 26-canton concordat counts 26), matching the "
-            "chstat.ch methodology. Distinct agreements with their signing "
-            "cantons: /api/v1/stats/concordats_signatories.json",
+            "Counting unit: published copies — one count per canton whose "
+            "collection publishes the act (a concordat published by 26 cantons "
+            "counts 26). This is the unit the dashboard's year chart uses, so "
+            "the two agree for any selected year. The chstat.ch-comparable "
+            "count additionally credits signatory cantons that never published "
+            "a copy: /api/v1/stats/concordats_by_domain_signatories.json. "
+            "Distinct agreements with their signing cantons: "
+            "/api/v1/stats/concordats_signatories.json",
         ],
     }
 
@@ -1366,31 +1410,24 @@ def generate_types_by_domain(entries: list[dict],
     Returns ``{"files": {slug: table_dict}, "index": index_dict}``.  Each
     table reuses the concordats_by_domain key names (``domains``,
     ``cantons``, ``totals``, ``by_year``…) so the dashboard renders any
-    type with the same code.  The intercantonal type keeps its
-    provenance-ranked year logic (``earliest_known_year``); other types
-    use plain ``enactment_year`` — sibling-group evidence only makes
-    sense for the same act existing in several cantons.
+    type with the same code.  Years come from the site-wide
+    ``canonical_year_fn`` — the same rule and the same group minima
+    generate_stats() uses for the dashboard's year cube, so the chart and
+    the table under it report the same total for any selected year.
     """
     cantonal = [e for e in _deduplicate(entries) if e["_scope"] == "cantonal"]
+    year_fn = canonical_year_fn(cantonal)
     by_type: dict[str, list[dict]] = defaultdict(list)
     for e in cantonal:
         ct = effective_category_type(e)[0]
         if ct in TYPE_SLUGS:
             by_type[ct].append(e)
 
-    def _plain_year(e: dict) -> tuple[str, str]:
-        y = enactment_year(e)
-        return y, ("dated" if y else "undated")
-
     files: dict[str, dict] = {}
     index_types: list[dict] = []
     for label_de, laws in by_type.items():
         slug = TYPE_SLUGS[label_de]
-        if label_de == "Interkantonale Vereinbarung":
-            gm = _concordat_group_minima(laws)
-            tab = _domain_cross_tab(laws, lambda e: earliest_known_year(e, gm))
-        else:
-            tab = _domain_cross_tab(laws, _plain_year)
+        tab = _domain_cross_tab(laws, year_fn)
         label = CATEGORY_TYPE_LABELS.get(label_de, {"de": label_de})
         notes = [
             "\"Other\" column includes civil law, criminal law and laws "
@@ -1398,11 +1435,13 @@ def generate_types_by_domain(entries: list[dict],
             "Coverage follows the imported collections — run backfill-lexfind "
             "to complete under-represented cantons",
         ]
-        if label_de == "Interkantonale Vereinbarung":
+        if label_de == CONCORDAT_TYPE:
             notes.append(
-                "Counting unit: canton memberships, not distinct treaties — "
-                "each agreement counts once per signatory canton whose "
-                "collection publishes it, matching the chstat.ch methodology")
+                "Counting unit: published copies — one count per canton whose "
+                "collection publishes the act, the same unit as the dashboard's "
+                "year chart. For the chstat.ch-comparable count, which also "
+                "credits signatory cantons that never published a copy, see "
+                "api/v1/stats/concordats_by_domain_signatories.json")
         files[slug] = {
             "title": f"Cantonal acts of type '{label_de}' by canton and domain",
             "type": {"slug": slug, "label": label},
@@ -1411,6 +1450,7 @@ def generate_types_by_domain(entries: list[dict],
             "domains": _domains_export(),
             "cantons": tab["cantons"],
             "totals": tab["totals"],
+            "counting_unit": "published_copies",
             "year_semantics": "enactment",
             "by_year": tab["by_year"],
             "unclassified_in_autres": tab["unclassified_in_autres"],
@@ -1869,6 +1909,13 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
         "domains": _domains_export(),
         "cantons": table,
         "totals": totals,
+        # A DIFFERENT unit from the dashboard's year chart and from
+        # concordats_by_domain.json, which count published copies: this
+        # table also credits signatory cantons that never published a
+        # copy, and dates the whole agreement by its earliest member.
+        # Anything showing both must say which is which.
+        "counting_unit": "signatory_memberships",
+        "published_copies_reference": "api/v1/stats/concordats_by_domain.json",
         "year_semantics": "enactment",
         "by_year": {y: {c: dict(d) for c, d in cantons.items()}
                     for y, cantons in sorted(by_year.items())},
@@ -2245,8 +2292,10 @@ def generate_yearly_canton_stats(
 
     data: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
 
+    year_fn = canonical_year_fn(
+        [e for e in deduped if e.get("_scope") == "cantonal"])
     for e in deduped:
-        year = enactment_year(e)
+        year = year_fn(e)[0]
         if not year:
             continue
         if e.get("_scope") == "cantonal" and e.get("canton"):

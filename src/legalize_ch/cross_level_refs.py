@@ -845,11 +845,7 @@ _CROSS_LEVEL_HTML = """\
         <a href="index.html">Dashboard</a>
         <a href="laws.html">Laws</a>
         <a href="data.html">Data</a>
-        <a href="crossrefs.html">Federal cross-refs</a>
-        <a href="cross_level_refs.html" aria-current="page">Federal ↔ cantonal</a>
-        <a href="diff.html">Diff viewer</a>
         <a href="verification.html">Verification</a>
-        <a href="undated.html">Undated laws</a>
         <a href="api.html">API</a>
     </nav>
     <main>

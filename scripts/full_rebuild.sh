@@ -108,6 +108,11 @@ step "[8/9] Supplementary artifacts (cross-refs, feeds)"
 "${VENV}/bin/legalize-ch" cross-level-refs --repo "$REPO_DIR" 2>&1 || fail "cross-level-refs failed"
 "${VENV}/bin/legalize-ch" feed --repo "$REPO_DIR" 2>&1 || fail "feed generation failed"
 
+# The generated pages carry their own navbar; re-normalise the whole site so the
+# header and nav stay identical everywhere (see scripts/sync_site_nav.py).
+SWISS_LAW_SITE_REPO="$SITE_DIR" "${VENV}/bin/python" "${REPO_DIR}/scripts/sync_site_nav.py" 2>&1 \
+    || fail "navbar sync failed"
+
 step "[9/9] Publish: site deploy + law-repo push"
 COMMITS_AFTER=$(git rev-list --count HEAD)
 NEW_COMMITS=$((COMMITS_AFTER - COMMITS_BEFORE))

@@ -686,26 +686,6 @@ _CROSS_LEVEL_HTML = """\
             line-height: 1.6;
             background: #fff;
         }
-        header {
-            background: var(--red);
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        header h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
-        header p { opacity: 0.9; font-size: 0.9rem; }
-        nav {
-            background: var(--dark);
-            padding: 0.5rem 2rem;
-            text-align: center;
-        }
-        nav a {
-            color: #ccc;
-            text-decoration: none;
-            margin: 0 0.75rem;
-            font-size: 0.9rem;
-        }
-        nav a:hover { color: white; }
         main {
             max-width: 1100px;
             margin: 2rem auto;
@@ -854,6 +834,7 @@ _CROSS_LEVEL_HTML = """\
         }
         footer a { color: var(--red); text-decoration: none; }
     </style>
+    <link rel="stylesheet" href="assets/site-chrome.css">
 </head>
 <body>
     <header>
@@ -861,11 +842,15 @@ _CROSS_LEVEL_HTML = """\
         <p>Federal ↔ Cantonal Law Links — Swiss Legal System</p>
     </header>
     <nav>
-        <a href="index.html">Search</a>
-        <a href="crossrefs.html">Federal Cross-Refs</a>
-        <a href="cross_level_refs.html"><strong>Federal ↔ Cantonal</strong></a>
-        <a href="diff.html">Diff Viewer</a>
-        <a href="stats.html">Statistics</a>
+        <a href="index.html">Dashboard</a>
+        <a href="laws.html">Laws</a>
+        <a href="data.html">Data</a>
+        <a href="crossrefs.html">Federal cross-refs</a>
+        <a href="cross_level_refs.html" aria-current="page">Federal ↔ cantonal</a>
+        <a href="diff.html">Diff viewer</a>
+        <a href="verification.html">Verification</a>
+        <a href="undated.html">Undated laws</a>
+        <a href="api.html">API</a>
     </nav>
     <main>
         <div class="kpi-grid" id="kpis"></div>

@@ -5,7 +5,11 @@ import json
 
 import pytest
 
-from legalize_ch.law_index import generate_law_index, write_law_index
+from legalize_ch.law_index import (
+    build_all_payload,
+    generate_law_index,
+    write_law_index,
+)
 from legalize_ch.stats import count_articles
 
 
@@ -113,3 +117,46 @@ class TestWriteLawIndex:
         gr = json.loads((tmp_path / "GR.json").read_text())
         assert gr["laws"] == 1 and gr["items"][0]["id"] == "900.1"
         assert (tmp_path / "CH.json").exists()
+
+
+class TestBuildAllPayload:
+    def _index(self):
+        return generate_law_index([
+            _entry(scope="federal", nr="101", chars=300, articles=7),
+            _entry(scope="federal", nr="101", lang="fr", chars=310, articles=7),
+            _entry(canton="GR", nr="900.1", chars=100, articles=5),
+            _entry(canton="AG", nr="110.0", chars=50, articles=2),
+        ])
+
+    def test_covers_every_entity_not_just_federal(self):
+        all_p = build_all_payload(self._index())
+        assert all_p["laws"] == 3
+        assert {i["id"] for i in all_p["items"]} == {"CH 101", "GR 900.1", "AG 110.0"}
+
+    def test_totals_match_the_sum_over_entities(self):
+        index = self._index()
+        all_p = build_all_payload(index)
+        assert all_p["total_chars"] == sum(v["total_chars"] for v in index.values())
+        assert all_p["total_articles"] == sum(v["total_articles"] for v in index.values())
+        assert all_p["total_chars"] == 300 + 310 + 100 + 50
+
+    def test_keeps_per_language_volumes_and_paths(self):
+        items = {i["id"]: i for i in build_all_payload(self._index())["items"]}
+        ch = items["CH 101"]["languages"]
+        assert ch["de"] == {"chars": 300, "articles": 7, "path": "ch/101/de/101.md"}
+        assert ch["fr"]["path"] == "ch/101/fr/101.md"
+
+    def test_drops_the_bulky_per_item_fields(self):
+        item = build_all_payload(self._index())["items"][0]
+        assert set(item) <= {"id", "title", "languages", "enactment_date"}
+
+    def test_written_as_a_compact_28th_file(self, tmp_path):
+        write_law_index(self._index(), tmp_path)
+        raw = (tmp_path / "ALL.json").read_text()
+        assert "\n" not in raw          # compact: written without indent
+        payload = json.loads(raw)
+        assert payload["entity"] == "ALL" and payload["laws"] == 3
+        master = json.loads((tmp_path / "index.json").read_text())
+        assert master["all"]["file"] == "api/v1/laws/ALL.json"
+        assert master["all"]["laws"] == master["total_laws"] == 3
+        assert master["all"]["total_chars"] == payload["total_chars"]

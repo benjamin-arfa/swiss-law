@@ -5,6 +5,7 @@ article count.  Sharded per entity so browsers never load one giant file:
 
 - ``api/v1/laws/index.json`` — small master index (entity list + totals)
 - ``api/v1/laws/{ENTITY}.json`` — the entity's laws with per-language metrics
+- ``api/v1/laws/ALL.json`` — every entity in one compact cross-entity file
 """
 from __future__ import annotations
 
@@ -135,6 +136,46 @@ def generate_law_index(entries: list[dict], repo_name: str = LAW_REPO) -> dict[s
     return result
 
 
+def build_all_payload(index: dict[str, dict]) -> dict:
+    """Merge the per-entity payloads into one compact cross-entity payload.
+
+    Same shape as an entity payload so the site can load it through the same
+    code path.  Item ids are entity-prefixed (``AG 110.000``) and the bulky
+    per-item fields the cross-entity table never renders (``link``,
+    ``version_dates``, category tags) are dropped — the entity files remain the
+    place for those.  Keeping ``chars``/``articles`` is the point: without them
+    the cross-entity view can only report federal volumes.
+    """
+    items: list[dict] = []
+    for entity, payload in index.items():
+        for i in payload["items"]:
+            item = {
+                "id": f"{entity} {i['id']}",
+                "title": i.get("title", ""),
+                "languages": {
+                    lang: {"chars": d["chars"], "articles": d["articles"],
+                           "path": d["path"]}
+                    for lang, d in i["languages"].items()
+                },
+            }
+            if i.get("enactment_date"):
+                item["enactment_date"] = i["enactment_date"]
+            items.append(item)
+
+    first = next(iter(index.values())) if index else {}
+    return {
+        "entity": "ALL",
+        "name": "All entities (Confederation + 26 cantons)",
+        "laws": len(items),
+        "total_chars": sum(v["total_chars"] for v in index.values()),
+        "total_articles": sum(v["total_articles"] for v in index.values()),
+        "link_base": first.get("link_base", ""),
+        "raw_base": first.get("raw_base", ""),
+        "article_count_note": ARTICLE_COUNT_NOTE,
+        "items": items,
+    }
+
+
 def write_law_index(index: dict[str, dict], output_dir: str | Path):
     """Write per-entity JSON files + the small master index.json."""
     out = Path(output_dir)
@@ -152,13 +193,28 @@ def write_law_index(index: dict[str, dict], output_dir: str | Path):
             "file": f"api/v1/laws/{entity}.json",
         }
 
+    all_payload = build_all_payload(index)
+    # Compact (no indent): ~6.5 MB / 1.3 MB gzipped for 34k laws, versus
+    # ~24 MB if it were pretty-printed like the per-entity files.
+    (out / "ALL.json").write_text(
+        json.dumps(all_payload, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8")
+
     master = {
         "total_laws": sum(v["laws"] for v in entities.values()),
         "link_base": next(iter(index.values()))["link_base"] if index else "",
         "raw_base": next(iter(index.values()))["raw_base"] if index else "",
         "article_count_note": ARTICLE_COUNT_NOTE,
+        "all": {
+            "name": all_payload["name"],
+            "laws": all_payload["laws"],
+            "total_chars": all_payload["total_chars"],
+            "total_articles": all_payload["total_articles"],
+            "file": "api/v1/laws/ALL.json",
+        },
         "entities": entities,
     }
     (out / "index.json").write_text(
         json.dumps(master, indent=1, ensure_ascii=False), encoding="utf-8")
-    logger.info("Wrote law index (%d entities) to %s", len(entities), out)
+    logger.info("Wrote law index (%d entities, %d laws in ALL.json) to %s",
+                len(entities), all_payload["laws"], out)

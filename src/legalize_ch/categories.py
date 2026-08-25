@@ -83,6 +83,58 @@ def build_canton_title_map(trees_dir: str | Path, canton: str) -> dict[str, str]
     return _walk_titles(_load_tree(Path(trees_dir) / f"{canton.lower()}.json"))
 
 
+# The languages the global systematics is published in here.  LexFind serves
+# de/fr/it (and rm); "en" is authored in this repo as docs/trees/global_en.json
+# — see TITLE_EN_SOURCE.
+GLOBAL_TREE_LANGS = ("de", "fr", "it", "en")
+
+TITLE_EN_SOURCE = ("machine translation, reviewed — LexFind publishes no "
+                   "English tree")
+
+
+def build_global_path_map(trees_dir: str | Path) -> dict[str, dict]:
+    """code → {code, depth, parent, title: {de,fr,it,en}, path: {de,fr,it,en}}.
+
+    ``path[lang]`` is the dot-joined chain of titles from the top-level
+    domain down to the node itself (``Etat.Dispositions générales.contrôle
+    des habitants``) — the human-readable form of a dotted code.  Ancestor
+    codes are derived by splitting the dotted code, so no tree walk is
+    needed; a language missing a node falls back to the German title, and a
+    code missing from the tree entirely falls back to the code itself.
+
+    Titles are ``.strip()``ed here rather than in the trees: the fetched
+    fr/it files carry a trailing newline from the source API and are kept
+    byte-faithful to it.
+    """
+    maps = {lang: {k: v.strip() for k, v in
+                   build_global_title_map(trees_dir, lang).items()}
+            for lang in GLOBAL_TREE_LANGS}
+    # Only LexFind's own dotted codes.  ``uncategorized`` is our sentinel for
+    # "no legal domain in the source", present in some snapshots of the tree
+    # and absent from others; leaving it out keeps this map identical either
+    # way, and the consumers that need a label for it carry their own.
+    codes = [c for c in maps["de"] if c[:1].isdigit()]
+    out: dict[str, dict] = {}
+    for code in sorted(codes, key=lambda c: [int(p) if p.isdigit() else p
+                                             for p in c.split(".")]):
+        parts = code.split(".")
+        ancestors = [".".join(parts[:i + 1]) for i in range(len(parts))]
+        title, path = {}, {}
+        for lang in GLOBAL_TREE_LANGS:
+            m = maps[lang]
+            title[lang] = m.get(code) or maps["de"].get(code, "")
+            path[lang] = ".".join(m.get(a) or maps["de"].get(a) or a
+                                  for a in ancestors)
+        out[code] = {
+            "code": code,
+            "depth": len(parts),
+            "parent": ".".join(parts[:-1]) if len(parts) > 1 else None,
+            "title": title,
+            "path": path,
+        }
+    return out
+
+
 def _load_tree(path: Path) -> list[dict]:
     if not path.exists():
         return []
@@ -228,7 +280,7 @@ def generate_categories_api(trees_dir: str | Path, output_dir: str | Path):
     # Multilingual global tree: merge de/fr/it trees by node id
     de_tree = _load_tree(trees / "global.json")
     lang_maps = {}
-    for lang in ("fr", "it"):
+    for lang in ("fr", "it", "en"):
         by_id: dict[int, str] = {}
 
         def _collect(ns):
@@ -258,13 +310,28 @@ def generate_categories_api(trees_dir: str | Path, output_dir: str | Path):
     (out / "global.json").write_text(json.dumps({
         "note": "Global systematics ('domaine juridique'). stats.json "
                 "by_global_category keys are '<identifier> <german title>'.",
+        "title_en_source": TITLE_EN_SOURCE,
         "tree": _multilingual(de_tree),
+    }, indent=1, ensure_ascii=False), encoding="utf-8")
+
+    # code → depth/parent/titles/label paths, for consumers that need the
+    # dotted codes of the granular exports resolved to readable labels.
+    paths = build_global_path_map(trees)
+    (out / "global_paths.json").write_text(json.dumps({
+        "note": "Flat index of the global systematics: one entry per dotted "
+                "code, with its ancestors' titles joined into a label path. "
+                "Resolves the 'topic' codes in "
+                "api/v1/stats/granular/*.json.",
+        "title_en_source": TITLE_EN_SOURCE,
+        "total": len(paths),
+        "codes": paths,
     }, indent=1, ensure_ascii=False), encoding="utf-8")
 
     cantons_written = []
     for tree_file in sorted(trees.glob("*.json")):
         stem = tree_file.stem
-        if stem in ("global", "global_fr", "global_it", "ch") or len(stem) != 2:
+        if (stem in ("global", "global_fr", "global_it", "global_en", "ch")
+                or len(stem) != 2):
             continue
         tree = _load_tree(tree_file)
         if not tree:
@@ -281,6 +348,7 @@ def generate_categories_api(trees_dir: str | Path, output_dir: str | Path):
     (out / "index.json").write_text(json.dumps({
         "types": "api/v1/categories/types.json",
         "global": "api/v1/categories/global.json",
+        "global_paths": "api/v1/categories/global_paths.json",
         "cantons": {c: f"api/v1/categories/{c}.json" for c in cantons_written},
     }, indent=1, ensure_ascii=False), encoding="utf-8")
 

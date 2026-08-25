@@ -1,0 +1,2943 @@
+[
+  {
+    "id": 1,
+    "identifier": "1",
+    "title": "State",
+    "children": [
+      {
+        "id": 2,
+        "identifier": "1.10",
+        "title": "General provisions",
+        "children": [
+          {
+            "id": 3,
+            "identifier": "1.10.10",
+            "title": "Constitution"
+          },
+          {
+            "id": 4,
+            "identifier": "1.10.20",
+            "title": "Coat of arms"
+          },
+          {
+            "id": 5,
+            "identifier": "1.10.30",
+            "title": "Cooperation with foreign countries",
+            "children": [
+              {
+                "id": 504,
+                "identifier": "1.10.30.10",
+                "title": "International organisations"
+              },
+              {
+                "id": 505,
+                "identifier": "1.10.30.20",
+                "title": "Diplomatic and consular relations"
+              },
+              {
+                "id": 511,
+                "identifier": "1.10.30.30",
+                "title": "Settlement of international disputes"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "identifier": "1.10.40",
+            "title": "Intercantonal cooperation"
+          },
+          {
+            "id": 7,
+            "identifier": "1.10.50",
+            "title": "Territory",
+            "children": [
+              {
+                "id": 8,
+                "identifier": "1.10.50.10",
+                "title": "Territorial division, districts"
+              },
+              {
+                "id": 9,
+                "identifier": "1.10.50.20",
+                "title": "Borders"
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "identifier": "1.10.60",
+            "title": "Citizenship"
+          },
+          {
+            "id": 11,
+            "identifier": "1.10.70",
+            "title": "Residence and settlement",
+            "children": [
+              {
+                "id": 410,
+                "identifier": "1.10.70.10",
+                "title": "Residence and settlement of Swiss nationals",
+                "children": [
+                  {
+                    "id": 411,
+                    "identifier": "1.10.70.10.10",
+                    "title": "Residents' registration"
+                  }
+                ]
+              },
+              {
+                "id": 12,
+                "identifier": "1.10.70.20",
+                "title": "Residence and settlement of foreign nationals",
+                "children": [
+                  {
+                    "id": 13,
+                    "identifier": "1.10.70.20.10",
+                    "title": "Asylum"
+                  },
+                  {
+                    "id": 14,
+                    "identifier": "1.10.70.20.20",
+                    "title": "Coercive measures"
+                  },
+                  {
+                    "id": 15,
+                    "identifier": "1.10.70.20.30",
+                    "title": "Integration"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "identifier": "1.10.80",
+            "title": "Identity documents"
+          },
+          {
+            "id": 17,
+            "identifier": "1.10.90",
+            "title": "Fundamental rights, political rights",
+            "children": [
+              {
+                "id": 18,
+                "identifier": "1.10.90.10",
+                "title": "Equality between women and men"
+              },
+              {
+                "id": 19,
+                "identifier": "1.10.90.20",
+                "title": "Political rights",
+                "children": [
+                  {
+                    "id": 20,
+                    "identifier": "1.10.90.20.10",
+                    "title": "Elections and votes"
+                  },
+                  {
+                    "id": 21,
+                    "identifier": "1.10.90.20.20",
+                    "title": "Landsgemeinde (cantonal assembly)"
+                  },
+                  {
+                    "id": 22,
+                    "identifier": "1.10.90.20.30",
+                    "title": "Recusal, incompatibility"
+                  },
+                  {
+                    "id": 538,
+                    "identifier": "1.10.90.20.40",
+                    "title": "Political financing, transparency"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "identifier": "1.10.100",
+            "title": "Official publications",
+            "children": [
+              {
+                "id": 24,
+                "identifier": "1.10.100.10",
+                "title": "Compilations of legislation"
+              },
+              {
+                "id": 25,
+                "identifier": "1.10.100.20",
+                "title": "Official gazettes"
+              }
+            ]
+          },
+          {
+            "id": 497,
+            "identifier": "1.10.110",
+            "title": "Legislative procedure"
+          },
+          {
+            "id": 26,
+            "identifier": "1.10.120",
+            "title": "Public information"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "identifier": "1.20",
+        "title": "Authorities",
+        "children": [
+          {
+            "id": 28,
+            "identifier": "1.20.10",
+            "title": "Parliament",
+            "children": [
+              {
+                "id": 29,
+                "identifier": "1.20.10.10",
+                "title": "Election of parliament"
+              },
+              {
+                "id": 30,
+                "identifier": "1.20.10.20",
+                "title": "Remuneration of members of parliament"
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "identifier": "1.20.20",
+            "title": "Government and administration",
+            "children": [
+              {
+                "id": 32,
+                "identifier": "1.20.20.10",
+                "title": "Organisation",
+                "children": [
+                  {
+                    "id": 482,
+                    "identifier": "1.20.20.10.10",
+                    "title": "Delegation"
+                  }
+                ]
+              },
+              {
+                "id": 33,
+                "identifier": "1.20.20.20",
+                "title": "Government",
+                "children": [
+                  {
+                    "id": 34,
+                    "identifier": "1.20.20.20.10",
+                    "title": "Allowances"
+                  },
+                  {
+                    "id": 483,
+                    "identifier": "1.20.20.20.20",
+                    "title": "Pensions"
+                  },
+                  {
+                    "id": 35,
+                    "identifier": "1.20.20.20.30",
+                    "title": "State Chancellery"
+                  },
+                  {
+                    "id": 484,
+                    "identifier": "1.20.20.20.40",
+                    "title": "Prefects"
+                  }
+                ]
+              },
+              {
+                "id": 481,
+                "identifier": "1.20.20.30",
+                "title": "Administration",
+                "children": [
+                  {
+                    "id": 488,
+                    "identifier": "1.20.20.30.10",
+                    "title": "Departments"
+                  },
+                  {
+                    "id": 489,
+                    "identifier": "1.20.20.30.20",
+                    "title": "Directorates and offices"
+                  },
+                  {
+                    "id": 490,
+                    "identifier": "1.20.20.30.30",
+                    "title": "Commissions"
+                  }
+                ]
+              },
+              {
+                "id": 36,
+                "identifier": "1.20.20.40",
+                "title": "Public employment law",
+                "children": [
+                  {
+                    "id": 37,
+                    "identifier": "1.20.20.40.10",
+                    "title": "Hiring"
+                  },
+                  {
+                    "id": 480,
+                    "identifier": "1.20.20.40.20",
+                    "title": "Oath"
+                  },
+                  {
+                    "id": 439,
+                    "identifier": "1.20.20.40.30",
+                    "title": "Working hours, holidays, leave"
+                  },
+                  {
+                    "id": 38,
+                    "identifier": "1.20.20.40.40",
+                    "title": "Salaries and allowances"
+                  },
+                  {
+                    "id": 419,
+                    "identifier": "1.20.20.40.50",
+                    "title": "Pensions, insurance entitlements"
+                  },
+                  {
+                    "id": 469,
+                    "identifier": "1.20.20.40.60",
+                    "title": "Training and continuing education"
+                  },
+                  {
+                    "id": 476,
+                    "identifier": "1.20.20.40.70",
+                    "title": "Parking spaces"
+                  },
+                  {
+                    "id": 477,
+                    "identifier": "1.20.20.40.80",
+                    "title": "Staff committees, joint commissions"
+                  }
+                ]
+              },
+              {
+                "id": 412,
+                "identifier": "1.20.20.50",
+                "title": "Administrative procedure"
+              },
+              {
+                "id": 438,
+                "identifier": "1.20.20.60",
+                "title": "Administrative fees"
+              },
+              {
+                "id": 39,
+                "identifier": "1.20.20.70",
+                "title": "New public management"
+              }
+            ]
+          },
+          {
+            "id": 40,
+            "identifier": "1.20.30",
+            "title": "Ombudsperson"
+          },
+          {
+            "id": 41,
+            "identifier": "1.20.40",
+            "title": "State liability"
+          },
+          {
+            "id": 42,
+            "identifier": "1.20.50",
+            "title": "Data protection"
+          },
+          {
+            "id": 43,
+            "identifier": "1.20.60",
+            "title": "Information technology",
+            "children": [
+              {
+                "id": 535,
+                "identifier": "1.20.60.10",
+                "title": "E-government"
+              }
+            ]
+          },
+          {
+            "id": 44,
+            "identifier": "1.20.70",
+            "title": "Organisation of the courts",
+            "children": [
+              {
+                "id": 45,
+                "identifier": "1.20.70.10",
+                "title": "Judicial authorities",
+                "children": [
+                  {
+                    "id": 46,
+                    "identifier": "1.20.70.10.10",
+                    "title": "Investigating and prosecuting authorities",
+                    "children": [
+                      {
+                        "id": 502,
+                        "identifier": "1.20.70.10.10.10",
+                        "title": "Investigating judges"
+                      },
+                      {
+                        "id": 503,
+                        "identifier": "1.20.70.10.10.20",
+                        "title": "Public prosecution service"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 47,
+                    "identifier": "1.20.70.10.20",
+                    "title": "Higher courts, federal courts"
+                  },
+                  {
+                    "id": 48,
+                    "identifier": "1.20.70.10.30",
+                    "title": "Administrative, insurance and social insurance courts"
+                  },
+                  {
+                    "id": 49,
+                    "identifier": "1.20.70.10.40",
+                    "title": "District courts, justices of the peace"
+                  },
+                  {
+                    "id": 50,
+                    "identifier": "1.20.70.10.50",
+                    "title": "Labour and tenancy courts"
+                  },
+                  {
+                    "id": 51,
+                    "identifier": "1.20.70.10.60",
+                    "title": "Cantonal appeals commissions"
+                  }
+                ]
+              },
+              {
+                "id": 478,
+                "identifier": "1.20.70.20",
+                "title": "Court staff"
+              },
+              {
+                "id": 467,
+                "identifier": "1.20.70.30",
+                "title": "Judges' salaries and allowances"
+              },
+              {
+                "id": 468,
+                "identifier": "1.20.70.40",
+                "title": "Judges' pensions and insurance entitlements"
+              },
+              {
+                "id": 52,
+                "identifier": "1.20.70.50",
+                "title": "Court costs and fees"
+              }
+            ]
+          },
+          {
+            "id": 498,
+            "identifier": "1.20.80",
+            "title": "Procedural time limits"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "identifier": "1.30",
+        "title": "Municipalities",
+        "children": [
+          {
+            "id": 54,
+            "identifier": "1.30.10",
+            "title": "Municipal finances"
+          },
+          {
+            "id": 55,
+            "identifier": "1.30.20",
+            "title": "Municipal financial contributions"
+          },
+          {
+            "id": 56,
+            "identifier": "1.30.30",
+            "title": "Subsidies"
+          },
+          {
+            "id": 57,
+            "identifier": "1.30.40",
+            "title": "Division of tasks between canton and municipalities"
+          },
+          {
+            "id": 58,
+            "identifier": "1.30.50",
+            "title": "Municipal mergers"
+          },
+          {
+            "id": 59,
+            "identifier": "1.30.60",
+            "title": "Citizens' communes, commons"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "identifier": "1.40",
+        "title": "Church and state",
+        "children": [
+          {
+            "id": 61,
+            "identifier": "1.40.10",
+            "title": "Roman Catholic Church"
+          },
+          {
+            "id": 62,
+            "identifier": "1.40.20",
+            "title": "Christian Catholic Church"
+          },
+          {
+            "id": 63,
+            "identifier": "1.40.30",
+            "title": "Evangelical Reformed Church"
+          },
+          {
+            "id": 64,
+            "identifier": "1.40.40",
+            "title": "Other religions"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "identifier": "1.50",
+        "title": "Legal professions",
+        "children": [
+          {
+            "id": 66,
+            "identifier": "1.50.10",
+            "title": "Lawyers",
+            "children": [
+              {
+                "id": 67,
+                "identifier": "1.50.10.10",
+                "title": "Training"
+              },
+              {
+                "id": 68,
+                "identifier": "1.50.10.20",
+                "title": "Professional fees"
+              },
+              {
+                "id": 69,
+                "identifier": "1.50.10.30",
+                "title": "Legal aid"
+              }
+            ]
+          },
+          {
+            "id": 70,
+            "identifier": "1.50.20",
+            "title": "Notaries",
+            "children": [
+              {
+                "id": 71,
+                "identifier": "1.50.20.10",
+                "title": "Training"
+              },
+              {
+                "id": 72,
+                "identifier": "1.50.20.20",
+                "title": "Fees and tariffs"
+              },
+              {
+                "id": 73,
+                "identifier": "1.50.20.30",
+                "title": "Public notarisation"
+              },
+              {
+                "id": 74,
+                "identifier": "1.50.20.40",
+                "title": "Legal agents"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "identifier": "2",
+    "title": "Civil law",
+    "children": [
+      {
+        "id": 76,
+        "identifier": "2.10",
+        "title": "Introductory legislation to the Civil Code",
+        "children": [
+          {
+            "id": 77,
+            "identifier": "2.10.10",
+            "title": "Law of persons, civil status",
+            "children": [
+              {
+                "id": 491,
+                "identifier": "2.10.10.10",
+                "title": "Registered partnership"
+              },
+              {
+                "id": 78,
+                "identifier": "2.10.10.20",
+                "title": "Foundations and their supervision",
+                "children": [
+                  {
+                    "id": 79,
+                    "identifier": "2.10.10.20.10",
+                    "title": "BVG pension foundations"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 80,
+            "identifier": "2.10.20",
+            "title": "Family law",
+            "children": [
+              {
+                "id": 81,
+                "identifier": "2.10.20.10",
+                "title": "Guardianship"
+              },
+              {
+                "id": 440,
+                "identifier": "2.10.20.20",
+                "title": "Foster care, adoption"
+              },
+              {
+                "id": 82,
+                "identifier": "2.10.20.30",
+                "title": "Deprivation of liberty for welfare purposes"
+              }
+            ]
+          },
+          {
+            "id": 83,
+            "identifier": "2.10.30",
+            "title": "Law of succession"
+          },
+          {
+            "id": 84,
+            "identifier": "2.10.40",
+            "title": "Property law",
+            "children": [
+              {
+                "id": 85,
+                "identifier": "2.10.40.10",
+                "title": "Official valuation of real property"
+              },
+              {
+                "id": 86,
+                "identifier": "2.10.40.20",
+                "title": "Acquisition of real estate by persons abroad"
+              },
+              {
+                "id": 87,
+                "identifier": "2.10.40.30",
+                "title": "Land register and cadastral surveying"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 88,
+        "identifier": "2.20",
+        "title": "Introductory legislation to the Code of Obligations",
+        "children": [
+          {
+            "id": 89,
+            "identifier": "2.20.10",
+            "title": "Individual contracts",
+            "children": [
+              {
+                "id": 90,
+                "identifier": "2.20.10.10",
+                "title": "Auctions"
+              },
+              {
+                "id": 91,
+                "identifier": "2.20.10.20",
+                "title": "Tenancy and lease",
+                "children": [
+                  {
+                    "id": 92,
+                    "identifier": "2.20.10.20.10",
+                    "title": "Agricultural leases"
+                  }
+                ]
+              },
+              {
+                "id": 93,
+                "identifier": "2.20.10.30",
+                "title": "Loan for use / loan of money"
+              },
+              {
+                "id": 94,
+                "identifier": "2.20.10.40",
+                "title": "Employment contract law",
+                "children": [
+                  {
+                    "id": 95,
+                    "identifier": "2.20.10.40.10",
+                    "title": "Collective labour agreements",
+                    "children": [
+                      {
+                        "id": 96,
+                        "identifier": "2.20.10.40.10.10",
+                        "title": "Declarations of general applicability"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 97,
+                    "identifier": "2.20.10.40.20",
+                    "title": "Standard employment contracts",
+                    "children": [
+                      {
+                        "id": 98,
+                        "identifier": "2.20.10.40.20.10",
+                        "title": "Domestic workers"
+                      },
+                      {
+                        "id": 99,
+                        "identifier": "2.20.10.40.20.30",
+                        "title": "Agriculture"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 100,
+                "identifier": "2.20.10.50",
+                "title": "Marriage and partnership brokerage"
+              }
+            ]
+          },
+          {
+            "id": 101,
+            "identifier": "2.20.20",
+            "title": "Commercial law",
+            "children": [
+              {
+                "id": 102,
+                "identifier": "2.20.20.10",
+                "title": "Commercial register"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "identifier": "2.30",
+        "title": "Intellectual property"
+      },
+      {
+        "id": 104,
+        "identifier": "2.40",
+        "title": "Unfair competition / cartel law"
+      },
+      {
+        "id": 105,
+        "identifier": "2.50",
+        "title": "Civil procedure",
+        "children": [
+          {
+            "id": 106,
+            "identifier": "2.50.10",
+            "title": "Costs and fees"
+          },
+          {
+            "id": 107,
+            "identifier": "2.50.20",
+            "title": "Mutual legal assistance"
+          },
+          {
+            "id": 108,
+            "identifier": "2.50.30",
+            "title": "Enforcement"
+          }
+        ]
+      },
+      {
+        "id": 109,
+        "identifier": "2.60",
+        "title": "Debt collection and bankruptcy law",
+        "children": [
+          {
+            "id": 110,
+            "identifier": "2.60.10",
+            "title": "Organisation"
+          }
+        ]
+      },
+      {
+        "id": 111,
+        "identifier": "2.70",
+        "title": "Private international law"
+      },
+      {
+        "id": 416,
+        "identifier": "2.80",
+        "title": "Arbitration"
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "identifier": "3",
+    "title": "Criminal law",
+    "children": [
+      {
+        "id": 113,
+        "identifier": "3.10",
+        "title": "Introductory legislation to the Criminal Code",
+        "children": [
+          {
+            "id": 114,
+            "identifier": "3.10.10",
+            "title": "Economic crime, money laundering"
+          },
+          {
+            "id": 458,
+            "identifier": "3.10.20",
+            "title": "Termination of pregnancy"
+          }
+        ]
+      },
+      {
+        "id": 115,
+        "identifier": "3.20",
+        "title": "Criminal procedure",
+        "children": [
+          {
+            "id": 528,
+            "identifier": "3.20.10",
+            "title": "Codes of criminal procedure"
+          },
+          {
+            "id": 119,
+            "identifier": "3.20.20",
+            "title": "Forensic medicine"
+          },
+          {
+            "id": 492,
+            "identifier": "3.20.30",
+            "title": "DNA profiles"
+          },
+          {
+            "id": 493,
+            "identifier": "3.20.40",
+            "title": "Undercover investigation"
+          },
+          {
+            "id": 117,
+            "identifier": "3.20.50",
+            "title": "Mutual legal assistance"
+          },
+          {
+            "id": 116,
+            "identifier": "3.20.60",
+            "title": "Costs and fees"
+          },
+          {
+            "id": 120,
+            "identifier": "3.20.70",
+            "title": "Support for victims of crime"
+          }
+        ]
+      },
+      {
+        "id": 474,
+        "identifier": "3.30",
+        "title": "Juvenile criminal law and juvenile criminal procedure"
+      },
+      {
+        "id": 121,
+        "identifier": "3.40",
+        "title": "Military criminal law"
+      },
+      {
+        "id": 118,
+        "identifier": "3.50",
+        "title": "Fixed penalty fines"
+      },
+      {
+        "id": 122,
+        "identifier": "3.60",
+        "title": "Criminal records",
+        "children": [
+          {
+            "id": 123,
+            "identifier": "3.60.10",
+            "title": "Certificates of good conduct"
+          }
+        ]
+      },
+      {
+        "id": 124,
+        "identifier": "3.70",
+        "title": "Execution of sentences and measures",
+        "children": [
+          {
+            "id": 125,
+            "identifier": "3.70.10",
+            "title": "Custodial institutions",
+            "children": [
+              {
+                "id": 475,
+                "identifier": "3.70.10.10",
+                "title": "Staff"
+              }
+            ]
+          },
+          {
+            "id": 126,
+            "identifier": "3.70.20",
+            "title": "Probation supervision"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "identifier": "4",
+    "title": "Education, science, documentation and culture",
+    "children": [
+      {
+        "id": 128,
+        "identifier": "4.10",
+        "title": "Pre-school, primary and lower secondary level",
+        "children": [
+          {
+            "id": 360,
+            "identifier": "4.10.10",
+            "title": "Crèches and day-care centres"
+          },
+          {
+            "id": 129,
+            "identifier": "4.10.20",
+            "title": "Kindergarten"
+          },
+          {
+            "id": 514,
+            "identifier": "4.10.30",
+            "title": "Compulsory school: primary and lower secondary level"
+          }
+        ]
+      },
+      {
+        "id": 130,
+        "identifier": "4.20",
+        "title": "Upper secondary level",
+        "children": [
+          {
+            "id": 515,
+            "identifier": "4.20.10",
+            "title": "Secondary school"
+          },
+          {
+            "id": 441,
+            "identifier": "4.20.20",
+            "title": "Specialised and diploma secondary schools"
+          },
+          {
+            "id": 442,
+            "identifier": "4.20.30",
+            "title": "Commercial and IT secondary schools"
+          }
+        ]
+      },
+      {
+        "id": 138,
+        "identifier": "4.30",
+        "title": "Upper secondary level: initial vocational training",
+        "children": [
+          {
+            "id": 154,
+            "identifier": "4.30.10",
+            "title": "Vocational schools",
+            "children": [
+              {
+                "id": 155,
+                "identifier": "4.30.10.10",
+                "title": "Home economics education"
+              }
+            ]
+          },
+          {
+            "id": 516,
+            "identifier": "4.30.20",
+            "title": "Vocational baccalaureate schools"
+          },
+          {
+            "id": 153,
+            "identifier": "4.30.30",
+            "title": "Career guidance"
+          },
+          {
+            "id": 517,
+            "identifier": "4.30.40",
+            "title": "Passerelle (bridging examination)"
+          },
+          {
+            "id": 518,
+            "identifier": "4.30.50",
+            "title": "Transitional education programmes"
+          }
+        ]
+      },
+      {
+        "id": 131,
+        "identifier": "4.40",
+        "title": "Tertiary level: universities",
+        "children": [
+          {
+            "id": 132,
+            "identifier": "4.40.10",
+            "title": "Faculty of law"
+          },
+          {
+            "id": 133,
+            "identifier": "4.40.20",
+            "title": "Faculty of theology"
+          },
+          {
+            "id": 134,
+            "identifier": "4.40.30",
+            "title": "Faculty of economics"
+          },
+          {
+            "id": 135,
+            "identifier": "4.40.40",
+            "title": "Faculty of natural sciences"
+          },
+          {
+            "id": 136,
+            "identifier": "4.40.50",
+            "title": "Faculty of philosophy"
+          },
+          {
+            "id": 137,
+            "identifier": "4.40.60",
+            "title": "Faculty of human and veterinary medicine"
+          },
+          {
+            "id": 499,
+            "identifier": "4.40.70",
+            "title": "Other study programmes"
+          }
+        ]
+      },
+      {
+        "id": 139,
+        "identifier": "4.50",
+        "title": "Tertiary level: universities of applied sciences",
+        "children": [
+          {
+            "id": 140,
+            "identifier": "4.50.10",
+            "title": "Pedagogy"
+          },
+          {
+            "id": 141,
+            "identifier": "4.50.20",
+            "title": "Social studies"
+          },
+          {
+            "id": 142,
+            "identifier": "4.50.30",
+            "title": "Economy"
+          },
+          {
+            "id": 501,
+            "identifier": "4.50.40",
+            "title": "Agriculture"
+          },
+          {
+            "id": 500,
+            "identifier": "4.50.50",
+            "title": "Other study programmes"
+          }
+        ]
+      },
+      {
+        "id": 443,
+        "identifier": "4.60",
+        "title": "Tertiary level: colleges of higher education"
+      },
+      {
+        "id": 163,
+        "identifier": "4.70",
+        "title": "Continuing education (quaternary level)",
+        "children": [
+          {
+            "id": 164,
+            "identifier": "4.70.10",
+            "title": "Adult education"
+          },
+          {
+            "id": 519,
+            "identifier": "4.70.20",
+            "title": "Continuing education for teachers"
+          }
+        ]
+      },
+      {
+        "id": 143,
+        "identifier": "4.80",
+        "title": "Special needs education",
+        "children": [
+          {
+            "id": 144,
+            "identifier": "4.80.10",
+            "title": "Special schools"
+          },
+          {
+            "id": 510,
+            "identifier": "4.80.20",
+            "title": "Support for gifted children"
+          },
+          {
+            "id": 431,
+            "identifier": "4.80.30",
+            "title": "Art and sport schools"
+          },
+          {
+            "id": 507,
+            "identifier": "4.80.40",
+            "title": "Integration of foreign-language pupils"
+          },
+          {
+            "id": 444,
+            "identifier": "4.80.50",
+            "title": "Speech therapy"
+          },
+          {
+            "id": 520,
+            "identifier": "4.80.60",
+            "title": "Special classes"
+          },
+          {
+            "id": 521,
+            "identifier": "4.80.70",
+            "title": "Remedial and support teaching"
+          },
+          {
+            "id": 522,
+            "identifier": "4.80.80",
+            "title": "Psychomotor therapy"
+          },
+          {
+            "id": 523,
+            "identifier": "4.80.90",
+            "title": "Early special-needs education"
+          }
+        ]
+      },
+      {
+        "id": 149,
+        "identifier": "4.90",
+        "title": "Teaching staff",
+        "children": [
+          {
+            "id": 150,
+            "identifier": "4.90.10",
+            "title": "Hiring"
+          },
+          {
+            "id": 151,
+            "identifier": "4.90.20",
+            "title": "Salaries and allowances"
+          },
+          {
+            "id": 152,
+            "identifier": "4.90.30",
+            "title": "Training"
+          },
+          {
+            "id": 415,
+            "identifier": "4.90.40",
+            "title": "Occupational pensions, pension funds"
+          },
+          {
+            "id": 479,
+            "identifier": "4.90.50",
+            "title": "University staff"
+          }
+        ]
+      },
+      {
+        "id": 157,
+        "identifier": "4.100",
+        "title": "Training grants",
+        "children": [
+          {
+            "id": 162,
+            "identifier": "4.100.10",
+            "title": "Scholarships"
+          },
+          {
+            "id": 158,
+            "identifier": "4.100.20",
+            "title": "Tuition fees"
+          },
+          {
+            "id": 524,
+            "identifier": "4.100.30",
+            "title": "School fees"
+          }
+        ]
+      },
+      {
+        "id": 525,
+        "identifier": "4.110",
+        "title": "Supplementary childcare structures"
+      },
+      {
+        "id": 145,
+        "identifier": "4.120",
+        "title": "Quality assurance, supervision, management",
+        "children": [
+          {
+            "id": 146,
+            "identifier": "4.120.10",
+            "title": "Coordination"
+          },
+          {
+            "id": 147,
+            "identifier": "4.120.20",
+            "title": "School districts"
+          },
+          {
+            "id": 148,
+            "identifier": "4.120.30",
+            "title": "School supervision"
+          },
+          {
+            "id": 161,
+            "identifier": "4.120.40",
+            "title": "Teaching materials"
+          },
+          {
+            "id": 508,
+            "identifier": "4.120.50",
+            "title": "Promotion of information technology"
+          },
+          {
+            "id": 430,
+            "identifier": "4.120.60",
+            "title": "School buildings"
+          },
+          {
+            "id": 509,
+            "identifier": "4.120.70",
+            "title": "School libraries"
+          },
+          {
+            "id": 506,
+            "identifier": "4.120.80",
+            "title": "School management"
+          },
+          {
+            "id": 159,
+            "identifier": "4.120.90",
+            "title": "School health care, school psychological services"
+          },
+          {
+            "id": 526,
+            "identifier": "4.120.100",
+            "title": "School authorities"
+          },
+          {
+            "id": 527,
+            "identifier": "4.120.110",
+            "title": "Quality assurance"
+          },
+          {
+            "id": 160,
+            "identifier": "4.120.120",
+            "title": "School accident insurance"
+          }
+        ]
+      },
+      {
+        "id": 462,
+        "identifier": "4.130",
+        "title": "Private schools"
+      },
+      {
+        "id": 414,
+        "identifier": "4.140",
+        "title": "Recognition of diplomas"
+      },
+      {
+        "id": 156,
+        "identifier": "4.150",
+        "title": "School sport"
+      },
+      {
+        "id": 165,
+        "identifier": "4.160",
+        "title": "Science and research"
+      },
+      {
+        "id": 166,
+        "identifier": "4.170",
+        "title": "Documentation",
+        "children": [
+          {
+            "id": 167,
+            "identifier": "4.170.10",
+            "title": "Statistics"
+          },
+          {
+            "id": 168,
+            "identifier": "4.170.20",
+            "title": "Archives"
+          },
+          {
+            "id": 169,
+            "identifier": "4.170.30",
+            "title": "Libraries"
+          },
+          {
+            "id": 170,
+            "identifier": "4.170.40",
+            "title": "Museums"
+          }
+        ]
+      },
+      {
+        "id": 171,
+        "identifier": "4.180",
+        "title": "Art, culture, sport",
+        "children": [
+          {
+            "id": 172,
+            "identifier": "4.180.10",
+            "title": "Art",
+            "children": [
+              {
+                "id": 173,
+                "identifier": "4.180.10.10",
+                "title": "Cinema, theatre, entertainment"
+              }
+            ]
+          },
+          {
+            "id": 174,
+            "identifier": "4.180.20",
+            "title": "Cultural promotion"
+          },
+          {
+            "id": 427,
+            "identifier": "4.180.30",
+            "title": "Sport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "identifier": "5",
+    "title": "Defence, civil protection, police",
+    "children": [
+      {
+        "id": 176,
+        "identifier": "5.10",
+        "title": "Defence",
+        "children": [
+          {
+            "id": 177,
+            "identifier": "5.10.10",
+            "title": "Military obligations"
+          },
+          {
+            "id": 178,
+            "identifier": "5.10.20",
+            "title": "Military service exemption tax"
+          },
+          {
+            "id": 179,
+            "identifier": "5.10.30",
+            "title": "Military administration"
+          },
+          {
+            "id": 180,
+            "identifier": "5.10.40",
+            "title": "Military training grounds and arsenals"
+          }
+        ]
+      },
+      {
+        "id": 181,
+        "identifier": "5.20",
+        "title": "Civil protection",
+        "children": [
+          {
+            "id": 182,
+            "identifier": "5.20.10",
+            "title": "Civil defence",
+            "children": [
+              {
+                "id": 183,
+                "identifier": "5.20.10.10",
+                "title": "Financing"
+              },
+              {
+                "id": 184,
+                "identifier": "5.20.10.20",
+                "title": "Civil-protection construction requirements"
+              },
+              {
+                "id": 185,
+                "identifier": "5.20.10.30",
+                "title": "Protection of cultural property in the event of war"
+              }
+            ]
+          },
+          {
+            "id": 186,
+            "identifier": "5.20.20",
+            "title": "National economic supply"
+          },
+          {
+            "id": 187,
+            "identifier": "5.20.30",
+            "title": "Fire services / natural hazard damage",
+            "children": [
+              {
+                "id": 188,
+                "identifier": "5.20.30.10",
+                "title": "Fire services"
+              },
+              {
+                "id": 189,
+                "identifier": "5.20.30.20",
+                "title": "Fire protection"
+              },
+              {
+                "id": 190,
+                "identifier": "5.20.30.30",
+                "title": "Chimney sweeps"
+              },
+              {
+                "id": 191,
+                "identifier": "5.20.30.40",
+                "title": "Building insurance",
+                "children": [
+                  {
+                    "id": 192,
+                    "identifier": "5.20.30.40.10",
+                    "title": "Insurance against natural hazard damage"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 193,
+        "identifier": "5.30",
+        "title": "Internal security",
+        "children": [
+          {
+            "id": 194,
+            "identifier": "5.30.10",
+            "title": "Police",
+            "children": [
+              {
+                "id": 445,
+                "identifier": "5.30.10.10",
+                "title": "Cantonal police"
+              },
+              {
+                "id": 446,
+                "identifier": "5.30.10.20",
+                "title": "Municipal police"
+              },
+              {
+                "id": 195,
+                "identifier": "5.30.10.30",
+                "title": "Staff"
+              },
+              {
+                "id": 196,
+                "identifier": "5.30.10.40",
+                "title": "Fees"
+              },
+              {
+                "id": 422,
+                "identifier": "5.30.10.50",
+                "title": "Police cooperation"
+              },
+              {
+                "id": 447,
+                "identifier": "5.30.10.60",
+                "title": "Police transport"
+              }
+            ]
+          },
+          {
+            "id": 197,
+            "identifier": "5.30.20",
+            "title": "Public peace and order",
+            "children": [
+              {
+                "id": 448,
+                "identifier": "5.30.20.10",
+                "title": "Dogs, dangerous animals"
+              },
+              {
+                "id": 451,
+                "identifier": "5.30.20.20",
+                "title": "Public domain use"
+              }
+            ]
+          },
+          {
+            "id": 198,
+            "identifier": "5.30.30",
+            "title": "Weapons and ammunition"
+          },
+          {
+            "id": 199,
+            "identifier": "5.30.40",
+            "title": "Explosives"
+          },
+          {
+            "id": 435,
+            "identifier": "5.30.50",
+            "title": "Shooting ranges"
+          },
+          {
+            "id": 449,
+            "identifier": "5.30.60",
+            "title": "Security companies"
+          },
+          {
+            "id": 496,
+            "identifier": "5.30.70",
+            "title": "Private detectives"
+          }
+        ]
+      },
+      {
+        "id": 436,
+        "identifier": "5.40",
+        "title": "Customs",
+        "children": [
+          {
+            "id": 530,
+            "identifier": "5.40.10",
+            "title": "Border guard"
+          },
+          {
+            "id": 534,
+            "identifier": "5.40.20",
+            "title": "Border control offices"
+          },
+          {
+            "id": 531,
+            "identifier": "5.40.30",
+            "title": "Movement of goods",
+            "children": [
+              {
+                "id": 533,
+                "identifier": "5.40.30.10",
+                "title": "Agricultural products"
+              }
+            ]
+          },
+          {
+            "id": 532,
+            "identifier": "5.40.40",
+            "title": "Movement of persons"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "identifier": "6",
+    "title": "Finance, taxes, monopolies, state enterprises",
+    "children": [
+      {
+        "id": 201,
+        "identifier": "6.10",
+        "title": "Finances",
+        "children": [
+          {
+            "id": 202,
+            "identifier": "6.10.10",
+            "title": "Budget and accounts"
+          },
+          {
+            "id": 203,
+            "identifier": "6.10.20",
+            "title": "Fiscal equalisation",
+            "children": [
+              {
+                "id": 485,
+                "identifier": "6.10.20.10",
+                "title": "Intercantonal cooperation with cost sharing"
+              }
+            ]
+          },
+          {
+            "id": 204,
+            "identifier": "6.10.30",
+            "title": "State contributions, subsidies"
+          },
+          {
+            "id": 205,
+            "identifier": "6.10.40",
+            "title": "Financial control"
+          },
+          {
+            "id": 206,
+            "identifier": "6.10.50",
+            "title": "Privatisations"
+          }
+        ]
+      },
+      {
+        "id": 207,
+        "identifier": "6.20",
+        "title": "Taxes",
+        "children": [
+          {
+            "id": 208,
+            "identifier": "6.20.10",
+            "title": "Income and wealth taxes / profit and capital taxes",
+            "children": [
+              {
+                "id": 209,
+                "identifier": "6.20.10.10",
+                "title": "Federal taxes"
+              },
+              {
+                "id": 210,
+                "identifier": "6.20.10.20",
+                "title": "Cantonal tax"
+              },
+              {
+                "id": 211,
+                "identifier": "6.20.10.30",
+                "title": "Municipal taxes"
+              },
+              {
+                "id": 471,
+                "identifier": "6.20.10.40",
+                "title": "Flat-rate tax credit"
+              },
+              {
+                "id": 212,
+                "identifier": "6.20.10.50",
+                "title": "Church taxes"
+              },
+              {
+                "id": 213,
+                "identifier": "6.20.10.60",
+                "title": "Withholding tax at source"
+              },
+              {
+                "id": 214,
+                "identifier": "6.20.10.70",
+                "title": "Tax multipliers"
+              }
+            ]
+          },
+          {
+            "id": 215,
+            "identifier": "6.20.20",
+            "title": "Property transfer taxes"
+          },
+          {
+            "id": 216,
+            "identifier": "6.20.30",
+            "title": "Real property tax"
+          },
+          {
+            "id": 217,
+            "identifier": "6.20.40",
+            "title": "Inheritance and gift taxes"
+          },
+          {
+            "id": 424,
+            "identifier": "6.20.50",
+            "title": "Stamp duty"
+          },
+          {
+            "id": 432,
+            "identifier": "6.20.60",
+            "title": "Withholding tax"
+          },
+          {
+            "id": 218,
+            "identifier": "6.20.70",
+            "title": "Dog taxes"
+          },
+          {
+            "id": 219,
+            "identifier": "6.20.80",
+            "title": "Entertainment taxes"
+          },
+          {
+            "id": 433,
+            "identifier": "6.20.90",
+            "title": "Visitor's and accommodation taxes"
+          },
+          {
+            "id": 220,
+            "identifier": "6.20.100",
+            "title": "Tax exemptions and reliefs"
+          },
+          {
+            "id": 221,
+            "identifier": "6.20.110",
+            "title": "Prohibition of tax arrangements"
+          },
+          {
+            "id": 222,
+            "identifier": "6.20.120",
+            "title": "Double taxation"
+          }
+        ]
+      },
+      {
+        "id": 223,
+        "identifier": "6.30",
+        "title": "Monopolies, regalian rights, state enterprises",
+        "children": [
+          {
+            "id": 224,
+            "identifier": "6.30.10",
+            "title": "Alcohol"
+          },
+          {
+            "id": 225,
+            "identifier": "6.30.20",
+            "title": "Mines"
+          },
+          {
+            "id": 226,
+            "identifier": "6.30.30",
+            "title": "Salt monopoly"
+          },
+          {
+            "id": 450,
+            "identifier": "6.30.40",
+            "title": "Petroleum"
+          },
+          {
+            "id": 227,
+            "identifier": "6.30.50",
+            "title": "Hunting",
+            "children": [
+              {
+                "id": 228,
+                "identifier": "6.30.50.10",
+                "title": "Hunters"
+              }
+            ]
+          },
+          {
+            "id": 229,
+            "identifier": "6.30.60",
+            "title": "Fishing",
+            "children": [
+              {
+                "id": 230,
+                "identifier": "6.30.60.10",
+                "title": "Trade licences"
+              },
+              {
+                "id": 231,
+                "identifier": "6.30.60.20",
+                "title": "Fishing zones"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 232,
+        "identifier": "6.40",
+        "title": "State enterprises",
+        "children": [
+          {
+            "id": 233,
+            "identifier": "6.40.10",
+            "title": "Cantonal banks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "identifier": "7",
+    "title": "Spatial planning and construction, expropriation, public works, energy, transport, environmental protection, nature conservation",
+    "children": [
+      {
+        "id": 235,
+        "identifier": "7.10",
+        "title": "Spatial planning and construction law",
+        "children": [
+          {
+            "id": 236,
+            "identifier": "7.10.10",
+            "title": "Plans"
+          },
+          {
+            "id": 237,
+            "identifier": "7.10.20",
+            "title": "Zones"
+          },
+          {
+            "id": 238,
+            "identifier": "7.10.30",
+            "title": "Servicing of building land"
+          },
+          {
+            "id": 239,
+            "identifier": "7.10.40",
+            "title": "Land consolidation"
+          },
+          {
+            "id": 240,
+            "identifier": "7.10.50",
+            "title": "Procedure"
+          },
+          {
+            "id": 241,
+            "identifier": "7.10.60",
+            "title": "Posters and advertising"
+          },
+          {
+            "id": 459,
+            "identifier": "7.10.70",
+            "title": "Parking spaces"
+          }
+        ]
+      },
+      {
+        "id": 242,
+        "identifier": "7.20",
+        "title": "Expropriation"
+      },
+      {
+        "id": 243,
+        "identifier": "7.30",
+        "title": "Public works",
+        "children": [
+          {
+            "id": 244,
+            "identifier": "7.30.10",
+            "title": "Public buildings and land"
+          },
+          {
+            "id": 245,
+            "identifier": "7.30.20",
+            "title": "Hydraulic engineering",
+            "children": [
+              {
+                "id": 246,
+                "identifier": "7.30.20.10",
+                "title": "River corrections / flood protection"
+              },
+              {
+                "id": 247,
+                "identifier": "7.30.20.20",
+                "title": "Use of water resources"
+              }
+            ]
+          },
+          {
+            "id": 248,
+            "identifier": "7.30.30",
+            "title": "Roads",
+            "children": [
+              {
+                "id": 249,
+                "identifier": "7.30.30.10",
+                "title": "National roads"
+              },
+              {
+                "id": 250,
+                "identifier": "7.30.30.20",
+                "title": "Footpaths and hiking trails"
+              }
+            ]
+          },
+          {
+            "id": 251,
+            "identifier": "7.30.40",
+            "title": "Public procurement"
+          }
+        ]
+      },
+      {
+        "id": 252,
+        "identifier": "7.40",
+        "title": "Energy",
+        "children": [
+          {
+            "id": 253,
+            "identifier": "7.40.10",
+            "title": "Energy supply"
+          },
+          {
+            "id": 254,
+            "identifier": "7.40.20",
+            "title": "Hydropower"
+          },
+          {
+            "id": 255,
+            "identifier": "7.40.30",
+            "title": "Nuclear energy"
+          },
+          {
+            "id": 417,
+            "identifier": "7.40.40",
+            "title": "Electricity"
+          }
+        ]
+      },
+      {
+        "id": 256,
+        "identifier": "7.50",
+        "title": "Transport",
+        "children": [
+          {
+            "id": 257,
+            "identifier": "7.50.10",
+            "title": "Public transport",
+            "children": [
+              {
+                "id": 258,
+                "identifier": "7.50.10.10",
+                "title": "Regional transport"
+              },
+              {
+                "id": 259,
+                "identifier": "7.50.10.20",
+                "title": "Rail transport"
+              },
+              {
+                "id": 260,
+                "identifier": "7.50.10.30",
+                "title": "Buses and trolleybuses"
+              }
+            ]
+          },
+          {
+            "id": 261,
+            "identifier": "7.50.20",
+            "title": "Road traffic",
+            "children": [
+              {
+                "id": 262,
+                "identifier": "7.50.20.10",
+                "title": "Road traffic taxes and charges"
+              },
+              {
+                "id": 263,
+                "identifier": "7.50.20.20",
+                "title": "Traffic police"
+              },
+              {
+                "id": 466,
+                "identifier": "7.50.20.30",
+                "title": "Vehicle roadworthiness testing"
+              },
+              {
+                "id": 472,
+                "identifier": "7.50.20.40",
+                "title": "Passenger transport"
+              }
+            ]
+          },
+          {
+            "id": 264,
+            "identifier": "7.50.30",
+            "title": "Cable cars and ski lifts"
+          },
+          {
+            "id": 265,
+            "identifier": "7.50.40",
+            "title": "Pipelines"
+          },
+          {
+            "id": 266,
+            "identifier": "7.50.60",
+            "title": "Navigation",
+            "children": [
+              {
+                "id": 267,
+                "identifier": "7.50.60.10",
+                "title": "Boat taxes and charges"
+              },
+              {
+                "id": 268,
+                "identifier": "7.50.60.20",
+                "title": "Navigation police"
+              }
+            ]
+          },
+          {
+            "id": 269,
+            "identifier": "7.50.70",
+            "title": "Aviation",
+            "children": [
+              {
+                "id": 270,
+                "identifier": "7.50.70.10",
+                "title": "Aircraft"
+              },
+              {
+                "id": 271,
+                "identifier": "7.50.70.20",
+                "title": "Airports and airfields"
+              }
+            ]
+          },
+          {
+            "id": 437,
+            "identifier": "7.50.80",
+            "title": "Postal services and telecommunications"
+          },
+          {
+            "id": 512,
+            "identifier": "7.50.90",
+            "title": "Space law"
+          }
+        ]
+      },
+      {
+        "id": 272,
+        "identifier": "7.60",
+        "title": "Environmental protection",
+        "children": [
+          {
+            "id": 273,
+            "identifier": "7.60.10",
+            "title": "Waste"
+          },
+          {
+            "id": 274,
+            "identifier": "7.60.20",
+            "title": "Water protection"
+          },
+          {
+            "id": 275,
+            "identifier": "7.60.30",
+            "title": "Air quality",
+            "children": [
+              {
+                "id": 495,
+                "identifier": "7.60.30.10",
+                "title": "Particulate matter/smog"
+              }
+            ]
+          },
+          {
+            "id": 420,
+            "identifier": "7.60.40",
+            "title": "Noise abatement"
+          },
+          {
+            "id": 276,
+            "identifier": "7.60.50",
+            "title": "Environmental impact assessment"
+          },
+          {
+            "id": 277,
+            "identifier": "7.60.60",
+            "title": "Radiation protection"
+          },
+          {
+            "id": 278,
+            "identifier": "7.60.70",
+            "title": "Toxic substances and chemicals"
+          },
+          {
+            "id": 279,
+            "identifier": "7.60.80",
+            "title": "Substances hazardous to the environment"
+          },
+          {
+            "id": 280,
+            "identifier": "7.60.90",
+            "title": "Damage control"
+          }
+        ]
+      },
+      {
+        "id": 281,
+        "identifier": "7.70",
+        "title": "Protection of nature and cultural heritage",
+        "children": [
+          {
+            "id": 282,
+            "identifier": "7.70.10",
+            "title": "Landscape protection"
+          },
+          {
+            "id": 283,
+            "identifier": "7.70.20",
+            "title": "Animal protection"
+          },
+          {
+            "id": 284,
+            "identifier": "7.70.30",
+            "title": "Plant protection"
+          },
+          {
+            "id": 473,
+            "identifier": "7.70.40",
+            "title": "Mushrooms"
+          },
+          {
+            "id": 285,
+            "identifier": "7.70.50",
+            "title": "Nature conservation"
+          },
+          {
+            "id": 452,
+            "identifier": "7.70.60",
+            "title": "Protection of shores"
+          },
+          {
+            "id": 421,
+            "identifier": "7.70.70",
+            "title": "Protection of monuments and cultural property"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "identifier": "8",
+    "title": "Health, labour, social insurance, housing, social assistance",
+    "children": [
+      {
+        "id": 287,
+        "identifier": "8.10",
+        "title": "Health",
+        "children": [
+          {
+            "id": 454,
+            "identifier": "8.10.10",
+            "title": "Ethics"
+          },
+          {
+            "id": 288,
+            "identifier": "8.10.20",
+            "title": "Hospitals and clinics",
+            "children": [
+              {
+                "id": 289,
+                "identifier": "8.10.20.10",
+                "title": "Cantonal hospitals"
+              },
+              {
+                "id": 290,
+                "identifier": "8.10.20.20",
+                "title": "Psychiatric clinics"
+              },
+              {
+                "id": 470,
+                "identifier": "8.10.20.30",
+                "title": "Patients' rights"
+              }
+            ]
+          },
+          {
+            "id": 291,
+            "identifier": "8.10.30",
+            "title": "Medical professions",
+            "children": [
+              {
+                "id": 292,
+                "identifier": "8.10.30.10",
+                "title": "Doctors"
+              },
+              {
+                "id": 293,
+                "identifier": "8.10.30.20",
+                "title": "Dentists"
+              },
+              {
+                "id": 294,
+                "identifier": "8.10.30.30",
+                "title": "Nursing staff"
+              },
+              {
+                "id": 295,
+                "identifier": "8.10.30.40",
+                "title": "Midwives"
+              },
+              {
+                "id": 296,
+                "identifier": "8.10.30.50",
+                "title": "Chiropractors, physiotherapists"
+              },
+              {
+                "id": 297,
+                "identifier": "8.10.30.60",
+                "title": "Psychotherapists"
+              },
+              {
+                "id": 298,
+                "identifier": "8.10.30.70",
+                "title": "Naturopaths"
+              },
+              {
+                "id": 299,
+                "identifier": "8.10.30.80",
+                "title": "Chiropodists"
+              },
+              {
+                "id": 300,
+                "identifier": "8.10.30.90",
+                "title": "Pharmacists"
+              },
+              {
+                "id": 301,
+                "identifier": "8.10.30.100",
+                "title": "Veterinarians"
+              }
+            ]
+          },
+          {
+            "id": 302,
+            "identifier": "8.10.40",
+            "title": "Medical laboratories"
+          },
+          {
+            "id": 303,
+            "identifier": "8.10.50",
+            "title": "Psychiatric services"
+          },
+          {
+            "id": 304,
+            "identifier": "8.10.60",
+            "title": "Home nursing care"
+          },
+          {
+            "id": 305,
+            "identifier": "8.10.70",
+            "title": "Therapeutic products and narcotics"
+          },
+          {
+            "id": 306,
+            "identifier": "8.10.80",
+            "title": "Pharmacies and drugstores"
+          },
+          {
+            "id": 307,
+            "identifier": "8.10.90",
+            "title": "Emergency and ambulance services"
+          },
+          {
+            "id": 308,
+            "identifier": "8.10.100",
+            "title": "Disease control",
+            "children": [
+              {
+                "id": 309,
+                "identifier": "8.10.100.10",
+                "title": "Epidemics, pandemics"
+              },
+              {
+                "id": 310,
+                "identifier": "8.10.100.20",
+                "title": "Tuberculosis"
+              }
+            ]
+          },
+          {
+            "id": 311,
+            "identifier": "8.10.110",
+            "title": "Accident prevention"
+          },
+          {
+            "id": 312,
+            "identifier": "8.10.120",
+            "title": "Addiction prevention",
+            "children": [
+              {
+                "id": 313,
+                "identifier": "8.10.120.10",
+                "title": "Alcoholism"
+              },
+              {
+                "id": 463,
+                "identifier": "8.10.120.20",
+                "title": "Smoking bans"
+              }
+            ]
+          },
+          {
+            "id": 314,
+            "identifier": "8.10.130",
+            "title": "Hygiene",
+            "children": [
+              {
+                "id": 315,
+                "identifier": "8.10.130.10",
+                "title": "Foodstuffs and utility articles",
+                "children": [
+                  {
+                    "id": 316,
+                    "identifier": "8.10.130.10.10",
+                    "title": "Food inspection"
+                  },
+                  {
+                    "id": 317,
+                    "identifier": "8.10.130.10.20",
+                    "title": "Meat hygiene",
+                    "children": [
+                      {
+                        "id": 318,
+                        "identifier": "8.10.130.10.20.10",
+                        "title": "Slaughterhouses"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 319,
+                    "identifier": "8.10.130.10.30",
+                    "title": "Mushrooms"
+                  }
+                ]
+              },
+              {
+                "id": 453,
+                "identifier": "8.10.130.20",
+                "title": "Water supply"
+              },
+              {
+                "id": 320,
+                "identifier": "8.10.130.30",
+                "title": "Swimming pools"
+              },
+              {
+                "id": 321,
+                "identifier": "8.10.130.40",
+                "title": "Burials, cemeteries"
+              },
+              {
+                "id": 322,
+                "identifier": "8.10.130.50",
+                "title": "Disposal of animal carcasses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 323,
+        "identifier": "8.20",
+        "title": "Labour law",
+        "children": [
+          {
+            "id": 324,
+            "identifier": "8.20.10",
+            "title": "Employees",
+            "children": [
+              {
+                "id": 455,
+                "identifier": "8.20.10.10",
+                "title": "Security"
+              },
+              {
+                "id": 325,
+                "identifier": "8.20.10.20",
+                "title": "Working hours"
+              },
+              {
+                "id": 326,
+                "identifier": "8.20.10.30",
+                "title": "Sundays and public holidays"
+              },
+              {
+                "id": 327,
+                "identifier": "8.20.10.40",
+                "title": "Bullying, sexual harassment"
+              }
+            ]
+          },
+          {
+            "id": 328,
+            "identifier": "8.20.20",
+            "title": "Labour market",
+            "children": [
+              {
+                "id": 329,
+                "identifier": "8.20.20.10",
+                "title": "Crisis measures, tax-privileged job-creation reserves"
+              },
+              {
+                "id": 330,
+                "identifier": "8.20.20.20",
+                "title": "Posting of workers"
+              },
+              {
+                "id": 331,
+                "identifier": "8.20.20.30",
+                "title": "Free movement of persons"
+              },
+              {
+                "id": 456,
+                "identifier": "8.20.20.40",
+                "title": "Employment services and hiring-out of workers"
+              },
+              {
+                "id": 529,
+                "identifier": "8.20.20.50",
+                "title": "Undeclared work"
+              }
+            ]
+          },
+          {
+            "id": 332,
+            "identifier": "8.20.30",
+            "title": "Conciliation offices"
+          },
+          {
+            "id": 429,
+            "identifier": "8.20.40",
+            "title": "Homeworking"
+          }
+        ]
+      },
+      {
+        "id": 333,
+        "identifier": "8.30",
+        "title": "Social insurance law",
+        "children": [
+          {
+            "id": 334,
+            "identifier": "8.30.10",
+            "title": "Compensation funds"
+          },
+          {
+            "id": 335,
+            "identifier": "8.30.20",
+            "title": "General part of social insurance law (ATSG)"
+          },
+          {
+            "id": 336,
+            "identifier": "8.30.30",
+            "title": "Old-age and survivors' insurance / invalidity insurance (AHV/IV)"
+          },
+          {
+            "id": 337,
+            "identifier": "8.30.40",
+            "title": "Supplementary benefits"
+          },
+          {
+            "id": 338,
+            "identifier": "8.30.50",
+            "title": "Occupational pensions (BVG)"
+          },
+          {
+            "id": 339,
+            "identifier": "8.30.60",
+            "title": "Health insurance (KVG)",
+            "children": [
+              {
+                "id": 340,
+                "identifier": "8.30.60.10",
+                "title": "Tariffs",
+                "children": [
+                  {
+                    "id": 341,
+                    "identifier": "8.30.60.10.10",
+                    "title": "TARMED"
+                  },
+                  {
+                    "id": 342,
+                    "identifier": "8.30.60.10.20",
+                    "title": "Agreements"
+                  }
+                ]
+              },
+              {
+                "id": 343,
+                "identifier": "8.30.60.20",
+                "title": "Premium reductions"
+              },
+              {
+                "id": 344,
+                "identifier": "8.30.60.30",
+                "title": "Hospital lists"
+              },
+              {
+                "id": 457,
+                "identifier": "8.30.60.40",
+                "title": "Limitation on the admission of healthcare providers"
+              }
+            ]
+          },
+          {
+            "id": 345,
+            "identifier": "8.30.70",
+            "title": "Accident insurance (UVG)"
+          },
+          {
+            "id": 346,
+            "identifier": "8.30.80",
+            "title": "Military insurance"
+          },
+          {
+            "id": 347,
+            "identifier": "8.30.90",
+            "title": "Loss-of-earnings compensation"
+          },
+          {
+            "id": 348,
+            "identifier": "8.30.100",
+            "title": "Family allowances",
+            "children": [
+              {
+                "id": 349,
+                "identifier": "8.30.100.10",
+                "title": "Agricultural workers"
+              },
+              {
+                "id": 350,
+                "identifier": "8.30.100.20",
+                "title": "Employees and self-employed persons"
+              }
+            ]
+          },
+          {
+            "id": 351,
+            "identifier": "8.30.110",
+            "title": "Unemployment insurance"
+          },
+          {
+            "id": 352,
+            "identifier": "8.30.120",
+            "title": "Maternity insurance and maternity benefits"
+          }
+        ]
+      },
+      {
+        "id": 353,
+        "identifier": "8.40",
+        "title": "Housing",
+        "children": [
+          {
+            "id": 354,
+            "identifier": "8.40.10",
+            "title": "Promotion of home ownership and housing construction"
+          },
+          {
+            "id": 355,
+            "identifier": "8.40.20",
+            "title": "Housing in mountain regions"
+          }
+        ]
+      },
+      {
+        "id": 356,
+        "identifier": "8.70",
+        "title": "Welfare assistance",
+        "children": [
+          {
+            "id": 418,
+            "identifier": "8.70.10",
+            "title": "Social assistance"
+          },
+          {
+            "id": 425,
+            "identifier": "8.70.20",
+            "title": "Youth protection and youth support"
+          },
+          {
+            "id": 357,
+            "identifier": "8.70.30",
+            "title": "Residential homes",
+            "children": [
+              {
+                "id": 358,
+                "identifier": "8.70.30.10",
+                "title": "Homes for the elderly and nursing homes"
+              },
+              {
+                "id": 359,
+                "identifier": "8.70.30.20",
+                "title": "Children's and youth homes"
+              }
+            ]
+          },
+          {
+            "id": 361,
+            "identifier": "8.70.50",
+            "title": "People with disabilities",
+            "children": [
+              {
+                "id": 362,
+                "identifier": "8.70.50.10",
+                "title": "Sheltered workshops"
+              }
+            ]
+          },
+          {
+            "id": 363,
+            "identifier": "8.70.60",
+            "title": "Donations and public collections"
+          },
+          {
+            "id": 364,
+            "identifier": "8.70.70",
+            "title": "Advances on maintenance payments"
+          },
+          {
+            "id": 365,
+            "identifier": "8.70.80",
+            "title": "Pregnancy counselling"
+          },
+          {
+            "id": 426,
+            "identifier": "8.70.90",
+            "title": "Family and marriage counselling"
+          },
+          {
+            "id": 465,
+            "identifier": "8.70.100",
+            "title": "Family policy, family support"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "identifier": "9",
+    "title": "Economy",
+    "children": [
+      {
+        "id": 434,
+        "identifier": "9.10",
+        "title": "Economic promotion"
+      },
+      {
+        "id": 367,
+        "identifier": "9.20",
+        "title": "Agriculture",
+        "children": [
+          {
+            "id": 368,
+            "identifier": "9.20.10",
+            "title": "Support measures"
+          },
+          {
+            "id": 369,
+            "identifier": "9.20.20",
+            "title": "Organic farming"
+          },
+          {
+            "id": 370,
+            "identifier": "9.20.30",
+            "title": "Rural land law"
+          },
+          {
+            "id": 371,
+            "identifier": "9.20.40",
+            "title": "Mountain regions"
+          },
+          {
+            "id": 372,
+            "identifier": "9.20.50",
+            "title": "Land improvement"
+          },
+          {
+            "id": 373,
+            "identifier": "9.20.60",
+            "title": "Agricultural credit"
+          },
+          {
+            "id": 374,
+            "identifier": "9.20.70",
+            "title": "Agricultural education",
+            "children": [
+              {
+                "id": 375,
+                "identifier": "9.20.70.10",
+                "title": "Agricultural school"
+              }
+            ]
+          },
+          {
+            "id": 376,
+            "identifier": "9.20.80",
+            "title": "Crop production",
+            "children": [
+              {
+                "id": 377,
+                "identifier": "9.20.80.10",
+                "title": "Viticulture"
+              },
+              {
+                "id": 378,
+                "identifier": "9.20.80.20",
+                "title": "Pest control"
+              }
+            ]
+          },
+          {
+            "id": 379,
+            "identifier": "9.20.90",
+            "title": "Animal production",
+            "children": [
+              {
+                "id": 380,
+                "identifier": "9.20.90.10",
+                "title": "Cattle and small livestock"
+              },
+              {
+                "id": 460,
+                "identifier": "9.20.90.20",
+                "title": "Livestock trade"
+              }
+            ]
+          },
+          {
+            "id": 381,
+            "identifier": "9.20.100",
+            "title": "Milk"
+          },
+          {
+            "id": 382,
+            "identifier": "9.20.110",
+            "title": "Beekeeping"
+          },
+          {
+            "id": 383,
+            "identifier": "9.20.120",
+            "title": "Animal epidemics"
+          },
+          {
+            "id": 384,
+            "identifier": "9.20.130",
+            "title": "Alpine pasturing"
+          },
+          {
+            "id": 385,
+            "identifier": "9.20.140",
+            "title": "Livestock insurance"
+          }
+        ]
+      },
+      {
+        "id": 386,
+        "identifier": "9.30",
+        "title": "Forestry",
+        "children": [
+          {
+            "id": 387,
+            "identifier": "9.30.10",
+            "title": "Protective measures"
+          },
+          {
+            "id": 388,
+            "identifier": "9.30.20",
+            "title": "Forestry staff"
+          },
+          {
+            "id": 461,
+            "identifier": "9.30.30",
+            "title": "Vocational education and training"
+          }
+        ]
+      },
+      {
+        "id": 389,
+        "identifier": "9.40",
+        "title": "Economic development in mountain regions"
+      },
+      {
+        "id": 392,
+        "identifier": "9.50",
+        "title": "Trades and crafts",
+        "children": [
+          {
+            "id": 393,
+            "identifier": "9.50.10",
+            "title": "Services",
+            "children": [
+              {
+                "id": 394,
+                "identifier": "9.50.10.10",
+                "title": "Professions subject to authorisation"
+              },
+              {
+                "id": 395,
+                "identifier": "9.50.10.20",
+                "title": "Tourism"
+              },
+              {
+                "id": 396,
+                "identifier": "9.50.10.30",
+                "title": "Catering and public houses",
+                "children": [
+                  {
+                    "id": 397,
+                    "identifier": "9.50.10.30.10",
+                    "title": "Camping"
+                  }
+                ]
+              },
+              {
+                "id": 423,
+                "identifier": "9.50.10.40",
+                "title": "Taxi services"
+              },
+              {
+                "id": 398,
+                "identifier": "9.50.10.50",
+                "title": "Cinema, theatre and entertainment businesses"
+              },
+              {
+                "id": 399,
+                "identifier": "9.50.10.60",
+                "title": "Gambling and lotteries",
+                "children": [
+                  {
+                    "id": 400,
+                    "identifier": "9.50.10.60.10",
+                    "title": "Lottery funds"
+                  },
+                  {
+                    "id": 487,
+                    "identifier": "9.50.10.60.20",
+                    "title": "Sport-Toto"
+                  },
+                  {
+                    "id": 486,
+                    "identifier": "9.50.10.60.30",
+                    "title": "Casinos"
+                  }
+                ]
+              },
+              {
+                "id": 464,
+                "identifier": "9.50.10.70",
+                "title": "Prostitution"
+              },
+              {
+                "id": 401,
+                "identifier": "9.50.10.80",
+                "title": "Credit institutions / insurance",
+                "children": [
+                  {
+                    "id": 402,
+                    "identifier": "9.50.10.80.10",
+                    "title": "Banks, stock exchanges"
+                  }
+                ]
+              },
+              {
+                "id": 428,
+                "identifier": "9.50.10.90",
+                "title": "Consumer credit"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 390,
+        "identifier": "9.60",
+        "title": "Trade",
+        "children": [
+          {
+            "id": 403,
+            "identifier": "9.60.10",
+            "title": "Shop opening hours"
+          },
+          {
+            "id": 404,
+            "identifier": "9.60.20",
+            "title": "Weights and measures, means of payment"
+          },
+          {
+            "id": 405,
+            "identifier": "9.60.30",
+            "title": "Price supervision"
+          },
+          {
+            "id": 494,
+            "identifier": "9.60.40",
+            "title": "Consumer protection"
+          },
+          {
+            "id": 406,
+            "identifier": "9.60.50",
+            "title": "Internal market, technical barriers to trade"
+          },
+          {
+            "id": 407,
+            "identifier": "9.60.60",
+            "title": "Itinerant trade"
+          },
+          {
+            "id": 391,
+            "identifier": "9.60.70",
+            "title": "Fairs and markets"
+          },
+          {
+            "id": 408,
+            "identifier": "9.60.80",
+            "title": "Vending machines"
+          },
+          {
+            "id": 409,
+            "identifier": "9.60.90",
+            "title": "Foreign trade"
+          },
+          {
+            "id": 513,
+            "identifier": "9.60.100",
+            "title": "Development and cooperation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 413,
+    "identifier": "10",
+    "title": "Publications without text"
+  },
+  {
+    "id": 536,
+    "identifier": "uncategorized",
+    "title": "Unclassifiable"
+  }
+]

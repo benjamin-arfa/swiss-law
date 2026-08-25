@@ -1271,7 +1271,8 @@ def canonical_year_fn(cantonal: list[dict]):
     return year_of
 
 
-def generate_concordats_by_domain(entries: list[dict]) -> dict:
+def generate_concordats_by_domain(entries: list[dict],
+                                  granular_out: dict | None = None) -> dict:
     """Tabulate intercantonal agreements (concordats) per canton per domain.
 
     Reproduces the layout of chstat.ch's "Concordats par domaine" table
@@ -1286,6 +1287,13 @@ def generate_concordats_by_domain(entries: list[dict]) -> dict:
         if effective_category_type(e)[0] == CONCORDAT_TYPE
     ]
     tab = _domain_cross_tab(concordats, canonical_year_fn(cantonal))
+    if granular_out is not None:
+        granular_out["concordats_by_topic"] = _granular_payload(
+            tab["by_year_granular"],
+            title="Intercantonal agreements (concordats) by canton, year and "
+                  "topic (full systematics depth)",
+            dataset="concordats", slug=None,
+            counting_unit="published_copies")
 
     return {
         "title": "Intercantonal agreements (concordats) by domain",
@@ -1326,6 +1334,97 @@ def _domains_export() -> list[dict]:
     ]
 
 
+GRANULAR_DIR = "api/v1/stats/granular"
+
+
+# ``uncategorized`` and any non-numeric code sort after the numeric tree.
+def _code_sort_key(code: str):
+    if not code[:1].isdigit():
+        return (1, [], code)
+    return (0, [int(p) if p.isdigit() else 0 for p in code.split(".")], "")
+
+
+def _granular_payload(cube: dict, *, title: str, dataset: str,
+                      counting_unit: str, slug: str | None = None,
+                      year_semantics: str = "enactment") -> dict:
+    """Wrap a {year: {canton: {code: n}}} accumulation as a publishable cube.
+
+    The cube keys the SAME counts as the 7-domain table it comes from on the
+    full dotted global-systematics code instead of its first segment, so a
+    (year, canton) slice of the granular cube sums to that table's (year,
+    canton) cell.  It is written to its own file: the domain tables are
+    fetched on every page load and must not grow.
+    """
+    by_year = {
+        year: {canton: {c: n for c, n in sorted(codes.items(),
+                                                key=lambda kv: _code_sort_key(kv[0]))}
+               for canton, codes in sorted(cantons.items())}
+        for year, cantons in sorted(cube.items())
+    }
+    totals: Counter = Counter()
+    for cantons in by_year.values():
+        for row in cantons.values():
+            totals.update(row)
+    codes = sorted(totals, key=_code_sort_key)
+    return {
+        "title": title,
+        "source": "LexFind (Institute of Federalism, University of Fribourg)",
+        "dataset": dataset,
+        "slug": slug,
+        "counting_unit": counting_unit,
+        "year_semantics": year_semantics,
+        "topic_semantics":
+            "dotted LexFind global-systematics code at the depth the source "
+            "classifies the act ('1.10.70.10.10'); resolve labels with "
+            "api/v1/categories/global_paths.json. 'uncategorized' = no legal "
+            "domain in the source data.",
+        "codes": codes,
+        "by_year": by_year,
+        "totals_by_code": {c: totals[c] for c in codes},
+        "total": sum(totals.values()),
+        "notes": [
+            "Same counts as the 7-domain table this is derived from, keyed on "
+            "the full code instead of its first segment: for any (year, "
+            "canton) the two sum to the same number",
+            "Acts the source classifies only at the top level appear at that "
+            "depth ('4'), not at a leaf — the export reconciles exactly with "
+            "the table rather than inventing a granularity the data lacks",
+            "Year 'unknown' = undated acts, excluded from year-filtered views",
+        ],
+    }
+
+
+def write_granular_cubes(cubes: dict[str, dict], out_dir: str | Path) -> None:
+    """Write the per-topic cubes plus an index resolving slug → file."""
+    out = Path(out_dir)
+    datasets = []
+    by_slug: dict[str, str] = {}
+    for name, payload in sorted(cubes.items()):
+        write_stats_json(payload, out / f"{name}.json")
+        datasets.append({
+            "dataset": payload["dataset"],
+            "slug": payload["slug"],
+            "file": f"{name}.json",
+            "path": f"{GRANULAR_DIR}/{name}.json",
+            "counting_unit": payload["counting_unit"],
+            "codes": len(payload["codes"]),
+            "total": payload["total"],
+        })
+        if payload["slug"] is not None:
+            by_slug[payload["slug"]] = f"{name}.json"
+    write_stats_json({
+        "note": "Canton x year x topic cubes at full global-systematics depth "
+                "— the sibling of the 7-domain tables in api/v1/stats/. "
+                "Fetched on demand (granular export), never on page load. "
+                "'by_slug' resolves the data page's instrument-type selector "
+                "('' = the default concordats table) to a file.",
+        "topics": "api/v1/categories/global_paths.json",
+        "by_slug": by_slug,
+        "datasets": datasets,
+    }, out / "index.json")
+    logger.info("Wrote %d granular topic cubes to %s", len(cubes), out)
+
+
 def _domain_cross_tab(laws: list[dict], year_fn) -> dict:
     """Canton × domain accumulation shared by the concordats table and the
     per-instrument-type tables.
@@ -1344,6 +1443,9 @@ def _domain_cross_tab(laws: list[dict], year_fn) -> dict:
     by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
         lambda: defaultdict(lambda: defaultdict(int)))
     by_version_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))
+    # same counts, keyed on the full dotted code instead of its first segment
+    by_year_granular: dict[str, dict[str, dict[str, int]]] = defaultdict(
         lambda: defaultdict(lambda: defaultdict(int)))
     unclassified = 0
     provenance: Counter = Counter()
@@ -1365,6 +1467,8 @@ def _domain_cross_tab(laws: list[dict], year_fn) -> dict:
         year, evidence = year_fn(e)
         year_evidence[evidence] += 1
         by_year[year or "unknown"][canton][key] += 1
+        by_year_granular[year or "unknown"][canton][
+            _extract_identifier(gc) or "uncategorized"] += 1
         vd = str(e.get("version_date", ""))
         vyear = vd[:4] if len(vd) >= 4 and _plausible_date(vd) else "unknown"
         by_version_year[vyear][canton][key] += 1
@@ -1381,6 +1485,8 @@ def _domain_cross_tab(laws: list[dict], year_fn) -> dict:
                     for y, cantons in sorted(by_year.items())},
         "by_version_year": {y: {c: dict(d) for c, d in cantons.items()}
                             for y, cantons in sorted(by_version_year.items())},
+        "by_year_granular": {y: {c: dict(d) for c, d in cantons.items()}
+                             for y, cantons in sorted(by_year_granular.items())},
         "unclassified_in_autres": unclassified,
         "domain_provenance": dict(provenance),
         "year_evidence": dict(year_evidence),
@@ -1403,7 +1509,8 @@ TYPE_SLUGS = {
 
 
 def generate_types_by_domain(entries: list[dict],
-                             concordat_override: dict | None = None) -> dict:
+                             concordat_override: dict | None = None,
+                             granular_out: dict | None = None) -> dict:
     """Canton × domain cross-tab per instrument type — the concordats table
     generalized to every text category.
 
@@ -1429,6 +1536,13 @@ def generate_types_by_domain(entries: list[dict],
         slug = TYPE_SLUGS[label_de]
         tab = _domain_cross_tab(laws, year_fn)
         label = CATEGORY_TYPE_LABELS.get(label_de, {"de": label_de})
+        if granular_out is not None:
+            granular_out[f"{slug}_by_topic"] = _granular_payload(
+                tab["by_year_granular"],
+                title=f"Cantonal acts of type '{label_de}' by canton, year "
+                      "and topic (full systematics depth)",
+                dataset=slug, slug=slug,
+                counting_unit="published_copies")
         notes = [
             "\"Other\" column includes civil law, criminal law and laws "
             "without a legal domain in LexFind's public database",
@@ -1651,6 +1765,8 @@ def _concordat_agreement_groups(entries: list[dict]) -> list[dict]:
         agreements.append({
             "title": str(rep.get("title", "")),
             "domain": domain,
+            # full dotted code behind `domain`, for the granular cube
+            "global_category": gc,
             "year": min(years) if years else "",
             "published": published,
             "published_live_2003": sorted(live),
@@ -1823,7 +1939,8 @@ def generate_concordat_size_distribution(entries: list[dict]) -> dict:
     }
 
 
-def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
+def generate_concordats_by_domain_signatories(
+        entries: list[dict], granular_out: dict | None = None) -> dict:
     """Canton × domain concordats table under the chstat/BADAC 2003
     methodology: one agreement counts once per SIGNATORY canton — an
     agreement signed by 10 cantons contributes 10 to its year's total.
@@ -1846,6 +1963,8 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
     }
     by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
         lambda: defaultdict(lambda: defaultdict(int)))
+    by_year_granular: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int)))
     named_only_adds = 0
     until_2003 = 0
     concordats_until_2003 = 0
@@ -1858,9 +1977,11 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
              "named_as_party_in_preamble_only": 0}
     until_2003_chstat_domains = 0
     for a in agreements:
+        code = _extract_identifier(a.get("global_category", "")) or "uncategorized"
         for canton in a["signatories"]:
             table[canton][a["domain"]] += 1
             by_year[a["year"] or "unknown"][canton][a["domain"]] += 1
+            by_year_granular[a["year"] or "unknown"][canton][code] += 1
         named_only_adds += len(set(a["signatories"]) - set(a["published"]))
         if a["year"] and a["year"] <= "2003":
             concordats_until_2003 += 1
@@ -1879,6 +2000,13 @@ def generate_concordats_by_domain_signatories(entries: list[dict]) -> dict:
     totals = {k: sum(row[k] for row in table.values()) for k in domain_keys}
     totals["total"] = sum(totals.values())
     chstat_reference = sum(sum(v) for v in CHSTAT_2003.values())
+    if granular_out is not None:
+        granular_out["concordats_by_topic_signatories"] = _granular_payload(
+            by_year_granular,
+            title="Intercantonal agreement memberships by canton, year and "
+                  "topic (full systematics depth)",
+            dataset="concordats_signatories", slug="",
+            counting_unit="signatory_memberships")
 
     return {
         "title": "Intercantonal agreements (concordats) by domain — "
@@ -2479,6 +2607,20 @@ def write_publications(pubs_by_year: dict[int, dict], output_dir: str | Path = "
     logger.info("Wrote %d year files (%d publications) to %s", len(years), total, out)
 
 
+def _warn_missing_en_titles(trees_dir: Path) -> list[str]:
+    """Identifiers present in global.json but missing from global_en.json."""
+    from .categories import build_global_title_map
+    de = build_global_title_map(trees_dir, "de")
+    en = build_global_title_map(trees_dir, "en")
+    missing = sorted(set(de) - set(en), key=_code_sort_key)
+    if missing:
+        logger.warning(
+            "global_en.json is missing %d node(s) added upstream — their "
+            "English labels fall back to German: %s",
+            len(missing), ", ".join(f"{c} ({de[c]})" for c in missing[:20]))
+    return missing
+
+
 def fetch_and_write_trees(output_dir: str | Path = "docs/trees", rate_limit: float = 0.5):
     """Fetch category trees from LexFind API and write as static JSON files."""
     from .cantonal import (
@@ -2501,6 +2643,13 @@ def fetch_and_write_trees(output_dir: str | Path = "docs/trees", rate_limit: flo
             n_nodes = sum(1 for _ in _iter_tree(tree))
             logger.info("Wrote global tree %s (%d nodes, %d top-level)",
                         lang, n_nodes, len(tree))
+
+    # global_en.json is authored in this repo (LexFind serves de/fr/it/rm
+    # only — /api/fe/en/global/systematics answers HTTP 400), so it is never
+    # fetched and never overwritten here.  Surface any node LexFind has added
+    # since it was written, rather than silently exporting an untranslated
+    # topic label.
+    _warn_missing_en_titles(out)
 
     # CH (federal) tree — entity 27
     logger.info("Fetching CH (federal) systematics tree...")

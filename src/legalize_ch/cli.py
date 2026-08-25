@@ -543,14 +543,20 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     write_yearly_canton_stats(yc_stats, site_path / "api" / "v1" / "stats")
     click.echo(f"  {sum(len(e) for e in yc_stats.values())} files across {len(yc_stats)} years")
 
+    # canton × year × topic cubes at full systematics depth, accumulated by
+    # the same passes that build the 7-domain tables and written to their own
+    # files (the domain tables are fetched on every page load)
+    granular: dict[str, dict] = {}
+
     click.echo("Generating concordats-by-domain table...")
-    conc = generate_concordats_by_domain(entries)
+    conc = generate_concordats_by_domain(entries, granular_out=granular)
     write_stats_json(conc, site_path / "api" / "v1" / "stats" / "concordats_by_domain.json")
     click.echo(f"  {conc['total_concordats']} concordats across {len(conc['cantons'])} cantons")
 
     click.echo("Generating signatory-weighted concordats table (the computed statistic)...")
     from .stats import generate_concordats_by_domain_signatories
-    conc_sig = generate_concordats_by_domain_signatories(entries)
+    conc_sig = generate_concordats_by_domain_signatories(
+        entries, granular_out=granular)
     write_stats_json(conc_sig, site_path / "api" / "v1" / "stats"
                      / "concordats_by_domain_signatories.json")
     click.echo(f"  {conc_sig['total_memberships']} memberships across "
@@ -569,13 +575,19 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     type_tables = generate_types_by_domain(entries, concordat_override={
         "total": conc_sig["total_memberships"],
         "path": "api/v1/stats/concordats_by_domain_signatories.json",
-    })
+    }, granular_out=granular)
     for slug, tbl in type_tables["files"].items():
         write_stats_json(tbl, site_path / "api" / "v1" / "stats" / "types"
                          / f"{slug}_by_domain.json")
     write_stats_json(type_tables["index"],
                      site_path / "api" / "v1" / "stats" / "types" / "index.json")
     click.echo(f"  {len(type_tables['files'])} instrument types written")
+
+    click.echo("Generating granular topic cubes...")
+    from .stats import write_granular_cubes
+    write_granular_cubes(granular, site_path / "api" / "v1" / "stats" / "granular")
+    click.echo(f"  {len(granular)} cubes, "
+               f"{sum(len(c['codes']) for c in granular.values())} code slots")
 
     click.echo("Generating concordat signatories...")
     from .stats import generate_concordat_signatories
@@ -602,7 +614,10 @@ def stats(repo: str, site_repo: str | None, no_trees: bool, rate_limit: float):
     click.echo("Generating CSV + SDMX data exports...")
     from .data_exports import generate_csv_exports, write_csv_exports
     from .sdmx import generate_sdmx_files, write_sdmx_files
-    csv_files = generate_csv_exports(type_tables, conc_sig, und)
+    from .categories import build_global_path_map
+    topic_paths = build_global_path_map(repo_path / "docs" / "trees")
+    csv_files = generate_csv_exports(type_tables, conc_sig, und,
+                                     granular=granular, topic_paths=topic_paths)
     write_csv_exports(csv_files, site_path / "api" / "v1" / "csv")
     sdmx_files = generate_sdmx_files(type_tables, conc_sig)
     write_sdmx_files(sdmx_files, site_path / "api" / "sdmx")

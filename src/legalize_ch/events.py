@@ -21,12 +21,34 @@ that rewrote frontmatter for every law at once and are not legal events.
 The contamination is large and one-sided: it puts ~11.7k phantom events into
 2026 alone, a 5x spike in the current year.
 
-Genuine Fedlex consolidations are recognisable without heuristics: the commit
-is authored *on* the version's entry-into-force date and its subject carries
-the same date, ``SR 220: <title> (2025-01-01)``.  Everything else is dropped
-rather than kept-and-labelled: the discarded dates record when the enrichment
-ran, not when the law changed, so there is no signal in them to preserve.
-``provenance`` in the written cube reports what was dropped.
+Genuine consolidations are recognisable without heuristics: the commit is
+authored *on* the version's entry-into-force date and its subject carries the
+same date and the law's own register prefix — ``SR 220: <title> (2025-01-01)``
+federally, ``BE 811.011: <title> (2023-01-01)`` for a canton.  Everything else
+is dropped rather than kept-and-labelled: the discarded dates record when the
+enrichment ran, not when the law changed, so there is no signal in them to
+preserve.  ``provenance`` in the written cube reports what was dropped.
+
+The prefix is not decoration: it is what stops a commit from dating a file that
+merely rode along in the same batch, and it applies in both directions (a
+federal consolidation must not date a cantonal act, and vice versa).
+
+Text volume
+-----------
+Two different magnitudes, with two different coverages, and the page must not
+confuse them:
+
+``lines`` — how much text a revision *moved*, from git numstat.  It needs two
+versions of the same file to diff, so it exists wherever the corpus recorded a
+law more than once.  Federal law has a real version history (69k measurable
+revisions); the cantonal corpus was imported at one version per law, so 19,207
+of 19,575 cantonal files have nothing to diff against.
+
+``articles`` — how much text was *in play*, from the markdown bodies
+themselves.  Every law in the corpus has a body, so this one covers federal and
+cantonal law alike.  It is the law's *current* size credited to each of its
+events, which is exact for recent years and anachronistic for old ones — a law
+revised in 1995 is credited with the size it has today.
 """
 from __future__ import annotations
 
@@ -42,11 +64,15 @@ from .stats import _plausible_date, count_articles  # noqa: F401  (count_article
 
 logger = logging.getLogger(__name__)
 
-# "SR 220: Bundesgesetz vom 30. März 1911 ... (2025-01-01)" — the trailing
-# parenthesised date is the version's entry into force, and the commit is
-# author-dated to it.  Requiring both, and requiring them to agree, is what
-# separates a consolidation from a bulk rewrite.
-CONSOLIDATION_SUBJECT_RE = re.compile(r"^SR\s+\S+:.*\((\d{4}-\d{2}-\d{2})\)\s*$")
+# "SR 220: Bundesgesetz vom 30. März 1911 ... (2025-01-01)", and the cantonal
+# form "BE 811.011: Verordnung über ... (2023-01-01)".  The trailing
+# parenthesised date is the version's entry into force and the commit is
+# author-dated to it; requiring both, and requiring them to agree, is what
+# separates a consolidation from a bulk rewrite.  The leading token is the
+# law's register — SR for federal law, the two-letter canton code otherwise —
+# and it is captured so a commit can only date files from its own register.
+CONSOLIDATION_SUBJECT_RE = re.compile(
+    r"^(SR|[A-Z]{2})\s+\S+:.*\((\d{4}-\d{2}-\d{2})\)\s*$")
 
 # version_dates_source values supplied by an upstream API, i.e. dates we did
 # not reconstruct ourselves.
@@ -59,10 +85,25 @@ GIT_DERIVED = "git_history"
 DELTA_CACHE = "data/state/revision_deltas.json"
 
 
-def is_consolidation(subject: str, author_date: str) -> bool:
-    """True for a backdated Fedlex consolidation commit."""
+def is_consolidation(subject: str, author_date: str) -> str:
+    """The commit's register prefix if it is a backdated consolidation, else "".
+
+    Truthy/falsy exactly where the old boolean was, so ``if
+    is_consolidation(...)`` still reads correctly; the value identifies *which*
+    register the commit may date.
+    """
     m = CONSOLIDATION_SUBJECT_RE.match(subject or "")
-    return bool(m) and m.group(1) == author_date
+    return m.group(1) if (m and m.group(2) == author_date) else ""
+
+
+def law_prefix(entry: dict) -> str:
+    """The register a law belongs to: "SR" federally, else the canton code.
+
+    Read from the frontmatter ``canton`` field and never from the path — the
+    corpus keeps federal French law and Fribourg law both under ``ch/fr/``.
+    """
+    canton = entry.get("canton")
+    return str(canton).upper() if canton else "SR"
 
 
 def _git_log(repo_path: str | Path, extra: list[str]) -> str:
@@ -76,64 +117,77 @@ def _git_log(repo_path: str | Path, extra: list[str]) -> str:
     return result.stdout
 
 
-def consolidation_dates(repo_path: str | Path = ".") -> tuple[dict[str, list[str]], dict]:
-    """One git walk → ({path: sorted version dates}, provenance summary).
+def consolidation_dates(repo_path: str | Path = ".") -> tuple[dict[str, dict[str, str]], dict]:
+    """One git walk → ({path: {date: register prefix}}, provenance summary).
 
-    Only commits passing :func:`is_consolidation` contribute.
+    Only commits passing :func:`is_consolidation` contribute.  The prefix
+    travels with the date so the caller can reject a commit that touched a file
+    from another register.
     """
-    dates: dict[str, set[str]] = defaultdict(set)
+    dates: dict[str, dict[str, str]] = defaultdict(dict)
     kinds: Counter[str] = Counter()
     touches: Counter[str] = Counter()
 
-    date = kind = None
+    date = prefix = None
     for line in _git_log(repo_path, ["--name-only"]).splitlines():
         if line.startswith("\x00"):
             date, _, subject = line[1:].partition("\x01")
-            kind = "consolidation" if is_consolidation(subject, date) else "bulk"
-            kinds[kind] += 1
-        elif line.strip() and kind:
-            touches[kind] += 1
-            if kind == "consolidation":
-                dates[line.strip()].add(date)
+            prefix = is_consolidation(subject, date)
+            kinds["consolidation" if prefix else "bulk"] += 1
+            if prefix:
+                kinds["federal" if prefix == "SR" else "cantonal"] += 1
+        elif line.strip() and date:
+            touches["consolidation" if prefix else "bulk"] += 1
+            if prefix:
+                dates[line.strip()][date] = prefix
 
     provenance = {
-        "commits_scanned": sum(kinds.values()),
+        "commits_scanned": sum(kinds[k] for k in ("consolidation", "bulk")),
         "commits_consolidation": kinds["consolidation"],
+        "commits_consolidation_federal": kinds["federal"],
+        "commits_consolidation_cantonal": kinds["cantonal"],
         "commits_bulk_metadata": kinds["bulk"],
         "file_touches_consolidation": touches["consolidation"],
         "file_touches_bulk_metadata": touches["bulk"],
         "paths_with_consolidations": len(dates),
     }
-    logger.info("Consolidation commits: %d of %d (%d paths)",
-                kinds["consolidation"], sum(kinds.values()), len(dates))
-    return {p: sorted(d) for p, d in dates.items()}, provenance
+    logger.info("Consolidation commits: %d of %d (%d federal, %d cantonal, %d paths)",
+                kinds["consolidation"], provenance["commits_scanned"],
+                kinds["federal"], kinds["cantonal"], len(dates))
+    return dict(dates), provenance
 
 
 def revision_deltas(repo_path: str | Path = ".", cache: str | Path | None = DELTA_CACHE,
                     refresh: bool = False) -> dict[str, dict[str, dict]]:
-    """{path: {date: {lines_added, lines_removed}}} for consolidation commits.
+    """{path: {date: {lines_added, lines_removed, prefix}}} for consolidations.
 
     How much text moved is the difference between a substantive overhaul and a
-    cosmetic touch-up, and a revision *count* treats those as equal.  Only
-    federal law has a versioned text history in git, so cantonal paths are
-    simply absent here — a coverage asymmetry, not a zero.
+    cosmetic touch-up, and a revision *count* treats those as equal.  Measuring
+    it needs two versions of the same file: federal law has a real version
+    history here, while the cantonal corpus was imported at one version per law,
+    so cantonal coverage is a rounding error rather than a series.  See the
+    module docstring — ``articles`` is the magnitude that covers both.
     """
     cache_path = Path(repo_path) / cache if cache else None
     if cache_path and cache_path.exists() and not refresh:
         try:
-            return json.loads(cache_path.read_text(encoding="utf-8"))
+            payload = json.loads(cache_path.read_text(encoding="utf-8"))
+            # the cache predates the register prefix if it has no version marker
+            if isinstance(payload, dict) and payload.get("cache_version") == 2:
+                return payload["deltas"]
+            logger.info("Delta cache %s is an older shape — rebuilding", cache_path)
         except (OSError, ValueError):
             logger.warning("Unreadable delta cache %s — rebuilding", cache_path)
 
     out: dict[str, dict[str, dict]] = defaultdict(dict)
     date = None
-    keep = False
+    prefix = ""
     for line in _git_log(repo_path, ["--numstat"]).splitlines():
         if line.startswith("\x00"):
             date, _, subject = line[1:].partition("\x01")
-            keep = is_consolidation(subject, date)
+            prefix = is_consolidation(subject, date)
             continue
-        if not keep or not line.strip():
+        if not prefix or not line.strip():
             continue
         parts = line.split("\t")
         if len(parts) != 3:
@@ -142,17 +196,21 @@ def revision_deltas(repo_path: str | Path = ".", cache: str | Path | None = DELT
         if added == "-" or removed == "-":  # binary
             continue
         prev = out[path].get(date)
-        rec = {"lines_added": int(added), "lines_removed": int(removed)}
+        rec = {"lines_added": int(added), "lines_removed": int(removed),
+               "prefix": prefix}
         # A path can be touched twice on the same version date (a correction
         # re-run); the magnitudes belong to the same event, so they add.
-        if prev:
-            rec = {k: prev[k] + rec[k] for k in rec}
+        if prev and prev.get("prefix") == prefix:
+            rec = {"lines_added": prev["lines_added"] + rec["lines_added"],
+                   "lines_removed": prev["lines_removed"] + rec["lines_removed"],
+                   "prefix": prefix}
         out[path][date] = rec
 
     result = dict(out)
     if cache_path:
         cache_path.parent.mkdir(parents=True, exist_ok=True)
-        cache_path.write_text(json.dumps(result), encoding="utf-8")
+        cache_path.write_text(json.dumps({"cache_version": 2, "deltas": result}),
+                              encoding="utf-8")
         logger.info("Cached revision deltas for %d paths to %s", len(result), cache_path)
     return result
 
@@ -169,7 +227,8 @@ def _representative(group: list[dict]) -> dict:
     return de[0] if de else group[0]
 
 
-def _law_dates(group: list[dict], cons: dict[str, list[str]], scope: str) -> dict[str, str]:
+def _law_dates(group: list[dict], cons: dict[str, dict[str, str]],
+               prefix: str) -> dict[str, str]:
     """{date: source} for one law, contaminated git dates already removed.
 
     Order matters only for the source label: the first writer of a date wins,
@@ -178,15 +237,15 @@ def _law_dates(group: list[dict], cons: dict[str, list[str]], scope: str) -> dic
     """
     dated: dict[str, str] = {}
 
-    # A Fedlex consolidation dates federal law and nothing else.  A handful of
-    # cantonal files were touched by one of those commits in passing (they
-    # rode along in the same batch); crediting them would date a cantonal act
-    # with a federal act's entry into force.
-    if scope == "federal":
-        for e in group:
-            for d in cons.get(e.get("_path", ""), ()):
-                if _plausible_date(d):
-                    dated.setdefault(d, "fedlex_consolidation")
+    # A consolidation dates law from its own register and nothing else.  Six
+    # files were touched by a commit from another register in passing (they
+    # rode along in the same batch); crediting them would date, say, a Zurich
+    # act with a federal act's entry into force.
+    for e in group:
+        for d, pfx in cons.get(e.get("_path", ""), {}).items():
+            if pfx == prefix and _plausible_date(d):
+                dated.setdefault(
+                    d, "fedlex_consolidation" if pfx == "SR" else "cantonal_consolidation")
 
     for e in group:
         src = str(e.get("version_dates_source", ""))
@@ -216,7 +275,7 @@ def _law_dates(group: list[dict], cons: dict[str, list[str]], scope: str) -> dic
     return dated
 
 
-def build_events(entries: list[dict], cons: dict[str, list[str]],
+def build_events(entries: list[dict], cons: dict[str, dict[str, str]],
                  deltas: dict[str, dict[str, dict]] | None = None) -> list[dict]:
     """File-level frontmatter entries → the event stream (spec §3).
 
@@ -233,7 +292,8 @@ def build_events(entries: list[dict], cons: dict[str, list[str]],
     for key, group in sorted(groups.items()):
         rep = _representative(group)
         scope = rep.get("_scope", "federal")
-        dated = _law_dates(group, cons, scope)
+        prefix = law_prefix(rep)
+        dated = _law_dates(group, cons, prefix)
         if not dated:
             continue
         # magnitude is measured on one language version — the German file
@@ -274,8 +334,9 @@ def build_events(entries: list[dict], cons: dict[str, list[str]],
             if law_type:
                 rec["type"] = law_type
             d = path_deltas.get(date)
-            if d and date != first_delta:
-                rec["delta"] = d
+            if d and date != first_delta and d.get("prefix", "SR") == prefix:
+                rec["delta"] = {"lines_added": d["lines_added"],
+                                "lines_removed": d["lines_removed"]}
             if date == last:
                 rec["size_current"] = {
                     "chars": rep.get("_body_chars", 0),
@@ -287,16 +348,45 @@ def build_events(entries: list[dict], cons: dict[str, list[str]],
     return events
 
 
+def law_sizes(entries: list[dict]) -> dict[str, dict[str, int]]:
+    """{law key: {chars, articles}} — the body metrics of one language version.
+
+    The second magnitude on the page.  Unlike ``lines`` it needs no version
+    history, only the text, so it covers cantonal law as completely as federal:
+    every file in the corpus has a body.  Measured on the German version where
+    there is one, for the same reason the deltas are — three translations of one
+    act are one law, and summing them would treble it.
+    """
+    groups: dict[str, list[dict]] = defaultdict(list)
+    for e in entries:
+        groups[law_key(e)].append(e)
+    out = {}
+    for key, group in groups.items():
+        rep = _representative(group)
+        out[key] = {"chars": int(rep.get("_body_chars") or 0),
+                    "articles": int(rep.get("_body_articles") or 0)}
+    return out
+
+
 def _lines(rec: dict) -> int:
     d = rec.get("delta")
     return (d["lines_added"] + d["lines_removed"]) if d else 0
 
 
-def aggregate_events(events: list[dict], provenance: dict | None = None) -> dict:
-    """Year x scope x event-kind cube for the dashboard chart."""
+def aggregate_events(events: list[dict], provenance: dict | None = None,
+                     sizes: dict[str, dict[str, int]] | None = None) -> dict:
+    """Year x scope x event-kind cube for the dashboard chart.
+
+    ``sizes`` (from :func:`law_sizes`) adds the article counts, which are the
+    only magnitude that covers cantonal law; without it those cells are zero and
+    the page must not offer the measure.
+    """
+    sizes = sizes or {}
     by_year: dict[str, dict[str, dict[str, int]]] = defaultdict(
         lambda: defaultdict(lambda: {"publication": 0, "revision": 0,
-                                     "lines": 0, "revisions_with_delta": 0})
+                                     "lines": 0, "revisions_with_delta": 0,
+                                     "articles_publication": 0,
+                                     "articles_revision": 0})
     )
     totals = Counter()
     sources = Counter()
@@ -307,6 +397,7 @@ def aggregate_events(events: list[dict], provenance: dict | None = None) -> dict
         cell[r["event"]] += 1
         totals[r["event"]] += 1
         sources[r["source"]] += 1
+        cell[f"articles_{r['event']}"] += sizes.get(r["law"], {}).get("articles", 0)
         n = _lines(r)
         if n and r["event"] == "revision":
             cell["lines"] += n
@@ -330,6 +421,22 @@ def aggregate_events(events: list[dict], provenance: dict | None = None) -> dict
             "laws_with_events": totals["publication"],
         },
         "by_source": dict(sources.most_common()),
+        "measures": {
+            "publication/revision": "event counts",
+            "lines": (
+                "lines added + removed by the revision, from git numstat on the "
+                "consolidation commits. Needs two versions of a file to diff, so "
+                "it is federal law in practice — the cantonal corpus holds one "
+                "version per law."
+            ),
+            "articles_publication/articles_revision": (
+                "articles of the law the event applies to, from the markdown "
+                "body. Covers federal and cantonal law alike, because every law "
+                "in the corpus has a text. It is the law's CURRENT size credited "
+                "to each of its events, so recent years are exact and older ones "
+                "are anachronistic."
+            ),
+        },
         "by_year": {y: {s: dict(c) for s, c in sorted(by_year[y].items())} for y in years},
         "provenance": provenance or {},
     }
@@ -341,7 +448,8 @@ def _months_between(a: str, b: str) -> float:
     return (yb - ya) * 12 + (mb - ma) + (db - da) / 30.44
 
 
-def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
+def compute_indicators(events: list[dict], entries: list[dict],
+                       sizes: dict[str, dict[str, int]] | None = None) -> dict:
     """Workload indicators per year x scope (spec §4).
 
     ``churn`` and ``instability`` are the two that answer the TF's question
@@ -349,6 +457,7 @@ def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
     domain where the median law moves every 14 months is a different working
     environment from one where it moves every 9 years, whatever the corpus size.
     """
+    sizes = sizes or {}
     repealed: dict[str, str] = {}
     for e in entries:
         rd = str(e.get("repealed_date", ""))
@@ -361,7 +470,7 @@ def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
     gaps: dict[str, list[float]] = defaultdict(list)      # year -> gaps (months)
     per_year: dict[str, dict] = defaultdict(
         lambda: defaultdict(lambda: {"publications": 0, "revisions": 0, "lines": 0,
-                                     "laws_revised": set()})
+                                     "articles": 0, "laws_revised": set()})
     )
 
     # Every event lands in its own scope AND in the pooled "all" bucket. A
@@ -378,6 +487,7 @@ def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
                 cell["revisions"] += 1
                 cell["laws_revised"].add(law)
                 cell["lines"] += _lines(r)
+                cell["articles"] += sizes.get(law, {}).get("articles", 0)
                 if law in prev_date:
                     gaps[f"{year}/{sk}"].append(_months_between(prev_date[law], r["date"]))
         if r["event"] == "publication":
@@ -385,8 +495,16 @@ def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
         prev_date[law] = r["date"]
 
     scopes_of: dict[str, str] = {}
+    # How much of each scope's magnitude is actually measured, counted rather
+    # than asserted: a hardcoded share would drift on every weekly rebuild, and
+    # this is the number that decides whether the page may offer the measure.
+    measured: dict[str, Counter] = defaultdict(Counter)
     for r in events:
         scopes_of.setdefault(r["law"], r["scope"])
+        if r["event"] == "revision":
+            measured[r["scope"]]["revisions"] += 1
+            if r.get("delta"):
+                measured[r["scope"]]["with_delta"] += 1
 
     out: dict[str, dict] = {}
     for year in sorted(per_year):
@@ -408,7 +526,9 @@ def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
                 "instability": round(len(cell["laws_revised"]) / in_force, 4) if in_force else None,
                 "median_gap_months": round(median(g), 1) if g else None,
                 "lines_changed": cell["lines"],
+                "articles_in_revised_laws": cell["articles"],
                 "weighted_churn": round(cell["lines"] / in_force, 1) if in_force and cell["lines"] else None,
+                "article_churn": round(cell["articles"] / in_force, 1) if in_force and cell["articles"] else None,
             }
 
     return {
@@ -418,18 +538,48 @@ def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
             "instability": "share of laws in force revised at least once in the year",
             "median_gap_months": "median months since the same law's previous event, over the year's revisions",
             "scopes": "federal, cantonal, and all — 'all' is computed over the pooled events, not averaged from the other two",
-            "lines_changed": "lines added + removed per revision, summed (federal only — cantonal law has no versioned text history)",
+            "lines_changed": "lines added + removed per revision, summed (federal in practice — see coverage)",
+            "articles_in_revised_laws": (
+                "articles of the laws revised that year, summed over the year's "
+                "revisions — the article-weight of revision activity, not a count "
+                "of articles that changed (federal and cantonal alike)"
+            ),
             "weighted_churn": "lines changed / laws in force",
+            "article_churn": "articles in revised laws / laws in force",
             "laws_in_force": "laws whose publication year is on or before this year and whose repeal, if recorded, is after it",
         },
         "coverage": {
-            "magnitude_scope": "federal",
-            "magnitude_note": (
+            "lines_changed_scope": "federal",
+            "lines_changed_measured": {
+                scope: {
+                    "revisions": c["revisions"],
+                    "revisions_with_delta": c["with_delta"],
+                    "share": round(c["with_delta"] / c["revisions"], 4) if c["revisions"] else None,
+                }
+                for scope, c in sorted(measured.items())
+            },
+            "lines_changed_note": (
                 "delta comes from git numstat on the backdated consolidation "
-                "commits, which exist for federal law only; cantonal cells "
-                "report no lines rather than zero lines. Each law's earliest "
-                "recorded version carries no delta — that commit is the text "
-                "entering the corpus, not the law changing."
+                "commits, and diffing needs two recorded versions of a file. "
+                "Federal law has a version history; the cantonal corpus was "
+                "imported at one version per law, so almost no cantonal revision "
+                "has anything to diff against — see lines_changed_measured for "
+                "the share actually measured in each scope. What cantonal lines "
+                "do exist are concentrated in the years the corpus was being "
+                "built, which would read as a surge in legislative activity, so "
+                "the page reports no cantonal lines rather than zero lines. Each "
+                "law's earliest recorded version carries no delta either — that "
+                "commit is the text entering the corpus, not the law changing."
+            ),
+            "articles_in_revised_laws_scope": "federal and cantonal",
+            "articles_in_revised_laws_note": (
+                "counted from the markdown body, which every law in the corpus "
+                "has, so this magnitude has no scope gap. It credits each revision "
+                "with the whole article count of the law revised — the corpus "
+                "records the text before and after, not which articles the "
+                "revision rewrote, so this measures how much law was under "
+                "revision, not how much of it changed. It uses the law's current "
+                "article count: exact for recent years, anachronistic for old ones."
             ),
         },
         "by_year": out,
@@ -438,11 +588,118 @@ def compute_indicators(events: list[dict], entries: list[dict]) -> dict:
 
 # ─── Writers ──────────────────────────────────────────────────────────────────
 
+# Columns of the two published tables.  The event stream is written as arrays
+# rather than objects because the keys are the bulk of it: at 140k events a
+# repeated key like "source" costs more than every value it ever labels.
+EVENT_COLUMNS = ("date", "law", "event", "seq", "source", "delta")
+LAW_COLUMNS = ("law", "scope", "canton", "domain", "type", "chars", "articles",
+               "latest")
+EVENT_KINDS = ("publication", "revision")
+
+# Every key build_events() can put on a record, split by where it belongs in
+# the published form.  A record carrying anything else is a new field that
+# would be silently dropped, so the writer refuses instead.
+_EVENT_FIELDS = {"date", "law", "event", "seq", "source", "delta"}
+_LAW_FIELDS = {"scope", "canton", "domain", "type", "size_current"}
+
+
+def law_dimension(events: list[dict]) -> dict:
+    """The law table: the attributes that belong to a law, not to its events.
+
+    ``scope``, ``canton``, ``domain``, ``type`` and ``size_current`` are
+    properties of the law itself — they are identical on all 4.1 events the
+    average law contributes, and writing them per event was 12 of the stream's
+    26 MB.  They move here, one row per law, joined back on the law key.
+
+    ``size_current`` in particular is the law's size *today*, so there is only
+    ever one value of it per law; repeating it was never anything but repetition.
+
+    The denormalised form marked the law's current version implicitly, by
+    hanging ``size_current`` on its most recent event and no other.  That is
+    real information — which event produced the text the law has today — and
+    a year file cannot recover it alone, so it becomes the ``latest`` column
+    rather than being lost with the repetition.  It also stops the size being
+    summed per event: one law, one row, one size.
+    """
+    laws: dict[str, dict] = {}
+    for e in events:
+        row = laws.setdefault(e["law"], {})
+        for k in _LAW_FIELDS:
+            if k in e:
+                row[k] = e[k]
+        if e["date"] > row.get("latest", ""):
+            row["latest"] = e["date"]
+
+    def _book(field: str) -> list[str]:
+        return sorted({r[field] for r in laws.values() if r.get(field)})
+
+    scopes, cantons = _book("scope"), _book("canton")
+    domains, types = _book("domain"), _book("type")
+    idx = {f: {v: i for i, v in enumerate(b)} for f, b in
+           (("scope", scopes), ("canton", cantons), ("domain", domains), ("type", types))}
+
+    def _code(row: dict, field: str) -> int | None:
+        v = row.get(field)
+        return idx[field][v] if v else None
+
+    rows = []
+    for key in sorted(laws):
+        r = laws[key]
+        size = r.get("size_current") or {}
+        rows.append([key, _code(r, "scope"), _code(r, "canton"),
+                     _code(r, "domain"), _code(r, "type"),
+                     size.get("chars"), size.get("articles"), r.get("latest")])
+    return {"count": len(rows), "counting_unit": "law",
+            "columns": list(LAW_COLUMNS),
+            "codebooks": {"scope": scopes, "canton": cantons,
+                          "domain": domains, "type": types},
+            "rows": rows}
+
+
+def _event_rows(recs: list[dict], sources: list[str]) -> list[list]:
+    """Records to positional rows, trailing absent values omitted.
+
+    93% of events carry no ``delta`` (a text diff needs two published versions
+    of the same law).  Writing ``null`` in that slot 130k times costs half a
+    megabyte to say nothing, so a short row means "the rest is absent" — the
+    same reason build_events() omits empty keys rather than nulling them.
+    """
+    src = {s: i for i, s in enumerate(sources)}
+    kind = {k: i for i, k in enumerate(EVENT_KINDS)}
+    rows = []
+    for e in recs:
+        row = [e["date"], e["law"], kind[e["event"]], e["seq"], src[e["source"]]]
+        d = e.get("delta")
+        if d:
+            row.append([d["lines_added"], d["lines_removed"]])
+        rows.append(row)
+    return rows
+
+
 def write_events(events: list[dict], output_dir: str | Path) -> dict:
-    """Per-year event files + index, mirroring write_publications()."""
+    """Per-year event files + the law table they join to + index.
+
+    Split rather than denormalised: the year files hold what varies per event
+    (when, which law, publication or revision, how much text moved) and
+    ``laws.json`` holds what is constant per law.  Both are plain JSON with a
+    ``columns`` header and inline ``codebooks``, so a reader needs no schema
+    to decode them and the join key stays the law's real register number.
+    """
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
 
+    unknown = {k for e in events for k in e} - _EVENT_FIELDS - _LAW_FIELDS
+    if unknown:
+        raise ValueError(
+            f"event field(s) {sorted(unknown)} have no column and would be "
+            f"dropped; add them to EVENT_COLUMNS or LAW_COLUMNS")
+
+    laws = law_dimension(events)
+    (out / "laws.json").write_text(
+        json.dumps(laws, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8")
+
+    sources = sorted({e["source"] for e in events})
     by_year: dict[str, list[dict]] = defaultdict(list)
     for r in events:
         by_year[r["date"][:4]].append(r)
@@ -452,7 +709,10 @@ def write_events(events: list[dict], output_dir: str | Path) -> dict:
         payload = {"date_prefix": year, "count": len(recs),
                    "counting_unit": "legal_event",
                    "default_confidence": "authoritative",
-                   "events": recs}
+                   "laws": "laws.json",
+                   "columns": list(EVENT_COLUMNS),
+                   "codebooks": {"event": list(EVENT_KINDS), "source": sources},
+                   "rows": _event_rows(recs, sources)}
         (out / f"{year}.json").write_text(
             json.dumps(payload, ensure_ascii=False, separators=(",", ":")),
             encoding="utf-8")
@@ -461,12 +721,24 @@ def write_events(events: list[dict], output_dir: str | Path) -> dict:
     index = {
         "years": years,
         "total_events": len(events),
+        "total_laws": laws["count"],
         "earliest_year": years[0] if years else None,
         "latest_year": years[-1] if years else None,
+        "format": "columnar",
+        "decoding": (
+            "Each year file has `columns`, `codebooks` and `rows`. A row is "
+            "positional against `columns`; a row shorter than `columns` has "
+            "its remaining fields absent. Integer values of a column named in "
+            "`codebooks` index that codebook. Join `law` to rows in laws.json "
+            "for the law's scope, canton, domain and type. `chars`/`articles` "
+            "there are the law's size today, held once per law rather than per "
+            "event so they cannot be summed twice; `latest` is the date of the "
+            "event that produced that text."),
     }
     (out / "index.json").write_text(
         json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
-    logger.info("Wrote %d year files (%d events) to %s", len(years), len(events), out)
+    logger.info("Wrote %d year files (%d events, %d laws) to %s",
+                len(years), len(events), laws["count"], out)
     return index
 
 

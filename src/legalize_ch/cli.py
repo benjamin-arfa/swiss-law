@@ -1201,7 +1201,7 @@ def events_cmd(repo: str, site_repo: str | None, no_detail: bool, refresh_deltas
     """
     from .events import (
         aggregate_events, build_events, compute_indicators, consolidation_dates,
-        revision_deltas, write_events, write_json,
+        law_sizes, revision_deltas, write_events, write_json,
     )
     from .stats import collect_all_frontmatter
 
@@ -1216,7 +1216,9 @@ def events_cmd(repo: str, site_repo: str | None, no_detail: bool, refresh_deltas
 
     click.echo("Classifying commits (consolidation vs bulk metadata)...")
     cons, provenance = consolidation_dates(repo_path)
-    click.echo(f"  {provenance['commits_consolidation']:,} consolidations, "
+    click.echo(f"  {provenance['commits_consolidation']:,} consolidations "
+               f"({provenance['commits_consolidation_federal']:,} federal, "
+               f"{provenance['commits_consolidation_cantonal']:,} cantonal), "
                f"{provenance['commits_bulk_metadata']:,} bulk metadata commits dropped")
 
     click.echo("Reading revision magnitudes from git...")
@@ -1229,7 +1231,8 @@ def events_cmd(repo: str, site_repo: str | None, no_detail: bool, refresh_deltas
 
     click.echo("Building events...")
     evs = build_events(entries, cons, deltas)
-    cube = aggregate_events(evs, provenance)
+    sizes = law_sizes(entries)
+    cube = aggregate_events(evs, provenance, sizes)
     t = cube["totals"]
     click.echo(f"  {t['events']:,} events = {t['publications']:,} publications "
                f"+ {t['revisions']:,} revisions")
@@ -1238,7 +1241,7 @@ def events_cmd(repo: str, site_repo: str | None, no_detail: bool, refresh_deltas
     click.echo("  api/v1/stats/events_by_year.json")
 
     click.echo("Computing workload indicators...")
-    ind = compute_indicators(evs, entries)
+    ind = compute_indicators(evs, entries, sizes)
     write_json(ind, site_path / "api" / "v1" / "stats" / "indicators.json")
     click.echo("  api/v1/stats/indicators.json")
 

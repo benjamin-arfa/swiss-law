@@ -1184,5 +1184,69 @@ def cross_level_refs(repo: str, site_repo: str | None, write_html: bool, inject_
         )
 
 
+@main.command("events")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--site-repo", default=None, envvar="SWISS_LAW_SITE_REPO",
+              help="Path to the site repo for event/indicator output (default: ../swiss-law-as-source)")
+@click.option("--no-detail", is_flag=True,
+              help="Write only the aggregate cube and indicators, not the per-year event files")
+@click.option("--refresh-deltas", is_flag=True,
+              help="Rebuild the git numstat cache instead of reusing data/state/revision_deltas.json")
+def events_cmd(repo: str, site_repo: str | None, no_detail: bool, refresh_deltas: bool):
+    """Build the legal event stream — one record per (law, date).
+
+    Counts publications AND revisions, where the trend chart in stats.json
+    counts each law once under its enactment year.  Both units stay published;
+    neither replaces the other.
+    """
+    from .events import (
+        aggregate_events, build_events, compute_indicators, consolidation_dates,
+        revision_deltas, write_events, write_json,
+    )
+    from .stats import collect_all_frontmatter
+
+    repo_path = Path(repo).resolve()
+    site_path = Path(site_repo).resolve() if site_repo else (repo_path.parent / "swiss-law-as-source")
+    if not site_path.exists():
+        click.echo(f"Site repo not found at {site_path} — falling back to {repo_path / 'docs'}", err=True)
+        site_path = repo_path / "docs"
+
+    click.echo(f"Law repo:  {repo_path}")
+    click.echo(f"Site repo: {site_path}")
+
+    click.echo("Classifying commits (consolidation vs bulk metadata)...")
+    cons, provenance = consolidation_dates(repo_path)
+    click.echo(f"  {provenance['commits_consolidation']:,} consolidations, "
+               f"{provenance['commits_bulk_metadata']:,} bulk metadata commits dropped")
+
+    click.echo("Reading revision magnitudes from git...")
+    deltas = revision_deltas(repo_path, refresh=refresh_deltas)
+    click.echo(f"  {len(deltas):,} paths with per-revision line counts")
+
+    click.echo("Scanning frontmatter...")
+    entries = collect_all_frontmatter(repo_path)
+    click.echo(f"  {len(entries):,} law files")
+
+    click.echo("Building events...")
+    evs = build_events(entries, cons, deltas)
+    cube = aggregate_events(evs, provenance)
+    t = cube["totals"]
+    click.echo(f"  {t['events']:,} events = {t['publications']:,} publications "
+               f"+ {t['revisions']:,} revisions")
+
+    write_json(cube, site_path / "api" / "v1" / "stats" / "events_by_year.json")
+    click.echo("  api/v1/stats/events_by_year.json")
+
+    click.echo("Computing workload indicators...")
+    ind = compute_indicators(evs, entries)
+    write_json(ind, site_path / "api" / "v1" / "stats" / "indicators.json")
+    click.echo("  api/v1/stats/indicators.json")
+
+    if not no_detail:
+        click.echo("Writing per-year event files...")
+        index = write_events(evs, site_path / "api" / "v1" / "events")
+        click.echo(f"  {len(index['years'])} year files under api/v1/events/")
+
+
 if __name__ == "__main__":
     main()

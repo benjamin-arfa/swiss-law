@@ -213,3 +213,95 @@ test on one known law (SR 220) so the 2025 magnitudes above stay pinned.
 - Modelling repeals / abrogations (needed for question 3; separate spec).
 - Any use of TF case data — this spec covers the legislation side only.
 - Replacing the existing enactment-year chart.
+
+## 9. Implementation notes — 2026-08-26
+
+Phases 1–5 are built and phase 6 is partial. Code: `src/legalize_ch/events.py`
+(new), the `legalize-ch events` CLI command, `tests/test_events.py` (19 tests).
+Site: a new dashboard section, `assets/charts.js` builders, `openapi.json` and
+`data.html` entries.
+
+### 9.1 What the repair actually removed
+
+Measured over the full history (60,300 commits touching `ch/`):
+
+| | Value |
+|---|---|
+| Commits classified as Fedlex consolidations | 38,108 |
+| Commits classified as bulk metadata (dropped) | 22,192 |
+| Events published | 139,647 = 34,215 publications + 105,432 revisions |
+| Laws with at least one event | 34,215 of 34,404 |
+| Events per law | 4.08 |
+
+The 2026 spike is gone: **14,503 raw events → 2,777 repaired**, against 3,488 in
+2025 and 3,726 in 2024. Every year before 2026 moves by at most 10 events, which
+is the check that matters — the filter had to remove the enrichment window
+without thinning the genuine series.
+
+### 9.2 Four decisions that differ from §3–§6
+
+1. **Contaminated dates are dropped, not published as `derived`.** §3 kept
+   git-reconstructed events in the API behind a `confidence` label. In the data
+   they turn out to record *when the enrichment ran*, not when a law changed —
+   there is no signal in them to preserve, so the event stream carries only
+   dates traceable to a consolidation commit or an upstream API. Every published
+   event is therefore `authoritative`, and the field is omitted from the records
+   (the year payload states `default_confidence`) rather than written 139,647
+   times. What was dropped is reported in `provenance` on the cube and in the
+   methodology note under the chart.
+2. **Frontmatter is not re-stamped.** §6 phase 1 proposed rewriting
+   `version_dates_source` in 70,370 files. The repair is applied at aggregation
+   time instead, exactly as `MIN_PLAUSIBLE_YEAR` already is in `stats.py`: the
+   files keep the raw upstream values as provenance, and no 25k-file commit is
+   needed to publish a corrected series.
+3. **A federal consolidation dates federal law only.** Two cantonal files
+   (`AG/290.100`, `BS/300.100`) rode along in a federal batch commit and would
+   otherwise have inherited a federal act's entry into force — 4 events.
+4. **`size_after` → `size_current`, on each law's latest event only.** The corpus
+   stores just the current text, so a per-revision size would be fiction; the
+   current article and character counts are attached to the newest event and
+   named for what they are.
+
+### 9.3 Magnitude coverage
+
+`git log --numstat` over the consolidation commits yields per-revision line
+counts for 45,026 paths, cached in `data/state/revision_deltas.json`. Magnitude
+is read from the **German** file of each act — summing three translations of one
+amendment would treble it. Cantonal law has no versioned text history, so the
+measure is disabled rather than charted as zero.
+
+**Each law's earliest recorded version carries no magnitude.** That commit is the
+text arriving in this corpus, not the law changing: a backfilled act shows its
+whole body as lines added on the day it was imported. Across all languages the
+import share was 51 % of the 2026 total (485,692 of 949,577 lines) and 39 % of
+2025 — it tracks our collection work, and rises exactly when backfilling is busy,
+which would have read as a surge in legislative activity. Excluded, the series
+measures amendments only.
+
+### 9.4 Indicators as published
+
+`api/v1/stats/indicators.json`, per year × scope. 2025:
+
+| | Federal | Cantonal |
+|---|---|---|
+| Events | 827 | 2,661 |
+| Revisions | 757 | 2,388 |
+| Laws in force | 9,013 | 24,404 |
+| Churn (revisions / law) | 0.084 | 0.098 |
+| Instability (share revised) | 6.4 % | 8.6 % |
+| Median months since previous change | 12.0 | 19.0 |
+
+Repeals *are* modelled where recorded (`repealed_date`), which softens open
+question 3 without closing it: the field is present on ~1 % of files, so
+`laws_in_force` is still an upper bound and should be presented as one.
+
+### 9.5 Not done
+
+- `api.html` prose for the new endpoints (the machine-readable `openapi.json`
+  and the `data.html` links are in).
+- Indicators per **domain** and per **canton** — the cube is year × scope only;
+  the per-event `domain` field makes the breakdown a client-side join for now.
+- Half-life as a survival estimate. `median_gap_months` is the median gap
+  between consecutive events of the same law within a year, which is not the
+  same statistic and is labelled accordingly on the page.
+- The cross-level reference join (§4, explicitly out of scope).

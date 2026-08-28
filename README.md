@@ -329,4 +329,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed technical documentation incl
 
 ## License
 
-The pipeline code is MIT-licensed. The legal texts are public domain (Swiss federal law is not subject to copyright per Art. 5 URG).
+The pipeline code is MIT-licensed — see [LICENSE](LICENSE).
+Copyright (c) 2024-2026 [Arfa Digital Consulting](https://arfa.digital), <benjamin@arfa.digital>.
+
+The legal texts under `ch/` are public domain (Swiss law is not subject to copyright per Art. 5 URG).

@@ -11,6 +11,9 @@ This script is the single source of truth for the chrome:
 
 * ``NAV_ITEMS`` is the canonical link list — every navbar-bearing page shows all
   of it, with the current page marked ``aria-current="page"``.
+* ``CREDIT`` is the canonical licence/attribution line — every chrome-bearing
+  page carries the same one, so the copyright holder can be changed in one
+  place instead of eight.
 * the shared look lives in ``assets/site-chrome.css``; page-local ``header``/
   ``nav`` rules are stripped so the shared file always wins.
 
@@ -50,11 +53,30 @@ TOOL_ITEMS: list[tuple[str, str]] = [
     ("cross_level_refs.html", "Federal ↔ cantonal"),
     ("diff.html", "Diff viewer"),
     ("undated.html", "Undated laws"),
+    ("embed.html", "Embeddable charts"),
 ]
 
-# Pages that carry the chrome.  embed.html is an iframe target and
-# stats.html / swagger.html are redirect stubs — all three stay bare.
-PAGES = [href for href, _ in NAV_ITEMS] + [href for href, _ in TOOL_ITEMS]
+# The licence / attribution line, shown at the foot of every chrome-bearing
+# page.  Code is MIT; the underlying legal texts are not copyrightable at all
+# (Art. 5 URG), and saying so here stops readers assuming the MIT grant is what
+# lets them reuse the law.
+CREDIT = """        <p class="site-credit">
+            &copy; 2024&ndash;2026 <a href="https://arfa.digital" rel="author">Arfa Digital Consulting</a> &middot;
+            <a href="mailto:benjamin@arfa.digital">benjamin@arfa.digital</a> &middot;
+            Site and pipeline code <a href="https://github.com/benjamin-arfa/swiss-law/blob/main/LICENSE">MIT</a> &middot;
+            Legal texts public domain (Art. 5 URG)
+        </p>"""
+
+# Linked from the tools row but carrying no chrome of its own: embed.html is an
+# iframe target, where a navbar and a repeated tools row would be noise.  It was
+# previously hand-linked from index.html alone, which this sync then overwrote.
+# stats.html / swagger.html are redirect stubs and are not linked at all.
+BARE_PAGES = {"embed.html"}
+
+# Pages that carry the chrome.
+PAGES = [href for href, _ in NAV_ITEMS] + [
+    href for href, _ in TOOL_ITEMS if href not in BARE_PAGES
+]
 
 # Page-local rules that must give way to the shared stylesheet.
 CHROME_SELECTORS = [
@@ -114,6 +136,7 @@ def ensure_chrome_link(html: str) -> str:
 NAV_RE = re.compile(r"^[ \t]*<nav>.*?</nav>[ \t]*$", re.DOTALL | re.MULTILINE)
 HEADER_END_RE = re.compile(r"^([ \t]*</header>[ \t]*)$", re.MULTILINE)
 TOOLS_RE = re.compile(r'^[ \t]*<p class="site-tools">.*?</p>[ \t]*$', re.DOTALL | re.MULTILINE)
+CREDIT_RE = re.compile(r'^[ \t]*<p class="site-credit">.*?</p>[ \t]*$', re.DOTALL | re.MULTILINE)
 FOOTER_END_RE = re.compile(r"^([ \t]*</footer>[ \t]*)$", re.MULTILINE)
 BODY_END_RE = re.compile(r"^([ \t]*</body>[ \t]*)$", re.MULTILINE)
 
@@ -140,6 +163,15 @@ def sync_page(path: Path) -> str:
         html = BODY_END_RE.sub(lambda m: f"{footer}\n{m.group(1)}", html, count=1)
     else:
         raise SystemExit(f"{path.name}: no footer and no </body> to anchor the tools row")
+
+    # The tools row above guarantees a <footer> exists by this point, so the
+    # credit line always has somewhere to land.
+    if CREDIT_RE.search(html):
+        html = CREDIT_RE.sub(lambda _: CREDIT, html, count=1)
+    elif FOOTER_END_RE.search(html):
+        html = FOOTER_END_RE.sub(lambda m: f"{CREDIT}\n{m.group(1)}", html, count=1)
+    else:
+        raise SystemExit(f"{path.name}: no footer to anchor the credit line")
 
     html = strip_chrome_css(html)
     return ensure_chrome_link(html)

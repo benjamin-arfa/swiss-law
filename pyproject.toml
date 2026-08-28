@@ -3,6 +3,11 @@ name = "legalize-ch"
 version = "0.1.0"
 description = "Swiss law as version-controlled Markdown — fetched from Fedlex SPARQL"
 requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Arfa Digital Consulting", email = "benjamin@arfa.digital" },
+]
 dependencies = [
     "requests>=2.31",
     "SPARQLWrapper>=2.0",
@@ -17,11 +22,16 @@ dependencies = [
     "openfisca-core>=44.0",
 ]
 
+[project.urls]
+Homepage = "https://swiss-law-as-source.github.io/"
+Repository = "https://github.com/benjamin-arfa/swiss-law"
+Author = "https://arfa.digital"
+
 [project.scripts]
 legalize-ch = "legalize_ch.cli:main"
 
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
